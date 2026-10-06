@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NBA 2026-27 Database</title>
+<style>
+  :root { --text:#1a1a1a; --muted:#666; --line:#ddd; --soft:#f6f6f6; --accent:#1f4e9c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--text); font:15px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width:1100px; margin:0 auto; padding:16px; }
+  h1 { font-size:22px; margin:4px 0 2px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:14px; }
+  .tabs { display:flex; flex-wrap:wrap; gap:6px; border-bottom:1px solid var(--line); margin-bottom:12px; }
+  .tabs button { border:1px solid var(--line); border-bottom:none; background:var(--soft); padding:8px 12px; font:inherit; cursor:pointer; border-radius:6px 6px 0 0; }
+  .tabs button.on { background:#fff; font-weight:600; position:relative; top:1px; }
+  .bar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+  .bar input, .bar select { font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--text); }
+  .bar input { flex:1 1 220px; min-width:0; }
+  .btn { font:inherit; padding:8px 12px; border:1px solid var(--accent); color:var(--accent); background:#fff; border-radius:6px; cursor:pointer; text-decoration:none; }
+  .btn:hover { background:#eef3fb; }
+  .count { color:var(--muted); font-size:13px; margin-bottom:6px; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
+  th { background:var(--soft); font-size:13px; position:sticky; top:0; }
+  td.small { font-size:13px; color:var(--muted); white-space:nowrap; }
+  a { color:var(--accent); }
+  .msg { color:var(--muted); font-size:13px; min-height:18px; }
+  @media (max-width:720px) {
+    thead { display:none; }
+    table, tbody, tr, td { display:block; width:100%; }
+    tr { border:1px solid var(--line); border-radius:8px; margin-bottom:10px; padding:6px 4px; }
+    td { border:none; padding:3px 8px; }
+    td::before { content:attr(data-label) ": "; font-weight:600; color:var(--muted); }
+    td.small { white-space:normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>NBA 2026-27 Database</h1>
+  <div class="sub" id="sub">Loading…</div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search a player, team, or word (example: Lakers, injured, starter)">
+    <select id="team"><option value="">All teams</option></select>
+    <button class="btn" id="copy">Copy for AI</button>
+    <button class="btn" id="dl">Download this tab</button>
+    <a class="btn" href="ai.txt" target="_blank" rel="noopener">AI text link</a>
+  </div>
+  <div class="msg" id="msg"></div>
+  <div class="count" id="count"></div>
+  <div style="overflow-x:auto"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+</div>
+
+<script>
+const TABS = {
+  players:  { label:"Players",  cols:[["player","Player"],["team","Team"],["role","Role"],["minutes","Minutes"],["usage","Usage"],["status","Health"],["note","Note"]] },
+  teams:    { label:"Teams",    cols:[["team","Team"],["starters","Projected starters"],["bench","Bench order"],["backup_c","Backup C"],["coach","Coach"],["notes","Notes"]] },
+  injuries: { label:"Injuries", cols:[["player","Player"],["team","Team"],["status","Health"],["note","Note"]] },
+  moves:    { label:"Moves",    cols:[["player","Player"],["from","From"],["to","To"],["type","Type"],["note","Note"]] },
+  sources:  { label:"Sources",  cols:[["date","Date"],["show","Show"],["title","Episode"],["url","Link"]] }
+};
+let db = null, tab = "players";
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function srcFor(r){ return db.sources.find(s => s.id === r.source) || null; }
+
+function rows() {
+  const q = $("q").value.trim().toLowerCase();
+  const t = $("team").value;
+  return db[tab].filter(r => {
+    if (t && tab !== "sources") {
+      const teamHit = r.team === t || r.to === t || r.from === t;
+      if (!teamHit) return false;
+    }
+    if (!q) return true;
+    return Object.values(r).join(" ").toLowerCase().includes(q);
+  });
+}
+
+function render() {
+  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === tab));
+  const cols = TABS[tab].cols;
+  const showSrc = tab !== "sources";
+  $("tbl").tHead.innerHTML = "<tr>" + cols.map(c => `<th>${c[1]}</th>`).join("") + (showSrc ? "<th>From episode</th>" : "") + "</tr>";
+  const list = rows();
+  $("count").textContent = `${list.length} of ${db[tab].length} rows`;
+  $("tbl").tBodies[0].innerHTML = list.map(r => {
+    const cells = cols.map(([k, label]) => {
+      let v = esc(r[k]);
+      if (k === "url") v = `<a href="${esc(r.url)}" target="_blank" rel="noopener">Watch</a>`;
+      return `<td data-label="${label}">${v}</td>`;
+    }).join("");
+    let s = "";
+    if (showSrc) { const so = srcFor(r); s = `<td class="small" data-label="From episode">${so ? `<a href="${esc(so.url)}" target="_blank" rel="noopener">${esc(so.date)}</a>` : ""}</td>`; }
+    return `<tr>${cells}${s}</tr>`;
+  }).join("");
+}
+
+function csvOf(list) {
+  const cols = TABS[tab].cols.map(c => c[0]);
+  const head = tab === "sources" ? cols : cols.concat(["source_date","source_url"]);
+  const q = v => `"${String(v ?? "").replace(/"/g,'""')}"`;
+  const lines = [head.join(",")].concat(list.map(r => {
+    const base = cols.map(c => q(r[c]));
+    if (tab !== "sources") { const so = srcFor(r) || {}; base.push(q(so.date), q(so.url)); }
+    return base.join(",");
+  }));
+  return lines.join("\n");
+}
+
+$("dl").onclick = () => {
+  const blob = new Blob([csvOf(rows())], { type:"text/csv" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `nba-2026-27-${tab}.csv`;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+};
+
+$("copy").onclick = async () => {
+  try {
+    const txt = await (await fetch("ai.txt", { cache:"no-store" })).text();
+    await navigator.clipboard.writeText(txt);
+    $("msg").textContent = "Copied the whole database as text. Paste it into any AI chat.";
+  } catch (e) {
+    $("msg").innerHTML = 'Copy was blocked by your browser. Open the <a href="ai.txt" target="_blank">AI text link</a> and copy from there.';
+  }
+};
+
+$("q").oninput = render;
+$("team").onchange = render;
+
+fetch("data/db.json", { cache:"no-store" }).then(r => r.json()).then(d => {
+  db = d;
+  $("sub").textContent = `Updated ${d.updated} · ${d.players.length} players · ${d.teams.length} teams · built from ${d.sources.length} podcast episodes (host opinions, not official news)`;
+  $("tabs").innerHTML = Object.entries(TABS).map(([k,v]) => `<button data-t="${k}">${v.label}</button>`).join("");
+  document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => { tab = b.dataset.t; render(); });
+  const teams = [...new Set(d.teams.map(t => t.team).concat(d.players.map(p => p.team)))].filter(Boolean).sort();
+  $("team").innerHTML = '<option value="">All teams</option>' + teams.map(t => `<option>${t}</option>`).join("");
+  render();
+}).catch(() => { $("sub").textContent = "Could not load the data file."; });
+</script>
+</body>
+</html>
