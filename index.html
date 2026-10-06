@@ -33,6 +33,7 @@
     td { border:none; padding:3px 8px; }
     td::before { content:attr(data-label) ": "; font-weight:600; color:var(--muted); }
     td.small { white-space:normal; }
+    td:empty { display:none; }
   }
 </style>
 </head>
@@ -64,6 +65,7 @@ const TABS = {
   sources:  { label:"Sources",  cols:[["date","Date"],["show","Show"],["title","Episode"],["url","Link"]] }
 };
 let db = null, tab = "players";
+const NAMES = {ATL:"Atlanta Hawks",BOS:"Boston Celtics",BKN:"Brooklyn Nets",CHA:"Charlotte Hornets",CHI:"Chicago Bulls",CLE:"Cleveland Cavaliers",DAL:"Dallas Mavericks",DEN:"Denver Nuggets",DET:"Detroit Pistons",GSW:"Golden State Warriors",HOU:"Houston Rockets",IND:"Indiana Pacers",LAC:"LA Clippers",LAL:"Los Angeles Lakers",MEM:"Memphis Grizzlies",MIA:"Miami Heat",MIL:"Milwaukee Bucks",MIN:"Minnesota Timberwolves",NOP:"New Orleans Pelicans",NYK:"New York Knicks",OKC:"Oklahoma City Thunder",ORL:"Orlando Magic",PHI:"Philadelphia 76ers",PHX:"Phoenix Suns",POR:"Portland Trail Blazers",SAC:"Sacramento Kings",SAS:"San Antonio Spurs",TOR:"Toronto Raptors",UTA:"Utah Jazz",WAS:"Washington Wizards"};
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -78,7 +80,8 @@ function rows() {
       if (!teamHit) return false;
     }
     if (!q) return true;
-    return Object.values(r).join(" ").toLowerCase().includes(q);
+    const extra = [r.team, r.to, r.from].map(c => NAMES[c] || "").join(" ");
+    return (Object.values(r).join(" ") + " " + extra).toLowerCase().includes(q);
   });
 }
 
@@ -141,7 +144,7 @@ fetch("data/db.json", { cache:"no-store" }).then(r => r.json()).then(d => {
   $("tabs").innerHTML = Object.entries(TABS).map(([k,v]) => `<button data-t="${k}">${v.label}</button>`).join("");
   document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => { tab = b.dataset.t; render(); });
   const teams = [...new Set(d.teams.map(t => t.team).concat(d.players.map(p => p.team)))].filter(Boolean).sort();
-  $("team").innerHTML = '<option value="">All teams</option>' + teams.map(t => `<option>${t}</option>`).join("");
+  $("team").innerHTML = '<option value="">All teams</option>' + teams.map(t => `<option value="${t}">${t} – ${NAMES[t] || t}</option>`).join("");
   render();
 }).catch(() => { $("sub").textContent = "Could not load the data file."; });
 </script>
