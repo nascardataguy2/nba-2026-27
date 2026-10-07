@@ -74,3 +74,17 @@ for s in sources:
 with open(os.path.join(ROOT, "ai.txt"), "w", encoding="utf-8") as f:
     f.write("\n".join(L) + "\n")
 print("built", updated, len(players), "players", len(teams), "teams", len(injuries), "injuries", len(moves), "moves")
+
+# Private Claude copy (data inlined, since GitHub is blocked at school).
+with open(os.path.join(ROOT, "scripts", "claude_template.html"), encoding="utf-8") as f:
+    tpl = f.read()
+safe = lambda s: s.replace("</", "<\\/")
+with open(os.path.join(D, "db.json"), encoding="utf-8") as f:
+    dbtxt = f.read()
+with open(os.path.join(ROOT, "ai.txt"), encoding="utf-8") as f:
+    aitxt = f.read()
+out = tpl.replace("__DB__", safe(dbtxt)).replace("__AI__", safe(aitxt))
+os.makedirs(os.path.join(ROOT, "claude"), exist_ok=True)
+with open(os.path.join(ROOT, "claude", "nba-2026-27-database.html"), "w", encoding="utf-8") as f:
+    f.write(out)
+print("claude copy written")
