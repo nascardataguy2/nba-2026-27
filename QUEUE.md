@@ -5,9 +5,9 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 ## Done
 - Chunk 0 (10/6): Locked On — Lakers preview
 - Chunk 1 (10/6): Locked On — Top 9 new teams, Risers/fallers (usage), Amen Thompson (HOU), Hawks starter (ATL), Regression risks
+- Chunk 2 (10/7): Locked On — Bounceback, Summer League West, Summer League East, Rookies, Second-year breakouts
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
-- Chunk 2: Bounceback (b01_e07), Summer League West (b01_e08), Summer League East (b01_e09), Rookies (b05_e08), Second-year breakouts (b05_e09)
 - Chunk 3: Year 3 breakouts (b05_e11), Schedule (b03_e10), DAL (b07_e08), DEN (b07_e11), GSW (b08_e01)
 - Chunk 4: IND (b08_e03), DET (b08_e05), LAC (b08_e07), BKN (b07_e04), CHA (b07_e05)
 - Chunk 5: CHI (b07_e06), CLE (b07_e07), ATL full preview (b05_e02), SAS (b05_e04), PHX (b04_e10)
