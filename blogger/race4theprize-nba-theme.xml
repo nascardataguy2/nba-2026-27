@@ -99,7 +99,6 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
     <button class='tab' data-v='players' type='button'>Players</button>
     <button class='tab' data-v='injuries' type='button'>Injuries</button>
     <button class='tab' data-v='moves' type='button'>Moves</button>
-    <button class='tab' data-v='sources' type='button'>Sources</button>
   </div>
 </nav>
 
@@ -122,14 +121,6 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
     <div class='toolbar'><input aria-label='Search moves' id='r4p-mq' placeholder='Search a player or team' type='search'/></div>
     <div class='cards' id='r4p-movecards'></div>
   </section>
-  <section class='view' hidden='hidden' id='v-sources'>
-    <p class='sub'>Every fact on this site comes from one of these episodes, read in full. Projections are the hosts' opinions, not official team news.</p>
-    <div class='toolbar' style='margin-top:12px'>
-      <button class='btn solid' id='r4p-copy' type='button'>Copy all data for AI</button>
-    </div>
-    <div class='msg' id='r4p-msg'></div>
-    <div class='cards' id='r4p-srccards'></div>
-  </section>
 </main>
 
 <div class='blog-area'>
@@ -148,10 +139,6 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   var SOURCES = [
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/db.json',
     'https://nascardataguy2.github.io/nba-2026-27/data/db.json'
-  ];
-  var AI_URLS = [
-    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/ai.txt',
-    'https://nascardataguy2.github.io/nba-2026-27/ai.txt'
   ];
   var NAMES = {ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHA:'Charlotte Hornets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',IND:'Indiana Pacers',LAC:'LA Clippers',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',MIN:'Minnesota Timberwolves',NOP:'New Orleans Pelicans',NYK:'New York Knicks',OKC:'Oklahoma City Thunder',ORL:'Orlando Magic',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',POR:'Portland Trail Blazers',SAC:'Sacramento Kings',SAS:'San Antonio Spurs',TOR:'Toronto Raptors',UTA:'Utah Jazz',WAS:'Washington Wizards'};
   var db = null, srcById = {};
@@ -256,11 +243,6 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
     }).join('');
   }
 
-  function sources(){
-    $('r4p-srccards').innerHTML = db.sources.slice().sort(function(a,b){ return a.date < b.date ? 1 : -1; }).map(function(s){
-      return '<div class="card"><h3>' + esc(s.show) + '</h3><div class="row">' + esc(s.title) + '</div><div class="row"><a href="' + esc(s.url) + '" rel="noopener" target="_blank">Watch (' + esc(s.date) + ')</a></div></div>';
-    }).join('');
-  }
 
   function show(v){
     var tabs = document.querySelectorAll('#r4p-tabs .tab');
@@ -273,23 +255,13 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   var tabs = document.querySelectorAll('#r4p-tabs .tab');
   for (var k = 0; k < tabs.length; k++) tabs[k].addEventListener('click', function(){ show(this.getAttribute('data-v')); });
 
-  $('r4p-copy').addEventListener('click', function(){
-    var msg = $('r4p-msg');
-    fetchFirst(AI_URLS, true).then(function(txt){
-      return navigator.clipboard.writeText(txt);
-    }).then(function(){
-      msg.textContent = 'Copied. Paste it into any AI chat.';
-    }).catch(function(){
-      msg.textContent = 'Your browser blocked copying. Please try again.';
-    });
-  });
 
   fetchFirst(SOURCES, false).then(function(d){
     db = d;
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams \u00b7 built from ' + d.sources.length + ' podcast episodes';
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
-    quick(); teams(); players(); injuries(); moves(); sources();
+    quick(); teams(); players(); injuries(); moves();
     $('r4p-team').addEventListener('change', teams);
     $('r4p-pteam').addEventListener('change', players);
     $('r4p-q').addEventListener('input', players);
