@@ -14,12 +14,13 @@ def load(name):
 
 
 players, teams, moves, sources = load("players"), load("teams"), load("moves"), load("sources")
+quickhits = load("quickhits")
 src = {s["id"]: s for s in sources}
 injuries = [p for p in players if p["status"] and p["status"].lower() != "healthy"]
 updated = date.today().isoformat()
 
 db = {"updated": updated, "players": players, "teams": teams, "injuries": injuries,
-      "moves": moves, "sources": sources}
+      "moves": moves, "sources": sources, "quickhits": quickhits}
 with open(os.path.join(D, "db.json"), "w", encoding="utf-8") as f:
     json.dump(db, f, indent=1, ensure_ascii=False)
 
