@@ -144,11 +144,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   var db = null, srcById = {};
   function $(id){ return document.getElementById(id); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  function srcLink(id){
-    var s = srcById[id];
-    if (!s) return '';
-    return '<div class="src">From: <a href="' + esc(s.url) + '" rel="noopener" target="_blank">' + esc(s.show) + ', ' + esc(s.date) + '</a></div>';
-  }
+  function srcLink(id){ return ''; }
   function tm(code){ return code ? '<span class="tm">' + esc(code) + '</span>' : ''; }
 
   function fetchFirst(urls, asText){
