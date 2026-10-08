@@ -49,7 +49,6 @@
     <select id="team"><option value="">All teams</option></select>
     <button class="btn" id="copy">Copy for AI</button>
     <button class="btn" id="dl">Download this tab</button>
-    <a class="btn" href="ai.txt" target="_blank" rel="noopener">AI text link</a>
   </div>
   <div class="msg" id="msg"></div>
   <div class="count" id="count"></div>
@@ -61,8 +60,7 @@ const TABS = {
   players:  { label:"Players",  cols:[["player","Player"],["team","Team"],["role","Role"],["minutes","Minutes"],["usage","Usage"],["status","Health"],["note","Note"]] },
   teams:    { label:"Teams",    cols:[["team","Team"],["starters","Projected starters"],["bench","Bench order"],["backup_c","Backup C"],["coach","Coach"],["notes","Notes"]] },
   injuries: { label:"Injuries", cols:[["player","Player"],["team","Team"],["status","Health"],["note","Note"]] },
-  moves:    { label:"Moves",    cols:[["player","Player"],["from","From"],["to","To"],["type","Type"],["note","Note"]] },
-  sources:  { label:"Sources",  cols:[["date","Date"],["show","Show"],["title","Episode"],["url","Link"]] }
+  moves:    { label:"Moves",    cols:[["player","Player"],["from","From"],["to","To"],["type","Type"],["note","Note"]] }
 };
 let db = null, tab = "players";
 const NAMES = {ATL:"Atlanta Hawks",BOS:"Boston Celtics",BKN:"Brooklyn Nets",CHA:"Charlotte Hornets",CHI:"Chicago Bulls",CLE:"Cleveland Cavaliers",DAL:"Dallas Mavericks",DEN:"Denver Nuggets",DET:"Detroit Pistons",GSW:"Golden State Warriors",HOU:"Houston Rockets",IND:"Indiana Pacers",LAC:"LA Clippers",LAL:"Los Angeles Lakers",MEM:"Memphis Grizzlies",MIA:"Miami Heat",MIL:"Milwaukee Bucks",MIN:"Minnesota Timberwolves",NOP:"New Orleans Pelicans",NYK:"New York Knicks",OKC:"Oklahoma City Thunder",ORL:"Orlando Magic",PHI:"Philadelphia 76ers",PHX:"Phoenix Suns",POR:"Portland Trail Blazers",SAC:"Sacramento Kings",SAS:"San Antonio Spurs",TOR:"Toronto Raptors",UTA:"Utah Jazz",WAS:"Washington Wizards"};
@@ -89,7 +87,7 @@ function render() {
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === tab));
   const cols = TABS[tab].cols;
   const showSrc = tab !== "sources";
-  $("tbl").tHead.innerHTML = "<tr>" + cols.map(c => `<th>${c[1]}</th>`).join("") + (showSrc ? "<th>From episode</th>" : "") + "</tr>";
+  $("tbl").tHead.innerHTML = "<tr>" + cols.map(c => `<th>${c[1]}</th>`).join("") + "" + "</tr>";
   const list = rows();
   $("count").textContent = `${list.length} of ${db[tab].length} rows`;
   $("tbl").tBodies[0].innerHTML = list.map(r => {
@@ -99,18 +97,16 @@ function render() {
       return `<td data-label="${label}">${v}</td>`;
     }).join("");
     let s = "";
-    if (showSrc) { const so = srcFor(r); s = `<td class="small" data-label="From episode">${so ? `<a href="${esc(so.url)}" target="_blank" rel="noopener">${esc(so.date)}</a>` : ""}</td>`; }
     return `<tr>${cells}${s}</tr>`;
   }).join("");
 }
 
 function csvOf(list) {
   const cols = TABS[tab].cols.map(c => c[0]);
-  const head = tab === "sources" ? cols : cols.concat(["source_date","source_url"]);
+  const head = cols;
   const q = v => `"${String(v ?? "").replace(/"/g,'""')}"`;
   const lines = [head.join(",")].concat(list.map(r => {
     const base = cols.map(c => q(r[c]));
-    if (tab !== "sources") { const so = srcFor(r) || {}; base.push(q(so.date), q(so.url)); }
     return base.join(",");
   }));
   return lines.join("\n");
@@ -131,7 +127,7 @@ $("copy").onclick = async () => {
     await navigator.clipboard.writeText(txt);
     $("msg").textContent = "Copied the whole database as text. Paste it into any AI chat.";
   } catch (e) {
-    $("msg").innerHTML = 'Copy was blocked by your browser. Open the <a href="ai.txt" target="_blank">AI text link</a> and copy from there.';
+    $("msg").textContent = 'Copy was blocked by your browser. Please try again.';
   }
 };
 
@@ -140,7 +136,7 @@ $("team").onchange = render;
 
 fetch("data/db.json", { cache:"no-store" }).then(r => r.json()).then(d => {
   db = d;
-  $("sub").textContent = `Updated ${d.updated} · ${d.players.length} players · ${d.teams.length} teams · built from ${d.sources.length} podcast episodes (host opinions, not official news)`;
+  $("sub").textContent = `Updated ${d.updated} · ${d.players.length} players · ${d.teams.length} teams · projections are opinions, not official news`;
   $("tabs").innerHTML = Object.entries(TABS).map(([k,v]) => `<button data-t="${k}">${v.label}</button>`).join("");
   document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => { tab = b.dataset.t; render(); });
   const teams = [...new Set(d.teams.map(t => t.team).concat(d.players.map(p => p.team)))].filter(Boolean).sort();

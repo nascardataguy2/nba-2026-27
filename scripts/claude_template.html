@@ -64,8 +64,7 @@ const TABS = {
   players:  { label:"Players",  cols:[["player","Player"],["team","Team"],["role","Role"],["minutes","Minutes"],["usage","Usage"],["status","Health"],["note","Note"]] },
   teams:    { label:"Teams",    cols:[["team","Team"],["starters","Projected starters"],["bench","Bench order"],["backup_c","Backup C"],["coach","Coach"],["notes","Notes"]] },
   injuries: { label:"Injuries", cols:[["player","Player"],["team","Team"],["status","Health"],["note","Note"]] },
-  moves:    { label:"Moves",    cols:[["player","Player"],["from","From"],["to","To"],["type","Type"],["note","Note"]] },
-  sources:  { label:"Sources",  cols:[["date","Date"],["show","Show"],["title","Episode"],["url","Link"]] }
+  moves:    { label:"Moves",    cols:[["player","Player"],["from","From"],["to","To"],["type","Type"],["note","Note"]] }
 };
 let tab = "players";
 const $ = id => document.getElementById(id);
@@ -85,7 +84,7 @@ function rows() {
 function render() {
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === tab));
   const cols = TABS[tab].cols, showSrc = tab !== "sources";
-  $("tbl").tHead.innerHTML = "<tr>" + cols.map(c => `<th>${c[1]}</th>`).join("") + (showSrc ? "<th>From episode</th>" : "") + "</tr>";
+  $("tbl").tHead.innerHTML = "<tr>" + cols.map(c => `<th>${c[1]}</th>`).join("") + "" + "</tr>";
   const list = rows();
   $("count").textContent = `${list.length} of ${db[tab].length} rows`;
   $("tbl").tBodies[0].innerHTML = list.map(r => {
@@ -94,7 +93,6 @@ function render() {
       return `<td data-label="${label}">${v}</td>`;
     }).join("");
     let s = "";
-    if (showSrc) { const so = srcFor(r); s = `<td class="small" data-label="From episode">${so ? `<a href="${esc(so.url)}" target="_blank" rel="noopener">${esc(so.date)}</a>` : ""}</td>`; }
     return `<tr>${cells}${s}</tr>`;
   }).join("");
 }
@@ -110,7 +108,7 @@ $("copy").onclick = () => {
 $("q").oninput = render;
 $("team").onchange = render;
 
-$("sub").textContent = `Updated ${db.updated} · ${db.players.length} players · ${db.teams.length} teams · built from ${db.sources.length} podcast episodes (host opinions, not official news)`;
+$("sub").textContent = `Updated ${db.updated} · ${db.players.length} players · ${db.teams.length} teams · projections are opinions, not official news`;
 $("tabs").innerHTML = Object.entries(TABS).map(([k,v]) => `<button data-t="${k}">${v.label}</button>`).join("");
 document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => { tab = b.dataset.t; render(); });
 const teams = [...new Set(db.teams.map(t => t.team).concat(db.players.map(p => p.team)))].filter(Boolean).sort();
