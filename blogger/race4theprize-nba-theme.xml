@@ -126,7 +126,6 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
     <p class='sub'>Every fact on this site comes from one of these episodes, read in full. Projections are the hosts' opinions, not official team news.</p>
     <div class='toolbar' style='margin-top:12px'>
       <button class='btn solid' id='r4p-copy' type='button'>Copy all data for AI</button>
-      <a class='btn' href='https://nascardataguy2.github.io/nba-2026-27/ai.txt' id='r4p-ailink' rel='noopener' target='_blank'>AI text link</a>
     </div>
     <div class='msg' id='r4p-msg'></div>
     <div class='cards' id='r4p-srccards'></div>
@@ -281,7 +280,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
     }).then(function(){
       msg.textContent = 'Copied. Paste it into any AI chat.';
     }).catch(function(){
-      msg.innerHTML = 'Your browser blocked copying. Open the AI text link and copy from there.';
+      msg.textContent = 'Your browser blocked copying. Please try again.';
     });
   });
 
