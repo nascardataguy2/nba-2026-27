@@ -130,7 +130,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 </div>
 
 <footer>
-  <div class='wrap'>Race4thePrize &#183; NBA DFS Database. Built from podcast episodes that were read in full; every fact links to its source. Projections are opinions, not official news.</div>
+  <div class='wrap'>Race4thePrize &#183; NBA DFS Database. Projections are opinions, not official news.</div>
 </footer>
 
 <script>
@@ -255,7 +255,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   fetchFirst(SOURCES, false).then(function(d){
     db = d;
     d.sources.forEach(function(s){ srcById[s.id] = s; });
-    $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams \u00b7 built from ' + d.sources.length + ' podcast episodes';
+    $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams';
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
     quick(); teams(); players(); injuries(); moves();
     $('r4p-team').addEventListener('change', teams);
