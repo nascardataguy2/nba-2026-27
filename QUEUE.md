@@ -33,4 +33,5 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 
 ## Favicon rule (user request, 10/9)
 - The live nbadfs.com theme has two favicon `<link>` lines that Grok added right after `<b:include data='blog' name='all-head-content'/>`, pointing to the Blogger-hosted `.../s256/nbadfs-favicon-3.png`. The embedded data-URI favicon did not work.
+- Grok's two lines (now in blogger/race4theprize-nba-theme.xml, right after all-head-content): the apple-touch-icon 180x180 link and the icon 192x192 link to the Blogger-hosted nbadfs-favicon-3.png. Keep both exactly as they are, keep the all-head-content line, and keep the old data:image/png;base64 icon line unless the user says to drop it.
 - Any theme code given to the user must keep Grok's two favicon lines. Get the exact lines from the user/Grok before handing over new theme code, and never send a full-theme replacement without them.
