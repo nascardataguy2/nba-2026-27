@@ -30,3 +30,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 ## Ranking sources (stored, not on the site yet)
 - `data/rankings/nba-top250-points-2026-27.csv` / `.json`: NBA.com Top 250 points-league rankings (published 9/29/2026), added 10/9. Base for the planned preseason ranking tab. Not built yet; wait for the user's go.
 - Conflict to resolve: Mikel Brown Jr. is BKN in our player data but FA on the NBA.com list.
+
+## Favicon rule (user request, 10/9)
+- The live nbadfs.com theme has two favicon `<link>` lines that Grok added right after `<b:include data='blog' name='all-head-content'/>`, pointing to the Blogger-hosted `.../s256/nbadfs-favicon-3.png`. The embedded data-URI favicon did not work.
+- Any theme code given to the user must keep Grok's two favicon lines. Get the exact lines from the user/Grok before handing over new theme code, and never send a full-theme replacement without them.
