@@ -62,6 +62,7 @@ const AI = document.getElementById("aitext").textContent;
 const NAMES = {ATL:"Atlanta Hawks",BOS:"Boston Celtics",BKN:"Brooklyn Nets",CHA:"Charlotte Hornets",CHI:"Chicago Bulls",CLE:"Cleveland Cavaliers",DAL:"Dallas Mavericks",DEN:"Denver Nuggets",DET:"Detroit Pistons",GSW:"Golden State Warriors",HOU:"Houston Rockets",IND:"Indiana Pacers",LAC:"LA Clippers",LAL:"Los Angeles Lakers",MEM:"Memphis Grizzlies",MIA:"Miami Heat",MIL:"Milwaukee Bucks",MIN:"Minnesota Timberwolves",NOP:"New Orleans Pelicans",NYK:"New York Knicks",OKC:"Oklahoma City Thunder",ORL:"Orlando Magic",PHI:"Philadelphia 76ers",PHX:"Phoenix Suns",POR:"Portland Trail Blazers",SAC:"Sacramento Kings",SAS:"San Antonio Spurs",TOR:"Toronto Raptors",UTA:"Utah Jazz",WAS:"Washington Wizards"};
 const TABS = {
   players:  { label:"Players",  cols:[["player","Player"],["team","Team"],["role","Role"],["minutes","Minutes"],["usage","Usage"],["status","Health"],["note","Note"]] },
+  rankings: { label:"Rankings", cols:[["rank","Rank"],["player","Player"],["pos","Pos"],["team","Team"],["change","Change"],["note","Note"]] },
   teams:    { label:"Teams",    cols:[["team","Team"],["starters","Projected starters"],["bench","Bench order"],["backup_c","Backup C"],["coach","Coach"],["notes","Notes"]] },
   injuries: { label:"Injuries", cols:[["player","Player"],["team","Team"],["status","Health"],["note","Note"]] },
   moves:    { label:"Moves",    cols:[["player","Player"],["from","From"],["to","To"],["type","Type"],["note","Note"]] }

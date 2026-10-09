@@ -69,6 +69,18 @@ main.wrap{padding-top:18px;padding-bottom:40px}
 .pill.hurt{background:#fbe9ea;border-color:#f2c4c7;color:var(--bad)}
 .pill.start{background:#e8f4ee;border-color:#c3e3d1;color:var(--good)}
 .loading{color:var(--muted);padding:20px 0}
+/* Rankings */
+.rk{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.rk-row{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 12px;padding:10px 14px;border-top:1px solid var(--line)}
+.rk-row:first-child{border-top:none}
+.rk-n{font:800 26px/1 var(--head);color:var(--navy);text-align:right;padding-top:2px}
+.rk-name{font-weight:700;font-size:16px}
+.rk-pos{font:700 12px/1 var(--head);letter-spacing:.06em;color:var(--muted);margin-left:6px}
+.rk-row .tm{display:inline-block;font:700 12px/1 var(--head);letter-spacing:.08em;background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:3px 5px;margin-left:6px;vertical-align:2px;color:var(--muted)}
+.rk-note{grid-column:2;font-size:14px;color:var(--ink);margin:0;overflow-wrap:anywhere}
+.tag{display:inline-block;font:700 12px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 8px;margin-left:6px;vertical-align:2px}
+.tag.up{background:#e8f4ee;color:var(--good)} .tag.down,.tag.out{background:#fbe9ea;color:var(--bad)} .tag.rest{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
+@media (max-width:600px){.rk-row{grid-template-columns:40px minmax(0,1fr);padding:10px}.rk-n{font-size:22px}}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 footer .wrap{padding-top:14px;padding-bottom:24px}
 /* Blogger posts area (shown only off the homepage) */
@@ -95,6 +107,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 <nav class='tabs' aria-label='Sections'>
   <div class='wrap' id='r4p-tabs'>
     <button class='tab on' data-v='quick' type='button'>Quick Hits</button>
+    <button class='tab' data-v='ranks' type='button'>Rankings</button>
     <button class='tab' data-v='teams' type='button'>Teams</button>
     <button class='tab' data-v='players' type='button'>Players</button>
     <button class='tab' data-v='injuries' type='button'>Injuries</button>
@@ -104,6 +117,16 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 
 <main class='wrap' id='r4p-app'>
   <section class='view' id='v-quick'><div class='loading'>Loading quick hits&#8230;</div></section>
+  <section class='view' hidden='hidden' id='v-ranks'>
+    <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research.</p>
+    <div class='toolbar'>
+      <input aria-label='Search rankings' id='r4p-rq' placeholder='Search a player or team' type='search'/>
+      <select aria-label='Position' id='r4p-rpos'><option value=''>All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>
+      <select aria-label='Tag' id='r4p-rflag'><option value=''>All players</option><option value='up'>Role up</option><option value='down'>Role down</option><option value='out'>Out to start</option><option value='rest'>Rest watch</option></select>
+    </div>
+    <div class='count' id='r4p-rcount'></div>
+    <div class='rk' id='r4p-ranklist'></div>
+  </section>
   <section class='view' hidden='hidden' id='v-teams'>
     <div class='toolbar'><select aria-label='Team' id='r4p-team'><option value=''>All teams</option></select></div>
     <div class='cards' id='r4p-teamcards'></div>
@@ -177,6 +200,23 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
       panel('out', 'Out to Start the Season', 'Known injuries as of the latest episodes.', q.out_to_start, simple) +
       '</div>';
     $('v-quick').innerHTML = html;
+  }
+
+  function ranks(){
+    var q = $('r4p-rq').value.trim().toLowerCase(), pos = $('r4p-rpos').value, fl = $('r4p-rflag').value;
+    var all = db.rankings || [];
+    var list = all.filter(function(r){
+      if (pos && (',' + r.pos.replace(/\s/g,'') + ',').indexOf(',' + pos + ',') < 0) return false;
+      if (fl && r.flag !== fl) return false;
+      if (!q) return true;
+      return (r.player + ' ' + r.team + ' ' + (NAMES[r.team] || '')).toLowerCase().indexOf(q) > -1;
+    });
+    $('r4p-rcount').textContent = list.length + ' of ' + all.length + ' players';
+    $('r4p-ranklist').innerHTML = list.map(function(r){
+      return '<div class="rk-row"><div class="rk-n">' + r.rank + '</div><div><span class="rk-name">' + esc(r.player) + '</span>' + tm(r.team) + '<span class="rk-pos">' + esc(r.pos) + '</span>' +
+        (r.flag ? '<span class="tag ' + esc(r.flag) + '">' + esc(r.change) + '</span>' : '') + '</div>' +
+        (r.note ? '<p class="rk-note">' + esc(r.note) + '</p>' : '') + '</div>';
+    }).join('') || '<div class="rk-row"><div></div><p class="rk-note">No players match.</p></div>';
   }
 
   function teamOptions(sel){
@@ -257,7 +297,10 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams';
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
-    quick(); teams(); players(); injuries(); moves();
+    quick(); ranks(); teams(); players(); injuries(); moves();
+    $('r4p-rq').addEventListener('input', ranks);
+    $('r4p-rpos').addEventListener('change', ranks);
+    $('r4p-rflag').addEventListener('change', ranks);
     $('r4p-team').addEventListener('change', teams);
     $('r4p-pteam').addEventListener('change', players);
     $('r4p-q').addEventListener('input', players);

@@ -16,11 +16,36 @@ def load(name):
 players, teams, moves, sources = load("players"), load("teams"), load("moves"), load("sources")
 quickhits = load("quickhits")
 src = {s["id"]: s for s in sources}
+# Preseason rankings: NBA.com Top 250 order, flagged with role/health notes from our episodes.
+import unicodedata
+def norm(s):
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower().replace("\u2019", "'").replace(".", "").strip()
+    for suf in (" iii", " ii", " jr"):
+        if s.endswith(suf):
+            s = s[: -len(suf)]
+    return s
+with open(os.path.join(D, "rankings", "nba-top250-points-2026-27.json"), encoding="utf-8") as f:
+    base = json.load(f)
+pnote = {norm(p["player"]): p for p in players}
+flags = {}
+for key, flag in (("out_to_start", "out"), ("role_down", "down"), ("rest_watch", "rest"), ("role_up", "up")):
+    for it in quickhits.get(key, []):
+        flags.setdefault(norm(it["player"]), (flag, it["text"]))
+rankings = []
+for r in base["rows"]:
+    k = norm(r["player"])
+    flag, text = flags.get(k, ("", ""))
+    if not text and k in pnote:
+        text = pnote[k]["note"]
+    rankings.append({"rank": r["rank"], "player": r["player"], "pos": r["pos"], "team": r["team"],
+                     "flag": flag, "change": {"up": "Role up", "down": "Role down", "out": "Out to start", "rest": "Rest watch"}.get(flag, ""), "note": text, "source": "NBA-0929"})
+
 injuries = [p for p in players if p["status"] and p["status"].lower() != "healthy"]
 updated = date.today().isoformat()
 
 db = {"updated": updated, "players": players, "teams": teams, "injuries": injuries,
-      "moves": moves, "sources": sources, "quickhits": quickhits}
+      "moves": moves, "sources": sources, "quickhits": quickhits, "rankings": rankings}
 with open(os.path.join(D, "db.json"), "w", encoding="utf-8") as f:
     json.dump(db, f, indent=1, ensure_ascii=False)
 
@@ -37,6 +62,7 @@ def write_csv(name, rows, cols):
 write_csv("players", players, ["player", "team", "role", "minutes", "usage", "status", "note"])
 write_csv("teams", teams, ["team", "starters", "bench", "backup_c", "coach", "notes"])
 write_csv("injuries", injuries, ["player", "team", "status", "note"])
+write_csv("rankings", rankings, ["rank", "player", "pos", "team", "change", "note"])
 write_csv("moves", moves, ["player", "from", "to", "type", "note"])
 
 # Plain-text version for pasting into any AI chat.
