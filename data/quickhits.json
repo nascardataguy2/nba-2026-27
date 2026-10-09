@@ -15,8 +15,8 @@
   {
    "player": "Coby White",
    "team": "CHA",
-   "text": "He takes over at point guard in Charlotte with LaMelo Ball gone, with a floor of about 32 minutes.",
-   "source": "LO-0720"
+   "text": "He takes over at point guard in Charlotte with LaMelo Ball gone and should play about 30 minutes.",
+   "source": "LO-0927"
   },
   {
    "player": "Naz Reid",
@@ -89,6 +89,36 @@
    "team": "DAL",
    "text": "The rookie projects as a Dallas starter while Dereck Lively II is out.",
    "source": "LO-0929"
+  },
+  {
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "text": "Tobias Harris is gone, and his minutes should go above 26 with more assists and usage.",
+   "source": "LO-1003"
+  },
+  {
+   "player": "Paul Reed",
+   "team": "DET",
+   "text": "He moves up to backup center with Isaiah Stewart gone, at about 20 minutes.",
+   "source": "LO-1003"
+  },
+  {
+   "player": "Rui Hachimura",
+   "team": "LAC",
+   "text": "With Brandon Ingram out, he projects for 30 or more minutes and higher usage.",
+   "source": "LO-1004"
+  },
+  {
+   "player": "Max Strus",
+   "team": "LAC",
+   "text": "He should start for the Clippers at about 32 minutes after playing 24 last season.",
+   "source": "LO-1004"
+  },
+  {
+   "player": "Day’Ron Sharpe",
+   "team": "BKN",
+   "text": "He moves into the starting center job at about 24 minutes after playing 19 last season.",
+   "source": "LO-0926"
   }
  ],
  "role_down": [
@@ -145,6 +175,24 @@
    "team": "DAL",
    "text": "He drops to a low-20s bench role in Dallas after 28 minutes in Memphis.",
    "source": "LO-0929"
+  },
+  {
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "text": "Haliburton is back, so about half of his 7.7 assists should go away.",
+   "source": "LO-1002"
+  },
+  {
+   "player": "Brook Lopez",
+   "team": "LAC",
+   "text": "He loses the starting center job to Isaiah Jackson and moves to the bench.",
+   "source": "LO-1004"
+  },
+  {
+   "player": "Duncan Robinson",
+   "team": "DET",
+   "text": "He keeps his starting job, but his minutes could fall to 24-25 with Huerter and Joe added.",
+   "source": "LO-1003"
   }
  ],
  "if_sits": [
@@ -231,6 +279,48 @@
    "benefits": "Charles Bassey",
    "text": "Bassey becomes a streamer when both bigs sit.",
    "source": "LO-1001b"
+  },
+  {
+   "out": "Cade Cunningham",
+   "team": "DET",
+   "benefits": "Daniss Jenkins",
+   "text": "Jenkins averaged 15 points and 7 assists in 31 minutes when Cade sat late last season.",
+   "source": "LO-1003"
+  },
+  {
+   "out": "Jalen Duren",
+   "team": "DET",
+   "benefits": "Paul Reed",
+   "text": "Reed takes the center minutes.",
+   "source": "LO-1003"
+  },
+  {
+   "out": "Tyrese Haliburton",
+   "team": "IND",
+   "benefits": "Andrew Nembhard",
+   "text": "Nembhard averaged 17 points and 7.7 assists with Haliburton out last season.",
+   "source": "LO-1002"
+  },
+  {
+   "out": "Ivica Zubac",
+   "team": "IND",
+   "benefits": "Jay Huff",
+   "text": "Huff would start at center.",
+   "source": "LO-1002"
+  },
+  {
+   "out": "Pascal Siakam",
+   "team": "IND",
+   "benefits": "Obi Toppin",
+   "text": "Toppin would start at power forward.",
+   "source": "LO-1002"
+  },
+  {
+   "out": "Kon Knueppel",
+   "team": "CHA",
+   "benefits": "Grayson Allen",
+   "text": "Allen starts while Knueppel is out.",
+   "source": "LO-0927"
   }
  ],
  "rest_watch": [
@@ -275,6 +365,18 @@
    "team": "DEN",
    "text": "Denver is expected to be cautious after his hamstring and calf injuries.",
    "source": "LO-0930"
+  },
+  {
+   "player": "Julius Randle",
+   "team": "BKN",
+   "text": "Brooklyn could sit him for about a third of March games.",
+   "source": "LO-0926"
+  },
+  {
+   "player": "Tyrese Haliburton",
+   "team": "IND",
+   "text": "He is back from a torn Achilles, and his minutes are expected to be limited early.",
+   "source": "LO-1002"
   }
  ],
  "out_to_start": [
@@ -317,8 +419,8 @@
   {
    "player": "Jordan Miller",
    "team": "LAC",
-   "text": "Torn rotator cuff; out until after the All-Star break.",
-   "source": "LO-0827"
+   "text": "Torn shoulder labrum; out for most of the regular season.",
+   "source": "LO-1004"
   },
   {
    "player": "Jayden Quaintance",
@@ -331,6 +433,42 @@
    "team": "ATL",
    "text": "Torn ACL; out for the season.",
    "source": "LO-0925"
+  },
+  {
+   "player": "Brandon Ingram",
+   "team": "LAC",
+   "text": "Partially torn Achilles; a return around Christmas is the guess, with limits after that.",
+   "source": "LO-1004"
+  },
+  {
+   "player": "Bradley Beal",
+   "team": "LAC",
+   "text": "Hip fracture last season and knee soreness now; no timeline.",
+   "source": "LO-1004"
+  },
+  {
+   "player": "Yanic Konan Niederhauser",
+   "team": "LAC",
+   "text": "Broken foot; a return around Thanksgiving to Christmas is the guess.",
+   "source": "LO-1004"
+  },
+  {
+   "player": "Johnny Furphy",
+   "team": "IND",
+   "text": "Torn ACL; maybe back halfway through the season.",
+   "source": "LO-1002"
+  },
+  {
+   "player": "Kon Knueppel",
+   "team": "CHA",
+   "text": "Hamstring; re-evaluated in week one and likely misses a game or two.",
+   "source": "LO-0927"
+  },
+  {
+   "player": "Grant Williams",
+   "team": "CHA",
+   "text": "Hamstring; re-evaluated in week one.",
+   "source": "LO-0927"
   }
  ]
 }
