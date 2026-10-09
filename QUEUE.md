@@ -26,3 +26,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Every chunk also updates `data/quickhits.json` (If He Sits, Role Up, Role Down, Rest Watch, Out to Start) with any new facts from that chunk's episodes, then purges the jsDelivr cache using the WebFetch tool (curl is blocked) (https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/db.json and .../ai.txt) so the Blogger site shows the update.
 - The Blogger theme lives in `blogger/race4theprize-nba-theme.xml`. It loads data/db.json from GitHub Pages (falling back to jsDelivr), so the theme itself does not need re-uploading when data changes.
 - Writing style for all public notes (players, teams, quickhits, moves): never name hosts, shows or episodes in the note text (no "Josh Lloyd thinks", no "the 8/27 episode"). State the projection plainly ("He is expected to start", "a return around Thanksgiving is the guess"). Sources stay only in the hidden `source` id field.
+
+## Ranking sources (stored, not on the site yet)
+- `data/rankings/nba-top250-points-2026-27.csv` / `.json`: NBA.com Top 250 points-league rankings (published 9/29/2026), added 10/9. Base for the planned preseason ranking tab. Not built yet; wait for the user's go.
+- Conflict to resolve: Mikel Brown Jr. is BKN in our player data but FA on the NBA.com list.
