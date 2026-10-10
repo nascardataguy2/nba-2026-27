@@ -41,11 +41,43 @@ for r in base["rows"]:
     rankings.append({"rank": r["rank"], "player": r["player"], "pos": r["pos"], "team": r["team"],
                      "flag": flag, "change": {"up": "Role up", "down": "Role down", "out": "Out to start", "rest": "Rest watch"}.get(flag, ""), "note": text, "source": "NBA-0929"})
 
+# Picks tab: last season's badges, with current team and role from our database.
+import base64
+from PIL import Image as _Img
+import io as _io
+with open(os.path.join(D, "badges.json"), encoding="utf-8") as f:
+    badge_src = json.load(f)
+rank_team = {norm(r["player"]): r["team"] for r in base["rows"] if r["team"] != "FA"}
+def role_of(r):
+    s = (r or "").lower()
+    if not s:
+        return ""
+    if "injur" in s:
+        return "Out"
+    if s.startswith("starter") and " or " not in s:
+        return "Starter"
+    if "6th" in s:
+        return "Sixth man"
+    return "Bench"
+picks = []
+for b in badge_src["players"]:
+    k = norm(b["player"])
+    mine = pnote.get(k)
+    team = (mine or {}).get("team") or rank_team.get(k) or b["last_team"]
+    picks.append({"player": b["player"], "team": team, "pos": b["pos"], "role": role_of((mine or {}).get("role")),
+                  "min": b["min"], "usg": b["usg"], "threes": b["threes"], "reb": b["reb"], "ast": b["ast"],
+                  "stocks": b["stocks"], "badges": b["badges"], "ranks": b.get("ranks", {})})
+badge_icons = {}
+for n in ("minutes", "usage", "threes", "rebounds", "assists", "stocks"):
+    im = _Img.open(os.path.join(ROOT, "assets", "badges", "badge-" + n + ".png")).convert("RGBA").resize((64, 64), _Img.LANCZOS)
+    buf = _io.BytesIO(); im.save(buf, "PNG", optimize=True)
+    badge_icons[n] = "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+
 injuries = [p for p in players if p["status"] and p["status"].lower() != "healthy"]
 updated = date.today().isoformat()
 
 db = {"updated": updated, "players": players, "teams": teams, "injuries": injuries,
-      "moves": moves, "sources": sources, "quickhits": quickhits, "rankings": rankings}
+      "moves": moves, "sources": sources, "quickhits": quickhits, "rankings": rankings, "picks": picks, "badge_icons": badge_icons, "picks_rule": badge_src["rule"] + " (" + badge_src["season"] + " season)"}
 with open(os.path.join(D, "db.json"), "w", encoding="utf-8") as f:
     json.dump(db, f, indent=1, ensure_ascii=False)
 

@@ -73,6 +73,30 @@ main.wrap{padding-top:18px;padding-bottom:40px}
 .pill.hurt{background:#fbe9ea;border-color:#f2c4c7;color:var(--bad)}
 .pill.start{background:#e8f4ee;border-color:#c3e3d1;color:var(--good)}
 .loading{color:var(--muted);padding:20px 0}
+/* Picks */
+.bfilter{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 0 10px;padding-bottom:2px}
+.bfilter::-webkit-scrollbar{display:none}
+.bf{flex:0 0 auto;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 12px 4px 4px;font:700 13px/1 var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+.bf img{width:26px;height:26px;display:block}
+.bf.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.pk{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.pk-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:9px 14px;border-top:1px solid var(--line)}
+.pk-row:first-child{border-top:none}
+.pk-who{flex:1 1 240px;min-width:0}
+.pk-name{font-weight:700;font-size:16px}
+.pk-pos{font:700 12px/1 var(--head);letter-spacing:.06em;color:var(--muted);margin-left:6px}
+.pk-num{font:700 15px/1 var(--head);color:var(--navy);letter-spacing:.04em;white-space:nowrap;min-width:64px;text-align:right}
+.pk-badges{display:flex;gap:4px;flex-wrap:wrap}
+.bdg{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.bdg img{width:28px;height:28px;display:block}
+.bdg.gold{background:#E8B21E}
+.bdg.silver{background:#E2E5EA}
+.role{display:inline-block;font:700 11px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;border-radius:4px;padding:4px 6px;margin-left:6px;vertical-align:2px;border:1px solid var(--line);background:var(--soft);color:var(--muted)}
+.role.starter{background:#e8f4ee;border-color:#c3e3d1;color:var(--good)}
+.role.sixth{background:#fff4e0;border-color:#f3d9a8;color:#9a5b00}
+.role.out{background:#fbe9ea;border-color:#f2c4c7;color:var(--bad)}
+#v-picks .toolbar select{flex:1 1 0;min-width:0;font-size:15px;padding:9px 8px}
+@media (max-width:600px){.pk-row{padding:9px 10px}.pk-num{min-width:0;text-align:left}}
 /* Rankings */
 .rk{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
 .rk-row{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 12px;padding:10px 14px;border-top:1px solid var(--line)}
@@ -110,6 +134,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 <nav class='tabs' aria-label='Sections'>
   <div class='wrap' id='r4p-tabs'>
     <button class='tab on' data-v='quick' type='button'>Quick Hits</button>
+    <button class='tab' data-v='picks' type='button'>Picks</button>
     <button class='tab' data-v='ranks' type='button'>Rankings</button>
     <button class='tab' data-v='teams' type='button'>Teams</button>
     <button class='tab' data-v='players' type='button'>Players</button>
@@ -120,6 +145,17 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 
 <main class='wrap' id='r4p-app'>
   <section class='view' id='v-quick'><div class='loading'>Loading quick hits&#8230;</div></section>
+  <section class='view' hidden='hidden' id='v-picks'>
+    <p class='sub' id='r4p-prule' style='margin:0 0 12px'>Badges come from last season&#39;s stats. Gold means top 10 in the league in that stat, and silver means 11 to 30.</p>
+    <div class='bfilter' id='r4p-bfilter'></div>
+    <div class='toolbar'>
+      <select aria-label='Sort' id='r4p-psort'><option value='badges'>Badges</option><option value='team'>By team</option><option value='min'>Minutes</option><option value='usg'>Usage</option><option value='threes'>Threes</option><option value='reb'>Rebounds</option><option value='ast'>Assists</option><option value='stocks'>Stocks</option></select>
+      <select aria-label='Team' id='r4p-pkteam'><option value=''>All teams</option></select>
+      <select aria-label='Role' id='r4p-prole'><option value=''>All roles</option><option value='Starter'>Starters</option><option value='Sixth man'>Sixth man</option><option value='Bench'>Bench</option></select>
+    </div>
+    <div class='count' id='r4p-pcount'></div>
+    <div class='pk' id='r4p-picklist'></div>
+  </section>
   <section class='view' hidden='hidden' id='v-ranks'>
     <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research.</p>
     <div class='toolbar'>
@@ -210,6 +246,60 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
       panel('out', 'Out to Start the Season', 'Known injuries as of the latest episodes.', q.out_to_start, simple) +
       '</div>';
     $('v-quick').innerHTML = html;
+  }
+
+  var BADGES = [['minutes','Minutes','min','MIN'],['usage','Usage','usg','USG%'],['threes','Threes','threes','3PM'],['rebounds','Rebounds','reb','REB'],['assists','Assists','ast','AST'],['stocks','Stocks','stocks','STL+BLK']];
+  var bOn = {};
+  var ROLE_ORDER = {'Starter':0,'Sixth man':1,'Bench':2,'':3,'Out':4};
+  function roleTag(r){
+    if (!r) return '';
+    var c = r === 'Starter' ? 'starter' : (r === 'Sixth man' ? 'sixth' : (r === 'Out' ? 'out' : ''));
+    return '<span class="role ' + c + '">' + esc(r === 'Sixth man' ? '6th man' : r) + '</span>';
+  }
+  function countTier(p, tier){ var n = 0; for (var k in p.badges) if (p.badges[k] === tier) n++; return n; }
+  function picksInit(){
+    var icons = db.badge_icons || {};
+    $('r4p-bfilter').innerHTML = BADGES.map(function(b){
+      return '<button class="bf" data-b="' + b[0] + '" type="button"><img alt="" src="' + (icons[b[0]] || '') + '"/>' + b[1] + '</button>';
+    }).join('');
+    var btns = document.querySelectorAll('#r4p-bfilter .bf');
+    for (var i = 0; i < btns.length; i++) btns[i].addEventListener('click', function(){
+      var k = this.getAttribute('data-b'); bOn[k] = !bOn[k]; this.classList.toggle('on', !!bOn[k]); picks();
+    });
+    var codes = {};
+    (db.picks || []).forEach(function(p){ if (p.team) codes[p.team] = 1; });
+    Object.keys(codes).sort().forEach(function(c){
+      var o = document.createElement('option'); o.value = c; o.textContent = c + ' - ' + (NAMES[c] || c); $('r4p-pkteam').appendChild(o);
+    });
+    if (db.picks_rule) $('r4p-prule').textContent = 'Badges come from ' + db.picks_rule.replace('Gold = top 10, silver = 11-30, minimum 20 games', 'last season. Gold means top 10 in the league in that stat, silver means 11 to 30, and players needed 20 or more games') + '.';
+  }
+  function picks(){
+    var all = db.picks || [], icons = db.badge_icons || {};
+    var s = $('r4p-psort').value, t = $('r4p-pkteam').value, r = $('r4p-prole').value;
+    var list = all.filter(function(p){
+      if (t && p.team !== t) return false;
+      if (r && p.role !== r) return false;
+      for (var k in bOn) if (bOn[k] && !p.badges[k]) return false;
+      return true;
+    });
+    var byBadges = function(a, b){ return (countTier(b,'gold') - countTier(a,'gold')) || (countTier(b,'silver') - countTier(a,'silver')) || (b.min - a.min); };
+    if (s === 'badges') list.sort(byBadges);
+    else if (s === 'team') list.sort(function(a, b){ return (a.team < b.team ? -1 : a.team > b.team ? 1 : 0) || (ROLE_ORDER[a.role] - ROLE_ORDER[b.role]) || byBadges(a, b); });
+    else list.sort(function(a, b){ return b[s] - a[s]; });
+    var show = 'min', lab = 'MIN';
+    BADGES.forEach(function(b){ if (b[2] === s) { show = b[2]; lab = b[3]; } });
+    $('r4p-pcount').textContent = list.length + ' of ' + all.length + ' players with a badge';
+    $('r4p-picklist').innerHTML = list.map(function(p){
+      var bd = BADGES.map(function(b){
+        var tier = p.badges[b[0]];
+        if (!tier) return '';
+        var rk = p.ranks && p.ranks[b[0]] ? ' (No. ' + p.ranks[b[0]] + ')' : '';
+        var tip = (tier === 'gold' ? 'Gold ' : 'Silver ') + b[1] + rk;
+        return '<span class="bdg ' + tier + '" title="' + esc(tip) + '"><img alt="' + esc(tip) + '" src="' + (icons[b[0]] || '') + '"/></span>';
+      }).join('');
+      return '<div class="pk-row"><div class="pk-who"><span class="pk-name">' + esc(p.player) + '</span>' + tm(p.team) + roleTag(p.role) + '<span class="pk-pos">' + esc(p.pos) + '</span></div>' +
+        '<div class="pk-badges">' + bd + '</div><div class="pk-num">' + (Math.round(p[show] * 10) / 10).toFixed(1) + ' ' + lab + '</div></div>';
+    }).join('') || '<div class="pk-row"><div class="pk-who">No players match. Try turning off a badge filter.</div></div>';
   }
 
   function ranks(){
@@ -307,7 +397,10 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams';
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
-    quick(); ranks(); teams(); players(); injuries(); moves();
+    quick(); picksInit(); picks(); ranks(); teams(); players(); injuries(); moves();
+    $('r4p-psort').addEventListener('change', picks);
+    $('r4p-pkteam').addEventListener('change', picks);
+    $('r4p-prole').addEventListener('change', picks);
     $('r4p-rq').addEventListener('input', ranks);
     $('r4p-rpos').addEventListener('change', ranks);
     $('r4p-rflag').addEventListener('change', ranks);
