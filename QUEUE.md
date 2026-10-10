@@ -35,3 +35,11 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - The live nbadfs.com theme has two favicon `<link>` lines that Grok added right after `<b:include data='blog' name='all-head-content'/>`, pointing to the Blogger-hosted `.../s256/nbadfs-favicon-3.png`. The embedded data-URI favicon did not work.
 - Grok's two lines (now in blogger/race4theprize-nba-theme.xml, right after all-head-content): the apple-touch-icon 180x180 link and the icon 192x192 link to the Blogger-hosted nbadfs-favicon-3.png. Keep both exactly as they are, keep the all-head-content line, and keep the old data:image/png;base64 icon line unless the user says to drop it.
 - Any theme code given to the user must keep Grok's two favicon lines. Get the exact lines from the user/Grok before handing over new theme code, and never send a full-theme replacement without them.
+
+## Picks tab plan (agreed 10/9-10/10, not built yet)
+- Six badges from last season's player stats: Minutes, Usage, Threes, Rebounds, Assists, Stocks (steals plus blocks).
+- Gold = top 10 in the league in that stat, silver = 11 to 30, no badge otherwise. Rerun daily once the season's stats come in.
+- Icons are final in assets/badges (stopwatch, pig, flaming 3, backboard, basketball dime, padlock), with clear backgrounds.
+- Box style: solid filled rounded box. Gold fill #E8B21E, light silver fill #E2E5EA.
+- Tab must be tight: one compact row per player (name, team box, starter/bench, earned badges, one key number), default sort by most gold then silver badges, controls for Sort, Team and Role.
+- Data still needed: Grok pulls last season's Basketball-Reference per-game and advanced tables. Wait for the user's "go" before writing that request or any code.
