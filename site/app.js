@@ -36,10 +36,10 @@
       if (!items || !items.length) return '';
       return '<div class="panel ' + cls + '"><h2>' + title + '</h2><p class="hint">' + hint + '</p>' + items.map(fn).join('') + '</div>';
     }
-    function simple(it){ return '<div class="hit"><span class="who">' + esc(it.player) + '</span>' + tm(it.team) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>'; }
+    function simple(it){ return '<div class="hit"><span class="who">' + esc(it.player) + '</span>' + tm(it.team) + bdg(it.player) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>'; }
     var html = '<div class="grid">' +
       panel('sits', 'If He Sits, Who Benefits', 'Check this when late injury news drops before lock.', q.if_sits, function(it){
-        return '<div class="hit"><span class="who">' + esc(it.out) + '</span>' + tm(it.team) + ' <span class="arrow">\u2192</span> <span class="who">' + esc(it.benefits) + '</span><p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>';
+        return '<div class="hit"><span class="who">' + esc(it.out) + '</span>' + tm(it.team) + ' <span class="arrow">\u2192</span> <span class="who">' + esc(it.benefits) + '</span>' + bdg(it.benefits) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>';
       }) +
       panel('up', 'Role Up', 'New team or bigger job. Early-season prices often lag behind these changes.', q.role_up, simple) +
       panel('down', 'Role Down', 'Last season\u2019s numbers probably will not repeat.', q.role_down, simple) +
@@ -49,58 +49,35 @@
     $('v-quick').innerHTML = html;
   }
 
-  var BADGES = [['minutes','Minutes','min','MIN'],['usage','Usage','usg','USG%'],['threes','Threes','threes','3PM'],['rebounds','Rebounds','reb','REB'],['assists','Assists','ast','AST'],['stocks','Stocks','stocks','STL+BLK']];
-  var bOn = {};
-  var ROLE_ORDER = {'Starter':0,'Sixth man':1,'Bench':2,'':3,'Out':4};
-  function roleTag(r){
-    if (!r) return '';
-    var c = r === 'Starter' ? 'starter' : (r === 'Sixth man' ? 'sixth' : (r === 'Out' ? 'out' : ''));
-    return '<span class="role ' + c + '">' + esc(r === 'Sixth man' ? '6th man' : r) + '</span>';
+  var BADGES = [['minutes','Minutes'],['usage','Usage'],['threes','Threes'],['rebounds','Rebounds'],['assists','Assists'],['stocks','Stocks']];
+  var bOn = {}, BMAP = {};
+  function nkey(s){
+    s = String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[.']/g, '').replace(/\u2019/g, '').trim();
+    return s.replace(/ (iii|ii|jr)$/, '');
   }
-  function countTier(p, tier){ var n = 0; for (var k in p.badges) if (p.badges[k] === tier) n++; return n; }
-  function picksInit(){
+  function badgeInit(){
+    (db.picks || []).forEach(function(p){ BMAP[nkey(p.player)] = p; });
     var icons = db.badge_icons || {};
     $('r4p-bfilter').innerHTML = BADGES.map(function(b){
       return '<button class="bf" data-b="' + b[0] + '" type="button"><img alt="" src="' + (icons[b[0]] || '') + '"/>' + b[1] + '</button>';
     }).join('');
     var btns = document.querySelectorAll('#r4p-bfilter .bf');
     for (var i = 0; i < btns.length; i++) btns[i].addEventListener('click', function(){
-      var k = this.getAttribute('data-b'); bOn[k] = !bOn[k]; this.classList.toggle('on', !!bOn[k]); picks();
+      var k = this.getAttribute('data-b'); bOn[k] = !bOn[k]; this.classList.toggle('on', !!bOn[k]); ranks();
     });
-    var codes = {};
-    (db.picks || []).forEach(function(p){ if (p.team) codes[p.team] = 1; });
-    Object.keys(codes).sort().forEach(function(c){
-      var o = document.createElement('option'); o.value = c; o.textContent = c + ' - ' + (NAMES[c] || c); $('r4p-pkteam').appendChild(o);
-    });
-    if (db.picks_rule) $('r4p-prule').textContent = 'Badges come from ' + db.picks_rule.replace('Gold = top 10, silver = 11-30, minimum 20 games', 'last season. Gold means top 10 in the league in that stat, silver means 11 to 30, and players needed 20 or more games') + '.';
   }
-  function picks(){
-    var all = db.picks || [], icons = db.badge_icons || {};
-    var s = $('r4p-psort').value, t = $('r4p-pkteam').value, r = $('r4p-prole').value;
-    var list = all.filter(function(p){
-      if (t && p.team !== t) return false;
-      if (r && p.role !== r) return false;
-      for (var k in bOn) if (bOn[k] && !p.badges[k]) return false;
-      return true;
-    });
-    var byBadges = function(a, b){ return (countTier(b,'gold') - countTier(a,'gold')) || (countTier(b,'silver') - countTier(a,'silver')) || (b.min - a.min); };
-    if (s === 'badges') list.sort(byBadges);
-    else if (s === 'team') list.sort(function(a, b){ return (a.team < b.team ? -1 : a.team > b.team ? 1 : 0) || (ROLE_ORDER[a.role] - ROLE_ORDER[b.role]) || byBadges(a, b); });
-    else list.sort(function(a, b){ return b[s] - a[s]; });
-    var show = 'min', lab = 'MIN';
-    BADGES.forEach(function(b){ if (b[2] === s) { show = b[2]; lab = b[3]; } });
-    $('r4p-pcount').textContent = list.length + ' of ' + all.length + ' players with a badge';
-    $('r4p-picklist').innerHTML = list.map(function(p){
-      var bd = BADGES.map(function(b){
-        var tier = p.badges[b[0]];
-        if (!tier) return '';
-        var rk = p.ranks && p.ranks[b[0]] ? ' (No. ' + p.ranks[b[0]] + ')' : '';
-        var tip = (tier === 'gold' ? 'Gold ' : 'Silver ') + b[1] + rk;
-        return '<span class="bdg ' + tier + '" title="' + esc(tip) + '"><img alt="' + esc(tip) + '" src="' + (icons[b[0]] || '') + '"/></span>';
-      }).join('');
-      return '<div class="pk-row"><div class="pk-who"><span class="pk-name">' + esc(p.player) + '</span>' + tm(p.team) + roleTag(p.role) + '<span class="pk-pos">' + esc(p.pos) + '</span></div>' +
-        '<div class="pk-badges">' + bd + '</div><div class="pk-num">' + (Math.round(p[show] * 10) / 10).toFixed(1) + ' ' + lab + '</div></div>';
-    }).join('') || '<div class="pk-row"><div class="pk-who">No players match. Try turning off a badge filter.</div></div>';
+  function badgesOf(name){ var p = BMAP[nkey(name)]; return p ? p.badges : {}; }
+  function bdg(name){
+    var p = BMAP[nkey(name)], icons = db.badge_icons || {};
+    if (!p) return '';
+    var out = BADGES.map(function(b){
+      var tier = p.badges[b[0]];
+      if (!tier) return '';
+      var rk = p.ranks && p.ranks[b[0]] ? ' (No. ' + p.ranks[b[0]] + ')' : '';
+      var tip = (tier === 'gold' ? 'Gold ' : 'Silver ') + b[1] + rk;
+      return '<span class="bdg ' + tier + '" title="' + esc(tip) + '"><img alt="' + esc(tip) + '" src="' + (icons[b[0]] || '') + '"/></span>';
+    }).join('');
+    return out ? '<span class="bdgs">' + out + '</span>' : '';
   }
 
   function ranks(){
@@ -109,12 +86,14 @@
     var list = all.filter(function(r){
       if (pos && (',' + r.pos.replace(/\s/g,'') + ',').indexOf(',' + pos + ',') < 0) return false;
       if (fl && r.flag !== fl) return false;
+      var bb = badgesOf(r.player);
+      for (var k in bOn) if (bOn[k] && !bb[k]) return false;
       if (!q) return true;
       return (r.player + ' ' + r.team + ' ' + (NAMES[r.team] || '')).toLowerCase().indexOf(q) > -1;
     });
     $('r4p-rcount').textContent = list.length + ' of ' + all.length + ' players';
     $('r4p-ranklist').innerHTML = list.map(function(r){
-      return '<div class="rk-row"><div class="rk-n">' + r.rank + '</div><div><span class="rk-name">' + esc(r.player) + '</span>' + tm(r.team) + '<span class="rk-pos">' + esc(r.pos) + '</span>' +
+      return '<div class="rk-row"><div class="rk-n">' + r.rank + '</div><div><span class="rk-name">' + esc(r.player) + '</span>' + tm(r.team) + '<span class="rk-pos">' + esc(r.pos) + '</span>' + bdg(r.player) +
         (r.flag ? '<span class="tag ' + esc(r.flag) + '">' + esc(r.change) + '</span>' : '') + '</div>' +
         (r.note ? '<p class="rk-note">' + esc(r.note) + '</p>' : '') + '</div>';
     }).join('') || '<div class="rk-row"><div></div><p class="rk-note">No players match.</p></div>';
@@ -147,7 +126,7 @@
     if (/starter/i.test(p.role)) pills += '<span class="pill start">' + esc(p.role) + '</span>';
     else if (p.role) pills += '<span class="pill">' + esc(p.role) + '</span>';
     if (p.status && !/^healthy$/i.test(p.status)) pills += '<span class="pill hurt">Health note</span>';
-    return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + '</h3>' + pills +
+    return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + bdg(p.player) + '</h3>' + pills +
       (p.minutes ? '<span class="lbl">Minutes</span><div class="row">' + esc(p.minutes) + '</div>' : '') +
       (p.usage ? '<span class="lbl">Usage</span><div class="row">' + esc(p.usage) + '</div>' : '') +
       (p.status ? '<span class="lbl">Health</span><div class="row">' + esc(p.status) + '</div>' : '') +
@@ -167,7 +146,7 @@
 
   function injuries(){
     $('r4p-injcards').innerHTML = db.injuries.slice().sort(function(a,b){ return a.team < b.team ? -1 : 1; }).map(function(p){
-      return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + '</div>';
+      return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + '</div>';
     }).join('');
   }
 
@@ -176,7 +155,7 @@
     $('r4p-movecards').innerHTML = db.moves.filter(function(m){
       return !q || (m.player + ' ' + m.from + ' ' + m.to + ' ' + (NAMES[m.from]||'') + ' ' + (NAMES[m.to]||'')).toLowerCase().indexOf(q) > -1;
     }).map(function(m){
-      return '<div class="card"><h3>' + esc(m.player) + '</h3><div class="row">' + (m.from ? tm(m.from, true) : 'Unknown') + ' <span class="arrow">\u2192</span> ' + tm(m.to, true) + (m.type ? ' \u00b7 ' + esc(m.type) : '') + '</div>' + (m.note ? '<div class="row">' + esc(m.note) + '</div>' : '') + srcLink(m.source) + '</div>';
+      return '<div class="card"><h3>' + esc(m.player) + bdg(m.player) + '</h3><div class="row">' + (m.from ? tm(m.from, true) : 'Unknown') + ' <span class="arrow">\u2192</span> ' + tm(m.to, true) + (m.type ? ' \u00b7 ' + esc(m.type) : '') + '</div>' + (m.note ? '<div class="row">' + esc(m.note) + '</div>' : '') + srcLink(m.source) + '</div>';
     }).join('');
   }
 
@@ -198,10 +177,7 @@
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams';
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
-    quick(); picksInit(); picks(); ranks(); teams(); players(); injuries(); moves();
-    $('r4p-psort').addEventListener('change', picks);
-    $('r4p-pkteam').addEventListener('change', picks);
-    $('r4p-prole').addEventListener('change', picks);
+    badgeInit(); quick(); ranks(); teams(); players(); injuries(); moves();
     $('r4p-rq').addEventListener('input', ranks);
     $('r4p-rpos').addEventListener('change', ranks);
     $('r4p-rflag').addEventListener('change', ranks);

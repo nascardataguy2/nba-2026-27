@@ -9,7 +9,6 @@
 <nav class='tabs' aria-label='Sections'>
   <div class='wrap' id='r4p-tabs'>
     <button class='tab on' data-v='quick' type='button'>Quick Hits</button>
-    <button class='tab' data-v='picks' type='button'>Picks</button>
     <button class='tab' data-v='ranks' type='button'>Rankings</button>
     <button class='tab' data-v='teams' type='button'>Teams</button>
     <button class='tab' data-v='players' type='button'>Players</button>
@@ -20,19 +19,9 @@
 
 <main class='wrap' id='r4p-app'>
   <section class='view' id='v-quick'><div class='loading'>Loading quick hits&#8230;</div></section>
-  <section class='view' hidden='hidden' id='v-picks'>
-    <p class='sub' id='r4p-prule' style='margin:0 0 12px'>Badges come from last season&#39;s stats. Gold means top 10 in the league in that stat, and silver means 11 to 30.</p>
-    <div class='bfilter' id='r4p-bfilter'></div>
-    <div class='toolbar'>
-      <select aria-label='Sort' id='r4p-psort'><option value='badges'>Badges</option><option value='team'>By team</option><option value='min'>Minutes</option><option value='usg'>Usage</option><option value='threes'>Threes</option><option value='reb'>Rebounds</option><option value='ast'>Assists</option><option value='stocks'>Stocks</option></select>
-      <select aria-label='Team' id='r4p-pkteam'><option value=''>All teams</option></select>
-      <select aria-label='Role' id='r4p-prole'><option value=''>All roles</option><option value='Starter'>Starters</option><option value='Sixth man'>Sixth man</option><option value='Bench'>Bench</option></select>
-    </div>
-    <div class='count' id='r4p-pcount'></div>
-    <div class='pk' id='r4p-picklist'></div>
-  </section>
   <section class='view' hidden='hidden' id='v-ranks'>
-    <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research.</p>
+    <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research. Badges show last season&#39;s top 10 (gold) and 11 to 30 (silver) in each stat, for players with 20 or more games.</p>
+    <div class='bfilter' id='r4p-bfilter'></div>
     <div class='toolbar'>
       <input aria-label='Search rankings' id='r4p-rq' placeholder='Search a player or team' type='search'/>
       <select aria-label='Position' id='r4p-rpos'><option value=''>All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>

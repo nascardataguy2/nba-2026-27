@@ -36,7 +36,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Grok's two lines (now in blogger/race4theprize-nba-theme.xml, right after all-head-content): the apple-touch-icon 180x180 link and the icon 192x192 link to the Blogger-hosted nbadfs-favicon-3.png. Keep both exactly as they are, keep the all-head-content line, and keep the old data:image/png;base64 icon line unless the user says to drop it.
 - Any theme code given to the user must keep Grok's two favicon lines. Get the exact lines from the user/Grok before handing over new theme code, and never send a full-theme replacement without them.
 
-## Picks tab plan (agreed 10/9-10/10, not built yet)
+## Badges (built 10/10; Picks tab was merged into Rankings the same day)
 - Six badges from last season's player stats: Minutes, Usage, Threes, Rebounds, Assists, Stocks (steals plus blocks).
 - Gold = top 10 in the league in that stat, silver = 11 to 30, no badge otherwise. Rerun daily once the season's stats come in.
 - Icons are final in assets/badges (stopwatch, pig, flaming 3, backboard, basketball dime, padlock), with clear backgrounds.
@@ -48,3 +48,5 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - nbadfs.com runs the small shell theme in blogger/nbadfs-shell-theme.xml. It keeps the favicon lines and loads the real site from GitHub: site/app.css, site/body.html and site/app.js (GitHub Pages first, jsDelivr fallback).
 - To change the site design, edit the files in site/, commit and push. No Blogger paste is needed. Purge jsDelivr for site/ files too if possible.
 - blogger/race4theprize-nba-theme.xml is the old full theme, kept only as a reference.
+
+- 10/10: The separate Picks tab was removed at the user's request. Badge icons now show on Rankings (with a badge filter row) and next to player names on Quick Hits, Players, Injuries and Moves.

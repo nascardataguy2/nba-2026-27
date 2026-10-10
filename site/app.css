@@ -84,6 +84,10 @@ main.wrap{padding-top:18px;padding-bottom:40px}
 .role.out{background:#fbe9ea;border-color:#f2c4c7;color:var(--bad)}
 #v-picks .toolbar select{flex:1 1 0;min-width:0;font-size:15px;padding:9px 8px}
 @media (max-width:600px){.pk-row{padding:9px 10px}.pk-num{min-width:0;text-align:left}}
+.bdgs{display:inline-flex;gap:3px;vertical-align:middle;margin-left:6px;flex-wrap:wrap}
+.bdgs .bdg{width:24px;height:24px;border-radius:6px}
+.bdgs .bdg img{width:20px;height:20px}
+.card h3 .bdgs{margin-left:4px}
 /* Rankings */
 .rk{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
 .rk-row{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 12px;padding:10px 14px;border-top:1px solid var(--line)}
