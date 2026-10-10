@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'/>
+<title><b:if cond='data:view.isHomepage'>nbadfs.com<b:else/><data:view.title.escaped/> | nbadfs.com</b:if></title>
+<b:include data='blog' name='all-head-content'/>
+<link rel='apple-touch-icon' sizes='180x180' href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmN_mKzRAHjX5aZ2L5wC9fUtFhRU9hnUuXJErxtrhitITmSNHoKqxs7ECOb9aTfMKW9GWfboff814nmDD1Zd0b8ikMUgKNfFnrtkM5YV2nAFV3Z_C3qt9fOZ3XSOIO8G6nFKVUPT2BOpDDgMmouXJkkk7VjHCpv1r9SO6oshj6mGFHZIFF_gD9lesjGnE/s256/nbadfs-favicon-3.png'/>
+<link rel='icon' type='image/png' sizes='192x192' href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmN_mKzRAHjX5aZ2L5wC9fUtFhRU9hnUuXJErxtrhitITmSNHoKqxs7ECOb9aTfMKW9GWfboff814nmDD1Zd0b8ikMUgKNfFnrtkM5YV2nAFV3Z_C3qt9fOZ3XSOIO8G6nFKVUPT2BOpDDgMmouXJkkk7VjHCpv1r9SO6oshj6mGFHZIFF_gD9lesjGnE/s256/nbadfs-favicon-3.png'/>
+<link href='data:image/png;base64,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' rel='icon' type='image/png'/>
+<link href='https://fonts.googleapis.com' rel='preconnect'/>
+<link href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap' rel='stylesheet'/>
+<b:skin><![CDATA[
+/* nbadfs.com shell: the real design loads from GitHub (site/app.css, site/body.html, site/app.js). */
+body{margin:0;background:#ffffff;color:#15171c;font:16px/1.5 'Source Sans 3', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif}
+#app-loading{padding:24px 16px;color:#5d6370;max-width:1100px;margin:0 auto}
+.home .blog-area{display:none}
+.blog-area{max-width:760px;margin:0 auto;padding:16px}
+]]></b:skin>
+</head>
+<body expr:class='data:view.isHomepage ? &quot;home&quot; : &quot;page&quot;'>
+<div id='app'><p id='app-loading'>Loading nbadfs.com&#8230;</p></div>
+
+<div class='blog-area'>
+  <b:section class='main' id='main' showaddelement='yes'>
+    <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'/>
+  </b:section>
+</div>
+
+<script>
+//<![CDATA[
+(function(){
+  var BASES = [
+    'https://nascardataguy2.github.io/nba-2026-27/site/',
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/site/'
+  ];
+  function get(file){
+    var i = 0;
+    function next(){
+      if (i >= BASES.length) return Promise.reject(new Error('all sources failed'));
+      var b = BASES[i++];
+      var u = b + file + (b.indexOf('github.io') > -1 ? ('?t=' + Date.now()) : '');
+      return fetch(u, {cache:'no-store'}).then(function(r){ if (!r.ok) throw new Error('bad status'); return r.text(); }).catch(next);
+    }
+    return next();
+  }
+  Promise.all([get('app.css'), get('body.html'), get('app.js')]).then(function(x){
+    var s = document.createElement('style'); s.textContent = x[0]; document.head.appendChild(s);
+    document.getElementById('app').innerHTML = x[1];
+    var j = document.createElement('script'); j.text = x[2]; document.body.appendChild(j);
+  }).catch(function(){
+    document.getElementById('app').innerHTML = '<p id="app-loading">The site could not load right now. Please refresh the page in a minute.</p>';
+  });
+})();
+//]]>
+</script>
+</body>
+</html>

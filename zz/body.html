@@ -1,0 +1,65 @@
+<header class='top'>
+  <div class='wrap'>
+    <div class='kicker'>Race4thePrize</div>
+    <h1 class='title'>nbadfs.com</h1>
+    <p class='sub' id='r4p-sub'>Loading the latest data&#8230;</p>
+  </div>
+</header>
+
+<nav class='tabs' aria-label='Sections'>
+  <div class='wrap' id='r4p-tabs'>
+    <button class='tab on' data-v='quick' type='button'>Quick Hits</button>
+    <button class='tab' data-v='picks' type='button'>Picks</button>
+    <button class='tab' data-v='ranks' type='button'>Rankings</button>
+    <button class='tab' data-v='teams' type='button'>Teams</button>
+    <button class='tab' data-v='players' type='button'>Players</button>
+    <button class='tab' data-v='injuries' type='button'>Injuries</button>
+    <button class='tab' data-v='moves' type='button'>Moves</button>
+  </div>
+</nav>
+
+<main class='wrap' id='r4p-app'>
+  <section class='view' id='v-quick'><div class='loading'>Loading quick hits&#8230;</div></section>
+  <section class='view' hidden='hidden' id='v-picks'>
+    <p class='sub' id='r4p-prule' style='margin:0 0 12px'>Badges come from last season&#39;s stats. Gold means top 10 in the league in that stat, and silver means 11 to 30.</p>
+    <div class='bfilter' id='r4p-bfilter'></div>
+    <div class='toolbar'>
+      <select aria-label='Sort' id='r4p-psort'><option value='badges'>Badges</option><option value='team'>By team</option><option value='min'>Minutes</option><option value='usg'>Usage</option><option value='threes'>Threes</option><option value='reb'>Rebounds</option><option value='ast'>Assists</option><option value='stocks'>Stocks</option></select>
+      <select aria-label='Team' id='r4p-pkteam'><option value=''>All teams</option></select>
+      <select aria-label='Role' id='r4p-prole'><option value=''>All roles</option><option value='Starter'>Starters</option><option value='Sixth man'>Sixth man</option><option value='Bench'>Bench</option></select>
+    </div>
+    <div class='count' id='r4p-pcount'></div>
+    <div class='pk' id='r4p-picklist'></div>
+  </section>
+  <section class='view' hidden='hidden' id='v-ranks'>
+    <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research.</p>
+    <div class='toolbar'>
+      <input aria-label='Search rankings' id='r4p-rq' placeholder='Search a player or team' type='search'/>
+      <select aria-label='Position' id='r4p-rpos'><option value=''>All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>
+      <select aria-label='Tag' id='r4p-rflag'><option value=''>All players</option><option value='up'>Role up</option><option value='down'>Role down</option><option value='out'>Out to start</option><option value='rest'>Rest watch</option></select>
+    </div>
+    <div class='count' id='r4p-rcount'></div>
+    <div class='rk' id='r4p-ranklist'></div>
+  </section>
+  <section class='view' hidden='hidden' id='v-teams'>
+    <div class='toolbar'><select aria-label='Team' id='r4p-team'><option value=''>All teams</option></select></div>
+    <div class='cards' id='r4p-teamcards'></div>
+  </section>
+  <section class='view' hidden='hidden' id='v-players'>
+    <div class='toolbar'>
+      <input aria-label='Search players' id='r4p-q' placeholder='Search a player, team, or word (Lakers, starter, injured)' type='search'/>
+      <select aria-label='Team filter' id='r4p-pteam'><option value=''>All teams</option></select>
+    </div>
+    <div class='count' id='r4p-count'></div>
+    <div class='cards' id='r4p-playercards'></div>
+  </section>
+  <section class='view' hidden='hidden' id='v-injuries'><div class='cards' id='r4p-injcards'></div></section>
+  <section class='view' hidden='hidden' id='v-moves'>
+    <div class='toolbar'><input aria-label='Search moves' id='r4p-mq' placeholder='Search a player or team' type='search'/></div>
+    <div class='cards' id='r4p-movecards'></div>
+  </section>
+</main>
+
+<footer>
+  <div class='wrap'>nbadfs.com &#183; Projections are opinions, not official news.</div>
+</footer>

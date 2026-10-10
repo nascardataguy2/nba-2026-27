@@ -1,0 +1,109 @@
+/* Race4thePrize NBA DFS Database - Blogger theme (light, mobile-first) */
+:root{
+  --bg:#ffffff; --ink:#15171c; --muted:#5d6370; --line:#e3e6eb; --soft:#f5f6f8;
+  --accent:#e4572e; --accent-soft:#fdeee9; --navy:#1d3557; --good:#1f7a4d; --bad:#b4232c;
+  --head:'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+  --body:'Source Sans 3', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);overflow-x:hidden}
+a{color:var(--navy)}
+img{max-width:100%;height:auto}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+/* Header */
+.top{border-bottom:4px solid var(--accent);background:var(--bg)}
+.top .wrap{padding-top:18px;padding-bottom:14px}
+.kicker{font:700 13px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.title{font:800 clamp(30px,7vw,48px)/1.02 var(--head);margin:6px 0 6px;text-transform:none;letter-spacing:.01em;color:var(--navy)}
+.sub{color:var(--muted);font-size:14px;margin:0}
+/* Tabs */
+.tabs{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-top:10px;padding-bottom:10px}
+.tabs .wrap::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:var(--soft);color:var(--ink);font:700 15px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:10px 14px;border-radius:999px;cursor:pointer}
+.tab.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.tab:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* Layout */
+main.wrap{padding-top:18px;padding-bottom:40px}
+.view[hidden]{display:none}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.toolbar input,.toolbar select{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);min-width:0}
+.toolbar input{flex:1 1 220px}
+.toolbar select{flex:0 1 220px}
+.btn{font:700 15px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:11px 14px;border:2px solid var(--navy);color:var(--navy);background:#fff;border-radius:8px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
+.msg{color:var(--muted);font-size:14px;min-height:20px;margin:-6px 0 10px}
+.count{color:var(--muted);font-size:14px;margin:0 0 10px}
+.tm{display:inline-block;font:700 12px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;border-radius:4px;padding:4px 6px;margin-left:6px;vertical-align:2px;color:#fff;background:var(--muted);white-space:nowrap}
+.tm.first{margin-left:0}
+/* Quick hits */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.panel{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;min-width:0}
+.panel h2{font:800 22px/1.1 var(--head);text-transform:uppercase;letter-spacing:.03em;margin:0 0 4px;color:var(--navy)}
+.panel .hint{color:var(--muted);font-size:14px;margin:0 0 10px}
+.panel.up h2{color:var(--good)} .panel.down h2{color:var(--bad)} .panel.sits h2{color:var(--accent)}
+.hit{padding:10px 0;border-top:1px solid var(--line)}
+.hit:first-of-type{border-top:none}
+.hit .who{font-weight:700}
+.hit .arrow{color:var(--accent);font-weight:700}
+.hit p{margin:2px 0 0;font-size:15px;overflow-wrap:anywhere}
+.src{font-size:12px;color:var(--muted)}
+.src a{color:var(--muted)}
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+.card{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;min-width:0}
+.card h3{font:800 20px/1.1 var(--head);text-transform:uppercase;margin:0 0 6px;color:var(--navy);overflow-wrap:anywhere}
+.card .row{font-size:15px;margin:4px 0;overflow-wrap:anywhere}
+.card .lbl{font:700 12px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-top:8px}
+.pill{display:inline-block;font:700 12px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 8px;margin:2px 4px 2px 0;background:var(--soft);border:1px solid var(--line);color:var(--ink)}
+.pill.hurt{background:#fbe9ea;border-color:#f2c4c7;color:var(--bad)}
+.pill.start{background:#e8f4ee;border-color:#c3e3d1;color:var(--good)}
+.loading{color:var(--muted);padding:20px 0}
+/* Picks */
+.bfilter{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 0 10px;padding-bottom:2px}
+.bfilter::-webkit-scrollbar{display:none}
+.bf{flex:0 0 auto;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 12px 4px 4px;font:700 13px/1 var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+.bf img{width:26px;height:26px;display:block}
+.bf.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.pk{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.pk-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:9px 14px;border-top:1px solid var(--line)}
+.pk-row:first-child{border-top:none}
+.pk-who{flex:1 1 240px;min-width:0}
+.pk-name{font-weight:700;font-size:16px}
+.pk-pos{font:700 12px/1 var(--head);letter-spacing:.06em;color:var(--muted);margin-left:6px}
+.pk-num{font:700 15px/1 var(--head);color:var(--navy);letter-spacing:.04em;white-space:nowrap;min-width:64px;text-align:right}
+.pk-badges{display:flex;gap:4px;flex-wrap:wrap}
+.bdg{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.bdg img{width:28px;height:28px;display:block}
+.bdg.gold{background:#E8B21E}
+.bdg.silver{background:#E2E5EA}
+.role{display:inline-block;font:700 11px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;border-radius:4px;padding:4px 6px;margin-left:6px;vertical-align:2px;border:1px solid var(--line);background:var(--soft);color:var(--muted)}
+.role.starter{background:#e8f4ee;border-color:#c3e3d1;color:var(--good)}
+.role.sixth{background:#fff4e0;border-color:#f3d9a8;color:#9a5b00}
+.role.out{background:#fbe9ea;border-color:#f2c4c7;color:var(--bad)}
+#v-picks .toolbar select{flex:1 1 0;min-width:0;font-size:15px;padding:9px 8px}
+@media (max-width:600px){.pk-row{padding:9px 10px}.pk-num{min-width:0;text-align:left}}
+/* Rankings */
+.rk{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.rk-row{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 12px;padding:10px 14px;border-top:1px solid var(--line)}
+.rk-row:first-child{border-top:none}
+.rk-n{font:800 26px/1 var(--head);color:var(--navy);text-align:right;padding-top:2px}
+.rk-name{font-weight:700;font-size:16px}
+.rk-pos{font:700 12px/1 var(--head);letter-spacing:.06em;color:var(--muted);margin-left:6px}
+.rk-note{grid-column:2;font-size:14px;color:var(--ink);margin:0;overflow-wrap:anywhere}
+.tag{display:inline-block;font:700 12px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 8px;margin-left:6px;vertical-align:2px}
+.tag.up{background:#e8f4ee;color:var(--good)} .tag.down,.tag.out{background:#fbe9ea;color:var(--bad)} .tag.rest{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
+@media (max-width:600px){.rk-row{grid-template-columns:40px minmax(0,1fr);padding:10px}.rk-n{font-size:22px}}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer .wrap{padding-top:14px;padding-bottom:24px}
+/* Blogger posts area (shown only off the homepage) */
+.home .blog-area{display:none}
+.blog-area{max-width:760px;margin:0 auto;padding:16px}
+.blog-area .post-title{font:800 28px/1.1 var(--head);color:var(--navy)}
+@media (max-width:600px){
+  body{font-size:15px}
+  .panel{padding:12px}
+  .toolbar .btn{flex:1 1 auto;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}

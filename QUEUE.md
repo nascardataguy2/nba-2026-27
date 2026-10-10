@@ -43,3 +43,8 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Box style: solid filled rounded box. Gold fill #E8B21E, light silver fill #E2E5EA.
 - Tab must be tight: one compact row per player (name, team box, starter/bench, earned badges, one key number), default sort by most gold then silver badges, controls for Sort, Team and Role.
 - Data still needed: Grok pulls last season's Basketball-Reference per-game and advanced tables. Wait for the user's "go" before writing that request or any code.
+
+## Site code layout (since 10/10)
+- nbadfs.com runs the small shell theme in blogger/nbadfs-shell-theme.xml. It keeps the favicon lines and loads the real site from GitHub: site/app.css, site/body.html and site/app.js (GitHub Pages first, jsDelivr fallback).
+- To change the site design, edit the files in site/, commit and push. No Blogger paste is needed. Purge jsDelivr for site/ files too if possible.
+- blogger/race4theprize-nba-theme.xml is the old full theme, kept only as a reference.
