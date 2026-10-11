@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "players": [
   {
    "player": "Luka Doncic",
@@ -358,8 +358,8 @@
    "minutes": "",
    "usage": "Slightly down",
    "status": "Healthy",
-   "note": "His scoring should dip from 28.8 to about 27 points with LaMelo Ball there.",
-   "source": "LO-0707"
+   "note": "He moves off the ball with LaMelo Ball running the offense, so expect more catch-and-shoot threes and fewer assists.",
+   "source": "LO-0819"
   },
   {
    "player": "LaMelo Ball",
@@ -485,7 +485,7 @@
    "player": "Tyrese Maxey",
    "team": "PHI",
    "role": "Starter",
-   "minutes": "",
+   "minutes": "About 38",
    "usage": "Down",
    "status": "Healthy",
    "note": "He and Brown cannot both stay top-five scorers on the same team.",
@@ -497,16 +497,16 @@
    "role": "Starter (C)",
    "minutes": "",
    "usage": "",
-   "status": "Expected to miss time",
-   "note": "Brown's value is better in games Embiid misses.",
-   "source": "LO-0713"
+   "status": "Healthy; will not play back-to-backs; about 40-45 games expected",
+   "note": "He had his first healthy offseason in years and is expected ready for opening night.",
+   "source": "LO-0806"
   },
   {
    "player": "LeBron James",
    "team": "PHI",
    "role": "Starter",
    "minutes": "",
-   "usage": "",
+   "usage": "Up",
    "status": "Age 41; played through sciatica last season",
    "note": "He is now in Philadelphia.",
    "source": "LO-0827"
@@ -514,12 +514,12 @@
   {
    "player": "VJ Edgecombe",
    "team": "PHI",
-   "role": "Rotation",
+   "role": "Starter",
    "minutes": "",
    "usage": "Down (may fall below 20%)",
    "status": "Healthy",
-   "note": "His role shrinks after Brown's arrival.",
-   "source": "LO-0713"
+   "note": "He would be the one moved to the bench if the lineup fit struggles.",
+   "source": "LO-0806"
   },
   {
    "player": "Paul George",
@@ -607,9 +607,9 @@
    "role": "Starter",
    "minutes": "",
    "usage": "",
-   "status": "Knee concerns; expect missed games",
+   "status": "Healthy (60-65 games expected)",
    "note": "He was traded from the Clippers, pending the Aspiration investigation punishments as of July.",
-   "source": "LO-0713"
+   "source": "LO-0820"
   },
   {
    "player": "Collin Murray-Boyles",
@@ -1435,7 +1435,7 @@
    "player": "Donovan Clingan",
    "team": "POR",
    "role": "Starter (C)",
-   "minutes": "",
+   "minutes": "About 28",
    "usage": "",
    "status": "Healthy",
    "note": "He averaged 12 points and 12 rebounds. He is mainly a two-category player.",
@@ -1474,8 +1474,8 @@
   {
    "player": "Zach Edey",
    "team": "MEM",
-   "role": "",
-   "minutes": "",
+   "role": "Starter (C)",
+   "minutes": "25-28",
    "usage": "",
    "status": "Multiple ankle and foot surgeries",
    "note": "It is doubtful he can play 30 minutes.",
@@ -2160,6 +2160,216 @@
    "status": "Healthy",
    "note": "He takes over the Grayson Allen role and could shoot 40-41% on about eight threes a game.",
    "source": "LO-0824"
+  },
+  {
+   "player": "Jerami Grant",
+   "team": "MEM",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "Up (go-to scorer)",
+   "status": "Healthy",
+   "note": "He came from Portland in the Ja Morant trade and should be the main scorer, with a possible top-100 bounce back.",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Ty Jerome",
+   "team": "MEM",
+   "role": "Starter (PG)",
+   "minutes": "27-28",
+   "usage": "Down (33% last season)",
+   "status": "Healthy",
+   "note": "He did not play back-to-backs last season.",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Jaylen Wells",
+   "team": "MEM",
+   "role": "Bench (6th man)",
+   "minutes": "20-25",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He started nearly every game in his first two seasons but projects off the bench.",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Isaiah Stewart",
+   "team": "MEM",
+   "role": "Bench (backup C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He came from Detroit and can spot start for Edey.",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Quinten Post",
+   "team": "MEM",
+   "role": "Bench (backup C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Richie Saunders",
+   "team": "MEM",
+   "role": "Injured",
+   "minutes": "",
+   "usage": "",
+   "status": "Torn ACL; no timeline",
+   "note": "",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Josh Green",
+   "team": "MIN",
+   "role": "Starter or bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He could start over Ayo Dosunmu at the wing.",
+   "source": "LO-0819"
+  },
+  {
+   "player": "Trey Lyles",
+   "team": "MIN",
+   "role": "Bench",
+   "minutes": "20-25 max",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He is back in the NBA and is the best fit at power forward.",
+   "source": "LO-0819"
+  },
+  {
+   "player": "Donte DiVincenzo",
+   "team": "MIN",
+   "role": "Injured",
+   "minutes": "",
+   "usage": "",
+   "status": "Out until at least March",
+   "note": "",
+   "source": "LO-0819"
+  },
+  {
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He should take the most threes of his career, and he handles the ball more when Kawhi sits.",
+   "source": "LO-0820"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "Up (more ball handling)",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0820"
+  },
+  {
+   "player": "RJ Barrett",
+   "team": "TOR",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0820"
+  },
+  {
+   "player": "Ja’Kobe Walter",
+   "team": "TOR",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "Up",
+   "status": "Healthy",
+   "note": "He has to take on a larger role.",
+   "source": "LO-0820"
+  },
+  {
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "role": "Bench (8th man)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0820"
+  },
+  {
+   "player": "Anfernee Simons",
+   "team": "PHI",
+   "role": "Bench (6th man)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0806"
+  },
+  {
+   "player": "Dean Wade",
+   "team": "PHI",
+   "role": "Bench (backup C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He is effectively the backup center because the other bigs foul too much.",
+   "source": "LO-0806"
+  },
+  {
+   "player": "Damian Lillard",
+   "team": "POR",
+   "role": "Starter",
+   "minutes": "30-31",
+   "usage": "",
+   "status": "Healthy (more than 16 months past Achilles surgery)",
+   "note": "He is not expected to sit out back-to-backs.",
+   "source": "LO-0811"
+  },
+  {
+   "player": "Toumani Camara",
+   "team": "POR",
+   "role": "Starter",
+   "minutes": "30-34",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He played all 82 games last season and is Portland’s only real point-of-attack defender.",
+   "source": "LO-0811"
+  },
+  {
+   "player": "Deni Avdija",
+   "team": "POR",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "Down (to about 24%)",
+   "status": "Healthy",
+   "note": "He averaged 24, 7 and 7 last season but should score closer to 20 with fewer assists next to Morant.",
+   "source": "LO-0811"
+  },
+  {
+   "player": "Scoot Henderson",
+   "team": "POR",
+   "role": "Bench",
+   "minutes": "About 20",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0811"
+  },
+  {
+   "player": "Robert Williams III",
+   "team": "POR",
+   "role": "Bench (backup C)",
+   "minutes": "17-18",
+   "usage": "",
+   "status": "Sits about 16 back-to-backs a season",
+   "note": "",
+   "source": "LO-0811"
   }
  ],
  "teams": [
@@ -2195,7 +2405,7 @@
    "starters": "Anthony Edwards, LaMelo Ball, Jaden McDaniels, Jonathan Kuminga, Rudy Gobert (projected)",
    "bench": "Ayo Dosunmu (bench creator, ~29 min), Joan Beringer (backup C, ~16 min), Josh Green (might start)",
    "backup_c": "Joan Beringer",
-   "coach": "",
+   "coach": "Chris Finch",
    "notes": "Kuminga signed and is expected to start. Naz Reid and Julius Randle are gone. If Gobert sits, Beringer is the backup center to watch. Beringer projects at about 18 minutes behind Gobert. Minnesota plays only 2 games in the week of March 15, which falls in most fantasy playoffs.",
    "source": "LO-0827"
   },
@@ -2210,9 +2420,9 @@
   },
   {
    "team": "PHI",
-   "starters": "Tyrese Maxey, Jaylen Brown, LeBron James, Joel Embiid — partial",
+   "starters": "Tyrese Maxey, VJ Edgecombe, Jaylen Brown, LeBron James, Joel Embiid",
    "bench": "VJ Edgecombe (usage may fall below 20%)",
-   "backup_c": "",
+   "backup_c": "Dean Wade",
    "coach": "Nick Nurse",
    "notes": "Jaylen Brown, LeBron James, Maxey and Embiid together cannot all keep last year's usage, so expect pullbacks. Embiid is expected to miss time.",
    "source": "LO-0827"
@@ -2228,9 +2438,9 @@
   },
   {
    "team": "POR",
-   "starters": "Damian Lillard, Ja Morant, Jrue Holiday, Deni Avdija — partial",
+   "starters": "Damian Lillard, Ja Morant, Toumani Camara, Deni Avdija, Donovan Clingan",
    "bench": "Scoot Henderson",
-   "backup_c": "",
+   "backup_c": "Robert Williams III",
    "coach": "",
    "notes": "Shaedon Sharpe tore his meniscus and is out for basically the whole season. Holiday moves to the three in a low-usage role, and Morant's usage should fall about five points.",
    "source": "LO-0827"
@@ -2246,10 +2456,10 @@
   },
   {
    "team": "TOR",
-   "starters": "Kawhi Leonard, Scottie Barnes, RJ Barrett, Immanuel Quickley, Jakob Poeltl — partial",
+   "starters": "Immanuel Quickley, RJ Barrett, Kawhi Leonard, Scottie Barnes, Jakob Poeltl",
    "bench": "Collin Murray-Boyles",
    "backup_c": "Collin Murray-Boyles",
-   "coach": "",
+   "coach": "Darko Rajakovic",
    "notes": "Kawhi arrived by trade from the Clippers. Sandro Mamukelashvili is gone, which opens backup center minutes for Murray-Boyles.",
    "source": "LO-0827"
   },
@@ -2390,10 +2600,10 @@
   },
   {
    "team": "MEM",
-   "starters": "Cameron Boozer (rookie), Cedric Coward — partial",
+   "starters": "Ty Jerome, Cedric Coward, Jerami Grant, Cameron Boozer, Zach Edey",
    "bench": "Scotty Pippen Jr.",
-   "backup_c": "",
-   "coach": "",
+   "backup_c": "Isaiah Stewart and Quinten Post",
+   "coach": "Tuomas Iisalo",
    "notes": "Boozer is expected to start and could lead the team in assists.",
    "source": "LO-0903"
   },
@@ -2572,16 +2782,16 @@
    "role": "Starter (C)",
    "minutes": "",
    "usage": "",
-   "status": "Expected to miss time",
-   "note": "Brown's value is better in games Embiid misses.",
-   "source": "LO-0713"
+   "status": "Healthy; will not play back-to-backs; about 40-45 games expected",
+   "note": "He had his first healthy offseason in years and is expected ready for opening night.",
+   "source": "LO-0806"
   },
   {
    "player": "LeBron James",
    "team": "PHI",
    "role": "Starter",
    "minutes": "",
-   "usage": "",
+   "usage": "Up",
    "status": "Age 41; played through sciatica last season",
    "note": "He is now in Philadelphia.",
    "source": "LO-0827"
@@ -2632,9 +2842,9 @@
    "role": "Starter",
    "minutes": "",
    "usage": "",
-   "status": "Knee concerns; expect missed games",
+   "status": "Healthy (60-65 games expected)",
    "note": "He was traded from the Clippers, pending the Aspiration investigation punishments as of July.",
-   "source": "LO-0713"
+   "source": "LO-0820"
   },
   {
    "player": "Jakob Poeltl",
@@ -2939,8 +3149,8 @@
   {
    "player": "Zach Edey",
    "team": "MEM",
-   "role": "",
-   "minutes": "",
+   "role": "Starter (C)",
+   "minutes": "25-28",
    "usage": "",
    "status": "Multiple ankle and foot surgeries",
    "note": "It is doubtful he can play 30 minutes.",
@@ -3085,6 +3295,46 @@
    "status": "Healthy (limited on back-to-backs last season)",
    "note": "He re-signed but may lose the starting job to Khaman Maluach by late November and drop to 16-17 minutes.",
    "source": "LO-0824"
+  },
+  {
+   "player": "Richie Saunders",
+   "team": "MEM",
+   "role": "Injured",
+   "minutes": "",
+   "usage": "",
+   "status": "Torn ACL; no timeline",
+   "note": "",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Donte DiVincenzo",
+   "team": "MIN",
+   "role": "Injured",
+   "minutes": "",
+   "usage": "",
+   "status": "Out until at least March",
+   "note": "",
+   "source": "LO-0819"
+  },
+  {
+   "player": "Damian Lillard",
+   "team": "POR",
+   "role": "Starter",
+   "minutes": "30-31",
+   "usage": "",
+   "status": "Healthy (more than 16 months past Achilles surgery)",
+   "note": "He is not expected to sit out back-to-backs.",
+   "source": "LO-0811"
+  },
+  {
+   "player": "Robert Williams III",
+   "team": "POR",
+   "role": "Bench (backup C)",
+   "minutes": "17-18",
+   "usage": "",
+   "status": "Sits about 16 back-to-backs a season",
+   "note": "",
+   "source": "LO-0811"
   }
  ],
  "moves": [
@@ -3591,6 +3841,86 @@
    "type": "Free agency",
    "note": "",
    "source": "LO-0828"
+  },
+  {
+   "player": "Jerami Grant",
+   "from": "POR",
+   "to": "MEM",
+   "type": "Trade",
+   "note": "He went to Memphis in the Ja Morant deal.",
+   "source": "LO-0811"
+  },
+  {
+   "player": "Isaiah Stewart",
+   "from": "DET",
+   "to": "MEM",
+   "type": "Trade",
+   "note": "",
+   "source": "LO-0817"
+  },
+  {
+   "player": "Josh Green",
+   "from": "",
+   "to": "MIN",
+   "type": "",
+   "note": "",
+   "source": "LO-0819"
+  },
+  {
+   "player": "Trey Lyles",
+   "from": "",
+   "to": "MIN",
+   "type": "",
+   "note": "",
+   "source": "LO-0819"
+  },
+  {
+   "player": "Kyle Anderson",
+   "from": "MIN",
+   "to": "TOR",
+   "type": "",
+   "note": "",
+   "source": "LO-0820"
+  },
+  {
+   "player": "Dean Wade",
+   "from": "",
+   "to": "PHI",
+   "type": "",
+   "note": "",
+   "source": "LO-0806"
+  },
+  {
+   "player": "Kentavious Caldwell-Pope",
+   "from": "",
+   "to": "PHI",
+   "type": "",
+   "note": "",
+   "source": "LO-0806"
+  },
+  {
+   "player": "Anfernee Simons",
+   "from": "",
+   "to": "PHI",
+   "type": "",
+   "note": "",
+   "source": "LO-0806"
+  },
+  {
+   "player": "Kelly Oubre",
+   "from": "PHI",
+   "to": "IND",
+   "type": "",
+   "note": "",
+   "source": "LO-0806"
+  },
+  {
+   "player": "Quentin Grimes",
+   "from": "PHI",
+   "to": "LAL",
+   "type": "",
+   "note": "",
+   "source": "LO-0806"
   }
  ],
  "sources": [
@@ -3782,6 +4112,41 @@
    "show": "Locked On Fantasy Basketball",
    "title": "Phoenix Suns 2026/27 NBA Season Preview",
    "url": "https://www.youtube.com/watch?v=hm5-fiCa5S4"
+  },
+  {
+   "id": "LO-0817",
+   "date": "2026-08-17",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Memphis Grizzlies 2026/27 NBA Season Preview",
+   "url": "https://www.youtube.com/watch?v=LcZcvk8s1xQ"
+  },
+  {
+   "id": "LO-0819",
+   "date": "2026-08-19",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Minnesota Timberwolves 2026/27 Season Preview: Going For It With LaMelo Ball",
+   "url": "https://www.youtube.com/watch?v=2mxpEpGU3H8"
+  },
+  {
+   "id": "LO-0820",
+   "date": "2026-08-20",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Toronto Raptors 2026/27 NBA Season Preview: Kawhi Is Back!",
+   "url": "https://www.youtube.com/watch?v=s28HvC2grAk"
+  },
+  {
+   "id": "LO-0806",
+   "date": "2026-08-06",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Philadelphia 76ers Season Preview | The NBA's Best Team? Or Overrated?",
+   "url": "https://www.youtube.com/watch?v=gTsfR5PxAMY"
+  },
+  {
+   "id": "LO-0811",
+   "date": "2026-08-11",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Portland Trail Blazers 2026/27 NBA Season Preview: Too Many Guards & Too Much Usage",
+   "url": "https://www.youtube.com/watch?v=YJk7ZFKFqnI"
   }
  ],
  "quickhits": {
@@ -3843,8 +4208,8 @@
    {
     "player": "Collin Murray-Boyles",
     "team": "TOR",
-    "text": "Mamukelashvili left Toronto, so 25-27 minutes is expected, up from about 22.",
-    "source": "LO-0904"
+    "text": "He could jump from 22 minutes to close to 30 as a bench super sub.",
+    "source": "LO-0820"
    },
    {
     "player": "Julius Randle",
@@ -3935,6 +4300,12 @@
     "team": "PHX",
     "text": "He could take over as Phoenix’s starting center by late November.",
     "source": "LO-0824"
+   },
+   {
+    "player": "LeBron James",
+    "team": "PHI",
+    "text": "He is expected to play point guard, and his assists could rise to about 8.",
+    "source": "LO-0806"
    }
   ],
   "role_down": [
@@ -4033,6 +4404,18 @@
     "team": "SAS",
     "text": "He will be out of San Antonio’s rotation on a lot of nights.",
     "source": "LO-0828"
+   },
+   {
+    "player": "Deni Avdija",
+    "team": "POR",
+    "text": "Next to Morant and Lillard, his usage should fall to about 24% and his scoring to about 20.",
+    "source": "LO-0811"
+   },
+   {
+    "player": "Ty Jerome",
+    "team": "MEM",
+    "text": "His usage should drop from about 33% as a starter in a deeper rotation.",
+    "source": "LO-0817"
    }
   ],
   "if_sits": [
@@ -4196,6 +4579,27 @@
     "benefits": "Khaman Maluach",
     "text": "Maluach starts at center, and Oso Ighodaro plays small-ball center minutes.",
     "source": "LO-0824"
+   },
+   {
+    "out": "Zach Edey",
+    "team": "MEM",
+    "benefits": "Isaiah Stewart",
+    "text": "Stewart can spot start, and Quinten Post also gets center minutes.",
+    "source": "LO-0817"
+   },
+   {
+    "out": "Kawhi Leonard",
+    "team": "TOR",
+    "benefits": "Immanuel Quickley",
+    "text": "Quickley takes on more ball handling, and Barrett, Barnes and Murray-Boyles create more.",
+    "source": "LO-0820"
+   },
+   {
+    "out": "Ja Morant or Damian Lillard",
+    "team": "POR",
+    "benefits": "Jrue Holiday",
+    "text": "Holiday, Henderson and Sharpe only matter for fantasy when a starting guard is out.",
+    "source": "LO-0811"
    }
   ],
   "rest_watch": [
@@ -4226,8 +4630,8 @@
    {
     "player": "Joel Embiid",
     "team": "PHI",
-    "text": "He is not expected to play back-to-backs.",
-    "source": "LO-0816"
+    "text": "He will not play back-to-backs, and about 40-45 games is the expectation.",
+    "source": "LO-0806"
    },
    {
     "player": "Stephen Curry",
@@ -4264,6 +4668,24 @@
     "team": "PHX",
     "text": "He rarely played back-to-backs last season and had minutes limits.",
     "source": "LO-0824"
+   },
+   {
+    "player": "Robert Williams III",
+    "team": "POR",
+    "text": "He sits about 16 back-to-backs a season.",
+    "source": "LO-0811"
+   },
+   {
+    "player": "Zach Edey",
+    "team": "MEM",
+    "text": "About 65 games and 25-28 minutes are expected after his ankle and foot surgeries.",
+    "source": "LO-0817"
+   },
+   {
+    "player": "Kawhi Leonard",
+    "team": "TOR",
+    "text": "About 60-65 games are expected.",
+    "source": "LO-0820"
    }
   ],
   "out_to_start": [
@@ -4356,6 +4778,12 @@
     "team": "CHA",
     "text": "Hamstring; re-evaluated in week one.",
     "source": "LO-0927"
+   },
+   {
+    "player": "Donte DiVincenzo",
+    "team": "MIN",
+    "text": "Out until at least March.",
+    "source": "LO-0819"
    }
   ]
  },
@@ -4447,7 +4875,7 @@
    "team": "MIN",
    "flag": "",
    "change": "",
-   "note": "His scoring should dip from 28.8 to about 27 points with LaMelo Ball there.",
+   "note": "He moves off the ball with LaMelo Ball running the offense, so expect more catch-and-shoot threes and fewer assists.",
    "source": "NBA-0929"
   },
   {
@@ -4555,9 +4983,9 @@
    "player": "LeBron James",
    "pos": "SF,PF",
    "team": "PHI",
-   "flag": "",
-   "change": "",
-   "note": "He is now in Philadelphia.",
+   "flag": "up",
+   "change": "Role up",
+   "note": "He is expected to play point guard, and his assists could rise to about 8.",
    "source": "NBA-0929"
   },
   {
@@ -4675,9 +5103,9 @@
    "player": "Deni Avdija",
    "pos": "PF,SF,SG",
    "team": "POR",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "down",
+   "change": "Role down",
+   "note": "Next to Morant and Lillard, his usage should fall to about 24% and his scoring to about 20.",
    "source": "NBA-0929"
   },
   {
@@ -4685,9 +5113,9 @@
    "player": "Kawhi Leonard",
    "pos": "PF,SF,SG",
    "team": "TOR",
-   "flag": "",
-   "change": "",
-   "note": "He was traded from the Clippers, pending the Aspiration investigation punishments as of July.",
+   "flag": "rest",
+   "change": "Rest watch",
+   "note": "About 60-65 games are expected.",
    "source": "NBA-0929"
   },
   {
@@ -4827,7 +5255,7 @@
    "team": "PHI",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He is not expected to play back-to-backs.",
+   "note": "He will not play back-to-backs, and about 40-45 games is the expectation.",
    "source": "NBA-0929"
   },
   {
@@ -4837,7 +5265,7 @@
    "team": "POR",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He is not expected to sit out back-to-backs.",
    "source": "NBA-0929"
   },
   {
@@ -5015,9 +5443,9 @@
    "player": "Zach Edey",
    "pos": "C",
    "team": "MEM",
-   "flag": "",
-   "change": "",
-   "note": "It is doubtful he can play 30 minutes.",
+   "flag": "rest",
+   "change": "Rest watch",
+   "note": "About 65 games and 25-28 minutes are expected after his ankle and foot surgeries.",
    "source": "NBA-0929"
   },
   {
@@ -5127,7 +5555,7 @@
    "team": "PHI",
    "flag": "",
    "change": "",
-   "note": "His role shrinks after Brown's arrival.",
+   "note": "He would be the one moved to the bench if the lineup fit struggles.",
    "source": "NBA-0929"
   },
   {
@@ -5217,7 +5645,7 @@
    "team": "TOR",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He should take the most threes of his career, and he handles the ball more when Kawhi sits.",
    "source": "NBA-0929"
   },
   {
@@ -5355,9 +5783,9 @@
    "player": "Ty Jerome",
    "pos": "PG,SG",
    "team": "MEM",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "down",
+   "change": "Role down",
+   "note": "His usage should drop from about 33% as a starter in a deeper rotation.",
    "source": "NBA-0929"
   },
   {
@@ -5537,7 +5965,7 @@
    "team": "TOR",
    "flag": "up",
    "change": "Role up",
-   "note": "Mamukelashvili left Toronto, so 25-27 minutes is expected, up from about 22.",
+   "note": "He could jump from 22 minutes to close to 30 as a bench super sub.",
    "source": "NBA-0929"
   },
   {
@@ -5867,7 +6295,7 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He came from Portland in the Ja Morant trade and should be the main scorer, with a possible top-100 bounce back.",
    "source": "NBA-0929"
   },
   {
@@ -5887,7 +6315,7 @@
    "team": "POR",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He played all 82 games last season and is Portland’s only real point-of-attack defender.",
    "source": "NBA-0929"
   },
   {
@@ -6437,7 +6865,7 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He started nearly every game in his first two seasons but projects off the bench.",
    "source": "NBA-0929"
   },
   {
@@ -6497,7 +6925,7 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He came from Detroit and can spot start for Edey.",
    "source": "NBA-0929"
   },
   {
@@ -6525,9 +6953,9 @@
    "player": "Robert Williams III",
    "pos": "C",
    "team": "POR",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "rest",
+   "change": "Rest watch",
+   "note": "He sits about 16 back-to-backs a season.",
    "source": "NBA-0929"
   },
   {
@@ -7242,7 +7670,7 @@
    "player": "Deni Avdija",
    "team": "POR",
    "pos": "SF",
-   "role": "",
+   "role": "Starter",
    "min": 33.3,
    "usg": 29.3,
    "threes": 1.9,
@@ -7870,7 +8298,7 @@
    "player": "Scottie Barnes",
    "team": "TOR",
    "pos": "PF",
-   "role": "",
+   "role": "Starter",
    "min": 33.5,
    "usg": 23.4,
    "threes": 0.9,
@@ -8118,7 +8546,7 @@
    "player": "Immanuel Quickley",
    "team": "TOR",
    "pos": "PG",
-   "role": "",
+   "role": "Starter",
    "min": 31.9,
    "usg": 21.1,
    "threes": 2.5,
@@ -8190,7 +8618,7 @@
    "player": "VJ Edgecombe",
    "team": "PHI",
    "pos": "SG",
-   "role": "Bench",
+   "role": "Starter",
    "min": 35.0,
    "usg": 20.1,
    "threes": 2.0,
@@ -8298,7 +8726,7 @@
    "player": "Anfernee Simons",
    "team": "PHI",
    "pos": "SG",
-   "role": "",
+   "role": "Sixth man",
    "min": 24.9,
    "usg": 23.6,
    "threes": 2.7,
@@ -8426,7 +8854,7 @@
    "player": "Toumani Camara",
    "team": "POR",
    "pos": "PF",
-   "role": "",
+   "role": "Starter",
    "min": 33.3,
    "usg": 16.3,
    "threes": 2.7,
@@ -8500,7 +8928,7 @@
    "player": "Donte DiVincenzo",
    "team": "MIN",
    "pos": "SG",
-   "role": "",
+   "role": "Out",
    "min": 30.4,
    "usg": 16.9,
    "threes": 3.0,

@@ -9,9 +9,9 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 3 (10/8): Locked On — Year 3 breakouts, Schedule, DAL, DEN, GSW
 - Chunk 4 (10/9): Locked On — IND, DET, LAC, BKN, CHA
 - Chunk 5 (10/10): Locked On — CHI, CLE, ATL full preview, SAS, PHX
+- Chunk 6 (10/11): Locked On — MEM, MIN, TOR, PHI, POR
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
-- Chunk 6: MEM (b04_e01), MIN (b04_e03), TOR (b04_e05), PHI (b03_e01), POR (b03_e03)
 - Chunk 7: NYK (b03_e06), HOU full preview (b03_e08), MIL (b03_e09), OKC (b02_e01), BOS (b02_e03)
 - Chunk 8: SAC (b02_e05), ORL (b02_e06), NOP (b02_e08), UTA (b02_e09), WAS (b01_e10)
 
