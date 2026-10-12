@@ -20,8 +20,12 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 10 (Old Man Squad): Steals and busts every round (x06, 9/14), Top-9 safest players (x07, 9/16), Breakout players (x08, 10/3), Steals and busts top-100 (x09, 10/4)
 - Chunk 11 (Old Man Squad + Number Two Sports): Must-drafts and do-not-drafts (x10, 10/5), Expected busts (x11, 9/20), Must-draft sleepers (x12, 9/26), Must-draft breakouts (x13, 10/6)
 
+## Daily batch, added 10/12 (files in transcripts/extra/; undated episodes were posted before 10/12)
+- Chunk 12 (Locked On): MIN preview (x14, 10/9), Must-draft players (x15, 10/8), MIL hardest to project (x16, 10/8), MIA preview (x17), MEM preview (x18)
+- Chunk 13 (Locked On + RotoWire): Busts to avoid (x19), Who we would rather draft (x20, 10/8), Busts at ADP (x21), 6 must-draft forwards (x22), 11 most important players (x23), 6 must-draft centers (x24)
+
 ## Notes
-- No Miami episode is available from Locked On.
+- The Miami preview arrived in the 10/12 batch (x17).
 - The extra-channel episodes are mostly draft-value talk (sleepers, busts, safe picks). Their role, minutes, injury and usage facts go into the main tables, and each host's target/fade calls go into the player notes with the show named.
 - Every chunk also updates `data/quickhits.json` (If He Sits, Role Up, Role Down, Rest Watch, Out to Start) with any new facts from that chunk's episodes, then purges the jsDelivr cache using the WebFetch tool (curl is blocked) (https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/db.json and .../ai.txt) so the Blogger site shows the update.
 - The Blogger theme lives in `blogger/race4theprize-nba-theme.xml`. It loads data/db.json from GitHub Pages (falling back to jsDelivr), so the theme itself does not need re-uploading when data changes.
