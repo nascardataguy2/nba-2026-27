@@ -155,6 +155,24 @@
    "team": "PHI",
    "text": "He is expected to play point guard, and his assists could rise to about 8.",
    "source": "LO-0806"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "text": "He should start and could score about 20 a game, up from about 17.",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Cason Wallace",
+   "team": "OKC",
+   "text": "He takes over Lu Dort’s starting spot.",
+   "source": "LO-0726"
+  },
+  {
+   "player": "Andre Drummond",
+   "team": "NYK",
+   "text": "He takes over Mitchell Robinson’s backup center minutes and can play back-to-backs.",
+   "source": "LO-0813"
   }
  ],
  "role_down": [
@@ -203,8 +221,8 @@
   {
    "player": "Reed Sheppard",
    "team": "HOU",
-   "text": "VanVleet, Smart and Bogdanovic cut his path to more than about 26 minutes.",
-   "source": "LO-1001"
+   "text": "He projects for 18-25 minutes in a crowded guard room.",
+   "source": "LO-0813b"
   },
   {
    "player": "Santi Aldama",
@@ -265,6 +283,12 @@
    "team": "MEM",
    "text": "His usage should drop from about 33% as a starter in a deeper rotation.",
    "source": "LO-0817"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "text": "He goes back to the bench with Tatum healthy and should play less.",
+   "source": "LO-0730"
   }
  ],
  "if_sits": [
@@ -314,8 +338,8 @@
    "out": "Fred VanVleet",
    "team": "HOU",
    "benefits": "Marcus Smart",
-   "text": "Smart would likely start, which makes him a streaming option.",
-   "source": "LO-1001"
+   "text": "Smart moves into the starting lineup.",
+   "source": "LO-0813b"
   },
   {
    "out": "Kevin Durant or Jabari Smith Jr.",
@@ -449,14 +473,28 @@
    "benefits": "Jrue Holiday",
    "text": "Holiday, Henderson and Sharpe only matter for fantasy when a starting guard is out.",
    "source": "LO-0811"
+  },
+  {
+   "out": "Karl-Anthony Towns",
+   "team": "NYK",
+   "benefits": "Andre Drummond",
+   "text": "Drummond can push to about 29 minutes.",
+   "source": "LO-0813"
+  },
+  {
+   "out": "Mitchell Robinson",
+   "team": "BOS",
+   "benefits": "Neemias Queta",
+   "text": "Queta takes the center minutes, and Luka Garza is the third center.",
+   "source": "LO-0730"
   }
  ],
  "rest_watch": [
   {
    "player": "Fred VanVleet",
    "team": "HOU",
-   "text": "He is back from a torn ACL and is likely to sit back-to-backs until about Thanksgiving.",
-   "source": "LO-1001"
+   "text": "He is coming back from a torn ACL and may sit early back-to-backs.",
+   "source": "LO-0813b"
   },
   {
    "player": "Steven Adams",
@@ -535,6 +573,18 @@
    "team": "TOR",
    "text": "About 60-65 games are expected.",
    "source": "LO-0820"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "text": "He will not play back-to-backs and may miss about half the season.",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Mitchell Robinson",
+   "team": "BOS",
+   "text": "He has ankle problems and will not play back-to-backs.",
+   "source": "LO-0730"
   }
  ],
  "out_to_start": [

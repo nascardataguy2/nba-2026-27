@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "players": [
   {
    "player": "Luka Doncic",
@@ -527,9 +527,9 @@
    "role": "Starter",
    "minutes": "",
    "usage": "Up (No. 2 behind Tatum)",
-   "status": "Knee history",
-   "note": "He came from Philadelphia and was very good after his 25-game suspension last season.",
-   "source": "LO-0713"
+   "status": "Will not play back-to-backs; may miss about half the season",
+   "note": "",
+   "source": "LO-0730"
   },
   {
    "player": "Jayson Tatum",
@@ -537,19 +537,19 @@
    "role": "Starter",
    "minutes": "",
    "usage": "Up",
-   "status": "Healthy",
-   "note": "He could return to a top-five scoring role.",
-   "source": "LO-0707"
+   "status": "Healthy (fully back from Achilles injury)",
+   "note": "He will play a little small-ball center.",
+   "source": "LO-0730"
   },
   {
    "player": "Mitchell Robinson",
    "team": "BOS",
-   "role": "Bench C",
-   "minutes": "",
+   "role": "Starter or bench (C)",
+   "minutes": "About 20",
    "usage": "",
-   "status": "Healthy",
-   "note": "He is new to Boston and is not expected to start.",
-   "source": "LO-0707"
+   "status": "Ankle problems; will not play back-to-backs",
+   "note": "He shares center minutes about evenly with Neemias Queta.",
+   "source": "LO-0730"
   },
   {
    "player": "Ja Morant",
@@ -678,8 +678,8 @@
    "minutes": "High",
    "usage": "",
    "status": "Multiple injuries last season",
-   "note": "He came from Miami and will start but will not be the primary point guard.",
-   "source": "LO-0713"
+   "note": "He should be the leading scorer and is on a $33 million expiring deal.",
+   "source": "LO-0814"
   },
   {
    "player": "Kevin Porter Jr.",
@@ -888,8 +888,8 @@
    "minutes": "~29 (up from 27)",
    "usage": "",
    "status": "Healthy",
-   "note": "He was benched at random under Doc Rivers last season. Taylor Jenkins is the new coach, and Turner and Kel'el Ware can play together.",
-   "source": "LO-0720"
+   "note": "He was benched in fourth quarters last season.",
+   "source": "LO-0814"
   },
   {
    "player": "Kel'el Ware",
@@ -958,8 +958,8 @@
    "minutes": "",
    "usage": "Up",
    "status": "Wrist injury, then several hamstring injuries last season",
-   "note": "OKC lost Aaron Wiggins, Isaiah Joe and Lu Dort, which should open usage for him.",
-   "source": "LO-0720"
+   "note": "He played only 40 games last season, and the team wants him shooting more threes.",
+   "source": "LO-0726"
   },
   {
    "player": "Cameron Boozer",
@@ -1144,22 +1144,22 @@
   {
    "player": "Bennett Stirtz",
    "team": "OKC",
-   "role": "Rookie guard",
+   "role": "Bench (rookie)",
    "minutes": "",
    "usage": "",
    "status": "Healthy",
-   "note": "He is not assured a rotation spot behind SGA, Mitchell, Wallace and Topic.",
-   "source": "LO-0721"
+   "note": "He is an off-ball shooter.",
+   "source": "LO-0726"
   },
   {
    "player": "Braden Burries",
    "team": "MIL",
-   "role": "Rookie guard (No. 10 pick)",
+   "role": "Bench (rookie)",
    "minutes": "Under 30 early",
    "usage": "",
    "status": "Healthy",
-   "note": "He averaged 19.4 points at Summer League but sits behind Porter, Rollins, Herro and Jakucionis.",
-   "source": "LO-0723"
+   "note": "",
+   "source": "LO-0814"
   },
   {
    "player": "Gui Santos",
@@ -2370,6 +2370,216 @@
    "status": "Sits about 16 back-to-backs a season",
    "note": "",
    "source": "LO-0811"
+  },
+  {
+   "player": "Andre Drummond",
+   "team": "NYK",
+   "role": "Bench (backup C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He takes over Mitchell Robinson’s minutes and should have no back-to-back limits. He could push to about 29 minutes if Towns misses time.",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Had wrist surgery; expected ready for opening night",
+   "note": "",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "role": "Starter",
+   "minutes": "About 30",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He is the starter most at risk of regression after shooting 41% from three last season, up from 31% and 33% the two years before.",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "role": "Starter (C)",
+   "minutes": "",
+   "usage": "",
+   "status": "History of lower-body issues",
+   "note": "",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "Low (16% late last season)",
+   "status": "Healthy",
+   "note": "His role is expected to stay the same.",
+   "source": "LO-0813"
+  },
+  {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "role": "Starter",
+   "minutes": "About 33",
+   "usage": "Just under 20%",
+   "status": "Healthy",
+   "note": "He stays the third option but should have more big scoring nights, especially when Brunson or Towns rest.",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Miles McBride",
+   "team": "NYK",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Abdominal issue",
+   "note": "He did not sign an extension and has come up in trade talk.",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Mohamed Diawara",
+   "team": "NYK",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Bruce Thornton",
+   "team": "HOU",
+   "role": "Bench (rookie)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He could make some impact from night one.",
+   "source": "LO-0813b"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "role": "Starter (PG)",
+   "minutes": "About 32",
+   "usage": "Up",
+   "status": "Healthy",
+   "note": "He could score about 20 a game, up from about 17, and might lead the team in scoring.",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Jaime Jaquez",
+   "team": "MIL",
+   "role": "Starter (PF)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He is the Miami piece most likely to be traded before the season.",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Cason Wallace",
+   "team": "OKC",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He takes Lu Dort’s starting spot in a 3-and-D role and gets some on-ball work with the bench.",
+   "source": "LO-0726"
+  },
+  {
+   "player": "Jared McCain",
+   "team": "OKC",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "There is no chance he starts, but his role should grow.",
+   "source": "LO-0726"
+  },
+  {
+   "player": "Chet Holmgren",
+   "team": "OKC",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0726"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "role": "Starter (C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0726"
+  },
+  {
+   "player": "Thomas Sorber",
+   "team": "OKC",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Coming off a torn ACL",
+   "note": "",
+   "source": "LO-0726"
+  },
+  {
+   "player": "Neemias Queta",
+   "team": "BOS",
+   "role": "Starter or bench (C)",
+   "minutes": "About 20",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He may start, and he is likely to close games.",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "role": "Bench (6th man)",
+   "minutes": "",
+   "usage": "Down",
+   "status": "Healthy",
+   "note": "He averaged 17 points last season, mostly as a starter, and should play less this season.",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Sam Hauser",
+   "team": "BOS",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Derrick White",
+   "team": "BOS",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He should get more catch-and-shoot looks next to Tatum and George.",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Luka Garza",
+   "team": "BOS",
+   "role": "Bench (3rd C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0730"
   }
  ],
  "teams": [
@@ -2429,12 +2639,12 @@
   },
   {
    "team": "BOS",
-   "starters": "Jayson Tatum, Paul George — partial",
-   "bench": "Mitchell Robinson (not expected to start), Payton Pritchard, Sam Hauser",
-   "backup_c": "Mitchell Robinson",
-   "coach": "",
+   "starters": "Derrick White, Sam Hauser, Jayson Tatum, Paul George, Mitchell Robinson (or Neemias Queta)",
+   "bench": "Payton Pritchard (6th), Neemias Queta or Mitchell Robinson, Baylor Scheierman, Hugo Gonzalez, Mike Conley, Jordan Walsh, Luka Garza (3rd C)",
+   "backup_c": "Neemias Queta or Mitchell Robinson",
+   "coach": "Joe Mazzulla",
    "notes": "Jaylen Brown is gone, and Paul George is the No. 2 option behind Tatum. Derrick White's team is unconfirmed. Boston has the most back-to-backs (16), including 3 in the fantasy playoffs.",
-   "source": "LO-0713"
+   "source": "LO-0730"
   },
   {
    "team": "POR",
@@ -2474,12 +2684,12 @@
   },
   {
    "team": "MIL",
-   "starters": "Tyler Herro, Myles Turner — partial",
-   "bench": "Kel'el Ware (may start next to Turner), Kevin Porter Jr., Ryan Rollins, Gary Trent Jr., Kasparas Jakucionis, Braden Burries",
-   "backup_c": "",
-   "coach": "Taylor Jenkins (new); Doc Rivers coached last season",
+   "starters": "Ryan Rollins, Tyler Herro, Jaime Jaquez, Kel'el Ware, Myles Turner",
+   "bench": "Kevin Porter Jr. (6th), Braden Burries, Kasparas Jakucionis, AJ Green, Gary Trent Jr., Kyle Kuzma",
+   "backup_c": "Kel'el Ware",
+   "coach": "Taylor Jenkins",
    "notes": "Giannis is gone to Miami. The roster is crowded with guards, and Milwaukee does not own its pick, so there is tanking risk.",
-   "source": "LO-0723"
+   "source": "LO-0814"
   },
   {
    "team": "WAS",
@@ -2591,12 +2801,12 @@
   },
   {
    "team": "OKC",
-   "starters": "Shai Gilgeous-Alexander, Jalen Williams, Chet Holmgren — partial",
-   "bench": "Ajay Mitchell, Cason Wallace, Nikola Topic, Isaiah Hartenstein, Jaylin Williams, Bennett Stirtz (rookie)",
+   "starters": "Shai Gilgeous-Alexander, Cason Wallace, Jalen Williams, Chet Holmgren, Isaiah Hartenstein",
+   "bench": "Ajay Mitchell, Alex Caruso, Jared McCain, Bennett Stirtz, Nikola Topic, Thomas Sorber",
    "backup_c": "",
    "coach": "",
    "notes": "OKC lost Aaron Wiggins, Isaiah Joe and Lu Dort this offseason.",
-   "source": "LO-0721"
+   "source": "LO-0726"
   },
   {
    "team": "MEM",
@@ -2633,6 +2843,15 @@
    "coach": "David Adelman",
    "notes": "Peyton Watson is gone and DeRozan was added. The fantasy playoff schedule is 4-4-3 for leagues ending March 28. Denver has 14 back-to-backs and a clean injury report.",
    "source": "LO-0930"
+  },
+  {
+   "team": "NYK",
+   "starters": "Jalen Brunson, Mikal Bridges, Josh Hart, OG Anunoby, Karl-Anthony Towns",
+   "bench": "Miles McBride, Tyler Kolek, Jordan Clarkson, Landry Shamet, Mohamed Diawara, Andre Drummond (backup C), Tyler Nickel",
+   "backup_c": "Andre Drummond",
+   "coach": "Mike Brown",
+   "notes": "",
+   "source": "LO-0813"
   }
  ],
  "injuries": [
@@ -2802,9 +3021,29 @@
    "role": "Starter",
    "minutes": "",
    "usage": "Up (No. 2 behind Tatum)",
-   "status": "Knee history",
-   "note": "He came from Philadelphia and was very good after his 25-game suspension last season.",
-   "source": "LO-0713"
+   "status": "Will not play back-to-backs; may miss about half the season",
+   "note": "",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "Up",
+   "status": "Healthy (fully back from Achilles injury)",
+   "note": "He will play a little small-ball center.",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Mitchell Robinson",
+   "team": "BOS",
+   "role": "Starter or bench (C)",
+   "minutes": "About 20",
+   "usage": "",
+   "status": "Ankle problems; will not play back-to-backs",
+   "note": "He shares center minutes about evenly with Neemias Queta.",
+   "source": "LO-0730"
   },
   {
    "player": "Ja Morant",
@@ -2903,8 +3142,8 @@
    "minutes": "High",
    "usage": "",
    "status": "Multiple injuries last season",
-   "note": "He came from Miami and will start but will not be the primary point guard.",
-   "source": "LO-0713"
+   "note": "He should be the leading scorer and is on a $33 million expiring deal.",
+   "source": "LO-0814"
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -3023,8 +3262,8 @@
    "minutes": "",
    "usage": "Up",
    "status": "Wrist injury, then several hamstring injuries last season",
-   "note": "OKC lost Aaron Wiggins, Isaiah Joe and Lu Dort, which should open usage for him.",
-   "source": "LO-0720"
+   "note": "He played only 40 games last season, and the team wants him shooting more threes.",
+   "source": "LO-0726"
   },
   {
    "player": "Ace Bailey",
@@ -3335,6 +3574,46 @@
    "status": "Sits about 16 back-to-backs a season",
    "note": "",
    "source": "LO-0811"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Had wrist surgery; expected ready for opening night",
+   "note": "",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "role": "Starter (C)",
+   "minutes": "",
+   "usage": "",
+   "status": "History of lower-body issues",
+   "note": "",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Miles McBride",
+   "team": "NYK",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Abdominal issue",
+   "note": "He did not sign an extension and has come up in trade talk.",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Thomas Sorber",
+   "team": "OKC",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Coming off a torn ACL",
+   "note": "",
+   "source": "LO-0726"
   }
  ],
  "moves": [
@@ -3478,7 +3757,7 @@
    "player": "Marcus Smart",
    "from": "LAL",
    "to": "HOU",
-   "type": "",
+   "type": "Signing",
    "note": "",
    "source": "LO-1001"
   },
@@ -3494,8 +3773,8 @@
    "player": "Tyler Herro",
    "from": "MIA",
    "to": "MIL",
-   "type": "",
-   "note": "",
+   "type": "Trade",
+   "note": "He came over in the Giannis Antetokounmpo trade.",
    "source": "LO-0713"
   },
   {
@@ -3582,7 +3861,7 @@
    "player": "Mitchell Robinson",
    "from": "NYK",
    "to": "BOS",
-   "type": "",
+   "type": "Signing",
    "note": "",
    "source": "LO-0707"
   },
@@ -3780,7 +4059,7 @@
   },
   {
    "player": "Isaiah Joe",
-   "from": "",
+   "from": "OKC",
    "to": "DET",
    "type": "",
    "note": "",
@@ -3921,6 +4200,70 @@
    "type": "",
    "note": "",
    "source": "LO-0806"
+  },
+  {
+   "player": "Andre Drummond",
+   "from": "",
+   "to": "NYK",
+   "type": "",
+   "note": "",
+   "source": "LO-0813"
+  },
+  {
+   "player": "Kel'el Ware",
+   "from": "MIA",
+   "to": "MIL",
+   "type": "Trade",
+   "note": "He came over in the Giannis Antetokounmpo trade.",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Jaime Jaquez",
+   "from": "MIA",
+   "to": "MIL",
+   "type": "Trade",
+   "note": "He came over in the Giannis Antetokounmpo trade.",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Kasparas Jakucionis",
+   "from": "MIA",
+   "to": "MIL",
+   "type": "Trade",
+   "note": "He came over in the Giannis Antetokounmpo trade.",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Bobby Portis",
+   "from": "MIL",
+   "to": "",
+   "type": "",
+   "note": "",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Caris LeVert",
+   "from": "",
+   "to": "MIL",
+   "type": "Trade",
+   "note": "He may be waived.",
+   "source": "LO-0814"
+  },
+  {
+   "player": "Mike Conley",
+   "from": "",
+   "to": "BOS",
+   "type": "",
+   "note": "",
+   "source": "LO-0730"
+  },
+  {
+   "player": "Lu Dort",
+   "from": "OKC",
+   "to": "",
+   "type": "",
+   "note": "",
+   "source": "LO-0726"
   }
  ],
  "sources": [
@@ -4147,6 +4490,41 @@
    "show": "Locked On Fantasy Basketball",
    "title": "Portland Trail Blazers 2026/27 NBA Season Preview: Too Many Guards & Too Much Usage",
    "url": "https://www.youtube.com/watch?v=YJk7ZFKFqnI"
+  },
+  {
+   "id": "LO-0813",
+   "date": "2026-08-13",
+   "show": "Locked On Fantasy Basketball",
+   "title": "New York Knicks 2026/27 NBA Season Preview: The Champs Are Looking To Repeat",
+   "url": "https://www.youtube.com/watch?v=okN3fbHJtlA"
+  },
+  {
+   "id": "LO-0813b",
+   "date": "2026-08-13",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Houston Rockets 26/27 NBA Season Preview",
+   "url": "https://www.youtube.com/watch?v=yoCTTlJ_tPQ"
+  },
+  {
+   "id": "LO-0814",
+   "date": "2026-08-14",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Milwaukee Bucks 2026/27 NBA Season Preview: A New Era Begins",
+   "url": "https://www.youtube.com/watch?v=owlM6b8oUd0"
+  },
+  {
+   "id": "LO-0726",
+   "date": "2026-07-26",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Oklahoma City Thunder 2026/27 Season Outlook",
+   "url": "https://www.youtube.com/watch?v=75Sk_4fkgIM"
+  },
+  {
+   "id": "LO-0730",
+   "date": "2026-07-30",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Boston Celtics 2026/27 Season Outlook - No Jaylen Brown, Still A Contender?",
+   "url": "https://www.youtube.com/watch?v=TiiaNZCJNs8"
   }
  ],
  "quickhits": {
@@ -4306,6 +4684,24 @@
     "team": "PHI",
     "text": "He is expected to play point guard, and his assists could rise to about 8.",
     "source": "LO-0806"
+   },
+   {
+    "player": "Ryan Rollins",
+    "team": "MIL",
+    "text": "He should start and could score about 20 a game, up from about 17.",
+    "source": "LO-0814"
+   },
+   {
+    "player": "Cason Wallace",
+    "team": "OKC",
+    "text": "He takes over Lu Dort’s starting spot.",
+    "source": "LO-0726"
+   },
+   {
+    "player": "Andre Drummond",
+    "team": "NYK",
+    "text": "He takes over Mitchell Robinson’s backup center minutes and can play back-to-backs.",
+    "source": "LO-0813"
    }
   ],
   "role_down": [
@@ -4354,8 +4750,8 @@
    {
     "player": "Reed Sheppard",
     "team": "HOU",
-    "text": "VanVleet, Smart and Bogdanovic cut his path to more than about 26 minutes.",
-    "source": "LO-1001"
+    "text": "He projects for 18-25 minutes in a crowded guard room.",
+    "source": "LO-0813b"
    },
    {
     "player": "Santi Aldama",
@@ -4416,6 +4812,12 @@
     "team": "MEM",
     "text": "His usage should drop from about 33% as a starter in a deeper rotation.",
     "source": "LO-0817"
+   },
+   {
+    "player": "Payton Pritchard",
+    "team": "BOS",
+    "text": "He goes back to the bench with Tatum healthy and should play less.",
+    "source": "LO-0730"
    }
   ],
   "if_sits": [
@@ -4465,8 +4867,8 @@
     "out": "Fred VanVleet",
     "team": "HOU",
     "benefits": "Marcus Smart",
-    "text": "Smart would likely start, which makes him a streaming option.",
-    "source": "LO-1001"
+    "text": "Smart moves into the starting lineup.",
+    "source": "LO-0813b"
    },
    {
     "out": "Kevin Durant or Jabari Smith Jr.",
@@ -4600,14 +5002,28 @@
     "benefits": "Jrue Holiday",
     "text": "Holiday, Henderson and Sharpe only matter for fantasy when a starting guard is out.",
     "source": "LO-0811"
+   },
+   {
+    "out": "Karl-Anthony Towns",
+    "team": "NYK",
+    "benefits": "Andre Drummond",
+    "text": "Drummond can push to about 29 minutes.",
+    "source": "LO-0813"
+   },
+   {
+    "out": "Mitchell Robinson",
+    "team": "BOS",
+    "benefits": "Neemias Queta",
+    "text": "Queta takes the center minutes, and Luka Garza is the third center.",
+    "source": "LO-0730"
    }
   ],
   "rest_watch": [
    {
     "player": "Fred VanVleet",
     "team": "HOU",
-    "text": "He is back from a torn ACL and is likely to sit back-to-backs until about Thanksgiving.",
-    "source": "LO-1001"
+    "text": "He is coming back from a torn ACL and may sit early back-to-backs.",
+    "source": "LO-0813b"
    },
    {
     "player": "Steven Adams",
@@ -4686,6 +5102,18 @@
     "team": "TOR",
     "text": "About 60-65 games are expected.",
     "source": "LO-0820"
+   },
+   {
+    "player": "Paul George",
+    "team": "BOS",
+    "text": "He will not play back-to-backs and may miss about half the season.",
+    "source": "LO-0730"
+   },
+   {
+    "player": "Mitchell Robinson",
+    "team": "BOS",
+    "text": "He has ankle problems and will not play back-to-backs.",
+    "source": "LO-0730"
    }
   ],
   "out_to_start": [
@@ -4855,7 +5283,7 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "He could return to a top-five scoring role.",
+   "note": "He will play a little small-ball center.",
    "source": "NBA-0929"
   },
   {
@@ -5275,7 +5703,7 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "OKC lost Aaron Wiggins, Isaiah Joe and Lu Dort, which should open usage for him.",
+   "note": "He played only 40 games last season, and the team wants him shooting more threes.",
    "source": "NBA-0929"
   },
   {
@@ -5335,7 +5763,7 @@
    "team": "MIL",
    "flag": "",
    "change": "",
-   "note": "He came from Miami and will start but will not be the primary point guard.",
+   "note": "He should be the leading scorer and is on a $33 million expiring deal.",
    "source": "NBA-0929"
   },
   {
@@ -5433,9 +5861,9 @@
    "player": "Ryan Rollins",
    "pos": "PG,SG",
    "team": "MIL",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "up",
+   "change": "Role up",
+   "note": "He should start and could score about 20 a game, up from about 17.",
    "source": "NBA-0929"
   },
   {
@@ -5495,7 +5923,7 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He should get more catch-and-shoot looks next to Tatum and George.",
    "source": "NBA-0929"
   },
   {
@@ -5563,9 +5991,9 @@
    "player": "Paul George",
    "pos": "PF,SF",
    "team": "BOS",
-   "flag": "",
-   "change": "",
-   "note": "He came from Philadelphia and was very good after his 25-game suspension last season.",
+   "flag": "rest",
+   "change": "Rest watch",
+   "note": "He will not play back-to-backs and may miss about half the season.",
    "source": "NBA-0929"
   },
   {
@@ -5583,9 +6011,9 @@
    "player": "Payton Pritchard",
    "pos": "PG,SG",
    "team": "BOS",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "down",
+   "change": "Role down",
+   "note": "He goes back to the bench with Tatum healthy and should play less.",
    "source": "NBA-0929"
   },
   {
@@ -5635,7 +6063,7 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He is the starter most at risk of regression after shooting 41% from three last season, up from 31% and 33% the two years before.",
    "source": "NBA-0929"
   },
   {
@@ -5745,7 +6173,7 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He stays the third option but should have more big scoring nights, especially when Brunson or Towns rest.",
    "source": "NBA-0929"
   },
   {
@@ -5905,7 +6333,7 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "His role is expected to stay the same.",
    "source": "NBA-0929"
   },
   {
@@ -5945,7 +6373,7 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He may start, and he is likely to close games.",
    "source": "NBA-0929"
   },
   {
@@ -6085,7 +6513,7 @@
    "team": "MIL",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He is the Miami piece most likely to be traded before the season.",
    "source": "NBA-0929"
   },
   {
@@ -6245,7 +6673,7 @@
    "team": "HOU",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He is back from a torn ACL and is likely to sit back-to-backs until about Thanksgiving.",
+   "note": "He is coming back from a torn ACL and may sit early back-to-backs.",
    "source": "NBA-0929"
   },
   {
@@ -6265,7 +6693,7 @@
    "team": "HOU",
    "flag": "down",
    "change": "Role down",
-   "note": "VanVleet, Smart and Bogdanovic cut his path to more than about 26 minutes.",
+   "note": "He projects for 18-25 minutes in a crowded guard room.",
    "source": "NBA-0929"
   },
   {
@@ -6373,9 +6801,9 @@
    "player": "Cason Wallace",
    "pos": "PG,SF,SG",
    "team": "OKC",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "up",
+   "change": "Role up",
+   "note": "He takes over Lu Dort’s starting spot.",
    "source": "NBA-0929"
   },
   {
@@ -6555,7 +6983,7 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "There is no chance he starts, but his role should grow.",
    "source": "NBA-0929"
   },
   {
@@ -6845,7 +7273,7 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He did not sign an extension and has come up in trade talk.",
    "source": "NBA-0929"
   },
   {
@@ -7023,9 +7451,9 @@
    "player": "Mitchell Robinson",
    "pos": "C",
    "team": "BOS",
-   "flag": "",
-   "change": "",
-   "note": "He is new to Boston and is not expected to start.",
+   "flag": "rest",
+   "change": "Rest watch",
+   "note": "He has ankle problems and will not play back-to-backs.",
    "source": "NBA-0929"
   },
   {
@@ -7113,9 +7541,9 @@
    "player": "Andre Drummond",
    "pos": "C",
    "team": "NYK",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "up",
+   "change": "Role up",
+   "note": "He takes over Mitchell Robinson’s backup center minutes and can play back-to-backs.",
    "source": "NBA-0929"
   },
   {
@@ -7584,7 +8012,7 @@
    "player": "Jalen Brunson",
    "team": "NYK",
    "pos": "PG",
-   "role": "",
+   "role": "Starter",
    "min": 35.0,
    "usg": 30.4,
    "threes": 2.6,
@@ -8128,7 +8556,7 @@
    "player": "Karl-Anthony Towns",
    "team": "NYK",
    "pos": "C",
-   "role": "",
+   "role": "Starter",
    "min": 31.0,
    "usg": 25.9,
    "threes": 1.5,
@@ -8394,7 +8822,7 @@
    "player": "Chet Holmgren",
    "team": "OKC",
    "pos": "PF",
-   "role": "",
+   "role": "Starter",
    "min": 28.9,
    "usg": 21.9,
    "threes": 1.3,
@@ -8434,7 +8862,7 @@
    "player": "Payton Pritchard",
    "team": "BOS",
    "pos": "PG",
-   "role": "",
+   "role": "Sixth man",
    "min": 32.4,
    "usg": 21.4,
    "threes": 2.7,
@@ -8470,7 +8898,7 @@
    "player": "OG Anunoby",
    "team": "NYK",
    "pos": "PF",
-   "role": "",
+   "role": "Starter",
    "min": 33.2,
    "usg": 19.7,
    "threes": 2.3,
@@ -8524,7 +8952,7 @@
    "player": "Derrick White",
    "team": "BOS",
    "pos": "SG",
-   "role": "",
+   "role": "Starter",
    "min": 34.1,
    "usg": 22.0,
    "threes": 2.7,
@@ -9168,7 +9596,7 @@
    "player": "Neemias Queta",
    "team": "BOS",
    "pos": "C",
-   "role": "",
+   "role": "Bench",
    "min": 25.3,
    "usg": 14.7,
    "threes": 0.0,
@@ -9240,7 +9668,7 @@
    "player": "Isaiah Hartenstein",
    "team": "OKC",
    "pos": "C",
-   "role": "",
+   "role": "Starter",
    "min": 24.2,
    "usg": 16.1,
    "threes": 0.0,
@@ -9258,7 +9686,7 @@
    "player": "Cason Wallace",
    "team": "OKC",
    "pos": "SG",
-   "role": "",
+   "role": "Starter",
    "min": 26.6,
    "usg": 14.5,
    "threes": 1.3,
@@ -9294,7 +9722,7 @@
    "player": "Andre Drummond",
    "team": "NYK",
    "pos": "C",
-   "role": "",
+   "role": "Bench",
    "min": 19.5,
    "usg": 14.9,
    "threes": 0.5,
