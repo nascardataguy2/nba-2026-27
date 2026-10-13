@@ -69,8 +69,8 @@
   {
    "player": "Giannis Antetokounmpo",
    "team": "MIA",
-   "text": "He played only 29 minutes last season, and 32 or more is expected in Miami.",
-   "source": "LO-0713"
+   "text": "He should play 32-33 minutes after under 29 last season.",
+   "source": "LO-1010"
   },
   {
    "player": "Cameron Boozer",
@@ -185,6 +185,24 @@
    "team": "NOP",
    "text": "He could win the starting center job under the new coach.",
    "source": "LO-0804"
+  },
+  {
+   "player": "Cedric Coward",
+   "team": "MEM",
+   "text": "He should play about 28 minutes with more shots.",
+   "source": "LO-1010b"
+  },
+  {
+   "player": "LaMelo Ball",
+   "team": "MIN",
+   "text": "His minutes and rebounds should go up.",
+   "source": "LO-1009"
+  },
+  {
+   "player": "Domantas Sabonis",
+   "team": "SAC",
+   "text": "His minutes and touches should rise without DeRozan, Westbrook and Schroder.",
+   "source": "LO-1008"
   }
  ],
  "role_down": [
@@ -313,6 +331,24 @@
    "team": "SAC",
    "text": "He projects as the third option behind LaVine and Hunter.",
    "source": "LO-0731"
+  },
+  {
+   "player": "Andrew Wiggins",
+   "team": "MIA",
+   "text": "His usage should drop next to Giannis.",
+   "source": "LO-1010"
+  },
+  {
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "text": "Kawhi Leonard may take the ball out of his hands.",
+   "source": "LO-1008"
+  },
+  {
+   "player": "Jaime Jaquez",
+   "team": "MIL",
+   "text": "His assists should drop with so many ball handlers.",
+   "source": "LO-1008b"
   }
  ],
  "if_sits": [
@@ -376,15 +412,15 @@
    "out": "Rudy Gobert",
    "team": "MIN",
    "benefits": "Joan Beringer",
-   "text": "Beringer becomes a must-roster center.",
-   "source": "LO-0904"
+   "text": "Beringer plays 30-plus minutes.",
+   "source": "LO-1009"
   },
   {
    "out": "LaMelo Ball",
    "team": "MIN",
    "benefits": "Ayo Dosunmu",
-   "text": "Dosunmu gains value as the bench creator.",
-   "source": "LO-0827"
+   "text": "Dosunmu starts at point guard.",
+   "source": "LO-1009"
   },
   {
    "out": "Kyrie Irving",
@@ -481,8 +517,8 @@
    "out": "Zach Edey",
    "team": "MEM",
    "benefits": "Isaiah Stewart",
-   "text": "Stewart can spot start, and Quinten Post also gets center minutes.",
-   "source": "LO-0817"
+   "text": "Stewart starts ahead of Quinten Post.",
+   "source": "LO-1010b"
   },
   {
    "out": "Kawhi Leonard",
@@ -515,9 +551,9 @@
   {
    "out": "Jusuf Nurkic",
    "team": "UTA",
-   "benefits": "Jaxson Hayes",
-   "text": "Hayes plays ahead of Kyle Filipowski.",
-   "source": "LO-0805"
+   "benefits": "Ace Bailey",
+   "text": "Bailey could play about 30 minutes, and Kyle Filipowski returns to the rotation.",
+   "source": "LO-1008b"
   },
   {
    "out": "Darryn Peterson or Lauri Markkanen",
@@ -532,6 +568,34 @@
    "benefits": "Nikola Vucevic",
    "text": "Vucevic plays more center minutes.",
    "source": "LO-0802"
+  },
+  {
+   "out": "Giannis Antetokounmpo or Bam Adebayo",
+   "team": "MIA",
+   "benefits": "Bobby Portis",
+   "text": "Portis plays about 26-27 minutes.",
+   "source": "LO-1010"
+  },
+  {
+   "out": "Drew Smith",
+   "team": "MIA",
+   "benefits": "Ryan Conwell",
+   "text": "The rookie could take his minutes.",
+   "source": "LO-1010"
+  },
+  {
+   "out": "Ty Jerome",
+   "team": "MEM",
+   "benefits": "Scotty Pippen Jr.",
+   "text": "Pippen starts at point guard.",
+   "source": "LO-1010b"
+  },
+  {
+   "out": "Coby White",
+   "team": "CHA",
+   "benefits": "Brandon Miller",
+   "text": "Miller gets more volume, minutes and playmaking.",
+   "source": "LO-1008"
   }
  ],
  "rest_watch": [
@@ -610,8 +674,8 @@
   {
    "player": "Zach Edey",
    "team": "MEM",
-   "text": "About 65 games and 25-28 minutes are expected after his ankle and foot surgeries.",
-   "source": "LO-0817"
+   "text": "He is expected ready for opening night but should get days off after two surgeries.",
+   "source": "LO-1010b"
   },
   {
    "player": "Kawhi Leonard",
@@ -738,8 +802,26 @@
   {
    "player": "Donte DiVincenzo",
    "team": "MIN",
-   "text": "Out until at least March.",
-   "source": "LO-0819"
+   "text": "His Achilles injury could keep him out until March.",
+   "source": "LO-1009"
+  },
+  {
+   "player": "Jusuf Nurkic",
+   "team": "UTA",
+   "text": "A plantar fascia and toe issue will keep him out at least four weeks.",
+   "source": "LO-1008b"
+  },
+  {
+   "player": "Drew Smith",
+   "team": "MIA",
+   "text": "A calf strain might keep him out at the start of the season.",
+   "source": "LO-1010"
+  },
+  {
+   "player": "Coby White",
+   "team": "CHA",
+   "text": "He is probably missing the start of the season.",
+   "source": "LO-1008"
   }
  ]
 }

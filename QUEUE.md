@@ -12,6 +12,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 6 (10/11): Locked On — MEM, MIN, TOR, PHI, POR
 - Chunk 7 (10/12): Locked On — NYK, HOU full preview, MIL, OKC, BOS
 - Chunk 8 (10/12): Locked On — SAC, ORL, NOP, UTA, WAS
+- Chunk 12 (10/13): 10/12 batch, Locked On — MIN, must-draft list, MIL, MIA, MEM
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
 
@@ -21,7 +22,6 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 11 (Old Man Squad + Number Two Sports): Must-drafts and do-not-drafts (x10, 10/5), Expected busts (x11, 9/20), Must-draft sleepers (x12, 9/26), Must-draft breakouts (x13, 10/6)
 
 ## Daily batch, added 10/12 (files in transcripts/extra/; undated episodes were posted before 10/12)
-- Chunk 12 (Locked On): MIN preview (x14, 10/9), Must-draft players (x15, 10/8), MIL hardest to project (x16, 10/8), MIA preview (x17), MEM preview (x18)
 - Chunk 13 (Locked On + RotoWire): Busts to avoid (x19), Who we would rather draft (x20, 10/8), Busts at ADP (x21), 6 must-draft forwards (x22), 11 most important players (x23), 6 must-draft centers (x24)
 
 ## Daily batch, added 10/13 (files in transcripts/extra/; undated episodes were posted before 10/13)
