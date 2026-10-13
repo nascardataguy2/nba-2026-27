@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-13",
  "players": [
   {
    "player": "Luka Doncic",
@@ -728,8 +728,8 @@
    "minutes": "Up (25 to 33-35)",
    "usage": "",
    "status": "Healthy",
-   "note": "He played only about 25 minutes a game last season. He signed a big new deal with Washington and will start at point guard over Bub Carrington. He projects for about 24 points and 9 assists.",
-   "source": "LO-0720"
+   "note": "He stays the offensive engine, but his usage should be lower than his peak.",
+   "source": "LO-0723b"
   },
   {
    "player": "Anthony Davis",
@@ -906,10 +906,10 @@
    "team": "SAC",
    "role": "Starter",
    "minutes": "",
-   "usage": "Up (more ball handling)",
+   "usage": "Up (more on-ball)",
    "status": "Injury ended his season last year",
-   "note": "Schroder, Westbrook and DeRozan are gone. He is in the final year of his contract and could be traded.",
-   "source": "LO-0720"
+   "note": "He opted into his $49 million contract and should have the ball more with Schroder, Westbrook and DeRozan gone.",
+   "source": "LO-0731"
   },
   {
    "player": "Domantas Sabonis",
@@ -918,18 +918,18 @@
    "minutes": "~30",
    "usage": "",
    "status": "Injured twice last season",
-   "note": "His shooting fell sharply last season. He is a trade candidate, and he still blocks Maxime Raynaud.",
-   "source": "LO-0720"
+   "note": "He missed most of last season with hamstring, rib and knee injuries, and the offense should run through him again.",
+   "source": "LO-0731"
   },
   {
    "player": "Malik Monk",
    "team": "SAC",
-   "role": "Bench",
+   "role": "Bench (backup PG)",
    "minutes": "Under 29",
    "usage": "",
    "status": "Healthy",
-   "note": "The coach and front office seem to dislike him.",
-   "source": "LO-0720"
+   "note": "He is the backup point guard, and there is no third point guard.",
+   "source": "LO-0731"
   },
   {
    "player": "Darius Acuff Jr.",
@@ -995,7 +995,7 @@
    "player": "AJ Dybantsa",
    "team": "WAS",
    "role": "Starter (No. 1 pick)",
-   "minutes": "",
+   "minutes": "About 28 early",
    "usage": "Limited behind Trae Young and Anthony Davis",
    "status": "Healthy",
    "note": "He played only two Summer League games and shot 39%. His draft price looks far too high.",
@@ -1044,19 +1044,19 @@
   {
    "player": "Darryn Peterson",
    "team": "UTA",
-   "role": "Rookie guard (No. 2 pick)",
+   "role": "Starter (rookie)",
    "minutes": "",
    "usage": "Lower than his 38% Summer League rate",
    "status": "Healthy",
-   "note": "He averaged 20 points but 5 turnovers at Summer League. He ranks outside the top 110.",
-   "source": "LO-0721"
+   "note": "",
+   "source": "LO-0805"
   },
   {
    "player": "Ace Bailey",
    "team": "UTA",
    "role": "Bench",
    "minutes": "Near 30",
-   "usage": "",
+   "usage": "Up",
    "status": "Some back issues in Summer League",
    "note": "He is expected to come off the bench.",
    "source": "LO-0904"
@@ -1076,7 +1076,7 @@
    "team": "NOP",
    "role": "Bench",
    "minutes": "Under 30",
-   "usage": "",
+   "usage": "Down",
    "status": "Healthy",
    "note": "He lost his starting job when Dejounte Murray returned last season, and Mathurin now joins the bench.",
    "source": "LO-0904"
@@ -2580,6 +2580,236 @@
    "status": "Healthy",
    "note": "",
    "source": "LO-0730"
+  },
+  {
+   "player": "Keegan Murray",
+   "team": "SAC",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "Down",
+   "status": "Missed most of last season (finger, ankle)",
+   "note": "He projects as the third option behind LaVine and Hunter.",
+   "source": "LO-0731"
+  },
+  {
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0731"
+  },
+  {
+   "player": "Maxime Raynaud",
+   "team": "SAC",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0731"
+  },
+  {
+   "player": "Alex Karaban",
+   "team": "SAC",
+   "role": "Bench (rookie)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He is not expected to be in the rotation this season.",
+   "source": "LO-0731"
+  },
+  {
+   "player": "Wendell Carter Jr.",
+   "team": "ORL",
+   "role": "Starter (C)",
+   "minutes": "Under 30",
+   "usage": "",
+   "status": "Healthy (72+ games two years in a row)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Jalen Suggs",
+   "team": "ORL",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Hip and knee injuries last season; plan for about 20 missed games",
+   "note": "He is the most likely trade candidate for salary reasons.",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Missed about 47-51 games last season (high ankle sprain, oblique)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "role": "Bench (6th man)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He averaged 15 points last season and stays the main bench creator.",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy (played all 82 games last season)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Paolo Banchero",
+   "team": "ORL",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy (about 70 games expected)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Coming off ACL injury (played about 12-14 games last season)",
+   "note": "He starts over Jeremiah Fears.",
+   "source": "LO-0804"
+  },
+  {
+   "player": "Yves Missi",
+   "team": "NOP",
+   "role": "Starter or bench (C)",
+   "minutes": "",
+   "usage": "Up",
+   "status": "Healthy",
+   "note": "He could win the starting center job under the new coach.",
+   "source": "LO-0804"
+  },
+  {
+   "player": "Zion Williamson",
+   "team": "NOP",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0804"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "role": "",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "New Orleans is reported to be open to trading him.",
+   "source": "LO-0804"
+  },
+  {
+   "player": "Herb Jones",
+   "team": "NOP",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0804"
+  },
+  {
+   "player": "Jaren Jackson Jr.",
+   "team": "UTA",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He should be a double-double player, and he plays the five in closing lineups.",
+   "source": "LO-0805"
+  },
+  {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0805"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "Down",
+   "status": "Healthy",
+   "note": "He scored about 24 a game last season, but his volume should drop.",
+   "source": "LO-0805"
+  },
+  {
+   "player": "Jaxson Hayes",
+   "team": "UTA",
+   "role": "Bench (backup C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "He plays ahead of Kyle Filipowski if Nurkic is out.",
+   "source": "LO-0805"
+  },
+  {
+   "player": "Kyle Filipowski",
+   "team": "UTA",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "Down",
+   "status": "Healthy",
+   "note": "His role should shrink.",
+   "source": "LO-0805"
+  },
+  {
+   "player": "DeAndre Ayton",
+   "team": "WAS",
+   "role": "Bench (backup C)",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0723b"
+  },
+  {
+   "player": "Bilal Coulibaly",
+   "team": "WAS",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "Down",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0723b"
+  },
+  {
+   "player": "Khris Middleton",
+   "team": "WAS",
+   "role": "Bench",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy",
+   "note": "",
+   "source": "LO-0723b"
   }
  ],
  "teams": [
@@ -2693,28 +2923,28 @@
   },
   {
    "team": "WAS",
-   "starters": "Trae Young, Anthony Davis, Alex Sarr — partial",
-   "bench": "",
-   "backup_c": "",
-   "coach": "",
+   "starters": "Trae Young, Kyshawn George, AJ Dybantsa, Anthony Davis, Alex Sarr",
+   "bench": "DeAndre Ayton (backup C), Bilal Coulibaly, Tre Johnson, Will Riley, Bub Carrington, Khris Middleton, Cam Whitmore, Justin Champagnie",
+   "backup_c": "DeAndre Ayton",
+   "coach": "Brian Keefe",
    "notes": "Washington should be a much better team. Sarr's usage and blocks should drop next to Davis. Sarr will likely be ready for opening night.",
    "source": "LO-0827"
   },
   {
    "team": "UTA",
-   "starters": "Jusuf Nurkic (C), Lauri Markkanen, Jaren Jackson Jr. — partial",
+   "starters": "Keyonte George, Darryn Peterson, Lauri Markkanen, Jaren Jackson Jr., Jusuf Nurkic",
    "bench": "Jaxson Hayes, Ace Bailey, Filip Petrusev",
    "backup_c": "Jaxson Hayes",
-   "coach": "",
+   "coach": "Will Hardy",
    "notes": "Kessler left for the Lakers, so Utah re-signed Nurkic and signed Hayes. Utah is trying to win this season.",
    "source": "LO-0827"
   },
   {
    "team": "ORL",
-   "starters": "Wendell Carter Jr. (C) — partial",
+   "starters": "Jalen Suggs, Desmond Bane, Franz Wagner, Paolo Banchero, Wendell Carter Jr.",
    "bench": "Nikola Vucevic (backup C, ~20-22 min), Goga Bitadze",
    "backup_c": "Nikola Vucevic",
-   "coach": "",
+   "coach": "Sean Sweeney",
    "notes": "Vucevic arrived as a backup, not a starter.",
    "source": "LO-0827"
   },
@@ -2729,10 +2959,10 @@
   },
   {
    "team": "NOP",
-   "starters": "Zion Williamson — partial",
+   "starters": "Dejounte Murray, Herb Jones, Trey Murphy III, Zion Williamson, Derik Queen or Yves Missi",
    "bench": "Bennedict Mathurin (bench scorer), Trey Murphy III, Dejounte Murray, Jeremy Sochan, Jordan Poole",
-   "backup_c": "",
-   "coach": "",
+   "backup_c": "Derik Queen or Yves Missi",
+   "coach": "Jamahl Mosley",
    "notes": "Mathurin signed for 2 years and $16 million. The team is still built around Zion. New Orleans plays only 2 games in the final week of Yahoo's default playoffs.",
    "source": "LO-0827"
   },
@@ -2783,12 +3013,12 @@
   },
   {
    "team": "SAC",
-   "starters": "Zach LaVine, Domantas Sabonis — partial",
-   "bench": "Malik Monk, Darius Acuff Jr. (rookie), Maxime Raynaud, Dylan Cardwell",
+   "starters": "Darius Acuff Jr., Zach LaVine, De'Andre Hunter, Keegan Murray, Domantas Sabonis",
+   "bench": "Malik Monk (backup PG), Nique Clifford, Maxime Raynaud, Dylan Cardwell, Mac McClung",
    "backup_c": "Maxime Raynaud",
    "coach": "Doug Christie",
    "notes": "Schroder, Westbrook and DeRozan are gone. Sabonis is a trade candidate, and LaVine is in the last year of his deal.",
-   "source": "LO-0720"
+   "source": "LO-0731"
   },
   {
    "team": "IND",
@@ -3230,10 +3460,10 @@
    "team": "SAC",
    "role": "Starter",
    "minutes": "",
-   "usage": "Up (more ball handling)",
+   "usage": "Up (more on-ball)",
    "status": "Injury ended his season last year",
-   "note": "Schroder, Westbrook and DeRozan are gone. He is in the final year of his contract and could be traded.",
-   "source": "LO-0720"
+   "note": "He opted into his $49 million contract and should have the ball more with Schroder, Westbrook and DeRozan gone.",
+   "source": "LO-0731"
   },
   {
    "player": "Domantas Sabonis",
@@ -3242,8 +3472,8 @@
    "minutes": "~30",
    "usage": "",
    "status": "Injured twice last season",
-   "note": "His shooting fell sharply last season. He is a trade candidate, and he still blocks Maxime Raynaud.",
-   "source": "LO-0720"
+   "note": "He missed most of last season with hamstring, rib and knee injuries, and the offense should run through him again.",
+   "source": "LO-0731"
   },
   {
    "player": "Ivica Zubac",
@@ -3270,7 +3500,7 @@
    "team": "UTA",
    "role": "Bench",
    "minutes": "Near 30",
-   "usage": "",
+   "usage": "Up",
    "status": "Some back issues in Summer League",
    "note": "He is expected to come off the bench.",
    "source": "LO-0904"
@@ -3614,6 +3844,76 @@
    "status": "Coming off a torn ACL",
    "note": "",
    "source": "LO-0726"
+  },
+  {
+   "player": "Keegan Murray",
+   "team": "SAC",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "Down",
+   "status": "Missed most of last season (finger, ankle)",
+   "note": "He projects as the third option behind LaVine and Hunter.",
+   "source": "LO-0731"
+  },
+  {
+   "player": "Wendell Carter Jr.",
+   "team": "ORL",
+   "role": "Starter (C)",
+   "minutes": "Under 30",
+   "usage": "",
+   "status": "Healthy (72+ games two years in a row)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Jalen Suggs",
+   "team": "ORL",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Hip and knee injuries last season; plan for about 20 missed games",
+   "note": "He is the most likely trade candidate for salary reasons.",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Missed about 47-51 games last season (high ankle sprain, oblique)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy (played all 82 games last season)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Paolo Banchero",
+   "team": "ORL",
+   "role": "Starter",
+   "minutes": "",
+   "usage": "",
+   "status": "Healthy (about 70 games expected)",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "role": "Starter (PG)",
+   "minutes": "",
+   "usage": "",
+   "status": "Coming off ACL injury (played about 12-14 games last season)",
+   "note": "He starts over Jeremiah Fears.",
+   "source": "LO-0804"
   }
  ],
  "moves": [
@@ -3747,7 +4047,7 @@
   },
   {
    "player": "Kevon Looney",
-   "from": "",
+   "from": "NOP",
    "to": "LAL",
    "type": "",
    "note": "",
@@ -3989,7 +4289,7 @@
    "player": "DeMar DeRozan",
    "from": "SAC",
    "to": "DEN",
-   "type": "",
+   "type": "Buyout",
    "note": "",
    "source": "LO-0930"
   },
@@ -4264,6 +4564,46 @@
    "type": "",
    "note": "",
    "source": "LO-0726"
+  },
+  {
+   "player": "DeAndre Ayton",
+   "from": "",
+   "to": "WAS",
+   "type": "Trade",
+   "note": "",
+   "source": "LO-0723b"
+  },
+  {
+   "player": "Jett Howard",
+   "from": "ORL",
+   "to": "DAL",
+   "type": "",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Mo Wagner",
+   "from": "ORL",
+   "to": "",
+   "type": "",
+   "note": "",
+   "source": "LO-0802"
+  },
+  {
+   "player": "Mo Bamba",
+   "from": "",
+   "to": "UTA",
+   "type": "",
+   "note": "",
+   "source": "LO-0805"
+  },
+  {
+   "player": "Russell Westbrook",
+   "from": "SAC",
+   "to": "",
+   "type": "",
+   "note": "",
+   "source": "LO-0731"
   }
  ],
  "sources": [
@@ -4525,6 +4865,41 @@
    "show": "Locked On Fantasy Basketball",
    "title": "Boston Celtics 2026/27 Season Outlook - No Jaylen Brown, Still A Contender?",
    "url": "https://www.youtube.com/watch?v=TiiaNZCJNs8"
+  },
+  {
+   "id": "LO-0731",
+   "date": "2026-07-31",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Sacramento Kings 2026-27 NBA Season Preview - Avoid Relegation",
+   "url": "https://www.youtube.com/watch?v=oEywzBZfAvY"
+  },
+  {
+   "id": "LO-0802",
+   "date": "2026-08-02",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Orlando Magic 2026/27 NBA Season Preview",
+   "url": "https://www.youtube.com/watch?v=FEcNjVRlj-U"
+  },
+  {
+   "id": "LO-0804",
+   "date": "2026-08-04",
+   "show": "Locked On Fantasy Basketball",
+   "title": "New Orleans Pelicans Season Preview - A Team With No Direction",
+   "url": "https://www.youtube.com/watch?v=5QU-jta-lWM"
+  },
+  {
+   "id": "LO-0805",
+   "date": "2026-08-05",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Utah Jazz 2026/27 NBA Season Preview | Playoff Time NOW",
+   "url": "https://www.youtube.com/watch?v=CI4k8ofUXXk"
+  },
+  {
+   "id": "LO-0723b",
+   "date": "2026-07-23",
+   "show": "Locked On Fantasy Basketball",
+   "title": "Washington Wizards 2026/27 Season Preview: What You Need To Know!",
+   "url": "https://www.youtube.com/watch?v=UTE0dNIv8nY"
   }
  ],
  "quickhits": {
@@ -4702,6 +5077,18 @@
     "team": "NYK",
     "text": "He takes over Mitchell Robinson’s backup center minutes and can play back-to-backs.",
     "source": "LO-0813"
+   },
+   {
+    "player": "Darius Acuff Jr.",
+    "team": "SAC",
+    "text": "The rookie could be the primary scorer right away.",
+    "source": "LO-0731"
+   },
+   {
+    "player": "Yves Missi",
+    "team": "NOP",
+    "text": "He could win the starting center job under the new coach.",
+    "source": "LO-0804"
    }
   ],
   "role_down": [
@@ -4818,6 +5205,18 @@
     "team": "BOS",
     "text": "He goes back to the bench with Tatum healthy and should play less.",
     "source": "LO-0730"
+   },
+   {
+    "player": "Keyonte George",
+    "team": "UTA",
+    "text": "His volume should drop with Peterson and Bailey taking on more.",
+    "source": "LO-0805"
+   },
+   {
+    "player": "Keegan Murray",
+    "team": "SAC",
+    "text": "He projects as the third option behind LaVine and Hunter.",
+    "source": "LO-0731"
    }
   ],
   "if_sits": [
@@ -5016,6 +5415,27 @@
     "benefits": "Neemias Queta",
     "text": "Queta takes the center minutes, and Luka Garza is the third center.",
     "source": "LO-0730"
+   },
+   {
+    "out": "Jusuf Nurkic",
+    "team": "UTA",
+    "benefits": "Jaxson Hayes",
+    "text": "Hayes plays ahead of Kyle Filipowski.",
+    "source": "LO-0805"
+   },
+   {
+    "out": "Darryn Peterson or Lauri Markkanen",
+    "team": "UTA",
+    "benefits": "Ace Bailey",
+    "text": "Bailey gets fed the ball.",
+    "source": "LO-0805"
+   },
+   {
+    "out": "Wendell Carter Jr.",
+    "team": "ORL",
+    "benefits": "Nikola Vucevic",
+    "text": "Vucevic plays more center minutes.",
+    "source": "LO-0802"
    }
   ],
   "rest_watch": [
@@ -5114,6 +5534,18 @@
     "team": "BOS",
     "text": "He has ankle problems and will not play back-to-backs.",
     "source": "LO-0730"
+   },
+   {
+    "player": "Jalen Suggs",
+    "team": "ORL",
+    "text": "Plan for him to miss about 20 games.",
+    "source": "LO-0802"
+   },
+   {
+    "player": "Dejounte Murray",
+    "team": "NOP",
+    "text": "He is coming back from an ACL injury.",
+    "source": "LO-0804"
    }
   ],
   "out_to_start": [
@@ -5583,7 +6015,7 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "New Orleans is reported to be open to trading him.",
    "source": "NBA-0929"
   },
   {
@@ -5601,9 +6033,9 @@
    "player": "Keyonte George",
    "pos": "PG,SG",
    "team": "UTA",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "down",
+   "change": "Role down",
+   "note": "His volume should drop with Peterson and Bailey taking on more.",
    "source": "NBA-0929"
   },
   {
@@ -5613,7 +6045,7 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "His shooting fell sharply last season. He is a trade candidate, and he still blocks Maxime Raynaud.",
+   "note": "He missed most of last season with hamstring, rib and knee injuries, and the offense should run through him again.",
    "source": "NBA-0929"
   },
   {
@@ -5711,9 +6143,9 @@
    "player": "Dejounte Murray",
    "pos": "PG,SG",
    "team": "NOP",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "rest",
+   "change": "Rest watch",
+   "note": "He is coming back from an ACL injury.",
    "source": "NBA-0929"
   },
   {
@@ -5753,7 +6185,7 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He should be a double-double player, and he plays the five in closing lineups.",
    "source": "NBA-0929"
   },
   {
@@ -6091,9 +6523,9 @@
    "player": "Jalen Suggs",
    "pos": "PG,SG",
    "team": "ORL",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "rest",
+   "change": "Rest watch",
+   "note": "Plan for him to miss about 20 games.",
    "source": "NBA-0929"
   },
   {
@@ -6121,9 +6553,9 @@
    "player": "Darius Acuff Jr.",
    "pos": "PG",
    "team": "SAC",
-   "flag": "",
-   "change": "",
-   "note": "He had 39% usage at Summer League but shot 35% from the field. There are fit concerns next to LaVine, Monk and Sabonis.",
+   "flag": "up",
+   "change": "Role up",
+   "note": "The rookie could be the primary scorer right away.",
    "source": "NBA-0929"
   },
   {
@@ -6223,7 +6655,7 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "Schroder, Westbrook and DeRozan are gone. He is in the final year of his contract and could be traded.",
+   "note": "He opted into his $49 million contract and should have the ball more with Schroder, Westbrook and DeRozan gone.",
    "source": "NBA-0929"
   },
   {
@@ -6291,9 +6723,9 @@
    "player": "Keegan Murray",
    "pos": "SF,PF",
    "team": "SAC",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "down",
+   "change": "Role down",
+   "note": "He projects as the third option behind LaVine and Hunter.",
    "source": "NBA-0929"
   },
   {
@@ -6303,7 +6735,7 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "He averaged 20 points but 5 turnovers at Summer League. He ranks outside the top 110.",
+   "note": "",
    "source": "NBA-0929"
   },
   {
@@ -6683,7 +7115,7 @@
    "team": "ORL",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "He averaged 15 points last season and stays the main bench creator.",
    "source": "NBA-0929"
   },
   {
@@ -6751,9 +7183,9 @@
    "player": "Yves Missi",
    "pos": "C",
    "team": "NOP",
-   "flag": "",
-   "change": "",
-   "note": "",
+   "flag": "up",
+   "change": "Role up",
+   "note": "He could win the starting center job under the new coach.",
    "source": "NBA-0929"
   },
   {
@@ -7083,7 +7515,7 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "The coach and front office seem to dislike him.",
+   "note": "He is the backup point guard, and there is no third point guard.",
    "source": "NBA-0929"
   },
   {
@@ -7153,7 +7585,7 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "",
+   "note": "His role should shrink.",
    "source": "NBA-0929"
   },
   {
@@ -7948,7 +8380,7 @@
    "player": "Lauri Markkanen",
    "team": "UTA",
    "pos": "PF",
-   "role": "",
+   "role": "Starter",
    "min": 34.4,
    "usg": 28.1,
    "threes": 2.7,
@@ -8206,7 +8638,7 @@
    "player": "Keyonte George",
    "team": "UTA",
    "pos": "PG",
-   "role": "",
+   "role": "Starter",
    "min": 33.1,
    "usg": 27.9,
    "threes": 2.5,
@@ -8266,7 +8698,7 @@
    "player": "Paolo Banchero",
    "team": "ORL",
    "pos": "PF",
-   "role": "",
+   "role": "Starter",
    "min": 34.8,
    "usg": 27.6,
    "threes": 1.2,
@@ -8538,7 +8970,7 @@
    "player": "Desmond Bane",
    "team": "ORL",
    "pos": "SG",
-   "role": "",
+   "role": "Starter",
    "min": 33.6,
    "usg": 23.3,
    "threes": 2.0,
@@ -8612,7 +9044,7 @@
    "player": "Jaren Jackson Jr.",
    "team": "UTA",
    "pos": "C",
-   "role": "",
+   "role": "Starter",
    "min": 30.3,
    "usg": 26.2,
    "threes": 1.8,
@@ -9190,7 +9622,7 @@
    "player": "Keegan Murray",
    "team": "SAC",
    "pos": "PF",
-   "role": "",
+   "role": "Starter",
    "min": 34.5,
    "usg": 18.7,
    "threes": 1.3,
@@ -9210,7 +9642,7 @@
    "player": "Jalen Suggs",
    "team": "ORL",
    "pos": "PG",
-   "role": "",
+   "role": "Starter",
    "min": 27.6,
    "usg": 22.9,
    "threes": 2.1,
@@ -9338,7 +9770,7 @@
    "player": "Deandre Ayton",
    "team": "WAS",
    "pos": "C",
-   "role": "",
+   "role": "Bench",
    "min": 27.2,
    "usg": 16.7,
    "threes": 0.0,
@@ -9468,7 +9900,7 @@
    "player": "Bilal Coulibaly",
    "team": "WAS",
    "pos": "SG",
-   "role": "",
+   "role": "Bench",
    "min": 26.2,
    "usg": 19.9,
    "threes": 1.2,

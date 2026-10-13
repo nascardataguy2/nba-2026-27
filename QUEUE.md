@@ -11,9 +11,9 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 5 (10/10): Locked On — CHI, CLE, ATL full preview, SAS, PHX
 - Chunk 6 (10/11): Locked On — MEM, MIN, TOR, PHI, POR
 - Chunk 7 (10/12): Locked On — NYK, HOU full preview, MIL, OKC, BOS
+- Chunk 8 (10/12): Locked On — SAC, ORL, NOP, UTA, WAS
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
-- Chunk 8: SAC (b02_e05), ORL (b02_e06), NOP (b02_e08), UTA (b02_e09), WAS (b01_e10)
 
 ## Extra channels, added 10/7 (files in transcripts/extra/)
 - Chunk 9 (RotoWire Fantasy Basketball): Safest players (x01, 9/9), 11 players experts are drafting (x02, 9/18), 6 must-draft guards (x03, 9/23), 6 sleepers and breakouts (x04, 9/30), Do-not-draft list (x05, 10/2)
