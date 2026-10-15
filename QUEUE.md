@@ -29,6 +29,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 15 (Old Man Squad + Number Two Sports): Best pick every round (x25, 10/9), 45 hidden gems (x26, 10/8), League winners list (x27, 10/7), 16 skyrocketing ADPs (x28), Do-not-draft list (x29), 10 league winners (x30, Number Two Sports, 9/8), 10 most polarizing names (x36, 10/10)
 
 ## Notes
+- Storylines (added 10/15): `quickhits.json` key `storylines` = {date, items[player, team, text, source]}, shown at the top of Quick Hits. Every run replaces it with the 5-8 biggest current news items (newest injuries, starting-job changes, minutes changes) and sets date to the run date. Same writing rules: complete sentences, no show or host names.
 - Raw daily bundles are kept in transcripts/bundles/ (private).
 - Run order (set 10/12, extended 10/13): two chunks a day, at 4:30 PM and 11:00 PM ET, in this order: 7, 8, 12, 9, 10, 11, 13, 14, 15.
 - The Miami preview arrived in the 10/12 batch (x17).

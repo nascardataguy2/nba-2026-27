@@ -42,6 +42,7 @@ main.wrap{padding-top:18px;padding-bottom:40px}
 .panel{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;min-width:0}
 .panel h2{font:800 22px/1.1 var(--head);text-transform:uppercase;letter-spacing:.03em;margin:0 0 4px;color:var(--navy)}
 .panel .hint{color:var(--muted);font-size:14px;margin:0 0 10px}
+.panel.story{margin-bottom:16px;border-left:4px solid var(--accent)} .panel.story h2{color:var(--accent)}
 .panel.up h2{color:var(--good)} .panel.down h2{color:var(--bad)} .panel.sits h2{color:var(--accent)}
 .hit{padding:10px 0;border-top:1px solid var(--line)}
 .hit:first-of-type{border-top:none}

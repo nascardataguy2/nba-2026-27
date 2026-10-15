@@ -37,7 +37,10 @@
       return '<div class="panel ' + cls + '"><h2>' + title + '</h2><p class="hint">' + hint + '</p>' + items.map(fn).join('') + '</div>';
     }
     function simple(it){ return '<div class="hit"><span class="who">' + esc(it.player) + '</span>' + tm(it.team) + bdg(it.player) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>'; }
-    var html = '<div class="grid">' +
+    var st = q.storylines || {}, sd = '';
+    if (st.date){ var dd = new Date(st.date + 'T12:00:00'); sd = isNaN(dd) ? st.date : dd.toLocaleDateString('en-US', {month:'short', day:'numeric'}); }
+    var html = panel('story', 'Today\u2019s Storylines', 'The biggest news for the slate' + (sd ? ' \u00b7 updated ' + esc(sd) : '') + '.', st.items, simple) +
+      '<div class="grid">' +
       panel('sits', 'If He Sits, Who Benefits', 'Check this when late injury news drops before lock.', q.if_sits, function(it){
         return '<div class="hit"><span class="who">' + esc(it.out) + '</span>' + tm(it.team) + ' <span class="arrow">\u2192</span> <span class="who">' + esc(it.benefits) + '</span>' + bdg(it.benefits) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>';
       }) +
