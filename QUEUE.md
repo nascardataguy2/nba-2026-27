@@ -16,13 +16,13 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 9 (10/13): RotoWire — safest players, expert risers, must-draft guards, sleepers, do-not-draft
 - Chunk 10 (10/14): Old Man Squad — steals and busts (x2), safest players, breakouts
 - Chunk 11 (10/15): Old Man Squad + Number Two Sports — must-drafts, busts, sleepers, breakouts
+- Chunk 13 (10/15): 10/12 batch, Locked On + RotoWire — busts, draft comparisons, forwards, centers, most important players
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
 
 ## Extra channels, added 10/7 (files in transcripts/extra/)
 
 ## Daily batch, added 10/12 (files in transcripts/extra/; undated episodes were posted before 10/12)
-- Chunk 13 (Locked On + RotoWire): Busts to avoid (x19), Who we would rather draft (x20, 10/8), Busts at ADP (x21), 6 must-draft forwards (x22), 11 most important players (x23), 6 must-draft centers (x24)
 
 ## Daily batch, added 10/13 (files in transcripts/extra/; undated episodes were posted before 10/13)
 - Chunk 14 (Locked On + RotoWire): NOP preview (x31, 10/10), Players to not draft (x32, 10/9), 8 deep sleepers (x33, 10/10), Most difficult players to rank (x34, 10/9), 10 must-know sleepers (x35)
