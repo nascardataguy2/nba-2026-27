@@ -28,10 +28,13 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 14 (Locked On + RotoWire): NOP preview (x31, 10/10), Players to not draft (x32, 10/9), 8 deep sleepers (x33, 10/10), Most difficult players to rank (x34, 10/9), 10 must-know sleepers (x35)
 - Chunk 15 (Old Man Squad + Number Two Sports): Best pick every round (x25, 10/9), 45 hidden gems (x26, 10/8), League winners list (x27, 10/7), 16 skyrocketing ADPs (x28), Do-not-draft list (x29), 10 league winners (x30, Number Two Sports, 9/8), 10 most polarizing names (x36, 10/10)
 
+## Daily batch, added 10/17 (files in transcripts/extra/; all undated, posted 10/14-10/17 — treat as 2026-10-15)
+- Chunk 16 (Old Man Squad + Locked On + RotoWire): 45 winners across the board (x37), TOR preview (x38), Draft cheat sheet (x39), Boom or bust players (x40), Preseason top-10 sleepers and busts (x41), Late-round league winners (x42)
+
 ## Notes
 - Storylines (added 10/15): `quickhits.json` key `storylines` = {date, items[player, team, text, source]}, shown at the top of Quick Hits. Every run replaces it with the 5-8 biggest current news items (newest injuries, starting-job changes, minutes changes) and sets date to the run date. Same writing rules: complete sentences, no show or host names.
 - Raw daily bundles are kept in transcripts/bundles/ (private).
-- Run order (set 10/12, extended 10/13): two chunks a day, at 4:30 PM and 11:00 PM ET, in this order: 7, 8, 12, 9, 10, 11, 13, 14, 15.
+- Run order (set 10/12, extended 10/13): two chunks a day, at 4:30 PM and 11:00 PM ET, in this order: 7, 8, 12, 9, 10, 11, 13, 14, 15, 16.
 - The Miami preview arrived in the 10/12 batch (x17).
 - The extra-channel episodes are mostly draft-value talk (sleepers, busts, safe picks). Their role, minutes, injury and usage facts go into the main tables, and each host's target/fade calls go into the player notes with the show named.
 - Every chunk also updates `data/quickhits.json` (If He Sits, Role Up, Role Down, Rest Watch, Out to Start) with any new facts from that chunk's episodes, then purges the jsDelivr cache with curl from the shell (network is open as of 10/15; never use WebFetch for it) (https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/db.json and .../ai.txt) so the Blogger site shows the update.
