@@ -19,6 +19,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 13 (10/15): 10/12 batch, Locked On + RotoWire — busts, draft comparisons, forwards, centers, most important players
 - Chunk 14 (10/17): 10/13 batch, Locked On + RotoWire — NOP preview, do-not-draft, sleepers, hardest to rank
 - Chunk 15 (10/18): 10/13 batch, Old Man Squad + Number Two Sports — draft targets, hidden gems, league winners, ADP risers, do-not-draft, polarizing names
+- Chunk 16 (10/18): 10/17 batch — TOR preview, cheat sheet, boom or bust, winners, late-round targets
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
 
@@ -29,7 +30,6 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 ## Daily batch, added 10/13 (files in transcripts/extra/; undated episodes were posted before 10/13)
 
 ## Daily batch, added 10/17 (files in transcripts/extra/; all undated, posted 10/14-10/17 — treat as 2026-10-15)
-- Chunk 16 (Old Man Squad + Locked On + RotoWire): 45 winners across the board (x37), TOR preview (x38), Draft cheat sheet (x39), Boom or bust players (x40), Preseason top-10 sleepers and busts (x41), Late-round league winners (x42)
 
 ## Notes
 - Storylines (added 10/15): `quickhits.json` key `storylines` = {date, items[player, team, text, source]}, shown at the top of Quick Hits. Every run replaces it with the 5-8 biggest current news items (newest injuries, starting-job changes, minutes changes) and sets date to the run date. Same writing rules: complete sentences, no show or host names.
