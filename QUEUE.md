@@ -18,6 +18,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 11 (10/15): Old Man Squad + Number Two Sports — must-drafts, busts, sleepers, breakouts
 - Chunk 13 (10/15): 10/12 batch, Locked On + RotoWire — busts, draft comparisons, forwards, centers, most important players
 - Chunk 14 (10/17): 10/13 batch, Locked On + RotoWire — NOP preview, do-not-draft, sleepers, hardest to rank
+- Chunk 15 (10/18): 10/13 batch, Old Man Squad + Number Two Sports — draft targets, hidden gems, league winners, ADP risers, do-not-draft, polarizing names
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
 
@@ -26,7 +27,6 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 ## Daily batch, added 10/12 (files in transcripts/extra/; undated episodes were posted before 10/12)
 
 ## Daily batch, added 10/13 (files in transcripts/extra/; undated episodes were posted before 10/13)
-- Chunk 15 (Old Man Squad + Number Two Sports): Best pick every round (x25, 10/9), 45 hidden gems (x26, 10/8), League winners list (x27, 10/7), 16 skyrocketing ADPs (x28), Do-not-draft list (x29), 10 league winners (x30, Number Two Sports, 9/8), 10 most polarizing names (x36, 10/10)
 
 ## Daily batch, added 10/17 (files in transcripts/extra/; all undated, posted 10/14-10/17 — treat as 2026-10-15)
 - Chunk 16 (Old Man Squad + Locked On + RotoWire): 45 winners across the board (x37), TOR preview (x38), Draft cheat sheet (x39), Boom or bust players (x40), Preseason top-10 sleepers and busts (x41), Late-round league winners (x42)
