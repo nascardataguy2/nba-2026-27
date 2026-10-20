@@ -20,6 +20,8 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 14 (10/17): 10/13 batch, Locked On + RotoWire — NOP preview, do-not-draft, sleepers, hardest to rank
 - Chunk 15 (10/18): 10/13 batch, Old Man Squad + Number Two Sports — draft targets, hidden gems, league winners, ADP risers, do-not-draft, polarizing names
 - Chunk 16 (10/18): 10/17 batch — TOR preview, cheat sheet, boom or bust, winners, late-round targets
+- Chunk 17 (10/20): 10/18 batch — WAS, UTA and NYK previews, league winners, last must-drafts, rookies and sleepers
+- 10/20 Stokastic slate show (Grok, same-day): center splits and minutes notes added to players and proj_adjust.json
 - Chunk 18 (10/20): 10/20 #2 batch — opening-night preview, two Week 1 previews, East and West rotations (all 30 team rotations refreshed)
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
@@ -33,7 +35,6 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 ## Daily batch, added 10/17 (files in transcripts/extra/; all undated, posted 10/14-10/17 — treat as 2026-10-15)
 
 ## Daily batch, added 10/20 (bundle dated 10/18; undated episodes treated as 2026-10-16)
-- Chunk 17 (Locked On + Old Man Squad + RotoWire): WAS preview (x43, 10/17), UTA preview (x44, 10/17), 16 league winners (x45, 10/17), Last must-drafts or do-not-drafts (x46, 10/17), NYK preview (x47), 10 rookies, sleepers and busts (x48)
 
 ## Daily batch, added 10/20 #2 (undated episodes treated as 2026-10-19)
 
