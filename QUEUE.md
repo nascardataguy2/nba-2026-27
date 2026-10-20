@@ -31,10 +31,14 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 
 ## Daily batch, added 10/17 (files in transcripts/extra/; all undated, posted 10/14-10/17 — treat as 2026-10-15)
 
+## Daily batch, added 10/20 (bundle dated 10/18; undated episodes treated as 2026-10-16)
+- Chunk 17 (Locked On + Old Man Squad + RotoWire): WAS preview (x43, 10/17), UTA preview (x44, 10/17), 16 league winners (x45, 10/17), Last must-drafts or do-not-drafts (x46, 10/17), NYK preview (x47), 10 rookies, sleepers and busts (x48)
+
 ## Notes
+- Season data (from 10/20): Grok uploads one season-data_DATE.txt (DailyFantasyFuel projections, Basketball-Reference advanced, TeamRankings pace; RotoWire minutes is subscriber-only and unavailable). Saved privately in data/season/ (gitignored). The daily site table is not built yet; waiting on Pearce's go.
 - Storylines (added 10/15): `quickhits.json` key `storylines` = {date, items[player, team, text, source]}, shown at the top of Quick Hits. Every run replaces it with the 5-8 biggest current news items (newest injuries, starting-job changes, minutes changes) and sets date to the run date. Same writing rules: complete sentences, no show or host names.
 - Raw daily bundles are kept in transcripts/bundles/ (private).
-- Run order (set 10/12, extended 10/13): two chunks a day, at 4:30 PM and 11:00 PM ET, in this order: 7, 8, 12, 9, 10, 11, 13, 14, 15, 16.
+- Run order (set 10/12, extended 10/13): two chunks a day, at 4:30 PM and 11:00 PM ET, in this order: 7, 8, 12, 9, 10, 11, 13, 14, 15, 16, 17.
 - The Miami preview arrived in the 10/12 batch (x17).
 - The extra-channel episodes are mostly draft-value talk (sleepers, busts, safe picks). Their role, minutes, injury and usage facts go into the main tables, and each host's target/fade calls go into the player notes with the show named.
 - Every chunk also updates `data/quickhits.json` (If He Sits, Role Up, Role Down, Rest Watch, Out to Start) with any new facts from that chunk's episodes, then purges the jsDelivr cache with curl from the shell (network is open as of 10/15; never use WebFetch for it) (https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/db.json and .../ai.txt) so the Blogger site shows the update.
