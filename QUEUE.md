@@ -20,6 +20,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 14 (10/17): 10/13 batch, Locked On + RotoWire — NOP preview, do-not-draft, sleepers, hardest to rank
 - Chunk 15 (10/18): 10/13 batch, Old Man Squad + Number Two Sports — draft targets, hidden gems, league winners, ADP risers, do-not-draft, polarizing names
 - Chunk 16 (10/18): 10/17 batch — TOR preview, cheat sheet, boom or bust, winners, late-round targets
+- Chunk 18 (10/20): 10/20 #2 batch — opening-night preview, two Week 1 previews, East and West rotations (all 30 team rotations refreshed)
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
 
@@ -35,7 +36,6 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 17 (Locked On + Old Man Squad + RotoWire): WAS preview (x43, 10/17), UTA preview (x44, 10/17), 16 league winners (x45, 10/17), Last must-drafts or do-not-drafts (x46, 10/17), NYK preview (x47), 10 rookies, sleepers and busts (x48)
 
 ## Daily batch, added 10/20 #2 (undated episodes treated as 2026-10-19)
-- Chunk 18 (opening week): Tuesday Fantasy Basketball Preview - NBA Opening Night | 2026-10-20 | Locked On Fantas (x49, 2026-10-20); Week 1 Fantasy Basketball NBA Preview - Schedule, Streaming, & More | 2026-10-19 | Loc (x50, 2026-10-19); Week 1 NBA Fantasy Preview | Waiver Adds & Schedule Analysis | Fantasy Basketball 2026 (x51, 2026-10-19); Predicting NBA Rotations For the 26/27 Season [240 Game - Western Conference] | 2026-1 (x52, 2026-10-19); Predicting NBA Rotations For the 26/27 Season [240 Game - Eastern Conference] | 2026-1 (x53, 2026-10-18)
 
 ## Notes
 - Season data (from 10/20): Grok uploads one season-data_DATE.txt (DailyFantasyFuel projections, Basketball-Reference advanced, TeamRankings pace; RotoWire minutes is subscriber-only and unavailable). Saved privately in data/season/ (gitignored). The daily site table is not built yet; waiting on Pearce's go.
