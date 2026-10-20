@@ -27,12 +27,12 @@
       <input aria-label='Search projections' id='r4p-pq' placeholder='Search a player or team' type='search'/>
       <select aria-label='Game' id='r4p-pgame'><option value=''>All games</option></select>
       <select aria-label='Position' id='r4p-ppos'><option value=''>All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>
-      <select aria-label='Sort' id='r4p-psort'><option value='dk'>By DK points</option><option value='value'>By value</option><option value='min'>By minutes</option><option value='salary'>By salary</option></select>
+      <select aria-label='Sort' id='r4p-psort'><option value='' hidden='hidden'>Sorted by column</option><option value='dk' selected='selected'>By DK points</option><option value='value'>By value</option><option value='min'>By minutes</option><option value='usg'>By usage</option><option value='salary'>By salary</option><option value='ou'>By over/under</option><option value='pts'>By points</option><option value='reb'>By rebounds</option><option value='ast'>By assists</option></select>
     </div>
     <div class='count' id='r4p-pcount'></div>
     <div class='pj' id='r4p-projlist'></div>
     <div id='r4p-pout'></div>
-    <p class='sub' style='margin:14px 0 0'>Minutes and DK points are our estimates. They start from public projections and are adjusted with live injury news, our rotation notes and recent box scores. Value is DK points per $1,000 of salary.</p>
+    <p class='sub' style='margin:14px 0 0'>Minutes and DK points are our estimates. They start from public projections and are adjusted with live injury news, our rotation notes and recent box scores. Value is DK points per $1,000 of salary. Usage is our estimate of the share of his team&#8217;s plays he finishes while on the floor. Click any column heading to sort.</p>
   </section>
   <section class='view' hidden='hidden' id='v-ranks'>
     <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research. Badges show last season&#39;s top 10 (gold) and 11 to 30 (silver) in each stat, for players with 20 or more games.</p>

@@ -83,14 +83,17 @@ def parse_sl(page):
         name = c[0].replace("`", "'")
         rows.append({"player": name, "pos": c[1], "team": fix_team(c[2]), "game": c[3],
                      "dk": f(c[5]), "pts": f(c[8]), "min": f(c[9]), "ast": f(c[12]), "reb": f(c[13]),
-                     "blk": f(c[16]), "stl": f(c[17]), "to": f(c[18])})
+                     "blk": f(c[16]), "stl": f(c[17]), "to": f(c[18]), "fga": f(c[11]),
+                     "fta": (f(c[19]) / f(c[20])) if f(c[20]) > 0 else 0.0})
     return rows
 
 
 def parse_dff(page):
     out = []
-    for attrs in re.findall(r'<tr class="[^"]*projections-listing[^"]*"([^>]*)>', page):
+    for attrs, body in re.findall(r'<tr class="[^"]*projections-listing[^"]*"([^>]*)>(.*?)</tr>', page, re.S):
         a = {k: html.unescape(v) for k, v in re.findall(r'data-([a-z_0-9]+)=\s*"([^"]*)"', attrs)}
+        m = re.search(r'<td>\s*([^<]*?)\s*</td>\s*<td class="border-left-1', body)
+        stxt = (m.group(1) if m else "").strip().upper()
         if not a.get("name"):
             continue
         pos = a.get("pos", "")
@@ -98,7 +101,7 @@ def parse_dff(page):
             pos = pos + "/" + a["pos_alt"]
         out.append({"player": a["name"], "team": fix_team(a.get("team")), "opp": fix_team(a.get("opp")),
                     "home": a.get("loc") == "vs", "date": a.get("start_date", ""), "pos": pos,
-                    "salary": int(f(a.get("salary"))), "inj": a.get("inj", ""), "start": a.get("depth_rank") == "1",
+                    "salary": int(f(a.get("salary"))), "inj": a.get("inj", ""), "start": a.get("depth_rank") == "1" or stxt in ("EXP.", "EXP", "YES", "Y", "CONF.", "CONF", "CONFIRMED", "STARTER"),
                     "spread": f(a.get("spread"), None), "ou": f(a.get("ou"), None), "tm_pts": f(a.get("proj_score"), None)})
     return out
 
@@ -193,6 +196,8 @@ def main():
         r["dkpos"] = d["pos"] if d else s["pos"]
         r["start"] = bool(d and d["start"])
         r["inj"] = d["inj"] if d else ""
+        r["spread"] = d["spread"] if d else None
+        r["ou"] = d["ou"] if d else None
         rows.append(r)
 
     by_team = {}
@@ -257,7 +262,7 @@ def main():
     # 4) Scale the stat line and DK points to the new minutes.
     for r in rows:
         ratio = r["min"] / r["base"] if r["base"] else 0
-        for st in STATS + ("dk",):
+        for st in STATS + ("dk", "fga", "fta"):
             r[st] = r[st] * ratio
         delta = r["min"] - r["base"]
         if r["min"] > 0 and not r.get("fixed") and abs(delta) >= 2.0:
@@ -292,13 +297,26 @@ def main():
     for (a, h) in gm:
         opp[a], opp[h] = h, a
 
+    # Usage rate (Basketball-Reference formula) from the projected box score.
+    tpl = {}
+    for r in rows:
+        if r["min"] > 0:
+            t = tpl.setdefault(r["team"], [0.0, 0.0])
+            t[0] += r["fga"] + 0.44 * r["fta"] + r["to"]
+            t[1] += r["min"]
+    for r in rows:
+        t = tpl.get(r["team"])
+        poss = r["fga"] + 0.44 * r["fta"] + r["to"]
+        r["usg"] = round(100.0 * poss * (t[1] / 5.0) / (r["min"] * t[0]), 1) if (t and r["min"] > 0 and t[0] > 0) else None
+
     pub = []
     for r in rows:
         if r["min"] <= 0:
             continue
         sal = r["salary"]
         pub.append({"player": r["player"], "team": r["team"], "opp": opp.get(r["team"], ""), "pos": r["dkpos"],
-                    "salary": sal, "start": r["start"], "q": r["inj"] == "Q", "min": round(r["min"], 1),
+                    "salary": sal, "start": r["start"], "q": r["inj"] == "Q", "min": round(r["min"], 1), "usg": r["usg"],
+                    "ou": r["ou"], "spread": r["spread"],
                     "pts": round(r["pts"], 1), "reb": round(r["reb"], 1), "ast": round(r["ast"], 1),
                     "stl": round(r["stl"], 1), "blk": round(r["blk"], 1), "to": round(r["to"], 1),
                     "dk": round(r["dk"], 1), "value": round(r["dk"] / (sal / 1000.0), 2) if sal else None,
@@ -313,7 +331,26 @@ def main():
     locked = {t for t, g in games.items() if g["time"] and g["time"] <= utcnow}
     prev = load_json(os.path.join(D, "projections.json"), {})
     if locked and prev.get("date") == day:
-        pub = [p for p in pub if p["team"] not in locked] + [p for p in prev.get("players", []) if p["team"] in locked]
+        cur = {(p["player"], p["team"]): p for p in pub}
+        gprev = {}
+        for g in prev.get("games", []):
+            gprev[g["home"]] = gprev[g["away"]] = g
+        kept = []
+        for p in prev.get("players", []):
+            if p["team"] not in locked:
+                continue
+            p = dict(p)
+            c = cur.get((p["player"], p["team"])) or {}
+            for k in ("usg", "ou", "spread"):
+                if k not in p:
+                    p[k] = c.get(k)
+            g = gprev.get(p["team"])
+            if g and p.get("ou") is None:
+                p["ou"] = g.get("ou")
+            if g and p.get("spread") is None and g.get("line") is not None:
+                p["spread"] = -g["line"] if g.get("fav") == p["team"] else (g["line"] if g.get("fav") else 0.0)
+            kept.append(p)
+        pub = [p for p in pub if p["team"] not in locked] + kept
         outs_pub = [o for o in outs_pub if o["team"] not in locked] + [o for o in prev.get("out", []) if o["team"] in locked]
         games_out = [g for g in games_out if g["home"] not in locked] + [g for g in prev.get("games", []) if g["home"] in locked]
         ph = load_json(os.path.join(HIST, day + ".json"), {})

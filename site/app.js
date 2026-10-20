@@ -229,28 +229,105 @@
     }).join('') + '</div>' : '';
     proj();
   }
+  var PCOLS = [
+    ['player','Player','t'], ['pos','Pos','p'], ['salary','Sal','n'], ['team','Team','t'], ['opp','Opp','t'],
+    ['ou','O/U','n'], ['spread','Spread','s'], ['dk','DK','n'], ['value','Val','n'], ['min','Min','n'], ['usg','Usg','n'],
+    ['pts','Pts','n'], ['reb','Reb','n'], ['ast','Ast','n'], ['stl','Stl','n'], ['blk','Blk','n'], ['to','TO','n']
+  ];
+  var HEAT = {ou:1, dk:1, value:1, min:1, usg:1, pts:1, reb:1, ast:1, stl:1, blk:1, to:-1};
+  var PSORT = {key:'dk', dir:-1};
+  var POSORD = {PG:1, SG:2, SF:3, PF:4, C:5, G:1.5, F:3.5};
+  function heatCss(key, v){
+    if (!HEAT[key] || v == null || !PJ) return '';
+    var vals = PJ.players.map(function(p){ return p[key]; }).filter(function(x){ return x != null; });
+    if (vals.length < 3) return '';
+    var lo = 0, eq = 0;
+    for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
+    var t = (lo + eq / 2) / vals.length;
+    if (HEAT[key] < 0) t = 1 - t;
+    if (t >= 0.6) return 'background:rgba(31,122,77,' + ((t - 0.6) / 0.4 * 0.20).toFixed(3) + ')';
+    if (t <= 0.4) return 'background:rgba(228,87,46,' + ((0.4 - t) / 0.4 * 0.14).toFixed(3) + ')';
+    return '';
+  }
+  function sortVal(p, k){
+    if (k === 'pos') return POSORD[String(p.pos).split('/')[0]] || 9;
+    return p[k];
+  }
+  function fmt(p, k){
+    var v = p[k];
+    if (k === 'salary') return money(v);
+    if (k === 'value') return v == null ? '\u2013' : v.toFixed(2) + 'x';
+    if (k === 'spread') return v == null ? '\u2013' : (v > 0 ? '+' : v < 0 ? '\u2212' : '') + n1(Math.abs(v));
+    if (k === 'usg') return v == null ? '\u2013' : n1(v) + '%';
+    return n1(v);
+  }
+  function setSort(k){
+    if (PSORT.key === k) PSORT.dir = -PSORT.dir;
+    else {
+      var typ = '';
+      PCOLS.forEach(function(c){ if (c[0] === k) typ = c[2]; });
+      PSORT = {key:k, dir:(typ === 't' || typ === 'p' || typ === 's') ? 1 : -1};
+    }
+    var sel = $('r4p-psort'), found = false;
+    for (var i = 0; i < sel.options.length; i++) if (sel.options[i].value === k) found = true;
+    sel.value = (found && PSORT.dir < 0) ? k : '';
+    proj();
+  }
   function proj(){
     if (!PJ) return;
-    var q = $('r4p-pq').value.trim().toLowerCase(), g = $('r4p-pgame').value, pos = $('r4p-ppos').value, srt = $('r4p-psort').value;
+    var q = $('r4p-pq').value.trim().toLowerCase(), g = $('r4p-pgame').value, pos = $('r4p-ppos').value;
+    var k = PSORT.key, dir = PSORT.dir;
     var list = PJ.players.filter(function(p){
       if (g){ var gg = g.split('|'); if (p.team !== gg[0] && p.team !== gg[1]) return false; }
       if (pos && ('/' + p.pos + '/').indexOf('/' + pos + '/') < 0) return false;
       if (!q) return true;
       return (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
-    }).sort(function(a, b){ return (b[srt] || 0) - (a[srt] || 0); });
+    }).sort(function(a, b){
+      var x = sortVal(a, k), y = sortVal(b, k);
+      if (x == null && y == null) return b.dk - a.dk;
+      if (x == null) return 1;
+      if (y == null) return -1;
+      if (typeof x === 'string') return dir * x.localeCompare(y) || (b.dk - a.dk);
+      return dir * (x - y) || (b.dk - a.dk);
+    });
     $('r4p-pcount').textContent = list.length + ' of ' + PJ.players.length + ' players';
-    var head = '<div class="pj-row pj-head"><div>Player</div><div>Sal</div><div>Min</div><div>DK</div><div>Val</div><div class="pj-line">Stat line</div></div>';
-    $('r4p-projlist').innerHTML = head + (list.map(function(p){
+    var arrow = function(c){ return c === k ? (dir > 0 ? ' \u25b2' : ' \u25bc') : ''; };
+    var th = PCOLS.map(function(c){
+      return '<th class="c-' + c[0] + (c[0] === k ? ' on' : '') + '" data-k="' + c[0] + '" scope="col" tabindex="0" aria-sort="' + (c[0] === k ? (dir > 0 ? 'ascending' : 'descending') : 'none') + '">' + c[1] + arrow(c[0]) + '</th>';
+    }).join('');
+    var rows = list.map(function(p){
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '');
+      var tds = PCOLS.map(function(c){
+        var key = c[0];
+        if (key === 'player') return '<td class="c-player"><span class="pj-name">' + esc(p.player) + '</span>' + tags + '</td>';
+        if (key === 'team') return '<td class="c-team">' + tm(p.team, true) + '</td>';
+        if (key === 'opp') return '<td class="c-opp">' + (p.opp ? tm(p.opp, true) : '') + '</td>';
+        if (key === 'pos') return '<td class="c-pos">' + esc(p.pos) + '</td>';
+        var st = heatCss(key, p[key]);
+        return '<td class="c-' + key + '"' + (st ? ' style="' + st + '"' : '') + '>' + fmt(p, key) + '</td>';
+      }).join('');
+      return '<tr>' + tds + '</tr>' + (p.note ? '<tr class="pj-noterow"><td colspan="' + PCOLS.length + '"><span>' + esc(p.player) + ':</span> ' + esc(p.note) + '</td></tr>' : '');
+    }).join('') || '<tr><td colspan="' + PCOLS.length + '">No players match.</td></tr>';
+    var cards = list.map(function(p){
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '');
-      return '<div class="pj-row"><div class="pj-who"><span class="pj-name">' + esc(p.player) + '</span>' + tm(p.team) + '<span class="pk-pos">' + esc(p.pos) + (p.opp ? ' vs ' + esc(p.opp) : '') + '</span>' + tags + '</div>' +
-        '<div class="pj-n"><span class="pj-k">Sal</span>' + money(p.salary) + '</div>' +
-        '<div class="pj-n"><span class="pj-k">Min</span>' + n1(p.min) + '</div>' +
-        '<div class="pj-n pj-dk"><span class="pj-k">DK</span>' + n1(p.dk) + '</div>' +
-        '<div class="pj-n"><span class="pj-k">Val</span>' + (p.value == null ? '\u2013' : p.value.toFixed(2) + 'x') + '</div>' +
-        '<div class="pj-line">' + [[p.pts,'pts'],[p.reb,'reb'],[p.ast,'ast'],[p.stl,'stl'],[p.blk,'blk'],[p.to,'to']].map(function(x){ return '<b>' + n1(x[0]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
+      var box = function(key, lbl){ var st = heatCss(key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + fmt(p, key) + '</div>'; };
+      return '<div class="pjc"><div class="pjc-who"><span class="pj-name">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
+        '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 O/U ' + fmt(p, 'ou') + ' \u00b7 Spread ' + fmt(p, 'spread') + '</div>' +
+        '<div class="pjc-nums">' + box('salary', 'Sal') + box('dk', 'DK') + box('value', 'Val') + box('min', 'Min') + box('usg', 'Usg') + '</div>' +
+        '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
         (p.note ? '<p class="pj-note">' + esc(p.note) + '</p>' : '') + '</div>';
-    }).join('') || '<div class="pj-row"><p class="pj-note">No players match.</p></div>');
+    }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
+    $('r4p-projlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target.closest('.pjt th[data-k]') : null;
+    if (t) setSort(t.getAttribute('data-k'));
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var t = e.target.closest ? e.target.closest('.pjt th[data-k]') : null;
+    if (t){ e.preventDefault(); setSort(t.getAttribute('data-k')); }
+  });
 
   function show(v){
     var tabs = document.querySelectorAll('#r4p-tabs .tab');
@@ -264,7 +341,8 @@
   for (var k = 0; k < tabs.length; k++) tabs[k].addEventListener('click', function(){ show(this.getAttribute('data-v')); });
 
 
-  ['r4p-pq','r4p-pgame','r4p-ppos','r4p-psort'].forEach(function(id){ $(id).addEventListener(id === 'r4p-pq' ? 'input' : 'change', proj); });
+  ['r4p-pq','r4p-pgame','r4p-ppos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-pq' ? 'input' : 'change', proj); });
+  $('r4p-psort').addEventListener('change', function(){ var v = this.value; if (v){ PSORT = {key:v, dir:-1}; proj(); } });
   fetchFirst(PSOURCES, false).then(projInit).catch(function(){
     $('r4p-psub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.';
   });
