@@ -137,6 +137,15 @@ main.wrap{padding-top:18px;padding-bottom:40px}
   #v-proj .toolbar select{flex:1 1 0;min-width:0;font-size:15px;padding:9px 6px}
   #v-proj .toolbar input{flex:1 1 100%}
 }
+/* Tonight badge and toggle */
+.tn{display:inline-block;font:700 11px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;border-radius:4px;padding:4px 6px;margin-left:6px;vertical-align:2px;background:var(--accent-soft);color:var(--accent);border:1px solid #f6cbbd;white-space:nowrap}
+.tn.out{background:#fbe9ea;color:var(--bad);border-color:#f2c4c7}
+.tonly-slot:empty{display:none}
+.tonly{flex:0 0 auto;font:700 14px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer;white-space:nowrap}
+.tonly::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;border:2px solid var(--accent);margin-right:8px;vertical-align:-1px}
+.tonly.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.tonly.on::before{background:#fff;border-color:#fff}
+.tonly:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 footer .wrap{padding-top:14px;padding-bottom:24px}
 /* Blogger posts area (shown only off the homepage) */

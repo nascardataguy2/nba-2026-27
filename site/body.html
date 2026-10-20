@@ -38,6 +38,7 @@
     <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research. Badges show last season&#39;s top 10 (gold) and 11 to 30 (silver) in each stat, for players with 20 or more games.</p>
     <div class='bfilter' id='r4p-bfilter'></div>
     <div class='toolbar'>
+      <span class='tonly-slot'></span>
       <input aria-label='Search rankings' id='r4p-rq' placeholder='Search a player or team' type='search'/>
       <select aria-label='Position' id='r4p-rpos'><option value=''>All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>
       <select aria-label='Tag' id='r4p-rflag'><option value=''>All players</option><option value='up'>Role up</option><option value='down'>Role down</option><option value='out'>Out to start</option><option value='rest'>Rest watch</option></select>
@@ -46,20 +47,21 @@
     <div class='rk' id='r4p-ranklist'></div>
   </section>
   <section class='view' hidden='hidden' id='v-teams'>
-    <div class='toolbar'><select aria-label='Team' id='r4p-team'><option value=''>All teams</option></select></div>
+    <div class='toolbar'><span class='tonly-slot'></span><select aria-label='Team' id='r4p-team'><option value=''>All teams</option></select></div>
     <div class='cards' id='r4p-teamcards'></div>
   </section>
   <section class='view' hidden='hidden' id='v-players'>
     <div class='toolbar'>
+      <span class='tonly-slot'></span>
       <input aria-label='Search players' id='r4p-q' placeholder='Search a player, team, or word (Lakers, starter, injured)' type='search'/>
       <select aria-label='Team filter' id='r4p-pteam'><option value=''>All teams</option></select>
     </div>
     <div class='count' id='r4p-count'></div>
     <div class='cards' id='r4p-playercards'></div>
   </section>
-  <section class='view' hidden='hidden' id='v-injuries'><div class='cards' id='r4p-injcards'></div></section>
+  <section class='view' hidden='hidden' id='v-injuries'><div class='toolbar'><span class='tonly-slot'></span></div><div class='cards' id='r4p-injcards'></div></section>
   <section class='view' hidden='hidden' id='v-moves'>
-    <div class='toolbar'><input aria-label='Search moves' id='r4p-mq' placeholder='Search a player or team' type='search'/></div>
+    <div class='toolbar'><span class='tonly-slot'></span><input aria-label='Search moves' id='r4p-mq' placeholder='Search a player or team' type='search'/></div>
     <div class='cards' id='r4p-movecards'></div>
   </section>
 </main>

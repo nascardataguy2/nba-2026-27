@@ -37,22 +37,24 @@
   function quick(){
     var q = db.quickhits || {};
     function panel(cls, title, hint, items, fn){
-      if (!items || !items.length) return '';
+      items = (items || []).filter(function(it){ return keep(it.team); });
+      if (!items.length) return '';
       return '<div class="panel ' + cls + '"><h2>' + title + '</h2><p class="hint">' + hint + '</p>' + items.map(fn).join('') + '</div>';
     }
-    function simple(it){ return '<div class="hit"><span class="who">' + esc(it.player) + '</span>' + tm(it.team) + bdg(it.player) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>'; }
+    function simple(it){ return '<div class="hit"><span class="who">' + esc(it.player) + '</span>' + tm(it.team) + tn(it.team, it.player) + bdg(it.player) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>'; }
     var st = q.storylines || {}, sd = '';
     if (st.date){ var dd = new Date(st.date + 'T12:00:00'); sd = isNaN(dd) ? st.date : dd.toLocaleDateString('en-US', {month:'short', day:'numeric'}); }
-    var html = panel('story', 'Today\u2019s Storylines', 'The biggest news for the slate' + (sd ? ' \u00b7 updated ' + esc(sd) : '') + '.', st.items, simple) +
+    var html = (Object.keys(SLATE).length ? '<div class="toolbar">' + tbtn() + '</div>' : '') + panel('story', 'Today\u2019s Storylines', 'The biggest news for the slate' + (sd ? ' \u00b7 updated ' + esc(sd) : '') + '.', st.items, simple) +
       '<div class="grid">' +
       panel('sits', 'If He Sits, Who Benefits', 'Check this when late injury news drops before lock.', q.if_sits, function(it){
-        return '<div class="hit"><span class="who">' + esc(it.out) + '</span>' + tm(it.team) + ' <span class="arrow">\u2192</span> <span class="who">' + esc(it.benefits) + '</span>' + bdg(it.benefits) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>';
+        return '<div class="hit"><span class="who">' + esc(it.out) + '</span>' + tm(it.team) + tn(it.team, it.out) + ' <span class="arrow">\u2192</span> <span class="who">' + esc(it.benefits) + '</span>' + bdg(it.benefits) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>';
       }) +
       panel('up', 'Role Up', 'New team or bigger job. Early-season prices often lag behind these changes.', q.role_up, simple) +
       panel('down', 'Role Down', 'Last season\u2019s numbers probably will not repeat.', q.role_down, simple) +
       panel('rest', 'Rest Watch', 'Players likely to sit back-to-backs or get rest days early.', q.rest_watch, simple) +
       panel('out', 'Out to Start the Season', 'Known injuries as of the latest episodes.', q.out_to_start, simple) +
       '</div>';
+    if (TONLY && html.indexOf('class="hit"') < 0) html += '<p class="sub">No quick hits for tonight\u2019s teams.</p>';
     $('v-quick').innerHTML = html;
   }
 
@@ -62,6 +64,28 @@
     s = String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[.']/g, '').replace(/\u2019/g, '').trim();
     return s.replace(/ (iii|ii|jr)$/, '');
   }
+  var SLATE = {}, OUTN = {}, TONLY = false;
+  function onSlate(team){ return !!SLATE[team]; }
+  function tn(team, name){
+    if (!SLATE[team]) return '';
+    if (name && OUTN[nkey(name)]) return '<span class="tn out">Out tonight</span>';
+    return '<span class="tn">Tonight</span>';
+  }
+  function keep(team){ return !TONLY || !!SLATE[team]; }
+  function tbtn(){ return '<button class="tonly' + (TONLY ? ' on' : '') + '" type="button" aria-pressed="' + (TONLY ? 'true' : 'false') + '">Tonight only</button>'; }
+  function syncToggles(){
+    var b = document.querySelectorAll('.tonly-slot');
+    for (var i = 0; i < b.length; i++) b[i].innerHTML = Object.keys(SLATE).length ? tbtn() : '';
+  }
+  function renderAll(){
+    if (!db) return;
+    syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves();
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target.closest('.tonly') : null;
+    if (!t) return;
+    TONLY = !TONLY; renderAll();
+  });
   function badgeInit(){
     (db.picks || []).forEach(function(p){ BMAP[nkey(p.player)] = p; });
     var icons = db.badge_icons || {};
@@ -93,6 +117,7 @@
     var list = all.filter(function(r){
       if (pos && (',' + r.pos.replace(/\s/g,'') + ',').indexOf(',' + pos + ',') < 0) return false;
       if (fl && r.flag !== fl) return false;
+      if (!keep(r.team)) return false;
       var bb = badgesOf(r.player);
       for (var k in bOn) if (bOn[k] && !bb[k]) return false;
       if (!q) return true;
@@ -100,7 +125,7 @@
     });
     $('r4p-rcount').textContent = list.length + ' of ' + all.length + ' players';
     $('r4p-ranklist').innerHTML = list.map(function(r){
-      return '<div class="rk-row"><div class="rk-n">' + r.rank + '</div><div><span class="rk-name">' + esc(r.player) + '</span>' + tm(r.team) + '<span class="rk-pos">' + esc(r.pos) + '</span>' + bdg(r.player) +
+      return '<div class="rk-row"><div class="rk-n">' + r.rank + '</div><div><span class="rk-name">' + esc(r.player) + '</span>' + tm(r.team) + '<span class="rk-pos">' + esc(r.pos) + '</span>' + tn(r.team, r.player) + bdg(r.player) +
         (r.flag ? '<span class="tag ' + esc(r.flag) + '">' + esc(r.change) + '</span>' : '') + '</div>' +
         (r.note ? '<p class="rk-note">' + esc(r.note) + '</p>' : '') + '</div>';
     }).join('') || '<div class="rk-row"><div></div><p class="rk-note">No players match.</p></div>';
@@ -117,9 +142,9 @@
 
   function teams(){
     var t = $('r4p-team').value;
-    var list = db.teams.slice().sort(function(a,b){ return a.team < b.team ? -1 : 1; }).filter(function(x){ return !t || x.team === t; });
+    var list = db.teams.slice().sort(function(a,b){ return a.team < b.team ? -1 : 1; }).filter(function(x){ return (!t || x.team === t) && keep(x.team); });
     $('r4p-teamcards').innerHTML = list.map(function(x){
-      return '<div class="card"><h3>' + esc(NAMES[x.team] || x.team) + tm(x.team) + '</h3>' +
+      return '<div class="card"><h3>' + esc(NAMES[x.team] || x.team) + tm(x.team) + tn(x.team) + '</h3>' +
         '<span class="lbl">Projected starters</span><div class="row">' + esc(x.starters) + '</div>' +
         (x.bench ? '<span class="lbl">Bench order</span><div class="row">' + esc(x.bench) + '</div>' : '') +
         (x.backup_c ? '<span class="lbl">Backup center</span><div class="row">' + esc(x.backup_c) + '</div>' : '') +
@@ -133,7 +158,7 @@
     if (/starter/i.test(p.role)) pills += '<span class="pill start">' + esc(p.role) + '</span>';
     else if (p.role) pills += '<span class="pill">' + esc(p.role) + '</span>';
     if (p.status && !/^healthy$/i.test(p.status)) pills += '<span class="pill hurt">Health note</span>';
-    return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + bdg(p.player) + '</h3>' + pills +
+    return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3>' + pills +
       (p.minutes ? '<span class="lbl">Minutes</span><div class="row">' + esc(p.minutes) + '</div>' : '') +
       (p.usage ? '<span class="lbl">Usage</span><div class="row">' + esc(p.usage) + '</div>' : '') +
       (p.status ? '<span class="lbl">Health</span><div class="row">' + esc(p.status) + '</div>' : '') +
@@ -144,6 +169,7 @@
     var q = $('r4p-q').value.trim().toLowerCase(), t = $('r4p-pteam').value;
     var list = db.players.filter(function(p){
       if (t && p.team !== t) return false;
+      if (!keep(p.team)) return false;
       if (!q) return true;
       return (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '') + ' ' + p.role + ' ' + p.minutes + ' ' + p.usage + ' ' + p.status + ' ' + p.note).toLowerCase().indexOf(q) > -1;
     }).sort(function(a,b){ return (a.team + a.player) < (b.team + b.player) ? -1 : 1; });
@@ -152,17 +178,18 @@
   }
 
   function injuries(){
-    $('r4p-injcards').innerHTML = db.injuries.slice().sort(function(a,b){ return a.team < b.team ? -1 : 1; }).map(function(p){
-      return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + '</div>';
-    }).join('');
+    $('r4p-injcards').innerHTML = db.injuries.slice().filter(function(p){ return keep(p.team); }).sort(function(a,b){ return a.team < b.team ? -1 : 1; }).map(function(p){
+      return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + '</div>';
+    }).join('') || '<p class="sub">No injury notes for tonight\u2019s teams.</p>';
   }
 
   function moves(){
     var q = $('r4p-mq').value.trim().toLowerCase();
     $('r4p-movecards').innerHTML = db.moves.filter(function(m){
+      if (!keep(m.to)) return false;
       return !q || (m.player + ' ' + m.from + ' ' + m.to + ' ' + (NAMES[m.from]||'') + ' ' + (NAMES[m.to]||'')).toLowerCase().indexOf(q) > -1;
     }).map(function(m){
-      return '<div class="card"><h3>' + esc(m.player) + bdg(m.player) + '</h3><div class="row">' + (m.from ? tm(m.from, true) : 'Unknown') + ' <span class="arrow">\u2192</span> ' + tm(m.to, true) + (m.type ? ' \u00b7 ' + esc(m.type) : '') + '</div>' + (m.note ? '<div class="row">' + esc(m.note) + '</div>' : '') + srcLink(m.source) + '</div>';
+      return '<div class="card"><h3>' + esc(m.player) + tn(m.to, m.player) + bdg(m.player) + '</h3><div class="row">' + (m.from ? tm(m.from, true) : 'Unknown') + ' <span class="arrow">\u2192</span> ' + tm(m.to, true) + (m.type ? ' \u00b7 ' + esc(m.type) : '') + '</div>' + (m.note ? '<div class="row">' + esc(m.note) + '</div>' : '') + srcLink(m.source) + '</div>';
     }).join('');
   }
 
@@ -177,6 +204,13 @@
   }
   function projInit(d){
     PJ = d;
+    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
+    SLATE = {}; OUTN = {};
+    if (d.date === today){
+      (d.games || []).forEach(function(g){ SLATE[g.away] = 1; SLATE[g.home] = 1; });
+      (d.out || []).forEach(function(o){ OUTN[nkey(o.player)] = 1; });
+    }
+    renderAll();
     var dd = new Date(d.date + 'T12:00:00');
     var day = isNaN(dd) ? d.date : dd.toLocaleDateString('en-US', {weekday:'long', month:'short', day:'numeric'});
     var acc = d.accuracy ? ' Our minutes have missed by ' + n1(d.accuracy.our_min_miss) + ' a player on average over ' + d.accuracy.days + (d.accuracy.days === 1 ? ' night' : ' nights') + '.' : '';
@@ -240,7 +274,7 @@
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams';
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
-    badgeInit(); quick(); ranks(); teams(); players(); injuries(); moves();
+    badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves();
     $('r4p-rq').addEventListener('input', ranks);
     $('r4p-rpos').addEventListener('change', ranks);
     $('r4p-rflag').addEventListener('change', ranks);
