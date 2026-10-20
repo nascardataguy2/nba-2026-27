@@ -11,7 +11,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from projections import get, norm, fix_team, load_json, HIST, ESPN_SB  # noqa: E402
+from projections import get, norm, fix_team, load_json, HIST, ESPN_SB, ET  # noqa: E402
 
 SUMMARY = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event="
 
@@ -64,7 +64,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date")
     args = ap.parse_args()
-    et = datetime.now(timezone.utc) - timedelta(hours=4)
+    et = datetime.now(ET)
     day = args.date or (et - timedelta(days=1)).strftime("%Y-%m-%d")
     os.makedirs(HIST, exist_ok=True)
     res = load_json(os.path.join(HIST, "results.json"), {})

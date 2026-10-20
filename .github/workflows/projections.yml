@@ -5,7 +5,8 @@ on:
     - cron: "47 16 * * *"   # about 12:47 PM ET
     - cron: "37 20 * * *"   # about 4:37 PM ET
     - cron: "7 22 * * *"    # about 6:07 PM ET
-    - cron: "42 22 * * *"   # about 6:42 PM ET, close to the usual 7 PM lock
+    - cron: "42 22 * * *"   # 6:42 PM EDT / 5:42 PM EST
+    - cron: "47 23 * * *"   # 6:47 PM EST (after Nov 1); games already tipped keep their pre-tip numbers
   workflow_dispatch:
   push:
     paths: [".github/workflows/projections.yml"]

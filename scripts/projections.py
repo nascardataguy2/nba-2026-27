@@ -20,6 +20,9 @@ import sys
 import unicodedata
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+ET = ZoneInfo("America/New_York")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "data")
@@ -147,7 +150,7 @@ def main():
     ap.add_argument("--sl")
     ap.add_argument("--dff")
     args = ap.parse_args()
-    et = datetime.now(timezone.utc) - timedelta(hours=4)
+    et = datetime.now(ET)
     day = args.date or et.strftime("%Y-%m-%d")
 
     sl = parse_sl(open(args.sl).read() if args.sl else get(SL_URL))
@@ -300,11 +303,28 @@ def main():
                     "stl": round(r["stl"], 1), "blk": round(r["blk"], 1), "to": round(r["to"], 1),
                     "dk": round(r["dk"], 1), "value": round(r["dk"] / (sal / 1000.0), 2) if sal else None,
                     "note": " ".join(r["why"])})
+    games_out = list(gm.values())
+    outs_pub = [{"player": o["player"], "team": o["team"], "note": o["note"]} for o in out_list]
+    hist = {norm(r["player"]): {"player": r["player"], "team": r["team"], "base_min": r["base"], "min": round(r["min"], 1),
+                                "dk": round(r["dk"], 1)} for r in rows}
+
+    # Games that have tipped keep the last projection made before tip.
+    utcnow = os.environ.get("NOW_UTC") or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+    locked = {t for t, g in games.items() if g["time"] and g["time"] <= utcnow}
+    prev = load_json(os.path.join(D, "projections.json"), {})
+    if locked and prev.get("date") == day:
+        pub = [p for p in pub if p["team"] not in locked] + [p for p in prev.get("players", []) if p["team"] in locked]
+        outs_pub = [o for o in outs_pub if o["team"] not in locked] + [o for o in prev.get("out", []) if o["team"] in locked]
+        games_out = [g for g in games_out if g["home"] not in locked] + [g for g in prev.get("games", []) if g["home"] in locked]
+        ph = load_json(os.path.join(HIST, day + ".json"), {})
+        hist = {k: v for k, v in hist.items() if v["team"] not in locked}
+        hist.update({k: v for k, v in ph.items() if v["team"] in locked})
+
     pub.sort(key=lambda x: -x["dk"])
-    now = datetime.now(timezone.utc) - timedelta(hours=4)
+    now = datetime.now(ET)
     doc = {"date": day, "updated": now.strftime("%-I:%M %p ET"),
-           "games": sorted(gm.values(), key=lambda g: (g["time"], g["home"])),
-           "players": pub, "out": [{"player": o["player"], "team": o["team"], "note": o["note"]} for o in sorted(out_list, key=lambda o: (o["team"], o["player"]))]}
+           "games": sorted(games_out, key=lambda g: (g["time"], g["home"])),
+           "players": pub, "out": sorted(outs_pub, key=lambda o: (o["team"], o["player"]))}
     acc = load_json(os.path.join(HIST, "accuracy.json"), None)
     if acc:
         doc["accuracy"] = acc.get("summary")
@@ -312,8 +332,7 @@ def main():
         json.dump(doc, fh, indent=1, ensure_ascii=False)
     os.makedirs(HIST, exist_ok=True)
     with open(os.path.join(HIST, day + ".json"), "w", encoding="utf-8") as fh:
-        json.dump({norm(r["player"]): {"player": r["player"], "team": r["team"], "base_min": r["base"], "min": round(r["min"], 1),
-                                       "dk": round(r["dk"], 1)} for r in rows}, fh, indent=1, ensure_ascii=False)
+        json.dump(hist, fh, indent=1, ensure_ascii=False)
     print("projections:", day, len(pub), "players,", len(gm), "games,", len(out_list), "out")
 
 
