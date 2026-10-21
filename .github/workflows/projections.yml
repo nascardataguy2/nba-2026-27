@@ -2,11 +2,8 @@ name: projections
 on:
   schedule:
     - cron: "17 14 * * *"   # about 10:17 AM ET: last night's results, then today's projections
-    - cron: "47 16 * * *"   # about 12:47 PM ET
-    - cron: "37 20 * * *"   # about 4:37 PM ET
-    - cron: "7 22 * * *"    # about 6:07 PM ET
-    - cron: "42 22 * * *"   # 6:42 PM EDT / 5:42 PM EST
-    - cron: "47 23 * * *"   # 6:47 PM EST (after Nov 1); games already tipped keep their pre-tip numbers
+    - cron: "23 15-23 * * *" # every hour at :23 from 11:23 AM to 7:23 PM ET (GitHub often runs these late)
+    - cron: "53 21,22,23 * * *" # extra runs near lock
   workflow_dispatch:
   push:
     paths: [".github/workflows/projections.yml"]
