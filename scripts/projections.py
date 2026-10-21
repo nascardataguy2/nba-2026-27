@@ -171,6 +171,62 @@ def spread_minutes(team_rows, amount, skip, cap=None):
     return amount - left
 
 
+def auto_storylines(day, doc):
+    """If nobody has written today's storylines yet, build them from tonight's injury news."""
+    qpath = os.path.join(D, "quickhits.json")
+    qh = load_json(qpath, None)
+    if qh is None:
+        return
+    st = qh.get("storylines") or {}
+    if st.get("date") == day:
+        return
+    rank = {}
+    rk = load_json(os.path.join(D, "rankings", "nba-top250-points-2026-27.json"), {})
+    for r in rk.get("rows", []):
+        rank[norm(r["player"])] = r["rank"]
+    ours = {norm(p["player"]): p for p in load_json(os.path.join(D, "players.json"), [])}
+    sits = {}
+    for it in qh.get("if_sits", []):
+        for nm in str(it.get("out", "")).split(" or "):
+            sits.setdefault(norm(nm), it)
+    opp = {}
+    for g in doc.get("games", []):
+        opp[g["away"]], opp[g["home"]] = (g["home"], "at"), (g["away"], "vs")
+    cands = []
+    for o in doc.get("out", []):
+        k = norm(o["player"])
+        role = (ours.get(k) or {}).get("role", "").lower()
+        if k not in rank and not role.startswith("starter") and "6th" not in role:
+            continue
+        txt = "He is r" + o["note"][1:] if o["note"].startswith("R") else o["note"]
+        if ";" in txt:
+            txt = txt.split(";")[0].rstrip(".") + "."
+        it = sits.get(k)
+        if it and it.get("team") == o["team"]:
+            txt += " " + it["text"]
+        cands.append((rank.get(k, 400), {"player": o["player"], "team": o["team"], "text": txt, "source": "AUTO-" + day[5:7] + day[8:10]}))
+    for p in doc.get("players", []):
+        k = norm(p["player"])
+        if p.get("q") and (k in rank or p.get("start")):
+            o, w = opp.get(p["team"], ("", ""))
+            cands.append((rank.get(k, 300) + 5, {"player": p["player"], "team": p["team"],
+                          "text": "He is questionable tonight" + ((" " + w + " " + o) if o else "") + ".", "source": "AUTO-" + day[5:7] + day[8:10]}))
+    cands.sort(key=lambda x: x[0])
+    items = [c[1] for c in cands[:8]]
+    if not items:
+        return
+    qh["storylines"] = {"date": day, "auto": True, "items": items}
+    with open(qpath, "w", encoding="utf-8") as fh:
+        json.dump(qh, fh, indent=1, ensure_ascii=False)
+    spath = os.path.join(D, "sources.json")
+    srcs = load_json(spath, [])
+    sid = "AUTO-" + day[5:7] + day[8:10]
+    if not any(x.get("id") == sid for x in srcs):
+        srcs.append({"id": sid, "date": day, "show": "Automatic injury-report summary", "title": "Tonight's ruled-out and questionable players", "url": ""})
+        with open(spath, "w", encoding="utf-8") as fh:
+            json.dump(srcs, fh, indent=1, ensure_ascii=False)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date")
@@ -427,6 +483,7 @@ def main():
     doc = {"date": day, "updated": now.strftime("%-I:%M %p ET"),
            "games": sorted(games_out, key=lambda g: (g["time"], g["home"])),
            "players": pub, "out": sorted(outs_pub, key=lambda o: (o["team"], o["player"]))}
+    auto_storylines(day, doc)
     acc = load_json(os.path.join(HIST, "accuracy.json"), None)
     if acc:
         doc["accuracy"] = acc.get("summary")

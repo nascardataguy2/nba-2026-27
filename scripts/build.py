@@ -74,7 +74,9 @@ for n in ("minutes", "usage", "threes", "rebounds", "assists", "stocks"):
     badge_icons[n] = "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
 
 injuries = [p for p in players if p["status"] and p["status"].lower() != "healthy"]
-updated = date.today().isoformat()
+from datetime import datetime as _dt
+from zoneinfo import ZoneInfo as _Z
+updated = _dt.now(_Z("America/New_York")).date().isoformat()
 
 db = {"updated": updated, "players": players, "teams": teams, "injuries": injuries,
       "moves": moves, "sources": sources, "quickhits": quickhits, "rankings": rankings, "picks": picks, "badge_icons": badge_icons, "picks_rule": badge_src["rule"] + " (" + badge_src["season"] + " season)"}

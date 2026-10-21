@@ -202,8 +202,15 @@
     var d = new Date(t);
     return isNaN(d) ? '' : d.toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit', timeZone:'America/New_York'}) + ' ET';
   }
+  function setSub(){
+    if (!db) return;
+    var up = db.updated;
+    if (PJ && PJ.date && PJ.date > up) up = PJ.date;
+    $('r4p-sub').textContent = 'Updated ' + up + ' \u00b7 ' + db.players.length + ' players \u00b7 ' + db.teams.length + ' teams';
+  }
   function projInit(d){
     PJ = d;
+    setSub();
     var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
     SLATE = {}; OUTN = {};
     if (d.date === today){
@@ -350,7 +357,7 @@
   fetchFirst(SOURCES, false).then(function(d){
     db = d;
     d.sources.forEach(function(s){ srcById[s.id] = s; });
-    $('r4p-sub').textContent = 'Updated ' + d.updated + ' \u00b7 ' + d.players.length + ' players \u00b7 ' + d.teams.length + ' teams';
+    setSub();
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
     badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves();
     $('r4p-rq').addEventListener('input', ranks);
