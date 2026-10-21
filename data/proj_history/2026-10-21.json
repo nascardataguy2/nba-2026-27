@@ -4,35 +4,35 @@
   "team": "MIA",
   "base_min": 33.0,
   "min": 33.1,
-  "dk": 58.5
+  "dk": 58.6
  },
  "luka doncic": {
   "player": "Luka Doncic",
   "team": "LAL",
   "base_min": 36.0,
   "min": 35.9,
-  "dk": 54.7
+  "dk": 54.5
  },
  "paolo banchero": {
   "player": "Paolo Banchero",
   "team": "ORL",
   "base_min": 35.0,
   "min": 35.1,
-  "dk": 46.5
- },
- "tyrese haliburton": {
-  "player": "Tyrese Haliburton",
-  "team": "IND",
-  "base_min": 34.0,
-  "min": 33.9,
-  "dk": 42.6
+  "dk": 46.8
  },
  "stephen curry": {
   "player": "Stephen Curry",
   "team": "GSW",
   "base_min": 32.0,
   "min": 36.0,
-  "dk": 52.0
+  "dk": 51.9
+ },
+ "tyrese haliburton": {
+  "player": "Tyrese Haliburton",
+  "team": "IND",
+  "base_min": 34.0,
+  "min": 33.9,
+  "dk": 42.5
  },
  "kawhi leonard": {
   "player": "Kawhi Leonard",
@@ -53,28 +53,28 @@
   "team": "MIN",
   "base_min": 36.0,
   "min": 36.0,
-  "dk": 44.5
- },
- "lamelo ball": {
-  "player": "LaMelo Ball",
-  "team": "MIN",
-  "base_min": 30.0,
-  "min": 30.6,
-  "dk": 43.1
- },
- "alperen sengun": {
-  "player": "Alperen Sengun",
-  "team": "HOU",
-  "base_min": 33.0,
-  "min": 31.6,
-  "dk": 41.6
+  "dk": 44.4
  },
  "darius garland": {
   "player": "Darius Garland",
   "team": "LAC",
   "base_min": 30.0,
   "min": 35.8,
-  "dk": 48.9
+  "dk": 49.0
+ },
+ "lamelo ball": {
+  "player": "LaMelo Ball",
+  "team": "MIN",
+  "base_min": 30.0,
+  "min": 30.6,
+  "dk": 42.9
+ },
+ "alperen sengun": {
+  "player": "Alperen Sengun",
+  "team": "HOU",
+  "base_min": 33.0,
+  "min": 31.6,
+  "dk": 41.8
  },
  "scottie barnes": {
   "player": "Scottie Barnes",
@@ -88,7 +88,7 @@
   "team": "HOU",
   "base_min": 36.0,
   "min": 34.4,
-  "dk": 40.9
+  "dk": 41.0
  },
  "jalen johnson": {
   "player": "Jalen Johnson",
@@ -102,28 +102,35 @@
   "team": "DAL",
   "base_min": 35.0,
   "min": 34.7,
-  "dk": 40.4
+  "dk": 40.6
  },
  "domantas sabonis": {
   "player": "Domantas Sabonis",
   "team": "SAC",
   "base_min": 34.0,
   "min": 34.7,
-  "dk": 44.0
+  "dk": 44.1
  },
  "damian lillard": {
   "player": "Damian Lillard",
   "team": "POR",
   "base_min": 36.0,
   "min": 34.2,
-  "dk": 38.8
+  "dk": 38.6
  },
  "zion williamson": {
   "player": "Zion Williamson",
   "team": "NOP",
   "base_min": 29.0,
   "min": 26.8,
-  "dk": 36.2
+  "dk": 36.0
+ },
+ "franz wagner": {
+  "player": "Franz Wagner",
+  "team": "ORL",
+  "base_min": 33.0,
+  "min": 33.1,
+  "dk": 40.0
  },
  "deni avdija": {
   "player": "Deni Avdija",
@@ -137,28 +144,21 @@
   "team": "SAC",
   "base_min": 33.0,
   "min": 33.7,
-  "dk": 40.2
- },
- "franz wagner": {
-  "player": "Franz Wagner",
-  "team": "ORL",
-  "base_min": 33.0,
-  "min": 33.1,
-  "dk": 39.4
+  "dk": 40.0
  },
  "keaton wagler": {
   "player": "Keaton Wagler",
   "team": "LAC",
   "base_min": 26.0,
   "min": 31.0,
-  "dk": 46.3
+  "dk": 46.5
  },
- "devin booker": {
-  "player": "Devin Booker",
-  "team": "PHX",
-  "base_min": 36.0,
-  "min": 35.4,
-  "dk": 37.6
+ "pascal siakam": {
+  "player": "Pascal Siakam",
+  "team": "IND",
+  "base_min": 33.0,
+  "min": 32.9,
+  "dk": 38.4
  },
  "bam adebayo": {
   "player": "Bam Adebayo",
@@ -167,12 +167,12 @@
   "min": 33.1,
   "dk": 40.3
  },
- "pascal siakam": {
-  "player": "Pascal Siakam",
-  "team": "IND",
-  "base_min": 33.0,
-  "min": 32.9,
-  "dk": 38.2
+ "devin booker": {
+  "player": "Devin Booker",
+  "team": "PHX",
+  "base_min": 36.0,
+  "min": 35.4,
+  "dk": 37.3
  },
  "trae young": {
   "player": "Trae Young",
@@ -193,35 +193,21 @@
   "team": "DAL",
   "base_min": 36.0,
   "min": 35.7,
-  "dk": 37.3
+  "dk": 37.5
  },
  "brandon miller": {
   "player": "Brandon Miller",
   "team": "CHA",
   "base_min": 31.0,
   "min": 32.2,
-  "dk": 39.9
- },
- "ivica zubac": {
-  "player": "Ivica Zubac",
-  "team": "IND",
-  "base_min": 32.0,
-  "min": 31.9,
-  "dk": 38.2
- },
- "rj barrett": {
-  "player": "RJ Barrett",
-  "team": "TOR",
-  "base_min": 32.0,
-  "min": 31.0,
-  "dk": 35.0
+  "dk": 40.0
  },
  "josh giddey": {
   "player": "Josh Giddey",
   "team": "CHI",
   "base_min": 31.0,
-  "min": 30.5,
-  "dk": 36.2
+  "min": 30.1,
+  "dk": 36.0
  },
  "tyler herro": {
   "player": "Tyler Herro",
@@ -229,6 +215,20 @@
   "base_min": 34.0,
   "min": 32.8,
   "dk": 34.9
+ },
+ "rj barrett": {
+  "player": "RJ Barrett",
+  "team": "TOR",
+  "base_min": 32.0,
+  "min": 31.0,
+  "dk": 34.8
+ },
+ "ivica zubac": {
+  "player": "Ivica Zubac",
+  "team": "IND",
+  "base_min": 32.0,
+  "min": 31.9,
+  "dk": 37.8
  },
  "amen thompson": {
   "player": "Amen Thompson",
@@ -242,14 +242,7 @@
   "team": "LAL",
   "base_min": 35.0,
   "min": 34.9,
-  "dk": 36.5
- },
- "immanuel quickley": {
-  "player": "Immanuel Quickley",
-  "team": "TOR",
-  "base_min": 31.0,
-  "min": 30.0,
-  "dk": 32.9
+  "dk": 36.6
  },
  "ja morant": {
   "player": "Ja Morant",
@@ -258,40 +251,47 @@
   "min": 28.5,
   "dk": 33.3
  },
+ "immanuel quickley": {
+  "player": "Immanuel Quickley",
+  "team": "TOR",
+  "base_min": 31.0,
+  "min": 30.0,
+  "dk": 32.7
+ },
  "trey murphy": {
   "player": "Trey Murphy",
   "team": "NOP",
   "base_min": 35.0,
   "min": 32.3,
-  "dk": 32.8
+  "dk": 32.7
  },
  "keyonte george": {
   "player": "Keyonte George",
   "team": "UTA",
   "base_min": 32.0,
   "min": 30.8,
-  "dk": 31.8
+  "dk": 32.0
  },
  "desmond bane": {
   "player": "Desmond Bane",
   "team": "ORL",
   "base_min": 33.0,
   "min": 33.1,
-  "dk": 34.7
+  "dk": 34.5
  },
  "dejounte murray": {
   "player": "Dejounte Murray",
   "team": "NOP",
   "base_min": 28.0,
   "min": 25.8,
-  "dk": 30.7
+  "dk": 30.6
  },
  "andrew nembhard": {
   "player": "Andrew Nembhard",
   "team": "IND",
   "base_min": 34.0,
   "min": 33.9,
-  "dk": 31.4
+  "dk": 31.2
  },
  "darryn peterson": {
   "player": "Darryn Peterson",
@@ -312,35 +312,35 @@
   "team": "BKN",
   "base_min": 33.0,
   "min": 31.1,
-  "dk": 30.2
+  "dk": 30.4
  },
  "julius randle": {
   "player": "Julius Randle",
   "team": "BKN",
   "base_min": 33.0,
   "min": 31.1,
-  "dk": 30.0
+  "dk": 30.3
  },
  "caleb wilson": {
   "player": "Caleb Wilson",
   "team": "CHI",
   "base_min": 33.0,
-  "min": 32.5,
-  "dk": 33.1
- },
- "ty jerome": {
-  "player": "Ty Jerome",
-  "team": "MEM",
-  "base_min": 25.0,
-  "min": 25.0,
-  "dk": 29.8
+  "min": 32.1,
+  "dk": 32.9
  },
  "cj mccollum": {
   "player": "C.J. McCollum",
   "team": "ATL",
   "base_min": 31.0,
   "min": 29.8,
-  "dk": 29.3
+  "dk": 29.6
+ },
+ "ty jerome": {
+  "player": "Ty Jerome",
+  "team": "MEM",
+  "base_min": 25.0,
+  "min": 25.0,
+  "dk": 30.0
  },
  "zach lavine": {
   "player": "Zach LaVine",
@@ -354,7 +354,7 @@
   "team": "UTA",
   "base_min": 30.0,
   "min": 28.9,
-  "dk": 30.7
+  "dk": 30.8
  },
  "jalen green": {
   "player": "Jalen Green",
@@ -368,21 +368,21 @@
   "team": "LAL",
   "base_min": 30.0,
   "min": 29.9,
-  "dk": 33.8
+  "dk": 33.9
  },
  "jalen suggs": {
   "player": "Jalen Suggs",
   "team": "ORL",
   "base_min": 29.0,
   "min": 29.1,
-  "dk": 30.9
+  "dk": 31.0
  },
  "dyson daniels": {
   "player": "Dyson Daniels",
   "team": "ATL",
   "base_min": 33.0,
   "min": 31.7,
-  "dk": 29.2
+  "dk": 29.1
  },
  "michael porter": {
   "player": "Michael Porter Jr.",
@@ -419,12 +419,12 @@
   "min": 30.6,
   "dk": 26.7
  },
- "naz reid": {
-  "player": "Naz Reid",
-  "team": "CHA",
-  "base_min": 27.0,
-  "min": 28.1,
-  "dk": 31.3
+ "rudy gobert": {
+  "player": "Rudy Gobert",
+  "team": "MIN",
+  "base_min": 32.0,
+  "min": 32.6,
+  "dk": 31.8
  },
  "andrew wiggins": {
   "player": "Andrew Wiggins",
@@ -433,26 +433,33 @@
   "min": 31.1,
   "dk": 29.2
  },
+ "naz reid": {
+  "player": "Naz Reid",
+  "team": "CHA",
+  "base_min": 27.0,
+  "min": 28.1,
+  "dk": 31.2
+ },
  "kingston flemings": {
   "player": "Kingston Flemings",
   "team": "ATL",
   "base_min": 25.0,
   "min": 24.0,
-  "dk": 26.7
+  "dk": 26.6
  },
- "rudy gobert": {
-  "player": "Rudy Gobert",
-  "team": "MIN",
-  "base_min": 32.0,
-  "min": 32.6,
-  "dk": 31.6
+ "norman powell": {
+  "player": "Norman Powell",
+  "team": "CHI",
+  "base_min": 31.0,
+  "min": 30.1,
+  "dk": 28.1
  },
  "miles bridges": {
   "player": "Miles Bridges",
   "team": "PHX",
   "base_min": 28.0,
   "min": 27.5,
-  "dk": 28.5
+  "dk": 28.6
  },
  "cedric coward": {
   "player": "Cedric Coward",
@@ -461,26 +468,19 @@
   "min": 26.0,
   "dk": 28.4
  },
- "norman powell": {
-  "player": "Norman Powell",
-  "team": "CHI",
-  "base_min": 31.0,
-  "min": 30.5,
-  "dk": 28.0
- },
  "nikola vucevic": {
   "player": "Nikola Vucevic",
   "team": "ORL",
   "base_min": 27.0,
   "min": 27.1,
-  "dk": 29.5
+  "dk": 29.6
  },
  "onyeka okongwu": {
   "player": "Onyeka Okongwu",
   "team": "ATL",
   "base_min": 30.0,
   "min": 28.8,
-  "dk": 27.8
+  "dk": 27.7
  },
  "jaime jaquez": {
   "player": "Jaime Jaquez Jr",
@@ -494,21 +494,21 @@
   "team": "CHA",
   "base_min": 25.0,
   "min": 26.0,
-  "dk": 26.4
+  "dk": 26.2
  },
  "rui hachimura": {
   "player": "Rui Hachimura",
   "team": "LAC",
   "base_min": 31.0,
   "min": 36.0,
-  "dk": 32.1
+  "dk": 31.8
  },
- "collin sexton": {
-  "player": "Collin Sexton",
-  "team": "LAL",
-  "base_min": 25.0,
-  "min": 24.9,
-  "dk": 26.1
+ "ayo dosunmu": {
+  "player": "Ayo Dosunmu",
+  "team": "MIN",
+  "base_min": 29.0,
+  "min": 29.6,
+  "dk": 26.2
  },
  "jaden mcdaniels": {
   "player": "Jaden McDaniels",
@@ -517,12 +517,12 @@
   "min": 32.6,
   "dk": 28.1
  },
- "ayo dosunmu": {
-  "player": "Ayo Dosunmu",
-  "team": "MIN",
-  "base_min": 29.0,
-  "min": 29.6,
-  "dk": 26.3
+ "collin sexton": {
+  "player": "Collin Sexton",
+  "team": "LAL",
+  "base_min": 25.0,
+  "min": 24.9,
+  "dk": 25.9
  },
  "jabari smith": {
   "player": "Jabari Smith",
@@ -550,7 +550,14 @@
   "team": "NOP",
   "base_min": 23.0,
   "min": 21.2,
-  "dk": 24.1
+  "dk": 24.0
+ },
+ "keegan murray": {
+  "player": "Keegan Murray",
+  "team": "SAC",
+  "base_min": 34.0,
+  "min": 34.7,
+  "dk": 28.1
  },
  "brook lopez": {
   "player": "Brook Lopez",
@@ -559,19 +566,12 @@
   "min": 32.2,
   "dk": 32.3
  },
- "keegan murray": {
-  "player": "Keegan Murray",
-  "team": "SAC",
-  "base_min": 34.0,
-  "min": 34.7,
-  "dk": 28.0
- },
  "zach edey": {
   "player": "Zach Edey",
   "team": "MEM",
   "base_min": 25.0,
   "min": 25.0,
-  "dk": 27.3
+  "dk": 27.2
  },
  "jonathan kuminga": {
   "player": "Jonathan Kuminga",
@@ -585,7 +585,7 @@
   "team": "ORL",
   "base_min": 28.0,
   "min": 28.1,
-  "dk": 26.1
+  "dk": 26.4
  },
  "ryan rollins": {
   "player": "Ryan Rollins",
@@ -594,19 +594,19 @@
   "min": 23.1,
   "dk": 23.5
  },
- "kelel ware": {
-  "player": "Kel'El Ware",
-  "team": "MIL",
-  "base_min": 27.0,
-  "min": 26.0,
-  "dk": 26.0
- },
  "jerami grant": {
   "player": "Jerami Grant",
   "team": "MEM",
   "base_min": 27.0,
   "min": 27.0,
-  "dk": 24.7
+  "dk": 24.8
+ },
+ "kelel ware": {
+  "player": "Kel'El Ware",
+  "team": "MIL",
+  "base_min": 27.0,
+  "min": 26.0,
+  "dk": 25.8
  },
  "naji marshall": {
   "player": "Naji Marshall",
@@ -615,33 +615,26 @@
   "min": 27.8,
   "dk": 23.5
  },
- "dillon brooks": {
-  "player": "Dillon Brooks",
-  "team": "PHX",
-  "base_min": 31.0,
-  "min": 30.5,
-  "dk": 24.9
- },
  "donovan clingan": {
   "player": "Donovan Clingan",
   "team": "POR",
   "base_min": 24.0,
   "min": 22.8,
-  "dk": 25.7
+  "dk": 25.8
  },
  "deanthony melton": {
   "player": "De'Anthony Melton",
   "team": "GSW",
   "base_min": 23.0,
   "min": 29.1,
-  "dk": 32.2
+  "dk": 32.3
  },
- "quentin grimes": {
-  "player": "Quentin Grimes",
-  "team": "LAL",
-  "base_min": 28.0,
-  "min": 27.9,
-  "dk": 24.4
+ "dillon brooks": {
+  "player": "Dillon Brooks",
+  "team": "PHX",
+  "base_min": 31.0,
+  "min": 30.5,
+  "dk": 24.8
  },
  "davion mitchell": {
   "player": "Davion Mitchell",
@@ -650,12 +643,19 @@
   "min": 29.1,
   "dk": 22.2
  },
+ "quentin grimes": {
+  "player": "Quentin Grimes",
+  "team": "LAL",
+  "base_min": 28.0,
+  "min": 27.9,
+  "dk": 24.2
+ },
  "malik monk": {
   "player": "Malik Monk",
   "team": "SAC",
   "base_min": 24.0,
   "min": 24.5,
-  "dk": 23.9
+  "dk": 23.7
  },
  "nickeil alexander walker": {
   "player": "Nickeil Alexander-Walker",
@@ -669,21 +669,21 @@
   "team": "WAS",
   "base_min": 28.0,
   "min": 24.2,
-  "dk": 21.0
+  "dk": 21.1
  },
  "isaiah collier": {
   "player": "Isaiah Collier",
   "team": "UTA",
   "base_min": 23.0,
   "min": 22.2,
-  "dk": 20.8
+  "dk": 20.9
  },
  "myles turner": {
   "player": "Myles Turner",
   "team": "MIL",
   "base_min": 29.0,
   "min": 28.0,
-  "dk": 24.8
+  "dk": 24.6
  },
  "kyle kuzma": {
   "player": "Kyle Kuzma",
@@ -697,14 +697,14 @@
   "team": "CHA",
   "base_min": 26.0,
   "min": 27.0,
-  "dk": 25.5
+  "dk": 25.4
  },
  "kris dunn": {
   "player": "Kris Dunn",
   "team": "LAC",
   "base_min": 26.0,
   "min": 31.0,
-  "dk": 27.7
+  "dk": 27.6
  },
  "kelly oubre": {
   "player": "Kelly Oubre",
@@ -720,19 +720,12 @@
   "min": 31.3,
   "dk": 23.3
  },
- "moussa diabate": {
-  "player": "Moussa Diabate",
-  "team": "CHA",
-  "base_min": 24.0,
-  "min": 24.9,
-  "dk": 24.9
- },
  "yaxel lendeborg": {
   "player": "Yaxel Lendeborg",
   "team": "GSW",
   "base_min": 25.0,
   "min": 31.6,
-  "dk": 29.8
+  "dk": 30.1
  },
  "bobby portis": {
   "player": "Bobby Portis",
@@ -741,12 +734,19 @@
   "min": 21.1,
   "dk": 23.2
  },
+ "moussa diabate": {
+  "player": "Moussa Diabate",
+  "team": "CHA",
+  "base_min": 24.0,
+  "min": 24.9,
+  "dk": 24.8
+ },
  "matas buzelis": {
   "player": "Matas Buzelis",
   "team": "CHI",
   "base_min": 28.0,
-  "min": 27.5,
-  "dk": 23.5
+  "min": 27.2,
+  "dk": 23.1
  },
  "deandre hunter": {
   "player": "De'Andre Hunter",
@@ -755,12 +755,33 @@
   "min": 27.6,
   "dk": 23.1
  },
+ "saddiq bey": {
+  "player": "Saddiq Bey",
+  "team": "NOP",
+  "base_min": 23.0,
+  "min": 21.2,
+  "dk": 19.8
+ },
+ "al horford": {
+  "player": "Al Horford",
+  "team": "GSW",
+  "base_min": 26.0,
+  "min": 32.8,
+  "dk": 28.9
+ },
  "yves missi": {
   "player": "Yves Missi",
   "team": "NOP",
   "base_min": 26.0,
   "min": 24.0,
-  "dk": 21.5
+  "dk": 21.3
+ },
+ "ace bailey": {
+  "player": "Ace Bailey",
+  "team": "UTA",
+  "base_min": 28.0,
+  "min": 27.0,
+  "dk": 21.7
  },
  "jeremiah fears": {
   "player": "Jeremiah Fears",
@@ -769,33 +790,26 @@
   "min": 20.3,
   "dk": 19.8
  },
- "saddiq bey": {
-  "player": "Saddiq Bey",
-  "team": "NOP",
-  "base_min": 23.0,
-  "min": 21.2,
-  "dk": 19.9
- },
- "al horford": {
-  "player": "Al Horford",
-  "team": "GSW",
-  "base_min": 26.0,
-  "min": 32.8,
-  "dk": 29.1
- },
- "ace bailey": {
-  "player": "Ace Bailey",
-  "team": "UTA",
-  "base_min": 28.0,
-  "min": 27.0,
-  "dk": 21.9
- },
- "derrick jones": {
-  "player": "Derrick Jones Jr.",
-  "team": "LAC",
+ "klay thompson": {
+  "player": "Klay Thompson",
+  "team": "MIA",
   "base_min": 25.0,
-  "min": 29.8,
-  "dk": 26.7
+  "min": 25.1,
+  "dk": 22.2
+ },
+ "tre jones": {
+  "player": "Tre Jones",
+  "team": "CHI",
+  "base_min": 23.0,
+  "min": 22.3,
+  "dk": 19.1
+ },
+ "scotty pippen": {
+  "player": "Scotty Pippen Jr.",
+  "team": "MEM",
+  "base_min": 19.0,
+  "min": 19.0,
+  "dk": 20.9
  },
  "nate ament": {
   "player": "Nate Ament",
@@ -804,19 +818,12 @@
   "min": 24.1,
   "dk": 21.4
  },
- "klay thompson": {
-  "player": "Klay Thompson",
-  "team": "MIA",
+ "derrick jones": {
+  "player": "Derrick Jones Jr.",
+  "team": "LAC",
   "base_min": 25.0,
-  "min": 25.1,
-  "dk": 22.1
- },
- "scotty pippen": {
-  "player": "Scotty Pippen Jr.",
-  "team": "MEM",
-  "base_min": 19.0,
-  "min": 19.0,
-  "dk": 20.7
+  "min": 29.8,
+  "dk": 26.7
  },
  "khris middleton": {
   "player": "Khris Middleton",
@@ -832,13 +839,6 @@
   "min": 25.8,
   "dk": 21.2
  },
- "precious achiuwa": {
-  "player": "Precious Achiuwa",
-  "team": "SAC",
-  "base_min": 24.0,
-  "min": 24.5,
-  "dk": 22.2
- },
  "egor demin": {
   "player": "Egor Demin",
   "team": "BKN",
@@ -846,19 +846,26 @@
   "min": 23.5,
   "dk": 19.4
  },
- "herbert jones": {
-  "player": "Herbert Jones",
-  "team": "NOP",
-  "base_min": 29.0,
-  "min": 26.8,
-  "dk": 18.7
+ "precious achiuwa": {
+  "player": "Precious Achiuwa",
+  "team": "SAC",
+  "base_min": 24.0,
+  "min": 24.5,
+  "dk": 22.1
  },
  "jaylen wells": {
   "player": "Jaylen Wells",
   "team": "MEM",
   "base_min": 26.0,
   "min": 26.0,
-  "dk": 20.1
+  "dk": 20.2
+ },
+ "herbert jones": {
+  "player": "Herbert Jones",
+  "team": "NOP",
+  "base_min": 29.0,
+  "min": 26.8,
+  "dk": 18.5
  },
  "cam spencer": {
   "player": "Cam Spencer",
@@ -867,19 +874,26 @@
   "min": 18.0,
   "dk": 18.3
  },
- "obi toppin": {
-  "player": "Obi Toppin",
-  "team": "IND",
-  "base_min": 20.0,
-  "min": 19.9,
-  "dk": 19.2
- },
  "daniel gafford": {
   "player": "Daniel Gafford",
   "team": "DAL",
   "base_min": 21.0,
   "min": 20.8,
-  "dk": 20.4
+  "dk": 20.6
+ },
+ "dayron sharpe": {
+  "player": "Day'Ron Sharpe",
+  "team": "BKN",
+  "base_min": 18.0,
+  "min": 16.9,
+  "dk": 19.0
+ },
+ "obi toppin": {
+  "player": "Obi Toppin",
+  "team": "IND",
+  "base_min": 20.0,
+  "min": 19.9,
+  "dk": 19.1
  },
  "jrue holiday": {
   "player": "Jrue Holiday",
@@ -888,13 +902,6 @@
   "min": 21.8,
   "dk": 18.2
  },
- "benedict mathurin": {
-  "player": "Benedict Mathurin",
-  "team": "NOP",
-  "base_min": 21.0,
-  "min": 19.4,
-  "dk": 18.0
- },
  "deandre ayton": {
   "player": "Deandre Ayton",
   "team": "WAS",
@@ -902,19 +909,12 @@
   "min": 18.1,
   "dk": 18.0
  },
- "dayron sharpe": {
-  "player": "Day'Ron Sharpe",
-  "team": "BKN",
-  "base_min": 18.0,
-  "min": 16.9,
-  "dk": 18.9
- },
- "tre jones": {
-  "player": "Tre Jones",
-  "team": "CHI",
-  "base_min": 20.0,
-  "min": 19.7,
-  "dk": 17.0
+ "benedict mathurin": {
+  "player": "Benedict Mathurin",
+  "team": "NOP",
+  "base_min": 21.0,
+  "min": 19.4,
+  "dk": 17.7
  },
  "collin gillespie": {
   "player": "Collin Gillespie",
@@ -935,35 +935,42 @@
   "team": "LAC",
   "base_min": 17.0,
   "min": 20.3,
-  "dk": 23.7
+  "dk": 23.5
  },
  "nique clifford": {
   "player": "Nique Clifford",
   "team": "SAC",
   "base_min": 25.0,
   "min": 25.5,
-  "dk": 19.2
+  "dk": 19.1
+ },
+ "jalen smith": {
+  "player": "Jalen Smith",
+  "team": "CHI",
+  "base_min": 20.0,
+  "min": 19.4,
+  "dk": 19.0
  },
  "kyle filipowski": {
   "player": "Kyle Filipowski",
   "team": "UTA",
   "base_min": 19.0,
   "min": 18.3,
-  "dk": 18.2
+  "dk": 18.1
  },
  "jamal shead": {
   "player": "Jamal Shead",
   "team": "TOR",
   "base_min": 19.0,
   "min": 18.4,
-  "dk": 15.9
+  "dk": 15.7
  },
  "bilal coulibaly": {
   "player": "Bilal Coulibaly",
   "team": "WAS",
   "base_min": 22.0,
   "min": 19.0,
-  "dk": 16.1
+  "dk": 16.0
  },
  "scoot henderson": {
   "player": "Scoot Henderson",
@@ -972,19 +979,19 @@
   "min": 19.0,
   "dk": 16.5
  },
- "ryan kalkbrenner": {
-  "player": "Ryan Kalkbrenner",
-  "team": "CHA",
-  "base_min": 21.0,
-  "min": 21.8,
-  "dk": 19.8
- },
  "georges niang": {
   "player": "Georges Niang",
   "team": "GSW",
   "base_min": 22.0,
   "min": 27.8,
   "dk": 23.0
+ },
+ "ryan kalkbrenner": {
+  "player": "Ryan Kalkbrenner",
+  "team": "CHA",
+  "base_min": 21.0,
+  "min": 21.8,
+  "dk": 19.6
  },
  "max christie": {
   "player": "Max Christie",
@@ -993,26 +1000,33 @@
   "min": 27.8,
   "dk": 17.7
  },
- "goga bitadze": {
-  "player": "Goga Bitadze",
-  "team": "ORL",
-  "base_min": 17.0,
-  "min": 17.1,
-  "dk": 18.8
- },
  "kobe sanders": {
   "player": "Kobe Sanders",
   "team": "LAC",
   "base_min": 20.0,
   "min": 23.9,
-  "dk": 20.9
+  "dk": 21.1
+ },
+ "goga bitadze": {
+  "player": "Goga Bitadze",
+  "team": "ORL",
+  "base_min": 17.0,
+  "min": 17.1,
+  "dk": 18.7
  },
  "tari eason": {
   "player": "Tari Eason",
   "team": "HOU",
   "base_min": 19.0,
   "min": 18.2,
-  "dk": 17.5
+  "dk": 17.6
+ },
+ "carlton carrington": {
+  "player": "Carlton Carrington",
+  "team": "WAS",
+  "base_min": 22.0,
+  "min": 19.0,
+  "dk": 14.2
  },
  "pelle larsson": {
   "player": "Pelle Larsson",
@@ -1021,13 +1035,6 @@
   "min": 21.1,
   "dk": 16.2
  },
- "carlton carrington": {
-  "player": "Carlton Carrington",
-  "team": "WAS",
-  "base_min": 22.0,
-  "min": 19.0,
-  "dk": 13.8
- },
  "sandro mamukelashvili": {
   "player": "Sandro Mamukelashvili",
   "team": "LAL",
@@ -1035,47 +1042,47 @@
   "min": 16.9,
   "dk": 17.2
  },
- "jalen smith": {
-  "player": "Jalen Smith",
-  "team": "CHI",
-  "base_min": 18.0,
-  "min": 17.7,
-  "dk": 17.1
- },
- "jake laravia": {
-  "player": "Jake LaRavia",
-  "team": "LAL",
+ "tristan da silva": {
+  "player": "Tristan da Silva",
+  "team": "ORL",
   "base_min": 23.0,
-  "min": 22.9,
-  "dk": 17.4
+  "min": 23.1,
+  "dk": 16.8
  },
  "zaccharie risacher": {
   "player": "Zaccharie Risacher",
   "team": "DAL",
   "base_min": 23.0,
   "min": 22.8,
-  "dk": 16.9
+  "dk": 16.8
+ },
+ "jake laravia": {
+  "player": "Jake LaRavia",
+  "team": "LAL",
+  "base_min": 23.0,
+  "min": 22.9,
+  "dk": 17.2
+ },
+ "patrick williams": {
+  "player": "Patrick Williams",
+  "team": "CHI",
+  "base_min": 27.0,
+  "min": 26.2,
+  "dk": 16.5
  },
  "gui santos": {
   "player": "Gui Santos",
   "team": "GSW",
   "base_min": 17.0,
   "min": 21.5,
-  "dk": 20.8
+  "dk": 20.7
  },
- "collin murray boyles": {
-  "player": "Collin Murray-Boyles",
-  "team": "TOR",
-  "base_min": 17.0,
-  "min": 16.5,
-  "dk": 16.1
- },
- "tristan da silva": {
-  "player": "Tristan da Silva",
-  "team": "ORL",
-  "base_min": 23.0,
-  "min": 23.1,
-  "dk": 16.6
+ "danny wolf": {
+  "player": "Danny Wolf",
+  "team": "BKN",
+  "base_min": 18.0,
+  "min": 16.9,
+  "dk": 15.3
  },
  "gary payton": {
   "player": "Gary Payton",
@@ -1084,12 +1091,12 @@
   "min": 20.2,
   "dk": 20.6
  },
- "danny wolf": {
-  "player": "Danny Wolf",
-  "team": "BKN",
-  "base_min": 18.0,
-  "min": 16.9,
-  "dk": 15.2
+ "collin murray boyles": {
+  "player": "Collin Murray-Boyles",
+  "team": "TOR",
+  "base_min": 17.0,
+  "min": 16.5,
+  "dk": 15.8
  },
  "luke kennard": {
   "player": "Luke Kennard",
@@ -1098,19 +1105,19 @@
   "min": 21.6,
   "dk": 15.5
  },
+ "tim hardaway": {
+  "player": "Tim Hardaway",
+  "team": "MIA",
+  "base_min": 23.0,
+  "min": 23.1,
+  "dk": 15.7
+ },
  "brice sensabaugh": {
   "player": "Brice Sensabaugh",
   "team": "UTA",
   "base_min": 18.0,
   "min": 17.3,
   "dk": 15.1
- },
- "tim hardaway": {
-  "player": "Tim Hardaway",
-  "team": "MIA",
-  "base_min": 23.0,
-  "min": 23.1,
-  "dk": 15.3
  },
  "sion james": {
   "player": "Sion James",
@@ -1119,19 +1126,19 @@
   "min": 22.9,
   "dk": 15.7
  },
- "patrick williams": {
-  "player": "Patrick Williams",
-  "team": "CHI",
-  "base_min": 24.0,
-  "min": 23.6,
-  "dk": 15.2
- },
  "jarace walker": {
   "player": "Jarace Walker",
   "team": "IND",
   "base_min": 17.0,
   "min": 16.9,
-  "dk": 14.9
+  "dk": 14.7
+ },
+ "reed sheppard": {
+  "player": "Reed Sheppard",
+  "team": "HOU",
+  "base_min": 16.0,
+  "min": 15.3,
+  "dk": 14.2
  },
  "oso ighodaro": {
   "player": "Oso Ighodaro",
@@ -1140,26 +1147,19 @@
   "min": 19.7,
   "dk": 15.1
  },
- "jordan goodwin": {
-  "player": "Jordan Goodwin",
-  "team": "PHX",
-  "base_min": 18.0,
-  "min": 17.7,
-  "dk": 15.4
- },
  "moritz wagner": {
   "player": "Moritz Wagner",
   "team": "BKN",
   "base_min": 15.0,
   "min": 14.1,
-  "dk": 13.9
- },
- "reed sheppard": {
-  "player": "Reed Sheppard",
-  "team": "HOU",
-  "base_min": 16.0,
-  "min": 15.3,
   "dk": 14.0
+ },
+ "jordan goodwin": {
+  "player": "Jordan Goodwin",
+  "team": "PHX",
+  "base_min": 18.0,
+  "min": 17.7,
+  "dk": 15.3
  },
  "justin champagnie": {
   "player": "Justin Champagnie",
@@ -1173,7 +1173,7 @@
   "team": "MEM",
   "base_min": 17.0,
   "min": 17.0,
-  "dk": 15.1
+  "dk": 15.2
  },
  "jakobe walter": {
   "player": "Ja'Kobe Walter",
@@ -1189,19 +1189,12 @@
   "min": 15.0,
   "dk": 14.2
  },
- "hannes steinbach": {
-  "player": "Hannes Steinbach",
-  "team": "CHA",
-  "base_min": 16.0,
-  "min": 16.6,
-  "dk": 14.5
- },
  "kevon looney": {
   "player": "Kevon Looney",
   "team": "LAL",
   "base_min": 14.0,
   "min": 13.9,
-  "dk": 13.9
+  "dk": 14.1
  },
  "noah clowney": {
   "player": "Noah Clowney",
@@ -1215,7 +1208,14 @@
   "team": "HOU",
   "base_min": 17.0,
   "min": 16.3,
-  "dk": 12.6
+  "dk": 12.7
+ },
+ "hannes steinbach": {
+  "player": "Hannes Steinbach",
+  "team": "CHA",
+  "base_min": 16.0,
+  "min": 16.6,
+  "dk": 14.5
  },
  "christian anderson": {
   "player": "Christian Anderson",
@@ -1245,6 +1245,13 @@
   "min": 12.3,
   "dk": 13.7
  },
+ "isaac okoro": {
+  "player": "Isaac Okoro",
+  "team": "CHI",
+  "base_min": 24.0,
+  "min": 23.3,
+  "dk": 12.8
+ },
  "marcus smart": {
   "player": "Marcus Smart",
   "team": "HOU",
@@ -1252,12 +1259,12 @@
   "min": 16.3,
   "dk": 12.4
  },
- "kyle anderson": {
-  "player": "Kyle Anderson",
-  "team": "TOR",
-  "base_min": 13.0,
-  "min": 12.6,
-  "dk": 11.8
+ "zach collins": {
+  "player": "Zach Collins",
+  "team": "CHI",
+  "base_min": 15.0,
+  "min": 14.6,
+  "dk": 12.5
  },
  "ben saraf": {
   "player": "Ben Saraf",
@@ -1266,19 +1273,19 @@
   "min": 16.0,
   "dk": 11.7
  },
+ "kyle anderson": {
+  "player": "Kyle Anderson",
+  "team": "TOR",
+  "base_min": 13.0,
+  "min": 12.6,
+  "dk": 11.7
+ },
  "ben sheppard": {
   "player": "Ben Sheppard",
   "team": "IND",
   "base_min": 20.0,
   "min": 19.9,
   "dk": 12.4
- },
- "jarred vanderbilt": {
-  "player": "Jarred Vanderbilt",
-  "team": "LAL",
-  "base_min": 16.0,
-  "min": 15.9,
-  "dk": 13.4
  },
  "dru smith": {
   "player": "Dru Smith",
@@ -1293,6 +1300,13 @@
   "base_min": 17.0,
   "min": 16.9,
   "dk": 13.9
+ },
+ "jarred vanderbilt": {
+  "player": "Jarred Vanderbilt",
+  "team": "LAL",
+  "base_min": 16.0,
+  "min": 15.9,
+  "dk": 13.1
  },
  "steven adams": {
   "player": "Steven Adams",
@@ -1322,26 +1336,12 @@
   "min": 16.3,
   "dk": 10.9
  },
- "isaac okoro": {
-  "player": "Isaac Okoro",
-  "team": "CHI",
-  "base_min": 21.0,
-  "min": 20.7,
-  "dk": 11.2
- },
- "zach collins": {
-  "player": "Zach Collins",
-  "team": "CHI",
-  "base_min": 13.0,
-  "min": 12.8,
-  "dk": 11.2
- },
  "jock landale": {
   "player": "Jock Landale",
   "team": "ATL",
   "base_min": 14.0,
   "min": 13.4,
-  "dk": 11.1
+  "dk": 10.9
  },
  "jaxson hayes": {
   "player": "Jaxson Hayes",
@@ -1369,7 +1369,14 @@
   "team": "PHX",
   "base_min": 16.0,
   "min": 15.7,
-  "dk": 11.7
+  "dk": 11.6
+ },
+ "buddy hield": {
+  "player": "Buddy Hield",
+  "team": "CHI",
+  "base_min": 15.0,
+  "min": 14.6,
+  "dk": 10.8
  },
  "isaiah stewart": {
   "player": "Isaiah Stewart",
@@ -1385,19 +1392,19 @@
   "min": 12.9,
   "dk": 10.0
  },
- "jamal cain": {
-  "player": "Jamal Cain",
-  "team": "ORL",
-  "base_min": 14.0,
-  "min": 14.1,
-  "dk": 10.9
- },
  "karlo matkovic": {
   "player": "Karlo Matkovic",
   "team": "NOP",
   "base_min": 12.0,
   "min": 11.1,
   "dk": 10.2
+ },
+ "jamal cain": {
+  "player": "Jamal Cain",
+  "team": "ORL",
+  "base_min": 14.0,
+  "min": 14.1,
+  "dk": 10.9
  },
  "brayden burries": {
   "player": "Brayden Burries",
@@ -1434,12 +1441,12 @@
   "min": 13.3,
   "dk": 10.5
  },
- "buddy hield": {
-  "player": "Buddy Hield",
-  "team": "CHI",
-  "base_min": 13.0,
-  "min": 12.8,
-  "dk": 9.7
+ "terrence shannon": {
+  "player": "Terrence Shannon Jr.",
+  "team": "MIN",
+  "base_min": 12.0,
+  "min": 12.2,
+  "dk": 9.6
  },
  "kasparas jakucionis": {
   "player": "Kasparas Jakucionis",
@@ -1455,26 +1462,12 @@
   "min": 9.5,
   "dk": 8.0
  },
- "terrence shannon": {
-  "player": "Terrence Shannon Jr.",
-  "team": "MIN",
-  "base_min": 12.0,
-  "min": 12.2,
-  "dk": 9.4
- },
  "baba miller": {
   "player": "Baba Miller",
   "team": "LAC",
   "base_min": 11.0,
   "min": 0.0,
   "dk": 0.0
- },
- "dailyn swain": {
-  "player": "Dailyn Swain",
-  "team": "CHI",
-  "base_min": 12.0,
-  "min": 11.8,
-  "dk": 9.0
  },
  "isaiah evans": {
   "player": "Isaiah Evans",
@@ -1483,19 +1476,19 @@
   "min": 11.2,
   "dk": 8.7
  },
- "drake powell": {
-  "player": "Drake Powell",
-  "team": "BKN",
-  "base_min": 16.0,
-  "min": 15.1,
-  "dk": 8.2
- },
  "ousmane dieng": {
   "player": "Ousmane Dieng",
   "team": "MIL",
   "base_min": 11.0,
   "min": 10.6,
   "dk": 8.1
+ },
+ "drake powell": {
+  "player": "Drake Powell",
+  "team": "BKN",
+  "base_min": 16.0,
+  "min": 15.1,
+  "dk": 8.2
  },
  "joshua jefferson": {
   "player": "Joshua Jefferson",
@@ -1523,7 +1516,7 @@
   "team": "MIA",
   "base_min": 9.0,
   "min": 9.0,
-  "dk": 7.0
+  "dk": 7.1
  },
  "allen graves": {
   "player": "Allen Graves",
@@ -1537,7 +1530,7 @@
   "team": "TOR",
   "base_min": 10.0,
   "min": 9.7,
-  "dk": 7.0
+  "dk": 6.9
  },
  "sidy cissoko": {
   "player": "Sidy Cissoko",
@@ -1551,7 +1544,7 @@
   "team": "IND",
   "base_min": 8.0,
   "min": 8.0,
-  "dk": 6.5
+  "dk": 6.3
  },
  "julian reese": {
   "player": "Julian Reese",
