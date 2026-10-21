@@ -130,17 +130,18 @@ def load_json(path, default):
         return default
 
 
-def spread_minutes(team_rows, amount, skip):
+def spread_minutes(team_rows, amount, skip, cap=None):
     """Give `amount` minutes to teammates in proportion to their minutes, capped at MAX_MIN."""
+    cap = cap or MAX_MIN
     left = amount
-    for _ in range(5):
-        pool = [r for r in team_rows if r["min"] > 0 and r["player"] not in skip and r["min"] < MAX_MIN]
+    for _ in range(8):
+        pool = [r for r in team_rows if r["min"] > 0 and r["player"] not in skip and r["min"] < cap]
         tot = sum(r["min"] for r in pool)
         if left <= 0.05 or tot <= 0:
             break
         given = 0.0
         for r in pool:
-            add = min(left * r["min"] / tot, MAX_MIN - r["min"])
+            add = min(left * r["min"] / tot, cap - r["min"])
             r["min"] += add
             given += add
         left -= given
@@ -156,7 +157,13 @@ def main():
     et = datetime.now(ET)
     day = args.date or et.strftime("%Y-%m-%d")
 
-    sl = parse_sl(open(args.sl).read() if args.sl else get(SL_URL))
+    try:
+        sl = parse_sl(open(args.sl).read() if args.sl else get(SL_URL))
+    except SystemExit:
+        if datetime.now(ET).hour >= 19:
+            print("No baseline table after 7 PM ET (games under way); keeping the current file.")
+            return
+        raise
     dff = parse_dff(open(args.dff).read() if args.dff else get(DFF_URL))
     dff = [r for r in dff if r["date"] in ("", day)]
     games = espn_games(day)
@@ -249,11 +256,15 @@ def main():
     for team, tr in by_team.items():
         live = [r for r in tr if r["min"] > 0]
         tot = sum(r["min"] for r in live)
-        if tot < 200:
+        if tot < 170 or len(live) < 7:
             continue
         fixed = sum(r["min"] for r in live if r.get("fixed"))
         free = [r for r in live if not r.get("fixed")]
         ftot = sum(r["min"] for r in free)
+        if tot < 240:
+            # Short of 240: hand the gap out without pushing anyone past 36.
+            spread_minutes(tr, 240.0 - tot, {r["player"] for r in live if r.get("fixed")}, cap=36.0)
+            continue
         if ftot > 0:
             k = (240.0 - fixed) / ftot
             for r in free:
