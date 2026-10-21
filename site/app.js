@@ -3,6 +3,10 @@
     'https://nascardataguy2.github.io/nba-2026-27/data/db.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/db.json'
   ];
+  var SSOURCES = [
+    'https://nascardataguy2.github.io/nba-2026-27/data/stars.json',
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/stars.json'
+  ];
   var PSOURCES = [
     'https://nascardataguy2.github.io/nba-2026-27/data/projections.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/projections.json'
@@ -336,6 +340,26 @@
     if (t){ e.preventDefault(); setSort(t.getAttribute('data-k')); }
   });
 
+  var SS = null;
+  function starsRender(){
+    if (!SS) return;
+    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
+    if (SS.date !== today){ $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.'; $('r4p-starsbox').innerHTML = ''; return; }
+    $('r4p-ssub').textContent = 'We watch ball. We know ball. Updated ' + (SS.updated || '') + '. ' + (SS.guide || '');
+    function card(p){
+      var tags = (p['new'] ? '<span class="tn">New today</span>' : '') + (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '');
+      var box = function(key, lbl){ var st = PJ ? heatCss(key, p[key]) : ''; return '<div class="ssc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + fmt(p, key) + '</div>'; };
+      return '<div class="ssc"><div class="ssc-top"><div class="ssc-who"><span class="ssc-name">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div><div class="ssc-sal">' + money(p.salary) + '</div></div>' +
+        '<div class="ssc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 O/U ' + fmt(p, 'ou') + ' \u00b7 Spread ' + fmt(p, 'spread') + '</div>' +
+        '<div class="ssc-nums">' + box('min', 'Min') + box('dk', 'DK') + box('value', 'Val') + box('usg', 'Usg') + '</div>' +
+        '<div class="ssc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
+        (p.why ? '<p class="ssc-why"><b>Why:</b> ' + esc(p.why) + '</p>' : '') + '</div>';
+    }
+    $('r4p-starsbox').innerHTML =
+      '<div class="panel ss-panel stars"><h2>Stars</h2><p class="hint">The high-salary locks for tonight, $8,000 and up.</p><div class="ssc-grid">' + (SS.stars || []).map(card).join('') + '</div></div>' +
+      '<div class="panel ss-panel scrubs"><h2>Scrubs</h2><p class="hint">Cheap value that popped up today, $4,500 and under. Every scrub has a reason.</p><div class="ssc-grid">' + ((SS.scrubs || []).map(card).join('') || '<p class="sub">No scrubs with a real reason yet today.</p>') + '</div></div>';
+  }
+
   function show(v){
     var tabs = document.querySelectorAll('#r4p-tabs .tab');
     for (var i = 0; i < tabs.length; i++) tabs[i].classList.toggle('on', tabs[i].getAttribute('data-v') === v);
@@ -350,7 +374,10 @@
 
   ['r4p-pq','r4p-pgame','r4p-ppos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-pq' ? 'input' : 'change', proj); });
   $('r4p-psort').addEventListener('change', function(){ var v = this.value; if (v){ PSORT = {key:v, dir:-1}; proj(); } });
-  fetchFirst(PSOURCES, false).then(projInit).catch(function(){
+  fetchFirst(SSOURCES, false).then(function(d){ SS = d; starsRender(); }).catch(function(){
+    $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.';
+  });
+  fetchFirst(PSOURCES, false).then(function(d){ projInit(d); starsRender(); }).catch(function(){
     $('r4p-psub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.';
   });
 

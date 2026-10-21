@@ -28,6 +28,7 @@ jobs:
       - name: Projections and database
         run: |
           python3 scripts/projections.py
+          python3 scripts/stars.py
           python3 scripts/shorts.py
           python3 scripts/build.py
       - name: Commit
@@ -41,9 +42,9 @@ jobs:
             if git pull --rebase -q && git push -q; then break; fi
             git rebase --abort 2>/dev/null || true
             git reset -q --hard origin/main
-            python3 scripts/projections.py && python3 scripts/shorts.py && python3 scripts/build.py
+            python3 scripts/projections.py && python3 scripts/stars.py && python3 scripts/shorts.py && python3 scripts/build.py
             git add data ai.txt
             git diff --cached --quiet && exit 0
             git commit -q -m "Projections update"
           done
-          for f in data/projections.json data/db.json data/shorts.txt data/shorts.json ai.txt; do curl -s "https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/$f" > /dev/null || true; done
+          for f in data/projections.json data/db.json data/shorts.txt data/shorts.json data/stars.json ai.txt; do curl -s "https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/$f" > /dev/null || true; done

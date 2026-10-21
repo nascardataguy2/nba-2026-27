@@ -23,6 +23,9 @@ def money(v):
     return "${:,}".format(v)
 
 
+WHYS = {}
+
+
 def reason(p, kind):
     bits = []
     if kind == "lock":
@@ -31,6 +34,8 @@ def reason(p, kind):
         bits.append("At %s, he projects for %.1f DraftKings points, which is %.1f times his salary." % (money(p["salary"]), p["dk"], p["value"]))
     if p.get("ou"):
         bits.append("His game has a %.1f-point total." % p["ou"])
+    if WHYS.get(p["player"]):
+        return bits[0] + " " + WHYS[p["player"]]
     if p.get("note") and not p["note"].startswith(("More minutes with", "Moved toward")):
         bits.append(p["note"])
     return " ".join(bits)
@@ -51,6 +56,14 @@ def main():
         if tier:
             value.append(tier[0])
             used.add(tier[0]["player"])
+    # Use Stars & Scrubs when it is posted for today (same picks as the site tab, with our context).
+    ss_path = os.path.join(D, "stars.json")
+    ss = json.load(open(ss_path, encoding="utf-8")) if os.path.exists(ss_path) else {}
+    whys = {}
+    if ss.get("date") == today and ss.get("stars") and ss.get("scrubs"):
+        locks = [p for p in ss["stars"] if not p.get("q")][:3]
+        value = [p for p in ss["scrubs"] if not p.get("q")][:3]
+        WHYS.update({p["player"]: p.get("why", "") for p in locks + value})
     d = datetime.strptime(today, "%Y-%m-%d")
     day = d.strftime("%A, %B ") + str(d.day)
     games = len(doc.get("games", []))
