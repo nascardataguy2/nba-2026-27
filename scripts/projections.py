@@ -106,6 +106,29 @@ def parse_dff(page):
     return out
 
 
+def dk_salaries(day):
+    """Official DraftKings classic main-slate salaries and positions: {(norm name, team): (salary, pos)}."""
+    out = {}
+    try:
+        lob = json.loads(get("https://www.draftkings.com/lobby/getcontests?sport=NBA"))
+        groups = [g for g in lob.get("DraftGroups", []) if g.get("ContestTypeId") == 70 and
+                  str(g.get("StartDateEst", "")).startswith(day) and g.get("DraftGroupTag") == "Featured"]
+        if not groups:
+            return out
+        g = max(groups, key=lambda x: x.get("GameCount", 0))
+        csvtxt = get("https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=70&draftGroupId=%s" % g["DraftGroupId"])
+    except Exception:
+        return out
+    import csv as _csv
+    import io as _io
+    for row in _csv.DictReader(_io.StringIO(csvtxt.lstrip("\ufeff"))):
+        try:
+            out[(norm(row["Name"]), fix_team(row["TeamAbbrev"]))] = (int(row["Salary"]), row["Position"])
+        except (KeyError, ValueError):
+            continue
+    return out
+
+
 def espn_games(day):
     """Tonight's games from ESPN: {team: {opp, home, time}}."""
     games = {}
@@ -166,7 +189,11 @@ def main():
         raise
     dff = parse_dff(open(args.dff).read() if args.dff else get(DFF_URL))
     dff = [r for r in dff if r["date"] in ("", day)]
+    if not dff:
+        print("Salary/Vegas page not posted for", day, "yet; keeping the current file.")
+        return
     games = espn_games(day)
+    dks = dk_salaries(day)
     if not sl or not dff:
         raise SystemExit("missing data: sportsline %d rows, dff %d rows" % (len(sl), len(dff)))
 
@@ -175,6 +202,15 @@ def main():
     for r in dff:
         dname.setdefault(norm(r["player"]), r)
     slate = set(games) or {r["team"] for r in dff}
+    today_pairs = {(g["opp"], t) for t, g in games.items() if g["home"]}
+    if today_pairs:
+        fresh = [x for x in sl if x["game"] and (fix_team(x["game"].partition("@")[0]), fix_team(x["game"].partition("@")[2])) in today_pairs]
+        if not fresh:
+            print("Baseline projections are not posted for", day, "yet; keeping the current file.")
+            return
+    if dff and not any(r["date"] == day for r in dff):
+        print("Salary/Vegas page not posted for", day, "yet; keeping the current file.")
+        return
 
     adjust = [a for a in load_json(os.path.join(D, "proj_adjust.json"), []) if a.get("until", "9999") >= day and a.get("from", "0000") <= day]
     amap = {norm(a["player"]): a for a in adjust}
@@ -194,13 +230,31 @@ def main():
     for s in sl:
         if s["team"] not in slate or s["min"] <= 0:
             continue
+        if today_pairs and s["game"]:
+            ga, _, gh = s["game"].partition("@")
+            if (fix_team(ga), fix_team(gh)) not in today_pairs:
+                continue  # baseline row from another day
         k = norm(s["player"])
         d = dmap.get((k, s["team"])) or dname.get(k)
+        if not d:
+            # Same team and same last name (Alex/Alexandre Sarr, Benedict/Bennedict Mathurin).
+            last = k.split(" ")[-1]
+            c = [x for x in dff if x["team"] == s["team"] and norm(x["player"]).split(" ")[-1] == last]
+            if len(c) != 1:
+                first = k.split(" ")[0][:3]
+                c = [x for x in dff if x["team"] == s["team"] and norm(x["player"]).startswith(first) and
+                     norm(x["player"]).split(" ")[-1][:4] == last[:4]]
+            d = c[0] if len(c) == 1 else None
         r = dict(s)
         r["base"] = s["min"]
         r["why"] = []
-        r["salary"] = d["salary"] if d else None
-        r["dkpos"] = d["pos"] if d else s["pos"]
+        dk = dks.get((k, s["team"]))
+        if not dk:
+            last = k.split(" ")[-1]
+            c = [v for (nm, tm_), v in dks.items() if tm_ == s["team"] and nm.split(" ")[-1] == last]
+            dk = c[0] if len(c) == 1 else None
+        r["salary"] = dk[0] if dk else (d["salary"] if d else None)
+        r["dkpos"] = dk[1] if dk else (d["pos"] if d else s["pos"])
         r["start"] = bool(d and d["start"])
         r["inj"] = d["inj"] if d else ""
         r["spread"] = d["spread"] if d else None
