@@ -323,6 +323,8 @@ def main():
 
     out_list = []
     # 1) Live outs and our notes.
+    for r in rows:
+        r["m0"] = r["min"]
     for team, tr in by_team.items():
         for r in tr:
             a = amap.get(norm(r["player"]))
@@ -349,6 +351,8 @@ def main():
             out_list.append({"player": d["player"], "team": d["team"], "note": status_note(d["player"])})
             seen.add(norm(d["player"]))
 
+    for r in rows:
+        r["m1"] = r["min"]
     # 2) Recent actual minutes (once games have been played).
     for r in rows:
         if r["min"] <= 0 or r.get("fixed"):
@@ -388,7 +392,7 @@ def main():
         delta = r["min"] - r["base"]
         if r["min"] > 0 and not r.get("fixed") and abs(delta) >= 2.0:
             outs = [o["player"] for o in out_list if o["team"] == r["team"] and o.get("freed")]
-            if delta > 0 and outs:
+            if delta > 0 and outs and r.get("m1", 0) - r.get("m0", 0) >= 2.0:
                 r["why"].append("More minutes with " + " and ".join(outs[:2]) + " out.")
             elif r.get("recent") is not None:
                 r["why"].append("Moved toward his recent minutes (%s a game)." % r["recent"])
