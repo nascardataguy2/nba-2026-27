@@ -22,6 +22,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 16 (10/18): 10/17 batch — TOR preview, cheat sheet, boom or bust, winners, late-round targets
 - Chunk 17 (10/20): 10/18 batch — WAS, UTA and NYK previews, league winners, last must-drafts, rookies and sleepers
 - 10/20 Stokastic slate show (Grok, same-day): center splits and minutes notes added to players and proj_adjust.json
+- Chunk 19 (10/22): 10/22 batch — Fantasy Alarm slate preview, Locked On opening-night and Wednesday recaps, Thursday waiver preview, Old Man Squad most added
 - Chunk 18 (10/20): 10/20 #2 batch — opening-night preview, two Week 1 previews, East and West rotations (all 30 team rotations refreshed)
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
@@ -38,8 +39,6 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 
 ## Daily batch, added 10/20 #2 (undated episodes treated as 2026-10-19)
 
-## Daily batch, added 10/22 (Grok daily_2026-10-22)
-- Chunk 19 (first week recaps + today's slate): x54 Fantasy Alarm NBA DFS DraftKings preview for 10/22 (same-day slate, FA- prefix), x55 Wednesday recap (Locked On, 10/22), x56 Porzingis update and Thursday waiver preview (Locked On, 10/21), x57 10 most added (Old Man Squad, 10/21), x58 opening-night recap (Locked On, 10/21).
 
 ## Notes
 - Season data (from 10/20): Grok uploads one season-data_DATE.txt (DailyFantasyFuel projections, Basketball-Reference advanced, TeamRankings pace; RotoWire minutes is subscriber-only and unavailable). Saved privately in data/season/ (gitignored). The daily site table is not built yet; waiting on Pearce's go.
