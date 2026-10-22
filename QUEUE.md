@@ -83,3 +83,10 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Normal daily set from Grok (per Pearce, 10/22): Fantasy Alarm DFS slate preview (same-day picks), Locked On daily preview and daily recap (season-long focus, but the role/minutes analysis carries over to DFS), plus extras like Old Man Squad. Use previews for same-day context_notes and proj_adjust; use recaps for role facts in players/teams and next-day context.
 - Same-day slate shows (Stokastic, usually late morning or early afternoon; Fantasy Alarm): when one arrives in the chat, process it right away, not in the backlog. Update players.json, proj_adjust.json and context_notes.json, rerun projections.py, stars.py, shorts.py and build.py, then push and purge, the same as any other update.
 
+## Future site updates (Pearce's list, 10/22; not started, wait for go)
+1. Research tab: season stats table with fantasy points per minute, plus tonight's salary, matchup, O/U, spread and team icons.
+2. Notes icon on each player: click it and the player's notes open under his row in the table.
+3. Game timelines like NBA WOWY / popcornmachine: show when each player was on the court against the score, for context (e.g. who got minutes and fantasy points in a blowout).
+4. Optimizer.
+5. Simulations.
+
