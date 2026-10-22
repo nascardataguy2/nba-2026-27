@@ -38,11 +38,14 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 
 ## Daily batch, added 10/20 #2 (undated episodes treated as 2026-10-19)
 
+## Daily batch, added 10/22 (Grok daily_2026-10-22)
+- Chunk 19 (first week recaps + today's slate): x54 Fantasy Alarm NBA DFS DraftKings preview for 10/22 (same-day slate, FA- prefix), x55 Wednesday recap (Locked On, 10/22), x56 Porzingis update and Thursday waiver preview (Locked On, 10/21), x57 10 most added (Old Man Squad, 10/21), x58 opening-night recap (Locked On, 10/21).
+
 ## Notes
 - Season data (from 10/20): Grok uploads one season-data_DATE.txt (DailyFantasyFuel projections, Basketball-Reference advanced, TeamRankings pace; RotoWire minutes is subscriber-only and unavailable). Saved privately in data/season/ (gitignored). The daily site table is not built yet; waiting on Pearce's go.
 - Storylines (added 10/15): `quickhits.json` key `storylines` = {date, items[player, team, text, source]}, shown at the top of Quick Hits. Every run replaces it with the 5-8 biggest current news items (newest injuries, starting-job changes, minutes changes) and sets date to the run date. Same writing rules: complete sentences, no show or host names.
 - Raw daily bundles are kept in transcripts/bundles/ (private).
-- Run order (set 10/12, extended 10/13): two chunks a day, at 4:30 PM and 11:00 PM ET, in this order: 7, 8, 12, 9, 10, 11, 13, 14, 15, 16, 17, 18.
+- Run order (set 10/12, extended 10/13): two chunks a day, at 4:30 PM and 11:00 PM ET, in this order: 7, 8, 12, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19.
 - The Miami preview arrived in the 10/12 batch (x17).
 - The extra-channel episodes are mostly draft-value talk (sleepers, busts, safe picks). Their role, minutes, injury and usage facts go into the main tables, and each host's target/fade calls go into the player notes with the show named.
 - Every chunk also updates `data/quickhits.json` (If He Sits, Role Up, Role Down, Rest Watch, Out to Start) with any new facts from that chunk's episodes, then purges the jsDelivr cache with curl from the shell (network is open as of 10/15; never use WebFetch for it) (https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/db.json and .../ai.txt) so the Blogger site shows the update.
@@ -77,4 +80,4 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Storylines (from 10/21): every projections run writes automatic storylines (marked "auto": true) if today's are missing; a daily 9 AM ET Claude run (send_later chain) replaces them with written ones. The site header shows the newer of the database date and the projections date. GitHub Actions now also runs build.py, so db.json and ai.txt refresh daily.
 - Shorts (from 10/21): scripts/shorts.py writes data/shorts.txt and data/shorts.json (3 locks, 3 value plays, reasons, hook, close) whenever today's projections exist. GitHub runs it at 7:31, 8:01 and 8:16 AM ET and on every later run. Grok's shorts helper reads https://nascardataguy2.github.io/nba-2026-27/data/shorts.txt.
 - Stars & Scrubs tab (from 10/21, third tab): scripts/stars.py writes data/stars.json (5 stars $8K+, up to 8 scrubs $4.5K and under, each with projection numbers and a "why"). A scrub needs a real reason (written note, teammate out, starting tonight, recent minutes). Written context goes in data/context_notes.json {"date", "notes": {player: text}} and always wins; the 9 AM run writes it from ESPN recaps, box scores, injury news and podcasts. Shorts use the top 3 stars and top 3 scrubs. Theme: We watch ball. We know ball.
-
+- Fantasy Alarm joined Grok's daily check on 10/22; source id prefix FA-.
