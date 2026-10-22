@@ -19,6 +19,10 @@
     'https://nascardataguy2.github.io/nba-2026-27/data/season.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/season.json'
   ];
+  var LPSOURCES = [
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/site/lp.js',
+    'https://nascardataguy2.github.io/nba-2026-27/site/lp.js'
+  ];
   var NAMES = {ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHA:'Charlotte Hornets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',IND:'Indiana Pacers',LAC:'LA Clippers',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',MIN:'Minnesota Timberwolves',NOP:'New Orleans Pelicans',NYK:'New York Knicks',OKC:'Oklahoma City Thunder',ORL:'Orlando Magic',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',POR:'Portland Trail Blazers',SAC:'Sacramento Kings',SAS:'San Antonio Spurs',TOR:'Toronto Raptors',UTA:'Utah Jazz',WAS:'Washington Wizards'};
   // Team primary colors (Color 1 from teamcolorcodes.com NBA team color codes).
   var TEAMC = {ATL:'#E03A3E',BOS:'#007A33',BKN:'#000000',CHA:'#1D1160',CHI:'#CE1141',CLE:'#860038',DAL:'#00538C',DEN:'#0E2240',DET:'#C8102E',GSW:'#1D428A',HOU:'#CE1141',IND:'#002D62',LAC:'#C8102E',LAL:'#552583',MEM:'#5D76A9',MIA:'#98002E',MIL:'#00471B',MIN:'#0C2340',NOP:'#0C2340',NYK:'#006BB6',OKC:'#007AC1',ORL:'#0077C0',PHI:'#006BB6',PHX:'#1D1160',POR:'#E03A3E',SAC:'#5A2D81',SAS:'#C4CED4',TOR:'#CE1141',UTA:'#002B5C',WAS:'#002B5C'};
@@ -301,7 +305,7 @@
     if (!t) return;
     var n = t.getAttribute('data-n'), k = nkey(n);
     NOPEN[k] = !NOPEN[k];
-    proj(); research();
+    proj(); research(); optPool();
   });
 
   var PCOLS = [
@@ -513,6 +517,166 @@
     $('r4p-statlist').innerHTML = '<div class="pjt-wrap"><table class="pjt rst"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
 
+  // Optimizer: DraftKings Classic lineups from our projections.
+  var OLOCK = {}, OEXCL = {}, OLINES = [], OBUSY = false, LPP = null;
+  var OCORE = ['PG','SG','SF','PF','C','G','F'], OSLOTS = ['PG','SG','SF','PF','C','G','F','UTIL'];
+  var OHALL = [];
+  for (var hm = 1; hm < 128; hm++){ OHALL.push(OCORE.filter(function(x, i){ return hm & (1 << i); })); }
+  function lpLoad(){
+    if (LPP) return LPP;
+    LPP = new Promise(function(res, rej){
+      var i = 0;
+      (function next(){
+        if (window.solver) return res(window.solver);
+        if (i >= LPSOURCES.length) return rej(new Error('solver'));
+        var sc = document.createElement('script'); sc.src = LPSOURCES[i++];
+        sc.onload = function(){ if (window.solver) res(window.solver); else next(); };
+        sc.onerror = next; document.head.appendChild(sc);
+      })();
+    });
+    LPP.catch(function(){ LPP = null; });
+    return LPP;
+  }
+  function oElig(pos){
+    var e = {};
+    String(pos || '').split('/').forEach(function(x){ e[x] = 1; if (x === 'PG' || x === 'SG') e.G = 1; if (x === 'SF' || x === 'PF') e.F = 1; });
+    e.UTIL = 1; return e;
+  }
+  function oStarted(){
+    var st = {}, now = new Date().toISOString().slice(0, 16) + 'Z';
+    if (PJ) (PJ.games || []).forEach(function(g){ if (g.time && g.time <= now){ st[g.away] = 1; st[g.home] = 1; } });
+    return st;
+  }
+  function oToday(){ return PJ && PJ.date === new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'}); }
+  function oAssign(pl){
+    var order = ['C','PG','SG','SF','PF','G','F','UTIL'], used = {}, res = {}, E = pl.map(function(p){ return oElig(p.pos); });
+    function go(k){
+      if (k === order.length) return true;
+      for (var i = 0; i < pl.length; i++) if (!used[i] && E[i][order[k]]){ used[i] = 1; res[order[k]] = pl[i]; if (go(k + 1)) return true; used[i] = 0; }
+      return false;
+    }
+    return go(0) ? res : null;
+  }
+  function oSolve(lp, pool, prev, diff, floor){
+    var m = {optimize:'dk', opType:'max', constraints:{sal:{max:50000, min:floor}, n:{equal:8}}, variables:{}, ints:{}}, games = {};
+    OHALL.forEach(function(h, j){ m.constraints['h' + j] = {min:h.length}; });
+    pool.forEach(function(p, i){
+      var g = [p.team, p.opp].sort().join('_'), e = oElig(p.pos), v = {dk:p.dk, sal:p.salary, n:1};
+      games[g] = 1; v['g_' + g] = 1; v['u' + i] = 1;
+      m.constraints['u' + i] = OLOCK[nkey(p.player)] ? {equal:1} : {max:1};
+      OHALL.forEach(function(h, j){ for (var q = 0; q < h.length; q++) if (e[h[q]]){ v['h' + j] = 1; break; } });
+      prev.forEach(function(L, j){ if (L.keys[nkey(p.player)]) v['L' + j] = 1; });
+      m.variables['y' + i] = v; m.ints['y' + i] = 1;
+    });
+    Object.keys(games).forEach(function(g){ m.constraints['g_' + g] = {max:7}; });
+    prev.forEach(function(L, j){ m.constraints['L' + j] = {max:8 - diff}; });
+    var r = lp.Solve(m);
+    if (!r.feasible) return null;
+    var pl = [];
+    pool.forEach(function(p, i){ if (r['y' + i] > 0.5) pl.push(p); });
+    if (pl.length !== 8) return null;
+    var slots = oAssign(pl);
+    if (!slots) return null;
+    var keys = {}, sal = 0, dk = 0;
+    pl.forEach(function(p){ keys[nkey(p.player)] = 1; sal += p.salary; dk += p.dk; });
+    return {slots:slots, keys:keys, salary:sal, dk:dk};
+  }
+  function oPool(){
+    if (!PJ) return [];
+    var st = oStarted();
+    return PJ.players.filter(function(p){
+      var k = nkey(p.player);
+      if (!p.salary || p.dk == null || OEXCL[k]) return false;
+      if (OLOCK[k]) return true;
+      return !st[p.team] && p.min >= 8;
+    });
+  }
+  function oMsg(t){ $('r4p-omsg').textContent = t || ''; }
+  function optBuild(pre){
+    pre = typeof pre === 'string' ? pre + ' ' : '';
+    if (OBUSY || !PJ) return;
+    if (!oToday()){ oMsg('Tonight\u2019s projections are not posted yet.'); return; }
+    var n = +$('r4p-on').value, diff = +$('r4p-odiff').value, floor = +$('r4p-ofloor').value;
+    var pool = oPool(), locked = pool.filter(function(p){ return OLOCK[nkey(p.player)]; });
+    var lsal = locked.reduce(function(a, p){ return a + p.salary; }, 0);
+    if (locked.length > 8){ oMsg('You have ' + locked.length + ' players locked. A lineup only has 8 spots.'); return; }
+    if (lsal > 50000){ oMsg('Your locked players cost ' + money(lsal) + ', which is over the $50,000 cap.'); return; }
+    OBUSY = true; OLINES = []; oMsg('Building lineups\u2026'); optLines();
+    lpLoad().then(function(lp){
+      var i = 0;
+      (function step(){
+        var L = oSolve(lp, pool, OLINES, diff, floor);
+        if (L){ OLINES.push(L); i++; }
+        if (L && i < n){ oMsg('Built ' + i + ' of ' + n + ' lineups\u2026'); optLines(); setTimeout(step, 0); return; }
+        OBUSY = false;
+        if (!OLINES.length) oMsg('No lineup fits these settings. Try fewer locks or a lower salary minimum.');
+        else if (OLINES.length < n) oMsg(pre + 'Only ' + OLINES.length + ' of ' + n + ' lineups fit these settings.');
+        else oMsg(pre + 'Built ' + n + (n === 1 ? ' lineup.' : ' lineups.'));
+        optLines();
+      })();
+    }).catch(function(){ OBUSY = false; oMsg('The optimizer could not load right now. Please refresh the page in a minute.'); });
+  }
+  function optLines(){
+    $('r4p-olines').innerHTML = OLINES.length ? '<div class="ol-grid">' + OLINES.map(function(L, i){
+      return '<div class="ol-card"><div class="ol-top"><span class="ol-n">Lineup ' + (i + 1) + '</span><span class="ol-dk">' + n1(L.dk) + ' DK</span><span class="ol-sal">$' + L.salary.toLocaleString('en-US') + '</span></div>' +
+        OSLOTS.map(function(s){
+          var p = L.slots[s];
+          return '<div class="ol-row' + (OLOCK[nkey(p.player)] ? ' lk" title="Locked' : '') + '"><span class="ol-slot">' + s + '</span><span class="ol-who">' + esc(p.player) + '</span>' + tm(p.team, true) + '<span class="ol-s">' + money(p.salary) + '</span><span class="ol-d">' + n1(p.dk) + '</span></div>';
+        }).join('') + '</div>';
+    }).join('') + '</div>' : '';
+  }
+  function optPool(){
+    if (!PJ || !$('r4p-opool')) return;
+    if (!oToday()){ $('r4p-osub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.'; $('r4p-opool').innerHTML = ''; return; }
+    var st = oStarted(), q = $('r4p-oq').value.trim().toLowerCase();
+    $('r4p-osub').textContent = 'We watch ball. We know ball. Build DraftKings lineups from our projections for ' + (PJ.games || []).length + (PJ.games.length === 1 ? ' game' : ' games') + ' tonight \u00b7 updated ' + PJ.updated + '.';
+    var list = PJ.players.filter(function(p){
+      if (!p.salary) return false;
+      return !q || (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
+    });
+    $('r4p-opool').innerHTML = '<div class="op-head"><span>Player</span><span>Sal</span><span>DK</span><span></span></div>' + list.map(function(p){
+      var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
+      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[k];
+      var tags = (p.q ? '<span class="role out">Q</span>' : '') + (st[p.team] ? '<span class="role">Started</span>' : '') + nbtn(p.player, has);
+      return '<div class="op-row' + (lk ? ' lk' : '') + (ex ? ' ex' : '') + '"><div class="op-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags +
+        '<div class="op-sub"><span class="pk-pos">' + esc(p.pos) + '</span> ' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + '</div></div>' +
+        '<span class="op-s">' + money(p.salary) + '</span><span class="op-d">' + n1(p.dk) + '</span>' +
+        '<span class="op-b"><button class="ob' + (lk ? ' on' : '') + '" data-lock="' + esc(p.player) + '" type="button" aria-pressed="' + lk + '">' + (lk ? 'Locked' : 'Lock') + '</button>' +
+        '<button class="ob x' + (ex ? ' on' : '') + '" data-excl="' + esc(p.player) + '" type="button" aria-pressed="' + ex + '">' + (ex ? 'Out' : 'Take out') + '</button></span>' +
+        (open ? '<div class="op-notes">' + noteHtml(bits) + '</div>' : '') + '</div>';
+    }).join('');
+  }
+  function optStars(){
+    if (!SS || !oToday() || SS.date !== PJ.date){ oMsg('Tonight\u2019s Stars & Scrubs are not posted yet.'); return; }
+    var st = oStarted(), have = {};
+    PJ.players.forEach(function(p){ if (p.salary) have[nkey(p.player)] = p; });
+    function pick(arr){ return (arr || []).filter(function(p){ var x = have[nkey(p.player)]; return x && !x.q && !st[x.team] && !OEXCL[nkey(p.player)]; }).slice(0, 2); }
+    OLOCK = {};
+    var chosen = pick(SS.stars).concat(pick(SS.scrubs));
+    chosen.forEach(function(p){ OLOCK[nkey(p.player)] = 1; });
+    optPool();
+    optBuild('Locked ' + chosen.map(function(p){ return p.player; }).join(', ') + ' from Stars & Scrubs.');
+  }
+  function optCsv(){
+    if (!OLINES.length){ oMsg('Build lineups first, then download them.'); return; }
+    var miss = false;
+    var rows = OLINES.map(function(L){ return OSLOTS.map(function(s){ var id = L.slots[s].dkid; if (!id) miss = true; return id || ''; }).join(','); });
+    if (miss){ oMsg('DraftKings player IDs are missing for tonight, so the download is not available yet.'); return; }
+    var csv = OSLOTS.join(',') + '\n' + rows.join('\n') + '\n';
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([csv], {type:'text/csv'}));
+    a.download = 'nbadfs-lineups-' + PJ.date + '.csv';
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    oMsg('Downloaded ' + OLINES.length + (OLINES.length === 1 ? ' lineup.' : ' lineups.') + ' On DraftKings, open your contest and use Upload Lineups.');
+  }
+  document.addEventListener('click', function(e){
+    if (!e.target.closest) return;
+    var b = e.target.closest('[data-lock]'), x = e.target.closest('[data-excl]');
+    if (b){ var k = nkey(b.getAttribute('data-lock')); OLOCK[k] = !OLOCK[k]; if (OLOCK[k]) OEXCL[k] = false; optPool(); }
+    else if (x){ var k2 = nkey(x.getAttribute('data-excl')); OEXCL[k2] = !OEXCL[k2]; if (OEXCL[k2]) OLOCK[k2] = false; optPool(); }
+  });
+
   var SS = null;
   function starsRender(){
     if (!SS) return;
@@ -545,6 +709,11 @@
   for (var k = 0; k < tabs.length; k++) tabs[k].addEventListener('click', function(){ show(this.getAttribute('data-v')); });
 
 
+  $('r4p-obuild').addEventListener('click', optBuild);
+  $('r4p-oss').addEventListener('click', optStars);
+  $('r4p-oclear').addEventListener('click', function(){ OLOCK = {}; OEXCL = {}; optPool(); oMsg('Cleared all locks and players taken out.'); });
+  $('r4p-ocsv').addEventListener('click', optCsv);
+  $('r4p-oq').addEventListener('input', optPool);
   ['r4p-sq','r4p-steam','r4p-spos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-sq' ? 'input' : 'change', research); });
   fetchFirst(RSOURCES, false).then(function(d){
     SEA = d;
@@ -555,7 +724,7 @@
   }).catch(function(){ $('r4p-rsub').textContent = 'Season stats are not posted yet. Please check back soon.'; });
   ['r4p-pq','r4p-pgame','r4p-ppos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-pq' ? 'input' : 'change', proj); });
   $('r4p-psort').addEventListener('change', function(){ var v = this.value; if (v){ PSORT = {key:v, dir:-1}; proj(); } });
-  fetchFirst(SSOURCES, false).then(function(d){ SS = d; starsRender(); proj(); }).catch(function(){
+  fetchFirst(SSOURCES, false).then(function(d){ SS = d; starsRender(); proj(); optPool(); }).catch(function(){
     $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.';
   });
   fetchFirst(CSOURCES, false).then(function(d){
@@ -564,7 +733,7 @@
     if (d.date === today) Object.keys(d.notes || {}).forEach(function(n){ CTX[nkey(n)] = d.notes[n]; });
     proj();
   }).catch(function(){});
-  fetchFirst(PSOURCES, false).then(function(d){ projInit(d); starsRender(); research(); }).catch(function(){
+  fetchFirst(PSOURCES, false).then(function(d){ projInit(d); starsRender(); research(); optPool(); }).catch(function(){
     $('r4p-psub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.';
   });
 
@@ -573,7 +742,7 @@
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     setSub();
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam')); teamOptions($('r4p-steam'));
-    badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); proj(); research();
+    badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); proj(); research(); optPool();
     $('r4p-rq').addEventListener('input', ranks);
     $('r4p-rpos').addEventListener('change', ranks);
     $('r4p-rflag').addEventListener('change', ranks);
