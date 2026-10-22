@@ -107,7 +107,7 @@ def parse_dff(page):
 
 
 def dk_salaries(day):
-    """Official DraftKings classic main-slate salaries and positions: {(norm name, team): (salary, pos)}."""
+    """Official DraftKings classic main-slate salaries, positions and player IDs: {(norm name, team): (salary, pos, id)}."""
     out = {}
     try:
         lob = json.loads(get("https://www.draftkings.com/lobby/getcontests?sport=NBA"))
@@ -123,7 +123,7 @@ def dk_salaries(day):
     import io as _io
     for row in _csv.DictReader(_io.StringIO(csvtxt.lstrip("\ufeff"))):
         try:
-            out[(norm(row["Name"]), fix_team(row["TeamAbbrev"]))] = (int(row["Salary"]), row["Position"])
+            out[(norm(row["Name"]), fix_team(row["TeamAbbrev"]))] = (int(row["Salary"]), row["Position"], row.get("ID", ""))
         except (KeyError, ValueError):
             continue
     return out
@@ -314,6 +314,7 @@ def main():
             dk = c[0] if len(c) == 1 else None
         r["salary"] = dk[0] if dk else (d["salary"] if d else None)
         r["dkpos"] = dk[1] if dk else (d["pos"] if d else s["pos"])
+        r["dkid"] = dk[2] if dk else ""
         r["start"] = bool(d and d["start"])
         r["inj"] = d["inj"] if d else ""
         r["spread"] = d["spread"] if d else None
@@ -443,7 +444,7 @@ def main():
             continue
         sal = r["salary"]
         pub.append({"player": r["player"], "team": r["team"], "opp": opp.get(r["team"], ""), "pos": r["dkpos"],
-                    "salary": sal, "start": r["start"], "q": r["inj"] == "Q", "min": round(r["min"], 1), "usg": r["usg"],
+                    "salary": sal, "dkid": r["dkid"], "start": r["start"], "q": r["inj"] == "Q", "min": round(r["min"], 1), "usg": r["usg"],
                     "ou": r["ou"], "spread": r["spread"],
                     "pts": round(r["pts"], 1), "reb": round(r["reb"], 1), "ast": round(r["ast"], 1),
                     "stl": round(r["stl"], 1), "blk": round(r["blk"], 1), "to": round(r["to"], 1),
