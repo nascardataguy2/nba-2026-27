@@ -89,4 +89,4 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 3. Game timelines like NBA WOWY / popcornmachine: show when each player was on the court against the score, for context (e.g. who got minutes and fantasy points in a blowout).
 4. Optimizer.
 5. Simulations.
-
+6. Ownership projections (where to get them is the open question: DFF shows "--"; slate shows like Stokastic say ownership numbers out loud).
