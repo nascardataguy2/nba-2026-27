@@ -12,6 +12,7 @@
     <button class='tab' data-v='proj' type='button'>Projections</button>
     <button class='tab' data-v='stars' type='button'>Stars &amp; Scrubs</button>
     <button class='tab' data-v='research' type='button'>Research</button>
+    <button class='tab' data-v='opt' type='button'>Optimizer</button>
     <button class='tab' data-v='ranks' type='button'>Rankings</button>
     <button class='tab' data-v='teams' type='button'>Teams</button>
     <button class='tab' data-v='players' type='button'>Players</button>
@@ -51,6 +52,29 @@
     <div class='count' id='r4p-scount'></div>
     <div class='pj' id='r4p-statlist'></div>
     <p class='sub' style='margin:14px 0 0'>Season averages come from every box score this season. DK is DraftKings points per game, and FP/Min is DraftKings points per minute played. When you sort by FP/Min, players under 10 minutes a game go to the bottom so short garbage-time stints do not crowd the top. L3 DK is his average over his last three games. Salary, opponent, total and spread show for players with a game tonight. Click any column heading to sort, and click a player to open his notes.</p>
+  </section>
+  <section class='view' hidden='hidden' id='v-opt'>
+    <p class='sub' id='r4p-osub' style='margin:0 0 12px'>Loading tonight&#8217;s player pool&#8230;</p>
+    <div class='toolbar'>
+      <select aria-label='Number of lineups' id='r4p-on'><option value='1'>1 lineup</option><option value='3'>3 lineups</option><option value='5' selected='selected'>5 lineups</option><option value='10'>10 lineups</option><option value='20'>20 lineups</option></select>
+      <select aria-label='Different players between lineups' id='r4p-odiff'><option value='1'>1 new player per lineup</option><option value='2' selected='selected'>2 new players per lineup</option><option value='3'>3 new players per lineup</option><option value='4'>4 new players per lineup</option></select>
+      <select aria-label='Minimum salary' id='r4p-ofloor'><option value='0'>No salary minimum</option><option value='48000'>Use $48,000 or more</option><option value='49000'>Use $49,000 or more</option><option value='49500'>Use $49,500 or more</option></select>
+    </div>
+    <div class='toolbar obar'>
+      <button class='btn solid' id='r4p-obuild' type='button'>Build lineups</button>
+      <button class='btn' id='r4p-oss' type='button'>Start from Stars &amp; Scrubs</button>
+      <button class='btn' id='r4p-oclear' type='button'>Clear locks</button>
+      <button class='btn' id='r4p-ocsv' type='button'>Download for DraftKings</button>
+    </div>
+    <p class='msg' id='r4p-omsg'></p>
+    <div id='r4p-olines'></div>
+    <div class='panel opool'>
+      <h2>Player Pool</h2>
+      <p class='hint'>Lock a player to put him in every lineup, or take him out to leave him off. Locked players show in green in the lineups. Click a player to open his notes.</p>
+      <div class='toolbar'><input aria-label='Search the player pool' id='r4p-oq' placeholder='Search a player or team' type='search'/></div>
+      <div id='r4p-opool'></div>
+    </div>
+    <p class='sub' style='margin:14px 0 0'>Every lineup follows DraftKings Classic rules: PG, SG, SF, PF, C, G, F and UTIL, a $50,000 salary cap and players from at least two games. Lineups use our DK projections, so check late injury news before lock. Players whose games have started are left out unless you lock them. The download makes a file you can upload on DraftKings with the Upload Lineups button.</p>
   </section>
   <section class='view' hidden='hidden' id='v-ranks'>
     <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research. Badges show last season&#39;s top 10 (gold) and 11 to 30 (silver) in each stat, for players with 20 or more games.</p>
