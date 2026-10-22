@@ -250,8 +250,11 @@ def main():
         return
     games = espn_games(day)
     dks = dk_salaries(day)
-    if not sl or not dff:
-        raise SystemExit("missing data: sportsline %d rows, dff %d rows" % (len(sl), len(dff)))
+    if not sl:
+        print("Baseline projections are not posted for", day, "yet; keeping the current file.")
+        return
+    if not dff:
+        raise SystemExit("missing data: dff %d rows" % len(dff))
 
     dmap = {(norm(r["player"]), r["team"]): r for r in dff}
     dname = {}
