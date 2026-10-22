@@ -127,6 +127,18 @@ main.wrap{padding-top:18px;padding-bottom:40px}
 .pjt .tm{margin-left:0}
 .pjt .pj-noterow td{text-align:left;white-space:normal;font:14px/1.4 var(--body);color:#9a5b00;border-top:none;padding:0 10px 9px}
 .pjt .pj-noterow td span{font-weight:700}
+.pjt .pj-name.has,.pjc .pj-name.has{cursor:pointer}
+.nb{display:inline-flex;align-items:center;justify-content:center;width:24px;height:22px;margin-left:5px;padding:0;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--muted);cursor:pointer;vertical-align:-4px}
+.nb svg{width:14px;height:14px}
+.nb:hover{color:var(--navy);border-color:var(--navy)}
+.nb.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.nb:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
+.pjt tr.nt-open td{background-color:#fffaf0}
+.pjt .pj-notes td{position:static;text-align:left;white-space:normal;background:#fffaf0;border-top:none;padding:0 10px 10px}
+.nt-box{position:sticky;left:10px;max-width:min(720px,calc(100vw - 60px));border-left:3px solid var(--accent);padding:6px 0 4px 10px}
+.nt{margin:0 0 5px;font:14px/1.45 var(--body);color:var(--ink);overflow-wrap:anywhere}
+.nt b{color:var(--navy)}
+.pjc .nt-box{position:static;max-width:none;margin-top:8px;background:#fffaf0;border-radius:0 8px 8px 0}
 .pjc-list{display:none}
 .pj-note{margin:6px 0 0;font-size:14px;color:#9a5b00;overflow-wrap:anywhere}
 .out-list{margin-top:16px} .out-list h2{color:var(--bad)}

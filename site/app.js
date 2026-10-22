@@ -11,6 +11,10 @@
     'https://nascardataguy2.github.io/nba-2026-27/data/projections.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/projections.json'
   ];
+  var CSOURCES = [
+    'https://nascardataguy2.github.io/nba-2026-27/data/context_notes.json',
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/context_notes.json'
+  ];
   var NAMES = {ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHA:'Charlotte Hornets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',IND:'Indiana Pacers',LAC:'LA Clippers',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',MIN:'Minnesota Timberwolves',NOP:'New Orleans Pelicans',NYK:'New York Knicks',OKC:'Oklahoma City Thunder',ORL:'Orlando Magic',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',POR:'Portland Trail Blazers',SAC:'Sacramento Kings',SAS:'San Antonio Spurs',TOR:'Toronto Raptors',UTA:'Utah Jazz',WAS:'Washington Wizards'};
   // Team primary colors (Color 1 from teamcolorcodes.com NBA team color codes).
   var TEAMC = {ATL:'#E03A3E',BOS:'#007A33',BKN:'#000000',CHA:'#1D1160',CHI:'#CE1141',CLE:'#860038',DAL:'#00538C',DEN:'#0E2240',DET:'#C8102E',GSW:'#1D428A',HOU:'#CE1141',IND:'#002D62',LAC:'#C8102E',LAL:'#552583',MEM:'#5D76A9',MIA:'#98002E',MIL:'#00471B',MIN:'#0C2340',NOP:'#0C2340',NYK:'#006BB6',OKC:'#007AC1',ORL:'#0077C0',PHI:'#006BB6',PHX:'#1D1160',POR:'#E03A3E',SAC:'#5A2D81',SAS:'#C4CED4',TOR:'#CE1141',UTA:'#002B5C',WAS:'#002B5C'};
@@ -240,6 +244,62 @@
     }).join('') + '</div>' : '';
     proj();
   }
+  // Player notes: everything we know about a player, opened by the notes icon.
+  var CTX = {}, NOPEN = {};
+  var NICON = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3.5 1.8h6.2l2.8 2.8v9.6h-9zM5.6 7h4.8M5.6 9.6h4.8M5.6 12.2h3"/></svg>';
+  function noteBits(name){
+    var k = nkey(name), out = [], seen = {};
+    function same(x){ return nkey(x) === k; }
+    function add(lbl, txt){ txt = String(txt == null ? '' : txt).trim(); if (!txt || seen[txt]) return; seen[txt] = 1; out.push([lbl, txt]); }
+    if (CTX[k]) add('Tonight', CTX[k]);
+    if (SS){
+      (SS.stars || []).concat(SS.scrubs || []).forEach(function(p){
+        if (same(p.player) && p.why && !(CTX[k] && p.why.indexOf(CTX[k]) === 0)) add('Why', p.why);
+      });
+    }
+    if (PJ) PJ.players.forEach(function(p){ if (same(p.player)) add('Projection', p.note); });
+    if (db){
+      db.players.forEach(function(p){
+        if (!same(p.player)) return;
+        add('Role', p.role);
+        add('Minutes', p.minutes);
+        add('Usage', p.usage);
+        if (p.status && !/^healthy$/i.test(p.status)) add('Health', p.status);
+        add('Note', p.note);
+      });
+      (db.injuries || []).forEach(function(p){ if (same(p.player)){ add('Injury', p.status); add('Injury', p.note); } });
+      var q = db.quickhits || {};
+      [['role_up','Role up'], ['role_down','Role down'], ['rest_watch','Rest watch'], ['out_to_start','Out to start']].forEach(function(x){
+        (q[x[0]] || []).forEach(function(it){ if (same(it.player)) add(x[1], it.text); });
+      });
+      ((q.storylines || {}).items || []).forEach(function(it){ if (same(it.player)) add('Storyline', it.text); });
+      (q.if_sits || []).forEach(function(it){
+        var outs = String(it.out || '').split(' or '), ben = String(it.benefits || '').split(' and ');
+        if (outs.some(same)) add('If he sits', it.benefits ? it.benefits + ' benefits. ' + it.text : it.text);
+        else if (ben.some(same)) add('If ' + it.out + ' sits', it.text);
+      });
+      (db.moves || []).forEach(function(m){
+        if (same(m.player)) add('Move', (m.from || 'Unknown') + ' to ' + m.to + (m.type ? ' (' + m.type + ')' : '') + (m.note ? '. ' + m.note : ''));
+      });
+    }
+    return out;
+  }
+  function noteHtml(bits){
+    return '<div class="nt-box">' + bits.map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') + '</div>';
+  }
+  function nbtn(name, has){
+    if (!has) return '';
+    var on = !!NOPEN[nkey(name)];
+    return '<button class="nb' + (on ? ' on' : '') + '" type="button" data-n="' + esc(name) + '" aria-expanded="' + on + '" title="Notes" aria-label="Notes for ' + esc(name) + '">' + NICON + '</button>';
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target.closest('.nb, .pj-name.has') : null;
+    if (!t) return;
+    var n = t.getAttribute('data-n'), k = nkey(n);
+    NOPEN[k] = !NOPEN[k];
+    proj();
+  });
+
   var PCOLS = [
     ['player','Player','t'], ['pos','Pos','p'], ['salary','Sal','n'], ['team','Team','t'], ['opp','Opp','t'],
     ['ou','O/U','n'], ['spread','Spread','s'], ['dk','DK','n'], ['value','Val','n'], ['min','Min','n'], ['usg','Usg','n'],
@@ -307,26 +367,28 @@
       return '<th class="c-' + c[0] + (c[0] === k ? ' on' : '') + '" data-k="' + c[0] + '" scope="col" tabindex="0" aria-sort="' + (c[0] === k ? (dir > 0 ? 'ascending' : 'descending') : 'none') + '">' + c[1] + arrow(c[0]) + '</th>';
     }).join('');
     var rows = list.map(function(p){
-      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '');
+      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '') + nbtn(p.player, has);
       var tds = PCOLS.map(function(c){
         var key = c[0];
-        if (key === 'player') return '<td class="c-player"><span class="pj-name">' + esc(p.player) + '</span>' + tags + '</td>';
+        if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + '</td>';
         if (key === 'team') return '<td class="c-team">' + tm(p.team, true) + '</td>';
         if (key === 'opp') return '<td class="c-opp">' + (p.opp ? tm(p.opp, true) : '') + '</td>';
         if (key === 'pos') return '<td class="c-pos">' + esc(p.pos) + '</td>';
         var st = heatCss(key, p[key]);
         return '<td class="c-' + key + '"' + (st ? ' style="' + st + '"' : '') + '>' + fmt(p, key) + '</td>';
       }).join('');
-      return '<tr>' + tds + '</tr>' + (p.note ? '<tr class="pj-noterow"><td colspan="' + PCOLS.length + '"><span>' + esc(p.player) + ':</span> ' + esc(p.note) + '</td></tr>' : '');
+      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + PCOLS.length + '">' + noteHtml(bits) + '</td></tr>' : '');
     }).join('') || '<tr><td colspan="' + PCOLS.length + '">No players match.</td></tr>';
     var cards = list.map(function(p){
-      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '');
+      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '') + nbtn(p.player, has);
       var box = function(key, lbl){ var st = heatCss(key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + fmt(p, key) + '</div>'; };
-      return '<div class="pjc"><div class="pjc-who"><span class="pj-name">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
+      return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
         '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 O/U ' + fmt(p, 'ou') + ' \u00b7 Spread ' + fmt(p, 'spread') + '</div>' +
         '<div class="pjc-nums">' + box('salary', 'Sal') + box('dk', 'DK') + box('value', 'Val') + box('min', 'Min') + box('usg', 'Usg') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
-        (p.note ? '<p class="pj-note">' + esc(p.note) + '</p>' : '') + '</div>';
+        (open ? noteHtml(bits) : '') + '</div>';
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
     $('r4p-projlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
@@ -374,9 +436,15 @@
 
   ['r4p-pq','r4p-pgame','r4p-ppos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-pq' ? 'input' : 'change', proj); });
   $('r4p-psort').addEventListener('change', function(){ var v = this.value; if (v){ PSORT = {key:v, dir:-1}; proj(); } });
-  fetchFirst(SSOURCES, false).then(function(d){ SS = d; starsRender(); }).catch(function(){
+  fetchFirst(SSOURCES, false).then(function(d){ SS = d; starsRender(); proj(); }).catch(function(){
     $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.';
   });
+  fetchFirst(CSOURCES, false).then(function(d){
+    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
+    CTX = {};
+    if (d.date === today) Object.keys(d.notes || {}).forEach(function(n){ CTX[nkey(n)] = d.notes[n]; });
+    proj();
+  }).catch(function(){});
   fetchFirst(PSOURCES, false).then(function(d){ projInit(d); starsRender(); }).catch(function(){
     $('r4p-psub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.';
   });
@@ -386,7 +454,7 @@
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     setSub();
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
-    badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves();
+    badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); proj();
     $('r4p-rq').addEventListener('input', ranks);
     $('r4p-rpos').addEventListener('change', ranks);
     $('r4p-rflag').addEventListener('change', ranks);
