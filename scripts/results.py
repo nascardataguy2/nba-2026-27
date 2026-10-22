@@ -56,7 +56,10 @@ def day_box(day):
                         num(v.get("blocks")), num(v.get("turnovers")),
                         num(v.get("threePointFieldGoalsMade-threePointFieldGoalsAttempted", "0-0")))
                 out.append({"player": a["athlete"]["displayName"], "team": team, "date": day, "min": mins,
-                            "dk": dk_points(line), "start": bool(a.get("starter"))})
+                            "dk": dk_points(line), "start": bool(a.get("starter")),
+                            "pos": (a["athlete"].get("position") or {}).get("abbreviation", ""),
+                            "pts": line[0], "reb": line[1], "ast": line[2], "stl": line[3], "blk": line[4],
+                            "to": line[5], "tpm": line[6]})
     return out
 
 
@@ -69,6 +72,12 @@ def main():
     os.makedirs(HIST, exist_ok=True)
     res = load_json(os.path.join(HIST, "results.json"), {})
     rows = day_box(day)
+    # Full box score lines for the season stats table (one file per night).
+    if rows:
+        os.makedirs(os.path.join(HIST, "box"), exist_ok=True)
+        with open(os.path.join(HIST, "box", day + ".json"), "w", encoding="utf-8") as fh:
+            json.dump(rows, fh, indent=0, ensure_ascii=False)
+    rows = [{k: r[k] for k in ("player", "team", "date", "min", "dk", "start")} for r in rows]
     for r in rows:
         lst = [x for x in res.get(norm(r["player"]), []) if x["date"] != day]
         lst.append(r)

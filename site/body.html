@@ -11,6 +11,7 @@
     <button class='tab on' data-v='quick' type='button'>Quick Hits</button>
     <button class='tab' data-v='proj' type='button'>Projections</button>
     <button class='tab' data-v='stars' type='button'>Stars &amp; Scrubs</button>
+    <button class='tab' data-v='research' type='button'>Research</button>
     <button class='tab' data-v='ranks' type='button'>Rankings</button>
     <button class='tab' data-v='teams' type='button'>Teams</button>
     <button class='tab' data-v='players' type='button'>Players</button>
@@ -38,6 +39,18 @@
   <section class='view' hidden='hidden' id='v-stars'>
     <p class='sub' id='r4p-ssub' style='margin:0 0 12px'>Loading tonight&#8217;s stars and scrubs&#8230;</p>
     <div id='r4p-starsbox'></div>
+  </section>
+  <section class='view' hidden='hidden' id='v-research'>
+    <p class='sub' id='r4p-rsub' style='margin:0 0 12px'>Loading season stats&#8230;</p>
+    <div class='toolbar'>
+      <input aria-label='Search season stats' id='r4p-sq' placeholder='Search a player or team' type='search'/>
+      <select aria-label='Team' id='r4p-steam'><option value=''>All teams</option></select>
+      <select aria-label='Position' id='r4p-spos'><option value=''>All positions</option><option value='G'>Guards</option><option value='F'>Forwards</option><option value='C'>Centers</option></select>
+      <span class='tonly-slot'></span>
+    </div>
+    <div class='count' id='r4p-scount'></div>
+    <div class='pj' id='r4p-statlist'></div>
+    <p class='sub' style='margin:14px 0 0'>Season averages come from every box score this season. DK is DraftKings points per game, and FP/Min is DraftKings points per minute played. When you sort by FP/Min, players under 10 minutes a game go to the bottom so short garbage-time stints do not crowd the top. L3 DK is his average over his last three games. Salary, opponent, total and spread show for players with a game tonight. Click any column heading to sort, and click a player to open his notes.</p>
   </section>
   <section class='view' hidden='hidden' id='v-ranks'>
     <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research. Badges show last season&#39;s top 10 (gold) and 11 to 30 (silver) in each stat, for players with 20 or more games.</p>

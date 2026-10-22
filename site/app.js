@@ -15,6 +15,10 @@
     'https://nascardataguy2.github.io/nba-2026-27/data/context_notes.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/context_notes.json'
   ];
+  var RSOURCES = [
+    'https://nascardataguy2.github.io/nba-2026-27/data/season.json',
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/season.json'
+  ];
   var NAMES = {ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHA:'Charlotte Hornets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',IND:'Indiana Pacers',LAC:'LA Clippers',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',MIN:'Minnesota Timberwolves',NOP:'New Orleans Pelicans',NYK:'New York Knicks',OKC:'Oklahoma City Thunder',ORL:'Orlando Magic',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',POR:'Portland Trail Blazers',SAC:'Sacramento Kings',SAS:'San Antonio Spurs',TOR:'Toronto Raptors',UTA:'Utah Jazz',WAS:'Washington Wizards'};
   // Team primary colors (Color 1 from teamcolorcodes.com NBA team color codes).
   var TEAMC = {ATL:'#E03A3E',BOS:'#007A33',BKN:'#000000',CHA:'#1D1160',CHI:'#CE1141',CLE:'#860038',DAL:'#00538C',DEN:'#0E2240',DET:'#C8102E',GSW:'#1D428A',HOU:'#CE1141',IND:'#002D62',LAC:'#C8102E',LAL:'#552583',MEM:'#5D76A9',MIA:'#98002E',MIL:'#00471B',MIN:'#0C2340',NOP:'#0C2340',NYK:'#006BB6',OKC:'#007AC1',ORL:'#0077C0',PHI:'#006BB6',PHX:'#1D1160',POR:'#E03A3E',SAC:'#5A2D81',SAS:'#C4CED4',TOR:'#CE1141',UTA:'#002B5C',WAS:'#002B5C'};
@@ -87,7 +91,7 @@
   }
   function renderAll(){
     if (!db) return;
-    syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves();
+    syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); research();
   }
   document.addEventListener('click', function(e){
     var t = e.target.closest ? e.target.closest('.tonly') : null;
@@ -297,7 +301,7 @@
     if (!t) return;
     var n = t.getAttribute('data-n'), k = nkey(n);
     NOPEN[k] = !NOPEN[k];
-    proj();
+    proj(); research();
   });
 
   var PCOLS = [
@@ -393,14 +397,121 @@
     $('r4p-projlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
   document.addEventListener('click', function(e){
-    var t = e.target.closest ? e.target.closest('.pjt th[data-k]') : null;
+    var t = e.target.closest ? e.target.closest('#r4p-projlist .pjt th[data-k]') : null;
     if (t) setSort(t.getAttribute('data-k'));
+    var r = e.target.closest ? e.target.closest('#r4p-statlist .pjt th[data-k]') : null;
+    if (r) rSetSort(r.getAttribute('data-k'));
   });
   document.addEventListener('keydown', function(e){
     if (e.key !== 'Enter' && e.key !== ' ') return;
-    var t = e.target.closest ? e.target.closest('.pjt th[data-k]') : null;
+    var t = e.target.closest ? e.target.closest('#r4p-projlist .pjt th[data-k]') : null;
     if (t){ e.preventDefault(); setSort(t.getAttribute('data-k')); }
+    var r = e.target.closest ? e.target.closest('#r4p-statlist .pjt th[data-k]') : null;
+    if (r){ e.preventDefault(); rSetSort(r.getAttribute('data-k')); }
   });
+
+  // Research tab: season stats from every box score, joined with tonight's game.
+  var SEA = null, RHEAT = {};
+  var RCOLS = [
+    ['player','Player','t'], ['pos','Pos','p'], ['salary','Sal','n'], ['team','Team','t'], ['opp','Opp','t'],
+    ['ou','O/U','n'], ['spread','Spread','s'], ['gp','GP','n'], ['min','Min','n'], ['dk','DK','n'], ['fppm','FP/Min','n'],
+    ['l3_dk','L3 DK','n'], ['pts','Pts','n'], ['reb','Reb','n'], ['ast','Ast','n'], ['stl','Stl','n'], ['blk','Blk','n'], ['to','TO','n'], ['tpm','3PM','n']
+  ];
+  var RH = {min:1, dk:1, fppm:1, l3_dk:1, pts:1, reb:1, ast:1, stl:1, blk:1, to:-1, tpm:1};
+  var RSORT = {key:'dk', dir:-1};
+  function rRows(){
+    if (!SEA) return [];
+    var tonight = {};
+    if (PJ && Object.keys(SLATE).length) PJ.players.forEach(function(p){ tonight[nkey(p.player)] = p; });
+    return SEA.players.map(function(r){
+      var t = tonight[nkey(r.player)], o = {};
+      for (var x in r) o[x] = r[x];
+      if (t){ o.salary = t.salary; o.opp = t.opp; o.ou = t.ou; o.spread = t.spread; o.pos = t.pos || r.pos; o.team = t.team || r.team; o.start = t.start; o.q = t.q; }
+      return o;
+    });
+  }
+  function rHeat(key, v){
+    var vals = RHEAT[key];
+    if (!RH[key] || v == null || !vals || vals.length < 3) return '';
+    var lo = 0, eq = 0;
+    for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
+    var t = (lo + eq / 2) / vals.length;
+    if (RH[key] < 0) t = 1 - t;
+    if (t >= 0.6) return 'background:rgba(31,122,77,' + ((t - 0.6) / 0.4 * 0.20).toFixed(3) + ')';
+    if (t <= 0.4) return 'background:rgba(228,87,46,' + ((0.4 - t) / 0.4 * 0.14).toFixed(3) + ')';
+    return '';
+  }
+  function rFmt(p, k){
+    var v = p[k];
+    if (k === 'salary') return money(v);
+    if (k === 'spread') return v == null ? '\u2013' : (v > 0 ? '+' : v < 0 ? '\u2212' : '') + n1(Math.abs(v));
+    if (k === 'fppm') return v == null ? '\u2013' : v.toFixed(2);
+    if (k === 'gp') return v == null ? '\u2013' : String(v);
+    return n1(v);
+  }
+  function rSetSort(k){
+    if (RSORT.key === k) RSORT.dir = -RSORT.dir;
+    else {
+      var typ = '';
+      RCOLS.forEach(function(c){ if (c[0] === k) typ = c[2]; });
+      RSORT = {key:k, dir:(typ === 't' || typ === 'p' || typ === 's') ? 1 : -1};
+    }
+    research();
+  }
+  function research(){
+    if (!SEA || !$('r4p-statlist')) return;
+    var all = rRows();
+    RHEAT = {};
+    Object.keys(RH).forEach(function(key){ RHEAT[key] = all.filter(function(p){ return p.min >= 10; }).map(function(p){ return p[key]; }).filter(function(x){ return x != null; }); });
+    var q = $('r4p-sq').value.trim().toLowerCase(), tf = $('r4p-steam').value, pos = $('r4p-spos').value;
+    var k = RSORT.key, dir = RSORT.dir;
+    var list = all.filter(function(p){
+      if (tf && p.team !== tf) return false;
+      if (!keep(p.team)) return false;
+      if (pos && String(p.pos).indexOf(pos) < 0) return false;
+      if (!q) return true;
+      return (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
+    }).sort(function(a, b){
+      var x = k === 'pos' ? (POSORD[String(a.pos).split('/')[0]] || 9) : a[k], y = k === 'pos' ? (POSORD[String(b.pos).split('/')[0]] || 9) : b[k];
+      if (k === 'fppm' && (a.min >= 10) !== (b.min >= 10)) return a.min >= 10 ? -1 : 1;
+      if (x == null && y == null) return b.dk - a.dk;
+      if (x == null) return 1;
+      if (y == null) return -1;
+      if (typeof x === 'string') return dir * x.localeCompare(y) || (b.dk - a.dk);
+      return dir * (x - y) || (b.dk - a.dk);
+    });
+    $('r4p-scount').textContent = list.length + ' of ' + all.length + ' players';
+    var arrow = function(c){ return c === k ? (dir > 0 ? ' \u25b2' : ' \u25bc') : ''; };
+    var th = RCOLS.map(function(c){
+      return '<th class="c-' + c[0] + (c[0] === k ? ' on' : '') + '" data-k="' + c[0] + '" scope="col" tabindex="0" aria-sort="' + (c[0] === k ? (dir > 0 ? 'ascending' : 'descending') : 'none') + '">' + c[1] + arrow(c[0]) + '</th>';
+    }).join('');
+    var rows = list.map(function(p){
+      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '') + nbtn(p.player, has);
+      var tds = RCOLS.map(function(c){
+        var key = c[0];
+        if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + '</td>';
+        if (key === 'team') return '<td class="c-team">' + tm(p.team, true) + '</td>';
+        if (key === 'opp') return '<td class="c-opp">' + (p.opp ? tm(p.opp, true) : '') + '</td>';
+        if (key === 'pos') return '<td class="c-pos">' + esc(p.pos) + '</td>';
+        var st = rHeat(key, p[key]);
+        return '<td class="c-' + key + '"' + (st ? ' style="' + st + '"' : '') + '>' + rFmt(p, key) + '</td>';
+      }).join('');
+      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + RCOLS.length + '">' + noteHtml(bits) + '</td></tr>' : '');
+    }).join('') || '<tr><td colspan="' + RCOLS.length + '">No players match.</td></tr>';
+    var cards = list.map(function(p){
+      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '') + nbtn(p.player, has);
+      var box = function(key, lbl){ var st = rHeat(key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + rFmt(p, key) + '</div>'; };
+      var game = p.opp ? tm(p.team, true) + ' vs ' + tm(p.opp, true) + ' \u00b7 ' + money(p.salary) + ' \u00b7 O/U ' + rFmt(p, 'ou') + ' \u00b7 Spread ' + rFmt(p, 'spread') : tm(p.team, true) + ' \u00b7 No game tonight';
+      return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
+        '<div class="pjc-game">' + game + '</div>' +
+        '<div class="pjc-nums">' + box('gp', 'GP') + box('min', 'Min') + box('dk', 'DK') + box('fppm', 'FP/Min') + box('l3_dk', 'L3 DK') + '</div>' +
+        '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to'],['tpm','3pm']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
+        (open ? noteHtml(bits) : '') + '</div>';
+    }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
+    $('r4p-statlist').innerHTML = '<div class="pjt-wrap"><table class="pjt rst"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
+  }
 
   var SS = null;
   function starsRender(){
@@ -434,6 +545,14 @@
   for (var k = 0; k < tabs.length; k++) tabs[k].addEventListener('click', function(){ show(this.getAttribute('data-v')); });
 
 
+  ['r4p-sq','r4p-steam','r4p-spos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-sq' ? 'input' : 'change', research); });
+  fetchFirst(RSOURCES, false).then(function(d){
+    SEA = d;
+    var dd = d.through ? new Date(d.through + 'T12:00:00') : null;
+    var thru = dd && !isNaN(dd) ? dd.toLocaleDateString('en-US', {month:'short', day:'numeric'}) : '';
+    $('r4p-rsub').textContent = 'We watch ball. We know ball. Season stats through ' + thru + ' \u00b7 ' + d.nights + (d.nights === 1 ? ' night' : ' nights') + ' of games \u00b7 ' + d.players.length + ' players.';
+    research();
+  }).catch(function(){ $('r4p-rsub').textContent = 'Season stats are not posted yet. Please check back soon.'; });
   ['r4p-pq','r4p-pgame','r4p-ppos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-pq' ? 'input' : 'change', proj); });
   $('r4p-psort').addEventListener('change', function(){ var v = this.value; if (v){ PSORT = {key:v, dir:-1}; proj(); } });
   fetchFirst(SSOURCES, false).then(function(d){ SS = d; starsRender(); proj(); }).catch(function(){
@@ -445,7 +564,7 @@
     if (d.date === today) Object.keys(d.notes || {}).forEach(function(n){ CTX[nkey(n)] = d.notes[n]; });
     proj();
   }).catch(function(){});
-  fetchFirst(PSOURCES, false).then(function(d){ projInit(d); starsRender(); }).catch(function(){
+  fetchFirst(PSOURCES, false).then(function(d){ projInit(d); starsRender(); research(); }).catch(function(){
     $('r4p-psub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.';
   });
 
@@ -453,8 +572,8 @@
     db = d;
     d.sources.forEach(function(s){ srcById[s.id] = s; });
     setSub();
-    teamOptions($('r4p-team')); teamOptions($('r4p-pteam'));
-    badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); proj();
+    teamOptions($('r4p-team')); teamOptions($('r4p-pteam')); teamOptions($('r4p-steam'));
+    badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); proj(); research();
     $('r4p-rq').addEventListener('input', ranks);
     $('r4p-rpos').addEventListener('change', ranks);
     $('r4p-rflag').addEventListener('change', ranks);
