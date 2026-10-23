@@ -274,7 +274,9 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .gt-hl{position:absolute;top:26px;bottom:0;width:1px;background:var(--ink);pointer-events:none}
 .gt-tip{position:absolute;top:0;white-space:nowrap;background:var(--navy);color:#fff;font:700 13px/1 var(--head);letter-spacing:.03em;padding:6px 8px;border-radius:6px;pointer-events:none}
 .gt-tip b{color:#ffd28a;font-weight:700}
-.gt-legend{font-size:13px;color:var(--muted);margin:6px 0 0}
+.gt-legend{font-size:13px;color:var(--muted);margin:-6px 0 14px}
+.gt-mwrap{position:sticky;top:var(--gt-top,60px);z-index:4;box-shadow:0 6px 12px -8px rgba(21,23,28,.25)}
+.gt-mwrap h3{margin:0 0 4px}
 .gt-ph{display:none}
 @media (max-width:760px){
   .gt-row{display:none}
