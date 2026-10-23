@@ -13,6 +13,7 @@
     <button class='tab' data-v='stars' type='button'>Stars &amp; Scrubs</button>
     <button class='tab' data-v='research' type='button'>Research</button>
     <button class='tab' data-v='opt' type='button'>Optimizer</button>
+    <button class='tab' data-v='games' type='button'>Games</button>
     <button class='tab' data-v='ranks' type='button'>Rankings</button>
     <button class='tab' data-v='teams' type='button'>Teams</button>
     <button class='tab' data-v='players' type='button'>Players</button>
@@ -75,6 +76,16 @@
       <div id='r4p-opool'></div>
     </div>
     <p class='sub' style='margin:14px 0 0'>Every lineup follows DraftKings Classic rules: PG, SG, SF, PF, C, G, F and UTIL, a $50,000 salary cap and players from at least two games. Lineups use our DK projections, so check late injury news before lock. It always builds from the full DraftKings main slate, even after games tip, and players in games that have started are tagged Started. The download makes a file you can upload on DraftKings with the Upload Lineups button.</p>
+  </section>
+  <section class='view' hidden='hidden' id='v-games'>
+    <p class='sub' id='r4p-gsub' style='margin:0 0 12px'>Loading game timelines&#8230;</p>
+    <div class='toolbar'>
+      <select aria-label='Date' id='r4p-gdate'><option value=''>All dates</option></select>
+      <select aria-label='Team' id='r4p-gteam'><option value=''>All teams</option></select>
+    </div>
+    <div class='gt-games' id='r4p-glist'></div>
+    <div id='r4p-gview'></div>
+    <p class='sub' style='margin:14px 0 0'>Built from ESPN play-by-play. Each bar is one stretch on the court, with the minutes he played and the DraftKings points he scored in it. Short stretches show both numbers when you hover or tap. Striped areas mark garbage time, a lead of 20 or more in the fourth quarter or overtime. Totals come from the box score and include double-double and triple-double bonuses, which the stretches do not.</p>
   </section>
   <section class='view' hidden='hidden' id='v-ranks'>
     <p class='sub' style='margin:0 0 12px'>Preseason points-league order for DraftKings players. Tags show role and health changes from our offseason research. Badges show last season&#39;s top 10 (gold) and 11 to 30 (silver) in each stat, for players with 20 or more games.</p>
