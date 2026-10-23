@@ -23,6 +23,7 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Chunk 17 (10/20): 10/18 batch — WAS, UTA and NYK previews, league winners, last must-drafts, rookies and sleepers
 - 10/20 Stokastic slate show (Grok, same-day): center splits and minutes notes added to players and proj_adjust.json
 - Chunk 19 (10/22): 10/22 batch — Fantasy Alarm slate preview, Locked On opening-night and Wednesday recaps, Thursday waiver preview, Old Man Squad most added
+- Chunk 20 (10/23): 10/23 batch — Fantasy Alarm 10/23 slate preview, Locked On Thursday recap and Friday preview, Old Man Squad Wednesday recap and buy-low/sell-high, RotoWire opening-week reactions (context notes, outs and storylines for the 10/23 slate)
 - Chunk 18 (10/20): 10/20 #2 batch — opening-night preview, two Week 1 previews, East and West rotations (all 30 team rotations refreshed)
 
 ## Locked On Fantasy Basketball (files in transcripts/lockedon/)
