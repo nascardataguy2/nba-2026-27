@@ -518,7 +518,7 @@ def main():
     games_out = list(gm.values())
     outs_pub = [{"player": o["player"], "team": o["team"], "note": o["note"]} for o in out_list]
     hist = {norm(r["player"]): {"player": r["player"], "team": r["team"], "base_min": r["base"], "min": round(r["min"], 1),
-                                "dk": round(r["dk"], 1)} for r in rows}
+                                "dk": round(r["dk"], 1), "salary": r.get("salary")} for r in rows}
 
     # Games that have tipped keep the last projection made before tip.
     utcnow = os.environ.get("NOW_UTC") or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")

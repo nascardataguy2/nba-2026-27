@@ -15,6 +15,30 @@ from projections import norm, load_json, D, HIST  # noqa: E402
 STATS = ("min", "dk", "pts", "reb", "ast", "stl", "blk", "to", "tpm")
 
 
+def write_gamelogs(games, nights):
+    """data/gamelogs.json: {norm name: [[date, team, opp, home, start, min, pts, reb, ast,
+    stl, blk, to, tpm, dk, proj_min, proj_dk, salary], ...]} newest first."""
+    opp = {}
+    gdir = os.path.join(D, "games")
+    for d in nights:
+        for g in load_json(os.path.join(gdir, d + ".json"), []):
+            opp[(d, g["away"])] = (g["home"], False)
+            opp[(d, g["home"])] = (g["away"], True)
+    snaps = {d: load_json(os.path.join(HIST, d + ".json"), {}) for d in nights}
+    out = {}
+    for k, g in games.items():
+        rows = []
+        for x in sorted(g, key=lambda r: r["date"], reverse=True):
+            o, home = opp.get((x["date"], x["team"]), ("", False))
+            pj = snaps.get(x["date"], {}).get(k) or {}
+            rows.append([x["date"], x["team"], o, home, bool(x.get("start")), x["min"], x.get("pts", 0), x.get("reb", 0),
+                         x.get("ast", 0), x.get("stl", 0), x.get("blk", 0), x.get("to", 0), x.get("tpm", 0), x["dk"],
+                         pj.get("min"), pj.get("dk"), pj.get("salary")])
+        out[k] = rows
+    with open(os.path.join(D, "gamelogs.json"), "w", encoding="utf-8") as fh:
+        json.dump(out, fh, separators=(",", ":"), ensure_ascii=False)
+
+
 def main():
     bdir = os.path.join(HIST, "box")
     games = {}
@@ -39,6 +63,7 @@ def main():
         row["last"] = {"date": last["date"], "min": last["min"], "dk": last["dk"]}
         rows.append(row)
     rows.sort(key=lambda r: -r["dk"])
+    write_gamelogs(games, nights)
     out = {"through": nights[-1] if nights else None, "nights": len(nights), "players": rows}
     with open(os.path.join(D, "season.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=0, ensure_ascii=False)
