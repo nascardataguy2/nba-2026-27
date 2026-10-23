@@ -15,6 +15,10 @@
     'https://nascardataguy2.github.io/nba-2026-27/data/context_notes.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/context_notes.json'
   ];
+  var GLSOURCES = [
+    'https://nascardataguy2.github.io/nba-2026-27/data/gamelogs.json',
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/gamelogs.json'
+  ];
   var RSOURCES = [
     'https://nascardataguy2.github.io/nba-2026-27/data/season.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/season.json'
@@ -317,8 +321,35 @@
     }
     return out;
   }
-  function noteHtml(bits){
-    return '<div class="nt-box">' + bits.map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') + '</div>';
+  var GL = {};
+  function glRows(name){ return GL[nkey(name)] || []; }
+  function noteHtml(bits, name){
+    var lead = null, info = [], rest = [];
+    bits.forEach(function(b){
+      if (!lead && (b[0] === 'Tonight' || b[0] === 'Why')) lead = b;
+      else if (b[0] === 'Role' || b[0] === 'Minutes' || b[0] === 'Usage' || b[0] === 'Health') info.push(b);
+      else rest.push(b);
+    });
+    var left = (lead ? '<p class="nt-lead">' + esc(lead[1]) + '</p>' : '') +
+      (info.length ? '<p class="nt-info">' + info.map(function(b){ return '<span class="nt-tag"><b>' + esc(b[0]) + '</b> ' + esc(b[1]) + '</span>'; }).join('') + '</p>' : '') +
+      rest.slice(0, 2).map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') +
+      (rest.length > 2 ? '<details class="nt-more"><summary>More notes (' + (rest.length - 2) + ')</summary>' + rest.slice(2).map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') + '</details>' : '');
+    var g = name ? glRows(name) : [];
+    var right = '';
+    if (g.length){
+      var head = '<tr><th>Date</th><th>Opp</th><th>Min</th><th>Proj</th><th>DK</th><th>Proj</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th><th>Stl</th><th>Blk</th><th>TO</th></tr>';
+      var row = function(r){
+        var d = r[0].slice(5).replace('-', '/').replace(/^0/, ''), op = r[2] ? (r[3] ? 'vs ' : '@') + r[2] : '';
+        var hit = r[15] != null ? (r[13] >= r[15] ? ' up' : ' down') : '';
+        return '<tr><td>' + esc(d) + (r[4] ? ' <i>S</i>' : '') + '</td><td>' + esc(op) + '</td><td>' + n1(r[5]) + '</td><td class="gl-p">' + (r[14] == null ? '\u2013' : n1(r[14])) + '</td>' +
+          '<td class="gl-dk' + hit + '">' + n1(r[13]) + '</td><td class="gl-p">' + (r[15] == null ? '\u2013' : n1(r[15])) + '</td>' +
+          [6, 7, 8, 12, 9, 10, 11].map(function(i){ return '<td>' + Math.round(r[i]) + '</td>'; }).join('') + '</tr>';
+      };
+      right = '<div class="gl"><p class="gl-h">Game log <span>' + g.length + (g.length === 1 ? ' game' : ' games') + ' \u00b7 S = started \u00b7 Proj = our projection that night</span></p>' +
+        '<div class="gl-w"><table class="gl-t"><thead>' + head + '</thead><tbody>' + g.slice(0, 5).map(row).join('') + '</tbody></table></div>' +
+        (g.length > 5 ? '<details class="nt-more"><summary>Show all ' + g.length + ' games</summary><div class="gl-w"><table class="gl-t"><tbody>' + g.slice(5).map(row).join('') + '</tbody></table></div></details>' : '') + '</div>';
+    }
+    return '<div class="nt-box' + (right && left ? ' two' : '') + '">' + (left ? '<div class="nt-l">' + left + '</div>' : '') + right + '</div>';
   }
   function nbtn(name, has){
     if (!has) return '';
@@ -401,7 +432,7 @@
       return '<th class="c-' + c[0] + (c[0] === k ? ' on' : '') + '" data-k="' + c[0] + '" scope="col" tabindex="0" aria-sort="' + (c[0] === k ? (dir > 0 ? 'ascending' : 'descending') : 'none') + '">' + c[1] + arrow(c[0]) + '</th>';
     }).join('');
     var rows = list.map(function(p){
-      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '') + slateTag(p) + nbtn(p.player, has);
       var tds = PCOLS.map(function(c){
         var key = c[0];
@@ -412,17 +443,17 @@
         var st = heatCss(key, p[key]);
         return '<td class="c-' + key + '"' + (st ? ' style="' + st + '"' : '') + '>' + fmt(p, key) + '</td>';
       }).join('');
-      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + PCOLS.length + '">' + noteHtml(bits) + '</td></tr>' : '');
+      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + PCOLS.length + '">' + noteHtml(bits, p.player) + '</td></tr>' : '');
     }).join('') || '<tr><td colspan="' + PCOLS.length + '">No players match.</td></tr>';
     var cards = list.map(function(p){
-      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '') + slateTag(p) + nbtn(p.player, has);
       var box = function(key, lbl){ var st = heatCss(key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + fmt(p, key) + '</div>'; };
       return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
         '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 O/U ' + fmt(p, 'ou') + ' \u00b7 Spread ' + fmt(p, 'spread') + '</div>' +
         '<div class="pjc-nums">' + box('salary', 'Sal') + box('dk', 'DK') + box('value', 'Val') + box('own', 'Own%') + box('min', 'Min') + box('usg', 'Usg') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
-        (open ? noteHtml(bits) : '') + '</div>';
+        (open ? noteHtml(bits, p.player) : '') + '</div>';
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
     $('r4p-projlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
@@ -516,7 +547,7 @@
       return '<th class="c-' + c[0] + (c[0] === k ? ' on' : '') + '" data-k="' + c[0] + '" scope="col" tabindex="0" aria-sort="' + (c[0] === k ? (dir > 0 ? 'ascending' : 'descending') : 'none') + '">' + c[1] + arrow(c[0]) + '</th>';
     }).join('');
     var rows = list.map(function(p){
-      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '') + nbtn(p.player, has);
       var tds = RCOLS.map(function(c){
         var key = c[0];
@@ -527,10 +558,10 @@
         var st = rHeat(key, p[key]);
         return '<td class="c-' + key + '"' + (st ? ' style="' + st + '"' : '') + '>' + rFmt(p, key) + '</td>';
       }).join('');
-      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + RCOLS.length + '">' + noteHtml(bits) + '</td></tr>' : '');
+      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + RCOLS.length + '">' + noteHtml(bits, p.player) + '</td></tr>' : '');
     }).join('') || '<tr><td colspan="' + RCOLS.length + '">No players match.</td></tr>';
     var cards = list.map(function(p){
-      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
+      var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '') + nbtn(p.player, has);
       var box = function(key, lbl){ var st = rHeat(key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + rFmt(p, key) + '</div>'; };
       var game = p.opp ? tm(p.team, true) + ' vs ' + tm(p.opp, true) + ' \u00b7 ' + money(p.salary) + ' \u00b7 O/U ' + rFmt(p, 'ou') + ' \u00b7 Spread ' + rFmt(p, 'spread') : tm(p.team, true) + ' \u00b7 No game tonight';
@@ -538,7 +569,7 @@
         '<div class="pjc-game">' + game + '</div>' +
         '<div class="pjc-nums">' + box('gp', 'GP') + box('min', 'Min') + box('dk', 'DK') + box('fppm', 'FP/Min') + box('l3_dk', 'L3 DK') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to'],['tpm','3pm']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
-        (open ? noteHtml(bits) : '') + '</div>';
+        (open ? noteHtml(bits, p.player) : '') + '</div>';
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
     $('r4p-statlist').innerHTML = '<div class="pjt-wrap"><table class="pjt rst"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
@@ -682,14 +713,14 @@
     });
     $('r4p-opool').innerHTML = '<div class="op-head"><span>Player</span><span>Sal</span><span>DK</span><span>Own%</span><span></span></div>' + list.map(function(p){
       var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
-      var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[k];
+      var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[k];
       var tags = (p.q ? '<span class="role out">Q</span>' : '') + (st[p.team] ? '<span class="role">Started</span>' : '') + nbtn(p.player, has);
       return '<div class="op-row' + (lk ? ' lk' : '') + (ex ? ' ex' : '') + '"><div class="op-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags +
         '<div class="op-sub"><span class="pk-pos">' + esc(p.pos) + '</span> ' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + '</div></div>' +
         '<span class="op-s">' + money(p.salary) + '</span><span class="op-d">' + n1(p.dk) + '</span><span class="op-o">' + (p.own == null ? '\u2013' : n1(p.own) + '%') + '</span>' +
         '<span class="op-b"><button class="ob' + (lk ? ' on' : '') + '" data-lock="' + esc(p.player) + '" type="button" aria-pressed="' + lk + '">' + (lk ? 'Locked' : 'Lock') + '</button>' +
         '<button class="ob x' + (ex ? ' on' : '') + '" data-excl="' + esc(p.player) + '" type="button" aria-pressed="' + ex + '">' + (ex ? 'Out' : 'Take out') + '</button></span>' +
-        (open ? '<div class="op-notes">' + noteHtml(bits) + '</div>' : '') + '</div>';
+        (open ? '<div class="op-notes">' + noteHtml(bits, p.player) + '</div>' : '') + '</div>';
     }).join('');
   }
   function optStars(){
@@ -996,6 +1027,7 @@
   $('r4p-ocsv').addEventListener('click', optCsv);
   $('r4p-oq').addEventListener('input', optPool);
   ['r4p-sq','r4p-steam','r4p-spos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-sq' ? 'input' : 'change', research); });
+  fetchFirst(GLSOURCES, false).then(function(d){ GL = d || {}; proj(); research(); optPool(); }).catch(function(){});
   fetchFirst(RSOURCES, false).then(function(d){
     SEA = d;
     var dd = d.through ? new Date(d.through + 'T12:00:00') : null;
