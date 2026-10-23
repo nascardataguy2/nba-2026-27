@@ -358,6 +358,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 @media (min-width:1240px){
   body{background:#f6f8f2 url(https://nascardataguy2.github.io/nba-2026-27/site/bg90s-left.jpg) left top/min(54.7vh,calc((100vw - 1100px)/2)) auto repeat-y fixed;}
   body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:url(https://nascardataguy2.github.io/nba-2026-27/site/bg90s-right.jpg) right top/min(54.7vh,calc((100vw - 1100px)/2)) auto repeat-y}
+  body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:rgba(255,255,255,.45)}
   .top,.tabs,footer{background:transparent;border:0}
   .top .wrap{background:var(--bg);border-bottom:4px solid var(--accent)}
   .tabs .wrap{background:var(--bg);border-bottom:1px solid var(--line)}
