@@ -107,25 +107,47 @@ def parse_dff(page):
 
 
 def dk_salaries(day):
-    """Official DraftKings classic main-slate salaries, positions and player IDs: {(norm name, team): (salary, pos, id)}."""
+    """Official DraftKings classic salaries, positions and player IDs:
+    {(norm name, team): (salary, pos, id, slate)}. The main slate is the
+    featured classic contest with the most games; when DraftKings splits the
+    night, the biggest featured contest with no main-slate teams is the late
+    slate. Main-slate prices win if a player shows up in both."""
     out = {}
     try:
         lob = json.loads(get("https://www.draftkings.com/lobby/getcontests?sport=NBA"))
         groups = [g for g in lob.get("DraftGroups", []) if g.get("ContestTypeId") == 70 and
                   str(g.get("StartDateEst", "")).startswith(day) and g.get("DraftGroupTag") == "Featured"]
-        if not groups:
-            return out
-        g = max(groups, key=lambda x: x.get("GameCount", 0))
-        csvtxt = get("https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=70&draftGroupId=%s" % g["DraftGroupId"])
     except Exception:
+        return out
+    if not groups:
         return out
     import csv as _csv
     import io as _io
-    for row in _csv.DictReader(_io.StringIO(csvtxt.lstrip("\ufeff"))):
+
+    def read(g):
+        rows = {}
         try:
-            out[(norm(row["Name"]), fix_team(row["TeamAbbrev"]))] = (int(row["Salary"]), row["Position"], row.get("ID", ""))
-        except (KeyError, ValueError):
-            continue
+            txt = get("https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=70&draftGroupId=%s" % g["DraftGroupId"])
+        except Exception:
+            return rows
+        for row in _csv.DictReader(_io.StringIO(txt.lstrip("\ufeff"))):
+            try:
+                rows[(norm(row["Name"]), fix_team(row["TeamAbbrev"]))] = (int(row["Salary"]), row["Position"], row.get("ID", ""))
+            except (KeyError, ValueError):
+                continue
+        return rows
+
+    groups.sort(key=lambda x: (-x.get("GameCount", 0), x.get("StartDateEst", "")))
+    main = read(groups[0])
+    for k, v in main.items():
+        out[k] = v + ("main",)
+    main_teams = {t for _, t in main}
+    for g in groups[1:]:
+        late = read(g)
+        if late and not ({t for _, t in late} & main_teams):
+            for k, v in late.items():
+                out.setdefault(k, v + ("late",))
+            break
     return out
 
 
@@ -140,8 +162,18 @@ def espn_games(day):
         comp = e["competitions"][0]
         teams = {c["homeAway"]: fix_team(c["team"]["abbreviation"]) for c in comp["competitors"]}
         t = e.get("date", "")
+        odds = (comp.get("odds") or [{}])[0]
+        ou = odds.get("overUnder")
+        fav, line = "", None
+        det = str(odds.get("details") or "")
+        if det and det.upper() != "EVEN" and " " in det:
+            fav = fix_team(det.split(" ")[0])
+            try:
+                line = abs(float(det.split(" ")[1]))
+            except ValueError:
+                line = None
         for side, other in (("home", "away"), ("away", "home")):
-            games[teams[side]] = {"opp": teams[other], "home": side == "home", "time": t}
+            games[teams[side]] = {"opp": teams[other], "home": side == "home", "time": t, "ou": ou, "fav": fav, "line": line}
     return games
 
 
@@ -315,10 +347,16 @@ def main():
         r["salary"] = dk[0] if dk else (d["salary"] if d else None)
         r["dkpos"] = dk[1] if dk else (d["pos"] if d else s["pos"])
         r["dkid"] = dk[2] if dk else ""
+        r["slate"] = dk[3] if dk else ""
         r["start"] = bool(d and d["start"])
         r["inj"] = d["inj"] if d else ""
         r["spread"] = d["spread"] if d else None
         r["ou"] = d["ou"] if d else None
+        eg = games.get(s["team"]) or {}
+        if r["ou"] is None and eg.get("ou") is not None:
+            r["ou"] = eg["ou"]
+        if r["spread"] is None and eg.get("line") is not None:
+            r["spread"] = -eg["line"] if eg.get("fav") == s["team"] else eg["line"]
         rows.append(r)
 
     by_team = {}
@@ -422,6 +460,33 @@ def main():
             g["fav"] = g["home"] if diff > 0 else g["away"] if diff < 0 else ""
             g["line"] = abs(diff)
 
+    for t, info in games.items():
+        if not info["home"] or (info["opp"], t) in gm:
+            continue
+        if not any(r["team"] in (t, info["opp"]) for r in rows):
+            continue
+        a, h = info["opp"], t
+        g = {"away": a, "home": h, "ou": info.get("ou"), "away_pts": None, "home_pts": None, "time": info["time"]}
+        if info.get("ou") is not None:
+            ln = info.get("line") or 0.0
+            hp = info["ou"] / 2.0 + (ln / 2.0 if info.get("fav") == h else -ln / 2.0)
+            g["home_pts"], g["away_pts"] = round(hp, 1), round(info["ou"] - hp, 1)
+            g["fav"], g["line"] = info.get("fav", ""), ln
+        gm[(a, h)] = g
+    # Which DraftKings slate each game is on.
+    tslate = {}
+    for r in rows:
+        if r.get("slate"):
+            tslate.setdefault(r["team"], r["slate"])
+    split = "late" in tslate.values()
+    for (a, h), g in gm.items():
+        # A game on neither DraftKings classic slate (an afternoon game, say) is "off".
+        g["slate"] = (tslate.get(h) or tslate.get(a) or "off") if tslate else "main"
+    for r in rows:
+        if not r.get("slate"):
+            g = next((g for (a, h), g in gm.items() if r["team"] in (a, h)), None)
+            r["slate"] = g["slate"] if g else "main"
+
     opp = {}
     for (a, h) in gm:
         opp[a], opp[h] = h, a
@@ -444,7 +509,7 @@ def main():
             continue
         sal = r["salary"]
         pub.append({"player": r["player"], "team": r["team"], "opp": opp.get(r["team"], ""), "pos": r["dkpos"],
-                    "salary": sal, "dkid": r["dkid"], "start": r["start"], "q": r["inj"] == "Q", "min": round(r["min"], 1), "usg": r["usg"],
+                    "salary": sal, "dkid": r["dkid"], "slate": r["slate"], "start": r["start"], "q": r["inj"] == "Q", "min": round(r["min"], 1), "usg": r["usg"],
                     "ou": r["ou"], "spread": r["spread"],
                     "pts": round(r["pts"], 1), "reb": round(r["reb"], 1), "ast": round(r["ast"], 1),
                     "stl": round(r["stl"], 1), "blk": round(r["blk"], 1), "to": round(r["to"], 1),
@@ -494,6 +559,7 @@ def main():
             h = had.get((p["player"], p["team"]))
             if h and not p.get("dkid"):
                 p["dkid"] = h["dkid"]
+                p["slate"] = h.get("slate", p.get("slate"))
                 if h.get("salary"):
                     p["salary"] = h["salary"]
                     p["value"] = round(p["dk"] / (h["salary"] / 1000.0), 2)

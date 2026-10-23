@@ -228,6 +228,33 @@
     if (PJ && PJ.date && PJ.date > up) up = PJ.date;
     $('r4p-sub').textContent = 'Updated ' + up + ' \u00b7 ' + db.players.length + ' players \u00b7 ' + db.teams.length + ' teams';
   }
+  var PLATE = false;
+  function pSplit(){ return !!(PJ && PJ.players.some(function(p){ return p.slate && p.slate !== 'main'; })); }
+  // Games on no DraftKings classic slate (an afternoon game, say) have no prices, so they stay hidden.
+  function pShow(slate){ return !pSplit() || !slate || slate === 'main' || (PLATE && slate === 'late'); }
+  function slateTag(p){ return p.slate === 'late' ? '<span class="role late">Late</span>' : (p.slate === 'off' ? '<span class="role late">No DK slate</span>' : ''); }
+  function projGames(){
+    var d = PJ;
+    $('r4p-games').innerHTML = (d.games || []).filter(function(g){ return pShow(g.slate); }).map(function(g){
+      var fav = g.fav ? esc(g.fav) + ' \u2212' + n1(g.line) : 'Even';
+      var lbl = pSplit() && g.slate !== 'main' ? '<span class="gm-sl">' + (g.slate === 'late' ? 'Late slate' : 'No DK slate') + '</span>' : '';
+      return '<div class="gm' + (lbl ? ' gm-late' : '') + '"><div class="gm-t">' + tm(g.away, true) + ' <span class="gm-at">at</span> ' + tm(g.home, true) + '<span class="gm-time">' + esc(gameTime(g.time)) + '</span></div>' + lbl +
+        '<div class="gm-l">Total ' + n1(g.ou) + ' \u00b7 ' + fav + '</div>' +
+        '<div class="gm-l">' + esc(g.away) + ' ' + n1(g.away_pts) + ' \u00b7 ' + esc(g.home) + ' ' + n1(g.home_pts) + '</div></div>';
+    }).join('');
+    var sel = $('r4p-pgame'), cur = sel.value;
+    sel.innerHTML = '<option value="">All games</option>' + (d.games || []).filter(function(g){ return pShow(g.slate); }).map(function(g){
+      return '<option value="' + g.away + '|' + g.home + '">' + g.away + ' at ' + g.home + (pSplit() && g.slate !== 'main' ? ' (' + (g.slate === 'late' ? 'late' : 'no DK slate') + ')' : '') + '</option>';
+    }).join('');
+    if (cur && [].some.call(sel.options, function(o){ return o.value === cur; })) sel.value = cur;
+    var b = $('r4p-plate');
+    if (b){
+      var nl = (d.games || []).filter(function(g){ return g.slate === 'late'; }).length;
+      b.hidden = !nl;
+      b.textContent = PLATE ? 'Hide late games' : 'Show late games (' + nl + ')';
+      b.classList.toggle('on', PLATE);
+    }
+  }
   function projInit(d){
     PJ = d;
     setSub();
@@ -241,15 +268,9 @@
     var dd = new Date(d.date + 'T12:00:00');
     var day = isNaN(dd) ? d.date : dd.toLocaleDateString('en-US', {weekday:'long', month:'short', day:'numeric'});
     var acc = d.accuracy ? ' Our minutes have missed by ' + n1(d.accuracy.our_min_miss) + ' a player on average over ' + d.accuracy.days + (d.accuracy.days === 1 ? ' night' : ' nights') + '.' : '';
-    $('r4p-psub').textContent = day + ' \u00b7 ' + d.players.length + ' players \u00b7 updated ' + d.updated + '.' + acc;
-    $('r4p-games').innerHTML = (d.games || []).map(function(g){
-      var fav = g.fav ? esc(g.fav) + ' \u2212' + n1(g.line) : 'Even';
-      return '<div class="gm"><div class="gm-t">' + tm(g.away, true) + ' <span class="gm-at">at</span> ' + tm(g.home, true) + '<span class="gm-time">' + esc(gameTime(g.time)) + '</span></div>' +
-        '<div class="gm-l">Total ' + n1(g.ou) + ' \u00b7 ' + fav + '</div>' +
-        '<div class="gm-l">' + esc(g.away) + ' ' + n1(g.away_pts) + ' \u00b7 ' + esc(g.home) + ' ' + n1(g.home_pts) + '</div></div>';
-    }).join('');
-    var sel = $('r4p-pgame');
-    (d.games || []).forEach(function(g){ var o = document.createElement('option'); o.value = g.away + '|' + g.home; o.textContent = g.away + ' at ' + g.home; sel.appendChild(o); });
+    var nMain = d.players.filter(function(p){ return !p.slate || p.slate === 'main'; }).length;
+    $('r4p-psub').textContent = day + ' \u00b7 ' + (pSplit() ? nMain + ' players on the DraftKings main slate' : d.players.length + ' players') + ' \u00b7 updated ' + d.updated + '.' + acc;
+    projGames();
     var outs = d.out || [];
     $('r4p-pout').innerHTML = outs.length ? '<div class="panel out-list"><h2>Ruled Out Tonight</h2>' + outs.map(function(o){
       return '<div class="hit"><span class="who">' + esc(o.player) + '</span>' + tm(o.team) + '<p>' + esc(o.note) + '</p></div>';
@@ -360,7 +381,8 @@
     if (!PJ) return;
     var q = $('r4p-pq').value.trim().toLowerCase(), g = $('r4p-pgame').value, pos = $('r4p-ppos').value;
     var k = PSORT.key, dir = PSORT.dir;
-    var list = PJ.players.filter(function(p){
+    var shown = PJ.players.filter(function(p){ return pShow(p.slate); });
+    var list = shown.filter(function(p){
       if (g){ var gg = g.split('|'); if (p.team !== gg[0] && p.team !== gg[1]) return false; }
       if (pos && ('/' + p.pos + '/').indexOf('/' + pos + '/') < 0) return false;
       if (!q) return true;
@@ -373,14 +395,14 @@
       if (typeof x === 'string') return dir * x.localeCompare(y) || (b.dk - a.dk);
       return dir * (x - y) || (b.dk - a.dk);
     });
-    $('r4p-pcount').textContent = list.length + ' of ' + PJ.players.length + ' players';
+    $('r4p-pcount').textContent = list.length + ' of ' + shown.length + ' players';
     var arrow = function(c){ return c === k ? (dir > 0 ? ' \u25b2' : ' \u25bc') : ''; };
     var th = PCOLS.map(function(c){
       return '<th class="c-' + c[0] + (c[0] === k ? ' on' : '') + '" data-k="' + c[0] + '" scope="col" tabindex="0" aria-sort="' + (c[0] === k ? (dir > 0 ? 'ascending' : 'descending') : 'none') + '">' + c[1] + arrow(c[0]) + '</th>';
     }).join('');
     var rows = list.map(function(p){
       var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
-      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '') + nbtn(p.player, has);
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Q</span>' : '') + slateTag(p) + nbtn(p.player, has);
       var tds = PCOLS.map(function(c){
         var key = c[0];
         if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + '</td>';
@@ -394,7 +416,7 @@
     }).join('') || '<tr><td colspan="' + PCOLS.length + '">No players match.</td></tr>';
     var cards = list.map(function(p){
       var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[nkey(p.player)];
-      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '') + nbtn(p.player, has);
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '') + slateTag(p) + nbtn(p.player, has);
       var box = function(key, lbl){ var st = heatCss(key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + fmt(p, key) + '</div>'; };
       return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
         '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 O/U ' + fmt(p, 'ou') + ' \u00b7 Spread ' + fmt(p, 'spread') + '</div>' +
@@ -551,8 +573,9 @@
     if (PJ) (PJ.games || []).forEach(function(g){ if (g.time && g.time <= now){ st[g.away] = 1; st[g.home] = 1; } });
     return st;
   }
+  var OSLATE = 'main';
   function oMainOnly(){ return !!(PJ && PJ.players.some(function(p){ return p.dkid; })); }
-  function oMain(p){ return !oMainOnly() || !!p.dkid; }
+  function oMain(p){ return !oMainOnly() || (!!p.dkid && (p.slate || 'main') === OSLATE); }
   function oGames(){
     if (!PJ) return [];
     var t = {};
@@ -642,8 +665,17 @@
     if (!oToday()){ $('r4p-osub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.'; $('r4p-opool').innerHTML = ''; return; }
     var st = oStarted(), q = $('r4p-oq').value.trim().toLowerCase();
     var og = oGames();
-    var split = oMainOnly() && og.length < (PJ.games || []).length;
-    $('r4p-osub').textContent = 'We watch ball. We know ball. Build DraftKings main-slate lineups from our projections for ' + og.length + (og.length === 1 ? ' game' : ' games') + ' tonight' + (split ? ' (DraftKings left the other ' + (PJ.games.length - og.length) + ((PJ.games.length - og.length) === 1 ? ' game' : ' games') + ' off its main slate)' : '') + ' \u00b7 updated ' + PJ.updated + '.';
+    var hasLate = PJ.players.some(function(p){ return p.slate === 'late' && p.dkid; });
+    var ss = $('r4p-oslate');
+    if (ss){
+      ss.hidden = !hasLate;
+      if (hasLate){
+        var nm = (PJ.games || []).filter(function(g){ return g.slate === 'main'; }).length, nl = (PJ.games || []).filter(function(g){ return g.slate === 'late'; }).length;
+        ss.innerHTML = '<option value="main">Main slate (' + nm + ' games)</option><option value="late">Late slate (' + nl + ' games)</option>';
+        ss.value = OSLATE;
+      } else OSLATE = 'main';
+    }
+    $('r4p-osub').textContent = 'We watch ball. We know ball. Build DraftKings ' + (OSLATE === 'late' ? 'late-slate' : 'main-slate') + ' lineups from our projections for ' + og.length + (og.length === 1 ? ' game' : ' games') + ' tonight \u00b7 updated ' + PJ.updated + '.';
     var list = PJ.players.filter(function(p){
       if (!p.salary || !oMain(p)) return false;
       return !q || (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
@@ -661,6 +693,7 @@
     }).join('');
   }
   function optStars(){
+    if (OSLATE === 'late'){ oMsg('Stars & Scrubs covers the main slate only. Switch to the main slate to start from it.'); return; }
     if (!SS || !oToday() || SS.date !== PJ.date){ oMsg('Tonight\u2019s Stars & Scrubs are not posted yet.'); return; }
     var st = oStarted(), have = {};
     PJ.players.forEach(function(p){ if (p.salary && oMain(p)) have[nkey(p.player)] = p; });
@@ -680,7 +713,7 @@
     var csv = OSLOTS.join(',') + '\n' + rows.join('\n') + '\n';
     var a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob([csv], {type:'text/csv'}));
-    a.download = 'nbadfs-lineups-' + PJ.date + '.csv';
+    a.download = 'nbadfs-lineups-' + PJ.date + (OSLATE === 'late' ? '-late' : '') + '.csv';
     document.body.appendChild(a); a.click();
     setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
     oMsg('Downloaded ' + OLINES.length + (OLINES.length === 1 ? ' lineup.' : ' lineups.') + ' On DraftKings, open your contest and use Upload Lineups.');
@@ -956,6 +989,8 @@
   $('r4p-gdate').addEventListener('change', function(){ GSEL = null; gList(); });
   $('r4p-gteam').addEventListener('change', function(){ GSEL = null; gList(); });
   $('r4p-obuild').addEventListener('click', optBuild);
+  $('r4p-oslate').addEventListener('change', function(){ OSLATE = this.value; OLOCK = {}; OEXCL = {}; OLINES = []; optLines(); optPool(); oMsg(''); });
+  $('r4p-plate').addEventListener('click', function(){ PLATE = !PLATE; projGames(); proj(); });
   $('r4p-oss').addEventListener('click', optStars);
   $('r4p-oclear').addEventListener('click', function(){ OLOCK = {}; OEXCL = {}; optPool(); oMsg('Cleared all locks and players taken out.'); });
   $('r4p-ocsv').addEventListener('click', optCsv);

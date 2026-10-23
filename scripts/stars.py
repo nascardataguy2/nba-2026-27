@@ -149,7 +149,8 @@ def main():
         here = played.get((p["team"], last_date), set())
         return any(norm(o) in here for o in outs_by_team.get(p["team"], []))
 
-    players = [p for p in doc.get("players", []) if p.get("salary")]
+    # Main DraftKings slate only (late-slate and off-slate games are left out).
+    players = [p for p in doc.get("players", []) if p.get("salary") and p.get("slate", "main") == "main"]
     stars = []
     for p in sorted([p for p in players if p["salary"] >= STAR_MIN_SAL], key=lambda p: -p["dk"]):
         why, _ = context(p, "star")
