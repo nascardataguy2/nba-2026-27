@@ -27,10 +27,6 @@
     'https://nascardataguy2.github.io/nba-2026-27/data/games/',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/games/'
   ];
-  var WSOURCES = [
-    'https://nascardataguy2.github.io/nba-2026-27/data/wowy.json',
-    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/wowy.json'
-  ];
   var NAMES = {ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHA:'Charlotte Hornets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',IND:'Indiana Pacers',LAC:'LA Clippers',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',MIN:'Minnesota Timberwolves',NOP:'New Orleans Pelicans',NYK:'New York Knicks',OKC:'Oklahoma City Thunder',ORL:'Orlando Magic',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',POR:'Portland Trail Blazers',SAC:'Sacramento Kings',SAS:'San Antonio Spurs',TOR:'Toronto Raptors',UTA:'Utah Jazz',WAS:'Washington Wizards'};
   // Team primary colors (Color 1 from teamcolorcodes.com NBA team color codes).
   var TEAMC = {ATL:'#E03A3E',BOS:'#007A33',BKN:'#000000',CHA:'#1D1160',CHI:'#CE1141',CLE:'#860038',DAL:'#00538C',DEN:'#0E2240',DET:'#C8102E',GSW:'#1D428A',HOU:'#CE1141',IND:'#002D62',LAC:'#C8102E',LAL:'#552583',MEM:'#5D76A9',MIA:'#98002E',MIL:'#00471B',MIN:'#0C2340',NOP:'#0C2340',NYK:'#006BB6',OKC:'#007AC1',ORL:'#0077C0',PHI:'#006BB6',PHX:'#1D1160',POR:'#E03A3E',SAC:'#5A2D81',SAS:'#C4CED4',TOR:'#CE1141',UTA:'#002B5C',WAS:'#002B5C'};
@@ -828,37 +824,80 @@
     gList();
   });
 
-  // Teammate splits: with and without each teammate on the floor.
-  var WY = null;
-  function wyPlayers(){
-    var t = $('r4p-wyteam').value, sel = $('r4p-wyplayer'), cur = sel.value;
-    var ps = Object.keys((WY.teams || {})[t] || {}).sort(function(a, b){ return WY.teams[t][b].min - WY.teams[t][a].min; });
-    sel.innerHTML = ps.map(function(n){ return '<option value="' + esc(n) + '">' + esc(n) + ' (' + n1(WY.teams[t][n].min) + ' min)</option>'; }).join('');
-    if (cur && ps.indexOf(cur) > -1) sel.value = cur;
+  // Who benefits when he sits: take players off the court, see every teammate's DK per minute.
+  var WYI = null, WYT = {}, WOFF = {};
+  function wyUrls(f){ return GBASE.map(function(b){ return b.replace('/games/', '/wowy/') + f; }); }
+  function wyTeam(){
+    var t = $('r4p-wyteam').value;
+    WOFF = {};
+    if (WYT[t]){ wyChips(); return; }
+    $('r4p-wychips').innerHTML = ''; $('r4p-wybox').innerHTML = '<p class="sub">Loading\u2026</p>';
+    fetchFirst(wyUrls(t + '.json'), false).then(function(d){ WYT[t] = d; if ($('r4p-wyteam').value === t) wyChips(); })
+      .catch(function(){ $('r4p-wybox').innerHTML = '<p class="sub">These splits could not load right now. Please try again in a minute.</p>'; });
+  }
+  function wyTotals(d){
+    var tot = {};
+    d.games.forEach(function(g){ Object.keys(g.players).forEach(function(n){ var p = g.players[n]; tot[n] = (tot[n] || 0) + p.st.reduce(function(a, s){ return a + s[1] - s[0]; }, 0) / 60; }); });
+    return tot;
+  }
+  function wyChips(){
+    var d = WYT[$('r4p-wyteam').value]; if (!d) return;
+    var tot = wyTotals(d), names = Object.keys(tot).sort(function(a, b){ return tot[b] - tot[a]; });
+    $('r4p-wychips').innerHTML = names.map(function(n){
+      var on = !!WOFF[n];
+      return '<button class="wy-chip' + (on ? ' on' : '') + '" type="button" data-off="' + esc(n) + '" aria-pressed="' + on + '">' + esc(n) + '</button>';
+    }).join('');
     wyRender();
   }
   function wyRender(){
-    var t = $('r4p-wyteam').value, pl = $('r4p-wyplayer').value;
-    var r = ((WY.teams || {})[t] || {})[pl];
-    if (!r){ $('r4p-wybox').innerHTML = ''; return; }
-    function pm(dk, mn){ return mn > 0 ? dk / mn : null; }
-    var all = pm(r.dk, r.min);
-    var rows = Object.keys(r.mates).map(function(m){ var v = r.mates[m]; return {m:m, w:v[0], dw:v[1], o:v[2], dout:v[3]}; })
-      .filter(function(x){ return x.w > 0; })
-      .sort(function(a, b){ return b.w - a.w; });
-    var html = '<p class="wy-all"><b>' + esc(pl) + '</b> has played ' + n1(r.min) + ' minutes in ' + r.gp + (r.gp === 1 ? ' game' : ' games') + ' at ' + (all == null ? '\u2013' : all.toFixed(2)) + ' DK points per minute.</p>' +
-      '<div class="wy-t"><div class="wy-r wy-h"><span>Teammate</span><span>With him on</span><span>With him off</span><span>Diff</span></div>' +
-      rows.map(function(x){
-        var a = pm(x.dw, x.w), b = pm(x.dout, x.o), small = x.w < 10 || x.o < 10;
-        var d = (a != null && b != null) ? a - b : null;
-        var dc = d == null || small ? '' : (d >= 0.15 ? ' up' : (d <= -0.15 ? ' down' : ''));
-        return '<div class="wy-r' + (small ? ' small' : '') + '"><span class="wy-m">' + esc(x.m) + (small ? ' <small>small sample</small>' : '') + '</span>' +
-          '<span><b>' + (a == null ? '\u2013' : a.toFixed(2)) + '</b> in ' + n1(x.w) + ' min</span>' +
-          '<span><b>' + (b == null ? '\u2013' : b.toFixed(2)) + '</b> in ' + n1(x.o) + ' min</span>' +
-          '<span class="wy-d' + dc + '">' + (d == null ? '\u2013' : (d > 0 ? '+' : d < 0 ? '\u2212' : '') + Math.abs(d).toFixed(2)) + '</span></div>';
-      }).join('') + '</div>';
-    $('r4p-wybox').innerHTML = html;
+    var d = WYT[$('r4p-wyteam').value]; if (!d) return;
+    var off = Object.keys(WOFF).filter(function(n){ return WOFF[n]; });
+    if (!off.length){ $('r4p-wybox').innerHTML = '<p class="sub">Click one or more players above to take them off the court.</p>'; return; }
+    function anyOn(g, t){ for (var k = 0; k < off.length; k++){ var p = g.players[off[k]]; if (p && p.st.some(function(s){ return s[0] <= t && t <= s[1]; })) return true; } return false; }
+    function offIntervals(g){
+      // stretches of the game where at least one chosen player is on the court
+      var iv = []; off.forEach(function(n){ var p = g.players[n]; if (p) iv = iv.concat(p.st.map(function(s){ return [s[0], s[1]]; })); });
+      iv.sort(function(a, b){ return a[0] - b[0]; });
+      var m = []; iv.forEach(function(x){ if (m.length && x[0] <= m[m.length - 1][1]) m[m.length - 1][1] = Math.max(m[m.length - 1][1], x[1]); else m.push(x); });
+      return m;
+    }
+    var acc = {};
+    d.games.forEach(function(g){
+      var onIv = offIntervals(g);
+      Object.keys(g.players).forEach(function(n){
+        if (WOFF[n]) return;
+        var p = g.players[n], a = acc[n] || (acc[n] = {mOn:0, dOn:0, mOff:0, dOff:0});
+        p.st.forEach(function(s){
+          var len = s[1] - s[0], ov = 0;
+          onIv.forEach(function(x){ ov += Math.max(0, Math.min(s[1], x[1]) - Math.max(s[0], x[0])); });
+          a.mOn += ov / 60; a.mOff += (len - ov) / 60;
+        });
+        p.ev.forEach(function(e){ if (anyOn(g, e[0])) a.dOn += e[1]; else a.dOff += e[1]; });
+      });
+    });
+    var who = off.length === 1 ? off[0] : (off.length === 2 ? off.join(' and ') : off.slice(0, -1).join(', ') + ' and ' + off[off.length - 1]);
+    var onLbl = off.length === 1 ? 'With him on' : 'With any of them on', offLbl = off.length === 1 ? 'With him off' : 'With all of them off';
+    var rows = Object.keys(acc).map(function(n){ var a = acc[n]; return {n:n, a:a, on:a.mOn > 0 ? a.dOn / a.mOn : null, of:a.mOff > 0 ? a.dOff / a.mOff : null}; })
+      .filter(function(x){ return x.a.mOff > 0; })
+      .map(function(x){ x.small = x.a.mOn < 10 || x.a.mOff < 10; x.d = (x.on != null && x.of != null) ? x.of - x.on : null; return x; })
+      .sort(function(x, y){ return (x.small - y.small) || ((y.d == null ? -99 : y.d) - (x.d == null ? -99 : x.d)); });
+    $('r4p-wybox').innerHTML = '<p class="wy-all">How each teammate scores with <b>' + esc(who) + '</b> off the court, in DraftKings points per minute. Green means he scores more without ' + (off.length === 1 ? 'him' : 'them') + '.</p>' +
+      '<div class="wy-t"><div class="wy-r wy-h"><span>Teammate</span><span>' + onLbl + '</span><span>' + offLbl + '</span><span>Diff</span></div>' +
+      (rows.map(function(x){
+        var dc = x.d == null || x.small ? '' : (x.d >= 0.15 ? ' up' : (x.d <= -0.15 ? ' down' : ''));
+        return '<div class="wy-r' + (x.small ? ' small' : '') + '"><span class="wy-m">' + esc(x.n) + (x.small ? ' <small>small sample</small>' : '') + '</span>' +
+          '<span><b>' + (x.on == null ? '\u2013' : x.on.toFixed(2)) + '</b> in ' + n1(x.a.mOn) + ' min</span>' +
+          '<span><b>' + (x.of == null ? '\u2013' : x.of.toFixed(2)) + '</b> in ' + n1(x.a.mOff) + ' min</span>' +
+          '<span class="wy-d' + dc + '">' + (x.d == null ? '\u2013' : (x.d > 0 ? '+' : x.d < 0 ? '\u2212' : '') + Math.abs(x.d).toFixed(2)) + '</span></div>';
+      }).join('') || '<div class="wy-r"><span>No teammate has played without ' + esc(who) + ' yet.</span></div>') + '</div>';
   }
+  document.addEventListener('click', function(e){
+    var c = e.target.closest ? e.target.closest('.wy-chip') : null;
+    if (!c) return;
+    var n = c.getAttribute('data-off'); WOFF[n] = !WOFF[n];
+    c.classList.toggle('on', !!WOFF[n]); c.setAttribute('aria-pressed', !!WOFF[n]);
+    wyRender();
+  });
 
   var SS = null;
   function starsRender(){
@@ -906,15 +945,14 @@
     $('r4p-gsub').textContent = 'We watch ball. We know ball. Who was on the court, when, and what he did with it \u00b7 ' + n + ' games so far, newest first.';
     gList();
   }).catch(function(){ $('r4p-gsub').textContent = 'Game timelines are not posted yet. Please check back soon.'; });
-  fetchFirst(WSOURCES, false).then(function(d){
-    WY = d;
-    var ts = Object.keys(d.teams || {}).filter(function(x){ return x; }).sort();
+  fetchFirst(wyUrls('index.json'), false).then(function(d){
+    WYI = d;
+    var ts = Object.keys(d.teams || {}).sort();
     $('r4p-wyteam').innerHTML = ts.map(function(c){ return '<option value="' + c + '">' + c + ' \u2013 ' + esc(NAMES[c] || c) + '</option>'; }).join('');
-    $('r4p-wysub').textContent = 'How a player does with each teammate on the floor and with him off it, over ' + d.games + ' games this season. Numbers are DraftKings points per minute from the play-by-play, without double-double bonuses. Splits with fewer than 10 minutes on either side are marked small sample, so treat them as early signs only.';
-    wyPlayers();
-  }).catch(function(){ $('r4p-wysub').textContent = 'Teammate splits are not posted yet. Please check back soon.'; });
-  $('r4p-wyteam').addEventListener('change', wyPlayers);
-  $('r4p-wyplayer').addEventListener('change', wyRender);
+    $('r4p-wysub').textContent = 'Pick a team, then take one or more players off the court to see how every teammate scores without them, over every game this season. Games a player missed count as off the court. Numbers are DraftKings points per minute from the play-by-play, without double-double bonuses. Rows with fewer than 10 minutes on either side are marked small sample.';
+    wyTeam();
+  }).catch(function(){ $('r4p-wysub').textContent = 'These splits are not posted yet. Please check back soon.'; });
+  $('r4p-wyteam').addEventListener('change', wyTeam);
   $('r4p-gdate').addEventListener('change', function(){ GSEL = null; gList(); });
   $('r4p-gteam').addEventListener('change', function(){ GSEL = null; gList(); });
   $('r4p-obuild').addEventListener('click', optBuild);

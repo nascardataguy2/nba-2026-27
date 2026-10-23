@@ -292,7 +292,13 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 }
 /* Teammate splits */
 .wy{margin-top:6px}
-.wy-all{margin:0 0 10px;font-size:15px}
+.wy-all{margin:12px 0 10px;font-size:15px}
+#r4p-wy .toolbar select{flex:0 1 auto}
+.wy-lbl{font:700 12px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.wy-chips{display:flex;flex-wrap:wrap;gap:6px}
+.wy-chip{font:600 14px/1 var(--body);padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer}
+.wy-chip.on{background:var(--bad);border-color:var(--bad);color:#fff}
+.wy-chip.on::before{content:'\2715  '}
 .wy-t{border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .wy-r{display:grid;grid-template-columns:minmax(0,1.4fr) 1fr 1fr 70px;gap:8px;align-items:center;padding:8px 10px;border-top:1px solid var(--soft);font-size:14px}
 .wy-r:first-child{border-top:none}
