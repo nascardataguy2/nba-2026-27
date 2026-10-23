@@ -316,4 +316,13 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   .wy-r b{font-size:15px;display:block}
   #v-games .wy .toolbar select{flex:1 1 100%}
 }
+/* Late slate */
+.role.late{background:#eef1f6;border-color:#d6dce6;color:var(--navy)}
+.gm-late{background:var(--soft)}
+.gm-sl{display:inline-block;font:700 11px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--navy);background:#e3e8f0;border-radius:4px;padding:3px 6px;margin:4px 0 2px}
+.plate{flex:0 0 auto;font:700 14px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer;white-space:nowrap}
+.plate.on{background:var(--navy);border-color:var(--navy);color:#fff}
+@media (max-width:760px){
+  #v-proj .toolbar .plate{flex:1 1 100%}
+}
 

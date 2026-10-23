@@ -47,7 +47,7 @@ def main():
     if doc.get("date") != today:
         print("projections are not for today yet; shorts not written")
         return
-    pool = [p for p in doc["players"] if p.get("salary") and not p.get("q") and p.get("min", 0) >= 20]
+    pool = [p for p in doc["players"] if p.get("salary") and not p.get("q") and p.get("min", 0) >= 20 and p.get("slate", "main") == "main"]
     locks = sorted([p for p in pool if p["salary"] >= 7000], key=lambda p: -p["dk"])[:3]
     used = {p["player"] for p in locks}
     value = []
@@ -66,7 +66,7 @@ def main():
         WHYS.update({p["player"]: p.get("why", "") for p in locks + value})
     d = datetime.strptime(today, "%Y-%m-%d")
     day = d.strftime("%A, %B ") + str(d.day)
-    games = len(doc.get("games", []))
+    games = len([g for g in doc.get("games", []) if g.get("slate", "main") == "main"])
     now = datetime.now(ET).strftime("%-I:%M %p ET")
     out = {"date": today, "made": now, "games": games,
            "hook": "Tonight's NBA DFS locks and value plays in 30 seconds.",

@@ -32,6 +32,7 @@
       <select aria-label='Game' id='r4p-pgame'><option value=''>All games</option></select>
       <select aria-label='Position' id='r4p-ppos'><option value=''>All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>
       <select aria-label='Sort' id='r4p-psort'><option value='' hidden='hidden'>Sorted by column</option><option value='dk' selected='selected'>By DK points</option><option value='value'>By value</option><option value='min'>By minutes</option><option value='usg'>By usage</option><option value='salary'>By salary</option><option value='ou'>By over/under</option><option value='pts'>By points</option><option value='reb'>By rebounds</option><option value='ast'>By assists</option></select>
+      <button class='plate' hidden='hidden' id='r4p-plate' type='button'>Show late games</button>
     </div>
     <div class='count' id='r4p-pcount'></div>
     <div class='pj' id='r4p-projlist'></div>
@@ -57,6 +58,7 @@
   <section class='view' hidden='hidden' id='v-opt'>
     <p class='sub' id='r4p-osub' style='margin:0 0 12px'>Loading tonight&#8217;s player pool&#8230;</p>
     <div class='toolbar'>
+      <select aria-label='Slate' hidden='hidden' id='r4p-oslate'></select>
       <select aria-label='Number of lineups' id='r4p-on'><option value='1'>1 lineup</option><option value='3'>3 lineups</option><option value='5' selected='selected'>5 lineups</option><option value='10'>10 lineups</option><option value='20'>20 lineups</option></select>
       <select aria-label='Different players between lineups' id='r4p-odiff'><option value='1'>1 new player per lineup</option><option value='2' selected='selected'>2 new players per lineup</option><option value='3'>3 new players per lineup</option><option value='4'>4 new players per lineup</option></select>
       <select aria-label='Minimum salary' id='r4p-ofloor'><option value='0'>No salary minimum</option><option value='48000'>Use $48,000 or more</option><option value='49000'>Use $49,000 or more</option><option value='49500'>Use $49,500 or more</option></select>
@@ -75,7 +77,7 @@
       <div class='toolbar'><input aria-label='Search the player pool' id='r4p-oq' placeholder='Search a player or team' type='search'/></div>
       <div id='r4p-opool'></div>
     </div>
-    <p class='sub' style='margin:14px 0 0'>Every lineup follows DraftKings Classic rules: PG, SG, SF, PF, C, G, F and UTIL, a $50,000 salary cap and players from at least two games. Lineups use our DK projections, so check late injury news before lock. It always builds from the full DraftKings main slate, even after games tip, and players in games that have started are tagged Started. The download makes a file you can upload on DraftKings with the Upload Lineups button.</p>
+    <p class='sub' style='margin:14px 0 0'>When DraftKings splits the night, pick the main slate or the late slate, since a lineup cannot mix them. Every lineup follows DraftKings Classic rules: PG, SG, SF, PF, C, G, F and UTIL, a $50,000 salary cap and players from at least two games. Lineups use our DK projections, so check late injury news before lock. It always builds from the full slate you pick, even after games tip, and players in games that have started are tagged Started. The download makes a file you can upload on DraftKings with the Upload Lineups button.</p>
   </section>
   <section class='view' hidden='hidden' id='v-games'>
     <p class='sub' id='r4p-gsub' style='margin:0 0 12px'>Loading game timelines&#8230;</p>
