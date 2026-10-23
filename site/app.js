@@ -695,9 +695,9 @@
   // Games tab: who was on the court, when, and what he did with it.
   var GIDX = null, GDAY = {}, GSEL = null;
   function gUrls(f){ return GBASE.map(function(b){ return b + f; }); }
-  function gClock(t, end){
+  function gClock(t, end, isEnd){
     var q, left;
-    if (t > 0 && ((t <= 2880 && t % 720 === 0) || (t > 2880 && (t - 2880) % 300 === 0))) t = t - 0.001;
+    if (isEnd && t > 0 && ((t <= 2880 && t % 720 === 0) || (t > 2880 && (t - 2880) % 300 === 0))) t = t - 0.001;
     if (t < 2880){ q = Math.min(4, Math.floor(t / 720) + 1); left = q * 720 - t; }
     else { var o = Math.min(Math.floor((t - 2880) / 300) + 1, Math.max(1, Math.round((end - 2880) / 300))); q = 4 + o; left = 2880 + o * 300 - t; }
     left = Math.max(0, Math.round(left));
@@ -758,13 +758,13 @@
       var rows = ps.map(function(p){
         var segs = p.stints.map(function(s){
           var mn = ((s[1] - s[0]) / 60).toFixed(1), dk = s[2].toFixed(1);
-          return '<div class="gt-seg" style="left:' + pct(s[0]) + ';width:' + ((s[1] - s[0]) / END * 100).toFixed(3) + '%;background:' + c + ';color:' + fg + '" data-a="' + mn + ' min \u00b7 ' + dk + ' DK" data-b="' + mn + ' \u00b7 ' + dk + '" title="' + esc(gClock(s[0], END) + ' to ' + gClock(s[1], END) + ': ' + mn + ' min, ' + dk + ' DK') + '"></div>';
+          return '<div class="gt-seg" style="left:' + pct(s[0]) + ';width:' + ((s[1] - s[0]) / END * 100).toFixed(3) + '%;background:' + c + ';color:' + fg + '" data-a="' + mn + ' min \u00b7 ' + dk + ' DK" data-b="' + mn + ' \u00b7 ' + dk + '" title="' + esc(gClock(s[0], END) + ' to ' + gClock(s[1], END, true) + ': ' + mn + ' min, ' + dk + ' DK') + '"></div>';
         }).join('');
         return '<div class="gt-row"><div class="gt-n">' + esc(p.player) + (p.start ? '<small>START</small>' : '') + '</div><div class="gt-v">' + n1(p.min) + '</div><div class="gt-v dk">' + n1(p.dk) + '</div><div class="gt-track">' + grid + gb + segs + '</div></div>';
       }).join('');
       var ph = ps.map(function(p){
         return '<div class="gp"><div class="gp-top"><span>' + esc(p.player) + (p.start ? ' <small>START</small>' : '') + '</span><span>' + n1(p.min) + ' min \u00b7 <b>' + n1(p.dk) + ' DK</b></span></div><div class="gp-s">' + p.stints.map(function(s){
-          var c0 = gClock(s[0], END), c1 = gClock(s[1], END), same = c0.split(' ')[0] === c1.split(' ')[0];
+          var c0 = gClock(s[0], END), c1 = gClock(s[1], END, true), same = c0.split(' ')[0] === c1.split(' ')[0];
           var gm = (G.garbage || []).some(function(x){ return s[1] > x[0] && s[0] < x[1]; });
           return '<span' + (gm ? ' class="g"' : '') + '>' + esc(c0 + ' to ' + (same ? c1.split(' ')[1] : c1)) + ' \u00b7 ' + ((s[1] - s[0]) / 60).toFixed(1) + ' min \u00b7 ' + s[2].toFixed(1) + ' DK</span>';
         }).join('') + '</div></div>';
@@ -774,10 +774,32 @@
         '<div class="gt-ph">' + ph + '</div></div>';
     }
     $('r4p-gview').innerHTML = '<p class="gt-cap">' + esc(G.caption) + '</p>' +
-      '<div class="gt gt-mwrap"><h3>Score margin \u00b7 ' + esc(gDate(GSEL.date)) + ' \u00b7 ' + tm(G.away, true) + ' ' + G.final[0] + ' at ' + tm(G.home, true) + ' ' + G.final[1] + '</h3><div class="gt-m">' + svg + '</div>' +
-      '<p class="gt-legend">Above the line: ' + esc(NAMES[G.home] || G.home) + ' ahead. Below the line: ' + esc(NAMES[G.away] || G.away) + ' ahead.</p></div>' +
+      '<div class="gt gt-mwrap"><h3>Score margin \u00b7 ' + esc(gDate(GSEL.date)) + ' \u00b7 ' + tm(G.away, true) + ' ' + G.final[0] + ' at ' + tm(G.home, true) + ' ' + G.final[1] + '</h3><div class="gt-m" id="r4p-gm">' + svg + '<div class="gt-hl" hidden="hidden"></div><div class="gt-tip" hidden="hidden"></div></div>' +
+      '<p class="gt-legend">Above the line: ' + esc(NAMES[G.home] || G.home) + ' ahead. Below the line: ' + esc(NAMES[G.away] || G.away) + ' ahead. Move along the chart, or tap it, to see the time and score.</p></div>' +
       teamBox(G.away) + teamBox(G.home);
     gFit();
+    gHover(G);
+  }
+  function gHover(G){
+    var box = $('r4p-gm'); if (!box || !G.score) return;
+    var hl = box.querySelector('.gt-hl'), tip = box.querySelector('.gt-tip'), END = G.end;
+    function at(clientX){
+      var r = box.getBoundingClientRect(), x = Math.max(0, Math.min(r.width, clientX - r.left)), t = x / r.width * END, sc = G.score[0];
+      for (var i = 0; i < G.score.length && G.score[i][0] <= t; i++) sc = G.score[i];
+      var a = sc[1], h = sc[2], d = h - a;
+      var lead = d === 0 ? 'Tied' : (d > 0 ? G.home + ' by ' + d : G.away + ' by ' + (-d));
+      tip.innerHTML = '<b>' + esc(gClock(t, END, true)) + '</b> \u00b7 ' + esc(G.away) + ' ' + a + ', ' + esc(G.home) + ' ' + h + ' \u00b7 ' + esc(lead);
+      hl.hidden = false; tip.hidden = false;
+      hl.style.left = x + 'px';
+      var w = tip.offsetWidth, left = Math.max(0, Math.min(r.width - w, x - w / 2));
+      tip.style.left = left + 'px';
+    }
+    box.addEventListener('mousemove', function(e){ at(e.clientX); });
+    var touched = 0;
+    box.addEventListener('mouseleave', function(){ if (Date.now() - touched > 1500){ hl.hidden = true; tip.hidden = true; } });
+    box.addEventListener('click', function(e){ at(e.clientX); });
+    box.addEventListener('touchstart', function(e){ touched = Date.now(); if (e.touches[0]) at(e.touches[0].clientX); }, {passive:true});
+    box.addEventListener('touchmove', function(e){ touched = Date.now(); if (e.touches[0]) at(e.touches[0].clientX); }, {passive:true});
   }
   function gFit(){
     var sg = document.querySelectorAll('#r4p-gview .gt-seg');
