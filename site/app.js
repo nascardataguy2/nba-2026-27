@@ -775,10 +775,11 @@
     }
     $('r4p-gview').innerHTML = '<p class="gt-cap">' + esc(G.caption) + '</p>' +
       '<div class="gt gt-mwrap"><h3>Score margin \u00b7 ' + esc(gDate(GSEL.date)) + ' \u00b7 ' + tm(G.away, true) + ' ' + G.final[0] + ' at ' + tm(G.home, true) + ' ' + G.final[1] + '</h3><div class="gt-m" id="r4p-gm">' + svg + '<div class="gt-hl" hidden="hidden"></div><div class="gt-tip" hidden="hidden"></div></div>' +
-      '<p class="gt-legend">Above the line: ' + esc(NAMES[G.home] || G.home) + ' ahead. Below the line: ' + esc(NAMES[G.away] || G.away) + ' ahead. Move along the chart, or tap it, to see the time and score.</p></div>' +
+      '</div><p class="gt-legend">Above the line: ' + esc(NAMES[G.home] || G.home) + ' ahead. Below the line: ' + esc(NAMES[G.away] || G.away) + ' ahead. The score chart stays at the top while you scroll. Move along it, or tap it, to see the time and score.</p>' +
       teamBox(G.away) + teamBox(G.home);
     gFit();
     gHover(G);
+    gStick();
   }
   function gHover(G){
     var box = $('r4p-gm'); if (!box || !G.score) return;
@@ -801,6 +802,12 @@
     box.addEventListener('touchstart', function(e){ touched = Date.now(); if (e.touches[0]) at(e.touches[0].clientX); }, {passive:true});
     box.addEventListener('touchmove', function(e){ touched = Date.now(); if (e.touches[0]) at(e.touches[0].clientX); }, {passive:true});
   }
+  function gStick(){
+    var t = document.querySelector('.tabs');
+    var h = t ? t.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty('--gt-top', Math.round(h) + 'px');
+  }
+  window.addEventListener('resize', gStick);
   function gFit(){
     var sg = document.querySelectorAll('#r4p-gview .gt-seg');
     for (var k = 0; k < sg.length; k++){
