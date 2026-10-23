@@ -339,7 +339,7 @@
     if (g.length){
       var head = '<tr><th>Date</th><th>Opp</th><th>Min</th><th>Proj</th><th>DK</th><th>Proj</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th><th>Stl</th><th>Blk</th><th>TO</th></tr>';
       var row = function(r){
-        var d = r[0].slice(5).replace('-', '/').replace(/^0/, ''), op = r[2] ? (r[3] ? 'vs ' : '@') + r[2] : '';
+        var d = r[0].slice(5).replace('-', '/').replace(/^0/, ''), op = r[2] ? (r[3] ? 'vs\u00a0' : '@') + r[2] : '';
         var hit = r[15] != null ? (r[13] >= r[15] ? ' up' : ' down') : '';
         return '<tr><td>' + esc(d) + (r[4] ? ' <i>S</i>' : '') + '</td><td>' + esc(op) + '</td><td>' + n1(r[5]) + '</td><td class="gl-p">' + (r[14] == null ? '\u2013' : n1(r[14])) + '</td>' +
           '<td class="gl-dk' + hit + '">' + n1(r[13]) + '</td><td class="gl-p">' + (r[15] == null ? '\u2013' : n1(r[15])) + '</td>' +
