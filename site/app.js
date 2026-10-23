@@ -335,7 +335,7 @@
 
   var PCOLS = [
     ['player','Player','t'], ['pos','Pos','p'], ['salary','Sal','n'], ['team','Team','t'], ['opp','Opp','t'],
-    ['ou','O/U','n'], ['spread','Spread','s'], ['dk','DK','n'], ['value','Val','n'], ['min','Min','n'], ['usg','Usg','n'],
+    ['ou','O/U','n'], ['spread','Spread','s'], ['dk','DK','n'], ['value','Val','n'], ['own','Own%','n'], ['min','Min','n'], ['usg','Usg','n'],
     ['pts','Pts','n'], ['reb','Reb','n'], ['ast','Ast','n'], ['stl','Stl','n'], ['blk','Blk','n'], ['to','TO','n']
   ];
   var HEAT = {ou:1, dk:1, value:1, min:1, usg:1, pts:1, reb:1, ast:1, stl:1, blk:1, to:-1};
@@ -362,7 +362,7 @@
     if (k === 'salary') return money(v);
     if (k === 'value') return v == null ? '\u2013' : v.toFixed(2) + 'x';
     if (k === 'spread') return v == null ? '\u2013' : (v > 0 ? '+' : v < 0 ? '\u2212' : '') + n1(Math.abs(v));
-    if (k === 'usg') return v == null ? '\u2013' : n1(v) + '%';
+    if (k === 'usg' || k === 'own') return v == null ? '\u2013' : n1(v) + '%';
     return n1(v);
   }
   function setSort(k){
@@ -420,7 +420,7 @@
       var box = function(key, lbl){ var st = heatCss(key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + fmt(p, key) + '</div>'; };
       return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
         '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 O/U ' + fmt(p, 'ou') + ' \u00b7 Spread ' + fmt(p, 'spread') + '</div>' +
-        '<div class="pjc-nums">' + box('salary', 'Sal') + box('dk', 'DK') + box('value', 'Val') + box('min', 'Min') + box('usg', 'Usg') + '</div>' +
+        '<div class="pjc-nums">' + box('salary', 'Sal') + box('dk', 'DK') + box('value', 'Val') + box('own', 'Own%') + box('min', 'Min') + box('usg', 'Usg') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
         (open ? noteHtml(bits) : '') + '</div>';
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
@@ -680,13 +680,13 @@
       if (!p.salary || !oMain(p)) return false;
       return !q || (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
     });
-    $('r4p-opool').innerHTML = '<div class="op-head"><span>Player</span><span>Sal</span><span>DK</span><span></span></div>' + list.map(function(p){
+    $('r4p-opool').innerHTML = '<div class="op-head"><span>Player</span><span>Sal</span><span>DK</span><span>Own%</span><span></span></div>' + list.map(function(p){
       var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
       var bits = noteBits(p.player), has = bits.length > 0, open = has && NOPEN[k];
       var tags = (p.q ? '<span class="role out">Q</span>' : '') + (st[p.team] ? '<span class="role">Started</span>' : '') + nbtn(p.player, has);
       return '<div class="op-row' + (lk ? ' lk' : '') + (ex ? ' ex' : '') + '"><div class="op-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags +
         '<div class="op-sub"><span class="pk-pos">' + esc(p.pos) + '</span> ' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + '</div></div>' +
-        '<span class="op-s">' + money(p.salary) + '</span><span class="op-d">' + n1(p.dk) + '</span>' +
+        '<span class="op-s">' + money(p.salary) + '</span><span class="op-d">' + n1(p.dk) + '</span><span class="op-o">' + (p.own == null ? '\u2013' : n1(p.own) + '%') + '</span>' +
         '<span class="op-b"><button class="ob' + (lk ? ' on' : '') + '" data-lock="' + esc(p.player) + '" type="button" aria-pressed="' + lk + '">' + (lk ? 'Locked' : 'Lock') + '</button>' +
         '<button class="ob x' + (ex ? ' on' : '') + '" data-excl="' + esc(p.player) + '" type="button" aria-pressed="' + ex + '">' + (ex ? 'Out' : 'Take out') + '</button></span>' +
         (open ? '<div class="op-notes">' + noteHtml(bits) + '</div>' : '') + '</div>';
