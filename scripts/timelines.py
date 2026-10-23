@@ -65,6 +65,7 @@ def build_game(summary):
     stints = {i: [] for i in name}
     events = {i: [] for i in name}
     margin = []
+    score = []  # [seconds, away score, home score] each time the score changes
 
     def close(i, t):
         if i in open_at:
@@ -106,6 +107,9 @@ def build_game(summary):
             cur = per
             period_start(per, t, idx)
         margin.append((t, p.get("homeScore", 0) - p.get("awayScore", 0)))
+        sc = [round(t), p.get("awayScore", 0), p.get("homeScore", 0)]
+        if not score or score[-1][1:] != sc[1:]:
+            score.append(sc)
         parts = [x["athlete"]["id"] for x in p.get("participants", []) if "athlete" in x]
         ty = p["type"]["text"].replace("\n", " ")
         tx = p.get("text", "")
@@ -181,7 +185,7 @@ def build_game(summary):
     final = [plays[-1].get("awayScore", 0), plays[-1].get("homeScore", 0)]
     return {"id": comp.get("id") or summary["header"].get("id"), "away": side["away"], "home": side["home"],
             "final": final, "end": round(end), "periods": cur, "garbage": [[round(a), round(b)] for a, b in garbage],
-            "margin": thin(margin), "caption": caption(side, final, margin, players, garbage, end), "players": players}
+            "margin": thin(margin), "score": score, "caption": caption(side, final, margin, players, garbage, end), "players": players}
 
 
 def thin(margin):
