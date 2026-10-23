@@ -127,6 +127,28 @@ def main():
                 seen.add(w); out.append(w)
         return " ".join(out[:4]), real
 
+    # Who played in each team's games (to tell a new absence from an old one).
+    played = {}
+    for k, games in res.items():
+        for x in games:
+            played.setdefault((x.get("team"), x["date"]), set()).add(k)
+
+    def backed(p):
+        """A scrub's minutes have to be backed by what he has actually played,
+        unless a teammate who played in his last game is out tonight."""
+        g = box(p["player"], p["team"])
+        tdates = sorted(d for (t, d) in played if t == p["team"] and d < day)
+        if not tdates:
+            return True  # his team has not played yet: nothing to check against
+        last_date = tdates[-1]
+        mins = {x["date"]: x["min"] for x in g}
+        last = mins.get(last_date, 0.0)          # no box row means he did not play
+        avg = sum(mins.get(d, 0.0) for d in tdates) / len(tdates)
+        if max(last, avg) >= 0.6 * p["min"]:
+            return True
+        here = played.get((p["team"], last_date), set())
+        return any(norm(o) in here for o in outs_by_team.get(p["team"], []))
+
     players = [p for p in doc.get("players", []) if p.get("salary")]
     stars = []
     for p in sorted([p for p in players if p["salary"] >= STAR_MIN_SAL], key=lambda p: -p["dk"]):
@@ -137,7 +159,7 @@ def main():
     scrubs = []
     for p in sorted([p for p in players if p["salary"] <= SCRUB_MAX_SAL and p["min"] >= 15], key=lambda p: -p["value"]):
         why, real = context(p, "scrub")
-        if not real:
+        if not real or not backed(p):
             continue
         scrubs.append(dict(p, why=why))
         if len(scrubs) >= N_SCRUBS:
