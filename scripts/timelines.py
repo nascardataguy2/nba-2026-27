@@ -182,10 +182,32 @@ def build_game(summary):
                         "dk": round(box_dk.get(i, sum(s[2] for s in sl)), 2),
                         "garbage_min": round(sum(gmin(s) for s in stints[i]) / 60, 1),
                         "stints": sl})
+    # With and without each teammate: minutes and DK points while the teammate
+    # was on the floor and while he was off it.
+    def on_at(i, t):
+        return any(a <= t <= b for a, b in stints[i])
+
+    def overlap(a, b):
+        return sum(max(0, min(x[1], y[1]) - max(x[0], y[0])) for x in a for y in b)
+
+    wowy = {}
+    for i in name:
+        if not stints[i]:
+            continue
+        tot = sum(b - a for a, b in stints[i])
+        row = {}
+        for j in name:
+            if j == i or team[j] != team[i]:
+                continue
+            w = overlap(stints[i], stints[j])
+            dw = sum(v for t, v in events[i] if on_at(j, t))
+            dt = sum(v for t, v in events[i])
+            row[name[j]] = [round(w / 60, 2), round(dw, 2), round((tot - w) / 60, 2), round(dt - dw, 2)]
+        wowy[name[i]] = row
     final = [plays[-1].get("awayScore", 0), plays[-1].get("homeScore", 0)]
     return {"id": comp.get("id") or summary["header"].get("id"), "away": side["away"], "home": side["home"],
             "final": final, "end": round(end), "periods": cur, "garbage": [[round(a), round(b)] for a, b in garbage],
-            "margin": thin(margin), "score": score, "caption": caption(side, final, margin, players, garbage, end), "players": players}
+            "margin": thin(margin), "score": score, "caption": caption(side, final, margin, players, garbage, end), "players": players, "wowy": wowy}
 
 
 def thin(margin):

@@ -290,4 +290,24 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   .gp-s span.g{background:#fde7df}
   #v-games .toolbar select{flex:1 1 0;min-width:0;font-size:15px;padding:9px 6px}
 }
+/* Teammate splits */
+.wy{margin-top:6px}
+.wy-all{margin:0 0 10px;font-size:15px}
+.wy-t{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.wy-r{display:grid;grid-template-columns:minmax(0,1.4fr) 1fr 1fr 70px;gap:8px;align-items:center;padding:8px 10px;border-top:1px solid var(--soft);font-size:14px}
+.wy-r:first-child{border-top:none}
+.wy-h{background:var(--soft);font:700 12px/1.2 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.wy-r b{font:700 16px/1 var(--head);color:var(--navy)}
+.wy-m{font-weight:700;overflow-wrap:anywhere}
+.wy-m small{display:block;font:700 10px/1.2 var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.wy-r.small{color:var(--muted)}
+.wy-r.small b{color:var(--muted)}
+.wy-d{font:700 16px/1 var(--head);text-align:right}
+.wy-d.up{color:var(--good)}
+.wy-d.down{color:var(--bad)}
+@media (max-width:600px){
+  .wy-r{grid-template-columns:minmax(0,1.2fr) 1fr 1fr 52px;gap:6px;padding:8px;font-size:12px}
+  .wy-r b{font-size:15px;display:block}
+  #v-games .wy .toolbar select{flex:1 1 100%}
+}
 
