@@ -486,6 +486,17 @@ def main():
         hist = {k: v for k, v in hist.items() if v["team"] not in locked}
         hist.update({k: v for k, v in ph.items() if v["team"] in locked})
 
+    # DraftKings removes a slate from its lobby once it locks, so keep the IDs and
+    # salaries we already had for today's main slate.
+    if prev.get("date") == day:
+        had = {(p["player"], p["team"]): p for p in prev.get("players", []) if p.get("dkid")}
+        for p in pub:
+            h = had.get((p["player"], p["team"]))
+            if h and not p.get("dkid"):
+                p["dkid"] = h["dkid"]
+                if h.get("salary"):
+                    p["salary"] = h["salary"]
+                    p["value"] = round(p["dk"] / (h["salary"] / 1000.0), 2)
     pub.sort(key=lambda x: -x["dk"])
     now = datetime.now(ET)
     doc = {"date": day, "updated": now.strftime("%-I:%M %p ET"),

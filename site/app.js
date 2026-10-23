@@ -591,12 +591,11 @@
   }
   function oPool(){
     if (!PJ) return [];
-    var st = oStarted();
     return PJ.players.filter(function(p){
       var k = nkey(p.player);
       if (!p.salary || p.dk == null || OEXCL[k] || !oMain(p)) return false;
       if (OLOCK[k]) return true;
-      return !st[p.team] && p.min >= 8;
+      return p.min >= 8;
     });
   }
   function oMsg(t){ $('r4p-omsg').textContent = t || ''; }
@@ -606,9 +605,7 @@
     if (!oToday()){ oMsg('Tonight\u2019s projections are not posted yet.'); return; }
     var n = +$('r4p-on').value, diff = +$('r4p-odiff').value, floor = +$('r4p-ofloor').value;
     var pool = oPool(), locked = pool.filter(function(p){ return OLOCK[nkey(p.player)]; });
-    var stt = oStarted(), left = oGames().filter(function(g){ return !stt[g.home]; }).length;
-    if (!left && locked.length < 8){ oMsg('Every game tonight has started, so there is no one left to build with. Tomorrow\u2019s player pool opens when the morning projections post.'); OLINES = []; optLines(); return; }
-    if (left === 1 && !locked.length){ oMsg('Only one game tonight has not started, and DraftKings lineups need players from at least two games. Lock players from a started game to build around them.'); OLINES = []; optLines(); return; }
+
     var lsal = locked.reduce(function(a, p){ return a + p.salary; }, 0);
     if (locked.length > 8){ oMsg('You have ' + locked.length + ' players locked. A lineup only has 8 spots.'); return; }
     if (lsal > 50000){ oMsg('Your locked players cost ' + money(lsal) + ', which is over the $50,000 cap.'); return; }
@@ -640,9 +637,9 @@
     if (!PJ || !$('r4p-opool')) return;
     if (!oToday()){ $('r4p-osub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.'; $('r4p-opool').innerHTML = ''; return; }
     var st = oStarted(), q = $('r4p-oq').value.trim().toLowerCase();
-    var og = oGames(), left = og.filter(function(g){ return !st[g.home]; }).length;
+    var og = oGames();
     var split = oMainOnly() && og.length < (PJ.games || []).length;
-    $('r4p-osub').textContent = 'We watch ball. We know ball. Build DraftKings main-slate lineups from our projections for ' + og.length + (og.length === 1 ? ' game' : ' games') + ' tonight' + (split ? ' (DraftKings left the other ' + (PJ.games.length - og.length) + ((PJ.games.length - og.length) === 1 ? ' game' : ' games') + ' off its main slate)' : '') + ' \u00b7 updated ' + PJ.updated + '.' + (left ? '' : ' Every game tonight has started, so new lineups open with tomorrow\u2019s slate.');
+    $('r4p-osub').textContent = 'We watch ball. We know ball. Build DraftKings main-slate lineups from our projections for ' + og.length + (og.length === 1 ? ' game' : ' games') + ' tonight' + (split ? ' (DraftKings left the other ' + (PJ.games.length - og.length) + ((PJ.games.length - og.length) === 1 ? ' game' : ' games') + ' off its main slate)' : '') + ' \u00b7 updated ' + PJ.updated + '.';
     var list = PJ.players.filter(function(p){
       if (!p.salary || !oMain(p)) return false;
       return !q || (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
@@ -663,7 +660,7 @@
     if (!SS || !oToday() || SS.date !== PJ.date){ oMsg('Tonight\u2019s Stars & Scrubs are not posted yet.'); return; }
     var st = oStarted(), have = {};
     PJ.players.forEach(function(p){ if (p.salary && oMain(p)) have[nkey(p.player)] = p; });
-    function pick(arr){ return (arr || []).filter(function(p){ var x = have[nkey(p.player)]; return x && !x.q && !st[x.team] && !OEXCL[nkey(p.player)]; }).slice(0, 2); }
+    function pick(arr){ return (arr || []).filter(function(p){ var x = have[nkey(p.player)]; return x && !x.q && !OEXCL[nkey(p.player)]; }).slice(0, 2); }
     OLOCK = {};
     var chosen = pick(SS.stars).concat(pick(SS.scrubs));
     if (!chosen.length){ optBuild(); return; }
