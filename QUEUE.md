@@ -84,7 +84,11 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Normal daily set from Grok (per Pearce, 10/22): Fantasy Alarm DFS slate preview (same-day picks), Locked On daily preview and daily recap (season-long focus, but the role/minutes analysis carries over to DFS), plus extras like Old Man Squad. Use previews for same-day context_notes and proj_adjust; use recaps for role facts in players/teams and next-day context.
 - Same-day slate shows (Stokastic, usually late morning or early afternoon; Fantasy Alarm): when one arrives in the chat, process it right away, not in the backlog. Update players.json, proj_adjust.json and context_notes.json, rerun projections.py, stars.py, shorts.py and build.py, then push and purge, the same as any other update.
 
-## Future site updates (Pearce's list, 10/22; not started, wait for go)
+## Built from the 10/22 list
+- 10/22: Notes icon (Projections, Research, Optimizer), Research tab (data/season.json from data/proj_history/box/, scripts/season.py), Optimizer tab (site/lp.js solver; DraftKings main-slate players only, by dkid; always builds the full main slate, before or after tip; DK IDs and salaries are kept through the night after DraftKings drops the slate).
+- 10/23: Games tab (scripts/timelines.py writes data/games/DATE.json and index.json from ESPN play-by-play; date and team dropdowns; stretch bars show minutes and DK; garbage time = a lead of 20+ in the fourth quarter or overtime).
+
+## Future site updates (Pearce's list, 10/22; still open: simulations, ownership)
 1. Research tab: season stats table with fantasy points per minute, plus tonight's salary, matchup, O/U, spread and team icons.
 2. Notes icon on each player: click it and the player's notes open under his row in the table.
 3. Game timelines like NBA WOWY / popcornmachine: show when each player was on the court against the score, for context (e.g. who got minutes and fantasy points in a blowout).
