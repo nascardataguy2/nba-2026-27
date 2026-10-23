@@ -27,6 +27,7 @@ jobs:
         run: |
           python3 scripts/results.py || echo "results failed"
           python3 scripts/season.py || echo "season failed"
+          python3 scripts/timelines.py || echo "timelines failed"
       - name: Projections and database
         run: |
           python3 scripts/projections.py
@@ -49,4 +50,4 @@ jobs:
             git diff --cached --quiet && exit 0
             git commit -q -m "Projections update"
           done
-          for f in data/projections.json data/db.json data/shorts.txt data/shorts.json data/stars.json data/season.json ai.txt; do curl -s "https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/$f" > /dev/null || true; done
+          for f in data/projections.json data/db.json data/shorts.txt data/shorts.json data/stars.json data/season.json data/games/index.json ai.txt; do curl -s "https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/$f" > /dev/null || true; done

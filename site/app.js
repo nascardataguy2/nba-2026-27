@@ -23,6 +23,10 @@
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/site/lp.js',
     'https://nascardataguy2.github.io/nba-2026-27/site/lp.js'
   ];
+  var GBASE = [
+    'https://nascardataguy2.github.io/nba-2026-27/data/games/',
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/games/'
+  ];
   var NAMES = {ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHA:'Charlotte Hornets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',IND:'Indiana Pacers',LAC:'LA Clippers',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',MIN:'Minnesota Timberwolves',NOP:'New Orleans Pelicans',NYK:'New York Knicks',OKC:'Oklahoma City Thunder',ORL:'Orlando Magic',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',POR:'Portland Trail Blazers',SAC:'Sacramento Kings',SAS:'San Antonio Spurs',TOR:'Toronto Raptors',UTA:'Utah Jazz',WAS:'Washington Wizards'};
   // Team primary colors (Color 1 from teamcolorcodes.com NBA team color codes).
   var TEAMC = {ATL:'#E03A3E',BOS:'#007A33',BKN:'#000000',CHA:'#1D1160',CHI:'#CE1141',CLE:'#860038',DAL:'#00538C',DEN:'#0E2240',DET:'#C8102E',GSW:'#1D428A',HOU:'#CE1141',IND:'#002D62',LAC:'#C8102E',LAL:'#552583',MEM:'#5D76A9',MIA:'#98002E',MIL:'#00471B',MIN:'#0C2340',NOP:'#0C2340',NYK:'#006BB6',OKC:'#007AC1',ORL:'#0077C0',PHI:'#006BB6',PHX:'#1D1160',POR:'#E03A3E',SAC:'#5A2D81',SAS:'#C4CED4',TOR:'#CE1141',UTA:'#002B5C',WAS:'#002B5C'};
@@ -688,6 +692,109 @@
     else if (x){ var k2 = nkey(x.getAttribute('data-excl')); OEXCL[k2] = !OEXCL[k2]; if (OEXCL[k2]) OLOCK[k2] = false; optPool(); }
   });
 
+  // Games tab: who was on the court, when, and what he did with it.
+  var GIDX = null, GDAY = {}, GSEL = null;
+  function gUrls(f){ return GBASE.map(function(b){ return b + f; }); }
+  function gClock(t, end){
+    var q, left;
+    if (t > 0 && ((t <= 2880 && t % 720 === 0) || (t > 2880 && (t - 2880) % 300 === 0))) t = t - 0.001;
+    if (t < 2880){ q = Math.min(4, Math.floor(t / 720) + 1); left = q * 720 - t; }
+    else { var o = Math.min(Math.floor((t - 2880) / 300) + 1, Math.max(1, Math.round((end - 2880) / 300))); q = 4 + o; left = 2880 + o * 300 - t; }
+    left = Math.max(0, Math.round(left));
+    var m = Math.floor(left / 60), sx = left % 60;
+    if (sx === 60){ m++; sx = 0; }
+    return (q <= 4 ? 'Q' + q : (q === 5 ? 'OT' : 'OT' + (q - 4))) + ' ' + m + ':' + (sx < 10 ? '0' : '') + sx;
+  }
+  function gDate(d){ var x = new Date(d + 'T12:00:00'); return isNaN(x) ? d : x.toLocaleDateString('en-US', {weekday:'short', month:'numeric', day:'numeric'}); }
+  function gMatches(){
+    var dv = $('r4p-gdate').value, tv = $('r4p-gteam').value, out = [];
+    (GIDX || []).forEach(function(d){
+      if (dv && d.date !== dv) return;
+      d.games.forEach(function(g){ if (!tv || g.away === tv || g.home === tv) out.push({date:d.date, g:g}); });
+    });
+    return out;
+  }
+  function gList(){
+    if (!GIDX) return;
+    var list = gMatches();
+    if (!list.length){ $('r4p-glist').innerHTML = '<p class="sub">No games match.</p>'; $('r4p-gview').innerHTML = ''; return; }
+    if (!GSEL || !list.some(function(x){ return x.g.id === GSEL.id; })) GSEL = {id:list[0].g.id, date:list[0].date};
+    $('r4p-glist').innerHTML = list.length > 1 ? list.map(function(x){
+      var g = x.g;
+      return '<button class="gt-chip' + (g.id === GSEL.id ? ' on' : '') + '" type="button" data-gid="' + esc(g.id) + '" data-gd="' + esc(x.date) + '">' +
+        ($('r4p-gdate').value ? '' : '<span class="gt-cd">' + esc(gDate(x.date)) + '</span>') + esc(g.away) + ' ' + g.final[0] + ' at ' + esc(g.home) + ' ' + g.final[1] + '</button>';
+    }).join('') : '';
+    gLoad(GSEL.date);
+  }
+  function gLoad(day){
+    if (GDAY[day]){ gRender(); return; }
+    $('r4p-gview').innerHTML = '<p class="sub">Loading the game\u2026</p>';
+    fetchFirst(gUrls(day + '.json'), false).then(function(d){ GDAY[day] = d; gRender(); })
+      .catch(function(){ $('r4p-gview').innerHTML = '<p class="sub">This game could not load right now. Please try again in a minute.</p>'; });
+  }
+  function gRender(){
+    var G = (GDAY[GSEL.date] || []).filter(function(g){ return g.id === GSEL.id; })[0];
+    if (!G){ $('r4p-gview').innerHTML = ''; return; }
+    var END = G.end, per = Math.max(4, G.periods || 4);
+    function pct(t){ return (t / END * 100).toFixed(3) + '%'; }
+    var lines = [];
+    for (var q = 1; q < per; q++){ lines.push(q <= 3 ? q * 720 : 2880 + (q - 4) * 300); }
+    var labels = [];
+    for (var q2 = 1; q2 <= per; q2++){ var a0 = q2 <= 4 ? (q2 - 1) * 720 : 2880 + (q2 - 5) * 300, a1 = q2 <= 4 ? q2 * 720 : a0 + 300; labels.push('<span style="left:' + pct(a0) + ';width:' + ((a1 - a0) / END * 100).toFixed(3) + '%">' + (q2 <= 4 ? 'Q' + q2 : (q2 === 5 ? 'OT' : 'OT' + (q2 - 4))) + '</span>'); }
+    var grid = lines.map(function(t){ return '<i style="left:' + pct(t) + '"></i>'; }).join('');
+    var W = 1000, H = 70, mx = Math.max(10, Math.max.apply(null, G.margin.map(function(x){ return Math.abs(x[1]); })));
+    var pts = [], prev = 0;
+    G.margin.forEach(function(x){ var X = (x[0] / END * W).toFixed(1); pts.push('L' + X + ',' + (H / 2 - prev / mx * (H / 2 - 4)).toFixed(1)); pts.push('L' + X + ',' + (H / 2 - x[1] / mx * (H / 2 - 4)).toFixed(1)); prev = x[1]; });
+    var path = 'M0,' + H / 2 + ' ' + pts.join(' ') + ' L' + W + ',' + (H / 2 - prev / mx * (H / 2 - 4)).toFixed(1) + ' L' + W + ',' + H / 2 + ' Z';
+    var hc = TEAMC[G.home] || '#5d6370', ac = TEAMC[G.away] || '#5d6370';
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="gu"><rect x="0" y="0" width="' + W + '" height="' + H / 2 + '"/></clipPath><clipPath id="gd"><rect x="0" y="' + H / 2 + '" width="' + W + '" height="' + H / 2 + '"/></clipPath></defs>' +
+      '<path d="' + path + '" fill="' + hc + '" opacity=".6" clip-path="url(#gu)"/><path d="' + path + '" fill="' + ac + '" opacity=".6" clip-path="url(#gd)"/>' +
+      '<line x1="0" x2="' + W + '" y1="' + H / 2 + '" y2="' + H / 2 + '" stroke="#9aa1ad" stroke-width="1"/>' +
+      lines.map(function(t){ var X = (t / END * W).toFixed(1); return '<line x1="' + X + '" x2="' + X + '" y1="0" y2="' + H + '" stroke="#d6dae1"/>'; }).join('') + '</svg>';
+    var gb = (G.garbage || []).map(function(x){ return '<div class="gt-gb" style="left:' + pct(x[0]) + ';width:' + ((x[1] - x[0]) / END * 100).toFixed(3) + '%"></div>'; }).join('');
+    function teamBox(ab){
+      var c = TEAMC[ab] || '#5d6370', fg = LIGHT[ab] ? '#15171c' : '#ffffff';
+      var ps = G.players.filter(function(p){ return p.team === ab; }).sort(function(a, b){ return (b.start - a.start) || (b.min - a.min); });
+      var rows = ps.map(function(p){
+        var segs = p.stints.map(function(s){
+          var mn = ((s[1] - s[0]) / 60).toFixed(1), dk = s[2].toFixed(1);
+          return '<div class="gt-seg" style="left:' + pct(s[0]) + ';width:' + ((s[1] - s[0]) / END * 100).toFixed(3) + '%;background:' + c + ';color:' + fg + '" data-a="' + mn + ' min \u00b7 ' + dk + ' DK" data-b="' + mn + ' \u00b7 ' + dk + '" title="' + esc(gClock(s[0], END) + ' to ' + gClock(s[1], END) + ': ' + mn + ' min, ' + dk + ' DK') + '"></div>';
+        }).join('');
+        return '<div class="gt-row"><div class="gt-n">' + esc(p.player) + (p.start ? '<small>START</small>' : '') + '</div><div class="gt-v">' + n1(p.min) + '</div><div class="gt-v dk">' + n1(p.dk) + '</div><div class="gt-track">' + grid + gb + segs + '</div></div>';
+      }).join('');
+      var ph = ps.map(function(p){
+        return '<div class="gp"><div class="gp-top"><span>' + esc(p.player) + (p.start ? ' <small>START</small>' : '') + '</span><span>' + n1(p.min) + ' min \u00b7 <b>' + n1(p.dk) + ' DK</b></span></div><div class="gp-s">' + p.stints.map(function(s){
+          var c0 = gClock(s[0], END), c1 = gClock(s[1], END), same = c0.split(' ')[0] === c1.split(' ')[0];
+          var gm = (G.garbage || []).some(function(x){ return s[1] > x[0] && s[0] < x[1]; });
+          return '<span' + (gm ? ' class="g"' : '') + '>' + esc(c0 + ' to ' + (same ? c1.split(' ')[1] : c1)) + ' \u00b7 ' + ((s[1] - s[0]) / 60).toFixed(1) + ' min \u00b7 ' + s[2].toFixed(1) + ' DK</span>';
+        }).join('') + '</div></div>';
+      }).join('');
+      return '<div class="gt"><h3>' + tm(ab, true) + ' ' + esc(NAMES[ab] || ab) + '</h3>' +
+        '<div class="gt-row hd"><div>Player</div><div class="r">Min</div><div class="r">DK</div><div class="gt-q">' + labels.join('') + '</div></div>' + rows +
+        '<div class="gt-ph">' + ph + '</div></div>';
+    }
+    $('r4p-gview').innerHTML = '<p class="gt-cap">' + esc(G.caption) + '</p>' +
+      '<div class="gt gt-mwrap"><h3>Score margin \u00b7 ' + esc(gDate(GSEL.date)) + ' \u00b7 ' + tm(G.away, true) + ' ' + G.final[0] + ' at ' + tm(G.home, true) + ' ' + G.final[1] + '</h3><div class="gt-m">' + svg + '</div>' +
+      '<p class="gt-legend">Above the line: ' + esc(NAMES[G.home] || G.home) + ' ahead. Below the line: ' + esc(NAMES[G.away] || G.away) + ' ahead.</p></div>' +
+      teamBox(G.away) + teamBox(G.home);
+    gFit();
+  }
+  function gFit(){
+    var sg = document.querySelectorAll('#r4p-gview .gt-seg');
+    for (var k = 0; k < sg.length; k++){
+      var e = sg[k];
+      e.textContent = e.getAttribute('data-a');
+      if (e.scrollWidth > e.clientWidth){ e.textContent = e.getAttribute('data-b'); if (e.scrollWidth > e.clientWidth) e.textContent = ''; }
+    }
+  }
+  window.addEventListener('resize', function(){ if (!$('v-games').hidden) gFit(); });
+  document.addEventListener('click', function(e){
+    var c = e.target.closest ? e.target.closest('.gt-chip') : null;
+    if (!c) return;
+    GSEL = {id:c.getAttribute('data-gid'), date:c.getAttribute('data-gd')};
+    gList();
+  });
+
   var SS = null;
   function starsRender(){
     if (!SS) return;
@@ -713,6 +820,7 @@
     for (var i = 0; i < tabs.length; i++) tabs[i].classList.toggle('on', tabs[i].getAttribute('data-v') === v);
     var views = document.querySelectorAll('#r4p-app .view');
     for (var j = 0; j < views.length; j++) views[j].hidden = views[j].id !== 'v-' + v;
+    if (v === 'games') gFit();
     try { window.scrollTo(0, 0); } catch (e) {}
   }
 
@@ -720,6 +828,21 @@
   for (var k = 0; k < tabs.length; k++) tabs[k].addEventListener('click', function(){ show(this.getAttribute('data-v')); });
 
 
+  fetchFirst(gUrls('index.json'), false).then(function(d){
+    GIDX = d;
+    var teamsSeen = {};
+    d.forEach(function(x){
+      var o = document.createElement('option'); o.value = x.date; o.textContent = gDate(x.date) + ' (' + x.games.length + ')'; $('r4p-gdate').appendChild(o);
+      x.games.forEach(function(g){ teamsSeen[g.away] = 1; teamsSeen[g.home] = 1; });
+    });
+    Object.keys(teamsSeen).sort().forEach(function(c){ var o = document.createElement('option'); o.value = c; o.textContent = c + ' \u2013 ' + (NAMES[c] || c); $('r4p-gteam').appendChild(o); });
+    if (d.length) $('r4p-gdate').value = d[0].date;
+    var n = d.reduce(function(a, x){ return a + x.games.length; }, 0);
+    $('r4p-gsub').textContent = 'We watch ball. We know ball. Who was on the court, when, and what he did with it \u00b7 ' + n + ' games so far, newest first.';
+    gList();
+  }).catch(function(){ $('r4p-gsub').textContent = 'Game timelines are not posted yet. Please check back soon.'; });
+  $('r4p-gdate').addEventListener('change', function(){ GSEL = null; gList(); });
+  $('r4p-gteam').addEventListener('change', function(){ GSEL = null; gList(); });
   $('r4p-obuild').addEventListener('click', optBuild);
   $('r4p-oss').addEventListener('click', optStars);
   $('r4p-oclear').addEventListener('click', function(){ OLOCK = {}; OEXCL = {}; optPool(); oMsg('Cleared all locks and players taken out.'); });
