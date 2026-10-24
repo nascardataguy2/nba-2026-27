@@ -369,3 +369,12 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   body{background-size:auto 100vh;background-repeat:no-repeat}
   body::before{background-size:auto 100vh;background-repeat:no-repeat}
 }
+/* Header: motto and tonight's slate on the right */
+.top .wrap.hd{display:flex;align-items:flex-end;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
+.hd-r{text-align:right;padding-bottom:2px}
+.motto{font:800 clamp(20px,2.6vw,32px)/1.05 var(--head);text-transform:uppercase;letter-spacing:.03em;color:var(--navy)}
+.motto span{white-space:nowrap}
+.motto .mo2{color:var(--accent)}
+.hd-sl{margin-top:6px;font-size:14px;color:var(--muted)}
+.hd-sl b{color:var(--ink);font-weight:700}
+@media (max-width:760px){.hd-r{text-align:left;width:100%}.motto{font-size:20px}}

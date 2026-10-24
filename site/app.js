@@ -232,6 +232,22 @@
     if (PJ && PJ.date && PJ.date > up) up = PJ.date;
     $('r4p-sub').textContent = 'Updated ' + up + ' \u00b7 ' + db.players.length + ' players \u00b7 ' + db.teams.length + ' teams';
   }
+  // Tonight's slate in the header: game count, main-slate lock and late games.
+  function hdSlate(){
+    var el = $('r4p-hslate');
+    if (!el || !PJ) return;
+    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
+    var gs = PJ.date === today ? (PJ.games || []) : [];
+    if (!gs.length){ el.hidden = true; return; }
+    var main = gs.filter(function(g){ return g.slate === 'main'; });
+    var late = gs.filter(function(g){ return g.slate === 'late'; });
+    var lock = main.map(function(g){ return g.time; }).filter(Boolean).sort()[0];
+    var bits = ['<b>Tonight:</b> ' + gs.length + (gs.length === 1 ? ' game' : ' games')];
+    if (main.length) bits.push('Main slate (' + main.length + ') locks <b>' + esc(gameTime(lock)) + '</b>');
+    if (late.length) bits.push('Late slate (' + late.length + ') locks <b>' + esc(gameTime(late.map(function(g){ return g.time; }).filter(Boolean).sort()[0])) + '</b>');
+    el.innerHTML = bits.join(' \u00b7 ');
+    el.hidden = false;
+  }
   var PLATE = false;
   function pSplit(){ return !!(PJ && PJ.players.some(function(p){ return p.slate && p.slate !== 'main'; })); }
   // Games on no DraftKings classic slate (an afternoon game, say) have no prices, so they stay hidden.
@@ -262,6 +278,7 @@
   function projInit(d){
     PJ = d;
     setSub();
+    hdSlate();
     var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
     SLATE = {}; OUTN = {};
     if (d.date === today){
