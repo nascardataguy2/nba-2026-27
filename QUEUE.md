@@ -98,3 +98,4 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 4. Optimizer.
 5. Simulations.
 6. Ownership projections (where to get them is the open question: DFF shows "--"; slate shows like Stokastic say ownership numbers out loud).
+- Transcript rules (from 10/24, per Pearce): in-season, Grok pulls only same-day Fantasy Alarm NBA DFS slate preview and the newest Locked On daily recap. No waiver, streamer, panic-list or other season-long shows; nothing older than the current day; the old 44-video queue was dropped.
