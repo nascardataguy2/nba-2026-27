@@ -307,8 +307,15 @@ def main():
     amap = {norm(a["player"]): a for a in adjust}
     recent = load_json(os.path.join(HIST, "results.json"), {})
     ours = {norm(p["player"]): p for p in load_json(os.path.join(D, "players.json"), [])}
+    # The NBA's official injury report (scripts/official_injuries.py) beats every other source.
+    offr = load_json(os.path.join(D, "injury_report.json"), {})
+    official = {norm(p["player"]): p for p in offr.get("players", [])} if offr.get("date") == day else {}
 
     def status_note(name):
+        o = official.get(norm(name))
+        if o and o["status"] in ("Out", "Doubtful"):
+            why = o.get("reason", "")
+            return ("Ruled out tonight" if o["status"] == "Out" else "Doubtful tonight") + (" (" + why.lower() + ")." if why and why != "Not With Team" else ".")
         p = ours.get(norm(name))
         st = (p or {}).get("status", "")
         if st.lower().startswith("out"):
@@ -350,6 +357,14 @@ def main():
         r["slate"] = dk[3] if dk else ""
         r["start"] = bool(d and d["start"])
         r["inj"] = d["inj"] if d else ""
+        o = official.get(k)
+        if o:
+            if o["status"] in ("Out", "Doubtful"):
+                r["inj"] = "O"
+            elif o["status"] == "Questionable":
+                r["inj"] = "Q"
+            elif r["inj"] in ("O", "Q") and o["status"] in ("Probable", "Available"):
+                r["inj"] = ""
         r["spread"] = d["spread"] if d else None
         r["ou"] = d["ou"] if d else None
         eg = games.get(s["team"]) or {}
@@ -392,6 +407,11 @@ def main():
         if d["inj"] == "O" and d["team"] in slate and norm(d["player"]) not in seen:
             out_list.append({"player": d["player"], "team": d["team"], "note": status_note(d["player"])})
             seen.add(norm(d["player"]))
+    # Official-report outs who were not in the baseline at all (skip G League assignments).
+    for k2, o in official.items():
+        if o["status"] in ("Out", "Doubtful") and o["team"] in slate and k2 not in seen and not o.get("reason", "").startswith("G League"):
+            out_list.append({"player": o["player"], "team": o["team"], "note": status_note(o["player"])})
+            seen.add(k2)
 
     for r in rows:
         r["m1"] = r["min"]

@@ -48,7 +48,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install
-        run: pip install pillow highspy numpy
+        run: |
+          pip install pillow highspy numpy
+          command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils > /dev/null) || echo "poppler install failed"
       - name: Results from last night
         run: |
           python3 scripts/results.py || echo "results failed"
@@ -57,6 +59,7 @@ jobs:
           python3 scripts/wowy.py || echo "wowy failed"
       - name: Projections and database
         run: |
+          python3 scripts/official_injuries.py || echo "official injuries failed"
           python3 scripts/projections.py
           python3 scripts/stars.py
           python3 scripts/ownership.py || echo "ownership failed"
@@ -73,9 +76,9 @@ jobs:
             if git pull --rebase -q && git push -q; then break; fi
             git rebase --abort 2>/dev/null || true
             git reset -q --hard origin/main
-            python3 scripts/projections.py && python3 scripts/stars.py && (python3 scripts/ownership.py || true) && python3 scripts/shorts.py && python3 scripts/build.py
+            (python3 scripts/official_injuries.py || true) && python3 scripts/projections.py && python3 scripts/stars.py && (python3 scripts/ownership.py || true) && python3 scripts/shorts.py && python3 scripts/build.py
             git add data ai.txt
             git diff --cached --quiet && exit 0
             git commit -q -m "Projections update"
           done
-          for f in data/projections.json data/db.json data/shorts.txt data/shorts.json data/stars.json data/season.json data/gamelogs.json data/games/index.json data/wowy/index.json ai.txt; do curl -s "https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/$f" > /dev/null || true; done
+          for f in data/projections.json data/injury_report.json data/db.json data/shorts.txt data/shorts.json data/stars.json data/season.json data/gamelogs.json data/games/index.json data/wowy/index.json ai.txt; do curl -s "https://purge.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/$f" > /dev/null || true; done
