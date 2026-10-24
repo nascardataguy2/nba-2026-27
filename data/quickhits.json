@@ -726,14 +726,35 @@
    "benefits": "Julian Champagnie and Devin Vassell and Dylan Harper and Stephon Castle",
    "text": "With Tobias Harris also out, Champagnie, Vassell, Harper and Castle all get more to do.",
    "source": "LO-1023"
+  },
+  {
+   "out": "Cooper Flagg",
+   "team": "DAL",
+   "benefits": "Naji Marshall and PJ Washington and Zaccharie Risacher",
+   "text": "Marshall gets more ball-handling, Washington plays more center, and Risacher picks up wing minutes.",
+   "source": "LO-1024"
+  },
+  {
+   "out": "Yves Missi",
+   "team": "NOP",
+   "benefits": "Derik Queen",
+   "text": "Queen played 29 minutes after Missi got hurt on Friday.",
+   "source": "LO-1024"
+  },
+  {
+   "out": "Oso Ighodaro",
+   "team": "PHX",
+   "benefits": "Khaman Maluach",
+   "text": "Maluach picks up more of the center minutes.",
+   "source": "LO-1023b"
   }
  ],
  "rest_watch": [
   {
    "player": "Fred VanVleet",
    "team": "HOU",
-   "text": "Houston plays Friday and Saturday, and he will probably sit one of the two.",
-   "source": "LO-1022b"
+   "text": "He played Friday, so Saturday is the night he is most likely to sit; Marcus Smart starts if he does.",
+   "source": "LO-1023b"
   },
   {
    "player": "Steven Adams",
@@ -744,8 +765,8 @@
   {
    "player": "Kyrie Irving",
    "team": "DAL",
-   "text": "Dallas plays Friday and Saturday, and he may sit the second night.",
-   "source": "LO-1022b"
+   "text": "Saturday is the second night of a back-to-back, and he is still on reduced minutes.",
+   "source": "LO-1023b"
   },
   {
    "player": "Al Horford",
@@ -756,14 +777,14 @@
   {
    "player": "Joel Embiid",
    "team": "PHI",
-   "text": "He will probably sit one game of the weekend back-to-back.",
-   "source": "LO-1023"
+   "text": "Philadelphia plays Saturday and Sunday, and he is likely to sit one of the two.",
+   "source": "LO-1023b"
   },
   {
    "player": "Stephen Curry",
    "team": "GSW",
-   "text": "Golden State is on a back-to-back, and Curry, Draymond Green and Al Horford are unlikely to all play both nights.",
-   "source": "LO-1022b"
+   "text": "Saturday is the second night of a back-to-back, and Curry, Draymond Green and Al Horford may not all play.",
+   "source": "LO-1023b"
   },
   {
    "player": "Aaron Gordon",
@@ -854,6 +875,12 @@
    "team": "WAS",
    "text": "He is still working back from foot surgery, so watch him on the second night of back-to-backs.",
    "source": "LO-1022b"
+  },
+  {
+   "player": "Mikel Brown Jr.",
+   "team": "BKN",
+   "text": "He is on a minutes limit, sits back-to-backs and is expected to play Saturday and sit Sunday.",
+   "source": "LO-1023b"
   }
  ],
  "out_to_start": [
@@ -1028,49 +1055,54 @@
  ],
  "storylines": {
   "date": "2026-10-24",
-  "auto": true,
   "items": [
    {
     "player": "Cooper Flagg",
     "team": "DAL",
-    "text": "He is ruled out tonight.",
-    "source": "AUTO-1024"
+    "text": "He is out after hurting his shoulder Friday, which opens more work for Naji Marshall, PJ Washington and Zaccharie Risacher against San Antonio.",
+    "source": "LO-1024"
    },
    {
-    "player": "LeBron James",
+    "player": "Kyrie Irving",
+    "team": "DAL",
+    "text": "He scored 24 points in 25 minutes Friday, and tonight is the second night of a back-to-back.",
+    "source": "LO-1024"
+   },
+   {
+    "player": "Joel Embiid",
     "team": "PHI",
-    "text": "He is questionable tonight vs MIL.",
-    "source": "AUTO-1024"
+    "text": "Philadelphia plays Milwaukee tonight and Detroit on Sunday, and Embiid is likely to sit one of the two, so check his status before lock.",
+    "source": "LO-1023b"
    },
    {
-    "player": "Nic Claxton",
-    "team": "CHI",
-    "text": "He is ruled out tonight. Hamstring. Smith takes the starting center minutes.",
-    "source": "AUTO-1024"
+    "player": "Yves Missi",
+    "team": "NOP",
+    "text": "He hurt his left knee Friday and is day-to-day, and Derik Queen played 29 minutes in his place.",
+    "source": "LO-1024"
    },
    {
-    "player": "AJ Dybantsa",
-    "team": "WAS",
-    "text": "He is questionable tonight at CHI.",
-    "source": "AUTO-1024"
+    "player": "Fred VanVleet",
+    "team": "HOU",
+    "text": "He played 32 minutes Friday, and Marcus Smart starts if he sits the second night in Atlanta.",
+    "source": "LO-1023b"
    },
    {
-    "player": "Tobias Harris",
-    "team": "SAS",
-    "text": "He is ruled out tonight (calf strain).",
-    "source": "AUTO-1024"
+    "player": "Stephen Curry",
+    "team": "GSW",
+    "text": "Golden State is on a back-to-back in Phoenix, and Brandin Podziemski is back in the starting lineup.",
+    "source": "LO-1024"
    },
    {
-    "player": "Santi Aldama",
-    "team": "DAL",
-    "text": "He is questionable tonight vs SAS.",
-    "source": "AUTO-1024"
+    "player": "Oso Ighodaro",
+    "team": "PHX",
+    "text": "He is doubtful with an oblique injury, which leaves more center minutes for Khaman Maluach.",
+    "source": "LO-1023b"
    },
    {
-    "player": "Dereck Lively II",
-    "team": "DAL",
-    "text": "He is ruled out tonight. Broken foot.",
-    "source": "AUTO-1024"
+    "player": "Mikel Brown Jr.",
+    "team": "BKN",
+    "text": "He is expected to play tonight in Cleveland and sit Sunday as part of his minutes plan.",
+    "source": "LO-1023b"
    }
   ]
  }
