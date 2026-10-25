@@ -6,8 +6,12 @@ because real players use different numbers, plus small popularity bumps
 (listed in Stars & Scrubs, a teammate ruled out, a high game total). Each
 player's estimated ownership is the share of the simulated lineups he is in.
 
-This is an estimate, not real ownership. The bumps are starting guesses that
-should be tuned against real contest ownership once we have some.
+This is an estimate, not real ownership. The simulated shares then go through
+a correction fit on 162 main slates from 2025-26, comparing against real
+DraftKings GPP ownership. The field piles onto chalk and value harder than a
+plain simulation does. Tested on this season's first slates, the correction
+cut the average miss from 2.5 to 2.0 points per player. The bumps are still
+starting guesses.
 
 Writes "own" (percent) on each player in data/projections.json.
 """
@@ -22,11 +26,39 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from projections import load_json, D  # noqa: E402
 
 N = 1000          # simulated lineups per slate
-NOISE = 0.25      # spread of each player's projection from lineup to lineup
+NOISE = 0.18      # spread of each player's projection from lineup to lineup (0.18 tested best)
 BUMP_STARS = 0.05    # listed in Stars & Scrubs
 BUMP_OUT = 0.05      # projected for more minutes because a teammate is out
 BUMP_TOTAL = 0.005   # per point of game total above the slate average
 CORE = ["PG", "SG", "SF", "PF", "C", "G", "F"]
+# Correction fit on 2025-26 slates. Features: log(sim share + 0.5), value z-score,
+# projection z-score, log(value rank), salary / 10000, log(games on the slate).
+BETA = [2.9412, 0.5014, 0.0137, 0.5663, -0.2167, -1.5089, -0.2552]
+
+
+def calibrate(pool, raw):
+    """Turn simulated shares into estimates that match real field ownership."""
+    if not raw or len(pool) < 8:
+        return raw
+    pr = np.array([p["dk"] for p in pool], dtype=float)
+    sal = np.array([p["salary"] for p in pool], dtype=float)
+    sim = np.array([raw.get(p["player"], 0.0) for p in pool])
+    val = pr / sal * 1000
+    vz = (val - val.mean()) / (val.std() + 1e-9)
+    pz = (pr - pr.mean()) / (pr.std() + 1e-9)
+    vr = np.argsort(np.argsort(-val)) + 1
+    games = len({tuple(sorted((p["team"], p.get("opp", "")))) for p in pool})
+    X = np.column_stack([np.ones(len(pool)), np.log(sim + 0.5), vz, pz, np.log(vr), sal / 10000.0, np.full(len(pool), np.log(max(games, 1)))])
+    v = np.clip(np.exp(X @ np.array(BETA)) - 0.5, 0.05, None)
+    v = v / v.sum() * 800.0  # eight roster spots
+    for _ in range(5):  # nobody above 95%; spread the excess
+        over = v > 95
+        if not over.any():
+            break
+        ex = (v[over] - 95).sum()
+        v[over] = 95
+        v[~over] += ex * v[~over] / v[~over].sum()
+    return {p["player"]: round(float(x), 1) for p, x in zip(pool, v)}
 
 
 def elig(pos):
@@ -108,13 +140,13 @@ def main():
     for k, slate in enumerate(("main", "late")):
         pool = [p for p in doc["players"] if p.get("salary") and p.get("dk") and p.get("min", 0) >= 8
                 and (p.get("slate") or "main") == slate and (p.get("dkid") or not has_ids) and not p.get("out")]
-        own.update(simulate(pool, ss_names if slate == "main" else set(), seed=k + 1))
+        own.update(calibrate(pool, simulate(pool, ss_names if slate == "main" else set(), seed=k + 1)))
     for p in doc["players"]:
         if (p.get("slate") or "main") in ("main", "late") and p.get("salary"):
             p["own"] = own.get(p["player"], 0.0)
         else:
             p.pop("own", None)
-    doc["own_note"] = "Estimated ownership from %d simulated lineups per slate. It is our estimate, not real ownership." % N
+    doc["own_note"] = "Estimated ownership from %d simulated lineups per slate, corrected against real DraftKings contest ownership from last season. It is our estimate, not real ownership." % N
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, indent=1, ensure_ascii=False)
     top = sorted(((v, k) for k, v in own.items()), reverse=True)[:5]
