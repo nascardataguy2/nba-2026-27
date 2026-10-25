@@ -365,6 +365,9 @@ def main():
                 r["inj"] = "Q"
             elif r["inj"] in ("O", "Q") and o["status"] in ("Probable", "Available"):
                 r["inj"] = ""
+        elif offr.get("date") == day and s["team"] in slate and s["team"] not in offr.get("pending", []) and r["inj"] in ("O", "Q"):
+            # The team has filed its official report and he is not on it, so he is available.
+            r["inj"] = ""
         r["spread"] = d["spread"] if d else None
         r["ou"] = d["ou"] if d else None
         eg = games.get(s["team"]) or {}

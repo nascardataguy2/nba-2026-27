@@ -60,6 +60,7 @@ jobs:
       - name: Projections and database
         run: |
           python3 scripts/official_injuries.py || echo "official injuries failed"
+          python3 scripts/depth.py || echo "depth failed"
           python3 scripts/projections.py
           python3 scripts/stars.py
           python3 scripts/ownership.py || echo "ownership failed"
@@ -76,7 +77,7 @@ jobs:
             if git pull --rebase -q && git push -q; then break; fi
             git rebase --abort 2>/dev/null || true
             git reset -q --hard origin/main
-            (python3 scripts/official_injuries.py || true) && python3 scripts/projections.py && python3 scripts/stars.py && (python3 scripts/ownership.py || true) && python3 scripts/shorts.py && python3 scripts/build.py
+            (python3 scripts/official_injuries.py || true) && (python3 scripts/depth.py || true) && python3 scripts/projections.py && python3 scripts/stars.py && (python3 scripts/ownership.py || true) && python3 scripts/shorts.py && python3 scripts/build.py
             git add data ai.txt
             git diff --cached --quiet && exit 0
             git commit -q -m "Projections update"
