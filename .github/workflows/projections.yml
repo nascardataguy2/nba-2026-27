@@ -61,6 +61,7 @@ jobs:
         run: |
           python3 scripts/official_injuries.py || echo "official injuries failed"
           python3 scripts/depth.py || echo "depth failed"
+          python3 scripts/moves.py || echo "moves failed"
           python3 scripts/projections.py
           python3 scripts/stars.py
           python3 scripts/ownership.py || echo "ownership failed"
