@@ -173,7 +173,8 @@
         (x.bench ? '<span class="lbl">Bench order</span><div class="row">' + esc(x.bench) + '</div>' : '') +
         (x.backup_c ? '<span class="lbl">Backup center</span><div class="row">' + esc(x.backup_c) + '</div>' : '') +
         (x.coach ? '<span class="lbl">Coach</span><div class="row">' + esc(x.coach) + '</div>' : '') +
-        '<span class="lbl">Notes</span><div class="row">' + esc(x.notes) + '</div>' + srcLink(x.source) + '</div>';
+        (x.depth_through ? '<div class="row sub">Depth chart from games through ' + esc(new Date(x.depth_through + 'T12:00:00').toLocaleDateString('en-US', {month:'short', day:'numeric'})) + '.</div>' : '') +
+        '<span class="lbl">Preseason notes</span><div class="row">' + esc(x.notes) + '</div>' + srcLink(x.source) + '</div>';
     }).join('') || '<p class="sub">No team preview has been processed for this team yet.</p>';
   }
 
@@ -244,7 +245,8 @@
     var lock = main.map(function(g){ return g.time; }).filter(Boolean).sort()[0];
     var bits = ['<b>Tonight:</b> ' + gs.length + (gs.length === 1 ? ' game' : ' games')];
     if (main.length) bits.push('Main slate (' + main.length + ') locks <b>' + esc(gameTime(lock)) + '</b>');
-    if (late.length) bits.push('Late slate (' + late.length + ') locks <b>' + esc(gameTime(late.map(function(g){ return g.time; }).filter(Boolean).sort()[0])) + '</b>');
+    var llock = late.map(function(g){ return g.time; }).filter(Boolean).sort()[0];
+    if (late.length) bits.push((lock && llock && llock < lock ? 'Early' : 'Late') + ' slate (' + late.length + ') locks <b>' + esc(gameTime(llock)) + '</b>');
     el.innerHTML = bits.join(' \u00b7 ');
     el.hidden = false;
   }

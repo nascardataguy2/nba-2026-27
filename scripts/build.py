@@ -32,14 +32,41 @@ flags = {}
 for key, flag in (("out_to_start", "out"), ("role_down", "down"), ("rest_watch", "rest"), ("role_up", "up")):
     for it in quickhits.get(key, []):
         flags.setdefault(norm(it["player"]), (flag, it["text"]))
+# Season so far (box scores): DK points and minutes a game, and rank by DK points a game.
+_res = {}
+try:
+    with open(os.path.join(D, "proj_history", "results.json"), encoding="utf-8") as f:
+        for _games in json.load(f).values():
+            if _games:
+                _res[norm(_games[0]["player"])] = _games
+except FileNotFoundError:
+    pass
+season = {}
+for _k, _g in _res.items():
+    _g = [x for x in _g if x.get("min", 0) > 0]
+    if _g:
+        season[_k] = {"gp": len(_g), "dk": sum(x["dk"] for x in _g) / len(_g), "min": sum(x["min"] for x in _g) / len(_g),
+                      "team": sorted(_g, key=lambda x: x["date"])[-1]["team"]}
+_order = sorted((k for k, v in season.items() if v["gp"] >= 2), key=lambda k: -season[k]["dk"])
+for _i, _k in enumerate(_order):
+    season[_k]["rank"] = _i + 1
 rankings = []
 for r in base["rows"]:
     k = norm(r["player"])
     flag, text = flags.get(k, ("", ""))
     if not text and k in pnote:
         text = pnote[k]["note"]
-    rankings.append({"rank": r["rank"], "player": r["player"], "pos": r["pos"], "team": r["team"],
-                     "flag": flag, "change": {"up": "Role up", "down": "Role down", "out": "Out to start", "rest": "Rest watch"}.get(flag, ""), "note": text, "source": "NBA-0929"})
+    sz = season.get(k)
+    team = r["team"]
+    if sz:
+        team = sz["team"]
+        line = "So far: %.1f DK points in %d minutes a game over %d %s%s." % (
+            sz["dk"], round(sz["min"]), sz["gp"], "game" if sz["gp"] == 1 else "games",
+            " (No. %d in DK points a game)" % sz["rank"] if sz.get("rank") else "")
+        text = (text.rstrip() + " " + line).strip() if text else line
+    rankings.append({"rank": r["rank"], "player": r["player"], "pos": r["pos"], "team": team,
+                     "flag": flag, "change": {"up": "Role up", "down": "Role down", "out": "Out to start", "rest": "Rest watch"}.get(flag, ""), "note": text, "source": "NBA-0929",
+                     "gp": sz["gp"] if sz else 0, "dk_avg": round(sz["dk"], 1) if sz else None, "season_rank": sz.get("rank") if sz else None})
 
 # Picks tab: last season's badges, with current team and role from our database.
 import base64
