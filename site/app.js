@@ -187,7 +187,13 @@
       (p.minutes ? '<span class="lbl">Minutes</span><div class="row">' + esc(p.minutes) + '</div>' : '') +
       (p.usage ? '<span class="lbl">Usage</span><div class="row">' + esc(p.usage) + '</div>' : '') +
       (p.status ? '<span class="lbl">Health</span><div class="row">' + esc(p.status) + '</div>' : '') +
-      (p.note ? '<span class="lbl">Note</span><div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + '</div>';
+      (p.note ? '<span class="lbl">Note</span><div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + updLine(p) + '</div>';
+  }
+  function updDate(p){ var s = srcById[p.source]; return (s && s.date) || ''; }
+  function updLine(p){
+    var d = updDate(p); if (!d) return '';
+    var dd = new Date(d + 'T12:00:00');
+    return isNaN(dd) ? '' : '<div class="upd">Updated ' + dd.toLocaleDateString('en-US', {month:'short', day:'numeric'}) + '</div>';
   }
 
   function players(){
@@ -197,7 +203,11 @@
       if (!keep(p.team)) return false;
       if (!q) return true;
       return (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '') + ' ' + p.role + ' ' + p.minutes + ' ' + p.usage + ' ' + p.status + ' ' + p.note).toLowerCase().indexOf(q) > -1;
-    }).sort(function(a,b){ return (a.team + a.player) < (b.team + b.player) ? -1 : 1; });
+    }).sort(function(a,b){
+      var da = updDate(a), dbb = updDate(b);
+      if (da !== dbb) return da > dbb ? -1 : 1;
+      return (a.team + a.player) < (b.team + b.player) ? -1 : 1;
+    });
     $('r4p-count').textContent = list.length + ' of ' + db.players.length + ' players';
     $('r4p-playercards').innerHTML = list.map(playerCard).join('');
   }
