@@ -66,6 +66,7 @@ jobs:
           python3 scripts/stars.py
           python3 scripts/ownership.py || echo "ownership failed"
           python3 scripts/shorts.py
+          python3 scripts/playerlog.py || true
           python3 scripts/build.py
       - name: Commit
         run: |
@@ -78,7 +79,7 @@ jobs:
             if git pull --rebase -q && git push -q; then break; fi
             git rebase --abort 2>/dev/null || true
             git reset -q --hard origin/main
-            (python3 scripts/official_injuries.py || true) && (python3 scripts/depth.py || true) && python3 scripts/projections.py && python3 scripts/stars.py && (python3 scripts/ownership.py || true) && python3 scripts/shorts.py && python3 scripts/build.py
+            (python3 scripts/official_injuries.py || true) && (python3 scripts/depth.py || true) && python3 scripts/projections.py && python3 scripts/stars.py && (python3 scripts/ownership.py || true) && python3 scripts/shorts.py && (python3 scripts/playerlog.py || true) && python3 scripts/build.py
             git add data ai.txt
             git diff --cached --quiet && exit 0
             git commit -q -m "Projections update"

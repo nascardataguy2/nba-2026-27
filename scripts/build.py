@@ -105,7 +105,8 @@ from datetime import datetime as _dt
 from zoneinfo import ZoneInfo as _Z
 updated = _dt.now(_Z("America/New_York")).date().isoformat()
 
-db = {"updated": updated, "players": players, "teams": teams, "injuries": injuries,
+plog = load("player_log") if os.path.exists(os.path.join(D, "player_log.json")) else []
+db = {"updated": updated, "log": [[e["player"], e["date"], e["kind"], e["text"]] for e in plog], "players": players, "teams": teams, "injuries": injuries,
       "moves": moves, "sources": sources, "quickhits": quickhits, "rankings": rankings, "picks": picks, "badge_icons": badge_icons, "picks_rule": badge_src["rule"] + " (" + badge_src["season"] + " season)"}
 with open(os.path.join(D, "db.json"), "w", encoding="utf-8") as f:
     json.dump(db, f, indent=1, ensure_ascii=False)

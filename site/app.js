@@ -187,9 +187,10 @@
       (p.minutes ? '<span class="lbl">Minutes</span><div class="row">' + esc(p.minutes) + '</div>' : '') +
       (p.usage ? '<span class="lbl">Usage</span><div class="row">' + esc(p.usage) + '</div>' : '') +
       (p.status ? '<span class="lbl">Health</span><div class="row">' + esc(p.status) + '</div>' : '') +
+      logRows(p.player, 3) +
       (p.note ? '<span class="lbl">Note</span><div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + updLine(p) + '</div>';
   }
-  function updDate(p){ var s = srcById[p.source]; return (s && s.date) || ''; }
+  function updDate(p){ var s = srcById[p.source], d = (s && s.date) || '', L = logFor(p.player); return L.length && L[0].d > d ? L[0].d : d; }
   function updLine(p){
     var d = updDate(p); if (!d) return '';
     var dd = new Date(d + 'T12:00:00');
@@ -214,7 +215,7 @@
 
   function injuries(){
     $('r4p-injcards').innerHTML = db.injuries.slice().filter(function(p){ return keep(p.team); }).sort(function(a,b){ return a.team < b.team ? -1 : 1; }).map(function(p){
-      return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + srcLink(p.source) + '</div>';
+      return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + logRows(p.player, 2) + srcLink(p.source) + '</div>';
     }).join('') || '<p class="sub">No injury notes for tonight\u2019s teams.</p>';
   }
 
@@ -313,6 +314,25 @@
   // Player notes: everything we know about a player, opened by the notes icon.
   var CTX = {}, NOPEN = {};
   var NICON = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3.5 1.8h6.2l2.8 2.8v9.6h-9zM5.6 7h4.8M5.6 9.6h4.8M5.6 12.2h3"/></svg>';
+  var LOG = {};
+  function logInit(){
+    LOG = {};
+    (db.log || []).forEach(function(e){ var k = nkey(e[0]); (LOG[k] = LOG[k] || []).push({d: e[1], k: e[2], t: e[3]}); });
+    Object.keys(LOG).forEach(function(k){ LOG[k].sort(function(a, b){ return a.d < b.d ? 1 : a.d > b.d ? -1 : 0; }); });
+  }
+  function samey(a, b){
+    var w = function(x){ return String(x).toLowerCase().match(/[a-z0-9]+/g) || []; }, A = w(a), B = w(b), set = {}, hit = 0;
+    A.forEach(function(x){ set[x] = 1; }); B.forEach(function(x){ if (set[x]) hit++; });
+    return B.length && hit / B.length > 0.55;
+  }
+  function logFor(name){ return LOG[nkey(name)] || []; }
+  function logDay(d){ var dd = new Date(d + 'T12:00:00'); return isNaN(dd) ? d : dd.toLocaleDateString('en-US', {month:'short', day:'numeric'}); }
+  function logRows(name, n){
+    var L = logFor(name); if (!L.length) return '';
+    var row = function(e){ return '<div class="row lg"><b>' + esc(logDay(e.d)) + ':</b> ' + esc(e.t) + '</div>'; };
+    return '<span class="lbl">Latest news</span>' + L.slice(0, n).map(row).join('') +
+      (L.length > n ? '<details class="nt-more"><summary>More news (' + (L.length - n) + ')</summary>' + L.slice(n).map(row).join('') + '</details>' : '');
+  }
   function noteBits(name){
     var k = nkey(name), out = [], seen = {};
     function same(x){ return nkey(x) === k; }
@@ -324,6 +344,7 @@
       });
     }
     if (PJ) PJ.players.forEach(function(p){ if (same(p.player)) add('Projection', p.note); });
+    logFor(name).forEach(function(e){ add(logDay(e.d), e.t); });
     if (db){
       db.players.forEach(function(p){
         if (!same(p.player)) return;
@@ -361,8 +382,8 @@
     });
     var left = (lead ? '<p class="nt-lead">' + esc(lead[1]) + '</p>' : '') +
       (info.length ? '<p class="nt-info">' + info.map(function(b){ return '<span class="nt-tag"><b>' + esc(b[0]) + '</b> ' + esc(b[1]) + '</span>'; }).join('') + '</p>' : '') +
-      rest.slice(0, 2).map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') +
-      (rest.length > 2 ? '<details class="nt-more"><summary>More notes (' + (rest.length - 2) + ')</summary>' + rest.slice(2).map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') + '</details>' : '');
+      rest.slice(0, 3).map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') +
+      (rest.length > 3 ? '<details class="nt-more"><summary>More notes (' + (rest.length - 3) + ')</summary>' + rest.slice(3).map(function(b){ return '<p class="nt"><b>' + esc(b[0]) + ':</b> ' + esc(b[1]) + '</p>'; }).join('') + '</details>' : '');
     var g = name ? glRows(name) : [];
     var right = '';
     if (g.length){
@@ -1005,7 +1026,8 @@
         '<div class="ssc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 O/U ' + fmt(p, 'ou') + ' \u00b7 Spread ' + fmt(p, 'spread') + '</div>' +
         '<div class="ssc-nums">' + box('min', 'Min') + box('dk', 'DK') + box('value', 'Val') + box('usg', 'Usg') + '</div>' +
         '<div class="ssc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['to','to']].map(function(x){ return '<b>' + n1(p[x[0]]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
-        (p.why ? '<p class="ssc-why"><b>Why:</b> ' + esc(p.why) + '</p>' : '') + '</div>';
+        (p.why ? '<p class="ssc-why"><b>Why:</b> ' + esc(p.why) + '</p>' : '') +
+        logFor(p.player).filter(function(e){ return !p.why || !samey(p.why, e.t); }).slice(0, 2).map(function(e){ return '<p class="ssc-why"><b>' + esc(logDay(e.d)) + ':</b> ' + esc(e.t) + '</p>'; }).join('') + '</div>';
     }
     $('r4p-starsbox').innerHTML =
       '<div class="panel ss-panel stars"><h2>Stars</h2><p class="hint">The high-salary locks for tonight, $8,000 and up.</p><div class="ssc-grid">' + (SS.stars || []).map(card).join('') + '</div></div>' +
@@ -1082,6 +1104,8 @@
   fetchFirst(SOURCES, false).then(function(d){
     db = d;
     d.sources.forEach(function(s){ srcById[s.id] = s; });
+    logInit();
+    try { starsRender(); } catch (e) {}
     setSub();
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam')); teamOptions($('r4p-steam'));
     badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); proj(); research(); optPool();
