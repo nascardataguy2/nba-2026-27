@@ -102,3 +102,9 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Official injury report (from 10/24): scripts/official_injuries.py reads the newest PDF from official.nba.com (posted every 15 min) into data/injury_report.json on every projections run. Out/Doubtful = out, Questionable = q flag. Needs pdftotext (poppler-utils, installed in the workflow).
 - Own% tuning (10/25): ownership.py uses NOISE 0.18 plus a correction (BETA) fit on 162 2025-26 main slates vs real DraftKings GPP ownership from LineStar (GetSalariesV5 API, free). This season's 4 slates: average miss 2.46 -> 2.03 points, top-5 hit 70% -> 80%. Backtest scripts live in the session scratchpad only.
 - Daily sources (from 10/25): depth.py rebuilds Teams depth charts from box scores + tonight's outs every run; moves.py adds in-season transactions from NBA.com's player-movement feed; Rankings notes carry season-so-far DK numbers (build.py); the 8:55 AM cloud run also sweeps FantasyData player news and recent team articles (source id WEB-MMDD).
+
+## Player news log (data/player_log.json) — added Oct 27
+- Every transcript batch: read every line and add EVERY useful player fact to the log (not only injuries), following transcripts/LOG_BRIEF.md. Merge with `python3 scripts/playerlog.py --add FILE.json`.
+- Every number is checked against data/proj_history/box. No show or host names in the text.
+- playerlog.py drops outdated entries by itself (expired one-night statuses, injuries once he plays again, old roles once a newer role is in, game lines older than 7 days, duplicates).
+- The site shows the log on every player view: Players cards, projection/ranking/optimizer notes, Stars & Scrubs and Injuries.
