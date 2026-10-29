@@ -23,7 +23,7 @@ import numpy as np
 import highspy
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from projections import load_json, D  # noqa: E402
+from projections import load_json, D, norm  # noqa: E402
 
 N = 1000          # simulated lineups per slate
 NOISE = 0.18      # spread of each player's projection from lineup to lineup (0.18 tested best)
@@ -40,7 +40,7 @@ def calibrate(pool, raw):
     """Turn simulated shares into estimates that match real field ownership."""
     if not raw or len(pool) < 8:
         return raw
-    pr = np.array([p["dk"] for p in pool], dtype=float)
+    pr = np.array([p.get("_fdk", p["dk"]) for p in pool], dtype=float)
     sal = np.array([p["salary"] for p in pool], dtype=float)
     sim = np.array([raw.get(p["player"], 0.0) for p in pool])
     val = pr / sal * 1000
@@ -111,7 +111,7 @@ def simulate(pool, ss_names, seed):
             b += BUMP_OUT
         if p.get("ou") and avg:
             b += BUMP_TOTAL * (p["ou"] - avg)
-        base.append(p["dk"] * b)
+        base.append(p.get("_fdk", p["dk"]) * b)
     base = np.array(base)
     rng = np.random.default_rng(seed)
     cnt = np.zeros(n)
@@ -128,11 +128,39 @@ def simulate(pool, ss_names, seed):
     return {pool[i]["player"]: round(100.0 * cnt[i] / done, 1) for i in range(n)}
 
 
+def field_view(doc):
+    """The field does not use our projections. It sees roughly the minutes a player has
+    actually played, so a projection far above his recent minutes (our mistake, or a bump
+    the field has not bought) should not turn into huge ownership. For the simulation only,
+    blend our minutes halfway toward his last three games and scale his DK points to match."""
+    import glob
+    day = doc.get("date", "")
+    games = {}
+    for f in glob.glob(os.path.join(D, "proj_history", "box", "*.json")):
+        for x in load_json(f, []):
+            if x.get("date", "") < day:
+                games.setdefault((x["team"], norm(x["player"])), []).append(x)
+    for p in doc["players"]:
+        p["_fdk"] = p.get("dk") or 0
+        k = (p["team"], norm(p["player"]))
+        if k not in games:  # spelling differs (Benedict/Bennedict): same team, same last name
+            c = [kk for kk in games if kk[0] == p["team"] and kk[1].split(" ")[-1] == k[1].split(" ")[-1]]
+            k = c[0] if len(c) == 1 else k
+        g = sorted(games.get(k, []), key=lambda x: x["date"])[-3:]
+        m = p.get("min") or 0
+        if len(g) >= 2 and m > 0:
+            fm = 0.5 * m + 0.5 * sum(x["min"] for x in g) / len(g)
+            if str(p.get("note", "")).startswith("More minutes with"):
+                fm = max(fm, m - 4)  # injury news the field does see
+            p["_fdk"] = p["dk"] * fm / m
+
+
 def main():
     path = os.path.join(D, "projections.json")
     doc = load_json(path, {})
     if not doc.get("players"):
         return
+    field_view(doc)
     ss = load_json(os.path.join(D, "stars.json"), {})
     ss_names = {p["player"] for p in ss.get("stars", []) + ss.get("scrubs", [])} if ss.get("date") == doc.get("date") else set()
     has_ids = any(p.get("dkid") for p in doc["players"])
@@ -146,6 +174,8 @@ def main():
             p["own"] = own.get(p["player"], 0.0)
         else:
             p.pop("own", None)
+    for p in doc["players"]:
+        p.pop("_fdk", None)
     doc["own_note"] = "Estimated ownership from %d simulated lineups per slate, corrected against real DraftKings contest ownership from last season. It is our estimate, not real ownership." % N
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, indent=1, ensure_ascii=False)
