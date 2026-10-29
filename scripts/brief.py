@@ -98,6 +98,37 @@ def main():
     changed = list(reversed(st["log"]))[:10]
     new_today = {c["player"] for c in st["log"]}
 
+    # --- injury report history per team (data/inj_hist.json): a status is new when it differs
+    #     from that team's previous report (a player missing from it counts as new) ---
+    hpath = os.path.join(D, "inj_hist.json")
+    hist = load_json(hpath, {})
+    if official.get("date") == day:
+        snap = {}
+        for o in offp:
+            snap.setdefault(o["team"], {})[o["player"]] = o["status"]
+        for t in snap:
+            if t not in official.get("pending", []):
+                hist.setdefault(t, {})[day] = snap[t]
+        for t in hist:  # keep three weeks
+            for d0 in [d0 for d0 in hist[t] if d0 < str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=21))]:
+                del hist[t][d0]
+        json.dump(hist, open(hpath, "w"), indent=1, ensure_ascii=False)
+
+    def prev_status(team, name):
+        ds = [d0 for d0 in hist.get(team, {}) if d0 < day]
+        if not ds:
+            return None, False  # no earlier report saved for this team
+        return hist[team][max(ds)].get(name), True
+
+    intraday = {}
+    for c in st["log"]:
+        intraday[c["player"]] = c
+    newd = {}
+    for o in offp:
+        ps, known = prev_status(o["team"], o["player"])
+        newd[o["player"]] = (known and ps != o["status"]) or o["player"] in intraday
+    new_today = {norm(k) for k in new_today} | {norm(k) for k, v in newd.items() if v and k in cur}
+
     # --- outs that matter tonight (played 12+ minutes a game recently) ---
     outs = []
     for o in doc.get("out", []):
@@ -127,10 +158,55 @@ def main():
         gain.sort(key=lambda x: -x[0])
         if not gain:
             continue
-        sits.append({"team": t, "outs": [{"player": o["player"], "min": o["min"], "note": o["note"], "new": o["player"] in new_today} for o in tout],
-                     "new": any(o["player"] in new_today for o in tout), "lost": r1(sum(o["min"] for o in tout)),
+        sits.append({"team": t, "outs": [{"player": o["player"], "min": o["min"], "note": o["note"], "new": norm(o["player"]) in new_today} for o in tout],
+                     "new": any(norm(o["player"]) in new_today for o in tout), "lost": r1(sum(o["min"] for o in tout)),
                      "benefits": [{"player": p["player"], "plus": r1(d), "recent": r1(ref), "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary")} for d, ref, p in gain[:3]]})
     sits.sort(key=lambda s: (not s["new"], -s["lost"]))
+
+    # --- injury table: tonight's official report, new first, with who benefits ---
+    gtime = {}
+    for g in games:
+        for t in (g["away"], g["home"]):
+            gtime[t] = (g.get("time") or "", g["away"] + " at " + g["home"])
+    sits_by = {s["team"]: s for s in sits}
+    order = {"Out": 0, "Doubtful": 1, "Questionable": 2, "Probable": 3, "Available": 4}
+    pbyk = {(p["team"], norm(p["player"])): p for p in players}
+    inj = []
+    for o in offp:
+        if o["team"] not in teams or o.get("reason", "").startswith("G League"):
+            continue
+        name, t, status = o["player"], o["team"], o["status"]
+        ps, known = prev_status(t, name)
+        isnew = newd.get(name, False)
+        if status in ("Available", "Probable") and not isnew:
+            continue
+        m = recent_min(t, name)
+        ben, est = [], False
+        if status in ("Out", "Doubtful") and t in sits_by and m >= 15:
+            ben = [{"player": b["player"], "min": b["min"], "recent": b["recent"]} for b in sits_by[t]["benefits"][:2]]
+        elif status == "Questionable" and m >= 10:
+            # Estimate: hand his recent minutes to teammates who share a position, by their minutes.
+            me = pbyk.get((t, norm(name))) or {}
+            mypos = set(str(me.get("pos", "")).split("/")) - {""}
+            mates = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")
+                     and (not mypos or mypos & set(str(p.get("pos", "")).split("/")))]
+            tot = sum(p["min"] for p in mates)
+            if tot > 0:
+                adds = sorted(((min(m * p["min"] / tot, 36 - p["min"]), p) for p in mates), key=lambda x: -x[0])[:2]
+                ben = [{"player": p["player"], "plus": r1(a), "min": r1(p["min"] + a)} for a, p in adds if a >= 1.5]
+                est = True
+        c = intraday.get(name)
+        inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
+                    "status": status, "reason": o.get("reason", "") if o.get("reason") not in ("-", None) else "",
+                    "new": isnew, "was": (c["was"] if c else (ps or "")) if isnew else "", "known": known,
+                    "changed_at": c["time"] if c else "", "min": r1(m), "benefits": ben, "estimate": est})
+    inj.sort(key=lambda r: (not r["new"], r["time"], order.get(r["status"], 9), -r["min"]))
+
+    def keep_row(r):  # players who matter: real minutes, or a new status for someone in the rotation
+        return r["min"] >= 10 or (r["new"] and r["min"] > 0 and r["status"] in ("Out", "Doubtful", "Questionable"))
+    injuries = {"report": official.get("report", ""), "url": official.get("url", ""), "pending": pending,
+                "rows": [r for r in inj if keep_row(r)],
+                "minor": [{"player": r["player"], "team": r["team"], "status": r["status"]} for r in inj if not keep_row(r)]}
 
     # --- game cards ---
     maxou = max((g.get("ou") or 0) for g in games) if games else 0
@@ -221,7 +297,7 @@ def main():
     out = {"date": day, "updated": doc.get("updated"), "games": len(games), "pending": pending,
            "first_report": st.get("first"), "cards": cards, "changed": changed, "sits": sits[:6],
            "hot": hot[:5], "minutes": mins[:5], "chalk": [fp(p) for p in chalk], "leverage": [fp(p) for p in lev],
-           "last": last}
+           "last": last, "injuries": injuries}
     json.dump(out, open(os.path.join(D, "brief.json"), "w"), indent=1, ensure_ascii=False)
     print("brief:", day, len(cards), "games,", len(sits), "if-he-sits,", len(changed), "changes,", len(hot), "hot/cold,", len(mins), "minutes")
 

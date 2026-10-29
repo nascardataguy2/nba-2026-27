@@ -97,7 +97,7 @@
       // Storylines: tonight's players first, then the rest
       var st = q.storylines || {}, items = (st.items || []).slice().sort(function(a, b){ return (SLATE[b.team] ? 1 : 0) - (SLATE[a.team] ? 1 : 0); });
       var storyH = sec('story', 'Storylines', 'Tonight\u2019s players first, then the rest of the league.', items.slice(0, 5).map(function(it){
-        return '<div class="hit">' + nm(it.player, it.team) + tn(it.team, it.player) + '<p>' + esc(it.text) + '</p></div>';
+        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p></div>';
       }).join(''));
       // Trending
       var tr = (B.hot || []).map(function(h){
@@ -111,7 +111,9 @@
       var trendH = sec('up', 'Trending', 'Tonight\u2019s players whose recent games stand out, from the box scores.', tr);
       var fieldH = sec('field', 'Where the Field Is Going', 'Our Own% estimate.', (fl ? '<h3 class="bf-h">Chalk</h3>' + fl : '') + (lv ? '<h3 class="bf-h">Low owned, strong projection</h3>' + lv : ''));
       // Two columns on wide screens, so If He Sits and Storylines sit side by side with no gaps.
-      html += '<div class="bg-cols"><div class="bg-col">' + sitsH + fieldH + '</div><div class="bg-col">' + storyH + trendH + '</div></div>';
+      var IJ = B.injuries || {};
+      var injL = '<button class="inj-link" type="button" data-go="injuries">Injury report' + (IJ.report ? ' \u00b7 ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ((IJ.rows || []).filter(function(r){ return r.new; }).length ? ' \u00b7 <b>' + IJ.rows.filter(function(r){ return r.new; }).length + ' new</b>' : '') + ' \u2192</button>';
+      html += '<div class="bg-cols"><div class="bg-col">' + injL + sitsH + fieldH + '</div><div class="bg-col">' + storyH + trendH + '</div></div>';
     } else {
       var st2 = q.storylines || {};
       html += sec('story', 'Storylines', 'The biggest news around the league.', (st2.items || []).slice(0, 8).map(function(it){
@@ -212,9 +214,20 @@
     });
   }
 
+  // Tonight's slate first: teams by lock time, then the higher game total; players by projected DK points.
+  function slateRank(team){
+    if (!SLATE[team] || !PJ) return 'z';
+    var g = (PJ.games || []).filter(function(x){ return x.away === team || x.home === team; })[0];
+    return g ? 'a' + (g.time || '') + String(1000 - (g.ou || 0)) : 'z';
+  }
+  function projDK(p){
+    if (!SLATE[p.team] || !PJ) return 0;
+    var k = nkey(p.player), r = (PJ.players || []).filter(function(x){ return nkey(x.player) === k; })[0];
+    return r && r.dk ? r.dk : 0.001;
+  }
   function teams(){
     var t = $('r4p-team').value;
-    var list = db.teams.slice().sort(function(a,b){ return a.team < b.team ? -1 : 1; }).filter(function(x){ return (!t || x.team === t) && keep(x.team); });
+    var list = db.teams.slice().sort(function(a,b){ var ra = slateRank(a.team), rb = slateRank(b.team); if (ra !== rb) return ra < rb ? -1 : 1; return a.team < b.team ? -1 : 1; }).filter(function(x){ return (!t || x.team === t) && keep(x.team); });
     $('r4p-teamcards').innerHTML = list.map(function(x){
       return '<div class="card"><h3>' + esc(NAMES[x.team] || x.team) + tm(x.team) + tn(x.team) + '</h3>' +
         '<span class="lbl">Projected starters</span><div class="row">' + esc(x.starters) + '</div>' +
@@ -253,6 +266,9 @@
       if (!q) return true;
       return (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '') + ' ' + p.role + ' ' + p.minutes + ' ' + p.usage + ' ' + p.status + ' ' + p.note).toLowerCase().indexOf(q) > -1;
     }).sort(function(a,b){
+      var pa = projDK(a), pb = projDK(b);
+      if ((pa > 0) !== (pb > 0)) return pa > 0 ? -1 : 1;
+      if (pa > 0 && pb > 0 && pa !== pb) return pb - pa;
       var da = updDate(a), dbb = updDate(b);
       if (da !== dbb) return da > dbb ? -1 : 1;
       return (a.team + a.player) < (b.team + b.player) ? -1 : 1;
@@ -262,9 +278,37 @@
   }
 
   function injuries(){
-    $('r4p-injcards').innerHTML = db.injuries.slice().filter(function(p){ return keep(p.team); }).sort(function(a,b){ return a.team < b.team ? -1 : 1; }).map(function(p){
-      return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + logRows(p.player, 2) + srcLink(p.source) + '</div>';
-    }).join('') || '<p class="sub">No injury notes for tonight\u2019s teams.</p>';
+    var B = db.brief || {}, IJ = B.injuries || {}, el = $('r4p-injcards');
+    var live = B.date && PJ && B.date === PJ.date && Object.keys(SLATE).length > 0 && IJ.rows;
+    if (!live){
+      el.className = 'cards';
+      var tb0 = el.parentNode.querySelector('.toolbar'); if (tb0) tb0.style.display = '';
+      el.innerHTML = db.injuries.slice().filter(function(p){ return keep(p.team); }).sort(function(a,b){ return a.team < b.team ? -1 : 1; }).map(function(p){
+        return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + logRows(p.player, 2) + srcLink(p.source) + '</div>';
+      }).join('') || '<p class="sub">No injury notes for tonight\u2019s teams.</p>';
+      return;
+    }
+    el.className = 'inj-wrap';
+    var tb = el.parentNode.querySelector('.toolbar'); if (tb) tb.style.display = 'none';
+    function cls(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; }
+    var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games. New statuses are listed first.' +
+      ((IJ.pending || []).length ? ' Not filed yet: ' + IJ.pending.map(function(t){ return tm(t); }).join(' ') + '.' : ' Every team on the slate has filed.') +
+      (IJ.url ? ' <a href="' + esc(IJ.url) + '" target="_blank" rel="noopener">Open the NBA\u2019s PDF</a>.' : '') + '</p></div>';
+    var rows = (IJ.rows || []).map(function(r){
+      var ben = (r.benefits || []).map(function(b){
+        return '<div><span class="who">' + esc(b.player) + '</span> <span class="bs-n">' + (b.recent != null ? n1(b.min) + ' min, up from ' + n1(b.recent) : '+' + n1(b.plus) + ' min') + '</span></div>';
+      }).join('');
+      if (ben && r.estimate) ben = '<div class="bs-n">If he sits (estimate):</div>' + ben;
+      var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
+      return '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
+        '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
+        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">\u2013</span>') + '</td></tr>';
+    }).join('');
+    var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr><th>Player</th><th>Status</th><th>New?</th><th>Who benefits</th></tr></thead><tbody>' +
+      (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
+    var minor = (IJ.minor || []).length ? '<details class="inj-minor"><summary>Also on the report (' + IJ.minor.length + ' players under 10 minutes a game)</summary><p>' +
+      IJ.minor.map(function(m){ return esc(m.player) + ' ' + tm(m.team) + ' ' + esc(m.status); }).join(' \u00b7 ') + '</p></details>' : '';
+    el.innerHTML = head + tbl + minor;
   }
 
   function moves(){
@@ -1091,6 +1135,7 @@
     try { window.scrollTo(0, 0); } catch (e) {}
   }
 
+  document.addEventListener('click', function(e){ var g = e.target.closest ? e.target.closest('[data-go]') : null; if (g) show(g.getAttribute('data-go')); });
   var tabs = document.querySelectorAll('#r4p-tabs .tab');
   for (var k = 0; k < tabs.length; k++) tabs[k].addEventListener('click', function(){ show(this.getAttribute('data-v')); });
 

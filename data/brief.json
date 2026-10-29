@@ -126,10 +126,10 @@
      "player": "Jordan Poole",
      "min": 16.3,
      "note": "Jordan Poole played only seven minutes on Wednesday, Oct. 28 before leaving with a left ankle injury. New Orleans has not posted his status for Thursday yet.",
-     "new": false
+     "new": true
     }
    ],
-   "new": false,
+   "new": true,
    "lost": 35.8,
    "benefits": [
     {
@@ -139,6 +139,45 @@
      "min": 26.9,
      "dk": 25.4,
      "salary": 4200
+    }
+   ]
+  },
+  {
+   "team": "POR",
+   "outs": [
+    {
+     "player": "Robert Williams",
+     "min": 18.0,
+     "note": "Doubtful tonight.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 18.0,
+   "benefits": [
+    {
+     "player": "Toumani Camara",
+     "plus": 4.4,
+     "recent": 24.7,
+     "min": 29.1,
+     "dk": 23.6,
+     "salary": 5200
+    },
+    {
+     "player": "Damian Lillard",
+     "plus": 3.6,
+     "recent": 29.3,
+     "min": 32.9,
+     "dk": 38.8,
+     "salary": 7000
+    },
+    {
+     "player": "Jrue Holiday",
+     "plus": 3.2,
+     "recent": 25.7,
+     "min": 28.9,
+     "dk": 26.1,
+     "salary": 5100
     }
    ]
   },
@@ -170,45 +209,6 @@
      "min": 16.8,
      "dk": 17.0,
      "salary": 4400
-    }
-   ]
-  },
-  {
-   "team": "POR",
-   "outs": [
-    {
-     "player": "Robert Williams",
-     "min": 18.0,
-     "note": "Doubtful tonight.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 18.0,
-   "benefits": [
-    {
-     "player": "Toumani Camara",
-     "plus": 4.4,
-     "recent": 24.7,
-     "min": 29.1,
-     "dk": 23.6,
-     "salary": 5200
-    },
-    {
-     "player": "Damian Lillard",
-     "plus": 3.6,
-     "recent": 29.3,
-     "min": 32.9,
-     "dk": 38.8,
-     "salary": 7000
-    },
-    {
-     "player": "Jrue Holiday",
-     "plus": 3.2,
-     "recent": 25.7,
-     "min": 28.9,
-     "dk": 26.1,
-     "salary": 5100
     }
    ]
   }
@@ -376,6 +376,201 @@
     "player": "Obi Toppin",
     "team": "IND",
     "text": "Obi Toppin seemed to hurt his foot at the end of the game on Oct. 28. He had 13 points and six rebounds in 22 minutes."
+   }
+  ]
+ },
+ "injuries": {
+  "report": "05:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_05_45PM.pdf",
+  "pending": [],
+  "rows": [
+   {
+    "game": "SAC at NOP",
+    "time": "2026-10-30T00:00Z",
+    "team": "NOP",
+    "player": "Jordan Poole",
+    "status": "Doubtful",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "",
+    "min": 16.3,
+    "benefits": [
+     {
+      "player": "Benedict Mathurin",
+      "min": 26.9,
+      "recent": 16.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "CLE at ATL",
+    "time": "2026-10-30T00:00Z",
+    "team": "CLE",
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "reason": "Cervical Strain",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 20.7,
+    "benefits": [
+     {
+      "player": "Sam Merrill",
+      "plus": 5.5,
+      "min": 28.8
+     },
+     {
+      "player": "Peyton Watson",
+      "plus": 5.1,
+      "min": 36.0
+     }
+    ],
+    "estimate": true
+   },
+   {
+    "game": "CLE at ATL",
+    "time": "2026-10-30T00:00Z",
+    "team": "CLE",
+    "player": "Meleek Thomas",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 19.5,
+    "benefits": [
+     {
+      "player": "Sam Merrill",
+      "plus": 7.9,
+      "min": 31.2
+     },
+     {
+      "player": "Donovan Mitchell",
+      "plus": 1.9,
+      "min": 36.0
+     }
+    ],
+    "estimate": true
+   },
+   {
+    "game": "MEM at POR",
+    "time": "2026-10-30T02:00Z",
+    "team": "POR",
+    "player": "Robert Williams III",
+    "status": "Doubtful",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 18.0,
+    "benefits": [
+     {
+      "player": "Toumani Camara",
+      "min": 29.1,
+      "recent": 24.7
+     },
+     {
+      "player": "Damian Lillard",
+      "min": 32.9,
+      "recent": 29.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "SAC at NOP",
+    "time": "2026-10-30T00:00Z",
+    "team": "SAC",
+    "player": "Keegan Murray",
+    "status": "Out",
+    "reason": "Left Ankle capsulitis",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 27.0,
+    "benefits": [
+     {
+      "player": "Nique Clifford",
+      "min": 12.6,
+      "recent": 8.0
+     },
+     {
+      "player": "Malik Monk",
+      "min": 16.8,
+      "recent": 12.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "SAC at NOP",
+    "time": "2026-10-30T00:00Z",
+    "team": "NOP",
+    "player": "Yves Missi",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 19.5,
+    "benefits": [
+     {
+      "player": "Benedict Mathurin",
+      "min": 26.9,
+      "recent": 16.3
+     }
+    ],
+    "estimate": false
+   }
+  ],
+  "minor": [
+   {
+    "player": "Hansen Yang",
+    "team": "POR",
+    "status": "Available"
+   },
+   {
+    "player": "Nae'Qwan Tomlin",
+    "team": "CLE",
+    "status": "Out"
+   },
+   {
+    "player": "Mouhamed Gueye",
+    "team": "ATL",
+    "status": "Out"
+   },
+   {
+    "player": "Henri Veesaar",
+    "team": "ATL",
+    "status": "Out"
+   },
+   {
+    "player": "Dylan Cardwell",
+    "team": "SAC",
+    "status": "Out"
+   },
+   {
+    "player": "Maxime Raynaud",
+    "team": "SAC",
+    "status": "Out"
+   },
+   {
+    "player": "Ben Simmons",
+    "team": "SAC",
+    "status": "Out"
+   },
+   {
+    "player": "Shaedon Sharpe",
+    "team": "POR",
+    "status": "Out"
    }
   ]
  }
