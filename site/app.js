@@ -68,14 +68,6 @@
     var today = PJ && PJ.date ? PJ.date : '';
     var live = B.date && B.date === today && Object.keys(SLATE).length > 0;
     if (live){
-      // Top line
-      var main = (B.cards || []).filter(function(c){ return c.slate !== 'late'; }), late = (B.cards || []).filter(function(c){ return c.slate === 'late'; });
-      var lock = main.length ? main.map(function(c){ return c.time; }).sort()[0] : '';
-      var top = '<b>' + esc(day(B.date)) + '</b> \u00b7 ' + B.games + (B.games === 1 ? ' game' : ' games') + (lock ? ' \u00b7 main slate locks <b>' + esc(gameTime(lock)) + '</b>' : '') +
-        (late.length ? ' \u00b7 late slate (' + late.length + ') locks <b>' + esc(gameTime(late.map(function(c){ return c.time; }).sort()[0])) + '</b>' : '');
-      var pend = (B.pending || []).length ? 'Injury reports still to come: ' + B.pending.map(function(t){ return tm(t); }).join(' ') + '.' : 'Every team on the slate has filed its injury report.';
-      var nochg = (B.changed || []).length ? '' : ' No status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '.';
-      html += '<div class="panel brief-top"><h2>Tonight\u2019s Slate</h2><p class="bt-line">' + top + '</p><p class="hint">' + pend + nochg + ' Updated ' + esc(B.updated || '') + '.</p></div>';
       // Game cards
       html += '<div class="bg-grid">' + (B.cards || []).map(function(c){
         var fav = c.fav ? c.fav + ' \u2212' + c.line : 'Pick\u2019em';
