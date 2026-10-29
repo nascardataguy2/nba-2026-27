@@ -2,7 +2,7 @@
  "updated": "2026-10-29",
  "brief": {
   "date": "2026-10-29",
-  "updated": "5:53 PM ET",
+  "updated": "6:40 PM ET",
   "games": 3,
   "pending": [],
   "first_report": "6:09 PM",
@@ -69,6 +69,10 @@
      "NOP": {
       "out": [
        {
+        "player": "Dejounte Murray",
+        "min": 31.7
+       },
+       {
         "player": "Yves Missi",
         "min": 19.5
        },
@@ -80,7 +84,7 @@
       "q": []
      }
     },
-    "key": "Yves Missi and Jordan Poole are out, so Benedict Mathurin should play more than usual."
+    "key": "Dejounte Murray and Yves Missi are out, so Benedict Mathurin and Derik Queen should play more than usual."
    },
    {
     "away": "MEM",
@@ -113,11 +117,34 @@
     "key": "Robert Williams is out, so Toumani Camara and Damian Lillard should play more than usual."
    }
   ],
-  "changed": [],
+  "changed": [
+   {
+    "player": "Jordan Poole",
+    "team": "NOP",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "Left Ankle Sprain",
+    "time": "6:41 PM"
+   },
+   {
+    "player": "Dejounte Murray",
+    "team": "NOP",
+    "status": "Out",
+    "was": "",
+    "why": "Personal Reasons",
+    "time": "6:41 PM"
+   }
+  ],
   "sits": [
    {
     "team": "NOP",
     "outs": [
+     {
+      "player": "Dejounte Murray",
+      "min": 31.7,
+      "note": "Ruled out tonight (personal reasons).",
+      "new": true
+     },
      {
       "player": "Yves Missi",
       "min": 19.5,
@@ -132,15 +159,31 @@
      }
     ],
     "new": true,
-    "lost": 35.8,
+    "lost": 67.5,
     "benefits": [
      {
       "player": "Benedict Mathurin",
-      "plus": 10.6,
+      "plus": 15.4,
       "recent": 16.3,
-      "min": 26.9,
-      "dk": 25.4,
+      "min": 31.7,
+      "dk": 29.9,
       "salary": 4200
+     },
+     {
+      "player": "Derik Queen",
+      "plus": 8.7,
+      "recent": 26.3,
+      "min": 35.0,
+      "dk": 41.2,
+      "salary": 6300
+     },
+     {
+      "player": "Jeremiah Fears",
+      "plus": 6.0,
+      "recent": 23.7,
+      "min": 29.7,
+      "dk": 28.2,
+      "salary": 5000
      }
     ]
    },
@@ -237,55 +280,55 @@
   ],
   "chalk": [
    {
+    "player": "Zion Williamson",
+    "team": "NOP",
+    "own": 82.8,
+    "dk": 50.0,
+    "salary": 7500
+   },
+   {
+    "player": "Benedict Mathurin",
+    "team": "NOP",
+    "own": 65.9,
+    "dk": 29.9,
+    "salary": 4200
+   },
+   {
     "player": "Darius Acuff Jr.",
     "team": "SAC",
-    "own": 66.5,
+    "own": 51.2,
     "dk": 41.6,
     "salary": 7100
    },
    {
-    "player": "Evan Mobley",
-    "team": "CLE",
-    "own": 60.9,
-    "dk": 44.6,
-    "salary": 7900
-   },
-   {
-    "player": "Zion Williamson",
-    "team": "NOP",
-    "own": 54.6,
-    "dk": 42.9,
-    "salary": 7500
-   },
-   {
-    "player": "James Harden",
-    "team": "CLE",
-    "own": 51.0,
-    "dk": 42.1,
-    "salary": 7400
+    "player": "Domantas Sabonis",
+    "team": "SAC",
+    "own": 47.0,
+    "dk": 50.8,
+    "salary": 9200
    }
   ],
   "leverage": [
    {
-    "player": "Trey Murphy",
+    "player": "Saddiq Bey",
     "team": "NOP",
-    "own": 7.7,
-    "dk": 34.9,
-    "salary": 7300
-   },
-   {
-    "player": "Jeremiah Fears",
-    "team": "NOP",
-    "own": 8.7,
-    "dk": 23.9,
-    "salary": 5000
+    "own": 9.0,
+    "dk": 26.7,
+    "salary": 5400
    },
    {
     "player": "Dyson Daniels",
     "team": "ATL",
-    "own": 7.8,
+    "own": 6.7,
     "dk": 30.3,
     "salary": 6500
+   },
+   {
+    "player": "Donovan Clingan",
+    "team": "POR",
+    "own": 3.6,
+    "dk": 28.4,
+    "salary": 6100
    }
   ],
   "last": {
@@ -382,27 +425,58 @@
    ]
   },
   "injuries": {
-   "report": "05:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_05_45PM.pdf",
+   "report": "06:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_06_30PM.pdf",
    "pending": [],
    "rows": [
     {
      "game": "SAC at NOP",
      "time": "2026-10-30T00:00Z",
      "team": "NOP",
+     "player": "Dejounte Murray",
+     "status": "Out",
+     "reason": "Personal Reasons",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "6:41 PM",
+     "min": 31.7,
+     "benefits": [
+      {
+       "player": "Benedict Mathurin",
+       "min": 31.7,
+       "recent": 16.3
+      },
+      {
+       "player": "Derik Queen",
+       "min": 35.0,
+       "recent": 26.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "SAC at NOP",
+     "time": "2026-10-30T00:00Z",
+     "team": "NOP",
      "player": "Jordan Poole",
-     "status": "Doubtful",
+     "status": "Out",
      "reason": "Left Ankle Sprain",
      "new": true,
-     "was": "Available",
+     "was": "Doubtful",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:41 PM",
      "min": 16.3,
      "benefits": [
       {
        "player": "Benedict Mathurin",
-       "min": 26.9,
+       "min": 31.7,
        "recent": 16.3
+      },
+      {
+       "player": "Derik Queen",
+       "min": 35.0,
+       "recent": 26.3
       }
      ],
      "estimate": false
@@ -526,8 +600,13 @@
      "benefits": [
       {
        "player": "Benedict Mathurin",
-       "min": 26.9,
+       "min": 31.7,
        "recent": 16.3
+      },
+      {
+       "player": "Derik Queen",
+       "min": 35.0,
+       "recent": 26.3
       }
      ],
      "estimate": false
@@ -9902,13 +9981,13 @@
   },
   {
    "team": "NOP",
-   "starters": "Zion Williamson (32), Trey Murphy III (32), Dejounte Murray (32), Jeremiah Fears (23), DeAndre Jordan (16)",
-   "bench": "Derik Queen (24), Saddiq Bey (24), Herbert Jones (18), Bennedict Mathurin (17), Karlo Matkovic (12)",
+   "starters": "Zion Williamson (32), Trey Murphy III (32), Jeremiah Fears (23), DeAndre Jordan (16), Derik Queen (24)",
+   "bench": "Saddiq Bey (24), Herbert Jones (18), Bennedict Mathurin (17), Karlo Matkovic (12)",
    "backup_c": "Derik Queen",
    "coach": "Jamahl Mosley",
    "notes": "Mathurin signed for 2 years and $16 million. The team is still built around Zion. New Orleans plays only 2 games in the final week of Yahoo's default playoffs.",
    "source": "LO-1019b",
-   "out": "Jordan Poole, Yves Missi",
+   "out": "Dejounte Murray, Jordan Poole, Yves Missi",
    "depth_through": "2026-10-28",
    "games": 4
   },
