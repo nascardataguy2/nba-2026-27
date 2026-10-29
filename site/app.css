@@ -387,7 +387,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .bg-card{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;min-width:0}
 .bg-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
 .bg-match{font:800 20px/1.1 var(--head);text-transform:uppercase;color:var(--navy)} .bg-time{color:var(--muted);font-size:14px;white-space:nowrap}
-.bg-nums{margin:4px 0 6px;font-size:15px}
+.bg-nums{margin:4px 0 0;font-size:15px}
 .bg-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
 .bg-tag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted)}
 .bg-tag.hot{background:#e8f4ee;color:var(--good);border-color:#cfe6d9} .bg-tag.warn{background:#fbe9ea;color:var(--bad);border-color:#f1cfd2}

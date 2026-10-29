@@ -79,8 +79,7 @@
           return '<div class="bg-side">' + tm(t) + ' <b>' + n1(t === c.away ? c.away_pts : c.home_pts) + '</b> pts' + (bits.length ? '<div class="bg-inj">' + bits.join(' \u00b7 ') + '</div>' : '') + '</div>';
         }
         return '<div class="bg-card"><div class="bg-head"><span class="bg-match">' + esc(c.away) + ' at ' + esc(c.home) + '</span><span class="bg-time">' + esc(gameTime(c.time)) + (c.slate === 'late' ? ' \u00b7 late' : '') + '</span></div>' +
-          '<div class="bg-nums">Total <b>' + n1(c.ou) + '</b> \u00b7 ' + esc(fav) + '</div>' + (tags ? '<div class="bg-tags">' + tags + '</div>' : '') +
-          side(c.away) + side(c.home) + (c.key ? '<p class="bg-key">' + esc(c.key) + '</p>' : '') + '</div>';
+          '<div class="bg-nums">Total <b>' + n1(c.ou) + '</b> \u00b7 ' + esc(fav) + '</div></div>';
       }).join('') + '</div>';
       // What changed (a line in the top panel when nothing has changed)
       var ch = B.changed || [];
