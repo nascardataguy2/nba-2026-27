@@ -1,5 +1,387 @@
 {
  "updated": "2026-10-29",
+ "brief": {
+  "date": "2026-10-29",
+  "updated": "5:53 PM ET",
+  "games": 3,
+  "pending": [],
+  "first_report": "6:09 PM",
+  "cards": [
+   {
+    "away": "CLE",
+    "home": "ATL",
+    "time": "2026-10-30T00:00Z",
+    "slate": "main",
+    "ou": 237.5,
+    "fav": "ATL",
+    "line": 1.5,
+    "away_pts": 118.0,
+    "home_pts": 119.5,
+    "tags": [
+     "Highest total",
+     "Close game",
+     "Both teams on a back-to-back"
+    ],
+    "teams": {
+     "CLE": {
+      "out": [],
+      "q": [
+       {
+        "player": "Meleek Thomas",
+        "min": 18.4
+       },
+       {
+        "player": "Jaylon Tyson",
+        "min": 16.2
+       }
+      ]
+     },
+     "ATL": {
+      "out": [],
+      "q": []
+     }
+    },
+    "key": "Jalen Johnson has the top projection in this game at 49.4 DK points."
+   },
+   {
+    "away": "SAC",
+    "home": "NOP",
+    "time": "2026-10-30T00:00Z",
+    "slate": "main",
+    "ou": 235.5,
+    "fav": "NOP",
+    "line": 6.5,
+    "away_pts": 114.5,
+    "home_pts": 121.0,
+    "tags": [
+     "NOP on a back-to-back"
+    ],
+    "teams": {
+     "SAC": {
+      "out": [
+       {
+        "player": "Keegan Murray",
+        "min": 27.0
+       }
+      ],
+      "q": []
+     },
+     "NOP": {
+      "out": [
+       {
+        "player": "Yves Missi",
+        "min": 19.5
+       },
+       {
+        "player": "Jordan Poole",
+        "min": 16.3
+       }
+      ],
+      "q": []
+     }
+    },
+    "key": "Yves Missi and Jordan Poole are out, so Benedict Mathurin should play more than usual."
+   },
+   {
+    "away": "MEM",
+    "home": "POR",
+    "time": "2026-10-30T02:00Z",
+    "slate": "main",
+    "ou": 232.5,
+    "fav": "POR",
+    "line": 7.5,
+    "away_pts": 112.5,
+    "home_pts": 120.0,
+    "tags": [
+     "Lowest total"
+    ],
+    "teams": {
+     "MEM": {
+      "out": [],
+      "q": []
+     },
+     "POR": {
+      "out": [
+       {
+        "player": "Robert Williams",
+        "min": 18.0
+       }
+      ],
+      "q": []
+     }
+    },
+    "key": "Robert Williams is out, so Toumani Camara and Damian Lillard should play more than usual."
+   }
+  ],
+  "changed": [],
+  "sits": [
+   {
+    "team": "NOP",
+    "outs": [
+     {
+      "player": "Yves Missi",
+      "min": 19.5,
+      "note": "Yves Missi is out, and DeAndre Jordan has been starting in his place.",
+      "new": false
+     },
+     {
+      "player": "Jordan Poole",
+      "min": 16.3,
+      "note": "Jordan Poole played only seven minutes on Wednesday, Oct. 28 before leaving with a left ankle injury. New Orleans has not posted his status for Thursday yet.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 35.8,
+    "benefits": [
+     {
+      "player": "Benedict Mathurin",
+      "plus": 10.6,
+      "recent": 16.3,
+      "min": 26.9,
+      "dk": 25.4,
+      "salary": 4200
+     }
+    ]
+   },
+   {
+    "team": "SAC",
+    "outs": [
+     {
+      "player": "Keegan Murray",
+      "min": 27.0,
+      "note": "Keegan Murray remains out with an ankle problem that has lingered since a preseason setback.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 27.0,
+    "benefits": [
+     {
+      "player": "Nique Clifford",
+      "plus": 4.6,
+      "recent": 8.0,
+      "min": 12.6,
+      "dk": 9.9,
+      "salary": 3500
+     },
+     {
+      "player": "Malik Monk",
+      "plus": 4.5,
+      "recent": 12.3,
+      "min": 16.8,
+      "dk": 17.0,
+      "salary": 4400
+     }
+    ]
+   },
+   {
+    "team": "POR",
+    "outs": [
+     {
+      "player": "Robert Williams",
+      "min": 18.0,
+      "note": "Doubtful tonight.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 18.0,
+    "benefits": [
+     {
+      "player": "Toumani Camara",
+      "plus": 4.4,
+      "recent": 24.7,
+      "min": 29.1,
+      "dk": 23.6,
+      "salary": 5200
+     },
+     {
+      "player": "Damian Lillard",
+      "plus": 3.6,
+      "recent": 29.3,
+      "min": 32.9,
+      "dk": 38.8,
+      "salary": 7000
+     },
+     {
+      "player": "Jrue Holiday",
+      "plus": 3.2,
+      "recent": 25.7,
+      "min": 28.9,
+      "dk": 26.1,
+      "salary": 5100
+     }
+    ]
+   }
+  ],
+  "hot": [
+   {
+    "player": "Dyson Daniels",
+    "team": "ATL",
+    "kind": "cold",
+    "last": 25.5,
+    "before": 41.4,
+    "n": 2
+   }
+  ],
+  "minutes": [
+   {
+    "player": "Jalen Johnson",
+    "team": "ATL",
+    "kind": "up",
+    "last": 36.7,
+    "before": 28.5,
+    "n": 2
+   }
+  ],
+  "chalk": [
+   {
+    "player": "Darius Acuff Jr.",
+    "team": "SAC",
+    "own": 66.5,
+    "dk": 41.6,
+    "salary": 7100
+   },
+   {
+    "player": "Evan Mobley",
+    "team": "CLE",
+    "own": 60.9,
+    "dk": 44.6,
+    "salary": 7900
+   },
+   {
+    "player": "Zion Williamson",
+    "team": "NOP",
+    "own": 54.6,
+    "dk": 42.9,
+    "salary": 7500
+   },
+   {
+    "player": "James Harden",
+    "team": "CLE",
+    "own": 51.0,
+    "dk": 42.1,
+    "salary": 7400
+   }
+  ],
+  "leverage": [
+   {
+    "player": "Trey Murphy",
+    "team": "NOP",
+    "own": 7.7,
+    "dk": 34.9,
+    "salary": 7300
+   },
+   {
+    "player": "Jeremiah Fears",
+    "team": "NOP",
+    "own": 8.7,
+    "dk": 23.9,
+    "salary": 5000
+   },
+   {
+    "player": "Dyson Daniels",
+    "team": "ATL",
+    "own": 7.8,
+    "dk": 30.3,
+    "salary": 6500
+   }
+  ],
+  "last": {
+   "date": "2026-10-28",
+   "top": [
+    {
+     "player": "Victor Wembanyama",
+     "team": "SAS",
+     "dk": 74.5,
+     "min": 39.0,
+     "pts": 36.0,
+     "reb": 14.0,
+     "ast": 5.0
+    },
+    {
+     "player": "Stephen Curry",
+     "team": "GSW",
+     "dk": 69.0,
+     "min": 32.0,
+     "pts": 44.0,
+     "reb": 8.0,
+     "ast": 6.0
+    },
+    {
+     "player": "Brandon Miller",
+     "team": "CHA",
+     "dk": 56.0,
+     "min": 38.0,
+     "pts": 31.0,
+     "reb": 12.0,
+     "ast": 3.0
+    },
+    {
+     "player": "Jalen Brunson",
+     "team": "NYK",
+     "dk": 55.75,
+     "min": 35.0,
+     "pts": 38.0,
+     "reb": 1.0,
+     "ast": 7.0
+    },
+    {
+     "player": "Giannis Antetokounmpo",
+     "team": "MIA",
+     "dk": 55.5,
+     "min": 31.0,
+     "pts": 24.0,
+     "reb": 18.0,
+     "ast": 3.0
+    }
+   ],
+   "surprise": [
+    {
+     "player": "Mikal Bridges",
+     "team": "NYK",
+     "min": 13.0,
+     "proj": 33.3
+    },
+    {
+     "player": "Bennett Stirtz",
+     "team": "OKC",
+     "min": 28.0,
+     "proj": 10.3
+    },
+    {
+     "player": "Jakob Poeltl",
+     "team": "TOR",
+     "min": 10.0,
+     "proj": 27.4
+    },
+    {
+     "player": "Tyus Jones",
+     "team": "DEN",
+     "min": 11.0,
+     "proj": 27.7
+    }
+   ],
+   "injuries": [
+    {
+     "player": "Jordan Poole",
+     "team": "NOP",
+     "text": "Jordan Poole played only seven minutes on Wednesday, Oct. 28 before leaving with a left ankle injury. New Orleans has not posted his status for Thursday yet."
+    },
+    {
+     "player": "Karl-Anthony Towns",
+     "team": "NYK",
+     "text": "Karl-Anthony Towns appeared to hurt his wrist on Oct. 28 but returned quickly. He had 19 points, 13 rebounds and five assists in 28 minutes, with foul trouble also cutting his minutes."
+    },
+    {
+     "player": "Obi Toppin",
+     "team": "IND",
+     "text": "Obi Toppin seemed to hurt his foot at the end of the game on Oct. 28. He had 13 points and six rebounds in 22 minutes."
+    }
+   ]
+  }
+ },
  "log": [
   [
    "Aaron Gordon",
