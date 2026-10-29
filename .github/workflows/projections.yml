@@ -65,6 +65,7 @@ jobs:
           python3 scripts/projections.py
           python3 scripts/stars.py
           python3 scripts/ownership.py || echo "ownership failed"
+          python3 scripts/checkmin.py || echo "::warning::projection check flagged players (see above)"
           python3 scripts/shorts.py
           python3 scripts/playerlog.py || true
           python3 scripts/build.py
