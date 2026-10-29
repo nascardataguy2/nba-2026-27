@@ -89,14 +89,14 @@
             '<p>' + (c.was ? 'Was ' + esc(c.was.toLowerCase()) + '. ' : 'Newly listed. ') + (c.why ? esc(c.why) + '. ' : '') + '<span class="bc-t">' + esc(c.time) + '</span></p></div>';
         }).join(''));
       // If he sits
-      html += sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
+      var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
         var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
         var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ' + money(b.salary) + '</span>'; }).join('<br>');
         return '<div class="hit">' + tm(s.team) + ' ' + outs + ' <span class="arrow">\u2192</span><p>' + ben + '</p></div>';
       }).join(''));
       // Storylines: tonight's players first, then the rest
       var st = q.storylines || {}, items = (st.items || []).slice().sort(function(a, b){ return (SLATE[b.team] ? 1 : 0) - (SLATE[a.team] ? 1 : 0); });
-      html += sec('story', 'Storylines', 'Tonight\u2019s players first, then the rest of the league.', items.slice(0, 5).map(function(it){
+      var storyH = sec('story', 'Storylines', 'Tonight\u2019s players first, then the rest of the league.', items.slice(0, 5).map(function(it){
         return '<div class="hit">' + nm(it.player, it.team) + tn(it.team, it.player) + '<p>' + esc(it.text) + '</p></div>';
       }).join(''));
       // Trending
@@ -108,8 +108,10 @@
       // Field
       var fl = (B.chalk || []).map(function(p){ return '<div class="hit">' + nm(p.player, p.team) + ' <span class="bs-n">' + d1(p.own) + '% \u00b7 ' + d1(p.dk) + ' DK \u00b7 ' + money(p.salary) + '</span></div>'; }).join('');
       var lv = (B.leverage || []).map(function(p){ return '<div class="hit">' + nm(p.player, p.team) + ' <span class="bs-n">' + d1(p.own) + '% \u00b7 ' + d1(p.dk) + ' DK \u00b7 ' + money(p.salary) + '</span></div>'; }).join('');
-      html += '<div class="grid">' + sec('up', 'Trending', 'Tonight\u2019s players whose recent games stand out, from the box scores.', tr) +
-        sec('field', 'Where the Field Is Going', 'Our Own% estimate.', (fl ? '<h3 class="bf-h">Chalk</h3>' + fl : '') + (lv ? '<h3 class="bf-h">Low owned, strong projection</h3>' + lv : '')) + '</div>';
+      var trendH = sec('up', 'Trending', 'Tonight\u2019s players whose recent games stand out, from the box scores.', tr);
+      var fieldH = sec('field', 'Where the Field Is Going', 'Our Own% estimate.', (fl ? '<h3 class="bf-h">Chalk</h3>' + fl : '') + (lv ? '<h3 class="bf-h">Low owned, strong projection</h3>' + lv : ''));
+      // Two columns on wide screens, so If He Sits and Storylines sit side by side with no gaps.
+      html += '<div class="bg-cols"><div class="bg-col">' + sitsH + fieldH + '</div><div class="bg-col">' + storyH + trendH + '</div></div>';
     } else {
       var st2 = q.storylines || {};
       html += sec('story', 'Storylines', 'The biggest news around the league.', (st2.items || []).slice(0, 8).map(function(it){
