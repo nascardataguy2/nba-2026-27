@@ -16,6 +16,9 @@ Pruning (outdated info is dumped):
   - near-duplicates keep one: very similar text, or same day with the same numbers
     (preference: injury, role, minutes, usage, news, then game line)
   - at most 10 entries per player
+  - an injury note that only says "he was out" is dropped when a detailed injury note
+    from the last 14 days exists
+Today's storylines (data/quickhits.json) are added to the log on every run.
 """
 import argparse
 import difflib
@@ -87,6 +90,26 @@ def dup(x, e):
     return False
 
 
+BLAND = re.compile(r"\b(was|were|remained|remains|is|has been|will be)( still| again)? (out|ruled out|sidelined)( again)?( on [A-Z][a-z]+\.? \d+| on [A-Z][a-z]+day| for [A-Za-z ]+| tonight| Wednesday| Thursday)?\.?$", re.I)
+
+
+def bland(e):
+    """A short injury note that only says he was out, with no injury, timeline or detail."""
+    t = e["text"]
+    return e["kind"] == "injury" and (len(t) < 70 or bool(BLAND.search(t.split(". ")[0]))) and not re.search(r"\d|week|month|surgery|strain|sprain|tear|torn|fracture|soreness|contusion|bruise|procedure|timeline|day-to-day", t, re.I)
+
+
+def storylines():
+    """Today's storylines (data/quickhits.json) also go into the log for each player."""
+    st = (load(os.path.join(D, "quickhits.json"), {}) or {}).get("storylines") or {}
+    out = []
+    for it in st.get("items", []):
+        if it.get("player") and it.get("text") and st.get("date"):
+            out.append({"player": it["player"], "team": it.get("team", ""), "date": st["date"], "kind": "news",
+                        "text": it["text"], "expires": None, "src": it.get("source", "")})
+    return out
+
+
 def prune(log, today):
     names = {norm(p["player"]): p["player"] for p in load(os.path.join(D, "players.json"), [])}
     last = played_after()
@@ -115,6 +138,10 @@ def prune(log, today):
         pref = {k: i for i, k in enumerate(("injury", "role", "minutes", "usage", "news", "stat"))}
         es.sort(key=lambda e: (e["date"], -pref[e["kind"]], len(e["text"])), reverse=True)
         keep, count = [], {}
+        cut14 = str(t - timedelta(days=14))
+        detailed = [x for x in es if x["kind"] == "injury" and not bland(x) and x["date"] >= cut14]
+        if detailed:
+            es = [x for x in es if not (x["kind"] == "injury" and bland(x))]
         for e in es:
             if any(dup(x, e) for x in keep):
                 continue
@@ -145,6 +172,9 @@ def main():
     n0 = len(log)
     for f in a.add:
         log += load(f, [])
+    for e in storylines():  # skip a storyline the log already has in some form
+        if not any(x["player"] == e["player"] and difflib.SequenceMatcher(None, x["text"].lower(), e["text"].lower()).ratio() > 0.6 for x in log):
+            log.append(e)
     log = prune(log, today)
     json.dump(log, open(PATH, "w"), indent=1, ensure_ascii=False)
     print("player log:", len(log), "entries for", len({norm(e['player']) for e in log}), "players (was", n0, ")")
