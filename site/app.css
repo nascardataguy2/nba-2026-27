@@ -380,3 +380,23 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .hd-sl{margin-top:6px;font-size:14px;color:var(--muted)}
 .hd-sl b{color:var(--ink);font-weight:700}
 @media (max-width:760px){.hd-r{text-align:left;width:100%}.motto{font-size:20px}}
+
+/* Slate brief (front page) */
+.brief-top{margin-bottom:16px;border-left:4px solid var(--navy)} .brief-top .bt-line{margin:2px 0 4px;font-size:16px}
+.bg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px;margin-bottom:16px}
+.bg-card{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;min-width:0}
+.bg-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.bg-match{font:800 20px/1.1 var(--head);text-transform:uppercase;color:var(--navy)} .bg-time{color:var(--muted);font-size:14px;white-space:nowrap}
+.bg-nums{margin:4px 0 6px;font-size:15px}
+.bg-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.bg-tag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted)}
+.bg-tag.hot{background:#e8f4ee;color:var(--good);border-color:#cfe6d9} .bg-tag.warn{background:#fbe9ea;color:var(--bad);border-color:#f1cfd2}
+.bg-side{padding:6px 0;border-top:1px solid var(--line);font-size:15px}
+.bg-inj{font-size:14px;color:var(--ink);margin-top:2px;overflow-wrap:anywhere} .bg-out{color:var(--bad);font-weight:700} .bg-q{color:#a86a00;font-weight:700}
+.bg-key{margin:6px 0 0;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:6px}
+.bc-st{font-size:12px;font-weight:700;padding:1px 7px;border-radius:999px;margin-left:4px} .bc-st.out{background:#fbe9ea;color:var(--bad)} .bc-st.q{background:#fff4dc;color:#a86a00} .bc-st.ok{background:#e8f4ee;color:var(--good)}
+.bc-t{color:var(--muted);font-size:13px} .bc-new{font-size:11px;font-weight:700;color:#fff;background:var(--accent);padding:1px 6px;border-radius:999px}
+.bs-n{color:var(--muted);font-size:14px}
+.bf-h{font:700 13px/1.2 var(--body,inherit);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:10px 0 2px}
+.panel.brief-ch,.panel.sits,.panel.last{margin-bottom:16px} .panel.brief-ch h2{color:var(--bad)} .panel.last h2{color:var(--navy)}
+.grid + .panel.last,.grid{margin-bottom:16px}

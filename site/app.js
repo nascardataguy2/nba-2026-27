@@ -59,26 +59,81 @@
   }
 
   function quick(){
-    var q = db.quickhits || {};
-    function panel(cls, title, hint, items, fn){
-      items = (items || []).filter(function(it){ return keep(it.team); });
-      if (!items.length) return '';
-      return '<div class="panel ' + cls + '"><h2>' + title + '</h2><p class="hint">' + hint + '</p>' + items.map(fn).join('') + '</div>';
+    var q = db.quickhits || {}, B = db.brief || {};
+    function nm(name, team){ return '<span class="who">' + esc(name) + '</span>' + tm(team) + bdg(name); }
+    function sec(cls, title, hint, body){ return body ? '<div class="panel ' + cls + '"><h2>' + title + '</h2>' + (hint ? '<p class="hint">' + hint + '</p>' : '') + body + '</div>' : ''; }
+    function d1(v){ return (Math.round(v * 10) / 10).toFixed(1); }
+    function day(s){ var d = new Date(s + 'T12:00:00'); return isNaN(d) ? s : d.toLocaleDateString('en-US', {weekday:'long', month:'short', day:'numeric'}); }
+    var html = '';
+    var today = PJ && PJ.date ? PJ.date : '';
+    var live = B.date && B.date === today && Object.keys(SLATE).length > 0;
+    if (live){
+      // Top line
+      var main = (B.cards || []).filter(function(c){ return c.slate !== 'late'; }), late = (B.cards || []).filter(function(c){ return c.slate === 'late'; });
+      var lock = main.length ? main.map(function(c){ return c.time; }).sort()[0] : '';
+      var top = '<b>' + esc(day(B.date)) + '</b> \u00b7 ' + B.games + (B.games === 1 ? ' game' : ' games') + (lock ? ' \u00b7 main slate locks <b>' + esc(gameTime(lock)) + '</b>' : '') +
+        (late.length ? ' \u00b7 late slate (' + late.length + ') locks <b>' + esc(gameTime(late.map(function(c){ return c.time; }).sort()[0])) + '</b>' : '');
+      var pend = (B.pending || []).length ? 'Injury reports still to come: ' + B.pending.map(function(t){ return tm(t); }).join(' ') + '.' : 'Every team on the slate has filed its injury report.';
+      var nochg = (B.changed || []).length ? '' : ' No status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '.';
+      html += '<div class="panel brief-top"><h2>Tonight\u2019s Slate</h2><p class="bt-line">' + top + '</p><p class="hint">' + pend + nochg + ' Updated ' + esc(B.updated || '') + '.</p></div>';
+      // Game cards
+      html += '<div class="bg-grid">' + (B.cards || []).map(function(c){
+        var fav = c.fav ? c.fav + ' \u2212' + c.line : 'Pick\u2019em';
+        var tags = (c.tags || []).map(function(t){ return '<span class="bg-tag' + (/Blowout/.test(t) ? ' warn' : /Highest/.test(t) ? ' hot' : '') + '">' + esc(t) + '</span>'; }).join('');
+        function side(t){
+          var x = (c.teams || {})[t] || {}, bits = [];
+          if ((x.out || []).length) bits.push('<span class="bg-out">Out:</span> ' + x.out.map(function(o){ return esc(o.player); }).join(', '));
+          if ((x.q || []).length) bits.push('<span class="bg-q">Q:</span> ' + x.q.map(function(o){ return esc(o.player); }).join(', '));
+          return '<div class="bg-side">' + tm(t) + ' <b>' + n1(t === c.away ? c.away_pts : c.home_pts) + '</b> pts' + (bits.length ? '<div class="bg-inj">' + bits.join(' \u00b7 ') + '</div>' : '') + '</div>';
+        }
+        return '<div class="bg-card"><div class="bg-head"><span class="bg-match">' + esc(c.away) + ' at ' + esc(c.home) + '</span><span class="bg-time">' + esc(gameTime(c.time)) + (c.slate === 'late' ? ' \u00b7 late' : '') + '</span></div>' +
+          '<div class="bg-nums">Total <b>' + n1(c.ou) + '</b> \u00b7 ' + esc(fav) + '</div>' + (tags ? '<div class="bg-tags">' + tags + '</div>' : '') +
+          side(c.away) + side(c.home) + (c.key ? '<p class="bg-key">' + esc(c.key) + '</p>' : '') + '</div>';
+      }).join('') + '</div>';
+      // What changed (a line in the top panel when nothing has changed)
+      var ch = B.changed || [];
+      if (ch.length) html += sec('brief-ch', 'What Changed Today', 'Status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
+        ch.map(function(c){
+          return '<div class="hit">' + nm(c.player, c.team) + ' <span class="bc-st ' + (/Out|Doubtful/.test(c.status) ? 'out' : /Questionable/.test(c.status) ? 'q' : 'ok') + '">' + esc(c.status) + '</span>' +
+            '<p>' + (c.was ? 'Was ' + esc(c.was.toLowerCase()) + '. ' : 'Newly listed. ') + (c.why ? esc(c.why) + '. ' : '') + '<span class="bc-t">' + esc(c.time) + '</span></p></div>';
+        }).join(''));
+      // If he sits
+      html += sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
+        var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
+        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ' + money(b.salary) + '</span>'; }).join('<br>');
+        return '<div class="hit">' + tm(s.team) + ' ' + outs + ' <span class="arrow">\u2192</span><p>' + ben + '</p></div>';
+      }).join(''));
+      // Storylines: tonight's players first, then the rest
+      var st = q.storylines || {}, items = (st.items || []).slice().sort(function(a, b){ return (SLATE[b.team] ? 1 : 0) - (SLATE[a.team] ? 1 : 0); });
+      html += sec('story', 'Storylines', 'Tonight\u2019s players first, then the rest of the league.', items.slice(0, 5).map(function(it){
+        return '<div class="hit">' + nm(it.player, it.team) + tn(it.team, it.player) + '<p>' + esc(it.text) + '</p></div>';
+      }).join(''));
+      // Trending
+      var tr = (B.hot || []).map(function(h){
+        return '<div class="hit">' + nm(h.player, h.team) + ' <span class="tag ' + (h.kind === 'hot' ? 'up' : 'down') + '">' + (h.kind === 'hot' ? 'Hot' : 'Cold') + '</span><p>' + d1(h.last) + ' DK points a game over his last 3, ' + (h.kind === 'hot' ? 'up' : 'down') + ' from ' + d1(h.before) + ' in his ' + h.n + ' games before that.</p></div>';
+      }).concat((B.minutes || []).map(function(h){
+        return '<div class="hit">' + nm(h.player, h.team) + ' <span class="tag ' + (h.kind === 'up' ? 'up' : 'down') + '">Minutes ' + h.kind + '</span><p>' + d1(h.last) + ' minutes a game over his last 3, ' + (h.kind === 'up' ? 'up' : 'down') + ' from ' + d1(h.before) + ' in his ' + h.n + ' games before that.</p></div>';
+      })).join('');
+      // Field
+      var fl = (B.chalk || []).map(function(p){ return '<div class="hit">' + nm(p.player, p.team) + ' <span class="bs-n">' + d1(p.own) + '% \u00b7 ' + d1(p.dk) + ' DK \u00b7 ' + money(p.salary) + '</span></div>'; }).join('');
+      var lv = (B.leverage || []).map(function(p){ return '<div class="hit">' + nm(p.player, p.team) + ' <span class="bs-n">' + d1(p.own) + '% \u00b7 ' + d1(p.dk) + ' DK \u00b7 ' + money(p.salary) + '</span></div>'; }).join('');
+      html += '<div class="grid">' + sec('up', 'Trending', 'Tonight\u2019s players whose recent games stand out, from the box scores.', tr) +
+        sec('field', 'Where the Field Is Going', 'Our Own% estimate.', (fl ? '<h3 class="bf-h">Chalk</h3>' + fl : '') + (lv ? '<h3 class="bf-h">Low owned, strong projection</h3>' + lv : '')) + '</div>';
+    } else {
+      var st2 = q.storylines || {};
+      html += sec('story', 'Storylines', 'The biggest news around the league.', (st2.items || []).slice(0, 8).map(function(it){
+        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p></div>';
+      }).join(''));
     }
-    function simple(it){ return '<div class="hit"><span class="who">' + esc(it.player) + '</span>' + tm(it.team) + tn(it.team, it.player) + bdg(it.player) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>'; }
-    var st = q.storylines || {}, sd = '';
-    if (st.date){ var dd = new Date(st.date + 'T12:00:00'); sd = isNaN(dd) ? st.date : dd.toLocaleDateString('en-US', {month:'short', day:'numeric'}); }
-    var html = (Object.keys(SLATE).length ? '<div class="toolbar">' + tbtn() + '</div>' : '') + panel('story', 'Today\u2019s Storylines', 'The biggest news for the slate' + (sd ? ' \u00b7 updated ' + esc(sd) : '') + '.', st.items, simple) +
-      '<div class="grid">' +
-      panel('sits', 'If He Sits, Who Benefits', 'Check this when late injury news drops before lock.', q.if_sits, function(it){
-        return '<div class="hit"><span class="who">' + esc(it.out) + '</span>' + tm(it.team) + tn(it.team, it.out) + ' <span class="arrow">\u2192</span> <span class="who">' + esc(it.benefits) + '</span>' + bdg(it.benefits) + '<p>' + esc(it.text) + '</p>' + srcLink(it.source) + '</div>';
-      }) +
-      panel('up', 'Role Up', 'New team or bigger job. Early-season prices often lag behind these changes.', q.role_up, simple) +
-      panel('down', 'Role Down', 'Last season\u2019s numbers probably will not repeat.', q.role_down, simple) +
-      panel('rest', 'Rest Watch', 'Players likely to sit back-to-backs or get rest days early.', q.rest_watch, simple) +
-      panel('out', 'Out to Start the Season', 'Known injuries as of the latest episodes.', q.out_to_start, simple) +
-      '</div>';
-    if (TONLY && html.indexOf('class="hit"') < 0) html += '<p class="sub">No quick hits for tonight\u2019s teams.</p>';
+    // Last night
+    var L = B.last || {};
+    if (L.date){
+      var lt = (L.top || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + ' <span class="bs-n">' + d1(x.dk) + ' DK in ' + Math.round(x.min) + ' min (' + x.pts + ' pts, ' + x.reb + ' reb, ' + x.ast + ' ast)</span></div>'; }).join('');
+      var ls = (L.surprise || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>He played ' + Math.round(x.min) + ' minutes; we projected ' + d1(x.proj) + '.</p></div>'; }).join('');
+      var li = (L.injuries || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>' + esc(x.text) + '</p></div>'; }).join('');
+      html += sec('last', 'Last Night', esc(day(L.date)) + '. More on each player in his notes.',
+        (lt ? '<h3 class="bf-h">Top DK games</h3>' + lt : '') + (li ? '<h3 class="bf-h">Injuries</h3>' + li : '') + (ls ? '<h3 class="bf-h">Minutes surprises</h3>' + ls : ''));
+    }
     $('v-quick').innerHTML = html;
   }
 
