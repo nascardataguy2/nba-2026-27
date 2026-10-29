@@ -441,8 +441,22 @@ def main():
         free = [r for r in live if not r.get("fixed")]
         ftot = sum(r["min"] for r in free)
         if tot < 240:
-            # Short of 240: hand the gap out without pushing anyone past 36.
-            spread_minutes(tr, 240.0 - tot, {r["player"] for r in live if r.get("fixed")}, cap=36.0)
+            # Short of 240: first count the real minutes of rotation players the baseline left
+            # out (recent games for this team, not ruled out), so their minutes are not handed
+            # to the players we do list. Then hand any gap left without pushing anyone past 36.
+            listed = {norm(r["player"]) for r in tr}
+            outk = {norm(o["player"]) for o in out_list if o["team"] == team}
+            cut = str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=10))
+            unlisted = 0.0
+            for pk, gs in recent.items():
+                if pk in listed or pk in outk or pk in amap:
+                    continue
+                g = sorted([x for x in gs if x.get("team") == team and x.get("date", "") < day], key=lambda x: x["date"])[-3:]
+                if g and g[-1]["date"] >= cut:
+                    unlisted += sum(x["min"] for x in g) / len(g)
+            gap = 240.0 - tot - unlisted
+            if gap > 0:
+                spread_minutes(tr, gap, {r["player"] for r in live if r.get("fixed")}, cap=36.0)
             continue
         if ftot > 0:
             k = (240.0 - fixed) / ftot
