@@ -419,3 +419,13 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   .inj-tbl td{display:block;border:none;padding:3px 0}
   .inj-tbl td[data-l]::before{content:attr(data-l);display:block;font:700 11px/1.2 var(--body);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:4px}
 }
+.bg-blow{display:inline-block;margin-left:8px;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;background:#fff;color:var(--bad);border:1px solid #f1cfd2;vertical-align:1px}
+@media (max-width:640px){
+  .bg-grid{grid-template-columns:1fr 1fr;gap:8px} .bg-card{padding:8px 10px}
+  .bg-head{display:block} .bg-match{font-size:17px;display:block} .bg-time{font-size:12px;display:block}
+  .bg-nums{font-size:13px} .bg-blow{margin:4px 0 0;display:inline-block}
+}
+.bg-grid{grid-template-columns:repeat(var(--cols,3),minmax(0,1fr))}
+.bg-card .bg-head{display:block} .bg-card .bg-match{display:block} .bg-card .bg-time{display:block;font-size:13px}
+@media (max-width:900px){.bg-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.bg-grid{grid-template-columns:1fr 1fr}}
