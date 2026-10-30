@@ -93,7 +93,7 @@
           if (/Probable|Available/.test(c.status)) return phone ? '' : '<span class="bs-n">Expected to play</span>';
           var r = injRows.filter(function(x){ return nkey(x.player) === nkey(c.player); })[0];
           var b = r && r.benefits && r.benefits.length ? r.benefits : null;
-          if (!b) return phone ? '' : '<span class="bs-n">\u2013</span>';
+          if (!b) return phone ? 'No fantasy impact' : '<span class="bs-n">No fantasy impact</span>';
           var names = b.map(function(x){ return esc(x.player) + ' <span class="bs-n">' + (x.recent != null ? n1(x.min) + ' min, up from ' + n1(x.recent) : '+' + n1(x.plus) + ' min') + '</span>'; }).join(', ');
           return (phone ? 'Benefits: ' : '') + names + (r.estimate ? ' <span class="bs-n">(estimate)</span>' : '');
         };
