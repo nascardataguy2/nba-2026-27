@@ -323,7 +323,7 @@
       var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
       return '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
-        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">\u2013</span>') + '</td></tr>';
+        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">No fantasy impact</span>') + '</td></tr>';
     }).join('');
     var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr><th>Player</th><th>Status</th><th>New?</th><th>Who benefits</th></tr></thead><tbody>' +
       (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
