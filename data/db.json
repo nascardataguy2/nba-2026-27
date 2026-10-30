@@ -2,7 +2,7 @@
  "updated": "2026-10-29",
  "brief": {
   "date": "2026-10-29",
-  "updated": "6:42 PM ET",
+  "updated": "8:01 PM ET",
   "games": 3,
   "pending": [],
   "first_report": "6:09 PM",
@@ -119,6 +119,22 @@
   ],
   "changed": [
    {
+    "player": "Jaylon Tyson",
+    "team": "CLE",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Cervical Strain",
+    "time": "8:01 PM"
+   },
+   {
+    "player": "Meleek Thomas",
+    "team": "CLE",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "8:01 PM"
+   },
+   {
     "player": "Jordan Poole",
     "team": "NOP",
     "status": "Out",
@@ -205,7 +221,7 @@
       "plus": 4.4,
       "recent": 24.7,
       "min": 29.1,
-      "dk": 23.6,
+      "dk": 23.4,
       "salary": 5200
      },
      {
@@ -213,7 +229,7 @@
       "plus": 3.6,
       "recent": 29.3,
       "min": 32.9,
-      "dk": 38.8,
+      "dk": 38.4,
       "salary": 7000
      },
      {
@@ -221,7 +237,7 @@
       "plus": 3.2,
       "recent": 25.7,
       "min": 28.9,
-      "dk": 26.1,
+      "dk": 25.9,
       "salary": 5100
      }
     ]
@@ -282,7 +298,7 @@
    {
     "player": "Zion Williamson",
     "team": "NOP",
-    "own": 82.8,
+    "own": 83.0,
     "dk": 50.0,
     "salary": 7500
    },
@@ -296,38 +312,38 @@
    {
     "player": "Darius Acuff Jr.",
     "team": "SAC",
-    "own": 51.2,
+    "own": 51.5,
     "dk": 41.6,
     "salary": 7100
    },
    {
     "player": "Domantas Sabonis",
     "team": "SAC",
-    "own": 47.0,
+    "own": 47.4,
     "dk": 50.8,
     "salary": 9200
    }
   ],
   "leverage": [
    {
+    "player": "Jrue Holiday",
+    "team": "POR",
+    "own": 9.4,
+    "dk": 25.9,
+    "salary": 5100
+   },
+   {
     "player": "Saddiq Bey",
     "team": "NOP",
-    "own": 9.0,
+    "own": 9.2,
     "dk": 26.7,
     "salary": 5400
    },
    {
-    "player": "Dyson Daniels",
-    "team": "ATL",
-    "own": 6.7,
-    "dk": 30.3,
-    "salary": 6500
-   },
-   {
     "player": "Donovan Clingan",
     "team": "POR",
-    "own": 3.6,
-    "dk": 28.4,
+    "own": 4.0,
+    "dk": 28.5,
     "salary": 6100
    }
   ],
@@ -425,8 +441,8 @@
    ]
   },
   "injuries": {
-   "report": "06:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_06_30PM.pdf",
+   "report": "08:00 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_08_00PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -453,6 +469,21 @@
        "recent": 26.3
       }
      ],
+     "estimate": false
+    },
+    {
+     "game": "CLE at ATL",
+     "time": "2026-10-30T00:00Z",
+     "team": "CLE",
+     "player": "Meleek Thomas",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "8:01 PM",
+     "min": 19.5,
+     "benefits": [],
      "estimate": false
     },
     {
@@ -486,52 +517,15 @@
      "time": "2026-10-30T00:00Z",
      "team": "CLE",
      "player": "Jaylon Tyson",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Cervical Strain",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "8:01 PM",
      "min": 20.7,
-     "benefits": [
-      {
-       "player": "Sam Merrill",
-       "plus": 5.5,
-       "min": 28.8
-      },
-      {
-       "player": "Peyton Watson",
-       "plus": 5.1,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "CLE at ATL",
-     "time": "2026-10-30T00:00Z",
-     "team": "CLE",
-     "player": "Meleek Thomas",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 19.5,
-     "benefits": [
-      {
-       "player": "Sam Merrill",
-       "plus": 7.9,
-       "min": 31.2
-      },
-      {
-       "player": "Donovan Mitchell",
-       "plus": 1.9,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "MEM at POR",
@@ -10042,12 +10036,12 @@
   {
    "team": "CLE",
    "starters": "James Harden (35), Evan Mobley (35), Donovan Mitchell (35), Peyton Watson (32), Jarrett Allen (28)",
-   "bench": "Sam Merrill (24), Jaylon Tyson (22), Meleek Thomas (20), Mario Hezonja (18), Tyrese Proctor (7)",
+   "bench": "Sam Merrill (24), Jaylon Tyson (22), Mario Hezonja (18), Tyrese Proctor (7)",
    "backup_c": "Thomas Bryant",
    "coach": "Kenny Atkinson",
    "notes": "Dennis Schroder, Keon Ellis and Max Strus are gone, which leaves the bench thin, especially at center. Fantasy playoff weeks run 4-3-2 (March 28 end) and 3-2-4 (April 4 end), so there is a two-game week either way. Cleveland has the most back-to-backs in the league, so expect rest days for Harden, Mitchell and Mobley. No one is hurt to start the season.",
    "source": "LO-1018",
-   "out": "",
+   "out": "Meleek Thomas",
    "depth_through": "2026-10-28",
    "games": 4
   },
