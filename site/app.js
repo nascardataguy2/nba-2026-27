@@ -854,6 +854,13 @@
         }).join('') + '</div>';
     }).join('') + '</div>' : '';
   }
+  var OHEAT = {};
+  function heat(k, v){
+    var r = OHEAT[k];
+    if (v == null || isNaN(v) || !r || !(r[1] > r[0])) return '';
+    var t = (v - r[0]) / (r[1] - r[0]), hot = t >= 0.5, a = Math.abs(t - 0.5) * 2;
+    return ' style="background:rgba(' + (hot ? '228,87,46' : '29,53,87') + ',' + (0.04 + 0.2 * a).toFixed(3) + ')"';
+  }
   function optPool(){
     if (!PJ || !$('r4p-opool')) return;
     if (!oToday()){ $('r4p-osub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.'; $('r4p-opool').innerHTML = ''; return; }
@@ -874,17 +881,26 @@
       if (!p.salary || !oMain(p)) return false;
       return !q || (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
     });
-    $('r4p-opool').innerHTML = '<div class="op-head"><span>Player</span><span>Sal</span><span>DK</span><span>Own%</span><span></span></div>' + list.map(function(p){
+    $('r4p-opool').innerHTML = (
+    (function(){
+      // Heat map for DK, value and Own%: the slate's high end in site orange, low end in site blue.
+      function rng(f){ var v = list.map(f).filter(function(x){ return x != null && !isNaN(x); }); return [Math.min.apply(null, v), Math.max.apply(null, v)]; }
+      OHEAT = {dk: rng(function(p){ return p.dk; }), val: rng(function(p){ return p.salary ? p.dk / p.salary * 1000 : null; }), own: rng(function(p){ return p.own; })};
+    })(),
+    '<div class="op-head"><span>Player</span><span class="op-x">Min</span><span class="op-x">O/U</span><span>Sal</span><span>DK</span><span class="op-xp">Val</span><span>Own%</span><span></span></div>' + list.map(function(p){
       var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
       var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[k];
       var tags = (p.q ? '<span class="role out">Q</span>' : '') + (st[p.team] ? '<span class="role">Started</span>' : '') + nbtn(p.player, has);
       return '<div class="op-row' + (lk ? ' lk' : '') + (ex ? ' ex' : '') + '"><div class="op-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags +
         '<div class="op-sub"><span class="pk-pos">' + esc(p.pos) + '</span> ' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + '</div></div>' +
-        '<span class="op-s">' + money(p.salary) + '</span><span class="op-d">' + n1(p.dk) + '</span><span class="op-o">' + (p.own == null ? '\u2013' : n1(p.own) + '%') + '</span>' +
+        '<span class="op-m op-x">' + n1(p.min) + '</span><span class="op-m op-x">' + (p.ou ? n1(p.ou) : '\u2013') + '</span>' +
+        '<span class="op-s">' + money(p.salary) + '</span><span class="op-d"' + heat('dk', p.dk) + '>' + n1(p.dk) + '</span>' +
+        '<span class="op-v op-xp"' + heat('val', p.salary ? p.dk / p.salary * 1000 : null) + '>' + (p.salary ? (p.dk / p.salary * 1000).toFixed(2) : '\u2013') + '</span>' +
+        '<span class="op-o"' + heat('own', p.own) + '>' + (p.own == null ? '\u2013' : n1(p.own) + '%') + '</span>' +
         '<span class="op-b"><button class="ob' + (lk ? ' on' : '') + '" data-lock="' + esc(p.player) + '" type="button" aria-pressed="' + lk + '">' + (lk ? 'Locked' : 'Lock') + '</button>' +
         '<button class="ob x' + (ex ? ' on' : '') + '" data-excl="' + esc(p.player) + '" type="button" aria-pressed="' + ex + '">' + (ex ? 'Out' : 'Take out') + '</button></span>' +
         (open ? '<div class="op-notes">' + noteHtml(bits, p.player) + '</div>' : '') + '</div>';
-    }).join('');
+    }).join(''));
   }
   function optStars(){
     if (OSLATE === 'late'){ oMsg('Stars & Scrubs covers the main slate only. Switch to the main slate to start from it.'); return; }
