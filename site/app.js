@@ -68,18 +68,21 @@
     var today = PJ && PJ.date ? PJ.date : '';
     var live = B.date && B.date === today && Object.keys(SLATE).length > 0;
     if (live){
-      // Game cards
-      html += '<div class="bg-grid">' + (B.cards || []).map(function(c){
-        var fav = c.fav ? c.fav + ' \u2212' + c.line : 'Pick\u2019em';
-        var tags = (c.tags || []).map(function(t){ return '<span class="bg-tag' + (/Blowout/.test(t) ? ' warn' : /Highest/.test(t) ? ' hot' : '') + '">' + esc(t) + '</span>'; }).join('');
-        function side(t){
-          var x = (c.teams || {})[t] || {}, bits = [];
-          if ((x.out || []).length) bits.push('<span class="bg-out">Out:</span> ' + x.out.map(function(o){ return esc(o.player); }).join(', '));
-          if ((x.q || []).length) bits.push('<span class="bg-q">Q:</span> ' + x.q.map(function(o){ return esc(o.player); }).join(', '));
-          return '<div class="bg-side">' + tm(t) + ' <b>' + n1(t === c.away ? c.away_pts : c.home_pts) + '</b> pts' + (bits.length ? '<div class="bg-inj">' + bits.join(' \u00b7 ') + '</div>' : '') + '</div>';
-        }
-        return '<div class="bg-card"><div class="bg-head"><span class="bg-match">' + esc(c.away) + ' at ' + esc(c.home) + '</span><span class="bg-time">' + esc(gameTime(c.time)) + (c.slate === 'late' ? ' \u00b7 late' : '') + '</span></div>' +
-          '<div class="bg-nums">Total <b>' + n1(c.ou) + '</b> \u00b7 ' + esc(fav) + '</div></div>';
+      // Game cards in lock-time order, heat-mapped by game total (site orange = highest, site blue = lowest).
+      var cardsL = (B.cards || []).slice();  // keep lock-time order
+      var ous = cardsL.map(function(c){ return c.ou || 0; }), omax = Math.max.apply(null, ous), omin = Math.min.apply(null, ous);
+      function heat(ou){
+        // Above the middle of the slate fades to orange, below it fades to blue (no muddy mix).
+        var t = omax > omin ? (ou - omin) / (omax - omin) : 1, hot = t >= 0.5, k = Math.abs(t - 0.5) * 2;
+        var c = hot ? '228,87,46' : '29,53,87';
+        return {edge: 'rgba(' + c + ',' + (0.25 + 0.75 * k).toFixed(2) + ')', bg: 'rgba(' + c + ',' + (0.03 + 0.11 * k).toFixed(3) + ')'};
+      }
+      var ncol = cardsL.length ? Math.ceil(cardsL.length / Math.ceil(cardsL.length / 5)) : 1;  // up to 5 across, rows as even as possible
+      html += '<div class="bg-grid" style="--cols:' + ncol + '">' + cardsL.map(function(c){
+        var fav = c.fav ? c.fav + ' \u2212' + c.line : 'Pick\u2019em', h = heat(c.ou || 0);
+        var blow = (c.line || 0) >= 9 ? '<span class="bg-blow">Blowout risk</span>' : '';
+        return '<div class="bg-card" style="border-left:6px solid ' + h.edge + ';background:' + h.bg + '"><div class="bg-head"><span class="bg-match">' + esc(c.away) + ' at ' + esc(c.home) + '</span><span class="bg-time">' + esc(gameTime(c.time)) + (c.slate === 'late' ? ' \u00b7 late' : '') + '</span></div>' +
+          '<div class="bg-nums">Total <b>' + n1(c.ou) + '</b> \u00b7 ' + esc(fav) + blow + '</div></div>';
       }).join('') + '</div>';
       // What changed (a line in the top panel when nothing has changed)
       var ch = B.changed || [];
