@@ -153,7 +153,13 @@ def main():
             else:
                 ref = (base.get(norm(p["player"])) or {}).get("base_min") or p["min"]
             d = p["min"] - ref
-            if d >= 3:
+            # Our projections also name who picks up the minutes ("More minutes with X out").
+            named = str(p.get("note", "")).startswith("More minutes with") and any(o["player"] in p.get("note", "") for o in tout)
+            if named and d < 3:
+                b0 = (base.get(norm(p["player"])) or {}).get("base_min")
+                if b0 and p["min"] - b0 >= 1:
+                    d, ref = p["min"] - b0, b0
+            if d >= 3 or (named and d >= 1):
                 gain.append((d, ref, p))
         gain.sort(key=lambda x: -x[0])
         if not gain:

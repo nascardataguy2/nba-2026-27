@@ -87,16 +87,26 @@
       // What changed (a line in the top panel when nothing has changed)
       var ch = B.changed || [];
       if (ch.length){
+        // Who benefits: the same teammates the Injuries table shows for this player.
+        var injRows = (B.injuries || {}).rows || [];
+        var chBen = function(c, phone){
+          if (/Probable|Available/.test(c.status)) return phone ? '' : '<span class="bs-n">Expected to play</span>';
+          var r = injRows.filter(function(x){ return nkey(x.player) === nkey(c.player); })[0];
+          var b = r && r.benefits && r.benefits.length ? r.benefits : null;
+          if (!b) return phone ? '' : '<span class="bs-n">\u2013</span>';
+          var names = b.map(function(x){ return esc(x.player) + ' <span class="bs-n">' + (x.recent != null ? n1(x.min) + ' min, up from ' + n1(x.recent) : '+' + n1(x.plus) + ' min') + '</span>'; }).join(', ');
+          return (phone ? 'Benefits: ' : '') + names + (r.estimate ? ' <span class="bs-n">(estimate)</span>' : '');
+        };
         var cls2 = function(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; };
         html += sec('brief-ch', 'What Changed Today', 'Status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
-          '<div class="tbl-wrap ch-wrap"><table class="inj-tbl ch-tbl"><thead><tr><th>Player</th><th>Now</th><th>Was</th><th>Reason</th><th>Time</th></tr></thead><tbody>' +
+          '<div class="tbl-wrap ch-wrap"><table class="inj-tbl ch-tbl"><thead><tr><th>Player</th><th>Now</th><th>Was</th><th>Who benefits</th><th>Time</th></tr></thead><tbody>' +
           ch.map(function(c){
             return '<tr><td><span class="who">' + esc(c.player) + '</span> ' + tm(c.team) + '</td>' +
               '<td data-l="Now"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span></td>' +
               '<td data-l="Was">' + (c.was ? '<span class="bc-st ' + cls2(c.was) + '">' + esc(c.was) + '</span>' : '<span class="bs-n">Not listed</span>') + '</td>' +
-              '<td data-l="Reason">' + (c.why ? esc(c.why) : '<span class="bs-n">\u2013</span>') + '</td>' +
+              '<td data-l="Who benefits">' + chBen(c) + '</td>' +
               '<td data-l="Time" class="bs-n">' + esc(c.time) + '</td>' +
-              '<td class="ch-m"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span> <span class="bs-n">' + (c.was ? 'was ' + esc(c.was.toLowerCase()) : 'newly listed') + (c.why ? ' \u00b7 ' + esc(c.why) : '') + '</span></td></tr>';
+              '<td class="ch-m"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span> <span class="bs-n">' + (c.was ? 'was ' + esc(c.was.toLowerCase()) : 'newly listed') + '</span>' + (chBen(c, true) ? '<div class="bs-n">' + chBen(c, true) + '</div>' : '') + '</td></tr>';
           }).join('') + '</tbody></table></div>');
       }
       // If he sits
