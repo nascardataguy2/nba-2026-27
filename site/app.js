@@ -855,7 +855,22 @@
     }).join('') + '</div>' : '';
   }
   var OHEAT = {};
+  // One short line of context for the optimizer row: our projection note first, else his newest news.
+  function oCtx(p){
+    var t = p.note ? String(p.note) : '';
+    if (!t){
+      var L = logFor(p.player);
+      if (L.length){
+        var x = L[0].t;  // the name is already on the row, so open with "He" instead
+        if (x.indexOf(p.player + ' ') === 0) x = 'He ' + x.slice(p.player.length + 1);
+        t = logDay(L[0].d) + ': ' + x;
+      }
+    }
+    if (t.length > 140) t = t.slice(0, 137).replace(/\s+\S*$/, '') + '\u2026';
+    return t ? '<div class="op-ctx">' + esc(t) + '</div>' : '';
+  }
   function heat(k, v){
+    return '';  // shading removed: plain table reads better
     var r = OHEAT[k];
     if (v == null || isNaN(v) || !r || !(r[1] > r[0])) return '';
     var t = (v - r[0]) / (r[1] - r[0]), hot = t >= 0.5, a = Math.abs(t - 0.5) * 2;
@@ -891,8 +906,8 @@
       var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
       var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[k];
       var tags = (p.q ? '<span class="role out">Q</span>' : '') + (st[p.team] ? '<span class="role">Started</span>' : '') + nbtn(p.player, has);
-      return '<div class="op-row' + (lk ? ' lk' : '') + (ex ? ' ex' : '') + '"><div class="op-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags +
-        '<div class="op-sub"><span class="pk-pos">' + esc(p.pos) + '</span> ' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + '</div></div>' +
+      return '<div class="op-row' + (lk ? ' lk' : '') + (ex ? ' ex' : '') + '"><div class="op-who"><div class="op-id"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags +
+        '<div class="op-sub"><span class="pk-pos">' + esc(p.pos) + '</span> ' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + '</div></div>' + oCtx(p) + '</div>' +
         '<span class="op-m op-x">' + n1(p.min) + '</span><span class="op-m op-x">' + (p.ou ? n1(p.ou) : '\u2013') + '</span>' +
         '<span class="op-s">' + money(p.salary) + '</span><span class="op-d"' + heat('dk', p.dk) + '>' + n1(p.dk) + '</span>' +
         '<span class="op-v op-xp"' + heat('val', p.salary ? p.dk / p.salary * 1000 : null) + '>' + (p.salary ? (p.dk / p.salary * 1000).toFixed(2) : '\u2013') + '</span>' +
