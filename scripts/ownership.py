@@ -36,7 +36,15 @@ CORE = ["PG", "SG", "SF", "PF", "C", "G", "F"]
 # projection z-score, log(value rank), salary / 10000, log(games on the slate).
 TAIL_X = [0.0, 20.0, 20.2, 21.3, 23.7, 27.2, 31.1, 33.4, 37.5, 44.6, 54.9, 67.9, 76.8, 95.1]
 TAIL_Y = [0.0, 20.0, 19.4, 23.4, 25.0, 29.9, 33.0, 35.0, 39.6, 44.5, 47.2, 56.7, 64.0, 77.3]
-OWN_MAX = 70.0    # real top player last season: median 59%, above 70% on 30 of 167 slates, never above 80%
+# Keep estimates boring. Sites that post 60-90% ownership look wrong to readers, so the top
+# end is squeezed smoothly into a ceiling: 45% on slates of three games or fewer, 40% otherwise.
+# Order is kept (the most-owned player is still the most-owned); only the size is tamed.
+def own_max(games):
+    return 45.0 if games <= 3 else 40.0
+
+
+SOFT_START = 22.0  # estimates below this are left as they are
+
 BETA = [2.9412, 0.5014, 0.0137, 0.5663, -0.2167, -1.5089, -0.2552]
 
 
@@ -65,13 +73,18 @@ def calibrate(pool, raw):
     lo = ~hi
     if lo.any():
         v[lo] += (800.0 - v.sum()) * v[lo] / v[lo].sum()
-    for _ in range(5):  # an estimate never goes above OWN_MAX; spread the excess to the rest
-        over = v > OWN_MAX
-        if not over.any():
-            break
-        ex = (v[over] - OWN_MAX).sum()
-        v[over] = OWN_MAX
-        v[~over] += ex * v[~over] / v[~over].sum()
+    cap = own_max(games)
+    hi = v > SOFT_START
+    v[hi] = SOFT_START + (cap - SOFT_START) * np.tanh((v[hi] - SOFT_START) / (cap - SOFT_START))
+    lo = ~hi
+    if lo.any():  # the ownership taken off the top goes to everyone under SOFT_START, capped there
+        for _ in range(8):
+            room = lo & (v < SOFT_START)
+            ex = 800.0 - v.sum()
+            if ex <= 0.01 or not room.any():
+                break
+            v[room] += ex * v[room] / v[room].sum()
+            v[room] = np.minimum(v[room], SOFT_START)
     return {p["player"]: round(float(x), 1) for p, x in zip(pool, v)}
 
 
