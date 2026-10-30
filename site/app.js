@@ -86,11 +86,19 @@
       }).join('') + '</div>';
       // What changed (a line in the top panel when nothing has changed)
       var ch = B.changed || [];
-      if (ch.length) html += sec('brief-ch', 'What Changed Today', 'Status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
-        ch.map(function(c){
-          return '<div class="hit">' + nm(c.player, c.team) + ' <span class="bc-st ' + (/Out|Doubtful/.test(c.status) ? 'out' : /Questionable/.test(c.status) ? 'q' : 'ok') + '">' + esc(c.status) + '</span>' +
-            '<p>' + (c.was ? 'Was ' + esc(c.was.toLowerCase()) + '. ' : 'Newly listed. ') + (c.why ? esc(c.why) + '. ' : '') + '<span class="bc-t">' + esc(c.time) + '</span></p></div>';
-        }).join(''));
+      if (ch.length){
+        var cls2 = function(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; };
+        html += sec('brief-ch', 'What Changed Today', 'Status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
+          '<div class="tbl-wrap ch-wrap"><table class="inj-tbl ch-tbl"><thead><tr><th>Player</th><th>Now</th><th>Was</th><th>Reason</th><th>Time</th></tr></thead><tbody>' +
+          ch.map(function(c){
+            return '<tr><td><span class="who">' + esc(c.player) + '</span> ' + tm(c.team) + '</td>' +
+              '<td data-l="Now"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span></td>' +
+              '<td data-l="Was">' + (c.was ? '<span class="bc-st ' + cls2(c.was) + '">' + esc(c.was) + '</span>' : '<span class="bs-n">Not listed</span>') + '</td>' +
+              '<td data-l="Reason">' + (c.why ? esc(c.why) : '<span class="bs-n">\u2013</span>') + '</td>' +
+              '<td data-l="Time" class="bs-n">' + esc(c.time) + '</td>' +
+              '<td class="ch-m"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span> <span class="bs-n">' + (c.was ? 'was ' + esc(c.was.toLowerCase()) : 'newly listed') + (c.why ? ' \u00b7 ' + esc(c.why) : '') + '</span></td></tr>';
+          }).join('') + '</tbody></table></div>');
+      }
       // If he sits
       var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
         var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
