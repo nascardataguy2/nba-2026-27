@@ -2,7 +2,7 @@
  "updated": "2026-10-29",
  "brief": {
   "date": "2026-10-29",
-  "updated": "8:01 PM ET",
+  "updated": "9:23 PM ET",
   "games": 3,
   "pending": [],
   "first_report": "6:09 PM",
@@ -91,18 +91,23 @@
     "home": "POR",
     "time": "2026-10-30T02:00Z",
     "slate": "main",
-    "ou": 232.5,
+    "ou": 233.5,
     "fav": "POR",
     "line": 7.5,
-    "away_pts": 112.5,
-    "home_pts": 120.0,
+    "away_pts": 113.0,
+    "home_pts": 120.5,
     "tags": [
      "Lowest total"
     ],
     "teams": {
      "MEM": {
       "out": [],
-      "q": []
+      "q": [
+       {
+        "player": "Ty Jerome",
+        "min": 30.4
+       }
+      ]
      },
      "POR": {
       "out": [
@@ -114,10 +119,26 @@
       "q": []
      }
     },
-    "key": "Robert Williams is out, so Toumani Camara and Damian Lillard should play more than usual."
+    "key": "Robert Williams is out, so Vit Krejci should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "Robert Williams III",
+    "team": "POR",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "",
+    "time": "9:23 PM"
+   },
+   {
+    "player": "Ty Jerome",
+    "team": "MEM",
+    "status": "Questionable",
+    "was": "",
+    "why": "Back Tightness",
+    "time": "9:23 PM"
+   },
    {
     "player": "Jaylon Tyson",
     "team": "CLE",
@@ -209,7 +230,7 @@
      {
       "player": "Robert Williams",
       "min": 18.0,
-      "note": "Doubtful tonight.",
+      "note": "Ruled out tonight.",
       "new": true
      }
     ],
@@ -217,28 +238,12 @@
     "lost": 18.0,
     "benefits": [
      {
-      "player": "Toumani Camara",
-      "plus": 4.4,
-      "recent": 24.7,
-      "min": 29.1,
-      "dk": 23.4,
-      "salary": 5200
-     },
-     {
-      "player": "Damian Lillard",
-      "plus": 3.6,
-      "recent": 29.3,
-      "min": 32.9,
-      "dk": 38.4,
-      "salary": 7000
-     },
-     {
-      "player": "Jrue Holiday",
-      "plus": 3.2,
-      "recent": 25.7,
-      "min": 28.9,
-      "dk": 25.9,
-      "salary": 5100
+      "player": "Vit Krejci",
+      "plus": 3.4,
+      "recent": 8.3,
+      "min": 11.7,
+      "dk": 8.5,
+      "salary": 3000
      }
     ]
    },
@@ -298,53 +303,53 @@
    {
     "player": "Zion Williamson",
     "team": "NOP",
-    "own": 83.0,
+    "own": 83.7,
     "dk": 50.0,
     "salary": 7500
    },
    {
     "player": "Benedict Mathurin",
     "team": "NOP",
-    "own": 65.9,
+    "own": 66.0,
     "dk": 29.9,
     "salary": 4200
    },
    {
     "player": "Darius Acuff Jr.",
     "team": "SAC",
-    "own": 51.5,
+    "own": 51.7,
     "dk": 41.6,
     "salary": 7100
    },
    {
     "player": "Domantas Sabonis",
     "team": "SAC",
-    "own": 47.4,
+    "own": 47.8,
     "dk": 50.8,
     "salary": 9200
    }
   ],
   "leverage": [
    {
-    "player": "Jrue Holiday",
-    "team": "POR",
-    "own": 9.4,
-    "dk": 25.9,
-    "salary": 5100
-   },
-   {
     "player": "Saddiq Bey",
     "team": "NOP",
-    "own": 9.2,
+    "own": 8.1,
     "dk": 26.7,
     "salary": 5400
    },
    {
-    "player": "Donovan Clingan",
+    "player": "Jrue Holiday",
     "team": "POR",
-    "own": 4.0,
-    "dk": 28.5,
-    "salary": 6100
+    "own": 8.5,
+    "dk": 24.8,
+    "salary": 5100
+   },
+   {
+    "player": "Dyson Daniels",
+    "team": "ATL",
+    "own": 6.6,
+    "dk": 30.3,
+    "salary": 6500
    }
   ],
   "last": {
@@ -441,8 +446,8 @@
    ]
   },
   "injuries": {
-   "report": "08:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_08_00PM.pdf",
+   "report": "09:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_09_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -532,26 +537,47 @@
      "time": "2026-10-30T02:00Z",
      "team": "POR",
      "player": "Robert Williams III",
-     "status": "Doubtful",
+     "status": "Out",
      "reason": "",
      "new": true,
-     "was": "",
+     "was": "Doubtful",
      "known": true,
-     "changed_at": "",
+     "changed_at": "9:23 PM",
      "min": 18.0,
      "benefits": [
       {
-       "player": "Toumani Camara",
-       "min": 29.1,
-       "recent": 24.7
-      },
-      {
-       "player": "Damian Lillard",
-       "min": 32.9,
-       "recent": 29.3
+       "player": "Vit Krejci",
+       "min": 11.7,
+       "recent": 8.3
       }
      ],
      "estimate": false
+    },
+    {
+     "game": "MEM at POR",
+     "time": "2026-10-30T02:00Z",
+     "team": "MEM",
+     "player": "Ty Jerome",
+     "status": "Questionable",
+     "reason": "Back Tightness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "9:23 PM",
+     "min": 31.3,
+     "benefits": [
+      {
+       "player": "Cam Spencer",
+       "plus": 8.5,
+       "min": 24.8
+      },
+      {
+       "player": "Scotty Pippen Jr.",
+       "plus": 8.3,
+       "min": 24.2
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "SAC at NOP",
@@ -9873,7 +9899,7 @@
    "coach": "Micah Nori",
    "notes": "Shaedon Sharpe tore his meniscus and is out for basically the whole season. Holiday moves to the three in a low-usage role, and Morant's usage should fall about five points.",
    "source": "ESPN-1021",
-   "out": "Robert Williams III",
+   "out": "Jayson Kent, Robert Williams III",
    "depth_through": "2026-10-27",
    "games": 3
   },
