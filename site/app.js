@@ -68,8 +68,8 @@
     var today = PJ && PJ.date ? PJ.date : '';
     var live = B.date && B.date === today && Object.keys(SLATE).length > 0;
     if (live){
-      // Game cards: heat map by game total (site orange = highest, site blue = lowest), sorted high to low.
-      var cardsL = (B.cards || []).slice().sort(function(a, b){ return (b.ou || 0) - (a.ou || 0); });
+      // Game cards in lock-time order, heat-mapped by game total (site orange = highest, site blue = lowest).
+      var cardsL = (B.cards || []).slice();  // keep lock-time order
       var ous = cardsL.map(function(c){ return c.ou || 0; }), omax = Math.max.apply(null, ous), omin = Math.min.apply(null, ous);
       function heat(ou){
         // Above the middle of the slate fades to orange, below it fades to blue (no muddy mix).
