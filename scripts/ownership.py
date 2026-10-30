@@ -10,8 +10,9 @@ This is an estimate, not real ownership. The simulated shares then go through
 a correction fit on 162 main slates from 2025-26, comparing against real
 DraftKings GPP ownership. The field piles onto chalk and value harder than a
 plain simulation does. Tested on this season's first slates, the correction
-cut the average miss from 2.5 to 2.0 points per player. The bumps are still
-starting guesses.
+cut the average miss from 2.5 to 2.0 points per player. A top-end correction then
+pulls the highest estimates down to what real slates show: the most-owned player
+was never above 80% last season. The bumps are still starting guesses.
 
 Writes "own" (percent) on each player in data/projections.json.
 """
@@ -33,6 +34,9 @@ BUMP_TOTAL = 0.005   # per point of game total above the slate average
 CORE = ["PG", "SG", "SF", "PF", "C", "G", "F"]
 # Correction fit on 2025-26 slates. Features: log(sim share + 0.5), value z-score,
 # projection z-score, log(value rank), salary / 10000, log(games on the slate).
+TAIL_X = [0.0, 20.0, 20.2, 21.3, 23.7, 27.2, 31.1, 33.4, 37.5, 44.6, 54.9, 67.9, 76.8, 95.1]
+TAIL_Y = [0.0, 20.0, 19.4, 23.4, 25.0, 29.9, 33.0, 35.0, 39.6, 44.5, 47.2, 56.7, 64.0, 77.3]
+OWN_MAX = 70.0    # real top player last season: median 59%, above 70% on 30 of 167 slates, never above 80%
 BETA = [2.9412, 0.5014, 0.0137, 0.5663, -0.2167, -1.5089, -0.2552]
 
 
@@ -51,12 +55,22 @@ def calibrate(pool, raw):
     X = np.column_stack([np.ones(len(pool)), np.log(sim + 0.5), vz, pz, np.log(vr), sal / 10000.0, np.full(len(pool), np.log(max(games, 1)))])
     v = np.clip(np.exp(X @ np.array(BETA)) - 0.5, 0.05, None)
     v = v / v.sum() * 800.0  # eight roster spots
-    for _ in range(5):  # nobody above 95%; spread the excess
-        over = v > 95
+    # Top-end correction. On 162 real 2025-26 slates (tens of thousands of entries each) the
+    # most-owned player was never above 80% (median about 59%), but the fit above ran hot at
+    # the top: players it put at 70-95% really finished near 58%. This map (fit on Oct-Jan
+    # slates, checked on Feb-Apr) pulls high estimates down to what really happened, and
+    # the ownership it removes goes to the players under 20%. Average miss 2.83 -> 2.79.
+    hi = v > 20
+    v[hi] = np.interp(v[hi], TAIL_X, TAIL_Y)
+    lo = ~hi
+    if lo.any():
+        v[lo] += (800.0 - v.sum()) * v[lo] / v[lo].sum()
+    for _ in range(5):  # an estimate never goes above OWN_MAX; spread the excess to the rest
+        over = v > OWN_MAX
         if not over.any():
             break
-        ex = (v[over] - 95).sum()
-        v[over] = 95
+        ex = (v[over] - OWN_MAX).sum()
+        v[over] = OWN_MAX
         v[~over] += ex * v[~over] / v[~over].sum()
     return {p["player"]: round(float(x), 1) for p, x in zip(pool, v)}
 
