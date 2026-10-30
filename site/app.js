@@ -86,11 +86,29 @@
       }).join('') + '</div>';
       // What changed (a line in the top panel when nothing has changed)
       var ch = B.changed || [];
-      if (ch.length) html += sec('brief-ch', 'What Changed Today', 'Status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
-        ch.map(function(c){
-          return '<div class="hit">' + nm(c.player, c.team) + ' <span class="bc-st ' + (/Out|Doubtful/.test(c.status) ? 'out' : /Questionable/.test(c.status) ? 'q' : 'ok') + '">' + esc(c.status) + '</span>' +
-            '<p>' + (c.was ? 'Was ' + esc(c.was.toLowerCase()) + '. ' : 'Newly listed. ') + (c.why ? esc(c.why) + '. ' : '') + '<span class="bc-t">' + esc(c.time) + '</span></p></div>';
-        }).join(''));
+      if (ch.length){
+        // Who benefits: the same teammates the Injuries table shows for this player.
+        var injRows = (B.injuries || {}).rows || [];
+        var chBen = function(c, phone){
+          if (/Probable|Available/.test(c.status)) return phone ? '' : '<span class="bs-n">Expected to play</span>';
+          var r = injRows.filter(function(x){ return nkey(x.player) === nkey(c.player); })[0];
+          var b = r && r.benefits && r.benefits.length ? r.benefits : null;
+          if (!b) return phone ? 'No fantasy impact' : '<span class="bs-n">No fantasy impact</span>';
+          var names = b.map(function(x){ return esc(x.player) + ' <span class="bs-n">' + (x.recent != null ? n1(x.min) + ' min, up from ' + n1(x.recent) : '+' + n1(x.plus) + ' min') + '</span>'; }).join(', ');
+          return (phone ? 'Benefits: ' : '') + names + (r.estimate ? ' <span class="bs-n">(estimate)</span>' : '');
+        };
+        var cls2 = function(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; };
+        html += sec('brief-ch', 'What Changed Today', 'Status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
+          '<div class="tbl-wrap ch-wrap"><table class="inj-tbl ch-tbl"><thead><tr><th>Player</th><th>Now</th><th>Was</th><th>Who benefits</th><th>Time</th></tr></thead><tbody>' +
+          ch.map(function(c){
+            return '<tr><td><span class="who">' + esc(c.player) + '</span> ' + tm(c.team) + '</td>' +
+              '<td data-l="Now"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span></td>' +
+              '<td data-l="Was">' + (c.was ? '<span class="bc-st ' + cls2(c.was) + '">' + esc(c.was) + '</span>' : '<span class="bs-n">Not listed</span>') + '</td>' +
+              '<td data-l="Who benefits">' + chBen(c) + '</td>' +
+              '<td data-l="Time" class="bs-n">' + esc(c.time) + '</td>' +
+              '<td class="ch-m"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span> <span class="bs-n">' + (c.was ? 'was ' + esc(c.was.toLowerCase()) : 'newly listed') + '</span>' + (chBen(c, true) ? '<div class="bs-n">' + chBen(c, true) + '</div>' : '') + '</td></tr>';
+          }).join('') + '</tbody></table></div>');
+      }
       // If he sits
       var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
         var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
@@ -305,7 +323,7 @@
       var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
       return '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
-        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">\u2013</span>') + '</td></tr>';
+        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">No fantasy impact</span>') + '</td></tr>';
     }).join('');
     var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr><th>Player</th><th>Status</th><th>New?</th><th>Who benefits</th></tr></thead><tbody>' +
       (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';

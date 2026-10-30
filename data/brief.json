@@ -145,7 +145,7 @@
      "q": []
     }
    },
-   "key": "Joel Embiid has the top projection in this game at 45.1 DK points."
+   "key": "Jaylen Brown is out, so Dean Wade and Joel Embiid should play more than usual."
   },
   {
    "away": "DET",
@@ -337,7 +337,7 @@
      ]
     }
    },
-   "key": "Ziaire Williams is out, so Kevon Looney and Walker Kessler should play more than usual."
+   "key": "Ziaire Williams is out, so Matisse Thybulle and Luka Doncic should play more than usual."
   },
   {
    "away": "DEN",
@@ -462,6 +462,45 @@
  ],
  "sits": [
   {
+   "team": "PHI",
+   "outs": [
+    {
+     "player": "Jaylen Brown",
+     "min": 36.3,
+     "note": "Jaylen Brown is questionable for Friday against New York with left knee soreness. He has played in all five Philadelphia games.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 36.3,
+   "benefits": [
+    {
+     "player": "Dean Wade",
+     "plus": 5.2,
+     "recent": 20.0,
+     "min": 25.2,
+     "dk": 14.4,
+     "salary": 3600
+    },
+    {
+     "player": "Joel Embiid",
+     "plus": 3.4,
+     "recent": 33.0,
+     "min": 36.4,
+     "dk": 45.1,
+     "salary": 8600
+    },
+    {
+     "player": "Anfernee Simons",
+     "plus": 3.1,
+     "recent": 21.0,
+     "min": 24.1,
+     "dk": 19.0,
+     "salary": 4000
+    }
+   ]
+  },
+  {
    "team": "LAL",
    "outs": [
     {
@@ -475,28 +514,28 @@
    "lost": 30.0,
    "benefits": [
     {
+     "player": "Matisse Thybulle",
+     "plus": 5.2,
+     "recent": 20.0,
+     "min": 25.2,
+     "dk": 19.9,
+     "salary": 4200
+    },
+    {
+     "player": "Luka Doncic",
+     "plus": 4.2,
+     "recent": 36.0,
+     "min": 40.2,
+     "dk": 62.8,
+     "salary": 12000
+    },
+    {
      "player": "Kevon Looney",
      "plus": 3.7,
      "recent": 5.0,
      "min": 8.7,
      "dk": 8.4,
      "salary": 3000
-    },
-    {
-     "player": "Walker Kessler",
-     "plus": 3.1,
-     "recent": 29.0,
-     "min": 32.1,
-     "dk": 35.7,
-     "salary": 7700
-    },
-    {
-     "player": "Austin Reaves",
-     "plus": 3.1,
-     "recent": 35.3,
-     "min": 38.4,
-     "dk": 41.5,
-     "salary": 8700
     }
    ]
   },
@@ -886,7 +925,18 @@
     "known": true,
     "changed_at": "4:43 PM",
     "min": 36.3,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Dean Wade",
+      "min": 25.2,
+      "recent": 20.0
+     },
+     {
+      "player": "Joel Embiid",
+      "min": 36.4,
+      "recent": 33.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -1159,14 +1209,14 @@
     "min": 30.0,
     "benefits": [
      {
-      "player": "Kevon Looney",
-      "min": 8.7,
-      "recent": 5.0
+      "player": "Matisse Thybulle",
+      "min": 25.2,
+      "recent": 20.0
      },
      {
-      "player": "Walker Kessler",
-      "min": 32.1,
-      "recent": 29.0
+      "player": "Luka Doncic",
+      "min": 40.2,
+      "recent": 36.0
      }
     ],
     "estimate": false

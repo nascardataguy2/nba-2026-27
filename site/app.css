@@ -429,3 +429,15 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .bg-card .bg-head{display:block} .bg-card .bg-match{display:block} .bg-card .bg-time{display:block;font-size:13px}
 @media (max-width:900px){.bg-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:640px){.bg-grid{grid-template-columns:1fr 1fr}}
+.ch-tbl{min-width:0;font-size:14px} .ch-tbl td,.ch-tbl th{padding:6px 12px} .ch-wrap{border:none;border-radius:0}
+.ch-tbl td:last-child,.ch-tbl th:last-child{text-align:right;white-space:nowrap}
+.ch-tbl .ch-m{display:none}
+@media (max-width:640px){
+  .ch-tbl tr{display:grid;grid-template-columns:1fr auto;gap:2px 8px;padding:8px 0}
+  .ch-tbl td{display:none;padding:0} .ch-tbl td:first-child,.ch-tbl td[data-l="Time"]{display:block}
+  .ch-tbl td[data-l]::before{content:none}
+  .ch-tbl .ch-m{display:block;grid-column:1 / -1}
+}
+.ch-tbl td[data-l="Time"]{text-align:right;white-space:nowrap} .ch-tbl .ch-m{text-align:left}
+.ch-tbl td.ch-m{text-align:left}
+.ch-tbl td.ch-m{white-space:normal}
