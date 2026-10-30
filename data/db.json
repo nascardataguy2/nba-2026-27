@@ -2,7 +2,7 @@
  "updated": "2026-10-30",
  "brief": {
   "date": "2026-10-30",
-  "updated": "1:07 PM ET",
+  "updated": "1:44 PM ET",
   "games": 10,
   "pending": [],
   "first_report": "5:50 AM",
@@ -12,11 +12,11 @@
     "home": "WAS",
     "time": "2026-10-30T23:00Z",
     "slate": "main",
-    "ou": 220.5,
+    "ou": 219.5,
     "fav": "WAS",
     "line": 1.5,
-    "away_pts": 109.5,
-    "home_pts": 111.0,
+    "away_pts": 109.0,
+    "home_pts": 110.5,
     "tags": [
      "Lowest total",
      "Close game"
@@ -83,50 +83,15 @@
     "key": "Jayson Tatum has the top projection in this game at 56.7 DK points."
    },
    {
-    "away": "NYK",
-    "home": "PHI",
-    "time": "2026-10-30T23:30Z",
-    "slate": "main",
-    "ou": 227.5,
-    "fav": "NYK",
-    "line": 1.5,
-    "away_pts": 114.5,
-    "home_pts": 113.0,
-    "tags": [
-     "Close game"
-    ],
-    "teams": {
-     "NYK": {
-      "out": [
-       {
-        "player": "Jose Alvarado",
-        "min": 13.5
-       }
-      ],
-      "q": []
-     },
-     "PHI": {
-      "out": [],
-      "q": [
-       {
-        "player": "Jaylen Brown",
-        "min": 32.2
-       }
-      ]
-     }
-    },
-    "key": "Karl-Anthony Towns has the top projection in this game at 43.1 DK points."
-   },
-   {
     "away": "ORL",
     "home": "TOR",
     "time": "2026-10-30T23:30Z",
     "slate": "main",
-    "ou": 225.5,
+    "ou": 227.5,
     "fav": "TOR",
     "line": 5.5,
-    "away_pts": 110.0,
-    "home_pts": 115.5,
+    "away_pts": 111.0,
+    "home_pts": 116.5,
     "tags": [],
     "teams": {
      "ORL": {
@@ -153,6 +118,41 @@
      }
     },
     "key": "Paolo Banchero and Jalen Suggs are out, so Nikola Vucevic should play more than usual."
+   },
+   {
+    "away": "NYK",
+    "home": "PHI",
+    "time": "2026-10-30T23:30Z",
+    "slate": "main",
+    "ou": 226.5,
+    "fav": "NYK",
+    "line": 1.5,
+    "away_pts": 114.0,
+    "home_pts": 112.5,
+    "tags": [
+     "Close game"
+    ],
+    "teams": {
+     "NYK": {
+      "out": [
+       {
+        "player": "Jose Alvarado",
+        "min": 13.5
+       }
+      ],
+      "q": []
+     },
+     "PHI": {
+      "out": [],
+      "q": [
+       {
+        "player": "Jaylen Brown",
+        "min": 32.2
+       }
+      ]
+     }
+    },
+    "key": "Karl-Anthony Towns has the top projection in this game at 43.1 DK points."
    },
    {
     "away": "DET",
@@ -598,14 +598,14 @@
    {
     "player": "Paul Reed",
     "team": "DET",
-    "own": 9.7,
+    "own": 9.9,
     "dk": 34.1,
     "salary": 6300
    },
    {
     "player": "Moussa Diabate",
     "team": "CHA",
-    "own": 7.9,
+    "own": 7.8,
     "dk": 28.6,
     "salary": 5300
    }
