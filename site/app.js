@@ -870,7 +870,6 @@
     return t ? '<div class="op-ctx">' + esc(t) + '</div>' : '';
   }
   function heat(k, v){
-    return '';  // shading removed: plain table reads better
     var r = OHEAT[k];
     if (v == null || isNaN(v) || !r || !(r[1] > r[0])) return '';
     var t = (v - r[0]) / (r[1] - r[0]), hot = t >= 0.5, a = Math.abs(t - 0.5) * 2;
@@ -902,6 +901,7 @@
       function rng(f){ var v = list.map(f).filter(function(x){ return x != null && !isNaN(x); }); return [Math.min.apply(null, v), Math.max.apply(null, v)]; }
       OHEAT = {dk: rng(function(p){ return p.dk; }), val: rng(function(p){ return p.salary ? p.dk / p.salary * 1000 : null; }), own: rng(function(p){ return p.own; })};
     })(),
+    '<div class="op-key"><span>DK, Val, Own%:</span> <i class="k-hi"></i> high tonight <i class="k-lo"></i> low tonight</div>' +
     '<div class="op-head"><span>Player</span><span class="op-x">Min</span><span class="op-x">O/U</span><span>Sal</span><span>DK</span><span class="op-xp">Val</span><span>Own%</span><span></span></div>' + list.map(function(p){
       var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
       var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[k];
