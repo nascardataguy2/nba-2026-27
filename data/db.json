@@ -2,8 +2,8 @@
  "updated": "2026-10-31",
  "brief": {
   "date": "2026-10-31",
-  "updated": "2:34 PM ET",
-  "games": 7,
+  "updated": "3:23 PM ET",
+  "games": 6,
   "pending": [],
   "first_report": "6:16 AM",
   "cards": [
@@ -39,47 +39,6 @@
      }
     },
     "key": "Ja Morant is out, so Vit Krejci should play more than usual."
-   },
-   {
-    "away": "PHI",
-    "home": "CHA",
-    "time": "2026-10-31T22:00Z",
-    "slate": "late",
-    "ou": 213.5,
-    "fav": "PHI",
-    "line": 1.5,
-    "away_pts": 107.5,
-    "home_pts": 106.0,
-    "tags": [
-     "Lowest total",
-     "Close game",
-     "Both teams on a back-to-back"
-    ],
-    "teams": {
-     "PHI": {
-      "out": [
-       {
-        "player": "Joel Embiid",
-        "min": 36.0
-       },
-       {
-        "player": "LeBron James",
-        "min": 33.3
-       }
-      ],
-      "q": [
-       {
-        "player": "Jaylen Brown",
-        "min": 36.0
-       }
-      ]
-     },
-     "CHA": {
-      "out": [],
-      "q": []
-     }
-    },
-    "key": "Joel Embiid and LeBron James are out, so VJ Edgecombe and Kentavious Caldwell-Pope should play more than usual."
    },
    {
     "away": "ATL",
@@ -218,7 +177,12 @@
      },
      "SAS": {
       "out": [],
-      "q": []
+      "q": [
+       {
+        "player": "Stephon Castle",
+        "min": 31.0
+       }
+      ]
      }
     },
     "key": "Victor Wembanyama has the top projection in this game at 52.4 DK points."
@@ -234,6 +198,7 @@
     "away_pts": 108.0,
     "home_pts": 111.5,
     "tags": [
+     "Lowest total",
      "HOU on a back-to-back"
     ],
     "teams": {
@@ -276,6 +241,14 @@
    }
   ],
   "changed": [
+   {
+    "player": "Stephon Castle",
+    "team": "SAS",
+    "status": "Questionable",
+    "was": "",
+    "why": "Migraine",
+    "time": "3:24 PM"
+   },
    {
     "player": "Rudy Gobert",
     "team": "MIN",
@@ -347,62 +320,9 @@
     "was": "",
     "why": "Left Hamstring Strain",
     "time": "1:16 PM"
-   },
-   {
-    "player": "Jabari Walker",
-    "team": "PHI",
-    "status": "Questionable",
-    "was": "",
-    "why": "",
-    "time": "1:16 PM"
    }
   ],
   "sits": [
-   {
-    "team": "PHI",
-    "outs": [
-     {
-      "player": "Joel Embiid",
-      "min": 36.0,
-      "note": "Joel Embiid is not expected to play Saturday on the second night of the back-to-back. He played 33 minutes Friday.",
-      "new": true
-     },
-     {
-      "player": "LeBron James",
-      "min": 33.3,
-      "note": "LeBron James is questionable for Saturday on the second night of the back-to-back. He had 20 points, 9 rebounds and 8 assists in 34 minutes Friday.",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 69.3,
-    "benefits": [
-     {
-      "player": "VJ Edgecombe",
-      "plus": 4.3,
-      "recent": 31.7,
-      "min": 36.0,
-      "dk": 36.2,
-      "salary": 6200
-     },
-     {
-      "player": "Kentavious Caldwell-Pope",
-      "plus": 4.0,
-      "recent": 24.3,
-      "min": 28.3,
-      "dk": 21.4,
-      "salary": 4800
-     },
-     {
-      "player": "Anfernee Simons",
-      "plus": 3.8,
-      "recent": 28.3,
-      "min": 32.1,
-      "dk": 31.5,
-      "salary": 4400
-     }
-    ]
-   },
    {
     "team": "POR",
     "outs": [
@@ -562,20 +482,20 @@
     "n": 2
    },
    {
-    "player": "Brandon Miller",
-    "team": "CHA",
-    "kind": "hot",
-    "last": 50.2,
-    "before": 30.1,
-    "n": 3
-   },
-   {
     "player": "Clint Capela",
     "team": "HOU",
     "kind": "hot",
     "last": 23.6,
     "before": 5.0,
     "n": 2
+   },
+   {
+    "player": "Dyson Daniels",
+    "team": "ATL",
+    "kind": "cold",
+    "last": 21.0,
+    "before": 39.1,
+    "n": 3
    }
   ],
   "minutes": [
@@ -622,32 +542,32 @@
   ],
   "chalk": [
    {
-    "player": "Moussa Diabate",
-    "team": "CHA",
-    "own": 44.1,
-    "dk": 35.9,
-    "salary": 5600
-   },
-   {
     "player": "Deni Avdija",
     "team": "POR",
-    "own": 44.0,
+    "own": 44.1,
     "dk": 49.0,
     "salary": 8500
    },
    {
-    "player": "Anfernee Simons",
-    "team": "PHI",
-    "own": 43.8,
-    "dk": 31.5,
-    "salary": 4400
+    "player": "James Harden",
+    "team": "CLE",
+    "own": 39.8,
+    "dk": 47.8,
+    "salary": 7600
    },
    {
-    "player": "Brandon Miller",
-    "team": "CHA",
-    "own": 43.5,
-    "dk": 46.5,
-    "salary": 8000
+    "player": "Alperen Sengun",
+    "team": "HOU",
+    "own": 37.9,
+    "dk": 51.8,
+    "salary": 8600
+   },
+   {
+    "player": "Damian Lillard",
+    "team": "POR",
+    "own": 37.7,
+    "dk": 39.6,
+    "salary": 7200
    }
   ],
   "leverage": [
@@ -757,8 +677,8 @@
    ]
   },
   "injuries": {
-   "report": "02:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_02_30PM.pdf",
+   "report": "03:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_03_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -813,99 +733,6 @@
      "estimate": false
     },
     {
-     "game": "PHI at CHA",
-     "time": "2026-10-31T22:00Z",
-     "team": "PHI",
-     "player": "Joel Embiid",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:16 PM",
-     "min": 36.0,
-     "benefits": [
-      {
-       "player": "VJ Edgecombe",
-       "min": 36.0,
-       "recent": 31.7
-      },
-      {
-       "player": "Kentavious Caldwell-Pope",
-       "min": 28.3,
-       "recent": 24.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "PHI at CHA",
-     "time": "2026-10-31T22:00Z",
-     "team": "PHI",
-     "player": "LeBron James",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:16 PM",
-     "min": 33.3,
-     "benefits": [
-      {
-       "player": "VJ Edgecombe",
-       "min": 36.0,
-       "recent": 31.7
-      },
-      {
-       "player": "Kentavious Caldwell-Pope",
-       "min": 28.3,
-       "recent": 24.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "PHI at CHA",
-     "time": "2026-10-31T22:00Z",
-     "team": "PHI",
-     "player": "Jaylen Brown",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:16 PM",
-     "min": 36.3,
-     "benefits": [
-      {
-       "player": "Dean Wade",
-       "plus": 8.1,
-       "min": 36.0
-      },
-      {
-       "player": "Kentavious Caldwell-Pope",
-       "plus": 7.7,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "PHI at CHA",
-     "time": "2026-10-31T22:00Z",
-     "team": "PHI",
-     "player": "Jabari Walker",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:16 PM",
-     "min": 6.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
      "game": "CLE at MIL",
      "time": "2026-11-01T00:00Z",
      "team": "CLE",
@@ -934,6 +761,27 @@
      "min": 12.0,
      "benefits": [],
      "estimate": false
+    },
+    {
+     "game": "MIN at SAS",
+     "time": "2026-11-01T00:00Z",
+     "team": "SAS",
+     "player": "Stephon Castle",
+     "status": "Questionable",
+     "reason": "Migraine",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "3:24 PM",
+     "min": 31.0,
+     "benefits": [
+      {
+       "player": "Julian Champagnie",
+       "plus": 8.7,
+       "min": 36.0
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "MIN at SAS",
@@ -1003,7 +851,7 @@
      "team": "HOU",
      "player": "Fred VanVleet",
      "status": "Out",
-     "reason": "Right Knee Injury",
+     "reason": "",
      "new": true,
      "was": "",
      "known": true,
@@ -1261,36 +1109,6 @@
      "player": "Chris Youngblood",
      "team": "POR",
      "status": "Available"
-    },
-    {
-     "player": "Dominick Barlow",
-     "team": "PHI",
-     "status": "Out"
-    },
-    {
-     "player": "Ariel Hukporti",
-     "team": "PHI",
-     "status": "Out"
-    },
-    {
-     "player": "Kon Knueppel",
-     "team": "CHA",
-     "status": "Out"
-    },
-    {
-     "player": "Coby White",
-     "team": "CHA",
-     "status": "Out"
-    },
-    {
-     "player": "Grant Williams",
-     "team": "CHA",
-     "status": "Out"
-    },
-    {
-     "player": "Tacko Fall",
-     "team": "PHI",
-     "status": "Questionable"
     },
     {
      "player": "Shaedon Sharpe",

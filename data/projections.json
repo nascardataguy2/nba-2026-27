@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updated": "2:34 PM ET",
+ "updated": "3:23 PM ET",
  "games": [
   {
    "away": "POR",
@@ -16,13 +16,13 @@
   {
    "away": "PHI",
    "home": "CHA",
-   "ou": 213.5,
-   "away_pts": 107.5,
-   "home_pts": 106.0,
+   "ou": 211.5,
+   "away_pts": 106.5,
+   "home_pts": 105.0,
    "time": "2026-10-31T22:00Z",
    "fav": "PHI",
    "line": 1.5,
-   "slate": "late"
+   "slate": "off"
   },
   {
    "away": "ATL",
@@ -185,7 +185,7 @@
    "player": "Tyrese Maxey",
    "team": "PHI",
    "opp": "CHA",
-   "pos": "PG",
+   "pos": "SG",
    "salary": 8700,
    "dkid": "44723729",
    "slate": "late",
@@ -193,7 +193,7 @@
    "q": false,
    "min": 36.7,
    "usg": 29.5,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": -1.5,
    "pts": 27.4,
    "reb": 5.1,
@@ -229,7 +229,7 @@
    "dk": 49.0,
    "value": 5.76,
    "note": "",
-   "own": 44.0
+   "own": 44.1
   },
   {
    "player": "Domantas Sabonis",
@@ -343,7 +343,7 @@
    "q": false,
    "min": 35.2,
    "usg": 32.4,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 27.6,
    "reb": 7.2,
@@ -354,13 +354,13 @@
    "dk": 46.5,
    "value": 5.81,
    "note": "Moved toward his recent minutes (37.0 a game).",
-   "own": 43.5
+   "own": 43.7
   },
   {
    "player": "Jaylen Brown",
    "team": "PHI",
    "opp": "CHA",
-   "pos": "SF",
+   "pos": "SG",
    "salary": 7900,
    "dkid": "44723738",
    "slate": "late",
@@ -368,7 +368,7 @@
    "q": true,
    "min": 36.0,
    "usg": 29.0,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": -1.5,
    "pts": 24.2,
    "reb": 7.9,
@@ -377,9 +377,9 @@
    "blk": 0.7,
    "to": 3.6,
    "dk": 44.9,
-   "value": 5.69,
+   "value": 5.68,
    "note": "",
-   "own": 40.3
+   "own": 40.0
   },
   {
    "player": "Darius Acuff Jr.",
@@ -529,7 +529,7 @@
    "dk": 39.6,
    "value": 5.5,
    "note": "",
-   "own": 37.4
+   "own": 37.7
   },
   {
    "player": "Keyonte George",
@@ -554,7 +554,7 @@
    "dk": 39.4,
    "value": 5.12,
    "note": "",
-   "own": 34.4
+   "own": 34.6
   },
   {
    "player": "Amen Thompson",
@@ -635,7 +635,7 @@
    "player": "VJ Edgecombe",
    "team": "PHI",
    "opp": "CHA",
-   "pos": "PG/SG",
+   "pos": "SG",
    "salary": 6200,
    "dkid": "44723769",
    "slate": "late",
@@ -643,7 +643,7 @@
    "q": false,
    "min": 36.0,
    "usg": 19.0,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": -1.5,
    "pts": 15.5,
    "reb": 7.8,
@@ -654,7 +654,7 @@
    "dk": 36.2,
    "value": 5.84,
    "note": "",
-   "own": 30.7
+   "own": 27.6
   },
   {
    "player": "Zion Williamson",
@@ -685,7 +685,7 @@
    "player": "Moussa Diabate",
    "team": "CHA",
    "opp": "PHI",
-   "pos": "C",
+   "pos": "PF",
    "salary": 5600,
    "dkid": "44723790",
    "slate": "late",
@@ -693,7 +693,7 @@
    "q": false,
    "min": 31.0,
    "usg": 13.0,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 11.6,
    "reb": 13.6,
@@ -765,7 +765,7 @@
    "dkid": "44724022",
    "slate": "main",
    "start": true,
-   "q": false,
+   "q": true,
    "min": 31.0,
    "usg": 23.6,
    "ou": 225.5,
@@ -982,6 +982,31 @@
    "own": 12.5
   },
   {
+   "player": "Anfernee Simons",
+   "team": "PHI",
+   "opp": "CHA",
+   "pos": "SG",
+   "salary": 4400,
+   "dkid": "44723816",
+   "slate": "late",
+   "start": false,
+   "q": false,
+   "min": 32.1,
+   "usg": 22.3,
+   "ou": 211.5,
+   "spread": -1.5,
+   "pts": 18.0,
+   "reb": 3.6,
+   "ast": 3.8,
+   "stl": 0.9,
+   "blk": 0.3,
+   "to": 1.7,
+   "dk": 31.5,
+   "value": 7.16,
+   "note": "Moved toward his recent minutes (28.3 a game).",
+   "own": 43.6
+  },
+  {
    "player": "Donovan Clingan",
    "team": "POR",
    "opp": "UTA",
@@ -1004,32 +1029,7 @@
    "dk": 31.5,
    "value": 4.92,
    "note": "",
-   "own": 23.3
-  },
-  {
-   "player": "Anfernee Simons",
-   "team": "PHI",
-   "opp": "CHA",
-   "pos": "PG/SG",
-   "salary": 4400,
-   "dkid": "44723816",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 32.1,
-   "usg": 22.3,
-   "ou": 213.5,
-   "spread": -1.5,
-   "pts": 18.0,
-   "reb": 3.6,
-   "ast": 3.8,
-   "stl": 0.9,
-   "blk": 0.3,
-   "to": 1.7,
-   "dk": 31.5,
-   "value": 7.16,
-   "note": "Moved toward his recent minutes (28.3 a game).",
-   "own": 43.8
+   "own": 26.8
   },
   {
    "player": "Ace Bailey",
@@ -1054,13 +1054,13 @@
    "dk": 31.5,
    "value": 5.17,
    "note": "Moved toward his recent minutes (34.3 a game).",
-   "own": 34.0
+   "own": 35.5
   },
   {
    "player": "Naz Reid",
    "team": "CHA",
    "opp": "PHI",
-   "pos": "PF/C",
+   "pos": "PF",
    "salary": 7100,
    "dkid": "44723754",
    "slate": "late",
@@ -1068,7 +1068,7 @@
    "q": false,
    "min": 25.3,
    "usg": 24.4,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 14.7,
    "reb": 8.0,
@@ -1077,9 +1077,9 @@
    "blk": 0.7,
    "to": 2.2,
    "dk": 31.0,
-   "value": 4.36,
+   "value": 4.37,
    "note": "",
-   "own": 14.7
+   "own": 16.0
   },
   {
    "player": "Dennis Schroder",
@@ -1093,7 +1093,7 @@
    "q": false,
    "min": 30.9,
    "usg": 22.0,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 15.1,
    "reb": 4.1,
@@ -1104,7 +1104,7 @@
    "dk": 31.0,
    "value": 5.44,
    "note": "Moved toward his recent minutes (33.0 a game).",
-   "own": 32.5
+   "own": 31.1
   },
   {
    "player": "Dyson Daniels",
@@ -1179,7 +1179,7 @@
    "dk": 30.5,
    "value": 4.06,
    "note": "Moved toward his recent minutes (26.0 a game).",
-   "own": 13.7
+   "own": 15.8
   },
   {
    "player": "Jonathan Kuminga",
@@ -1279,7 +1279,7 @@
    "dk": 28.8,
    "value": 4.97,
    "note": "",
-   "own": 25.4
+   "own": 25.5
   },
   {
    "player": "Jaime Jaquez Jr",
@@ -1429,7 +1429,7 @@
    "dk": 27.5,
    "value": 5.09,
    "note": "Moved toward his recent minutes (26.7 a game).",
-   "own": 26.2
+   "own": 23.2
   },
   {
    "player": "Ryan Rollins",
@@ -1510,7 +1510,7 @@
    "player": "Grayson Allen",
    "team": "CHA",
    "opp": "PHI",
-   "pos": "SG/SF",
+   "pos": "SG",
    "salary": 5300,
    "dkid": "44723799",
    "slate": "late",
@@ -1518,7 +1518,7 @@
    "q": false,
    "min": 26.2,
    "usg": 21.9,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 14.8,
    "reb": 3.9,
@@ -1829,7 +1829,7 @@
    "dk": 22.9,
    "value": 5.45,
    "note": "",
-   "own": 31.3
+   "own": 32.7
   },
   {
    "player": "Jaylin Williams",
@@ -1960,7 +1960,7 @@
    "player": "Kentavious Caldwell-Pope",
    "team": "PHI",
    "opp": "CHA",
-   "pos": "SG/SF",
+   "pos": "SG",
    "salary": 4800,
    "dkid": "44723811",
    "slate": "late",
@@ -1968,7 +1968,7 @@
    "q": false,
    "min": 28.3,
    "usg": 13.1,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": -1.5,
    "pts": 9.4,
    "reb": 3.3,
@@ -1977,34 +1977,9 @@
    "blk": 0.4,
    "to": 0.9,
    "dk": 21.4,
-   "value": 4.45,
+   "value": 4.46,
    "note": "Moved toward his recent minutes (24.3 a game).",
-   "own": 8.1
-  },
-  {
-   "player": "Isaiah Collier",
-   "team": "UTA",
-   "opp": "POR",
-   "pos": "PG",
-   "salary": 4000,
-   "dkid": "44723838",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 20.0,
-   "usg": 19.9,
-   "ou": 233.5,
-   "spread": 6.5,
-   "pts": 7.4,
-   "reb": 2.7,
-   "ast": 5.7,
-   "stl": 0.9,
-   "blk": 0.2,
-   "to": 1.9,
-   "dk": 21.0,
-   "value": 5.24,
-   "note": "Moved toward his recent minutes (19.3 a game).",
-   "own": 23.2
+   "own": 6.0
   },
   {
    "player": "Cam Spencer",
@@ -2032,10 +2007,35 @@
    "own": 22.0
   },
   {
+   "player": "Isaiah Collier",
+   "team": "UTA",
+   "opp": "POR",
+   "pos": "PG",
+   "salary": 4000,
+   "dkid": "44723838",
+   "slate": "late",
+   "start": false,
+   "q": false,
+   "min": 20.0,
+   "usg": 19.9,
+   "ou": 233.5,
+   "spread": 6.5,
+   "pts": 7.4,
+   "reb": 2.7,
+   "ast": 5.7,
+   "stl": 0.9,
+   "blk": 0.2,
+   "to": 1.9,
+   "dk": 21.0,
+   "value": 5.24,
+   "note": "Moved toward his recent minutes (19.3 a game).",
+   "own": 23.2
+  },
+  {
    "player": "Dean Wade",
    "team": "PHI",
    "opp": "CHA",
-   "pos": "SF/PF",
+   "pos": "PF",
    "salary": 3900,
    "dkid": "44723845",
    "slate": "late",
@@ -2043,7 +2043,7 @@
    "q": false,
    "min": 27.9,
    "usg": 8.3,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": -1.5,
    "pts": 6.0,
    "reb": 6.0,
@@ -2052,7 +2052,7 @@
    "blk": 0.8,
    "to": 0.4,
    "dk": 20.7,
-   "value": 5.3,
+   "value": 5.31,
    "note": "Moved toward his recent minutes (27.0 a game).",
    "own": 22.0
   },
@@ -2182,31 +2182,6 @@
    "own": 14.1
   },
   {
-   "player": "Scoot Henderson",
-   "team": "POR",
-   "opp": "UTA",
-   "pos": "PG/SG",
-   "salary": 3900,
-   "dkid": "44723841",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 21.1,
-   "usg": 22.6,
-   "ou": 233.5,
-   "spread": -6.5,
-   "pts": 10.7,
-   "reb": 2.4,
-   "ast": 3.1,
-   "stl": 0.7,
-   "blk": 0.2,
-   "to": 2.2,
-   "dk": 19.8,
-   "value": 5.09,
-   "note": "Moved toward his recent minutes (19.0 a game).",
-   "own": 22.0
-  },
-  {
    "player": "Aday Mara",
    "team": "OKC",
    "opp": "HOU",
@@ -2232,10 +2207,35 @@
    "own": 4.2
   },
   {
+   "player": "Scoot Henderson",
+   "team": "POR",
+   "opp": "UTA",
+   "pos": "PG/SG",
+   "salary": 3900,
+   "dkid": "44723841",
+   "slate": "late",
+   "start": false,
+   "q": false,
+   "min": 21.1,
+   "usg": 22.6,
+   "ou": 233.5,
+   "spread": -6.5,
+   "pts": 10.7,
+   "reb": 2.4,
+   "ast": 3.1,
+   "stl": 0.7,
+   "blk": 0.2,
+   "to": 2.2,
+   "dk": 19.8,
+   "value": 5.09,
+   "note": "Moved toward his recent minutes (19.0 a game).",
+   "own": 22.0
+  },
+  {
    "player": "Royce O'Neale",
    "team": "CHA",
    "opp": "PHI",
-   "pos": "SF/PF",
+   "pos": "PF",
    "salary": 4300,
    "dkid": "44723820",
    "slate": "late",
@@ -2243,7 +2243,7 @@
    "q": false,
    "min": 21.0,
    "usg": 15.5,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 8.1,
    "reb": 4.8,
@@ -2252,9 +2252,9 @@
    "blk": 0.3,
    "to": 1.0,
    "dk": 19.7,
-   "value": 4.57,
+   "value": 4.58,
    "note": "Moved toward his recent minutes (19.3 a game).",
-   "own": 14.0
+   "own": 12.1
   },
   {
    "player": "Bennett Stirtz",
@@ -2285,7 +2285,7 @@
    "player": "Sion James",
    "team": "CHA",
    "opp": "PHI",
-   "pos": "SG/SF",
+   "pos": "SG",
    "salary": 4100,
    "dkid": "44723828",
    "slate": "late",
@@ -2293,7 +2293,7 @@
    "q": false,
    "min": 27.4,
    "usg": 11.6,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 6.0,
    "reb": 4.9,
@@ -2302,9 +2302,9 @@
    "blk": 0.2,
    "to": 1.2,
    "dk": 18.8,
-   "value": 4.57,
+   "value": 4.59,
    "note": "",
-   "own": 17.7
+   "own": 11.3
   },
   {
    "player": "Saddiq Bey",
@@ -2339,7 +2339,7 @@
    "salary": 4200,
    "dkid": "44724229",
    "slate": "main",
-   "start": false,
+   "start": true,
    "q": false,
    "min": 21.8,
    "usg": 16.1,
@@ -2468,7 +2468,7 @@
    "q": false,
    "min": 16.6,
    "usg": 11.1,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": -1.5,
    "pts": 4.4,
    "reb": 5.2,
@@ -2477,7 +2477,7 @@
    "blk": 2.2,
    "to": 1.0,
    "dk": 16.6,
-   "value": 5.34,
+   "value": 5.35,
    "note": "",
    "own": 22.0
   },
@@ -2493,7 +2493,7 @@
    "q": false,
    "min": 15.5,
    "usg": 11.6,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 6.1,
    "reb": 5.1,
@@ -2502,9 +2502,9 @@
    "blk": 1.0,
    "to": 0.9,
    "dk": 16.0,
-   "value": 4.22,
+   "value": 4.21,
    "note": "Moved toward his recent minutes (13.7 a game).",
-   "own": 3.7
+   "own": 8.4
   },
   {
    "player": "Jock Landale",
@@ -2632,31 +2632,6 @@
    "own": 0.6
   },
   {
-   "player": "Brice Sensabaugh",
-   "team": "UTA",
-   "opp": "POR",
-   "pos": "SG/SF",
-   "salary": 3800,
-   "dkid": "44723849",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 15.3,
-   "usg": 22.7,
-   "ou": 233.5,
-   "spread": 6.5,
-   "pts": 8.8,
-   "reb": 2.3,
-   "ast": 1.3,
-   "stl": 0.5,
-   "blk": 0.1,
-   "to": 0.9,
-   "dk": 15.3,
-   "value": 4.02,
-   "note": "",
-   "own": 11.1
-  },
-  {
    "player": "Trey Lyles",
    "team": "MIN",
    "opp": "SAS",
@@ -2680,6 +2655,31 @@
    "value": 4.38,
    "note": "",
    "own": 3.0
+  },
+  {
+   "player": "Brice Sensabaugh",
+   "team": "UTA",
+   "opp": "POR",
+   "pos": "SG/SF",
+   "salary": 3800,
+   "dkid": "44723849",
+   "slate": "late",
+   "start": false,
+   "q": false,
+   "min": 15.3,
+   "usg": 22.7,
+   "ou": 233.5,
+   "spread": 6.5,
+   "pts": 8.8,
+   "reb": 2.3,
+   "ast": 1.3,
+   "stl": 0.5,
+   "blk": 0.1,
+   "to": 0.9,
+   "dk": 15.3,
+   "value": 4.02,
+   "note": "",
+   "own": 12.1
   },
   {
    "player": "Isaiah Stewart",
@@ -2804,7 +2804,7 @@
    "dk": 14.1,
    "value": 3.72,
    "note": "Moved toward his recent minutes (21.7 a game).",
-   "own": 9.4
+   "own": 10.5
   },
   {
    "player": "Bogdan Bogdanovic",
@@ -2954,32 +2954,7 @@
    "dk": 12.2,
    "value": 2.49,
    "note": "Moved toward his recent minutes (8.3 a game).",
-   "own": 1.8
-  },
-  {
-   "player": "Josh Okogie",
-   "team": "UTA",
-   "opp": "POR",
-   "pos": "SG/SF",
-   "salary": 3600,
-   "dkid": "44723865",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 17.1,
-   "usg": 11.9,
-   "ou": 233.5,
-   "spread": 6.5,
-   "pts": 4.6,
-   "reb": 2.5,
-   "ast": 1.1,
-   "stl": 0.9,
-   "blk": 0.3,
-   "to": 0.5,
-   "dk": 11.8,
-   "value": 3.29,
-   "note": "Moved toward his recent minutes (19.7 a game).",
-   "own": 6.1
+   "own": 1.9
   },
   {
    "player": "DeAndre Jordan",
@@ -3007,29 +2982,29 @@
    "own": 1.1
   },
   {
-   "player": "Svi Mykhailiuk",
+   "player": "Josh Okogie",
    "team": "UTA",
    "opp": "POR",
    "pos": "SG/SF",
-   "salary": 4100,
-   "dkid": "44723833",
+   "salary": 3600,
+   "dkid": "44723865",
    "slate": "late",
    "start": false,
    "q": false,
-   "min": 14.1,
-   "usg": 15.8,
+   "min": 17.1,
+   "usg": 11.9,
    "ou": 233.5,
    "spread": 6.5,
-   "pts": 5.3,
-   "reb": 1.7,
-   "ast": 1.3,
-   "stl": 0.6,
-   "blk": 0.1,
+   "pts": 4.6,
+   "reb": 2.5,
+   "ast": 1.1,
+   "stl": 0.9,
+   "blk": 0.3,
    "to": 0.5,
-   "dk": 10.9,
-   "value": 2.67,
-   "note": "",
-   "own": 2.3
+   "dk": 11.8,
+   "value": 3.29,
+   "note": "Moved toward his recent minutes (19.7 a game).",
+   "own": 6.5
   },
   {
    "player": "Nate Ament",
@@ -3057,10 +3032,35 @@
    "own": 0.9
   },
   {
+   "player": "Svi Mykhailiuk",
+   "team": "UTA",
+   "opp": "POR",
+   "pos": "SG/SF",
+   "salary": 4100,
+   "dkid": "44723833",
+   "slate": "late",
+   "start": false,
+   "q": false,
+   "min": 14.1,
+   "usg": 15.8,
+   "ou": 233.5,
+   "spread": 6.5,
+   "pts": 5.3,
+   "reb": 1.7,
+   "ast": 1.3,
+   "stl": 0.6,
+   "blk": 0.1,
+   "to": 0.5,
+   "dk": 10.9,
+   "value": 2.67,
+   "note": "",
+   "own": 2.5
+  },
+  {
    "player": "Justin Edwards",
    "team": "PHI",
    "opp": "CHA",
-   "pos": "SF/PF",
+   "pos": "SF",
    "salary": 3000,
    "dkid": "44723924",
    "slate": "late",
@@ -3068,7 +3068,7 @@
    "q": false,
    "min": 11.4,
    "usg": 16.3,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": -1.5,
    "pts": 4.5,
    "reb": 1.7,
@@ -3077,9 +3077,9 @@
    "blk": 0.2,
    "to": 0.5,
    "dk": 9.8,
-   "value": 3.25,
+   "value": 3.27,
    "note": "Moved toward his recent minutes (1.0 a game).",
-   "own": 4.0
+   "own": 3.5
   },
   {
    "player": "Christian Anderson",
@@ -3093,7 +3093,7 @@
    "q": false,
    "min": 11.2,
    "usg": 20.7,
-   "ou": 213.5,
+   "ou": 211.5,
    "spread": 1.5,
    "pts": 4.7,
    "reb": 1.4,
@@ -3104,7 +3104,7 @@
    "dk": 9.8,
    "value": 2.97,
    "note": "",
-   "own": 2.6
+   "own": 2.8
   },
   {
    "player": "Josh Green",
@@ -3129,7 +3129,7 @@
    "dk": 9.7,
    "value": 2.76,
    "note": "",
-   "own": 2.5
+   "own": 3.1
   },
   {
    "player": "Ousmane Dieng",
@@ -3179,7 +3179,7 @@
    "dk": 7.9,
    "value": 2.64,
    "note": "Moved toward his recent minutes (6.0 a game).",
-   "own": 2.1
+   "own": 2.2
   },
   {
    "player": "Nique Clifford",
@@ -3296,7 +3296,7 @@
   {
    "player": "Fred VanVleet",
    "team": "HOU",
-   "note": "Ruled out tonight (right knee injury)."
+   "note": "Ruled out tonight."
   },
   {
    "player": "Reed Sheppard",
