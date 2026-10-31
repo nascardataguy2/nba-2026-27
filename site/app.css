@@ -444,7 +444,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .ch-tbl td.ch-m{white-space:normal}
 .op-m{font:700 14px/1 var(--head);text-align:right;color:var(--muted)}
 .op-v{font:700 14px/1 var(--head);text-align:right;color:var(--ink)}
-.op-d,.op-v,.op-o{padding:6px 6px;border-radius:6px}
+.op-m,.op-s,.op-d,.op-v,.op-o{padding:6px 6px;border-radius:6px}
 .op-who{display:grid;grid-template-columns:max-content minmax(0,1fr);column-gap:16px;align-items:center}
 .op-ctx{font-size:13px;line-height:1.35;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 @media (max-width:600px){.op-who{display:block} .op-ctx{margin-top:4px}}

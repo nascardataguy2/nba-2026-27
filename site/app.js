@@ -899,17 +899,17 @@
     (function(){
       // Heat map for DK, value and Own%: the slate's high end in site orange, low end in site blue.
       function rng(f){ var v = list.map(f).filter(function(x){ return x != null && !isNaN(x); }); return [Math.min.apply(null, v), Math.max.apply(null, v)]; }
-      OHEAT = {dk: rng(function(p){ return p.dk; }), val: rng(function(p){ return p.salary ? p.dk / p.salary * 1000 : null; }), own: rng(function(p){ return p.own; })};
+      OHEAT = {min: rng(function(p){ return p.min; }), ou: rng(function(p){ return p.ou; }), sal: rng(function(p){ return p.salary; }), dk: rng(function(p){ return p.dk; }), val: rng(function(p){ return p.salary ? p.dk / p.salary * 1000 : null; }), own: rng(function(p){ return p.own; })};
     })(),
-    '<div class="op-key"><span>DK, Val, Own%:</span> <i class="k-hi"></i> high tonight <i class="k-lo"></i> low tonight</div>' +
+    '<div class="op-key"><span>Every number:</span> <i class="k-hi"></i> high tonight <i class="k-lo"></i> low tonight</div>' +
     '<div class="op-head"><span>Player</span><span class="op-x">Min</span><span class="op-x">O/U</span><span>Sal</span><span>DK</span><span class="op-xp">Val</span><span>Own%</span><span></span></div>' + list.map(function(p){
       var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
       var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[k];
       var tags = (p.q ? '<span class="role out">Q</span>' : '') + (st[p.team] ? '<span class="role">Started</span>' : '') + nbtn(p.player, has);
       return '<div class="op-row' + (lk ? ' lk' : '') + (ex ? ' ex' : '') + '"><div class="op-who"><div class="op-id"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags +
         '<div class="op-sub"><span class="pk-pos">' + esc(p.pos) + '</span> ' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + '</div></div>' + oCtx(p) + '</div>' +
-        '<span class="op-m op-x">' + n1(p.min) + '</span><span class="op-m op-x">' + (p.ou ? n1(p.ou) : '\u2013') + '</span>' +
-        '<span class="op-s">' + money(p.salary) + '</span><span class="op-d"' + heat('dk', p.dk) + '>' + n1(p.dk) + '</span>' +
+        '<span class="op-m op-x"' + heat('min', p.min) + '>' + n1(p.min) + '</span><span class="op-m op-x"' + heat('ou', p.ou) + '>' + (p.ou ? n1(p.ou) : '\u2013') + '</span>' +
+        '<span class="op-s"' + heat('sal', p.salary) + '>' + money(p.salary) + '</span><span class="op-d"' + heat('dk', p.dk) + '>' + n1(p.dk) + '</span>' +
         '<span class="op-v op-xp"' + heat('val', p.salary ? p.dk / p.salary * 1000 : null) + '>' + (p.salary ? (p.dk / p.salary * 1000).toFixed(2) : '\u2013') + '</span>' +
         '<span class="op-o"' + heat('own', p.own) + '>' + (p.own == null ? '\u2013' : n1(p.own) + '%') + '</span>' +
         '<span class="op-b"><button class="ob' + (lk ? ' on' : '') + '" data-lock="' + esc(p.player) + '" type="button" aria-pressed="' + lk + '">' + (lk ? 'Locked' : 'Lock') + '</button>' +
