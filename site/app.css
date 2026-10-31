@@ -412,6 +412,8 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .inj-tbl th{text-align:left;font:700 12px/1.2 var(--body);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);padding:10px 12px;border-bottom:1px solid var(--line);background:var(--soft)}
 .inj-tbl td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
 .inj-tbl tr.is-new,.inj-tbl tr.is-new td{background:#fffaf6}
+.inj-sort{display:flex;align-items:center;gap:8px;margin:0 0 10px;flex-wrap:wrap} .inj-sort .btn{font-size:13px;padding:8px 12px}
+.inj-tbl tr.inj-grp td{background:var(--soft);font:700 13px/1.2 var(--head);letter-spacing:.04em;text-transform:uppercase;color:var(--navy);padding:8px 12px}
 .bc-st.dbt{background:#fde7dc;color:#b4431c}
 .inj-minor{margin-top:12px;font-size:14px;color:var(--muted)} .inj-minor summary{cursor:pointer;font-weight:700}
 @media (max-width:640px){
