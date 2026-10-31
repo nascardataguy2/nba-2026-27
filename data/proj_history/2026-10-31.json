@@ -7,20 +7,12 @@
   "dk": 59.5,
   "salary": 10400
  },
- "tyrese maxey": {
-  "player": "Tyrese Maxey",
-  "team": "PHI",
-  "base_min": 38.0,
-  "min": 36.7,
-  "dk": 49.9,
-  "salary": null
- },
  "donovan mitchell": {
   "player": "Donovan Mitchell",
   "team": "CLE",
   "base_min": 33.0,
   "min": 34.0,
-  "dk": 50.9,
+  "dk": 50.4,
   "salary": 8700
  },
  "victor wembanyama": {
@@ -28,7 +20,7 @@
   "team": "SAS",
   "base_min": 32.0,
   "min": 31.8,
-  "dk": 52.4,
+  "dk": 52.5,
   "salary": 10900
  },
  "alperen sengun": {
@@ -39,28 +31,28 @@
   "dk": 51.8,
   "salary": 8600
  },
- "james harden": {
-  "player": "James Harden",
-  "team": "CLE",
-  "base_min": 34.0,
-  "min": 35.9,
-  "dk": 47.8,
-  "salary": 7600
- },
  "jalen johnson": {
   "player": "Jalen Johnson",
   "team": "ATL",
   "base_min": 35.0,
   "min": 35.2,
-  "dk": 46.7,
+  "dk": 47.6,
   "salary": 9700
+ },
+ "james harden": {
+  "player": "James Harden",
+  "team": "CLE",
+  "base_min": 34.0,
+  "min": 35.9,
+  "dk": 47.6,
+  "salary": 7600
  },
  "domantas sabonis": {
   "player": "Domantas Sabonis",
   "team": "SAC",
   "base_min": 35.0,
   "min": 36.5,
-  "dk": 48.8,
+  "dk": 48.5,
   "salary": 9400
  },
  "darius acuff": {
@@ -68,47 +60,39 @@
   "team": "SAC",
   "base_min": 35.0,
   "min": 36.1,
-  "dk": 44.8,
+  "dk": 44.6,
   "salary": 7500
- },
- "evan mobley": {
-  "player": "Evan Mobley",
-  "team": "CLE",
-  "base_min": 32.0,
-  "min": 33.8,
-  "dk": 48.0,
-  "salary": 8100
- },
- "cameron boozer": {
-  "player": "Cameron Boozer",
-  "team": "MEM",
-  "base_min": 34.0,
-  "min": 32.5,
-  "dk": 42.8,
-  "salary": 7400
  },
  "kevin durant": {
   "player": "Kevin Durant",
   "team": "HOU",
   "base_min": 36.0,
   "min": 34.2,
-  "dk": 42.1,
+  "dk": 42.3,
   "salary": 7900
  },
- "jaylen brown": {
-  "player": "Jaylen Brown",
-  "team": "PHI",
-  "base_min": 35.0,
-  "min": 36.0,
-  "dk": 44.9,
-  "salary": null
+ "cameron boozer": {
+  "player": "Cameron Boozer",
+  "team": "MEM",
+  "base_min": 34.0,
+  "min": 32.5,
+  "dk": 43.0,
+  "salary": 7400
+ },
+ "evan mobley": {
+  "player": "Evan Mobley",
+  "team": "CLE",
+  "base_min": 32.0,
+  "min": 33.8,
+  "dk": 47.8,
+  "salary": 8100
  },
  "lamelo ball": {
   "player": "LaMelo Ball",
   "team": "MIN",
   "base_min": 29.0,
-  "min": 29.2,
-  "dk": 41.8,
+  "min": 33.7,
+  "dk": 48.5,
   "salary": 8500
  },
  "ty jerome": {
@@ -118,14 +102,6 @@
   "min": 30.1,
   "dk": 40.1,
   "salary": 8400
- },
- "brandon miller": {
-  "player": "Brandon Miller",
-  "team": "CHA",
-  "base_min": 32.0,
-  "min": 35.2,
-  "dk": 46.5,
-  "salary": null
  },
  "tyler herro": {
   "player": "Tyler Herro",
@@ -147,17 +123,9 @@
   "player": "Zion Williamson",
   "team": "NOP",
   "base_min": 30.0,
-  "min": 28.3,
-  "dk": 36.0,
+  "min": 31.1,
+  "dk": 39.0,
   "salary": 7700
- },
- "dejounte murray": {
-  "player": "Dejounte Murray",
-  "team": "NOP",
-  "base_min": 32.0,
-  "min": 28.7,
-  "dk": 33.3,
-  "salary": 7800
  },
  "deaaron fox": {
   "player": "De'Aaron Fox",
@@ -180,7 +148,7 @@
   "team": "SAS",
   "base_min": 31.0,
   "min": 31.4,
-  "dk": 34.1,
+  "dk": 34.0,
   "salary": 6500
  },
  "jarrett allen": {
@@ -188,16 +156,8 @@
   "team": "CLE",
   "base_min": 28.0,
   "min": 28.9,
-  "dk": 37.8,
+  "dk": 37.6,
   "salary": 6100
- },
- "vj edgecombe": {
-  "player": "VJ Edgecombe",
-  "team": "PHI",
-  "base_min": 35.0,
-  "min": 36.0,
-  "dk": 36.2,
-  "salary": null
  },
  "zach lavine": {
   "player": "Zach LaVine",
@@ -207,61 +167,45 @@
   "dk": 34.3,
   "salary": 6800
  },
- "ayo dosunmu": {
-  "player": "Ayo Dosunmu",
-  "team": "MIN",
-  "base_min": 33.0,
-  "min": 30.6,
-  "dk": 29.8,
-  "salary": 5900
- },
  "dyson daniels": {
   "player": "Dyson Daniels",
   "team": "ATL",
   "base_min": 32.0,
   "min": 30.3,
-  "dk": 30.7,
+  "dk": 31.6,
   "salary": 6700
+ },
+ "ayo dosunmu": {
+  "player": "Ayo Dosunmu",
+  "team": "MIN",
+  "base_min": 33.0,
+  "min": 35.7,
+  "dk": 34.8,
+  "salary": 5900
  },
  "jaime jaquez": {
   "player": "Jaime Jaquez Jr",
   "team": "MIL",
   "base_min": 30.0,
   "min": 27.6,
-  "dk": 28.7,
+  "dk": 28.6,
   "salary": 6100
- },
- "trey murphy": {
-  "player": "Trey Murphy",
-  "team": "NOP",
-  "base_min": 35.0,
-  "min": 30.5,
-  "dk": 28.0,
-  "salary": 7300
- },
- "derik queen": {
-  "player": "Derik Queen",
-  "team": "NOP",
-  "base_min": 31.0,
-  "min": 23.9,
-  "dk": 25.9,
-  "salary": 6400
- },
- "naz reid": {
-  "player": "Naz Reid",
-  "team": "CHA",
-  "base_min": 27.0,
-  "min": 25.3,
-  "dk": 31.0,
-  "salary": null
  },
  "cj mccollum": {
   "player": "C.J. McCollum",
   "team": "ATL",
   "base_min": 30.0,
   "min": 28.1,
-  "dk": 28.2,
+  "dk": 28.6,
   "salary": 5700
+ },
+ "trey murphy": {
+  "player": "Trey Murphy",
+  "team": "NOP",
+  "base_min": 35.0,
+  "min": 33.5,
+  "dk": 30.6,
+  "salary": 7300
  },
  "ryan rollins": {
   "player": "Ryan Rollins",
@@ -271,6 +215,22 @@
   "dk": 27.4,
   "salary": 6000
  },
+ "derik queen": {
+  "player": "Derik Queen",
+  "team": "NOP",
+  "base_min": 31.0,
+  "min": 26.3,
+  "dk": 27.9,
+  "salary": 6400
+ },
+ "onyeka okongwu": {
+  "player": "Onyeka Okongwu",
+  "team": "ATL",
+  "base_min": 29.0,
+  "min": 30.3,
+  "dk": 32.8,
+  "salary": 5900
+ },
  "jabari smith": {
   "player": "Jabari Smith",
   "team": "HOU",
@@ -279,36 +239,28 @@
   "dk": 33.2,
   "salary": 6600
  },
- "cedric coward": {
-  "player": "Cedric Coward",
-  "team": "MEM",
-  "base_min": 27.0,
-  "min": 29.7,
-  "dk": 33.5,
-  "salary": 6200
- },
  "ajay mitchell": {
   "player": "Ajay Mitchell",
   "team": "OKC",
   "base_min": 26.0,
   "min": 29.7,
-  "dk": 33.8,
+  "dk": 34.1,
   "salary": 6400
  },
- "onyeka okongwu": {
-  "player": "Onyeka Okongwu",
-  "team": "ATL",
-  "base_min": 29.0,
-  "min": 30.3,
-  "dk": 32.1,
-  "salary": 5900
+ "cedric coward": {
+  "player": "Cedric Coward",
+  "team": "MEM",
+  "base_min": 27.0,
+  "min": 29.7,
+  "dk": 33.6,
+  "salary": 6200
  },
  "jaden mcdaniels": {
   "player": "Jaden McDaniels",
   "team": "MIN",
   "base_min": 32.0,
-  "min": 34.0,
-  "dk": 32.1,
+  "min": 38.8,
+  "dk": 37.0,
   "salary": 6200
  },
  "isaiah hartenstein": {
@@ -316,8 +268,496 @@
   "team": "OKC",
   "base_min": 25.0,
   "min": 28.9,
-  "dk": 35.1,
+  "dk": 35.3,
   "salary": 6100
+ },
+ "nickeil alexander walker": {
+  "player": "Nickeil Alexander-Walker",
+  "team": "ATL",
+  "base_min": 29.0,
+  "min": 30.1,
+  "dk": 27.7,
+  "salary": 6900
+ },
+ "jonathan kuminga": {
+  "player": "Jonathan Kuminga",
+  "team": "MIN",
+  "base_min": 25.0,
+  "min": 32.1,
+  "dk": 34.1,
+  "salary": 5400
+ },
+ "peyton watson": {
+  "player": "Peyton Watson",
+  "team": "CLE",
+  "base_min": 29.0,
+  "min": 29.3,
+  "dk": 28.5,
+  "salary": 5700
+ },
+ "rudy gobert": {
+  "player": "Rudy Gobert",
+  "team": "MIN",
+  "base_min": 28.0,
+  "min": 0.0,
+  "dk": 0.0,
+  "salary": 5700
+ },
+ "kyle kuzma": {
+  "player": "Kyle Kuzma",
+  "team": "MIL",
+  "base_min": 28.0,
+  "min": 27.6,
+  "dk": 25.1,
+  "salary": 5000
+ },
+ "jaylin williams": {
+  "player": "Jaylin Williams",
+  "team": "OKC",
+  "base_min": 26.0,
+  "min": 22.5,
+  "dk": 22.8,
+  "salary": 4500
+ },
+ "malik monk": {
+  "player": "Malik Monk",
+  "team": "SAC",
+  "base_min": 24.0,
+  "min": 15.5,
+  "dk": 15.7,
+  "salary": 4200
+ },
+ "myles turner": {
+  "player": "Myles Turner",
+  "team": "MIL",
+  "base_min": 28.0,
+  "min": 25.0,
+  "dk": 23.6,
+  "salary": 4900
+ },
+ "tari eason": {
+  "player": "Tari Eason",
+  "team": "HOU",
+  "base_min": 25.0,
+  "min": 28.5,
+  "dk": 30.5,
+  "salary": 5500
+ },
+ "jerami grant": {
+  "player": "Jerami Grant",
+  "team": "MEM",
+  "base_min": 27.0,
+  "min": 26.2,
+  "dk": 23.6,
+  "salary": 4500
+ },
+ "devin vassell": {
+  "player": "Devin Vassell",
+  "team": "SAS",
+  "base_min": 28.0,
+  "min": 30.2,
+  "dk": 26.2,
+  "salary": 5800
+ },
+ "saddiq bey": {
+  "player": "Saddiq Bey",
+  "team": "NOP",
+  "base_min": 28.0,
+  "min": 25.9,
+  "dk": 22.1,
+  "salary": 5500
+ },
+ "jeremiah fears": {
+  "player": "Jeremiah Fears",
+  "team": "NOP",
+  "base_min": 25.0,
+  "min": 25.0,
+  "dk": 24.2,
+  "salary": 5600
+ },
+ "precious achiuwa": {
+  "player": "Precious Achiuwa",
+  "team": "SAC",
+  "base_min": 25.0,
+  "min": 29.1,
+  "dk": 29.5,
+  "salary": 5700
+ },
+ "deandre hunter": {
+  "player": "De'Andre Hunter",
+  "team": "SAC",
+  "base_min": 27.0,
+  "min": 30.9,
+  "dk": 26.8,
+  "salary": 5800
+ },
+ "jared mccain": {
+  "player": "Jared McCain",
+  "team": "OKC",
+  "base_min": 25.0,
+  "min": 29.1,
+  "dk": 26.2,
+  "salary": 5700
+ },
+ "benedict mathurin": {
+  "player": "Benedict Mathurin",
+  "team": "NOP",
+  "base_min": 26.0,
+  "min": 25.8,
+  "dk": 22.3,
+  "salary": 4400
+ },
+ "aaron wiggins": {
+  "player": "Aaron Wiggins",
+  "team": "ATL",
+  "base_min": 25.0,
+  "min": 25.0,
+  "dk": 22.1,
+  "salary": 5100
+ },
+ "jaylen wells": {
+  "player": "Jaylen Wells",
+  "team": "MEM",
+  "base_min": 27.0,
+  "min": 29.3,
+  "dk": 23.4,
+  "salary": 4900
+ },
+ "keldon johnson": {
+  "player": "Keldon Johnson",
+  "team": "SAS",
+  "base_min": 23.0,
+  "min": 23.4,
+  "dk": 22.0,
+  "salary": 4400
+ },
+ "zach edey": {
+  "player": "Zach Edey",
+  "team": "MEM",
+  "base_min": 22.0,
+  "min": 21.8,
+  "dk": 22.8,
+  "salary": 5700
+ },
+ "kingston flemings": {
+  "player": "Kingston Flemings",
+  "team": "ATL",
+  "base_min": 21.0,
+  "min": 20.8,
+  "dk": 20.1,
+  "salary": 3900
+ },
+ "cam spencer": {
+  "player": "Cam Spencer",
+  "team": "MEM",
+  "base_min": 18.0,
+  "min": 19.2,
+  "dk": 21.0,
+  "salary": 3700
+ },
+ "julian champagnie": {
+  "player": "Julian Champagnie",
+  "team": "SAS",
+  "base_min": 26.0,
+  "min": 27.3,
+  "dk": 23.4,
+  "salary": 4800
+ },
+ "scotty pippen": {
+  "player": "Scotty Pippen Jr.",
+  "team": "MEM",
+  "base_min": 19.0,
+  "min": 16.9,
+  "dk": 18.2,
+  "salary": 4200
+ },
+ "sam merrill": {
+  "player": "Sam Merrill",
+  "team": "CLE",
+  "base_min": 23.0,
+  "min": 25.2,
+  "dk": 20.4,
+  "salary": 4000
+ },
+ "terrence shannon": {
+  "player": "Terrence Shannon Jr.",
+  "team": "MIN",
+  "base_min": 20.0,
+  "min": 25.4,
+  "dk": 23.3,
+  "salary": 4500
+ },
+ "marcus smart": {
+  "player": "Marcus Smart",
+  "team": "HOU",
+  "base_min": 22.0,
+  "min": 21.8,
+  "dk": 18.6,
+  "salary": 4200
+ },
+ "kelel ware": {
+  "player": "Kel'El Ware",
+  "team": "MIL",
+  "base_min": 17.0,
+  "min": 20.0,
+  "dk": 23.0,
+  "salary": 6200
+ },
+ "bogdan bogdanovic": {
+  "player": "Bogdan Bogdanovic",
+  "team": "HOU",
+  "base_min": 20.0,
+  "min": 15.6,
+  "dk": 13.8,
+  "salary": 3200
+ },
+ "meleek thomas": {
+  "player": "Meleek Thomas",
+  "team": "CLE",
+  "base_min": 16.0,
+  "min": 18.6,
+  "dk": 20.1,
+  "salary": 3800
+ },
+ "aday mara": {
+  "player": "Aday Mara",
+  "team": "OKC",
+  "base_min": 20.0,
+  "min": 21.1,
+  "dk": 19.9,
+  "salary": 3900
+ },
+ "luke kornet": {
+  "player": "Luke Kornet",
+  "team": "SAS",
+  "base_min": 18.0,
+  "min": 16.1,
+  "dk": 14.7,
+  "salary": 3500
+ },
+ "gregory jackson": {
+  "player": "Gregory Jackson",
+  "team": "MEM",
+  "base_min": 17.0,
+  "min": 17.5,
+  "dk": 17.0,
+  "salary": 3800
+ },
+ "nahshon hyland": {
+  "player": "Nah'Shon Hyland",
+  "team": "MIN",
+  "base_min": 14.0,
+  "min": 16.1,
+  "dk": 17.9,
+  "salary": 3700
+ },
+ "jock landale": {
+  "player": "Jock Landale",
+  "team": "ATL",
+  "base_min": 16.0,
+  "min": 16.4,
+  "dk": 16.2,
+  "salary": 3900
+ },
+ "trendon watford": {
+  "player": "Trendon Watford",
+  "team": "NOP",
+  "base_min": 17.0,
+  "min": 16.9,
+  "dk": 15.5,
+  "salary": 3500
+ },
+ "herbert jones": {
+  "player": "Herbert Jones",
+  "team": "NOP",
+  "base_min": 26.0,
+  "min": 23.4,
+  "dk": 14.9,
+  "salary": 4500
+ },
+ "nique clifford": {
+  "player": "Nique Clifford",
+  "team": "SAC",
+  "base_min": 20.0,
+  "min": 9.4,
+  "dk": 7.3,
+  "salary": 3100
+ },
+ "trey lyles": {
+  "player": "Trey Lyles",
+  "team": "MIN",
+  "base_min": 18.0,
+  "min": 20.3,
+  "dk": 17.4,
+  "salary": 3500
+ },
+ "luguentz dort": {
+  "player": "Luguentz Dort",
+  "team": "ATL",
+  "base_min": 24.0,
+  "min": 22.9,
+  "dk": 14.8,
+  "salary": 4500
+ },
+ "quinten post": {
+  "player": "Quinten Post",
+  "team": "MEM",
+  "base_min": 15.0,
+  "min": 0.0,
+  "dk": 0.0,
+  "salary": 3300
+ },
+ "bennett stirtz": {
+  "player": "Bennett Stirtz",
+  "team": "OKC",
+  "base_min": 15.0,
+  "min": 21.3,
+  "dk": 19.5,
+  "salary": 3900
+ },
+ "clint capela": {
+  "player": "Clint Capela",
+  "team": "HOU",
+  "base_min": 13.0,
+  "min": 16.9,
+  "dk": 18.8,
+  "salary": 4500
+ },
+ "kasparas jakucionis": {
+  "player": "Kasparas Jakucionis",
+  "team": "MIL",
+  "base_min": 16.0,
+  "min": 19.7,
+  "dk": 15.5,
+  "salary": 4100
+ },
+ "karlo matkovic": {
+  "player": "Karlo Matkovic",
+  "team": "NOP",
+  "base_min": 16.0,
+  "min": 17.2,
+  "dk": 15.1,
+  "salary": 3700
+ },
+ "aj green": {
+  "player": "AJ Green",
+  "team": "MIL",
+  "base_min": 20.0,
+  "min": 20.6,
+  "dk": 13.2,
+  "salary": 3500
+ },
+ "isaiah stewart": {
+  "player": "Isaiah Stewart",
+  "team": "MEM",
+  "base_min": 14.0,
+  "min": 16.7,
+  "dk": 15.0,
+  "salary": 3900
+ },
+ "brayden burries": {
+  "player": "Brayden Burries",
+  "team": "MIL",
+  "base_min": 12.0,
+  "min": 15.0,
+  "dk": 14.8,
+  "salary": 3900
+ },
+ "kenrich williams": {
+  "player": "Kenrich Williams",
+  "team": "OKC",
+  "base_min": 14.0,
+  "min": 17.1,
+  "dk": 14.9,
+  "salary": 4200
+ },
+ "joan beringer": {
+  "player": "Joan Beringer",
+  "team": "MIN",
+  "base_min": 12.0,
+  "min": 18.0,
+  "dk": 18.6,
+  "salary": 4000
+ },
+ "deandre jordan": {
+  "player": "DeAndre Jordan",
+  "team": "NOP",
+  "base_min": 12.0,
+  "min": 15.0,
+  "dk": 14.2,
+  "salary": 3600
+ },
+ "nate ament": {
+  "player": "Nate Ament",
+  "team": "MIL",
+  "base_min": 14.0,
+  "min": 14.6,
+  "dk": 10.9,
+  "salary": 3300
+ },
+ "ousmane dieng": {
+  "player": "Ousmane Dieng",
+  "team": "MIL",
+  "base_min": 12.0,
+  "min": 11.1,
+  "dk": 8.0,
+  "salary": 3200
+ },
+ "carter bryant": {
+  "player": "Carter Bryant",
+  "team": "SAS",
+  "base_min": 10.0,
+  "min": 10.4,
+  "dk": 7.3,
+  "salary": 3100
+ },
+ "tarris reed": {
+  "player": "Tarris Reed Jr.",
+  "team": "SAS",
+  "base_min": 10.0,
+  "min": 6.3,
+  "dk": 3.8,
+  "salary": 3000
+ },
+ "tyrese maxey": {
+  "player": "Tyrese Maxey",
+  "team": "PHI",
+  "base_min": 38.0,
+  "min": 36.7,
+  "dk": 49.9,
+  "salary": null
+ },
+ "jaylen brown": {
+  "player": "Jaylen Brown",
+  "team": "PHI",
+  "base_min": 35.0,
+  "min": 36.0,
+  "dk": 44.9,
+  "salary": null
+ },
+ "brandon miller": {
+  "player": "Brandon Miller",
+  "team": "CHA",
+  "base_min": 32.0,
+  "min": 35.2,
+  "dk": 46.5,
+  "salary": null
+ },
+ "vj edgecombe": {
+  "player": "VJ Edgecombe",
+  "team": "PHI",
+  "base_min": 35.0,
+  "min": 36.0,
+  "dk": 36.2,
+  "salary": null
+ },
+ "naz reid": {
+  "player": "Naz Reid",
+  "team": "CHA",
+  "base_min": 27.0,
+  "min": 25.3,
+  "dk": 31.0,
+  "salary": null
  },
  "dennis schroder": {
   "player": "Dennis Schroder",
@@ -343,22 +783,6 @@
   "dk": 35.9,
   "salary": null
  },
- "nickeil alexander walker": {
-  "player": "Nickeil Alexander-Walker",
-  "team": "ATL",
-  "base_min": 29.0,
-  "min": 30.1,
-  "dk": 27.4,
-  "salary": 6900
- },
- "jonathan kuminga": {
-  "player": "Jonathan Kuminga",
-  "team": "MIN",
-  "base_min": 25.0,
-  "min": 28.2,
-  "dk": 30.1,
-  "salary": 5400
- },
  "grayson allen": {
   "player": "Grayson Allen",
   "team": "CHA",
@@ -366,134 +790,6 @@
   "min": 26.2,
   "dk": 26.9,
   "salary": null
- },
- "peyton watson": {
-  "player": "Peyton Watson",
-  "team": "CLE",
-  "base_min": 29.0,
-  "min": 29.3,
-  "dk": 27.9,
-  "salary": 5700
- },
- "rudy gobert": {
-  "player": "Rudy Gobert",
-  "team": "MIN",
-  "base_min": 28.0,
-  "min": 28.4,
-  "dk": 28.5,
-  "salary": 5700
- },
- "kyle kuzma": {
-  "player": "Kyle Kuzma",
-  "team": "MIL",
-  "base_min": 28.0,
-  "min": 27.6,
-  "dk": 25.1,
-  "salary": 5000
- },
- "jaylin williams": {
-  "player": "Jaylin Williams",
-  "team": "OKC",
-  "base_min": 26.0,
-  "min": 22.5,
-  "dk": 22.7,
-  "salary": 4500
- },
- "malik monk": {
-  "player": "Malik Monk",
-  "team": "SAC",
-  "base_min": 24.0,
-  "min": 15.5,
-  "dk": 15.7,
-  "salary": 4200
- },
- "tari eason": {
-  "player": "Tari Eason",
-  "team": "HOU",
-  "base_min": 25.0,
-  "min": 28.5,
-  "dk": 30.6,
-  "salary": 5500
- },
- "jeremiah fears": {
-  "player": "Jeremiah Fears",
-  "team": "NOP",
-  "base_min": 25.0,
-  "min": 22.8,
-  "dk": 22.6,
-  "salary": 5600
- },
- "devin vassell": {
-  "player": "Devin Vassell",
-  "team": "SAS",
-  "base_min": 28.0,
-  "min": 30.2,
-  "dk": 26.4,
-  "salary": 5800
- },
- "myles turner": {
-  "player": "Myles Turner",
-  "team": "MIL",
-  "base_min": 28.0,
-  "min": 25.0,
-  "dk": 23.4,
-  "salary": 4900
- },
- "jerami grant": {
-  "player": "Jerami Grant",
-  "team": "MEM",
-  "base_min": 27.0,
-  "min": 26.2,
-  "dk": 23.5,
-  "salary": 4500
- },
- "precious achiuwa": {
-  "player": "Precious Achiuwa",
-  "team": "SAC",
-  "base_min": 25.0,
-  "min": 29.1,
-  "dk": 29.7,
-  "salary": 5700
- },
- "deandre hunter": {
-  "player": "De'Andre Hunter",
-  "team": "SAC",
-  "base_min": 27.0,
-  "min": 30.9,
-  "dk": 27.0,
-  "salary": 5800
- },
- "jared mccain": {
-  "player": "Jared McCain",
-  "team": "OKC",
-  "base_min": 25.0,
-  "min": 29.1,
-  "dk": 26.1,
-  "salary": 5700
- },
- "benedict mathurin": {
-  "player": "Benedict Mathurin",
-  "team": "NOP",
-  "base_min": 26.0,
-  "min": 23.5,
-  "dk": 20.3,
-  "salary": 4400
- },
- "jaylen wells": {
-  "player": "Jaylen Wells",
-  "team": "MEM",
-  "base_min": 27.0,
-  "min": 29.3,
-  "dk": 23.3,
-  "salary": 4900
- },
- "keldon johnson": {
-  "player": "Keldon Johnson",
-  "team": "SAS",
-  "base_min": 23.0,
-  "min": 23.4,
-  "dk": 21.9,
-  "salary": 4400
  },
  "royce oneale": {
   "player": "Royce O'Neale",
@@ -503,54 +799,6 @@
   "dk": 19.7,
   "salary": null
  },
- "aaron wiggins": {
-  "player": "Aaron Wiggins",
-  "team": "ATL",
-  "base_min": 25.0,
-  "min": 25.0,
-  "dk": 21.8,
-  "salary": 5100
- },
- "zach edey": {
-  "player": "Zach Edey",
-  "team": "MEM",
-  "base_min": 22.0,
-  "min": 21.8,
-  "dk": 22.7,
-  "salary": 5700
- },
- "cam spencer": {
-  "player": "Cam Spencer",
-  "team": "MEM",
-  "base_min": 18.0,
-  "min": 19.2,
-  "dk": 21.0,
-  "salary": 3700
- },
- "julian champagnie": {
-  "player": "Julian Champagnie",
-  "team": "SAS",
-  "base_min": 26.0,
-  "min": 27.3,
-  "dk": 23.5,
-  "salary": 4800
- },
- "scotty pippen": {
-  "player": "Scotty Pippen Jr.",
-  "team": "MEM",
-  "base_min": 19.0,
-  "min": 16.9,
-  "dk": 18.2,
-  "salary": 4200
- },
- "kingston flemings": {
-  "player": "Kingston Flemings",
-  "team": "ATL",
-  "base_min": 21.0,
-  "min": 20.8,
-  "dk": 19.9,
-  "salary": 3900
- },
  "sion james": {
   "player": "Sion James",
   "team": "CHA",
@@ -558,14 +806,6 @@
   "min": 27.4,
   "dk": 18.8,
   "salary": null
- },
- "saddiq bey": {
-  "player": "Saddiq Bey",
-  "team": "NOP",
-  "base_min": 22.0,
-  "min": 21.7,
-  "dk": 18.7,
-  "salary": 5500
  },
  "kentavious caldwell pope": {
   "player": "Kentavious Caldwell-Pope",
@@ -575,22 +815,6 @@
   "dk": 21.4,
   "salary": null
  },
- "sam merrill": {
-  "player": "Sam Merrill",
-  "team": "CLE",
-  "base_min": 23.0,
-  "min": 25.2,
-  "dk": 20.4,
-  "salary": 4000
- },
- "terrence shannon": {
-  "player": "Terrence Shannon Jr.",
-  "team": "MIN",
-  "base_min": 20.0,
-  "min": 22.4,
-  "dk": 20.5,
-  "salary": 4500
- },
  "ryan kalkbrenner": {
   "player": "Ryan Kalkbrenner",
   "team": "CHA",
@@ -598,70 +822,6 @@
   "min": 15.5,
   "dk": 16.0,
   "salary": null
- },
- "marcus smart": {
-  "player": "Marcus Smart",
-  "team": "HOU",
-  "base_min": 22.0,
-  "min": 21.8,
-  "dk": 18.6,
-  "salary": 4200
- },
- "kelel ware": {
-  "player": "Kel'El Ware",
-  "team": "MIL",
-  "base_min": 17.0,
-  "min": 20.0,
-  "dk": 23.0,
-  "salary": 6200
- },
- "bogdan bogdanovic": {
-  "player": "Bogdan Bogdanovic",
-  "team": "HOU",
-  "base_min": 20.0,
-  "min": 15.6,
-  "dk": 13.9,
-  "salary": 3200
- },
- "meleek thomas": {
-  "player": "Meleek Thomas",
-  "team": "CLE",
-  "base_min": 16.0,
-  "min": 18.6,
-  "dk": 20.1,
-  "salary": 3800
- },
- "aday mara": {
-  "player": "Aday Mara",
-  "team": "OKC",
-  "base_min": 20.0,
-  "min": 21.1,
-  "dk": 19.8,
-  "salary": 3900
- },
- "luke kornet": {
-  "player": "Luke Kornet",
-  "team": "SAS",
-  "base_min": 18.0,
-  "min": 16.1,
-  "dk": 14.7,
-  "salary": 3500
- },
- "gregory jackson": {
-  "player": "Gregory Jackson",
-  "team": "MEM",
-  "base_min": 17.0,
-  "min": 17.5,
-  "dk": 16.9,
-  "salary": 3800
- },
- "nahshon hyland": {
-  "player": "Nah'Shon Hyland",
-  "team": "MIN",
-  "base_min": 14.0,
-  "min": 14.0,
-  "dk": 15.4,
-  "salary": 3700
  },
  "justin edwards": {
   "player": "Justin Edwards",
@@ -671,54 +831,6 @@
   "dk": 9.8,
   "salary": null
  },
- "nique clifford": {
-  "player": "Nique Clifford",
-  "team": "SAC",
-  "base_min": 20.0,
-  "min": 9.4,
-  "dk": 7.3,
-  "salary": 3100
- },
- "jock landale": {
-  "player": "Jock Landale",
-  "team": "ATL",
-  "base_min": 16.0,
-  "min": 16.4,
-  "dk": 15.8,
-  "salary": 3900
- },
- "trey lyles": {
-  "player": "Trey Lyles",
-  "team": "MIN",
-  "base_min": 18.0,
-  "min": 17.6,
-  "dk": 15.3,
-  "salary": 3500
- },
- "luguentz dort": {
-  "player": "Luguentz Dort",
-  "team": "ATL",
-  "base_min": 24.0,
-  "min": 22.9,
-  "dk": 14.7,
-  "salary": 4500
- },
- "quinten post": {
-  "player": "Quinten Post",
-  "team": "MEM",
-  "base_min": 15.0,
-  "min": 0.0,
-  "dk": 0.0,
-  "salary": 3300
- },
- "bennett stirtz": {
-  "player": "Bennett Stirtz",
-  "team": "OKC",
-  "base_min": 15.0,
-  "min": 21.3,
-  "dk": 19.1,
-  "salary": 3900
- },
  "dean wade": {
   "player": "Dean Wade",
   "team": "PHI",
@@ -726,30 +838,6 @@
   "min": 27.9,
   "dk": 20.7,
   "salary": null
- },
- "kasparas jakucionis": {
-  "player": "Kasparas Jakucionis",
-  "team": "MIL",
-  "base_min": 16.0,
-  "min": 19.7,
-  "dk": 15.5,
-  "salary": 4100
- },
- "clint capela": {
-  "player": "Clint Capela",
-  "team": "HOU",
-  "base_min": 13.0,
-  "min": 16.9,
-  "dk": 18.5,
-  "salary": 4500
- },
- "aj green": {
-  "player": "AJ Green",
-  "team": "MIL",
-  "base_min": 20.0,
-  "min": 20.6,
-  "dk": 13.2,
-  "salary": 3500
  },
  "adem bona": {
   "player": "Adem Bona",
@@ -759,62 +847,6 @@
   "dk": 16.6,
   "salary": null
  },
- "trendon watford": {
-  "player": "Trendon Watford",
-  "team": "NOP",
-  "base_min": 13.0,
-  "min": 13.6,
-  "dk": 12.9,
-  "salary": 3500
- },
- "kenrich williams": {
-  "player": "Kenrich Williams",
-  "team": "OKC",
-  "base_min": 14.0,
-  "min": 17.1,
-  "dk": 15.4,
-  "salary": 4200
- },
- "herbert jones": {
-  "player": "Herbert Jones",
-  "team": "NOP",
-  "base_min": 20.0,
-  "min": 19.5,
-  "dk": 12.6,
-  "salary": 4500
- },
- "isaiah stewart": {
-  "player": "Isaiah Stewart",
-  "team": "MEM",
-  "base_min": 14.0,
-  "min": 16.7,
-  "dk": 15.0,
-  "salary": 3900
- },
- "brayden burries": {
-  "player": "Brayden Burries",
-  "team": "MIL",
-  "base_min": 12.0,
-  "min": 15.0,
-  "dk": 14.8,
-  "salary": 3900
- },
- "joan beringer": {
-  "player": "Joan Beringer",
-  "team": "MIN",
-  "base_min": 12.0,
-  "min": 16.1,
-  "dk": 16.8,
-  "salary": 4000
- },
- "nate ament": {
-  "player": "Nate Ament",
-  "team": "MIL",
-  "base_min": 14.0,
-  "min": 14.6,
-  "dk": 10.9,
-  "salary": 3300
- },
  "christian anderson": {
   "player": "Christian Anderson",
   "team": "CHA",
@@ -822,46 +854,6 @@
   "min": 11.2,
   "dk": 9.8,
   "salary": null
- },
- "karlo matkovic": {
-  "player": "Karlo Matkovic",
-  "team": "NOP",
-  "base_min": 12.0,
-  "min": 14.4,
-  "dk": 13.1,
-  "salary": 3700
- },
- "ousmane dieng": {
-  "player": "Ousmane Dieng",
-  "team": "MIL",
-  "base_min": 12.0,
-  "min": 11.1,
-  "dk": 8.0,
-  "salary": 3200
- },
- "deandre jordan": {
-  "player": "DeAndre Jordan",
-  "team": "NOP",
-  "base_min": 10.0,
-  "min": 13.2,
-  "dk": 11.8,
-  "salary": 3600
- },
- "carter bryant": {
-  "player": "Carter Bryant",
-  "team": "SAS",
-  "base_min": 10.0,
-  "min": 10.4,
-  "dk": 7.3,
-  "salary": 3100
- },
- "tarris reed": {
-  "player": "Tarris Reed Jr.",
-  "team": "SAS",
-  "base_min": 10.0,
-  "min": 6.3,
-  "dk": 3.8,
-  "salary": 3000
  },
  "deni avdija": {
   "player": "Deni Avdija",
