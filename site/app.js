@@ -312,16 +312,25 @@
     el.className = 'inj-wrap';
     var tb = el.parentNode.querySelector('.toolbar'); if (tb) tb.style.display = 'none';
     function cls(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; }
-    var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games. New statuses are listed first.' +
+    var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games.' + (injSort() === 'team' ? ' Grouped by team.' : ' New statuses are listed first.') +
       ((IJ.pending || []).length ? ' Not filed yet: ' + IJ.pending.map(function(t){ return tm(t); }).join(' ') + '.' : ' Every team on the slate has filed.') +
       (IJ.url ? ' <a href="' + esc(IJ.url) + '" target="_blank" rel="noopener">Open the NBA\u2019s PDF</a>.' : '') + '</p></div>';
-    var rows = (IJ.rows || []).map(function(r){
+    var byTeam = injSort() === 'team', ORD = {out:0, dbt:1, q:2, ok:3}, last = '';
+    var list = (IJ.rows || []).slice();
+    if (byTeam) list.sort(function(a,b){
+      var ta = NAMES[a.team] || a.team, tb2 = NAMES[b.team] || b.team;
+      return ta < tb2 ? -1 : ta > tb2 ? 1 : (ORD[cls(a.status)] - ORD[cls(b.status)]) || ((b.min || 0) - (a.min || 0));
+    });
+    var bar = '<div class="inj-sort"><span class="bs-n">Sort:</span> <button type="button" class="btn' + (byTeam ? '' : ' solid') + '" data-isort="new">New first</button> <button type="button" class="btn' + (byTeam ? ' solid' : '') + '" data-isort="team">By team</button></div>';
+    var rows = list.map(function(r){
+      var grp = '';
+      if (byTeam && r.team !== last){ last = r.team; grp = '<tr class="inj-grp"><td colspan="4">' + tm(r.team, true) + ' ' + esc(NAMES[r.team] || r.team) + '</td></tr>'; }
       var ben = (r.benefits || []).map(function(b){
         return '<div><span class="who">' + esc(b.player) + '</span> <span class="bs-n">' + (b.recent != null ? n1(b.min) + ' min, up from ' + n1(b.recent) : '+' + n1(b.plus) + ' min') + '</span></div>';
       }).join('');
       if (ben && r.estimate) ben = '<div class="bs-n">If he sits (estimate):</div>' + ben;
       var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
-      return '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
+      return grp + '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
         '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">No fantasy impact</span>') + '</td></tr>';
     }).join('');
@@ -329,7 +338,17 @@
       (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
     var minor = (IJ.minor || []).length ? '<details class="inj-minor"><summary>Also on the report (' + IJ.minor.length + ' players under 10 minutes a game)</summary><p>' +
       IJ.minor.map(function(m){ return esc(m.player) + ' ' + tm(m.team) + ' ' + esc(m.status); }).join(' \u00b7 ') + '</p></details>' : '';
-    el.innerHTML = head + tbl + minor;
+    el.innerHTML = head + bar + tbl + minor;
+    Array.prototype.forEach.call(el.querySelectorAll('[data-isort]'), function(b){
+      b.addEventListener('click', function(){ injSort(b.getAttribute('data-isort')); injuries(); });
+    });
+  }
+
+  var INJ_SORT = null;
+  function injSort(v){
+    if (v){ INJ_SORT = v; try { localStorage.setItem('r4p-injsort', v); } catch(e){} return v; }
+    if (INJ_SORT == null){ try { INJ_SORT = localStorage.getItem('r4p-injsort') || 'new'; } catch(e){ INJ_SORT = 'new'; } }
+    return INJ_SORT;
   }
 
   function moves(){
