@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updated": "7:54 PM ET",
+ "updated": "9:07 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:50 AM",
@@ -179,11 +179,11 @@
    "home": "GSW",
    "time": "2026-10-31T02:00Z",
    "slate": "main",
-   "ou": 234.5,
+   "ou": 233.5,
    "fav": "LAL",
    "line": 3.5,
-   "away_pts": 119.0,
-   "home_pts": 115.5,
+   "away_pts": 118.5,
+   "home_pts": 115.0,
    "tags": [],
    "teams": {
     "LAL": {
@@ -196,13 +196,13 @@
      "q": []
     },
     "GSW": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Gui Santos",
-       "min": 21.5
+       "min": 23.7
       }
-     ]
+     ],
+     "q": []
     }
    },
    "key": "Luka Doncic has the top projection in this game at 59.7 DK points."
@@ -214,9 +214,9 @@
    "slate": "main",
    "ou": 231.5,
    "fav": "DEN",
-   "line": 4.5,
-   "away_pts": 118.0,
-   "home_pts": 113.5,
+   "line": 3.5,
+   "away_pts": 117.5,
+   "home_pts": 114.0,
    "tags": [],
    "teams": {
     "DEN": {
@@ -235,18 +235,37 @@
     },
     "PHX": {
      "out": [],
-     "q": [
-      {
-       "player": "Oso Ighodaro",
-       "min": 15.0
-      }
-     ]
+     "q": []
     }
    },
    "key": "Nikola Jokic has the top projection in this game at 61.1 DK points."
   }
  ],
  "changed": [
+  {
+   "player": "Jimmy Butler",
+   "team": "GSW",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "9:09 PM"
+  },
+  {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Knee Tendinitis",
+   "time": "9:09 PM"
+  },
+  {
+   "player": "Oso Ighodaro",
+   "team": "PHX",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Right Oblique Strain",
+   "time": "9:09 PM"
+  },
   {
    "player": "Dennis Schroder",
    "team": "CHA",
@@ -301,30 +320,6 @@
    "status": "Out",
    "was": "Questionable",
    "why": "Right Low Back",
-   "time": "6:42 PM"
-  },
-  {
-   "player": "Jalen Smith",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "-",
-   "time": "6:42 PM"
-  },
-  {
-   "player": "Tobe Awaka",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "-",
-   "time": "6:42 PM"
-  },
-  {
-   "player": "Tre Johnson",
-   "team": "WAS",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "",
    "time": "6:42 PM"
   }
  ],
@@ -447,7 +442,7 @@
   {
    "player": "Jayson Tatum",
    "team": "BOS",
-   "own": 32.4,
+   "own": 32.3,
    "dk": 56.7,
    "salary": 9800
   },
@@ -461,7 +456,7 @@
   {
    "player": "Nikola Jokic",
    "team": "DEN",
-   "own": 13.4,
+   "own": 13.5,
    "dk": 61.1,
    "salary": 12100
   },
@@ -568,8 +563,8 @@
   ]
  },
  "injuries": {
-  "report": "07:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_07_45PM.pdf",
+  "report": "09:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_09_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -753,53 +748,6 @@
     "estimate": false
    },
    {
-    "game": "LAL at GSW",
-    "time": "2026-10-31T02:00Z",
-    "team": "GSW",
-    "player": "Gui Santos",
-    "status": "Questionable",
-    "reason": "Left Knee Tendinitis",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 23.7,
-    "benefits": [
-     {
-      "player": "Draymond Green",
-      "plus": 6.0,
-      "min": 35.4
-     },
-     {
-      "player": "Georges Niang",
-      "plus": 4.3,
-      "min": 25.4
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "DEN at PHX",
-    "time": "2026-10-31T02:00Z",
-    "team": "PHX",
-    "player": "Oso Ighodaro",
-    "status": "Questionable",
-    "reason": "Right Oblique Strain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 15.0,
-    "benefits": [
-     {
-      "player": "Khaman Maluach",
-      "plus": 15.0,
-      "min": 34.9
-     }
-    ],
-    "estimate": true
-   },
-   {
     "game": "DEN at PHX",
     "time": "2026-10-31T02:00Z",
     "team": "DEN",
@@ -819,6 +767,36 @@
      }
     ],
     "estimate": true
+   },
+   {
+    "game": "LAL at GSW",
+    "time": "2026-10-31T02:00Z",
+    "team": "GSW",
+    "player": "Gui Santos",
+    "status": "Available",
+    "reason": "Left Knee Tendinitis",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "9:09 PM",
+    "min": 23.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "DEN at PHX",
+    "time": "2026-10-31T02:00Z",
+    "team": "PHX",
+    "player": "Oso Ighodaro",
+    "status": "Available",
+    "reason": "Right Oblique Strain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "9:09 PM",
+    "min": 15.0,
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "CHA at WAS",
