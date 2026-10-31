@@ -2,11 +2,9 @@
  "updated": "2026-10-31",
  "brief": {
   "date": "2026-10-31",
-  "updated": "1:15 PM ET",
+  "updated": "2:34 PM ET",
   "games": 7,
-  "pending": [
-   "MIN"
-  ],
+  "pending": [],
   "first_report": "6:16 AM",
   "cards": [
    {
@@ -14,11 +12,11 @@
     "home": "UTA",
     "time": "2026-10-31T19:00Z",
     "slate": "late",
-    "ou": 231.5,
+    "ou": 233.5,
     "fav": "POR",
-    "line": 7.5,
-    "away_pts": 119.5,
-    "home_pts": 112.0,
+    "line": 6.5,
+    "away_pts": 120.0,
+    "home_pts": 113.5,
     "tags": [],
     "teams": {
      "POR": {
@@ -28,12 +26,7 @@
         "min": 27.0
        }
       ],
-      "q": [
-       {
-        "player": "Robert Williams",
-        "min": 18.0
-       }
-      ]
+      "q": []
      },
      "UTA": {
       "out": [
@@ -42,12 +35,7 @@
         "min": 25.3
        }
       ],
-      "q": [
-       {
-        "player": "Lauri Markkanen",
-        "min": 27.7
-       }
-      ]
+      "q": []
      }
     },
     "key": "Ja Morant is out, so Vit Krejci should play more than usual."
@@ -57,11 +45,11 @@
     "home": "CHA",
     "time": "2026-10-31T22:00Z",
     "slate": "late",
-    "ou": 214.5,
+    "ou": 213.5,
     "fav": "PHI",
     "line": 1.5,
-    "away_pts": 108.0,
-    "home_pts": 106.5,
+    "away_pts": 107.5,
+    "home_pts": 106.0,
     "tags": [
      "Lowest total",
      "Close game",
@@ -82,7 +70,7 @@
       "q": [
        {
         "player": "Jaylen Brown",
-        "min": 38.3
+        "min": 36.0
        }
       ]
      },
@@ -91,7 +79,7 @@
       "q": []
      }
     },
-    "key": "Joel Embiid and LeBron James are out, so Kentavious Caldwell-Pope and Anfernee Simons should play more than usual."
+    "key": "Joel Embiid and LeBron James are out, so VJ Edgecombe and Kentavious Caldwell-Pope should play more than usual."
    },
    {
     "away": "ATL",
@@ -132,12 +120,14 @@
     "home": "MIL",
     "time": "2026-11-01T00:00Z",
     "slate": "main",
-    "ou": 237.5,
+    "ou": 235.5,
     "fav": "CLE",
-    "line": 8.5,
-    "away_pts": 123.0,
-    "home_pts": 114.5,
-    "tags": [],
+    "line": 9.5,
+    "away_pts": 122.5,
+    "home_pts": 113.0,
+    "tags": [
+     "Blowout risk"
+    ],
     "teams": {
      "CLE": {
       "out": [
@@ -146,33 +136,26 @@
         "min": 19.7
        }
       ],
-      "q": [
-       {
-        "player": "Meleek Thomas",
-        "min": 18.6
-       }
-      ]
+      "q": []
      },
      "MIL": {
       "out": [],
       "q": []
      }
     },
-    "key": "Donovan Mitchell has the top projection in this game at 50.5 DK points."
+    "key": "Donovan Mitchell has the top projection in this game at 50.9 DK points."
    },
    {
     "away": "SAC",
     "home": "MEM",
     "time": "2026-11-01T00:00Z",
     "slate": "main",
-    "ou": 231.5,
+    "ou": 230.5,
     "fav": "MEM",
-    "line": 9.5,
+    "line": 8.5,
     "away_pts": 111.0,
-    "home_pts": 120.5,
-    "tags": [
-     "Blowout risk"
-    ],
+    "home_pts": 119.5,
+    "tags": [],
     "teams": {
      "SAC": {
       "out": [
@@ -209,11 +192,11 @@
     "home": "SAS",
     "time": "2026-11-01T00:00Z",
     "slate": "main",
-    "ou": 226.5,
+    "ou": 225.5,
     "fav": "SAS",
     "line": 12.5,
-    "away_pts": 107.0,
-    "home_pts": 119.5,
+    "away_pts": 106.5,
+    "home_pts": 119.0,
     "tags": [
      "Blowout risk",
      "MIN on a back-to-back"
@@ -226,7 +209,12 @@
         "min": 34.0
        }
       ],
-      "q": []
+      "q": [
+       {
+        "player": "Rudy Gobert",
+        "min": 28.4
+       }
+      ]
      },
      "SAS": {
       "out": [],
@@ -240,13 +228,12 @@
     "home": "HOU",
     "time": "2026-11-01T00:30Z",
     "slate": "main",
-    "ou": 218.5,
+    "ou": 219.5,
     "fav": "HOU",
-    "line": 2.5,
+    "line": 3.5,
     "away_pts": 108.0,
-    "home_pts": 110.5,
+    "home_pts": 111.5,
     "tags": [
-     "Close game",
      "HOU on a back-to-back"
     ],
     "teams": {
@@ -290,6 +277,46 @@
   ],
   "changed": [
    {
+    "player": "Rudy Gobert",
+    "team": "MIN",
+    "status": "Questionable",
+    "was": "",
+    "why": "Low Back Spasms",
+    "time": "2:35 PM"
+   },
+   {
+    "player": "Meleek Thomas",
+    "team": "CLE",
+    "status": "Probable",
+    "was": "Questionable",
+    "why": "",
+    "time": "2:35 PM"
+   },
+   {
+    "player": "Lauri Markkanen",
+    "team": "UTA",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Right Wrist Sprain",
+    "time": "2:35 PM"
+   },
+   {
+    "player": "Chris Youngblood",
+    "team": "POR",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Ankle Soreness",
+    "time": "2:35 PM"
+   },
+   {
+    "player": "Robert Williams III",
+    "team": "POR",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "",
+    "time": "2:35 PM"
+   },
+   {
     "player": "Fred VanVleet",
     "team": "HOU",
     "status": "Out",
@@ -328,46 +355,6 @@
     "was": "",
     "why": "",
     "time": "1:16 PM"
-   },
-   {
-    "player": "LeBron James",
-    "team": "PHI",
-    "status": "Out",
-    "was": "",
-    "why": "",
-    "time": "1:16 PM"
-   },
-   {
-    "player": "Ariel Hukporti",
-    "team": "PHI",
-    "status": "Out",
-    "was": "",
-    "why": "",
-    "time": "1:16 PM"
-   },
-   {
-    "player": "Tacko Fall",
-    "team": "PHI",
-    "status": "Questionable",
-    "was": "",
-    "why": "Left Quadriceps Strain",
-    "time": "1:16 PM"
-   },
-   {
-    "player": "Joel Embiid",
-    "team": "PHI",
-    "status": "Out",
-    "was": "",
-    "why": "",
-    "time": "1:16 PM"
-   },
-   {
-    "player": "Jaylen Brown",
-    "team": "PHI",
-    "status": "Questionable",
-    "was": "",
-    "why": "",
-    "time": "1:16 PM"
    }
   ],
   "sits": [
@@ -391,73 +378,28 @@
     "lost": 69.3,
     "benefits": [
      {
+      "player": "VJ Edgecombe",
+      "plus": 4.3,
+      "recent": 31.7,
+      "min": 36.0,
+      "dk": 36.2,
+      "salary": 6200
+     },
+     {
       "player": "Kentavious Caldwell-Pope",
-      "plus": 10.2,
+      "plus": 4.0,
       "recent": 24.3,
-      "min": 34.5,
-      "dk": 21.9,
+      "min": 28.3,
+      "dk": 21.4,
       "salary": 4800
      },
      {
       "player": "Anfernee Simons",
-      "plus": 4.6,
+      "plus": 3.8,
       "recent": 28.3,
-      "min": 32.9,
-      "dk": 26.6,
+      "min": 32.1,
+      "dk": 31.5,
       "salary": 4400
-     },
-     {
-      "player": "Dean Wade",
-      "plus": 4.3,
-      "recent": 27.0,
-      "min": 31.3,
-      "dk": 19.0,
-      "salary": 3900
-     }
-    ]
-   },
-   {
-    "team": "HOU",
-    "outs": [
-     {
-      "player": "Fred VanVleet",
-      "min": 30.3,
-      "note": "VanVleet is off the injury report and should play Friday, Oct. 30, the first night of a back-to-back, which makes a Saturday rest day likely.",
-      "new": true
-     },
-     {
-      "player": "Reed Sheppard",
-      "min": 25.7,
-      "note": "Reed Sheppard was out Friday and is questionable for Saturday, but he is expected to play.",
-      "new": false
-     }
-    ],
-    "new": true,
-    "lost": 56.0,
-    "benefits": [
-     {
-      "player": "Tari Eason",
-      "plus": 10.0,
-      "recent": 19.0,
-      "min": 29.0,
-      "dk": 29.2,
-      "salary": 5500
-     },
-     {
-      "player": "Clint Capela",
-      "plus": 7.5,
-      "recent": 9.0,
-      "min": 16.5,
-      "dk": 19.0,
-      "salary": 4500
-     },
-     {
-      "player": "Marcus Smart",
-      "plus": 6.0,
-      "recent": 16.0,
-      "min": 22.0,
-      "dk": 17.6,
-      "salary": 4200
      }
     ]
    },
@@ -520,7 +462,7 @@
       "plus": 5.5,
       "recent": 17.0,
       "min": 22.5,
-      "dk": 23.1,
+      "dk": 22.7,
       "salary": 4500
      },
      {
@@ -528,7 +470,7 @@
       "plus": 4.7,
       "recent": 31.3,
       "min": 36.0,
-      "dk": 59.8,
+      "dk": 59.5,
       "salary": 10400
      }
     ]
@@ -680,55 +622,55 @@
   ],
   "chalk": [
    {
+    "player": "Moussa Diabate",
+    "team": "CHA",
+    "own": 44.1,
+    "dk": 35.9,
+    "salary": 5600
+   },
+   {
     "player": "Deni Avdija",
     "team": "POR",
-    "own": 44.6,
+    "own": 44.0,
     "dk": 49.0,
     "salary": 8500
    },
    {
-    "player": "Moussa Diabate",
-    "team": "CHA",
-    "own": 44.1,
-    "dk": 32.9,
-    "salary": 5600
+    "player": "Anfernee Simons",
+    "team": "PHI",
+    "own": 43.8,
+    "dk": 31.5,
+    "salary": 4400
    },
    {
     "player": "Brandon Miller",
     "team": "CHA",
-    "own": 42.6,
-    "dk": 43.8,
+    "own": 43.5,
+    "dk": 46.5,
     "salary": 8000
-   },
-   {
-    "player": "Damian Lillard",
-    "team": "POR",
-    "own": 40.7,
-    "dk": 39.9,
-    "salary": 7200
    }
   ],
   "leverage": [
    {
-    "player": "Kevin Durant",
-    "team": "HOU",
-    "own": 9.1,
-    "dk": 43.1,
-    "salary": 7900
-   },
-   {
-    "player": "Jabari Smith",
-    "team": "HOU",
-    "own": 9.2,
-    "dk": 35.4,
-    "salary": 6600
+    "player": "Ajay Mitchell",
+    "team": "OKC",
+    "own": 7.2,
+    "dk": 33.8,
+    "salary": 6400
    },
    {
     "player": "Amen Thompson",
     "team": "HOU",
-    "own": 6.6,
-    "dk": 40.3,
+    "own": 5.4,
+    "dk": 38.4,
     "salary": 7600
+   },
+   {
+    "player": "Ayo Dosunmu",
+    "team": "MIN",
+    "own": 7.0,
+    "dk": 29.8,
+    "salary": 5900
    }
   ],
   "last": {
@@ -815,11 +757,9 @@
    ]
   },
   "injuries": {
-   "report": "01:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_01_00PM.pdf",
-   "pending": [
-    "MIN"
-   ],
+   "report": "02:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_02_30PM.pdf",
+   "pending": [],
    "rows": [
     {
      "game": "POR at UTA",
@@ -847,52 +787,30 @@
      "time": "2026-10-31T19:00Z",
      "team": "UTA",
      "player": "Lauri Markkanen",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Right Wrist Sprain",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "2:35 PM",
      "min": 26.0,
-     "benefits": [
-      {
-       "player": "Kyle Filipowski",
-       "plus": 6.8,
-       "min": 18.0
-      },
-      {
-       "player": "Ace Bailey",
-       "plus": 4.3,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "POR at UTA",
      "time": "2026-10-31T19:00Z",
      "team": "POR",
      "player": "Robert Williams III",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "2:35 PM",
      "min": 18.0,
-     "benefits": [
-      {
-       "player": "Donovan Clingan",
-       "plus": 5.7,
-       "min": 30.6
-      },
-      {
-       "player": "Sidy Cissoko",
-       "plus": 4.6,
-       "min": 24.6
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "PHI at CHA",
@@ -908,14 +826,14 @@
      "min": 36.0,
      "benefits": [
       {
-       "player": "Kentavious Caldwell-Pope",
-       "min": 34.5,
-       "recent": 24.3
+       "player": "VJ Edgecombe",
+       "min": 36.0,
+       "recent": 31.7
       },
       {
-       "player": "Anfernee Simons",
-       "min": 32.9,
-       "recent": 28.3
+       "player": "Kentavious Caldwell-Pope",
+       "min": 28.3,
+       "recent": 24.3
       }
      ],
      "estimate": false
@@ -934,14 +852,14 @@
      "min": 33.3,
      "benefits": [
       {
-       "player": "Kentavious Caldwell-Pope",
-       "min": 34.5,
-       "recent": 24.3
+       "player": "VJ Edgecombe",
+       "min": 36.0,
+       "recent": 31.7
       },
       {
-       "player": "Anfernee Simons",
-       "min": 32.9,
-       "recent": 28.3
+       "player": "Kentavious Caldwell-Pope",
+       "min": 28.3,
+       "recent": 24.3
       }
      ],
      "estimate": false
@@ -960,13 +878,13 @@
      "min": 36.3,
      "benefits": [
       {
-       "player": "Justin Edwards",
-       "plus": 6.1,
-       "min": 19.4
+       "player": "Dean Wade",
+       "plus": 8.1,
+       "min": 36.0
       },
       {
-       "player": "Dean Wade",
-       "plus": 4.7,
+       "player": "Kentavious Caldwell-Pope",
+       "plus": 7.7,
        "min": 36.0
       }
      ],
@@ -1018,27 +936,27 @@
      "estimate": false
     },
     {
-     "game": "CLE at MIL",
+     "game": "MIN at SAS",
      "time": "2026-11-01T00:00Z",
-     "team": "CLE",
-     "player": "Meleek Thomas",
+     "team": "MIN",
+     "player": "Rudy Gobert",
      "status": "Questionable",
-     "reason": "",
+     "reason": "Low Back Spasms",
      "new": true,
-     "was": "Out",
+     "was": "",
      "known": true,
-     "changed_at": "",
-     "min": 19.5,
+     "changed_at": "2:35 PM",
+     "min": 28.7,
      "benefits": [
       {
-       "player": "Sam Merrill",
-       "plus": 8.3,
-       "min": 33.5
+       "player": "Trey Lyles",
+       "plus": 15.0,
+       "min": 32.6
       },
       {
-       "player": "Donovan Mitchell",
-       "plus": 2.0,
-       "min": 36.0
+       "player": "Joan Beringer",
+       "plus": 13.7,
+       "min": 29.8
       }
      ],
      "estimate": true
@@ -1065,29 +983,33 @@
      "estimate": true
     },
     {
+     "game": "CLE at MIL",
+     "time": "2026-11-01T00:00Z",
+     "team": "CLE",
+     "player": "Meleek Thomas",
+     "status": "Probable",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "2:35 PM",
+     "min": 19.5,
+     "benefits": [],
+     "estimate": false
+    },
+    {
      "game": "OKC at HOU",
      "time": "2026-11-01T00:30Z",
      "team": "HOU",
      "player": "Fred VanVleet",
      "status": "Out",
-     "reason": "",
+     "reason": "Right Knee Injury",
      "new": true,
      "was": "",
      "known": true,
      "changed_at": "1:16 PM",
      "min": 30.3,
-     "benefits": [
-      {
-       "player": "Tari Eason",
-       "min": 29.0,
-       "recent": 19.0
-      },
-      {
-       "player": "Clint Capela",
-       "min": 16.5,
-       "recent": 9.0
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1145,6 +1067,21 @@
        "recent": 17.7
       }
      ],
+     "estimate": false
+    },
+    {
+     "game": "MIN at SAS",
+     "time": "2026-11-01T00:00Z",
+     "team": "MIN",
+     "player": "Anthony Edwards",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 34.0,
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1263,18 +1200,7 @@
      "known": true,
      "changed_at": "",
      "min": 25.7,
-     "benefits": [
-      {
-       "player": "Tari Eason",
-       "min": 29.0,
-       "recent": 19.0
-      },
-      {
-       "player": "Clint Capela",
-       "min": 16.5,
-       "recent": 9.0
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1334,7 +1260,7 @@
     {
      "player": "Chris Youngblood",
      "team": "POR",
-     "status": "Questionable"
+     "status": "Available"
     },
     {
      "player": "Dominick Barlow",
@@ -1389,6 +1315,11 @@
     {
      "player": "Nae'Qwan Tomlin",
      "team": "CLE",
+     "status": "Out"
+    },
+    {
+     "player": "Donte DiVincenzo",
+     "team": "MIN",
      "status": "Out"
     },
     {
