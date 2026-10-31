@@ -2,13 +2,10 @@
  "updated": "2026-10-31",
  "brief": {
   "date": "2026-10-31",
-  "updated": "12:51 PM ET",
+  "updated": "1:15 PM ET",
   "games": 7,
   "pending": [
-   "PHI",
-   "CHA",
-   "MIN",
-   "HOU"
+   "MIN"
   ],
   "first_report": "6:16 AM",
   "cards": [
@@ -60,11 +57,11 @@
     "home": "CHA",
     "time": "2026-10-31T22:00Z",
     "slate": "late",
-    "ou": 215.5,
+    "ou": 214.5,
     "fav": "PHI",
     "line": 1.5,
-    "away_pts": 108.5,
-    "home_pts": 107.0,
+    "away_pts": 108.0,
+    "home_pts": 106.5,
     "tags": [
      "Lowest total",
      "Close game",
@@ -72,15 +69,29 @@
     ],
     "teams": {
      "PHI": {
-      "out": [],
-      "q": []
+      "out": [
+       {
+        "player": "Joel Embiid",
+        "min": 36.0
+       },
+       {
+        "player": "LeBron James",
+        "min": 33.3
+       }
+      ],
+      "q": [
+       {
+        "player": "Jaylen Brown",
+        "min": 38.3
+       }
+      ]
      },
      "CHA": {
       "out": [],
       "q": []
      }
     },
-    "key": "Brandon Miller has the top projection in this game at 43.8 DK points."
+    "key": "Joel Embiid and LeBron James are out, so Kentavious Caldwell-Pope and Anfernee Simons should play more than usual."
    },
    {
     "away": "ATL",
@@ -261,24 +272,195 @@
       "q": []
      },
      "HOU": {
-      "out": [],
-      "q": [
+      "out": [
        {
-        "player": "Alperen Sengun",
-        "min": 31.6
+        "player": "Fred VanVleet",
+        "min": 30.3
        },
        {
         "player": "Reed Sheppard",
-        "min": 19.1
+        "min": 25.7
        }
-      ]
+      ],
+      "q": []
      }
     },
     "key": "Jalen Williams and Chet Holmgren are out, so Jaylin Williams and Shai Gilgeous-Alexander should play more than usual."
    }
   ],
-  "changed": [],
+  "changed": [
+   {
+    "player": "Fred VanVleet",
+    "team": "HOU",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Grant Williams",
+    "team": "CHA",
+    "status": "Out",
+    "was": "",
+    "why": "Right Hamstring Strain",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Coby White",
+    "team": "CHA",
+    "status": "Out",
+    "was": "",
+    "why": "Left Calf Strain",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Kon Knueppel",
+    "team": "CHA",
+    "status": "Out",
+    "was": "",
+    "why": "Left Hamstring Strain",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Jabari Walker",
+    "team": "PHI",
+    "status": "Questionable",
+    "was": "",
+    "why": "",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "LeBron James",
+    "team": "PHI",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Ariel Hukporti",
+    "team": "PHI",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Tacko Fall",
+    "team": "PHI",
+    "status": "Questionable",
+    "was": "",
+    "why": "Left Quadriceps Strain",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Joel Embiid",
+    "team": "PHI",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "1:16 PM"
+   },
+   {
+    "player": "Jaylen Brown",
+    "team": "PHI",
+    "status": "Questionable",
+    "was": "",
+    "why": "",
+    "time": "1:16 PM"
+   }
+  ],
   "sits": [
+   {
+    "team": "PHI",
+    "outs": [
+     {
+      "player": "Joel Embiid",
+      "min": 36.0,
+      "note": "Joel Embiid is not expected to play Saturday on the second night of the back-to-back. He played 33 minutes Friday.",
+      "new": true
+     },
+     {
+      "player": "LeBron James",
+      "min": 33.3,
+      "note": "LeBron James is questionable for Saturday on the second night of the back-to-back. He had 20 points, 9 rebounds and 8 assists in 34 minutes Friday.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 69.3,
+    "benefits": [
+     {
+      "player": "Kentavious Caldwell-Pope",
+      "plus": 10.2,
+      "recent": 24.3,
+      "min": 34.5,
+      "dk": 21.9,
+      "salary": 4800
+     },
+     {
+      "player": "Anfernee Simons",
+      "plus": 4.6,
+      "recent": 28.3,
+      "min": 32.9,
+      "dk": 26.6,
+      "salary": 4400
+     },
+     {
+      "player": "Dean Wade",
+      "plus": 4.3,
+      "recent": 27.0,
+      "min": 31.3,
+      "dk": 19.0,
+      "salary": 3900
+     }
+    ]
+   },
+   {
+    "team": "HOU",
+    "outs": [
+     {
+      "player": "Fred VanVleet",
+      "min": 30.3,
+      "note": "VanVleet is off the injury report and should play Friday, Oct. 30, the first night of a back-to-back, which makes a Saturday rest day likely.",
+      "new": true
+     },
+     {
+      "player": "Reed Sheppard",
+      "min": 25.7,
+      "note": "Reed Sheppard was out Friday and is questionable for Saturday, but he is expected to play.",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 56.0,
+    "benefits": [
+     {
+      "player": "Tari Eason",
+      "plus": 10.0,
+      "recent": 19.0,
+      "min": 29.0,
+      "dk": 29.2,
+      "salary": 5500
+     },
+     {
+      "player": "Clint Capela",
+      "plus": 7.5,
+      "recent": 9.0,
+      "min": 16.5,
+      "dk": 19.0,
+      "salary": 4500
+     },
+     {
+      "player": "Marcus Smart",
+      "plus": 6.0,
+      "recent": 16.0,
+      "min": 22.0,
+      "dk": 17.6,
+      "salary": 4200
+     }
+    ]
+   },
    {
     "team": "POR",
     "outs": [
@@ -507,46 +689,46 @@
    {
     "player": "Moussa Diabate",
     "team": "CHA",
-    "own": 44.2,
+    "own": 44.1,
     "dk": 32.9,
     "salary": 5600
    },
    {
     "player": "Brandon Miller",
     "team": "CHA",
-    "own": 42.8,
+    "own": 42.6,
     "dk": 43.8,
     "salary": 8000
    },
    {
     "player": "Damian Lillard",
     "team": "POR",
-    "own": 41.3,
+    "own": 40.7,
     "dk": 39.9,
     "salary": 7200
    }
   ],
   "leverage": [
    {
-    "player": "Ajay Mitchell",
-    "team": "OKC",
-    "own": 7.5,
-    "dk": 33.5,
-    "salary": 6400
+    "player": "Kevin Durant",
+    "team": "HOU",
+    "own": 9.1,
+    "dk": 43.1,
+    "salary": 7900
    },
    {
-    "player": "Rudy Gobert",
-    "team": "MIN",
-    "own": 9.4,
-    "dk": 29.5,
-    "salary": 5700
+    "player": "Jabari Smith",
+    "team": "HOU",
+    "own": 9.2,
+    "dk": 35.4,
+    "salary": 6600
    },
    {
-    "player": "Jaylin Williams",
-    "team": "OKC",
-    "own": 3.3,
-    "dk": 23.1,
-    "salary": 4500
+    "player": "Amen Thompson",
+    "team": "HOU",
+    "own": 6.6,
+    "dk": 40.3,
+    "salary": 7600
    }
   ],
   "last": {
@@ -633,13 +815,10 @@
    ]
   },
   "injuries": {
-   "report": "12:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_12_45PM.pdf",
+   "report": "01:00 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_01_00PM.pdf",
    "pending": [
-    "PHI",
-    "CHA",
-    "MIN",
-    "HOU"
+    "MIN"
    ],
    "rows": [
     {
@@ -714,6 +893,99 @@
       }
      ],
      "estimate": true
+    },
+    {
+     "game": "PHI at CHA",
+     "time": "2026-10-31T22:00Z",
+     "team": "PHI",
+     "player": "Joel Embiid",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:16 PM",
+     "min": 36.0,
+     "benefits": [
+      {
+       "player": "Kentavious Caldwell-Pope",
+       "min": 34.5,
+       "recent": 24.3
+      },
+      {
+       "player": "Anfernee Simons",
+       "min": 32.9,
+       "recent": 28.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "PHI at CHA",
+     "time": "2026-10-31T22:00Z",
+     "team": "PHI",
+     "player": "LeBron James",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:16 PM",
+     "min": 33.3,
+     "benefits": [
+      {
+       "player": "Kentavious Caldwell-Pope",
+       "min": 34.5,
+       "recent": 24.3
+      },
+      {
+       "player": "Anfernee Simons",
+       "min": 32.9,
+       "recent": 28.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "PHI at CHA",
+     "time": "2026-10-31T22:00Z",
+     "team": "PHI",
+     "player": "Jaylen Brown",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:16 PM",
+     "min": 36.3,
+     "benefits": [
+      {
+       "player": "Justin Edwards",
+       "plus": 6.1,
+       "min": 19.4
+      },
+      {
+       "player": "Dean Wade",
+       "plus": 4.7,
+       "min": 36.0
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "game": "PHI at CHA",
+     "time": "2026-10-31T22:00Z",
+     "team": "PHI",
+     "player": "Jabari Walker",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:16 PM",
+     "min": 6.3,
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "CLE at MIL",
@@ -791,6 +1063,32 @@
       }
      ],
      "estimate": true
+    },
+    {
+     "game": "OKC at HOU",
+     "time": "2026-11-01T00:30Z",
+     "team": "HOU",
+     "player": "Fred VanVleet",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:16 PM",
+     "min": 30.3,
+     "benefits": [
+      {
+       "player": "Tari Eason",
+       "min": 29.0,
+       "recent": 19.0
+      },
+      {
+       "player": "Clint Capela",
+       "min": 16.5,
+       "recent": 9.0
+      }
+     ],
+     "estimate": false
     },
     {
      "game": "POR at UTA",
@@ -956,6 +1254,32 @@
     {
      "game": "OKC at HOU",
      "time": "2026-11-01T00:30Z",
+     "team": "HOU",
+     "player": "Reed Sheppard",
+     "status": "Out",
+     "reason": "Low Back Soreness",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 25.7,
+     "benefits": [
+      {
+       "player": "Tari Eason",
+       "min": 29.0,
+       "recent": 19.0
+      },
+      {
+       "player": "Clint Capela",
+       "min": 16.5,
+       "recent": 9.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "OKC at HOU",
+     "time": "2026-11-01T00:30Z",
      "team": "OKC",
      "player": "Alex Caruso",
      "status": "Out",
@@ -1013,6 +1337,36 @@
      "status": "Questionable"
     },
     {
+     "player": "Dominick Barlow",
+     "team": "PHI",
+     "status": "Out"
+    },
+    {
+     "player": "Ariel Hukporti",
+     "team": "PHI",
+     "status": "Out"
+    },
+    {
+     "player": "Kon Knueppel",
+     "team": "CHA",
+     "status": "Out"
+    },
+    {
+     "player": "Coby White",
+     "team": "CHA",
+     "status": "Out"
+    },
+    {
+     "player": "Grant Williams",
+     "team": "CHA",
+     "status": "Out"
+    },
+    {
+     "player": "Tacko Fall",
+     "team": "PHI",
+     "status": "Questionable"
+    },
+    {
      "player": "Shaedon Sharpe",
      "team": "POR",
      "status": "Out"
@@ -1060,6 +1414,11 @@
     {
      "player": "Ben Simmons",
      "team": "SAC",
+     "status": "Out"
+    },
+    {
+     "player": "Steven Adams",
+     "team": "HOU",
      "status": "Out"
     },
     {
@@ -10778,13 +11137,13 @@
   },
   {
    "team": "HOU",
-   "starters": "Jabari Smith Jr. (34), Amen Thompson (35), Kevin Durant (35), Fred VanVleet (31), Clint Capela (15)",
-   "bench": "Alperen Sengun (34), Tari Eason (25), Reed Sheppard (23), Marcus Smart (21), Bogdan Bogdanovic (14), Oscar Tshiebwe (12)",
+   "starters": "Jabari Smith Jr. (34), Amen Thompson (35), Kevin Durant (35), Clint Capela (15), Tari Eason (25)",
+   "bench": "Alperen Sengun (34), Marcus Smart (21), Bogdan Bogdanovic (14), Oscar Tshiebwe (12)",
    "backup_c": "Alperen Sengun",
    "coach": "Ime Udoka",
    "notes": "Udoka plays his starters heavy minutes and is defense-first. Added guard depth means Amen Thompson plays less point guard. If VanVleet sits, Smart could start. If Durant or Jabari Smith sits, Eason could reach about 32 minutes. The team has 14 back-to-backs.",
    "source": "LO-1019b",
-   "out": "Steven Adams",
+   "out": "Fred VanVleet, Reed Sheppard, Steven Adams",
    "depth_through": "2026-10-30",
    "games": 6
   },
@@ -10826,13 +11185,13 @@
   },
   {
    "team": "PHI",
-   "starters": "Tyrese Maxey (38), LeBron James (33), Joel Embiid (35), VJ Edgecombe (33), Dean Wade (27)",
-   "bench": "Jaylen Brown (36), Anfernee Simons (24), Kentavious Caldwell-Pope (25), Adem Bona (13), Labaron Philon Jr. (8)",
+   "starters": "Tyrese Maxey (38), VJ Edgecombe (33), Dean Wade (27), Jaylen Brown (36), Kentavious Caldwell-Pope (25)",
+   "bench": "Anfernee Simons (24), Adem Bona (13), Labaron Philon Jr. (8)",
    "backup_c": "Adem Bona",
    "coach": "Nick Nurse",
    "notes": "Jaylen Brown, LeBron James, Maxey and Embiid together cannot all keep last year's usage, so expect pullbacks. Embiid is expected to miss time.",
    "source": "LO-1018",
-   "out": "",
+   "out": "Joel Embiid, LeBron James",
    "depth_through": "2026-10-30",
    "games": 6
   },
