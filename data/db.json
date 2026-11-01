@@ -2,7 +2,7 @@
  "updated": "2026-10-31",
  "brief": {
   "date": "2026-10-31",
-  "updated": "6:41 PM ET",
+  "updated": "8:29 PM ET",
   "games": 6,
   "pending": [],
   "first_report": "6:16 AM",
@@ -195,12 +195,11 @@
     "slate": "main",
     "ou": 219.5,
     "fav": "HOU",
-    "line": 2.5,
-    "away_pts": 108.5,
-    "home_pts": 111.0,
+    "line": 3.5,
+    "away_pts": 108.0,
+    "home_pts": 111.5,
     "tags": [
      "Lowest total",
-     "Close game",
      "HOU on a back-to-back"
     ],
     "teams": {
@@ -244,6 +243,46 @@
   ],
   "changed": [
    {
+    "player": "Quinten Post",
+    "team": "MEM",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "Right Ankle Sprain",
+    "time": "8:30 PM"
+   },
+   {
+    "player": "Scotty Pippen Jr.",
+    "team": "MEM",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Low Back Soreness",
+    "time": "8:30 PM"
+   },
+   {
+    "player": "Ty Jerome",
+    "team": "MEM",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Upper Back Soreness",
+    "time": "8:30 PM"
+   },
+   {
+    "player": "Stephon Castle",
+    "team": "SAS",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "-",
+    "time": "8:30 PM"
+   },
+   {
+    "player": "Meleek Thomas",
+    "team": "CLE",
+    "status": "Available",
+    "was": "Probable",
+    "why": "",
+    "time": "8:30 PM"
+   },
+   {
     "player": "Rudy Gobert",
     "team": "MIN",
     "status": "Out",
@@ -282,46 +321,6 @@
     "was": "Questionable",
     "why": "",
     "time": "2:35 PM"
-   },
-   {
-    "player": "Lauri Markkanen",
-    "team": "UTA",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Right Wrist Sprain",
-    "time": "2:35 PM"
-   },
-   {
-    "player": "Chris Youngblood",
-    "team": "POR",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Left Ankle Soreness",
-    "time": "2:35 PM"
-   },
-   {
-    "player": "Robert Williams III",
-    "team": "POR",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "",
-    "time": "2:35 PM"
-   },
-   {
-    "player": "Fred VanVleet",
-    "team": "HOU",
-    "status": "Out",
-    "was": "",
-    "why": "",
-    "time": "1:16 PM"
-   },
-   {
-    "player": "Grant Williams",
-    "team": "CHA",
-    "status": "Out",
-    "was": "",
-    "why": "Right Hamstring Strain",
-    "time": "1:16 PM"
    }
   ],
   "sits": [
@@ -612,7 +611,7 @@
     "player": "Alperen Sengun",
     "team": "HOU",
     "own": 37.7,
-    "dk": 51.8,
+    "dk": 51.9,
     "salary": 8600
    },
    {
@@ -625,25 +624,25 @@
   ],
   "leverage": [
    {
-    "player": "Kevin Durant",
-    "team": "HOU",
-    "own": 9.5,
-    "dk": 42.3,
-    "salary": 7900
-   },
-   {
     "player": "Ajay Mitchell",
     "team": "OKC",
-    "own": 6.6,
-    "dk": 34.1,
+    "own": 7.2,
+    "dk": 33.8,
     "salary": 6400
    },
    {
-    "player": "Tyler Herro",
-    "team": "MIL",
-    "own": 9.8,
-    "dk": 36.5,
-    "salary": 7000
+    "player": "Benedict Mathurin",
+    "team": "NOP",
+    "own": 3.0,
+    "dk": 22.3,
+    "salary": 4400
+   },
+   {
+    "player": "Jaylin Williams",
+    "team": "OKC",
+    "own": 2.5,
+    "dk": 22.8,
+    "salary": 4500
    }
   ],
   "last": {
@@ -730,8 +729,8 @@
    ]
   },
   "injuries": {
-   "report": "06:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_06_30PM.pdf",
+   "report": "08:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_08_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -833,6 +832,21 @@
      "estimate": false
     },
     {
+     "game": "SAC at MEM",
+     "time": "2026-11-01T00:00Z",
+     "team": "MEM",
+     "player": "Ty Jerome",
+     "status": "Out",
+     "reason": "Upper Back Soreness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "8:30 PM",
+     "min": 28.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
      "game": "CLE at MIL",
      "time": "2026-11-01T00:00Z",
      "team": "CLE",
@@ -851,13 +865,28 @@
      "game": "SAC at MEM",
      "time": "2026-11-01T00:00Z",
      "team": "MEM",
+     "player": "Scotty Pippen Jr.",
+     "status": "Out",
+     "reason": "Low Back Soreness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "8:30 PM",
+     "min": 14.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "SAC at MEM",
+     "time": "2026-11-01T00:00Z",
+     "team": "MEM",
      "player": "Quinten Post",
-     "status": "Doubtful",
+     "status": "Out",
      "reason": "Right Ankle Sprain",
      "new": true,
-     "was": "",
+     "was": "Doubtful",
      "known": true,
-     "changed_at": "",
+     "changed_at": "8:30 PM",
      "min": 12.0,
      "benefits": [],
      "estimate": false
@@ -867,54 +896,27 @@
      "time": "2026-11-01T00:00Z",
      "team": "SAS",
      "player": "Stephon Castle",
-     "status": "Questionable",
-     "reason": "Migraine",
+     "status": "Available",
+     "reason": "",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "3:24 PM",
+     "changed_at": "8:30 PM",
      "min": 31.0,
-     "benefits": [
-      {
-       "player": "Julian Champagnie",
-       "plus": 8.7,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "SAC at MEM",
-     "time": "2026-11-01T00:00Z",
-     "team": "MEM",
-     "player": "Scotty Pippen Jr.",
-     "status": "Questionable",
-     "reason": "Low Back Soreness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 14.7,
-     "benefits": [
-      {
-       "player": "Cam Spencer",
-       "plus": 14.7,
-       "min": 33.9
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "CLE at MIL",
      "time": "2026-11-01T00:00Z",
      "team": "CLE",
      "player": "Meleek Thomas",
-     "status": "Probable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "Questionable",
+     "was": "Probable",
      "known": true,
-     "changed_at": "2:35 PM",
+     "changed_at": "8:30 PM",
      "min": 19.5,
      "benefits": [],
      "estimate": false
@@ -1042,32 +1044,6 @@
       }
      ],
      "estimate": false
-    },
-    {
-     "game": "SAC at MEM",
-     "time": "2026-11-01T00:00Z",
-     "team": "MEM",
-     "player": "Ty Jerome",
-     "status": "Questionable",
-     "reason": "Upper Back Soreness",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 28.7,
-     "benefits": [
-      {
-       "player": "Cam Spencer",
-       "plus": 11.3,
-       "min": 30.5
-      },
-      {
-       "player": "Cedric Coward",
-       "plus": 6.3,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
     },
     {
      "game": "OKC at HOU",
@@ -11259,13 +11235,13 @@
   },
   {
    "team": "MEM",
-   "starters": "Cedric Coward (30), Cameron Boozer (32), Jaylen Wells (28), Ty Jerome (30), Zach Edey (21)",
-   "bench": "Jerami Grant (25), Cam Spencer (18), Isaiah Stewart (17), GG Jackson (16), Scotty Pippen Jr. (16)",
+   "starters": "Cedric Coward (30), Cameron Boozer (32), Jaylen Wells (28), Zach Edey (21), Isaiah Stewart (17)",
+   "bench": "Jerami Grant (25), Cam Spencer (18), GG Jackson (16)",
    "backup_c": "Isaiah Stewart",
    "coach": "Tuomas Iisalo",
    "notes": "Boozer is expected to start and could lead the team in assists.",
    "source": "LO-1019b",
-   "out": "Quinten Post",
+   "out": "Quinten Post, Scotty Pippen Jr., Ty Jerome",
    "depth_through": "2026-10-29",
    "games": 5
   },
