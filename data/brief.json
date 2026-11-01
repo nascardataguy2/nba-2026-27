@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updated": "8:56 AM ET",
+ "updated": "12:41 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "7:47 AM",
@@ -10,21 +10,21 @@
    "home": "ORL",
    "time": "2026-11-01T20:30Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 221.5,
    "fav": "BOS",
    "line": 6.5,
-   "away_pts": 114.5,
-   "home_pts": 108.0,
+   "away_pts": 114.0,
+   "home_pts": 107.5,
    "tags": [],
    "teams": {
     "BOS": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Mitchell Robinson",
-       "min": 19.6
+       "min": 20.0
       }
-     ]
+     ],
+     "q": []
     },
     "ORL": {
      "out": [
@@ -99,11 +99,11 @@
    "home": "GSW",
    "time": "2026-11-02T01:30Z",
    "slate": "main",
-   "ou": 218.5,
+   "ou": 220.5,
    "fav": "GSW",
    "line": 2.5,
-   "away_pts": 108.0,
-   "home_pts": 110.5,
+   "away_pts": 109.0,
+   "home_pts": 111.5,
    "tags": [
     "Lowest total",
     "Close game"
@@ -160,10 +160,19 @@
      ]
     }
    },
-   "key": "Luka Doncic has the top projection in this game at 54.3 DK points."
+   "key": "Luka Doncic has the top projection in this game at 54.4 DK points."
   }
  ],
- "changed": [],
+ "changed": [
+  {
+   "player": "Mitchell Robinson",
+   "team": "BOS",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Rest",
+   "time": "12:41 PM"
+  }
+ ],
  "sits": [
   {
    "team": "GSW",
@@ -189,7 +198,7 @@
      "plus": 5.2,
      "recent": 30.0,
      "min": 35.2,
-     "dk": 46.9,
+     "dk": 47.0,
      "salary": 7600
     },
     {
@@ -234,7 +243,7 @@
      "plus": 3.8,
      "recent": 12.3,
      "min": 16.1,
-     "dk": 18.9,
+     "dk": 19.4,
      "salary": 3900
     }
    ]
@@ -328,53 +337,53 @@
   {
    "player": "Brandin Podziemski",
    "team": "GSW",
-   "own": 38.8,
+   "own": 39.1,
    "dk": 42.7,
    "salary": 6600
   },
   {
-   "player": "Keaton Wagler",
-   "team": "LAC",
-   "own": 37.9,
-   "dk": 34.4,
-   "salary": 5400
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "own": 38.2,
+   "dk": 47.3,
+   "salary": 8300
   },
   {
    "player": "Moritz Wagner",
    "team": "BKN",
    "own": 37.9,
-   "dk": 24.7,
+   "dk": 24.8,
    "salary": 3600
   },
   {
-   "player": "Franz Wagner",
-   "team": "ORL",
+   "player": "Jayson Tatum",
+   "team": "BOS",
    "own": 37.8,
-   "dk": 46.4,
-   "salary": 8300
+   "dk": 56.2,
+   "salary": 10100
   }
  ],
  "leverage": [
   {
-   "player": "Kelly Oubre",
-   "team": "IND",
+   "player": "Payton Pritchard",
+   "team": "BOS",
    "own": 9.2,
-   "dk": 24.7,
-   "salary": 4700
+   "dk": 30.5,
+   "salary": 6000
   },
   {
    "player": "Chaney Johnson",
    "team": "BKN",
-   "own": 7.2,
+   "own": 6.9,
    "dk": 19.3,
    "salary": 3800
   },
   {
-   "player": "Derrick Jones Jr.",
-   "team": "LAC",
-   "own": 4.6,
-   "dk": 22.8,
-   "salary": 4600
+   "player": "Anthony Black",
+   "team": "ORL",
+   "own": 8.1,
+   "dk": 29.1,
+   "salary": 5900
   }
  ],
  "last": {
@@ -466,8 +475,8 @@
   ]
  },
  "injuries": {
-  "report": "07:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_07_45AM.pdf",
+  "report": "12:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_12_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -475,21 +484,15 @@
     "time": "2026-11-01T20:30Z",
     "team": "BOS",
     "player": "Mitchell Robinson",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Rest",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "12:41 PM",
     "min": 20.0,
-    "benefits": [
-     {
-      "player": "Neemias Queta",
-      "plus": 17.3,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "BKN at IND",
