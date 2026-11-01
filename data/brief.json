@@ -1,7 +1,7 @@
 {
  "date": "2026-11-01",
- "updated": "2:40 PM ET",
- "games": 4,
+ "updated": "3:33 PM ET",
+ "games": 3,
  "pending": [],
  "first_report": "7:47 AM",
  "cards": [
@@ -41,58 +41,6 @@
     }
    },
    "key": "Paolo Banchero and Jalen Suggs are out, so Nikola Vucevic should play more than usual."
-  },
-  {
-   "away": "BKN",
-   "home": "IND",
-   "time": "2026-11-01T22:00Z",
-   "slate": "main",
-   "ou": 229.5,
-   "fav": "IND",
-   "line": 3.5,
-   "away_pts": 113.0,
-   "home_pts": 116.5,
-   "tags": [
-    "Highest total"
-   ],
-   "teams": {
-    "BKN": {
-     "out": [
-      {
-       "player": "Mikel Brown Jr.",
-       "min": 23.7
-      },
-      {
-       "player": "Egor Demin",
-       "min": 20.0
-      }
-     ],
-     "q": []
-    },
-    "IND": {
-     "out": [
-      {
-       "player": "Tyrese Haliburton",
-       "min": 32.7
-      },
-      {
-       "player": "Ivica Zubac",
-       "min": 21.7
-      },
-      {
-       "player": "Ben Sheppard",
-       "min": 12.0
-      }
-     ],
-     "q": [
-      {
-       "player": "Obi Toppin",
-       "min": 22.1
-      }
-     ]
-    }
-   },
-   "key": "Pascal Siakam has the top projection in this game at 43.6 DK points."
   },
   {
    "away": "LAC",
@@ -140,6 +88,7 @@
    "away_pts": 111.0,
    "home_pts": 113.5,
    "tags": [
+    "Highest total",
     "Close game"
    ],
    "teams": {
@@ -162,7 +111,7 @@
      ]
     }
    },
-   "key": "Luka Doncic has the top projection in this game at 54.5 DK points."
+   "key": "Luka Doncic has the top projection in this game at 54.6 DK points."
   }
  ],
  "changed": [
@@ -216,7 +165,7 @@
      "plus": 3.3,
      "recent": 15.3,
      "min": 18.6,
-     "dk": 25.5,
+     "dk": 25.3,
      "salary": 4400
     }
    ]
@@ -261,27 +210,11 @@
    "n": 2
   },
   {
-   "player": "Nolan Traore",
-   "team": "BKN",
-   "kind": "hot",
-   "last": 25.4,
-   "before": 4.8,
-   "n": 2
-  },
-  {
    "player": "Brook Lopez",
    "team": "LAC",
    "kind": "cold",
    "last": 18.2,
    "before": 35.1,
-   "n": 2
-  },
-  {
-   "player": "Moritz Wagner",
-   "team": "BKN",
-   "kind": "hot",
-   "last": 26.4,
-   "before": 10.2,
    "n": 2
   },
   {
@@ -291,17 +224,25 @@
    "last": 37.2,
    "before": 21.1,
    "n": 2
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "kind": "hot",
+   "last": 33.5,
+   "before": 17.6,
+   "n": 2
+  },
+  {
+   "player": "Jamal Cain",
+   "team": "ORL",
+   "kind": "hot",
+   "last": 13.2,
+   "before": 0.1,
+   "n": 2
   }
  ],
  "minutes": [
-  {
-   "player": "Nolan Traore",
-   "team": "BKN",
-   "kind": "up",
-   "last": 25.0,
-   "before": 10.5,
-   "n": 2
-  },
   {
    "player": "Jake LaRavia",
    "team": "LAL",
@@ -309,14 +250,6 @@
    "last": 27.3,
    "before": 16.5,
    "n": 2
-  },
-  {
-   "player": "Larry Nance",
-   "team": "IND",
-   "kind": "up",
-   "last": 20.0,
-   "before": 9.3,
-   "n": 3
   },
   {
    "player": "Derrick White",
@@ -327,12 +260,28 @@
    "n": 2
   },
   {
-   "player": "Jarace Walker",
-   "team": "IND",
+   "player": "Nikola Vucevic",
+   "team": "ORL",
    "kind": "up",
-   "last": 26.3,
-   "before": 18.3,
-   "n": 3
+   "last": 12.3,
+   "before": 4.5,
+   "n": 2
+  },
+  {
+   "player": "Jase Richardson",
+   "team": "ORL",
+   "kind": "up",
+   "last": 21.3,
+   "before": 14.0,
+   "n": 2
+  },
+  {
+   "player": "Jakob Poeltl",
+   "team": "TOR",
+   "kind": "down",
+   "last": 17.3,
+   "before": 24.5,
+   "n": 2
   }
  ],
  "chalk": [
@@ -340,50 +289,50 @@
    "player": "Brandin Podziemski",
    "team": "GSW",
    "own": 39.3,
-   "dk": 42.9,
+   "dk": 43.3,
    "salary": 6600
   },
   {
    "player": "Franz Wagner",
    "team": "ORL",
-   "own": 38.4,
+   "own": 37.8,
    "dk": 47.4,
    "salary": 8300
   },
   {
-   "player": "Moritz Wagner",
-   "team": "BKN",
-   "own": 37.9,
-   "dk": 24.7,
-   "salary": 3600
-  },
-  {
    "player": "Jayson Tatum",
    "team": "BOS",
-   "own": 37.7,
+   "own": 37.5,
    "dk": 55.8,
    "salary": 10100
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "own": 36.4,
+   "dk": 39.9,
+   "salary": 6900
   }
  ],
  "leverage": [
   {
-   "player": "Kelly Oubre",
-   "team": "IND",
-   "own": 9.6,
-   "dk": 24.5,
-   "salary": 4700
+   "player": "Georges Niang",
+   "team": "GSW",
+   "own": 6.3,
+   "dk": 22.5,
+   "salary": 4000
   },
   {
-   "player": "Chaney Johnson",
-   "team": "BKN",
-   "own": 6.6,
-   "dk": 19.3,
-   "salary": 3800
+   "player": "Kris Dunn",
+   "team": "LAC",
+   "own": 8.8,
+   "dk": 25.0,
+   "salary": 4900
   },
   {
    "player": "Payton Pritchard",
    "team": "BOS",
-   "own": 9.5,
+   "own": 9.2,
    "dk": 30.4,
    "salary": 6000
   }
@@ -477,8 +426,8 @@
   ]
  },
  "injuries": {
-  "report": "02:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_02_30PM.pdf",
+  "report": "03:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_03_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -493,57 +442,6 @@
     "known": true,
     "changed_at": "12:41 PM",
     "min": 20.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at IND",
-    "time": "2026-11-01T22:00Z",
-    "team": "BKN",
-    "player": "Mikel Brown Jr.",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 23.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at IND",
-    "time": "2026-11-01T22:00Z",
-    "team": "IND",
-    "player": "Obi Toppin",
-    "status": "Questionable",
-    "reason": "Low Back Soreness",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 21.7,
-    "benefits": [
-     {
-      "player": "Pascal Siakam",
-      "plus": 2.8,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "BKN at IND",
-    "time": "2026-11-01T22:00Z",
-    "team": "IND",
-    "player": "Aaron Nesmith",
-    "status": "Probable",
-    "reason": "Left Hamstring Strain",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "",
-    "min": 23.0,
     "benefits": [],
     "estimate": false
    },
@@ -683,66 +581,6 @@
     "estimate": false
    },
    {
-    "game": "BKN at IND",
-    "time": "2026-11-01T22:00Z",
-    "team": "IND",
-    "player": "Tyrese Haliburton",
-    "status": "Out",
-    "reason": "Left Hamstring Strain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 32.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at IND",
-    "time": "2026-11-01T22:00Z",
-    "team": "IND",
-    "player": "Ivica Zubac",
-    "status": "Out",
-    "reason": "Left Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 21.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at IND",
-    "time": "2026-11-01T22:00Z",
-    "team": "BKN",
-    "player": "Egor Demin",
-    "status": "Out",
-    "reason": "Right Bone Bruise",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 20.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at IND",
-    "time": "2026-11-01T22:00Z",
-    "team": "IND",
-    "player": "Ben Sheppard",
-    "status": "Out",
-    "reason": "Left Meniscus Surgery",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 12.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
     "game": "TOR at LAL",
     "time": "2026-11-02T02:00Z",
     "team": "TOR",
@@ -777,16 +615,6 @@
    {
     "player": "Noah Penda",
     "team": "ORL",
-    "status": "Out"
-   },
-   {
-    "player": "Johnny Furphy",
-    "team": "IND",
-    "status": "Out"
-   },
-   {
-    "player": "T.J. McConnell",
-    "team": "IND",
     "status": "Out"
    },
    {
