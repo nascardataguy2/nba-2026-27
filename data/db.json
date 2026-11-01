@@ -1,10 +1,23 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "brief": {
   "date": "2026-10-31",
   "updated": "8:29 PM ET",
   "games": 6,
-  "pending": [],
+  "pending": [
+   "ATL",
+   "CLE",
+   "HOU",
+   "MEM",
+   "MIL",
+   "MIN",
+   "NOP",
+   "OKC",
+   "POR",
+   "SAC",
+   "SAS",
+   "UTA"
+  ],
   "first_report": "6:16 AM",
   "cards": [
    {
@@ -330,7 +343,7 @@
      {
       "player": "Dejounte Murray",
       "min": 31.7,
-      "note": "Dejounte Murray missed Oct. 29, and he is expected to return Saturday. His return could change the New Orleans starting lineup and affect Jeremiah Fears, Saddiq Bey and Herbert Jones.",
+      "note": "Ruled out tonight (personal reasons).",
       "new": true
      },
      {
@@ -342,7 +355,7 @@
      {
       "player": "Jordan Poole",
       "min": 16.3,
-      "note": "Jordan Poole missed Oct. 29 with an ankle injury, and he is not expected to play Saturday. His absence makes Jeremiah Fears's minutes safer, since Poole is the player most likely to cut into them.",
+      "note": "Ruled out tonight (left ankle sprain).",
       "new": false
      }
     ],
@@ -405,29 +418,6 @@
     ]
    },
    {
-    "team": "POR",
-    "outs": [
-     {
-      "player": "Ja Morant",
-      "min": 27.0,
-      "note": "He has a left hamstring strain and will miss at least four weeks. He left the Oct. 29 game against Memphis and did not return.",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 27.0,
-    "benefits": [
-     {
-      "player": "Vit Krejci",
-      "plus": 4.2,
-      "recent": 6.0,
-      "min": 10.2,
-      "dk": 7.9,
-      "salary": 3000
-     }
-    ]
-   },
-   {
     "team": "OKC",
     "outs": [
      {
@@ -445,7 +435,7 @@
      {
       "player": "Alex Caruso",
       "min": 17.0,
-      "note": "Alex Caruso has not played since Oct. 26, and his status for Saturday is unclear.",
+      "note": "Ruled out tonight (right ankle sprain).",
       "new": false
      },
      {
@@ -473,6 +463,29 @@
       "min": 36.0,
       "dk": 59.5,
       "salary": 10400
+     }
+    ]
+   },
+   {
+    "team": "POR",
+    "outs": [
+     {
+      "player": "Ja Morant",
+      "min": 27.0,
+      "note": "He has a left hamstring strain and will miss at least four weeks. He left the Oct. 29 game against Memphis and did not return.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 27.0,
+    "benefits": [
+     {
+      "player": "Vit Krejci",
+      "plus": 4.2,
+      "recent": 6.0,
+      "min": 10.2,
+      "dk": 7.9,
+      "salary": 3000
      }
     ]
    },
@@ -729,519 +742,24 @@
    ]
   },
   "injuries": {
-   "report": "10:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_10_15PM.pdf",
-   "pending": [],
-   "rows": [
-    {
-     "game": "POR at UTA",
-     "time": "2026-10-31T19:00Z",
-     "team": "POR",
-     "player": "Ja Morant",
-     "status": "Out",
-     "reason": "Left Hamstring Strain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 27.0,
-     "benefits": [
-      {
-       "player": "Vit Krejci",
-       "min": 10.2,
-       "recent": 6.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "POR at UTA",
-     "time": "2026-10-31T19:00Z",
-     "team": "UTA",
-     "player": "Lauri Markkanen",
-     "status": "Available",
-     "reason": "Right Wrist Sprain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "2:35 PM",
-     "min": 26.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "POR at UTA",
-     "time": "2026-10-31T19:00Z",
-     "team": "POR",
-     "player": "Robert Williams III",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "2:35 PM",
-     "min": 18.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at NOP",
-     "time": "2026-10-31T23:00Z",
-     "team": "NOP",
-     "player": "Dejounte Murray",
-     "status": "Out",
-     "reason": "Personal Reasons",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "6:39 PM",
-     "min": 31.7,
-     "benefits": [
-      {
-       "player": "Benedict Mathurin",
-       "min": 25.8,
-       "recent": 17.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "MIN at SAS",
-     "time": "2026-11-01T00:00Z",
-     "team": "MIN",
-     "player": "Rudy Gobert",
-     "status": "Out",
-     "reason": "Low Back Spasms",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "6:39 PM",
-     "min": 28.7,
-     "benefits": [
-      {
-       "player": "Jonathan Kuminga",
-       "min": 32.1,
-       "recent": 25.0
-      },
-      {
-       "player": "Ayo Dosunmu",
-       "min": 35.7,
-       "recent": 29.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "SAC at MEM",
-     "time": "2026-11-01T00:00Z",
-     "team": "MEM",
-     "player": "Ty Jerome",
-     "status": "Out",
-     "reason": "Upper Back Soreness",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "8:30 PM",
-     "min": 28.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "CLE at MIL",
-     "time": "2026-11-01T00:00Z",
-     "team": "CLE",
-     "player": "Jaylon Tyson",
-     "status": "Out",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "Available",
-     "known": true,
-     "changed_at": "",
-     "min": 19.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "SAC at MEM",
-     "time": "2026-11-01T00:00Z",
-     "team": "MEM",
-     "player": "Scotty Pippen Jr.",
-     "status": "Out",
-     "reason": "Low Back Soreness",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "8:30 PM",
-     "min": 14.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "SAC at MEM",
-     "time": "2026-11-01T00:00Z",
-     "team": "MEM",
-     "player": "Quinten Post",
-     "status": "Out",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "Doubtful",
-     "known": true,
-     "changed_at": "8:30 PM",
-     "min": 12.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "MIN at SAS",
-     "time": "2026-11-01T00:00Z",
-     "team": "SAS",
-     "player": "Stephon Castle",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "8:30 PM",
-     "min": 31.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "CLE at MIL",
-     "time": "2026-11-01T00:00Z",
-     "team": "CLE",
-     "player": "Meleek Thomas",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Probable",
-     "known": true,
-     "changed_at": "8:30 PM",
-     "min": 19.5,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "OKC at HOU",
-     "time": "2026-11-01T00:30Z",
-     "team": "HOU",
-     "player": "Fred VanVleet",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:16 PM",
-     "min": 30.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "POR at UTA",
-     "time": "2026-10-31T19:00Z",
-     "team": "UTA",
-     "player": "Jaren Jackson Jr.",
-     "status": "Out",
-     "reason": "Right Knee MCL Tear",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 25.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at NOP",
-     "time": "2026-10-31T23:00Z",
-     "team": "NOP",
-     "player": "Yves Missi",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 19.5,
-     "benefits": [
-      {
-       "player": "Benedict Mathurin",
-       "min": 25.8,
-       "recent": 17.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "ATL at NOP",
-     "time": "2026-10-31T23:00Z",
-     "team": "NOP",
-     "player": "Jordan Poole",
-     "status": "Out",
-     "reason": "Left Ankle Sprain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 16.3,
-     "benefits": [
-      {
-       "player": "Benedict Mathurin",
-       "min": 25.8,
-       "recent": 17.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "MIN at SAS",
-     "time": "2026-11-01T00:00Z",
-     "team": "MIN",
-     "player": "Anthony Edwards",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 34.0,
-     "benefits": [
-      {
-       "player": "Jonathan Kuminga",
-       "min": 32.1,
-       "recent": 25.0
-      },
-      {
-       "player": "Ayo Dosunmu",
-       "min": 35.7,
-       "recent": 29.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "SAC at MEM",
-     "time": "2026-11-01T00:00Z",
-     "team": "SAC",
-     "player": "Keegan Murray",
-     "status": "Out",
-     "reason": "Left Ankle Capsulitis",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 27.0,
-     "benefits": [
-      {
-       "player": "Nique Clifford",
-       "min": 9.4,
-       "recent": 3.7
-      },
-      {
-       "player": "Malik Monk",
-       "min": 15.5,
-       "recent": 11.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "OKC at HOU",
-     "time": "2026-11-01T00:30Z",
-     "team": "OKC",
-     "player": "Jalen Williams",
-     "status": "Out",
-     "reason": "Left Ankle Surgery",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 31.7,
-     "benefits": [
-      {
-       "player": "Jaylin Williams",
-       "min": 22.5,
-       "recent": 17.0
-      },
-      {
-       "player": "Shai Gilgeous-Alexander",
-       "min": 36.0,
-       "recent": 31.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "OKC at HOU",
-     "time": "2026-11-01T00:30Z",
-     "team": "OKC",
-     "player": "Chet Holmgren",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 30.0,
-     "benefits": [
-      {
-       "player": "Jaylin Williams",
-       "min": 22.5,
-       "recent": 17.0
-      },
-      {
-       "player": "Shai Gilgeous-Alexander",
-       "min": 36.0,
-       "recent": 31.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "OKC at HOU",
-     "time": "2026-11-01T00:30Z",
-     "team": "HOU",
-     "player": "Reed Sheppard",
-     "status": "Out",
-     "reason": "Low Back Soreness",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 25.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "OKC at HOU",
-     "time": "2026-11-01T00:30Z",
-     "team": "OKC",
-     "player": "Alex Caruso",
-     "status": "Out",
-     "reason": "Right Ankle Sprain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 17.0,
-     "benefits": [
-      {
-       "player": "Jaylin Williams",
-       "min": 22.5,
-       "recent": 17.0
-      },
-      {
-       "player": "Shai Gilgeous-Alexander",
-       "min": 36.0,
-       "recent": 31.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "OKC at HOU",
-     "time": "2026-11-01T00:30Z",
-     "team": "OKC",
-     "player": "Cason Wallace",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 16.3,
-     "benefits": [
-      {
-       "player": "Jaylin Williams",
-       "min": 22.5,
-       "recent": 17.0
-      },
-      {
-       "player": "Shai Gilgeous-Alexander",
-       "min": 36.0,
-       "recent": 31.3
-      }
-     ],
-     "estimate": false
-    }
+   "report": "01:45 AM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_01_45AM.pdf",
+   "pending": [
+    "ATL",
+    "CLE",
+    "HOU",
+    "MEM",
+    "MIL",
+    "MIN",
+    "NOP",
+    "OKC",
+    "POR",
+    "SAC",
+    "SAS",
+    "UTA"
    ],
-   "minor": [
-    {
-     "player": "Chris Youngblood",
-     "team": "POR",
-     "status": "Available"
-    },
-    {
-     "player": "Shaedon Sharpe",
-     "team": "POR",
-     "status": "Out"
-    },
-    {
-     "player": "Jusuf Nurkic",
-     "team": "UTA",
-     "status": "Out"
-    },
-    {
-     "player": "Mouhamed Gueye",
-     "team": "ATL",
-     "status": "Out"
-    },
-    {
-     "player": "Henri Veesaar",
-     "team": "ATL",
-     "status": "Out"
-    },
-    {
-     "player": "Nae'Qwan Tomlin",
-     "team": "CLE",
-     "status": "Out"
-    },
-    {
-     "player": "Donte DiVincenzo",
-     "team": "MIN",
-     "status": "Out"
-    },
-    {
-     "player": "Tobias Harris",
-     "team": "SAS",
-     "status": "Out"
-    },
-    {
-     "player": "Jayden Quaintance",
-     "team": "SAS",
-     "status": "Out"
-    },
-    {
-     "player": "Dylan Cardwell",
-     "team": "SAC",
-     "status": "Out"
-    },
-    {
-     "player": "Maxime Raynaud",
-     "team": "SAC",
-     "status": "Out"
-    },
-    {
-     "player": "Ben Simmons",
-     "team": "SAC",
-     "status": "Out"
-    },
-    {
-     "player": "Steven Adams",
-     "team": "HOU",
-     "status": "Out"
-    },
-    {
-     "player": "Thomas Sorber",
-     "team": "OKC",
-     "status": "Out"
-    },
-    {
-     "player": "Nikola Topic",
-     "team": "OKC",
-     "status": "Out"
-    }
-   ]
+   "rows": [],
+   "minor": []
   }
  },
  "log": [
@@ -1446,12 +964,6 @@
   [
    "Ajay Mitchell",
    "2026-10-28",
-   "injury",
-   "Ajay Mitchell is questionable with an ankle sprain."
-  ],
-  [
-   "Ajay Mitchell",
-   "2026-10-28",
    "usage",
    "Ajay Mitchell scored 29 points with four rebounds, three assists, two steals and a block in 28 minutes on Oct. 28 in a blowout loss. He took 20 shots on about 38 percent usage with several teammates out. He had been playing about 23 minutes a night when the team was healthy."
   ],
@@ -1484,18 +996,6 @@
    "2026-10-26",
    "minutes",
    "Alex Caruso should see more opportunity after the Jalen Williams and Cason Wallace injuries, but Oklahoma City has historically limited his minutes and rested him often."
-  ],
-  [
-   "Alex Caruso",
-   "2026-10-30",
-   "injury",
-   "Alex Caruso has not played since Oct. 26, and his status for Saturday is unclear."
-  ],
-  [
-   "Alex Sarr",
-   "2026-10-21",
-   "role",
-   "Alex Sarr had six points and nine rebounds in 24 minutes on Oct. 21. Anthony Davis plays the power forward spot but attacks the basket on offense, which pushes Sarr to the side."
   ],
   [
    "Alex Sarr",
@@ -1566,12 +1066,6 @@
   [
    "Alperen Sengun",
    "2026-10-30",
-   "injury",
-   "He missed Friday's 116-111 loss to Dallas, which ended Houston's 5-0 start."
-  ],
-  [
-   "Alperen Sengun",
-   "2026-10-30",
    "news",
    "Alperen Sengun is questionable tonight at Dallas with low back soreness after sitting Wednesday. Fred VanVleet scored 24 with Sengun out and is off the report for the first night of a back-to-back."
   ],
@@ -1598,12 +1092,6 @@
    "2026-10-23",
    "news",
    "Amen Thompson blocked Victor Wembanyama at the rim to win Houston's game against San Antonio on Oct. 23. He had 20 points, 10 rebounds and two blocks."
-  ],
-  [
-   "Amen Thompson",
-   "2026-10-24",
-   "stat",
-   "Amen Thompson had 17 points and 11 rebounds at Atlanta on Oct. 24 for his third straight double-double. He played 39 minutes."
   ],
   [
    "Amen Thompson",
@@ -1664,12 +1152,6 @@
    "2026-10-30",
    "usage",
    "He had 22 points, nine assists and five three-pointers in 30 minutes Friday at Miami. His production is boosted while Tyrese Haliburton is out."
-  ],
-  [
-   "Andrew Wiggins",
-   "2026-10-21",
-   "minutes",
-   "Andrew Wiggins played 27 minutes on Wednesday and finished with 11 points, 2 rebounds and 1 assist."
   ],
   [
    "Andrew Wiggins",
@@ -1742,12 +1224,6 @@
    "2026-10-30",
    "stat",
    "He had 25 points, 13 rebounds, a steal and a block in 34 minutes Friday against Charlotte. He went 9-for-10 from the free-throw line."
-  ],
-  [
-   "Anthony Edwards",
-   "2026-10-21",
-   "usage",
-   "Anthony Edwards scored 45 points with 10 rebounds and 9 threes in 33 minutes on Wednesday. He took 29 shots and carried about a 40% usage rate while playing more off the ball next to LaMelo Ball."
   ],
   [
    "Anthony Edwards",
@@ -1847,12 +1323,6 @@
   ],
   [
    "Bam Adebayo",
-   "2026-10-21",
-   "usage",
-   "Bam Adebayo took only 12 shots on Wednesday next to Giannis Antetokounmpo. He finished with 15 points, 7 rebounds, 4 assists and 3 steals in 31 minutes."
-  ],
-  [
-   "Bam Adebayo",
    "2026-10-23",
    "minutes",
    "Bam Adebayo played only 23 minutes on Friday because he had 3 fouls in the first 8 minutes and did not play in the second quarter. He had 4 points, 6 rebounds and 3 assists with low usage."
@@ -1943,12 +1413,6 @@
   ],
   [
    "Bobby Portis",
-   "2026-10-24",
-   "stat",
-   "Bobby Portis had 13 points and 8 rebounds on Saturday with Giannis in foul trouble."
-  ],
-  [
-   "Bobby Portis",
    "2026-10-28",
    "minutes",
    "Bobby Portis has been one of Miami's best players despite playing only about 24 minutes a night off the bench."
@@ -1985,12 +1449,6 @@
   ],
   [
    "Braden Burries",
-   "2026-10-21",
-   "minutes",
-   "Braden Burries played only 16 minutes off the bench on Wednesday. He scored 12 points with 5 rebounds."
-  ],
-  [
-   "Braden Burries",
    "2026-10-28",
    "minutes",
    "Braden Burries is playing only about 15 to 17 minutes a night."
@@ -2021,12 +1479,6 @@
   ],
   [
    "Brandon Miller",
-   "2026-10-21",
-   "usage",
-   "Brandon Miller had high early usage on Wednesday but went scoreless in the second half. He finished with 18 points, 3 rebounds and 1 assist in 36 minutes."
-  ],
-  [
-   "Brandon Miller",
    "2026-10-26",
    "usage",
    "Brandon Miller has taken on huge shot volume and scored 34 points on Oct. 24 and 39 points on Oct. 26."
@@ -2048,12 +1500,6 @@
    "2026-10-30",
    "stat",
    "He had 19 points, seven rebounds, two assists, a steal and a block in 37 minutes Friday at Washington, though he shot the ball poorly."
-  ],
-  [
-   "Brandon Williams",
-   "2026-10-24",
-   "stat",
-   "Williams started on Saturday with several Warriors out and had 20 points and five assists in 24 minutes. He had played only nine minutes in the prior game."
   ],
   [
    "Brandon Williams",
@@ -2084,12 +1530,6 @@
    "2026-10-28",
    "stat",
    "Brice Sensabaugh scored 16 points in 18 minutes off the bench on Oct. 28 with little else."
-  ],
-  [
-   "Brook Lopez",
-   "2026-10-21",
-   "minutes",
-   "Brook Lopez played 27 minutes off the bench on Wednesday with Isaiah Jackson in foul trouble and outplayed him late. He had 17 points, 11 rebounds, a steal and a block."
   ],
   [
    "Brook Lopez",
@@ -2150,18 +1590,6 @@
    "2026-10-30",
    "minutes",
    "He had 20 points, five rebounds and four assists in 28 minutes Friday against Brooklyn. Detroit pulled its starters late in the win."
-  ],
-  [
-   "Caleb Wilson",
-   "2026-10-21",
-   "usage",
-   "Caleb Wilson played 32 minutes in Wednesday's blowout loss to Toronto, the most on the Bulls, while carrying about 35% usage. He scored 16 points with 3 steals and a block but shot poorly and committed 9 turnovers."
-  ],
-  [
-   "Caleb Wilson",
-   "2026-10-24",
-   "stat",
-   "Caleb Wilson had 30 points and 14 rebounds against Washington on Oct. 24 for his first career double-double, but he went 1 for 9 from 3-point range. He played 38 minutes."
   ],
   [
    "Caleb Wilson",
@@ -2249,12 +1677,6 @@
   ],
   [
    "Cedric Coward",
-   "2026-10-21",
-   "usage",
-   "He took only six shots in 28 minutes as a starter on Wednesday. He had seven points, seven rebounds, two assists and a block."
-  ],
-  [
-   "Cedric Coward",
    "2026-10-25",
    "role",
    "He returned to the starting lineup on Sunday and had 15 points and 11 rebounds in 32 minutes."
@@ -2288,12 +1710,6 @@
    "2026-10-29",
    "minutes",
    "Johnson, a two-way player, has been a regular part of the rotation at about 21 minutes a game, averaging seven points and four rebounds. He should get 15 to 20 minutes with Brooklyn's center group struggling."
-  ],
-  [
-   "Charles Bassey",
-   "2026-10-24",
-   "stat",
-   "Charles Bassey had 10 points, 7 rebounds and 2 blocks in 13 minutes on Saturday."
   ],
   [
    "Charles Bassey",
@@ -2390,18 +1806,6 @@
    "2026-10-30",
    "injury",
    "He has missed every game this season with a calf injury, including Friday at Washington."
-  ],
-  [
-   "Collin Gillespie",
-   "2026-10-21",
-   "minutes",
-   "Collin Gillespie played 21 minutes off the bench on Oct. 21 and did not score. He is unlikely to be part of Phoenix's closing lineup when the team is healthy."
-  ],
-  [
-   "Collin Gillespie",
-   "2026-10-24",
-   "stat",
-   "Gillespie played 28 minutes off the bench on Saturday and had 11 points, four rebounds and nine assists. He played more minutes than starter Jalen Green."
   ],
   [
    "Collin Gillespie",
@@ -2504,12 +1908,6 @@
    "2026-10-29",
    "stat",
    "Lillard had nine points, two rebounds and two assists in 30 minutes Thursday, Oct. 29. He made only one of nine 3-point attempts and struggled at the free-throw line for a second straight game."
-  ],
-  [
-   "Daniel Gafford",
-   "2026-10-24",
-   "stat",
-   "Gafford had 12 points, nine rebounds, three steals and two blocks in 23 minutes on Saturday. He appeared to get hurt but returned to the game."
   ],
   [
    "Daniel Gafford",
@@ -2699,12 +2097,6 @@
   ],
   [
    "De’Aaron Fox",
-   "2026-10-24",
-   "stat",
-   "De'Aaron Fox scored 19 points at Dallas on Oct. 24. He played 28 minutes."
-  ],
-  [
-   "De’Aaron Fox",
    "2026-10-27",
    "minutes",
    "De'Aaron Fox played only 26 minutes on Tuesday and had 11 points with six assists."
@@ -2714,12 +2106,6 @@
    "2026-10-28",
    "stat",
    "De’Aaron Fox had 14 points, three rebounds, four assists, three steals and a block in 39 minutes on Oct. 28 on 42 percent shooting."
-  ],
-  [
-   "De'Andre Hunter",
-   "2026-10-21",
-   "role",
-   "De'Andre Hunter started for the Kings on Wednesday with Ben Simmons out for the season. He had foul trouble and scored 6 points in 20 minutes."
   ],
   [
    "De'Andre Hunter",
@@ -2750,12 +2136,6 @@
    "2026-10-29",
    "stat",
    "Hunter scored 24 points with five rebounds, one assist and four 3-pointers in 37 minutes Thursday, Oct. 29, his second strong game in a row. His minutes are up while Keegan Murray is out, but he had no steals or blocks."
-  ],
-  [
-   "De'Anthony Melton",
-   "2026-10-21",
-   "role",
-   "De'Anthony Melton started in place of Brandin Podziemski on Wednesday. He went scoreless on two shots in 21 minutes."
   ],
   [
    "De'Anthony Melton",
@@ -2834,12 +2214,6 @@
    "2026-10-29",
    "news",
    "Dejounte Murray is reportedly on the trade block."
-  ],
-  [
-   "Dejounte Murray",
-   "2026-10-30",
-   "injury",
-   "Dejounte Murray missed Oct. 29, and he is expected to return Saturday. His return could change the New Orleans starting lineup and affect Jeremiah Fears, Saddiq Bey and Herbert Jones."
   ],
   [
    "Dejounte Murray",
@@ -3041,12 +2415,6 @@
   ],
   [
    "Dillon Brooks",
-   "2026-10-24",
-   "stat",
-   "Dillon Brooks had 15 points and five assists against Golden State on Oct. 24. He played 34 minutes."
-  ],
-  [
-   "Dillon Brooks",
    "2026-10-26",
    "stat",
    "Dillon Brooks had 19 points, five rebounds, five assists, three steals and a block in 33 minutes on Oct. 26."
@@ -3203,12 +2571,6 @@
   ],
   [
    "Dylan Harper",
-   "2026-10-24",
-   "stat",
-   "Dylan Harper scored 22 points at Dallas on Oct. 24. He played 28 minutes."
-  ],
-  [
-   "Dylan Harper",
    "2026-10-27",
    "role",
    "Dylan Harper started again Tuesday and had 13 points, six rebounds and six assists in 30 minutes. All five San Antonio starters scored in double figures."
@@ -3275,12 +2637,6 @@
   ],
   [
    "Franz Wagner",
-   "2026-10-21",
-   "minutes",
-   "Franz Wagner picked up three fouls in the first eight minutes on Wednesday, which held his minutes to 29. He still finished with 22 points, 6 rebounds and 5 assists on about 33% usage."
-  ],
-  [
-   "Franz Wagner",
    "2026-10-28",
    "minutes",
    "Franz Wagner played 34 minutes in a blowout loss Wednesday and scored 15 points with five assists and seven turnovers."
@@ -3306,20 +2662,8 @@
   [
    "Fred VanVleet",
    "2026-10-29",
-   "minutes",
-   "Houston plays a back-to-back on Friday and Saturday against Dallas and Oklahoma City, and Fred VanVleet is expected to sit one of those games."
-  ],
-  [
-   "Fred VanVleet",
-   "2026-10-29",
    "usage",
    "Fred VanVleet's usage rate rises by about 11 percentage points when Alperen Sengun is off the floor."
-  ],
-  [
-   "Fred VanVleet",
-   "2026-10-30",
-   "injury",
-   "VanVleet is off the injury report and should play Friday, Oct. 30, the first night of a back-to-back, which makes a Saturday rest day likely."
   ],
   [
    "Fred VanVleet",
@@ -3581,12 +2925,6 @@
   ],
   [
    "Ja Morant",
-   "2026-10-21",
-   "role",
-   "Ja Morant started on Wednesday and had 14 points, 5 rebounds, 8 assists and 3 steals in 23 minutes. He played an efficient, low-usage game at about 15% usage."
-  ],
-  [
-   "Ja Morant",
    "2026-10-23",
    "minutes",
    "He played 27 minutes in Portland's last game on Oct. 23, while Jrue Holiday played 26 minutes off the bench."
@@ -3670,12 +3008,6 @@
    "He started at forward and had 22 points, three rebounds and two assists in 35 minutes Friday against Dallas."
   ],
   [
-   "Jabari Walker",
-   "2026-10-30",
-   "injury",
-   "Jabari Walker is expected to remain out."
-  ],
-  [
    "Jaden McDaniels",
    "2026-10-25",
    "usage",
@@ -3713,12 +3045,6 @@
   ],
   [
    "Jaime Jaquez",
-   "2026-10-24",
-   "stat",
-   "Jaime Jaquez Jr. led Milwaukee with 21 points at Philadelphia on Oct. 24. He played 27 minutes."
-  ],
-  [
-   "Jaime Jaquez",
    "2026-10-26",
    "minutes",
    "Jaime Jaquez's minutes have trended down from 35 to 27 to 25 over his last three games. Milwaukee used 11 players on Oct. 26."
@@ -3740,12 +3066,6 @@
    "2026-10-28",
    "role",
    "Jake LaRavia moved into the starting lineup on Oct. 28 with Luka Doncic and Ziaire Williams out. He scored two points with 10 rebounds, three steals and two blocks in 35 minutes."
-  ],
-  [
-   "Jakob Poeltl",
-   "2026-10-21",
-   "usage",
-   "Jakob Poeltl took only one shot in 22 minutes on Wednesday. He finished with 3 points, 6 rebounds, a steal and a block."
   ],
   [
    "Jakob Poeltl",
@@ -3821,12 +3141,6 @@
   ],
   [
    "Jalen Johnson",
-   "2026-10-21",
-   "minutes",
-   "Jalen Johnson was held to 28 minutes on Wednesday because of early foul trouble. He still posted 20 points, 14 rebounds and 6 assists on about 35% usage, but he shot 37% with no threes, steals or blocks."
-  ],
-  [
-   "Jalen Johnson",
    "2026-10-27",
    "minutes",
    "Jalen Johnson has played 36 and 38 minutes in competitive games, with lower minutes in two blowouts and a foul-trouble game."
@@ -3872,12 +3186,6 @@
    "2026-10-30",
    "role",
    "He started at center and had five points, 12 rebounds and two blocks in 27 minutes Friday at Boston. His role is expected to shrink once Nic Claxton returns."
-  ],
-  [
-   "Jalen Suggs",
-   "2026-10-21",
-   "minutes",
-   "Jalen Suggs played 32 minutes on Wednesday but took only eight shots. He finished with 6 points, 3 rebounds, 5 assists and 2 steals."
   ],
   [
    "Jalen Suggs",
@@ -3944,12 +3252,6 @@
    "2026-10-29",
    "stat",
    "James Harden scored 24 points with five rebounds, four assists and three 3-pointers in 36 minutes against Atlanta on Oct. 29. He has still shot poorly from the field to start the season."
-  ],
-  [
-   "Jarace Walker",
-   "2026-10-21",
-   "minutes",
-   "He played 19 minutes off the bench on Wednesday with Aaron Nesmith out. He had three points and six rebounds."
   ],
   [
    "Jarace Walker",
@@ -4049,12 +3351,6 @@
   ],
   [
    "Jarrett Allen",
-   "2026-10-24",
-   "stat",
-   "Jarrett Allen scored 21 points against Brooklyn on Oct. 24. He played 27 minutes."
-  ],
-  [
-   "Jarrett Allen",
    "2026-10-26",
    "role",
    "Jarrett Allen did not close the Oct. 26 game because Cleveland went small with Sam Merrill. He had 10 points and nine rebounds in 27 minutes."
@@ -4104,12 +3400,6 @@
   [
    "Jaxson Hayes",
    "2026-10-28",
-   "injury",
-   "Jaxson Hayes was questionable, but his absence was not expected to be long. He started Oct. 28 and played 37 minutes."
-  ],
-  [
-   "Jaxson Hayes",
-   "2026-10-28",
    "role",
    "Jaxson Hayes was the preferred center behind Jusuf Nurkic when Utah did not go small with Jaren Jackson Jr. at center. He is expected to take about 26 minutes of the center work once healthy."
   ],
@@ -4152,12 +3442,6 @@
   [
    "Jaylen Brown",
    "2026-10-30",
-   "injury",
-   "He missed Friday's game against New York with left knee soreness, his first missed game this season. The team did not say whether he will miss more games."
-  ],
-  [
-   "Jaylen Brown",
-   "2026-10-30",
    "news",
    "Jaylen Brown is questionable tonight against New York with left knee soreness. Joel Embiid and LeBron James are not on the report for the first night of a back-to-back."
   ],
@@ -4184,12 +3468,6 @@
    "2026-10-31",
    "news",
    "He has been ruled out Saturday, according to the show, which opens wing minutes in Cleveland."
-  ],
-  [
-   "Jaylen Wells",
-   "2026-10-21",
-   "role",
-   "Jaylen Wells started over Jerami Grant on Wednesday. He had 12 points, 5 rebounds and 4 steals in 28 minutes."
   ],
   [
    "Jaylen Wells",
@@ -4238,12 +3516,6 @@
    "2026-10-29",
    "role",
    "Tyson played 18 minutes off the bench Thursday, Oct. 29, and finished with three points and six rebounds."
-  ],
-  [
-   "Jaylon Tyson",
-   "2026-10-30",
-   "injury",
-   "Jaylon Tyson has been ruled out for Saturday. His absence should mean more minutes for Mario Hezonja, Peyton Watson, Sam Merrill and Craig Porter Jr."
   ],
   [
    "Jaylon Tyson",
@@ -4392,12 +3664,6 @@
   [
    "Joel Embiid",
    "2026-10-30",
-   "injury",
-   "Joel Embiid is not expected to play Saturday on the second night of the back-to-back. He played 33 minutes Friday."
-  ],
-  [
-   "Joel Embiid",
-   "2026-10-30",
    "stat",
    "He had 10 points, seven rebounds, seven assists, a steal and a block in 33 minutes Friday against New York, but he shot the ball poorly."
   ],
@@ -4487,12 +3753,6 @@
   ],
   [
    "Jordan Goodwin",
-   "2026-10-24",
-   "stat",
-   "Jordan Goodwin had 3 steals in 20 minutes on Saturday."
-  ],
-  [
-   "Jordan Goodwin",
    "2026-10-30",
    "stat",
    "He had 11 points, five rebounds, five assists and two steals in 25 minutes off the bench Friday at Denver."
@@ -4514,12 +3774,6 @@
    "2026-10-29",
    "news",
    "He left Wednesday with a left ankle injury about seven minutes in and did not return."
-  ],
-  [
-   "Jordan Poole",
-   "2026-10-30",
-   "injury",
-   "Jordan Poole missed Oct. 29 with an ankle injury, and he is not expected to play Saturday. His absence makes Jeremiah Fears's minutes safer, since Poole is the player most likely to cut into them."
   ],
   [
    "Jordan Walsh",
@@ -4649,12 +3903,6 @@
   ],
   [
    "Julius Randle",
-   "2026-10-24",
-   "stat",
-   "Julius Randle scored 23 points at Cleveland on Oct. 24. He played 35 minutes."
-  ],
-  [
-   "Julius Randle",
    "2026-10-25",
    "minutes",
    "He played only 24 minutes in Sunday's blowout loss. He normally plays about 35 minutes in competitive games and has a big ball-handling role."
@@ -4757,12 +4005,6 @@
   ],
   [
    "Kawhi Leonard",
-   "2026-10-21",
-   "minutes",
-   "Kawhi Leonard played only 24 minutes in Wednesday's blowout win and was subbed back in late to build up his minutes. He scored 23 points with 6 rebounds and 4 steals and made all 11 free throws."
-  ],
-  [
-   "Kawhi Leonard",
    "2026-10-23",
    "minutes",
    "Kawhi Leonard played only 28 minutes on Friday in a game that was not a blowout, though he also had 5 fouls. The Raptors appear to be managing his minutes, which makes back-to-back appearances doubtful."
@@ -4796,12 +4038,6 @@
    "2026-10-30",
    "stat",
    "He had 12 points, six rebounds and three assists on 2-of-11 shooting in 25 minutes off the bench Friday at Minnesota."
-  ],
-  [
-   "Keegan Murray",
-   "2026-10-21",
-   "usage",
-   "Keegan Murray scored two points on 1-for-8 shooting in 28 minutes in a blowout loss on Oct. 21. Zach LaVine took 19 shots and Darius Acuff Jr. took 24 while nobody else took more than eight."
   ],
   [
    "Keegan Murray",
@@ -4874,12 +4110,6 @@
    "2026-10-30",
    "role",
    "He started Oklahoma City's last two games with Chet Holmgren out, which makes the backup center minutes behind Isaiah Hartenstein unclear."
-  ],
-  [
-   "Kentavious Caldwell-Pope",
-   "2026-10-24",
-   "stat",
-   "Caldwell-Pope scored 12 points with 4 three-pointers off the bench on Saturday."
   ],
   [
    "Kentavious Caldwell-Pope",
@@ -5003,12 +4233,6 @@
   ],
   [
    "Klay Thompson",
-   "2026-10-24",
-   "stat",
-   "Thompson had one of his better games on Saturday with 14 points in 27 minutes."
-  ],
-  [
-   "Klay Thompson",
    "2026-10-26",
    "role",
    "Klay Thompson started again on Oct. 26 but scored only six points with one rebound in 15 minutes."
@@ -5111,12 +4335,6 @@
   ],
   [
    "Kyle Kuzma",
-   "2026-10-21",
-   "role",
-   "Kyle Kuzma started for the Bucks in Wednesday's loss to the Wizards. He finished with 5 points, 6 rebounds and 3 steals in 27 minutes."
-  ],
-  [
-   "Kyle Kuzma",
    "2026-10-23",
    "role",
    "Kyle Kuzma continues to start at power forward for Milwaukee."
@@ -5180,12 +4398,6 @@
    "2026-10-24",
    "usage",
    "George had a 29% usage rate on Saturday against Chicago and played 36 minutes, finishing with 22 points, nine rebounds, five assists and four blocks. He played 29 and 26 minutes in the first two games."
-  ],
-  [
-   "Kyshawn George",
-   "2026-10-24",
-   "stat",
-   "Kyshawn George had 22 points, 9 rebounds, 5 assists and 4 blocks on Saturday."
   ],
   [
    "Kyshawn George",
@@ -5309,21 +4521,9 @@
   ],
   [
    "Lauri Markkanen",
-   "2026-10-21",
-   "minutes",
-   "He played 36 minutes on Wednesday but struggled from the field. He had 18 points and nine rebounds."
-  ],
-  [
-   "Lauri Markkanen",
    "2026-10-23",
    "usage",
    "Markkanen's usage is down this season. He had 16 points, 6 rebounds and 3 assists on Friday."
-  ],
-  [
-   "Lauri Markkanen",
-   "2026-10-30",
-   "injury",
-   "Lauri Markkanen missed his last game and is questionable for Saturday. He played only 6 minutes on Oct. 26."
   ],
   [
    "LeBron James",
@@ -5336,12 +4536,6 @@
    "2026-10-28",
    "usage",
    "LeBron James had only 18 percent usage on Oct. 28. He finished with 13 points, five rebounds, 10 assists, a steal and two blocks."
-  ],
-  [
-   "LeBron James",
-   "2026-10-30",
-   "injury",
-   "LeBron James is questionable for Saturday on the second night of the back-to-back. He had 20 points, 9 rebounds and 8 assists in 34 minutes Friday."
   ],
   [
    "Leonard Miller",
@@ -5363,21 +4557,9 @@
   ],
   [
    "Luka Doncic",
-   "2026-10-21",
-   "minutes",
-   "Luka Doncic scored 28 points with eight rebounds and seven assists in three quarters against Golden State on Oct. 21, and he sat out the fourth quarter of the blowout. He played 30 minutes."
-  ],
-  [
-   "Luka Doncic",
    "2026-10-30",
    "stat",
    "He had 37 points, seven rebounds and five assists in 37 minutes at Golden State on Friday, with 21 points in the first quarter."
-  ],
-  [
-   "Luke Kennard",
-   "2026-10-24",
-   "stat",
-   "Luke Kennard scored 11 points and made 3 of 5 3-pointers against Golden State on Oct. 24. He played 18 minutes."
   ],
   [
    "Malik Monk",
@@ -5393,12 +4575,6 @@
   ],
   [
    "Marcus Sasser",
-   "2026-10-21",
-   "minutes",
-   "Marcus Sasser played 24 minutes off the bench on Wednesday because of Kyrie Irving's low minutes. He scored 17 points with 4 threes."
-  ],
-  [
-   "Marcus Sasser",
    "2026-10-23",
    "role",
    "Marcus Sasser remains ahead of Sergio de Larrea in the rotation. He had 6 points with low usage on Friday."
@@ -5411,12 +4587,6 @@
   ],
   [
    "Marcus Sasser",
-   "2026-10-24",
-   "stat",
-   "Marcus Sasser scored 12 points with 5 assists on Saturday."
-  ],
-  [
-   "Marcus Sasser",
    "2026-10-26",
    "minutes",
    "Marcus Sasser had been getting about 20 minutes a night but played only eight minutes on Oct. 26."
@@ -5426,12 +4596,6 @@
    "2026-10-28",
    "role",
    "If Smart plays, Houston can go smaller, since he plays a lot like a power forward now."
-  ],
-  [
-   "Marcus Smart",
-   "2026-10-30",
-   "injury",
-   "He returned from his forearm injury Friday against Dallas and had eight points, four assists and three steals in 17 minutes off the bench."
   ],
   [
    "Mario Hezonja",
@@ -5464,12 +4628,6 @@
    "Mario Hezonja's bench minutes have been steady. He played 17 minutes on Oct. 28."
   ],
   [
-   "Mario Hezonja",
-   "2026-10-30",
-   "minutes",
-   "Mario Hezonja played 17 minutes on Oct. 29 and is expected to gain minutes Saturday with Jaylon Tyson out."
-  ],
-  [
    "Marvin Bagley",
    "2026-10-22",
    "role",
@@ -5480,12 +4638,6 @@
    "2026-10-22",
    "minutes",
    "Marvin Bagley played only 11 minutes on Thursday and none of them next to Nikola Jokic."
-  ],
-  [
-   "Matas Buzelis",
-   "2026-10-21",
-   "role",
-   "Most of his production on Wednesday came in garbage time of a blowout. He played about 17 minutes through three quarters and finished with 17 points and six rebounds in 25 minutes."
   ],
   [
    "Matas Buzelis",
@@ -5549,21 +4701,9 @@
   ],
   [
    "Max Christie",
-   "2026-10-21",
-   "role",
-   "Max Christie started over Zaccharie Risacher on Wednesday. He had 5 points, 3 rebounds and 2 assists in 29 minutes."
-  ],
-  [
-   "Max Christie",
    "2026-10-24",
    "role",
    "Christie started on Saturday and played 26 minutes with Cooper Flagg and Kyrie Irving out."
-  ],
-  [
-   "Max Christie",
-   "2026-10-24",
-   "stat",
-   "Max Christie scored 5 points in 26 minutes on Saturday."
   ],
   [
    "Max Strus",
@@ -5588,12 +4728,6 @@
    "2026-10-28",
    "role",
    "He took the backcourt minutes that had gone to Craig Porter Jr. and Tyrese Proctor and also cut into Jaylon Tyson's time. He may settle in as the sixth man in a 20-plus minute bench role and could start if James Harden or Donovan Mitchell misses time."
-  ],
-  [
-   "Meleek Thomas",
-   "2026-10-30",
-   "injury",
-   "Meleek Thomas missed Oct. 29 and is questionable for Saturday. He would have a good opportunity if he plays with Jaylon Tyson out."
   ],
   [
    "Michael Porter Jr.",
@@ -5747,12 +4881,6 @@
   ],
   [
    "Morez Johnson Jr.",
-   "2026-10-21",
-   "minutes",
-   "Morez Johnson Jr. was limited to 14 minutes by foul trouble on Wednesday. He had 6 points, 3 rebounds and 1 assist with five fouls."
-  ],
-  [
-   "Morez Johnson Jr.",
    "2026-10-26",
    "minutes",
    "Morez Johnson Jr. was limited to 15 minutes on Oct. 26 because of foul trouble."
@@ -5770,22 +4898,10 @@
    "He scored two points in 17 minutes off the bench Friday at Houston."
   ],
   [
-   "Moritz Wagner",
-   "2026-10-21",
-   "role",
-   "He is the Nets' backup center and played 16 minutes on Wednesday."
-  ],
-  [
    "Moses Moody",
    "2026-10-24",
    "injury",
    "Moses Moody is out with no timeline."
-  ],
-  [
-   "Moussa Diabaté",
-   "2026-10-21",
-   "role",
-   "Moussa Diabaté started at center and played 34 minutes on Wednesday. He finished with 17 points, 8 rebounds, 3 assists and 5 steals, while backup Ryan Kalkbrenner played 14 minutes."
   ],
   [
    "Moussa Diabaté",
@@ -5825,12 +4941,6 @@
   ],
   [
    "Myles Turner",
-   "2026-10-24",
-   "stat",
-   "Myles Turner was held scoreless in 20 minutes on Oct. 24."
-  ],
-  [
-   "Myles Turner",
    "2026-10-25",
    "role",
    "Turner has struggled, and Kel'el Ware has outplayed him. There were reports that Milwaukee could make lineup changes in the coming days."
@@ -5855,12 +4965,6 @@
   ],
   [
    "Naji Marshall",
-   "2026-10-21",
-   "role",
-   "Naji Marshall played 29 minutes off the bench on Wednesday and ran some point guard. He had 16 points, 6 assists and 2 threes."
-  ],
-  [
-   "Naji Marshall",
    "2026-10-24",
    "role",
    "Naji Marshall started on Saturday with Flagg and Irving out but played only 21 minutes, with 10 points, 4 rebounds and 5 assists. He was not injured."
@@ -5870,12 +4974,6 @@
    "2026-10-24",
    "minutes",
    "Naji Marshall has played about 30 minutes per night through two games."
-  ],
-  [
-   "Naz Reid",
-   "2026-10-24",
-   "stat",
-   "Naz Reid scored 23 points against Miami on Oct. 24. He played 37 minutes."
   ],
   [
    "Naz Reid",
@@ -5930,12 +5028,6 @@
    "2026-10-30",
    "injury",
    "Nic Claxton is out Friday at Boston with a left hamstring strain, but he has started conditioning and is close to a return."
-  ],
-  [
-   "Nickeil Alexander-Walker",
-   "2026-10-24",
-   "stat",
-   "Nickeil Alexander-Walker scored 18 points against Houston on Oct. 24. He played 32 minutes."
   ],
   [
    "Nickeil Alexander-Walker",
@@ -6014,12 +5106,6 @@
    "2026-10-30",
    "role",
    "Traore was reportedly moved into the starting lineup because Brooklyn wanted another ball handler beside Demin, and the team has not liked Traore and Mikel Brown Jr. together. With Demin out, the starting backcourt is uncertain."
-  ],
-  [
-   "Norman Powell",
-   "2026-10-21",
-   "usage",
-   "Norman Powell took nine shots and 11 free throws in 22 minutes on Wednesday and scored 15 points."
   ],
   [
    "Norman Powell",
@@ -6110,12 +5196,6 @@
    "2026-10-30",
    "stat",
    "He scored nine points with a steal in 34 minutes Friday against Philadelphia, continuing a rough start to the season."
-  ],
-  [
-   "Onyeka Okongwu",
-   "2026-10-21",
-   "usage",
-   "Onyeka Okongwu had 8 points, 5 rebounds and 7 assists in 29 minutes on Wednesday on under 15% usage. He missed all four of his three-point attempts while working more on the perimeter."
   ],
   [
    "Onyeka Okongwu",
@@ -6316,18 +5396,6 @@
    "Peyton Watson played only 22 minutes on Oct. 29 because of foul trouble. He finished with four points, four rebounds, three assists and two blocks."
   ],
   [
-   "Peyton Watson",
-   "2026-10-30",
-   "minutes",
-   "Peyton Watson started and played 22 minutes on Oct. 29, and his minutes should be more secure Saturday with Jaylon Tyson out."
-  ],
-  [
-   "PJ Washington",
-   "2026-10-21",
-   "role",
-   "PJ Washington started and played 31 minutes on Wednesday, and Dallas also used him as the backup center. He had 10 points, 4 rebounds and 2 assists."
-  ],
-  [
    "PJ Washington",
    "2026-10-24",
    "minutes",
@@ -6460,12 +5528,6 @@
    "Reed Sheppard played 23 minutes off the bench Wednesday. He has averaged about 23 and a half minutes a game, and he played only 16 minutes in the opener when the roster was healthy."
   ],
   [
-   "Reed Sheppard",
-   "2026-10-30",
-   "injury",
-   "Reed Sheppard was out Friday and is questionable for Saturday, but he is expected to play."
-  ],
-  [
    "RJ Barrett",
    "2026-10-25",
    "stat",
@@ -6502,12 +5564,6 @@
    "Portland entered Tuesday's game with three days of rest after not playing Oct. 24 through Oct. 26. The Blazers have had one of the lightest early schedules, which helps Robert Williams III stay fresh."
   ],
   [
-   "Robert Williams III",
-   "2026-10-30",
-   "injury",
-   "Robert Williams III did not play on Oct. 29 and is probable for Saturday."
-  ],
-  [
    "Ron Holland",
    "2026-10-23",
    "role",
@@ -6536,12 +5592,6 @@
    "2026-10-28",
    "role",
    "Royce O’Neale started the second half on Oct. 28 in place of Naz Reid. He played 34 minutes and scored nine points."
-  ],
-  [
-   "Rudy Gobert",
-   "2026-10-21",
-   "usage",
-   "He took only two shots on Wednesday and none in the first half. He still grabbed 15 rebounds in 33 minutes."
   ],
   [
    "Rudy Gobert",
@@ -6584,24 +5634,6 @@
    "2026-10-29",
    "role",
    "Conwell has not been in Miami's rotation."
-  ],
-  [
-   "Ryan Kalkbrenner",
-   "2026-10-21",
-   "minutes",
-   "Ryan Kalkbrenner picked up four fouls and played only 14 minutes on Oct. 21."
-  ],
-  [
-   "Ryan Kalkbrenner",
-   "2026-10-24",
-   "stat",
-   "Ryan Kalkbrenner had 6 points, 5 rebounds and 2 blocks in 23 minutes on Saturday."
-  ],
-  [
-   "Ryan Rollins",
-   "2026-10-21",
-   "minutes",
-   "Ryan Rollins started but played only 24 minutes on Wednesday as the Bucks gave extra run to Kasparas Jakucionis. He shot poorly and finished with 9 points, 6 rebounds and 3 assists on about 25% usage."
   ],
   [
    "Ryan Rollins",
@@ -6662,12 +5694,6 @@
    "2026-10-29",
    "minutes",
    "Merrill played 27 minutes off the bench with Meleek Thomas out Thursday, Oct. 29, and scored 16 points with four 3-pointers and three assists. His minutes had been closer to 20 when Thomas played."
-  ],
-  [
-   "Sandro Mamukelashvili",
-   "2026-10-21",
-   "usage",
-   "Sandro Mamukelashvili took only five shots in 22 minutes on Wednesday and finished with 5 points, 4 rebounds and 2 assists."
   ],
   [
    "Sandro Mamukelashvili",
@@ -6743,12 +5769,6 @@
   ],
   [
    "Scotty Pippen Jr.",
-   "2026-10-21",
-   "minutes",
-   "Scotty Pippen Jr. played only 20 minutes off the bench on Wednesday."
-  ],
-  [
-   "Scotty Pippen Jr.",
    "2026-10-25",
    "minutes",
    "He played 17 minutes on Sunday and had 6 points and 2 assists."
@@ -6758,12 +5778,6 @@
    "2026-10-26",
    "minutes",
    "Scotty Pippen Jr. has played limited bench minutes, losing time to Jaylen Wells and Cam Spencer in a deep Memphis rotation."
-  ],
-  [
-   "Scotty Pippen Jr.",
-   "2026-10-30",
-   "injury",
-   "Scotty Pippen Jr. is listed as questionable for Saturday. He has been playing about 14 minutes a night off the bench."
   ],
   [
    "Sergio de Larrea",
@@ -6815,12 +5829,6 @@
   ],
   [
    "Stephen Curry",
-   "2026-10-21",
-   "usage",
-   "Stephen Curry scored 23 points in only 21 minutes on Wednesday in a blowout loss to the Lakers. He carried about 44% usage."
-  ],
-  [
-   "Stephen Curry",
    "2026-10-23",
    "minutes",
    "Stephen Curry played only 30 minutes in a close game on Friday and scored 24 points."
@@ -6866,12 +5874,6 @@
    "2026-10-21",
    "news",
    "Tari Eason was ejected late in the first quarter on Oct. 21 after a Flagrant 2 foul for shoving P.J. Washington to the floor. He played 3 minutes."
-  ],
-  [
-   "Tari Eason",
-   "2026-10-24",
-   "stat",
-   "Tari Eason scored 19 points at Atlanta on Oct. 24. He played 31 minutes."
   ],
   [
    "Tari Eason",
@@ -6950,12 +5952,6 @@
    "2026-10-28",
    "news",
    "Tobias Harris is expected to return to the San Antonio rotation eventually, which would cut into Julian Champagnie's role."
-  ],
-  [
-   "Tobias Harris",
-   "2026-10-30",
-   "injury",
-   "Tobias Harris has been out since the start of the season, and he is questionable to make his season debut Saturday."
   ],
   [
    "Toumani Camara",
@@ -7073,21 +6069,9 @@
   ],
   [
    "Trey Murphy III",
-   "2026-10-21",
-   "usage",
-   "Trey Murphy III went 4-for-11 on Wednesday and finished with 11 points, 4 rebounds and 1 assist. He had only about 14% usage in 32 minutes."
-  ],
-  [
-   "Trey Murphy III",
    "2026-10-23",
    "usage",
    "Trey Murphy III played about 31 minutes on Friday but did almost nothing in the second half. Jordan Poole had a 27 percent usage rate and Saddiq Bey also took a high share of shots."
-  ],
-  [
-   "Trey Murphy III",
-   "2026-10-24",
-   "stat",
-   "Trey Murphy III bounced back with 26 points, six rebounds, four assists, a steal and four three-pointers in 37 minutes in an overtime game against Denver on Oct. 24. He had taken only about 20 shots in his first two games."
   ],
   [
    "Trey Murphy III",
@@ -7106,12 +6090,6 @@
    "2026-10-29",
    "stat",
    "Murphy had 19 points, five rebounds, three assists, a steal and two 3-pointers in 32 minutes Thursday, Oct. 29, on 50 percent shooting and only about 19 percent usage."
-  ],
-  [
-   "Tristan da Silva",
-   "2026-10-21",
-   "usage",
-   "Orlando's coaching staff has told Tristan da Silva it wants double-digit three-point attempts from him every night. He hit four threes in 28 minutes on Oct. 21."
   ],
   [
    "Tristan da Silva",
@@ -7170,32 +6148,14 @@
   [
    "Ty Jerome",
    "2026-10-30",
-   "injury",
-   "Ty Jerome was added to the injury report about an hour before the Oct. 29 game with back tightness, played through it and struggled with 10 points in 24 minutes. He had played 30 to 32 minutes in each earlier game, and he is in doubt for Saturday."
-  ],
-  [
-   "Ty Jerome",
-   "2026-10-30",
    "usage",
    "Ty Jerome has carried a very large usage role for Memphis to start the season."
-  ],
-  [
-   "Tyler Herro",
-   "2026-10-21",
-   "role",
-   "Tyler Herro handled the point guard role for long stretches on Oct. 21. He finished with 24 points and nine assists in 32 minutes."
   ],
   [
    "Tyler Herro",
    "2026-10-23",
    "usage",
    "Herro scored 34 points on Friday and is carrying a usage rate around 35 percent while playing more point guard for Milwaukee."
-  ],
-  [
-   "Tyler Herro",
-   "2026-10-24",
-   "stat",
-   "Tyler Herro was quieter on Saturday with 13 points in 31 minutes."
   ],
   [
    "Tyler Herro",
@@ -7421,21 +6381,9 @@
   ],
   [
    "Yves Missi",
-   "2026-10-21",
-   "minutes",
-   "Yves Missi played 30 minutes on Wednesday and posted 13 points, 14 rebounds, 5 assists, 2 steals and 3 blocks."
-  ],
-  [
-   "Yves Missi",
    "2026-10-29",
    "injury",
    "Yves Missi is out with an injury."
-  ],
-  [
-   "Zaccharie Risacher",
-   "2026-10-21",
-   "role",
-   "He was expected to start, but he came off the bench on Wednesday while Max Christie started. He played 27 minutes and had four points, six rebounds and five steals."
   ],
   [
    "Zaccharie Risacher",
@@ -7535,12 +6483,6 @@
   ],
   [
    "Ziaire Williams",
-   "2026-10-21",
-   "role",
-   "Ziaire Williams started on Wednesday, partly to defend Stephen Curry. He had 9 points, 3 rebounds and 4 assists in 24 minutes."
-  ],
-  [
-   "Ziaire Williams",
    "2026-10-23",
    "minutes",
    "Ziaire Williams started and played 31 minutes on Friday, with 14 points and 2 steals."
@@ -7574,12 +6516,6 @@
    "2026-10-24",
    "usage",
    "Zion took only about 11 shots on Saturday but had 17 points, 2 steals and 2 blocks."
-  ],
-  [
-   "Zion Williamson",
-   "2026-10-24",
-   "stat",
-   "Zion Williamson had two steals and two blocks on Oct. 24 after three steals in each of his first two games."
   ],
   [
    "Zion Williamson",
@@ -10935,27 +9871,27 @@
  "teams": [
   {
    "team": "ATL",
-   "starters": "Jalen Johnson (34), Onyeka Okongwu (28), Nickeil Alexander-Walker (30), Dyson Daniels (29), CJ McCollum (26)",
-   "bench": "Aaron Wiggins (26), Luguentz Dort (23), Kingston Flemings (20), Jock Landale (18)",
+   "starters": "Jalen Johnson (33), Onyeka Okongwu (28), Nickeil Alexander-Walker (30), Dyson Daniels (29), CJ McCollum (26)",
+   "bench": "Luguentz Dort (24), Aaron Wiggins (26), Kingston Flemings (20), Asa Newell (9), Jock Landale (15)",
    "backup_c": "Jock Landale",
    "coach": "Quin Snyder",
    "notes": "All five starters are expected to play 30+ minutes. If Jalen Johnson sits, his usage scatters to McCollum, Alexander-Walker and possibly Flemings. If Okongwu sits, Landale starts and plays 30+ minutes. The team has 14 back-to-backs.",
    "source": "LO-1018",
-   "out": "Zuby Ejiofor",
-   "depth_through": "2026-10-29",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-10-31",
+   "games": 7
   },
   {
    "team": "HOU",
-   "starters": "Jabari Smith Jr. (34), Amen Thompson (35), Kevin Durant (35), Clint Capela (15), Tari Eason (25)",
-   "bench": "Alperen Sengun (34), Marcus Smart (21), Bogdan Bogdanovic (14), Oscar Tshiebwe (12)",
-   "backup_c": "Alperen Sengun",
+   "starters": "Amen Thompson (34), Jabari Smith Jr. (34), Kevin Durant (34), Fred VanVleet (31), Alperen Sengun (34)",
+   "bench": "Marcus Smart (25), Tari Eason (24), Reed Sheppard (23), Clint Capela (14), Bogdan Bogdanovic (14), Isaiah Crawford (6), Oscar Tshiebwe (10)",
+   "backup_c": "Clint Capela",
    "coach": "Ime Udoka",
    "notes": "Udoka plays his starters heavy minutes and is defense-first. Added guard depth means Amen Thompson plays less point guard. If VanVleet sits, Smart could start. If Durant or Jabari Smith sits, Eason could reach about 32 minutes. The team has 14 back-to-backs.",
    "source": "LO-1019b",
-   "out": "Fred VanVleet, Reed Sheppard, Steven Adams",
-   "depth_through": "2026-10-30",
-   "games": 6
+   "out": "Steven Adams",
+   "depth_through": "2026-10-31",
+   "games": 7
   },
   {
    "team": "LAL",
@@ -10971,39 +9907,39 @@
   },
   {
    "team": "MIN",
-   "starters": "Jaden McDaniels (32), Jonathan Kuminga (29), LaMelo Ball (26), Ayo Dosunmu (28), Terrence Shannon Jr. (23)",
-   "bench": "Joan Beringer (16), Trey Lyles (16), Bones Hyland (11), Jaylen Clark (7)",
+   "starters": "Jaden McDaniels (33), Ayo Dosunmu (29), Jonathan Kuminga (30), LaMelo Ball (25), Rudy Gobert (30)",
+   "bench": "Joan Beringer (19), Terrence Shannon Jr. (22), Trey Lyles (16), Bones Hyland (12), Jaylen Clark (9)",
    "backup_c": "Joan Beringer",
    "coach": "Chris Finch",
    "notes": "Kuminga signed and is expected to start. Naz Reid and Julius Randle are gone. If Gobert sits, Beringer is the backup center to watch. Beringer projects at about 18 minutes behind Gobert. Minnesota plays only 2 games in the week of March 15, which falls in most fantasy playoffs.",
    "source": "LO-1019b",
-   "out": "Anthony Edwards, Rudy Gobert",
-   "depth_through": "2026-10-30",
-   "games": 6
+   "out": "Anthony Edwards",
+   "depth_through": "2026-10-31",
+   "games": 7
   },
   {
    "team": "CHA",
-   "starters": "Brandon Miller (34), Moussa Diabaté (30), Dennis Schroder (32), Sion James (26), Naz Reid (28)",
-   "bench": "Grayson Allen (27), Royce O’Neale (17), Ryan Kalkbrenner (16), Tidjane Salaun (14), Christian Anderson (11)",
+   "starters": "Brandon Miller (34), Dennis Schroder (32), Moussa Diabaté (29), Naz Reid (29), Sion James (25)",
+   "bench": "Grayson Allen (27), Royce O’Neale (18), Ryan Kalkbrenner (17), Tidjane Salaun (14), Christian Anderson (11)",
    "backup_c": "Ryan Kalkbrenner",
    "coach": "",
    "notes": "LaMelo Ball and Miles Bridges are gone, and the ball-handling is split among White, Knueppel, Miller and Schroder. Knueppel and Grant Williams have hamstring injuries and are re-evaluated in week one. Charlotte traded Buddy Hield to Chicago for Rob Dillingham to save money and still has to cut three players. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). Charlotte has 13 back-to-backs, the league minimum.",
    "source": "LO-1018",
    "out": "",
-   "depth_through": "2026-10-30",
-   "games": 6
+   "depth_through": "2026-10-31",
+   "games": 7
   },
   {
    "team": "PHI",
-   "starters": "Tyrese Maxey (38), VJ Edgecombe (33), Dean Wade (27), Jaylen Brown (36), Kentavious Caldwell-Pope (25)",
-   "bench": "Anfernee Simons (24), Adem Bona (13), Labaron Philon Jr. (8)",
+   "starters": "Tyrese Maxey (38), VJ Edgecombe (33), Jaylen Brown (37), Dean Wade (28), Joel Embiid (35)",
+   "bench": "LeBron James (33), Anfernee Simons (25), Kentavious Caldwell-Pope (24), Jabari Walker (10), Adem Bona (14), Labaron Philon Jr. (8)",
    "backup_c": "Adem Bona",
    "coach": "Nick Nurse",
    "notes": "Jaylen Brown, LeBron James, Maxey and Embiid together cannot all keep last year's usage, so expect pullbacks. Embiid is expected to miss time.",
    "source": "LO-1018",
-   "out": "Joel Embiid, LeBron James",
-   "depth_through": "2026-10-30",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-10-31",
+   "games": 7
   },
   {
    "team": "BOS",
@@ -11019,25 +9955,25 @@
   },
   {
    "team": "POR",
-   "starters": "Deni Avdija (32), Damian Lillard (30), Toumani Camara (25), Donovan Clingan (24), Jrue Holiday (25)",
-   "bench": "Sidy Cissoko (22), Robert Williams III (18), Scoot Henderson (19), Branden Carlson (12), Micah Potter (10)",
+   "starters": "Deni Avdija (31), Damian Lillard (29), Toumani Camara (26), Donovan Clingan (22), Scoot Henderson (21)",
+   "bench": "Jrue Holiday (25), Sidy Cissoko (22), Robert Williams III (17), Vit Krejci (11), Yang Hansen (10), Branden Carlson (8)",
    "backup_c": "Robert Williams III",
    "coach": "Micah Nori",
    "notes": "Shaedon Sharpe tore his meniscus and is out for basically the whole season. Holiday moves to the three in a low-usage role, and Morant's usage should fall about five points.",
    "source": "ESPN-1021",
-   "out": "Ja Morant, Jayson Kent, John Tonje",
-   "depth_through": "2026-10-29",
-   "games": 4
+   "out": "Ja Morant",
+   "depth_through": "2026-10-31",
+   "games": 5
   },
   {
    "team": "BKN",
    "starters": "Julius Randle (33), Michael Porter Jr. (31), Day'Ron Sharpe (22), Nolan Traore (19), Chaney Johnson (20)",
-   "bench": "Mikel Brown Jr. (23), Keon Ellis (25), Noah Clowney (22), Moritz Wagner (18), Danny Wolf (14), Josh Minott (11), Terance Mann (12)",
+   "bench": "Keon Ellis (25), Noah Clowney (22), Moritz Wagner (18), Danny Wolf (14), Josh Minott (11), Terance Mann (12), Drake Powell (9)",
    "backup_c": "Moritz Wagner",
    "coach": "",
    "notes": "Brooklyn does not own its pick (it goes to Houston). Nic Claxton was traded to Chicago in the deal that brought Julius Randle. A Michael Porter Jr. trade is possible, and Randle could sit some March games. Fantasy playoff weeks run 3-4-3 (March 28 end) and 4-3-4 (April 4 end). Brooklyn has 16 back-to-backs, tied for the most in the league.",
    "source": "LO-1018",
-   "out": "Egor Demin",
+   "out": "Ben Saraf, Egor Demin, Joshua Jefferson, Mikel Brown Jr.",
    "depth_through": "2026-10-30",
    "games": 5
   },
@@ -11067,15 +10003,15 @@
   },
   {
    "team": "MIL",
-   "starters": "Tyler Herro (31), Kyle Kuzma (28), Jaime Jaquez (29), Ryan Rollins (26), Myles Turner (26)",
-   "bench": "Kel'el Ware (19), Kasparas Jakucionis (23), AJ Green (19), Brayden Burries (15), Nate Ament (15), Ousmane Dieng (13)",
+   "starters": "Tyler Herro (30), Jaime Jaquez (28), Ryan Rollins (26), Myles Turner (26), Kyle Kuzma (27)",
+   "bench": "AJ Green (19), Kasparas Jakucionis (22), Kel'el Ware (20), Brayden Burries (16), Nate Ament (16)",
    "backup_c": "Kel'el Ware",
    "coach": "Taylor Jenkins",
    "notes": "Giannis is gone to Miami. The roster is crowded with guards, and Milwaukee does not own its pick, so there is tanking risk.",
    "source": "LO-1018",
    "out": "",
-   "depth_through": "2026-10-28",
-   "games": 5
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "WAS",
@@ -11091,15 +10027,15 @@
   },
   {
    "team": "UTA",
-   "starters": "Keyonte George (33), Ace Bailey (30), Darryn Peterson (29), Lauri Markkanen (28), Jaxson Hayes (27)",
-   "bench": "Mo Bamba (22), Josh Okogie (17), Isaiah Collier (18), Josh Green (17), Brice Sensabaugh (15), Svi Mykhailiuk (16), Kyle Filipowski (8)",
+   "starters": "Ace Bailey (31), Keyonte George (32), Darryn Peterson (30), Jaxson Hayes (26), Lauri Markkanen (29)",
+   "bench": "Isaiah Collier (19), Josh Okogie (16), Mo Bamba (19), Josh Green (14), Brice Sensabaugh (16), Svi Mykhailiuk (17)",
    "backup_c": "Mo Bamba",
    "coach": "Will Hardy",
    "notes": "Kessler left for the Lakers, so Utah re-signed Nurkic and signed Hayes. Utah is trying to win this season.",
    "source": "LO-1019b",
    "out": "Jaren Jackson Jr.",
-   "depth_through": "2026-10-28",
-   "games": 5
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "ORL",
@@ -11127,15 +10063,15 @@
   },
   {
    "team": "NOP",
-   "starters": "Trey Murphy III (32), Zion Williamson (32), Jeremiah Fears (24), DeAndre Jordan (16), Herbert Jones (20)",
-   "bench": "Saddiq Bey (24), Derik Queen (24), Karlo Matkovic (16), Bennedict Mathurin (17), Trendon Watford (17)",
+   "starters": "Zion Williamson (32), Trey Murphy III (32), Jeremiah Fears (25), Herbert Jones (21), Karlo Matkovic (16)",
+   "bench": "Dejounte Murray (32), Saddiq Bey (24), Derik Queen (24), Trendon Watford (18), Bennedict Mathurin (18), DeAndre Jordan (16), Bryce McGowens (8)",
    "backup_c": "Derik Queen",
    "coach": "Jamahl Mosley",
    "notes": "Mathurin signed for 2 years and $16 million. The team is still built around Zion. New Orleans plays only 2 games in the final week of Yahoo's default playoffs.",
    "source": "LO-1019b",
-   "out": "Dejounte Murray, Jordan Poole, Yves Missi",
-   "depth_through": "2026-10-29",
-   "games": 5
+   "out": "Yves Missi",
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "PHX",
@@ -11187,27 +10123,27 @@
   },
   {
    "team": "CLE",
-   "starters": "James Harden (35), Evan Mobley (34), Donovan Mitchell (34), Jarrett Allen (28), Peyton Watson (30)",
-   "bench": "Sam Merrill (25), Meleek Thomas (20), Mario Hezonja (18), Tyrese Proctor (10)",
+   "starters": "James Harden (34), Evan Mobley (33), Donovan Mitchell (33), Jarrett Allen (28), Peyton Watson (28)",
+   "bench": "Sam Merrill (24), Meleek Thomas (21), Jaylon Tyson (21), Mario Hezonja (18), Tyrese Proctor (12), Thomas Bryant (11), Craig Porter Jr. (8)",
    "backup_c": "Thomas Bryant",
    "coach": "Kenny Atkinson",
    "notes": "Dennis Schroder, Keon Ellis and Max Strus are gone, which leaves the bench thin, especially at center. Fantasy playoff weeks run 4-3-2 (March 28 end) and 3-2-4 (April 4 end), so there is a two-game week either way. Cleveland has the most back-to-backs in the league, so expect rest days for Harden, Mitchell and Mobley. No one is hurt to start the season.",
    "source": "LO-1018",
-   "out": "Jaylon Tyson",
-   "depth_through": "2026-10-29",
-   "games": 5
+   "out": "",
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "SAC",
-   "starters": "Domantas Sabonis (37), Zach LaVine (37), Darius Acuff Jr. (36), De'Andre Hunter (29), Precious Achiuwa (30)",
-   "bench": "Jonathan Mogbo (15), Emanuel Sharp (17), Daeqwon Plowden (16), Alex Karaban (9), Malik Monk (11), Leaky Black (8)",
+   "starters": "Domantas Sabonis (37), Darius Acuff Jr. (36), De'Andre Hunter (29), Zach LaVine (34), Precious Achiuwa (29)",
+   "bench": "Jonathan Mogbo (17), Emanuel Sharp (18), Malik Monk (12), Alex Karaban (10), Daeqwon Plowden (14), Leaky Black (8)",
    "backup_c": "Precious Achiuwa",
    "coach": "Doug Christie",
    "notes": "Schroder, Westbrook and DeRozan are gone. Sabonis is a trade candidate, and LaVine is in the last year of his deal.",
    "source": "LO-1019b",
-   "out": "Keegan Murray",
-   "depth_through": "2026-10-29",
-   "games": 5
+   "out": "",
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "IND",
@@ -11217,55 +10153,55 @@
    "coach": "Rick Carlisle",
    "notes": "Haliburton is back from his Achilles injury, and his minutes are expected to be limited early. Zubac came from the Clippers late last season. Johnny Furphy (torn ACL) and Larry Nance (hamstring) are hurt. Fantasy playoff weeks run 3-4-3 if your season ends March 28 and 4-3-4 if it ends April 4. Indiana has 15 back-to-backs.",
    "source": "LO-1018",
-   "out": "Tyrese Haliburton",
+   "out": "Ben Sheppard, Ivica Zubac, Tyrese Haliburton",
    "depth_through": "2026-10-30",
    "games": 6
   },
   {
    "team": "OKC",
-   "starters": "Shai Gilgeous-Alexander (33), Isaiah Hartenstein (24), Ajay Mitchell (25), Jared McCain (24), Kenrich Williams (12)",
-   "bench": "Josh Dix (23), Bennett Stirtz (13), Aday Mara (16), Jaylin Williams (17), Brooks Barnhizer (5)",
+   "starters": "Shai Gilgeous-Alexander (33), Jared McCain (25), Ajay Mitchell (26), Isaiah Hartenstein (24), Kenrich Williams (14)",
+   "bench": "Bennett Stirtz (16), Jaylin Williams (18), Aday Mara (18), Josh Dix (18), Micah Peavy (10), Alex Caruso (19)",
    "backup_c": "Aday Mara",
    "coach": "",
    "notes": "OKC lost Aaron Wiggins, Isaiah Joe and Lu Dort this offseason. Sunday cost them Jalen Williams (lower left leg, taken off on a stretcher), Cason Wallace (left shoulder) and Jaylin Williams (right wrist); Ajay Mitchell had 18 points in 27 minutes off the bench.",
    "source": "LO-1019b",
-   "out": "Alex Caruso, Cason Wallace, Chet Holmgren, Jalen Williams",
-   "depth_through": "2026-10-28",
-   "games": 5
+   "out": "Cason Wallace, Chet Holmgren, Jalen Williams",
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "MEM",
-   "starters": "Cedric Coward (30), Cameron Boozer (32), Jaylen Wells (28), Zach Edey (21), Isaiah Stewart (17)",
-   "bench": "Jerami Grant (25), Cam Spencer (18), GG Jackson (16)",
+   "starters": "Cameron Boozer (31), Cedric Coward (28), Jaylen Wells (27), Zach Edey (20), Ty Jerome (30)",
+   "bench": "Jerami Grant (24), Cam Spencer (19), Javon Small (20), GG Jackson (17), Isaiah Stewart (18), Scotty Pippen Jr. (16), Kris Murray (12)",
    "backup_c": "Isaiah Stewart",
    "coach": "Tuomas Iisalo",
    "notes": "Boozer is expected to start and could lead the team in assists.",
    "source": "LO-1019b",
-   "out": "Quinten Post, Scotty Pippen Jr., Ty Jerome",
-   "depth_through": "2026-10-29",
-   "games": 5
+   "out": "",
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "SAS",
-   "starters": "Victor Wembanyama (32), Dylan Harper (33), Devin Vassell (32), De’Aaron Fox (32), Stephon Castle (31)",
-   "bench": "Julian Champagnie (28), Keldon Johnson (22), Luke Kornet (15), Carter Bryant (8), Harrison Barnes (8)",
+   "starters": "Dylan Harper (34), Victor Wembanyama (32), De’Aaron Fox (32), Devin Vassell (32), Stephon Castle (29)",
+   "bench": "Julian Champagnie (28), Keldon Johnson (22), Luke Kornet (15), Harrison Barnes (8), Carter Bryant (9)",
    "backup_c": "Luke Kornet",
    "coach": "Mitch Johnson",
    "notes": "Jayden Quaintance is out most of the season after knee surgery.",
    "source": "LO-1019b",
    "out": "",
-   "depth_through": "2026-10-28",
-   "games": 5
+   "depth_through": "2026-10-31",
+   "games": 6
   },
   {
    "team": "GSW",
-   "starters": "Brandin Podziemski (33), Draymond Green (29), Yaxel Lendeborg (32), Stephen Curry (28), Gui Santos (22)",
-   "bench": "Georges Niang (19), De'Anthony Melton (21), Al Horford (18), Brandon Williams (16), Will Richard (16), Gary Payton II (13)",
+   "starters": "Brandin Podziemski (33), Yaxel Lendeborg (32), Gui Santos (22), Georges Niang (19), Brandon Williams (16)",
+   "bench": "De'Anthony Melton (21), Al Horford (18), Will Richard (16), Gary Payton II (13)",
    "backup_c": "Al Horford",
    "coach": "Steve Kerr",
    "notes": "Porzingis has an unclear illness and may miss opening night. Jimmy Butler (torn ACL) and Moses Moody (torn patellar tendon) are out early. Horford will not play back-to-backs. Golden State has 15 back-to-backs, and its fantasy playoff schedule is 4-3-4 for leagues ending March 28.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Draymond Green, Stephen Curry",
    "depth_through": "2026-10-30",
    "games": 6
   },
@@ -16064,11 +15000,11 @@
    "team": "SAS",
    "flag": "",
    "change": "",
-   "note": "His blocks have dipped because teams challenge him less often. So far: 55.0 DK points in 32 minutes a game over 5 games (No. 3 in DK points a game).",
+   "note": "His blocks have dipped because teams challenge him less often. So far: 57.8 DK points in 32 minutes a game over 6 games (No. 2 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 55.0,
-   "season_rank": 3
+   "gp": 6,
+   "dk_avg": 57.8,
+   "season_rank": 2
   },
   {
    "rank": 4,
@@ -16077,11 +15013,11 @@
    "team": "MIA",
    "flag": "up",
    "change": "Role up",
-   "note": "He should play 32-33 minutes after under 29 last season. So far: 55.2 DK points in 32 minutes a game over 6 games (No. 2 in DK points a game).",
+   "note": "He should play 32-33 minutes after under 29 last season. So far: 55.2 DK points in 32 minutes a game over 6 games (No. 3 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 55.2,
-   "season_rank": 2
+   "season_rank": 3
   },
   {
    "rank": 5,
@@ -16090,11 +15026,11 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "So far: 42.0 DK points in 33 minutes a game over 5 games (No. 23 in DK points a game).",
+   "note": "So far: 41.4 DK points in 33 minutes a game over 6 games (No. 25 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 42.0,
-   "season_rank": 23
+   "gp": 6,
+   "dk_avg": 41.4,
+   "season_rank": 25
   },
   {
    "rank": 6,
@@ -16103,11 +15039,11 @@
    "team": "DET",
    "flag": "",
    "change": "",
-   "note": "He averaged 24 points, 10 assists and 5 rebounds last season. Daniss Jenkins is the backup creator if he misses time. So far: 43.5 DK points in 34 minutes a game over 6 games (No. 19 in DK points a game).",
+   "note": "He averaged 24 points, 10 assists and 5 rebounds last season. Daniss Jenkins is the backup creator if he misses time. So far: 43.5 DK points in 34 minutes a game over 6 games (No. 18 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 43.5,
-   "season_rank": 19
+   "season_rank": 18
   },
   {
    "rank": 7,
@@ -16116,11 +15052,11 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "He is not on the injury report for the second night of the back-to-back after playing 28 minutes in Monday's blowout. So far: 49.4 DK points in 36 minutes a game over 5 games (No. 9 in DK points a game).",
+   "note": "He is not on the injury report for the second night of the back-to-back after playing 28 minutes in Monday's blowout. So far: 49.4 DK points in 36 minutes a game over 5 games (No. 7 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 49.4,
-   "season_rank": 9
+   "season_rank": 7
   },
   {
    "rank": 8,
@@ -16129,11 +15065,11 @@
    "team": "ATL",
    "flag": "",
    "change": "",
-   "note": "His assists and efficiency dropped when CJ McCollum played last season, so he could fall from 8 assists to about 7. So far: 46.8 DK points in 34 minutes a game over 6 games (No. 10 in DK points a game).",
+   "note": "His assists and efficiency dropped when CJ McCollum played last season, so he could fall from 8 assists to about 7. So far: 44.1 DK points in 33 minutes a game over 7 games (No. 17 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 46.8,
-   "season_rank": 10
+   "gp": 7,
+   "dk_avg": 44.1,
+   "season_rank": 17
   },
   {
    "rank": 9,
@@ -16155,11 +15091,11 @@
    "team": "PHI",
    "flag": "down",
    "change": "Role down",
-   "note": "He could lose minutes and usage next to Jaylen Brown and LeBron James. So far: 45.2 DK points in 38 minutes a game over 6 games (No. 15 in DK points a game).",
+   "note": "He could lose minutes and usage next to Jaylen Brown and LeBron James. So far: 46.5 DK points in 38 minutes a game over 7 games (No. 11 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 45.2,
-   "season_rank": 15
+   "gp": 7,
+   "dk_avg": 46.5,
+   "season_rank": 11
   },
   {
    "rank": 11,
@@ -16168,11 +15104,11 @@
    "team": "IND",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He said he is playing Monday, the second night of the back-to-back. So far: 46.5 DK points in 33 minutes a game over 4 games (No. 11 in DK points a game).",
+   "note": "He said he is playing Monday, the second night of the back-to-back. So far: 46.5 DK points in 33 minutes a game over 4 games (No. 10 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 46.5,
-   "season_rank": 11
+   "season_rank": 10
   },
   {
    "rank": 12,
@@ -16194,11 +15130,11 @@
    "team": "HOU",
    "flag": "",
    "change": "",
-   "note": "He had 29 points, nine rebounds, nine assists and six steals Monday. So far: 50.2 DK points in 34 minutes a game over 4 games (No. 7 in DK points a game).",
+   "note": "He had 29 points, nine rebounds, nine assists and six steals Monday. So far: 48.5 DK points in 34 minutes a game over 5 games (No. 9 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 50.2,
-   "season_rank": 7
+   "gp": 5,
+   "dk_avg": 48.5,
+   "season_rank": 9
   },
   {
    "rank": 14,
@@ -16207,11 +15143,11 @@
    "team": "CLE",
    "flag": "down",
    "change": "Role down",
-   "note": "His usage fell from 32% to 30% and his assists dropped alongside Harden. So far: 42.6 DK points in 34 minutes a game over 5 games (No. 21 in DK points a game).",
+   "note": "His usage fell from 32% to 30% and his assists dropped alongside Harden. So far: 39.6 DK points in 33 minutes a game over 6 games (No. 33 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 42.6,
-   "season_rank": 21
+   "gp": 6,
+   "dk_avg": 39.6,
+   "season_rank": 33
   },
   {
    "rank": 15,
@@ -16220,11 +15156,11 @@
    "team": "WAS",
    "flag": "",
    "change": "",
-   "note": "He has not played 65 games in a season recently, so 60 games would be a good result. So far: 41.5 DK points in 34 minutes a game over 6 games (No. 25 in DK points a game).",
+   "note": "He has not played 65 games in a season recently, so 60 games would be a good result. So far: 41.5 DK points in 34 minutes a game over 6 games (No. 24 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 41.5,
-   "season_rank": 25
+   "season_rank": 24
   },
   {
    "rank": 16,
@@ -16246,11 +15182,11 @@
    "team": "TOR",
    "flag": "",
    "change": "",
-   "note": "He scored a career-high 41 points on 19-of-34 shooting Friday with Kawhi Leonard out. So far: 44.3 DK points in 32 minutes a game over 5 games (No. 18 in DK points a game).",
+   "note": "He scored a career-high 41 points on 19-of-34 shooting Friday with Kawhi Leonard out. So far: 44.3 DK points in 32 minutes a game over 5 games (No. 16 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 44.3,
-   "season_rank": 18
+   "season_rank": 16
   },
   {
    "rank": 18,
@@ -16259,11 +15195,11 @@
    "team": "CHI",
    "flag": "",
    "change": "",
-   "note": "He could post double-digit assists and finished 21st in points leagues last season. So far: 27.2 DK points in 26 minutes a game over 6 games (No. 107 in DK points a game).",
+   "note": "He could post double-digit assists and finished 21st in points leagues last season. So far: 27.2 DK points in 26 minutes a game over 6 games (No. 108 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 27.2,
-   "season_rank": 107
+   "season_rank": 108
   },
   {
    "rank": 19,
@@ -16285,11 +15221,11 @@
    "team": "PHI",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He is expected to rest on back-to-backs. So far: 40.9 DK points in 33 minutes a game over 5 games (No. 26 in DK points a game).",
+   "note": "He is expected to rest on back-to-backs. So far: 40.9 DK points in 33 minutes a game over 5 games (No. 27 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 40.9,
-   "season_rank": 26
+   "season_rank": 27
   },
   {
    "rank": 21,
@@ -16298,11 +15234,11 @@
    "team": "MIN",
    "flag": "up",
    "change": "Role up",
-   "note": "His minutes and rebounds should go up. So far: 31.5 DK points in 26 minutes a game over 6 games (No. 73 in DK points a game).",
+   "note": "His minutes and rebounds should go up. So far: 31.2 DK points in 25 minutes a game over 7 games (No. 72 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 31.5,
-   "season_rank": 73
+   "gp": 7,
+   "dk_avg": 31.2,
+   "season_rank": 72
   },
   {
    "rank": 22,
@@ -16311,11 +15247,11 @@
    "team": "WAS",
    "flag": "up",
    "change": "Role up",
-   "note": "He played only about 25 minutes a game last season and should be back near 33-35 minutes. So far: 43.3 DK points in 36 minutes a game over 6 games (No. 20 in DK points a game).",
+   "note": "He played only about 25 minutes a game last season and should be back near 33-35 minutes. So far: 43.3 DK points in 36 minutes a game over 6 games (No. 19 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 43.3,
-   "season_rank": 20
+   "season_rank": 19
   },
   {
    "rank": 23,
@@ -16324,11 +15260,11 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "So far: 39.8 DK points in 35 minutes a game over 6 games (No. 32 in DK points a game).",
+   "note": "So far: 39.8 DK points in 35 minutes a game over 6 games (No. 31 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 39.8,
-   "season_rank": 32
+   "season_rank": 31
   },
   {
    "rank": 24,
@@ -16337,11 +15273,11 @@
    "team": "HOU",
    "flag": "",
    "change": "",
-   "note": "He played 78 games at 36 minutes last season and pushed back on media-day talk of cutting his minutes. So far: 38.6 DK points in 35 minutes a game over 6 games (No. 43 in DK points a game).",
+   "note": "He played 78 games at 36 minutes last season and pushed back on media-day talk of cutting his minutes. So far: 37.5 DK points in 34 minutes a game over 7 games (No. 40 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 38.6,
-   "season_rank": 43
+   "gp": 7,
+   "dk_avg": 37.5,
+   "season_rank": 40
   },
   {
    "rank": 25,
@@ -16350,11 +15286,11 @@
    "team": "HOU",
    "flag": "",
    "change": "",
-   "note": "He will play less point guard with VanVleet back, so his assists may fall by about one per game. So far: 36.5 DK points in 35 minutes a game over 6 games (No. 50 in DK points a game).",
+   "note": "He will play less point guard with VanVleet back, so his assists may fall by about one per game. So far: 33.5 DK points in 34 minutes a game over 7 games (No. 63 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 36.5,
-   "season_rank": 50
+   "gp": 7,
+   "dk_avg": 33.5,
+   "season_rank": 63
   },
   {
    "rank": 26,
@@ -16363,11 +15299,11 @@
    "team": "SAS",
    "flag": "",
    "change": "",
-   "note": "He played 28 minutes in the opener and looks like he is playing more off the ball. So far: 36.1 DK points in 31 minutes a game over 5 games (No. 51 in DK points a game).",
+   "note": "He played 28 minutes in the opener and looks like he is playing more off the ball. So far: 32.2 DK points in 29 minutes a game over 6 games (No. 70 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 36.1,
-   "season_rank": 51
+   "gp": 6,
+   "dk_avg": 32.2,
+   "season_rank": 70
   },
   {
    "rank": 27,
@@ -16389,11 +15325,11 @@
    "team": "MIA",
    "flag": "",
    "change": "",
-   "note": "He may pass and block more next to Giannis. So far: 36.0 DK points in 32 minutes a game over 6 games (No. 52 in DK points a game).",
+   "note": "He may pass and block more next to Giannis. So far: 36.0 DK points in 32 minutes a game over 6 games (No. 50 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 36.0,
-   "season_rank": 52
+   "season_rank": 50
   },
   {
    "rank": 29,
@@ -16402,11 +15338,11 @@
    "team": "GSW",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "Saturday is the second night of a back-to-back, and Curry, Draymond Green and Al Horford may not all play. So far: 44.5 DK points in 28 minutes a game over 5 games (No. 17 in DK points a game).",
+   "note": "Saturday is the second night of a back-to-back, and Curry, Draymond Green and Al Horford may not all play. So far: 44.5 DK points in 28 minutes a game over 5 games (No. 15 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 44.5,
-   "season_rank": 17
+   "season_rank": 15
   },
   {
    "rank": 30,
@@ -16415,11 +15351,11 @@
    "team": "CLE",
    "flag": "down",
    "change": "Role down",
-   "note": "At 37, his minutes and usage are expected to drop from last season. So far: 34.2 DK points in 35 minutes a game over 5 games (No. 56 in DK points a game).",
+   "note": "At 37, his minutes and usage are expected to drop from last season. So far: 34.1 DK points in 34 minutes a game over 6 games (No. 57 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 34.2,
-   "season_rank": 56
+   "gp": 6,
+   "dk_avg": 34.1,
+   "season_rank": 57
   },
   {
    "rank": 31,
@@ -16428,11 +15364,11 @@
    "team": "PHX",
    "flag": "",
    "change": "",
-   "note": "He scored three points on 1-of-7 shooting in 34 minutes Monday. So far: 36.7 DK points in 34 minutes a game over 4 games (No. 49 in DK points a game).",
+   "note": "He scored three points on 1-of-7 shooting in 34 minutes Monday. So far: 36.7 DK points in 34 minutes a game over 4 games (No. 47 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 36.7,
-   "season_rank": 49
+   "season_rank": 47
   },
   {
    "rank": 32,
@@ -16441,11 +15377,11 @@
    "team": "POR",
    "flag": "down",
    "change": "Role down",
-   "note": "Next to Morant and Lillard, his usage should fall to about 24% and his scoring to about 20. So far: 44.6 DK points in 32 minutes a game over 4 games (No. 16 in DK points a game).",
+   "note": "Next to Morant and Lillard, his usage should fall to about 24% and his scoring to about 20. So far: 42.6 DK points in 31 minutes a game over 5 games (No. 20 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 44.6,
-   "season_rank": 16
+   "gp": 5,
+   "dk_avg": 42.6,
+   "season_rank": 20
   },
   {
    "rank": 33,
@@ -16454,11 +15390,11 @@
    "team": "TOR",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He may sit all 15 of Toronto’s back-to-backs. So far: 39.1 DK points in 26 minutes a game over 2 games (No. 37 in DK points a game).",
+   "note": "He may sit all 15 of Toronto’s back-to-backs. So far: 39.1 DK points in 26 minutes a game over 2 games (No. 35 in DK points a game).",
    "source": "NBA-0929",
    "gp": 2,
    "dk_avg": 39.1,
-   "season_rank": 37
+   "season_rank": 35
   },
   {
    "rank": 34,
@@ -16467,11 +15403,11 @@
    "team": "PHI",
    "flag": "down",
    "change": "Role down",
-   "note": "He now shares the ball with Maxey, Embiid and LeBron, and his usage could fall from 36% to about 28%. So far: 38.5 DK points in 36 minutes a game over 5 games (No. 44 in DK points a game).",
+   "note": "He now shares the ball with Maxey, Embiid and LeBron, and his usage could fall from 36% to about 28%. So far: 37.0 DK points in 37 minutes a game over 6 games (No. 42 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 38.5,
-   "season_rank": 44
+   "gp": 6,
+   "dk_avg": 37.0,
+   "season_rank": 42
   },
   {
    "rank": 35,
@@ -16480,11 +15416,11 @@
    "team": "DET",
    "flag": "",
    "change": "",
-   "note": "He averaged 19 and 10 in 28 minutes last season. He looks overpriced at an early draft spot unless his minutes jump. Paul Reed gets about 20 minutes if Duren plays 28. So far: 28.9 DK points in 19 minutes a game over 2 games (No. 91 in DK points a game).",
+   "note": "He averaged 19 and 10 in 28 minutes last season. He looks overpriced at an early draft spot unless his minutes jump. Paul Reed gets about 20 minutes if Duren plays 28. So far: 28.9 DK points in 19 minutes a game over 2 games (No. 93 in DK points a game).",
    "source": "NBA-0929",
    "gp": 2,
    "dk_avg": 28.9,
-   "season_rank": 91
+   "season_rank": 93
   },
   {
    "rank": 36,
@@ -16493,11 +15429,11 @@
    "team": "CLE",
    "flag": "",
    "change": "",
-   "note": "His free-throw shooting fell from 73% to 61% last season. His numbers improve if he plays more center. So far: 39.2 DK points in 34 minutes a game over 5 games (No. 36 in DK points a game).",
+   "note": "His free-throw shooting fell from 73% to 61% last season. His numbers improve if he plays more center. So far: 39.5 DK points in 33 minutes a game over 6 games (No. 34 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 39.2,
-   "season_rank": 36
+   "gp": 6,
+   "dk_avg": 39.5,
+   "season_rank": 34
   },
   {
    "rank": 37,
@@ -16506,11 +15442,11 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "New Orleans is reported to be open to trading him. So far: 26.2 DK points in 32 minutes a game over 5 games (No. 121 in DK points a game).",
+   "note": "New Orleans is reported to be open to trading him. So far: 27.2 DK points in 32 minutes a game over 6 games (No. 111 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 26.2,
-   "season_rank": 121
+   "gp": 6,
+   "dk_avg": 27.2,
+   "season_rank": 111
   },
   {
    "rank": 38,
@@ -16519,11 +15455,11 @@
    "team": "LAL",
    "flag": "up",
    "change": "Role up",
-   "note": "LeBron is gone, so his usage and assists should rise. So far: 38.6 DK points in 36 minutes a game over 6 games (No. 41 in DK points a game).",
+   "note": "LeBron is gone, so his usage and assists should rise. So far: 38.6 DK points in 36 minutes a game over 6 games (No. 38 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 38.6,
-   "season_rank": 41
+   "season_rank": 38
   },
   {
    "rank": 39,
@@ -16532,11 +15468,11 @@
    "team": "UTA",
    "flag": "down",
    "change": "Role down",
-   "note": "His volume should drop with Peterson and Bailey taking on more. So far: 40.7 DK points in 33 minutes a game over 5 games (No. 27 in DK points a game).",
+   "note": "His volume should drop with Peterson and Bailey taking on more. So far: 37.0 DK points in 32 minutes a game over 6 games (No. 43 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 40.7,
-   "season_rank": 27
+   "gp": 6,
+   "dk_avg": 37.0,
+   "season_rank": 43
   },
   {
    "rank": 40,
@@ -16545,10 +15481,10 @@
    "team": "SAC",
    "flag": "up",
    "change": "Role up",
-   "note": "His minutes and touches should rise without DeRozan, Westbrook and Schroder. So far: 50.0 DK points in 37 minutes a game over 5 games (No. 8 in DK points a game).",
+   "note": "His minutes and touches should rise without DeRozan, Westbrook and Schroder. So far: 48.8 DK points in 37 minutes a game over 6 games (No. 8 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 50.0,
+   "gp": 6,
+   "dk_avg": 48.8,
    "season_rank": 8
   },
   {
@@ -16558,11 +15494,11 @@
    "team": "IND",
    "flag": "",
    "change": "",
-   "note": "His assists should fall to about 3 to 3.2 with Haliburton back. Obi Toppin would start if he misses time. So far: 39.0 DK points in 32 minutes a game over 6 games (No. 38 in DK points a game).",
+   "note": "His assists should fall to about 3 to 3.2 with Haliburton back. Obi Toppin would start if he misses time. So far: 39.0 DK points in 32 minutes a game over 6 games (No. 36 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 39.0,
-   "season_rank": 38
+   "season_rank": 36
   },
   {
    "rank": 42,
@@ -16571,11 +15507,11 @@
    "team": "BKN",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "Brooklyn could sit him for about a third of March games. So far: 38.6 DK points in 33 minutes a game over 5 games (No. 42 in DK points a game).",
+   "note": "Brooklyn could sit him for about a third of March games. So far: 38.6 DK points in 33 minutes a game over 5 games (No. 39 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 38.6,
-   "season_rank": 42
+   "season_rank": 39
   },
   {
    "rank": 43,
@@ -16584,10 +15520,10 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "So far: 36.8 DK points in 32 minutes a game over 5 games (No. 48 in DK points a game).",
+   "note": "So far: 36.2 DK points in 32 minutes a game over 6 games (No. 48 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 36.8,
+   "gp": 6,
+   "dk_avg": 36.2,
    "season_rank": 48
   },
   {
@@ -16597,11 +15533,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "He scored 39 points with three steals and two blocks in 36 minutes Monday. So far: 40.2 DK points in 34 minutes a game over 6 games (No. 31 in DK points a game).",
+   "note": "He scored 39 points with three steals and two blocks in 36 minutes Monday. So far: 40.9 DK points in 34 minutes a game over 7 games (No. 26 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 40.2,
-   "season_rank": 31
+   "gp": 7,
+   "dk_avg": 40.9,
+   "season_rank": 26
   },
   {
    "rank": 45,
@@ -16610,11 +15546,11 @@
    "team": "DAL",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "Saturday is the second night of a back-to-back, and he is still on reduced minutes. So far: 37.0 DK points in 29 minutes a game over 5 games (No. 45 in DK points a game).",
+   "note": "Saturday is the second night of a back-to-back, and he is still on reduced minutes. So far: 37.0 DK points in 29 minutes a game over 5 games (No. 44 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 37.0,
-   "season_rank": 45
+   "season_rank": 44
   },
   {
    "rank": 46,
@@ -16623,11 +15559,11 @@
    "team": "POR",
    "flag": "down",
    "change": "Role down",
-   "note": "A recent report says he might come off the bench. So far: 29.2 DK points in 26 minutes a game over 4 games (No. 86 in DK points a game).",
+   "note": "A recent report says he might come off the bench. So far: 29.2 DK points in 26 minutes a game over 4 games (No. 85 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 29.2,
-   "season_rank": 86
+   "season_rank": 85
   },
   {
    "rank": 47,
@@ -16649,11 +15585,11 @@
    "team": "POR",
    "flag": "",
    "change": "",
-   "note": "He is expected to play 25-27 minutes and about 60-some games. So far: 30.8 DK points in 30 minutes a game over 4 games (No. 77 in DK points a game).",
+   "note": "He is expected to play 25-27 minutes and about 60-some games. So far: 32.5 DK points in 29 minutes a game over 5 games (No. 67 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 30.8,
-   "season_rank": 77
+   "gp": 5,
+   "dk_avg": 32.5,
+   "season_rank": 67
   },
   {
    "rank": 49,
@@ -16662,11 +15598,11 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "He was fouled on a drive with 1:14 left Sunday and was taken off on a stretcher with a lower left leg injury. Coach Mark Daigneault said after the game, “We’re not doing great,” and no diagnosis was announced that night. So far: 27.7 DK points in 32 minutes a game over 3 games (No. 103 in DK points a game).",
+   "note": "He was fouled on a drive with 1:14 left Sunday and was taken off on a stretcher with a lower left leg injury. Coach Mark Daigneault said after the game, “We’re not doing great,” and no diagnosis was announced that night. So far: 27.7 DK points in 32 minutes a game over 3 games (No. 104 in DK points a game).",
    "source": "NBA-0929",
    "gp": 3,
    "dk_avg": 27.7,
-   "season_rank": 103
+   "season_rank": 104
   },
   {
    "rank": 50,
@@ -16675,11 +15611,11 @@
    "team": "NOP",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He is coming back from an ACL injury. So far: 38.9 DK points in 32 minutes a game over 4 games (No. 39 in DK points a game).",
+   "note": "He is coming back from an ACL injury. So far: 38.9 DK points in 32 minutes a game over 4 games (No. 37 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 38.9,
-   "season_rank": 39
+   "season_rank": 37
   },
   {
    "rank": 51,
@@ -16688,11 +15624,11 @@
    "team": "OKC",
    "flag": "out",
    "change": "Out to start",
-   "note": "A quad contusion makes him uncertain for the start of the season. So far: 33.0 DK points in 30 minutes a game over 3 games (No. 66 in DK points a game).",
+   "note": "A quad contusion makes him uncertain for the start of the season. So far: 33.0 DK points in 30 minutes a game over 3 games (No. 65 in DK points a game).",
    "source": "NBA-0929",
    "gp": 3,
    "dk_avg": 33.0,
-   "season_rank": 66
+   "season_rank": 65
   },
   {
    "rank": 52,
@@ -16701,11 +15637,11 @@
    "team": "ORL",
    "flag": "",
    "change": "",
-   "note": "So far: 30.8 DK points in 34 minutes a game over 5 games (No. 78 in DK points a game).",
+   "note": "So far: 30.8 DK points in 34 minutes a game over 5 games (No. 76 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 30.8,
-   "season_rank": 78
+   "season_rank": 76
   },
   {
    "rank": 53,
@@ -16714,11 +15650,11 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "He left Monday's game after six minutes with the wrist injury. Jaren Jackson Jr. is out six to eight weeks with a torn MCL. So far: 27.1 DK points in 28 minutes a game over 4 games (No. 113 in DK points a game).",
+   "note": "He left Monday's game after six minutes with the wrist injury. Jaren Jackson Jr. is out six to eight weeks with a torn MCL. So far: 27.7 DK points in 29 minutes a game over 5 games (No. 103 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 27.1,
-   "season_rank": 113
+   "gp": 5,
+   "dk_avg": 27.7,
+   "season_rank": 103
   },
   {
    "rank": 54,
@@ -16740,11 +15676,11 @@
    "team": "MIL",
    "flag": "",
    "change": "",
-   "note": "He ran more point guard than expected in the opener, with 24 points and nine assists. So far: 39.6 DK points in 31 minutes a game over 5 games (No. 34 in DK points a game).",
+   "note": "He ran more point guard than expected in the opener, with 24 points and nine assists. So far: 37.1 DK points in 30 minutes a game over 6 games (No. 41 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 39.6,
-   "season_rank": 34
+   "gp": 6,
+   "dk_avg": 37.1,
+   "season_rank": 41
   },
   {
    "rank": 56,
@@ -16753,11 +15689,11 @@
    "team": "ATL",
    "flag": "",
    "change": "",
-   "note": "He scored a season-high 29 points with 12 rebounds and four threes Thursday. Quin Snyder's scheme pulls him away from the rim. So far: 28.5 DK points in 28 minutes a game over 6 games (No. 94 in DK points a game).",
+   "note": "He scored a season-high 29 points with 12 rebounds and four threes Thursday. Quin Snyder's scheme pulls him away from the rim. So far: 27.5 DK points in 28 minutes a game over 7 games (No. 107 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 28.5,
-   "season_rank": 94
+   "gp": 7,
+   "dk_avg": 27.5,
+   "season_rank": 107
   },
   {
    "rank": 57,
@@ -16779,11 +15715,11 @@
    "team": "LAL",
    "flag": "up",
    "change": "Role up",
-   "note": "He is the Lakers' starting center behind a weak backup group. So far: 34.2 DK points in 30 minutes a game over 6 games (No. 57 in DK points a game).",
+   "note": "He is the Lakers' starting center behind a weak backup group. So far: 34.2 DK points in 30 minutes a game over 6 games (No. 56 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 34.2,
-   "season_rank": 57
+   "season_rank": 56
   },
   {
    "rank": 59,
@@ -16792,11 +15728,11 @@
    "team": "SAS",
    "flag": "",
    "change": "",
-   "note": "A healthy Fox is what raises San Antonio’s ceiling. He should play off the ball more with Castle handling. So far: 34.8 DK points in 32 minutes a game over 5 games (No. 53 in DK points a game).",
+   "note": "A healthy Fox is what raises San Antonio’s ceiling. He should play off the ball more with Castle handling. So far: 36.0 DK points in 32 minutes a game over 6 games (No. 49 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 34.8,
-   "season_rank": 53
+   "gp": 6,
+   "dk_avg": 36.0,
+   "season_rank": 49
   },
   {
    "rank": 60,
@@ -16805,11 +15741,11 @@
    "team": "BKN",
    "flag": "down",
    "change": "Role down",
-   "note": "Randle's arrival makes last season's 32% usage almost impossible to repeat. So far: 36.9 DK points in 31 minutes a game over 5 games (No. 47 in DK points a game).",
+   "note": "Randle's arrival makes last season's 32% usage almost impossible to repeat. So far: 36.9 DK points in 31 minutes a game over 5 games (No. 46 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 36.9,
-   "season_rank": 47
+   "season_rank": 46
   },
   {
    "rank": 61,
@@ -16831,11 +15767,11 @@
    "team": "ATL",
    "flag": "",
    "change": "",
-   "note": "He is the best Hawks target, though his late-season shooting will not continue. So far: 33.2 DK points in 30 minutes a game over 6 games (No. 65 in DK points a game).",
+   "note": "He is the best Hawks target, though his late-season shooting will not continue. So far: 30.9 DK points in 30 minutes a game over 7 games (No. 75 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 33.2,
-   "season_rank": 65
+   "gp": 7,
+   "dk_avg": 30.9,
+   "season_rank": 75
   },
   {
    "rank": 63,
@@ -16844,11 +15780,11 @@
    "team": "POR",
    "flag": "",
    "change": "",
-   "note": "He averaged 12 points and 12 rebounds. He is mainly a two-category player. So far: 28.4 DK points in 24 minutes a game over 4 games (No. 96 in DK points a game).",
+   "note": "He averaged 12 points and 12 rebounds. He is mainly a two-category player. So far: 26.2 DK points in 22 minutes a game over 5 games (No. 120 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 28.4,
-   "season_rank": 96
+   "gp": 5,
+   "dk_avg": 26.2,
+   "season_rank": 120
   },
   {
    "rank": 64,
@@ -16857,11 +15793,11 @@
    "team": "LAC",
    "flag": "",
    "change": "",
-   "note": "He averaged about 20 points and 7 assists with the Clippers last season. A healthy season could make him a top-20 player. So far: 33.8 DK points in 32 minutes a game over 5 games (No. 59 in DK points a game).",
+   "note": "He averaged about 20 points and 7 assists with the Clippers last season. A healthy season could make him a top-20 player. So far: 33.8 DK points in 32 minutes a game over 5 games (No. 60 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 33.8,
-   "season_rank": 59
+   "season_rank": 60
   },
   {
    "rank": 65,
@@ -16870,11 +15806,11 @@
    "team": "MIL",
    "flag": "up",
    "change": "Role up",
-   "note": "He should start and could score about 20 a game, up from about 17. So far: 25.9 DK points in 26 minutes a game over 5 games (No. 129 in DK points a game).",
+   "note": "He should start and could score about 20 a game, up from about 17. So far: 25.6 DK points in 26 minutes a game over 6 games (No. 133 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 25.9,
-   "season_rank": 129
+   "gp": 6,
+   "dk_avg": 25.6,
+   "season_rank": 133
   },
   {
    "rank": 66,
@@ -16883,11 +15819,11 @@
    "team": "MEM",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He sat Sunday and is expected back Monday. So far: 21.9 DK points in 21 minutes a game over 4 games (No. 160 in DK points a game).",
+   "note": "He sat Sunday and is expected back Monday. So far: 20.1 DK points in 20 minutes a game over 5 games (No. 176 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 21.9,
-   "season_rank": 160
+   "gp": 5,
+   "dk_avg": 20.1,
+   "season_rank": 176
   },
   {
    "rank": 67,
@@ -16896,11 +15832,11 @@
    "team": "ATL",
    "flag": "",
    "change": "",
-   "note": "His steals should bounce back toward 2.3-2.6 per game. So far: 30.0 DK points in 29 minutes a game over 6 games (No. 82 in DK points a game).",
+   "note": "His steals should bounce back toward 2.3-2.6 per game. So far: 29.0 DK points in 29 minutes a game over 7 games (No. 91 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 30.0,
-   "season_rank": 82
+   "gp": 7,
+   "dk_avg": 29.0,
+   "season_rank": 91
   },
   {
    "rank": 68,
@@ -16909,11 +15845,11 @@
    "team": "CLE",
    "flag": "",
    "change": "",
-   "note": "Per 36 minutes next to Harden he averaged 25 and 13 on 71% shooting. If Cleveland plays Mobley at center, his minutes could drop. So far: 31.2 DK points in 28 minutes a game over 5 games (No. 76 in DK points a game).",
+   "note": "Per 36 minutes next to Harden he averaged 25 and 13 on 71% shooting. If Cleveland plays Mobley at center, his minutes could drop. So far: 33.9 DK points in 28 minutes a game over 6 games (No. 59 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 31.2,
-   "season_rank": 76
+   "gp": 6,
+   "dk_avg": 33.9,
+   "season_rank": 59
   },
   {
    "rank": 69,
@@ -16935,11 +15871,11 @@
    "team": "MEM",
    "flag": "up",
    "change": "Role up",
-   "note": "The rookie is expected to start at about 30 minutes and could lead Memphis in assists. So far: 41.8 DK points in 32 minutes a game over 5 games (No. 24 in DK points a game).",
+   "note": "The rookie is expected to start at about 30 minutes and could lead Memphis in assists. So far: 42.0 DK points in 31 minutes a game over 6 games (No. 23 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 41.8,
-   "season_rank": 24
+   "gp": 6,
+   "dk_avg": 42.0,
+   "season_rank": 23
   },
   {
    "rank": 71,
@@ -16948,11 +15884,11 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "He should get more catch-and-shoot looks next to Tatum and George. So far: 27.5 DK points in 29 minutes a game over 5 games (No. 104 in DK points a game).",
+   "note": "He should get more catch-and-shoot looks next to Tatum and George. So far: 27.5 DK points in 29 minutes a game over 5 games (No. 106 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 27.5,
-   "season_rank": 104
+   "season_rank": 106
   },
   {
    "rank": 72,
@@ -16961,11 +15897,11 @@
    "team": "CHA",
    "flag": "up",
    "change": "Role up",
-   "note": "He moves from Minnesota to Charlotte, where he projects as the starting power forward at about 33 minutes. So far: 33.8 DK points in 28 minutes a game over 6 games (No. 61 in DK points a game).",
+   "note": "He moves from Minnesota to Charlotte, where he projects as the starting power forward at about 33 minutes. So far: 32.3 DK points in 29 minutes a game over 7 games (No. 69 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 33.8,
-   "season_rank": 61
+   "gp": 7,
+   "dk_avg": 32.3,
+   "season_rank": 69
   },
   {
    "rank": 73,
@@ -16974,11 +15910,11 @@
    "team": "MIL",
    "flag": "",
    "change": "",
-   "note": "He had 19 points, 13 rebounds and two blocks off the bench on Saturday while Myles Turner scored zero in 20 minutes. So far: 25.1 DK points in 19 minutes a game over 5 games (No. 134 in DK points a game).",
+   "note": "He had 19 points, 13 rebounds and two blocks off the bench on Saturday while Myles Turner scored zero in 20 minutes. So far: 28.1 DK points in 20 minutes a game over 6 games (No. 97 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 25.1,
-   "season_rank": 134
+   "gp": 6,
+   "dk_avg": 28.1,
+   "season_rank": 97
   },
   {
    "rank": 74,
@@ -17000,11 +15936,11 @@
    "team": "CHI",
    "flag": "",
    "change": "",
-   "note": "He had 30 points, 14 rebounds and two steals on Saturday. So far: 39.6 DK points in 34 minutes a game over 6 games (No. 35 in DK points a game).",
+   "note": "He had 30 points, 14 rebounds and two steals on Saturday. So far: 39.6 DK points in 34 minutes a game over 6 games (No. 32 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 39.6,
-   "season_rank": 35
+   "season_rank": 32
   },
   {
    "rank": 76,
@@ -17013,11 +15949,11 @@
    "team": "WAS",
    "flag": "down",
    "change": "Role down",
-   "note": "He is now the fifth option next to Anthony Davis. So far: 23.1 DK points in 26 minutes a game over 6 games (No. 153 in DK points a game).",
+   "note": "He is now the fifth option next to Anthony Davis. So far: 23.1 DK points in 26 minutes a game over 6 games (No. 152 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 23.1,
-   "season_rank": 153
+   "season_rank": 152
   },
   {
    "rank": 77,
@@ -17026,10 +15962,10 @@
    "team": "PHI",
    "flag": "",
    "change": "",
-   "note": "He had 17 points, 13 rebounds and two blocks on Saturday with LeBron James out. So far: 28.9 DK points in 33 minutes a game over 5 games (No. 92 in DK points a game).",
+   "note": "He had 17 points, 13 rebounds and two blocks on Saturday with LeBron James out. So far: 29.0 DK points in 33 minutes a game over 6 games (No. 92 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 28.9,
+   "gp": 6,
+   "dk_avg": 29.0,
    "season_rank": 92
   },
   {
@@ -17065,11 +16001,11 @@
    "team": "BOS",
    "flag": "down",
    "change": "Role down",
-   "note": "He goes back to the bench with Tatum healthy and should play less. So far: 27.1 DK points in 28 minutes a game over 5 games (No. 112 in DK points a game).",
+   "note": "He goes back to the bench with Tatum healthy and should play less. So far: 27.1 DK points in 28 minutes a game over 5 games (No. 114 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 27.1,
-   "season_rank": 112
+   "season_rank": 114
   },
   {
    "rank": 81,
@@ -17104,11 +16040,11 @@
    "team": "CHI",
    "flag": "",
    "change": "",
-   "note": "He is a likely trade candidate, possibly by February. So far: 30.7 DK points in 30 minutes a game over 6 games (No. 79 in DK points a game).",
+   "note": "He is a likely trade candidate, possibly by February. So far: 30.7 DK points in 30 minutes a game over 6 games (No. 77 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 30.7,
-   "season_rank": 79
+   "season_rank": 77
   },
   {
    "rank": 84,
@@ -17117,11 +16053,11 @@
    "team": "TOR",
    "flag": "",
    "change": "",
-   "note": "So far: 34.4 DK points in 32 minutes a game over 5 games (No. 55 in DK points a game).",
+   "note": "So far: 34.4 DK points in 32 minutes a game over 5 games (No. 54 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 34.4,
-   "season_rank": 55
+   "season_rank": 54
   },
   {
    "rank": 85,
@@ -17143,11 +16079,11 @@
    "team": "TOR",
    "flag": "down",
    "change": "Role down",
-   "note": "Kawhi Leonard may take the ball out of his hands. So far: 33.8 DK points in 30 minutes a game over 5 games (No. 62 in DK points a game).",
+   "note": "Kawhi Leonard may take the ball out of his hands. So far: 33.8 DK points in 30 minutes a game over 5 games (No. 61 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 33.8,
-   "season_rank": 62
+   "season_rank": 61
   },
   {
    "rank": 87,
@@ -17156,11 +16092,11 @@
    "team": "BKN",
    "flag": "up",
    "change": "Role up",
-   "note": "He moves into the starting center job at about 24 minutes after playing 19 last season. So far: 19.4 DK points in 22 minutes a game over 5 games (No. 183 in DK points a game).",
+   "note": "He moves into the starting center job at about 24 minutes after playing 19 last season. So far: 19.4 DK points in 22 minutes a game over 5 games (No. 184 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 19.4,
-   "season_rank": 183
+   "season_rank": 184
   },
   {
    "rank": 88,
@@ -17169,11 +16105,11 @@
    "team": "ORL",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "Plan for him to miss about 20 games. So far: 26.1 DK points in 33 minutes a game over 3 games (No. 125 in DK points a game).",
+   "note": "Plan for him to miss about 20 games. So far: 26.1 DK points in 33 minutes a game over 3 games (No. 123 in DK points a game).",
    "source": "NBA-0929",
    "gp": 3,
    "dk_avg": 26.1,
-   "season_rank": 125
+   "season_rank": 123
   },
   {
    "rank": 89,
@@ -17182,11 +16118,11 @@
    "team": "MIN",
    "flag": "",
    "change": "",
-   "note": "He took only two shots in the opener but grabbed 15 rebounds. So far: 25.9 DK points in 30 minutes a game over 6 games (No. 130 in DK points a game).",
+   "note": "He took only two shots in the opener but grabbed 15 rebounds. So far: 25.9 DK points in 30 minutes a game over 6 games (No. 128 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 25.9,
-   "season_rank": 130
+   "season_rank": 128
   },
   {
    "rank": 90,
@@ -17195,11 +16131,11 @@
    "team": "MEM",
    "flag": "up",
    "change": "Role up",
-   "note": "He should play about 28 minutes with more shots. So far: 33.5 DK points in 30 minutes a game over 4 games (No. 63 in DK points a game).",
+   "note": "He should play about 28 minutes with more shots. So far: 32.0 DK points in 28 minutes a game over 5 games (No. 71 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 33.5,
-   "season_rank": 63
+   "gp": 5,
+   "dk_avg": 32.0,
+   "season_rank": 71
   },
   {
    "rank": 91,
@@ -17208,11 +16144,11 @@
    "team": "SAC",
    "flag": "up",
    "change": "Role up",
-   "note": "The rookie could be the primary scorer right away. So far: 39.8 DK points in 36 minutes a game over 5 games (No. 33 in DK points a game).",
+   "note": "The rookie could be the primary scorer right away. So far: 42.2 DK points in 36 minutes a game over 6 games (No. 21 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 39.8,
-   "season_rank": 33
+   "gp": 6,
+   "dk_avg": 42.2,
+   "season_rank": 21
   },
   {
    "rank": 92,
@@ -17221,11 +16157,11 @@
    "team": "MIN",
    "flag": "",
    "change": "",
-   "note": "He had a usage above 20% with a steal and a block a game over the final 20 games last season. So far: 33.8 DK points in 32 minutes a game over 6 games (No. 60 in DK points a game).",
+   "note": "He had a usage above 20% with a steal and a block a game over the final 20 games last season. So far: 33.4 DK points in 33 minutes a game over 7 games (No. 64 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 33.8,
-   "season_rank": 60
+   "gp": 7,
+   "dk_avg": 33.4,
+   "season_rank": 64
   },
   {
    "rank": 93,
@@ -17234,11 +16170,11 @@
    "team": "SAS",
    "flag": "",
    "change": "",
-   "note": "De'Aaron Fox and Stephon Castle will not be benched, so his role stays limited. So far: 32.4 DK points in 33 minutes a game over 5 games (No. 69 in DK points a game).",
+   "note": "De'Aaron Fox and Stephon Castle will not be benched, so his role stays limited. So far: 34.5 DK points in 34 minutes a game over 6 games (No. 52 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 32.4,
-   "season_rank": 69
+   "gp": 6,
+   "dk_avg": 34.5,
+   "season_rank": 52
   },
   {
    "rank": 94,
@@ -17260,11 +16196,11 @@
    "team": "PHX",
    "flag": "up",
    "change": "Role up",
-   "note": "Hamstring limits held him to about 26 minutes last season, and 30-33 is expected now. So far: 18.9 DK points in 27 minutes a game over 4 games (No. 187 in DK points a game).",
+   "note": "Hamstring limits held him to about 26 minutes last season, and 30-33 is expected now. So far: 18.9 DK points in 27 minutes a game over 4 games (No. 190 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 18.9,
-   "season_rank": 187
+   "season_rank": 190
   },
   {
    "rank": 96,
@@ -17286,11 +16222,11 @@
    "team": "MIA",
    "flag": "down",
    "change": "Role down",
-   "note": "His usage should drop next to Giannis. So far: 19.7 DK points in 27 minutes a game over 6 games (No. 179 in DK points a game).",
+   "note": "His usage should drop next to Giannis. So far: 19.7 DK points in 27 minutes a game over 6 games (No. 181 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 19.7,
-   "season_rank": 179
+   "season_rank": 181
   },
   {
    "rank": 98,
@@ -17312,11 +16248,11 @@
    "team": "WAS",
    "flag": "",
    "change": "",
-   "note": "If he sits, Bilal Coulibaly or Tre Johnson could start. So far: 27.2 DK points in 28 minutes a game over 2 games (No. 109 in DK points a game).",
+   "note": "If he sits, Bilal Coulibaly or Tre Johnson could start. So far: 27.2 DK points in 28 minutes a game over 2 games (No. 110 in DK points a game).",
    "source": "NBA-0929",
    "gp": 2,
    "dk_avg": 27.2,
-   "season_rank": 109
+   "season_rank": 110
   },
   {
    "rank": 100,
@@ -17338,11 +16274,11 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "He opted into his $49 million contract and should have the ball more with Schroder, Westbrook and DeRozan gone. So far: 38.9 DK points in 37 minutes a game over 5 games (No. 40 in DK points a game).",
+   "note": "He opted into his $49 million contract and should have the ball more with Schroder, Westbrook and DeRozan gone. So far: 34.3 DK points in 34 minutes a game over 6 games (No. 55 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 38.9,
-   "season_rank": 40
+   "gp": 6,
+   "dk_avg": 34.3,
+   "season_rank": 55
   },
   {
    "rank": 102,
@@ -17351,11 +16287,11 @@
    "team": "NOP",
    "flag": "down",
    "change": "Role down",
-   "note": "Yves Missi appears to be the starter, so Queen comes off the bench. So far: 27.1 DK points in 24 minutes a game over 5 games (No. 115 in DK points a game).",
+   "note": "Yves Missi appears to be the starter, so Queen comes off the bench. So far: 26.6 DK points in 24 minutes a game over 6 games (No. 117 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 27.1,
-   "season_rank": 115
+   "gp": 6,
+   "dk_avg": 26.6,
+   "season_rank": 117
   },
   {
    "rank": 103,
@@ -17364,11 +16300,11 @@
    "team": "PHX",
    "flag": "",
    "change": "",
-   "note": "He came from Charlotte and reduces Dillon Brooks's time at power forward. So far: 32.8 DK points in 33 minutes a game over 4 games (No. 68 in DK points a game).",
+   "note": "He came from Charlotte and reduces Dillon Brooks's time at power forward. So far: 32.8 DK points in 33 minutes a game over 4 games (No. 66 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 32.8,
-   "season_rank": 68
+   "season_rank": 66
   },
   {
    "rank": 104,
@@ -17377,11 +16313,11 @@
    "team": "IND",
    "flag": "down",
    "change": "Role down",
-   "note": "Haliburton is back, so about half of his 7.7 assists should go away. So far: 33.5 DK points in 32 minutes a game over 5 games (No. 64 in DK points a game).",
+   "note": "Haliburton is back, so about half of his 7.7 assists should go away. So far: 33.5 DK points in 32 minutes a game over 5 games (No. 62 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 33.5,
-   "season_rank": 64
+   "season_rank": 62
   },
   {
    "rank": 105,
@@ -17390,11 +16326,11 @@
    "team": "CLE",
    "flag": "",
    "change": "",
-   "note": "He came over from Denver in a sign-and-trade and is an on-ball stopper whose offense took a leap last season. So far: 26.1 DK points in 30 minutes a game over 5 games (No. 124 in DK points a game).",
+   "note": "He came over from Denver in a sign-and-trade and is an on-ball stopper whose offense took a leap last season. So far: 25.5 DK points in 28 minutes a game over 6 games (No. 134 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 26.1,
-   "season_rank": 124
+   "gp": 6,
+   "dk_avg": 25.5,
+   "season_rank": 134
   },
   {
    "rank": 106,
@@ -17403,11 +16339,11 @@
    "team": "HOU",
    "flag": "",
    "change": "",
-   "note": "His minutes are stable and higher than Sengun's. So far: 31.9 DK points in 34 minutes a game over 6 games (No. 71 in DK points a game).",
+   "note": "His minutes are stable and higher than Sengun's. So far: 35.0 DK points in 34 minutes a game over 7 games (No. 51 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 31.9,
-   "season_rank": 71
+   "gp": 7,
+   "dk_avg": 35.0,
+   "season_rank": 51
   },
   {
    "rank": 107,
@@ -17416,11 +16352,11 @@
    "team": "ATL",
    "flag": "",
    "change": "",
-   "note": "He played only 25 minutes in the opener and did not close; Aaron Wiggins closed instead. So far: 23.8 DK points in 26 minutes a game over 6 games (No. 148 in DK points a game).",
+   "note": "He played only 25 minutes in the opener and did not close; Aaron Wiggins closed instead. So far: 23.4 DK points in 26 minutes a game over 7 games (No. 150 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 23.8,
-   "season_rank": 148
+   "gp": 7,
+   "dk_avg": 23.4,
+   "season_rank": 150
   },
   {
    "rank": 108,
@@ -17442,11 +16378,11 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "He averaged 20 points but 5 turnovers at Summer League. He ranks outside the top 110. So far: 24.9 DK points in 29 minutes a game over 5 games (No. 137 in DK points a game).",
+   "note": "He averaged 20 points but 5 turnovers at Summer League. He ranks outside the top 110. So far: 25.9 DK points in 30 minutes a game over 6 games (No. 130 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 24.9,
-   "season_rank": 137
+   "gp": 6,
+   "dk_avg": 25.9,
+   "season_rank": 130
   },
   {
    "rank": 110,
@@ -17455,11 +16391,11 @@
    "team": "MIL",
    "flag": "up",
    "change": "Role up",
-   "note": "New coach Taylor Jenkins should lift him from 27 minutes to about 29, with Giannis gone. So far: 20.9 DK points in 26 minutes a game over 5 games (No. 169 in DK points a game).",
+   "note": "New coach Taylor Jenkins should lift him from 27 minutes to about 29, with Giannis gone. So far: 22.1 DK points in 26 minutes a game over 6 games (No. 157 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 20.9,
-   "season_rank": 169
+   "gp": 6,
+   "dk_avg": 22.1,
+   "season_rank": 157
   },
   {
    "rank": 111,
@@ -17468,11 +16404,11 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "He has back-to-back double-doubles, with 15 points and 13 rebounds in 26 minutes Monday. So far: 26.6 DK points in 24 minutes a game over 5 games (No. 118 in DK points a game).",
+   "note": "He has back-to-back double-doubles, with 15 points and 13 rebounds in 26 minutes Monday. So far: 26.1 DK points in 24 minutes a game over 6 games (No. 122 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 26.6,
-   "season_rank": 118
+   "gp": 6,
+   "dk_avg": 26.1,
+   "season_rank": 122
   },
   {
    "rank": 112,
@@ -17481,11 +16417,11 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "He scored six points in 35 minutes Sunday and has done little in all three games. So far: 15.2 DK points in 28 minutes a game over 6 games (No. 235 in DK points a game).",
+   "note": "He scored six points in 35 minutes Sunday and has done little in all three games. So far: 15.2 DK points in 28 minutes a game over 6 games (No. 239 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 15.2,
-   "season_rank": 235
+   "season_rank": 239
   },
   {
    "rank": 113,
@@ -17494,11 +16430,11 @@
    "team": "TOR",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He has back problems, and days off are expected. So far: 15.3 DK points in 20 minutes a game over 5 games (No. 232 in DK points a game).",
+   "note": "He has back problems, and days off are expected. So far: 15.3 DK points in 20 minutes a game over 5 games (No. 235 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 15.3,
-   "season_rank": 232
+   "season_rank": 235
   },
   {
    "rank": 114,
@@ -17507,11 +16443,11 @@
    "team": "MIA",
    "flag": "",
    "change": "",
-   "note": "He had 11 assists in the opener and little else. So far: 34.4 DK points in 34 minutes a game over 6 games (No. 54 in DK points a game).",
+   "note": "He had 11 assists in the opener and little else. So far: 34.4 DK points in 34 minutes a game over 6 games (No. 53 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 34.4,
-   "season_rank": 54
+   "season_rank": 53
   },
   {
    "rank": 115,
@@ -17520,11 +16456,11 @@
    "team": "LAC",
    "flag": "up",
    "change": "Role up",
-   "note": "With Brandon Ingram out, he projects for 30 or more minutes and higher usage. So far: 21.8 DK points in 30 minutes a game over 4 games (No. 162 in DK points a game).",
+   "note": "With Brandon Ingram out, he projects for 30 or more minutes and higher usage. So far: 21.8 DK points in 30 minutes a game over 4 games (No. 160 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 21.8,
-   "season_rank": 162
+   "season_rank": 160
   },
   {
    "rank": 116,
@@ -17533,11 +16469,11 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "He played 22 minutes in the opener while Boston also used Luka Garza, so Boston went three deep at center. So far: 20.3 DK points in 20 minutes a game over 5 games (No. 172 in DK points a game).",
+   "note": "He played 22 minutes in the opener while Boston also used Luka Garza, so Boston went three deep at center. So far: 20.3 DK points in 20 minutes a game over 5 games (No. 173 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 20.3,
-   "season_rank": 172
+   "season_rank": 173
   },
   {
    "rank": 117,
@@ -17546,11 +16482,11 @@
    "team": "DET",
    "flag": "",
    "change": "",
-   "note": "He steps into the Tobias Harris role and is not expected to play center. So far: 22.0 DK points in 26 minutes a game over 6 games (No. 159 in DK points a game).",
+   "note": "He steps into the Tobias Harris role and is not expected to play center. So far: 22.0 DK points in 26 minutes a game over 6 games (No. 158 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 22.0,
-   "season_rank": 159
+   "season_rank": 158
   },
   {
    "rank": 118,
@@ -17559,11 +16495,11 @@
    "team": "TOR",
    "flag": "up",
    "change": "Role up",
-   "note": "He could jump from 22 minutes to close to 30 as a bench super sub. So far: 18.8 DK points in 19 minutes a game over 5 games (No. 189 in DK points a game).",
+   "note": "He could jump from 22 minutes to close to 30 as a bench super sub. So far: 18.8 DK points in 19 minutes a game over 5 games (No. 191 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 18.8,
-   "season_rank": 189
+   "season_rank": 191
   },
   {
    "rank": 119,
@@ -17572,11 +16508,11 @@
    "team": "PHX",
    "flag": "up",
    "change": "Role up",
-   "note": "He could start at center with Mark Williams out. So far: 20.6 DK points in 22 minutes a game over 4 games (No. 170 in DK points a game).",
+   "note": "He could start at center with Mark Williams out. So far: 20.6 DK points in 22 minutes a game over 4 games (No. 171 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 20.6,
-   "season_rank": 170
+   "season_rank": 171
   },
   {
    "rank": 120,
@@ -17598,11 +16534,11 @@
    "team": "DEN",
    "flag": "",
    "change": "",
-   "note": "He came from Sacramento and should have the most bench minutes. So far: 20.6 DK points in 26 minutes a game over 5 games (No. 171 in DK points a game).",
+   "note": "He came from Sacramento and should have the most bench minutes. So far: 20.6 DK points in 26 minutes a game over 5 games (No. 172 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 20.6,
-   "season_rank": 171
+   "season_rank": 172
   },
   {
    "rank": 122,
@@ -17611,11 +16547,11 @@
    "team": "LAL",
    "flag": "up",
    "change": "Role up",
-   "note": "He projects as a Lakers starter and jumps further whenever Luka or Reaves sits. So far: 19.5 DK points in 27 minutes a game over 6 games (No. 182 in DK points a game).",
+   "note": "He projects as a Lakers starter and jumps further whenever Luka or Reaves sits. So far: 19.5 DK points in 27 minutes a game over 6 games (No. 183 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 19.5,
-   "season_rank": 182
+   "season_rank": 183
   },
   {
    "rank": 123,
@@ -17624,11 +16560,11 @@
    "team": "MIN",
    "flag": "up",
    "change": "Role up",
-   "note": "He signed with Minnesota and is expected to start at about 28-29 minutes. So far: 26.5 DK points in 29 minutes a game over 6 games (No. 119 in DK points a game).",
+   "note": "He signed with Minnesota and is expected to start at about 28-29 minutes. So far: 27.6 DK points in 30 minutes a game over 7 games (No. 105 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 26.5,
-   "season_rank": 119
+   "gp": 7,
+   "dk_avg": 27.6,
+   "season_rank": 105
   },
   {
    "rank": 124,
@@ -17650,11 +16586,11 @@
    "team": "BKN",
    "flag": "",
    "change": "",
-   "note": "He shot 39% on six three-point attempts a game last season and has the most upside on the roster. So far: 16.4 DK points in 22 minutes a game over 4 games (No. 221 in DK points a game).",
+   "note": "He shot 39% on six three-point attempts a game last season and has the most upside on the roster. So far: 16.4 DK points in 22 minutes a game over 4 games (No. 223 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 16.4,
-   "season_rank": 221
+   "season_rank": 223
   },
   {
    "rank": 126,
@@ -17663,11 +16599,11 @@
    "team": "MIN",
    "flag": "down",
    "change": "Role down",
-   "note": "The Kuminga signing pushes him to a bench role at about 29 minutes. So far: 27.3 DK points in 28 minutes a game over 6 games (No. 105 in DK points a game).",
+   "note": "The Kuminga signing pushes him to a bench role at about 29 minutes. So far: 30.3 DK points in 29 minutes a game over 7 games (No. 80 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 27.3,
-   "season_rank": 105
+   "gp": 7,
+   "dk_avg": 30.3,
+   "season_rank": 80
   },
   {
    "rank": 127,
@@ -17676,11 +16612,11 @@
    "team": "PHX",
    "flag": "down",
    "change": "Role down",
-   "note": "He played about 23 minutes once Phoenix’s starters were all healthy. So far: 27.2 DK points in 26 minutes a game over 4 games (No. 111 in DK points a game).",
+   "note": "He played about 23 minutes once Phoenix’s starters were all healthy. So far: 27.2 DK points in 26 minutes a game over 4 games (No. 113 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 27.2,
-   "season_rank": 111
+   "season_rank": 113
   },
   {
    "rank": 128,
@@ -17702,11 +16638,11 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "He signed for 2 years and $16 million with a player option in year two. So far: 14.6 DK points in 17 minutes a game over 5 games (No. 241 in DK points a game).",
+   "note": "He signed for 2 years and $16 million with a player option in year two. So far: 13.9 DK points in 18 minutes a game over 6 games (No. 254 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 14.6,
-   "season_rank": 241
+   "gp": 6,
+   "dk_avg": 13.9,
+   "season_rank": 254
   },
   {
    "rank": 130,
@@ -17715,11 +16651,11 @@
    "team": "MIL",
    "flag": "down",
    "change": "Role down",
-   "note": "His assists should drop with so many ball handlers. So far: 31.5 DK points in 29 minutes a game over 5 games (No. 74 in DK points a game).",
+   "note": "His assists should drop with so many ball handlers. So far: 30.2 DK points in 28 minutes a game over 6 games (No. 82 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 31.5,
-   "season_rank": 74
+   "gp": 6,
+   "dk_avg": 30.2,
+   "season_rank": 82
   },
   {
    "rank": 131,
@@ -17728,11 +16664,11 @@
    "team": "POR",
    "flag": "",
    "change": "",
-   "note": "He moves to the three, and Sharpe's injury frees some minutes for him. So far: 26.2 DK points in 25 minutes a game over 4 games (No. 122 in DK points a game).",
+   "note": "He moves to the three, and Sharpe's injury frees some minutes for him. So far: 26.1 DK points in 25 minutes a game over 5 games (No. 121 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 26.2,
-   "season_rank": 122
+   "gp": 5,
+   "dk_avg": 26.1,
+   "season_rank": 121
   },
   {
    "rank": 132,
@@ -17754,11 +16690,11 @@
    "team": "GSW",
    "flag": "",
    "change": "",
-   "note": "He had 31 points, 12 rebounds and six assists in 31 minutes Monday. So far: 36.9 DK points in 32 minutes a game over 6 games (No. 46 in DK points a game).",
+   "note": "He had 31 points, 12 rebounds and six assists in 31 minutes Monday. So far: 36.9 DK points in 32 minutes a game over 6 games (No. 45 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 36.9,
-   "season_rank": 46
+   "season_rank": 45
   },
   {
    "rank": 134,
@@ -17767,11 +16703,11 @@
    "team": "DAL",
    "flag": "",
    "change": "",
-   "note": "He had 20 points and nine rebounds in 41 minutes Monday. So far: 28.7 DK points in 34 minutes a game over 6 games (No. 93 in DK points a game).",
+   "note": "He had 20 points and nine rebounds in 41 minutes Monday. So far: 28.7 DK points in 34 minutes a game over 6 games (No. 94 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 28.7,
-   "season_rank": 93
+   "season_rank": 94
   },
   {
    "rank": 135,
@@ -17780,11 +16716,11 @@
    "team": "ORL",
    "flag": "",
    "change": "",
-   "note": "He is locked in as the starting center at about 28 to 29 minutes, but his hot shooting will cool off. So far: 30.6 DK points in 32 minutes a game over 5 games (No. 80 in DK points a game).",
+   "note": "He is locked in as the starting center at about 28 to 29 minutes, but his hot shooting will cool off. So far: 30.6 DK points in 32 minutes a game over 5 games (No. 79 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 30.6,
-   "season_rank": 80
+   "season_rank": 79
   },
   {
    "rank": 136,
@@ -17806,11 +16742,11 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "He had 17 points, 10 rebounds and three blocks in 34 minutes Monday. So far: 31.6 DK points in 30 minutes a game over 5 games (No. 72 in DK points a game).",
+   "note": "He had 17 points, 10 rebounds and three blocks in 34 minutes Monday. So far: 31.0 DK points in 31 minutes a game over 6 games (No. 74 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 31.6,
-   "season_rank": 72
+   "gp": 6,
+   "dk_avg": 31.0,
+   "season_rank": 74
   },
   {
    "rank": 138,
@@ -17819,11 +16755,11 @@
    "team": "DAL",
    "flag": "",
    "change": "",
-   "note": "He averaged 12 points and 9 rebounds in his 25-minute games last season and should get more minutes while Lively is out. So far: 25.9 DK points in 24 minutes a game over 6 games (No. 132 in DK points a game).",
+   "note": "He averaged 12 points and 9 rebounds in his 25-minute games last season and should get more minutes while Lively is out. So far: 25.9 DK points in 24 minutes a game over 6 games (No. 131 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 25.9,
-   "season_rank": 132
+   "season_rank": 131
   },
   {
    "rank": 139,
@@ -17832,11 +16768,11 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "So far: 22.1 DK points in 24 minutes a game over 5 games (No. 158 in DK points a game).",
+   "note": "So far: 25.2 DK points in 24 minutes a game over 6 games (No. 135 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 22.1,
-   "season_rank": 158
+   "gp": 6,
+   "dk_avg": 25.2,
+   "season_rank": 135
   },
   {
    "rank": 140,
@@ -17858,11 +16794,11 @@
    "team": "GSW",
    "flag": "",
    "change": "",
-   "note": "His value drops when Curry sits. So far: 22.3 DK points in 29 minutes a game over 5 games (No. 156 in DK points a game).",
+   "note": "His value drops when Curry sits. So far: 22.3 DK points in 29 minutes a game over 5 games (No. 155 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 22.3,
-   "season_rank": 156
+   "season_rank": 155
   },
   {
    "rank": 142,
@@ -17884,11 +16820,11 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "He started Monday and scored 30 points with five assists in 25 minutes despite foul trouble, and he starts with Jalen Williams and Cason Wallace out. So far: 33.0 DK points in 25 minutes a game over 5 games (No. 67 in DK points a game).",
+   "note": "He started Monday and scored 30 points with five assists in 25 minutes despite foul trouble, and he starts with Jalen Williams and Cason Wallace out. So far: 30.6 DK points in 26 minutes a game over 6 games (No. 78 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 33.0,
-   "season_rank": 67
+   "gp": 6,
+   "dk_avg": 30.6,
+   "season_rank": 78
   },
   {
    "rank": 144,
@@ -17923,11 +16859,11 @@
    "team": "HOU",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He played Friday, so Saturday is the night he is most likely to sit; Marcus Smart starts if he does. So far: 32.3 DK points in 31 minutes a game over 5 games (No. 70 in DK points a game).",
+   "note": "He played Friday, so Saturday is the night he is most likely to sit; Marcus Smart starts if he does. So far: 32.3 DK points in 31 minutes a game over 5 games (No. 68 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 32.3,
-   "season_rank": 70
+   "season_rank": 68
   },
   {
    "rank": 147,
@@ -17936,11 +16872,11 @@
    "team": "ORL",
    "flag": "",
    "change": "",
-   "note": "He made his season debut Sunday with 18 points, three rebounds, five assists and two steals off the bench, and he should play more with Paolo Banchero and Jalen Suggs hurt. So far: 31.2 DK points in 26 minutes a game over 3 games (No. 75 in DK points a game).",
+   "note": "He made his season debut Sunday with 18 points, three rebounds, five assists and two steals off the bench, and he should play more with Paolo Banchero and Jalen Suggs hurt. So far: 31.2 DK points in 26 minutes a game over 3 games (No. 73 in DK points a game).",
    "source": "NBA-0929",
    "gp": 3,
    "dk_avg": 31.2,
-   "season_rank": 75
+   "season_rank": 73
   },
   {
    "rank": 148,
@@ -17962,11 +16898,11 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "So far: 11.9 DK points in 20 minutes a game over 5 games (No. 275 in DK points a game).",
+   "note": "So far: 13.2 DK points in 21 minutes a game over 6 games (No. 262 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 11.9,
-   "season_rank": 275
+   "gp": 6,
+   "dk_avg": 13.2,
+   "season_rank": 262
   },
   {
    "rank": 150,
@@ -17975,11 +16911,11 @@
    "team": "BKN",
    "flag": "out",
    "change": "Out to start",
-   "note": "An ankle injury has kept him out of the preseason. So far: 21.2 DK points in 23 minutes a game over 4 games (No. 165 in DK points a game).",
+   "note": "An ankle injury has kept him out of the preseason. So far: 21.2 DK points in 23 minutes a game over 4 games (No. 164 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 21.2,
-   "season_rank": 165
+   "season_rank": 164
   },
   {
    "rank": 151,
@@ -17988,11 +16924,11 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "He could move to the bench if the team goes younger. So far: 17.6 DK points in 25 minutes a game over 5 games (No. 200 in DK points a game).",
+   "note": "He could move to the bench if the team goes younger. So far: 18.2 DK points in 24 minutes a game over 6 games (No. 198 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 17.6,
-   "season_rank": 200
+   "gp": 6,
+   "dk_avg": 18.2,
+   "season_rank": 198
   },
   {
    "rank": 152,
@@ -18001,11 +16937,11 @@
    "team": "SAS",
    "flag": "",
    "change": "",
-   "note": "He has shifted from a high-usage scorer to a do-everything role player. So far: 27.1 DK points in 32 minutes a game over 5 games (No. 114 in DK points a game).",
+   "note": "He has shifted from a high-usage scorer to a do-everything role player. So far: 26.5 DK points in 32 minutes a game over 6 games (No. 118 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 27.1,
-   "season_rank": 114
+   "gp": 6,
+   "dk_avg": 26.5,
+   "season_rank": 118
   },
   {
    "rank": 153,
@@ -18014,11 +16950,11 @@
    "team": "POR",
    "flag": "",
    "change": "",
-   "note": "He played all 82 games last season and is Portland’s only real point-of-attack defender. So far: 25.4 DK points in 25 minutes a game over 4 games (No. 133 in DK points a game).",
+   "note": "He played all 82 games last season and is Portland’s only real point-of-attack defender. So far: 25.2 DK points in 26 minutes a game over 5 games (No. 136 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 25.4,
-   "season_rank": 133
+   "gp": 5,
+   "dk_avg": 25.2,
+   "season_rank": 136
   },
   {
    "rank": 154,
@@ -18040,11 +16976,11 @@
    "team": "LAL",
    "flag": "",
    "change": "",
-   "note": "He came from Toronto and would play 30+ minutes if Kessler is out. So far: 21.0 DK points in 24 minutes a game over 6 games (No. 168 in DK points a game).",
+   "note": "He came from Toronto and would play 30+ minutes if Kessler is out. So far: 21.0 DK points in 24 minutes a game over 6 games (No. 167 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 21.0,
-   "season_rank": 168
+   "season_rank": 167
   },
   {
    "rank": 156,
@@ -18053,11 +16989,11 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "He started Thursday with Dejounte Murray out and had 22 points, a career-high 13 assists, eight rebounds and four blocks. So far: 26.1 DK points in 24 minutes a game over 5 games (No. 123 in DK points a game).",
+   "note": "He started Thursday with Dejounte Murray out and had 22 points, a career-high 13 assists, eight rebounds and four blocks. So far: 28.1 DK points in 25 minutes a game over 6 games (No. 98 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 26.1,
-   "season_rank": 123
+   "gp": 6,
+   "dk_avg": 28.1,
+   "season_rank": 98
   },
   {
    "rank": 157,
@@ -18066,11 +17002,11 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "So far: 21.4 DK points in 18 minutes a game over 5 games (No. 164 in DK points a game).",
+   "note": "So far: 20.8 DK points in 19 minutes a game over 6 games (No. 169 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 21.4,
-   "season_rank": 164
+   "gp": 6,
+   "dk_avg": 20.8,
+   "season_rank": 169
   },
   {
    "rank": 158,
@@ -18079,11 +17015,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "He had 11 points, 17 rebounds and three blocks in 35 minutes Monday after playing 21 and 22 minutes the two games before. So far: 29.4 DK points in 30 minutes a game over 6 games (No. 84 in DK points a game).",
+   "note": "He had 11 points, 17 rebounds and three blocks in 35 minutes Monday after playing 21 and 22 minutes the two games before. So far: 29.2 DK points in 29 minutes a game over 7 games (No. 86 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 29.4,
-   "season_rank": 84
+   "gp": 7,
+   "dk_avg": 29.2,
+   "season_rank": 86
   },
   {
    "rank": 159,
@@ -18092,11 +17028,11 @@
    "team": "OKC",
    "flag": "up",
    "change": "Role up",
-   "note": "He takes over Lu Dort’s starting spot. So far: 15.9 DK points in 16 minutes a game over 3 games (No. 227 in DK points a game).",
+   "note": "He takes over Lu Dort’s starting spot. So far: 15.9 DK points in 16 minutes a game over 3 games (No. 230 in DK points a game).",
    "source": "NBA-0929",
    "gp": 3,
    "dk_avg": 15.9,
-   "season_rank": 227
+   "season_rank": 230
   },
   {
    "rank": 160,
@@ -18105,11 +17041,11 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "He starts if Ty Jerome is out. So far: 14.3 DK points in 16 minutes a game over 5 games (No. 246 in DK points a game).",
+   "note": "He starts if Ty Jerome is out. So far: 14.3 DK points in 16 minutes a game over 5 games (No. 251 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 14.3,
-   "season_rank": 246
+   "season_rank": 251
   },
   {
    "rank": 161,
@@ -18118,11 +17054,11 @@
    "team": "MIA",
    "flag": "",
    "change": "",
-   "note": "He would play about 26-27 minutes if Giannis or Bam misses time. So far: 25.9 DK points in 23 minutes a game over 6 games (No. 131 in DK points a game).",
+   "note": "He would play about 26-27 minutes if Giannis or Bam misses time. So far: 25.9 DK points in 23 minutes a game over 6 games (No. 129 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 25.9,
-   "season_rank": 131
+   "season_rank": 129
   },
   {
    "rank": 162,
@@ -18131,11 +17067,11 @@
    "team": "MIL",
    "flag": "",
    "change": "",
-   "note": "He has played 27, 30 and 35 minutes and had 14 points and 12 rebounds on Saturday. So far: 26.7 DK points in 28 minutes a game over 5 games (No. 117 in DK points a game).",
+   "note": "He has played 27, 30 and 35 minutes and had 14 points and 12 rebounds on Saturday. So far: 26.4 DK points in 27 minutes a game over 6 games (No. 119 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 26.7,
-   "season_rank": 117
+   "gp": 6,
+   "dk_avg": 26.4,
+   "season_rank": 119
   },
   {
    "rank": 163,
@@ -18170,11 +17106,11 @@
    "team": "DEN",
    "flag": "",
    "change": "",
-   "note": "So far: 19.6 DK points in 22 minutes a game over 2 games (No. 180 in DK points a game).",
+   "note": "So far: 19.6 DK points in 22 minutes a game over 2 games (No. 182 in DK points a game).",
    "source": "NBA-0929",
    "gp": 2,
    "dk_avg": 19.6,
-   "season_rank": 180
+   "season_rank": 182
   },
   {
    "rank": 166,
@@ -18209,11 +17145,11 @@
    "team": "HOU",
    "flag": "",
    "change": "",
-   "note": "He played 33 minutes off the bench Monday with Marcus Smart and Steven Adams out. So far: 24.5 DK points in 25 minutes a game over 6 games (No. 144 in DK points a game).",
+   "note": "He played 33 minutes off the bench Monday with Marcus Smart and Steven Adams out. So far: 24.0 DK points in 24 minutes a game over 7 games (No. 145 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 24.5,
-   "season_rank": 144
+   "gp": 7,
+   "dk_avg": 24.0,
+   "season_rank": 145
   },
   {
    "rank": 169,
@@ -18222,11 +17158,11 @@
    "team": "MIA",
    "flag": "",
    "change": "",
-   "note": "He started the first preseason game, but his minutes should be limited. So far: 16.2 DK points in 21 minutes a game over 6 games (No. 225 in DK points a game).",
+   "note": "He started the first preseason game, but his minutes should be limited. So far: 16.2 DK points in 21 minutes a game over 6 games (No. 228 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 16.2,
-   "season_rank": 225
+   "season_rank": 228
   },
   {
    "rank": 170,
@@ -18235,11 +17171,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "He had 25 points in 38 minutes on Saturday and starts until Coby White returns. So far: 26.0 DK points in 32 minutes a game over 6 games (No. 127 in DK points a game).",
+   "note": "He had 25 points in 38 minutes on Saturday and starts until Coby White returns. So far: 24.6 DK points in 32 minutes a game over 7 games (No. 143 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 26.0,
-   "season_rank": 127
+   "gp": 7,
+   "dk_avg": 24.6,
+   "season_rank": 143
   },
   {
    "rank": 171,
@@ -18248,11 +17184,11 @@
    "team": "DET",
    "flag": "down",
    "change": "Role down",
-   "note": "He keeps his starting job, but his minutes could fall to 24-25 with Huerter and Joe added. So far: 28.1 DK points in 30 minutes a game over 6 games (No. 98 in DK points a game).",
+   "note": "He keeps his starting job, but his minutes could fall to 24-25 with Huerter and Joe added. So far: 28.1 DK points in 30 minutes a game over 6 games (No. 96 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 28.1,
-   "season_rank": 98
+   "season_rank": 96
   },
   {
    "rank": 172,
@@ -18261,11 +17197,11 @@
    "team": "PHI",
    "flag": "",
    "change": "",
-   "note": "He has come off the bench in all three games. If he is out, Kentavious Caldwell-Pope gets more minutes. So far: 18.2 DK points in 24 minutes a game over 6 games (No. 196 in DK points a game).",
+   "note": "He has come off the bench in all three games. If he is out, Kentavious Caldwell-Pope gets more minutes. So far: 19.9 DK points in 25 minutes a game over 7 games (No. 179 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 18.2,
-   "season_rank": 196
+   "gp": 7,
+   "dk_avg": 19.9,
+   "season_rank": 179
   },
   {
    "rank": 173,
@@ -18274,11 +17210,11 @@
    "team": "LAL",
    "flag": "",
    "change": "",
-   "note": "He started 43 games at 30 minutes last season and is a candidate for the fifth starter spot. So far: 16.9 DK points in 23 minutes a game over 5 games (No. 215 in DK points a game).",
+   "note": "He started 43 games at 30 minutes last season and is a candidate for the fifth starter spot. So far: 16.9 DK points in 23 minutes a game over 5 games (No. 216 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 16.9,
-   "season_rank": 215
+   "season_rank": 216
   },
   {
    "rank": 174,
@@ -18300,11 +17236,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "He scored 20 points in 34 minutes off the bench on Saturday with Kon Knueppel and Coby White out. So far: 23.2 DK points in 27 minutes a game over 6 games (No. 152 in DK points a game).",
+   "note": "He scored 20 points in 34 minutes off the bench on Saturday with Kon Knueppel and Coby White out. So far: 26.0 DK points in 27 minutes a game over 7 games (No. 125 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 23.2,
-   "season_rank": 152
+   "gp": 7,
+   "dk_avg": 26.0,
+   "season_rank": 125
   },
   {
    "rank": 176,
@@ -18313,11 +17249,11 @@
    "team": "IND",
    "flag": "",
    "change": "",
-   "note": "He needs 30 or more minutes to be useful. So far: 17.0 DK points in 24 minutes a game over 6 games (No. 211 in DK points a game).",
+   "note": "He needs 30 or more minutes to be useful. So far: 17.0 DK points in 24 minutes a game over 6 games (No. 213 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 17.0,
-   "season_rank": 211
+   "season_rank": 213
   },
   {
    "rank": 177,
@@ -18326,11 +17262,11 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "He started Monday and had 18 points, four assists, a steal and a block in 30 minutes. So far: 18.5 DK points in 24 minutes a game over 5 games (No. 192 in DK points a game).",
+   "note": "He started Monday and had 18 points, four assists, a steal and a block in 30 minutes. So far: 18.6 DK points in 25 minutes a game over 6 games (No. 194 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 18.5,
-   "season_rank": 192
+   "gp": 6,
+   "dk_avg": 18.6,
+   "season_rank": 194
   },
   {
    "rank": 178,
@@ -18339,11 +17275,11 @@
    "team": "NOP",
    "flag": "",
    "change": "",
-   "note": "So far: 16.5 DK points in 16 minutes a game over 4 games (No. 219 in DK points a game).",
+   "note": "So far: 16.5 DK points in 16 minutes a game over 4 games (No. 221 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 16.5,
-   "season_rank": 219
+   "season_rank": 221
   },
   {
    "rank": 179,
@@ -18352,11 +17288,11 @@
    "team": "ORL",
    "flag": "down",
    "change": "Role down",
-   "note": "He is now Orlando's backup center at about 20-22 minutes. So far: 8.3 DK points in 9 minutes a game over 5 games (No. 314 in DK points a game).",
+   "note": "He is now Orlando's backup center at about 20-22 minutes. So far: 8.3 DK points in 9 minutes a game over 5 games (No. 315 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 8.3,
-   "season_rank": 314
+   "season_rank": 315
   },
   {
    "rank": 180,
@@ -18378,11 +17314,11 @@
    "team": "POR",
    "flag": "",
    "change": "",
-   "note": "So far: 11.9 DK points in 19 minutes a game over 4 games (No. 274 in DK points a game).",
+   "note": "So far: 14.3 DK points in 21 minutes a game over 5 games (No. 252 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 11.9,
-   "season_rank": 274
+   "gp": 5,
+   "dk_avg": 14.3,
+   "season_rank": 252
   },
   {
    "rank": 182,
@@ -18404,11 +17340,11 @@
    "team": "MIN",
    "flag": "",
    "change": "",
-   "note": "He plays 30-plus minutes if Gobert is out. So far: 17.2 DK points in 16 minutes a game over 6 games (No. 208 in DK points a game).",
+   "note": "He plays 30-plus minutes if Gobert is out. So far: 18.2 DK points in 19 minutes a game over 7 games (No. 197 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 17.2,
-   "season_rank": 208
+   "gp": 7,
+   "dk_avg": 18.2,
+   "season_rank": 197
   },
   {
    "rank": 184,
@@ -18430,11 +17366,11 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "So far: 22.9 DK points in 29 minutes a game over 5 games (No. 154 in DK points a game).",
+   "note": "So far: 23.4 DK points in 29 minutes a game over 6 games (No. 149 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 22.9,
-   "season_rank": 154
+   "gp": 6,
+   "dk_avg": 23.4,
+   "season_rank": 149
   },
   {
    "rank": 186,
@@ -18443,11 +17379,11 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "So far: 3.9 DK points in 7 minutes a game over 4 games (No. 359 in DK points a game).",
+   "note": "So far: 4.4 DK points in 8 minutes a game over 5 games (No. 356 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 3.9,
-   "season_rank": 359
+   "gp": 5,
+   "dk_avg": 4.4,
+   "season_rank": 356
   },
   {
    "rank": 187,
@@ -18456,11 +17392,11 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "He did not play in the opener. So far: 8.4 DK points in 11 minutes a game over 4 games (No. 313 in DK points a game).",
+   "note": "He did not play in the opener. So far: 9.8 DK points in 12 minutes a game over 5 games (No. 298 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 8.4,
-   "season_rank": 313
+   "gp": 5,
+   "dk_avg": 9.8,
+   "season_rank": 298
   },
   {
    "rank": 188,
@@ -18469,11 +17405,11 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "So far: 14.2 DK points in 16 minutes a game over 5 games (No. 248 in DK points a game).",
+   "note": "So far: 16.8 DK points in 17 minutes a game over 6 games (No. 217 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 14.2,
-   "season_rank": 248
+   "gp": 6,
+   "dk_avg": 16.8,
+   "season_rank": 217
   },
   {
    "rank": 189,
@@ -18482,11 +17418,11 @@
    "team": "CLE",
    "flag": "up",
    "change": "Role up",
-   "note": "Cleveland’s thin bench should give him near-starter minutes. So far: 18.4 DK points in 21 minutes a game over 5 games (No. 193 in DK points a game).",
+   "note": "Cleveland’s thin bench should give him near-starter minutes. So far: 18.4 DK points in 21 minutes a game over 5 games (No. 196 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 18.4,
-   "season_rank": 193
+   "season_rank": 196
   },
   {
    "rank": 190,
@@ -18495,11 +17431,11 @@
    "team": "WAS",
    "flag": "",
    "change": "",
-   "note": "So far: 19.1 DK points in 26 minutes a game over 6 games (No. 184 in DK points a game).",
+   "note": "So far: 19.1 DK points in 26 minutes a game over 6 games (No. 186 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 19.1,
-   "season_rank": 184
+   "season_rank": 186
   },
   {
    "rank": 191,
@@ -18508,11 +17444,11 @@
    "team": "LAC",
    "flag": "down",
    "change": "Role down",
-   "note": "He loses the starting center job to Isaiah Jackson and moves to the bench. So far: 24.9 DK points in 23 minutes a game over 5 games (No. 136 in DK points a game).",
+   "note": "He loses the starting center job to Isaiah Jackson and moves to the bench. So far: 24.9 DK points in 23 minutes a game over 5 games (No. 137 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 24.9,
-   "season_rank": 136
+   "season_rank": 137
   },
   {
    "rank": 192,
@@ -18521,11 +17457,11 @@
    "team": "IND",
    "flag": "",
    "change": "",
-   "note": "His shooting fell without Haliburton last season (41% from the field) and should bounce back. So far: 18.9 DK points in 22 minutes a game over 5 games (No. 186 in DK points a game).",
+   "note": "His shooting fell without Haliburton last season (41% from the field) and should bounce back. So far: 18.9 DK points in 22 minutes a game over 5 games (No. 188 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 18.9,
-   "season_rank": 186
+   "season_rank": 188
   },
   {
    "rank": 193,
@@ -18547,11 +17483,11 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "He had back surgery but played in the final preseason game, and he is a stream option while Jusuf Nurkic is out. So far: 2.3 DK points in 8 minutes a game over 3 games (No. 383 in DK points a game).",
+   "note": "He had back surgery but played in the final preseason game, and he is a stream option while Jusuf Nurkic is out. So far: 4.4 DK points in 8 minutes a game over 4 games (No. 358 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 3,
-   "dk_avg": 2.3,
-   "season_rank": 383
+   "gp": 4,
+   "dk_avg": 4.4,
+   "season_rank": 358
   },
   {
    "rank": 195,
@@ -18560,11 +17496,11 @@
    "team": "SAC",
    "flag": "",
    "change": "",
-   "note": "He played 41 minutes Thursday (24 points, nine rebounds, four steals) and starts while Keegan Murray is out. So far: 28.4 DK points in 30 minutes a game over 5 games (No. 97 in DK points a game).",
+   "note": "He played 41 minutes Thursday (24 points, nine rebounds, four steals) and starts while Keegan Murray is out. So far: 26.7 DK points in 29 minutes a game over 6 games (No. 116 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 28.4,
-   "season_rank": 97
+   "gp": 6,
+   "dk_avg": 26.7,
+   "season_rank": 116
   },
   {
    "rank": 196,
@@ -18586,11 +17522,11 @@
    "team": "WAS",
    "flag": "",
    "change": "",
-   "note": "So far: 15.6 DK points in 21 minutes a game over 5 games (No. 229 in DK points a game).",
+   "note": "So far: 15.6 DK points in 21 minutes a game over 5 games (No. 232 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 15.6,
-   "season_rank": 229
+   "season_rank": 232
   },
   {
    "rank": 198,
@@ -18599,11 +17535,11 @@
    "team": "SAS",
    "flag": "",
    "change": "",
-   "note": "He won Sixth Man of the Year last season but is now about eighth in the rotation. So far: 19.5 DK points in 22 minutes a game over 5 games (No. 181 in DK points a game).",
+   "note": "He won Sixth Man of the Year last season but is now about eighth in the rotation. So far: 17.8 DK points in 22 minutes a game over 6 games (No. 203 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 19.5,
-   "season_rank": 181
+   "gp": 6,
+   "dk_avg": 17.8,
+   "season_rank": 203
   },
   {
    "rank": 199,
@@ -18612,11 +17548,11 @@
    "team": "PHX",
    "flag": "",
    "change": "",
-   "note": "He put up big numbers late last season while Williams was hurt. So far: 17.5 DK points in 18 minutes a game over 2 games (No. 201 in DK points a game).",
+   "note": "He put up big numbers late last season while Williams was hurt. So far: 17.5 DK points in 18 minutes a game over 2 games (No. 204 in DK points a game).",
    "source": "NBA-0929",
    "gp": 2,
    "dk_avg": 17.5,
-   "season_rank": 201
+   "season_rank": 204
   },
   {
    "rank": 200,
@@ -18625,11 +17561,11 @@
    "team": "LAL",
    "flag": "",
    "change": "",
-   "note": "He only matters if two guards are out at once. So far: 16.9 DK points in 17 minutes a game over 5 games (No. 213 in DK points a game).",
+   "note": "He only matters if two guards are out at once. So far: 16.9 DK points in 17 minutes a game over 5 games (No. 214 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 16.9,
-   "season_rank": 213
+   "season_rank": 214
   },
   {
    "rank": 201,
@@ -18638,11 +17574,11 @@
    "team": "LAC",
    "flag": "",
    "change": "",
-   "note": "The No. 5 pick has no clear path to starting this season. So far: 27.2 DK points in 26 minutes a game over 5 games (No. 108 in DK points a game).",
+   "note": "The No. 5 pick has no clear path to starting this season. So far: 27.2 DK points in 26 minutes a game over 5 games (No. 109 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 27.2,
-   "season_rank": 108
+   "season_rank": 109
   },
   {
    "rank": 202,
@@ -18664,11 +17600,11 @@
    "team": "WAS",
    "flag": "",
    "change": "",
-   "note": "So far: 13.4 DK points in 20 minutes a game over 6 games (No. 259 in DK points a game).",
+   "note": "So far: 13.4 DK points in 20 minutes a game over 6 games (No. 260 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 13.4,
-   "season_rank": 259
+   "season_rank": 260
   },
   {
    "rank": 204,
@@ -18677,11 +17613,11 @@
    "team": "MIN",
    "flag": "",
    "change": "",
-   "note": "So far: 23.3 DK points in 23 minutes a game over 6 games (No. 151 in DK points a game).",
+   "note": "So far: 21.7 DK points in 22 minutes a game over 7 games (No. 162 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 23.3,
-   "season_rank": 151
+   "gp": 7,
+   "dk_avg": 21.7,
+   "season_rank": 162
   },
   {
    "rank": 205,
@@ -18690,11 +17626,11 @@
    "team": "LAC",
    "flag": "",
    "change": "",
-   "note": "He had 15 points, six assists, five steals and two blocks in 33 minutes Sunday. So far: 27.2 DK points in 30 minutes a game over 5 games (No. 110 in DK points a game).",
+   "note": "He had 15 points, six assists, five steals and two blocks in 33 minutes Sunday. So far: 27.2 DK points in 30 minutes a game over 5 games (No. 112 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 27.2,
-   "season_rank": 110
+   "season_rank": 112
   },
   {
    "rank": 206,
@@ -18703,11 +17639,11 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "He scored 20 points with six threes off the bench Friday as Mikal Bridges struggled. So far: 13.7 DK points in 19 minutes a game over 6 games (No. 255 in DK points a game).",
+   "note": "He scored 20 points with six threes off the bench Friday as Mikal Bridges struggled. So far: 13.7 DK points in 19 minutes a game over 6 games (No. 257 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 13.7,
-   "season_rank": 255
+   "season_rank": 257
   },
   {
    "rank": 207,
@@ -18716,11 +17652,11 @@
    "team": "WAS",
    "flag": "",
    "change": "",
-   "note": "So far: 0.8 DK points in 3 minutes a game over 4 games (No. 394 in DK points a game).",
+   "note": "So far: 0.8 DK points in 3 minutes a game over 4 games (No. 401 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 0.8,
-   "season_rank": 394
+   "season_rank": 401
   },
   {
    "rank": 208,
@@ -18729,11 +17665,11 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "He started nearly every game in his first two seasons but projects off the bench. So far: 23.4 DK points in 28 minutes a game over 5 games (No. 150 in DK points a game).",
+   "note": "He started nearly every game in his first two seasons but projects off the bench. So far: 20.8 DK points in 27 minutes a game over 6 games (No. 168 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 23.4,
-   "season_rank": 150
+   "gp": 6,
+   "dk_avg": 20.8,
+   "season_rank": 168
   },
   {
    "rank": 209,
@@ -18742,11 +17678,11 @@
    "team": "DEN",
    "flag": "",
    "change": "",
-   "note": "He shot 46% from three on 52 attempts last season. So far: 11.1 DK points in 12 minutes a game over 5 games (No. 280 in DK points a game).",
+   "note": "He shot 46% from three on 52 attempts last season. So far: 11.1 DK points in 12 minutes a game over 5 games (No. 284 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 11.1,
-   "season_rank": 280
+   "season_rank": 284
   },
   {
    "rank": 210,
@@ -18755,11 +17691,11 @@
    "team": "UTA",
    "flag": "",
    "change": "",
-   "note": "So far: 15.6 DK points in 15 minutes a game over 5 games (No. 230 in DK points a game).",
+   "note": "So far: 16.2 DK points in 16 minutes a game over 6 games (No. 227 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 15.6,
-   "season_rank": 230
+   "gp": 6,
+   "dk_avg": 16.2,
+   "season_rank": 227
   },
   {
    "rank": 211,
@@ -18781,11 +17717,11 @@
    "team": "TOR",
    "flag": "",
    "change": "",
-   "note": "He starts if Immanuel Quickley sits. So far: 17.4 DK points in 21 minutes a game over 5 games (No. 204 in DK points a game).",
+   "note": "He starts if Immanuel Quickley sits. So far: 17.4 DK points in 21 minutes a game over 5 games (No. 206 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 17.4,
-   "season_rank": 204
+   "season_rank": 206
   },
   {
    "rank": 213,
@@ -18794,11 +17730,11 @@
    "team": "SAS",
    "flag": "",
    "change": "",
-   "note": "He scored 26 points off the bench Tuesday on 8-for-13 three-point shooting. So far: 24.2 DK points in 28 minutes a game over 5 games (No. 145 in DK points a game).",
+   "note": "He scored 26 points off the bench Tuesday on 8-for-13 three-point shooting. So far: 23.7 DK points in 28 minutes a game over 6 games (No. 147 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 24.2,
-   "season_rank": 145
+   "gp": 6,
+   "dk_avg": 23.7,
+   "season_rank": 147
   },
   {
    "rank": 214,
@@ -18807,11 +17743,11 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "He scored 18 points in 16 minutes off the bench Thursday. He starts if Edey is out. So far: 17.4 DK points in 17 minutes a game over 4 games (No. 205 in DK points a game).",
+   "note": "He scored 18 points in 16 minutes off the bench Thursday. He starts if Edey is out. So far: 19.9 DK points in 18 minutes a game over 5 games (No. 180 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 4,
-   "dk_avg": 17.4,
-   "season_rank": 205
+   "gp": 5,
+   "dk_avg": 19.9,
+   "season_rank": 180
   },
   {
    "rank": 215,
@@ -18820,11 +17756,11 @@
    "team": "PHI",
    "flag": "",
    "change": "",
-   "note": "So far: 4.5 DK points in 8 minutes a game over 3 games (No. 348 in DK points a game).",
+   "note": "So far: 5.1 DK points in 8 minutes a game over 4 games (No. 343 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 3,
-   "dk_avg": 4.5,
-   "season_rank": 348
+   "gp": 4,
+   "dk_avg": 5.1,
+   "season_rank": 343
   },
   {
    "rank": 216,
@@ -18846,11 +17782,11 @@
    "team": "POR",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He sits about 16 back-to-backs a season. So far: 25.0 DK points in 18 minutes a game over 3 games (No. 135 in DK points a game).",
+   "note": "He sits about 16 back-to-backs a season. So far: 21.7 DK points in 17 minutes a game over 4 games (No. 161 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 3,
-   "dk_avg": 25.0,
-   "season_rank": 135
+   "gp": 4,
+   "dk_avg": 21.7,
+   "season_rank": 161
   },
   {
    "rank": 218,
@@ -18872,11 +17808,11 @@
    "team": "ATL",
    "flag": "",
    "change": "",
-   "note": "He would start if Daniels or Alexander-Walker sits. So far: 16.7 DK points in 23 minutes a game over 6 games (No. 217 in DK points a game).",
+   "note": "He would start if Daniels or Alexander-Walker sits. So far: 17.1 DK points in 24 minutes a game over 7 games (No. 212 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 16.7,
-   "season_rank": 217
+   "gp": 7,
+   "dk_avg": 17.1,
+   "season_rank": 212
   },
   {
    "rank": 220,
@@ -18885,11 +17821,11 @@
    "team": "IND",
    "flag": "",
    "change": "",
-   "note": "He started Monday and had six points and six rebounds with no blocks in 23 minutes. So far: 14.8 DK points in 17 minutes a game over 5 games (No. 236 in DK points a game).",
+   "note": "He started Monday and had six points and six rebounds with no blocks in 23 minutes. So far: 14.8 DK points in 17 minutes a game over 5 games (No. 241 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 14.8,
-   "season_rank": 236
+   "season_rank": 241
   },
   {
    "rank": 221,
@@ -18898,11 +17834,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "So far: 10.4 DK points in 17 minutes a game over 6 games (No. 287 in DK points a game).",
+   "note": "So far: 11.7 DK points in 18 minutes a game over 7 games (No. 279 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 10.4,
-   "season_rank": 287
+   "gp": 7,
+   "dk_avg": 11.7,
+   "season_rank": 279
   },
   {
    "rank": 222,
@@ -18937,11 +17873,11 @@
    "team": "BOS",
    "flag": "rest",
    "change": "Rest watch",
-   "note": "He has ankle problems and will not play back-to-backs. So far: 15.2 DK points in 20 minutes a game over 5 games (No. 233 in DK points a game).",
+   "note": "He has ankle problems and will not play back-to-backs. So far: 15.2 DK points in 20 minutes a game over 5 games (No. 236 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 15.2,
-   "season_rank": 233
+   "season_rank": 236
   },
   {
    "rank": 225,
@@ -18950,11 +17886,11 @@
    "team": "CHI",
    "flag": "",
    "change": "",
-   "note": "He had 14 points, 13 rebounds and three steals on Friday while Nic Claxton is out. So far: 29.3 DK points in 24 minutes a game over 6 games (No. 85 in DK points a game).",
+   "note": "He had 14 points, 13 rebounds and three steals on Friday while Nic Claxton is out. So far: 29.3 DK points in 24 minutes a game over 6 games (No. 84 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 29.3,
-   "season_rank": 85
+   "season_rank": 84
   },
   {
    "rank": 226,
@@ -18963,11 +17899,11 @@
    "team": "BKN",
    "flag": "",
    "change": "",
-   "note": "He gains minutes whenever Randle or Porter sits. So far: 15.5 DK points in 22 minutes a game over 5 games (No. 231 in DK points a game).",
+   "note": "He gains minutes whenever Randle or Porter sits. So far: 15.5 DK points in 22 minutes a game over 5 games (No. 233 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 15.5,
-   "season_rank": 231
+   "season_rank": 233
   },
   {
    "rank": 227,
@@ -18976,11 +17912,11 @@
    "team": "LAC",
    "flag": "",
    "change": "",
-   "note": "He came from Toronto and is not a fantasy factor. So far: 12.1 DK points in 16 minutes a game over 5 games (No. 272 in DK points a game).",
+   "note": "He came from Toronto and is not a fantasy factor. So far: 12.1 DK points in 16 minutes a game over 5 games (No. 273 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 12.1,
-   "season_rank": 272
+   "season_rank": 273
   },
   {
    "rank": 228,
@@ -19002,11 +17938,11 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "He played 16 minutes a game before Sunday, when the wrist injury cut his night short. So far: 11.3 DK points in 17 minutes a game over 5 games (No. 279 in DK points a game).",
+   "note": "He played 16 minutes a game before Sunday, when the wrist injury cut his night short. So far: 11.2 DK points in 18 minutes a game over 6 games (No. 283 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 11.3,
-   "season_rank": 279
+   "gp": 6,
+   "dk_avg": 11.2,
+   "season_rank": 283
   },
   {
    "rank": 230,
@@ -19015,11 +17951,11 @@
    "team": "MEM",
    "flag": "",
    "change": "",
-   "note": "So far: 19.8 DK points in 18 minutes a game over 5 games (No. 178 in DK points a game).",
+   "note": "So far: 23.2 DK points in 19 minutes a game over 6 games (No. 151 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 19.8,
-   "season_rank": 178
+   "gp": 6,
+   "dk_avg": 23.2,
+   "season_rank": 151
   },
   {
    "rank": 231,
@@ -19028,11 +17964,11 @@
    "team": "MIA",
    "flag": "",
    "change": "",
-   "note": "So far: 10.3 DK points in 13 minutes a game over 5 games (No. 289 in DK points a game).",
+   "note": "So far: 10.3 DK points in 13 minutes a game over 5 games (No. 294 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 10.3,
-   "season_rank": 289
+   "season_rank": 294
   },
   {
    "rank": 232,
@@ -19041,11 +17977,11 @@
    "team": "DET",
    "flag": "",
    "change": "",
-   "note": "He is new to Detroit and is competing for the 10th rotation spot. So far: 14.6 DK points in 20 minutes a game over 6 games (No. 240 in DK points a game).",
+   "note": "He is new to Detroit and is competing for the 10th rotation spot. So far: 14.6 DK points in 20 minutes a game over 6 games (No. 245 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 14.6,
-   "season_rank": 240
+   "season_rank": 245
   },
   {
    "rank": 233,
@@ -19054,11 +17990,11 @@
    "team": "NYK",
    "flag": "up",
    "change": "Role up",
-   "note": "He takes over Mitchell Robinson’s backup center minutes and can play back-to-backs. So far: 18.7 DK points in 13 minutes a game over 6 games (No. 190 in DK points a game).",
+   "note": "He takes over Mitchell Robinson’s backup center minutes and can play back-to-backs. So far: 18.7 DK points in 13 minutes a game over 6 games (No. 193 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 18.7,
-   "season_rank": 190
+   "season_rank": 193
   },
   {
    "rank": 234,
@@ -19067,11 +18003,11 @@
    "team": "HOU",
    "flag": "",
    "change": "",
-   "note": "Houston plans to start Smart, not Reed Sheppard, when Fred VanVleet sits. So far: 16.6 DK points in 21 minutes a game over 3 games (No. 218 in DK points a game).",
+   "note": "Houston plans to start Smart, not Reed Sheppard, when Fred VanVleet sits. So far: 22.4 DK points in 25 minutes a game over 4 games (No. 153 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 3,
-   "dk_avg": 16.6,
-   "season_rank": 218
+   "gp": 4,
+   "dk_avg": 22.4,
+   "season_rank": 153
   },
   {
    "rank": 235,
@@ -19080,11 +18016,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "So far: 6.1 DK points in 7 minutes a game over 2 games (No. 328 in DK points a game).",
+   "note": "So far: 6.1 DK points in 7 minutes a game over 2 games (No. 334 in DK points a game).",
    "source": "NBA-0929",
    "gp": 2,
    "dk_avg": 6.1,
-   "season_rank": 328
+   "season_rank": 334
   },
   {
    "rank": 236,
@@ -19093,11 +18029,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "So far: 14.2 DK points in 16 minutes a game over 6 games (No. 251 in DK points a game).",
+   "note": "So far: 14.9 DK points in 17 minutes a game over 7 games (No. 240 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 14.2,
-   "season_rank": 251
+   "gp": 7,
+   "dk_avg": 14.9,
+   "season_rank": 240
   },
   {
    "rank": 237,
@@ -19106,11 +18042,11 @@
    "team": "ORL",
    "flag": "",
    "change": "",
-   "note": "He scored 19 points off the bench Sunday and gets more minutes with Paolo Banchero and Jalen Suggs hurt. So far: 21.1 DK points in 28 minutes a game over 5 games (No. 167 in DK points a game).",
+   "note": "He scored 19 points off the bench Sunday and gets more minutes with Paolo Banchero and Jalen Suggs hurt. So far: 21.1 DK points in 28 minutes a game over 5 games (No. 166 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 21.1,
-   "season_rank": 167
+   "season_rank": 166
   },
   {
    "rank": 238,
@@ -19132,11 +18068,11 @@
    "team": "NYK",
    "flag": "",
    "change": "",
-   "note": "So far: 9.3 DK points in 8 minutes a game over 5 games (No. 297 in DK points a game).",
+   "note": "So far: 9.3 DK points in 8 minutes a game over 5 games (No. 305 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 9.3,
-   "season_rank": 297
+   "season_rank": 305
   },
   {
    "rank": 240,
@@ -19145,11 +18081,11 @@
    "team": "MIN",
    "flag": "",
    "change": "",
-   "note": "So far: 14.3 DK points in 11 minutes a game over 6 games (No. 247 in DK points a game).",
+   "note": "So far: 14.4 DK points in 12 minutes a game over 7 games (No. 248 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 14.3,
-   "season_rank": 247
+   "gp": 7,
+   "dk_avg": 14.4,
+   "season_rank": 248
   },
   {
    "rank": 241,
@@ -19158,11 +18094,11 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "So far: 16.4 DK points in 21 minutes a game over 5 games (No. 223 in DK points a game).",
+   "note": "So far: 16.4 DK points in 21 minutes a game over 5 games (No. 225 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 16.4,
-   "season_rank": 223
+   "season_rank": 225
   },
   {
    "rank": 242,
@@ -19171,11 +18107,11 @@
    "team": "TOR",
    "flag": "",
    "change": "",
-   "note": "He had 11 points, six rebounds, four assists, a steal and a block off the bench Sunday. So far: 14.6 DK points in 14 minutes a game over 5 games (No. 239 in DK points a game).",
+   "note": "He had 11 points, six rebounds, four assists, a steal and a block off the bench Sunday. So far: 14.6 DK points in 14 minutes a game over 5 games (No. 244 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 14.6,
-   "season_rank": 239
+   "season_rank": 244
   },
   {
    "rank": 243,
@@ -19184,11 +18120,11 @@
    "team": "MIL",
    "flag": "",
    "change": "",
-   "note": "So far: 15.8 DK points in 15 minutes a game over 5 games (No. 228 in DK points a game).",
+   "note": "So far: 16.8 DK points in 16 minutes a game over 6 games (No. 218 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 15.8,
-   "season_rank": 228
+   "gp": 6,
+   "dk_avg": 16.8,
+   "season_rank": 218
   },
   {
    "rank": 244,
@@ -19197,11 +18133,11 @@
    "team": "ATL",
    "flag": "",
    "change": "",
-   "note": "The rookie scored 23 points with five rebounds and five assists in 28 minutes off the bench on Wednesday, and he closed the game ahead of CJ McCollum. So far: 17.4 DK points in 20 minutes a game over 6 games (No. 203 in DK points a game).",
+   "note": "The rookie scored 23 points with five rebounds and five assists in 28 minutes off the bench on Wednesday, and he closed the game ahead of CJ McCollum. So far: 19.3 DK points in 20 minutes a game over 7 games (No. 185 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 17.4,
-   "season_rank": 203
+   "gp": 7,
+   "dk_avg": 19.3,
+   "season_rank": 185
   },
   {
    "rank": 245,
@@ -19210,11 +18146,11 @@
    "team": "GSW",
    "flag": "",
    "change": "",
-   "note": "He scored 25 points with three steals off the bench on Saturday. So far: 22.2 DK points in 21 minutes a game over 6 games (No. 157 in DK points a game).",
+   "note": "He scored 25 points with three steals off the bench on Saturday. So far: 22.2 DK points in 21 minutes a game over 6 games (No. 156 in DK points a game).",
    "source": "NBA-0929",
    "gp": 6,
    "dk_avg": 22.2,
-   "season_rank": 157
+   "season_rank": 156
   },
   {
    "rank": 246,
@@ -19223,11 +18159,11 @@
    "team": "WAS",
    "flag": "",
    "change": "",
-   "note": "He re-signed with Washington but may sit outside a 10-man rotation. So far: 5.3 DK points in 14 minutes a game over 5 games (No. 337 in DK points a game).",
+   "note": "He re-signed with Washington but may sit outside a 10-man rotation. So far: 5.3 DK points in 14 minutes a game over 5 games (No. 342 in DK points a game).",
    "source": "NBA-0929",
    "gp": 5,
    "dk_avg": 5.3,
-   "season_rank": 337
+   "season_rank": 342
   },
   {
    "rank": 247,
@@ -19236,11 +18172,11 @@
    "team": "PHI",
    "flag": "",
    "change": "",
-   "note": "So far: 16.7 DK points in 25 minutes a game over 6 games (No. 216 in DK points a game).",
+   "note": "So far: 15.2 DK points in 24 minutes a game over 7 games (No. 237 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 16.7,
-   "season_rank": 216
+   "gp": 7,
+   "dk_avg": 15.2,
+   "season_rank": 237
   },
   {
    "rank": 248,
@@ -19249,11 +18185,11 @@
    "team": "CHI",
    "flag": "",
    "change": "",
-   "note": "He re-signed with Chicago. So far: 4.4 DK points in 7 minutes a game over 4 games (No. 350 in DK points a game).",
+   "note": "He re-signed with Chicago. So far: 4.4 DK points in 7 minutes a game over 4 games (No. 357 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 4.4,
-   "season_rank": 350
+   "season_rank": 357
   },
   {
    "rank": 249,
@@ -19262,11 +18198,11 @@
    "team": "OKC",
    "flag": "",
    "change": "",
-   "note": "He had 11 points, 10 rebounds and two blocks in 20 minutes Monday with Chet Holmgren out. So far: 14.8 DK points in 16 minutes a game over 5 games (No. 238 in DK points a game).",
+   "note": "He had 11 points, 10 rebounds and two blocks in 20 minutes Monday with Chet Holmgren out. So far: 17.2 DK points in 18 minutes a game over 6 games (No. 208 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 5,
-   "dk_avg": 14.8,
-   "season_rank": 238
+   "gp": 6,
+   "dk_avg": 17.2,
+   "season_rank": 208
   },
   {
    "rank": 250,
@@ -19275,11 +18211,11 @@
    "team": "CHA",
    "flag": "",
    "change": "",
-   "note": "So far: 6.8 DK points in 11 minutes a game over 6 games (No. 322 in DK points a game).",
+   "note": "So far: 6.3 DK points in 11 minutes a game over 7 games (No. 331 in DK points a game).",
    "source": "NBA-0929",
-   "gp": 6,
-   "dk_avg": 6.8,
-   "season_rank": 322
+   "gp": 7,
+   "dk_avg": 6.3,
+   "season_rank": 331
   }
  ],
  "picks": [

@@ -2,7 +2,20 @@
  "date": "2026-10-31",
  "updated": "8:29 PM ET",
  "games": 6,
- "pending": [],
+ "pending": [
+  "ATL",
+  "CLE",
+  "HOU",
+  "MEM",
+  "MIL",
+  "MIN",
+  "NOP",
+  "OKC",
+  "POR",
+  "SAC",
+  "SAS",
+  "UTA"
+ ],
  "first_report": "6:16 AM",
  "cards": [
   {
@@ -328,7 +341,7 @@
     {
      "player": "Dejounte Murray",
      "min": 31.7,
-     "note": "Dejounte Murray missed Oct. 29, and he is expected to return Saturday. His return could change the New Orleans starting lineup and affect Jeremiah Fears, Saddiq Bey and Herbert Jones.",
+     "note": "Ruled out tonight (personal reasons).",
      "new": true
     },
     {
@@ -340,7 +353,7 @@
     {
      "player": "Jordan Poole",
      "min": 16.3,
-     "note": "Jordan Poole missed Oct. 29 with an ankle injury, and he is not expected to play Saturday. His absence makes Jeremiah Fears's minutes safer, since Poole is the player most likely to cut into them.",
+     "note": "Ruled out tonight (left ankle sprain).",
      "new": false
     }
    ],
@@ -403,29 +416,6 @@
    ]
   },
   {
-   "team": "POR",
-   "outs": [
-    {
-     "player": "Ja Morant",
-     "min": 27.0,
-     "note": "He has a left hamstring strain and will miss at least four weeks. He left the Oct. 29 game against Memphis and did not return.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 27.0,
-   "benefits": [
-    {
-     "player": "Vit Krejci",
-     "plus": 4.2,
-     "recent": 6.0,
-     "min": 10.2,
-     "dk": 7.9,
-     "salary": 3000
-    }
-   ]
-  },
-  {
    "team": "OKC",
    "outs": [
     {
@@ -443,7 +433,7 @@
     {
      "player": "Alex Caruso",
      "min": 17.0,
-     "note": "Alex Caruso has not played since Oct. 26, and his status for Saturday is unclear.",
+     "note": "Ruled out tonight (right ankle sprain).",
      "new": false
     },
     {
@@ -471,6 +461,29 @@
      "min": 36.0,
      "dk": 59.5,
      "salary": 10400
+    }
+   ]
+  },
+  {
+   "team": "POR",
+   "outs": [
+    {
+     "player": "Ja Morant",
+     "min": 27.0,
+     "note": "He has a left hamstring strain and will miss at least four weeks. He left the Oct. 29 game against Memphis and did not return.",
+     "new": false
+    }
+   ],
+   "new": false,
+   "lost": 27.0,
+   "benefits": [
+    {
+     "player": "Vit Krejci",
+     "plus": 4.2,
+     "recent": 6.0,
+     "min": 10.2,
+     "dk": 7.9,
+     "salary": 3000
     }
    ]
   },
@@ -727,518 +740,23 @@
   ]
  },
  "injuries": {
-  "report": "10:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_10_15PM.pdf",
-  "pending": [],
-  "rows": [
-   {
-    "game": "POR at UTA",
-    "time": "2026-10-31T19:00Z",
-    "team": "POR",
-    "player": "Ja Morant",
-    "status": "Out",
-    "reason": "Left Hamstring Strain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Vit Krejci",
-      "min": 10.2,
-      "recent": 6.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "POR at UTA",
-    "time": "2026-10-31T19:00Z",
-    "team": "UTA",
-    "player": "Lauri Markkanen",
-    "status": "Available",
-    "reason": "Right Wrist Sprain",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "2:35 PM",
-    "min": 26.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "POR at UTA",
-    "time": "2026-10-31T19:00Z",
-    "team": "POR",
-    "player": "Robert Williams III",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "2:35 PM",
-    "min": 18.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at NOP",
-    "time": "2026-10-31T23:00Z",
-    "team": "NOP",
-    "player": "Dejounte Murray",
-    "status": "Out",
-    "reason": "Personal Reasons",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "6:39 PM",
-    "min": 31.7,
-    "benefits": [
-     {
-      "player": "Benedict Mathurin",
-      "min": 25.8,
-      "recent": 17.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MIN at SAS",
-    "time": "2026-11-01T00:00Z",
-    "team": "MIN",
-    "player": "Rudy Gobert",
-    "status": "Out",
-    "reason": "Low Back Spasms",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "6:39 PM",
-    "min": 28.7,
-    "benefits": [
-     {
-      "player": "Jonathan Kuminga",
-      "min": 32.1,
-      "recent": 25.0
-     },
-     {
-      "player": "Ayo Dosunmu",
-      "min": 35.7,
-      "recent": 29.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "SAC at MEM",
-    "time": "2026-11-01T00:00Z",
-    "team": "MEM",
-    "player": "Ty Jerome",
-    "status": "Out",
-    "reason": "Upper Back Soreness",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "8:30 PM",
-    "min": 28.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "CLE at MIL",
-    "time": "2026-11-01T00:00Z",
-    "team": "CLE",
-    "player": "Jaylon Tyson",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "",
-    "min": 19.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "SAC at MEM",
-    "time": "2026-11-01T00:00Z",
-    "team": "MEM",
-    "player": "Scotty Pippen Jr.",
-    "status": "Out",
-    "reason": "Low Back Soreness",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "8:30 PM",
-    "min": 14.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "SAC at MEM",
-    "time": "2026-11-01T00:00Z",
-    "team": "MEM",
-    "player": "Quinten Post",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "8:30 PM",
-    "min": 12.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "MIN at SAS",
-    "time": "2026-11-01T00:00Z",
-    "team": "SAS",
-    "player": "Stephon Castle",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "8:30 PM",
-    "min": 31.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "CLE at MIL",
-    "time": "2026-11-01T00:00Z",
-    "team": "CLE",
-    "player": "Meleek Thomas",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Probable",
-    "known": true,
-    "changed_at": "8:30 PM",
-    "min": 19.5,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "OKC at HOU",
-    "time": "2026-11-01T00:30Z",
-    "team": "HOU",
-    "player": "Fred VanVleet",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "1:16 PM",
-    "min": 30.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "POR at UTA",
-    "time": "2026-10-31T19:00Z",
-    "team": "UTA",
-    "player": "Jaren Jackson Jr.",
-    "status": "Out",
-    "reason": "Right Knee MCL Tear",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 25.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at NOP",
-    "time": "2026-10-31T23:00Z",
-    "team": "NOP",
-    "player": "Yves Missi",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 19.5,
-    "benefits": [
-     {
-      "player": "Benedict Mathurin",
-      "min": 25.8,
-      "recent": 17.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "ATL at NOP",
-    "time": "2026-10-31T23:00Z",
-    "team": "NOP",
-    "player": "Jordan Poole",
-    "status": "Out",
-    "reason": "Left Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 16.3,
-    "benefits": [
-     {
-      "player": "Benedict Mathurin",
-      "min": 25.8,
-      "recent": 17.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MIN at SAS",
-    "time": "2026-11-01T00:00Z",
-    "team": "MIN",
-    "player": "Anthony Edwards",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 34.0,
-    "benefits": [
-     {
-      "player": "Jonathan Kuminga",
-      "min": 32.1,
-      "recent": 25.0
-     },
-     {
-      "player": "Ayo Dosunmu",
-      "min": 35.7,
-      "recent": 29.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "SAC at MEM",
-    "time": "2026-11-01T00:00Z",
-    "team": "SAC",
-    "player": "Keegan Murray",
-    "status": "Out",
-    "reason": "Left Ankle Capsulitis",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Nique Clifford",
-      "min": 9.4,
-      "recent": 3.7
-     },
-     {
-      "player": "Malik Monk",
-      "min": 15.5,
-      "recent": 11.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "OKC at HOU",
-    "time": "2026-11-01T00:30Z",
-    "team": "OKC",
-    "player": "Jalen Williams",
-    "status": "Out",
-    "reason": "Left Ankle Surgery",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 31.7,
-    "benefits": [
-     {
-      "player": "Jaylin Williams",
-      "min": 22.5,
-      "recent": 17.0
-     },
-     {
-      "player": "Shai Gilgeous-Alexander",
-      "min": 36.0,
-      "recent": 31.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "OKC at HOU",
-    "time": "2026-11-01T00:30Z",
-    "team": "OKC",
-    "player": "Chet Holmgren",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 30.0,
-    "benefits": [
-     {
-      "player": "Jaylin Williams",
-      "min": 22.5,
-      "recent": 17.0
-     },
-     {
-      "player": "Shai Gilgeous-Alexander",
-      "min": 36.0,
-      "recent": 31.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "OKC at HOU",
-    "time": "2026-11-01T00:30Z",
-    "team": "HOU",
-    "player": "Reed Sheppard",
-    "status": "Out",
-    "reason": "Low Back Soreness",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 25.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "OKC at HOU",
-    "time": "2026-11-01T00:30Z",
-    "team": "OKC",
-    "player": "Alex Caruso",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 17.0,
-    "benefits": [
-     {
-      "player": "Jaylin Williams",
-      "min": 22.5,
-      "recent": 17.0
-     },
-     {
-      "player": "Shai Gilgeous-Alexander",
-      "min": 36.0,
-      "recent": 31.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "OKC at HOU",
-    "time": "2026-11-01T00:30Z",
-    "team": "OKC",
-    "player": "Cason Wallace",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 16.3,
-    "benefits": [
-     {
-      "player": "Jaylin Williams",
-      "min": 22.5,
-      "recent": 17.0
-     },
-     {
-      "player": "Shai Gilgeous-Alexander",
-      "min": 36.0,
-      "recent": 31.3
-     }
-    ],
-    "estimate": false
-   }
+  "report": "01:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_01_45AM.pdf",
+  "pending": [
+   "ATL",
+   "CLE",
+   "HOU",
+   "MEM",
+   "MIL",
+   "MIN",
+   "NOP",
+   "OKC",
+   "POR",
+   "SAC",
+   "SAS",
+   "UTA"
   ],
-  "minor": [
-   {
-    "player": "Chris Youngblood",
-    "team": "POR",
-    "status": "Available"
-   },
-   {
-    "player": "Shaedon Sharpe",
-    "team": "POR",
-    "status": "Out"
-   },
-   {
-    "player": "Jusuf Nurkic",
-    "team": "UTA",
-    "status": "Out"
-   },
-   {
-    "player": "Mouhamed Gueye",
-    "team": "ATL",
-    "status": "Out"
-   },
-   {
-    "player": "Henri Veesaar",
-    "team": "ATL",
-    "status": "Out"
-   },
-   {
-    "player": "Nae'Qwan Tomlin",
-    "team": "CLE",
-    "status": "Out"
-   },
-   {
-    "player": "Donte DiVincenzo",
-    "team": "MIN",
-    "status": "Out"
-   },
-   {
-    "player": "Tobias Harris",
-    "team": "SAS",
-    "status": "Out"
-   },
-   {
-    "player": "Jayden Quaintance",
-    "team": "SAS",
-    "status": "Out"
-   },
-   {
-    "player": "Dylan Cardwell",
-    "team": "SAC",
-    "status": "Out"
-   },
-   {
-    "player": "Maxime Raynaud",
-    "team": "SAC",
-    "status": "Out"
-   },
-   {
-    "player": "Ben Simmons",
-    "team": "SAC",
-    "status": "Out"
-   },
-   {
-    "player": "Steven Adams",
-    "team": "HOU",
-    "status": "Out"
-   },
-   {
-    "player": "Thomas Sorber",
-    "team": "OKC",
-    "status": "Out"
-   },
-   {
-    "player": "Nikola Topic",
-    "team": "OKC",
-    "status": "Out"
-   }
-  ]
+  "rows": [],
+  "minor": []
  }
 }
