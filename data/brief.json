@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updated": "3:33 PM ET",
+ "updated": "4:41 PM ET",
  "games": 3,
  "pending": [],
  "first_report": "7:47 AM",
@@ -102,19 +102,27 @@
      "q": []
     },
     "LAL": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Ziaire Williams",
-       "min": 26.8
+       "min": 30.0
       }
-     ]
+     ],
+     "q": []
     }
    },
-   "key": "Luka Doncic has the top projection in this game at 54.6 DK points."
+   "key": "Luka Doncic has the top projection in this game at 59.0 DK points."
   }
  ],
  "changed": [
+  {
+   "player": "Ziaire Williams",
+   "team": "LAL",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "4:42 PM"
+  },
   {
    "player": "Mitchell Robinson",
    "team": "BOS",
@@ -149,7 +157,7 @@
      "plus": 5.2,
      "recent": 30.0,
      "min": 35.2,
-     "dk": 47.0,
+     "dk": 47.2,
      "salary": 7600
     },
     {
@@ -165,7 +173,7 @@
      "plus": 3.3,
      "recent": 15.3,
      "min": 18.6,
-     "dk": 25.3,
+     "dk": 25.5,
      "salary": 4400
     }
    ]
@@ -288,51 +296,51 @@
   {
    "player": "Brandin Podziemski",
    "team": "GSW",
-   "own": 39.3,
-   "dk": 43.3,
+   "own": 37.7,
+   "dk": 43.0,
    "salary": 6600
   },
   {
    "player": "Franz Wagner",
    "team": "ORL",
-   "own": 37.8,
+   "own": 37.4,
    "dk": 47.4,
    "salary": 8300
   },
   {
-   "player": "Jayson Tatum",
-   "team": "BOS",
-   "own": 37.5,
-   "dk": 55.8,
-   "salary": 10100
+   "player": "Keaton Wagler",
+   "team": "LAC",
+   "own": 37.3,
+   "dk": 34.4,
+   "salary": 5400
   },
   {
-   "player": "Desmond Bane",
-   "team": "ORL",
-   "own": 36.4,
-   "dk": 39.9,
-   "salary": 6900
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "own": 36.6,
+   "dk": 55.8,
+   "salary": 10100
   }
  ],
  "leverage": [
   {
    "player": "Georges Niang",
    "team": "GSW",
-   "own": 6.3,
-   "dk": 22.5,
+   "own": 4.6,
+   "dk": 22.1,
    "salary": 4000
   },
   {
    "player": "Kris Dunn",
    "team": "LAC",
-   "own": 8.8,
-   "dk": 25.0,
+   "own": 9.4,
+   "dk": 25.3,
    "salary": 4900
   },
   {
    "player": "Payton Pritchard",
    "team": "BOS",
-   "own": 9.2,
+   "own": 8.0,
    "dk": 30.4,
    "salary": 6000
   }
@@ -426,8 +434,8 @@
   ]
  },
  "injuries": {
-  "report": "03:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_03_30PM.pdf",
+  "report": "04:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_04_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -517,26 +525,15 @@
     "time": "2026-11-02T02:00Z",
     "team": "LAL",
     "player": "Ziaire Williams",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:42 PM",
     "min": 30.0,
-    "benefits": [
-     {
-      "player": "Quentin Grimes",
-      "plus": 6.3,
-      "min": 31.7
-     },
-     {
-      "player": "Jake LaRavia",
-      "plus": 5.9,
-      "min": 29.7
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "BOS at ORL",
