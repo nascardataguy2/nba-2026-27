@@ -2,13 +2,9 @@
  "updated": "2026-11-02",
  "brief": {
   "date": "2026-11-02",
-  "updated": "3:52 PM ET",
+  "updated": "4:41 PM ET",
   "games": 14,
-  "pending": [
-   "LAL",
-   "GSW",
-   "LAC"
-  ],
+  "pending": [],
   "first_report": "5:37 AM",
   "cards": [
    {
@@ -482,9 +478,9 @@
     "slate": "late",
     "ou": 236.5,
     "fav": "LAL",
-    "line": 1.5,
-    "away_pts": 117.5,
-    "home_pts": 119.0,
+    "line": 2.5,
+    "away_pts": 117.0,
+    "home_pts": 119.5,
     "tags": [
      "Close game",
      "LAL on a back-to-back"
@@ -521,11 +517,25 @@
       "q": []
      },
      "GSW": {
-      "out": [],
-      "q": []
+      "out": [
+       {
+        "player": "Al Horford",
+        "min": 19.0
+       },
+       {
+        "player": "Gui Santos",
+        "min": 17.7
+       }
+      ],
+      "q": [
+       {
+        "player": "Brandon Williams",
+        "min": 20.4
+       }
+      ]
      }
     },
-    "key": "Stephen Curry has the top projection in this game at 45.0 DK points."
+    "key": "Al Horford and Gui Santos are out, so Brandin Podziemski and Yaxel Lendeborg should play more than usual."
    },
    {
     "away": "TOR",
@@ -534,9 +544,9 @@
     "slate": "late",
     "ou": 219.5,
     "fav": "TOR",
-    "line": 5.5,
-    "away_pts": 112.5,
-    "home_pts": 107.0,
+    "line": 4.5,
+    "away_pts": 112.0,
+    "home_pts": 107.5,
     "tags": [
      "Both teams on a back-to-back"
     ],
@@ -550,99 +560,112 @@
       ],
       "q": [
        {
+        "player": "Scottie Barnes",
+        "min": 34.5
+       },
+       {
         "player": "Jakob Poeltl",
         "min": 19.0
        }
       ]
      },
      "LAC": {
-      "out": [],
+      "out": [
+       {
+        "player": "Rui Hachimura",
+        "min": 28.3
+       },
+       {
+        "player": "Derrick Jones Jr.",
+        "min": 27.3
+       }
+      ],
       "q": []
      }
     },
-    "key": "Scottie Barnes has the top projection in this game at 46.2 DK points."
+    "key": "Rui Hachimura and Derrick Jones Jr. are out, so Keaton Wagler and Darius Garland should play more than usual."
    }
   ],
   "changed": [
    {
-    "player": "Alexandre Sarr",
-    "team": "WAS",
+    "player": "Yanic Konan Niederhauser",
+    "team": "LAC",
+    "status": "Out",
+    "was": "",
+    "why": "Right Lisfranc Surgery",
+    "time": "4:43 PM"
+   },
+   {
+    "player": "Jordan Miller",
+    "team": "LAC",
     "status": "Out",
     "was": "",
     "why": "",
-    "time": "3:54 PM"
+    "time": "4:43 PM"
    },
    {
-    "player": "Larry Nance",
-    "team": "IND",
+    "player": "Derrick Jones Jr.",
+    "team": "LAC",
+    "status": "Out",
+    "was": "",
+    "why": "Right Knee Soreness",
+    "time": "4:43 PM"
+   },
+   {
+    "player": "Brandon Ingram",
+    "team": "LAC",
+    "status": "Out",
+    "was": "",
+    "why": "Right Heel Surgery",
+    "time": "4:43 PM"
+   },
+   {
+    "player": "Rui Hachimura",
+    "team": "LAC",
     "status": "Out",
     "was": "",
     "why": "",
-    "time": "3:54 PM"
+    "time": "4:43 PM"
    },
    {
-    "player": "Jakob Poeltl",
+    "player": "Bradley Beal",
+    "team": "LAC",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "4:43 PM"
+   },
+   {
+    "player": "Scottie Barnes",
     "team": "TOR",
     "status": "Questionable",
     "was": "",
-    "why": "Left Shoulder Bursitis",
-    "time": "3:54 PM"
-   },
-   {
-    "player": "Kawhi Leonard",
-    "team": "TOR",
-    "status": "Out",
-    "was": "",
     "why": "",
-    "time": "3:54 PM"
+    "time": "4:43 PM"
    },
    {
-    "player": "Nate Bittle",
-    "team": "TOR",
-    "status": "Out",
-    "was": "",
-    "why": "",
-    "time": "3:54 PM"
-   },
-   {
-    "player": "Tim Hardaway Jr.",
-    "team": "MIA",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Personal Reasons",
-    "time": "3:54 PM"
-   },
-   {
-    "player": "Clint Capela",
-    "team": "HOU",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Right Ankle Sprain",
-    "time": "3:54 PM"
-   },
-   {
-    "player": "Paul George",
-    "team": "BOS",
-    "status": "Out",
-    "was": "",
-    "why": "Rest",
-    "time": "3:54 PM"
-   },
-   {
-    "player": "Kyrie Irving",
-    "team": "DAL",
-    "status": "Doubtful",
-    "was": "Questionable",
-    "why": "",
-    "time": "3:54 PM"
-   },
-   {
-    "player": "Dejounte Murray",
-    "team": "NOP",
+    "player": "Brandon Williams",
+    "team": "GSW",
     "status": "Questionable",
     "was": "",
-    "why": "Personal Reasons",
-    "time": "3:54 PM"
+    "why": "",
+    "time": "4:43 PM"
+   },
+   {
+    "player": "Gui Santos",
+    "team": "GSW",
+    "status": "Out",
+    "was": "",
+    "why": "Left Knee Tendinitis",
+    "time": "4:43 PM"
+   },
+   {
+    "player": "Kristaps Porzingis",
+    "team": "GSW",
+    "status": "Out",
+    "was": "",
+    "why": "Not With Team",
+    "time": "4:43 PM"
    }
   ],
   "sits": [
@@ -794,6 +817,96 @@
     ]
    },
    {
+    "team": "LAC",
+    "outs": [
+     {
+      "player": "Rui Hachimura",
+      "min": 28.3,
+      "note": "Ruled out tonight.",
+      "new": true
+     },
+     {
+      "player": "Derrick Jones Jr.",
+      "min": 27.3,
+      "note": "Ruled out tonight (right knee soreness).",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 55.6,
+    "benefits": [
+     {
+      "player": "Keaton Wagler",
+      "plus": 12.0,
+      "recent": 24.0,
+      "min": 36.0,
+      "dk": 46.8,
+      "salary": 5600
+     },
+     {
+      "player": "Darius Garland",
+      "plus": 10.6,
+      "recent": 30.0,
+      "min": 40.6,
+      "dk": 48.2,
+      "salary": 8100
+     },
+     {
+      "player": "Brook Lopez",
+      "plus": 9.8,
+      "recent": 20.7,
+      "min": 30.5,
+      "dk": 28.8,
+      "salary": 4500
+     }
+    ]
+   },
+   {
+    "team": "GSW",
+    "outs": [
+     {
+      "player": "Al Horford",
+      "min": 19.0,
+      "note": "The show said Horford will probably sit Monday.",
+      "new": true
+     },
+     {
+      "player": "Gui Santos",
+      "min": 17.7,
+      "note": "The show said Gui Santos suffered an injury in Sunday's game against the Clippers. He played 9 minutes.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 36.7,
+    "benefits": [
+     {
+      "player": "Brandin Podziemski",
+      "plus": 5.7,
+      "recent": 29.0,
+      "min": 34.7,
+      "dk": 36.0,
+      "salary": 6500
+     },
+     {
+      "player": "Yaxel Lendeborg",
+      "plus": 3.9,
+      "recent": 31.0,
+      "min": 34.9,
+      "dk": 41.1,
+      "salary": 7500
+     },
+     {
+      "player": "Stephen Curry",
+      "plus": 3.0,
+      "recent": 30.0,
+      "min": 33.0,
+      "dk": 48.9,
+      "salary": 7800
+     }
+    ]
+   },
+   {
     "team": "DAL",
     "outs": [
      {
@@ -829,68 +942,6 @@
       "min": 27.8,
       "dk": 20.7,
       "salary": 4600
-     }
-    ]
-   },
-   {
-    "team": "ATL",
-    "outs": [
-     {
-      "player": "Kingston Flemings",
-      "min": 23.0,
-      "note": "Ruled out tonight (league suspension).",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 23.0,
-    "benefits": [
-     {
-      "player": "C.J. McCollum",
-      "plus": 4.0,
-      "recent": 25.0,
-      "min": 29.0,
-      "dk": 36.5,
-      "salary": 6200
-     },
-     {
-      "player": "Dyson Daniels",
-      "plus": 3.6,
-      "recent": 29.0,
-      "min": 32.6,
-      "dk": 42.2,
-      "salary": 7000
-     },
-     {
-      "player": "Jalen Johnson",
-      "plus": 3.3,
-      "recent": 32.7,
-      "min": 36.0,
-      "dk": 62.1,
-      "salary": 9700
-     }
-    ]
-   },
-   {
-    "team": "SAC",
-    "outs": [
-     {
-      "player": "Keegan Murray",
-      "min": 27.0,
-      "note": "The show said Keegan Murray will miss about the next two weeks, and he has not played since Oct. 23.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 27.0,
-    "benefits": [
-     {
-      "player": "Malik Monk",
-      "plus": 4.3,
-      "recent": 11.7,
-      "min": 16.0,
-      "dk": 15.3,
-      "salary": 3900
      }
     ]
    }
@@ -981,32 +1032,32 @@
   ],
   "chalk": [
    {
+    "player": "Keaton Wagler",
+    "team": "LAC",
+    "own": 44.6,
+    "dk": 46.8,
+    "salary": 5600
+   },
+   {
     "player": "Stephen Curry",
     "team": "GSW",
-    "own": 42.3,
-    "dk": 45.0,
+    "own": 43.3,
+    "dk": 48.9,
     "salary": 7800
+   },
+   {
+    "player": "Obi Toppin",
+    "team": "IND",
+    "own": 39.9,
+    "dk": 48.5,
+    "salary": 4900
    },
    {
     "player": "Giannis Antetokounmpo",
     "team": "MIA",
-    "own": 42.2,
+    "own": 39.8,
     "dk": 57.3,
     "salary": 10700
-   },
-   {
-    "player": "Keaton Wagler",
-    "team": "LAC",
-    "own": 41.3,
-    "dk": 34.4,
-    "salary": 5600
-   },
-   {
-    "player": "Andrew Wiggins",
-    "team": "MIA",
-    "own": 40.2,
-    "dk": 26.7,
-    "salary": 4600
    }
   ],
   "leverage": [
@@ -1104,13 +1155,9 @@
    ]
   },
   "injuries": {
-   "report": "03:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_03_45PM.pdf",
-   "pending": [
-    "LAL",
-    "GSW",
-    "LAC"
-   ],
+   "report": "04:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_04_30PM.pdf",
+   "pending": [],
    "rows": [
     {
      "game": "OKC at CLE",
@@ -1708,6 +1755,58 @@
     {
      "game": "TOR at LAC",
      "time": "2026-11-03T03:00Z",
+     "team": "LAC",
+     "player": "Rui Hachimura",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 28.3,
+     "benefits": [
+      {
+       "player": "Keaton Wagler",
+       "min": 36.0,
+       "recent": 24.0
+      },
+      {
+       "player": "Darius Garland",
+       "min": 40.6,
+       "recent": 30.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "TOR at LAC",
+     "time": "2026-11-03T03:00Z",
+     "team": "LAC",
+     "player": "Derrick Jones Jr.",
+     "status": "Out",
+     "reason": "Right Knee Soreness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 27.3,
+     "benefits": [
+      {
+       "player": "Keaton Wagler",
+       "min": 36.0,
+       "recent": 24.0
+      },
+      {
+       "player": "Darius Garland",
+       "min": 40.6,
+       "recent": 30.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "TOR at LAC",
+     "time": "2026-11-03T03:00Z",
      "team": "TOR",
      "player": "Kawhi Leonard",
      "status": "Out",
@@ -1719,6 +1818,125 @@
      "min": 26.0,
      "benefits": [],
      "estimate": false
+    },
+    {
+     "game": "PHX at GSW",
+     "time": "2026-11-03T03:00Z",
+     "team": "GSW",
+     "player": "Al Horford",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 19.0,
+     "benefits": [
+      {
+       "player": "Brandin Podziemski",
+       "min": 34.7,
+       "recent": 29.0
+      },
+      {
+       "player": "Yaxel Lendeborg",
+       "min": 34.9,
+       "recent": 31.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "PHX at GSW",
+     "time": "2026-11-03T03:00Z",
+     "team": "GSW",
+     "player": "Gui Santos",
+     "status": "Out",
+     "reason": "Left Knee Tendinitis",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 17.7,
+     "benefits": [
+      {
+       "player": "Brandin Podziemski",
+       "min": 34.7,
+       "recent": 29.0
+      },
+      {
+       "player": "Yaxel Lendeborg",
+       "min": 34.9,
+       "recent": 31.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "TOR at LAC",
+     "time": "2026-11-03T03:00Z",
+     "team": "LAC",
+     "player": "Jordan Miller",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 9.3,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "TOR at LAC",
+     "time": "2026-11-03T03:00Z",
+     "team": "TOR",
+     "player": "Scottie Barnes",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 35.3,
+     "benefits": [
+      {
+       "player": "Collin Murray-Boyles",
+       "plus": 8.8,
+       "min": 28.7
+      },
+      {
+       "player": "Jamison Battle",
+       "plus": 7.5,
+       "min": 24.5
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "game": "PHX at GSW",
+     "time": "2026-11-03T03:00Z",
+     "team": "GSW",
+     "player": "Brandon Williams",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 18.7,
+     "benefits": [
+      {
+       "player": "De'Anthony Melton",
+       "plus": 5.0,
+       "min": 30.0
+      },
+      {
+       "player": "Stephen Curry",
+       "plus": 3.0,
+       "min": 36.0
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "TOR at LAC",
@@ -1740,6 +1958,21 @@
       }
      ],
      "estimate": true
+    },
+    {
+     "game": "MIA at LAL",
+     "time": "2026-11-03T03:00Z",
+     "team": "LAL",
+     "player": "Walker Kessler",
+     "status": "Available",
+     "reason": "Left Finger Splint",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:43 PM",
+     "min": 29.3,
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "MIA at LAL",
@@ -2115,8 +2348,43 @@
      "status": "Questionable"
     },
     {
+     "player": "Adou Thiero",
+     "team": "LAL",
+     "status": "Out"
+    },
+    {
+     "player": "Jimmy Butler III",
+     "team": "GSW",
+     "status": "Out"
+    },
+    {
+     "player": "Moses Moody",
+     "team": "GSW",
+     "status": "Out"
+    },
+    {
+     "player": "Kristaps Porzingis",
+     "team": "GSW",
+     "status": "Out"
+    },
+    {
      "player": "Nate Bittle",
      "team": "TOR",
+     "status": "Out"
+    },
+    {
+     "player": "Bradley Beal",
+     "team": "LAC",
+     "status": "Out"
+    },
+    {
+     "player": "Brandon Ingram",
+     "team": "LAC",
+     "status": "Out"
+    },
+    {
+     "player": "Yanic Konan Niederhauser",
+     "team": "LAC",
      "status": "Out"
     },
     {
@@ -12213,13 +12481,13 @@
   },
   {
    "team": "LAC",
-   "starters": "Darius Garland (32), Kris Dunn (30), Derrick Jones Jr. (29), Isaiah Jackson (22), Rui Hachimura (30)",
-   "bench": "Kobe Sanders (23), Keaton Wagler (25), Brook Lopez (22), Gradey Dick (14), Baba Miller (8), Cam Christie (7)",
+   "starters": "Darius Garland (32), Kris Dunn (30), Isaiah Jackson (22), Kobe Sanders (23), Keaton Wagler (25)",
+   "bench": "Brook Lopez (22), Gradey Dick (14), Baba Miller (8), Cam Christie (7)",
    "backup_c": "Brook Lopez",
    "coach": "Ty Lue",
    "notes": "Four players are hurt, three of them long-term: Brandon Ingram, Bradley Beal, Jordan Miller and Yanic Konan Niederhauser. The Clippers do not control their own pick this season. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). They have 13 back-to-backs, one of the lowest totals in the league. The NBA took five first-round picks from the Clippers and fined Steve Ballmer $30 million after the Kawhi investigation; the Clippers say they will challenge it.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Derrick Jones Jr., Rui Hachimura",
    "depth_through": "2026-11-01",
    "games": 6
   },
@@ -12418,12 +12686,12 @@
   {
    "team": "GSW",
    "starters": "Brandin Podziemski (34), Yaxel Lendeborg (32), Georges Niang (20), Draymond Green (29), Stephen Curry (28)",
-   "bench": "De'Anthony Melton (22), Will Richard (16), Al Horford (19), Brandon Williams (17), Gui Santos (20), Gary Payton II (13), Charles Bassey (9)",
-   "backup_c": "Al Horford",
+   "bench": "De'Anthony Melton (22), Will Richard (16), Brandon Williams (17), Gary Payton II (13), Charles Bassey (9)",
+   "backup_c": "Charles Bassey",
    "coach": "Steve Kerr",
    "notes": "Porzingis has an unclear illness and may miss opening night. Jimmy Butler (torn ACL) and Moses Moody (torn patellar tendon) are out early. Horford will not play back-to-backs. Golden State has 15 back-to-backs, and its fantasy playoff schedule is 4-3-4 for leagues ending March 28.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Al Horford, Gui Santos",
    "depth_through": "2026-11-01",
    "games": 7
   },
