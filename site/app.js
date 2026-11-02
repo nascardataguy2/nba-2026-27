@@ -377,19 +377,29 @@
     $('r4p-sub').textContent = 'Updated ' + up + ' \u00b7 ' + db.players.length + ' players \u00b7 ' + db.teams.length + ' teams';
   }
   // Tonight's slate in the header: game count, main-slate lock and late games.
+  // The slate file counts as current all day, and overnight (until noon ET) yesterday's file stays up
+  // until the new day's projections post, so the pages never fall back to an empty state after midnight.
+  function etNow(){ var d = new Date(); return {day: d.toLocaleDateString('en-CA', {timeZone:'America/New_York'}), hour: +d.toLocaleString('en-US', {timeZone:'America/New_York', hour:'numeric', hour12:false}) % 24}; }
+  function isCur(date){
+    var n = etNow(); if (date === n.day) return true;
+    var y = new Date(n.day + 'T12:00:00'); y.setDate(y.getDate() - 1);
+    return n.hour < 12 && date === y.toISOString().slice(0, 10);
+  }
+  function isStale(){ return !!(PJ && PJ.date !== etNow().day); }
   function hdSlate(){
     var el = $('r4p-hslate');
     if (!el || !PJ) return;
-    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
-    var gs = PJ.date === today ? (PJ.games || []) : [];
+    var gs = isCur(PJ.date) ? (PJ.games || []) : [];
     if (!gs.length){ el.hidden = true; return; }
     var main = gs.filter(function(g){ return g.slate === 'main'; });
     var late = gs.filter(function(g){ return g.slate === 'late'; });
     var lock = main.map(function(g){ return g.time; }).filter(Boolean).sort()[0];
-    var bits = ['<b>Tonight:</b> ' + gs.length + (gs.length === 1 ? ' game' : ' games')];
+    var dd = new Date(PJ.date + 'T12:00:00');
+    var bits = [(isStale() ? '<b>Last slate (' + esc(dd.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'})) + '):</b> ' : '<b>Tonight:</b> ') + gs.length + (gs.length === 1 ? ' game' : ' games')];
     if (main.length) bits.push('Main slate (' + main.length + ') locks <b>' + esc(gameTime(lock)) + '</b>');
     var llock = late.map(function(g){ return g.time; }).filter(Boolean).sort()[0];
     if (late.length) bits.push((lock && llock && llock < lock ? 'Early' : 'Late') + ' slate (' + late.length + ') locks <b>' + esc(gameTime(llock)) + '</b>');
+    if (isStale()) bits = [bits[0], 'Today\u2019s slate posts soon'];
     el.innerHTML = bits.join(' \u00b7 ');
     el.hidden = false;
   }
@@ -424,9 +434,8 @@
     PJ = d;
     setSub();
     hdSlate();
-    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
     SLATE = {}; OUTN = {};
-    if (d.date === today){
+    if (isCur(d.date)){
       (d.games || []).forEach(function(g){ SLATE[g.away] = 1; SLATE[g.home] = 1; });
       (d.out || []).forEach(function(o){ OUTN[nkey(o.player)] = 1; });
     }
@@ -795,7 +804,7 @@
     PJ.players.forEach(function(p){ if (p.salary && oMain(p)) t[p.team] = 1; });
     return (PJ.games || []).filter(function(g){ return t[g.home] || t[g.away]; });
   }
-  function oToday(){ return PJ && PJ.date === new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'}); }
+  function oToday(){ return !!(PJ && isCur(PJ.date)); }
   function oAssign(pl){
     var order = ['C','PG','SG','SF','PF','G','F','UTIL'], used = {}, res = {}, E = pl.map(function(p){ return oElig(p.pos); });
     function go(k){
@@ -1179,8 +1188,7 @@
   var SS = null;
   function starsRender(){
     if (!SS) return;
-    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
-    if (SS.date !== today){ $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.'; $('r4p-starsbox').innerHTML = ''; return; }
+    if (!isCur(SS.date)){ $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.'; $('r4p-starsbox').innerHTML = ''; return; }
     $('r4p-ssub').textContent = 'We watch ball. We know ball. Updated ' + (SS.updated || '') + '. ' + (SS.guide || '');
     function card(p){
       var tags = (p['new'] ? '<span class="tn">New today</span>' : '') + (p.start ? '<span class="role starter">Starter</span>' : '') + (p.q ? '<span class="role out">Questionable</span>' : '');
@@ -1256,9 +1264,8 @@
     $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.';
   });
   fetchFirst(CSOURCES, false).then(function(d){
-    var today = new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'});
     CTX = {};
-    if (d.date === today) Object.keys(d.notes || {}).forEach(function(n){ CTX[nkey(n)] = d.notes[n]; });
+    if (isCur(d.date)) Object.keys(d.notes || {}).forEach(function(n){ CTX[nkey(n)] = d.notes[n]; });
     proj();
   }).catch(function(){});
   fetchFirst(PSOURCES, false).then(function(d){ projInit(d); starsRender(); research(); optPool(); }).catch(function(){
