@@ -2,7 +2,7 @@
  "updated": "2026-11-01",
  "brief": {
   "date": "2026-11-01",
-  "updated": "7:48 PM ET",
+  "updated": "8:55 PM ET",
   "games": 3,
   "pending": [],
   "first_report": "7:47 AM",
@@ -84,14 +84,13 @@
     "home": "LAL",
     "time": "2026-11-02T02:00Z",
     "slate": "main",
-    "ou": 224.5,
+    "ou": 223.5,
     "fav": "LAL",
-    "line": 2.5,
-    "away_pts": 111.0,
+    "line": 3.5,
+    "away_pts": 110.0,
     "home_pts": 113.5,
     "tags": [
-     "Highest total",
-     "Close game"
+     "Highest total"
     ],
     "teams": {
      "TOR": {
@@ -99,6 +98,10 @@
        {
         "player": "Kawhi Leonard",
         "min": 26.0
+       },
+       {
+        "player": "Jakob Poeltl",
+        "min": 17.3
        }
       ],
       "q": []
@@ -113,10 +116,18 @@
       "q": []
      }
     },
-    "key": "Luka Doncic has the top projection in this game at 59.7 DK points."
+    "key": "Kawhi Leonard and Jakob Poeltl are out, so Ja'Kobe Walter and Jamal Shead should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "Jakob Poeltl",
+    "team": "TOR",
+    "status": "Out",
+    "was": "",
+    "why": "Left Shoulder Bursitis",
+    "time": "8:56 PM"
+   },
    {
     "player": "Gui Santos",
     "team": "GSW",
@@ -185,6 +196,51 @@
       "min": 18.6,
       "dk": 25.4,
       "salary": 4400
+     }
+    ]
+   },
+   {
+    "team": "TOR",
+    "outs": [
+     {
+      "player": "Kawhi Leonard",
+      "min": 26.0,
+      "note": "The show said Kawhi Leonard will miss multiple weeks because of swelling in his knee, and he has not played since Oct. 23.",
+      "new": false
+     },
+     {
+      "player": "Jakob Poeltl",
+      "min": 17.3,
+      "note": "Ruled out tonight (left shoulder bursitis).",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 43.3,
+    "benefits": [
+     {
+      "player": "Ja'Kobe Walter",
+      "plus": 5.6,
+      "recent": 27.0,
+      "min": 32.6,
+      "dk": 27.0,
+      "salary": 4900
+     },
+     {
+      "player": "Jamal Shead",
+      "plus": 4.6,
+      "recent": 22.3,
+      "min": 26.9,
+      "dk": 22.8,
+      "salary": 4300
+     },
+     {
+      "player": "Scottie Barnes",
+      "plus": 4.3,
+      "recent": 32.7,
+      "min": 37.0,
+      "dk": 49.5,
+      "salary": 8700
      }
     ]
    },
@@ -294,40 +350,40 @@
     "n": 2
    },
    {
-    "player": "Jakob Poeltl",
+    "player": "Ja'Kobe Walter",
     "team": "TOR",
-    "kind": "down",
-    "last": 17.3,
-    "before": 24.5,
+    "kind": "up",
+    "last": 30.3,
+    "before": 23.5,
     "n": 2
    }
   ],
   "chalk": [
    {
-    "player": "Brandin Podziemski",
-    "team": "GSW",
-    "own": 37.6,
-    "dk": 42.7,
-    "salary": 6600
-   },
-   {
     "player": "Franz Wagner",
     "team": "ORL",
-    "own": 37.3,
+    "own": 37.2,
     "dk": 47.4,
     "salary": 8300
    },
    {
+    "player": "Brandin Podziemski",
+    "team": "GSW",
+    "own": 37.2,
+    "dk": 42.7,
+    "salary": 6600
+   },
+   {
     "player": "Keaton Wagler",
     "team": "LAC",
-    "own": 37.1,
+    "own": 37.0,
     "dk": 34.4,
     "salary": 5400
    },
    {
     "player": "Jayson Tatum",
     "team": "BOS",
-    "own": 36.5,
+    "own": 34.9,
     "dk": 55.8,
     "salary": 10100
    }
@@ -336,23 +392,23 @@
    {
     "player": "Georges Niang",
     "team": "GSW",
-    "own": 6.6,
+    "own": 6.0,
     "dk": 22.7,
     "salary": 4000
    },
    {
-    "player": "Payton Pritchard",
-    "team": "BOS",
-    "own": 8.6,
-    "dk": 30.4,
-    "salary": 6000
+    "player": "Jamal Shead",
+    "team": "TOR",
+    "own": 3.5,
+    "dk": 22.8,
+    "salary": 4300
    },
    {
-    "player": "Derrick Jones Jr.",
+    "player": "Kris Dunn",
     "team": "LAC",
-    "own": 4.4,
-    "dk": 22.9,
-    "salary": 4600
+    "own": 8.4,
+    "dk": 25.3,
+    "salary": 4900
    }
   ],
   "last": {
@@ -444,8 +500,8 @@
    ]
   },
   "injuries": {
-   "report": "07:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_07_45PM.pdf",
+   "report": "08:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-01_08_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -546,6 +602,32 @@
      "estimate": false
     },
     {
+     "game": "TOR at LAL",
+     "time": "2026-11-02T02:00Z",
+     "team": "TOR",
+     "player": "Jakob Poeltl",
+     "status": "Out",
+     "reason": "Left Shoulder Bursitis",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "8:56 PM",
+     "min": 17.3,
+     "benefits": [
+      {
+       "player": "Ja'Kobe Walter",
+       "min": 32.6,
+       "recent": 27.0
+      },
+      {
+       "player": "Jamal Shead",
+       "min": 26.9,
+       "recent": 22.3
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "BOS at ORL",
      "time": "2026-11-01T20:30Z",
      "team": "ORL",
@@ -599,7 +681,18 @@
      "known": true,
      "changed_at": "",
      "min": 26.0,
-     "benefits": [],
+     "benefits": [
+      {
+       "player": "Ja'Kobe Walter",
+       "min": 32.6,
+       "recent": 27.0
+      },
+      {
+       "player": "Jamal Shead",
+       "min": 26.9,
+       "recent": 22.3
+      }
+     ],
      "estimate": false
     }
    ],
@@ -10470,13 +10563,13 @@
   },
   {
    "team": "TOR",
-   "starters": "RJ Barrett (32), Scottie Barnes (32), Immanuel Quickley (30), Ja'Kobe Walter (28), Jakob Poeltl (20)",
-   "bench": "Jamal Shead (21), Collin Murray-Boyles (19), Jamison Battle (15), Allen Graves (14), Trayce Jackson-Davis (8), Kyle Anderson (7)",
+   "starters": "RJ Barrett (32), Scottie Barnes (32), Immanuel Quickley (30), Ja'Kobe Walter (28), Jamal Shead (21)",
+   "bench": "Collin Murray-Boyles (19), Jamison Battle (15), Allen Graves (14), Trayce Jackson-Davis (8), Kyle Anderson (7)",
    "backup_c": "Collin Murray-Boyles or Trayce Jackson-Davis",
    "coach": "Darko Rajakovic",
    "notes": "Kawhi arrived by trade from the Clippers. Sandro Mamukelashvili is gone, which opens backup center minutes for Murray-Boyles.",
    "source": "LO-1015",
-   "out": "Kawhi Leonard",
+   "out": "Jakob Poeltl, Kawhi Leonard",
    "depth_through": "2026-10-30",
    "games": 5
   },

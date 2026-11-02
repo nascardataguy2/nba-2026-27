@@ -4,16 +4,144 @@
   "team": "LAL",
   "base_min": 36.0,
   "min": 36.9,
-  "dk": 59.7,
-  "salary": 12300
+  "dk": 59.3,
+  "salary": 13400
  },
  "scottie barnes": {
   "player": "Scottie Barnes",
   "team": "TOR",
   "base_min": 33.0,
-  "min": 32.8,
-  "dk": 44.1,
-  "salary": 8700
+  "min": 37.0,
+  "dk": 49.5,
+  "salary": 10000
+ },
+ "austin reaves": {
+  "player": "Austin Reaves",
+  "team": "LAL",
+  "base_min": 35.0,
+  "min": 35.4,
+  "dk": 39.1,
+  "salary": 10600
+ },
+ "rj barrett": {
+  "player": "RJ Barrett",
+  "team": "TOR",
+  "base_min": 32.0,
+  "min": 36.5,
+  "dk": 41.9,
+  "salary": 8600
+ },
+ "immanuel quickley": {
+  "player": "Immanuel Quickley",
+  "team": "TOR",
+  "base_min": 30.0,
+  "min": 34.7,
+  "dk": 39.9,
+  "salary": 7800
+ },
+ "walker kessler": {
+  "player": "Walker Kessler",
+  "team": "LAL",
+  "base_min": 30.0,
+  "min": 30.0,
+  "dk": 34.0,
+  "salary": 9200
+ },
+ "jakob poeltl": {
+  "player": "Jakob Poeltl",
+  "team": "TOR",
+  "base_min": 25.0,
+  "min": 0.0,
+  "dk": 0.0,
+  "salary": 3800
+ },
+ "quentin grimes": {
+  "player": "Quentin Grimes",
+  "team": "LAL",
+  "base_min": 28.0,
+  "min": 27.8,
+  "dk": 23.4,
+  "salary": 6400
+ },
+ "jamal shead": {
+  "player": "Jamal Shead",
+  "team": "TOR",
+  "base_min": 26.0,
+  "min": 26.9,
+  "dk": 22.8,
+  "salary": 4400
+ },
+ "jakobe walter": {
+  "player": "Ja'Kobe Walter",
+  "team": "TOR",
+  "base_min": 27.0,
+  "min": 32.6,
+  "dk": 27.0,
+  "salary": 5600
+ },
+ "collin murray boyles": {
+  "player": "Collin Murray-Boyles",
+  "team": "TOR",
+  "base_min": 21.0,
+  "min": 22.4,
+  "dk": 21.9,
+  "salary": 5400
+ },
+ "collin sexton": {
+  "player": "Collin Sexton",
+  "team": "LAL",
+  "base_min": 18.0,
+  "min": 17.4,
+  "dk": 18.1,
+  "salary": 5000
+ },
+ "sandro mamukelashvili": {
+  "player": "Sandro Mamukelashvili",
+  "team": "LAL",
+  "base_min": 19.0,
+  "min": 22.7,
+  "dk": 22.0,
+  "salary": 5800
+ },
+ "jake laravia": {
+  "player": "Jake LaRavia",
+  "team": "LAL",
+  "base_min": 23.0,
+  "min": 25.8,
+  "dk": 19.0,
+  "salary": 4000
+ },
+ "matisse thybulle": {
+  "player": "Matisse Thybulle",
+  "team": "LAL",
+  "base_min": 21.0,
+  "min": 24.2,
+  "dk": 18.7,
+  "salary": 4600
+ },
+ "allen graves": {
+  "player": "Allen Graves",
+  "team": "TOR",
+  "base_min": 15.0,
+  "min": 17.3,
+  "dk": 16.1,
+  "salary": 3200
+ },
+ "kevon looney": {
+  "player": "Kevon Looney",
+  "team": "LAL",
+  "base_min": 13.0,
+  "min": 7.8,
+  "dk": 7.4,
+  "salary": 1000
+ },
+ "jamison battle": {
+  "player": "Jamison Battle",
+  "team": "TOR",
+  "base_min": 13.0,
+  "min": 17.5,
+  "dk": 12.6,
+  "salary": 2600
  },
  "yaxel lendeborg": {
   "player": "Yaxel Lendeborg",
@@ -31,30 +159,6 @@
   "dk": 37.5,
   "salary": 8200
  },
- "austin reaves": {
-  "player": "Austin Reaves",
-  "team": "LAL",
-  "base_min": 35.0,
-  "min": 35.4,
-  "dk": 38.9,
-  "salary": 8900
- },
- "rj barrett": {
-  "player": "RJ Barrett",
-  "team": "TOR",
-  "base_min": 32.0,
-  "min": 32.4,
-  "dk": 37.1,
-  "salary": 7300
- },
- "immanuel quickley": {
-  "player": "Immanuel Quickley",
-  "team": "TOR",
-  "base_min": 30.0,
-  "min": 30.9,
-  "dk": 35.6,
-  "salary": 6800
- },
  "brandin podziemski": {
   "player": "Brandin Podziemski",
   "team": "GSW",
@@ -71,14 +175,6 @@
   "dk": 34.4,
   "salary": 5400
  },
- "walker kessler": {
-  "player": "Walker Kessler",
-  "team": "LAL",
-  "base_min": 30.0,
-  "min": 30.0,
-  "dk": 33.8,
-  "salary": 7800
- },
  "deanthony melton": {
   "player": "De'Anthony Melton",
   "team": "GSW",
@@ -94,30 +190,6 @@
   "min": 18.6,
   "dk": 25.4,
   "salary": 4400
- },
- "jakob poeltl": {
-  "player": "Jakob Poeltl",
-  "team": "TOR",
-  "base_min": 25.0,
-  "min": 20.0,
-  "dk": 21.3,
-  "salary": 4100
- },
- "quentin grimes": {
-  "player": "Quentin Grimes",
-  "team": "LAL",
-  "base_min": 28.0,
-  "min": 27.8,
-  "dk": 23.4,
-  "salary": 5300
- },
- "jamal shead": {
-  "player": "Jamal Shead",
-  "team": "TOR",
-  "base_min": 26.0,
-  "min": 23.6,
-  "dk": 19.9,
-  "salary": 4300
  },
  "isaiah jackson": {
   "player": "Isaiah Jackson",
@@ -151,14 +223,6 @@
   "dk": 25.3,
   "salary": 4900
  },
- "jakobe walter": {
-  "player": "Ja'Kobe Walter",
-  "team": "TOR",
-  "base_min": 27.0,
-  "min": 29.2,
-  "dk": 24.1,
-  "salary": 4900
- },
  "derrick jones": {
   "player": "Derrick Jones Jr.",
   "team": "LAC",
@@ -166,14 +230,6 @@
   "min": 27.3,
   "dk": 22.9,
   "salary": 4600
- },
- "collin murray boyles": {
-  "player": "Collin Murray-Boyles",
-  "team": "TOR",
-  "base_min": 21.0,
-  "min": 19.7,
-  "dk": 19.3,
-  "salary": 4800
  },
  "gui santos": {
   "player": "Gui Santos",
@@ -191,22 +247,6 @@
   "dk": 22.7,
   "salary": 4000
  },
- "collin sexton": {
-  "player": "Collin Sexton",
-  "team": "LAL",
-  "base_min": 18.0,
-  "min": 17.4,
-  "dk": 18.1,
-  "salary": 4600
- },
- "sandro mamukelashvili": {
-  "player": "Sandro Mamukelashvili",
-  "team": "LAL",
-  "base_min": 19.0,
-  "min": 22.7,
-  "dk": 22.0,
-  "salary": 5000
- },
  "al horford": {
   "player": "Al Horford",
   "team": "GSW",
@@ -222,14 +262,6 @@
   "min": 22.4,
   "dk": 18.7,
   "salary": 4100
- },
- "jake laravia": {
-  "player": "Jake LaRavia",
-  "team": "LAL",
-  "base_min": 23.0,
-  "min": 25.8,
-  "dk": 19.3,
-  "salary": 4200
  },
  "gary payton": {
   "player": "Gary Payton",
@@ -247,44 +279,12 @@
   "dk": 14.8,
   "salary": 3500
  },
- "matisse thybulle": {
-  "player": "Matisse Thybulle",
-  "team": "LAL",
-  "base_min": 21.0,
-  "min": 24.2,
-  "dk": 18.7,
-  "salary": 4400
- },
  "will richard": {
   "player": "Will Richard",
   "team": "GSW",
   "base_min": 18.0,
   "min": 16.5,
   "dk": 13.9,
-  "salary": 3400
- },
- "allen graves": {
-  "player": "Allen Graves",
-  "team": "TOR",
-  "base_min": 15.0,
-  "min": 15.4,
-  "dk": 14.3,
-  "salary": 3600
- },
- "kevon looney": {
-  "player": "Kevon Looney",
-  "team": "LAL",
-  "base_min": 13.0,
-  "min": 7.8,
-  "dk": 7.4,
-  "salary": 3000
- },
- "jamison battle": {
-  "player": "Jamison Battle",
-  "team": "TOR",
-  "base_min": 13.0,
-  "min": 15.8,
-  "dk": 11.4,
   "salary": 3400
  },
  "baba miller": {
