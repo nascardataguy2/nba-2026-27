@@ -1,29 +1,29 @@
 {
-"through": "2026-10-31",
-"nights": 12,
+"through": "2026-11-01",
+"nights": 13,
 "players": [
 {
 "player": "Luka Doncic",
 "team": "LAL",
 "pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 35.8,
-"dk": 60.5,
-"pts": 36.2,
-"reb": 6.8,
-"ast": 7.6,
-"stl": 1.2,
+"gp": 6,
+"gs": 6,
+"min": 35.7,
+"dk": 64.9,
+"pts": 37.7,
+"reb": 8.2,
+"ast": 7.3,
+"stl": 1.8,
 "blk": 0.8,
-"to": 5.2,
-"tpm": 5.4,
-"fppm": 1.69,
-"l3_dk": 70.0,
-"l3_min": 37.3,
+"to": 5.5,
+"tpm": 5.8,
+"fppm": 1.82,
+"l3_dk": 70.8,
+"l3_min": 36.3,
 "last": {
-"date": "2026-10-30",
-"min": 37.0,
-"dk": 60.75
+"date": "2026-11-01",
+"min": 35.0,
+"dk": 86.75
 }
 },
 {
@@ -150,24 +150,24 @@
 "player": "Jayson Tatum",
 "team": "BOS",
 "pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 36.0,
-"dk": 49.4,
-"pts": 27.6,
-"reb": 6.4,
-"ast": 7.8,
-"stl": 0.8,
-"blk": 0.2,
-"to": 2.2,
-"tpm": 1.8,
-"fppm": 1.37,
-"l3_dk": 49.2,
-"l3_min": 35.0,
+"gp": 6,
+"gs": 6,
+"min": 35.7,
+"dk": 49.5,
+"pts": 28.3,
+"reb": 6.0,
+"ast": 7.7,
+"stl": 0.7,
+"blk": 0.5,
+"to": 2.5,
+"tpm": 1.7,
+"fppm": 1.39,
+"l3_dk": 51.8,
+"l3_min": 37.0,
 "last": {
-"date": "2026-10-30",
-"min": 35.0,
-"dk": 44.25
+"date": "2026-11-01",
+"min": 34.0,
+"dk": 50.0
 }
 },
 {
@@ -339,6 +339,30 @@
 }
 },
 {
+"player": "Scottie Barnes",
+"team": "TOR",
+"pos": "F",
+"gp": 6,
+"gs": 6,
+"min": 32.8,
+"dk": 44.5,
+"pts": 24.8,
+"reb": 6.7,
+"ast": 4.5,
+"stl": 2.2,
+"blk": 0.8,
+"to": 3.8,
+"tpm": 0.5,
+"fppm": 1.36,
+"l3_dk": 51.1,
+"l3_min": 35.3,
+"last": {
+"date": "2026-11-01",
+"min": 36.0,
+"dk": 45.5
+}
+},
+{
 "player": "Stephen Curry",
 "team": "GSW",
 "pos": "G",
@@ -360,30 +384,6 @@
 "date": "2026-10-30",
 "min": 31.0,
 "dk": 52.0
-}
-},
-{
-"player": "Scottie Barnes",
-"team": "TOR",
-"pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 32.2,
-"dk": 44.3,
-"pts": 24.0,
-"reb": 6.8,
-"ast": 4.4,
-"stl": 2.2,
-"blk": 1.0,
-"to": 3.6,
-"tpm": 0.6,
-"fppm": 1.38,
-"l3_dk": 41.5,
-"l3_min": 32.7,
-"last": {
-"date": "2026-10-30",
-"min": 39.0,
-"dk": 57.25
 }
 },
 {
@@ -603,6 +603,30 @@
 }
 },
 {
+"player": "Paul George",
+"team": "BOS",
+"pos": "F",
+"gp": 6,
+"gs": 6,
+"min": 31.0,
+"dk": 41.2,
+"pts": 20.7,
+"reb": 6.0,
+"ast": 5.0,
+"stl": 2.3,
+"blk": 0.3,
+"to": 2.8,
+"tpm": 3.2,
+"fppm": 1.33,
+"l3_dk": 43.2,
+"l3_min": 32.0,
+"last": {
+"date": "2026-11-01",
+"min": 33.0,
+"dk": 44.0
+}
+},
+{
 "player": "LeBron James",
 "team": "PHI",
 "pos": "F",
@@ -675,51 +699,27 @@
 }
 },
 {
-"player": "Paul George",
-"team": "BOS",
-"pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 30.6,
-"dk": 40.6,
-"pts": 21.4,
-"reb": 6.0,
-"ast": 4.4,
-"stl": 2.4,
-"blk": 0.0,
-"to": 2.6,
-"tpm": 3.2,
-"fppm": 1.33,
-"l3_dk": 36.8,
-"l3_min": 29.3,
-"last": {
-"date": "2026-10-30",
-"min": 27.0,
-"dk": 43.5
-}
-},
-{
 "player": "Franz Wagner",
 "team": "ORL",
 "pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 34.4,
-"dk": 40.6,
-"pts": 20.8,
-"reb": 6.8,
-"ast": 7.0,
-"stl": 1.0,
+"gp": 6,
+"gs": 6,
+"min": 35.3,
+"dk": 40.5,
+"pts": 19.7,
+"reb": 6.7,
+"ast": 7.8,
+"stl": 0.8,
 "blk": 0.0,
-"to": 4.6,
+"to": 4.3,
 "tpm": 1.0,
-"fppm": 1.18,
-"l3_dk": 44.0,
-"l3_min": 36.7,
+"fppm": 1.15,
+"l3_dk": 39.8,
+"l3_min": 37.7,
 "last": {
-"date": "2026-10-30",
-"min": 39.0,
-"dk": 51.25
+"date": "2026-11-01",
+"min": 40.0,
+"dk": 40.0
 }
 },
 {
@@ -795,6 +795,30 @@
 }
 },
 {
+"player": "Yaxel Lendeborg",
+"team": "GSW",
+"pos": "F",
+"gp": 7,
+"gs": 7,
+"min": 32.3,
+"dk": 39.5,
+"pts": 22.3,
+"reb": 7.3,
+"ast": 3.7,
+"stl": 0.9,
+"blk": 0.4,
+"to": 3.6,
+"tpm": 2.6,
+"fppm": 1.22,
+"l3_dk": 33.5,
+"l3_min": 31.0,
+"last": {
+"date": "2026-11-01",
+"min": 34.0,
+"dk": 55.0
+}
+},
+{
 "player": "Evan Mobley",
 "team": "CLE",
 "pos": "C",
@@ -843,30 +867,6 @@
 }
 },
 {
-"player": "Pascal Siakam",
-"team": "IND",
-"pos": "F",
-"gp": 6,
-"gs": 6,
-"min": 31.7,
-"dk": 39.0,
-"pts": 22.2,
-"reb": 7.8,
-"ast": 3.8,
-"stl": 0.8,
-"blk": 0.0,
-"to": 3.0,
-"tpm": 1.3,
-"fppm": 1.23,
-"l3_dk": 39.8,
-"l3_min": 33.3,
-"last": {
-"date": "2026-10-30",
-"min": 29.0,
-"dk": 27.75
-}
-},
-{
 "player": "Dejounte Murray",
 "team": "NOP",
 "pos": "G",
@@ -894,48 +894,48 @@
 "player": "Julius Randle",
 "team": "BKN",
 "pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 33.2,
-"dk": 38.6,
-"pts": 21.0,
-"reb": 7.6,
-"ast": 5.2,
-"stl": 0.6,
+"gp": 6,
+"gs": 6,
+"min": 33.8,
+"dk": 38.7,
+"pts": 20.8,
+"reb": 7.2,
+"ast": 5.3,
+"stl": 0.8,
 "blk": 0.2,
 "to": 4.2,
-"tpm": 1.6,
-"fppm": 1.16,
-"l3_dk": 33.7,
-"l3_min": 31.0,
+"tpm": 2.0,
+"fppm": 1.14,
+"l3_dk": 36.8,
+"l3_min": 35.3,
 "last": {
-"date": "2026-10-30",
-"min": 25.0,
-"dk": 28.5
+"date": "2026-11-01",
+"min": 37.0,
+"dk": 39.25
 }
 },
 {
-"player": "Austin Reaves",
-"team": "LAL",
-"pos": "G",
-"gp": 6,
-"gs": 6,
-"min": 35.5,
-"dk": 38.6,
-"pts": 23.8,
-"reb": 3.5,
-"ast": 5.3,
-"stl": 1.2,
-"blk": 0.7,
-"to": 4.8,
-"tpm": 2.3,
-"fppm": 1.09,
-"l3_dk": 33.7,
-"l3_min": 35.7,
+"player": "Pascal Siakam",
+"team": "IND",
+"pos": "F",
+"gp": 7,
+"gs": 7,
+"min": 32.3,
+"dk": 37.9,
+"pts": 21.4,
+"reb": 7.4,
+"ast": 4.0,
+"stl": 0.9,
+"blk": 0.0,
+"to": 3.0,
+"tpm": 1.1,
+"fppm": 1.17,
+"l3_dk": 35.1,
+"l3_min": 33.0,
 "last": {
-"date": "2026-10-30",
-"min": 37.0,
-"dk": 34.0
+"date": "2026-11-01",
+"min": 36.0,
+"dk": 31.25
 }
 },
 {
@@ -963,6 +963,30 @@
 }
 },
 {
+"player": "Michael Porter Jr.",
+"team": "BKN",
+"pos": "F",
+"gp": 6,
+"gs": 6,
+"min": 31.7,
+"dk": 37.4,
+"pts": 21.2,
+"reb": 7.3,
+"ast": 1.3,
+"stl": 1.7,
+"blk": 0.5,
+"to": 2.3,
+"tpm": 3.3,
+"fppm": 1.18,
+"l3_dk": 39.3,
+"l3_min": 34.0,
+"last": {
+"date": "2026-11-01",
+"min": 36.0,
+"dk": 40.25
+}
+},
+{
 "player": "Tyler Herro",
 "team": "MIL",
 "pos": "G",
@@ -984,6 +1008,30 @@
 "date": "2026-10-31",
 "min": 27.0,
 "dk": 24.75
+}
+},
+{
+"player": "Austin Reaves",
+"team": "LAL",
+"pos": "G",
+"gp": 7,
+"gs": 7,
+"min": 36.0,
+"dk": 37.1,
+"pts": 23.1,
+"reb": 3.4,
+"ast": 5.1,
+"stl": 1.0,
+"blk": 0.6,
+"to": 4.6,
+"tpm": 2.3,
+"fppm": 1.03,
+"l3_dk": 28.6,
+"l3_min": 35.7,
+"last": {
+"date": "2026-11-01",
+"min": 39.0,
+"dk": 28.25
 }
 },
 {
@@ -1056,54 +1104,6 @@
 "date": "2026-10-30",
 "min": 35.0,
 "dk": 55.0
-}
-},
-{
-"player": "Michael Porter Jr.",
-"team": "BKN",
-"pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 30.8,
-"dk": 36.9,
-"pts": 20.8,
-"reb": 7.0,
-"ast": 1.0,
-"stl": 1.8,
-"blk": 0.6,
-"to": 2.0,
-"tpm": 3.4,
-"fppm": 1.2,
-"l3_dk": 30.4,
-"l3_min": 29.0,
-"last": {
-"date": "2026-10-30",
-"min": 26.0,
-"dk": 25.75
-}
-},
-{
-"player": "Yaxel Lendeborg",
-"team": "GSW",
-"pos": "F",
-"gp": 6,
-"gs": 6,
-"min": 32.0,
-"dk": 36.9,
-"pts": 19.8,
-"reb": 7.8,
-"ast": 3.3,
-"stl": 0.8,
-"blk": 0.5,
-"to": 3.8,
-"tpm": 2.0,
-"fppm": 1.15,
-"l3_dk": 34.3,
-"l3_min": 30.0,
-"last": {
-"date": "2026-10-30",
-"min": 24.0,
-"dk": 5.25
 }
 },
 {
@@ -1203,6 +1203,54 @@
 }
 },
 {
+"player": "RJ Barrett",
+"team": "TOR",
+"pos": "F",
+"gp": 6,
+"gs": 6,
+"min": 31.7,
+"dk": 36.0,
+"pts": 19.8,
+"reb": 6.2,
+"ast": 4.2,
+"stl": 0.7,
+"blk": 0.3,
+"to": 1.7,
+"tpm": 1.5,
+"fppm": 1.14,
+"l3_dk": 37.7,
+"l3_min": 32.7,
+"last": {
+"date": "2026-11-01",
+"min": 32.0,
+"dk": 44.0
+}
+},
+{
+"player": "Walker Kessler",
+"team": "LAL",
+"pos": "C",
+"gp": 7,
+"gs": 7,
+"min": 30.6,
+"dk": 35.7,
+"pts": 14.3,
+"reb": 9.9,
+"ast": 1.1,
+"stl": 1.0,
+"blk": 2.9,
+"to": 1.6,
+"tpm": 0.0,
+"fppm": 1.17,
+"l3_dk": 38.2,
+"l3_min": 29.3,
+"last": {
+"date": "2026-11-01",
+"min": 31.0,
+"dk": 44.75
+}
+},
+{
 "player": "Jabari Smith Jr.",
 "team": "HOU",
 "pos": "F",
@@ -1224,6 +1272,30 @@
 "date": "2026-10-31",
 "min": 33.0,
 "dk": 53.25
+}
+},
+{
+"player": "Brandin Podziemski",
+"team": "GSW",
+"pos": "G",
+"gp": 5,
+"gs": 5,
+"min": 33.6,
+"dk": 35.0,
+"pts": 16.4,
+"reb": 5.4,
+"ast": 5.6,
+"stl": 1.2,
+"blk": 0.4,
+"to": 1.6,
+"tpm": 2.2,
+"fppm": 1.04,
+"l3_dk": 35.2,
+"l3_min": 34.0,
+"last": {
+"date": "2026-11-01",
+"min": 37.0,
+"dk": 39.5
 }
 },
 {
@@ -1275,30 +1347,6 @@
 }
 },
 {
-"player": "RJ Barrett",
-"team": "TOR",
-"pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 31.6,
-"dk": 34.4,
-"pts": 19.4,
-"reb": 5.4,
-"ast": 4.0,
-"stl": 0.8,
-"blk": 0.4,
-"to": 1.4,
-"tpm": 1.0,
-"fppm": 1.09,
-"l3_dk": 33.3,
-"l3_min": 32.7,
-"last": {
-"date": "2026-10-30",
-"min": 34.0,
-"dk": 20.25
-}
-},
-{
 "player": "Zach LaVine",
 "team": "SAC",
 "pos": "G",
@@ -1320,30 +1368,6 @@
 "date": "2026-10-31",
 "min": 21.0,
 "dk": 11.5
-}
-},
-{
-"player": "Walker Kessler",
-"team": "LAL",
-"pos": "C",
-"gp": 6,
-"gs": 6,
-"min": 30.5,
-"dk": 34.2,
-"pts": 14.0,
-"reb": 9.0,
-"ast": 1.2,
-"stl": 1.0,
-"blk": 2.8,
-"to": 1.5,
-"tpm": 0.0,
-"fppm": 1.12,
-"l3_dk": 32.3,
-"l3_min": 30.0,
-"last": {
-"date": "2026-10-30",
-"min": 31.0,
-"dk": 40.25
 }
 },
 {
@@ -1395,99 +1419,51 @@
 }
 },
 {
-"player": "Brandin Podziemski",
-"team": "GSW",
+"player": "Andrew Nembhard",
+"team": "IND",
 "pos": "G",
-"gp": 4,
-"gs": 4,
-"min": 32.8,
-"dk": 33.9,
-"pts": 16.2,
-"reb": 4.8,
-"ast": 5.0,
-"stl": 1.5,
-"blk": 0.5,
-"to": 1.8,
-"tpm": 2.2,
-"fppm": 1.04,
-"l3_dk": 34.6,
-"l3_min": 32.7,
+"gp": 6,
+"gs": 6,
+"min": 32.7,
+"dk": 33.8,
+"pts": 18.5,
+"reb": 2.2,
+"ast": 7.3,
+"stl": 0.7,
+"blk": 0.0,
+"to": 2.5,
+"tpm": 2.5,
+"fppm": 1.03,
+"l3_dk": 39.2,
+"l3_min": 33.3,
 "last": {
-"date": "2026-10-30",
-"min": 33.0,
-"dk": 43.75
+"date": "2026-11-01",
+"min": 35.0,
+"dk": 35.25
 }
 },
 {
 "player": "Immanuel Quickley",
 "team": "TOR",
 "pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 30.2,
-"dk": 33.8,
-"pts": 17.4,
-"reb": 3.4,
-"ast": 6.0,
+"gp": 6,
+"gs": 6,
+"min": 30.7,
+"dk": 33.6,
+"pts": 16.5,
+"reb": 3.8,
+"ast": 6.2,
 "stl": 1.0,
 "blk": 0.0,
 "to": 0.8,
 "tpm": 3.0,
-"fppm": 1.12,
-"l3_dk": 34.2,
-"l3_min": 31.3,
+"fppm": 1.1,
+"l3_dk": 35.8,
+"l3_min": 33.0,
 "last": {
-"date": "2026-10-30",
-"min": 37.0,
-"dk": 38.5
-}
-},
-{
-"player": "Darius Garland",
-"team": "LAC",
-"pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 32.4,
-"dk": 33.8,
-"pts": 22.0,
-"reb": 1.6,
-"ast": 6.2,
-"stl": 0.8,
-"blk": 0.0,
-"to": 5.6,
-"tpm": 2.8,
-"fppm": 1.04,
-"l3_dk": 31.8,
-"l3_min": 31.0,
-"last": {
-"date": "2026-10-30",
-"min": 31.0,
-"dk": 35.5
-}
-},
-{
-"player": "Andrew Nembhard",
-"team": "IND",
-"pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 32.2,
-"dk": 33.5,
-"pts": 17.6,
-"reb": 2.0,
-"ast": 8.0,
-"stl": 0.6,
-"blk": 0.0,
-"to": 2.4,
-"tpm": 2.2,
-"fppm": 1.04,
-"l3_dk": 34.8,
-"l3_min": 31.7,
-"last": {
-"date": "2026-10-30",
-"min": 30.0,
-"dk": 39.5
+"date": "2026-11-01",
+"min": 33.0,
+"dk": 33.0
 }
 },
 {
@@ -1539,6 +1515,30 @@
 }
 },
 {
+"player": "Anthony Black",
+"team": "ORL",
+"pos": "G",
+"gp": 4,
+"gs": 3,
+"min": 28.0,
+"dk": 33.4,
+"pts": 16.5,
+"reb": 4.8,
+"ast": 4.8,
+"stl": 1.2,
+"blk": 0.5,
+"to": 2.2,
+"tpm": 2.2,
+"fppm": 1.19,
+"l3_dk": 32.7,
+"l3_min": 28.7,
+"last": {
+"date": "2026-11-01",
+"min": 33.0,
+"dk": 40.0
+}
+},
+{
 "player": "Chet Holmgren",
 "team": "OKC",
 "pos": "C",
@@ -1584,6 +1584,30 @@
 "date": "2026-10-30",
 "min": 37.0,
 "dk": 50.0
+}
+},
+{
+"player": "Darius Garland",
+"team": "LAC",
+"pos": "G",
+"gp": 6,
+"gs": 6,
+"min": 32.5,
+"dk": 32.6,
+"pts": 20.8,
+"reb": 1.3,
+"ast": 6.3,
+"stl": 0.8,
+"blk": 0.0,
+"to": 5.2,
+"tpm": 2.5,
+"fppm": 1.0,
+"l3_dk": 28.2,
+"l3_min": 30.0,
+"last": {
+"date": "2026-11-01",
+"min": 33.0,
+"dk": 26.5
 }
 },
 {
@@ -1731,30 +1755,6 @@
 }
 },
 {
-"player": "Anthony Black",
-"team": "ORL",
-"pos": "G",
-"gp": 3,
-"gs": 2,
-"min": 26.3,
-"dk": 31.2,
-"pts": 14.3,
-"reb": 3.7,
-"ast": 5.3,
-"stl": 1.0,
-"blk": 0.7,
-"to": 1.7,
-"tpm": 2.7,
-"fppm": 1.19,
-"l3_dk": 31.2,
-"l3_min": 26.3,
-"last": {
-"date": "2026-10-30",
-"min": 31.0,
-"dk": 44.0
-}
-},
-{
 "player": "Ace Bailey",
 "team": "UTA",
 "pos": "G",
@@ -1806,24 +1806,24 @@
 "player": "Desmond Bane",
 "team": "ORL",
 "pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 33.6,
-"dk": 30.8,
-"pts": 17.2,
-"reb": 4.0,
-"ast": 2.8,
-"stl": 1.0,
+"gp": 6,
+"gs": 6,
+"min": 34.7,
+"dk": 30.7,
+"pts": 17.5,
+"reb": 3.7,
+"ast": 2.5,
+"stl": 1.2,
 "blk": 1.0,
-"to": 2.4,
-"tpm": 3.2,
-"fppm": 0.92,
-"l3_dk": 37.2,
-"l3_min": 36.0,
+"to": 2.5,
+"tpm": 3.5,
+"fppm": 0.88,
+"l3_dk": 34.9,
+"l3_min": 37.7,
 "last": {
-"date": "2026-10-30",
-"min": 39.0,
-"dk": 42.5
+"date": "2026-11-01",
+"min": 40.0,
+"dk": 30.0
 }
 },
 {
@@ -1872,30 +1872,6 @@
 "date": "2026-10-31",
 "min": 26.0,
 "dk": 18.75
-}
-},
-{
-"player": "Wendell Carter Jr.",
-"team": "ORL",
-"pos": "C",
-"gp": 5,
-"gs": 5,
-"min": 31.6,
-"dk": 30.6,
-"pts": 14.8,
-"reb": 8.6,
-"ast": 1.4,
-"stl": 1.0,
-"blk": 0.6,
-"to": 1.6,
-"tpm": 1.0,
-"fppm": 0.97,
-"l3_dk": 27.4,
-"l3_min": 32.7,
-"last": {
-"date": "2026-10-30",
-"min": 39.0,
-"dk": 33.75
 }
 },
 {
@@ -2016,6 +1992,30 @@
 "date": "2026-10-30",
 "min": 27.0,
 "dk": 25.0
+}
+},
+{
+"player": "Wendell Carter Jr.",
+"team": "ORL",
+"pos": "C",
+"gp": 6,
+"gs": 6,
+"min": 32.2,
+"dk": 29.2,
+"pts": 13.5,
+"reb": 8.8,
+"ast": 1.2,
+"stl": 1.2,
+"blk": 0.5,
+"to": 1.8,
+"tpm": 1.0,
+"fppm": 0.91,
+"l3_dk": 25.8,
+"l3_min": 33.3,
+"last": {
+"date": "2026-11-01",
+"min": 35.0,
+"dk": 22.5
 }
 },
 {
@@ -2283,6 +2283,30 @@
 }
 },
 {
+"player": "Kris Dunn",
+"team": "LAC",
+"pos": "G",
+"gp": 6,
+"gs": 6,
+"min": 29.8,
+"dk": 28.4,
+"pts": 8.5,
+"reb": 4.0,
+"ast": 5.3,
+"stl": 3.0,
+"blk": 0.7,
+"to": 1.7,
+"tpm": 0.8,
+"fppm": 0.95,
+"l3_dk": 23.3,
+"l3_min": 28.3,
+"last": {
+"date": "2026-11-01",
+"min": 27.0,
+"dk": 34.5
+}
+},
+{
 "player": "Duncan Robinson",
 "team": "DET",
 "pos": "F",
@@ -2523,30 +2547,6 @@
 }
 },
 {
-"player": "Derrick White",
-"team": "BOS",
-"pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 29.2,
-"dk": 27.5,
-"pts": 11.8,
-"reb": 3.6,
-"ast": 5.8,
-"stl": 1.4,
-"blk": 0.2,
-"to": 3.0,
-"tpm": 1.6,
-"fppm": 0.94,
-"l3_dk": 25.8,
-"l3_min": 25.7,
-"last": {
-"date": "2026-10-30",
-"min": 26.0,
-"dk": 21.5
-}
-},
-{
 "player": "Onyeka Okongwu",
 "team": "ATL",
 "pos": "F",
@@ -2643,54 +2643,6 @@
 }
 },
 {
-"player": "Kris Dunn",
-"team": "LAC",
-"pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 30.4,
-"dk": 27.2,
-"pts": 7.8,
-"reb": 4.4,
-"ast": 5.6,
-"stl": 2.2,
-"blk": 0.8,
-"to": 2.0,
-"tpm": 1.0,
-"fppm": 0.89,
-"l3_dk": 26.0,
-"l3_min": 30.3,
-"last": {
-"date": "2026-10-30",
-"min": 31.0,
-"dk": 21.25
-}
-},
-{
-"player": "Keaton Wagler",
-"team": "LAC",
-"pos": "G",
-"gp": 5,
-"gs": 0,
-"min": 26.4,
-"dk": 27.2,
-"pts": 14.4,
-"reb": 4.6,
-"ast": 3.4,
-"stl": 1.0,
-"blk": 0.2,
-"to": 2.8,
-"tpm": 2.0,
-"fppm": 1.03,
-"l3_dk": 26.8,
-"l3_min": 26.3,
-"last": {
-"date": "2026-10-30",
-"min": 25.0,
-"dk": 23.5
-}
-},
-{
 "player": "AJ Dybantsa",
 "team": "WAS",
 "pos": "F",
@@ -2712,30 +2664,6 @@
 "date": "2026-10-30",
 "min": 30.0,
 "dk": 30.5
-}
-},
-{
-"player": "Payton Pritchard",
-"team": "BOS",
-"pos": "G",
-"gp": 5,
-"gs": 0,
-"min": 27.8,
-"dk": 27.1,
-"pts": 16.6,
-"reb": 2.2,
-"ast": 3.6,
-"stl": 0.8,
-"blk": 0.2,
-"to": 1.8,
-"tpm": 2.6,
-"fppm": 0.98,
-"l3_dk": 33.5,
-"l3_min": 27.0,
-"last": {
-"date": "2026-10-30",
-"min": 35.0,
-"dk": 42.25
 }
 },
 {
@@ -2784,6 +2712,54 @@
 "date": "2026-10-31",
 "min": 25.0,
 "dk": 18.25
+}
+},
+{
+"player": "Derrick White",
+"team": "BOS",
+"pos": "G",
+"gp": 6,
+"gs": 6,
+"min": 30.0,
+"dk": 26.6,
+"pts": 11.8,
+"reb": 3.3,
+"ast": 5.2,
+"stl": 1.5,
+"blk": 0.2,
+"to": 2.7,
+"tpm": 1.7,
+"fppm": 0.89,
+"l3_dk": 25.1,
+"l3_min": 31.0,
+"last": {
+"date": "2026-11-01",
+"min": 34.0,
+"dk": 22.0
+}
+},
+{
+"player": "Payton Pritchard",
+"team": "BOS",
+"pos": "G",
+"gp": 6,
+"gs": 0,
+"min": 27.7,
+"dk": 26.6,
+"pts": 15.0,
+"reb": 3.0,
+"ast": 3.5,
+"stl": 0.8,
+"blk": 0.3,
+"to": 1.7,
+"tpm": 2.2,
+"fppm": 0.96,
+"l3_dk": 27.3,
+"l3_min": 28.7,
+"last": {
+"date": "2026-11-01",
+"min": 27.0,
+"dk": 23.75
 }
 },
 {
@@ -2928,30 +2904,6 @@
 "date": "2026-10-25",
 "min": 34.0,
 "dk": 24.5
-}
-},
-{
-"player": "Ja'Kobe Walter",
-"team": "TOR",
-"pos": "G",
-"gp": 5,
-"gs": 3,
-"min": 27.6,
-"dk": 26.1,
-"pts": 12.4,
-"reb": 3.8,
-"ast": 2.2,
-"stl": 1.8,
-"blk": 0.4,
-"to": 0.4,
-"tpm": 2.8,
-"fppm": 0.94,
-"l3_dk": 27.5,
-"l3_min": 30.3,
-"last": {
-"date": "2026-10-30",
-"min": 32.0,
-"dk": 17.75
 }
 },
 {
@@ -3147,6 +3099,30 @@
 }
 },
 {
+"player": "Ja'Kobe Walter",
+"team": "TOR",
+"pos": "G",
+"gp": 6,
+"gs": 4,
+"min": 28.5,
+"dk": 25.7,
+"pts": 12.2,
+"reb": 3.8,
+"ast": 2.2,
+"stl": 1.7,
+"blk": 0.5,
+"to": 0.5,
+"tpm": 2.8,
+"fppm": 0.9,
+"l3_dk": 22.8,
+"l3_min": 31.0,
+"last": {
+"date": "2026-11-01",
+"min": 33.0,
+"dk": 24.0
+}
+},
+{
 "player": "Ryan Rollins",
 "team": "MIL",
 "pos": "G",
@@ -3192,6 +3168,30 @@
 "date": "2026-10-31",
 "min": 20.0,
 "dk": 23.25
+}
+},
+{
+"player": "Keaton Wagler",
+"team": "LAC",
+"pos": "G",
+"gp": 6,
+"gs": 0,
+"min": 25.2,
+"dk": 25.6,
+"pts": 13.2,
+"reb": 4.5,
+"ast": 3.5,
+"stl": 0.8,
+"blk": 0.2,
+"to": 2.5,
+"tpm": 1.7,
+"fppm": 1.02,
+"l3_dk": 24.7,
+"l3_min": 24.0,
+"last": {
+"date": "2026-11-01",
+"min": 19.0,
+"dk": 17.5
 }
 },
 {
@@ -3291,30 +3291,6 @@
 }
 },
 {
-"player": "Brook Lopez",
-"team": "LAC",
-"pos": "C",
-"gp": 5,
-"gs": 0,
-"min": 22.6,
-"dk": 24.9,
-"pts": 13.8,
-"reb": 5.0,
-"ast": 1.2,
-"stl": 0.2,
-"blk": 1.2,
-"to": 1.4,
-"tpm": 1.4,
-"fppm": 1.1,
-"l3_dk": 18.2,
-"l3_min": 22.0,
-"last": {
-"date": "2026-10-30",
-"min": 21.0,
-"dk": 22.0
-}
-},
-{
 "player": "Reed Sheppard",
 "team": "HOU",
 "pos": "G",
@@ -3336,6 +3312,30 @@
 "date": "2026-10-28",
 "min": 23.0,
 "dk": 19.25
+}
+},
+{
+"player": "De'Anthony Melton",
+"team": "GSW",
+"pos": "G",
+"gp": 7,
+"gs": 2,
+"min": 22.3,
+"dk": 24.8,
+"pts": 11.9,
+"reb": 4.1,
+"ast": 2.3,
+"stl": 1.4,
+"blk": 0.4,
+"to": 1.6,
+"tpm": 2.7,
+"fppm": 1.11,
+"l3_dk": 30.8,
+"l3_min": 23.0,
+"last": {
+"date": "2026-11-01",
+"min": 28.0,
+"dk": 40.0
 }
 },
 {
@@ -3411,51 +3411,51 @@
 }
 },
 {
-"player": "Derrick Jones Jr.",
-"team": "LAC",
+"player": "Tristan da Silva",
+"team": "ORL",
 "pos": "F",
-"gp": 5,
-"gs": 5,
-"min": 29.0,
-"dk": 24.6,
-"pts": 12.0,
-"reb": 4.4,
-"ast": 1.6,
-"stl": 1.4,
-"blk": 0.6,
-"to": 1.0,
-"tpm": 2.4,
+"gp": 6,
+"gs": 0,
+"min": 28.8,
+"dk": 24.5,
+"pts": 14.8,
+"reb": 3.3,
+"ast": 1.5,
+"stl": 0.3,
+"blk": 0.5,
+"to": 0.8,
+"tpm": 3.5,
 "fppm": 0.85,
-"l3_dk": 23.3,
-"l3_min": 28.0,
+"l3_dk": 26.4,
+"l3_min": 29.7,
 "last": {
-"date": "2026-10-30",
-"min": 26.0,
-"dk": 15.25
+"date": "2026-11-01",
+"min": 35.0,
+"dk": 41.5
 }
 },
 {
-"player": "Isaiah Jackson",
+"player": "Rui Hachimura",
 "team": "LAC",
 "pos": "F",
 "gp": 5,
 "gs": 5,
-"min": 21.6,
-"dk": 24.6,
-"pts": 8.6,
-"reb": 5.8,
-"ast": 2.4,
-"stl": 2.0,
-"blk": 1.2,
+"min": 30.0,
+"dk": 24.2,
+"pts": 13.4,
+"reb": 6.0,
+"ast": 0.6,
+"stl": 1.0,
+"blk": 0.2,
 "to": 2.4,
-"tpm": 0.0,
-"fppm": 1.14,
-"l3_dk": 26.0,
-"l3_min": 21.7,
+"tpm": 2.4,
+"fppm": 0.81,
+"l3_dk": 21.7,
+"l3_min": 28.3,
 "last": {
-"date": "2026-10-30",
-"min": 22.0,
-"dk": 38.25
+"date": "2026-11-01",
+"min": 30.0,
+"dk": 33.75
 }
 },
 {
@@ -3531,6 +3531,30 @@
 }
 },
 {
+"player": "Derrick Jones Jr.",
+"team": "LAC",
+"pos": "F",
+"gp": 6,
+"gs": 6,
+"min": 28.8,
+"dk": 23.6,
+"pts": 11.5,
+"reb": 4.8,
+"ast": 1.5,
+"stl": 1.2,
+"blk": 0.5,
+"to": 1.2,
+"tpm": 2.2,
+"fppm": 0.82,
+"l3_dk": 22.6,
+"l3_min": 27.3,
+"last": {
+"date": "2026-11-01",
+"min": 28.0,
+"dk": 18.75
+}
+},
+{
 "player": "Daniss Jenkins",
 "team": "DET",
 "pos": "G",
@@ -3552,6 +3576,30 @@
 "date": "2026-10-30",
 "min": 24.0,
 "dk": 18.25
+}
+},
+{
+"player": "Isaiah Jackson",
+"team": "LAC",
+"pos": "F",
+"gp": 6,
+"gs": 6,
+"min": 21.7,
+"dk": 23.5,
+"pts": 8.0,
+"reb": 6.2,
+"ast": 2.3,
+"stl": 1.7,
+"blk": 1.0,
+"to": 2.2,
+"tpm": 0.0,
+"fppm": 1.08,
+"l3_dk": 22.7,
+"l3_min": 21.0,
+"last": {
+"date": "2026-11-01",
+"min": 22.0,
+"dk": 17.5
 }
 },
 {
@@ -3651,6 +3699,54 @@
 }
 },
 {
+"player": "Brook Lopez",
+"team": "LAC",
+"pos": "C",
+"gp": 6,
+"gs": 0,
+"min": 22.0,
+"dk": 23.0,
+"pts": 12.7,
+"reb": 4.5,
+"ast": 1.0,
+"stl": 0.5,
+"blk": 1.0,
+"to": 1.5,
+"tpm": 1.3,
+"fppm": 1.04,
+"l3_dk": 14.9,
+"l3_min": 20.7,
+"last": {
+"date": "2026-11-01",
+"min": 19.0,
+"dk": 13.0
+}
+},
+{
+"player": "Day'Ron Sharpe",
+"team": "BKN",
+"pos": "C",
+"gp": 6,
+"gs": 6,
+"min": 22.7,
+"dk": 22.6,
+"pts": 8.0,
+"reb": 7.7,
+"ast": 1.7,
+"stl": 0.5,
+"blk": 1.0,
+"to": 2.0,
+"tpm": 0.5,
+"fppm": 1.0,
+"l3_dk": 23.8,
+"l3_min": 22.3,
+"last": {
+"date": "2026-11-01",
+"min": 26.0,
+"dk": 38.25
+}
+},
+{
 "player": "Marcus Smart",
 "team": "HOU",
 "pos": "G",
@@ -3723,30 +3819,6 @@
 }
 },
 {
-"player": "De'Anthony Melton",
-"team": "GSW",
-"pos": "G",
-"gp": 6,
-"gs": 1,
-"min": 21.3,
-"dk": 22.2,
-"pts": 10.3,
-"reb": 3.8,
-"ast": 2.2,
-"stl": 1.3,
-"blk": 0.3,
-"to": 1.2,
-"tpm": 2.2,
-"fppm": 1.04,
-"l3_dk": 21.8,
-"l3_min": 20.0,
-"last": {
-"date": "2026-10-30",
-"min": 21.0,
-"dk": 32.25
-}
-},
-{
 "player": "Myles Turner",
 "team": "MIL",
 "pos": "C",
@@ -3816,30 +3888,6 @@
 "date": "2026-10-30",
 "min": 25.0,
 "dk": 30.25
-}
-},
-{
-"player": "Rui Hachimura",
-"team": "LAC",
-"pos": "F",
-"gp": 4,
-"gs": 4,
-"min": 30.0,
-"dk": 21.8,
-"pts": 10.8,
-"reb": 5.8,
-"ast": 0.8,
-"stl": 1.2,
-"blk": 0.2,
-"to": 2.5,
-"tpm": 2.0,
-"fppm": 0.73,
-"l3_dk": 20.2,
-"l3_min": 29.3,
-"last": {
-"date": "2026-10-30",
-"min": 26.0,
-"dk": 22.25
 }
 },
 {
@@ -3939,30 +3987,6 @@
 }
 },
 {
-"player": "Tristan da Silva",
-"team": "ORL",
-"pos": "F",
-"gp": 5,
-"gs": 0,
-"min": 27.6,
-"dk": 21.1,
-"pts": 13.2,
-"reb": 2.0,
-"ast": 1.4,
-"stl": 0.4,
-"blk": 0.6,
-"to": 0.6,
-"tpm": 3.2,
-"fppm": 0.76,
-"l3_dk": 22.2,
-"l3_min": 27.0,
-"last": {
-"date": "2026-10-30",
-"min": 23.0,
-"dk": 10.5
-}
-},
-{
 "player": "Justin Champagnie",
 "team": "WAS",
 "pos": "F",
@@ -3987,27 +4011,51 @@
 }
 },
 {
-"player": "Sandro Mamukelashvili",
-"team": "LAL",
-"pos": "F",
-"gp": 6,
-"gs": 0,
-"min": 23.5,
-"dk": 21.0,
-"pts": 9.2,
-"reb": 5.2,
-"ast": 1.5,
-"stl": 0.8,
-"blk": 0.7,
-"to": 0.7,
-"tpm": 0.8,
-"fppm": 0.89,
-"l3_dk": 25.6,
-"l3_min": 24.7,
+"player": "Brandon Williams",
+"team": "GSW",
+"pos": "G",
+"gp": 7,
+"gs": 1,
+"min": 17.4,
+"dk": 21.1,
+"pts": 11.6,
+"reb": 2.9,
+"ast": 2.4,
+"stl": 1.0,
+"blk": 0.3,
+"to": 1.6,
+"tpm": 1.0,
+"fppm": 1.21,
+"l3_dk": 19.7,
+"l3_min": 18.7,
 "last": {
-"date": "2026-10-30",
-"min": 20.0,
-"dk": 16.25
+"date": "2026-11-01",
+"min": 25.0,
+"dk": 27.75
+}
+},
+{
+"player": "Neemias Queta",
+"team": "BOS",
+"pos": "C",
+"gp": 6,
+"gs": 1,
+"min": 20.8,
+"dk": 20.8,
+"pts": 8.8,
+"reb": 5.3,
+"ast": 1.2,
+"stl": 0.3,
+"blk": 1.7,
+"to": 1.2,
+"tpm": 0.2,
+"fppm": 1.0,
+"l3_dk": 19.9,
+"l3_min": 20.7,
+"last": {
+"date": "2026-11-01",
+"min": 27.0,
+"dk": 23.0
 }
 },
 {
@@ -4131,27 +4179,27 @@
 }
 },
 {
-"player": "Neemias Queta",
-"team": "BOS",
+"player": "Moritz Wagner",
+"team": "BKN",
 "pos": "C",
-"gp": 5,
+"gp": 6,
 "gs": 0,
-"min": 19.6,
-"dk": 20.3,
-"pts": 9.0,
-"reb": 4.8,
+"min": 18.5,
+"dk": 20.5,
+"pts": 11.8,
+"reb": 4.2,
 "ast": 1.2,
-"stl": 0.4,
-"blk": 1.6,
-"to": 1.2,
-"tpm": 0.2,
-"fppm": 1.04,
-"l3_dk": 18.5,
-"l3_min": 18.0,
+"stl": 0.7,
+"blk": 0.2,
+"to": 1.3,
+"tpm": 1.3,
+"fppm": 1.11,
+"l3_dk": 27.3,
+"l3_min": 22.0,
 "last": {
-"date": "2026-10-30",
-"min": 20.0,
-"dk": 24.0
+"date": "2026-11-01",
+"min": 21.0,
+"dk": 23.0
 }
 },
 {
@@ -4227,27 +4275,27 @@
 }
 },
 {
-"player": "Brandon Williams",
-"team": "GSW",
-"pos": "G",
-"gp": 6,
-"gs": 1,
-"min": 16.2,
-"dk": 20.0,
-"pts": 10.7,
-"reb": 2.8,
-"ast": 2.3,
-"stl": 1.2,
-"blk": 0.2,
-"to": 1.7,
-"tpm": 0.8,
-"fppm": 1.23,
-"l3_dk": 15.5,
-"l3_min": 15.3,
+"player": "Sandro Mamukelashvili",
+"team": "LAL",
+"pos": "F",
+"gp": 7,
+"gs": 0,
+"min": 23.6,
+"dk": 20.1,
+"pts": 9.4,
+"reb": 4.6,
+"ast": 1.4,
+"stl": 0.7,
+"blk": 0.6,
+"to": 0.6,
+"tpm": 1.0,
+"fppm": 0.85,
+"l3_dk": 21.2,
+"l3_min": 24.7,
 "last": {
-"date": "2026-10-30",
-"min": 17.0,
-"dk": 15.0
+"date": "2026-11-01",
+"min": 24.0,
+"dk": 14.75
 }
 },
 {
@@ -4272,30 +4320,6 @@
 "date": "2026-10-31",
 "min": 25.0,
 "dk": 30.5
-}
-},
-{
-"player": "Moritz Wagner",
-"team": "BKN",
-"pos": "C",
-"gp": 5,
-"gs": 0,
-"min": 18.0,
-"dk": 19.9,
-"pts": 11.4,
-"reb": 3.8,
-"ast": 1.4,
-"stl": 0.8,
-"blk": 0.0,
-"to": 1.2,
-"tpm": 1.4,
-"fppm": 1.11,
-"l3_dk": 26.4,
-"l3_min": 20.0,
-"last": {
-"date": "2026-10-30",
-"min": 23.0,
-"dk": 29.5
 }
 },
 {
@@ -4371,51 +4395,27 @@
 }
 },
 {
-"player": "Quentin Grimes",
-"team": "LAL",
+"player": "Nolan Traore",
+"team": "BKN",
 "pos": "G",
 "gp": 6,
-"gs": 1,
-"min": 26.8,
+"gs": 3,
+"min": 21.0,
 "dk": 19.5,
-"pts": 9.0,
-"reb": 3.5,
+"pts": 10.5,
+"reb": 1.8,
 "ast": 2.7,
-"stl": 1.0,
-"blk": 0.2,
-"to": 1.2,
-"tpm": 0.7,
-"fppm": 0.73,
-"l3_dk": 19.0,
-"l3_min": 27.7,
+"stl": 0.8,
+"blk": 0.7,
+"to": 1.8,
+"tpm": 1.2,
+"fppm": 0.93,
+"l3_dk": 24.8,
+"l3_min": 26.7,
 "last": {
-"date": "2026-10-30",
-"min": 26.0,
-"dk": 9.75
-}
-},
-{
-"player": "Day'Ron Sharpe",
-"team": "BKN",
-"pos": "C",
-"gp": 5,
-"gs": 5,
-"min": 22.0,
-"dk": 19.4,
-"pts": 6.6,
-"reb": 6.6,
-"ast": 1.2,
-"stl": 0.6,
-"blk": 1.2,
-"to": 2.0,
-"tpm": 0.4,
-"fppm": 0.88,
-"l3_dk": 16.8,
-"l3_min": 19.0,
-"last": {
-"date": "2026-10-30",
-"min": 24.0,
-"dk": 18.25
+"date": "2026-11-01",
+"min": 30.0,
+"dk": 31.0
 }
 },
 {
@@ -4443,6 +4443,54 @@
 }
 },
 {
+"player": "Jarace Walker",
+"team": "IND",
+"pos": "F",
+"gp": 7,
+"gs": 1,
+"min": 22.0,
+"dk": 19.3,
+"pts": 6.9,
+"reb": 6.0,
+"ast": 2.0,
+"stl": 0.7,
+"blk": 0.4,
+"to": 2.0,
+"tpm": 1.3,
+"fppm": 0.88,
+"l3_dk": 23.0,
+"l3_min": 23.3,
+"last": {
+"date": "2026-11-01",
+"min": 20.0,
+"dk": 20.5
+}
+},
+{
+"player": "Aaron Nesmith",
+"team": "IND",
+"pos": "G",
+"gp": 6,
+"gs": 5,
+"min": 23.0,
+"dk": 19.3,
+"pts": 12.2,
+"reb": 2.2,
+"ast": 1.8,
+"stl": 0.7,
+"blk": 0.2,
+"to": 1.7,
+"tpm": 1.7,
+"fppm": 0.84,
+"l3_dk": 21.2,
+"l3_min": 26.0,
+"last": {
+"date": "2026-11-01",
+"min": 30.0,
+"dk": 21.25
+}
+},
+{
 "player": "Bilal Coulibaly",
 "team": "WAS",
 "pos": "G",
@@ -4467,27 +4515,27 @@
 }
 },
 {
-"player": "Jarace Walker",
-"team": "IND",
-"pos": "F",
-"gp": 6,
-"gs": 1,
-"min": 22.3,
-"dk": 19.1,
-"pts": 7.0,
-"reb": 6.0,
-"ast": 1.8,
-"stl": 0.7,
-"blk": 0.5,
-"to": 2.2,
-"tpm": 1.2,
-"fppm": 0.85,
-"l3_dk": 26.7,
-"l3_min": 26.3,
+"player": "Matisse Thybulle",
+"team": "LAL",
+"pos": "G",
+"gp": 7,
+"gs": 7,
+"min": 25.1,
+"dk": 19.0,
+"pts": 9.0,
+"reb": 1.9,
+"ast": 1.1,
+"stl": 1.9,
+"blk": 0.9,
+"to": 1.1,
+"tpm": 2.1,
+"fppm": 0.75,
+"l3_dk": 21.5,
+"l3_min": 27.0,
 "last": {
-"date": "2026-10-30",
-"min": 28.0,
-"dk": 30.0
+"date": "2026-11-01",
+"min": 25.0,
+"dk": 21.5
 }
 },
 {
@@ -4515,6 +4563,30 @@
 }
 },
 {
+"player": "Jamal Shead",
+"team": "TOR",
+"pos": "G",
+"gp": 6,
+"gs": 0,
+"min": 22.0,
+"dk": 18.9,
+"pts": 5.8,
+"reb": 2.0,
+"ast": 5.2,
+"stl": 1.5,
+"blk": 0.3,
+"to": 2.2,
+"tpm": 0.5,
+"fppm": 0.86,
+"l3_dk": 25.4,
+"l3_min": 23.7,
+"last": {
+"date": "2026-11-01",
+"min": 25.0,
+"dk": 26.5
+}
+},
+{
 "player": "Jalen Green",
 "team": "PHX",
 "pos": "G",
@@ -4536,54 +4608,6 @@
 "date": "2026-10-30",
 "min": 25.0,
 "dk": 6.5
-}
-},
-{
-"player": "Aaron Nesmith",
-"team": "IND",
-"pos": "G",
-"gp": 5,
-"gs": 4,
-"min": 21.6,
-"dk": 18.9,
-"pts": 12.4,
-"reb": 2.0,
-"ast": 1.4,
-"stl": 0.6,
-"blk": 0.2,
-"to": 1.4,
-"tpm": 2.0,
-"fppm": 0.88,
-"l3_dk": 20.6,
-"l3_min": 23.0,
-"last": {
-"date": "2026-10-30",
-"min": 21.0,
-"dk": 15.75
-}
-},
-{
-"player": "Collin Murray-Boyles",
-"team": "TOR",
-"pos": "F",
-"gp": 5,
-"gs": 0,
-"min": 19.0,
-"dk": 18.8,
-"pts": 8.4,
-"reb": 5.0,
-"ast": 1.4,
-"stl": 0.8,
-"blk": 0.4,
-"to": 1.4,
-"tpm": 0.6,
-"fppm": 0.99,
-"l3_dk": 17.3,
-"l3_min": 19.0,
-"last": {
-"date": "2026-10-30",
-"min": 23.0,
-"dk": 22.75
 }
 },
 {
@@ -4659,30 +4683,6 @@
 }
 },
 {
-"player": "Matisse Thybulle",
-"team": "LAL",
-"pos": "G",
-"gp": 6,
-"gs": 6,
-"min": 25.2,
-"dk": 18.5,
-"pts": 9.5,
-"reb": 1.8,
-"ast": 0.8,
-"stl": 1.8,
-"blk": 0.7,
-"to": 1.2,
-"tpm": 2.2,
-"fppm": 0.74,
-"l3_dk": 17.0,
-"l3_min": 26.0,
-"last": {
-"date": "2026-10-30",
-"min": 28.0,
-"dk": 19.75
-}
-},
-{
 "player": "Jaylon Tyson",
 "team": "CLE",
 "pos": "G",
@@ -4704,6 +4704,30 @@
 "date": "2026-10-29",
 "min": 18.0,
 "dk": 12.5
+}
+},
+{
+"player": "Quentin Grimes",
+"team": "LAL",
+"pos": "G",
+"gp": 7,
+"gs": 1,
+"min": 26.7,
+"dk": 18.3,
+"pts": 8.7,
+"reb": 3.1,
+"ast": 2.7,
+"stl": 0.9,
+"blk": 0.1,
+"to": 1.6,
+"tpm": 0.7,
+"fppm": 0.68,
+"l3_dk": 20.6,
+"l3_min": 30.0,
+"last": {
+"date": "2026-11-01",
+"min": 26.0,
+"dk": 11.25
 }
 },
 {
@@ -4731,30 +4755,6 @@
 }
 },
 {
-"player": "Keon Ellis",
-"team": "BKN",
-"pos": "G",
-"gp": 5,
-"gs": 3,
-"min": 25.0,
-"dk": 18.2,
-"pts": 6.0,
-"reb": 2.0,
-"ast": 2.6,
-"stl": 1.6,
-"blk": 1.2,
-"to": 0.8,
-"tpm": 1.2,
-"fppm": 0.73,
-"l3_dk": 18.5,
-"l3_min": 23.0,
-"last": {
-"date": "2026-10-30",
-"min": 21.0,
-"dk": 14.5
-}
-},
-{
 "player": "Jerami Grant",
 "team": "MEM",
 "pos": "F",
@@ -4776,6 +4776,30 @@
 "date": "2026-10-31",
 "min": 23.0,
 "dk": 21.0
+}
+},
+{
+"player": "Quenton Jackson",
+"team": "IND",
+"pos": "G",
+"gp": 7,
+"gs": 0,
+"min": 20.0,
+"dk": 18.2,
+"pts": 8.7,
+"reb": 2.4,
+"ast": 2.7,
+"stl": 1.0,
+"blk": 0.1,
+"to": 0.6,
+"tpm": 0.9,
+"fppm": 0.91,
+"l3_dk": 22.8,
+"l3_min": 20.7,
+"last": {
+"date": "2026-11-01",
+"min": 24.0,
+"dk": 20.25
 }
 },
 {
@@ -4803,6 +4827,54 @@
 }
 },
 {
+"player": "Kobe Sanders",
+"team": "LAC",
+"pos": "G",
+"gp": 6,
+"gs": 1,
+"min": 23.2,
+"dk": 18.2,
+"pts": 8.5,
+"reb": 3.0,
+"ast": 2.0,
+"stl": 1.5,
+"blk": 0.0,
+"to": 1.5,
+"tpm": 1.5,
+"fppm": 0.79,
+"l3_dk": 19.4,
+"l3_min": 27.0,
+"last": {
+"date": "2026-11-01",
+"min": 30.0,
+"dk": 22.25
+}
+},
+{
+"player": "Collin Murray-Boyles",
+"team": "TOR",
+"pos": "F",
+"gp": 6,
+"gs": 0,
+"min": 19.2,
+"dk": 18.1,
+"pts": 7.7,
+"reb": 4.7,
+"ast": 1.3,
+"stl": 1.2,
+"blk": 0.3,
+"to": 1.3,
+"tpm": 0.5,
+"fppm": 0.94,
+"l3_dk": 17.0,
+"l3_min": 19.3,
+"last": {
+"date": "2026-11-01",
+"min": 20.0,
+"dk": 14.75
+}
+},
+{
 "player": "Sam Merrill",
 "team": "CLE",
 "pos": "G",
@@ -4827,27 +4899,27 @@
 }
 },
 {
-"player": "Quenton Jackson",
-"team": "IND",
+"player": "Collin Sexton",
+"team": "LAL",
 "pos": "G",
 "gp": 6,
 "gs": 0,
-"min": 19.3,
-"dk": 17.9,
-"pts": 8.2,
-"reb": 2.3,
-"ast": 2.8,
-"stl": 1.2,
+"min": 17.7,
+"dk": 18.1,
+"pts": 10.3,
+"reb": 2.2,
+"ast": 2.2,
+"stl": 0.8,
 "blk": 0.2,
-"to": 0.7,
-"tpm": 0.5,
-"fppm": 0.93,
-"l3_dk": 20.0,
-"l3_min": 21.7,
+"to": 1.5,
+"tpm": 1.2,
+"fppm": 1.03,
+"l3_dk": 20.8,
+"l3_min": 18.7,
 "last": {
-"date": "2026-10-30",
-"min": 24.0,
-"dk": 35.0
+"date": "2026-11-01",
+"min": 19.0,
+"dk": 24.25
 }
 },
 {
@@ -4875,6 +4947,30 @@
 }
 },
 {
+"player": "Jake LaRavia",
+"team": "LAL",
+"pos": "F",
+"gp": 6,
+"gs": 3,
+"min": 23.3,
+"dk": 17.5,
+"pts": 5.8,
+"reb": 3.5,
+"ast": 1.3,
+"stl": 1.8,
+"blk": 0.8,
+"to": 1.3,
+"tpm": 1.2,
+"fppm": 0.75,
+"l3_dk": 20.0,
+"l3_min": 29.3,
+"last": {
+"date": "2026-11-01",
+"min": 25.0,
+"dk": 20.5
+}
+},
+{
 "player": "Oso Ighodaro",
 "team": "PHX",
 "pos": "F",
@@ -4896,54 +4992,6 @@
 "date": "2026-10-30",
 "min": 21.0,
 "dk": 18.75
-}
-},
-{
-"player": "Jamal Shead",
-"team": "TOR",
-"pos": "G",
-"gp": 5,
-"gs": 0,
-"min": 21.4,
-"dk": 17.4,
-"pts": 5.2,
-"reb": 2.0,
-"ast": 5.0,
-"stl": 1.2,
-"blk": 0.4,
-"to": 2.2,
-"tpm": 0.2,
-"fppm": 0.81,
-"l3_dk": 20.2,
-"l3_min": 22.3,
-"last": {
-"date": "2026-10-30",
-"min": 23.0,
-"dk": 18.75
-}
-},
-{
-"player": "Kobe Sanders",
-"team": "LAC",
-"pos": "G",
-"gp": 5,
-"gs": 1,
-"min": 21.8,
-"dk": 17.4,
-"pts": 7.0,
-"reb": 3.0,
-"ast": 2.4,
-"stl": 1.6,
-"blk": 0.0,
-"to": 1.2,
-"tpm": 1.0,
-"fppm": 0.8,
-"l3_dk": 19.2,
-"l3_min": 23.7,
-"last": {
-"date": "2026-10-30",
-"min": 24.0,
-"dk": 15.5
 }
 },
 {
@@ -5043,75 +5091,27 @@
 }
 },
 {
-"player": "Nolan Traore",
-"team": "BKN",
-"pos": "G",
-"gp": 5,
-"gs": 2,
-"min": 19.2,
-"dk": 17.1,
-"pts": 9.4,
-"reb": 1.8,
-"ast": 2.0,
-"stl": 0.8,
-"blk": 0.8,
-"to": 2.0,
-"tpm": 0.6,
-"fppm": 0.89,
-"l3_dk": 25.4,
-"l3_min": 25.0,
-"last": {
-"date": "2026-10-30",
-"min": 26.0,
-"dk": 19.0
-}
-},
-{
-"player": "Graham Ike",
-"team": "GSW",
-"pos": "F",
-"gp": 4,
-"gs": 2,
-"min": 13.2,
-"dk": 17.1,
-"pts": 8.2,
-"reb": 3.5,
-"ast": 1.2,
-"stl": 0.8,
-"blk": 0.2,
-"to": 0.5,
-"tpm": 1.0,
-"fppm": 1.29,
-"l3_dk": 17.3,
-"l3_min": 13.7,
-"last": {
-"date": "2026-10-26",
-"min": 3.0,
-"dk": 4.5
-}
-},
-{
 "player": "Kelly Oubre Jr.",
 "team": "IND",
 "pos": "G",
-"gp": 6,
-"gs": 4,
-"min": 23.8,
-"dk": 17.0,
-"pts": 9.2,
-"reb": 2.7,
-"ast": 1.7,
+"gp": 7,
+"gs": 5,
+"min": 23.3,
+"dk": 17.1,
+"pts": 9.4,
+"reb": 2.6,
+"ast": 1.6,
 "stl": 0.3,
 "blk": 0.7,
-"to": 0.8,
-"tpm": 0.8,
-"fppm": 0.71,
-"l3_dk": 19.0,
-"l3_min": 25.0,
+"to": 0.7,
+"tpm": 1.0,
+"fppm": 0.74,
+"l3_dk": 18.9,
+"l3_min": 24.0,
 "last": {
-"date": "2026-10-30",
-"min": 22.0,
-"dk": 16.5
+"date": "2026-11-01",
+"min": 20.0,
+"dk": 18.0
 }
 },
 {
@@ -5136,78 +5136,6 @@
 "date": "2026-10-31",
 "min": 11.0,
 "dk": 17.0
-}
-},
-{
-"player": "Gui Santos",
-"team": "GSW",
-"pos": "F",
-"gp": 5,
-"gs": 4,
-"min": 22.4,
-"dk": 16.9,
-"pts": 7.8,
-"reb": 4.2,
-"ast": 1.4,
-"stl": 0.6,
-"blk": 0.2,
-"to": 0.6,
-"tpm": 0.8,
-"fppm": 0.75,
-"l3_dk": 15.3,
-"l3_min": 22.3,
-"last": {
-"date": "2026-10-30",
-"min": 16.0,
-"dk": 8.75
-}
-},
-{
-"player": "Jake LaRavia",
-"team": "LAL",
-"pos": "F",
-"gp": 5,
-"gs": 2,
-"min": 23.0,
-"dk": 16.9,
-"pts": 5.4,
-"reb": 3.8,
-"ast": 0.8,
-"stl": 2.0,
-"blk": 0.8,
-"to": 1.2,
-"tpm": 1.0,
-"fppm": 0.73,
-"l3_dk": 17.9,
-"l3_min": 27.3,
-"last": {
-"date": "2026-10-30",
-"min": 28.0,
-"dk": 16.0
-}
-},
-{
-"player": "Collin Sexton",
-"team": "LAL",
-"pos": "G",
-"gp": 5,
-"gs": 0,
-"min": 17.4,
-"dk": 16.9,
-"pts": 9.6,
-"reb": 2.0,
-"ast": 2.0,
-"stl": 0.8,
-"blk": 0.2,
-"to": 1.6,
-"tpm": 1.2,
-"fppm": 0.97,
-"l3_dk": 17.6,
-"l3_min": 17.0,
-"last": {
-"date": "2026-10-30",
-"min": 16.0,
-"dk": 7.5
 }
 },
 {
@@ -5351,30 +5279,6 @@
 "last": {
 "date": "2026-10-30",
 "min": 12.0,
-"dk": 13.75
-}
-},
-{
-"player": "Sam Hauser",
-"team": "BOS",
-"pos": "F",
-"gp": 5,
-"gs": 0,
-"min": 20.8,
-"dk": 16.4,
-"pts": 9.0,
-"reb": 3.4,
-"ast": 1.2,
-"stl": 0.0,
-"blk": 0.0,
-"to": 0.0,
-"tpm": 2.6,
-"fppm": 0.79,
-"l3_dk": 16.8,
-"l3_min": 21.0,
-"last": {
-"date": "2026-10-30",
-"min": 18.0,
 "dk": 13.75
 }
 },
@@ -5547,6 +5451,30 @@
 }
 },
 {
+"player": "Keon Ellis",
+"team": "BKN",
+"pos": "G",
+"gp": 6,
+"gs": 3,
+"min": 24.2,
+"dk": 16.1,
+"pts": 5.0,
+"reb": 2.0,
+"ast": 2.3,
+"stl": 1.5,
+"blk": 1.0,
+"to": 0.8,
+"tpm": 1.0,
+"fppm": 0.67,
+"l3_dk": 11.9,
+"l3_min": 22.0,
+"last": {
+"date": "2026-11-01",
+"min": 20.0,
+"dk": 5.5
+}
+},
+{
 "player": "Cason Wallace",
 "team": "OKC",
 "pos": "G",
@@ -5568,6 +5496,30 @@
 "date": "2026-10-25",
 "min": 6.0,
 "dk": 12.25
+}
+},
+{
+"player": "Gui Santos",
+"team": "GSW",
+"pos": "F",
+"gp": 6,
+"gs": 4,
+"min": 20.2,
+"dk": 15.8,
+"pts": 7.2,
+"reb": 4.0,
+"ast": 1.3,
+"stl": 0.5,
+"blk": 0.3,
+"to": 0.7,
+"tpm": 0.7,
+"fppm": 0.79,
+"l3_dk": 13.4,
+"l3_min": 17.7,
+"last": {
+"date": "2026-11-01",
+"min": 9.0,
+"dk": 10.75
 }
 },
 {
@@ -5616,30 +5568,6 @@
 "date": "2026-10-30",
 "min": 13.0,
 "dk": 6.5
-}
-},
-{
-"player": "Noah Clowney",
-"team": "BKN",
-"pos": "F",
-"gp": 5,
-"gs": 0,
-"min": 21.6,
-"dk": 15.5,
-"pts": 5.6,
-"reb": 4.8,
-"ast": 0.8,
-"stl": 0.6,
-"blk": 0.8,
-"to": 1.0,
-"tpm": 0.8,
-"fppm": 0.72,
-"l3_dk": 16.6,
-"l3_min": 22.0,
-"last": {
-"date": "2026-10-30",
-"min": 22.0,
-"dk": 19.0
 }
 },
 {
@@ -5787,6 +5715,30 @@
 }
 },
 {
+"player": "Sam Hauser",
+"team": "BOS",
+"pos": "F",
+"gp": 6,
+"gs": 0,
+"min": 20.2,
+"dk": 15.0,
+"pts": 8.0,
+"reb": 3.2,
+"ast": 1.0,
+"stl": 0.2,
+"blk": 0.0,
+"to": 0.0,
+"tpm": 2.3,
+"fppm": 0.74,
+"l3_dk": 13.1,
+"l3_min": 20.0,
+"last": {
+"date": "2026-11-01",
+"min": 17.0,
+"dk": 8.0
+}
+},
+{
 "player": "Ryan Kalkbrenner",
 "team": "CHA",
 "pos": "C",
@@ -5811,6 +5763,30 @@
 }
 },
 {
+"player": "Noah Clowney",
+"team": "BKN",
+"pos": "F",
+"gp": 6,
+"gs": 0,
+"min": 22.0,
+"dk": 14.9,
+"pts": 6.0,
+"reb": 4.5,
+"ast": 0.7,
+"stl": 0.5,
+"blk": 0.7,
+"to": 0.8,
+"tpm": 0.7,
+"fppm": 0.68,
+"l3_dk": 14.9,
+"l3_min": 23.3,
+"last": {
+"date": "2026-11-01",
+"min": 24.0,
+"dk": 11.75
+}
+},
+{
 "player": "Tobe Awaka",
 "team": "CHI",
 "pos": "F",
@@ -5832,30 +5808,6 @@
 "date": "2026-10-30",
 "min": 12.0,
 "dk": 13.25
-}
-},
-{
-"player": "Jay Huff",
-"team": "IND",
-"pos": "C",
-"gp": 5,
-"gs": 3,
-"min": 16.8,
-"dk": 14.8,
-"pts": 7.2,
-"reb": 3.4,
-"ast": 1.2,
-"stl": 0.0,
-"blk": 0.6,
-"to": 0.4,
-"tpm": 1.2,
-"fppm": 0.88,
-"l3_dk": 14.6,
-"l3_min": 19.3,
-"last": {
-"date": "2026-10-30",
-"min": 19.0,
-"dk": 15.75
 }
 },
 {
@@ -5907,27 +5859,27 @@
 }
 },
 {
-"player": "Allen Graves",
-"team": "TOR",
+"player": "Graham Ike",
+"team": "GSW",
 "pos": "F",
 "gp": 5,
-"gs": 0,
-"min": 14.4,
+"gs": 2,
+"min": 11.8,
 "dk": 14.6,
-"pts": 5.6,
-"reb": 3.6,
-"ast": 0.8,
+"pts": 7.0,
+"reb": 3.2,
+"ast": 1.0,
 "stl": 0.6,
-"blk": 1.0,
-"to": 0.2,
-"tpm": 0.4,
-"fppm": 1.01,
-"l3_dk": 15.8,
-"l3_min": 15.7,
+"blk": 0.2,
+"to": 0.4,
+"tpm": 0.8,
+"fppm": 1.24,
+"l3_dk": 13.2,
+"l3_min": 11.7,
 "last": {
-"date": "2026-10-30",
-"min": 9.0,
-"dk": 12.5
+"date": "2026-11-01",
+"min": 6.0,
+"dk": 4.5
 }
 },
 {
@@ -5952,30 +5904,6 @@
 "date": "2026-10-30",
 "min": 16.0,
 "dk": 1.0
-}
-},
-{
-"player": "Georges Niang",
-"team": "GSW",
-"pos": "F",
-"gp": 6,
-"gs": 1,
-"min": 19.3,
-"dk": 14.5,
-"pts": 7.0,
-"reb": 3.2,
-"ast": 1.2,
-"stl": 0.8,
-"blk": 0.2,
-"to": 1.5,
-"tpm": 1.2,
-"fppm": 0.75,
-"l3_dk": 17.3,
-"l3_min": 20.0,
-"last": {
-"date": "2026-10-30",
-"min": 19.0,
-"dk": 21.75
 }
 },
 {
@@ -6024,30 +5952,6 @@
 "date": "2026-10-31",
 "min": 14.0,
 "dk": 15.25
-}
-},
-{
-"player": "Chaney Johnson",
-"team": "BKN",
-"pos": "F",
-"gp": 5,
-"gs": 1,
-"min": 20.2,
-"dk": 14.3,
-"pts": 7.0,
-"reb": 3.2,
-"ast": 1.0,
-"stl": 0.8,
-"blk": 0.2,
-"to": 1.4,
-"tpm": 1.0,
-"fppm": 0.71,
-"l3_dk": 15.5,
-"l3_min": 23.0,
-"last": {
-"date": "2026-10-30",
-"min": 19.0,
-"dk": 11.5
 }
 },
 {
@@ -6147,30 +6051,6 @@
 }
 },
 {
-"player": "Jordan Walsh",
-"team": "BOS",
-"pos": "G",
-"gp": 5,
-"gs": 5,
-"min": 17.2,
-"dk": 13.8,
-"pts": 5.2,
-"reb": 4.0,
-"ast": 0.8,
-"stl": 1.0,
-"blk": 0.2,
-"to": 0.8,
-"tpm": 0.8,
-"fppm": 0.8,
-"l3_dk": 15.8,
-"l3_min": 17.7,
-"last": {
-"date": "2026-10-30",
-"min": 11.0,
-"dk": 4.5
-}
-},
-{
 "player": "Josh Minott",
 "team": "BKN",
 "pos": "F",
@@ -6219,27 +6099,27 @@
 }
 },
 {
-"player": "Jase Richardson",
-"team": "ORL",
-"pos": "G",
-"gp": 5,
-"gs": 3,
-"min": 18.4,
-"dk": 13.6,
-"pts": 5.6,
-"reb": 2.2,
-"ast": 1.8,
-"stl": 0.6,
-"blk": 0.6,
-"to": 0.8,
-"tpm": 1.0,
-"fppm": 0.74,
-"l3_dk": 13.8,
-"l3_min": 21.3,
+"player": "Al Horford",
+"team": "GSW",
+"pos": "C",
+"gp": 6,
+"gs": 0,
+"min": 18.7,
+"dk": 13.7,
+"pts": 5.0,
+"reb": 4.0,
+"ast": 1.0,
+"stl": 0.3,
+"blk": 0.7,
+"to": 1.0,
+"tpm": 1.3,
+"fppm": 0.73,
+"l3_dk": 14.2,
+"l3_min": 19.0,
 "last": {
-"date": "2026-10-30",
-"min": 33.0,
-"dk": 20.0
+"date": "2026-11-01",
+"min": 22.0,
+"dk": 20.25
 }
 },
 {
@@ -6288,6 +6168,54 @@
 "date": "2026-10-30",
 "min": 20.0,
 "dk": 18.0
+}
+},
+{
+"player": "Georges Niang",
+"team": "GSW",
+"pos": "F",
+"gp": 7,
+"gs": 2,
+"min": 19.6,
+"dk": 13.4,
+"pts": 6.4,
+"reb": 2.9,
+"ast": 1.3,
+"stl": 0.7,
+"blk": 0.1,
+"to": 1.6,
+"tpm": 1.1,
+"fppm": 0.69,
+"l3_dk": 15.4,
+"l3_min": 21.0,
+"last": {
+"date": "2026-11-01",
+"min": 21.0,
+"dk": 6.75
+}
+},
+{
+"player": "Jay Huff",
+"team": "IND",
+"pos": "C",
+"gp": 6,
+"gs": 4,
+"min": 16.8,
+"dk": 13.3,
+"pts": 6.0,
+"reb": 3.3,
+"ast": 1.0,
+"stl": 0.0,
+"blk": 0.7,
+"to": 0.3,
+"tpm": 1.0,
+"fppm": 0.79,
+"l3_dk": 11.8,
+"l3_min": 17.3,
+"last": {
+"date": "2026-11-01",
+"min": 17.0,
+"dk": 5.75
 }
 },
 {
@@ -6387,6 +6315,102 @@
 }
 },
 {
+"player": "Allen Graves",
+"team": "TOR",
+"pos": "F",
+"gp": 6,
+"gs": 0,
+"min": 13.7,
+"dk": 13.0,
+"pts": 5.2,
+"reb": 3.0,
+"ast": 0.7,
+"stl": 0.7,
+"blk": 0.8,
+"to": 0.2,
+"tpm": 0.3,
+"fppm": 0.95,
+"l3_dk": 7.8,
+"l3_min": 12.3,
+"last": {
+"date": "2026-11-01",
+"min": 10.0,
+"dk": 5.0
+}
+},
+{
+"player": "Jase Richardson",
+"team": "ORL",
+"pos": "G",
+"gp": 6,
+"gs": 4,
+"min": 19.7,
+"dk": 12.9,
+"pts": 5.3,
+"reb": 2.0,
+"ast": 2.0,
+"stl": 0.5,
+"blk": 0.5,
+"to": 0.7,
+"tpm": 0.8,
+"fppm": 0.66,
+"l3_dk": 14.5,
+"l3_min": 24.3,
+"last": {
+"date": "2026-11-01",
+"min": 26.0,
+"dk": 9.75
+}
+},
+{
+"player": "Chaney Johnson",
+"team": "BKN",
+"pos": "F",
+"gp": 6,
+"gs": 2,
+"min": 22.0,
+"dk": 12.9,
+"pts": 6.2,
+"reb": 3.0,
+"ast": 0.8,
+"stl": 0.7,
+"blk": 0.3,
+"to": 1.3,
+"tpm": 0.8,
+"fppm": 0.59,
+"l3_dk": 14.1,
+"l3_min": 26.3,
+"last": {
+"date": "2026-11-01",
+"min": 31.0,
+"dk": 6.0
+}
+},
+{
+"player": "Jamison Battle",
+"team": "TOR",
+"pos": "F",
+"gp": 6,
+"gs": 0,
+"min": 15.3,
+"dk": 12.9,
+"pts": 7.7,
+"reb": 1.8,
+"ast": 0.5,
+"stl": 0.8,
+"blk": 0.0,
+"to": 0.5,
+"tpm": 1.5,
+"fppm": 0.84,
+"l3_dk": 14.1,
+"l3_min": 18.7,
+"last": {
+"date": "2026-11-01",
+"min": 17.0,
+"dk": 27.75
+}
+},
+{
 "player": "Quinten Post",
 "team": "MEM",
 "pos": "C",
@@ -6432,6 +6456,54 @@
 "date": "2026-10-30",
 "min": 17.0,
 "dk": 7.75
+}
+},
+{
+"player": "Charles Bassey",
+"team": "GSW",
+"pos": "C",
+"gp": 5,
+"gs": 1,
+"min": 9.2,
+"dk": 12.6,
+"pts": 4.4,
+"reb": 4.4,
+"ast": 0.6,
+"stl": 0.2,
+"blk": 0.8,
+"to": 0.4,
+"tpm": 0.0,
+"fppm": 1.37,
+"l3_dk": 13.2,
+"l3_min": 10.3,
+"last": {
+"date": "2026-11-01",
+"min": 20.0,
+"dk": 25.5
+}
+},
+{
+"player": "Jordan Walsh",
+"team": "BOS",
+"pos": "G",
+"gp": 6,
+"gs": 5,
+"min": 16.5,
+"dk": 12.5,
+"pts": 4.3,
+"reb": 3.8,
+"ast": 1.0,
+"stl": 0.8,
+"blk": 0.2,
+"to": 0.8,
+"tpm": 0.7,
+"fppm": 0.76,
+"l3_dk": 12.8,
+"l3_min": 16.0,
+"last": {
+"date": "2026-11-01",
+"min": 13.0,
+"dk": 6.25
 }
 },
 {
@@ -6507,30 +6579,6 @@
 }
 },
 {
-"player": "Al Horford",
-"team": "GSW",
-"pos": "C",
-"gp": 5,
-"gs": 0,
-"min": 18.0,
-"dk": 12.3,
-"pts": 4.2,
-"reb": 3.8,
-"ast": 0.8,
-"stl": 0.4,
-"blk": 0.6,
-"to": 0.6,
-"tpm": 1.0,
-"fppm": 0.69,
-"l3_dk": 12.8,
-"l3_min": 18.0,
-"last": {
-"date": "2026-10-30",
-"min": 17.0,
-"dk": 5.5
-}
-},
-{
 "player": "Tyrese Proctor",
 "team": "CLE",
 "pos": "G",
@@ -6603,6 +6651,30 @@
 }
 },
 {
+"player": "Luka Garza",
+"team": "BOS",
+"pos": "C",
+"gp": 6,
+"gs": 0,
+"min": 11.0,
+"dk": 12.1,
+"pts": 5.8,
+"reb": 2.8,
+"ast": 1.2,
+"stl": 0.5,
+"blk": 0.0,
+"to": 0.7,
+"tpm": 0.7,
+"fppm": 1.1,
+"l3_dk": 14.2,
+"l3_min": 13.7,
+"last": {
+"date": "2026-11-01",
+"min": 21.0,
+"dk": 28.5
+}
+},
+{
 "player": "AJ Green",
 "team": "MIL",
 "pos": "G",
@@ -6624,30 +6696,6 @@
 "date": "2026-10-31",
 "min": 20.0,
 "dk": 6.25
-}
-},
-{
-"player": "Gradey Dick",
-"team": "LAC",
-"pos": "G",
-"gp": 5,
-"gs": 0,
-"min": 16.0,
-"dk": 12.1,
-"pts": 6.4,
-"reb": 3.2,
-"ast": 0.2,
-"stl": 0.4,
-"blk": 0.4,
-"to": 1.4,
-"tpm": 1.0,
-"fppm": 0.76,
-"l3_dk": 9.8,
-"l3_min": 16.3,
-"last": {
-"date": "2026-10-30",
-"min": 12.0,
-"dk": 7.0
 }
 },
 {
@@ -6843,6 +6891,30 @@
 }
 },
 {
+"player": "Baylor Scheierman",
+"team": "BOS",
+"pos": "G",
+"gp": 6,
+"gs": 0,
+"min": 18.5,
+"dk": 11.3,
+"pts": 4.5,
+"reb": 3.0,
+"ast": 1.2,
+"stl": 0.7,
+"blk": 0.0,
+"to": 0.8,
+"tpm": 0.8,
+"fppm": 0.61,
+"l3_dk": 13.1,
+"l3_min": 21.3,
+"last": {
+"date": "2026-11-01",
+"min": 20.0,
+"dk": 15.0
+}
+},
+{
 "player": "Yang Hansen",
 "team": "POR",
 "pos": "C",
@@ -6963,75 +7035,27 @@
 }
 },
 {
-"player": "Kobe Brown",
+"player": "Larry Nance Jr.",
 "team": "IND",
-"pos": "G",
-"gp": 2,
+"pos": "F",
+"gp": 7,
 "gs": 0,
-"min": 10.5,
-"dk": 11.0,
-"pts": 4.5,
-"reb": 3.0,
-"ast": 2.0,
-"stl": 0.0,
-"blk": 0.0,
-"to": 0.5,
-"tpm": 0.0,
-"fppm": 1.05,
-"l3_dk": 11.0,
-"l3_min": 10.5,
+"min": 16.3,
+"dk": 10.9,
+"pts": 3.3,
+"reb": 3.1,
+"ast": 0.6,
+"stl": 1.1,
+"blk": 0.3,
+"to": 0.9,
+"tpm": 0.7,
+"fppm": 0.67,
+"l3_dk": 16.1,
+"l3_min": 22.3,
 "last": {
-"date": "2026-10-30",
-"min": 20.0,
-"dk": 22.0
-}
-},
-{
-"player": "Baylor Scheierman",
-"team": "BOS",
-"pos": "G",
-"gp": 5,
-"gs": 0,
-"min": 18.2,
-"dk": 10.6,
-"pts": 3.4,
-"reb": 3.2,
-"ast": 1.2,
-"stl": 0.8,
-"blk": 0.0,
-"to": 1.0,
-"tpm": 0.6,
-"fppm": 0.58,
-"l3_dk": 12.4,
-"l3_min": 20.7,
-"last": {
-"date": "2026-10-30",
-"min": 23.0,
-"dk": 12.25
-}
-},
-{
-"player": "Goga Bitadze",
-"team": "ORL",
-"pos": "C",
-"gp": 4,
-"gs": 0,
-"min": 10.2,
-"dk": 10.6,
-"pts": 4.5,
-"reb": 3.2,
-"ast": 0.5,
-"stl": 0.2,
-"blk": 0.5,
-"to": 0.5,
-"tpm": 0.0,
-"fppm": 1.03,
-"l3_dk": 9.2,
-"l3_min": 9.7,
-"last": {
-"date": "2026-10-30",
-"min": 6.0,
-"dk": 9.0
+"date": "2026-11-01",
+"min": 26.0,
+"dk": 14.5
 }
 },
 {
@@ -7080,30 +7104,6 @@
 "date": "2026-10-30",
 "min": 18.0,
 "dk": 14.75
-}
-},
-{
-"player": "LJ Cryer",
-"team": "GSW",
-"pos": "G",
-"gp": 3,
-"gs": 0,
-"min": 8.7,
-"dk": 10.5,
-"pts": 6.0,
-"reb": 0.7,
-"ast": 2.0,
-"stl": 0.0,
-"blk": 0.0,
-"to": 0.3,
-"tpm": 1.7,
-"fppm": 1.21,
-"l3_dk": 10.5,
-"l3_min": 8.7,
-"last": {
-"date": "2026-10-26",
-"min": 3.0,
-"dk": 10.0
 }
 },
 {
@@ -7179,6 +7179,30 @@
 }
 },
 {
+"player": "Gradey Dick",
+"team": "LAC",
+"pos": "G",
+"gp": 6,
+"gs": 0,
+"min": 13.8,
+"dk": 10.3,
+"pts": 5.3,
+"reb": 2.8,
+"ast": 0.2,
+"stl": 0.3,
+"blk": 0.3,
+"to": 1.2,
+"tpm": 0.8,
+"fppm": 0.74,
+"l3_dk": 6.2,
+"l3_min": 11.3,
+"last": {
+"date": "2026-11-01",
+"min": 3.0,
+"dk": 1.25
+}
+},
+{
 "player": "Svi Mykhailiuk",
 "team": "UTA",
 "pos": "G",
@@ -7200,30 +7224,6 @@
 "date": "2026-10-31",
 "min": 18.0,
 "dk": 12.75
-}
-},
-{
-"player": "Larry Nance Jr.",
-"team": "IND",
-"pos": "F",
-"gp": 6,
-"gs": 0,
-"min": 14.7,
-"dk": 10.2,
-"pts": 3.2,
-"reb": 2.7,
-"ast": 0.5,
-"stl": 1.2,
-"blk": 0.3,
-"to": 0.7,
-"tpm": 0.7,
-"fppm": 0.7,
-"l3_dk": 14.8,
-"l3_min": 20.0,
-"last": {
-"date": "2026-10-30",
-"min": 18.0,
-"dk": 21.0
 }
 },
 {
@@ -7251,27 +7251,27 @@
 }
 },
 {
-"player": "Jamison Battle",
-"team": "TOR",
+"player": "Jarred Vanderbilt",
+"team": "LAL",
 "pos": "F",
-"gp": 5,
+"gp": 3,
 "gs": 0,
-"min": 15.0,
+"min": 15.3,
 "dk": 9.9,
-"pts": 5.2,
-"reb": 1.2,
-"ast": 0.6,
-"stl": 1.0,
+"pts": 1.3,
+"reb": 4.3,
+"ast": 2.0,
+"stl": 0.3,
 "blk": 0.0,
-"to": 0.4,
-"tpm": 1.0,
-"fppm": 0.66,
-"l3_dk": 8.2,
-"l3_min": 17.3,
+"to": 1.0,
+"tpm": 0.0,
+"fppm": 0.65,
+"l3_dk": 9.9,
+"l3_min": 15.3,
 "last": {
-"date": "2026-10-30",
-"min": 19.0,
-"dk": 2.0
+"date": "2026-11-01",
+"min": 12.0,
+"dk": 10.75
 }
 },
 {
@@ -7299,30 +7299,6 @@
 }
 },
 {
-"player": "Will Richard",
-"team": "GSW",
-"pos": "G",
-"gp": 6,
-"gs": 1,
-"min": 15.5,
-"dk": 9.8,
-"pts": 4.7,
-"reb": 1.8,
-"ast": 0.7,
-"stl": 0.7,
-"blk": 0.2,
-"to": 0.3,
-"tpm": 0.7,
-"fppm": 0.63,
-"l3_dk": 6.7,
-"l3_min": 13.0,
-"last": {
-"date": "2026-10-30",
-"min": 13.0,
-"dk": 10.25
-}
-},
-{
 "player": "Malik Monk",
 "team": "SAC",
 "pos": "G",
@@ -7344,6 +7320,30 @@
 "date": "2026-10-31",
 "min": 14.0,
 "dk": 15.5
+}
+},
+{
+"player": "Trayce Jackson-Davis",
+"team": "TOR",
+"pos": "F",
+"gp": 6,
+"gs": 1,
+"min": 7.8,
+"dk": 9.6,
+"pts": 3.8,
+"reb": 3.0,
+"ast": 0.5,
+"stl": 0.3,
+"blk": 0.3,
+"to": 0.2,
+"tpm": 0.0,
+"fppm": 1.22,
+"l3_dk": 14.0,
+"l3_min": 10.0,
+"last": {
+"date": "2026-11-01",
+"min": 9.0,
+"dk": 15.25
 }
 },
 {
@@ -7395,6 +7395,30 @@
 }
 },
 {
+"player": "Will Richard",
+"team": "GSW",
+"pos": "G",
+"gp": 7,
+"gs": 1,
+"min": 16.4,
+"dk": 9.5,
+"pts": 4.4,
+"reb": 1.6,
+"ast": 1.0,
+"stl": 0.6,
+"blk": 0.1,
+"to": 0.3,
+"tpm": 0.7,
+"fppm": 0.58,
+"l3_dk": 9.3,
+"l3_min": 19.3,
+"last": {
+"date": "2026-11-01",
+"min": 22.0,
+"dk": 8.0
+}
+},
+{
 "player": "Dailyn Swain",
 "team": "CHI",
 "pos": "G",
@@ -7416,54 +7440,6 @@
 "date": "2026-10-26",
 "min": 12.0,
 "dk": 9.5
-}
-},
-{
-"player": "Jarred Vanderbilt",
-"team": "LAL",
-"pos": "F",
-"gp": 2,
-"gs": 0,
-"min": 17.0,
-"dk": 9.5,
-"pts": 0.0,
-"reb": 5.0,
-"ast": 2.5,
-"stl": 0.0,
-"blk": 0.0,
-"to": 1.0,
-"tpm": 0.0,
-"fppm": 0.56,
-"l3_dk": 9.5,
-"l3_min": 17.0,
-"last": {
-"date": "2026-10-30",
-"min": 13.0,
-"dk": 7.75
-}
-},
-{
-"player": "Charles Bassey",
-"team": "GSW",
-"pos": "C",
-"gp": 4,
-"gs": 0,
-"min": 6.5,
-"dk": 9.4,
-"pts": 4.0,
-"reb": 3.0,
-"ast": 0.2,
-"stl": 0.0,
-"blk": 0.8,
-"to": 0.5,
-"tpm": 0.0,
-"fppm": 1.44,
-"l3_dk": 5.1,
-"l3_min": 4.3,
-"last": {
-"date": "2026-10-30",
-"min": 9.0,
-"dk": 14.0
 }
 },
 {
@@ -7491,51 +7467,99 @@
 }
 },
 {
-"player": "Jalen Slawson",
-"team": "IND",
-"pos": "F",
-"gp": 5,
+"player": "Gary Payton II",
+"team": "GSW",
+"pos": "G",
+"gp": 7,
 "gs": 0,
-"min": 11.4,
-"dk": 9.3,
-"pts": 2.6,
-"reb": 2.6,
-"ast": 0.8,
-"stl": 0.8,
-"blk": 0.6,
-"to": 1.0,
-"tpm": 0.0,
-"fppm": 0.82,
-"l3_dk": 7.5,
+"min": 13.0,
+"dk": 9.2,
+"pts": 5.0,
+"reb": 2.0,
+"ast": 0.4,
+"stl": 0.6,
+"blk": 0.0,
+"to": 0.6,
+"tpm": 0.4,
+"fppm": 0.71,
+"l3_dk": 9.8,
 "l3_min": 11.0,
 "last": {
-"date": "2026-10-30",
-"min": 18.0,
-"dk": 11.5
+"date": "2026-11-01",
+"min": 15.0,
+"dk": 12.5
 }
 },
 {
-"player": "Terance Mann",
-"team": "BKN",
+"player": "Jalen Slawson",
+"team": "IND",
+"pos": "F",
+"gp": 6,
+"gs": 0,
+"min": 12.5,
+"dk": 9.2,
+"pts": 2.7,
+"reb": 3.0,
+"ast": 0.7,
+"stl": 0.7,
+"blk": 0.5,
+"to": 1.0,
+"tpm": 0.0,
+"fppm": 0.74,
+"l3_dk": 9.5,
+"l3_min": 16.0,
+"last": {
+"date": "2026-11-01",
+"min": 18.0,
+"dk": 8.75
+}
+},
+{
+"player": "Kobe Brown",
+"team": "IND",
 "pos": "G",
-"gp": 1,
+"gp": 3,
 "gs": 0,
 "min": 12.0,
-"dk": 9.0,
-"pts": 2.0,
-"reb": 0.0,
-"ast": 2.0,
-"stl": 1.0,
-"blk": 1.0,
-"to": 0.0,
-"tpm": 0.0,
-"fppm": 0.75,
-"l3_dk": 9.0,
+"dk": 9.2,
+"pts": 4.0,
+"reb": 2.3,
+"ast": 1.7,
+"stl": 0.0,
+"blk": 0.0,
+"to": 0.7,
+"tpm": 0.3,
+"fppm": 0.77,
+"l3_dk": 9.2,
 "l3_min": 12.0,
 "last": {
-"date": "2026-10-30",
-"min": 12.0,
-"dk": 9.0
+"date": "2026-11-01",
+"min": 15.0,
+"dk": 5.75
+}
+},
+{
+"player": "Nikola Vucevic",
+"team": "ORL",
+"pos": "C",
+"gp": 6,
+"gs": 0,
+"min": 8.8,
+"dk": 8.9,
+"pts": 2.5,
+"reb": 2.5,
+"ast": 1.3,
+"stl": 0.0,
+"blk": 0.7,
+"to": 0.5,
+"tpm": 0.3,
+"fppm": 1.0,
+"l3_dk": 10.2,
+"l3_min": 9.7,
+"last": {
+"date": "2026-11-01",
+"min": 7.0,
+"dk": 11.5
 }
 },
 {
@@ -7560,30 +7584,6 @@
 "date": "2026-10-28",
 "min": 22.0,
 "dk": 11.0
-}
-},
-{
-"player": "Luka Garza",
-"team": "BOS",
-"pos": "C",
-"gp": 5,
-"gs": 0,
-"min": 9.0,
-"dk": 8.8,
-"pts": 4.6,
-"reb": 2.2,
-"ast": 0.6,
-"stl": 0.4,
-"blk": 0.0,
-"to": 0.8,
-"tpm": 0.4,
-"fppm": 0.98,
-"l3_dk": 9.3,
-"l3_min": 11.0,
-"last": {
-"date": "2026-10-30",
-"min": 7.0,
-"dk": 7.75
 }
 },
 {
@@ -7635,6 +7635,30 @@
 }
 },
 {
+"player": "Goga Bitadze",
+"team": "ORL",
+"pos": "C",
+"gp": 5,
+"gs": 0,
+"min": 9.2,
+"dk": 8.7,
+"pts": 3.6,
+"reb": 2.8,
+"ast": 0.4,
+"stl": 0.2,
+"blk": 0.4,
+"to": 0.4,
+"tpm": 0.0,
+"fppm": 0.95,
+"l3_dk": 6.4,
+"l3_min": 7.3,
+"last": {
+"date": "2026-11-01",
+"min": 5.0,
+"dk": 1.25
+}
+},
+{
 "player": "Jaylen Clark",
 "team": "MIN",
 "pos": "G",
@@ -7659,27 +7683,27 @@
 }
 },
 {
-"player": "Gary Payton II",
-"team": "GSW",
+"player": "Hugo Gonzalez",
+"team": "BOS",
 "pos": "G",
 "gp": 6,
-"gs": 0,
-"min": 12.7,
-"dk": 8.7,
-"pts": 5.0,
-"reb": 2.0,
-"ast": 0.2,
+"gs": 1,
+"min": 12.2,
+"dk": 8.5,
+"pts": 3.3,
+"reb": 2.2,
+"ast": 0.7,
 "stl": 0.5,
-"blk": 0.0,
-"to": 0.5,
+"blk": 0.2,
+"to": 0.2,
 "tpm": 0.3,
-"fppm": 0.68,
-"l3_dk": 9.7,
-"l3_min": 10.0,
+"fppm": 0.7,
+"l3_dk": 6.9,
+"l3_min": 11.7,
 "last": {
-"date": "2026-10-30",
-"min": 8.0,
-"dk": 11.0
+"date": "2026-11-01",
+"min": 14.0,
+"dk": 14.25
 }
 },
 {
@@ -7731,99 +7755,51 @@
 }
 },
 {
-"player": "Trayce Jackson-Davis",
-"team": "TOR",
-"pos": "F",
-"gp": 5,
-"gs": 0,
-"min": 7.6,
-"dk": 8.4,
-"pts": 3.6,
-"reb": 2.6,
-"ast": 0.6,
-"stl": 0.0,
-"blk": 0.4,
-"to": 0.2,
-"tpm": 0.0,
-"fppm": 1.11,
-"l3_dk": 10.7,
-"l3_min": 9.0,
-"last": {
-"date": "2026-10-30",
-"min": 1.0,
-"dk": 0.0
-}
-},
-{
-"player": "Nikola Vucevic",
-"team": "ORL",
-"pos": "C",
-"gp": 5,
-"gs": 0,
-"min": 9.2,
-"dk": 8.3,
-"pts": 2.6,
-"reb": 2.2,
-"ast": 1.2,
-"stl": 0.0,
-"blk": 0.6,
-"to": 0.4,
-"tpm": 0.4,
-"fppm": 0.91,
-"l3_dk": 12.2,
-"l3_min": 12.3,
-"last": {
-"date": "2026-10-30",
-"min": 6.0,
-"dk": 4.75
-}
-},
-{
 "player": "Jamal Cain",
 "team": "ORL",
 "pos": "F",
-"gp": 5,
+"gp": 6,
 "gs": 0,
-"min": 14.2,
+"min": 14.8,
 "dk": 8.0,
-"pts": 5.4,
-"reb": 1.4,
-"ast": 0.0,
-"stl": 0.4,
+"pts": 5.3,
+"reb": 1.3,
+"ast": 0.2,
+"stl": 0.3,
 "blk": 0.0,
-"to": 0.8,
+"to": 0.7,
 "tpm": 0.8,
-"fppm": 0.56,
-"l3_dk": 13.2,
-"l3_min": 15.3,
+"fppm": 0.54,
+"l3_dk": 12.2,
+"l3_min": 16.3,
 "last": {
-"date": "2026-10-30",
-"min": 15.0,
-"dk": 14.5
+"date": "2026-11-01",
+"min": 18.0,
+"dk": 8.25
 }
 },
 {
-"player": "Baba Miller",
-"team": "LAC",
-"pos": "F",
+"player": "LJ Cryer",
+"team": "GSW",
+"pos": "G",
 "gp": 4,
 "gs": 0,
-"min": 8.2,
+"min": 7.0,
 "dk": 7.9,
-"pts": 2.0,
-"reb": 3.0,
-"ast": 0.5,
-"stl": 0.5,
-"blk": 0.5,
-"to": 1.2,
-"tpm": 0.0,
-"fppm": 0.95,
-"l3_dk": 7.6,
-"l3_min": 8.0,
+"pts": 4.5,
+"reb": 0.5,
+"ast": 1.5,
+"stl": 0.0,
+"blk": 0.0,
+"to": 0.2,
+"tpm": 1.2,
+"fppm": 1.12,
+"l3_dk": 5.2,
+"l3_min": 6.3,
 "last": {
-"date": "2026-10-30",
-"min": 5.0,
-"dk": 3.25
+"date": "2026-11-01",
+"min": 2.0,
+"dk": 0.0
 }
 },
 {
@@ -7848,6 +7824,30 @@
 "date": "2026-10-31",
 "min": 26.0,
 "dk": 17.75
+}
+},
+{
+"player": "Baba Miller",
+"team": "LAC",
+"pos": "F",
+"gp": 5,
+"gs": 0,
+"min": 7.8,
+"dk": 7.5,
+"pts": 2.0,
+"reb": 2.8,
+"ast": 0.6,
+"stl": 0.4,
+"blk": 0.4,
+"to": 1.0,
+"tpm": 0.0,
+"fppm": 0.96,
+"l3_dk": 9.5,
+"l3_min": 9.3,
+"last": {
+"date": "2026-11-01",
+"min": 6.0,
+"dk": 6.0
 }
 },
 {
@@ -7923,30 +7923,6 @@
 }
 },
 {
-"player": "Hugo Gonzalez",
-"team": "BOS",
-"pos": "G",
-"gp": 5,
-"gs": 0,
-"min": 11.8,
-"dk": 7.3,
-"pts": 2.6,
-"reb": 2.4,
-"ast": 0.6,
-"stl": 0.2,
-"blk": 0.2,
-"to": 0.2,
-"tpm": 0.2,
-"fppm": 0.62,
-"l3_dk": 10.4,
-"l3_min": 15.0,
-"last": {
-"date": "2026-10-30",
-"min": 15.0,
-"dk": 4.5
-}
-},
-{
 "player": "Josh Okogie",
 "team": "UTA",
 "pos": "G",
@@ -8016,6 +7992,30 @@
 "date": "2026-10-26",
 "min": 4.0,
 "dk": 5.5
+}
+},
+{
+"player": "Terance Mann",
+"team": "BKN",
+"pos": "G",
+"gp": 2,
+"gs": 0,
+"min": 13.5,
+"dk": 6.9,
+"pts": 1.0,
+"reb": 0.5,
+"ast": 1.5,
+"stl": 1.0,
+"blk": 0.5,
+"to": 0.0,
+"tpm": 0.0,
+"fppm": 0.51,
+"l3_dk": 6.9,
+"l3_min": 13.5,
+"last": {
+"date": "2026-11-01",
+"min": 15.0,
+"dk": 4.75
 }
 },
 {
@@ -8115,6 +8115,30 @@
 }
 },
 {
+"player": "Nick Martinelli",
+"team": "LAC",
+"pos": "F",
+"gp": 4,
+"gs": 0,
+"min": 4.8,
+"dk": 6.7,
+"pts": 3.8,
+"reb": 1.8,
+"ast": 0.5,
+"stl": 0.0,
+"blk": 0.0,
+"to": 0.5,
+"tpm": 0.5,
+"fppm": 1.41,
+"l3_dk": 8.0,
+"l3_min": 5.7,
+"last": {
+"date": "2026-11-01",
+"min": 6.0,
+"dk": 14.75
+}
+},
+{
 "player": "Daeqwon Plowden",
 "team": "SAC",
 "pos": "G",
@@ -8136,6 +8160,30 @@
 "date": "2026-10-31",
 "min": 4.0,
 "dk": 4.0
+}
+},
+{
+"player": "Jalen Pickett",
+"team": "LAC",
+"pos": "G",
+"gp": 3,
+"gs": 0,
+"min": 5.3,
+"dk": 6.4,
+"pts": 2.3,
+"reb": 1.0,
+"ast": 1.3,
+"stl": 0.3,
+"blk": 0.0,
+"to": 0.0,
+"tpm": 0.3,
+"fppm": 1.2,
+"l3_dk": 6.4,
+"l3_min": 5.3,
+"last": {
+"date": "2026-11-01",
+"min": 6.0,
+"dk": 7.0
 }
 },
 {
@@ -8187,6 +8235,30 @@
 }
 },
 {
+"player": "Alijah Martin",
+"team": "TOR",
+"pos": "G",
+"gp": 5,
+"gs": 0,
+"min": 6.8,
+"dk": 6.2,
+"pts": 3.0,
+"reb": 1.0,
+"ast": 1.2,
+"stl": 0.2,
+"blk": 0.0,
+"to": 0.8,
+"tpm": 0.4,
+"fppm": 0.92,
+"l3_dk": 9.8,
+"l3_min": 9.3,
+"last": {
+"date": "2026-11-01",
+"min": 16.0,
+"dk": 14.0
+}
+},
+{
 "player": "Branden Carlson",
 "team": "POR",
 "pos": "C",
@@ -8235,30 +8307,6 @@
 }
 },
 {
-"player": "Jalen Pickett",
-"team": "LAC",
-"pos": "G",
-"gp": 2,
-"gs": 0,
-"min": 5.0,
-"dk": 6.1,
-"pts": 3.5,
-"reb": 0.5,
-"ast": 0.5,
-"stl": 0.5,
-"blk": 0.0,
-"to": 0.0,
-"tpm": 0.5,
-"fppm": 1.23,
-"l3_dk": 6.1,
-"l3_min": 5.0,
-"last": {
-"date": "2026-10-28",
-"min": 8.0,
-"dk": 6.75
-}
-},
-{
 "player": "Hannes Steinbach",
 "team": "CHA",
 "pos": "F",
@@ -8304,6 +8352,30 @@
 "date": "2026-10-26",
 "min": 3.0,
 "dk": 3.5
+}
+},
+{
+"player": "Kyle Anderson",
+"team": "TOR",
+"pos": "F",
+"gp": 4,
+"gs": 0,
+"min": 6.2,
+"dk": 5.9,
+"pts": 0.5,
+"reb": 1.5,
+"ast": 1.5,
+"stl": 0.5,
+"blk": 0.2,
+"to": 0.5,
+"tpm": 0.0,
+"fppm": 0.94,
+"l3_dk": 5.8,
+"l3_min": 6.7,
+"last": {
+"date": "2026-11-01",
+"min": 4.0,
+"dk": 9.75
 }
 },
 {
@@ -8547,30 +8619,6 @@
 }
 },
 {
-"player": "Blake Wesley",
-"team": "LAC",
-"pos": "G",
-"gp": 1,
-"gs": 0,
-"min": 5.0,
-"dk": 5.0,
-"pts": 0.0,
-"reb": 4.0,
-"ast": 0.0,
-"stl": 0.0,
-"blk": 0.0,
-"to": 0.0,
-"tpm": 0.0,
-"fppm": 1.0,
-"l3_dk": 5.0,
-"l3_min": 5.0,
-"last": {
-"date": "2026-10-30",
-"min": 5.0,
-"dk": 5.0
-}
-},
-{
 "player": "Kevon Looney",
 "team": "LAL",
 "pos": "F",
@@ -8667,6 +8715,30 @@
 }
 },
 {
+"player": "Jaden Bradley",
+"team": "TOR",
+"pos": "G",
+"gp": 5,
+"gs": 0,
+"min": 4.0,
+"dk": 4.8,
+"pts": 1.8,
+"reb": 0.6,
+"ast": 0.8,
+"stl": 0.6,
+"blk": 0.0,
+"to": 0.4,
+"tpm": 0.0,
+"fppm": 1.19,
+"l3_dk": 8.1,
+"l3_min": 4.7,
+"last": {
+"date": "2026-11-01",
+"min": 4.0,
+"dk": 9.25
+}
+},
+{
 "player": "Ben Sheppard",
 "team": "IND",
 "pos": "G",
@@ -8736,54 +8808,6 @@
 "date": "2026-10-31",
 "min": 9.0,
 "dk": 7.5
-}
-},
-{
-"player": "Kyle Anderson",
-"team": "TOR",
-"pos": "F",
-"gp": 3,
-"gs": 0,
-"min": 7.0,
-"dk": 4.6,
-"pts": 0.0,
-"reb": 1.0,
-"ast": 1.0,
-"stl": 0.7,
-"blk": 0.3,
-"to": 0.3,
-"tpm": 0.0,
-"fppm": 0.65,
-"l3_dk": 4.6,
-"l3_min": 7.0,
-"last": {
-"date": "2026-10-28",
-"min": 5.0,
-"dk": 3.5
-}
-},
-{
-"player": "Jaden Hardy",
-"team": "LAL",
-"pos": "G",
-"gp": 3,
-"gs": 0,
-"min": 5.7,
-"dk": 4.6,
-"pts": 1.7,
-"reb": 1.0,
-"ast": 0.7,
-"stl": 0.3,
-"blk": 0.0,
-"to": 0.3,
-"tpm": 0.3,
-"fppm": 0.81,
-"l3_dk": 4.6,
-"l3_min": 5.7,
-"last": {
-"date": "2026-10-30",
-"min": 1.0,
-"dk": 1.25
 }
 },
 {
@@ -8979,30 +9003,6 @@
 }
 },
 {
-"player": "Alijah Martin",
-"team": "TOR",
-"pos": "G",
-"gp": 4,
-"gs": 0,
-"min": 4.5,
-"dk": 4.3,
-"pts": 2.5,
-"reb": 0.8,
-"ast": 0.5,
-"stl": 0.2,
-"blk": 0.0,
-"to": 1.0,
-"tpm": 0.2,
-"fppm": 0.96,
-"l3_dk": 5.1,
-"l3_min": 4.3,
-"last": {
-"date": "2026-10-28",
-"min": 5.0,
-"dk": 8.25
-}
-},
-{
 "player": "Micah Potter",
 "team": "POR",
 "pos": "C",
@@ -9123,30 +9123,6 @@
 }
 },
 {
-"player": "Nick Martinelli",
-"team": "LAC",
-"pos": "F",
-"gp": 3,
-"gs": 0,
-"min": 4.3,
-"dk": 4.0,
-"pts": 1.7,
-"reb": 1.3,
-"ast": 0.7,
-"stl": 0.0,
-"blk": 0.0,
-"to": 0.7,
-"tpm": 0.0,
-"fppm": 0.92,
-"l3_dk": 4.0,
-"l3_min": 4.3,
-"last": {
-"date": "2026-10-30",
-"min": 5.0,
-"dk": 2.5
-}
-},
-{
 "player": "Isaiah Crawford",
 "team": "HOU",
 "pos": "F",
@@ -9243,27 +9219,27 @@
 }
 },
 {
-"player": "Jaden Bradley",
-"team": "TOR",
+"player": "Jaden Hardy",
+"team": "LAL",
 "pos": "G",
 "gp": 4,
 "gs": 0,
-"min": 4.0,
-"dk": 3.6,
+"min": 4.5,
+"dk": 3.7,
 "pts": 1.5,
-"reb": 0.5,
+"reb": 0.8,
 "ast": 0.5,
-"stl": 0.5,
+"stl": 0.2,
 "blk": 0.0,
-"to": 0.5,
-"tpm": 0.0,
-"fppm": 0.91,
-"l3_dk": 5.0,
+"to": 0.2,
+"tpm": 0.2,
+"fppm": 0.82,
+"l3_dk": 3.1,
 "l3_min": 3.7,
 "last": {
-"date": "2026-10-28",
-"min": 5.0,
-"dk": 6.25
+"date": "2026-11-01",
+"min": 1.0,
+"dk": 1.0
 }
 },
 {
@@ -9312,6 +9288,30 @@
 "date": "2026-10-31",
 "min": 4.0,
 "dk": 8.25
+}
+},
+{
+"player": "Blake Wesley",
+"team": "LAC",
+"pos": "G",
+"gp": 2,
+"gs": 0,
+"min": 4.5,
+"dk": 3.5,
+"pts": 1.0,
+"reb": 2.0,
+"ast": 0.0,
+"stl": 0.0,
+"blk": 0.0,
+"to": 0.0,
+"tpm": 0.0,
+"fppm": 0.78,
+"l3_dk": 3.5,
+"l3_min": 4.5,
+"last": {
+"date": "2026-11-01",
+"min": 4.0,
+"dk": 2.0
 }
 },
 {
@@ -9579,27 +9579,27 @@
 }
 },
 {
-"player": "Braden Smith",
-"team": "IND",
+"player": "Cam Christie",
+"team": "LAC",
 "pos": "G",
-"gp": 2,
+"gp": 4,
 "gs": 0,
-"min": 8.5,
+"min": 6.8,
 "dk": 3.0,
-"pts": 0.5,
-"reb": 0.0,
-"ast": 1.0,
-"stl": 0.5,
+"pts": 1.8,
+"reb": 0.5,
+"ast": 0.2,
+"stl": 0.2,
 "blk": 0.0,
-"to": 0.0,
-"tpm": 0.0,
-"fppm": 0.35,
-"l3_dk": 3.0,
-"l3_min": 8.5,
+"to": 0.8,
+"tpm": 0.2,
+"fppm": 0.44,
+"l3_dk": 4.0,
+"l3_min": 8.3,
 "last": {
-"date": "2026-10-30",
-"min": 12.0,
-"dk": 4.5
+"date": "2026-11-01",
+"min": 6.0,
+"dk": 4.75
 }
 },
 {
@@ -9867,30 +9867,6 @@
 }
 },
 {
-"player": "Cam Christie",
-"team": "LAC",
-"pos": "G",
-"gp": 3,
-"gs": 0,
-"min": 7.0,
-"dk": 2.4,
-"pts": 1.3,
-"reb": 0.3,
-"ast": 0.3,
-"stl": 0.3,
-"blk": 0.0,
-"to": 1.0,
-"tpm": 0.0,
-"fppm": 0.35,
-"l3_dk": 2.4,
-"l3_min": 7.0,
-"last": {
-"date": "2026-10-30",
-"min": 5.0,
-"dk": 3.75
-}
-},
-{
 "player": "Dorian Finney-Smith",
 "team": "ATL",
 "pos": "F",
@@ -10008,6 +9984,30 @@
 "date": "2026-10-20",
 "min": 1.0,
 "dk": 2.0
+}
+},
+{
+"player": "Braden Smith",
+"team": "IND",
+"pos": "G",
+"gp": 3,
+"gs": 0,
+"min": 6.0,
+"dk": 2.0,
+"pts": 0.3,
+"reb": 0.0,
+"ast": 0.7,
+"stl": 0.3,
+"blk": 0.0,
+"to": 0.0,
+"tpm": 0.0,
+"fppm": 0.33,
+"l3_dk": 2.0,
+"l3_min": 6.0,
+"last": {
+"date": "2026-11-01",
+"min": 1.0,
+"dk": 0.0
 }
 },
 {
@@ -10251,30 +10251,6 @@
 }
 },
 {
-"player": "Bronny James",
-"team": "LAL",
-"pos": "G",
-"gp": 2,
-"gs": 0,
-"min": 4.0,
-"dk": 0.8,
-"pts": 1.0,
-"reb": 0.0,
-"ast": 0.0,
-"stl": 0.0,
-"blk": 0.0,
-"to": 0.5,
-"tpm": 0.0,
-"fppm": 0.19,
-"l3_dk": 0.8,
-"l3_min": 4.0,
-"last": {
-"date": "2026-10-30",
-"min": 1.0,
-"dk": 0.0
-}
-},
-{
 "player": "Will Riley",
 "team": "WAS",
 "pos": "G",
@@ -10344,6 +10320,30 @@
 "date": "2026-10-31",
 "min": 2.0,
 "dk": 1.25
+}
+},
+{
+"player": "Bronny James",
+"team": "LAL",
+"pos": "G",
+"gp": 3,
+"gs": 0,
+"min": 3.3,
+"dk": 0.3,
+"pts": 0.7,
+"reb": 0.0,
+"ast": 0.0,
+"stl": 0.0,
+"blk": 0.0,
+"to": 0.7,
+"tpm": 0.0,
+"fppm": 0.1,
+"l3_dk": 0.3,
+"l3_min": 3.3,
+"last": {
+"date": "2026-11-01",
+"min": 2.0,
+"dk": -0.5
 }
 },
 {
@@ -10583,6 +10583,30 @@
 "last": {
 "date": "2026-10-27",
 "min": 2.0,
+"dk": 0.0
+}
+},
+{
+"player": "Cameron Carr",
+"team": "LAL",
+"pos": "G",
+"gp": 1,
+"gs": 0,
+"min": 1.0,
+"dk": 0.0,
+"pts": 0.0,
+"reb": 0.0,
+"ast": 0.0,
+"stl": 0.0,
+"blk": 0.0,
+"to": 0.0,
+"tpm": 0.0,
+"fppm": 0.0,
+"l3_dk": 0.0,
+"l3_min": 1.0,
+"last": {
+"date": "2026-11-01",
+"min": 1.0,
 "dk": 0.0
 }
 }
