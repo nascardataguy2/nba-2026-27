@@ -571,84 +571,84 @@
  ],
  "changed": [
   {
-   "player": "Terrence Shannon Jr.",
-   "team": "MIN",
+   "player": "Jakob Poeltl",
+   "team": "TOR",
    "status": "Out",
-   "was": "",
+   "was": "Questionable",
+   "why": "Left Shoulder Bursitis",
+   "time": "10:46 PM"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "status": "Available",
+   "was": "Questionable",
    "why": "",
-   "time": "6:37 PM"
+   "time": "10:46 PM"
   },
   {
-   "player": "Dylan Cardwell",
-   "team": "SAC",
+   "player": "Brandon Williams",
+   "team": "GSW",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "10:46 PM"
+  },
+  {
+   "player": "Reed Sheppard",
+   "team": "HOU",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Low Back Strain",
+   "time": "10:46 PM"
+  },
+  {
+   "player": "Kyrie Irving",
+   "team": "DAL",
    "status": "Out",
    "was": "Doubtful",
-   "why": "Left Calf Strain",
-   "time": "6:37 PM"
+   "why": "",
+   "time": "10:46 PM"
   },
   {
-   "player": "Terrence Shannon Jr",
+   "player": "Santi Aldama",
+   "team": "DAL",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Right Knee Surgery",
+   "time": "10:46 PM"
+  },
+  {
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "10:46 PM"
+  },
+  {
+   "player": "Quinten Post",
+   "team": "MEM",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Ankle Sprain",
+   "time": "10:46 PM"
+  },
+  {
+   "player": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Low Back Soreness",
+   "time": "10:46 PM"
+  },
+  {
+   "player": "LaMelo Ball",
    "team": "MIN",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Left Hip Contusion",
-   "time": "6:37 PM"
-  },
-  {
-   "player": "Jose Alvarado",
-   "team": "NYK",
    "status": "Available",
    "was": "Questionable",
-   "why": "Left Ankle Sprain",
-   "time": "6:37 PM"
-  },
-  {
-   "player": "Dylan Cardwell",
-   "team": "SAC",
-   "status": "Doubtful",
-   "was": "Questionable",
-   "why": "Left Calf Strain",
-   "time": "6:08 PM"
-  },
-  {
-   "player": "Dejounte Murray",
-   "team": "NOP",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Personal Reasons",
-   "time": "6:08 PM"
-  },
-  {
-   "player": "Jalen Smith",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Probable",
-   "why": "-",
-   "time": "6:08 PM"
-  },
-  {
-   "player": "Nic Claxton",
-   "team": "CHI",
-   "status": "Out",
-   "was": "Doubtful",
-   "why": "Left Hamstring Strain",
-   "time": "6:08 PM"
-  },
-  {
-   "player": "Tobe Awaka",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Probable",
-   "why": "-",
-   "time": "6:08 PM"
-  },
-  {
-   "player": "Obi Toppin",
-   "team": "IND",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Lumbar Sprain",
-   "time": "6:08 PM"
+   "why": "Right Wrist Contusion",
+   "time": "10:46 PM"
   }
  ],
  "sits": [
@@ -1112,8 +1112,8 @@
   ]
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_06_30PM.pdf",
+  "report": "10:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_10_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1121,26 +1121,15 @@
     "time": "2026-11-03T00:00Z",
     "team": "CLE",
     "player": "Peyton Watson",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "10:46 PM",
     "min": 24.0,
-    "benefits": [
-     {
-      "player": "Evan Mobley",
-      "plus": 4.5,
-      "min": 35.2
-     },
-     {
-      "player": "Donovan Mitchell",
-      "plus": 4.5,
-      "min": 35.1
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "ATL at IND",
@@ -1386,21 +1375,15 @@
     "time": "2026-11-03T00:30Z",
     "team": "PHI",
     "player": "Joel Embiid",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "10:46 PM",
     "min": 36.0,
-    "benefits": [
-     {
-      "player": "Adem Bona",
-      "plus": 24.4,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "CHI at PHI",
@@ -1469,6 +1452,27 @@
     "estimate": false
    },
    {
+    "game": "SAC at DAL",
+    "time": "2026-11-03T01:00Z",
+    "team": "DAL",
+    "player": "Kyrie Irving",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Doubtful",
+    "known": true,
+    "changed_at": "10:46 PM",
+    "min": 31.7,
+    "benefits": [
+     {
+      "player": "Morez Johnson Jr.",
+      "min": 20.3,
+      "recent": 16.7
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "MIL at MIN",
     "time": "2026-11-03T01:00Z",
     "team": "MIN",
@@ -1484,113 +1488,34 @@
     "estimate": false
    },
    {
-    "game": "SAC at DAL",
-    "time": "2026-11-03T01:00Z",
-    "team": "DAL",
-    "player": "Kyrie Irving",
-    "status": "Doubtful",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 31.7,
-    "benefits": [
-     {
-      "player": "Morez Johnson Jr.",
-      "min": 20.3,
-      "recent": 16.7
-     }
-    ],
-    "estimate": false
-   },
-   {
     "game": "NOP at MEM",
     "time": "2026-11-03T01:00Z",
     "team": "MEM",
     "player": "Scotty Pippen Jr.",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "Low Back Soreness",
     "new": true,
-    "was": "Out",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "",
+    "changed_at": "10:46 PM",
     "min": 14.7,
     "benefits": [],
     "estimate": false
-   },
-   {
-    "game": "SAC at DAL",
-    "time": "2026-11-03T01:00Z",
-    "team": "SAC",
-    "player": "Zach LaVine",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 30.3,
-    "benefits": [
-     {
-      "player": "Emanuel Sharp",
-      "plus": 5.0,
-      "min": 24.4
-     },
-     {
-      "player": "De'Andre Hunter",
-      "plus": 4.4,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "MIL at MIN",
-    "time": "2026-11-03T01:00Z",
-    "team": "MIN",
-    "player": "LaMelo Ball",
-    "status": "Questionable",
-    "reason": "Right Wrist Contusion",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 25.7,
-    "benefits": [
-     {
-      "player": "Nah'Shon Hyland",
-      "plus": 22.0,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
    },
    {
     "game": "NOP at MEM",
     "time": "2026-11-03T01:00Z",
     "team": "MEM",
     "player": "Quinten Post",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Right Ankle Sprain",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "10:46 PM",
     "min": 12.0,
-    "benefits": [
-     {
-      "player": "Zach Edey",
-      "plus": 6.8,
-      "min": 28.7
-     },
-     {
-      "player": "Isaiah Stewart",
-      "plus": 5.2,
-      "min": 22.0
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "NOP at MEM",
@@ -1604,6 +1529,36 @@
     "known": true,
     "changed_at": "3:54 PM",
     "min": 30.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "SAC at DAL",
+    "time": "2026-11-03T01:00Z",
+    "team": "SAC",
+    "player": "Zach LaVine",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "10:46 PM",
+    "min": 30.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "MIL at MIN",
+    "time": "2026-11-03T01:00Z",
+    "team": "MIN",
+    "player": "LaMelo Ball",
+    "status": "Available",
+    "reason": "Right Wrist Contusion",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "10:46 PM",
+    "min": 25.7,
     "benefits": [],
     "estimate": false
    },
@@ -1642,26 +1597,15 @@
     "time": "2026-11-03T01:30Z",
     "team": "HOU",
     "player": "Reed Sheppard",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Low Back Strain",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "10:46 PM",
     "min": 25.7,
-    "benefits": [
-     {
-      "player": "Marcus Smart",
-      "plus": 8.0,
-      "min": 29.9
-     },
-     {
-      "player": "Bogdan Bogdanovic",
-      "plus": 5.6,
-      "min": 20.8
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "TOR at LAC",
@@ -1736,12 +1680,27 @@
     "team": "GSW",
     "player": "Al Horford",
     "status": "Out",
-    "reason": "",
+    "reason": "Bilateral Low Back",
     "new": true,
     "was": "",
     "known": true,
     "changed_at": "4:43 PM",
     "min": 19.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "PHX at GSW",
+    "time": "2026-11-03T03:00Z",
+    "team": "GSW",
+    "player": "Brandon Williams",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "10:46 PM",
+    "min": 18.7,
     "benefits": [],
     "estimate": false
    },
@@ -1757,6 +1716,21 @@
     "known": true,
     "changed_at": "4:43 PM",
     "min": 17.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "TOR at LAC",
+    "time": "2026-11-03T03:00Z",
+    "team": "TOR",
+    "player": "Jakob Poeltl",
+    "status": "Out",
+    "reason": "Left Shoulder Bursitis",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "10:46 PM",
+    "min": 17.3,
     "benefits": [],
     "estimate": false
    },
@@ -1780,73 +1754,15 @@
     "time": "2026-11-03T03:00Z",
     "team": "TOR",
     "player": "Scottie Barnes",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "4:43 PM",
+    "changed_at": "10:46 PM",
     "min": 35.3,
-    "benefits": [
-     {
-      "player": "Collin Murray-Boyles",
-      "plus": 8.8,
-      "min": 28.7
-     },
-     {
-      "player": "Jamison Battle",
-      "plus": 7.5,
-      "min": 24.5
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "PHX at GSW",
-    "time": "2026-11-03T03:00Z",
-    "team": "GSW",
-    "player": "Brandon Williams",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 18.7,
-    "benefits": [
-     {
-      "player": "Stephen Curry",
-      "plus": 5.6,
-      "min": 36.0
-     },
-     {
-      "player": "De'Anthony Melton",
-      "plus": 5.0,
-      "min": 28.0
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "TOR at LAC",
-    "time": "2026-11-03T03:00Z",
-    "team": "TOR",
-    "player": "Jakob Poeltl",
-    "status": "Questionable",
-    "reason": "Left Shoulder Bursitis",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 17.3,
-    "benefits": [
-     {
-      "player": "Collin Murray-Boyles",
-      "plus": 16.1,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "MIA at LAL",
@@ -2234,7 +2150,7 @@
    {
     "player": "Santi Aldama",
     "team": "DAL",
-    "status": "Doubtful"
+    "status": "Out"
    },
    {
     "player": "Adou Thiero",
