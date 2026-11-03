@@ -377,13 +377,14 @@
     $('r4p-sub').textContent = 'Updated ' + up + ' \u00b7 ' + db.players.length + ' players \u00b7 ' + db.teams.length + ' teams';
   }
   // Tonight's slate in the header: game count, main-slate lock and late games.
-  // The slate file counts as current all day, and overnight (until noon ET) yesterday's file stays up
-  // until the new day's projections post, so the pages never fall back to an empty state after midnight.
+  // The latest slate file stays up (for up to a week) until the next day's projections post, so the pages
+  // never fall back to an empty state after midnight or on days with no games.
   function etNow(){ var d = new Date(); return {day: d.toLocaleDateString('en-CA', {timeZone:'America/New_York'}), hour: +d.toLocaleString('en-US', {timeZone:'America/New_York', hour:'numeric', hour12:false}) % 24}; }
   function isCur(date){
     var n = etNow(); if (date === n.day) return true;
     var y = new Date(n.day + 'T12:00:00'); y.setDate(y.getDate() - 1);
-    return n.hour < 12 && date === y.toISOString().slice(0, 10);
+    y.setDate(y.getDate() - 6);
+    return !!date && date < n.day && date >= y.toISOString().slice(0, 10);
   }
   function isStale(){ return !!(PJ && PJ.date !== etNow().day); }
   function hdSlate(){
@@ -399,7 +400,7 @@
     if (main.length) bits.push('Main slate (' + main.length + ') locks <b>' + esc(gameTime(lock)) + '</b>');
     var llock = late.map(function(g){ return g.time; }).filter(Boolean).sort()[0];
     if (late.length) bits.push((lock && llock && llock < lock ? 'Early' : 'Late') + ' slate (' + late.length + ') locks <b>' + esc(gameTime(llock)) + '</b>');
-    if (isStale()) bits = [bits[0], 'Today\u2019s slate posts soon'];
+    if (isStale()) bits = [bits[0], 'Next slate posts soon'];
     el.innerHTML = bits.join(' \u00b7 ');
     el.hidden = false;
   }
