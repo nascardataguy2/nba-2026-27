@@ -4,7 +4,36 @@
   "date": "2026-11-02",
   "updated": "6:41 PM ET",
   "games": 14,
-  "pending": [],
+  "pending": [
+   "ATL",
+   "BKN",
+   "BOS",
+   "CHA",
+   "CHI",
+   "CLE",
+   "DAL",
+   "DET",
+   "GSW",
+   "HOU",
+   "IND",
+   "LAC",
+   "LAL",
+   "MEM",
+   "MIA",
+   "MIL",
+   "MIN",
+   "NOP",
+   "NYK",
+   "OKC",
+   "ORL",
+   "PHI",
+   "PHX",
+   "SAC",
+   "SAS",
+   "TOR",
+   "UTA",
+   "WAS"
+  ],
   "first_report": "5:37 AM",
   "cards": [
    {
@@ -660,13 +689,13 @@
      {
       "player": "Paolo Banchero",
       "min": 33.5,
-      "note": "The show said Paolo Banchero will remain out for a couple more weeks.",
+      "note": "Ruled out tonight.",
       "new": false
      },
      {
       "player": "Jalen Suggs",
       "min": 33.3,
-      "note": "The show said Jalen Suggs will remain out for a couple more weeks.",
+      "note": "Ruled out tonight.",
       "new": false
      },
      {
@@ -711,7 +740,7 @@
      {
       "player": "Alex Sarr",
       "min": 27.0,
-      "note": "The show said Alex Sarr is listed as questionable for Monday. The show said Washington could play Anthony Davis at center if Sarr sits.",
+      "note": "Ruled out tonight (left knee soreness).",
       "new": true
      },
      {
@@ -762,13 +791,13 @@
      {
       "player": "Dejounte Murray",
       "min": 31.7,
-      "note": "The show said Dejounte Murray was not on the injury report before the Oct. 31 game but was downgraded to out, and he has missed New Orleans' last two games. The show said his return Monday would be a downgrade for Jeremiah Fears.",
+      "note": "Ruled out tonight (personal reasons).",
       "new": true
      },
      {
       "player": "Yves Missi",
       "min": 19.5,
-      "note": "The show said Yves Missi will miss Monday's game again. He has not played since October 23.",
+      "note": "Ruled out tonight.",
       "new": false
      },
      {
@@ -797,14 +826,14 @@
      {
       "player": "Jalen Johnson",
       "min": 32.7,
-      "note": "The show said Jalen Johnson left the weekend game against the Pelicans with an ankle injury and was listed questionable to return in a 20-point game. He played 28 minutes in that game and is on the injury report for Monday.",
+      "note": "Ruled out tonight (left ankle sprain).",
       "new": true
      },
      {
       "player": "Kingston Flemings",
       "min": 23.0,
       "note": "Ruled out tonight (league suspension).",
-      "new": true
+      "new": false
      }
     ],
     "new": true,
@@ -887,7 +916,7 @@
      {
       "player": "Kyrie Irving",
       "min": 31.7,
-      "note": "The show said Kyrie Irving is questionable for Monday with a knee issue, and it was unclear whether it is soreness or monitoring of his return. He played 35 minutes on October 30 and 33 minutes on October 26.",
+      "note": "Doubtful tonight.",
       "new": true
      }
     ],
@@ -1105,1226 +1134,43 @@
      "proj": 17.3
     }
    ],
-   "injuries": [
-    {
-     "player": "Jayson Tatum",
-     "team": "BOS",
-     "text": "Tatum left late in the first quarter Sunday after the back of his head hit an opponent's forehead and he was bleeding. He returned with 6:13 left in the first half and finished the game."
-    }
-   ]
+   "injuries": []
   },
   "injuries": {
-   "report": "10:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_10_30PM.pdf",
-   "pending": [],
-   "rows": [
-    {
-     "game": "OKC at CLE",
-     "time": "2026-11-03T00:00Z",
-     "team": "CLE",
-     "player": "Peyton Watson",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 24.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Andrew Nembhard",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 33.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Pascal Siakam",
-     "status": "Out",
-     "reason": "Rest",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 33.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "ATL",
-     "player": "Jalen Johnson",
-     "status": "Out",
-     "reason": "Left Ankle Sprain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "6:08 PM",
-     "min": 32.7,
-     "benefits": [
-      {
-       "player": "Aaron Wiggins",
-       "min": 34.7,
-       "recent": 23.7
-      },
-      {
-       "player": "C.J. McCollum",
-       "min": 36.0,
-       "recent": 25.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ORL",
-     "time": "2026-11-03T00:30Z",
-     "team": "ORL",
-     "player": "Anthony Black",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:01 PM",
-     "min": 28.7,
-     "benefits": [
-      {
-       "player": "Nikola Vucevic",
-       "min": 15.7,
-       "recent": 9.7
-      },
-      {
-       "player": "Goga Bitadze",
-       "min": 11.6,
-       "recent": 7.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ORL",
-     "time": "2026-11-03T00:30Z",
-     "team": "WAS",
-     "player": "Alex Sarr",
-     "status": "Out",
-     "reason": "Left Knee Soreness",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 27.0,
-     "benefits": [
-      {
-       "player": "Carlton Carrington",
-       "min": 26.5,
-       "recent": 22.7
-      },
-      {
-       "player": "Deandre Ayton",
-       "min": 17.3,
-       "recent": 13.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Aaron Nesmith",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 26.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "ATL",
-     "player": "Kingston Flemings",
-     "status": "Out",
-     "reason": "League Suspension",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 23.0,
-     "benefits": [
-      {
-       "player": "Aaron Wiggins",
-       "min": 34.7,
-       "recent": 23.7
-      },
-      {
-       "player": "C.J. McCollum",
-       "min": 36.0,
-       "recent": 25.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Larry Nance Jr.",
-     "status": "Out",
-     "reason": "Illness",
-     "new": true,
-     "was": "Doubtful",
-     "known": true,
-     "changed_at": "6:08 PM",
-     "min": 22.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Obi Toppin",
-     "status": "Out",
-     "reason": "Lumbar Sprain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "6:08 PM",
-     "min": 21.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "DET at CHA",
-     "time": "2026-11-03T00:30Z",
-     "team": "DET",
-     "player": "Isaiah Joe",
-     "status": "Out",
-     "reason": "Right Hip Contusion",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "1:01 PM",
-     "min": 13.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "ATL",
-     "player": "Jock Landale",
-     "status": "Out",
-     "reason": "Left Hip Strain",
-     "new": true,
-     "was": "Available",
-     "known": true,
-     "changed_at": "",
-     "min": 11.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ORL",
-     "time": "2026-11-03T00:30Z",
-     "team": "WAS",
-     "player": "Reece Beekman",
-     "status": "Out",
-     "reason": "Right AC Joint Injury",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 1.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ORL",
-     "time": "2026-11-03T00:30Z",
-     "team": "WAS",
-     "player": "Anthony Gill",
-     "status": "Out",
-     "reason": "Low Back Spasms",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 1.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "CHI at PHI",
-     "time": "2026-11-03T00:30Z",
-     "team": "PHI",
-     "player": "Joel Embiid",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 36.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "CHI at PHI",
-     "time": "2026-11-03T00:30Z",
-     "team": "CHI",
-     "player": "Jalen Smith",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Probable",
-     "known": true,
-     "changed_at": "6:08 PM",
-     "min": 25.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "BKN at NYK",
-     "time": "2026-11-03T00:30Z",
-     "team": "NYK",
-     "player": "Jose Alvarado",
-     "status": "Available",
-     "reason": "Left Ankle Sprain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "6:37 PM",
-     "min": 13.5,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "CHI at PHI",
-     "time": "2026-11-03T00:30Z",
-     "team": "CHI",
-     "player": "Tobe Awaka",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Probable",
-     "known": true,
-     "changed_at": "6:08 PM",
-     "min": 12.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "NOP at MEM",
-     "time": "2026-11-03T01:00Z",
-     "team": "NOP",
-     "player": "Dejounte Murray",
-     "status": "Out",
-     "reason": "Personal Reasons",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "6:08 PM",
-     "min": 31.7,
-     "benefits": [
-      {
-       "player": "Benedict Mathurin",
-       "min": 24.5,
-       "recent": 17.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "SAC at DAL",
-     "time": "2026-11-03T01:00Z",
-     "team": "DAL",
-     "player": "Kyrie Irving",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "Doubtful",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 31.7,
-     "benefits": [
-      {
-       "player": "Morez Johnson Jr.",
-       "min": 20.3,
-       "recent": 16.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "MIL at MIN",
-     "time": "2026-11-03T01:00Z",
-     "team": "MIN",
-     "player": "Terrence Shannon Jr",
-     "status": "Out",
-     "reason": "Left Hip Contusion",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "6:37 PM",
-     "min": 21.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "NOP at MEM",
-     "time": "2026-11-03T01:00Z",
-     "team": "MEM",
-     "player": "Scotty Pippen Jr.",
-     "status": "Out",
-     "reason": "Low Back Soreness",
-     "new": true,
-     "was": "Doubtful",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 14.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "NOP at MEM",
-     "time": "2026-11-03T01:00Z",
-     "team": "MEM",
-     "player": "Quinten Post",
-     "status": "Out",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 12.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "NOP at MEM",
-     "time": "2026-11-03T01:00Z",
-     "team": "NOP",
-     "player": "Trey Murphy III",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Probable",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 30.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "SAC at DAL",
-     "time": "2026-11-03T01:00Z",
-     "team": "SAC",
-     "player": "Zach LaVine",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 30.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "MIL at MIN",
-     "time": "2026-11-03T01:00Z",
-     "team": "MIN",
-     "player": "LaMelo Ball",
-     "status": "Available",
-     "reason": "Right Wrist Contusion",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 25.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "BOS at HOU",
-     "time": "2026-11-03T01:30Z",
-     "team": "BOS",
-     "player": "Paul George",
-     "status": "Out",
-     "reason": "Rest",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 32.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "BOS at HOU",
-     "time": "2026-11-03T01:30Z",
-     "team": "HOU",
-     "player": "Clint Capela",
-     "status": "Out",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 20.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "BOS at HOU",
-     "time": "2026-11-03T01:30Z",
-     "team": "HOU",
-     "player": "Reed Sheppard",
-     "status": "Available",
-     "reason": "Low Back Strain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 25.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "TOR at LAC",
-     "time": "2026-11-03T03:00Z",
-     "team": "LAC",
-     "player": "Rui Hachimura",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "4:43 PM",
-     "min": 28.3,
-     "benefits": [
-      {
-       "player": "Keaton Wagler",
-       "min": 30.2,
-       "recent": 24.0
-      },
-      {
-       "player": "Darius Garland",
-       "min": 35.1,
-       "recent": 30.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "TOR at LAC",
-     "time": "2026-11-03T03:00Z",
-     "team": "LAC",
-     "player": "Derrick Jones Jr.",
-     "status": "Out",
-     "reason": "Right Knee Soreness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "4:43 PM",
-     "min": 27.3,
-     "benefits": [
-      {
-       "player": "Keaton Wagler",
-       "min": 30.2,
-       "recent": 24.0
-      },
-      {
-       "player": "Darius Garland",
-       "min": 35.1,
-       "recent": 30.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "TOR at LAC",
-     "time": "2026-11-03T03:00Z",
-     "team": "TOR",
-     "player": "Kawhi Leonard",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 26.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "PHX at GSW",
-     "time": "2026-11-03T03:00Z",
-     "team": "GSW",
-     "player": "Al Horford",
-     "status": "Out",
-     "reason": "Bilateral Low Back",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "4:43 PM",
-     "min": 19.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "PHX at GSW",
-     "time": "2026-11-03T03:00Z",
-     "team": "GSW",
-     "player": "Brandon Williams",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 18.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "PHX at GSW",
-     "time": "2026-11-03T03:00Z",
-     "team": "GSW",
-     "player": "Gui Santos",
-     "status": "Out",
-     "reason": "Left Knee Tendinitis",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "4:43 PM",
-     "min": 17.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "TOR at LAC",
-     "time": "2026-11-03T03:00Z",
-     "team": "TOR",
-     "player": "Jakob Poeltl",
-     "status": "Out",
-     "reason": "Left Shoulder Bursitis",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 17.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "TOR at LAC",
-     "time": "2026-11-03T03:00Z",
-     "team": "LAC",
-     "player": "Jordan Miller",
-     "status": "Out",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "4:43 PM",
-     "min": 9.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "TOR at LAC",
-     "time": "2026-11-03T03:00Z",
-     "team": "TOR",
-     "player": "Scottie Barnes",
-     "status": "Available",
-     "reason": "",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "10:46 PM",
-     "min": 35.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "MIA at LAL",
-     "time": "2026-11-03T03:00Z",
-     "team": "LAL",
-     "player": "Walker Kessler",
-     "status": "Available",
-     "reason": "Left Finger Splint",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "4:43 PM",
-     "min": 29.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "MIA at LAL",
-     "time": "2026-11-03T03:00Z",
-     "team": "MIA",
-     "player": "Tim Hardaway Jr.",
-     "status": "Available",
-     "reason": "Personal Reasons",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "3:54 PM",
-     "min": 16.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "OKC at CLE",
-     "time": "2026-11-03T00:00Z",
-     "team": "OKC",
-     "player": "Jalen Williams",
-     "status": "Out",
-     "reason": "Left Ankle/ Surgery",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 31.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "OKC at CLE",
-     "time": "2026-11-03T00:00Z",
-     "team": "OKC",
-     "player": "Chet Holmgren",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 30.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "OKC at CLE",
-     "time": "2026-11-03T00:00Z",
-     "team": "CLE",
-     "player": "Jaylon Tyson",
-     "status": "Out",
-     "reason": "Right Ankle Sprain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 19.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "OKC at CLE",
-     "time": "2026-11-03T00:00Z",
-     "team": "OKC",
-     "player": "Alex Caruso",
-     "status": "Out",
-     "reason": "Right Ankle Sprain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 17.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "OKC at CLE",
-     "time": "2026-11-03T00:00Z",
-     "team": "OKC",
-     "player": "Cason Wallace",
-     "status": "Out",
-     "reason": "Left Shoulder/ Surgery",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 16.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ORL",
-     "time": "2026-11-03T00:30Z",
-     "team": "ORL",
-     "player": "Paolo Banchero",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 33.5,
-     "benefits": [
-      {
-       "player": "Nikola Vucevic",
-       "min": 15.7,
-       "recent": 9.7
-      },
-      {
-       "player": "Goga Bitadze",
-       "min": 11.6,
-       "recent": 7.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ORL",
-     "time": "2026-11-03T00:30Z",
-     "team": "ORL",
-     "player": "Jalen Suggs",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 33.3,
-     "benefits": [
-      {
-       "player": "Nikola Vucevic",
-       "min": 15.7,
-       "recent": 9.7
-      },
-      {
-       "player": "Goga Bitadze",
-       "min": 11.6,
-       "recent": 7.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Tyrese Haliburton",
-     "status": "Out",
-     "reason": "Left Hamstring Strain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 32.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Ivica Zubac",
-     "status": "Out",
-     "reason": "Left Ankle Sprain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 21.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "BKN at NYK",
-     "time": "2026-11-03T00:30Z",
-     "team": "BKN",
-     "player": "Egor Demin",
-     "status": "Out",
-     "reason": "Right Bone Bruise",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 20.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "DET at CHA",
-     "time": "2026-11-03T00:30Z",
-     "team": "DET",
-     "player": "Jalen Duren",
-     "status": "Out",
-     "reason": "Right Hamstring Strain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 19.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ORL",
-     "time": "2026-11-03T00:30Z",
-     "team": "WAS",
-     "player": "Justin Champagnie",
-     "status": "Out",
-     "reason": "Right Foot Surgery",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 17.7,
-     "benefits": [
-      {
-       "player": "Carlton Carrington",
-       "min": 26.5,
-       "recent": 22.7
-      },
-      {
-       "player": "Deandre Ayton",
-       "min": 17.3,
-       "recent": 13.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "ATL at IND",
-     "time": "2026-11-03T00:30Z",
-     "team": "IND",
-     "player": "Ben Sheppard",
-     "status": "Out",
-     "reason": "Left Meniscus Surgery",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 12.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "MIL at MIN",
-     "time": "2026-11-03T01:00Z",
-     "team": "MIN",
-     "player": "Anthony Edwards",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 34.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "SAC at DAL",
-     "time": "2026-11-03T01:00Z",
-     "team": "SAC",
-     "player": "Keegan Murray",
-     "status": "Out",
-     "reason": "Left Ankle Capsulitis",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 27.0,
-     "benefits": [
-      {
-       "player": "Malik Monk",
-       "min": 16.0,
-       "recent": 11.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "NOP at MEM",
-     "time": "2026-11-03T01:00Z",
-     "team": "NOP",
-     "player": "Yves Missi",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 19.5,
-     "benefits": [
-      {
-       "player": "Benedict Mathurin",
-       "min": 24.5,
-       "recent": 17.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "NOP at MEM",
-     "time": "2026-11-03T01:00Z",
-     "team": "NOP",
-     "player": "Jordan Poole",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 16.3,
-     "benefits": [
-      {
-       "player": "Benedict Mathurin",
-       "min": 24.5,
-       "recent": 17.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "SAC at DAL",
-     "time": "2026-11-03T01:00Z",
-     "team": "DAL",
-     "player": "Sergio Larrea",
-     "status": "Out",
-     "reason": "Right Knee Sprain",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 13.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "UTA at SAS",
-     "time": "2026-11-03T01:30Z",
-     "team": "UTA",
-     "player": "Jaren Jackson Jr.",
-     "status": "Out",
-     "reason": "Right MCL Tear",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 25.3,
-     "benefits": [],
-     "estimate": false
-    }
+   "report": "01:45 AM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-03_01_45AM.pdf",
+   "pending": [
+    "ATL",
+    "BKN",
+    "BOS",
+    "CHA",
+    "CHI",
+    "CLE",
+    "DAL",
+    "DET",
+    "GSW",
+    "HOU",
+    "IND",
+    "LAC",
+    "LAL",
+    "MEM",
+    "MIA",
+    "MIL",
+    "MIN",
+    "NOP",
+    "NYK",
+    "OKC",
+    "ORL",
+    "PHI",
+    "PHX",
+    "SAC",
+    "SAS",
+    "TOR",
+    "UTA",
+    "WAS"
    ],
-   "minor": [
-    {
-     "player": "T.J. McConnell",
-     "team": "IND",
-     "status": "Out"
-    },
-    {
-     "player": "Nic Claxton",
-     "team": "CHI",
-     "status": "Out"
-    },
-    {
-     "player": "Dylan Cardwell",
-     "team": "SAC",
-     "status": "Out"
-    },
-    {
-     "player": "Santi Aldama",
-     "team": "DAL",
-     "status": "Out"
-    },
-    {
-     "player": "Adou Thiero",
-     "team": "LAL",
-     "status": "Out"
-    },
-    {
-     "player": "Jimmy Butler III",
-     "team": "GSW",
-     "status": "Out"
-    },
-    {
-     "player": "Moses Moody",
-     "team": "GSW",
-     "status": "Out"
-    },
-    {
-     "player": "Kristaps Porzingis",
-     "team": "GSW",
-     "status": "Out"
-    },
-    {
-     "player": "Nate Bittle",
-     "team": "TOR",
-     "status": "Out"
-    },
-    {
-     "player": "Bradley Beal",
-     "team": "LAC",
-     "status": "Out"
-    },
-    {
-     "player": "Brandon Ingram",
-     "team": "LAC",
-     "status": "Out"
-    },
-    {
-     "player": "Yanic Konan Niederhauser",
-     "team": "LAC",
-     "status": "Out"
-    },
-    {
-     "player": "Thomas Sorber",
-     "team": "OKC",
-     "status": "Out"
-    },
-    {
-     "player": "Nikola Topic",
-     "team": "OKC",
-     "status": "Out"
-    },
-    {
-     "player": "Nae'Qwan Tomlin",
-     "team": "CLE",
-     "status": "Out"
-    },
-    {
-     "player": "Mouhamed Gueye",
-     "team": "ATL",
-     "status": "Out"
-    },
-    {
-     "player": "Henri Veesaar",
-     "team": "ATL",
-     "status": "Out"
-    },
-    {
-     "player": "Johnny Furphy",
-     "team": "IND",
-     "status": "Out"
-    },
-    {
-     "player": "Dominick Barlow",
-     "team": "PHI",
-     "status": "Out"
-    },
-    {
-     "player": "Ariel Hukporti",
-     "team": "PHI",
-     "status": "Out"
-    },
-    {
-     "player": "Kon Knueppel",
-     "team": "CHA",
-     "status": "Out"
-    },
-    {
-     "player": "Grant Williams",
-     "team": "CHA",
-     "status": "Out"
-    },
-    {
-     "player": "Tristan Vukcevic",
-     "team": "WAS",
-     "status": "Out"
-    },
-    {
-     "player": "Jamir Watkins",
-     "team": "WAS",
-     "status": "Out"
-    },
-    {
-     "player": "Jonathan Isaac",
-     "team": "ORL",
-     "status": "Out"
-    },
-    {
-     "player": "Izaiyah Nelson",
-     "team": "ORL",
-     "status": "Out"
-    },
-    {
-     "player": "Noah Penda",
-     "team": "ORL",
-     "status": "Out"
-    },
-    {
-     "player": "Donte DiVincenzo",
-     "team": "MIN",
-     "status": "Out"
-    },
-    {
-     "player": "Maxime Raynaud",
-     "team": "SAC",
-     "status": "Out"
-    },
-    {
-     "player": "Ben Simmons",
-     "team": "SAC",
-     "status": "Out"
-    },
-    {
-     "player": "Tarik Biberovic",
-     "team": "DAL",
-     "status": "Out"
-    },
-    {
-     "player": "Dereck Lively II",
-     "team": "DAL",
-     "status": "Out"
-    },
-    {
-     "player": "Steven Adams",
-     "team": "HOU",
-     "status": "Out"
-    },
-    {
-     "player": "Devin Carter",
-     "team": "BOS",
-     "status": "Out"
-    },
-    {
-     "player": "Jusuf Nurkic",
-     "team": "UTA",
-     "status": "Out"
-    },
-    {
-     "player": "Tobias Harris",
-     "team": "SAS",
-     "status": "Out"
-    },
-    {
-     "player": "Jayden Quaintance",
-     "team": "SAS",
-     "status": "Out"
-    },
-    {
-     "player": "Mark Williams",
-     "team": "PHX",
-     "status": "Out"
-    }
-   ]
+   "rows": [],
+   "minor": []
   }
  },
  "log": [
@@ -2375,12 +1221,6 @@
    "2026-10-30",
    "minutes",
    "He started but played only 21 minutes in Friday's lopsided loss at Miami, down from 27 in the previous game, and scored nine points."
-  ],
-  [
-   "Aaron Nesmith",
-   "2026-11-01",
-   "minutes",
-   "The show said Aaron Nesmith is slowly ramping up. He started and played 30 minutes Sunday against Brooklyn with 11 points."
   ],
   [
    "Aaron Wiggins",
@@ -2593,12 +1433,6 @@
    "Alex Sarr played 29 minutes, which the show called his season high, but he managed only three points, eight rebounds and four turnovers. The show said Anthony Davis is soaking up most of the big-man work."
   ],
   [
-   "Alex Sarr",
-   "2026-11-04",
-   "injury",
-   "Alex Sarr did not play Monday. The show treated him as likely back Wednesday but did not confirm it."
-  ],
-  [
    "Allen Graves",
    "2026-10-28",
    "minutes",
@@ -2621,12 +1455,6 @@
    "2026-10-31",
    "news",
    "He missed Friday with low back soreness, and Clint Capela started at center with 11 rebounds and five assists in 30 minutes. Houston has not posted its injury report for Saturday yet."
-  ],
-  [
-   "Alperen Sengun",
-   "2026-11-02",
-   "stat",
-   "Alperen Sengun had 26 points, seven rebounds, 10 assists, two steals and two blocks in 38 minutes Monday against Boston."
   ],
   [
    "Amen Thompson",
@@ -2779,12 +1607,6 @@
    "Edwards has carried about a 35% usage rate to start the season."
   ],
   [
-   "Anthony Edwards",
-   "2026-11-04",
-   "injury",
-   "Anthony Edwards remains out, and the show noted Minnesota will still be without him Wednesday against Houston."
-  ],
-  [
    "Asa Newell",
    "2026-11-02",
    "role",
@@ -2861,12 +1683,6 @@
    "2026-10-31",
    "role",
    "Ayo Dosunmu started Saturday with Anthony Edwards out and had 27 points, nine rebounds, three assists, three steals and two three-pointers in 38 minutes."
-  ],
-  [
-   "Ayo Dosunmu",
-   "2026-11-02",
-   "stat",
-   "Ayo Dosunmu had 19 points, 12 rebounds and eight assists in 37 minutes Monday. He has started Minnesota's last four games and scored 27 points in 38 minutes on Saturday."
   ],
   [
    "Bam Adebayo",
@@ -3169,12 +1985,6 @@
    "Cade Cunningham is averaging 22.2 points, 5.5 rebounds and 7.2 assists in 33.5 minutes through six games. He has averaged 43.5 DraftKings points, though he played only 28 minutes on Oct. 30."
   ],
   [
-   "Cade Cunningham",
-   "2026-11-02",
-   "stat",
-   "Cade Cunningham had 33 points, five rebounds, seven assists and five steals in only 27 minutes Monday, scoring 60.25 DraftKings points."
-  ],
-  [
    "Caleb Wilson",
    "2026-10-26",
    "minutes",
@@ -3259,12 +2069,6 @@
    "Cameron Carr made his debut Sunday and played 1 minute late in the game without scoring."
   ],
   [
-   "Cameron Johnson",
-   "2026-10-30",
-   "role",
-   "Johnson returned from a three-game absence with an ankle sprain and started on Oct. 30, posting 12 points, 9 rebounds, 3 assists and 1 steal in 34 minutes. He started again on Nov. 2 and played 34 minutes."
-  ],
-  [
    "Cason Wallace",
    "2026-10-28",
    "injury",
@@ -3331,12 +2135,6 @@
    "He is out 8 to 10 weeks with a small patellar tendon tear, so Isaiah Hartenstein and Aday Mara take on the frontcourt minutes."
   ],
   [
-   "Chet Holmgren",
-   "2026-11-02",
-   "injury",
-   "Chet Holmgren is out with a right knee injury. The show said he is likely out until January."
-  ],
-  [
    "Christian Anderson",
    "2026-10-29",
    "role",
@@ -3353,12 +2151,6 @@
    "2026-10-30",
    "stat",
    "Christian Braun scored 31 points with seven 3-pointers on Oct. 30 and has had at least two steals in five of his six games. The show said his steals pace is not sustainable."
-  ],
-  [
-   "Christian Braun",
-   "2026-11-02",
-   "minutes",
-   "Christian Braun has started every game and played at least 33 minutes in each, including 37 minutes Monday."
   ],
   [
    "CJ McCollum",
@@ -3423,14 +2215,8 @@
   [
    "Coby White",
    "2026-11-02",
-   "injury",
-   "The show said Coby White was expected back this week. He made his Hornets debut Monday as a starter and played 16 minutes."
-  ],
-  [
-   "Coby White",
-   "2026-11-02",
-   "role",
-   "The show listed White as out, but he started for Charlotte on Nov. 2 and played 16 minutes, which moved Dennis Schroder to the bench."
+   "news",
+   "The show said he is expected to make his Hornets debut Monday against Detroit, likely on a minutes limit."
   ],
   [
    "Collin Gillespie",
@@ -3629,24 +2415,6 @@
    "2026-10-28",
    "minutes",
    "Darius Garland played only 26 minutes on Oct. 28 after playing 32 to 37 minutes in each of his first three games."
-  ],
-  [
-   "Darius Garland",
-   "2026-11-01",
-   "usage",
-   "Garland averaged 20.8 points, 6.3 assists and 2.5 threes through Nov. 1 but also 5.2 turnovers and only 1.3 rebounds per game. The show expects his heavy ball-handling load and turnovers to drop as teammates return."
-  ],
-  [
-   "Darius Garland",
-   "2026-11-02",
-   "news",
-   "The show said there is a risk the Clippers limit his playing time later in the season if the team keeps losing and has injuries."
-  ],
-  [
-   "Darius Garland",
-   "2026-11-02",
-   "stat",
-   "He is averaging 32.5 minutes, 20.8 points, 6.3 assists and 5.2 turnovers per game. He is grabbing only 1.3 rebounds per game, which the show called unsustainably low for his minutes."
   ],
   [
    "Darryn Peterson",
@@ -3871,18 +2639,6 @@
    "The show said Dejounte Murray missed the last two games for the birth of his son, and he did not play on Oct. 29 or Oct. 31."
   ],
   [
-   "Dejounte Murray",
-   "2026-11-02",
-   "news",
-   "The show said the Pelicans are trying to trade him."
-  ],
-  [
-   "Dejounte Murray",
-   "2026-11-04",
-   "injury",
-   "Dejounte Murray has not played since Oct. 28. The show said he flew to Memphis with the team and then left, that reports pointed to the birth of his son, and that trade rumors also surround him, so his Wednesday status against Utah is unclear."
-  ],
-  [
    "DeMar DeRozan",
    "2026-10-26",
    "role",
@@ -3907,10 +2663,10 @@
    "DeRozan has come off the bench in all five games and scored only 6 and 3 points in his last two. The show expects his role to shrink further as Denver gets wings back, with Cameron Johnson returning to start on Oct. 30."
   ],
   [
-   "DeMar DeRozan",
-   "2026-11-02",
-   "minutes",
-   "He is averaging 26.2 minutes per game off the bench, and the show said he is not getting many shots."
+   "Deni Avdija",
+   "2026-10-29",
+   "stat",
+   "Deni Avdija led Portland with 24 points, nine rebounds and seven assists in 32 minutes on Thursday."
   ],
   [
    "Deni Avdija",
@@ -4171,22 +2927,10 @@
    "Donovan Clingan played only 15 minutes against Utah on Oct. 31, and the show said that was due to foul trouble with five fouls. He also played 21 minutes on opening night in a blowout loss to Phoenix."
   ],
   [
-   "Donovan Clingan",
-   "2026-11-01",
-   "minutes",
-   "Clingan averaged 22.4 minutes through his first five games, with 8.6 points, 8.8 rebounds and 2.0 blocks per game. The show blamed foul trouble, blowouts and strong play from Robert Williams III for the reduced minutes."
-  ],
-  [
-   "Donovan Clingan",
-   "2026-11-02",
-   "minutes",
-   "He averaged 22.4 minutes in Portland's first five games, and the show blamed blowouts and foul trouble for capping his playing time. The show expects his minutes to climb back toward 27 per game as games get more competitive."
-  ],
-  [
-   "Donovan Clingan",
-   "2026-11-02",
-   "stat",
-   "Clingan played 32 minutes on Nov. 2 and posted 17 points, 18 rebounds and four blocks for 53 DraftKings points, his best game of the season."
+   "Donovan Mitchell",
+   "2026-10-27",
+   "usage",
+   "Donovan Mitchell has been playing heavy minutes in competitive games and shooting 20-plus times. Cleveland is expected to be fully healthy Wednesday."
   ],
   [
    "Donovan Mitchell",
@@ -4223,12 +2967,6 @@
    "2026-10-27",
    "news",
    "Draymond Green has struggled to score this season but still rebounds and makes plays."
-  ],
-  [
-   "Draymond Green",
-   "2026-11-01",
-   "injury",
-   "Green rested Sunday against the Clippers on the front end of a back-to-back. Golden State hosts Phoenix on Monday."
   ],
   [
    "Draymond Green",
@@ -4321,12 +3059,6 @@
    "Brooklyn is without Egor Demin (leg bone bruise) and Mikel Brown Jr. Moritz Wagner had 16 points and eight rebounds in 23 minutes Friday and is taking minutes from Day'Ron Sharpe."
   ],
   [
-   "Egor Demin",
-   "2026-11-02",
-   "injury",
-   "The show said Demin is sidelined, and team news lists a right leg bone bruise with a re-evaluation in one week."
-  ],
-  [
    "Emanuel Sharp",
    "2026-10-27",
    "minutes",
@@ -4367,12 +3099,6 @@
    "2026-11-01",
    "news",
    "Paolo Banchero and Jalen Suggs are out again for Orlando. Franz Wagner had 26 points and 11 assists Friday, and Anthony Black started with 17 points and 10 assists."
-  ],
-  [
-   "Franz Wagner",
-   "2026-11-02",
-   "stat",
-   "Wagner had 24 points, six assists, three rebounds and one three in 38 minutes on Nov. 2, and he has played at least 37 minutes in four straight games."
   ],
   [
    "Fred VanVleet",
@@ -4645,12 +3371,6 @@
    "Jackson started again but had 5 points, 8 rebounds, 2 assists and no blocks in 22 minutes."
   ],
   [
-   "Isaiah Jackson",
-   "2026-11-02",
-   "minutes",
-   "He is averaging 21.7 minutes per game, but he played 28, 24 and 22 minutes in three of the Clippers' more competitive games. The show said he only needs about one and a half more minutes per game to have steady value."
-  ],
-  [
    "Isaiah Stewart",
    "2026-10-25",
    "role",
@@ -4679,12 +3399,6 @@
    "2026-11-01",
    "news",
    "He is ruled out tonight (left ankle sprain). Huff started the second half Sunday and had 14 points and three blocks in 21 minutes, and Toppin is the small-ball backup center."
-  ],
-  [
-   "Ivica Zubac",
-   "2026-11-02",
-   "injury",
-   "Ivica Zubac remains out indefinitely with his left ankle sprain."
   ],
   [
    "Ja Morant",
@@ -4861,40 +3575,16 @@
    "Jakob Poeltl played only 10 minutes Wednesday after picking up five fouls in a blowout. He is averaging about three points and five rebounds in 20 minutes a game this season."
   ],
   [
-   "Jakob Poeltl",
-   "2026-11-02",
-   "minutes",
-   "He is averaging 20.2 minutes per game, and the show said his shot volume is very low at about 3.4 attempts per game."
-  ],
-  [
-   "Jakob Poeltl",
-   "2026-11-03",
-   "news",
-   "He missed Sunday and Monday, and the show said shoulder bursitis has him day-to-day."
-  ],
-  [
-   "Jakob Poeltl",
-   "2026-11-04",
-   "injury",
-   "Jakob Poeltl missed both Sunday's and Monday's games. The show called it a consistent issue, and his status for Wednesday at Denver is unclear."
-  ],
-  [
-   "Jalen Brunson",
-   "2026-11-01",
-   "stat",
-   "Through Nov. 1, Brunson averaged 25.5 points, 5.2 assists, 2.8 rebounds and 2.2 threes in 34.8 minutes over six games. The show said his assists and shooting efficiency are well below its projections even though his time on the ball is up."
-  ],
-  [
-   "Jalen Brunson",
-   "2026-11-02",
-   "stat",
-   "Jalen Brunson scored 19 points in 34 minutes Monday. He scored 38 points on Oct. 28, which the show said came against Chicago, Wednesday's opponent."
-  ],
-  [
    "Jalen Duren",
    "2026-11-01",
    "injury",
    "The show said Jalen Duren is out for an extended stretch, and he has not played since Oct. 23."
+  ],
+  [
+   "Jalen Green",
+   "2026-10-24",
+   "minutes",
+   "Green played 26 minutes on Saturday, fewer than backup Collin Gillespie."
   ],
   [
    "Jalen Green",
@@ -4933,22 +3623,10 @@
    "Jalen Johnson has played 36 and 38 minutes in competitive games, with lower minutes in two blowouts and a foul-trouble game."
   ],
   [
-   "Jalen Johnson",
-   "2026-11-04",
-   "injury",
-   "Jalen Johnson did not play Monday. The show assumed he would play Wednesday against Washington but recorded before any update."
-  ],
-  [
    "Jalen Smith",
    "2026-10-30",
    "role",
    "He started at center and had five points, 12 rebounds and two blocks in 27 minutes Friday at Boston. His role is expected to shrink once Nic Claxton returns."
-  ],
-  [
-   "Jalen Smith",
-   "2026-11-02",
-   "role",
-   "Jalen Smith started Monday with Nic Claxton out and had 13 points and seven rebounds in 28 minutes. The show said he stands out again if Claxton sits Wednesday."
   ],
   [
    "Jalen Suggs",
@@ -4957,10 +3635,10 @@
    "He is ruled out tonight. Black had 18 points in 26 minutes in his season debut Sunday."
   ],
   [
-   "Jalen Williams",
-   "2026-11-02",
-   "injury",
-   "The show said he is out for the season."
+   "Jamal Murray",
+   "2026-10-28",
+   "stat",
+   "Jamal Murray had 23 points, six assists, five threes and two blocks in 38 minutes on Oct. 28."
   ],
   [
    "Jamal Murray",
@@ -5045,12 +3723,6 @@
    "2026-10-31",
    "stat",
    "Jared McCain made no 3-pointers in his two games before Monday, and the show said he went 0-for-11 from deep in that span."
-  ],
-  [
-   "Jared McCain",
-   "2026-11-02",
-   "role",
-   "Jared McCain came off the bench Monday after Oklahoma City started Kenrich Williams and Jaylin Williams. He still played 27 minutes and had seven points and nine rebounds."
   ],
   [
    "Jaren Jackson Jr.",
@@ -5287,12 +3959,6 @@
    "He is out Saturday with a right ankle sprain, which opens wing minutes in Cleveland for Sam Merrill and, if he plays, Meleek Thomas."
   ],
   [
-   "Jaylon Tyson",
-   "2026-11-04",
-   "injury",
-   "Jaylon Tyson did not play Monday against Oklahoma City. The show treated his status for Wednesday's rematch as unknown."
-  ],
-  [
    "Jayson Tatum",
    "2026-10-25",
    "usage",
@@ -5313,20 +3979,8 @@
   [
    "Jayson Tatum",
    "2026-11-01",
-   "injury",
-   "Tatum left late in the first quarter Sunday after the back of his head hit an opponent's forehead and he was bleeding. He returned with 6:13 left in the first half and finished the game."
-  ],
-  [
-   "Jayson Tatum",
-   "2026-11-01",
    "stat",
    "Jayson Tatum has topped 50 DraftKings points in three of his last five games, with two of those above 60. He scored 32 points in 34 minutes on November 1."
-  ],
-  [
-   "Jayson Tatum",
-   "2026-11-02",
-   "stat",
-   "Jayson Tatum had 19 points, six rebounds and nine assists in 32 minutes Monday at Houston on the second night of a back-to-back."
   ],
   [
    "Jerami Grant",
@@ -5743,24 +4397,6 @@
    "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26."
   ],
   [
-   "Jusuf Nurkic",
-   "2026-11-02",
-   "injury",
-   "Jusuf Nurkic remains out, and the show said the last update came on Oct. 7, when he was ruled out at least four weeks. The show said he may be re-evaluated this week, and Jaxson Hayes and Mo Bamba have covered center with Jaren Jackson Jr. also out."
-  ],
-  [
-   "Karl-Anthony Towns",
-   "2026-10-30",
-   "stat",
-   "Towns averaged 22.5 points, 14.8 rebounds and 3.8 assists in 32.3 minutes over four games from Oct. 25 to Oct. 30."
-  ],
-  [
-   "Karl-Anthony Towns",
-   "2026-11-02",
-   "stat",
-   "Karl-Anthony Towns had 11 points and 16 rebounds in 35 minutes Monday. He had 19 points and 13 rebounds on Oct. 28, which the show said came against Chicago, Wednesday's opponent."
-  ],
-  [
    "Karlo Matkovic",
    "2026-10-29",
    "role",
@@ -5870,7 +4506,7 @@
   ],
   [
    "Keegan Murray",
-   "2026-11-02",
+   "2026-11-01",
    "injury",
    "He is missing multiple weeks with an ankle problem that lingered through the offseason. The show said he is supposed to be re-evaluated in about one more week."
   ],
@@ -6415,18 +5051,6 @@
    "Nance played 26 minutes off the bench Sunday against Brooklyn, well above his usual role, with Obi Toppin and Ivica Zubac out."
   ],
   [
-   "Larry Nance",
-   "2026-11-01",
-   "minutes",
-   "Nance played 26 minutes off the bench Sunday against Brooklyn, well above his usual role, with Obi Toppin and Ivica Zubac out."
-  ],
-  [
-   "Lauri Markkanen",
-   "2026-10-31",
-   "minutes",
-   "He left the Oct. 26 game injured after six minutes and then played 29 minutes in a blowout on Oct. 31 when he returned. The show said his normal workload is closer to 33 or 34 minutes and expects it to come back."
-  ],
-  [
    "LeBron James",
    "2026-10-25",
    "role",
@@ -6443,12 +5067,6 @@
    "2026-10-30",
    "usage",
    "LeBron James's usage rose sharply with Jaylen Brown out, and he had 20 points, nine rebounds and eight assists in 34 minutes."
-  ],
-  [
-   "LeBron James",
-   "2026-11-02",
-   "stat",
-   "LeBron James had 15 points, seven rebounds and nine assists in 31 minutes Monday. The show said all seven of his rebounds came in the first half."
   ],
   [
    "Leonard Miller",
@@ -6566,6 +5184,12 @@
   ],
   [
    "Matas Buzelis",
+   "2026-10-26",
+   "usage",
+   "Matas Buzelis had 11 points, one rebound and two assists in 22 minutes on Oct. 26 and has been passive on offense."
+  ],
+  [
+   "Matas Buzelis",
    "2026-10-28",
    "minutes",
    "Matas Buzelis played 33 minutes on Oct. 28 on 25 percent usage. He had 17 points, five rebounds, three assists, a steal, a block and three threes on poor shooting."
@@ -6637,16 +5261,22 @@
    "Christie started on Saturday and played 26 minutes with Cooper Flagg and Kyrie Irving out."
   ],
   [
-   "Max Strus",
-   "2026-11-02",
-   "injury",
-   "Strus returned on Nov. 2 and played 23 minutes off the bench, scoring 11 points with six assists and three threes."
-  ],
-  [
    "Maxime Raynaud",
    "2026-11-01",
    "injury",
    "Raynaud has not played this season. The show said his return is coming pretty soon and that it could trim Domantas Sabonis's minutes."
+  ],
+  [
+   "Meleek Thomas",
+   "2026-10-26",
+   "role",
+   "Meleek Thomas took over the backup guard minutes that had gone to Tyrese Proctor and Craig Porter Jr. on Oct. 26. He scored 16 points in 19 minutes off the bench."
+  ],
+  [
+   "Meleek Thomas",
+   "2026-10-28",
+   "role",
+   "He took the backcourt minutes that had gone to Craig Porter Jr. and Tyrese Proctor and also cut into Jaylon Tyson's time. He may settle in as the sixth man in a 20-plus minute bench role and could start if James Harden or Donovan Mitchell misses time."
   ],
   [
    "Meleek Thomas",
@@ -6739,24 +5369,6 @@
    "Brown has come off the bench in all four of his games, playing 20 to 28 minutes. The show said he is still on a minutes restriction."
   ],
   [
-   "Mikel Brown Jr.",
-   "2026-11-02",
-   "injury",
-   "The show said Brown is battling injuries, and team news says he sat out Nov. 1 for load management with a back issue. He returned on Nov. 2 and played 27 minutes off the bench."
-  ],
-  [
-   "Mikel Brown Jr.",
-   "2026-11-02",
-   "role",
-   "Brown has come off the bench in all five games, averaging 23.6 minutes. The show questioned whether he can pass Nolan Traore in the Brooklyn rotation, and Traore has started the last four games."
-  ],
-  [
-   "Mikel Brown Jr.",
-   "2026-11-02",
-   "minutes",
-   "Mikel Brown Jr. played 27 minutes off the bench Monday and scored 13 points. The show said Brooklyn is going to give the sixth overall pick minutes."
-  ],
-  [
    "Miles Bridges",
    "2026-10-30",
    "stat",
@@ -6813,20 +5425,8 @@
   [
    "Mitchell Robinson",
    "2026-11-02",
-   "injury",
-   "The show said Mitchell Robinson went to the locker room Monday, returned, and still faces health questions. He came off the bench and played only 15 minutes, fewer than Luka Garza."
-  ],
-  [
-   "Mitchell Robinson",
-   "2026-11-02",
    "news",
    "He rested Sunday at Orlando, and Neemias Queta started and played 27 minutes. Boston plays at Houston Monday on the second night of the back-to-back."
-  ],
-  [
-   "Mo Bamba",
-   "2026-10-26",
-   "stat",
-   "Mo Bamba scored 14 points with seven rebounds and four blocks in 29 minutes off the bench Monday with Jaxson Hayes out."
   ],
   [
    "Mo Bamba",
@@ -7033,24 +5633,6 @@
    "Neemias Queta had 8 points, 8 rebounds and 2 blocks Sunday against Orlando."
   ],
   [
-   "Neemias Queta",
-   "2026-11-02",
-   "role",
-   "Neemias Queta has started Boston's last two games and played 26 minutes Monday, scoring 16 points with six rebounds."
-  ],
-  [
-   "Neemias Queta",
-   "2026-11-02",
-   "minutes",
-   "He is averaging 20.8 minutes per game and started on Nov. 1 when Mitchell Robinson rested. The show said Robinson is back and that Queta needs five or six more minutes per game to have value."
-  ],
-  [
-   "Nic Claxton",
-   "2026-11-04",
-   "injury",
-   "The show said Nic Claxton practiced in full but was listed as doubtful for Monday, and it expects him back Wednesday against the Knicks."
-  ],
-  [
    "Nickeil Alexander-Walker",
    "2026-10-26",
    "minutes",
@@ -7066,7 +5648,7 @@
    "Nickeil Alexander-Walker",
    "2026-11-02",
    "stat",
-   "Nickeil Alexander-Walker led Atlanta with 34 points and made nine threes in 31 minutes Monday with Jalen Johnson out."
+   "Nickeil Alexander-Walker had 12 points and two rebounds in 29 minutes Saturday."
   ],
   [
    "Nikola Jokic",
@@ -7139,12 +5721,6 @@
    "2026-11-01",
    "role",
    "Nolan Traore started in place of Mikel Brown Jr. and had 16 points, six assists and four three-pointers in 30 minutes Sunday at Indiana. The show said Brooklyn chose Traore over Keon Ellis as the fill-in and suggested remembering this for Brown's next back-to-back rest."
-  ],
-  [
-   "Nolan Traore",
-   "2026-11-02",
-   "role",
-   "Nolan Traore started Monday and scored 17 points with five threes in 24 minutes. The show said he has played better than Mikel Brown Jr. so far."
   ],
   [
    "Norman Powell",
@@ -7237,12 +5813,6 @@
    "Onyeka Okongwu had six points and 10 rebounds in 28 minutes Saturday."
   ],
   [
-   "Onyeka Okongwu",
-   "2026-11-02",
-   "minutes",
-   "He is averaging 28.3 minutes per game, which the show called more than enough for value. His defensive numbers are low so far at 0.6 steals and 0.7 blocks per game."
-  ],
-  [
    "P.J. Washington",
    "2026-10-24",
    "usage",
@@ -7277,12 +5847,6 @@
    "2026-11-01",
    "news",
    "He is ruled out tonight. Da Silva is expected to start, and Black and Richardson pick up more of the ball-handling."
-  ],
-  [
-   "Paolo Banchero",
-   "2026-11-02",
-   "injury",
-   "The show noted Banchero remains out, which has pushed more on-ball work to Franz Wagner."
   ],
   [
    "Pascal Siakam",
@@ -7421,12 +5985,6 @@
    "2026-10-29",
    "minutes",
    "Peyton Watson played only 22 minutes on Oct. 29 because of foul trouble. He finished with four points, four rebounds, three assists and two blocks."
-  ],
-  [
-   "Peyton Watson",
-   "2026-11-04",
-   "injury",
-   "Peyton Watson did not play Monday against Oklahoma City. The show said his status for Wednesday's rematch in Oklahoma City is unknown."
   ],
   [
    "PJ Washington",
@@ -7621,12 +6179,6 @@
    "Robert Williams III entered early with Donovan Clingan in foul trouble but played 14 minutes with three points, three rebounds, a steal and a block, and the show thought he would play closer to 20 minutes in a normal game."
   ],
   [
-   "Robert Williams III",
-   "2026-11-02",
-   "role",
-   "The show said Williams has played well off the bench and cut into Donovan Clingan's minutes. Williams has averaged 16.6 minutes in five bench appearances."
-  ],
-  [
    "Ron Holland",
    "2026-10-30",
    "stat",
@@ -7739,6 +6291,18 @@
    "2026-10-31",
    "stat",
    "Sam Merrill scored six points in 19 minutes Saturday after Meleek Thomas returned, and the show views him as only a three-point streamer."
+  ],
+  [
+   "Sandro Mamukelashvili",
+   "2026-10-26",
+   "usage",
+   "Sandro Mamukelashvili’s usage is way down with the Lakers compared with his role in Toronto."
+  ],
+  [
+   "Sandro Mamukelashvili",
+   "2026-10-28",
+   "minutes",
+   "Sandro Mamukelashvili played 30 minutes off the bench on Oct. 28 with players out. He had 13 points, eight rebounds, two steals and a block."
   ],
   [
    "Sandro Mamukelashvili",
@@ -7855,12 +6419,6 @@
    "Gilgeous-Alexander played 30, 28 and 31 minutes in his three games from Oct. 26 to Oct. 31, scoring 26, 21 and 26 points. The show noted that injuries have hit Oklahoma City hard."
   ],
   [
-   "Shai Gilgeous-Alexander",
-   "2026-11-02",
-   "stat",
-   "Shai Gilgeous-Alexander scored 43 points with eight assists and four threes in 39 minutes in Monday's win at Cleveland. Oklahoma City played without Jalen Williams, Chet Holmgren, Alex Caruso and Cason Wallace."
-  ],
-  [
    "Sidy Cissoko",
    "2026-10-27",
    "minutes",
@@ -7889,12 +6447,6 @@
    "2026-10-28",
    "usage",
    "Stephen Curry had 44 points, eight rebounds, six assists, two steals and six threes in 32 minutes on Oct. 28 on about 46 percent usage."
-  ],
-  [
-   "Stephen Curry",
-   "2026-11-01",
-   "injury",
-   "Curry rested Sunday against the Clippers on the front end of a back-to-back. Golden State hosts Phoenix on Monday."
   ],
   [
    "Stephen Curry",
@@ -8161,18 +6713,6 @@
    "The show said Trey Murphy III's usage is down from last season, when he averaged about 21 points. He is averaging 14.3 points, 4.5 rebounds and 3.2 assists through six games this season."
   ],
   [
-   "Trey Murphy III",
-   "2026-11-02",
-   "minutes",
-   "Trey Murphy III is playing about 30 minutes a game, but the show said he ranked just 117th in fantasy points per game. The show also said New Orleans could make changes."
-  ],
-  [
-   "Trey Murphy III",
-   "2026-11-02",
-   "usage",
-   "The show said his usage has been very low this season. The show expects New Orleans to give him more touches."
-  ],
-  [
    "Tristan da Silva",
    "2026-10-28",
    "minutes",
@@ -8213,12 +6753,6 @@
    "2026-11-01",
    "minutes",
    "Ty Jerome's minutes have slipped from 32 in each of his first three games to 30 and then 24 on Oct. 29, an average of 28.7 over his last three games. His DraftKings scoring fell in each of his last three games, from 47.0 to 30.25 to 20.0."
-  ],
-  [
-   "Ty Jerome",
-   "2026-11-04",
-   "injury",
-   "The show said Ty Jerome has dealt with a back injury but expects him to be fine Wednesday after Tuesday's day off."
   ],
   [
    "Tyler Herro",
@@ -8303,12 +6837,6 @@
    "2026-10-31",
    "usage",
    "Tyrese Maxey carried the offense with Joel Embiid and LeBron James out, scoring 38 points with four rebounds, four assists, two steals and four threes in 38 minutes."
-  ],
-  [
-   "Tyrese Maxey",
-   "2026-11-02",
-   "stat",
-   "Tyrese Maxey had 26 points, 11 assists, four rebounds, two steals and two blocks in 36 minutes Monday against Chicago."
   ],
   [
    "Tyrese Proctor",
@@ -8467,12 +6995,6 @@
    "He scored a career-high 37 points Sunday while Stephen Curry and Draymond Green rested on the front end of a back-to-back. Golden State hosts Phoenix Monday, and its injury report is not posted yet."
   ],
   [
-   "Yves Missi",
-   "2026-11-02",
-   "injury",
-   "He left the second game of the season with an injury after nine minutes, following a 13-point, 14-rebound, five-assist opener in 30 minutes. The show said he could return in the next week or two."
-  ],
-  [
    "Zaccharie Risacher",
    "2026-10-24",
    "role",
@@ -8521,12 +7043,6 @@
    "Zach Edey played only 18 minutes Saturday without foul trouble and had four points, six rebounds and a block, and the show is concerned about his minutes after a run of tough matchups."
   ],
   [
-   "Zach Edey",
-   "2026-11-02",
-   "minutes",
-   "Zach Edey has played between 18 and 22 minutes in every game and sat Sunday on the first night of a back-to-back. The show said his usage and rebounds are down with Cameron Boozer and Cedric Coward crashing the glass, and it expects his minutes to climb toward 25 to 27 later in the season."
-  ],
-  [
    "Zach LaVine",
    "2026-10-27",
    "usage",
@@ -8546,9 +7062,15 @@
   ],
   [
    "Ziaire Williams",
-   "2026-11-02",
-   "role",
-   "The show said the Lakers are going slow with Williams. He came off the bench for the first time on Nov. 2 and played 15 minutes after averaging 28.5 minutes in four starts."
+   "2026-10-25",
+   "minutes",
+   "He started and played 30 minutes on Sunday, scoring 11 points with 2 rebounds. He has played 30 or more minutes in each of the last two games."
+  ],
+  [
+   "Ziaire Williams",
+   "2026-10-27",
+   "minutes",
+   "Ziaire Williams made a trip to the locker room Tuesday but returned and played 29 minutes, finishing with 11 points, four assists and two steals. He has played about 30 minutes in each of his last three games."
   ],
   [
    "Zion Williamson",
@@ -11916,27 +10438,27 @@
  "teams": [
   {
    "team": "ATL",
-   "starters": "Onyeka Okongwu (28), Nickeil Alexander-Walker (30), Dyson Daniels (29), CJ McCollum (26), Luguentz Dort (24)",
-   "bench": "Aaron Wiggins (26), Asa Newell (9)",
+   "starters": "Onyeka Okongwu (29), Nickeil Alexander-Walker (30), Dyson Daniels (29), CJ McCollum (27), Jalen Johnson (33)",
+   "bench": "Luguentz Dort (25), Aaron Wiggins (26), Kingston Flemings (20), Asa Newell (11), Zuby Ejiofor (8), Corey Kispert (8), Jock Landale (15)",
    "backup_c": "Jock Landale",
    "coach": "Quin Snyder",
    "notes": "All five starters are expected to play 30+ minutes. If Jalen Johnson sits, his usage scatters to McCollum, Alexander-Walker and possibly Flemings. If Okongwu sits, Landale starts and plays 30+ minutes. The team has 14 back-to-backs.",
    "source": "LO-1018",
-   "out": "Jalen Johnson, Jock Landale, Kingston Flemings",
-   "depth_through": "2026-10-31",
-   "games": 7
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 8
   },
   {
    "team": "HOU",
-   "starters": "Amen Thompson (34), Jabari Smith Jr. (34), Kevin Durant (34), Fred VanVleet (31), Alperen Sengun (34)",
-   "bench": "Marcus Smart (25), Tari Eason (24), Reed Sheppard (23), Bogdan Bogdanovic (14), Isaiah Crawford (6), Oscar Tshiebwe (10)",
-   "backup_c": "Oscar Tshiebwe",
+   "starters": "Jabari Smith Jr. (34), Kevin Durant (34), Amen Thompson (33), Alperen Sengun (34), Fred VanVleet (30)",
+   "bench": "Marcus Smart (24), Tari Eason (25), Clint Capela (14), Reed Sheppard (22), Bogdan Bogdanovic (13), Isaiah Crawford (5)",
+   "backup_c": "Clint Capela",
    "coach": "Ime Udoka",
    "notes": "Udoka plays his starters heavy minutes and is defense-first. Added guard depth means Amen Thompson plays less point guard. If VanVleet sits, Smart could start. If Durant or Jabari Smith sits, Eason could reach about 32 minutes. The team has 14 back-to-backs.",
    "source": "LO-1019b",
-   "out": "Clint Capela, Steven Adams",
-   "depth_through": "2026-10-31",
-   "games": 7
+   "out": "Steven Adams",
+   "depth_through": "2026-11-02",
+   "games": 8
   },
   {
    "team": "LAL",
@@ -11952,15 +10474,15 @@
   },
   {
    "team": "MIN",
-   "starters": "Jaden McDaniels (33), Ayo Dosunmu (29), Jonathan Kuminga (30), LaMelo Ball (25), Rudy Gobert (30)",
-   "bench": "Joan Beringer (19), Trey Lyles (16), Bones Hyland (12), Jaylen Clark (9)",
+   "starters": "Ayo Dosunmu (30), Jaden McDaniels (33), Jonathan Kuminga (31), LaMelo Ball (26), Rudy Gobert (30)",
+   "bench": "Joan Beringer (18), Jaylen Clark (11), Terrence Shannon Jr. (22), Trey Lyles (17), Bones Hyland (12)",
    "backup_c": "Joan Beringer",
    "coach": "Chris Finch",
    "notes": "Kuminga signed and is expected to start. Naz Reid and Julius Randle are gone. If Gobert sits, Beringer is the backup center to watch. Beringer projects at about 18 minutes behind Gobert. Minnesota plays only 2 games in the week of March 15, which falls in most fantasy playoffs.",
    "source": "LO-1019b",
-   "out": "Anthony Edwards, Terrence Shannon Jr.",
-   "depth_through": "2026-10-31",
-   "games": 7
+   "out": "Anthony Edwards",
+   "depth_through": "2026-11-02",
+   "games": 8
   },
   {
    "team": "CHA",
@@ -11988,15 +10510,15 @@
   },
   {
    "team": "BOS",
-   "starters": "Jayson Tatum (36), Derrick White (30), Mitchell Robinson (20), Jordan Walsh (16), Neemias Queta (21)",
-   "bench": "Payton Pritchard (28), Baylor Scheierman (18), Sam Hauser (20), Luka Garza (11), Hugo Gonzalez (12)",
-   "backup_c": "Luka Garza",
+   "starters": "Jayson Tatum (35), Derrick White (30), Neemias Queta (22), Hugo Gonzalez (13), Paul George (31)",
+   "bench": "Payton Pritchard (28), Baylor Scheierman (20), Sam Hauser (20), Mitchell Robinson (19), Luka Garza (12), Jordan Walsh (16)",
+   "backup_c": "Mitchell Robinson",
    "coach": "Joe Mazzulla",
    "notes": "Jaylen Brown is gone, and Paul George is the No. 2 option behind Tatum. Derrick White's team is unconfirmed. Boston has the most back-to-backs (16), including 3 in the fantasy playoffs.",
    "source": "LO-1018",
-   "out": "Paul George",
-   "depth_through": "2026-11-01",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "POR",
@@ -12018,33 +10540,33 @@
    "coach": "",
    "notes": "Brooklyn does not own its pick (it goes to Houston). Nic Claxton was traded to Chicago in the deal that brought Julius Randle. A Michael Porter Jr. trade is possible, and Randle could sit some March games. Fantasy playoff weeks run 3-4-3 (March 28 end) and 4-3-4 (April 4 end). Brooklyn has 16 back-to-backs, tied for the most in the league.",
    "source": "LO-1018",
-   "out": "Ben Saraf, Egor Demin, Joshua Jefferson",
-   "depth_through": "2026-11-01",
-   "games": 6
+   "out": "Egor Demin",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "TOR",
-   "starters": "Scottie Barnes (33), Immanuel Quickley (31), RJ Barrett (32), Ja'Kobe Walter (28), Trayce Jackson-Davis (8)",
-   "bench": "Jamal Shead (22), Collin Murray-Boyles (19), Jamison Battle (15), Allen Graves (14), Alijah Martin (7)",
-   "backup_c": "Collin Murray-Boyles or Trayce Jackson-Davis",
+   "starters": "Scottie Barnes (34), Immanuel Quickley (32), RJ Barrett (32), Ja'Kobe Walter (29), Collin Murray-Boyles (20)",
+   "bench": "Jakob Poeltl (20), Jamal Shead (22), Jamison Battle (16), Alijah Martin (7), Allen Graves (13)",
+   "backup_c": "Jakob Poeltl",
    "coach": "Darko Rajakovic",
    "notes": "Kawhi arrived by trade from the Clippers. Sandro Mamukelashvili is gone, which opens backup center minutes for Murray-Boyles.",
    "source": "LO-1015",
-   "out": "Jakob Poeltl, Kawhi Leonard",
-   "depth_through": "2026-11-01",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "LAC",
-   "starters": "Darius Garland (32), Kris Dunn (30), Isaiah Jackson (22), Kobe Sanders (23), Keaton Wagler (25)",
-   "bench": "Brook Lopez (22), Gradey Dick (14), Baba Miller (8), Cam Christie (7)",
+   "starters": "Darius Garland (33), Kris Dunn (30), Rui Hachimura (30), Derrick Jones Jr. (29), Isaiah Jackson (22)",
+   "bench": "Kobe Sanders (25), Max Strus (23), Keaton Wagler (25), Brook Lopez (22), Gradey Dick (16)",
    "backup_c": "Brook Lopez",
    "coach": "Ty Lue",
    "notes": "Four players are hurt, three of them long-term: Brandon Ingram, Bradley Beal, Jordan Miller and Yanic Konan Niederhauser. The Clippers do not control their own pick this season. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). They have 13 back-to-backs, one of the lowest totals in the league. The NBA took five first-round picks from the Clippers and fined Steve Ballmer $30 million after the Kawhi investigation; the Clippers say they will challenge it.",
    "source": "LO-1019b",
-   "out": "Derrick Jones Jr., Rui Hachimura",
-   "depth_through": "2026-11-01",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "MIL",
@@ -12060,15 +10582,15 @@
   },
   {
    "team": "WAS",
-   "starters": "Trae Young (36), Anthony Davis (34), Kyshawn George (32), AJ Dybantsa (28), Bilal Coulibaly (26)",
-   "bench": "Bub Carrington (20), Tre Johnson (21), Khris Middleton (14), DeAndre Ayton (14)",
+   "starters": "Kyshawn George (32), Trae Young (36), Anthony Davis (34), AJ Dybantsa (30), Alex Sarr (26)",
+   "bench": "Bilal Coulibaly (27), Bub Carrington (20), DeAndre Ayton (16), Tre Johnson (21), Khris Middleton (14)",
    "backup_c": "DeAndre Ayton",
    "coach": "Brian Keefe",
    "notes": "Washington should be a much better team. Sarr's usage and blocks should drop next to Davis. Sarr will likely be ready for opening night.",
    "source": "LO-1018",
-   "out": "Alex Sarr, Anthony Gill, Justin Champagnie, Reece Beekman",
-   "depth_through": "2026-10-30",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "UTA",
@@ -12084,39 +10606,39 @@
   },
   {
    "team": "ORL",
-   "starters": "Franz Wagner (35), Desmond Bane (35), Wendell Carter Jr. (32), Jase Richardson (20), Tristan da Silva (29)",
-   "bench": "Jevon Carter (18), Jamal Cain (15), Nikola Vucevic (9), Alex Morales (7)",
+   "starters": "Franz Wagner (36), Desmond Bane (35), Wendell Carter Jr. (32), Jase Richardson (21), Anthony Black (28)",
+   "bench": "Tristan da Silva (29), Jamal Cain (16), Jevon Carter (18), Alex Morales (8), Nikola Vucevic (10)",
    "backup_c": "Nikola Vucevic",
    "coach": "Sean Sweeney",
    "notes": "Vucevic arrived as a backup, not a starter.",
    "source": "LO-1018",
-   "out": "Anthony Black, Jalen Suggs, Paolo Banchero",
-   "depth_through": "2026-11-01",
-   "games": 6
+   "out": "Jalen Suggs, Paolo Banchero",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "DAL",
-   "starters": "Cooper Flagg (32), PJ Washington (34), Daniel Gafford (24), Max Christie (26), Zaccharie Risacher (30)",
-   "bench": "Caleb Martin (20), Morez Johnson Jr. (16), Walter Clayton Jr. (11), Marcus Sasser (19)",
+   "starters": "Cooper Flagg (34), PJ Washington (34), Daniel Gafford (24), Max Christie (24), Kyrie Irving (29)",
+   "bench": "Zaccharie Risacher (28), Naji Marshall (27), Caleb Martin (20), Morez Johnson Jr. (16), Marcus Sasser (19), Walter Clayton Jr. (14)",
    "backup_c": "Not named while Dereck Lively II is out",
    "coach": "Dusty May (new)",
    "notes": "Dereck Lively II is out to start the season with a broken foot. Dallas has a 4-4-4 fantasy playoff schedule, the best possible, but also a league-high 16 back-to-backs.",
    "source": "LO-1019b",
-   "out": "Kyrie Irving",
-   "depth_through": "2026-10-30",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "NOP",
-   "starters": "Zion Williamson (32), Trey Murphy III (32), Jeremiah Fears (25), Herbert Jones (21), Karlo Matkovic (16)",
-   "bench": "Saddiq Bey (24), Derik Queen (24), Trendon Watford (18), Bennedict Mathurin (18), DeAndre Jordan (16), Bryce McGowens (8)",
+   "starters": "Trey Murphy III (33), Jeremiah Fears (27), Zion Williamson (32), Herbert Jones (22), Karlo Matkovic (18)",
+   "bench": "Saddiq Bey (26), Derik Queen (24), Trendon Watford (17), Bennedict Mathurin (17), Bryce McGowens (8)",
    "backup_c": "Derik Queen",
    "coach": "Jamahl Mosley",
    "notes": "Mathurin signed for 2 years and $16 million. The team is still built around Zion. New Orleans plays only 2 games in the final week of Yahoo's default playoffs.",
    "source": "LO-1019b",
-   "out": "Dejounte Murray, Jordan Poole, Yves Missi",
-   "depth_through": "2026-10-31",
-   "games": 6
+   "out": "Yves Missi",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "PHX",
@@ -12126,9 +10648,9 @@
    "coach": "",
    "notes": "Bridges gives Phoenix a true forward. Maluach could push for a bigger role at about 24 minutes.",
    "source": "LO-1019b",
-   "out": "Duop Reath, Pat Spencer",
-   "depth_through": "2026-10-30",
-   "games": 4
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 5
   },
   {
    "team": "CHI",
@@ -12162,21 +10684,21 @@
    "coach": "J.B. Bickerstaff",
    "notes": "Isaiah Stewart and Tobias Harris are gone, and Kevin Huerter, Isaiah Joe and John Collins were added. Jalen Duren re-signed after a contract holdout. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). Detroit has 15 back-to-backs, and rest is not expected to be an issue. Jalen Duren will miss at least two weeks with a strained right hamstring from Friday; Paul Reed started at center Sunday.",
    "source": "LO-1018",
-   "out": "Elijah Harkless, Isaiah Joe, Jalen Duren",
-   "depth_through": "2026-10-30",
-   "games": 6
+   "out": "Jalen Duren",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "CLE",
-   "starters": "James Harden (34), Evan Mobley (33), Donovan Mitchell (33), Jarrett Allen (28), Sam Merrill (24)",
-   "bench": "Meleek Thomas (21), Mario Hezonja (18), Tyrese Proctor (12), Thomas Bryant (11), Craig Porter Jr. (8)",
+   "starters": "James Harden (33), Donovan Mitchell (33), Evan Mobley (33), Jarrett Allen (28), Peyton Watson (28)",
+   "bench": "Meleek Thomas (22), Sam Merrill (24), Mario Hezonja (19), Tyrese Proctor (13), Jaylon Tyson (21), Craig Porter Jr. (8), Thomas Bryant (8)",
    "backup_c": "Thomas Bryant",
    "coach": "Kenny Atkinson",
    "notes": "Dennis Schroder, Keon Ellis and Max Strus are gone, which leaves the bench thin, especially at center. Fantasy playoff weeks run 4-3-2 (March 28 end) and 3-2-4 (April 4 end), so there is a two-game week either way. Cleveland has the most back-to-backs in the league, so expect rest days for Harden, Mitchell and Mobley. No one is hurt to start the season.",
    "source": "LO-1018",
-   "out": "Jaylon Tyson, Peyton Watson",
-   "depth_through": "2026-10-31",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "SAC",
@@ -12192,15 +10714,15 @@
   },
   {
    "team": "IND",
-   "starters": "Kelly Oubre (23), Jay Huff (17), Jarace Walker (22), Quenton Jackson (20), Kobe Brown (12)",
-   "bench": "Jalen Slawson (12)",
+   "starters": "Jay Huff (20), Pascal Siakam (32), Andrew Nembhard (33), Aaron Nesmith (23), Kelly Oubre (23)",
+   "bench": "Jarace Walker (25), Quenton Jackson (22), Jalen Slawson (17), Kobe Brown (18), Larry Nance (16), Braden Smith (15)",
    "backup_c": "Jay Huff",
    "coach": "Rick Carlisle",
    "notes": "Haliburton is back from his Achilles injury, and his minutes are expected to be limited early. Zubac came from the Clippers late last season. Johnny Furphy (torn ACL) and Larry Nance (hamstring) are hurt. Fantasy playoff weeks run 3-4-3 if your season ends March 28 and 4-3-4 if it ends April 4. Indiana has 15 back-to-backs.",
    "source": "LO-1018",
-   "out": "Aaron Nesmith, Andrew Nembhard, Ben Sheppard, Ivica Zubac, Larry Nance, Obi Toppin, Pascal Siakam, Tyrese Haliburton",
-   "depth_through": "2026-11-01",
-   "games": 7
+   "out": "Tyrese Haliburton",
+   "depth_through": "2026-11-02",
+   "games": 8
   },
   {
    "team": "OKC",
@@ -12216,15 +10738,15 @@
   },
   {
    "team": "MEM",
-   "starters": "Cameron Boozer (31), Cedric Coward (28), Jaylen Wells (27), Zach Edey (20), Ty Jerome (30)",
-   "bench": "Jerami Grant (24), Cam Spencer (19), GG Jackson (17), Isaiah Stewart (18), Kris Murray (12)",
+   "starters": "Cameron Boozer (32), Cedric Coward (29), Jaylen Wells (28), Zach Edey (20), Ty Jerome (31)",
+   "bench": "Jerami Grant (24), Cam Spencer (19), Isaiah Stewart (20), Javon Small (20), GG Jackson (17), Kris Murray (14), Scotty Pippen Jr. (16)",
    "backup_c": "Isaiah Stewart",
    "coach": "Tuomas Iisalo",
    "notes": "Boozer is expected to start and could lead the team in assists.",
    "source": "LO-1019b",
-   "out": "Javon Small, Quinten Post, Scotty Pippen Jr.",
-   "depth_through": "2026-10-31",
-   "games": 6
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 7
   },
   {
    "team": "SAS",
@@ -12240,15 +10762,15 @@
   },
   {
    "team": "GSW",
-   "starters": "Brandin Podziemski (34), Yaxel Lendeborg (32), Georges Niang (20), Draymond Green (29), Stephen Curry (28)",
-   "bench": "De'Anthony Melton (22), Will Richard (16), Gary Payton II (13), Charles Bassey (9)",
-   "backup_c": "Charles Bassey",
+   "starters": "Brandin Podziemski (34), Yaxel Lendeborg (32), Stephen Curry (29), Draymond Green (27), Will Richard (18)",
+   "bench": "De'Anthony Melton (23), Brandon Williams (17), Georges Niang (20), Al Horford (19), Charles Bassey (12), Gary Payton II (14), Gui Santos (20)",
+   "backup_c": "Al Horford",
    "coach": "Steve Kerr",
    "notes": "Porzingis has an unclear illness and may miss opening night. Jimmy Butler (torn ACL) and Moses Moody (torn patellar tendon) are out early. Horford will not play back-to-backs. Golden State has 15 back-to-backs, and its fantasy playoff schedule is 4-3-4 for leagues ending March 28.",
    "source": "LO-1019b",
-   "out": "Al Horford, Brandon Williams, Gui Santos",
-   "depth_through": "2026-11-01",
-   "games": 7
+   "out": "",
+   "depth_through": "2026-11-02",
+   "games": 8
   },
   {
    "team": "DEN",
@@ -17175,7 +15697,7 @@
    "team": "LAL",
    "flag": "",
    "change": "",
-   "note": "He had 45 points, 15 rebounds, six assists and five steals in 35 minutes Sunday against Toronto, his fourth straight game with at least 37 points. So far: 64.9 DK points in 36 minutes a game over 6 games (No. 1 in DK points a game).",
+   "note": "He had 45 points, 15 rebounds, six assists and five steals in 35 minutes Sunday against Toronto, his fourth straight game with at least 37 points. So far: 66.7 DK points in 36 minutes a game over 7 games (No. 1 in DK points a game).",
    "source": "NBA-0929",
    "gp": 7,
    "dk_avg": 66.7,
@@ -18657,7 +17179,7 @@
    "team": "BOS",
    "flag": "",
    "change": "",
-   "note": "He started Sunday at Orlando with Mitchell Robinson resting and had eight points, eight rebounds and two late blocks in 27 minutes. So far: 20.8 DK points in 21 minutes a game over 6 games (No. 170 in DK points a game).",
+   "note": "He started Sunday at Orlando with Mitchell Robinson resting and had eight points, eight rebounds and two late blocks in 27 minutes. So far: 21.4 DK points in 22 minutes a game over 7 games (No. 165 in DK points a game).",
    "source": "NBA-0929",
    "gp": 7,
    "dk_avg": 21.4,
@@ -18878,7 +17400,7 @@
    "team": "GSW",
    "flag": "",
    "change": "",
-   "note": "He scored a career-high 37 points on 13-of-19 shooting with six assists in 34 minutes Sunday against the Clippers, with Stephen Curry and Draymond Green resting. So far: 39.5 DK points in 32 minutes a game over 7 games (No. 35 in DK points a game).",
+   "note": "He scored a career-high 37 points on 13-of-19 shooting with six assists in 34 minutes Sunday against the Clippers, with Stephen Curry and Draymond Green resting. So far: 38.8 DK points in 32 minutes a game over 8 games (No. 38 in DK points a game).",
    "source": "NBA-0929",
    "gp": 8,
    "dk_avg": 38.8,
@@ -19060,7 +17582,7 @@
    "team": "ORL",
    "flag": "",
    "change": "",
-   "note": "He has started the last two games and had 23 points, eight rebounds and two steals in 33 minutes Sunday against Boston. So far: 33.4 DK points in 28 minutes a game over 4 games (No. 63 in DK points a game).",
+   "note": "He has started the last two games and had 23 points, eight rebounds and two steals in 33 minutes Sunday against Boston. So far: 33.4 DK points in 28 minutes a game over 4 games (No. 64 in DK points a game).",
    "source": "NBA-0929",
    "gp": 4,
    "dk_avg": 33.4,
@@ -20230,7 +18752,7 @@
    "team": "ORL",
    "flag": "",
    "change": "",
-   "note": "He scored 23 points with 10 rebounds and five 3-pointers in 35 minutes off the bench Sunday against Boston. So far: 24.5 DK points in 29 minutes a game over 6 games (No. 143 in DK points a game).",
+   "note": "He scored 23 points with 10 rebounds and five 3-pointers in 35 minutes off the bench Sunday against Boston. So far: 23.6 DK points in 29 minutes a game over 7 games (No. 144 in DK points a game).",
    "source": "NBA-0929",
    "gp": 7,
    "dk_avg": 23.6,
