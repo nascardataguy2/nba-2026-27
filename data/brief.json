@@ -2,7 +2,36 @@
  "date": "2026-11-02",
  "updated": "6:41 PM ET",
  "games": 14,
- "pending": [],
+ "pending": [
+  "ATL",
+  "BKN",
+  "BOS",
+  "CHA",
+  "CHI",
+  "CLE",
+  "DAL",
+  "DET",
+  "GSW",
+  "HOU",
+  "IND",
+  "LAC",
+  "LAL",
+  "MEM",
+  "MIA",
+  "MIL",
+  "MIN",
+  "NOP",
+  "NYK",
+  "OKC",
+  "ORL",
+  "PHI",
+  "PHX",
+  "SAC",
+  "SAS",
+  "TOR",
+  "UTA",
+  "WAS"
+ ],
  "first_report": "5:37 AM",
  "cards": [
   {
@@ -658,13 +687,13 @@
     {
      "player": "Paolo Banchero",
      "min": 33.5,
-     "note": "The show said Paolo Banchero will remain out for a couple more weeks.",
+     "note": "Ruled out tonight.",
      "new": false
     },
     {
      "player": "Jalen Suggs",
      "min": 33.3,
-     "note": "The show said Jalen Suggs will remain out for a couple more weeks.",
+     "note": "Ruled out tonight.",
      "new": false
     },
     {
@@ -709,7 +738,7 @@
     {
      "player": "Alex Sarr",
      "min": 27.0,
-     "note": "The show said Alex Sarr is listed as questionable for Monday. The show said Washington could play Anthony Davis at center if Sarr sits.",
+     "note": "Ruled out tonight (left knee soreness).",
      "new": true
     },
     {
@@ -760,13 +789,13 @@
     {
      "player": "Dejounte Murray",
      "min": 31.7,
-     "note": "The show said Dejounte Murray was not on the injury report before the Oct. 31 game but was downgraded to out, and he has missed New Orleans' last two games. The show said his return Monday would be a downgrade for Jeremiah Fears.",
+     "note": "Ruled out tonight (personal reasons).",
      "new": true
     },
     {
      "player": "Yves Missi",
      "min": 19.5,
-     "note": "The show said Yves Missi will miss Monday's game again. He has not played since October 23.",
+     "note": "Ruled out tonight.",
      "new": false
     },
     {
@@ -795,14 +824,14 @@
     {
      "player": "Jalen Johnson",
      "min": 32.7,
-     "note": "The show said Jalen Johnson left the weekend game against the Pelicans with an ankle injury and was listed questionable to return in a 20-point game. He played 28 minutes in that game and is on the injury report for Monday.",
+     "note": "Ruled out tonight (left ankle sprain).",
      "new": true
     },
     {
      "player": "Kingston Flemings",
      "min": 23.0,
      "note": "Ruled out tonight (league suspension).",
-     "new": true
+     "new": false
     }
    ],
    "new": true,
@@ -885,7 +914,7 @@
     {
      "player": "Kyrie Irving",
      "min": 31.7,
-     "note": "The show said Kyrie Irving is questionable for Monday with a knee issue, and it was unclear whether it is soreness or monitoring of his return. He played 35 minutes on October 30 and 33 minutes on October 26.",
+     "note": "Doubtful tonight.",
      "new": true
     }
    ],
@@ -1103,1225 +1132,42 @@
     "proj": 17.3
    }
   ],
-  "injuries": [
-   {
-    "player": "Jayson Tatum",
-    "team": "BOS",
-    "text": "Tatum left late in the first quarter Sunday after the back of his head hit an opponent's forehead and he was bleeding. He returned with 6:13 left in the first half and finished the game."
-   }
-  ]
+  "injuries": []
  },
  "injuries": {
-  "report": "10:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_10_30PM.pdf",
-  "pending": [],
-  "rows": [
-   {
-    "game": "OKC at CLE",
-    "time": "2026-11-03T00:00Z",
-    "team": "CLE",
-    "player": "Peyton Watson",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 24.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Andrew Nembhard",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 33.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Pascal Siakam",
-    "status": "Out",
-    "reason": "Rest",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 33.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "ATL",
-    "player": "Jalen Johnson",
-    "status": "Out",
-    "reason": "Left Ankle Sprain",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "6:08 PM",
-    "min": 32.7,
-    "benefits": [
-     {
-      "player": "Aaron Wiggins",
-      "min": 34.7,
-      "recent": 23.7
-     },
-     {
-      "player": "C.J. McCollum",
-      "min": 36.0,
-      "recent": 25.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "WAS at ORL",
-    "time": "2026-11-03T00:30Z",
-    "team": "ORL",
-    "player": "Anthony Black",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "1:01 PM",
-    "min": 28.7,
-    "benefits": [
-     {
-      "player": "Nikola Vucevic",
-      "min": 15.7,
-      "recent": 9.7
-     },
-     {
-      "player": "Goga Bitadze",
-      "min": 11.6,
-      "recent": 7.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "WAS at ORL",
-    "time": "2026-11-03T00:30Z",
-    "team": "WAS",
-    "player": "Alex Sarr",
-    "status": "Out",
-    "reason": "Left Knee Soreness",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Carlton Carrington",
-      "min": 26.5,
-      "recent": 22.7
-     },
-     {
-      "player": "Deandre Ayton",
-      "min": 17.3,
-      "recent": 13.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Aaron Nesmith",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 26.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "ATL",
-    "player": "Kingston Flemings",
-    "status": "Out",
-    "reason": "League Suspension",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 23.0,
-    "benefits": [
-     {
-      "player": "Aaron Wiggins",
-      "min": 34.7,
-      "recent": 23.7
-     },
-     {
-      "player": "C.J. McCollum",
-      "min": 36.0,
-      "recent": 25.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Larry Nance Jr.",
-    "status": "Out",
-    "reason": "Illness",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "6:08 PM",
-    "min": 22.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Obi Toppin",
-    "status": "Out",
-    "reason": "Lumbar Sprain",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "6:08 PM",
-    "min": 21.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "DET at CHA",
-    "time": "2026-11-03T00:30Z",
-    "team": "DET",
-    "player": "Isaiah Joe",
-    "status": "Out",
-    "reason": "Right Hip Contusion",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "1:01 PM",
-    "min": 13.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "ATL",
-    "player": "Jock Landale",
-    "status": "Out",
-    "reason": "Left Hip Strain",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "",
-    "min": 11.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "WAS at ORL",
-    "time": "2026-11-03T00:30Z",
-    "team": "WAS",
-    "player": "Reece Beekman",
-    "status": "Out",
-    "reason": "Right AC Joint Injury",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 1.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "WAS at ORL",
-    "time": "2026-11-03T00:30Z",
-    "team": "WAS",
-    "player": "Anthony Gill",
-    "status": "Out",
-    "reason": "Low Back Spasms",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 1.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "CHI at PHI",
-    "time": "2026-11-03T00:30Z",
-    "team": "PHI",
-    "player": "Joel Embiid",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 36.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "CHI at PHI",
-    "time": "2026-11-03T00:30Z",
-    "team": "CHI",
-    "player": "Jalen Smith",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Probable",
-    "known": true,
-    "changed_at": "6:08 PM",
-    "min": 25.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at NYK",
-    "time": "2026-11-03T00:30Z",
-    "team": "NYK",
-    "player": "Jose Alvarado",
-    "status": "Available",
-    "reason": "Left Ankle Sprain",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "6:37 PM",
-    "min": 13.5,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "CHI at PHI",
-    "time": "2026-11-03T00:30Z",
-    "team": "CHI",
-    "player": "Tobe Awaka",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Probable",
-    "known": true,
-    "changed_at": "6:08 PM",
-    "min": 12.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "NOP at MEM",
-    "time": "2026-11-03T01:00Z",
-    "team": "NOP",
-    "player": "Dejounte Murray",
-    "status": "Out",
-    "reason": "Personal Reasons",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "6:08 PM",
-    "min": 31.7,
-    "benefits": [
-     {
-      "player": "Benedict Mathurin",
-      "min": 24.5,
-      "recent": 17.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "SAC at DAL",
-    "time": "2026-11-03T01:00Z",
-    "team": "DAL",
-    "player": "Kyrie Irving",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 31.7,
-    "benefits": [
-     {
-      "player": "Morez Johnson Jr.",
-      "min": 20.3,
-      "recent": 16.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MIL at MIN",
-    "time": "2026-11-03T01:00Z",
-    "team": "MIN",
-    "player": "Terrence Shannon Jr",
-    "status": "Out",
-    "reason": "Left Hip Contusion",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "6:37 PM",
-    "min": 21.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "NOP at MEM",
-    "time": "2026-11-03T01:00Z",
-    "team": "MEM",
-    "player": "Scotty Pippen Jr.",
-    "status": "Out",
-    "reason": "Low Back Soreness",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 14.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "NOP at MEM",
-    "time": "2026-11-03T01:00Z",
-    "team": "MEM",
-    "player": "Quinten Post",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 12.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "NOP at MEM",
-    "time": "2026-11-03T01:00Z",
-    "team": "NOP",
-    "player": "Trey Murphy III",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Probable",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 30.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "SAC at DAL",
-    "time": "2026-11-03T01:00Z",
-    "team": "SAC",
-    "player": "Zach LaVine",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 30.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "MIL at MIN",
-    "time": "2026-11-03T01:00Z",
-    "team": "MIN",
-    "player": "LaMelo Ball",
-    "status": "Available",
-    "reason": "Right Wrist Contusion",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 25.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BOS at HOU",
-    "time": "2026-11-03T01:30Z",
-    "team": "BOS",
-    "player": "Paul George",
-    "status": "Out",
-    "reason": "Rest",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 32.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BOS at HOU",
-    "time": "2026-11-03T01:30Z",
-    "team": "HOU",
-    "player": "Clint Capela",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 20.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BOS at HOU",
-    "time": "2026-11-03T01:30Z",
-    "team": "HOU",
-    "player": "Reed Sheppard",
-    "status": "Available",
-    "reason": "Low Back Strain",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 25.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "TOR at LAC",
-    "time": "2026-11-03T03:00Z",
-    "team": "LAC",
-    "player": "Rui Hachimura",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 28.3,
-    "benefits": [
-     {
-      "player": "Keaton Wagler",
-      "min": 30.2,
-      "recent": 24.0
-     },
-     {
-      "player": "Darius Garland",
-      "min": 35.1,
-      "recent": 30.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "TOR at LAC",
-    "time": "2026-11-03T03:00Z",
-    "team": "LAC",
-    "player": "Derrick Jones Jr.",
-    "status": "Out",
-    "reason": "Right Knee Soreness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 27.3,
-    "benefits": [
-     {
-      "player": "Keaton Wagler",
-      "min": 30.2,
-      "recent": 24.0
-     },
-     {
-      "player": "Darius Garland",
-      "min": 35.1,
-      "recent": 30.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "TOR at LAC",
-    "time": "2026-11-03T03:00Z",
-    "team": "TOR",
-    "player": "Kawhi Leonard",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 26.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "PHX at GSW",
-    "time": "2026-11-03T03:00Z",
-    "team": "GSW",
-    "player": "Al Horford",
-    "status": "Out",
-    "reason": "Bilateral Low Back",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 19.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "PHX at GSW",
-    "time": "2026-11-03T03:00Z",
-    "team": "GSW",
-    "player": "Brandon Williams",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 18.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "PHX at GSW",
-    "time": "2026-11-03T03:00Z",
-    "team": "GSW",
-    "player": "Gui Santos",
-    "status": "Out",
-    "reason": "Left Knee Tendinitis",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 17.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "TOR at LAC",
-    "time": "2026-11-03T03:00Z",
-    "team": "TOR",
-    "player": "Jakob Poeltl",
-    "status": "Out",
-    "reason": "Left Shoulder Bursitis",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 17.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "TOR at LAC",
-    "time": "2026-11-03T03:00Z",
-    "team": "LAC",
-    "player": "Jordan Miller",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 9.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "TOR at LAC",
-    "time": "2026-11-03T03:00Z",
-    "team": "TOR",
-    "player": "Scottie Barnes",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "10:46 PM",
-    "min": 35.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "MIA at LAL",
-    "time": "2026-11-03T03:00Z",
-    "team": "LAL",
-    "player": "Walker Kessler",
-    "status": "Available",
-    "reason": "Left Finger Splint",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "4:43 PM",
-    "min": 29.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "MIA at LAL",
-    "time": "2026-11-03T03:00Z",
-    "team": "MIA",
-    "player": "Tim Hardaway Jr.",
-    "status": "Available",
-    "reason": "Personal Reasons",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "3:54 PM",
-    "min": 16.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "OKC at CLE",
-    "time": "2026-11-03T00:00Z",
-    "team": "OKC",
-    "player": "Jalen Williams",
-    "status": "Out",
-    "reason": "Left Ankle/ Surgery",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 31.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "OKC at CLE",
-    "time": "2026-11-03T00:00Z",
-    "team": "OKC",
-    "player": "Chet Holmgren",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 30.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "OKC at CLE",
-    "time": "2026-11-03T00:00Z",
-    "team": "CLE",
-    "player": "Jaylon Tyson",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 19.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "OKC at CLE",
-    "time": "2026-11-03T00:00Z",
-    "team": "OKC",
-    "player": "Alex Caruso",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 17.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "OKC at CLE",
-    "time": "2026-11-03T00:00Z",
-    "team": "OKC",
-    "player": "Cason Wallace",
-    "status": "Out",
-    "reason": "Left Shoulder/ Surgery",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 16.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "WAS at ORL",
-    "time": "2026-11-03T00:30Z",
-    "team": "ORL",
-    "player": "Paolo Banchero",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 33.5,
-    "benefits": [
-     {
-      "player": "Nikola Vucevic",
-      "min": 15.7,
-      "recent": 9.7
-     },
-     {
-      "player": "Goga Bitadze",
-      "min": 11.6,
-      "recent": 7.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "WAS at ORL",
-    "time": "2026-11-03T00:30Z",
-    "team": "ORL",
-    "player": "Jalen Suggs",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 33.3,
-    "benefits": [
-     {
-      "player": "Nikola Vucevic",
-      "min": 15.7,
-      "recent": 9.7
-     },
-     {
-      "player": "Goga Bitadze",
-      "min": 11.6,
-      "recent": 7.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Tyrese Haliburton",
-    "status": "Out",
-    "reason": "Left Hamstring Strain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 32.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Ivica Zubac",
-    "status": "Out",
-    "reason": "Left Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 21.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at NYK",
-    "time": "2026-11-03T00:30Z",
-    "team": "BKN",
-    "player": "Egor Demin",
-    "status": "Out",
-    "reason": "Right Bone Bruise",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 20.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "DET at CHA",
-    "time": "2026-11-03T00:30Z",
-    "team": "DET",
-    "player": "Jalen Duren",
-    "status": "Out",
-    "reason": "Right Hamstring Strain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 19.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "WAS at ORL",
-    "time": "2026-11-03T00:30Z",
-    "team": "WAS",
-    "player": "Justin Champagnie",
-    "status": "Out",
-    "reason": "Right Foot Surgery",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 17.7,
-    "benefits": [
-     {
-      "player": "Carlton Carrington",
-      "min": 26.5,
-      "recent": 22.7
-     },
-     {
-      "player": "Deandre Ayton",
-      "min": 17.3,
-      "recent": 13.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "ATL at IND",
-    "time": "2026-11-03T00:30Z",
-    "team": "IND",
-    "player": "Ben Sheppard",
-    "status": "Out",
-    "reason": "Left Meniscus Surgery",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 12.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "MIL at MIN",
-    "time": "2026-11-03T01:00Z",
-    "team": "MIN",
-    "player": "Anthony Edwards",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 34.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "SAC at DAL",
-    "time": "2026-11-03T01:00Z",
-    "team": "SAC",
-    "player": "Keegan Murray",
-    "status": "Out",
-    "reason": "Left Ankle Capsulitis",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Malik Monk",
-      "min": 16.0,
-      "recent": 11.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "NOP at MEM",
-    "time": "2026-11-03T01:00Z",
-    "team": "NOP",
-    "player": "Yves Missi",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 19.5,
-    "benefits": [
-     {
-      "player": "Benedict Mathurin",
-      "min": 24.5,
-      "recent": 17.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "NOP at MEM",
-    "time": "2026-11-03T01:00Z",
-    "team": "NOP",
-    "player": "Jordan Poole",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 16.3,
-    "benefits": [
-     {
-      "player": "Benedict Mathurin",
-      "min": 24.5,
-      "recent": 17.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "SAC at DAL",
-    "time": "2026-11-03T01:00Z",
-    "team": "DAL",
-    "player": "Sergio Larrea",
-    "status": "Out",
-    "reason": "Right Knee Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 13.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "UTA at SAS",
-    "time": "2026-11-03T01:30Z",
-    "team": "UTA",
-    "player": "Jaren Jackson Jr.",
-    "status": "Out",
-    "reason": "Right MCL Tear",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 25.3,
-    "benefits": [],
-    "estimate": false
-   }
+  "report": "01:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-03_01_45AM.pdf",
+  "pending": [
+   "ATL",
+   "BKN",
+   "BOS",
+   "CHA",
+   "CHI",
+   "CLE",
+   "DAL",
+   "DET",
+   "GSW",
+   "HOU",
+   "IND",
+   "LAC",
+   "LAL",
+   "MEM",
+   "MIA",
+   "MIL",
+   "MIN",
+   "NOP",
+   "NYK",
+   "OKC",
+   "ORL",
+   "PHI",
+   "PHX",
+   "SAC",
+   "SAS",
+   "TOR",
+   "UTA",
+   "WAS"
   ],
-  "minor": [
-   {
-    "player": "T.J. McConnell",
-    "team": "IND",
-    "status": "Out"
-   },
-   {
-    "player": "Nic Claxton",
-    "team": "CHI",
-    "status": "Out"
-   },
-   {
-    "player": "Dylan Cardwell",
-    "team": "SAC",
-    "status": "Out"
-   },
-   {
-    "player": "Santi Aldama",
-    "team": "DAL",
-    "status": "Out"
-   },
-   {
-    "player": "Adou Thiero",
-    "team": "LAL",
-    "status": "Out"
-   },
-   {
-    "player": "Jimmy Butler III",
-    "team": "GSW",
-    "status": "Out"
-   },
-   {
-    "player": "Moses Moody",
-    "team": "GSW",
-    "status": "Out"
-   },
-   {
-    "player": "Kristaps Porzingis",
-    "team": "GSW",
-    "status": "Out"
-   },
-   {
-    "player": "Nate Bittle",
-    "team": "TOR",
-    "status": "Out"
-   },
-   {
-    "player": "Bradley Beal",
-    "team": "LAC",
-    "status": "Out"
-   },
-   {
-    "player": "Brandon Ingram",
-    "team": "LAC",
-    "status": "Out"
-   },
-   {
-    "player": "Yanic Konan Niederhauser",
-    "team": "LAC",
-    "status": "Out"
-   },
-   {
-    "player": "Thomas Sorber",
-    "team": "OKC",
-    "status": "Out"
-   },
-   {
-    "player": "Nikola Topic",
-    "team": "OKC",
-    "status": "Out"
-   },
-   {
-    "player": "Nae'Qwan Tomlin",
-    "team": "CLE",
-    "status": "Out"
-   },
-   {
-    "player": "Mouhamed Gueye",
-    "team": "ATL",
-    "status": "Out"
-   },
-   {
-    "player": "Henri Veesaar",
-    "team": "ATL",
-    "status": "Out"
-   },
-   {
-    "player": "Johnny Furphy",
-    "team": "IND",
-    "status": "Out"
-   },
-   {
-    "player": "Dominick Barlow",
-    "team": "PHI",
-    "status": "Out"
-   },
-   {
-    "player": "Ariel Hukporti",
-    "team": "PHI",
-    "status": "Out"
-   },
-   {
-    "player": "Kon Knueppel",
-    "team": "CHA",
-    "status": "Out"
-   },
-   {
-    "player": "Grant Williams",
-    "team": "CHA",
-    "status": "Out"
-   },
-   {
-    "player": "Tristan Vukcevic",
-    "team": "WAS",
-    "status": "Out"
-   },
-   {
-    "player": "Jamir Watkins",
-    "team": "WAS",
-    "status": "Out"
-   },
-   {
-    "player": "Jonathan Isaac",
-    "team": "ORL",
-    "status": "Out"
-   },
-   {
-    "player": "Izaiyah Nelson",
-    "team": "ORL",
-    "status": "Out"
-   },
-   {
-    "player": "Noah Penda",
-    "team": "ORL",
-    "status": "Out"
-   },
-   {
-    "player": "Donte DiVincenzo",
-    "team": "MIN",
-    "status": "Out"
-   },
-   {
-    "player": "Maxime Raynaud",
-    "team": "SAC",
-    "status": "Out"
-   },
-   {
-    "player": "Ben Simmons",
-    "team": "SAC",
-    "status": "Out"
-   },
-   {
-    "player": "Tarik Biberovic",
-    "team": "DAL",
-    "status": "Out"
-   },
-   {
-    "player": "Dereck Lively II",
-    "team": "DAL",
-    "status": "Out"
-   },
-   {
-    "player": "Steven Adams",
-    "team": "HOU",
-    "status": "Out"
-   },
-   {
-    "player": "Devin Carter",
-    "team": "BOS",
-    "status": "Out"
-   },
-   {
-    "player": "Jusuf Nurkic",
-    "team": "UTA",
-    "status": "Out"
-   },
-   {
-    "player": "Tobias Harris",
-    "team": "SAS",
-    "status": "Out"
-   },
-   {
-    "player": "Jayden Quaintance",
-    "team": "SAS",
-    "status": "Out"
-   },
-   {
-    "player": "Mark Williams",
-    "team": "PHX",
-    "status": "Out"
-   }
-  ]
+  "rows": [],
+  "minor": []
  }
 }
