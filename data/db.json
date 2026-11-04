@@ -2,7 +2,7 @@
  "updated": "2026-11-04",
  "brief": {
   "date": "2026-11-04",
-  "updated": "2:59 PM ET",
+  "updated": "3:22 PM ET",
   "games": 13,
   "pending": [],
   "first_report": "7:49 AM",
@@ -487,13 +487,34 @@
      },
      "LAC": {
       "out": [],
-      "q": []
+      "q": [
+       {
+        "player": "Isaiah Jackson",
+        "min": 21.7
+       }
+      ]
      }
     },
     "key": "Giannis Antetokounmpo has the top projection in this game at 57.3 DK points."
    }
   ],
   "changed": [
+   {
+    "player": "Isaiah Jackson",
+    "team": "LAC",
+    "status": "Questionable",
+    "was": "",
+    "why": "Left Groin Soreness",
+    "time": "3:24 PM"
+   },
+   {
+    "player": "Rasheer Fleming",
+    "team": "PHX",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Ankle Sprain",
+    "time": "3:24 PM"
+   },
    {
     "player": "Terrence Shannon Jr.",
     "team": "MIN",
@@ -557,22 +578,6 @@
     "was": "Questionable",
     "why": "Right Ankle Soreness",
     "time": "3:01 PM"
-   },
-   {
-    "player": "Kon Knueppel",
-    "team": "CHA",
-    "status": "Available",
-    "was": "Probable",
-    "why": "Left Hamstring Strain",
-    "time": "3:01 PM"
-   },
-   {
-    "player": "Bilal Coulibaly",
-    "team": "WAS",
-    "status": "Questionable",
-    "was": "",
-    "why": "Illness",
-    "time": "12:44 PM"
    }
   ],
   "sits": [
@@ -911,8 +916,8 @@
    ]
   },
   "injuries": {
-   "report": "02:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_02_45PM.pdf",
+   "report": "03:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_03_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1315,6 +1320,21 @@
      "game": "POR at PHX",
      "time": "2026-11-05T02:00Z",
      "team": "PHX",
+     "player": "Rasheer Fleming",
+     "status": "Out",
+     "reason": "Left Ankle Sprain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "3:24 PM",
+     "min": 7.5,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "POR at PHX",
+     "time": "2026-11-05T02:00Z",
+     "team": "PHX",
      "player": "Jordan Goodwin",
      "status": "Questionable",
      "reason": "Right Calf Soreness",
@@ -1357,21 +1377,6 @@
       }
      ],
      "estimate": true
-    },
-    {
-     "game": "POR at PHX",
-     "time": "2026-11-05T02:00Z",
-     "team": "PHX",
-     "player": "Rasheer Fleming",
-     "status": "Questionable",
-     "reason": "Left Ankle Sprain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 7.5,
-     "benefits": [],
-     "estimate": false
     },
     {
      "game": "TOR at DEN",
@@ -1417,6 +1422,27 @@
      "min": 31.0,
      "benefits": [],
      "estimate": false
+    },
+    {
+     "game": "MIA at LAC",
+     "time": "2026-11-05T03:30Z",
+     "team": "LAC",
+     "player": "Isaiah Jackson",
+     "status": "Questionable",
+     "reason": "Left Groin Soreness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "3:24 PM",
+     "min": 23.3,
+     "benefits": [
+      {
+       "player": "Brook Lopez",
+       "plus": 16.0,
+       "min": 36.0
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "MIA at LAC",
@@ -12085,7 +12111,7 @@
    "coach": "",
    "notes": "Bridges gives Phoenix a true forward. Maluach could push for a bigger role at about 24 minutes.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Rasheer Fleming",
    "depth_through": "2026-11-02",
    "games": 5
   },
