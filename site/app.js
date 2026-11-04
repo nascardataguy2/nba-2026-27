@@ -513,8 +513,33 @@
     }
     return out;
   }
-  var GL = {};
-  function glRows(name){ return GL[nkey(name)] || []; }
+  var GL = {}, GLIDX = null;
+  // Names differ between sources (hyphens, apostrophes, suffixes, nicknames such as Bones Hyland
+  // for Nah'Shon Hyland), so the game log is found by a letters-only key, then a nickname list,
+  // then a last name that only one player in the logs has.
+  var GLALIAS = {nahshonhyland:'boneshyland', gregoryjackson:'ggjackson', carltoncarrington:'bubcarrington',
+    benedictmathurin:'bennedictmathurin', nicolasclaxton:'nicclaxton', moritzwagner:'mowagner', mowagner:'moritzwagner'};
+  function gkey(s){
+    s = String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[ .]+(iii|ii|iv|jr|sr)\.?$/, '');
+    return s.replace(/[^a-z]/g, '');
+  }
+  function glRows(name){
+    if (!GLIDX){
+      GLIDX = {k: {}, last: {}};
+      Object.keys(GL).forEach(function(k){
+        GLIDX.k[gkey(k)] = GL[k];
+        var rows = GL[k] || [], t = rows.length ? rows[0][1] : '', l = gkey(k.split(' ').slice(-1)[0]) + '|' + t;
+        GLIDX.last[l] = GLIDX.last[l] === undefined ? rows : null;
+      });
+    }
+    var g = gkey(name), hit = GLIDX.k[g] || GLIDX.k[GLALIAS[g]];
+    if (hit) return hit;
+    // Last resort: same last name and same team, and only one such player in the logs.
+    var me = PJ && PJ.players ? PJ.players.filter(function(p){ return p.player === name; })[0] : null;
+    if (!me) return [];
+    var last = gkey(String(name || '').replace(/[ .]+(iii|ii|iv|jr|sr)\.?$/i, '').split(' ').slice(-1)[0]);
+    return GLIDX.last[last + '|' + me.team] || [];
+  }
   function noteHtml(bits, name){
     var lead = null, info = [], rest = [];
     bits.forEach(function(b){
@@ -1251,7 +1276,7 @@
   $('r4p-ocsv').addEventListener('click', optCsv);
   $('r4p-oq').addEventListener('input', optPool);
   ['r4p-sq','r4p-steam','r4p-spos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-sq' ? 'input' : 'change', research); });
-  fetchFirst(GLSOURCES, false).then(function(d){ GL = d || {}; proj(); research(); optPool(); }).catch(function(){});
+  fetchFirst(GLSOURCES, false).then(function(d){ GL = d || {}; GLIDX = null; proj(); research(); optPool(); }).catch(function(){});
   fetchFirst(RSOURCES, false).then(function(d){
     SEA = d;
     var dd = d.through ? new Date(d.through + 'T12:00:00') : null;
