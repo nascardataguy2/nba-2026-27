@@ -2,7 +2,7 @@
  "updated": "2026-11-04",
  "brief": {
   "date": "2026-11-04",
-  "updated": "3:26 PM ET",
+  "updated": "4:21 PM ET",
   "games": 13,
   "pending": [],
   "first_report": "7:49 AM",
@@ -465,7 +465,7 @@
       "q": []
      }
     },
-    "key": "Keegan Murray is out, so Daeqwon Plowden should play more than usual."
+    "key": "Keegan Murray is out, so Zach LaVine and Malik Monk should play more than usual."
    },
    {
     "away": "MIA",
@@ -499,6 +499,22 @@
    }
   ],
   "changed": [
+   {
+    "player": "Daeqwon Plowden",
+    "team": "SAC",
+    "status": "Out",
+    "was": "",
+    "why": "Illness",
+    "time": "4:23 PM"
+   },
+   {
+    "player": "Precious Achiuwa",
+    "team": "SAC",
+    "status": "Available",
+    "was": "Probable",
+    "why": "-",
+    "time": "4:23 PM"
+   },
    {
     "player": "Isaiah Jackson",
     "team": "LAC",
@@ -562,22 +578,6 @@
     "was": "Questionable",
     "why": "Rest",
     "time": "3:01 PM"
-   },
-   {
-    "player": "Kam Jones",
-    "team": "MIL",
-    "status": "Questionable",
-    "was": "",
-    "why": "Right Ankle Sprain",
-    "time": "3:01 PM"
-   },
-   {
-    "player": "Josh Hart",
-    "team": "NYK",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Right Ankle Soreness",
-    "time": "3:01 PM"
    }
   ],
   "sits": [
@@ -626,12 +626,20 @@
     "lost": 27.0,
     "benefits": [
      {
-      "player": "Daeqwon Plowden",
-      "plus": 3.5,
-      "recent": 8.0,
-      "min": 11.5,
-      "dk": 7.2,
-      "salary": 3200
+      "player": "Zach LaVine",
+      "plus": 4.7,
+      "recent": 29.3,
+      "min": 34.0,
+      "dk": 30.3,
+      "salary": 6300
+     },
+     {
+      "player": "Malik Monk",
+      "plus": 4.5,
+      "recent": 17.3,
+      "min": 21.8,
+      "dk": 20.8,
+      "salary": 3800
      }
     ]
    },
@@ -779,20 +787,20 @@
     "player": "Darius Acuff Jr.",
     "team": "SAC",
     "own": 44.6,
-    "dk": 45.9,
+    "dk": 49.8,
     "salary": 8000
    },
    {
     "player": "Giannis Antetokounmpo",
     "team": "MIA",
-    "own": 44.0,
+    "own": 43.8,
     "dk": 57.3,
     "salary": 10700
    },
    {
     "player": "Keaton Wagler",
     "team": "LAC",
-    "own": 41.6,
+    "own": 41.0,
     "dk": 29.5,
     "salary": 5300
    },
@@ -916,8 +924,8 @@
    ]
   },
   "injuries": {
-   "report": "03:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_03_15PM.pdf",
+   "report": "04:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_04_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1412,13 +1420,28 @@
      "game": "LAL at SAC",
      "time": "2026-11-05T03:00Z",
      "team": "SAC",
-     "player": "Precious Achiuwa",
-     "status": "Probable",
-     "reason": "Left Ankle Soreness",
+     "player": "Daeqwon Plowden",
+     "status": "Out",
+     "reason": "Illness",
      "new": true,
      "was": "",
      "known": true,
-     "changed_at": "",
+     "changed_at": "4:23 PM",
+     "min": 8.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "LAL at SAC",
+     "time": "2026-11-05T03:00Z",
+     "team": "SAC",
+     "player": "Precious Achiuwa",
+     "status": "Available",
+     "reason": "",
+     "new": true,
+     "was": "Probable",
+     "known": true,
+     "changed_at": "4:23 PM",
      "min": 31.0,
      "benefits": [],
      "estimate": false
@@ -1775,9 +1798,14 @@
      "min": 27.0,
      "benefits": [
       {
-       "player": "Daeqwon Plowden",
-       "min": 11.5,
-       "recent": 8.0
+       "player": "Zach LaVine",
+       "min": 34.0,
+       "recent": 29.3
+      },
+      {
+       "player": "Malik Monk",
+       "min": 21.8,
+       "recent": 17.3
       }
      ],
      "estimate": false
@@ -12171,7 +12199,7 @@
    "coach": "Doug Christie",
    "notes": "Schroder, Westbrook and DeRozan are gone. Sabonis is a trade candidate, and LaVine is in the last year of his deal.",
    "source": "LO-1019b",
-   "out": "Keegan Murray",
+   "out": "Daeqwon Plowden, Keegan Murray",
    "depth_through": "2026-11-02",
    "games": 7
   },
