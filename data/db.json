@@ -2,7 +2,7 @@
  "updated": "2026-11-04",
  "brief": {
   "date": "2026-11-04",
-  "updated": "4:21 PM ET",
+  "updated": "4:41 PM ET",
   "games": 13,
   "pending": [],
   "first_report": "7:49 AM",
@@ -500,6 +500,14 @@
   ],
   "changed": [
    {
+    "player": "Anthony Gill",
+    "team": "WAS",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Low Back Spasms",
+    "time": "4:43 PM"
+   },
+   {
     "player": "Daeqwon Plowden",
     "team": "SAC",
     "status": "Out",
@@ -569,14 +577,6 @@
     "status": "Questionable",
     "was": "Probable",
     "why": "",
-    "time": "3:01 PM"
-   },
-   {
-    "player": "Jayson Tatum",
-    "team": "BOS",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Rest",
     "time": "3:01 PM"
    }
   ],
@@ -924,8 +924,8 @@
    ]
   },
   "injuries": {
-   "report": "04:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_04_15PM.pdf",
+   "report": "04:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_04_30PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -989,21 +989,6 @@
       }
      ],
      "estimate": true
-    },
-    {
-     "game": "ATL at WAS",
-     "time": "2026-11-05T00:00Z",
-     "team": "WAS",
-     "player": "Anthony Gill",
-     "status": "Questionable",
-     "reason": "Low Back Spasms",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "",
-     "min": 1.0,
-     "benefits": [],
-     "estimate": false
     },
     {
      "game": "MIL at BOS",
@@ -1812,6 +1797,11 @@
     }
    ],
    "minor": [
+    {
+     "player": "Anthony Gill",
+     "team": "WAS",
+     "status": "Available"
+    },
     {
      "player": "Nic Claxton",
      "team": "CHI",
