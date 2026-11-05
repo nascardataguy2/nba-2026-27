@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "updated": "8:45 AM ET",
+ "updated": "12:41 PM ET",
  "games": 2,
  "pending": [
   "PHX",
@@ -13,11 +13,11 @@
    "home": "PHX",
    "time": "2026-11-06T02:00Z",
    "slate": "main",
-   "ou": 223.5,
+   "ou": 222.5,
    "fav": "PHX",
    "line": 1.5,
-   "away_pts": 111.0,
-   "home_pts": 112.5,
+   "away_pts": 110.5,
+   "home_pts": 112.0,
    "tags": [
     "Close game",
     "PHX on a back-to-back"
@@ -37,16 +37,16 @@
      "q": []
     },
     "PHX": {
-     "out": [
+     "out": [],
+     "q": [
       {
        "player": "Jordan Goodwin",
-       "min": 17.3
+       "min": 16.4
       }
-     ],
-     "q": []
+     ]
     }
    },
-   "key": "Paolo Banchero and Jalen Suggs are out, so Nikola Vucevic and Goga Bitadze should play more than usual."
+   "key": "Paolo Banchero and Jalen Suggs are out, so Nikola Vucevic should play more than usual."
   },
   {
    "away": "MIA",
@@ -55,9 +55,9 @@
    "slate": "main",
    "ou": 234.5,
    "fav": "GSW",
-   "line": 6.5,
-   "away_pts": 114.0,
-   "home_pts": 120.5,
+   "line": 7.5,
+   "away_pts": 113.5,
+   "home_pts": 121.0,
    "tags": [
     "Highest total",
     "MIA on a back-to-back"
@@ -103,58 +103,11 @@
    "benefits": [
     {
      "player": "Nikola Vucevic",
-     "plus": 4.6,
+     "plus": 4.0,
      "recent": 9.0,
-     "min": 13.6,
-     "dk": 16.1,
+     "min": 13.0,
+     "dk": 14.8,
      "salary": 4200
-    },
-    {
-     "player": "Goga Bitadze",
-     "plus": 3.1,
-     "recent": 7.3,
-     "min": 10.4,
-     "dk": 11.6,
-     "salary": 3500
-    }
-   ]
-  },
-  {
-   "team": "PHX",
-   "outs": [
-    {
-     "player": "Jordan Goodwin",
-     "min": 17.3,
-     "note": "Jordan Goodwin hurt his calf on November 2 and was listed questionable for Wednesday, and he did not appear in Phoenix's November 4 box score. The show doubted he would play both games of the Wednesday-Thursday back-to-back.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 17.3,
-   "benefits": [
-    {
-     "player": "Miles Bridges",
-     "plus": 5.2,
-     "recent": 29.0,
-     "min": 34.2,
-     "dk": 38.2,
-     "salary": 7100
-    },
-    {
-     "player": "Koa Peat",
-     "plus": 3.1,
-     "recent": 4.3,
-     "min": 7.4,
-     "dk": 6.0,
-     "salary": 3000
-    },
-    {
-     "player": "Devin Booker",
-     "plus": 2.8,
-     "recent": 35.0,
-     "min": 37.8,
-     "dk": 44.8,
-     "salary": 8500
     }
    ]
   }
@@ -245,32 +198,32 @@
  ],
  "chalk": [
   {
-   "player": "Stephen Curry",
-   "team": "GSW",
-   "own": 44.6,
-   "dk": 47.2,
-   "salary": 8200
-  },
-  {
    "player": "Giannis Antetokounmpo",
    "team": "MIA",
-   "own": 44.5,
+   "own": 44.6,
    "dk": 61.9,
    "salary": 11000
   },
   {
-   "player": "Franz Wagner",
-   "team": "ORL",
-   "own": 41.3,
-   "dk": 47.9,
-   "salary": 8700
+   "player": "Stephen Curry",
+   "team": "GSW",
+   "own": 44.6,
+   "dk": 47.4,
+   "salary": 8200
   },
   {
    "player": "Bam Adebayo",
    "team": "MIA",
-   "own": 39.8,
-   "dk": 43.1,
+   "own": 41.9,
+   "dk": 42.9,
    "salary": 7800
+  },
+  {
+   "player": "Klay Thompson",
+   "team": "MIA",
+   "own": 40.0,
+   "dk": 23.3,
+   "salary": 4400
   }
  ],
  "leverage": [],
@@ -354,17 +307,12 @@
     "player": "Jaren Jackson Jr.",
     "team": "UTA",
     "text": "The show said Jackson is out for about a month, leaving his roughly 26 minutes and frontcourt usage available. He has not played since he left after 10 minutes on Oct. 26."
-   },
-   {
-    "player": "Jordan Goodwin",
-    "team": "PHX",
-    "text": "Jordan Goodwin hurt his calf on November 2 and was listed questionable for Wednesday, and he did not appear in Phoenix's November 4 box score. The show doubted he would play both games of the Wednesday-Thursday back-to-back."
    }
   ]
  },
  "injuries": {
-  "report": "08:30 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_08_30AM.pdf",
+  "report": "12:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_12_30PM.pdf",
   "pending": [
    "PHX",
    "MIA"
@@ -385,13 +333,8 @@
     "benefits": [
      {
       "player": "Nikola Vucevic",
-      "min": 13.6,
+      "min": 13.0,
       "recent": 9.0
-     },
-     {
-      "player": "Goga Bitadze",
-      "min": 10.4,
-      "recent": 7.3
      }
     ],
     "estimate": false
@@ -411,13 +354,8 @@
     "benefits": [
      {
       "player": "Nikola Vucevic",
-      "min": 13.6,
+      "min": 13.0,
       "recent": 9.0
-     },
-     {
-      "player": "Goga Bitadze",
-      "min": 10.4,
-      "recent": 7.3
      }
     ],
     "estimate": false
