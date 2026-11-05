@@ -2,11 +2,9 @@
  "updated": "2026-11-05",
  "brief": {
   "date": "2026-11-05",
-  "updated": "3:40 PM ET",
+  "updated": "4:28 PM ET",
   "games": 2,
-  "pending": [
-   "MIA"
-  ],
+  "pending": [],
   "first_report": "6:02 AM",
   "cards": [
    {
@@ -81,7 +79,16 @@
     "key": "Giannis Antetokounmpo has the top projection in this game at 61.8 DK points."
    }
   ],
-  "changed": [],
+  "changed": [
+   {
+    "player": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "status": "Available",
+    "was": "",
+    "why": "Right Wrist Sprain",
+    "time": "4:29 PM"
+   }
+  ],
   "sits": [
    {
     "team": "ORL",
@@ -335,12 +342,25 @@
    ]
   },
   "injuries": {
-   "report": "03:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_03_30PM.pdf",
-   "pending": [
-    "MIA"
-   ],
+   "report": "04:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_04_15PM.pdf",
+   "pending": [],
    "rows": [
+    {
+     "game": "MIA at GSW",
+     "time": "2026-11-06T03:00Z",
+     "team": "MIA",
+     "player": "Giannis Antetokounmpo",
+     "status": "Available",
+     "reason": "Right Wrist Sprain",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "4:29 PM",
+     "min": 35.3,
+     "benefits": [],
+     "estimate": false
+    },
     {
      "game": "ORL at PHX",
      "time": "2026-11-06T02:00Z",
