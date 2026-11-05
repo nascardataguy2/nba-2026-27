@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updated": "6:41 PM ET",
+ "updated": "9:30 PM ET",
  "games": [
   {
    "away": "PHI",
@@ -143,7 +143,7 @@
    "time": "2026-11-05T03:00Z",
    "fav": "LAL",
    "line": 12.5,
-   "slate": "late"
+   "slate": "main"
   },
   {
    "away": "MIA",
@@ -154,7 +154,7 @@
    "time": "2026-11-05T03:30Z",
    "fav": "MIA",
    "line": 5.5,
-   "slate": "late"
+   "slate": "main"
   }
  ],
  "players": [
@@ -181,7 +181,7 @@
    "dk": 60.3,
    "value": 4.9,
    "note": "",
-   "own": 9.7
+   "own": 7.7
   },
   {
    "player": "Luka Doncic",
@@ -190,48 +190,23 @@
    "pos": "PG",
    "salary": 12200,
    "dkid": "44771634",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 35.3,
-   "usg": 35.2,
+   "usg": 35.3,
    "ou": 233.5,
    "spread": -12.5,
    "pts": 32.7,
    "reb": 8.2,
    "ast": 7.6,
-   "stl": 1.4,
+   "stl": 1.5,
    "blk": 0.5,
    "to": 3.5,
-   "dk": 59.6,
-   "value": 4.89,
+   "dk": 59.9,
+   "value": 4.91,
    "note": "",
-   "own": 39.1
-  },
-  {
-   "player": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "opp": "LAC",
-   "pos": "PF",
-   "salary": 10700,
-   "dkid": "44771637",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 32.0,
-   "usg": 34.7,
-   "ou": 233.5,
-   "spread": -5.5,
-   "pts": 29.3,
-   "reb": 12.2,
-   "ast": 5.9,
-   "stl": 0.9,
-   "blk": 0.9,
-   "to": 3.1,
-   "dk": 57.3,
-   "value": 5.36,
-   "note": "",
-   "own": 44.1
+   "own": 6.6
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -256,7 +231,32 @@
    "dk": 57.2,
    "value": 5.55,
    "note": "",
-   "own": 15.4
+   "own": 13.9
+  },
+  {
+   "player": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "opp": "LAC",
+   "pos": "PF",
+   "salary": 10700,
+   "dkid": "44771637",
+   "slate": "main",
+   "start": true,
+   "q": false,
+   "min": 32.0,
+   "usg": 34.8,
+   "ou": 233.5,
+   "spread": -5.5,
+   "pts": 29.3,
+   "reb": 12.0,
+   "ast": 5.9,
+   "stl": 0.9,
+   "blk": 0.9,
+   "to": 3.1,
+   "dk": 57.0,
+   "value": 5.33,
+   "note": "",
+   "own": 16.0
   },
   {
    "player": "Victor Wembanyama",
@@ -330,7 +330,7 @@
    "dk": 51.7,
    "value": 6.22,
    "note": "",
-   "own": 36.9
+   "own": 36.1
   },
   {
    "player": "Cooper Flagg",
@@ -379,7 +379,7 @@
    "dk": 49.4,
    "value": 5.55,
    "note": "",
-   "own": 19.7
+   "own": 13.0
   },
   {
    "player": "Scottie Barnes",
@@ -404,7 +404,7 @@
    "dk": 47.6,
    "value": 5.54,
    "note": "Moved toward his recent minutes (37.7 a game).",
-   "own": 23.7
+   "own": 17.0
   },
   {
    "player": "Jalen Brunson",
@@ -429,7 +429,7 @@
    "dk": 47.5,
    "value": 5.87,
    "note": "",
-   "own": 22.0
+   "own": 18.4
   },
   {
    "player": "Darius Acuff Jr.",
@@ -438,23 +438,23 @@
    "pos": "PG/SG",
    "salary": 8000,
    "dkid": "44771649",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 37.5,
-   "usg": 30.5,
+   "usg": 30.6,
    "ou": 233.5,
    "spread": 12.5,
-   "pts": 27.2,
+   "pts": 27.1,
    "reb": 3.9,
    "ast": 7.3,
    "stl": 1.5,
    "blk": 0.3,
-   "to": 3.5,
-   "dk": 46.8,
-   "value": 5.85,
+   "to": 3.6,
+   "dk": 46.7,
+   "value": 5.84,
    "note": "",
-   "own": 44.6
+   "own": 24.0
   },
   {
    "player": "Cade Cunningham",
@@ -479,7 +479,7 @@
    "dk": 45.8,
    "value": 4.92,
    "note": "Moved toward his recent minutes (31.3 a game).",
-   "own": 2.5
+   "own": 2.0
   },
   {
    "player": "Derrick White",
@@ -504,7 +504,7 @@
    "dk": 44.6,
    "value": 6.65,
    "note": "",
-   "own": 33.3
+   "own": 31.4
   },
   {
    "player": "Donovan Mitchell",
@@ -529,7 +529,7 @@
    "dk": 43.3,
    "value": 5.09,
    "note": "",
-   "own": 4.5
+   "own": 3.7
   },
   {
    "player": "Deni Avdija",
@@ -554,7 +554,7 @@
    "dk": 43.1,
    "value": 4.9,
    "note": "",
-   "own": 3.6
+   "own": 2.7
   },
   {
    "player": "Domantas Sabonis",
@@ -563,23 +563,23 @@
    "pos": "C",
    "salary": 9700,
    "dkid": "44771640",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 35.9,
-   "usg": 16.4,
+   "usg": 16.3,
    "ou": 233.5,
    "spread": 12.5,
-   "pts": 15.9,
-   "reb": 12.5,
+   "pts": 15.8,
+   "reb": 12.6,
    "ast": 5.5,
-   "stl": 1.0,
+   "stl": 0.9,
    "blk": 0.4,
    "to": 2.9,
    "dk": 42.9,
    "value": 4.43,
    "note": "",
-   "own": 22.0
+   "own": 1.3
   },
   {
    "player": "Jamal Murray",
@@ -604,7 +604,7 @@
    "dk": 42.2,
    "value": 4.85,
    "note": "",
-   "own": 4.7
+   "own": 4.4
   },
   {
    "player": "Anthony Davis",
@@ -629,7 +629,7 @@
    "dk": 42.1,
    "value": 5.02,
    "note": "Moved toward his recent minutes (34.0 a game).",
-   "own": 12.2
+   "own": 10.9
   },
   {
    "player": "Payton Pritchard",
@@ -654,7 +654,7 @@
    "dk": 42.1,
    "value": 6.79,
    "note": "",
-   "own": 36.4
+   "own": 35.2
   },
   {
    "player": "Evan Mobley",
@@ -679,7 +679,7 @@
    "dk": 42.0,
    "value": 5.25,
    "note": "",
-   "own": 6.4
+   "own": 5.8
   },
   {
    "player": "Devin Booker",
@@ -704,7 +704,7 @@
    "dk": 41.9,
    "value": 5.05,
    "note": "",
-   "own": 5.3
+   "own": 4.1
   },
   {
    "player": "James Harden",
@@ -729,7 +729,7 @@
    "dk": 40.3,
    "value": 5.37,
    "note": "",
-   "own": 7.9
+   "own": 5.5
   },
   {
    "player": "LaMelo Ball",
@@ -754,7 +754,7 @@
    "dk": 39.9,
    "value": 4.87,
    "note": "",
-   "own": 1.8
+   "own": 1.5
   },
   {
    "player": "Onyeka Okongwu",
@@ -779,7 +779,32 @@
    "dk": 39.4,
    "value": 6.16,
    "note": "",
-   "own": 25.2
+   "own": 24.3
+  },
+  {
+   "player": "Austin Reaves",
+   "team": "LAL",
+   "opp": "SAC",
+   "pos": "PG/SG",
+   "salary": 8700,
+   "dkid": "44771642",
+   "slate": "main",
+   "start": true,
+   "q": false,
+   "min": 35.3,
+   "usg": 24.3,
+   "ou": 233.5,
+   "spread": -12.5,
+   "pts": 22.5,
+   "reb": 4.6,
+   "ast": 5.4,
+   "stl": 0.9,
+   "blk": 0.5,
+   "to": 2.8,
+   "dk": 39.3,
+   "value": 4.51,
+   "note": "",
+   "own": 1.6
   },
   {
    "player": "Ty Jerome",
@@ -804,7 +829,7 @@
    "dk": 39.3,
    "value": 4.63,
    "note": "",
-   "own": 2.0
+   "own": 1.5
   },
   {
    "player": "Kevin Durant",
@@ -829,32 +854,7 @@
    "dk": 39.1,
    "value": 5.01,
    "note": "Moved toward his recent minutes (32.3 a game).",
-   "own": 3.0
-  },
-  {
-   "player": "Austin Reaves",
-   "team": "LAL",
-   "opp": "SAC",
-   "pos": "PG/SG",
-   "salary": 8700,
-   "dkid": "44771642",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 35.3,
-   "usg": 24.2,
-   "ou": 233.5,
-   "spread": -12.5,
-   "pts": 22.5,
-   "reb": 4.6,
-   "ast": 5.4,
-   "stl": 0.9,
-   "blk": 0.4,
-   "to": 2.8,
-   "dk": 39.1,
-   "value": 4.49,
-   "note": "",
-   "own": 22.0
+   "own": 2.2
   },
   {
    "player": "Kyrie Irving",
@@ -903,7 +903,32 @@
    "dk": 38.8,
    "value": 5.46,
    "note": "",
-   "own": 11.7
+   "own": 10.2
+  },
+  {
+   "player": "Bam Adebayo",
+   "team": "MIA",
+   "opp": "LAC",
+   "pos": "C",
+   "salary": 7700,
+   "dkid": "44771655",
+   "slate": "main",
+   "start": true,
+   "q": false,
+   "min": 32.6,
+   "usg": 22.4,
+   "ou": 233.5,
+   "spread": -5.5,
+   "pts": 17.6,
+   "reb": 9.1,
+   "ast": 3.5,
+   "stl": 1.5,
+   "blk": 0.7,
+   "to": 1.9,
+   "dk": 38.5,
+   "value": 5.0,
+   "note": "",
+   "own": 4.2
   },
   {
    "player": "Tyrese Maxey",
@@ -931,31 +956,6 @@
    "own": 0.9
   },
   {
-   "player": "Bam Adebayo",
-   "team": "MIA",
-   "opp": "LAC",
-   "pos": "C",
-   "salary": 7700,
-   "dkid": "44771655",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 32.6,
-   "usg": 22.3,
-   "ou": 233.5,
-   "spread": -5.5,
-   "pts": 17.6,
-   "reb": 9.2,
-   "ast": 3.5,
-   "stl": 1.4,
-   "blk": 0.7,
-   "to": 1.8,
-   "dk": 38.5,
-   "value": 5.0,
-   "note": "",
-   "own": 34.2
-  },
-  {
    "player": "Immanuel Quickley",
    "team": "TOR",
    "opp": "DEN",
@@ -978,7 +978,7 @@
    "dk": 38.4,
    "value": 5.57,
    "note": "Moved toward his recent minutes (36.0 a game).",
-   "own": 16.2
+   "own": 14.0
   },
   {
    "player": "Zion Williamson",
@@ -1003,7 +1003,7 @@
    "dk": 38.3,
    "value": 5.04,
    "note": "",
-   "own": 8.9
+   "own": 7.2
   },
   {
    "player": "Dyson Daniels",
@@ -1028,7 +1028,7 @@
    "dk": 38.3,
    "value": 5.71,
    "note": "",
-   "own": 12.6
+   "own": 10.4
   },
   {
    "player": "Darius Garland",
@@ -1037,23 +1037,23 @@
    "pos": "PG",
    "salary": 8300,
    "dkid": "44771646",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 31.4,
    "usg": 31.1,
    "ou": 233.5,
    "spread": 5.5,
    "pts": 22.2,
-   "reb": 2.9,
+   "reb": 2.8,
    "ast": 6.8,
    "stl": 0.9,
    "blk": 0.1,
    "to": 3.4,
-   "dk": 37.7,
-   "value": 4.54,
+   "dk": 37.6,
+   "value": 4.53,
    "note": "",
-   "own": 25.0
+   "own": 2.0
   },
   {
    "player": "Cameron Boozer",
@@ -1078,7 +1078,7 @@
    "dk": 37.6,
    "value": 4.7,
    "note": "Moved toward his recent minutes (30.7 a game).",
-   "own": 2.2
+   "own": 1.4
   },
   {
    "player": "Paul Reed",
@@ -1103,7 +1103,7 @@
    "dk": 37.3,
    "value": 5.74,
    "note": "",
-   "own": 10.3
+   "own": 7.9
   },
   {
    "player": "Pascal Siakam",
@@ -1177,7 +1177,7 @@
    "dk": 36.6,
    "value": 5.9,
    "note": "",
-   "own": 18.7
+   "own": 16.1
   },
   {
    "player": "C.J. McCollum",
@@ -1202,7 +1202,7 @@
    "dk": 36.4,
    "value": 5.87,
    "note": "",
-   "own": 14.5
+   "own": 13.4
   },
   {
    "player": "Caleb Wilson",
@@ -1227,7 +1227,7 @@
    "dk": 36.2,
    "value": 5.03,
    "note": "",
-   "own": 5.3
+   "own": 4.5
   },
   {
    "player": "Dejounte Murray",
@@ -1252,7 +1252,7 @@
    "dk": 36.1,
    "value": 4.63,
    "note": "Moved toward his recent minutes (31.7 a game).",
-   "own": 3.2
+   "own": 2.1
   },
   {
    "player": "Darryn Peterson",
@@ -1277,7 +1277,7 @@
    "dk": 36.1,
    "value": 5.64,
    "note": "",
-   "own": 12.7
+   "own": 9.6
   },
   {
    "player": "Walker Kessler",
@@ -1286,11 +1286,11 @@
    "pos": "C",
    "salary": 7800,
    "dkid": "44771653",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 30.2,
-   "usg": 14.7,
+   "usg": 14.6,
    "ou": 233.5,
    "spread": -12.5,
    "pts": 12.8,
@@ -1298,11 +1298,11 @@
    "ast": 1.5,
    "stl": 0.8,
    "blk": 2.1,
-   "to": 1.2,
+   "to": 1.1,
    "dk": 36.0,
    "value": 4.61,
    "note": "",
-   "own": 23.5
+   "own": 1.8
   },
   {
    "player": "Ayo Dosunmu",
@@ -1327,7 +1327,7 @@
    "dk": 35.9,
    "value": 5.6,
    "note": "",
-   "own": 10.3
+   "own": 8.9
   },
   {
    "player": "Damian Lillard",
@@ -1352,7 +1352,7 @@
    "dk": 35.8,
    "value": 4.78,
    "note": "Moved toward his recent minutes (29.0 a game).",
-   "own": 1.9
+   "own": 1.5
   },
   {
    "player": "Miles Bridges",
@@ -1377,7 +1377,7 @@
    "dk": 35.8,
    "value": 5.11,
    "note": "Moved toward his recent minutes (34.7 a game).",
-   "own": 8.4
+   "own": 6.0
   },
   {
    "player": "Isaiah Hartenstein",
@@ -1402,7 +1402,7 @@
    "dk": 35.5,
    "value": 5.64,
    "note": "Moved toward his recent minutes (26.3 a game).",
-   "own": 8.9
+   "own": 7.6
   },
   {
    "player": "Jarrett Allen",
@@ -1427,7 +1427,7 @@
    "dk": 35.4,
    "value": 5.45,
    "note": "",
-   "own": 7.6
+   "own": 5.9
   },
   {
    "player": "Joel Embiid",
@@ -1452,7 +1452,7 @@
    "dk": 35.3,
    "value": 3.92,
    "note": "Moved toward his recent minutes (32.3 a game).",
-   "own": 0.7
+   "own": 0.5
   },
   {
    "player": "De'Aaron Fox",
@@ -1526,7 +1526,7 @@
    "dk": 34.3,
    "value": 5.2,
    "note": "Moved toward his recent minutes (29.7 a game).",
-   "own": 5.0
+   "own": 4.7
   },
   {
    "player": "Amen Thompson",
@@ -1551,7 +1551,7 @@
    "dk": 34.1,
    "value": 4.68,
    "note": "Moved toward his recent minutes (30.7 a game).",
-   "own": 1.3
+   "own": 0.8
   },
   {
    "player": "Keyonte George",
@@ -1601,7 +1601,7 @@
    "dk": 33.9,
    "value": 4.91,
    "note": "",
-   "own": 2.7
+   "own": 2.1
   },
   {
    "player": "Josh Giddey",
@@ -1626,7 +1626,7 @@
    "dk": 33.6,
    "value": 4.54,
    "note": "",
-   "own": 1.2
+   "own": 1.1
   },
   {
    "player": "LeBron James",
@@ -1651,7 +1651,7 @@
    "dk": 33.3,
    "value": 4.38,
    "note": "Moved toward his recent minutes (32.7 a game).",
-   "own": 1.4
+   "own": 1.1
   },
   {
    "player": "AJ Dybantsa",
@@ -1676,7 +1676,7 @@
    "dk": 33.2,
    "value": 5.54,
    "note": "Moved toward his recent minutes (30.0 a game).",
-   "own": 17.8
+   "own": 15.0
   },
   {
    "player": "Stephon Castle",
@@ -1725,7 +1725,7 @@
    "dk": 33.2,
    "value": 6.77,
    "note": "Moved toward his recent minutes (24.3 a game).",
-   "own": 33.5
+   "own": 33.3
   },
   {
    "player": "Andrew Nembhard",
@@ -1775,7 +1775,7 @@
    "dk": 32.9,
    "value": 4.16,
    "note": "Moved toward his recent minutes (35.3 a game).",
-   "own": 1.2
+   "own": 1.0
   },
   {
    "player": "Jaylen Brown",
@@ -1800,7 +1800,7 @@
    "dk": 32.8,
    "value": 4.05,
    "note": "Moved toward his recent minutes (35.0 a game).",
-   "own": 0.8
+   "own": 0.6
   },
   {
    "player": "Tyler Herro",
@@ -1825,7 +1825,7 @@
    "dk": 32.6,
    "value": 4.72,
    "note": "Moved toward his recent minutes (28.3 a game).",
-   "own": 1.1
+   "own": 1.0
   },
   {
    "player": "Jabari Smith",
@@ -1850,7 +1850,7 @@
    "dk": 32.1,
    "value": 4.59,
    "note": "",
-   "own": 1.5
+   "own": 0.9
   },
   {
    "player": "Jalen Green",
@@ -1875,7 +1875,7 @@
    "dk": 31.5,
    "value": 5.25,
    "note": "",
-   "own": 5.3
+   "own": 4.2
   },
   {
    "player": "Julius Randle",
@@ -1900,7 +1900,7 @@
    "dk": 31.4,
    "value": 4.18,
    "note": "",
-   "own": 0.8
+   "own": 0.5
   },
   {
    "player": "Jonathan Kuminga",
@@ -1925,7 +1925,7 @@
    "dk": 31.4,
    "value": 5.06,
    "note": "Moved toward his recent minutes (31.7 a game).",
-   "own": 4.7
+   "own": 3.7
   },
   {
    "player": "Jaden McDaniels",
@@ -1950,7 +1950,7 @@
    "dk": 31.1,
    "value": 4.64,
    "note": "",
-   "own": 1.3
+   "own": 1.4
   },
   {
    "player": "PJ Washington",
@@ -1999,7 +1999,7 @@
    "dk": 30.7,
    "value": 4.21,
    "note": "",
-   "own": 0.6
+   "own": 0.5
   },
   {
    "player": "Donovan Clingan",
@@ -2024,7 +2024,7 @@
    "dk": 30.6,
    "value": 4.93,
    "note": "",
-   "own": 2.7
+   "own": 2.1
   },
   {
    "player": "Ace Bailey",
@@ -2049,7 +2049,32 @@
    "dk": 29.9,
    "value": 4.47,
    "note": "Moved toward his recent minutes (33.7 a game).",
-   "own": 1.6
+   "own": 1.2
+  },
+  {
+   "player": "Keaton Wagler",
+   "team": "LAC",
+   "opp": "MIA",
+   "pos": "PG/SG",
+   "salary": 5300,
+   "dkid": "44771689",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 22.9,
+   "usg": 28.4,
+   "ou": 233.5,
+   "spread": 5.5,
+   "pts": 14.7,
+   "reb": 4.7,
+   "ast": 4.1,
+   "stl": 1.0,
+   "blk": 0.3,
+   "to": 2.0,
+   "dk": 29.5,
+   "value": 5.56,
+   "note": "Moved toward his recent minutes (22.7 a game).",
+   "own": 7.8
   },
   {
    "player": "Cedric Coward",
@@ -2074,7 +2099,7 @@
    "dk": 29.5,
    "value": 4.54,
    "note": "",
-   "own": 1.0
+   "own": 0.8
   },
   {
    "player": "Norman Powell",
@@ -2099,32 +2124,7 @@
    "dk": 29.5,
    "value": 4.76,
    "note": "",
-   "own": 2.9
-  },
-  {
-   "player": "Keaton Wagler",
-   "team": "LAC",
-   "opp": "MIA",
-   "pos": "PG/SG",
-   "salary": 5300,
-   "dkid": "44771689",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 22.9,
-   "usg": 28.4,
-   "ou": 233.5,
-   "spread": 5.5,
-   "pts": 14.7,
-   "reb": 4.7,
-   "ast": 4.1,
-   "stl": 1.0,
-   "blk": 0.3,
-   "to": 2.0,
-   "dk": 29.4,
-   "value": 5.54,
-   "note": "Moved toward his recent minutes (22.7 a game).",
-   "own": 40.1
+   "own": 2.8
   },
   {
    "player": "Jalen Smith",
@@ -2149,7 +2149,7 @@
    "dk": 29.2,
    "value": 5.61,
    "note": "Moved toward his recent minutes (28.3 a game).",
-   "own": 13.9
+   "own": 11.6
   },
   {
    "player": "Naz Reid",
@@ -2174,7 +2174,7 @@
    "dk": 29.0,
    "value": 3.92,
    "note": "",
-   "own": 0.6
+   "own": 0.5
   },
   {
    "player": "Jeremiah Fears",
@@ -2199,7 +2199,7 @@
    "dk": 28.5,
    "value": 4.32,
    "note": "",
-   "own": 1.5
+   "own": 1.4
   },
   {
    "player": "Rudy Gobert",
@@ -2224,7 +2224,7 @@
    "dk": 28.4,
    "value": 4.98,
    "note": "Moved toward his recent minutes (27.0 a game).",
-   "own": 1.5
+   "own": 1.2
   },
   {
    "player": "Daniel Gafford",
@@ -2257,23 +2257,23 @@
    "pos": "SG/SF",
    "salary": 6300,
    "dkid": "44771657",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 31.0,
-   "usg": 21.0,
+   "usg": 21.1,
    "ou": 233.5,
    "spread": 12.5,
    "pts": 17.9,
    "reb": 3.0,
    "ast": 2.7,
-   "stl": 0.9,
+   "stl": 0.8,
    "blk": 0.3,
    "to": 2.0,
    "dk": 28.1,
    "value": 4.45,
    "note": "Moved toward his recent minutes (29.3 a game).",
-   "own": 22.0
+   "own": 0.5
   },
   {
    "player": "Fred VanVleet",
@@ -2323,7 +2323,7 @@
    "dk": 28.1,
    "value": 6.38,
    "note": "",
-   "own": 24.5
+   "own": 23.5
   },
   {
    "player": "Kon Knueppel",
@@ -2348,7 +2348,7 @@
    "dk": 28.0,
    "value": 3.99,
    "note": "",
-   "own": 0.5
+   "own": 0.4
   },
   {
    "player": "Ausar Thompson",
@@ -2373,7 +2373,7 @@
    "dk": 27.8,
    "value": 4.64,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Christian Braun",
@@ -2398,7 +2398,7 @@
    "dk": 27.8,
    "value": 5.34,
    "note": "",
-   "own": 8.5
+   "own": 7.5
   },
   {
    "player": "Lauri Markkanen",
@@ -2423,7 +2423,7 @@
    "dk": 27.7,
    "value": 3.74,
    "note": "Moved toward his recent minutes (22.0 a game).",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Jared McCain",
@@ -2448,7 +2448,7 @@
    "dk": 27.6,
    "value": 4.6,
    "note": "Moved toward his recent minutes (28.0 a game).",
-   "own": 0.8
+   "own": 0.7
   },
   {
    "player": "Kyshawn George",
@@ -2473,7 +2473,7 @@
    "dk": 27.5,
    "value": 5.01,
    "note": "Moved toward his recent minutes (35.7 a game).",
-   "own": 8.3
+   "own": 6.6
   },
   {
    "player": "Precious Achiuwa",
@@ -2482,23 +2482,23 @@
    "pos": "PF/C",
    "salary": 5900,
    "dkid": "44771668",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 30.0,
-   "usg": 14.5,
+   "usg": 14.4,
    "ou": 233.5,
    "spread": 12.5,
-   "pts": 11.0,
-   "reb": 7.0,
+   "pts": 11.1,
+   "reb": 7.1,
    "ast": 1.4,
    "stl": 1.5,
    "blk": 1.3,
    "to": 1.0,
-   "dk": 27.2,
-   "value": 4.6,
+   "dk": 27.4,
+   "value": 4.64,
    "note": "",
-   "own": 24.3
+   "own": 1.9
   },
   {
    "player": "Jaime Jaquez Jr",
@@ -2523,7 +2523,7 @@
    "dk": 26.9,
    "value": 4.4,
    "note": "Moved toward his recent minutes (26.0 a game).",
-   "own": 0.7
+   "own": 0.6
   },
   {
    "player": "Aaron Gordon",
@@ -2548,7 +2548,7 @@
    "dk": 26.9,
    "value": 4.34,
    "note": "",
-   "own": 1.1
+   "own": 0.9
   },
   {
    "player": "Ivica Zubac",
@@ -2582,11 +2582,11 @@
    "pos": "PG",
    "salary": 6200,
    "dkid": "44771662",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 33.1,
-   "usg": 14.3,
+   "usg": 14.2,
    "ou": 233.5,
    "spread": -5.5,
    "pts": 11.1,
@@ -2598,7 +2598,7 @@
    "dk": 26.7,
    "value": 4.31,
    "note": "",
-   "own": 21.3
+   "own": 0.5
   },
   {
    "player": "Dillon Brooks",
@@ -2623,7 +2623,7 @@
    "dk": 26.4,
    "value": 4.56,
    "note": "",
-   "own": 1.7
+   "own": 0.8
   },
   {
    "player": "Naji Marshall",
@@ -2697,7 +2697,32 @@
    "dk": 26.3,
    "value": 3.99,
    "note": "Moved toward his recent minutes (35.3 a game).",
-   "own": 0.5
+   "own": 0.4
+  },
+  {
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "opp": "LAL",
+   "pos": "SF/PF",
+   "salary": 5700,
+   "dkid": "44771676",
+   "slate": "main",
+   "start": true,
+   "q": false,
+   "min": 32.5,
+   "usg": 18.6,
+   "ou": 233.5,
+   "spread": 12.5,
+   "pts": 15.7,
+   "reb": 4.6,
+   "ast": 1.6,
+   "stl": 0.7,
+   "blk": 0.3,
+   "to": 1.5,
+   "dk": 26.2,
+   "value": 4.59,
+   "note": "Moved toward his recent minutes (35.0 a game).",
+   "own": 2.1
   },
   {
    "player": "Devin Vassell",
@@ -2724,31 +2749,6 @@
    "note": "Moved toward his recent minutes (32.3 a game)."
   },
   {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "LAL",
-   "pos": "SF/PF",
-   "salary": 5700,
-   "dkid": "44771676",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 32.5,
-   "usg": 18.6,
-   "ou": 233.5,
-   "spread": 12.5,
-   "pts": 15.7,
-   "reb": 4.6,
-   "ast": 1.6,
-   "stl": 0.7,
-   "blk": 0.3,
-   "to": 1.5,
-   "dk": 26.2,
-   "value": 4.59,
-   "note": "Moved toward his recent minutes (35.0 a game).",
-   "own": 23.7
-  },
-  {
    "player": "Derik Queen",
    "team": "NOP",
    "opp": "UTA",
@@ -2771,7 +2771,7 @@
    "dk": 26.1,
    "value": 4.14,
    "note": "Moved toward his recent minutes (23.0 a game).",
-   "own": 0.7
+   "own": 0.4
   },
   {
    "player": "Aaron Wiggins",
@@ -2796,7 +2796,7 @@
    "dk": 25.8,
    "value": 4.78,
    "note": "",
-   "own": 1.8
+   "own": 1.4
   },
   {
    "player": "Ja'Kobe Walter",
@@ -2821,32 +2821,7 @@
    "dk": 25.6,
    "value": 5.23,
    "note": "Moved toward his recent minutes (33.3 a game).",
-   "own": 7.0
-  },
-  {
-   "player": "Isaiah Jackson",
-   "team": "LAC",
-   "opp": "MIA",
-   "pos": "C",
-   "salary": 5000,
-   "dkid": "44771702",
-   "slate": "late",
-   "start": false,
-   "q": true,
-   "min": 21.6,
-   "usg": 19.0,
-   "ou": 233.5,
-   "spread": 5.5,
-   "pts": 10.3,
-   "reb": 7.0,
-   "ast": 1.9,
-   "stl": 1.0,
-   "blk": 1.1,
-   "to": 1.5,
-   "dk": 25.5,
-   "value": 5.11,
-   "note": "",
-   "own": 36.3
+   "own": 6.0
   },
   {
    "player": "Collin Gillespie",
@@ -2871,7 +2846,32 @@
    "dk": 25.5,
    "value": 5.11,
    "note": "Moved toward his recent minutes (26.7 a game).",
-   "own": 4.0
+   "own": 3.6
+  },
+  {
+   "player": "Isaiah Jackson",
+   "team": "LAC",
+   "opp": "MIA",
+   "pos": "C",
+   "salary": 5000,
+   "dkid": "44771702",
+   "slate": "main",
+   "start": true,
+   "q": true,
+   "min": 21.6,
+   "usg": 18.9,
+   "ou": 233.5,
+   "spread": 5.5,
+   "pts": 10.2,
+   "reb": 7.0,
+   "ast": 2.0,
+   "stl": 1.0,
+   "blk": 1.1,
+   "to": 1.5,
+   "dk": 25.3,
+   "value": 5.07,
+   "note": "",
+   "own": 4.6
   },
   {
    "player": "Toumani Camara",
@@ -2896,7 +2896,7 @@
    "dk": 24.9,
    "value": 4.61,
    "note": "",
-   "own": 1.0
+   "own": 0.9
   },
   {
    "player": "Myles Turner",
@@ -2921,7 +2921,7 @@
    "dk": 24.5,
    "value": 4.9,
    "note": "",
-   "own": 1.5
+   "own": 1.2
   },
   {
    "player": "Mitchell Robinson",
@@ -2946,7 +2946,7 @@
    "dk": 24.4,
    "value": 5.54,
    "note": "",
-   "own": 5.4
+   "own": 5.3
   },
   {
    "player": "Alex Sarr",
@@ -2971,7 +2971,7 @@
    "dk": 24.3,
    "value": 4.58,
    "note": "",
-   "own": 3.7
+   "own": 3.2
   },
   {
    "player": "Andrew Wiggins",
@@ -2980,11 +2980,11 @@
    "pos": "SF",
    "salary": 4500,
    "dkid": "44771721",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 28.5,
-   "usg": 18.9,
+   "usg": 18.8,
    "ou": 233.5,
    "spread": -5.5,
    "pts": 13.0,
@@ -2996,7 +2996,7 @@
    "dk": 24.2,
    "value": 5.38,
    "note": "",
-   "own": 35.2
+   "own": 6.7
   },
   {
    "player": "Cam Spencer",
@@ -3021,7 +3021,7 @@
    "dk": 24.0,
    "value": 4.61,
    "note": "",
-   "own": 1.3
+   "own": 0.9
   },
   {
    "player": "Moussa Diabate",
@@ -3046,7 +3046,7 @@
    "dk": 23.9,
    "value": 4.06,
    "note": "",
-   "own": 0.5
+   "own": 0.4
   },
   {
    "player": "Jaxson Hayes",
@@ -3071,7 +3071,7 @@
    "dk": 23.9,
    "value": 4.43,
    "note": "",
-   "own": 0.9
+   "own": 0.7
   },
   {
    "player": "Day'Ron Sharpe",
@@ -3096,7 +3096,7 @@
    "dk": 23.8,
    "value": 4.5,
    "note": "",
-   "own": 0.6
+   "own": 0.5
   },
   {
    "player": "Tari Eason",
@@ -3121,7 +3121,7 @@
    "dk": 23.7,
    "value": 4.48,
    "note": "",
-   "own": 1.1
+   "own": 0.7
   },
   {
    "player": "John Collins",
@@ -3171,32 +3171,7 @@
    "dk": 23.5,
    "value": 3.85,
    "note": "",
-   "own": 0.7
-  },
-  {
-   "player": "Kris Dunn",
-   "team": "LAC",
-   "opp": "MIA",
-   "pos": "PG/SG",
-   "salary": 5400,
-   "dkid": "44771685",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 27.0,
-   "usg": 13.4,
-   "ou": 233.5,
-   "spread": 5.5,
-   "pts": 8.2,
-   "reb": 4.2,
-   "ast": 3.8,
-   "stl": 1.7,
-   "blk": 0.4,
-   "to": 1.2,
-   "dk": 23.3,
-   "value": 4.31,
-   "note": "",
-   "own": 22.0
+   "own": 0.4
   },
   {
    "player": "Duncan Robinson",
@@ -3221,7 +3196,32 @@
    "dk": 23.3,
    "value": 4.56,
    "note": "",
-   "own": 1.1
+   "own": 0.7
+  },
+  {
+   "player": "Kris Dunn",
+   "team": "LAC",
+   "opp": "MIA",
+   "pos": "PG/SG",
+   "salary": 5400,
+   "dkid": "44771685",
+   "slate": "main",
+   "start": true,
+   "q": false,
+   "min": 27.0,
+   "usg": 13.3,
+   "ou": 233.5,
+   "spread": 5.5,
+   "pts": 8.2,
+   "reb": 4.1,
+   "ast": 3.8,
+   "stl": 1.7,
+   "blk": 0.4,
+   "to": 1.1,
+   "dk": 23.2,
+   "value": 4.29,
+   "note": "",
+   "own": 0.8
   },
   {
    "player": "Quenton Jackson",
@@ -3246,7 +3246,7 @@
    "dk": 23.0,
    "value": 5.6,
    "note": "",
-   "own": 18.1
+   "own": 16.2
   },
   {
    "player": "Jarace Walker",
@@ -3271,7 +3271,7 @@
    "dk": 23.0,
    "value": 4.88,
    "note": "Moved toward his recent minutes (31.0 a game).",
-   "own": 7.3
+   "own": 6.6
   },
   {
    "player": "Jerami Grant",
@@ -3296,7 +3296,7 @@
    "dk": 22.8,
    "value": 5.06,
    "note": "Moved toward his recent minutes (24.7 a game).",
-   "own": 3.3
+   "own": 2.0
   },
   {
    "player": "Aday Mara",
@@ -3321,7 +3321,32 @@
    "dk": 22.8,
    "value": 5.3,
    "note": "Moved toward his recent minutes (23.0 a game).",
-   "own": 4.9
+   "own": 4.3
+  },
+  {
+   "player": "Rui Hachimura",
+   "team": "LAC",
+   "opp": "MIA",
+   "pos": "SF/PF",
+   "salary": 5800,
+   "dkid": "44771672",
+   "slate": "main",
+   "start": true,
+   "q": false,
+   "min": 27.7,
+   "usg": 18.1,
+   "ou": 233.5,
+   "spread": 5.5,
+   "pts": 12.6,
+   "reb": 4.7,
+   "ast": 1.0,
+   "stl": 0.6,
+   "blk": 0.4,
+   "to": 0.9,
+   "dk": 22.6,
+   "value": 3.89,
+   "note": "Moved toward his recent minutes (28.3 a game).",
+   "own": 0.3
   },
   {
    "player": "Mikel Brown Jr.",
@@ -3346,32 +3371,7 @@
    "dk": 22.6,
    "value": 4.7,
    "note": "",
-   "own": 0.9
-  },
-  {
-   "player": "Rui Hachimura",
-   "team": "LAC",
-   "opp": "MIA",
-   "pos": "SF/PF",
-   "salary": 5800,
-   "dkid": "44771672",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 27.7,
-   "usg": 18.2,
-   "ou": 233.5,
-   "spread": 5.5,
-   "pts": 12.6,
-   "reb": 4.7,
-   "ast": 1.0,
-   "stl": 0.6,
-   "blk": 0.4,
-   "to": 0.9,
-   "dk": 22.6,
-   "value": 3.89,
-   "note": "Moved toward his recent minutes (28.3 a game).",
-   "own": 8.1
+   "own": 1.2
   },
   {
    "player": "Matas Buzelis",
@@ -3396,7 +3396,7 @@
    "dk": 22.5,
    "value": 4.17,
    "note": "",
-   "own": 0.6
+   "own": 0.5
   },
   {
    "player": "Keldon Johnson",
@@ -3421,31 +3421,6 @@
    "dk": 22.3,
    "value": null,
    "note": ""
-  },
-  {
-   "player": "Bobby Portis",
-   "team": "MIA",
-   "opp": "LAC",
-   "pos": "PF/C",
-   "salary": 4900,
-   "dkid": "44771704",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 21.0,
-   "usg": 19.7,
-   "ou": 233.5,
-   "spread": -5.5,
-   "pts": 9.7,
-   "reb": 6.4,
-   "ast": 1.5,
-   "stl": 0.6,
-   "blk": 0.3,
-   "to": 0.8,
-   "dk": 22.2,
-   "value": 4.53,
-   "note": "Moved toward his recent minutes (19.3 a game).",
-   "own": 20.3
   },
   {
    "player": "Julian Champagnie",
@@ -3494,7 +3469,7 @@
    "dk": 22.1,
    "value": 4.52,
    "note": "Moved toward his recent minutes (21.7 a game).",
-   "own": 1.3
+   "own": 1.4
   },
   {
    "player": "Alex Caruso",
@@ -3519,7 +3494,32 @@
    "dk": 22.1,
    "value": 4.8,
    "note": "Moved toward his recent minutes (17.0 a game).",
-   "own": 0.7
+   "own": 0.6
+  },
+  {
+   "player": "Bobby Portis",
+   "team": "MIA",
+   "opp": "LAC",
+   "pos": "PF/C",
+   "salary": 4900,
+   "dkid": "44771704",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 21.0,
+   "usg": 19.7,
+   "ou": 233.5,
+   "spread": -5.5,
+   "pts": 9.7,
+   "reb": 6.2,
+   "ast": 1.5,
+   "stl": 0.6,
+   "blk": 0.3,
+   "to": 0.8,
+   "dk": 22.0,
+   "value": 4.49,
+   "note": "Moved toward his recent minutes (19.3 a game).",
+   "own": 0.5
   },
   {
    "player": "Baylor Scheierman",
@@ -3544,7 +3544,7 @@
    "dk": 22.0,
    "value": 5.78,
    "note": "Moved toward his recent minutes (23.3 a game).",
-   "own": 15.6
+   "own": 13.8
   },
   {
    "player": "Dennis Schroder",
@@ -3569,7 +3569,7 @@
    "dk": 21.9,
    "value": 3.83,
    "note": "",
-   "own": 0.4
+   "own": 0.3
   },
   {
    "player": "Meleek Thomas",
@@ -3594,7 +3594,32 @@
    "dk": 21.9,
    "value": 5.76,
    "note": "",
-   "own": 13.3
+   "own": 11.5
+  },
+  {
+   "player": "Kobe Sanders",
+   "team": "LAC",
+   "opp": "MIA",
+   "pos": "SF/PF",
+   "salary": 4300,
+   "dkid": "44771728",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 25.1,
+   "usg": 17.4,
+   "ou": 233.5,
+   "spread": 5.5,
+   "pts": 11.2,
+   "reb": 3.7,
+   "ast": 2.2,
+   "stl": 0.9,
+   "blk": 0.1,
+   "to": 1.2,
+   "dk": 21.8,
+   "value": 5.07,
+   "note": "Moved toward his recent minutes (30.7 a game).",
+   "own": 9.1
   },
   {
    "player": "Cameron Johnson",
@@ -3619,32 +3644,7 @@
    "dk": 21.8,
    "value": 4.64,
    "note": "",
-   "own": 2.3
-  },
-  {
-   "player": "Kobe Sanders",
-   "team": "LAC",
-   "opp": "MIA",
-   "pos": "SF/PF",
-   "salary": 4300,
-   "dkid": "44771728",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 25.1,
-   "usg": 17.3,
-   "ou": 233.5,
-   "spread": 5.5,
-   "pts": 11.2,
-   "reb": 3.7,
-   "ast": 2.2,
-   "stl": 0.9,
-   "blk": 0.1,
-   "to": 1.2,
-   "dk": 21.8,
-   "value": 5.07,
-   "note": "Moved toward his recent minutes (30.7 a game).",
-   "own": 40.3
+   "own": 1.8
   },
   {
    "player": "Pelle Larsson",
@@ -3653,7 +3653,7 @@
    "pos": "SG/SF",
    "salary": 4800,
    "dkid": "44771708",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 28.2,
@@ -3669,7 +3669,32 @@
    "dk": 21.7,
    "value": 4.51,
    "note": "",
-   "own": 22.0
+   "own": 0.7
+  },
+  {
+   "player": "Sandro Mamukelashvili",
+   "team": "LAL",
+   "opp": "SAC",
+   "pos": "PF/C",
+   "salary": 4600,
+   "dkid": "44771717",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 21.8,
+   "usg": 16.9,
+   "ou": 233.5,
+   "spread": -12.5,
+   "pts": 10.3,
+   "reb": 5.3,
+   "ast": 1.5,
+   "stl": 0.6,
+   "blk": 0.5,
+   "to": 0.6,
+   "dk": 21.7,
+   "value": 4.71,
+   "note": "Moved toward his recent minutes (24.0 a game).",
+   "own": 2.6
   },
   {
    "player": "Collin Murray-Boyles",
@@ -3694,32 +3719,7 @@
    "dk": 21.7,
    "value": 4.62,
    "note": "",
-   "own": 2.0
-  },
-  {
-   "player": "Sandro Mamukelashvili",
-   "team": "LAL",
-   "opp": "SAC",
-   "pos": "PF/C",
-   "salary": 4600,
-   "dkid": "44771717",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 21.8,
-   "usg": 16.9,
-   "ou": 233.5,
-   "spread": -12.5,
-   "pts": 10.3,
-   "reb": 5.3,
-   "ast": 1.5,
-   "stl": 0.6,
-   "blk": 0.5,
-   "to": 0.6,
-   "dk": 21.7,
-   "value": 4.71,
-   "note": "Moved toward his recent minutes (24.0 a game).",
-   "own": 26.9
+   "own": 1.7
   },
   {
    "player": "Scoot Henderson",
@@ -3744,7 +3744,7 @@
    "dk": 21.6,
    "value": 4.41,
    "note": "",
-   "own": 0.6
+   "own": 0.7
   },
   {
    "player": "Luguentz Dort",
@@ -3769,7 +3769,7 @@
    "dk": 21.6,
    "value": 4.59,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Aaron Nesmith",
@@ -3794,7 +3794,7 @@
    "dk": 21.3,
    "value": 4.85,
    "note": "",
-   "own": 3.3
+   "own": 2.7
   },
   {
    "player": "Bilal Coulibaly",
@@ -3819,7 +3819,32 @@
    "dk": 21.2,
    "value": 5.06,
    "note": "Moved toward his recent minutes (27.3 a game).",
-   "own": 5.7
+   "own": 5.2
+  },
+  {
+   "player": "Ziaire Williams",
+   "team": "LAL",
+   "opp": "SAC",
+   "pos": "SG/SF",
+   "salary": 4100,
+   "dkid": "44771743",
+   "slate": "main",
+   "start": true,
+   "q": false,
+   "min": 23.9,
+   "usg": 16.5,
+   "ou": 233.5,
+   "spread": -12.5,
+   "pts": 10.9,
+   "reb": 3.9,
+   "ast": 1.4,
+   "stl": 1.1,
+   "blk": 0.4,
+   "to": 0.8,
+   "dk": 21.1,
+   "value": 5.15,
+   "note": "",
+   "own": 4.3
   },
   {
    "player": "Jaylen Wells",
@@ -3844,7 +3869,7 @@
    "dk": 21.1,
    "value": 4.49,
    "note": "",
-   "own": 1.1
+   "own": 0.8
   },
   {
    "player": "Kenrich Williams",
@@ -3869,7 +3894,7 @@
    "dk": 21.1,
    "value": 4.7,
    "note": "Moved toward his recent minutes (23.0 a game).",
-   "own": 1.9
+   "own": 1.2
   },
   {
    "player": "Derrick Jones Jr.",
@@ -3878,11 +3903,11 @@
    "pos": "SF/PF",
    "salary": 5100,
    "dkid": "44771698",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 25.4,
-   "usg": 16.8,
+   "usg": 16.9,
    "ou": 233.5,
    "spread": 5.5,
    "pts": 11.0,
@@ -3890,36 +3915,11 @@
    "ast": 1.2,
    "stl": 0.8,
    "blk": 0.7,
-   "to": 0.8,
+   "to": 0.9,
    "dk": 21.0,
    "value": 4.12,
    "note": "",
-   "own": 17.3
-  },
-  {
-   "player": "Ziaire Williams",
-   "team": "LAL",
-   "opp": "SAC",
-   "pos": "SG/SF",
-   "salary": 4100,
-   "dkid": "44771743",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 23.9,
-   "usg": 16.5,
-   "ou": 233.5,
-   "spread": -12.5,
-   "pts": 10.8,
-   "reb": 3.9,
-   "ast": 1.4,
-   "stl": 1.1,
-   "blk": 0.4,
-   "to": 0.8,
-   "dk": 21.0,
-   "value": 5.13,
-   "note": "",
-   "own": 32.8
+   "own": 0.7
   },
   {
    "player": "Mikal Bridges",
@@ -3944,7 +3944,7 @@
    "dk": 20.9,
    "value": 4.27,
    "note": "Moved toward his recent minutes (19.7 a game).",
-   "own": 0.3
+   "own": 0.4
   },
   {
    "player": "Isaiah Collier",
@@ -3994,7 +3994,7 @@
    "dk": 20.6,
    "value": 4.57,
    "note": "",
-   "own": 1.0
+   "own": 0.8
   },
   {
    "player": "Kel'El Ware",
@@ -4019,7 +4019,7 @@
    "dk": 20.4,
    "value": 3.1,
    "note": "",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Karlo Matkovic",
@@ -4044,7 +4044,7 @@
    "dk": 20.3,
    "value": 4.51,
    "note": "Moved toward his recent minutes (25.0 a game).",
-   "own": 3.0
+   "own": 2.8
   },
   {
    "player": "Kyle Kuzma",
@@ -4069,7 +4069,7 @@
    "dk": 20.2,
    "value": 3.96,
    "note": "Moved toward his recent minutes (21.0 a game).",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Andre Drummond",
@@ -4094,7 +4094,7 @@
    "dk": 20.2,
    "value": 5.04,
    "note": "",
-   "own": 1.2
+   "own": 1.3
   },
   {
    "player": "Nolan Traore",
@@ -4119,7 +4119,7 @@
    "dk": 20.2,
    "value": 4.29,
    "note": "",
-   "own": 0.7
+   "own": 0.5
   },
   {
    "player": "Robert Williams",
@@ -4144,7 +4144,7 @@
    "dk": 20.2,
    "value": 4.6,
    "note": "",
-   "own": 1.0
+   "own": 0.6
   },
   {
    "player": "Coby White",
@@ -4172,6 +4172,31 @@
    "own": 0.2
   },
   {
+   "player": "Quentin Grimes",
+   "team": "LAL",
+   "opp": "SAC",
+   "pos": "SG/SF",
+   "salary": 5200,
+   "dkid": "44771693",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 23.8,
+   "usg": 17.2,
+   "ou": 233.5,
+   "spread": -12.5,
+   "pts": 10.2,
+   "reb": 3.4,
+   "ast": 2.6,
+   "stl": 0.5,
+   "blk": 0.2,
+   "to": 1.2,
+   "dk": 20.0,
+   "value": 3.84,
+   "note": "",
+   "own": 0.3
+  },
+  {
    "player": "DeMar DeRozan",
    "team": "DEN",
    "opp": "TOR",
@@ -4194,7 +4219,7 @@
    "dk": 20.0,
    "value": 4.01,
    "note": "",
-   "own": 0.5
+   "own": 0.3
   },
   {
    "player": "Ryan Rollins",
@@ -4219,7 +4244,7 @@
    "dk": 20.0,
    "value": 3.23,
    "note": "",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Sam Hauser",
@@ -4244,7 +4269,7 @@
    "dk": 20.0,
    "value": 4.77,
    "note": "Moved toward his recent minutes (18.0 a game).",
-   "own": 0.9
+   "own": 0.4
   },
   {
    "player": "Zach Edey",
@@ -4269,32 +4294,7 @@
    "dk": 19.9,
    "value": 3.62,
    "note": "Moved toward his recent minutes (18.7 a game).",
-   "own": 0.3
-  },
-  {
-   "player": "Quentin Grimes",
-   "team": "LAL",
-   "opp": "SAC",
-   "pos": "SG/SF",
-   "salary": 5200,
-   "dkid": "44771693",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 23.8,
-   "usg": 17.2,
-   "ou": 233.5,
-   "spread": -12.5,
-   "pts": 10.2,
-   "reb": 3.3,
-   "ast": 2.6,
-   "stl": 0.5,
-   "blk": 0.2,
-   "to": 1.2,
-   "dk": 19.9,
-   "value": 3.82,
-   "note": "",
-   "own": 8.6
+   "own": 0.2
   },
   {
    "player": "Joan Beringer",
@@ -4344,7 +4344,7 @@
    "dk": 19.8,
    "value": 4.3,
    "note": "Moved toward his recent minutes (24.0 a game).",
-   "own": 0.6
+   "own": 0.4
   },
   {
    "player": "Jamal Shead",
@@ -4369,7 +4369,7 @@
    "dk": 19.7,
    "value": 4.28,
    "note": "Moved toward his recent minutes (22.7 a game).",
-   "own": 0.5
+   "own": 0.4
   },
   {
    "player": "Brook Lopez",
@@ -4378,11 +4378,11 @@
    "pos": "C",
    "salary": 4200,
    "dkid": "44771732",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 20.0,
-   "usg": 18.4,
+   "usg": 18.6,
    "ou": 233.5,
    "spread": 5.5,
    "pts": 9.4,
@@ -4390,11 +4390,11 @@
    "ast": 1.2,
    "stl": 0.5,
    "blk": 1.2,
-   "to": 0.7,
-   "dk": 19.7,
-   "value": 4.69,
+   "to": 0.8,
+   "dk": 19.6,
+   "value": 4.67,
    "note": "Moved toward his recent minutes (20.7 a game).",
-   "own": 22.0
+   "own": 1.2
   },
   {
    "player": "Reed Sheppard",
@@ -4419,7 +4419,7 @@
    "dk": 19.6,
    "value": 3.84,
    "note": "",
-   "own": 0.4
+   "own": 0.3
   },
   {
    "player": "Jay Huff",
@@ -4444,7 +4444,7 @@
    "dk": 19.5,
    "value": 4.87,
    "note": "Moved toward his recent minutes (25.3 a game).",
-   "own": 4.8
+   "own": 3.1
   },
   {
    "player": "Morez Johnson Jr.",
@@ -4493,7 +4493,32 @@
    "dk": 19.3,
    "value": 4.28,
    "note": "",
-   "own": 0.5
+   "own": 0.4
+  },
+  {
+   "player": "Malik Monk",
+   "team": "SAC",
+   "opp": "LAL",
+   "pos": "PG/SG",
+   "salary": 3800,
+   "dkid": "44771760",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 19.7,
+   "usg": 21.5,
+   "ou": 233.5,
+   "spread": 12.5,
+   "pts": 10.0,
+   "reb": 1.9,
+   "ast": 3.1,
+   "stl": 0.7,
+   "blk": 0.4,
+   "to": 1.5,
+   "dk": 19.2,
+   "value": 5.05,
+   "note": "Moved toward his recent minutes (17.3 a game).",
+   "own": 1.2
   },
   {
    "player": "Jordan Poole",
@@ -4543,7 +4568,7 @@
    "dk": 19.2,
    "value": 4.69,
    "note": "Moved toward his recent minutes (17.3 a game).",
-   "own": 1.0
+   "own": 0.5
   },
   {
    "player": "Zaccharie Risacher",
@@ -4592,7 +4617,7 @@
    "dk": 19.1,
    "value": 4.54,
    "note": "Moved toward his recent minutes (19.0 a game).",
-   "own": 0.5
+   "own": 0.3
   },
   {
    "player": "Klay Thompson",
@@ -4601,11 +4626,11 @@
    "pos": "SG/SF",
    "salary": 4200,
    "dkid": "44771734",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 23.6,
-   "usg": 19.9,
+   "usg": 20.0,
    "ou": 233.5,
    "spread": -5.5,
    "pts": 11.3,
@@ -4617,32 +4642,7 @@
    "dk": 19.0,
    "value": 4.54,
    "note": "",
-   "own": 22.0
-  },
-  {
-   "player": "Malik Monk",
-   "team": "SAC",
-   "opp": "LAL",
-   "pos": "PG/SG",
-   "salary": 3800,
-   "dkid": "44771760",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 19.7,
-   "usg": 21.4,
-   "ou": 233.5,
-   "spread": 12.5,
-   "pts": 9.8,
-   "reb": 1.8,
-   "ast": 3.1,
-   "stl": 0.7,
-   "blk": 0.4,
-   "to": 1.5,
-   "dk": 18.9,
-   "value": 4.98,
-   "note": "Moved toward his recent minutes (17.3 a game).",
-   "own": 22.0
+   "own": 0.6
   },
   {
    "player": "Marcus Smart",
@@ -4692,7 +4692,7 @@
    "dk": 18.6,
    "value": 4.44,
    "note": "",
-   "own": 0.5
+   "own": 0.6
   },
   {
    "player": "Bennett Stirtz",
@@ -4742,32 +4742,7 @@
    "dk": 18.5,
    "value": 4.75,
    "note": "",
-   "own": 1.1
-  },
-  {
-   "player": "Collin Sexton",
-   "team": "LAL",
-   "opp": "SAC",
-   "pos": "PG/SG",
-   "salary": 4400,
-   "dkid": "44771724",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 17.0,
-   "usg": 25.3,
-   "ou": 233.5,
-   "spread": -12.5,
-   "pts": 11.0,
-   "reb": 1.8,
-   "ast": 2.5,
-   "stl": 0.6,
-   "blk": 0.1,
-   "to": 1.1,
-   "dk": 18.3,
-   "value": 4.16,
-   "note": "",
-   "own": 13.3
+   "own": 0.8
   },
   {
    "player": "Grayson Allen",
@@ -4792,7 +4767,7 @@
    "dk": 18.3,
    "value": 3.39,
    "note": "",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Isaiah Stewart",
@@ -4817,7 +4792,57 @@
    "dk": 18.3,
    "value": 4.46,
    "note": "Moved toward his recent minutes (21.7 a game).",
-   "own": 1.6
+   "own": 1.4
+  },
+  {
+   "player": "Collin Sexton",
+   "team": "LAL",
+   "opp": "SAC",
+   "pos": "PG/SG",
+   "salary": 4400,
+   "dkid": "44771724",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 17.0,
+   "usg": 25.3,
+   "ou": 233.5,
+   "spread": -12.5,
+   "pts": 11.0,
+   "reb": 1.8,
+   "ast": 2.4,
+   "stl": 0.6,
+   "blk": 0.1,
+   "to": 1.1,
+   "dk": 18.2,
+   "value": 4.14,
+   "note": "",
+   "own": 0.4
+  },
+  {
+   "player": "Jake LaRavia",
+   "team": "LAL",
+   "opp": "SAC",
+   "pos": "SF/PF",
+   "salary": 4100,
+   "dkid": "44771739",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 23.3,
+   "usg": 12.4,
+   "ou": 233.5,
+   "spread": -12.5,
+   "pts": 6.9,
+   "reb": 4.2,
+   "ast": 1.7,
+   "stl": 1.1,
+   "blk": 0.6,
+   "to": 1.1,
+   "dk": 17.9,
+   "value": 4.36,
+   "note": "Moved toward his recent minutes (26.3 a game).",
+   "own": 1.1
   },
   {
    "player": "Kevin Huerter",
@@ -4842,7 +4867,7 @@
    "dk": 17.8,
    "value": 4.44,
    "note": "",
-   "own": 0.6
+   "own": 0.5
   },
   {
    "player": "Miles McBride",
@@ -4867,7 +4892,7 @@
    "dk": 17.7,
    "value": 4.78,
    "note": "",
-   "own": 0.7
+   "own": 0.8
   },
   {
    "player": "Gregory Jackson",
@@ -4892,7 +4917,7 @@
    "dk": 17.7,
    "value": 4.42,
    "note": "",
-   "own": 0.6
+   "own": 0.7
   },
   {
    "player": "Deandre Ayton",
@@ -4917,7 +4942,7 @@
    "dk": 17.6,
    "value": 5.35,
    "note": "Moved toward his recent minutes (17.7 a game).",
-   "own": 5.0
+   "own": 4.5
   },
   {
    "player": "Landry Shamet",
@@ -4942,32 +4967,7 @@
    "dk": 17.6,
    "value": 4.52,
    "note": "Moved toward his recent minutes (26.0 a game).",
-   "own": 1.6
-  },
-  {
-   "player": "Jake LaRavia",
-   "team": "LAL",
-   "opp": "SAC",
-   "pos": "SF/PF",
-   "salary": 4100,
-   "dkid": "44771739",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 23.3,
-   "usg": 12.4,
-   "ou": 233.5,
-   "spread": -12.5,
-   "pts": 6.9,
-   "reb": 4.2,
-   "ast": 1.7,
-   "stl": 1.0,
-   "blk": 0.6,
-   "to": 1.1,
-   "dk": 17.6,
-   "value": 4.3,
-   "note": "Moved toward his recent minutes (26.3 a game).",
-   "own": 22.0
+   "own": 1.2
   },
   {
    "player": "Carlton Carrington",
@@ -4992,7 +4992,7 @@
    "dk": 17.4,
    "value": 4.23,
    "note": "",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Anfernee Simons",
@@ -5017,7 +5017,7 @@
    "dk": 17.3,
    "value": 3.75,
    "note": "",
-   "own": 0.4
+   "own": 0.3
   },
   {
    "player": "Trevon Brazile",
@@ -5051,8 +5051,8 @@
    "pos": "SF/PF",
    "salary": 4700,
    "dkid": "44771713",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": false,
    "min": 22.5,
    "usg": 12.9,
@@ -5067,7 +5067,7 @@
    "dk": 17.2,
    "value": 3.67,
    "note": "",
-   "own": 6.4
+   "own": 0.2
   },
   {
    "player": "Herbert Jones",
@@ -5092,7 +5092,7 @@
    "dk": 16.6,
    "value": 3.61,
    "note": "Moved toward his recent minutes (28.3 a game).",
-   "own": 0.4
+   "own": 0.3
   },
   {
    "player": "Benedict Mathurin",
@@ -5142,7 +5142,7 @@
    "dk": 16.2,
    "value": 4.15,
    "note": "",
-   "own": 0.5
+   "own": 0.4
   },
   {
    "player": "Jordan Goodwin",
@@ -5192,7 +5192,7 @@
    "dk": 15.9,
    "value": 4.2,
    "note": "Moved toward his recent minutes (12.0 a game).",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Khaman Maluach",
@@ -5242,7 +5242,7 @@
    "dk": 15.5,
    "value": 4.56,
    "note": "",
-   "own": 1.3
+   "own": 1.1
   },
   {
    "player": "Oso Ighodaro",
@@ -5292,7 +5292,32 @@
    "dk": 15.1,
    "value": 4.31,
    "note": "",
-   "own": 0.7
+   "own": 0.5
+  },
+  {
+   "player": "Max Strus",
+   "team": "LAC",
+   "opp": "MIA",
+   "pos": "PF",
+   "salary": 3700,
+   "dkid": "44771764",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 17.0,
+   "usg": 15.7,
+   "ou": 233.5,
+   "spread": 5.5,
+   "pts": 6.5,
+   "reb": 3.3,
+   "ast": 2.0,
+   "stl": 0.4,
+   "blk": 0.1,
+   "to": 0.8,
+   "dk": 14.9,
+   "value": 4.03,
+   "note": "Moved toward his recent minutes (23.0 a game).",
+   "own": 0.3
   },
   {
    "player": "Noah Clowney",
@@ -5317,32 +5342,7 @@
    "dk": 14.9,
    "value": 3.72,
    "note": "",
-   "own": 0.3
-  },
-  {
-   "player": "Max Strus",
-   "team": "LAC",
-   "opp": "MIA",
-   "pos": "PF",
-   "salary": 3700,
-   "dkid": "44771764",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 17.0,
-   "usg": 15.7,
-   "ou": 233.5,
-   "spread": 5.5,
-   "pts": 6.5,
-   "reb": 3.3,
-   "ast": 2.0,
-   "stl": 0.4,
-   "blk": 0.1,
-   "to": 0.8,
-   "dk": 14.9,
-   "value": 4.03,
-   "note": "Moved toward his recent minutes (23.0 a game).",
-   "own": 11.3
+   "own": 0.2
   },
   {
    "player": "Kasparas Jakucionis",
@@ -5367,7 +5367,7 @@
    "dk": 14.5,
    "value": 3.63,
    "note": "Moved toward his recent minutes (20.7 a game).",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Javonte Green",
@@ -5392,7 +5392,7 @@
    "dk": 14.5,
    "value": 4.03,
    "note": "",
-   "own": 0.4
+   "own": 0.3
   },
   {
    "player": "Ron Holland",
@@ -5417,7 +5417,7 @@
    "dk": 14.5,
    "value": 3.54,
    "note": "Moved toward his recent minutes (18.0 a game).",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Walter Clayton Jr.",
@@ -5466,7 +5466,7 @@
    "dk": 14.1,
    "value": 3.21,
    "note": "",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Marvin Bagley III",
@@ -5491,7 +5491,7 @@
    "dk": 14.1,
    "value": 4.14,
    "note": "",
-   "own": 0.5
+   "own": 0.3
   },
   {
    "player": "Chaney Johnson",
@@ -5541,7 +5541,7 @@
    "dk": 13.8,
    "value": 4.19,
    "note": "",
-   "own": 1.2
+   "own": 1.1
   },
   {
    "player": "Tre Johnson",
@@ -5615,7 +5615,7 @@
    "dk": 13.5,
    "value": 4.1,
    "note": "Moved toward his recent minutes (21.3 a game).",
-   "own": 1.5
+   "own": 0.8
   },
   {
    "player": "Luke Kennard",
@@ -5640,7 +5640,7 @@
    "dk": 13.4,
    "value": 3.53,
    "note": "Moved toward his recent minutes (15.3 a game).",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "AJ Green",
@@ -5665,7 +5665,7 @@
    "dk": 13.3,
    "value": 3.79,
    "note": "",
-   "own": 0.3
+   "own": 0.2
   },
   {
    "player": "Jamison Battle",
@@ -5690,7 +5690,7 @@
    "dk": 13.3,
    "value": 3.91,
    "note": "Moved toward his recent minutes (19.0 a game).",
-   "own": 0.6
+   "own": 0.3
   },
   {
    "player": "DeAndre Jordan",
@@ -5715,7 +5715,7 @@
    "dk": 13.2,
    "value": 4.42,
    "note": "Moved toward his recent minutes (16.5 a game).",
-   "own": 1.5
+   "own": 1.4
   },
   {
    "player": "Jordan Walsh",
@@ -5740,7 +5740,7 @@
    "dk": 13.1,
    "value": 3.65,
    "note": "",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Ryan Kalkbrenner",
@@ -5818,6 +5818,31 @@
    "own": 0.2
   },
   {
+   "player": "Emanuel Sharp",
+   "team": "SAC",
+   "opp": "LAL",
+   "pos": "SG",
+   "salary": 3500,
+   "dkid": "44771767",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 19.4,
+   "usg": 14.1,
+   "ou": 233.5,
+   "spread": 12.5,
+   "pts": 6.5,
+   "reb": 1.5,
+   "ast": 1.3,
+   "stl": 0.7,
+   "blk": 0.5,
+   "to": 0.7,
+   "dk": 12.8,
+   "value": 3.65,
+   "note": "Moved toward his recent minutes (20.7 a game).",
+   "own": 0.2
+  },
+  {
    "player": "Quinten Post",
    "team": "MEM",
    "opp": "IND",
@@ -5840,32 +5865,7 @@
    "dk": 12.8,
    "value": 3.66,
    "note": "Moved toward his recent minutes (12.0 a game).",
-   "own": 0.2
-  },
-  {
-   "player": "Emanuel Sharp",
-   "team": "SAC",
-   "opp": "LAL",
-   "pos": "SG",
-   "salary": 3500,
-   "dkid": "44771767",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 19.4,
-   "usg": 14.1,
-   "ou": 233.5,
-   "spread": 12.5,
-   "pts": 6.5,
-   "reb": 1.5,
-   "ast": 1.3,
-   "stl": 0.7,
-   "blk": 0.5,
-   "to": 0.7,
-   "dk": 12.8,
-   "value": 3.65,
-   "note": "Moved toward his recent minutes (20.7 a game).",
-   "own": 8.3
+   "own": 0.1
   },
   {
    "player": "Danny Wolf",
@@ -5890,7 +5890,7 @@
    "dk": 12.6,
    "value": 4.19,
    "note": "Moved toward his recent minutes (13.5 a game).",
-   "own": 0.4
+   "own": 0.3
   },
   {
    "player": "Jordan Clarkson",
@@ -5915,7 +5915,7 @@
    "dk": 12.4,
    "value": 3.89,
    "note": "",
-   "own": 0.4
+   "own": 0.2
   },
   {
    "player": "Gradey Dick",
@@ -5924,11 +5924,11 @@
    "pos": "SF/PF",
    "salary": 3300,
    "dkid": "44771779",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 14.6,
-   "usg": 20.2,
+   "usg": 20.0,
    "ou": 233.5,
    "spread": 5.5,
    "pts": 6.9,
@@ -5940,7 +5940,7 @@
    "dk": 12.3,
    "value": 3.73,
    "note": "Moved toward his recent minutes (14.7 a game).",
-   "own": 8.3
+   "own": 0.2
   },
   {
    "player": "Tim Hardaway",
@@ -5949,11 +5949,11 @@
    "pos": "SG/SF",
    "salary": 3300,
    "dkid": "44771783",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 19.2,
-   "usg": 15.4,
+   "usg": 15.3,
    "ou": 233.5,
    "spread": -5.5,
    "pts": 7.2,
@@ -5962,10 +5962,10 @@
    "stl": 0.3,
    "blk": 0.2,
    "to": 0.5,
-   "dk": 12.2,
-   "value": 3.7,
+   "dk": 12.1,
+   "value": 3.67,
    "note": "Moved toward his recent minutes (17.7 a game).",
-   "own": 6.9
+   "own": 0.2
   },
   {
    "player": "Sion James",
@@ -5990,7 +5990,7 @@
    "dk": 12.1,
    "value": 3.03,
    "note": "",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Sidy Cissoko",
@@ -6015,7 +6015,7 @@
    "dk": 12.1,
    "value": 3.11,
    "note": "",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Larry Nance",
@@ -6040,7 +6040,7 @@
    "dk": 12.0,
    "value": 3.42,
    "note": "Moved toward his recent minutes (22.3 a game).",
-   "own": 0.5
+   "own": 0.2
   },
   {
    "player": "Josh Okogie",
@@ -6065,7 +6065,7 @@
    "dk": 11.9,
    "value": 3.72,
    "note": "Moved toward his recent minutes (20.3 a game).",
-   "own": 0.4
+   "own": 0.3
   },
   {
    "player": "Kyle Filipowski",
@@ -6214,7 +6214,7 @@
    "dk": 10.9,
    "value": 3.2,
    "note": "Moved toward his recent minutes (12.0 a game).",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Bogdan Bogdanovic",
@@ -6239,7 +6239,7 @@
    "dk": 10.7,
    "value": 3.33,
    "note": "Moved toward his recent minutes (11.7 a game).",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Thomas Bryant",
@@ -6339,7 +6339,7 @@
    "dk": 10.3,
    "value": 3.13,
    "note": "",
-   "own": 0.2
+   "own": 0.1
   },
   {
    "player": "Khris Middleton",
@@ -6364,7 +6364,7 @@
    "dk": 10.2,
    "value": 3.29,
    "note": "Moved toward his recent minutes (13.7 a game).",
-   "own": 0.3
+   "own": 0.1
   },
   {
    "player": "Vit Krejci",
@@ -6389,7 +6389,7 @@
    "dk": 9.9,
    "value": 2.82,
    "note": "Moved toward his recent minutes (11.3 a game).",
-   "own": 0.1
+   "own": 0.0
   },
   {
    "player": "Craig Porter Jr.",
@@ -6439,7 +6439,7 @@
    "dk": 9.9,
    "value": 2.68,
    "note": "",
-   "own": 0.1
+   "own": 0.0
   },
   {
    "player": "Leonard Miller",
@@ -6464,7 +6464,7 @@
    "dk": 9.8,
    "value": 2.44,
    "note": "",
-   "own": 0.1
+   "own": 0.0
   },
   {
    "player": "Allen Graves",
@@ -6489,6 +6489,31 @@
    "dk": 9.4,
    "value": 2.69,
    "note": "Moved toward his recent minutes (8.7 a game).",
+   "own": 0.0
+  },
+  {
+   "player": "Dru Smith",
+   "team": "MIA",
+   "opp": "LAC",
+   "pos": "PG",
+   "salary": 3100,
+   "dkid": "44771798",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 10.8,
+   "usg": 12.7,
+   "ou": 233.5,
+   "spread": -5.5,
+   "pts": 3.2,
+   "reb": 1.3,
+   "ast": 1.3,
+   "stl": 0.8,
+   "blk": 0.2,
+   "to": 0.6,
+   "dk": 8.8,
+   "value": 2.82,
+   "note": "Moved toward his recent minutes (9.7 a game).",
    "own": 0.1
   },
   {
@@ -6514,32 +6539,7 @@
    "dk": 8.8,
    "value": 2.76,
    "note": "Moved toward his recent minutes (10.0 a game).",
-   "own": 0.1
-  },
-  {
-   "player": "Dru Smith",
-   "team": "MIA",
-   "opp": "LAC",
-   "pos": "PG",
-   "salary": 3100,
-   "dkid": "44771798",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 10.8,
-   "usg": 12.6,
-   "ou": 233.5,
-   "spread": -5.5,
-   "pts": 3.2,
-   "reb": 1.3,
-   "ast": 1.3,
-   "stl": 0.8,
-   "blk": 0.2,
-   "to": 0.6,
-   "dk": 8.8,
-   "value": 2.82,
-   "note": "Moved toward his recent minutes (9.7 a game).",
-   "own": 2.0
+   "own": 0.0
   },
   {
    "player": "Josh Minott",
@@ -6589,7 +6589,7 @@
    "dk": 8.0,
    "value": 2.67,
    "note": "",
-   "own": 0.1
+   "own": 0.0
   },
   {
    "player": "Noa Essengue",
@@ -6666,31 +6666,6 @@
    "own": 0.0
   },
   {
-   "player": "Kevon Looney",
-   "team": "LAL",
-   "opp": "SAC",
-   "pos": "C",
-   "salary": 3000,
-   "dkid": "44771822",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 7.0,
-   "usg": 11.2,
-   "ou": 233.5,
-   "spread": -12.5,
-   "pts": 1.8,
-   "reb": 2.8,
-   "ast": 0.6,
-   "stl": 0.2,
-   "blk": 0.2,
-   "to": 0.2,
-   "dk": 6.8,
-   "value": 2.25,
-   "note": "Moved toward his recent minutes (5.0 a game).",
-   "own": 0.0
-  },
-  {
    "player": "Christian Anderson",
    "team": "CHA",
    "opp": "BKN",
@@ -6713,7 +6688,32 @@
    "dk": 6.7,
    "value": 2.23,
    "note": "",
-   "own": 0.1
+   "own": 0.0
+  },
+  {
+   "player": "Kevon Looney",
+   "team": "LAL",
+   "opp": "SAC",
+   "pos": "C",
+   "salary": 3000,
+   "dkid": "44771822",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 7.0,
+   "usg": 11.2,
+   "ou": 233.5,
+   "spread": -12.5,
+   "pts": 1.8,
+   "reb": 2.8,
+   "ast": 0.5,
+   "stl": 0.2,
+   "blk": 0.2,
+   "to": 0.2,
+   "dk": 6.6,
+   "value": 2.21,
+   "note": "Moved toward his recent minutes (5.0 a game).",
+   "own": 0.0
   },
   {
    "player": "Brooks Barnhizer",
@@ -6822,7 +6822,7 @@
    "pos": "C",
    "salary": 3000,
    "dkid": "44771808",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 7.4,
