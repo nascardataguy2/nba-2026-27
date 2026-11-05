@@ -2,10 +2,9 @@
  "updated": "2026-11-05",
  "brief": {
   "date": "2026-11-05",
-  "updated": "3:11 PM ET",
+  "updated": "3:32 PM ET",
   "games": 2,
   "pending": [
-   "PHX",
    "MIA"
   ],
   "first_report": "6:02 AM",
@@ -39,13 +38,13 @@
       "q": []
      },
      "PHX": {
-      "out": [],
-      "q": [
+      "out": [
        {
         "player": "Jordan Goodwin",
-        "min": 16.4
+        "min": 17.3
        }
-      ]
+      ],
+      "q": []
      }
     },
     "key": "Paolo Banchero and Jalen Suggs are out, so Nikola Vucevic should play more than usual."
@@ -79,7 +78,7 @@
       "q": []
      }
     },
-    "key": "Giannis Antetokounmpo has the top projection in this game at 61.9 DK points."
+    "key": "Giannis Antetokounmpo has the top projection in this game at 61.8 DK points."
    }
   ],
   "changed": [],
@@ -108,8 +107,31 @@
       "plus": 4.0,
       "recent": 9.0,
       "min": 13.0,
-      "dk": 15.0,
+      "dk": 14.9,
       "salary": 4200
+     }
+    ]
+   },
+   {
+    "team": "PHX",
+    "outs": [
+     {
+      "player": "Jordan Goodwin",
+      "min": 17.3,
+      "note": "Jordan Goodwin is day-to-day with a calf injury heading into Thursday against Orlando.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 17.3,
+    "benefits": [
+     {
+      "player": "Devin Booker",
+      "plus": 2.9,
+      "recent": 35.0,
+      "min": 37.9,
+      "dk": 45.1,
+      "salary": 8500
      }
     ]
    }
@@ -203,28 +225,28 @@
     "player": "Giannis Antetokounmpo",
     "team": "MIA",
     "own": 44.6,
-    "dk": 61.9,
+    "dk": 61.8,
     "salary": 11000
    },
    {
     "player": "Stephen Curry",
     "team": "GSW",
     "own": 44.6,
-    "dk": 47.1,
+    "dk": 47.2,
     "salary": 8200
    },
    {
     "player": "Bam Adebayo",
     "team": "MIA",
-    "own": 42.0,
-    "dk": 43.0,
+    "own": 41.4,
+    "dk": 43.1,
     "salary": 7800
    },
    {
     "player": "Klay Thompson",
     "team": "MIA",
     "own": 39.9,
-    "dk": 23.3,
+    "dk": 23.1,
     "salary": 4400
    }
   ],
@@ -313,10 +335,9 @@
    ]
   },
   "injuries": {
-   "report": "03:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_03_00PM.pdf",
+   "report": "03:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_03_30PM.pdf",
    "pending": [
-    "PHX",
     "MIA"
    ],
    "rows": [
@@ -363,6 +384,27 @@
      "estimate": false
     },
     {
+     "game": "ORL at PHX",
+     "time": "2026-11-06T02:00Z",
+     "team": "PHX",
+     "player": "Jordan Goodwin",
+     "status": "Out",
+     "reason": "Right Calf Soreness",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 17.3,
+     "benefits": [
+      {
+       "player": "Devin Booker",
+       "min": 37.9,
+       "recent": 35.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "MIA at GSW",
      "time": "2026-11-06T03:00Z",
      "team": "GSW",
@@ -380,6 +422,11 @@
    ],
    "minor": [
     {
+     "player": "Rasheer Fleming",
+     "team": "PHX",
+     "status": "Out"
+    },
+    {
      "player": "Jonathan Isaac",
      "team": "ORL",
      "status": "Out"
@@ -392,6 +439,11 @@
     {
      "player": "Noah Penda",
      "team": "ORL",
+     "status": "Out"
+    },
+    {
+     "player": "Mark Williams",
+     "team": "PHX",
      "status": "Out"
     },
     {
@@ -10522,12 +10574,12 @@
   {
    "team": "PHX",
    "starters": "Devin Booker (34), Miles Bridges (33), Jalen Green (29), Dillon Brooks (31), Khaman Maluach (20)",
-   "bench": "Collin Gillespie (25), Oso Ighodaro (21), Jordan Goodwin (19), Luke Kennard (16), Ryan Dunn (13)",
+   "bench": "Collin Gillespie (25), Oso Ighodaro (21), Luke Kennard (16), Ryan Dunn (13)",
    "backup_c": "Oso Ighodaro",
    "coach": "",
    "notes": "Bridges gives Phoenix a true forward. Maluach could push for a bigger role at about 24 minutes.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Jordan Goodwin, Rasheer Fleming",
    "depth_through": "2026-11-04",
    "games": 6
   },
