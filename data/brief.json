@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updated": "9:30 PM ET",
+ "updated": "9:53 PM ET",
  "games": 13,
  "pending": [],
  "first_report": "7:49 AM",
@@ -460,18 +460,21 @@
     },
     "LAC": {
      "out": [],
-     "q": [
-      {
-       "player": "Isaiah Jackson",
-       "min": 21.6
-      }
-     ]
+     "q": []
     }
    },
-   "key": "Giannis Antetokounmpo has the top projection in this game at 57.0 DK points."
+   "key": "Giannis Antetokounmpo has the top projection in this game at 57.4 DK points."
   }
  ],
  "changed": [
+  {
+   "player": "Isaiah Jackson",
+   "team": "LAC",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Groin Soreness",
+   "time": "9:54 PM"
+  },
   {
    "player": "Giannis Antetokounmpo",
    "team": "MIA",
@@ -542,14 +545,6 @@
    "status": "Available",
    "was": "Questionable",
    "why": "Right Ankle Sprain",
-   "time": "9:31 PM"
-  },
-  {
-   "player": "Ivica Zubac",
-   "team": "IND",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Left Ankle Sprain",
    "time": "9:31 PM"
   }
  ],
@@ -776,21 +771,21 @@
   {
    "player": "Karl-Anthony Towns",
    "team": "NYK",
-   "own": 36.1,
+   "own": 35.9,
    "dk": 51.7,
    "salary": 8300
   },
   {
    "player": "Payton Pritchard",
    "team": "BOS",
-   "own": 35.2,
+   "own": 35.3,
    "dk": 42.1,
    "salary": 6200
   },
   {
    "player": "Neemias Queta",
    "team": "BOS",
-   "own": 33.3,
+   "own": 33.2,
    "dk": 33.2,
    "salary": 4900
   }
@@ -799,21 +794,21 @@
   {
    "player": "Paul Reed",
    "team": "DET",
-   "own": 7.9,
+   "own": 8.1,
    "dk": 37.3,
    "salary": 6500
   },
   {
    "player": "Darryn Peterson",
    "team": "UTA",
-   "own": 9.6,
+   "own": 9.7,
    "dk": 36.1,
    "salary": 6400
   },
   {
    "player": "Isaiah Hartenstein",
    "team": "OKC",
-   "own": 7.6,
+   "own": 7.4,
    "dk": 35.5,
    "salary": 6300
   }
@@ -907,8 +902,8 @@
   ]
  },
  "injuries": {
-  "report": "09:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_09_15PM.pdf",
+  "report": "09:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_09_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1321,27 +1316,6 @@
    {
     "game": "MIA at LAC",
     "time": "2026-11-05T03:30Z",
-    "team": "LAC",
-    "player": "Isaiah Jackson",
-    "status": "Questionable",
-    "reason": "Left Groin Soreness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "3:24 PM",
-    "min": 23.3,
-    "benefits": [
-     {
-      "player": "Brook Lopez",
-      "plus": 16.0,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "MIA at LAC",
-    "time": "2026-11-05T03:30Z",
     "team": "MIA",
     "player": "Giannis Antetokounmpo",
     "status": "Available",
@@ -1351,6 +1325,21 @@
     "known": true,
     "changed_at": "9:31 PM",
     "min": 32.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "MIA at LAC",
+    "time": "2026-11-05T03:30Z",
+    "team": "LAC",
+    "player": "Isaiah Jackson",
+    "status": "Available",
+    "reason": "Left Groin Soreness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "9:54 PM",
+    "min": 23.3,
     "benefits": [],
     "estimate": false
    },
