@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updated": "6:41 PM ET",
+ "updated": "6:48 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:39 AM",
@@ -108,23 +108,18 @@
     "CLE": {
      "out": [
       {
+       "player": "Jarrett Allen",
+       "min": 19.7
+      },
+      {
        "player": "Jaylon Tyson",
        "min": 19.7
       }
      ],
-     "q": [
-      {
-       "player": "Jarrett Allen",
-       "min": 22.2
-      },
-      {
-       "player": "Peyton Watson",
-       "min": 25.8
-      }
-     ]
+     "q": []
     }
    },
-   "key": "Adem Bona is out, so Justin Edwards should play more than usual."
+   "key": "Jarrett Allen and Jaylon Tyson are out, so Peyton Watson and Meleek Thomas should play more than usual."
   },
   {
    "away": "MIN",
@@ -180,27 +175,26 @@
     "TOR": {
      "out": [
       {
+       "player": "Scottie Barnes",
+       "min": 35.3
+      },
+      {
+       "player": "Immanuel Quickley",
+       "min": 34.3
+      },
+      {
        "player": "Kawhi Leonard",
        "min": 26.0
       }
      ],
-     "q": [
-      {
-       "player": "Scottie Barnes",
-       "min": 34.5
-      },
-      {
-       "player": "Immanuel Quickley",
-       "min": 31.1
-      }
-     ]
+     "q": []
     },
     "MIL": {
      "out": [],
      "q": []
     }
    },
-   "key": "Scottie Barnes has the top projection in this game at 51.0 DK points."
+   "key": "Scottie Barnes and Immanuel Quickley are out, so Jamal Shead and RJ Barrett should play more than usual."
   },
   {
    "away": "UTA",
@@ -361,6 +355,54 @@
  ],
  "changed": [
   {
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Jakob Poeltl",
+   "team": "TOR",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Left Shoulder Bursitis",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "Left Groin Strain",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Kyle Anderson",
+   "team": "TOR",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Knee Contusion",
+   "time": "6:49 PM"
+  },
+  {
    "player": "Tyrese Proctor",
    "team": "CLE",
    "status": "Available",
@@ -391,57 +433,60 @@
    "was": "Questionable",
    "why": "Right Ankle Sprain",
    "time": "6:42 PM"
-  },
-  {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "4:34 PM"
-  },
-  {
-   "player": "Sandro Mamukelashvili",
-   "team": "LAL",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "4:34 PM"
-  },
-  {
-   "player": "Terrence Shannon Jr.",
-   "team": "MIN",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "2:39 PM"
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "status": "Probable",
-   "was": "",
-   "why": "Illness",
-   "time": "2:39 PM"
-  },
-  {
-   "player": "Immanuel Quickley",
-   "team": "TOR",
-   "status": "Questionable",
-   "was": "",
-   "why": "",
-   "time": "2:39 PM"
-  },
-  {
-   "player": "Jakob Poeltl",
-   "team": "TOR",
-   "status": "Probable",
-   "was": "",
-   "why": "Left Shoulder Bursitis",
-   "time": "2:39 PM"
   }
  ],
  "sits": [
+  {
+   "team": "TOR",
+   "outs": [
+    {
+     "player": "Scottie Barnes",
+     "min": 35.3,
+     "note": "The show said Barnes is questionable for Friday after he was hobbling in his last game. The host would not be surprised if Barnes gets a day off soon.",
+     "new": true
+    },
+    {
+     "player": "Immanuel Quickley",
+     "min": 34.3,
+     "note": "Doubtful tonight.",
+     "new": true
+    },
+    {
+     "player": "Kawhi Leonard",
+     "min": 26.0,
+     "note": "Kawhi Leonard has not played since Oct. 23 because of his knee. The show said he is still one to two weeks away.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 95.6,
+   "benefits": [
+    {
+     "player": "Jamal Shead",
+     "plus": 10.7,
+     "recent": 21.7,
+     "min": 32.4,
+     "dk": 29.4,
+     "salary": 4500
+    },
+    {
+     "player": "RJ Barrett",
+     "plus": 9.3,
+     "recent": 34.0,
+     "min": 43.3,
+     "dk": 54.0,
+     "salary": 7300
+    },
+    {
+     "player": "Jakob Poeltl",
+     "plus": 8.7,
+     "recent": 17.3,
+     "min": 26.0,
+     "dk": 29.1,
+     "salary": 4400
+    }
+   ]
+  },
   {
    "team": "CHA",
    "outs": [
@@ -525,6 +570,51 @@
    ]
   },
   {
+   "team": "CLE",
+   "outs": [
+    {
+     "player": "Jarrett Allen",
+     "min": 19.7,
+     "note": "Allen is officially questionable for Friday with a knee issue after playing only seven minutes on Nov. 4. The Cavaliers are on a Friday-Saturday back-to-back.",
+     "new": true
+    },
+    {
+     "player": "Jaylon Tyson",
+     "min": 19.7,
+     "note": "Jaylon Tyson has not played since October 29, and the show said he is out again Friday.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 39.4,
+   "benefits": [
+    {
+     "player": "Peyton Watson",
+     "plus": 5.6,
+     "recent": 24.0,
+     "min": 29.6,
+     "dk": 25.2,
+     "salary": 5700
+    },
+    {
+     "player": "Meleek Thomas",
+     "plus": 5.2,
+     "recent": 18.0,
+     "min": 23.2,
+     "dk": 21.0,
+     "salary": 4000
+    },
+    {
+     "player": "Donovan Mitchell",
+     "plus": 5.1,
+     "recent": 31.0,
+     "min": 36.1,
+     "dk": 46.7,
+     "salary": 8300
+    }
+   ]
+  },
+  {
    "team": "MEM",
    "outs": [
     {
@@ -567,60 +657,6 @@
      "min": 6.1,
      "dk": 4.4,
      "salary": 3000
-    }
-   ]
-  },
-  {
-   "team": "SAC",
-   "outs": [
-    {
-     "player": "Keegan Murray",
-     "min": 27.0,
-     "note": "The show said Keegan Murray had a setback that kept him out of the last preseason game and was not fully ramped up for the season.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 27.0,
-   "benefits": [
-    {
-     "player": "Daeqwon Plowden",
-     "plus": 3.5,
-     "recent": 8.0,
-     "min": 11.5,
-     "dk": 7.1,
-     "salary": 3200
-    }
-   ]
-  },
-  {
-   "team": "UTA",
-   "outs": [
-    {
-     "player": "Jaren Jackson Jr.",
-     "min": 25.3,
-     "note": "Jaren Jackson Jr. is out with a torn MCL in his right knee and has not played since Oct. 26. The show noted that his absence has helped keep Keyonte George's usage high.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 25.3,
-   "benefits": [
-    {
-     "player": "Isaiah Collier",
-     "plus": 3.2,
-     "recent": 11.7,
-     "min": 14.9,
-     "dk": 14.3,
-     "salary": 4300
-    },
-    {
-     "player": "Kyle Filipowski",
-     "plus": 3.1,
-     "recent": 7.3,
-     "min": 10.4,
-     "dk": 10.6,
-     "salary": 4500
     }
    ]
   }
@@ -732,34 +768,34 @@
    "salary": 3900
   },
   {
-   "player": "De'Aaron Fox",
-   "team": "SAS",
+   "player": "RJ Barrett",
+   "team": "TOR",
    "own": 39.9,
-   "dk": 35.0,
-   "salary": 6400
+   "dk": 54.0,
+   "salary": 7300
   }
  ],
  "leverage": [
   {
+   "player": "Bilal Coulibaly",
+   "team": "WAS",
+   "own": 9.7,
+   "dk": 22.7,
+   "salary": 4000
+  },
+  {
    "player": "Royce O'Neale",
    "team": "CHA",
-   "own": 4.2,
+   "own": 3.5,
    "dk": 22.9,
    "salary": 4100
   },
   {
    "player": "Brandon Miller",
    "team": "CHA",
-   "own": 5.7,
+   "own": 5.8,
    "dk": 45.0,
    "salary": 8100
-  },
-  {
-   "player": "Neemias Queta",
-   "team": "BOS",
-   "own": 5.4,
-   "dk": 27.4,
-   "salary": 5000
   }
  ],
  "last": {
@@ -833,8 +869,8 @@
   ]
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_06_30PM.pdf",
+  "report": "06:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_06_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -993,6 +1029,32 @@
    {
     "game": "PHI at CLE",
     "time": "2026-11-07T00:30Z",
+    "team": "CLE",
+    "player": "Jarrett Allen",
+    "status": "Out",
+    "reason": "Right Knee Contusion",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:49 PM",
+    "min": 19.7,
+    "benefits": [
+     {
+      "player": "Peyton Watson",
+      "min": 29.6,
+      "recent": 24.0
+     },
+     {
+      "player": "Meleek Thomas",
+      "min": 23.2,
+      "recent": 18.0
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "PHI at CLE",
+    "time": "2026-11-07T00:30Z",
     "team": "PHI",
     "player": "Adem Bona",
     "status": "Out",
@@ -1016,52 +1078,15 @@
     "time": "2026-11-07T00:30Z",
     "team": "CLE",
     "player": "Peyton Watson",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:49 PM",
     "min": 24.0,
-    "benefits": [
-     {
-      "player": "Meleek Thomas",
-      "plus": 9.7,
-      "min": 30.5
-     },
-     {
-      "player": "Evan Mobley",
-      "plus": 5.1,
-      "min": 36.0
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "PHI at CLE",
-    "time": "2026-11-07T00:30Z",
-    "team": "CLE",
-    "player": "Jarrett Allen",
-    "status": "Questionable",
-    "reason": "Right Knee Contusion",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 19.7,
-    "benefits": [
-     {
-      "player": "Evan Mobley",
-      "plus": 5.1,
-      "min": 36.0
-     },
-     {
-      "player": "Thomas Bryant",
-      "plus": 5.0,
-      "min": 15.5
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "PHI at CLE",
@@ -1119,61 +1144,51 @@
     "time": "2026-11-07T01:00Z",
     "team": "TOR",
     "player": "Scottie Barnes",
-    "status": "Questionable",
-    "reason": "",
+    "status": "Doubtful",
+    "reason": "Left Groin Strain",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:49 PM",
     "min": 35.3,
     "benefits": [
      {
       "player": "Jamal Shead",
-      "plus": 7.1,
-      "min": 30.3
+      "min": 32.4,
+      "recent": 21.7
      },
      {
-      "player": "Ja'Kobe Walter",
-      "plus": 5.6,
-      "min": 36.0
+      "player": "RJ Barrett",
+      "min": 43.3,
+      "recent": 34.0
      }
     ],
-    "estimate": true
+    "estimate": false
    },
    {
     "game": "TOR at MIL",
     "time": "2026-11-07T01:00Z",
     "team": "TOR",
     "player": "Immanuel Quickley",
-    "status": "Questionable",
+    "status": "Doubtful",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "2:39 PM",
+    "changed_at": "6:49 PM",
     "min": 34.3,
     "benefits": [
      {
       "player": "Jamal Shead",
-      "plus": 12.8,
-      "min": 36.0
+      "min": 32.4,
+      "recent": 21.7
+     },
+     {
+      "player": "RJ Barrett",
+      "min": 43.3,
+      "recent": 34.0
      }
     ],
-    "estimate": true
-   },
-   {
-    "game": "TOR at MIL",
-    "time": "2026-11-07T01:00Z",
-    "team": "TOR",
-    "player": "Kyle Anderson",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:42 PM",
-    "min": 5.3,
-    "benefits": [],
     "estimate": false
    },
    {
@@ -1188,21 +1203,6 @@
     "known": true,
     "changed_at": "2:39 PM",
     "min": 32.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "TOR at MIL",
-    "time": "2026-11-07T01:00Z",
-    "team": "TOR",
-    "player": "Jakob Poeltl",
-    "status": "Probable",
-    "reason": "Left Shoulder Bursitis",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "2:39 PM",
-    "min": 17.3,
     "benefits": [],
     "estimate": false
    },
@@ -1233,6 +1233,21 @@
     "known": true,
     "changed_at": "2:39 PM",
     "min": 33.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "TOR at MIL",
+    "time": "2026-11-07T01:00Z",
+    "team": "TOR",
+    "player": "Jakob Poeltl",
+    "status": "Available",
+    "reason": "Left Shoulder Bursitis",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "6:49 PM",
+    "min": 17.3,
     "benefits": [],
     "estimate": false
    },
@@ -1345,7 +1360,18 @@
     "known": true,
     "changed_at": "",
     "min": 19.7,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Peyton Watson",
+      "min": 29.6,
+      "recent": 24.0
+     },
+     {
+      "player": "Meleek Thomas",
+      "min": 23.2,
+      "recent": 18.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -1405,7 +1431,18 @@
     "known": true,
     "changed_at": "",
     "min": 26.0,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Jamal Shead",
+      "min": 32.4,
+      "recent": 21.7
+     },
+     {
+      "player": "RJ Barrett",
+      "min": 43.3,
+      "recent": 34.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -1551,6 +1588,11 @@
     "player": "Hannes Steinbach",
     "team": "CHA",
     "status": "Available"
+   },
+   {
+    "player": "Kyle Anderson",
+    "team": "TOR",
+    "status": "Probable"
    },
    {
     "player": "Santi Aldama",
