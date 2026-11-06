@@ -2,7 +2,7 @@
  "updated": "2026-11-06",
  "brief": {
   "date": "2026-11-06",
-  "updated": "4:41 PM ET",
+  "updated": "6:41 PM ET",
   "games": 9,
   "pending": [],
   "first_report": "5:39 AM",
@@ -22,33 +22,31 @@
      "WAS": {
       "out": [
        {
+        "player": "Anthony Davis",
+        "min": 32.7
+       },
+       {
         "player": "Justin Champagnie",
         "min": 17.7
        }
       ],
-      "q": [
-       {
-        "player": "Anthony Davis",
-        "min": 30.3
-       }
-      ]
+      "q": []
      },
      "ATL": {
       "out": [
+       {
+        "player": "Jalen Johnson",
+        "min": 32.7
+       },
        {
         "player": "Asa Newell",
         "min": 15.3
        }
       ],
-      "q": [
-       {
-        "player": "Jalen Johnson",
-        "min": 33.4
-       }
-      ]
+      "q": []
      }
     },
-    "key": "Justin Champagnie is out, so Carlton Carrington should play more than usual."
+    "key": "Anthony Davis and Justin Champagnie are out, so Carlton Carrington and Will Riley should play more than usual."
    },
    {
     "away": "BOS",
@@ -57,9 +55,9 @@
     "slate": "main",
     "ou": 207.5,
     "fav": "BOS",
-    "line": 9.5,
-    "away_pts": 108.5,
-    "home_pts": 99.0,
+    "line": 10.5,
+    "away_pts": 109.0,
+    "home_pts": 98.5,
     "tags": [
      "Lowest total",
      "Blowout risk"
@@ -90,12 +88,13 @@
     "home": "CLE",
     "time": "2026-11-07T00:30Z",
     "slate": "main",
-    "ou": 228.5,
+    "ou": 231.5,
     "fav": "PHI",
     "line": 2.5,
-    "away_pts": 115.5,
-    "home_pts": 113.0,
+    "away_pts": 117.0,
+    "home_pts": 114.5,
     "tags": [
+     "Highest total",
      "Close game"
     ],
     "teams": {
@@ -123,10 +122,6 @@
        {
         "player": "Peyton Watson",
         "min": 25.8
-       },
-       {
-        "player": "Tyrese Proctor",
-        "min": 17.0
        }
       ]
      }
@@ -170,18 +165,18 @@
       "q": []
      }
     },
-    "key": "LaMelo Ball has the top projection in this game at 43.0 DK points."
+    "key": "LaMelo Ball has the top projection in this game at 43.4 DK points."
    },
    {
     "away": "TOR",
     "home": "MIL",
     "time": "2026-11-07T01:00Z",
     "slate": "main",
-    "ou": 228.5,
+    "ou": 229.5,
     "fav": "TOR",
-    "line": 5.5,
+    "line": 4.5,
     "away_pts": 117.0,
-    "home_pts": 111.5,
+    "home_pts": 112.5,
     "tags": [],
     "teams": {
      "TOR": {
@@ -207,18 +202,18 @@
       "q": []
      }
     },
-    "key": "Scottie Barnes has the top projection in this game at 50.8 DK points."
+    "key": "Scottie Barnes has the top projection in this game at 51.0 DK points."
    },
    {
     "away": "UTA",
     "home": "DAL",
     "time": "2026-11-07T01:00Z",
     "slate": "main",
-    "ou": 226.5,
+    "ou": 225.5,
     "fav": "DAL",
-    "line": 7.5,
+    "line": 6.5,
     "away_pts": 109.5,
-    "home_pts": 117.0,
+    "home_pts": 116.0,
     "tags": [],
     "teams": {
      "UTA": {
@@ -327,7 +322,7 @@
       "q": []
      }
     },
-    "key": "Luka Doncic has the top projection in this game at 57.4 DK points."
+    "key": "Luka Doncic has the top projection in this game at 57.0 DK points."
    },
    {
     "away": "SAS",
@@ -367,6 +362,38 @@
    }
   ],
   "changed": [
+   {
+    "player": "Tyrese Proctor",
+    "team": "CLE",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Ankle Sprain",
+    "time": "6:42 PM"
+   },
+   {
+    "player": "Adem Bona",
+    "team": "PHI",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "Cervical Spine Sprain",
+    "time": "6:42 PM"
+   },
+   {
+    "player": "Jalen Johnson",
+    "team": "ATL",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Ankle Sprain",
+    "time": "6:42 PM"
+   },
+   {
+    "player": "Anthony Davis",
+    "team": "WAS",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Right Ankle Sprain",
+    "time": "6:42 PM"
+   },
    {
     "player": "De'Andre Hunter",
     "team": "SAC",
@@ -414,38 +441,6 @@
     "was": "",
     "why": "Left Shoulder Bursitis",
     "time": "2:39 PM"
-   },
-   {
-    "player": "Trey Murphy III",
-    "team": "NOP",
-    "status": "Available",
-    "was": "Probable",
-    "why": "",
-    "time": "2:39 PM"
-   },
-   {
-    "player": "Terrence Shannon Jr",
-    "team": "MIN",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Left Hip Contusion",
-    "time": "2:39 PM"
-   },
-   {
-    "player": "Dennis Schroder",
-    "team": "CHA",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Left Soreness",
-    "time": "2:39 PM"
-   },
-   {
-    "player": "Moussa Diabate",
-    "team": "CHA",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "",
-    "time": "2:39 PM"
    }
   ],
   "sits": [
@@ -473,7 +468,7 @@
       "plus": 5.0,
       "recent": 23.3,
       "min": 28.3,
-      "dk": 20.4,
+      "dk": 20.3,
       "salary": 4200
      },
      {
@@ -495,6 +490,43 @@
     ]
    },
    {
+    "team": "WAS",
+    "outs": [
+     {
+      "player": "Anthony Davis",
+      "min": 32.7,
+      "note": "Davis was added to the injury report as questionable after spraining his ankle on Nov. 4, when he played through it for 30 minutes with 26 points and 10 rebounds. The Wizards play five games in seven nights starting Friday, including a Friday-Saturday back-to-back.",
+      "new": true
+     },
+     {
+      "player": "Justin Champagnie",
+      "min": 17.7,
+      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 50.4,
+    "benefits": [
+     {
+      "player": "Carlton Carrington",
+      "plus": 6.7,
+      "recent": 19.3,
+      "min": 26.0,
+      "dk": 19.5,
+      "salary": 4000
+     },
+     {
+      "player": "Will Riley",
+      "plus": 3.2,
+      "recent": 6.0,
+      "min": 9.2,
+      "dk": 6.7,
+      "salary": 3100
+     }
+    ]
+   },
+   {
     "team": "MEM",
     "outs": [
      {
@@ -512,7 +544,7 @@
       "plus": 3.3,
       "recent": 14.7,
       "min": 18.0,
-      "dk": 17.3,
+      "dk": 17.4,
       "salary": 3900
      }
     ]
@@ -523,7 +555,7 @@
      {
       "player": "Adem Bona",
       "min": 17.0,
-      "note": "Doubtful tonight (cervical spine sprain).",
+      "note": "Ruled out tonight (cervical spine sprain).",
       "new": true
      }
     ],
@@ -535,7 +567,7 @@
       "plus": 4.4,
       "recent": 1.7,
       "min": 6.1,
-      "dk": 4.3,
+      "dk": 4.4,
       "salary": 3000
      }
     ]
@@ -589,31 +621,8 @@
       "plus": 3.1,
       "recent": 7.3,
       "min": 10.4,
-      "dk": 10.5,
+      "dk": 10.6,
       "salary": 4500
-     }
-    ]
-   },
-   {
-    "team": "WAS",
-    "outs": [
-     {
-      "player": "Justin Champagnie",
-      "min": 17.7,
-      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 17.7,
-    "benefits": [
-     {
-      "player": "Carlton Carrington",
-      "plus": 4.8,
-      "recent": 19.3,
-      "min": 24.1,
-      "dk": 17.7,
-      "salary": 4000
      }
     ]
    }
@@ -652,12 +661,12 @@
     "n": 5
    },
    {
-    "player": "Jalen Johnson",
-    "team": "ATL",
+    "player": "Zach LaVine",
+    "team": "SAC",
     "kind": "cold",
-    "last": 35.8,
-    "before": 50.3,
-    "n": 4
+    "last": 24.7,
+    "before": 38.9,
+    "n": 5
    }
   ],
   "minutes": [
@@ -707,14 +716,14 @@
     "player": "Darius Acuff Jr.",
     "team": "SAC",
     "own": 44.6,
-    "dk": 47.0,
+    "dk": 46.7,
     "salary": 7900
    },
    {
     "player": "Dylan Harper",
     "team": "SAS",
-    "own": 41.6,
-    "dk": 37.4,
+    "own": 42.1,
+    "dk": 37.5,
     "salary": 6700
    },
    {
@@ -725,33 +734,33 @@
     "salary": 3900
    },
    {
-    "player": "Deni Avdija",
-    "team": "POR",
-    "own": 39.8,
-    "dk": 45.2,
-    "salary": 8500
+    "player": "De'Aaron Fox",
+    "team": "SAS",
+    "own": 39.9,
+    "dk": 35.0,
+    "salary": 6400
    }
   ],
   "leverage": [
    {
     "player": "Royce O'Neale",
     "team": "CHA",
-    "own": 5.1,
+    "own": 4.2,
     "dk": 22.9,
     "salary": 4100
    },
    {
     "player": "Brandon Miller",
     "team": "CHA",
-    "own": 6.2,
+    "own": 5.7,
     "dk": 45.0,
     "salary": 8100
    },
    {
     "player": "Neemias Queta",
     "team": "BOS",
-    "own": 8.6,
-    "dk": 27.2,
+    "own": 5.4,
+    "dk": 27.4,
     "salary": 5000
    }
   ],
@@ -826,10 +835,51 @@
    ]
   },
   "injuries": {
-   "report": "04:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_04_30PM.pdf",
+   "report": "06:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_06_30PM.pdf",
    "pending": [],
    "rows": [
+    {
+     "game": "WAS at ATL",
+     "time": "2026-11-07T00:00Z",
+     "team": "WAS",
+     "player": "Anthony Davis",
+     "status": "Out",
+     "reason": "Right Ankle Sprain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "6:42 PM",
+     "min": 32.7,
+     "benefits": [
+      {
+       "player": "Carlton Carrington",
+       "min": 26.0,
+       "recent": 19.3
+      },
+      {
+       "player": "Will Riley",
+       "min": 9.2,
+       "recent": 6.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "WAS at ATL",
+     "time": "2026-11-07T00:00Z",
+     "team": "ATL",
+     "player": "Jalen Johnson",
+     "status": "Out",
+     "reason": "Left Ankle Sprain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "6:42 PM",
+     "min": 32.7,
+     "benefits": [],
+     "estimate": false
+    },
     {
      "game": "BOS at CHA",
      "time": "2026-11-07T00:00Z",
@@ -913,42 +963,6 @@
      "estimate": false
     },
     {
-     "game": "WAS at ATL",
-     "time": "2026-11-07T00:00Z",
-     "team": "WAS",
-     "player": "Anthony Davis",
-     "status": "Questionable",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 32.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "WAS at ATL",
-     "time": "2026-11-07T00:00Z",
-     "team": "ATL",
-     "player": "Jalen Johnson",
-     "status": "Questionable",
-     "reason": "Left Ankle Sprain",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "",
-     "min": 32.7,
-     "benefits": [
-      {
-       "player": "Luguentz Dort",
-       "plus": 7.2,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
-    },
-    {
      "game": "BOS at CHA",
      "time": "2026-11-07T00:00Z",
      "team": "BOS",
@@ -983,12 +997,12 @@
      "time": "2026-11-07T00:30Z",
      "team": "PHI",
      "player": "Adem Bona",
-     "status": "Doubtful",
+     "status": "Out",
      "reason": "Cervical Spine Sprain",
      "new": true,
-     "was": "",
+     "was": "Doubtful",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:42 PM",
      "min": 17.0,
      "benefits": [
       {
@@ -1056,26 +1070,15 @@
      "time": "2026-11-07T00:30Z",
      "team": "CLE",
      "player": "Tyrese Proctor",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Left Ankle Sprain",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:42 PM",
      "min": 19.7,
-     "benefits": [
-      {
-       "player": "Craig Porter Jr.",
-       "plus": 5.5,
-       "min": 17.9
-      },
-      {
-       "player": "James Harden",
-       "plus": 4.1,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "MIN at NOP",
@@ -1306,8 +1309,13 @@
      "benefits": [
       {
        "player": "Carlton Carrington",
-       "min": 24.1,
+       "min": 26.0,
        "recent": 19.3
+      },
+      {
+       "player": "Will Riley",
+       "min": 9.2,
+       "recent": 6.0
       }
      ],
      "estimate": false
@@ -11582,12 +11590,12 @@
   {
    "team": "ATL",
    "starters": "Onyeka Okongwu (29), Nickeil Alexander-Walker (30), Dyson Daniels (30), Luguentz Dort (25), CJ McCollum (27)",
-   "bench": "Jalen Johnson (33), Aaron Wiggins (26), Kingston Flemings (21), Zuby Ejiofor (10), Corey Kispert (8), RayJ Dennis (8)",
+   "bench": "Aaron Wiggins (26), Kingston Flemings (21), Zuby Ejiofor (10), Corey Kispert (8)",
    "backup_c": "Jock Landale",
    "coach": "Quin Snyder",
    "notes": "All five starters are expected to play 30+ minutes. If Jalen Johnson sits, his usage scatters to McCollum, Alexander-Walker and possibly Flemings. If Okongwu sits, Landale starts and plays 30+ minutes. The team has 14 back-to-backs.",
    "source": "LO-1018",
-   "out": "Asa Newell, Jock Landale",
+   "out": "Asa Newell, Jalen Johnson, Jock Landale, RayJ Dennis",
    "depth_through": "2026-11-04",
    "games": 9
   },
@@ -11725,13 +11733,13 @@
   },
   {
    "team": "WAS",
-   "starters": "Trae Young (36), Kyshawn George (33), Anthony Davis (33), AJ Dybantsa (30), Alex Sarr (25)",
-   "bench": "Bilal Coulibaly (27), Bub Carrington (20), Deandre Ayton (15), Tre Johnson (20)",
+   "starters": "Trae Young (36), Kyshawn George (33), AJ Dybantsa (30), Alex Sarr (25), Deandre Ayton (15)",
+   "bench": "Bilal Coulibaly (27), Bub Carrington (20), Tre Johnson (20)",
    "backup_c": "Deandre Ayton",
    "coach": "Brian Keefe",
    "notes": "Washington should be a much better team. Sarr's usage and blocks should drop next to Davis. Sarr will likely be ready for opening night.",
    "source": "LO-1018",
-   "out": "Felix Okpara, Justin Champagnie, Reece Beekman",
+   "out": "Anthony Davis, Felix Okpara, Justin Champagnie, Reece Beekman",
    "depth_through": "2026-11-04",
    "games": 8
   },
