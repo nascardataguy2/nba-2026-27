@@ -2,7 +2,7 @@
  "updated": "2026-11-06",
  "brief": {
   "date": "2026-11-06",
-  "updated": "12:41 PM ET",
+  "updated": "2:37 PM ET",
   "games": 9,
   "pending": [],
   "first_report": "5:39 AM",
@@ -57,11 +57,12 @@
     "slate": "main",
     "ou": 207.5,
     "fav": "BOS",
-    "line": 8.5,
-    "away_pts": 108.0,
-    "home_pts": 99.5,
+    "line": 9.5,
+    "away_pts": 108.5,
+    "home_pts": 99.0,
     "tags": [
-     "Lowest total"
+     "Lowest total",
+     "Blowout risk"
     ],
     "teams": {
      "BOS": {
@@ -69,20 +70,20 @@
       "q": []
      },
      "CHA": {
-      "out": [],
-      "q": [
+      "out": [
        {
         "player": "Moussa Diabate",
-        "min": 26.6
+        "min": 27.0
        },
        {
         "player": "Dennis Schroder",
-        "min": 25.3
+        "min": 26.0
        }
-      ]
+      ],
+      "q": []
      }
     },
-    "key": "Jayson Tatum has the top projection in this game at 47.2 DK points."
+    "key": "Moussa Diabate and Dennis Schroder are out, so Brandon Miller and Sion James should play more than usual."
    },
    {
     "away": "PHI",
@@ -137,26 +138,27 @@
     "home": "NOP",
     "time": "2026-11-07T01:00Z",
     "slate": "main",
-    "ou": 230.5,
+    "ou": 231.5,
     "fav": "MIN",
     "line": 3.5,
-    "away_pts": 117.0,
-    "home_pts": 113.5,
-    "tags": [],
+    "away_pts": 117.5,
+    "home_pts": 114.0,
+    "tags": [
+     "Highest total"
+    ],
     "teams": {
      "MIN": {
       "out": [
        {
         "player": "Anthony Edwards",
         "min": 34.0
-       }
-      ],
-      "q": [
+       },
        {
         "player": "Terrence Shannon Jr.",
-        "min": 20.0
+        "min": 21.7
        }
-      ]
+      ],
+      "q": []
      },
      "NOP": {
       "out": [
@@ -168,17 +170,17 @@
       "q": []
      }
     },
-    "key": "LaMelo Ball has the top projection in this game at 37.9 DK points."
+    "key": "Anthony Edwards and Terrence Shannon Jr. are out, so Jonathan Kuminga and Jaden McDaniels should play more than usual."
    },
    {
     "away": "TOR",
     "home": "MIL",
     "time": "2026-11-07T01:00Z",
     "slate": "main",
-    "ou": 229.5,
+    "ou": 228.5,
     "fav": "TOR",
-    "line": 6.5,
-    "away_pts": 118.0,
+    "line": 5.5,
+    "away_pts": 117.0,
     "home_pts": 111.5,
     "tags": [],
     "teams": {
@@ -193,6 +195,10 @@
        {
         "player": "Scottie Barnes",
         "min": 34.5
+       },
+       {
+        "player": "Immanuel Quickley",
+        "min": 33.2
        }
       ]
      },
@@ -201,18 +207,18 @@
       "q": []
      }
     },
-    "key": "Scottie Barnes has the top projection in this game at 48.3 DK points."
+    "key": "Scottie Barnes has the top projection in this game at 48.5 DK points."
    },
    {
     "away": "UTA",
     "home": "DAL",
     "time": "2026-11-07T01:00Z",
     "slate": "main",
-    "ou": 227.5,
+    "ou": 226.5,
     "fav": "DAL",
     "line": 7.5,
-    "away_pts": 110.0,
-    "home_pts": 117.5,
+    "away_pts": 109.5,
+    "home_pts": 117.0,
     "tags": [],
     "teams": {
      "UTA": {
@@ -245,11 +251,11 @@
     "home": "MEM",
     "time": "2026-11-07T01:00Z",
     "slate": "main",
-    "ou": 224.5,
+    "ou": 223.5,
     "fav": "OKC",
     "line": 4.5,
-    "away_pts": 114.5,
-    "home_pts": 110.0,
+    "away_pts": 114.0,
+    "home_pts": 109.5,
     "tags": [],
     "teams": {
      "OKC": {
@@ -326,19 +332,20 @@
       ]
      }
     },
-    "key": "Luka Doncic has the top projection in this game at 57.3 DK points."
+    "key": "Luka Doncic has the top projection in this game at 57.4 DK points."
    },
    {
     "away": "SAS",
     "home": "SAC",
     "time": "2026-11-07T03:00Z",
     "slate": "late",
-    "ou": 229.5,
+    "ou": 231.5,
     "fav": "SAS",
     "line": 16.5,
-    "away_pts": 123.0,
-    "home_pts": 106.5,
+    "away_pts": 124.0,
+    "home_pts": 107.5,
     "tags": [
+     "Highest total",
      "Blowout risk"
     ],
     "teams": {
@@ -361,6 +368,70 @@
   ],
   "changed": [
    {
+    "player": "Terrence Shannon Jr.",
+    "team": "MIN",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "2:39 PM"
+   },
+   {
+    "player": "Kyrie Irving",
+    "team": "DAL",
+    "status": "Probable",
+    "was": "",
+    "why": "Illness",
+    "time": "2:39 PM"
+   },
+   {
+    "player": "Immanuel Quickley",
+    "team": "TOR",
+    "status": "Questionable",
+    "was": "",
+    "why": "",
+    "time": "2:39 PM"
+   },
+   {
+    "player": "Jakob Poeltl",
+    "team": "TOR",
+    "status": "Probable",
+    "was": "",
+    "why": "Left Shoulder Bursitis",
+    "time": "2:39 PM"
+   },
+   {
+    "player": "Trey Murphy III",
+    "team": "NOP",
+    "status": "Available",
+    "was": "Probable",
+    "why": "",
+    "time": "2:39 PM"
+   },
+   {
+    "player": "Terrence Shannon Jr",
+    "team": "MIN",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Hip Contusion",
+    "time": "2:39 PM"
+   },
+   {
+    "player": "Dennis Schroder",
+    "team": "CHA",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Soreness",
+    "time": "2:39 PM"
+   },
+   {
+    "player": "Moussa Diabate",
+    "team": "CHA",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "2:39 PM"
+   },
+   {
     "player": "Kyle Anderson",
     "team": "TOR",
     "status": "Questionable",
@@ -375,25 +446,99 @@
     "was": "",
     "why": "-",
     "time": "12:42 PM"
-   },
-   {
-    "player": "Christian Anderson",
-    "team": "CHA",
-    "status": "Available",
-    "was": "Out",
-    "why": "-",
-    "time": "12:42 PM"
-   },
-   {
-    "player": "Payton Pritchard",
-    "team": "BOS",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Right Eye Abrasion",
-    "time": "12:42 PM"
    }
   ],
   "sits": [
+   {
+    "team": "MIN",
+    "outs": [
+     {
+      "player": "Anthony Edwards",
+      "min": 34.0,
+      "note": "Edwards is out after knee surgery, and the show said Minnesota's added usage goes mainly to Ayo Dosunmu and Jonathan Kuminga. He has not played since Oct. 26.",
+      "new": false
+     },
+     {
+      "player": "Terrence Shannon Jr.",
+      "min": 21.7,
+      "note": "Terrence Shannon Jr. has missed Minnesota's last two games, and the show suggested Bones Hyland gains value if he sits again.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 55.7,
+    "benefits": [
+     {
+      "player": "Jonathan Kuminga",
+      "plus": 6.0,
+      "recent": 27.0,
+      "min": 33.0,
+      "dk": 34.1,
+      "salary": 6300
+     },
+     {
+      "player": "Jaden McDaniels",
+      "plus": 3.2,
+      "recent": 32.0,
+      "min": 35.2,
+      "dk": 33.5,
+      "salary": 6500
+     },
+     {
+      "player": "Ayo Dosunmu",
+      "plus": 2.8,
+      "recent": 34.0,
+      "min": 36.8,
+      "dk": 37.4,
+      "salary": 6700
+     }
+    ]
+   },
+   {
+    "team": "CHA",
+    "outs": [
+     {
+      "player": "Moussa Diabate",
+      "min": 27.0,
+      "note": "The show said Moussa Diabate is listed as questionable for Friday.",
+      "new": true
+     },
+     {
+      "player": "Dennis Schroder",
+      "min": 26.0,
+      "note": "The show said Dennis Schroder is listed as questionable for Friday. He played 20 minutes off the bench on Wednesday.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 53.0,
+    "benefits": [
+     {
+      "player": "Brandon Miller",
+      "plus": 9.2,
+      "recent": 30.0,
+      "min": 39.2,
+      "dk": 44.3,
+      "salary": 8100
+     },
+     {
+      "player": "Sion James",
+      "plus": 9.1,
+      "recent": 23.3,
+      "min": 32.4,
+      "dk": 19.9,
+      "salary": 4200
+     },
+     {
+      "player": "Coby White",
+      "plus": 7.9,
+      "recent": 17.0,
+      "min": 24.9,
+      "dk": 23.6,
+      "salary": 6000
+     }
+    ]
+   },
    {
     "team": "MEM",
     "outs": [
@@ -435,7 +580,7 @@
       "plus": 4.4,
       "recent": 1.7,
       "min": 6.1,
-      "dk": 4.4,
+      "dk": 4.3,
       "salary": 3000
      }
     ]
@@ -481,7 +626,7 @@
       "plus": 3.2,
       "recent": 11.7,
       "min": 14.9,
-      "dk": 14.3,
+      "dk": 14.2,
       "salary": 4300
      },
      {
@@ -491,29 +636,6 @@
       "min": 10.4,
       "dk": 10.5,
       "salary": 4500
-     }
-    ]
-   },
-   {
-    "team": "WAS",
-    "outs": [
-     {
-      "player": "Justin Champagnie",
-      "min": 17.7,
-      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 17.7,
-    "benefits": [
-     {
-      "player": "Carlton Carrington",
-      "plus": 4.8,
-      "recent": 19.3,
-      "min": 24.1,
-      "dk": 17.7,
-      "salary": 4000
      }
     ]
    }
@@ -613,14 +735,14 @@
    {
     "player": "Dylan Harper",
     "team": "SAS",
-    "own": 42.0,
+    "own": 41.9,
     "dk": 37.5,
     "salary": 6700
    },
    {
     "player": "Keldon Johnson",
     "team": "SAS",
-    "own": 40.5,
+    "own": 40.7,
     "dk": 22.4,
     "salary": 3900
    },
@@ -628,31 +750,31 @@
     "player": "Deni Avdija",
     "team": "POR",
     "own": 39.8,
-    "dk": 45.1,
+    "dk": 45.2,
     "salary": 8500
    }
   ],
   "leverage": [
    {
-    "player": "Aday Mara",
-    "team": "OKC",
-    "own": 9.6,
-    "dk": 23.5,
-    "salary": 4600
+    "player": "Brandon Miller",
+    "team": "CHA",
+    "own": 5.7,
+    "dk": 44.3,
+    "salary": 8100
    },
    {
-    "player": "Alex Sarr",
-    "team": "WAS",
-    "own": 9.8,
-    "dk": 25.8,
-    "salary": 5100
+    "player": "Royce O'Neale",
+    "team": "CHA",
+    "own": 3.2,
+    "dk": 22.3,
+    "salary": 4100
    },
    {
-    "player": "Neemias Queta",
-    "team": "BOS",
-    "own": 4.0,
-    "dk": 25.0,
-    "salary": 5000
+    "player": "Ryan Kalkbrenner",
+    "team": "CHA",
+    "own": 1.8,
+    "dk": 20.1,
+    "salary": 3900
    }
   ],
   "last": {
@@ -726,10 +848,62 @@
    ]
   },
   "injuries": {
-   "report": "12:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_12_30PM.pdf",
+   "report": "02:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_02_30PM.pdf",
    "pending": [],
    "rows": [
+    {
+     "game": "BOS at CHA",
+     "time": "2026-11-07T00:00Z",
+     "team": "CHA",
+     "player": "Moussa Diabate",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "2:39 PM",
+     "min": 27.0,
+     "benefits": [
+      {
+       "player": "Brandon Miller",
+       "min": 39.2,
+       "recent": 30.0
+      },
+      {
+       "player": "Sion James",
+       "min": 32.4,
+       "recent": 23.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "BOS at CHA",
+     "time": "2026-11-07T00:00Z",
+     "team": "CHA",
+     "player": "Dennis Schroder",
+     "status": "Out",
+     "reason": "Left Soreness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "2:39 PM",
+     "min": 26.0,
+     "benefits": [
+      {
+       "player": "Brandon Miller",
+       "min": 39.2,
+       "recent": 30.0
+      },
+      {
+       "player": "Sion James",
+       "min": 32.4,
+       "recent": 23.3
+      }
+     ],
+     "estimate": false
+    },
     {
      "game": "WAS at ATL",
      "time": "2026-11-07T00:00Z",
@@ -792,58 +966,6 @@
        "player": "Luguentz Dort",
        "plus": 7.2,
        "min": 36.0
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "BOS at CHA",
-     "time": "2026-11-07T00:00Z",
-     "team": "CHA",
-     "player": "Moussa Diabate",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 27.0,
-     "benefits": [
-      {
-       "player": "Ryan Kalkbrenner",
-       "plus": 10.1,
-       "min": 28.5
-      },
-      {
-       "player": "Naz Reid",
-       "plus": 5.1,
-       "min": 36.0
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "BOS at CHA",
-     "time": "2026-11-07T00:00Z",
-     "team": "CHA",
-     "player": "Dennis Schroder",
-     "status": "Questionable",
-     "reason": "Left Soreness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 26.0,
-     "benefits": [
-      {
-       "player": "Grayson Allen",
-       "plus": 10.4,
-       "min": 36.0
-      },
-      {
-       "player": "Coby White",
-       "plus": 9.0,
-       "min": 27.8
       }
      ],
      "estimate": true
@@ -978,6 +1100,32 @@
      "estimate": true
     },
     {
+     "game": "MIN at NOP",
+     "time": "2026-11-07T01:00Z",
+     "team": "MIN",
+     "player": "Terrence Shannon Jr",
+     "status": "Out",
+     "reason": "Left Hip Contusion",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "2:39 PM",
+     "min": 21.7,
+     "benefits": [
+      {
+       "player": "Jonathan Kuminga",
+       "min": 33.0,
+       "recent": 27.0
+      },
+      {
+       "player": "Jaden McDaniels",
+       "min": 35.2,
+       "recent": 32.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "OKC at MEM",
      "time": "2026-11-07T01:00Z",
      "team": "MEM",
@@ -1012,39 +1160,34 @@
      "min": 35.3,
      "benefits": [
       {
+       "player": "Jamal Shead",
+       "plus": 7.1,
+       "min": 30.3
+      },
+      {
        "player": "Ja'Kobe Walter",
        "plus": 5.6,
        "min": 36.0
-      },
-      {
-       "player": "Jamal Shead",
-       "plus": 5.5,
-       "min": 28.7
       }
      ],
      "estimate": true
     },
     {
-     "game": "MIN at NOP",
+     "game": "TOR at MIL",
      "time": "2026-11-07T01:00Z",
-     "team": "MIN",
-     "player": "Terrence Shannon Jr",
+     "team": "TOR",
+     "player": "Immanuel Quickley",
      "status": "Questionable",
-     "reason": "Left Hip Contusion",
+     "reason": "",
      "new": true,
-     "was": "Out",
+     "was": "",
      "known": true,
-     "changed_at": "",
-     "min": 21.7,
+     "changed_at": "2:39 PM",
+     "min": 34.3,
      "benefits": [
       {
-       "player": "Jaylen Clark",
-       "plus": 4.0,
-       "min": 21.9
-      },
-      {
-       "player": "Jaden McDaniels",
-       "plus": 3.8,
+       "player": "Jamal Shead",
+       "plus": 12.8,
        "min": 36.0
       }
      ],
@@ -1066,17 +1209,32 @@
      "estimate": false
     },
     {
-     "game": "MIN at NOP",
+     "game": "UTA at DAL",
      "time": "2026-11-07T01:00Z",
-     "team": "NOP",
-     "player": "Trey Murphy III",
+     "team": "DAL",
+     "player": "Kyrie Irving",
      "status": "Probable",
-     "reason": "",
+     "reason": "Illness",
      "new": true,
-     "was": "Out",
+     "was": "",
      "known": true,
-     "changed_at": "",
-     "min": 33.7,
+     "changed_at": "2:39 PM",
+     "min": 32.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "TOR at MIL",
+     "time": "2026-11-07T01:00Z",
+     "team": "TOR",
+     "player": "Jakob Poeltl",
+     "status": "Probable",
+     "reason": "Left Shoulder Bursitis",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "2:39 PM",
+     "min": 17.3,
      "benefits": [],
      "estimate": false
     },
@@ -1092,6 +1250,21 @@
      "known": true,
      "changed_at": "",
      "min": 16.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "MIN at NOP",
+     "time": "2026-11-07T01:00Z",
+     "team": "NOP",
+     "player": "Trey Murphy III",
+     "status": "Available",
+     "reason": "",
+     "new": true,
+     "was": "Probable",
+     "known": true,
+     "changed_at": "2:39 PM",
+     "min": 33.7,
      "benefits": [],
      "estimate": false
     },
@@ -1199,7 +1372,18 @@
      "known": true,
      "changed_at": "",
      "min": 34.0,
-     "benefits": [],
+     "benefits": [
+      {
+       "player": "Jonathan Kuminga",
+       "min": 33.0,
+       "recent": 27.0
+      },
+      {
+       "player": "Jaden McDaniels",
+       "min": 35.2,
+       "recent": 32.0
+      }
+     ],
      "estimate": false
     },
     {
@@ -11463,24 +11647,24 @@
   {
    "team": "MIN",
    "starters": "Ayo Dosunmu (31), Jaden McDaniels (33), Jonathan Kuminga (31), LaMelo Ball (27), Rudy Gobert (30)",
-   "bench": "Jaylen Clark (13), Joan Beringer (18), Trey Lyles (17), Terrence Shannon Jr. (22), Bones Hyland (12)",
+   "bench": "Jaylen Clark (13), Joan Beringer (18), Trey Lyles (17), Bones Hyland (12)",
    "backup_c": "Joan Beringer",
    "coach": "Chris Finch",
    "notes": "Kuminga signed and is expected to start. Naz Reid and Julius Randle are gone. If Gobert sits, Beringer is the backup center to watch. Beringer projects at about 18 minutes behind Gobert. Minnesota plays only 2 games in the week of March 15, which falls in most fantasy playoffs.",
    "source": "LO-1019b",
-   "out": "Anthony Edwards",
+   "out": "Anthony Edwards, Terrence Shannon Jr.",
    "depth_through": "2026-11-04",
    "games": 9
   },
   {
    "team": "CHA",
-   "starters": "Naz Reid (30), Brandon Miller (33), Moussa Diabaté (29), Coby White (17), Sion James (25)",
-   "bench": "Dennis Schroder (30), Grayson Allen (26), Royce O’Neale (18), Ryan Kalkbrenner (17), Tidjane Salaun (14), Hannes Steinbach (8), Liam McNeeley (7)",
+   "starters": "Naz Reid (30), Brandon Miller (33), Coby White (17), Sion James (25), Grayson Allen (26)",
+   "bench": "Royce O’Neale (18), Ryan Kalkbrenner (17), Tidjane Salaun (14), Hannes Steinbach (8), Liam McNeeley (7), Christian Anderson (10)",
    "backup_c": "Ryan Kalkbrenner",
    "coach": "",
    "notes": "LaMelo Ball and Miles Bridges are gone, and the ball-handling is split among White, Knueppel, Miller and Schroder. Knueppel and Grant Williams have hamstring injuries and are re-evaluated in week one. Charlotte traded Buddy Hield to Chicago for Rob Dillingham to save money and still has to cut three players. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). Charlotte has 13 back-to-backs, the league minimum.",
    "source": "LO-1018",
-   "out": "Kon Knueppel, PJ Hall",
+   "out": "Dennis Schroder, Kon Knueppel, Moussa Diabaté, PJ Hall",
    "depth_through": "2026-11-04",
    "games": 9
   },
