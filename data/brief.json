@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updated": "3:54 PM ET",
+ "updated": "4:33 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:39 AM",
@@ -322,12 +322,7 @@
     },
     "LAL": {
      "out": [],
-     "q": [
-      {
-       "player": "Sandro Mamukelashvili",
-       "min": 21.3
-      }
-     ]
+     "q": []
     }
    },
    "key": "Luka Doncic has the top projection in this game at 57.4 DK points."
@@ -358,13 +353,34 @@
        "min": 27.0
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "De'Andre Hunter",
+       "min": 32.8
+      }
+     ]
     }
    },
    "key": "Keegan Murray is out, so Daeqwon Plowden should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "4:34 PM"
+  },
+  {
+   "player": "Sandro Mamukelashvili",
+   "team": "LAL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "4:34 PM"
+  },
   {
    "player": "Terrence Shannon Jr.",
    "team": "MIN",
@@ -428,22 +444,6 @@
    "was": "Questionable",
    "why": "",
    "time": "2:39 PM"
-  },
-  {
-   "player": "Kyle Anderson",
-   "team": "TOR",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "12:42 PM"
-  },
-  {
-   "player": "Hannes Steinbach",
-   "team": "CHA",
-   "status": "Available",
-   "was": "",
-   "why": "-",
-   "time": "12:42 PM"
   }
  ],
  "sits": [
@@ -824,8 +824,8 @@
   ]
  },
  "injuries": {
-  "report": "03:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_03_45PM.pdf",
+  "report": "04:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_04_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1249,30 +1249,45 @@
     "estimate": false
    },
    {
-    "game": "POR at LAL",
+    "game": "SAS at SAC",
     "time": "2026-11-07T03:00Z",
-    "team": "LAL",
-    "player": "Sandro Mamukelashvili",
+    "team": "SAC",
+    "player": "De'Andre Hunter",
     "status": "Questionable",
     "reason": "Illness",
     "new": true,
     "was": "",
     "known": true,
-    "changed_at": "",
-    "min": 23.7,
+    "changed_at": "4:34 PM",
+    "min": 35.3,
     "benefits": [
      {
-      "player": "Jake LaRavia",
-      "plus": 7.1,
-      "min": 29.7
+      "player": "Precious Achiuwa",
+      "plus": 9.8,
+      "min": 34.6
      },
      {
-      "player": "Matisse Thybulle",
-      "plus": 6.9,
-      "min": 28.8
+      "player": "Malik Monk",
+      "plus": 9.1,
+      "min": 32.2
      }
     ],
     "estimate": true
+   },
+   {
+    "game": "POR at LAL",
+    "time": "2026-11-07T03:00Z",
+    "team": "LAL",
+    "player": "Sandro Mamukelashvili",
+    "status": "Available",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "4:34 PM",
+    "min": 23.7,
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "WAS at ATL",
