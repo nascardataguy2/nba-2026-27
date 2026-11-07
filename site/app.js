@@ -787,7 +787,7 @@
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has);
       var box = function(key, lbl){ var st = nHeat(all, key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + nFmt(p, key) + '</div>'; };
       return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
-        '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 Sal ' + nFmt(p, 'sal') + ' \u00b7 Own ' + nFmt(p, 'own') + '</div>' +
+        '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 Sal ' + nFmt(p, 'sal') + (p.own != null ? ' \u00b7 Own ' + nFmt(p, 'own') : '') + '</div>' +
         '<div class="pjc-nums">' + box('dk', 'DK') + box('proj', 'Proj') + box('diff', '+/\u2212') + '<div class="pjc-n"' + (nHeat(all, 'min', p.min) ? ' style="' + nHeat(all, 'min', p.min) + '"' : '') + '><span>Min</span>' + (p.min == null ? '\u2013' : Math.round(p.min)) + '/' + nFmt(p, 'pmin') + '</div>' + box('val', 'Val') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['tpm','3pm'],['to','to']].map(function(x){ return '<b>' + nFmt(p, x[0]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
         (open ? noteHtml(noteBits(p.player), p.player) : '') + '</div>';

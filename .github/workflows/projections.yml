@@ -51,11 +51,13 @@ jobs:
           python-version: "3.12"
       - name: Install
         run: |
-          pip install pillow highspy numpy
+          pip install pillow highspy numpy scipy
           command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils > /dev/null) || echo "poppler install failed"
       - name: Results from last night
         run: |
           python3 scripts/results.py || echo "results failed"
+          python3 scripts/actual_own.py || echo "actual ownership failed"
+          python3 scripts/own_fit.py || echo "ownership refit failed"
           python3 scripts/season.py || echo "season failed"
           python3 scripts/timelines.py || echo "timelines failed"
           python3 scripts/wowy.py || echo "wowy failed"
