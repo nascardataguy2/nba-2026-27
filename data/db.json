@@ -2,7 +2,7 @@
  "updated": "2026-11-07",
  "brief": {
   "date": "2026-11-07",
-  "updated": "6:21 PM ET",
+  "updated": "6:39 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:38 AM",
@@ -41,7 +41,7 @@
       "q": []
      }
     },
-    "key": "Jalen Johnson has the top projection in this game at 44.4 DK points."
+    "key": "Jalen Johnson has the top projection in this game at 44.5 DK points."
    },
    {
     "away": "NYK",
@@ -104,16 +104,15 @@
      "WAS": {
       "out": [
        {
+        "player": "Anthony Davis",
+        "min": 32.7
+       },
+       {
         "player": "Justin Champagnie",
         "min": 17.7
        }
       ],
-      "q": [
-       {
-        "player": "Anthony Davis",
-        "min": 29.1
-       }
-      ]
+      "q": []
      },
      "OKC": {
       "out": [
@@ -137,7 +136,7 @@
       "q": []
      }
     },
-    "key": "Justin Champagnie is out, so Carlton Carrington should play more than usual."
+    "key": "Anthony Davis and Justin Champagnie are out, so Carlton Carrington and Kyshawn George should play more than usual."
    },
    {
     "away": "ORL",
@@ -226,6 +225,14 @@
   ],
   "changed": [
    {
+    "player": "Anthony Davis",
+    "team": "WAS",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Right Ankle Sprain",
+    "time": "6:40 PM"
+   },
+   {
     "player": "Jalen Johnson",
     "team": "ATL",
     "status": "Available",
@@ -296,14 +303,6 @@
     "was": "Out",
     "why": "Left Ankle Sprain",
     "time": "6:38 AM"
-   },
-   {
-    "player": "Gui Santos",
-    "team": "GSW",
-    "status": "Questionable",
-    "was": "Out",
-    "why": "Left Knee Tendinitis",
-    "time": "6:38 AM"
    }
   ],
   "sits": [
@@ -337,7 +336,7 @@
       "plus": 5.5,
       "recent": 8.3,
       "min": 13.8,
-      "dk": 17.2,
+      "dk": 17.4,
       "salary": 4000
      },
      {
@@ -380,8 +379,45 @@
       "plus": 3.2,
       "recent": 24.0,
       "min": 27.2,
-      "dk": 27.5,
+      "dk": 27.4,
       "salary": 5700
+     }
+    ]
+   },
+   {
+    "team": "WAS",
+    "outs": [
+     {
+      "player": "Anthony Davis",
+      "min": 32.7,
+      "note": "Anthony Davis did not play on Friday after turning his ankle on Wednesday. Washington plays Oklahoma City on Saturday on the second night of a back-to-back.",
+      "new": true
+     },
+     {
+      "player": "Justin Champagnie",
+      "min": 17.7,
+      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 50.4,
+    "benefits": [
+     {
+      "player": "Carlton Carrington",
+      "plus": 8.5,
+      "recent": 17.7,
+      "min": 26.2,
+      "dk": 17.8,
+      "salary": 3800
+     },
+     {
+      "player": "Kyshawn George",
+      "plus": 2.6,
+      "recent": 33.0,
+      "min": 35.6,
+      "dk": 29.9,
+      "salary": 5900
      }
     ]
    },
@@ -411,7 +447,7 @@
       "plus": 2.5,
       "recent": 31.0,
       "min": 33.5,
-      "dk": 29.1,
+      "dk": 29.4,
       "salary": 6300
      }
     ]
@@ -434,31 +470,8 @@
       "plus": 3.2,
       "recent": 9.7,
       "min": 12.9,
-      "dk": 12.9,
+      "dk": 13.1,
       "salary": 3700
-     }
-    ]
-   },
-   {
-    "team": "WAS",
-    "outs": [
-     {
-      "player": "Justin Champagnie",
-      "min": 17.7,
-      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 17.7,
-    "benefits": [
-     {
-      "player": "Carlton Carrington",
-      "plus": 5.4,
-      "recent": 17.7,
-      "min": 23.1,
-      "dk": 15.5,
-      "salary": 3800
      }
     ]
    }
@@ -551,53 +564,53 @@
    {
     "player": "Alex Sarr",
     "team": "WAS",
-    "own": 46.3,
-    "dk": 23.9,
+    "own": 46.7,
+    "dk": 27.0,
     "salary": 4800
    },
    {
     "player": "Anthony Black",
     "team": "ORL",
-    "own": 42.7,
-    "dk": 37.2,
+    "own": 40.7,
+    "dk": 37.4,
     "salary": 6400
-   },
-   {
-    "player": "Jamal Cain",
-    "team": "ORL",
-    "own": 34.0,
-    "dk": 17.0,
-    "salary": 3800
    },
    {
     "player": "Kyshawn George",
     "team": "WAS",
-    "own": 31.4,
-    "dk": 26.7,
+    "own": 39.5,
+    "dk": 29.9,
     "salary": 5900
+   },
+   {
+    "player": "Jamal Cain",
+    "team": "ORL",
+    "own": 35.2,
+    "dk": 17.1,
+    "salary": 3800
    }
   ],
   "leverage": [
    {
     "player": "Shai Gilgeous-Alexander",
     "team": "OKC",
-    "own": 9.9,
-    "dk": 59.7,
+    "own": 9.5,
+    "dk": 59.3,
     "salary": 10400
+   },
+   {
+    "player": "Bilal Coulibaly",
+    "team": "WAS",
+    "own": 3.3,
+    "dk": 20.8,
+    "salary": 3900
    },
    {
     "player": "Jalen Green",
     "team": "PHX",
-    "own": 3.0,
-    "dk": 31.9,
+    "own": 3.5,
+    "dk": 32.3,
     "salary": 6200
-   },
-   {
-    "player": "Devin Booker",
-    "team": "PHX",
-    "own": 5.4,
-    "dk": 41.8,
-    "salary": 8300
    }
   ],
   "last": {
@@ -694,8 +707,8 @@
    ]
   },
   "injuries": {
-   "report": "06:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_06_15PM.pdf",
+   "report": "06:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_06_30PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -729,6 +742,32 @@
      "estimate": false
     },
     {
+     "game": "WAS at OKC",
+     "time": "2026-11-08T01:00Z",
+     "team": "WAS",
+     "player": "Anthony Davis",
+     "status": "Out",
+     "reason": "Right Ankle Sprain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "6:40 PM",
+     "min": 32.7,
+     "benefits": [
+      {
+       "player": "Carlton Carrington",
+       "min": 26.2,
+       "recent": 17.7
+      },
+      {
+       "player": "Kyshawn George",
+       "min": 35.6,
+       "recent": 33.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "NYK at CLE",
      "time": "2026-11-08T01:00Z",
      "team": "CLE",
@@ -747,21 +786,6 @@
        "recent": 24.0
       }
      ],
-     "estimate": false
-    },
-    {
-     "game": "WAS at OKC",
-     "time": "2026-11-08T01:00Z",
-     "team": "WAS",
-     "player": "Anthony Davis",
-     "status": "Questionable",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "2:26 PM",
-     "min": 32.7,
-     "benefits": [],
      "estimate": false
     },
     {
@@ -1077,8 +1101,13 @@
      "benefits": [
       {
        "player": "Carlton Carrington",
-       "min": 23.1,
+       "min": 26.2,
        "recent": 17.7
+      },
+      {
+       "player": "Kyshawn George",
+       "min": 35.6,
+       "recent": 33.0
       }
      ],
      "estimate": false
@@ -11288,12 +11317,12 @@
   {
    "team": "WAS",
    "starters": "Kyshawn George (33), Trae Young (36), AJ Dybantsa (32), Alex Sarr (26), Deandre Ayton (16)",
-   "bench": "Anthony Davis (33), Bilal Coulibaly (26), Tre Johnson (21), Bub Carrington (19), Will Riley (5)",
+   "bench": "Bilal Coulibaly (26), Tre Johnson (21), Bub Carrington (19), Will Riley (5)",
    "backup_c": "Deandre Ayton",
    "coach": "Brian Keefe",
    "notes": "Washington should be a much better team. Sarr's usage and blocks should drop next to Davis. Sarr will likely be ready for opening night.",
    "source": "LO-1018",
-   "out": "Felix Okpara, Justin Champagnie, Reece Beekman",
+   "out": "Anthony Davis, Felix Okpara, Justin Champagnie, Reece Beekman",
    "depth_through": "2026-11-06",
    "games": 9
   },
