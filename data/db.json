@@ -2,12 +2,9 @@
  "updated": "2026-11-07",
  "brief": {
   "date": "2026-11-07",
-  "updated": "1:26 PM ET",
+  "updated": "2:26 PM ET",
   "games": 5,
-  "pending": [
-   "WAS",
-   "OKC"
-  ],
+  "pending": [],
   "first_report": "5:38 AM",
   "cards": [
    {
@@ -91,19 +88,18 @@
         "min": 30.0
        },
        {
+        "player": "Jaylin Williams",
+        "min": 22.0
+       },
+       {
         "player": "Cason Wallace",
         "min": 16.3
        }
       ],
-      "q": [
-       {
-        "player": "Jaylin Williams",
-        "min": 23.4
-       }
-      ]
+      "q": []
      }
     },
-    "key": "Justin Champagnie is out, so Carlton Carrington should play more than usual."
+    "key": "Jalen Williams and Chet Holmgren are out, so Kenrich Williams and Ajay Mitchell should play more than usual."
    },
    {
     "away": "NYK",
@@ -164,6 +160,10 @@
      "ORL": {
       "out": [
        {
+        "player": "Desmond Bane",
+        "min": 36.0
+       },
+       {
         "player": "Paolo Banchero",
         "min": 33.5
        },
@@ -192,7 +192,7 @@
       ]
      }
     },
-    "key": "Paolo Banchero and Jalen Suggs are out, so Nikola Vucevic should play more than usual."
+    "key": "Desmond Bane and Paolo Banchero are out, so Franz Wagner and Nikola Vucevic should play more than usual."
    },
    {
     "away": "HOU",
@@ -229,6 +229,22 @@
    }
   ],
   "changed": [
+   {
+    "player": "Desmond Bane",
+    "team": "ORL",
+    "status": "Out",
+    "was": "",
+    "why": "Illness",
+    "time": "2:26 PM"
+   },
+   {
+    "player": "Anthony Davis",
+    "team": "WAS",
+    "status": "Questionable",
+    "was": "Out",
+    "why": "Right Ankle Sprain",
+    "time": "2:26 PM"
+   },
    {
     "player": "Jalen Johnson",
     "team": "ATL",
@@ -295,6 +311,57 @@
    }
   ],
   "sits": [
+   {
+    "team": "ORL",
+    "outs": [
+     {
+      "player": "Desmond Bane",
+      "min": 36.0,
+      "note": "Ruled out tonight (illness).",
+      "new": true
+     },
+     {
+      "player": "Paolo Banchero",
+      "min": 33.5,
+      "note": "The show noted that Orlando is still without Paolo Banchero and Jalen Suggs, and it said things will be tough for the Magic until both return. Banchero did not appear in Orlando's Nov. 5 box score.",
+      "new": false
+     },
+     {
+      "player": "Jalen Suggs",
+      "min": 33.3,
+      "note": "Jalen Suggs remains out for Orlando and did not play on Nov. 5. The show said Anthony Black should still play sixth-man minutes or close to it once Suggs returns.",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 102.8,
+    "benefits": [
+     {
+      "player": "Franz Wagner",
+      "plus": 7.6,
+      "recent": 34.0,
+      "min": 41.6,
+      "dk": 50.7,
+      "salary": 8700
+     },
+     {
+      "player": "Nikola Vucevic",
+      "plus": 7.5,
+      "recent": 8.3,
+      "min": 15.8,
+      "dk": 17.7,
+      "salary": 4000
+     },
+     {
+      "player": "Wendell Carter Jr.",
+      "plus": 7.3,
+      "recent": 29.0,
+      "min": 36.3,
+      "dk": 34.7,
+      "salary": 6500
+     }
+    ]
+   },
    {
     "team": "CLE",
     "outs": [
@@ -378,31 +445,59 @@
     ]
    },
    {
-    "team": "ORL",
+    "team": "OKC",
     "outs": [
      {
-      "player": "Paolo Banchero",
-      "min": 33.5,
-      "note": "The show noted that Orlando is still without Paolo Banchero and Jalen Suggs, and it said things will be tough for the Magic until both return. Banchero did not appear in Orlando's Nov. 5 box score.",
+      "player": "Jalen Williams",
+      "min": 31.7,
+      "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
       "new": false
      },
      {
-      "player": "Jalen Suggs",
-      "min": 33.3,
-      "note": "Jalen Suggs remains out for Orlando and did not play on Nov. 5. The show said Anthony Black should still play sixth-man minutes or close to it once Suggs returns.",
+      "player": "Chet Holmgren",
+      "min": 30.0,
+      "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
+      "new": false
+     },
+     {
+      "player": "Jaylin Williams",
+      "min": 22.0,
+      "note": "Jaylin Williams did not play on Wednesday or Friday, and the show expects him to remain out on Saturday.",
+      "new": false
+     },
+     {
+      "player": "Cason Wallace",
+      "min": 16.3,
+      "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
       "new": false
      }
     ],
     "new": false,
-    "lost": 66.8,
+    "lost": 100.0,
     "benefits": [
      {
-      "player": "Nikola Vucevic",
-      "plus": 4.1,
-      "recent": 8.3,
-      "min": 12.4,
-      "dk": 13.9,
-      "salary": 4000
+      "player": "Kenrich Williams",
+      "plus": 7.3,
+      "recent": 19.0,
+      "min": 26.3,
+      "dk": 23.5,
+      "salary": 4200
+     },
+     {
+      "player": "Ajay Mitchell",
+      "plus": 7.1,
+      "recent": 27.0,
+      "min": 34.1,
+      "dk": 38.3,
+      "salary": 6600
+     },
+     {
+      "player": "Alex Caruso",
+      "plus": 5.0,
+      "recent": 16.3,
+      "min": 21.3,
+      "dk": 21.5,
+      "salary": 4600
      }
     ]
    },
@@ -541,53 +636,53 @@
    {
     "player": "James Harden",
     "team": "CLE",
-    "own": 39.7,
+    "own": 39.6,
     "dk": 48.0,
     "salary": 7100
    },
    {
     "player": "Donovan Mitchell",
     "team": "CLE",
-    "own": 39.6,
+    "own": 39.2,
     "dk": 54.0,
     "salary": 8100
    },
    {
     "player": "Evan Mobley",
     "team": "CLE",
-    "own": 39.4,
+    "own": 39.2,
     "dk": 52.1,
     "salary": 7800
    },
    {
-    "player": "Alperen Sengun",
-    "team": "HOU",
+    "player": "Shai Gilgeous-Alexander",
+    "team": "OKC",
     "own": 37.4,
-    "dk": 48.8,
-    "salary": 8900
+    "dk": 61.2,
+    "salary": 10400
    }
   ],
   "leverage": [
    {
     "player": "Peyton Watson",
     "team": "CLE",
-    "own": 9.7,
+    "own": 8.1,
     "dk": 29.7,
     "salary": 5700
    },
    {
-    "player": "OG Anunoby",
-    "team": "NYK",
+    "player": "Jared McCain",
+    "team": "OKC",
     "own": 9.8,
-    "dk": 30.5,
-    "salary": 6300
+    "dk": 27.5,
+    "salary": 5500
    },
    {
-    "player": "Jalen Brunson",
+    "player": "OG Anunoby",
     "team": "NYK",
     "own": 7.5,
-    "dk": 39.4,
-    "salary": 8200
+    "dk": 30.5,
+    "salary": 6300
    }
   ],
   "last": {
@@ -684,12 +779,9 @@
    ]
   },
   "injuries": {
-   "report": "01:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_01_15PM.pdf",
-   "pending": [
-    "WAS",
-    "OKC"
-   ],
+   "report": "02:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_02_15PM.pdf",
+   "pending": [],
    "rows": [
     {
      "game": "BKN at ATL",
@@ -754,6 +846,47 @@
        "player": "Evan Mobley",
        "min": 42.0,
        "recent": 32.7
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "WAS at OKC",
+     "time": "2026-11-08T01:00Z",
+     "team": "WAS",
+     "player": "Anthony Davis",
+     "status": "Questionable",
+     "reason": "Right Ankle Sprain",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "2:26 PM",
+     "min": 32.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "ORL at GSW",
+     "time": "2026-11-08T01:30Z",
+     "team": "ORL",
+     "player": "Desmond Bane",
+     "status": "Out",
+     "reason": "Illness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "2:26 PM",
+     "min": 36.0,
+     "benefits": [
+      {
+       "player": "Franz Wagner",
+       "min": 41.6,
+       "recent": 34.0
+      },
+      {
+       "player": "Nikola Vucevic",
+       "min": 15.8,
+       "recent": 8.3
       }
      ],
      "estimate": false
@@ -923,6 +1056,32 @@
      "estimate": false
     },
     {
+     "game": "WAS at OKC",
+     "time": "2026-11-08T01:00Z",
+     "team": "OKC",
+     "player": "Jalen Williams",
+     "status": "Out",
+     "reason": "Left Ankle Surgery",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 31.7,
+     "benefits": [
+      {
+       "player": "Kenrich Williams",
+       "min": 26.3,
+       "recent": 19.0
+      },
+      {
+       "player": "Ajay Mitchell",
+       "min": 34.1,
+       "recent": 27.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "NYK at CLE",
      "time": "2026-11-08T01:00Z",
      "team": "NYK",
@@ -939,6 +1098,58 @@
        "player": "Jose Alvarado",
        "min": 12.9,
        "recent": 9.7
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "WAS at OKC",
+     "time": "2026-11-08T01:00Z",
+     "team": "OKC",
+     "player": "Chet Holmgren",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 30.0,
+     "benefits": [
+      {
+       "player": "Kenrich Williams",
+       "min": 26.3,
+       "recent": 19.0
+      },
+      {
+       "player": "Ajay Mitchell",
+       "min": 34.1,
+       "recent": 27.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "WAS at OKC",
+     "time": "2026-11-08T01:00Z",
+     "team": "OKC",
+     "player": "Jaylin Williams",
+     "status": "Out",
+     "reason": "Low Back Spasms",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 22.0,
+     "benefits": [
+      {
+       "player": "Kenrich Williams",
+       "min": 26.3,
+       "recent": 19.0
+      },
+      {
+       "player": "Ajay Mitchell",
+       "min": 34.1,
+       "recent": 27.0
       }
      ],
      "estimate": false
@@ -996,6 +1207,53 @@
      "estimate": false
     },
     {
+     "game": "WAS at OKC",
+     "time": "2026-11-08T01:00Z",
+     "team": "WAS",
+     "player": "Justin Champagnie",
+     "status": "Out",
+     "reason": "Right Foot Surgery",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 17.7,
+     "benefits": [
+      {
+       "player": "Carlton Carrington",
+       "min": 23.1,
+       "recent": 17.7
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "WAS at OKC",
+     "time": "2026-11-08T01:00Z",
+     "team": "OKC",
+     "player": "Cason Wallace",
+     "status": "Out",
+     "reason": "Left Shoulder Surgery",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 16.3,
+     "benefits": [
+      {
+       "player": "Kenrich Williams",
+       "min": 26.3,
+       "recent": 19.0
+      },
+      {
+       "player": "Ajay Mitchell",
+       "min": 34.1,
+       "recent": 27.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "ORL at GSW",
      "time": "2026-11-08T01:30Z",
      "team": "ORL",
@@ -1009,8 +1267,13 @@
      "min": 33.5,
      "benefits": [
       {
+       "player": "Franz Wagner",
+       "min": 41.6,
+       "recent": 34.0
+      },
+      {
        "player": "Nikola Vucevic",
-       "min": 12.4,
+       "min": 15.8,
        "recent": 8.3
       }
      ],
@@ -1030,8 +1293,13 @@
      "min": 33.3,
      "benefits": [
       {
+       "player": "Franz Wagner",
+       "min": 41.6,
+       "recent": 34.0
+      },
+      {
        "player": "Nikola Vucevic",
-       "min": 12.4,
+       "min": 15.8,
        "recent": 8.3
       }
      ],
@@ -1070,8 +1338,28 @@
      "status": "Out"
     },
     {
+     "player": "Reece Beekman",
+     "team": "WAS",
+     "status": "Out"
+    },
+    {
      "player": "Nae'Qwan Tomlin",
      "team": "CLE",
+     "status": "Out"
+    },
+    {
+     "player": "Tristan Vukcevic",
+     "team": "WAS",
+     "status": "Out"
+    },
+    {
+     "player": "Jamir Watkins",
+     "team": "WAS",
+     "status": "Out"
+    },
+    {
+     "player": "Thomas Sorber",
+     "team": "OKC",
      "status": "Out"
     },
     {
@@ -11028,7 +11316,7 @@
    "coach": "Ime Udoka",
    "notes": "Udoka plays his starters heavy minutes and is defense-first. Added guard depth means Amen Thompson plays less point guard. If VanVleet sits, Smart could start. If Durant or Jabari Smith sits, Eason could reach about 32 minutes. The team has 14 back-to-backs.",
    "source": "LO-1019b",
-   "out": "Bruce Thornton, Clint Capela, Steven Adams",
+   "out": "Clint Capela, Steven Adams",
    "depth_through": "2026-11-04",
    "games": 9
   },
@@ -11160,7 +11448,7 @@
    "coach": "Brian Keefe",
    "notes": "Washington should be a much better team. Sarr's usage and blocks should drop next to Davis. Sarr will likely be ready for opening night.",
    "source": "LO-1018",
-   "out": "",
+   "out": "Felix Okpara, Justin Champagnie, Reece Beekman",
    "depth_through": "2026-11-06",
    "games": 9
   },
@@ -11178,13 +11466,13 @@
   },
   {
    "team": "ORL",
-   "starters": "Franz Wagner (36), Desmond Bane (34), Wendell Carter Jr. (33), Jase Richardson (22), Anthony Black (29)",
-   "bench": "Tristan da Silva (29), Jamal Cain (17), Jevon Carter (14), Alex Morales (8), Nikola Vucevic (9)",
+   "starters": "Franz Wagner (36), Wendell Carter Jr. (33), Jase Richardson (22), Anthony Black (29), Jamal Cain (17)",
+   "bench": "Tristan da Silva (29), Jevon Carter (14), Alex Morales (8), Nikola Vucevic (9)",
    "backup_c": "Nikola Vucevic",
    "coach": "Sean Sweeney",
    "notes": "Vucevic arrived as a backup, not a starter.",
    "source": "LO-1018",
-   "out": "Jalen Suggs, Paolo Banchero",
+   "out": "Desmond Bane, Jalen Suggs, Paolo Banchero",
    "depth_through": "2026-11-05",
    "games": 8
   },
@@ -11299,12 +11587,12 @@
   {
    "team": "OKC",
    "starters": "Shai Gilgeous-Alexander (33), Ajay Mitchell (28), Isaiah Hartenstein (25), Kenrich Williams (18), Jared McCain (25)",
-   "bench": "Aday Mara (19), Jaylin Williams (18), Micah Peavy (16), Alex Caruso (19), Bennett Stirtz (17), Josh Dix (16)",
+   "bench": "Aday Mara (19), Micah Peavy (16), Alex Caruso (19), Bennett Stirtz (17), Josh Dix (16)",
    "backup_c": "Aday Mara",
    "coach": "",
    "notes": "OKC lost Aaron Wiggins, Isaiah Joe and Lu Dort this offseason. Sunday cost them Jalen Williams (lower left leg, taken off on a stretcher), Cason Wallace (left shoulder) and Jaylin Williams (right wrist); Ajay Mitchell had 18 points in 27 minutes off the bench.",
    "source": "LO-1019b",
-   "out": "Cason Wallace, Chet Holmgren, Jalen Williams",
+   "out": "Cason Wallace, Chet Holmgren, Jalen Williams, Jaylin Williams",
    "depth_through": "2026-11-06",
    "games": 9
   },
