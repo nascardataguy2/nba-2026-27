@@ -696,7 +696,7 @@
   var NT = null, NREQ = false;
   var NCOLS = [
     ['player','Player','t'], ['pos','Pos','p'], ['sal','Sal','n'], ['team','Team','t'], ['opp','Opp','t'],
-    ['dk','DK','n'], ['proj','Proj','n'], ['diff','+/\u2212','n'], ['min','Min','n'], ['pmin','Proj Min','n'], ['val','Val','n'],
+    ['dk','DK','n'], ['proj','Proj','n'], ['diff','+/\u2212','n'], ['min','Min','n'], ['pmin','Proj Min','n'], ['val','Val','n'], ['tagr','Tag','n'],
     ['pts','Pts','n'], ['reb','Reb','n'], ['ast','Ast','n'], ['stl','Stl','n'], ['blk','Blk','n'], ['tpm','3PM','n'], ['to','TO','n']
   ];
   var NH = {dk:1, proj:1, diff:1, min:1, pmin:1, val:1, pts:1, reb:1, ast:1, stl:1, blk:1, tpm:1, to:-1};
@@ -717,6 +717,7 @@
   function nFmt(p, k){
     var v = p[k];
     if (k === 'sal') return money(v);
+    if (k === 'tagr') return p.tag ? '<span class="nr-tag" title="' + p.tagt + '">' + p.tag + '</span>' : '';
     if (k === 'val') return v == null ? '\u2013' : v.toFixed(2) + 'x';
     if (k === 'own') return v == null ? '\u2013' : n1(v) + '%';
     if (k === 'diff') return v == null ? '\u2013' : (v > 0 ? '+' : v < 0 ? '\u2212' : '') + n1(Math.abs(v));
@@ -786,7 +787,7 @@
       var has = glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has);
       var box = function(key, lbl){ var st = nHeat(all, key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + nFmt(p, key) + '</div>'; };
-      return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
+      return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + (p.tag ? ' ' + nFmt(p, 'tagr') : '') + tags + '</div>' +
         '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 Sal ' + nFmt(p, 'sal') + '</div>' +
         '<div class="pjc-nums">' + box('dk', 'DK') + box('proj', 'Proj') + box('diff', '+/\u2212') + '<div class="pjc-n"' + (nHeat(all, 'min', p.min) ? ' style="' + nHeat(all, 'min', p.min) + '"' : '') + '><span>Min</span>' + (p.min == null ? '\u2013' : Math.round(p.min)) + '/' + nFmt(p, 'pmin') + '</div>' + box('val', 'Val') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['tpm','3pm'],['to','to']].map(function(x){ return '<b>' + nFmt(p, x[0]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
@@ -794,9 +795,20 @@
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
     $('r4p-nlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
+  // Star: 6x+ value and we projected 5x+. Surprise: 6x+ value but we projected under 5x. Dud: under 4x.
+  function nTag(p){
+    p.tag = ''; p.tagt = ''; p.tagr = null;
+    if (!p.sal || p.val == null) return;
+    var pv = p.proj != null ? p.proj / (p.sal / 1000) : null;
+    if (p.val >= 6 && pv != null && pv >= 5){ p.tag = '\u2b50'; p.tagt = 'Star'; p.tagr = 2; }
+    else if (p.val >= 6){ p.tag = '\ud83e\udd84'; p.tagt = 'Surprise'; p.tagr = 3; }
+    else if (p.val < 4){ p.tag = '\ud83d\udc4e'; p.tagt = 'Dud'; p.tagr = 0; }
+    else p.tagr = 1;
+  }
   function nightsPick(){
     var n = nNight();
     if (!n) return;
+    (n.players || []).forEach(nTag);
     $('r4p-nsub').textContent = 'Results for ' + nDay($('r4p-ndate').value) + ' \u00b7 ' + (n.games || []).length + ' games \u00b7 ' + (n.players || []).length + ' players.';
     nGames(n);
     nights();

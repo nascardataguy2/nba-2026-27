@@ -462,3 +462,4 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .nr-tot{margin-top:4px;padding-top:4px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
 @media (max-width:700px){.nr-strip{display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -16px 14px;padding:0 16px}.nr-strip::-webkit-scrollbar{display:none}.nr-g{flex:0 0 118px}}
 @media (min-width:701px){.tabs .wrap{gap:4px}.tab{padding:10px 10px}}
+.nr-tag{font-size:17px;line-height:1}
