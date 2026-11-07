@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updated": "4:41 PM ET",
+ "updated": "6:19 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:38 AM",
@@ -10,11 +10,11 @@
    "home": "ATL",
    "time": "2026-11-08T00:30Z",
    "slate": "main",
-   "ou": 228.5,
+   "ou": 225.5,
    "fav": "ATL",
    "line": 7.5,
-   "away_pts": 110.5,
-   "home_pts": 118.0,
+   "away_pts": 109.0,
+   "home_pts": 116.5,
    "tags": [
     "Highest total",
     "ATL on a back-to-back"
@@ -27,12 +27,7 @@
        "min": 20.0
       }
      ],
-     "q": [
-      {
-       "player": "Noah Clowney",
-       "min": 19.7
-      }
-     ]
+     "q": []
     },
     "ATL": {
      "out": [
@@ -45,6 +40,49 @@
     }
    },
    "key": "Jalen Johnson has the top projection in this game at 44.4 DK points."
+  },
+  {
+   "away": "NYK",
+   "home": "CLE",
+   "time": "2026-11-08T01:00Z",
+   "slate": "main",
+   "ou": 223.5,
+   "fav": "NYK",
+   "line": 5.5,
+   "away_pts": 114.5,
+   "home_pts": 109.0,
+   "tags": [
+    "CLE on a back-to-back"
+   ],
+   "teams": {
+    "NYK": {
+     "out": [
+      {
+       "player": "Josh Hart",
+       "min": 31.3
+      }
+     ],
+     "q": []
+    },
+    "CLE": {
+     "out": [
+      {
+       "player": "Sam Merrill",
+       "min": 22.0
+      },
+      {
+       "player": "Jarrett Allen",
+       "min": 19.7
+      },
+      {
+       "player": "Jaylon Tyson",
+       "min": 19.7
+      }
+     ],
+     "q": []
+    }
+   },
+   "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson should play more than usual."
   },
   {
    "away": "WAS",
@@ -100,60 +138,18 @@
    "key": "Justin Champagnie is out, so Carlton Carrington should play more than usual."
   },
   {
-   "away": "NYK",
-   "home": "CLE",
-   "time": "2026-11-08T01:00Z",
-   "slate": "main",
-   "ou": 222.5,
-   "fav": "NYK",
-   "line": 4.5,
-   "away_pts": 113.5,
-   "home_pts": 109.0,
-   "tags": [
-    "Lowest total",
-    "CLE on a back-to-back"
-   ],
-   "teams": {
-    "NYK": {
-     "out": [
-      {
-       "player": "Josh Hart",
-       "min": 31.3
-      }
-     ],
-     "q": []
-    },
-    "CLE": {
-     "out": [
-      {
-       "player": "Sam Merrill",
-       "min": 22.0
-      },
-      {
-       "player": "Jarrett Allen",
-       "min": 19.7
-      },
-      {
-       "player": "Jaylon Tyson",
-       "min": 19.7
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson should play more than usual."
-  },
-  {
    "away": "ORL",
    "home": "GSW",
    "time": "2026-11-08T01:30Z",
    "slate": "main",
-   "ou": 223.5,
+   "ou": 219.5,
    "fav": "GSW",
-   "line": 5.5,
-   "away_pts": 109.0,
-   "home_pts": 114.5,
-   "tags": [],
+   "line": 6.5,
+   "away_pts": 106.5,
+   "home_pts": 113.0,
+   "tags": [
+    "Lowest total"
+   ],
    "teams": {
     "ORL": {
      "out": [
@@ -228,6 +224,22 @@
  ],
  "changed": [
   {
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Left Ankle Sprain",
+   "time": "6:20 PM"
+  },
+  {
+   "player": "Noah Clowney",
+   "team": "BKN",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "6:20 PM"
+  },
+  {
    "player": "Desmond Bane",
    "team": "ORL",
    "status": "Out",
@@ -289,22 +301,6 @@
    "status": "Questionable",
    "was": "Out",
    "why": "Left Knee Tendinitis",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Gary Payton II",
-   "team": "GSW",
-   "status": "Questionable",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Draymond Green",
-   "team": "GSW",
-   "status": "Questionable",
-   "was": "",
-   "why": "",
    "time": "6:38 AM"
   }
  ],
@@ -551,55 +547,55 @@
  ],
  "chalk": [
   {
-   "player": "Donovan Mitchell",
-   "team": "CLE",
-   "own": 39.9,
-   "dk": 54.8,
-   "salary": 8100
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "own": 46.3,
+   "dk": 23.9,
+   "salary": 4800
   },
   {
-   "player": "James Harden",
-   "team": "CLE",
-   "own": 38.6,
-   "dk": 47.2,
-   "salary": 7100
-  },
-  {
-   "player": "Evan Mobley",
-   "team": "CLE",
-   "own": 38.1,
-   "dk": 50.5,
-   "salary": 7800
-  },
-  {
-   "player": "Franz Wagner",
+   "player": "Anthony Black",
    "team": "ORL",
-   "own": 37.7,
-   "dk": 51.2,
-   "salary": 8700
+   "own": 42.6,
+   "dk": 37.2,
+   "salary": 6400
+  },
+  {
+   "player": "Jamal Cain",
+   "team": "ORL",
+   "own": 34.0,
+   "dk": 17.0,
+   "salary": 3800
+  },
+  {
+   "player": "Kyshawn George",
+   "team": "WAS",
+   "own": 31.4,
+   "dk": 26.7,
+   "salary": 5900
   }
  ],
  "leverage": [
   {
-   "player": "Jalen Brunson",
-   "team": "NYK",
-   "own": 9.8,
-   "dk": 41.7,
-   "salary": 8200
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "own": 9.9,
+   "dk": 59.7,
+   "salary": 10400
+  },
+  {
+   "player": "Jalen Green",
+   "team": "PHX",
+   "own": 3.0,
+   "dk": 31.9,
+   "salary": 6200
   },
   {
    "player": "Devin Booker",
    "team": "PHX",
-   "own": 7.2,
+   "own": 5.4,
    "dk": 41.8,
    "salary": 8300
-  },
-  {
-   "player": "Kevin Durant",
-   "team": "HOU",
-   "own": 7.6,
-   "dk": 36.9,
-   "salary": 7400
   }
  ],
  "last": {
@@ -696,48 +692,37 @@
   ]
  },
  "injuries": {
-  "report": "04:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_04_30PM.pdf",
+  "report": "06:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_06_15PM.pdf",
   "pending": [],
   "rows": [
    {
     "game": "BKN at ATL",
     "time": "2026-11-08T00:30Z",
-    "team": "BKN",
-    "player": "Noah Clowney",
-    "status": "Questionable",
-    "reason": "Illness",
+    "team": "ATL",
+    "player": "Jalen Johnson",
+    "status": "Available",
+    "reason": "Left Ankle Sprain",
     "new": true,
-    "was": "",
+    "was": "Probable",
     "known": true,
-    "changed_at": "12:41 PM",
-    "min": 20.3,
-    "benefits": [
-     {
-      "player": "Chaney Johnson",
-      "plus": 3.9,
-      "min": 24.1
-     },
-     {
-      "player": "Keon Ellis",
-      "plus": 3.5,
-      "min": 21.3
-     }
-    ],
-    "estimate": true
+    "changed_at": "6:20 PM",
+    "min": 32.7,
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "BKN at ATL",
     "time": "2026-11-08T00:30Z",
-    "team": "ATL",
-    "player": "Jalen Johnson",
-    "status": "Probable",
-    "reason": "Left Ankle Sprain",
+    "team": "BKN",
+    "player": "Noah Clowney",
+    "status": "Available",
+    "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "1:03 PM",
-    "min": 32.7,
+    "changed_at": "6:20 PM",
+    "min": 20.3,
     "benefits": [],
     "estimate": false
    },
