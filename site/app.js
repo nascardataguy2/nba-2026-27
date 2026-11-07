@@ -795,13 +795,12 @@
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
     $('r4p-nlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
   }
-  // Star: 6x+ value and we projected 5x+. Surprise: 6x+ value but we projected under 5x. Dud: under 4x.
+  // Unicorn first: 6x+ value and beat our projection by 30% or more. Star: 6x+ otherwise. Dud: under 4x.
   function nTag(p){
     p.tag = ''; p.tagt = ''; p.tagr = null;
     if (!p.sal || p.val == null) return;
-    var pv = p.proj != null ? p.proj / (p.sal / 1000) : null;
-    if (p.val >= 6 && pv != null && pv >= 5){ p.tag = '\u2b50'; p.tagt = 'Star'; p.tagr = 2; }
-    else if (p.val >= 6){ p.tag = '\ud83e\udd84'; p.tagt = 'Surprise'; p.tagr = 3; }
+    if (p.val >= 6 && (p.proj == null || p.proj <= 0 || p.dk >= p.proj * 1.3)){ p.tag = '\ud83e\udd84'; p.tagt = 'Unicorn'; p.tagr = 3; }
+    else if (p.val >= 6){ p.tag = '\u2b50'; p.tagt = 'Star'; p.tagr = 2; }
     else if (p.val < 4){ p.tag = '\ud83d\udc4e'; p.tagt = 'Dud'; p.tagr = 0; }
     else p.tagr = 1;
   }
