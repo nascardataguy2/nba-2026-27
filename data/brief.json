@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updated": "2:26 PM ET",
+ "updated": "3:16 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:38 AM",
@@ -44,7 +44,7 @@
      "q": []
     }
    },
-   "key": "Jalen Johnson has the top projection in this game at 43.3 DK points."
+   "key": "Jalen Johnson has the top projection in this game at 44.5 DK points."
   },
   {
    "away": "WAS",
@@ -97,7 +97,7 @@
      "q": []
     }
    },
-   "key": "Jalen Williams and Chet Holmgren are out, so Kenrich Williams and Ajay Mitchell should play more than usual."
+   "key": "Justin Champagnie is out, so Carlton Carrington should play more than usual."
   },
   {
    "away": "NYK",
@@ -141,7 +141,7 @@
      "q": []
     }
    },
-   "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson and Evan Mobley should play more than usual."
+   "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson should play more than usual."
   },
   {
    "away": "ORL",
@@ -190,7 +190,7 @@
      ]
     }
    },
-   "key": "Desmond Bane and Paolo Banchero are out, so Franz Wagner and Nikola Vucevic should play more than usual."
+   "key": "Desmond Bane and Paolo Banchero are out, so Nikola Vucevic and Goga Bitadze should play more than usual."
   },
   {
    "away": "HOU",
@@ -335,28 +335,20 @@
    "lost": 102.8,
    "benefits": [
     {
-     "player": "Franz Wagner",
-     "plus": 7.6,
-     "recent": 34.0,
-     "min": 41.6,
-     "dk": 50.7,
-     "salary": 8700
-    },
-    {
      "player": "Nikola Vucevic",
-     "plus": 7.5,
+     "plus": 5.5,
      "recent": 8.3,
-     "min": 15.8,
-     "dk": 17.7,
+     "min": 13.8,
+     "dk": 17.2,
      "salary": 4000
     },
     {
-     "player": "Wendell Carter Jr.",
-     "plus": 7.3,
-     "recent": 29.0,
-     "min": 36.3,
-     "dk": 34.7,
-     "salary": 6500
+     "player": "Goga Bitadze",
+     "plus": 3.8,
+     "recent": 6.3,
+     "min": 10.1,
+     "dk": 12.0,
+     "salary": 3300
     }
    ]
   },
@@ -387,27 +379,11 @@
    "benefits": [
     {
      "player": "Peyton Watson",
-     "plus": 11.5,
+     "plus": 3.2,
      "recent": 24.0,
-     "min": 35.5,
-     "dk": 29.7,
+     "min": 27.2,
+     "dk": 27.6,
      "salary": 5700
-    },
-    {
-     "player": "Evan Mobley",
-     "plus": 9.3,
-     "recent": 32.7,
-     "min": 42.0,
-     "dk": 52.1,
-     "salary": 7800
-    },
-    {
-     "player": "Tyrese Proctor",
-     "plus": 8.9,
-     "recent": 13.0,
-     "min": 21.9,
-     "dk": 19.8,
-     "salary": 3900
     }
    ]
   },
@@ -437,65 +413,8 @@
      "plus": 2.5,
      "recent": 31.0,
      "min": 33.5,
-     "dk": 29.2,
+     "dk": 29.5,
      "salary": 6300
-    }
-   ]
-  },
-  {
-   "team": "OKC",
-   "outs": [
-    {
-     "player": "Jalen Williams",
-     "min": 31.7,
-     "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Chet Holmgren",
-     "min": 30.0,
-     "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Jaylin Williams",
-     "min": 22.0,
-     "note": "Jaylin Williams did not play on Wednesday or Friday, and the show expects him to remain out on Saturday.",
-     "new": false
-    },
-    {
-     "player": "Cason Wallace",
-     "min": 16.3,
-     "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 100.0,
-   "benefits": [
-    {
-     "player": "Kenrich Williams",
-     "plus": 7.3,
-     "recent": 19.0,
-     "min": 26.3,
-     "dk": 23.5,
-     "salary": 4200
-    },
-    {
-     "player": "Ajay Mitchell",
-     "plus": 7.1,
-     "recent": 27.0,
-     "min": 34.1,
-     "dk": 38.3,
-     "salary": 6600
-    },
-    {
-     "player": "Alex Caruso",
-     "plus": 5.0,
-     "recent": 16.3,
-     "min": 21.3,
-     "dk": 21.5,
-     "salary": 4600
     }
    ]
   },
@@ -517,7 +436,7 @@
      "plus": 3.2,
      "recent": 9.7,
      "min": 12.9,
-     "dk": 12.3,
+     "dk": 12.7,
      "salary": 3700
     }
    ]
@@ -540,7 +459,7 @@
      "plus": 5.4,
      "recent": 17.7,
      "min": 23.1,
-     "dk": 15.6,
+     "dk": 15.5,
      "salary": 3800
     }
    ]
@@ -632,55 +551,55 @@
  ],
  "chalk": [
   {
-   "player": "James Harden",
-   "team": "CLE",
-   "own": 39.6,
-   "dk": 48.0,
-   "salary": 7100
-  },
-  {
    "player": "Donovan Mitchell",
    "team": "CLE",
-   "own": 39.2,
-   "dk": 54.0,
+   "own": 39.9,
+   "dk": 54.9,
    "salary": 8100
+  },
+  {
+   "player": "James Harden",
+   "team": "CLE",
+   "own": 38.6,
+   "dk": 47.4,
+   "salary": 7100
   },
   {
    "player": "Evan Mobley",
    "team": "CLE",
-   "own": 39.2,
-   "dk": 52.1,
+   "own": 37.9,
+   "dk": 50.3,
    "salary": 7800
   },
   {
-   "player": "Shai Gilgeous-Alexander",
-   "team": "OKC",
-   "own": 37.4,
-   "dk": 61.2,
-   "salary": 10400
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "own": 37.7,
+   "dk": 51.4,
+   "salary": 8700
   }
  ],
  "leverage": [
   {
-   "player": "Peyton Watson",
-   "team": "CLE",
-   "own": 8.1,
-   "dk": 29.7,
-   "salary": 5700
-  },
-  {
-   "player": "Jared McCain",
-   "team": "OKC",
-   "own": 9.8,
-   "dk": 27.5,
-   "salary": 5500
-  },
-  {
-   "player": "OG Anunoby",
+   "player": "Jalen Brunson",
    "team": "NYK",
-   "own": 7.5,
-   "dk": 30.5,
-   "salary": 6300
+   "own": 9.1,
+   "dk": 41.6,
+   "salary": 8200
+  },
+  {
+   "player": "Devin Booker",
+   "team": "PHX",
+   "own": 7.4,
+   "dk": 42.0,
+   "salary": 8300
+  },
+  {
+   "player": "Kevin Durant",
+   "team": "HOU",
+   "own": 6.8,
+   "dk": 37.1,
+   "salary": 7400
   }
  ],
  "last": {
@@ -777,8 +696,8 @@
   ]
  },
  "injuries": {
-  "report": "02:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_02_15PM.pdf",
+  "report": "03:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_03_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -837,13 +756,8 @@
     "benefits": [
      {
       "player": "Peyton Watson",
-      "min": 35.5,
+      "min": 27.2,
       "recent": 24.0
-     },
-     {
-      "player": "Evan Mobley",
-      "min": 42.0,
-      "recent": 32.7
      }
     ],
     "estimate": false
@@ -877,14 +791,14 @@
     "min": 36.0,
     "benefits": [
      {
-      "player": "Franz Wagner",
-      "min": 41.6,
-      "recent": 34.0
+      "player": "Nikola Vucevic",
+      "min": 13.8,
+      "recent": 8.3
      },
      {
-      "player": "Nikola Vucevic",
-      "min": 15.8,
-      "recent": 8.3
+      "player": "Goga Bitadze",
+      "min": 10.1,
+      "recent": 6.3
      }
     ],
     "estimate": false
@@ -1065,18 +979,7 @@
     "known": true,
     "changed_at": "",
     "min": 31.7,
-    "benefits": [
-     {
-      "player": "Kenrich Williams",
-      "min": 26.3,
-      "recent": 19.0
-     },
-     {
-      "player": "Ajay Mitchell",
-      "min": 34.1,
-      "recent": 27.0
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1112,18 +1015,7 @@
     "known": true,
     "changed_at": "",
     "min": 30.0,
-    "benefits": [
-     {
-      "player": "Kenrich Williams",
-      "min": 26.3,
-      "recent": 19.0
-     },
-     {
-      "player": "Ajay Mitchell",
-      "min": 34.1,
-      "recent": 27.0
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1138,18 +1030,7 @@
     "known": true,
     "changed_at": "",
     "min": 22.0,
-    "benefits": [
-     {
-      "player": "Kenrich Williams",
-      "min": 26.3,
-      "recent": 19.0
-     },
-     {
-      "player": "Ajay Mitchell",
-      "min": 34.1,
-      "recent": 27.0
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1167,13 +1048,8 @@
     "benefits": [
      {
       "player": "Peyton Watson",
-      "min": 35.5,
+      "min": 27.2,
       "recent": 24.0
-     },
-     {
-      "player": "Evan Mobley",
-      "min": 42.0,
-      "recent": 32.7
      }
     ],
     "estimate": false
@@ -1193,13 +1069,8 @@
     "benefits": [
      {
       "player": "Peyton Watson",
-      "min": 35.5,
+      "min": 27.2,
       "recent": 24.0
-     },
-     {
-      "player": "Evan Mobley",
-      "min": 42.0,
-      "recent": 32.7
      }
     ],
     "estimate": false
@@ -1237,18 +1108,7 @@
     "known": true,
     "changed_at": "",
     "min": 16.3,
-    "benefits": [
-     {
-      "player": "Kenrich Williams",
-      "min": 26.3,
-      "recent": 19.0
-     },
-     {
-      "player": "Ajay Mitchell",
-      "min": 34.1,
-      "recent": 27.0
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1265,14 +1125,14 @@
     "min": 33.5,
     "benefits": [
      {
-      "player": "Franz Wagner",
-      "min": 41.6,
-      "recent": 34.0
+      "player": "Nikola Vucevic",
+      "min": 13.8,
+      "recent": 8.3
      },
      {
-      "player": "Nikola Vucevic",
-      "min": 15.8,
-      "recent": 8.3
+      "player": "Goga Bitadze",
+      "min": 10.1,
+      "recent": 6.3
      }
     ],
     "estimate": false
@@ -1291,14 +1151,14 @@
     "min": 33.3,
     "benefits": [
      {
-      "player": "Franz Wagner",
-      "min": 41.6,
-      "recent": 34.0
+      "player": "Nikola Vucevic",
+      "min": 13.8,
+      "recent": 8.3
      },
      {
-      "player": "Nikola Vucevic",
-      "min": 15.8,
-      "recent": 8.3
+      "player": "Goga Bitadze",
+      "min": 10.1,
+      "recent": 6.3
      }
     ],
     "estimate": false
