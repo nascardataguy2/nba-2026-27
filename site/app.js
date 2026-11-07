@@ -19,6 +19,10 @@
     'https://nascardataguy2.github.io/nba-2026-27/data/gamelogs.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/gamelogs.json'
   ];
+  var NSOURCES = [
+    'https://nascardataguy2.github.io/nba-2026-27/data/nights.json',
+    'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/nights.json'
+  ];
   var RSOURCES = [
     'https://nascardataguy2.github.io/nba-2026-27/data/season.json',
     'https://cdn.jsdelivr.net/gh/nascardataguy2/nba-2026-27@main/data/season.json'
@@ -578,7 +582,7 @@
     if (!t) return;
     var n = t.getAttribute('data-n'), k = nkey(n);
     NOPEN[k] = !NOPEN[k];
-    proj(); research(); optPool();
+    proj(); research(); optPool(); nights();
   });
 
   var PCOLS = [
@@ -686,6 +690,135 @@
     if (t){ e.preventDefault(); setSort(t.getAttribute('data-k')); }
     var r = e.target.closest ? e.target.closest('#r4p-statlist .pjt th[data-k]') : null;
     if (r){ e.preventDefault(); rSetSort(r.getAttribute('data-k')); }
+  });
+
+  // Last Night tab: actual results next to what we had at lock.
+  var NT = null, NREQ = false;
+  var NCOLS = [
+    ['player','Player','t'], ['pos','Pos','p'], ['sal','Sal','n'], ['team','Team','t'], ['opp','Opp','t'],
+    ['dk','DK','n'], ['proj','Proj','n'], ['diff','+/\u2212','n'], ['min','Min','n'], ['pmin','Proj Min','n'], ['val','Val','n'], ['own','Own%','n'],
+    ['pts','Pts','n'], ['reb','Reb','n'], ['ast','Ast','n'], ['stl','Stl','n'], ['blk','Blk','n'], ['tpm','3PM','n'], ['to','TO','n']
+  ];
+  var NH = {dk:1, proj:1, diff:1, min:1, pmin:1, val:1, pts:1, reb:1, ast:1, stl:1, blk:1, tpm:1, to:-1};
+  var NSORT = {key:'dk', dir:-1};
+  function nNight(){ var d = $('r4p-ndate').value; return NT && NT.nights[d] ? NT.nights[d] : null; }
+  function nHeat(list, key, v){
+    if (!NH[key] || v == null) return '';
+    var vals = list.map(function(p){ return p[key]; }).filter(function(x){ return x != null; });
+    if (vals.length < 3) return '';
+    var lo = 0, eq = 0;
+    for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
+    var t = (lo + eq / 2) / vals.length;
+    if (NH[key] < 0) t = 1 - t;
+    if (t >= 0.6) return 'background:rgba(31,122,77,' + ((t - 0.6) / 0.4 * 0.20).toFixed(3) + ')';
+    if (t <= 0.4) return 'background:rgba(228,87,46,' + ((0.4 - t) / 0.4 * 0.14).toFixed(3) + ')';
+    return '';
+  }
+  function nFmt(p, k){
+    var v = p[k];
+    if (k === 'sal') return money(v);
+    if (k === 'val') return v == null ? '\u2013' : v.toFixed(2) + 'x';
+    if (k === 'own') return v == null ? '\u2013' : n1(v) + '%';
+    if (k === 'diff') return v == null ? '\u2013' : (v > 0 ? '+' : v < 0 ? '\u2212' : '') + n1(Math.abs(v));
+    if (k === 'tpm' || k === 'pts' || k === 'reb' || k === 'ast' || k === 'stl' || k === 'blk' || k === 'to') return v == null ? '\u2013' : String(Math.round(v));
+    return n1(v);
+  }
+  function nDay(d){ var dd = new Date(d + 'T12:00:00'); return isNaN(dd) ? d : dd.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'}); }
+  function nGames(n){
+    $('r4p-ngames').innerHTML = (n.games || []).map(function(g){
+      var tot = g.as != null && g.hs != null ? g.as + g.hs : null;
+      var line = g.ou != null && tot != null ? ' \u00b7 Line ' + n1(g.ou) + ' (' + (tot > g.ou ? 'over' : tot < g.ou ? 'under' : 'push') + ')' : '';
+      var aw = g.as > g.hs, hw = g.hs > g.as;
+      var sc = function(t, v, w){ return '<div class="nr-row' + (w ? ' w' : '') + '">' + tm(t, true) + '<b>' + (v == null ? '\u2013' : v) + '</b></div>'; };
+      return '<div class="nr-g">' + sc(g.away, g.as, aw) + sc(g.home, g.hs, hw) + '<div class="nr-tot">Total ' + (tot == null ? '\u2013' : tot) + line + '</div></div>';
+    }).join('');
+    var sel = $('r4p-ngame'), cur = sel.value;
+    sel.innerHTML = '<option value="">All games</option>' + (n.games || []).map(function(g){ return '<option value="' + g.away + '|' + g.home + '">' + g.away + ' at ' + g.home + '</option>'; }).join('');
+    if (cur && [].some.call(sel.options, function(o){ return o.value === cur; })) sel.value = cur;
+  }
+  function nSetSort(k){
+    if (NSORT.key === k) NSORT.dir = -NSORT.dir;
+    else {
+      var typ = '';
+      NCOLS.forEach(function(c){ if (c[0] === k) typ = c[2]; });
+      NSORT = {key:k, dir:(typ === 't' || typ === 'p') ? 1 : -1};
+    }
+    nights();
+  }
+  function nights(){
+    var n = nNight();
+    if (!n) return;
+    var q = $('r4p-nq').value.trim().toLowerCase(), g = $('r4p-ngame').value, pos = $('r4p-npos').value;
+    var k = NSORT.key, dir = NSORT.dir, all = n.players || [];
+    var list = all.filter(function(p){
+      if (g){ var gg = g.split('|'); if (p.team !== gg[0] && p.team !== gg[1]) return false; }
+      if (pos && ('/' + p.pos + '/').indexOf('/' + pos + '/') < 0) return false;
+      if (!q) return true;
+      return (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
+    }).sort(function(a, b){
+      var x = k === 'pos' ? (POSORD[String(a.pos).split('/')[0]] || 9) : a[k], y = k === 'pos' ? (POSORD[String(b.pos).split('/')[0]] || 9) : b[k];
+      if (x == null && y == null) return b.dk - a.dk;
+      if (x == null) return 1;
+      if (y == null) return -1;
+      if (typeof x === 'string') return dir * x.localeCompare(y) || (b.dk - a.dk);
+      return dir * (x - y) || (b.dk - a.dk);
+    });
+    $('r4p-ncount').textContent = list.length + ' of ' + all.length + ' players';
+    var arrow = function(c){ return c === k ? (dir > 0 ? ' \u25b2' : ' \u25bc') : ''; };
+    var th = NCOLS.map(function(c){
+      return '<th class="c-' + c[0] + (c[0] === k ? ' on' : '') + '" data-k="' + c[0] + '" scope="col" tabindex="0" aria-sort="' + (c[0] === k ? (dir > 0 ? 'ascending' : 'descending') : 'none') + '">' + c[1] + arrow(c[0]) + '</th>';
+    }).join('');
+    var rows = list.map(function(p){
+      var has = glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has);
+      var tds = NCOLS.map(function(c){
+        var key = c[0];
+        if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + '</td>';
+        if (key === 'team') return '<td class="c-team">' + tm(p.team, true) + '</td>';
+        if (key === 'opp') return '<td class="c-opp">' + (p.opp ? tm(p.opp, true) : '') + '</td>';
+        if (key === 'pos') return '<td class="c-pos">' + esc(p.pos) + '</td>';
+        var st = nHeat(all, key, p[key]);
+        return '<td class="c-' + key + '"' + (st ? ' style="' + st + '"' : '') + '>' + nFmt(p, key) + '</td>';
+      }).join('');
+      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + NCOLS.length + '">' + noteHtml(noteBits(p.player), p.player) + '</td></tr>' : '');
+    }).join('') || '<tr><td colspan="' + NCOLS.length + '">No players match.</td></tr>';
+    var cards = list.map(function(p){
+      var has = glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has);
+      var box = function(key, lbl){ var st = nHeat(all, key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + nFmt(p, key) + '</div>'; };
+      return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + tags + '</div>' +
+        '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 Sal ' + nFmt(p, 'sal') + ' \u00b7 Own ' + nFmt(p, 'own') + '</div>' +
+        '<div class="pjc-nums">' + box('dk', 'DK') + box('proj', 'Proj') + box('diff', '+/\u2212') + '<div class="pjc-n"' + (nHeat(all, 'min', p.min) ? ' style="' + nHeat(all, 'min', p.min) + '"' : '') + '><span>Min</span>' + (p.min == null ? '\u2013' : Math.round(p.min)) + '/' + nFmt(p, 'pmin') + '</div>' + box('val', 'Val') + '</div>' +
+        '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['tpm','3pm'],['to','to']].map(function(x){ return '<b>' + nFmt(p, x[0]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
+        (open ? noteHtml(noteBits(p.player), p.player) : '') + '</div>';
+    }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
+    $('r4p-nlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
+  }
+  function nightsPick(){
+    var n = nNight();
+    if (!n) return;
+    $('r4p-nsub').textContent = 'Results for ' + nDay($('r4p-ndate').value) + ' \u00b7 ' + (n.games || []).length + ' games \u00b7 ' + (n.players || []).length + ' players.';
+    nGames(n);
+    nights();
+  }
+  function nightsLoad(){
+    if (NREQ) return;
+    NREQ = true;
+    fetchFirst(NSOURCES, false).then(function(d){
+      NT = d;
+      $('r4p-ndate').innerHTML = (d.dates || []).map(function(x){ return '<option value="' + x + '">' + esc(nDay(x)) + '</option>'; }).join('');
+      if (!(d.dates || []).length){ $('r4p-nsub').textContent = 'Results are not posted yet. Please check back soon.'; return; }
+      nightsPick();
+    }).catch(function(){ NREQ = false; $('r4p-nsub').textContent = 'Results are not posted yet. Please check back soon.'; });
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target.closest('#r4p-nlist .pjt th[data-k]') : null;
+    if (t) nSetSort(t.getAttribute('data-k'));
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var t = e.target.closest ? e.target.closest('#r4p-nlist .pjt th[data-k]') : null;
+    if (t){ e.preventDefault(); nSetSort(t.getAttribute('data-k')); }
   });
 
   // Research tab: season stats from every box score, joined with tonight's game.
@@ -1237,6 +1370,7 @@
     var views = document.querySelectorAll('#r4p-app .view');
     for (var j = 0; j < views.length; j++) views[j].hidden = views[j].id !== 'v-' + v;
     if (v === 'games') gFit();
+    if (v === 'results') nightsLoad();
     try { window.scrollTo(0, 0); } catch (e) {}
   }
 
@@ -1285,6 +1419,8 @@
     research();
   }).catch(function(){ $('r4p-rsub').textContent = 'Season stats are not posted yet. Please check back soon.'; });
   ['r4p-pq','r4p-pgame','r4p-ppos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-pq' ? 'input' : 'change', proj); });
+  $('r4p-ndate').addEventListener('change', function(){ $('r4p-ngame').value = ''; nightsPick(); });
+  ['r4p-nq','r4p-ngame','r4p-npos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-nq' ? 'input' : 'change', nights); });
   $('r4p-psort').addEventListener('change', function(){ var v = this.value; if (v){ PSORT = {key:v, dir:-1}; proj(); } });
   fetchFirst(SSOURCES, false).then(function(d){ SS = d; starsRender(); proj(); optPool(); }).catch(function(){
     $('r4p-ssub').textContent = 'Tonight\u2019s stars and scrubs are not posted yet. Please check back soon.';

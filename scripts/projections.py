@@ -560,6 +560,13 @@ def main():
     hist = {norm(r["player"]): {"player": r["player"], "team": r["team"], "base_min": r["base"], "min": round(r["min"], 1),
                                 "dk": round(r["dk"], 1), "salary": r.get("salary")} for r in rows}
 
+    pmap = {(p["player"], p["team"]): p for p in pub}
+    for v in hist.values():
+        q = pmap.get((v["player"], v["team"])) or {}
+        for k in ("pos", "opp", "ou", "slate"):
+            if q.get(k) is not None:
+                v[k] = q[k]
+
     # Games that have tipped keep the last projection made before tip.
     utcnow = os.environ.get("NOW_UTC") or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     locked = {t for t, g in games.items() if g["time"] and g["time"] <= utcnow}

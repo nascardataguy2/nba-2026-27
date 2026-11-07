@@ -39,6 +39,45 @@ def write_gamelogs(games, nights):
         json.dump(out, fh, separators=(",", ":"), ensure_ascii=False)
 
 
+def write_nights(nights, keep=14):
+    """data/nights.json: the last nights' results for the Results tab. Each player row joins his
+    box score with the projection, minutes, salary and Own% we had at lock."""
+    out = {"dates": [], "nights": {}}
+    for d in sorted(nights, reverse=True)[:keep]:
+        box = load_json(os.path.join(HIST, "box", d + ".json"), [])
+        snap = load_json(os.path.join(HIST, d + ".json"), {})
+        glist = load_json(os.path.join(D, "games", d + ".json"), [])
+        opp = {}
+        for g in glist:
+            opp[g["away"]] = g["home"]
+            opp[g["home"]] = g["away"]
+        rows, ou = [], {}
+        for r in box:
+            pj = snap.get(norm(r["player"])) or {}
+            if pj.get("ou") is not None:
+                ou.setdefault(r["team"], pj["ou"])
+            sal = pj.get("salary")
+            rows.append({"player": r["player"], "team": r["team"], "opp": pj.get("opp") or opp.get(r["team"], ""),
+                         "pos": pj.get("pos") or r.get("pos", ""), "start": bool(r.get("start")),
+                         "min": r["min"], "dk": r["dk"], "pts": r.get("pts", 0), "reb": r.get("reb", 0),
+                         "ast": r.get("ast", 0), "stl": r.get("stl", 0), "blk": r.get("blk", 0), "to": r.get("to", 0),
+                         "tpm": r.get("tpm", 0), "sal": sal, "proj": pj.get("dk"), "pmin": pj.get("min"),
+                         "own": pj.get("own"), "slate": pj.get("slate"),
+                         "val": round(r["dk"] / (sal / 1000.0), 2) if sal else None,
+                         "diff": round(r["dk"] - pj["dk"], 1) if pj.get("dk") is not None else None})
+        games = []
+        for g in glist:
+            f = g.get("final") or [None, None]
+            games.append({"away": g["away"], "home": g["home"], "as": f[0], "hs": f[1],
+                          "ou": ou.get(g["home"], ou.get(g["away"])), "time": g.get("time")})
+        games.sort(key=lambda g: (g.get("time") or "", g["home"]))
+        rows.sort(key=lambda x: -x["dk"])
+        out["dates"].append(d)
+        out["nights"][d] = {"games": games, "players": rows}
+    with open(os.path.join(D, "nights.json"), "w", encoding="utf-8") as fh:
+        json.dump(out, fh, separators=(",", ":"), ensure_ascii=False)
+
+
 def main():
     bdir = os.path.join(HIST, "box")
     games = {}
@@ -64,6 +103,7 @@ def main():
         rows.append(row)
     rows.sort(key=lambda r: -r["dk"])
     write_gamelogs(games, nights)
+    write_nights(nights)
     out = {"through": nights[-1] if nights else None, "nights": len(nights), "players": rows}
     with open(os.path.join(D, "season.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=0, ensure_ascii=False)

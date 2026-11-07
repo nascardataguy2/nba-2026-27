@@ -182,6 +182,28 @@ def field_view(doc):
             p["_fdk"] = p["dk"] * fm / m
 
 
+def save_history_own(doc):
+    """Keep each player's Own% in data/proj_history/DATE.json, frozen once his game tips,
+    so the Results tab shows the Own% we had at lock."""
+    from datetime import datetime, timezone
+    hp = os.path.join(D, "proj_history", doc.get("date", "") + ".json")
+    hist = load_json(hp, None)
+    if not hist:
+        return
+    now = os.environ.get("NOW_UTC") or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+    locked = set()
+    for g in doc.get("games", []):
+        if g.get("time") and g["time"] <= now:
+            locked.update((g.get("home"), g.get("away")))
+    for p in doc["players"]:
+        h = hist.get(norm(p["player"]))
+        if h is None or p["team"] in locked or p.get("own") is None:
+            continue
+        h["own"] = p["own"]
+    with open(hp, "w", encoding="utf-8") as fh:
+        json.dump(hist, fh, indent=1, ensure_ascii=False)
+
+
 def main():
     path = os.path.join(D, "projections.json")
     doc = load_json(path, {})
@@ -206,6 +228,7 @@ def main():
     doc["own_note"] = "Estimated ownership from %d simulated lineups per slate, corrected against real DraftKings contest ownership from last season. It is our estimate, not real ownership." % N
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, indent=1, ensure_ascii=False)
+    save_history_own(doc)
     top = sorted(((v, k) for k, v in own.items()), reverse=True)[:5]
     print("ownership:", ", ".join("%s %.0f%%" % (k, v) for v, k in top))
 
