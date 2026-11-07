@@ -2,7 +2,7 @@
  "updated": "2026-11-07",
  "brief": {
   "date": "2026-11-07",
-  "updated": "1:02 PM ET",
+  "updated": "1:22 PM ET",
   "games": 5,
   "pending": [
    "WAS",
@@ -15,11 +15,11 @@
     "home": "ATL",
     "time": "2026-11-08T00:30Z",
     "slate": "main",
-    "ou": 227.5,
+    "ou": 228.5,
     "fav": "ATL",
     "line": 7.5,
-    "away_pts": 110.0,
-    "home_pts": 117.5,
+    "away_pts": 110.5,
+    "home_pts": 118.0,
     "tags": [
      "Highest total",
      "ATL on a back-to-back"
@@ -52,60 +52,16 @@
     "key": "Jalen Johnson has the top projection in this game at 43.3 DK points."
    },
    {
-    "away": "NYK",
-    "home": "CLE",
-    "time": "2026-11-08T01:00Z",
-    "slate": "main",
-    "ou": 223.5,
-    "fav": "NYK",
-    "line": 4.5,
-    "away_pts": 114.0,
-    "home_pts": 109.5,
-    "tags": [
-     "CLE on a back-to-back"
-    ],
-    "teams": {
-     "NYK": {
-      "out": [
-       {
-        "player": "Josh Hart",
-        "min": 31.3
-       }
-      ],
-      "q": []
-     },
-     "CLE": {
-      "out": [
-       {
-        "player": "Sam Merrill",
-        "min": 22.0
-       },
-       {
-        "player": "Jarrett Allen",
-        "min": 19.7
-       },
-       {
-        "player": "Jaylon Tyson",
-        "min": 19.7
-       }
-      ],
-      "q": []
-     }
-    },
-    "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson and Evan Mobley should play more than usual."
-   },
-   {
     "away": "WAS",
     "home": "OKC",
     "time": "2026-11-08T01:00Z",
     "slate": "main",
-    "ou": 222.5,
+    "ou": 223.5,
     "fav": "OKC",
     "line": 11.5,
-    "away_pts": 105.5,
-    "home_pts": 117.0,
+    "away_pts": 106.0,
+    "home_pts": 117.5,
     "tags": [
-     "Lowest total",
      "Blowout risk",
      "Both teams on a back-to-back"
     ],
@@ -150,18 +106,60 @@
     "key": "Justin Champagnie is out, so Carlton Carrington should play more than usual."
    },
    {
+    "away": "NYK",
+    "home": "CLE",
+    "time": "2026-11-08T01:00Z",
+    "slate": "main",
+    "ou": 222.5,
+    "fav": "NYK",
+    "line": 4.5,
+    "away_pts": 113.5,
+    "home_pts": 109.0,
+    "tags": [
+     "Lowest total",
+     "CLE on a back-to-back"
+    ],
+    "teams": {
+     "NYK": {
+      "out": [
+       {
+        "player": "Josh Hart",
+        "min": 31.3
+       }
+      ],
+      "q": []
+     },
+     "CLE": {
+      "out": [
+       {
+        "player": "Sam Merrill",
+        "min": 22.0
+       },
+       {
+        "player": "Jarrett Allen",
+        "min": 19.7
+       },
+       {
+        "player": "Jaylon Tyson",
+        "min": 19.7
+       }
+      ],
+      "q": []
+     }
+    },
+    "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson and Evan Mobley should play more than usual."
+   },
+   {
     "away": "ORL",
     "home": "GSW",
     "time": "2026-11-08T01:30Z",
     "slate": "main",
-    "ou": 222.5,
+    "ou": 223.5,
     "fav": "GSW",
     "line": 5.5,
-    "away_pts": 108.5,
-    "home_pts": 114.0,
-    "tags": [
-     "Lowest total"
-    ],
+    "away_pts": 109.0,
+    "home_pts": 114.5,
+    "tags": [],
     "teams": {
      "ORL": {
       "out": [
@@ -203,9 +201,9 @@
     "slate": "main",
     "ou": 223.5,
     "fav": "HOU",
-    "line": 7.5,
-    "away_pts": 115.5,
-    "home_pts": 108.0,
+    "line": 6.5,
+    "away_pts": 115.0,
+    "home_pts": 108.5,
     "tags": [],
     "teams": {
      "HOU": {
@@ -543,7 +541,7 @@
    {
     "player": "James Harden",
     "team": "CLE",
-    "own": 39.8,
+    "own": 39.7,
     "dk": 48.0,
     "salary": 7100
    },
@@ -571,25 +569,25 @@
   ],
   "leverage": [
    {
+    "player": "Peyton Watson",
+    "team": "CLE",
+    "own": 9.7,
+    "dk": 29.7,
+    "salary": 5700
+   },
+   {
+    "player": "OG Anunoby",
+    "team": "NYK",
+    "own": 9.8,
+    "dk": 30.5,
+    "salary": 6300
+   },
+   {
     "player": "Jalen Brunson",
     "team": "NYK",
-    "own": 8.4,
+    "own": 7.5,
     "dk": 39.4,
     "salary": 8200
-   },
-   {
-    "player": "Jaylin Williams",
-    "team": "OKC",
-    "own": 6.4,
-    "dk": 22.8,
-    "salary": 4800
-   },
-   {
-    "player": "Mikel Brown Jr.",
-    "team": "BKN",
-    "own": 7.8,
-    "dk": 21.9,
-    "salary": 4700
    }
   ],
   "last": {
@@ -686,8 +684,8 @@
    ]
   },
   "injuries": {
-   "report": "01:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_01_00PM.pdf",
+   "report": "01:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_01_15PM.pdf",
    "pending": [
     "WAS",
     "OKC"
