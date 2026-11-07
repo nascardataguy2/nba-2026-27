@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updated": "8:41 AM ET",
+ "updated": "12:41 PM ET",
  "games": 5,
  "pending": [
   "ATL",
@@ -32,34 +32,40 @@
        "min": 20.0
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Noah Clowney",
+       "min": 19.7
+      }
+     ]
     },
     "ATL": {
      "out": [
-      {
-       "player": "Jalen Johnson",
-       "min": 32.7
-      },
       {
        "player": "Asa Newell",
        "min": 15.3
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Jalen Johnson",
+       "min": 31.1
+      }
+     ]
     }
    },
-   "key": "Jalen Johnson and Asa Newell are out, so Aaron Wiggins and Luguentz Dort should play more than usual."
+   "key": "Jalen Johnson has the top projection in this game at 43.2 DK points."
   },
   {
    "away": "NYK",
    "home": "CLE",
    "time": "2026-11-08T01:00Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 223.5,
    "fav": "NYK",
-   "line": 5.5,
+   "line": 4.5,
    "away_pts": 114.0,
-   "home_pts": 108.5,
+   "home_pts": 109.5,
    "tags": [
     "CLE on a back-to-back"
    ],
@@ -74,35 +80,35 @@
      "q": []
     },
     "CLE": {
-     "out": [
-      {
-       "player": "Sam Merrill",
-       "min": 22.0
-      },
+     "out": [],
+     "q": [
       {
        "player": "Jarrett Allen",
-       "min": 19.7
+       "min": 21.8
+      },
+      {
+       "player": "Sam Merrill",
+       "min": 21.6
       },
       {
        "player": "Jaylon Tyson",
-       "min": 19.7
+       "min": 15.3
       }
-     ],
-     "q": []
+     ]
     }
    },
-   "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson and Tyrese Proctor should play more than usual."
+   "key": "Josh Hart is out, so Jose Alvarado should play more than usual."
   },
   {
    "away": "WAS",
    "home": "OKC",
    "time": "2026-11-08T01:00Z",
    "slate": "main",
-   "ou": 219.5,
+   "ou": 222.5,
    "fav": "OKC",
    "line": 11.5,
-   "away_pts": 104.0,
-   "home_pts": 115.5,
+   "away_pts": 105.5,
+   "home_pts": 117.0,
    "tags": [
     "Lowest total",
     "Blowout risk",
@@ -112,15 +118,16 @@
     "WAS": {
      "out": [
       {
-       "player": "Anthony Davis",
-       "min": 32.7
-      },
-      {
        "player": "Justin Champagnie",
        "min": 17.7
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Anthony Davis",
+       "min": 29.1
+      }
+     ]
     },
     "OKC": {
      "out": [
@@ -133,30 +140,33 @@
        "min": 30.0
       },
       {
-       "player": "Jaylin Williams",
-       "min": 22.0
-      },
-      {
        "player": "Cason Wallace",
        "min": 16.3
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Jaylin Williams",
+       "min": 23.4
+      }
+     ]
     }
    },
-   "key": "Jalen Williams and Chet Holmgren are out, so Kenrich Williams and Ajay Mitchell should play more than usual."
+   "key": "Justin Champagnie is out, so Carlton Carrington should play more than usual."
   },
   {
    "away": "ORL",
    "home": "GSW",
    "time": "2026-11-08T01:30Z",
    "slate": "main",
-   "ou": 221.5,
+   "ou": 222.5,
    "fav": "GSW",
-   "line": 6.5,
-   "away_pts": 107.5,
+   "line": 5.5,
+   "away_pts": 108.5,
    "home_pts": 114.0,
-   "tags": [],
+   "tags": [
+    "Lowest total"
+   ],
    "teams": {
     "ORL": {
      "out": [
@@ -196,11 +206,11 @@
    "home": "PHX",
    "time": "2026-11-08T02:00Z",
    "slate": "main",
-   "ou": 221.5,
+   "ou": 223.5,
    "fav": "HOU",
    "line": 7.5,
-   "away_pts": 114.5,
-   "home_pts": 107.0,
+   "away_pts": 115.5,
+   "home_pts": 108.0,
    "tags": [],
    "teams": {
     "HOU": {
@@ -226,6 +236,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Noah Clowney",
+   "team": "BKN",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "12:41 PM"
+  },
   {
    "player": "Sam Merrill",
    "team": "CLE",
@@ -277,57 +295,6 @@
  ],
  "sits": [
   {
-   "team": "CLE",
-   "outs": [
-    {
-     "player": "Sam Merrill",
-     "min": 22.0,
-     "note": "Ruled out tonight.",
-     "new": true
-    },
-    {
-     "player": "Jarrett Allen",
-     "min": 19.7,
-     "note": "Jarrett Allen was questionable for Friday after leaving his last game with a knee injury, and he did not play. The show said the injury did not appear serious.",
-     "new": false
-    },
-    {
-     "player": "Jaylon Tyson",
-     "min": 19.7,
-     "note": "Jaylon Tyson did not play on Friday, and he has not played since October 29.",
-     "new": false
-    }
-   ],
-   "new": true,
-   "lost": 61.4,
-   "benefits": [
-    {
-     "player": "Peyton Watson",
-     "plus": 13.5,
-     "recent": 24.0,
-     "min": 37.5,
-     "dk": 31.4,
-     "salary": 5700
-    },
-    {
-     "player": "Tyrese Proctor",
-     "plus": 10.5,
-     "recent": 11.0,
-     "min": 21.5,
-     "dk": 19.6,
-     "salary": 3900
-    },
-    {
-     "player": "Evan Mobley",
-     "plus": 8.4,
-     "recent": 32.7,
-     "min": 41.1,
-     "dk": 50.2,
-     "salary": 7800
-    }
-   ]
-  },
-  {
    "team": "PHX",
    "outs": [
     {
@@ -355,63 +322,6 @@
      "min": 33.5,
      "dk": 29.2,
      "salary": 6300
-    }
-   ]
-  },
-  {
-   "team": "OKC",
-   "outs": [
-    {
-     "player": "Jalen Williams",
-     "min": 31.7,
-     "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Chet Holmgren",
-     "min": 30.0,
-     "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Jaylin Williams",
-     "min": 22.0,
-     "note": "Jaylin Williams did not play on Wednesday or Friday, and the show expects him to remain out on Saturday.",
-     "new": false
-    },
-    {
-     "player": "Cason Wallace",
-     "min": 16.3,
-     "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 100.0,
-   "benefits": [
-    {
-     "player": "Kenrich Williams",
-     "plus": 7.3,
-     "recent": 19.0,
-     "min": 26.3,
-     "dk": 23.4,
-     "salary": 4200
-    },
-    {
-     "player": "Ajay Mitchell",
-     "plus": 7.1,
-     "recent": 27.0,
-     "min": 34.1,
-     "dk": 38.4,
-     "salary": 6600
-    },
-    {
-     "player": "Alex Caruso",
-     "plus": 5.0,
-     "recent": 16.3,
-     "min": 21.3,
-     "dk": 21.8,
-     "salary": 4600
     }
    ]
   },
@@ -445,14 +355,31 @@
    ]
   },
   {
-   "team": "WAS",
+   "team": "NYK",
    "outs": [
     {
-     "player": "Anthony Davis",
-     "min": 32.7,
-     "note": "Anthony Davis did not play on Friday after turning his ankle on Wednesday. Washington plays Oklahoma City on Saturday on the second night of a back-to-back.",
+     "player": "Josh Hart",
+     "min": 31.3,
+     "note": "Josh Hart did not play in New York's last game on Wednesday, and the show expects him to remain out on Saturday.",
      "new": false
-    },
+    }
+   ],
+   "new": false,
+   "lost": 31.3,
+   "benefits": [
+    {
+     "player": "Jose Alvarado",
+     "plus": 3.2,
+     "recent": 9.7,
+     "min": 12.9,
+     "dk": 12.3,
+     "salary": 3700
+    }
+   ]
+  },
+  {
+   "team": "WAS",
+   "outs": [
     {
      "player": "Justin Champagnie",
      "min": 17.7,
@@ -461,68 +388,15 @@
     }
    ],
    "new": false,
-   "lost": 50.4,
+   "lost": 17.7,
    "benefits": [
     {
      "player": "Carlton Carrington",
-     "plus": 8.5,
+     "plus": 5.4,
      "recent": 17.7,
-     "min": 26.2,
-     "dk": 17.8,
+     "min": 23.1,
+     "dk": 15.6,
      "salary": 3800
-    },
-    {
-     "player": "Kyshawn George",
-     "plus": 2.6,
-     "recent": 33.0,
-     "min": 35.6,
-     "dk": 29.6,
-     "salary": 5900
-    }
-   ]
-  },
-  {
-   "team": "ATL",
-   "outs": [
-    {
-     "player": "Jalen Johnson",
-     "min": 32.7,
-     "note": "Jalen Johnson has missed Atlanta's games on Nov. 2, Nov. 4 and Nov. 6 with a sprained left ankle. The show said Kingston Flemings' recent extra usage will shrink once Johnson returns.",
-     "new": false
-    },
-    {
-     "player": "Asa Newell",
-     "min": 15.3,
-     "note": "The show doubted Asa Newell would be available, and he did not appear in Friday's game.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 48.0,
-   "benefits": [
-    {
-     "player": "Aaron Wiggins",
-     "plus": 6.3,
-     "recent": 19.0,
-     "min": 25.3,
-     "dk": 23.0,
-     "salary": 5400
-    },
-    {
-     "player": "Luguentz Dort",
-     "plus": 4.6,
-     "recent": 27.0,
-     "min": 31.6,
-     "dk": 22.6,
-     "salary": 5200
-    },
-    {
-     "player": "C.J. McCollum",
-     "plus": 4.4,
-     "recent": 22.0,
-     "min": 26.4,
-     "dk": 27.1,
-     "salary": 5800
     }
    ]
   }
@@ -556,7 +430,7 @@
    "player": "Kyshawn George",
    "team": "WAS",
    "kind": "hot",
-   "last": 45.3,
+   "last": 45.8,
    "before": 30.2,
    "n": 6
   },
@@ -595,73 +469,73 @@
    "n": 2
   },
   {
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "kind": "down",
+   "last": 19.7,
+   "before": 28.4,
+   "n": 5
+  },
+  {
    "player": "Corey Kispert",
    "team": "ATL",
    "kind": "up",
    "last": 14.0,
    "before": 5.3,
    "n": 3
-  },
-  {
-   "player": "Jase Richardson",
-   "team": "ORL",
-   "kind": "up",
-   "last": 27.0,
-   "before": 18.4,
-   "n": 5
   }
  ],
  "chalk": [
   {
-   "player": "Donovan Mitchell",
-   "team": "CLE",
-   "own": 39.5,
-   "dk": 52.4,
-   "salary": 8100
-  },
-  {
-   "player": "James Harden",
-   "team": "CLE",
-   "own": 39.0,
-   "dk": 46.5,
-   "salary": 7100
+   "player": "Alperen Sengun",
+   "team": "HOU",
+   "own": 39.7,
+   "dk": 48.8,
+   "salary": 8900
   },
   {
    "player": "Shai Gilgeous-Alexander",
    "team": "OKC",
-   "own": 38.1,
-   "dk": 62.2,
+   "own": 37.5,
+   "dk": 54.8,
    "salary": 10400
   },
   {
-   "player": "Evan Mobley",
-   "team": "CLE",
-   "own": 37.8,
-   "dk": 50.2,
-   "salary": 7800
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "own": 35.1,
+   "dk": 34.4,
+   "salary": 6600
+  },
+  {
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "own": 32.8,
+   "dk": 43.9,
+   "salary": 8700
   }
  ],
  "leverage": [
   {
-   "player": "Kevin Durant",
-   "team": "HOU",
-   "own": 9.5,
-   "dk": 37.1,
-   "salary": 7400
-  },
-  {
-   "player": "Jared McCain",
-   "team": "OKC",
-   "own": 7.2,
-   "dk": 27.5,
-   "salary": 5500
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "own": 9.8,
+   "dk": 30.5,
+   "salary": 6300
   },
   {
    "player": "Jalen Brunson",
    "team": "NYK",
-   "own": 7.0,
-   "dk": 39.8,
+   "own": 9.2,
+   "dk": 39.4,
    "salary": 8200
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "own": 6.8,
+   "dk": 22.9,
+   "salary": 4800
   }
  ],
  "last": {
@@ -686,6 +560,15 @@
     "ast": 9.0
    },
    {
+    "player": "Kyshawn George",
+    "team": "WAS",
+    "dk": 57.5,
+    "min": 39.0,
+    "pts": 33.0,
+    "reb": 4.0,
+    "ast": 8.0
+   },
+   {
     "player": "Victor Wembanyama",
     "team": "SAS",
     "dk": 56.5,
@@ -693,15 +576,6 @@
     "pts": 30.0,
     "reb": 14.0,
     "ast": 2.0
-   },
-   {
-    "player": "Kyshawn George",
-    "team": "WAS",
-    "dk": 56.0,
-    "min": 39.0,
-    "pts": 33.0,
-    "reb": 4.0,
-    "ast": 7.0
    },
    {
     "player": "Cooper Flagg",
@@ -741,6 +615,11 @@
   ],
   "injuries": [
    {
+    "player": "Brandon Miller",
+    "team": "CHA",
+    "text": "Brandon Miller left Friday's game against Boston in the second quarter with right groin soreness and did not return."
+   },
+   {
     "player": "Jarrett Allen",
     "team": "CLE",
     "text": "Jarrett Allen was questionable for Friday after leaving his last game with a knee injury, and he did not play. The show said the injury did not appear serious."
@@ -753,8 +632,8 @@
   ]
  },
  "injuries": {
-  "report": "08:30 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_08_30AM.pdf",
+  "report": "12:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_12_30PM.pdf",
   "pending": [
    "ATL",
    "CLE",
@@ -762,6 +641,32 @@
    "OKC"
   ],
   "rows": [
+   {
+    "game": "BKN at ATL",
+    "time": "2026-11-08T00:30Z",
+    "team": "BKN",
+    "player": "Noah Clowney",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:41 PM",
+    "min": 20.3,
+    "benefits": [
+     {
+      "player": "Chaney Johnson",
+      "plus": 3.9,
+      "min": 24.1
+     },
+     {
+      "player": "Keon Ellis",
+      "plus": 3.5,
+      "min": 21.3
+     }
+    ],
+    "estimate": true
+   },
    {
     "game": "ORL at GSW",
     "time": "2026-11-08T01:30Z",
