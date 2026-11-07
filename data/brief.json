@@ -227,81 +227,49 @@
  ],
  "changed": [
   {
-   "player": "Tristan Vukcevic",
-   "team": "WAS",
+   "player": "Sam Merrill",
+   "team": "CLE",
    "status": "Out",
    "was": "",
    "why": "",
    "time": "6:38 AM"
   },
   {
-   "player": "Reece Beekman",
-   "team": "WAS",
-   "status": "Out",
+   "player": "Jordan Goodwin",
+   "team": "PHX",
+   "status": "Doubtful",
+   "was": "Out",
+   "why": "",
+   "time": "6:38 AM"
+  },
+  {
+   "player": "Rasheer Fleming",
+   "team": "PHX",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Left Ankle Sprain",
+   "time": "6:38 AM"
+  },
+  {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Left Knee Tendinitis",
+   "time": "6:38 AM"
+  },
+  {
+   "player": "Gary Payton II",
+   "team": "GSW",
+   "status": "Questionable",
    "was": "",
    "why": "",
    "time": "6:38 AM"
   },
   {
-   "player": "Justin Champagnie",
-   "team": "WAS",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Jamir Watkins",
-   "team": "WAS",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Anthony Davis",
-   "team": "WAS",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Thomas Sorber",
-   "team": "OKC",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Nikola Topic",
-   "team": "OKC",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Jaylin Williams",
-   "team": "OKC",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Jalen Williams",
-   "team": "OKC",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Chet Holmgren",
-   "team": "OKC",
-   "status": "Out",
+   "player": "Draymond Green",
+   "team": "GSW",
+   "status": "Questionable",
    "was": "",
    "why": "",
    "time": "6:38 AM"
@@ -309,34 +277,124 @@
  ],
  "sits": [
   {
+   "team": "CLE",
+   "outs": [
+    {
+     "player": "Sam Merrill",
+     "min": 22.0,
+     "note": "Ruled out tonight.",
+     "new": true
+    },
+    {
+     "player": "Jarrett Allen",
+     "min": 19.7,
+     "note": "Jarrett Allen was questionable for Friday after leaving his last game with a knee injury, and he did not play. The show said the injury did not appear serious.",
+     "new": false
+    },
+    {
+     "player": "Jaylon Tyson",
+     "min": 19.7,
+     "note": "Jaylon Tyson did not play on Friday, and he has not played since October 29.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 61.4,
+   "benefits": [
+    {
+     "player": "Peyton Watson",
+     "plus": 13.5,
+     "recent": 24.0,
+     "min": 37.5,
+     "dk": 31.3,
+     "salary": 5700
+    },
+    {
+     "player": "Tyrese Proctor",
+     "plus": 10.5,
+     "recent": 11.0,
+     "min": 21.5,
+     "dk": 19.8,
+     "salary": 3900
+    },
+    {
+     "player": "Evan Mobley",
+     "plus": 8.4,
+     "recent": 32.7,
+     "min": 41.1,
+     "dk": 50.1,
+     "salary": 7800
+    }
+   ]
+  },
+  {
+   "team": "PHX",
+   "outs": [
+    {
+     "player": "Jordan Goodwin",
+     "min": 17.3,
+     "note": "Jordan Goodwin missed Phoenix's last two games, and the show was unsure whether he plays next.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 17.3,
+   "benefits": [
+    {
+     "player": "Miles Bridges",
+     "plus": 3.4,
+     "recent": 29.0,
+     "min": 32.4,
+     "dk": 35.1,
+     "salary": 7100
+    },
+    {
+     "player": "Koa Peat",
+     "plus": 3.1,
+     "recent": 2.7,
+     "min": 5.8,
+     "dk": 4.6,
+     "salary": 3000
+    },
+    {
+     "player": "Dillon Brooks",
+     "plus": 2.5,
+     "recent": 31.0,
+     "min": 33.5,
+     "dk": 29.2,
+     "salary": 6300
+    }
+   ]
+  },
+  {
    "team": "OKC",
    "outs": [
     {
      "player": "Jalen Williams",
      "min": 31.7,
      "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
-     "new": true
+     "new": false
     },
     {
      "player": "Chet Holmgren",
      "min": 30.0,
      "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
-     "new": true
+     "new": false
     },
     {
      "player": "Jaylin Williams",
      "min": 22.0,
      "note": "Jaylin Williams did not play on Wednesday or Friday, and the show expects him to remain out on Saturday.",
-     "new": true
+     "new": false
     },
     {
      "player": "Cason Wallace",
      "min": 16.3,
      "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
-     "new": true
+     "new": false
     }
    ],
-   "new": true,
+   "new": false,
    "lost": 100.0,
    "benefits": [
     {
@@ -372,16 +430,16 @@
      "player": "Paolo Banchero",
      "min": 33.5,
      "note": "The show noted that Orlando is still without Paolo Banchero and Jalen Suggs, and it said things will be tough for the Magic until both return. Banchero did not appear in Orlando's Nov. 5 box score.",
-     "new": true
+     "new": false
     },
     {
      "player": "Jalen Suggs",
      "min": 33.3,
      "note": "Jalen Suggs remains out for Orlando and did not play on Nov. 5. The show said Anthony Black should still play sixth-man minutes or close to it once Suggs returns.",
-     "new": true
+     "new": false
     }
    ],
-   "new": true,
+   "new": false,
    "lost": 66.8,
    "benefits": [
     {
@@ -395,73 +453,22 @@
    ]
   },
   {
-   "team": "CLE",
-   "outs": [
-    {
-     "player": "Sam Merrill",
-     "min": 22.0,
-     "note": "Ruled out tonight.",
-     "new": true
-    },
-    {
-     "player": "Jarrett Allen",
-     "min": 19.7,
-     "note": "Jarrett Allen was questionable for Friday after leaving his last game with a knee injury, and he did not play. The show said the injury did not appear serious.",
-     "new": true
-    },
-    {
-     "player": "Jaylon Tyson",
-     "min": 19.7,
-     "note": "Jaylon Tyson did not play on Friday, and he has not played since October 29.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 61.4,
-   "benefits": [
-    {
-     "player": "Peyton Watson",
-     "plus": 13.5,
-     "recent": 24.0,
-     "min": 37.5,
-     "dk": 31.3,
-     "salary": 5700
-    },
-    {
-     "player": "Tyrese Proctor",
-     "plus": 10.5,
-     "recent": 11.0,
-     "min": 21.5,
-     "dk": 19.8,
-     "salary": 3900
-    },
-    {
-     "player": "Evan Mobley",
-     "plus": 8.4,
-     "recent": 32.7,
-     "min": 41.1,
-     "dk": 50.1,
-     "salary": 7800
-    }
-   ]
-  },
-  {
    "team": "WAS",
    "outs": [
     {
      "player": "Anthony Davis",
      "min": 32.7,
      "note": "Anthony Davis did not play on Friday after turning his ankle on Wednesday. Washington plays Oklahoma City on Saturday on the second night of a back-to-back.",
-     "new": true
+     "new": false
     },
     {
      "player": "Justin Champagnie",
      "min": 17.7,
      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
-     "new": true
+     "new": false
     }
    ],
-   "new": true,
+   "new": false,
    "lost": 50.4,
    "benefits": [
     {
@@ -489,7 +496,7 @@
      "player": "Jalen Johnson",
      "min": 32.7,
      "note": "Jalen Johnson has missed Atlanta's games on Nov. 2, Nov. 4 and Nov. 6 with a sprained left ankle. The show said Kingston Flemings' recent extra usage will shrink once Johnson returns.",
-     "new": true
+     "new": false
     },
     {
      "player": "Asa Newell",
@@ -498,7 +505,7 @@
      "new": false
     }
    ],
-   "new": true,
+   "new": false,
    "lost": 48.0,
    "benefits": [
     {
@@ -524,29 +531,6 @@
      "min": 31.9,
      "dk": 34.6,
      "salary": 5800
-    }
-   ]
-  },
-  {
-   "team": "NYK",
-   "outs": [
-    {
-     "player": "Josh Hart",
-     "min": 31.3,
-     "note": "Josh Hart did not play in New York's last game on Wednesday, and the show expects him to remain out on Saturday.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 31.3,
-   "benefits": [
-    {
-     "player": "Jose Alvarado",
-     "plus": 3.2,
-     "recent": 9.7,
-     "min": 12.9,
-     "dk": 12.2,
-     "salary": 3700
     }
    ]
   }
@@ -787,69 +771,6 @@
   ],
   "rows": [
    {
-    "game": "NYK at CLE",
-    "time": "2026-11-08T01:00Z",
-    "team": "NYK",
-    "player": "Josh Hart",
-    "status": "Out",
-    "reason": "Right Ankle Soreness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "6:38 AM",
-    "min": 31.3,
-    "benefits": [
-     {
-      "player": "Jose Alvarado",
-      "min": 12.9,
-      "recent": 9.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "ORL at GSW",
-    "time": "2026-11-08T01:30Z",
-    "team": "ORL",
-    "player": "Paolo Banchero",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "6:38 AM",
-    "min": 33.5,
-    "benefits": [
-     {
-      "player": "Nikola Vucevic",
-      "min": 12.4,
-      "recent": 8.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "ORL at GSW",
-    "time": "2026-11-08T01:30Z",
-    "team": "ORL",
-    "player": "Jalen Suggs",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "6:38 AM",
-    "min": 33.3,
-    "benefits": [
-     {
-      "player": "Nikola Vucevic",
-      "min": 12.4,
-      "recent": 8.3
-     }
-    ],
-    "estimate": false
-   },
-   {
     "game": "ORL at GSW",
     "time": "2026-11-08T01:30Z",
     "team": "GSW",
@@ -883,7 +804,7 @@
     "status": "Questionable",
     "reason": "Left Knee Tendinitis",
     "new": true,
-    "was": "",
+    "was": "Out",
     "known": true,
     "changed_at": "6:38 AM",
     "min": 17.7,
@@ -930,42 +851,12 @@
    {
     "game": "HOU at PHX",
     "time": "2026-11-08T02:00Z",
-    "team": "HOU",
-    "player": "Clint Capela",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "6:38 AM",
-    "min": 20.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "HOU at PHX",
-    "time": "2026-11-08T02:00Z",
-    "team": "HOU",
-    "player": "Steven Adams",
-    "status": "Out",
-    "reason": "Right Soleus Strain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "6:38 AM",
-    "min": 9.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "HOU at PHX",
-    "time": "2026-11-08T02:00Z",
     "team": "PHX",
     "player": "Jordan Goodwin",
     "status": "Doubtful",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Out",
     "known": true,
     "changed_at": "6:38 AM",
     "min": 17.3,
@@ -991,7 +882,7 @@
     "status": "Questionable",
     "reason": "Left Ankle Sprain",
     "new": true,
-    "was": "",
+    "was": "Out",
     "known": true,
     "changed_at": "6:38 AM",
     "min": 7.5,
@@ -1010,6 +901,84 @@
     "known": true,
     "changed_at": "",
     "min": 20.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "NYK at CLE",
+    "time": "2026-11-08T01:00Z",
+    "team": "NYK",
+    "player": "Josh Hart",
+    "status": "Out",
+    "reason": "Right Ankle Soreness",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 31.3,
+    "benefits": [
+     {
+      "player": "Jose Alvarado",
+      "min": 12.9,
+      "recent": 9.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "ORL at GSW",
+    "time": "2026-11-08T01:30Z",
+    "team": "ORL",
+    "player": "Paolo Banchero",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 33.5,
+    "benefits": [
+     {
+      "player": "Nikola Vucevic",
+      "min": 12.4,
+      "recent": 8.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "ORL at GSW",
+    "time": "2026-11-08T01:30Z",
+    "team": "ORL",
+    "player": "Jalen Suggs",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 33.3,
+    "benefits": [
+     {
+      "player": "Nikola Vucevic",
+      "min": 12.4,
+      "recent": 8.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "HOU at PHX",
+    "time": "2026-11-08T02:00Z",
+    "team": "HOU",
+    "player": "Clint Capela",
+    "status": "Out",
+    "reason": "Right Ankle Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 20.7,
     "benefits": [],
     "estimate": false
    }
@@ -1043,6 +1012,11 @@
    {
     "player": "Kristaps Porzingis",
     "team": "GSW",
+    "status": "Out"
+   },
+   {
+    "player": "Steven Adams",
+    "team": "HOU",
     "status": "Out"
    },
    {

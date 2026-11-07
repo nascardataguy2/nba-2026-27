@@ -71,33 +71,6 @@ def main():
         e = [x for x in plog if norm(x["player"]) == norm(name) and x["kind"] == "injury"]
         return max(e, key=lambda x: x["date"])["text"] if e else ""
 
-    # --- what changed: statuses first seen after the first run of the day ---
-    now = datetime.now(ET)
-    spath = os.path.join(D, "brief_state.json")
-    st = load_json(spath, {})
-    if st.get("date") != day:
-        st = {"date": day, "first": now.strftime("%-I:%M %p"), "seen": {}, "log": []}
-        first_run = True
-    else:
-        first_run = False
-    cur = {}
-    for o in offp:
-        if o["team"] in teams and not o.get("reason", "").startswith("G League"):
-            cur[o["player"]] = (o["team"], o["status"], o.get("reason", ""))
-    for o in doc.get("out", []):
-        if o["team"] in teams and o["player"] not in cur:
-            cur[o["player"]] = (o["team"], "Out", "")
-    for name, (team, status, why) in cur.items():
-        old = st["seen"].get(name)
-        if old != status:
-            if not first_run:
-                st["log"].append({"player": name, "team": team, "status": status, "was": old or "", "why": why,
-                                  "time": now.strftime("%-I:%M %p")})
-            st["seen"][name] = status
-    json.dump(st, open(spath, "w"), indent=1, ensure_ascii=False)
-    changed = list(reversed(st["log"]))[:10]
-    new_today = {c["player"] for c in st["log"]}
-
     # --- injury report history per team (data/inj_hist.json): a status is new when it differs
     #     from that team's previous report (a player missing from it counts as new) ---
     hpath = os.path.join(D, "inj_hist.json")
@@ -118,7 +91,53 @@ def main():
         ds = [d0 for d0 in hist.get(team, {}) if d0 < day]
         if not ds:
             return None, False  # no earlier report saved for this team
-        return hist[team][max(ds)].get(name), True
+        prev = hist[team][max(ds)]
+        if name in prev:
+            return prev[name], True
+        k = norm(name)  # names differ between sources (Jimmy Butler / Jimmy Butler III)
+        for n0, v in prev.items():
+            if norm(n0) == k or norm(n0).startswith(k + " ") or k.startswith(norm(n0) + " "):
+                return v, True
+        return None, True
+
+    # --- what changed: statuses first seen after the first run of the day ---
+    now = datetime.now(ET)
+    spath = os.path.join(D, "brief_state.json")
+    st = load_json(spath, {})
+    if st.get("date") != day:
+        st = {"date": day, "first": now.strftime("%-I:%M %p"), "seen": {}, "log": [], "teams": []}
+        first_run = True
+    else:
+        first_run = False
+    st.setdefault("teams", [])
+    cur = {}
+    for o in offp:
+        if o["team"] in teams and not o.get("reason", "").startswith("G League"):
+            cur[o["player"]] = (o["team"], o["status"], o.get("reason", ""))
+    for o in doc.get("out", []):
+        if o["team"] in teams and o["player"] not in cur:
+            cur[o["player"]] = (o["team"], "Out", "")
+    # A player first seen after the first run (for example when his team files its first report of
+    # the day later on) is compared with his team's previous report, so players who were already out
+    # (or already questionable) are not listed as "changes".
+    filed = {t for t in {v[0] for v in cur.values()} if t not in official.get("pending", [])}
+    for name, (team, status, why) in cur.items():
+        old = st["seen"].get(name)
+        if old is None and not first_run:
+            prev_st, known = prev_status(team, name)
+            if not known:
+                st["seen"][name] = status
+                continue
+            old = prev_st
+        if old != status:
+            if not first_run:
+                st["log"].append({"player": name, "team": team, "status": status, "was": old or "", "why": why,
+                                  "time": now.strftime("%-I:%M %p")})
+            st["seen"][name] = status
+    st["teams"] = sorted(set(st["teams"]) | filed)
+    json.dump(st, open(spath, "w"), indent=1, ensure_ascii=False)
+    changed = list(reversed(st["log"]))[:10]
+    new_today = {c["player"] for c in st["log"]}
 
     intraday = {}
     for c in st["log"]:
