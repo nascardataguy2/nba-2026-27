@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updated": "6:42 PM ET",
+ "updated": "6:52 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:38 AM",
@@ -39,7 +39,7 @@
      "q": []
     }
    },
-   "key": "Jalen Johnson has the top projection in this game at 44.5 DK points."
+   "key": "Egor Demin is out, so Nolan Traore and Chaney Johnson should play more than usual."
   },
   {
    "away": "NYK",
@@ -82,7 +82,7 @@
      "q": []
     }
    },
-   "key": "Sam Merrill and Jarrett Allen are out, so Peyton Watson should play more than usual."
+   "key": "Sam Merrill and Jarrett Allen are out, so Meleek Thomas and Tyrese Proctor should play more than usual."
   },
   {
    "away": "WAS",
@@ -134,7 +134,7 @@
      "q": []
     }
    },
-   "key": "Anthony Davis and Justin Champagnie are out, so Carlton Carrington and Kyshawn George should play more than usual."
+   "key": "Jalen Williams and Chet Holmgren are out, so Kenrich Williams and Bennett Stirtz should play more than usual."
   },
   {
    "away": "ORL",
@@ -177,10 +177,6 @@
       {
        "player": "Gui Santos",
        "min": 16.0
-      },
-      {
-       "player": "Gary Payton",
-       "min": 12.2
       }
      ]
     }
@@ -218,10 +214,18 @@
      "q": []
     }
    },
-   "key": "Jordan Goodwin is out, so Koa Peat and Dillon Brooks should play more than usual."
+   "key": "Clint Capela is out, so Alperen Sengun and Tari Eason should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Gary Payton II",
+   "team": "GSW",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:53 PM"
+  },
   {
    "player": "Anthony Davis",
    "team": "WAS",
@@ -292,14 +296,6 @@
    "status": "Doubtful",
    "was": "Out",
    "why": "",
-   "time": "6:38 AM"
-  },
-  {
-   "player": "Rasheer Fleming",
-   "team": "PHX",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "Left Ankle Sprain",
    "time": "6:38 AM"
   }
  ],
@@ -373,11 +369,27 @@
    "lost": 61.4,
    "benefits": [
     {
+     "player": "Meleek Thomas",
+     "plus": 6.2,
+     "recent": 18.0,
+     "min": 24.2,
+     "dk": 27.3,
+     "salary": 4200
+    },
+    {
+     "player": "Tyrese Proctor",
+     "plus": 5.8,
+     "recent": 13.0,
+     "min": 18.8,
+     "dk": 19.8,
+     "salary": 3900
+    },
+    {
      "player": "Peyton Watson",
-     "plus": 3.2,
+     "plus": 3.7,
      "recent": 24.0,
-     "min": 27.2,
-     "dk": 27.4,
+     "min": 27.7,
+     "dk": 27.9,
      "salary": 5700
     }
    ]
@@ -402,19 +414,27 @@
    "lost": 50.4,
    "benefits": [
     {
-     "player": "Carlton Carrington",
-     "plus": 8.5,
-     "recent": 17.7,
-     "min": 26.2,
-     "dk": 17.8,
-     "salary": 3800
+     "player": "Deandre Ayton",
+     "plus": 5.2,
+     "recent": 19.3,
+     "min": 24.5,
+     "dk": 22.7,
+     "salary": 3200
+    },
+    {
+     "player": "Tre Johnson",
+     "plus": 4.0,
+     "recent": 21.0,
+     "min": 25.0,
+     "dk": 17.4,
+     "salary": 3600
     },
     {
      "player": "Kyshawn George",
-     "plus": 2.6,
+     "plus": 3.7,
      "recent": 33.0,
-     "min": 35.6,
-     "dk": 29.9,
+     "min": 36.7,
+     "dk": 30.8,
      "salary": 5900
     }
    ]
@@ -433,20 +453,85 @@
    "lost": 17.3,
    "benefits": [
     {
-     "player": "Koa Peat",
-     "plus": 3.1,
-     "recent": 2.7,
-     "min": 5.8,
-     "dk": 4.6,
-     "salary": 3000
+     "player": "Khaman Maluach",
+     "plus": 6.0,
+     "recent": 11.0,
+     "min": 17.0,
+     "dk": 15.9,
+     "salary": 4700
     },
     {
-     "player": "Dillon Brooks",
-     "plus": 2.5,
-     "recent": 31.0,
-     "min": 33.5,
-     "dk": 29.4,
-     "salary": 6300
+     "player": "Ryan Dunn",
+     "plus": 5.0,
+     "recent": 14.0,
+     "min": 19.0,
+     "dk": 14.8,
+     "salary": 4100
+    },
+    {
+     "player": "Miles Bridges",
+     "plus": 3.3,
+     "recent": 29.0,
+     "min": 32.3,
+     "dk": 35.2,
+     "salary": 7100
+    }
+   ]
+  },
+  {
+   "team": "OKC",
+   "outs": [
+    {
+     "player": "Jalen Williams",
+     "min": 31.7,
+     "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
+     "new": false
+    },
+    {
+     "player": "Chet Holmgren",
+     "min": 30.0,
+     "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
+     "new": false
+    },
+    {
+     "player": "Jaylin Williams",
+     "min": 22.0,
+     "note": "Jaylin Williams did not play on Wednesday or Friday, and the show expects him to remain out on Saturday.",
+     "new": false
+    },
+    {
+     "player": "Cason Wallace",
+     "min": 16.3,
+     "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
+     "new": false
+    }
+   ],
+   "new": false,
+   "lost": 100.0,
+   "benefits": [
+    {
+     "player": "Kenrich Williams",
+     "plus": 4.9,
+     "recent": 19.0,
+     "min": 23.9,
+     "dk": 23.1,
+     "salary": 4200
+    },
+    {
+     "player": "Bennett Stirtz",
+     "plus": 4.1,
+     "recent": 16.0,
+     "min": 20.1,
+     "dk": 19.7,
+     "salary": 3900
+    },
+    {
+     "player": "Ajay Mitchell",
+     "plus": 3.7,
+     "recent": 27.0,
+     "min": 30.7,
+     "dk": 37.3,
+     "salary": 6600
     }
    ]
   },
@@ -464,12 +549,12 @@
    "lost": 31.3,
    "benefits": [
     {
-     "player": "Jose Alvarado",
-     "plus": 3.2,
-     "recent": 9.7,
-     "min": 12.9,
-     "dk": 13.1,
-     "salary": 3700
+     "player": "James Wiseman",
+     "plus": 2.5,
+     "recent": 4.0,
+     "min": 6.5,
+     "dk": 8.4,
+     "salary": 3300
     }
    ]
   }
@@ -560,55 +645,55 @@
  ],
  "chalk": [
   {
-   "player": "Alex Sarr",
+   "player": "Deandre Ayton",
    "team": "WAS",
-   "own": 46.7,
-   "dk": 27.0,
-   "salary": 4800
+   "own": 59.2,
+   "dk": 22.7,
+   "salary": 3200
   },
   {
    "player": "Anthony Black",
    "team": "ORL",
-   "own": 40.7,
+   "own": 36.5,
    "dk": 37.4,
    "salary": 6400
   },
   {
    "player": "Kyshawn George",
    "team": "WAS",
-   "own": 39.5,
-   "dk": 29.9,
+   "own": 36.4,
+   "dk": 30.8,
    "salary": 5900
   },
   {
-   "player": "Jamal Cain",
-   "team": "ORL",
-   "own": 35.2,
-   "dk": 17.1,
-   "salary": 3800
+   "player": "Alperen Sengun",
+   "team": "HOU",
+   "own": 30.3,
+   "dk": 50.5,
+   "salary": 8900
   }
  ],
  "leverage": [
   {
-   "player": "Shai Gilgeous-Alexander",
-   "team": "OKC",
-   "own": 9.5,
-   "dk": 59.3,
-   "salary": 10400
-  },
-  {
-   "player": "Bilal Coulibaly",
-   "team": "WAS",
-   "own": 3.3,
-   "dk": 20.8,
-   "salary": 3900
+   "player": "Wendell Carter Jr.",
+   "team": "ORL",
+   "own": 7.9,
+   "dk": 37.1,
+   "salary": 6500
   },
   {
    "player": "Jalen Green",
    "team": "PHX",
-   "own": 3.5,
-   "dk": 32.3,
+   "own": 2.2,
+   "dk": 31.2,
    "salary": 6200
+  },
+  {
+   "player": "Devin Booker",
+   "team": "PHX",
+   "own": 7.7,
+   "dk": 41.5,
+   "salary": 8300
   }
  ],
  "last": {
@@ -705,8 +790,8 @@
   ]
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_06_30PM.pdf",
+  "report": "06:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_06_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -753,14 +838,14 @@
     "min": 32.7,
     "benefits": [
      {
-      "player": "Carlton Carrington",
-      "min": 26.2,
-      "recent": 17.7
+      "player": "Deandre Ayton",
+      "min": 24.5,
+      "recent": 19.3
      },
      {
-      "player": "Kyshawn George",
-      "min": 35.6,
-      "recent": 33.0
+      "player": "Tre Johnson",
+      "min": 25.0,
+      "recent": 21.0
      }
     ],
     "estimate": false
@@ -779,9 +864,14 @@
     "min": 22.0,
     "benefits": [
      {
-      "player": "Peyton Watson",
-      "min": 27.2,
-      "recent": 24.0
+      "player": "Meleek Thomas",
+      "min": 24.2,
+      "recent": 18.0
+     },
+     {
+      "player": "Tyrese Proctor",
+      "min": 18.8,
+      "recent": 13.0
      }
     ],
     "estimate": false
@@ -853,13 +943,13 @@
     "benefits": [
      {
       "player": "Yaxel Lendeborg",
-      "plus": 7.2,
-      "min": 36.0
+      "plus": 6.5,
+      "min": 35.3
      },
      {
       "player": "Georges Niang",
-      "plus": 5.0,
-      "min": 23.6
+      "plus": 4.2,
+      "min": 22.8
      }
     ],
     "estimate": true
@@ -869,26 +959,15 @@
     "time": "2026-11-08T01:30Z",
     "team": "GSW",
     "player": "Gary Payton II",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "6:38 AM",
+    "changed_at": "6:53 PM",
     "min": 15.0,
-    "benefits": [
-     {
-      "player": "Brandin Podziemski",
-      "plus": 4.5,
-      "min": 33.4
-     },
-     {
-      "player": "Yaxel Lendeborg",
-      "plus": 4.5,
-      "min": 33.3
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "HOU at PHX",
@@ -904,14 +983,14 @@
     "min": 17.3,
     "benefits": [
      {
-      "player": "Koa Peat",
-      "min": 5.8,
-      "recent": 2.7
+      "player": "Khaman Maluach",
+      "min": 17.0,
+      "recent": 11.0
      },
      {
-      "player": "Dillon Brooks",
-      "min": 33.5,
-      "recent": 31.0
+      "player": "Ryan Dunn",
+      "min": 19.0,
+      "recent": 14.0
      }
     ],
     "estimate": false
@@ -943,7 +1022,18 @@
     "known": true,
     "changed_at": "",
     "min": 20.0,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Nolan Traore",
+      "min": 25.4,
+      "recent": 22.0
+     },
+     {
+      "player": "Chaney Johnson",
+      "min": 20.9,
+      "recent": 18.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -988,7 +1078,18 @@
     "known": true,
     "changed_at": "",
     "min": 31.7,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Kenrich Williams",
+      "min": 23.9,
+      "recent": 19.0
+     },
+     {
+      "player": "Bennett Stirtz",
+      "min": 20.1,
+      "recent": 16.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -1005,9 +1106,9 @@
     "min": 31.3,
     "benefits": [
      {
-      "player": "Jose Alvarado",
-      "min": 12.9,
-      "recent": 9.7
+      "player": "James Wiseman",
+      "min": 6.5,
+      "recent": 4.0
      }
     ],
     "estimate": false
@@ -1024,7 +1125,18 @@
     "known": true,
     "changed_at": "",
     "min": 30.0,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Kenrich Williams",
+      "min": 23.9,
+      "recent": 19.0
+     },
+     {
+      "player": "Bennett Stirtz",
+      "min": 20.1,
+      "recent": 16.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -1039,7 +1151,18 @@
     "known": true,
     "changed_at": "",
     "min": 22.0,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Kenrich Williams",
+      "min": 23.9,
+      "recent": 19.0
+     },
+     {
+      "player": "Bennett Stirtz",
+      "min": 20.1,
+      "recent": 16.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -1056,9 +1179,14 @@
     "min": 19.7,
     "benefits": [
      {
-      "player": "Peyton Watson",
-      "min": 27.2,
-      "recent": 24.0
+      "player": "Meleek Thomas",
+      "min": 24.2,
+      "recent": 18.0
+     },
+     {
+      "player": "Tyrese Proctor",
+      "min": 18.8,
+      "recent": 13.0
      }
     ],
     "estimate": false
@@ -1077,9 +1205,14 @@
     "min": 19.7,
     "benefits": [
      {
-      "player": "Peyton Watson",
-      "min": 27.2,
-      "recent": 24.0
+      "player": "Meleek Thomas",
+      "min": 24.2,
+      "recent": 18.0
+     },
+     {
+      "player": "Tyrese Proctor",
+      "min": 18.8,
+      "recent": 13.0
      }
     ],
     "estimate": false
@@ -1098,14 +1231,14 @@
     "min": 17.7,
     "benefits": [
      {
-      "player": "Carlton Carrington",
-      "min": 26.2,
-      "recent": 17.7
+      "player": "Deandre Ayton",
+      "min": 24.5,
+      "recent": 19.3
      },
      {
-      "player": "Kyshawn George",
-      "min": 35.6,
-      "recent": 33.0
+      "player": "Tre Johnson",
+      "min": 25.0,
+      "recent": 21.0
      }
     ],
     "estimate": false
@@ -1122,7 +1255,18 @@
     "known": true,
     "changed_at": "",
     "min": 16.3,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Kenrich Williams",
+      "min": 23.9,
+      "recent": 19.0
+     },
+     {
+      "player": "Bennett Stirtz",
+      "min": 20.1,
+      "recent": 16.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -1189,7 +1333,18 @@
     "known": true,
     "changed_at": "",
     "min": 20.7,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Alperen Sengun",
+      "min": 36.5,
+      "recent": 33.0
+     },
+     {
+      "player": "Tari Eason",
+      "min": 24.4,
+      "recent": 22.0
+     }
+    ],
     "estimate": false
    }
   ],
