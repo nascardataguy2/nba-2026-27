@@ -3,16 +3,24 @@
 The field does not use our projections. Most players build from free public
 numbers, so each simulated lineup uses DailyFantasyFuel's DraftKings projection
 (ours when DFF has none) with random noise, because real players use different
-numbers. Each player's simulated share then goes through a correction fit
-against real projected DraftKings ownership said out loud on Stokastic's daily
-NBA show (8 slates, Oct. 26 to Nov. 6, 168 players). Tested one slate at a time
-(fit on the other slates), the average miss fell from 9.3 points (the old
-model) to 7.0, and misses of more than 10 points fell from 58 to 44.
+numbers. Each player's simulated share then goes through a correction fit on
+real DraftKings GPP ownership: the five most-owned players on every main slate,
+from Fantasy Team Advice's free Ownership History page (scripts/actual_own.py).
+Everyone else on a slate is known to be below the fifth-highest, and the fit
+uses that too.
 
-This is an estimate, not real ownership. No free source lets us show real
-ownership, so it stays labeled as an estimate.
+Tested on 14 real main slates (Oct. 23 to Nov. 6), each one held out while
+fitting on the others: the top-five average miss was 22.8 points for the old
+model, 16.8 for the model fit on show numbers, and 11.7 for this one.
 
-Writes "own" (percent) on each player in data/projections.json.
+scripts/own_fit.py refits the correction weekly as real slates come in and
+keeps a new fit only if it misses less on slates it did not see. The weights
+live in data/own_model.json.
+
+This is still an estimate before lock, not real ownership.
+
+Writes "own" (percent) on each player in data/projections.json, and saves each
+player's simulated share and field projection at lock for the weekly refit.
 """
 import json
 import os
@@ -30,17 +38,20 @@ BUMP_STARS = 0.0     # listed in Stars & Scrubs (off: the fit above was tested w
 BUMP_OUT = 0.05      # projected for more minutes because a teammate is out
 BUMP_TOTAL = 0.005   # per point of game total above the slate average
 CORE = ["PG", "SG", "SF", "PF", "C", "G", "F"]
-# Correction fit on Stokastic's stated DraftKings ownership (Oct. 26 to Nov. 6, ridge 30).
-# Features: 1, log(sim share + 0.5), DFF value z-score, DFF projection z-score,
-# log(DFF value rank), salary / 10000, log(games on the slate).
-BETA = [3.3378, 0.2614, 0.1363, -0.1463, -0.3838, -0.0690, -0.1485]
-OWN_MAX = 60.0  # nobody above 60%; the extra goes to everyone else
+# Correction weights. Features: 1, log(sim share + 0.5), field value z-score, field projection
+# z-score, log(field value rank), salary / 10000, log(games on the slate). Fit on real
+# DraftKings ownership; scripts/own_fit.py updates data/own_model.json weekly.
+BETA_DEFAULT = [-0.4527, 0.526, -0.1185, 0.0514, -0.16, -0.2294, 0.0128]
+OWN_MAX = 85.0  # real main slates topped out at 83%; the extra goes to everyone else
 
 
-def calibrate(pool, raw):
-    """Turn simulated shares into estimates that match real field ownership."""
-    if not raw or len(pool) < 8:
-        return raw
+def beta():
+    m = load_json(os.path.join(D, "own_model.json"), {})
+    b = m.get("beta")
+    return b if isinstance(b, list) and len(b) == 7 else BETA_DEFAULT
+
+
+def features(pool, raw):
     pr = np.array([p.get("_fdk") or p["dk"] for p in pool], dtype=float)
     sal = np.array([p["salary"] for p in pool], dtype=float)
     sim = np.array([raw.get(p["player"], 0.0) for p in pool])
@@ -49,16 +60,27 @@ def calibrate(pool, raw):
     pz = (pr - pr.mean()) / (pr.std() + 1e-9)
     vr = np.argsort(np.argsort(-val)) + 1
     games = len({tuple(sorted((p["team"], p.get("opp", "")))) for p in pool})
-    X = np.column_stack([np.ones(len(pool)), np.log(sim + 0.5), vz, pz, np.log(vr), sal / 10000.0, np.full(len(pool), np.log(max(games, 1)))])
-    v = np.clip(np.exp(X @ np.array(BETA)) - 0.5, 0.05, None)
+    return np.column_stack([np.ones(len(pool)), np.log(sim + 0.5), vz, pz, np.log(vr), sal / 10000.0, np.full(len(pool), np.log(max(games, 1)))])
+
+
+def shares(X, b, cap=OWN_MAX):
+    v = np.clip(np.exp(X @ np.array(b)) - 0.5, 0.05, None)
     v = v / v.sum() * 800.0  # eight roster spots
     for _ in range(10):
-        over = v > OWN_MAX
+        over = v > cap
         if not over.any():
             break
-        ex = (v[over] - OWN_MAX).sum()
-        v[over] = OWN_MAX
+        ex = (v[over] - cap).sum()
+        v[over] = cap
         v[~over] += ex * v[~over] / v[~over].sum()
+    return v
+
+
+def calibrate(pool, raw):
+    """Turn simulated shares into estimates that match real field ownership."""
+    if not raw or len(pool) < 8:
+        return raw
+    v = shares(features(pool, raw), beta())
     return {p["player"]: round(float(x), 1) for p, x in zip(pool, v)}
 
 
@@ -156,9 +178,9 @@ def field_view(doc):
         p["_fdk"] = f if f and f > 0 else (p.get("dk") or 0)
 
 
-def save_history_own(doc):
+def save_history_own(doc, sims=None):
     """Keep each player's Own% in data/proj_history/DATE.json, frozen once his game tips,
-    so the Results tab shows the Own% we had at lock."""
+    with his simulated share (osim) and field projection (ofdk) for the weekly refit."""
     from datetime import datetime, timezone
     hp = os.path.join(D, "proj_history", doc.get("date", "") + ".json")
     hist = load_json(hp, None)
@@ -174,6 +196,10 @@ def save_history_own(doc):
         if h is None or p["team"] in locked or p.get("own") is None:
             continue
         h["own"] = p["own"]
+        sm = (sims or {}).get(p["player"])
+        if sm:
+            h["osim"], h["ofdk"], h["oslate"] = round(sm[0], 2), round(sm[1], 2), sm[2]
+            h["salary"] = p.get("salary")
     with open(hp, "w", encoding="utf-8") as fh:
         json.dump(hist, fh, indent=1, ensure_ascii=False)
 
@@ -187,11 +213,14 @@ def main():
     ss = load_json(os.path.join(D, "stars.json"), {})
     ss_names = {p["player"] for p in ss.get("stars", []) + ss.get("scrubs", [])} if ss.get("date") == doc.get("date") else set()
     has_ids = any(p.get("dkid") for p in doc["players"])
-    own = {}
+    own, sims = {}, {}
     for k, slate in enumerate(("main", "late")):
         pool = [p for p in doc["players"] if p.get("salary") and p.get("dk") and p.get("min", 0) >= 8
                 and (p.get("slate") or "main") == slate and (p.get("dkid") or not has_ids) and not p.get("out")]
-        own.update(calibrate(pool, simulate(pool, ss_names if slate == "main" else set(), seed=k + 1)))
+        raw = simulate(pool, ss_names if slate == "main" else set(), seed=k + 1)
+        for p in pool:
+            sims[p["player"]] = (raw.get(p["player"], 0.0), p.get("_fdk") or p["dk"], slate)
+        own.update(calibrate(pool, raw))
     for p in doc["players"]:
         if (p.get("slate") or "main") in ("main", "late") and p.get("salary"):
             p["own"] = own.get(p["player"], 0.0)
@@ -199,10 +228,10 @@ def main():
             p.pop("own", None)
     for p in doc["players"]:
         p.pop("_fdk", None)
-    doc["own_note"] = "Estimated ownership from %d simulated lineups per slate built on public projections, corrected against projected DraftKings ownership from a daily show. It is our estimate, not real ownership." % N
+    doc["own_note"] = "Estimated ownership from %d simulated lineups per slate built on public projections, corrected against real DraftKings ownership from past slates. It is our estimate, not real ownership." % N
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, indent=1, ensure_ascii=False)
-    save_history_own(doc)
+    save_history_own(doc, sims)
     top = sorted(((v, k) for k, v in own.items()), reverse=True)[:5]
     print("ownership:", ", ".join("%s %.0f%%" % (k, v) for v, k in top))
 

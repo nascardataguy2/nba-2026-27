@@ -41,8 +41,10 @@ def write_gamelogs(games, nights):
 
 def write_nights(nights, keep=14):
     """data/nights.json: the last nights' results for the Results tab. Each player row joins his
-    box score with the projection, minutes, salary and Own% we had at lock."""
+    box score with the projection, minutes and salary we had at lock, plus real DraftKings
+    ownership for the five most-owned players on the main slate (data/actual_own.json)."""
     out = {"dates": [], "nights": {}}
+    act = load_json(os.path.join(D, "actual_own.json"), {})
     for d in sorted(nights, reverse=True)[:keep]:
         box = load_json(os.path.join(HIST, "box", d + ".json"), [])
         snap = load_json(os.path.join(HIST, d + ".json"), {})
@@ -52,17 +54,22 @@ def write_nights(nights, keep=14):
             opp[g["away"]] = g["home"]
             opp[g["home"]] = g["away"]
         rows, ou = [], {}
+        real = {norm(a["player"]): a for a in (act.get(d) or {}).get("players", [])}
         for r in box:
             pj = snap.get(norm(r["player"])) or {}
             if pj.get("ou") is not None:
                 ou.setdefault(r["team"], pj["ou"])
             sal = pj.get("salary")
+            ra = real.get(norm(r["player"]))
+            if ra is None and sal:  # spelling differs: same salary, same last name
+                c = [a for k, a in real.items() if a.get("salary") == sal and k.split(" ")[-1] == norm(r["player"]).split(" ")[-1]]
+                ra = c[0] if len(c) == 1 else None
             rows.append({"player": r["player"], "team": r["team"], "opp": pj.get("opp") or opp.get(r["team"], ""),
                          "pos": pj.get("pos") or r.get("pos", ""), "start": bool(r.get("start")),
                          "min": r["min"], "dk": r["dk"], "pts": r.get("pts", 0), "reb": r.get("reb", 0),
                          "ast": r.get("ast", 0), "stl": r.get("stl", 0), "blk": r.get("blk", 0), "to": r.get("to", 0),
                          "tpm": r.get("tpm", 0), "sal": sal, "proj": pj.get("dk"), "pmin": pj.get("min"),
-                         "own": pj.get("own"), "slate": pj.get("slate"),
+                         "own": ra["own"] if ra else None, "slate": pj.get("slate"),
                          "val": round(r["dk"] / (sal / 1000.0), 2) if sal else None,
                          "diff": round(r["dk"] - pj["dk"], 1) if pj.get("dk") is not None else None})
         games = []
