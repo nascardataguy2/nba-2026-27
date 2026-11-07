@@ -2,7 +2,7 @@
  "updated": "2026-11-06",
  "brief": {
   "date": "2026-11-06",
-  "updated": "7:16 PM ET",
+  "updated": "7:46 PM ET",
   "games": 4,
   "pending": [],
   "first_report": "5:39 AM",
@@ -139,22 +139,29 @@
      "SAC": {
       "out": [
        {
+        "player": "De'Andre Hunter",
+        "min": 35.3
+       },
+       {
         "player": "Keegan Murray",
         "min": 27.0
        }
       ],
-      "q": [
-       {
-        "player": "De'Andre Hunter",
-        "min": 32.8
-       }
-      ]
+      "q": []
      }
     },
-    "key": "Keegan Murray is out, so Daeqwon Plowden should play more than usual."
+    "key": "De'Andre Hunter and Keegan Murray are out, so Zach LaVine and Daeqwon Plowden should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "De'Andre Hunter",
+    "team": "SAC",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Illness",
+    "time": "7:47 PM"
+   },
    {
     "player": "Immanuel Quickley",
     "team": "TOR",
@@ -226,17 +233,54 @@
     "was": "Questionable",
     "why": "Left Ankle Sprain",
     "time": "6:42 PM"
-   },
-   {
-    "player": "Anthony Davis",
-    "team": "WAS",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Right Ankle Sprain",
-    "time": "6:42 PM"
    }
   ],
   "sits": [
+   {
+    "team": "SAC",
+    "outs": [
+     {
+      "player": "De'Andre Hunter",
+      "min": 35.3,
+      "note": "Ruled out tonight (illness).",
+      "new": true
+     },
+     {
+      "player": "Keegan Murray",
+      "min": 27.0,
+      "note": "The show said Keegan Murray had a setback that kept him out of the last preseason game and was not fully ramped up for the season.",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 62.3,
+    "benefits": [
+     {
+      "player": "Zach LaVine",
+      "plus": 7.1,
+      "recent": 28.0,
+      "min": 35.1,
+      "dk": 31.2,
+      "salary": 6100
+     },
+     {
+      "player": "Daeqwon Plowden",
+      "plus": 6.2,
+      "recent": 8.0,
+      "min": 14.2,
+      "dk": 8.7,
+      "salary": 3200
+     },
+     {
+      "player": "Precious Achiuwa",
+      "plus": 5.9,
+      "recent": 23.0,
+      "min": 28.9,
+      "dk": 25.8,
+      "salary": 5700
+     }
+    ]
+   },
    {
     "team": "CHA",
     "outs": [
@@ -316,29 +360,6 @@
       "min": 9.2,
       "dk": 6.7,
       "salary": 3100
-     }
-    ]
-   },
-   {
-    "team": "SAC",
-    "outs": [
-     {
-      "player": "Keegan Murray",
-      "min": 27.0,
-      "note": "The show said Keegan Murray had a setback that kept him out of the last preseason game and was not fully ramped up for the season.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 27.0,
-    "benefits": [
-     {
-      "player": "Daeqwon Plowden",
-      "plus": 3.5,
-      "recent": 8.0,
-      "min": 11.5,
-      "dk": 7.1,
-      "salary": 3200
      }
     ]
    }
@@ -429,53 +450,53 @@
   ],
   "chalk": [
    {
+    "player": "Darius Acuff Jr.",
+    "team": "SAC",
+    "own": 35.6,
+    "dk": 52.5,
+    "salary": 7900
+   },
+   {
     "player": "Onyeka Okongwu",
     "team": "ATL",
-    "own": 32.2,
+    "own": 32.3,
     "dk": 43.8,
     "salary": 6700
    },
    {
     "player": "Dyson Daniels",
     "team": "ATL",
-    "own": 30.1,
+    "own": 27.4,
     "dk": 43.3,
     "salary": 6600
    },
    {
     "player": "C.J. McCollum",
     "team": "ATL",
-    "own": 24.8,
+    "own": 24.4,
     "dk": 40.2,
     "salary": 6100
-   },
-   {
-    "player": "Darius Acuff Jr.",
-    "team": "SAC",
-    "own": 23.2,
-    "dk": 46.6,
-    "salary": 7900
    }
   ],
   "leverage": [
    {
     "player": "Grayson Allen",
     "team": "CHA",
-    "own": 6.1,
+    "own": 6.3,
     "dk": 32.3,
     "salary": 5100
    },
    {
     "player": "Alex Sarr",
     "team": "WAS",
-    "own": 8.0,
+    "own": 5.7,
     "dk": 29.1,
     "salary": 5100
    },
    {
     "player": "Aaron Wiggins",
     "team": "ATL",
-    "own": 7.9,
+    "own": 7.2,
     "dk": 30.8,
     "salary": 5400
    }
@@ -551,8 +572,8 @@
    ]
   },
   "injuries": {
-   "report": "07:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_07_15PM.pdf",
+   "report": "07:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_07_30PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -709,6 +730,32 @@
      "estimate": false
     },
     {
+     "game": "SAS at SAC",
+     "time": "2026-11-07T03:00Z",
+     "team": "SAC",
+     "player": "De'Andre Hunter",
+     "status": "Out",
+     "reason": "Illness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "7:47 PM",
+     "min": 35.3,
+     "benefits": [
+      {
+       "player": "Zach LaVine",
+       "min": 35.1,
+       "recent": 28.0
+      },
+      {
+       "player": "Daeqwon Plowden",
+       "min": 14.2,
+       "recent": 8.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "POR at LAL",
      "time": "2026-11-07T03:00Z",
      "team": "POR",
@@ -722,32 +769,6 @@
      "min": 12.7,
      "benefits": [],
      "estimate": false
-    },
-    {
-     "game": "SAS at SAC",
-     "time": "2026-11-07T03:00Z",
-     "team": "SAC",
-     "player": "De'Andre Hunter",
-     "status": "Questionable",
-     "reason": "Illness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "4:34 PM",
-     "min": 35.3,
-     "benefits": [
-      {
-       "player": "Precious Achiuwa",
-       "plus": 9.8,
-       "min": 34.6
-      },
-      {
-       "player": "Malik Monk",
-       "plus": 9.1,
-       "min": 32.2
-      }
-     ],
-     "estimate": true
     },
     {
      "game": "POR at LAL",
@@ -834,8 +855,13 @@
      "min": 27.0,
      "benefits": [
       {
+       "player": "Zach LaVine",
+       "min": 35.1,
+       "recent": 28.0
+      },
+      {
        "player": "Daeqwon Plowden",
-       "min": 11.5,
+       "min": 14.2,
        "recent": 8.0
       }
      ],
@@ -11092,13 +11118,13 @@
   },
   {
    "team": "SAC",
-   "starters": "Darius Acuff Jr. (37), De'Andre Hunter (31), Domantas Sabonis (36), Zach LaVine (33), Precious Achiuwa (27)",
-   "bench": "Jonathan Mogbo (17), Leaky Black (18), Malik Monk (16), Emanuel Sharp (17), Dylan Cardwell (13), Alex Karaban (10)",
+   "starters": "Darius Acuff Jr. (37), Domantas Sabonis (36), Zach LaVine (33), Precious Achiuwa (27), Jonathan Mogbo (17)",
+   "bench": "Leaky Black (18), Malik Monk (16), Emanuel Sharp (17), Dylan Cardwell (13), Alex Karaban (10)",
    "backup_c": "Dylan Cardwell",
    "coach": "Doug Christie",
    "notes": "Schroder, Westbrook and DeRozan are gone. Sabonis is a trade candidate, and LaVine is in the last year of his deal.",
    "source": "LO-1019b",
-   "out": "Keegan Murray",
+   "out": "De'Andre Hunter, Keegan Murray",
    "depth_through": "2026-11-04",
    "games": 8
   },
