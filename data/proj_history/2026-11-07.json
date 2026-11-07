@@ -4,7 +4,7 @@
   "team": "DEN",
   "base_min": 36.0,
   "min": 31.6,
-  "dk": 53.7,
+  "dk": 53.4,
   "salary": null,
   "pos": "C",
   "opp": "IND",
@@ -16,20 +16,20 @@
   "team": "OKC",
   "base_min": 34.0,
   "min": 34.4,
-  "dk": 59.9,
+  "dk": 59.7,
   "salary": 10400,
   "pos": "PG",
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 36.8
+  "own": 36.4
  },
  "donovan mitchell": {
   "player": "Donovan Mitchell",
   "team": "CLE",
   "base_min": 33.0,
   "min": 35.5,
-  "dk": 54.9,
+  "dk": 54.8,
   "salary": 8100,
   "pos": "SG",
   "opp": "NYK",
@@ -42,23 +42,35 @@
   "team": "ATL",
   "base_min": 35.0,
   "min": 30.9,
-  "dk": 44.5,
+  "dk": 44.4,
   "salary": 9900,
   "pos": "PF",
   "opp": "BKN",
   "ou": 228.5,
   "slate": "main",
-  "own": 6.3
+  "own": 5.7
  },
  "victor wembanyama": {
   "player": "Victor Wembanyama",
   "team": "SAS",
   "base_min": 31.0,
   "min": 29.0,
-  "dk": 50.0,
+  "dk": 51.1,
   "salary": null,
   "pos": "C",
   "opp": "POR",
+  "ou": 229.5,
+  "slate": "off"
+ },
+ "deni avdija": {
+  "player": "Deni Avdija",
+  "team": "POR",
+  "base_min": 34.0,
+  "min": 36.0,
+  "dk": 51.6,
+  "salary": null,
+  "pos": "SF",
+  "opp": "SAS",
   "ou": 229.5,
   "slate": "off"
  },
@@ -67,7 +79,7 @@
   "team": "ORL",
   "base_min": 34.0,
   "min": 37.0,
-  "dk": 51.4,
+  "dk": 51.2,
   "salary": 8700,
   "pos": "SF/PF",
   "opp": "GSW",
@@ -80,32 +92,20 @@
   "team": "NYK",
   "base_min": 35.0,
   "min": 33.3,
-  "dk": 41.6,
+  "dk": 41.7,
   "salary": 8200,
   "pos": "PG",
   "opp": "CLE",
   "ou": 222.5,
   "slate": "main",
-  "own": 9.1
- },
- "deni avdija": {
-  "player": "Deni Avdija",
-  "team": "POR",
-  "base_min": 34.0,
-  "min": 35.5,
-  "dk": 47.9,
-  "salary": null,
-  "pos": "SF",
-  "opp": "SAS",
-  "ou": 229.5,
-  "slate": "off"
+  "own": 9.8
  },
  "james harden": {
   "player": "James Harden",
   "team": "CLE",
   "base_min": 33.0,
   "min": 34.6,
-  "dk": 47.4,
+  "dk": 47.2,
   "salary": 7100,
   "pos": "PG",
   "opp": "NYK",
@@ -118,26 +118,26 @@
   "team": "CLE",
   "base_min": 32.0,
   "min": 34.2,
-  "dk": 50.3,
+  "dk": 50.5,
   "salary": 7800,
   "pos": "PF/C",
   "opp": "NYK",
   "ou": 222.5,
   "slate": "main",
-  "own": 37.9
+  "own": 38.1
  },
  "alperen sengun": {
   "player": "Alperen Sengun",
   "team": "HOU",
   "base_min": 33.0,
   "min": 35.4,
-  "dk": 48.9,
+  "dk": 48.7,
   "salary": 8900,
   "pos": "PF/C",
   "opp": "PHX",
   "ou": 223.5,
   "slate": "main",
-  "own": 30.0
+  "own": 29.9
  },
  "karl anthony towns": {
   "player": "Karl-Anthony Towns",
@@ -150,70 +150,57 @@
   "opp": "CLE",
   "ou": 222.5,
   "slate": "main",
-  "own": 23.7
+  "own": 23.4
  },
  "stephen curry": {
   "player": "Stephen Curry",
   "team": "GSW",
   "base_min": 31.0,
   "min": 27.6,
-  "dk": 39.3,
+  "dk": 39.5,
   "salary": 8400,
   "pos": "PG",
   "opp": "ORL",
   "ou": 223.5,
   "slate": "main",
-  "own": 8.3
- },
- "devin booker": {
-  "player": "Devin Booker",
-  "team": "PHX",
-  "base_min": 35.0,
-  "min": 36.2,
-  "dk": 42.0,
-  "salary": 8300,
-  "pos": "PG/SG",
-  "opp": "HOU",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 7.4
+  "own": 9.3
  },
  "jamal murray": {
   "player": "Jamal Murray",
   "team": "DEN",
   "base_min": 36.0,
   "min": 31.8,
-  "dk": 36.2,
+  "dk": 36.1,
   "salary": null,
   "pos": "SG",
   "opp": "IND",
   "ou": 229.5,
   "slate": "off"
  },
+ "devin booker": {
+  "player": "Devin Booker",
+  "team": "PHX",
+  "base_min": 35.0,
+  "min": 36.2,
+  "dk": 41.8,
+  "salary": 8300,
+  "pos": "PG/SG",
+  "opp": "HOU",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 7.2
+ },
  "damian lillard": {
   "player": "Damian Lillard",
   "team": "POR",
   "base_min": 33.0,
-  "min": 33.2,
-  "dk": 40.3,
+  "min": 34.3,
+  "dk": 43.3,
   "salary": null,
   "pos": "PG",
   "opp": "SAS",
   "ou": 229.5,
   "slate": "off"
- },
- "kevin durant": {
-  "player": "Kevin Durant",
-  "team": "HOU",
-  "base_min": 36.0,
-  "min": 33.2,
-  "dk": 37.1,
-  "salary": 7400,
-  "pos": "SF",
-  "opp": "PHX",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 6.8
  },
  "anthony davis": {
   "player": "Anthony Davis",
@@ -226,7 +213,20 @@
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 3.6
+  "own": 3.8
+ },
+ "kevin durant": {
+  "player": "Kevin Durant",
+  "team": "HOU",
+  "base_min": 36.0,
+  "min": 33.2,
+  "dk": 36.9,
+  "salary": 7400,
+  "pos": "SF",
+  "opp": "PHX",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 7.6
  },
  "andrew nembhard": {
   "player": "Andrew Nembhard",
@@ -257,20 +257,44 @@
   "team": "GSW",
   "base_min": 34.0,
   "min": 28.8,
-  "dk": 33.1,
+  "dk": 33.2,
   "salary": 8000,
   "pos": "SF/PF",
   "opp": "ORL",
   "ou": 223.5,
   "slate": "main",
-  "own": 2.1
+  "own": 2.2
  },
  "dylan harper": {
   "player": "Dylan Harper",
   "team": "SAS",
   "base_min": 33.0,
   "min": 31.3,
-  "dk": 32.6,
+  "dk": 33.6,
+  "salary": null,
+  "pos": "PG",
+  "opp": "POR",
+  "ou": 229.5,
+  "slate": "off"
+ },
+ "stephon castle": {
+  "player": "Stephon Castle",
+  "team": "SAS",
+  "base_min": 30.0,
+  "min": 29.8,
+  "dk": 34.4,
+  "salary": null,
+  "pos": "SG",
+  "opp": "POR",
+  "ou": 229.5,
+  "slate": "off"
+ },
+ "deaaron fox": {
+  "player": "De'Aaron Fox",
+  "team": "SAS",
+  "base_min": 31.0,
+  "min": 28.4,
+  "dk": 31.1,
   "salary": null,
   "pos": "PG",
   "opp": "POR",
@@ -282,76 +306,52 @@
   "team": "WAS",
   "base_min": 35.0,
   "min": 31.1,
-  "dk": 29.7,
+  "dk": 29.8,
   "salary": 7900,
   "pos": "PG",
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 1.2
+  "own": 1.3
  },
  "julius randle": {
   "player": "Julius Randle",
   "team": "BKN",
   "base_min": 33.0,
   "min": 32.7,
-  "dk": 33.9,
+  "dk": 34.0,
   "salary": 7500,
   "pos": "PF",
   "opp": "ATL",
   "ou": 228.5,
   "slate": "main",
-  "own": 6.2
+  "own": 6.3
  },
  "amen thompson": {
   "player": "Amen Thompson",
   "team": "HOU",
   "base_min": 34.0,
   "min": 30.3,
-  "dk": 31.2,
+  "dk": 31.0,
   "salary": 6900,
   "pos": "PG/SG",
   "opp": "PHX",
   "ou": 223.5,
   "slate": "main",
-  "own": 2.6
- },
- "stephon castle": {
-  "player": "Stephon Castle",
-  "team": "SAS",
-  "base_min": 30.0,
-  "min": 29.8,
-  "dk": 33.4,
-  "salary": null,
-  "pos": "SG",
-  "opp": "POR",
-  "ou": 229.5,
-  "slate": "off"
+  "own": 2.2
  },
  "dyson daniels": {
   "player": "Dyson Daniels",
   "team": "ATL",
   "base_min": 32.0,
   "min": 30.3,
-  "dk": 32.1,
+  "dk": 32.0,
   "salary": 6300,
   "pos": "PG/SF",
   "opp": "BKN",
   "ou": 228.5,
   "slate": "main",
   "own": 22.0
- },
- "deaaron fox": {
-  "player": "De'Aaron Fox",
-  "team": "SAS",
-  "base_min": 31.0,
-  "min": 28.4,
-  "dk": 30.1,
-  "salary": null,
-  "pos": "PG",
-  "opp": "POR",
-  "ou": 229.5,
-  "slate": "off"
  },
  "ajay mitchell": {
   "player": "Ajay Mitchell",
@@ -364,14 +364,14 @@
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 25.1
+  "own": 26.3
  },
  "ivica zubac": {
   "player": "Ivica Zubac",
   "team": "IND",
   "base_min": 30.0,
   "min": 19.7,
-  "dk": 22.4,
+  "dk": 22.5,
   "salary": null,
   "pos": "C",
   "opp": "DEN",
@@ -389,7 +389,7 @@
   "opp": "ATL",
   "ou": 228.5,
   "slate": "main",
-  "own": 14.6
+  "own": 14.2
  },
  "anthony black": {
   "player": "Anthony Black",
@@ -402,7 +402,20 @@
   "opp": "GSW",
   "ou": 223.5,
   "slate": "main",
-  "own": 22.0
+  "own": 22.5
+ },
+ "og anunoby": {
+  "player": "OG Anunoby",
+  "team": "NYK",
+  "base_min": 35.0,
+  "min": 33.0,
+  "dk": 32.4,
+  "salary": 6300,
+  "pos": "PF",
+  "opp": "CLE",
+  "ou": 222.5,
+  "slate": "main",
+  "own": 12.3
  },
  "aj dybantsa": {
   "player": "AJ Dybantsa",
@@ -415,20 +428,7 @@
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 11.0
- },
- "og anunoby": {
-  "player": "OG Anunoby",
-  "team": "NYK",
-  "base_min": 35.0,
-  "min": 33.0,
-  "dk": 32.1,
-  "salary": 6300,
-  "pos": "PF",
-  "opp": "CLE",
-  "ou": 222.5,
-  "slate": "main",
-  "own": 10.0
+  "own": 10.8
  },
  "onyeka okongwu": {
   "player": "Onyeka Okongwu",
@@ -441,58 +441,70 @@
   "opp": "BKN",
   "ou": 228.5,
   "slate": "main",
-  "own": 11.0
+  "own": 11.1
  },
  "isaiah hartenstein": {
   "player": "Isaiah Hartenstein",
   "team": "OKC",
   "base_min": 25.0,
   "min": 26.1,
-  "dk": 34.7,
+  "dk": 34.6,
   "salary": 6100,
   "pos": "C",
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 22.6
+  "own": 23.9
  },
  "miles bridges": {
   "player": "Miles Bridges",
   "team": "PHX",
   "base_min": 29.0,
   "min": 32.5,
-  "dk": 35.5,
+  "dk": 35.4,
   "salary": 7100,
   "pos": "PF",
   "opp": "HOU",
   "ou": 223.5,
   "slate": "main",
-  "own": 11.0
+  "own": 10.6
+ },
+ "jrue holiday": {
+  "player": "Jrue Holiday",
+  "team": "POR",
+  "base_min": 29.0,
+  "min": 30.6,
+  "dk": 32.5,
+  "salary": null,
+  "pos": "PG",
+  "opp": "SAS",
+  "ou": 229.5,
+  "slate": "off"
+ },
+ "donovan clingan": {
+  "player": "Donovan Clingan",
+  "team": "POR",
+  "base_min": 24.0,
+  "min": 28.6,
+  "dk": 40.9,
+  "salary": null,
+  "pos": "C",
+  "opp": "SAS",
+  "ou": 229.5,
+  "slate": "off"
  },
  "jalen green": {
   "player": "Jalen Green",
   "team": "PHX",
   "base_min": 30.0,
   "min": 31.8,
-  "dk": 32.3,
+  "dk": 31.9,
   "salary": 6200,
   "pos": "SG",
   "opp": "HOU",
   "ou": 223.5,
   "slate": "main",
-  "own": 12.2
- },
- "jrue holiday": {
-  "player": "Jrue Holiday",
-  "team": "POR",
-  "base_min": 29.0,
-  "min": 29.6,
-  "dk": 29.8,
-  "salary": null,
-  "pos": "PG",
-  "opp": "SAS",
-  "ou": 229.5,
-  "slate": "off"
+  "own": 11.2
  },
  "nickeil alexander walker": {
   "player": "Nickeil Alexander-Walker",
@@ -505,27 +517,14 @@
   "opp": "BKN",
   "ou": 228.5,
   "slate": "main",
-  "own": 2.5
- },
- "brandin podziemski": {
-  "player": "Brandin Podziemski",
-  "team": "GSW",
-  "base_min": 29.0,
-  "min": 28.9,
-  "dk": 28.8,
-  "salary": 6800,
-  "pos": "PG/SG",
-  "opp": "ORL",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 4.1
+  "own": 2.4
  },
  "wendell carter": {
   "player": "Wendell Carter Jr.",
   "team": "ORL",
   "base_min": 29.0,
   "min": 35.0,
-  "dk": 37.1,
+  "dk": 36.9,
   "salary": 6500,
   "pos": "C",
   "opp": "GSW",
@@ -533,56 +532,69 @@
   "slate": "main",
   "own": 22.0
  },
- "fred vanvleet": {
-  "player": "Fred VanVleet",
-  "team": "HOU",
-  "base_min": 30.0,
-  "min": 30.0,
-  "dk": 27.0,
-  "salary": 6000,
-  "pos": "PG",
-  "opp": "PHX",
+ "brandin podziemski": {
+  "player": "Brandin Podziemski",
+  "team": "GSW",
+  "base_min": 29.0,
+  "min": 28.9,
+  "dk": 28.6,
+  "salary": 6800,
+  "pos": "PG/SG",
+  "opp": "ORL",
   "ou": 223.5,
   "slate": "main",
-  "own": 3.7
+  "own": 3.6
  },
  "jabari smith": {
   "player": "Jabari Smith",
   "team": "HOU",
   "base_min": 33.0,
   "min": 34.1,
-  "dk": 30.6,
+  "dk": 30.8,
   "salary": 6700,
   "pos": "PF/C",
   "opp": "PHX",
   "ou": 223.5,
   "slate": "main",
-  "own": 4.9
+  "own": 5.2
  },
- "donovan clingan": {
-  "player": "Donovan Clingan",
+ "toumani camara": {
+  "player": "Toumani Camara",
   "team": "POR",
-  "base_min": 24.0,
-  "min": 27.7,
-  "dk": 35.4,
+  "base_min": 32.0,
+  "min": 32.3,
+  "dk": 29.9,
   "salary": null,
-  "pos": "C",
+  "pos": "PF",
   "opp": "SAS",
   "ou": 229.5,
   "slate": "off"
+ },
+ "fred vanvleet": {
+  "player": "Fred VanVleet",
+  "team": "HOU",
+  "base_min": 30.0,
+  "min": 30.0,
+  "dk": 26.4,
+  "salary": 6000,
+  "pos": "PG",
+  "opp": "PHX",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 2.5
  },
  "peyton watson": {
   "player": "Peyton Watson",
   "team": "CLE",
   "base_min": 29.0,
   "min": 27.2,
-  "dk": 27.6,
+  "dk": 27.5,
   "salary": 5700,
   "pos": "SF/PF",
   "opp": "NYK",
   "ou": 222.5,
   "slate": "main",
-  "own": 3.2
+  "own": 3.6
  },
  "kyshawn george": {
   "player": "Kyshawn George",
@@ -595,20 +607,7 @@
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 7.8
- },
- "dillon brooks": {
-  "player": "Dillon Brooks",
-  "team": "PHX",
-  "base_min": 31.0,
-  "min": 33.5,
-  "dk": 29.5,
-  "salary": 6300,
-  "pos": "SF",
-  "opp": "HOU",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 5.8
+  "own": 7.6
  },
  "aaron gordon": {
   "player": "Aaron Gordon",
@@ -622,6 +621,19 @@
   "ou": 229.5,
   "slate": "off"
  },
+ "dillon brooks": {
+  "player": "Dillon Brooks",
+  "team": "PHX",
+  "base_min": 31.0,
+  "min": 33.5,
+  "dk": 29.1,
+  "salary": 6300,
+  "pos": "SF",
+  "opp": "HOU",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 5.2
+ },
  "christian braun": {
   "player": "Christian Braun",
   "team": "DEN",
@@ -634,30 +646,31 @@
   "ou": 229.5,
   "slate": "off"
  },
+ "mikel brown": {
+  "player": "Mikel Brown Jr.",
+  "team": "BKN",
+  "base_min": 26.0,
+  "min": 23.3,
+  "dk": 22.3,
+  "salary": 4700,
+  "pos": "PG/SG",
+  "opp": "ATL",
+  "ou": 228.5,
+  "slate": "main",
+  "own": 6.6
+ },
  "jared mccain": {
   "player": "Jared McCain",
   "team": "OKC",
   "base_min": 26.0,
   "min": 26.6,
-  "dk": 27.3,
+  "dk": 27.1,
   "salary": 5500,
   "pos": "PG/SG",
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 10.2
- },
- "cameron johnson": {
-  "player": "Cameron Johnson",
-  "team": "DEN",
-  "base_min": 30.0,
-  "min": 28.7,
-  "dk": 24.5,
-  "salary": null,
-  "pos": "SF",
-  "opp": "IND",
-  "ou": 229.5,
-  "slate": "off"
+  "own": 8.6
  },
  "dayron sharpe": {
   "player": "Day'Ron Sharpe",
@@ -670,30 +683,17 @@
   "opp": "ATL",
   "ou": 228.5,
   "slate": "main",
-  "own": 14.2
+  "own": 13.8
  },
- "mikel brown": {
-  "player": "Mikel Brown Jr.",
-  "team": "BKN",
-  "base_min": 26.0,
-  "min": 23.3,
-  "dk": 22.3,
-  "salary": 4700,
-  "pos": "PG/SG",
-  "opp": "ATL",
-  "ou": 228.5,
-  "slate": "main",
-  "own": 6.4
- },
- "toumani camara": {
-  "player": "Toumani Camara",
-  "team": "POR",
-  "base_min": 32.0,
-  "min": 31.4,
-  "dk": 26.8,
+ "cameron johnson": {
+  "player": "Cameron Johnson",
+  "team": "DEN",
+  "base_min": 30.0,
+  "min": 28.7,
+  "dk": 24.4,
   "salary": null,
-  "pos": "PF",
-  "opp": "SAS",
+  "pos": "SF",
+  "opp": "IND",
   "ou": 229.5,
   "slate": "off"
  },
@@ -721,7 +721,7 @@
   "opp": "CLE",
   "ou": 222.5,
   "slate": "main",
-  "own": 1.8
+  "own": 1.5
  },
  "alex sarr": {
   "player": "Alex Sarr",
@@ -734,20 +734,7 @@
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 14.8
- },
- "tristan da silva": {
-  "player": "Tristan da Silva",
-  "team": "ORL",
-  "base_min": 29.0,
-  "min": 33.6,
-  "dk": 29.9,
-  "salary": 5600,
-  "pos": "SF/PF",
-  "opp": "GSW",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 15.3
+  "own": 14.4
  },
  "cj mccollum": {
   "player": "C.J. McCollum",
@@ -762,12 +749,25 @@
   "slate": "main",
   "own": 4.0
  },
+ "tristan da silva": {
+  "player": "Tristan da Silva",
+  "team": "ORL",
+  "base_min": 29.0,
+  "min": 33.6,
+  "dk": 29.6,
+  "salary": 5600,
+  "pos": "SF/PF",
+  "opp": "GSW",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 15.3
+ },
  "devin vassell": {
   "player": "Devin Vassell",
   "team": "SAS",
   "base_min": 28.0,
   "min": 28.9,
-  "dk": 24.9,
+  "dk": 25.5,
   "salary": null,
   "pos": "SF",
   "opp": "POR",
@@ -797,20 +797,32 @@
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 1.7
+  "own": 1.9
  },
  "kingston flemings": {
   "player": "Kingston Flemings",
   "team": "ATL",
   "base_min": 22.0,
   "min": 21.7,
-  "dk": 21.7,
+  "dk": 21.9,
   "salary": 4900,
   "pos": "PG",
   "opp": "BKN",
   "ou": 228.5,
   "slate": "main",
-  "own": 7.2
+  "own": 6.3
+ },
+ "scoot henderson": {
+  "player": "Scoot Henderson",
+  "team": "POR",
+  "base_min": 25.0,
+  "min": 24.9,
+  "dk": 22.0,
+  "salary": null,
+  "pos": "PG",
+  "opp": "SAS",
+  "ou": 229.5,
+  "slate": "off"
  },
  "quenton jackson": {
   "player": "Quenton Jackson",
@@ -860,19 +872,7 @@
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 21.5
- },
- "scoot henderson": {
-  "player": "Scoot Henderson",
-  "team": "POR",
-  "base_min": 25.0,
-  "min": 24.1,
-  "dk": 20.2,
-  "salary": null,
-  "pos": "PG",
-  "opp": "SAS",
-  "ou": 229.5,
-  "slate": "off"
+  "own": 21.2
  },
  "nolan traore": {
   "player": "Nolan Traore",
@@ -885,14 +885,14 @@
   "opp": "ATL",
   "ou": 228.5,
   "slate": "main",
-  "own": 10.1
+  "own": 10.2
  },
  "collin gillespie": {
   "player": "Collin Gillespie",
   "team": "PHX",
   "base_min": 22.0,
   "min": 24.1,
-  "dk": 22.6,
+  "dk": 22.5,
   "salary": 5500,
   "pos": "PG",
   "opp": "HOU",
@@ -912,19 +912,6 @@
   "ou": 229.5,
   "slate": "off"
  },
- "oso ighodaro": {
-  "player": "Oso Ighodaro",
-  "team": "PHX",
-  "base_min": 25.0,
-  "min": 25.3,
-  "dk": 20.7,
-  "salary": 4900,
-  "pos": "C",
-  "opp": "HOU",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 1.3
- },
  "andre drummond": {
   "player": "Andre Drummond",
   "team": "NYK",
@@ -936,7 +923,20 @@
   "opp": "CLE",
   "ou": 222.5,
   "slate": "main",
-  "own": 1.3
+  "own": 1.6
+ },
+ "oso ighodaro": {
+  "player": "Oso Ighodaro",
+  "team": "PHX",
+  "base_min": 25.0,
+  "min": 25.3,
+  "dk": 20.6,
+  "salary": 4900,
+  "pos": "C",
+  "opp": "HOU",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 1.1
  },
  "deanthony melton": {
   "player": "De'Anthony Melton",
@@ -951,37 +951,12 @@
   "slate": "main",
   "own": 1.8
  },
- "robert williams": {
-  "player": "Robert Williams",
-  "team": "POR",
-  "base_min": 17.0,
-  "min": 16.1,
-  "dk": 20.7,
-  "salary": null,
-  "pos": "C",
-  "opp": "SAS",
-  "ou": 229.5,
-  "slate": "off"
- },
- "draymond green": {
-  "player": "Draymond Green",
-  "team": "GSW",
-  "base_min": 21.0,
-  "min": 21.4,
-  "dk": 19.7,
-  "salary": 5700,
-  "pos": "PF/C",
-  "opp": "ORL",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 0.9
- },
  "meleek thomas": {
   "player": "Meleek Thomas",
   "team": "CLE",
   "base_min": 18.0,
   "min": 22.9,
-  "dk": 25.6,
+  "dk": 25.7,
   "salary": 4200,
   "pos": "SG/SF",
   "opp": "NYK",
@@ -989,18 +964,31 @@
   "slate": "main",
   "own": 35.2
  },
- "brandon williams": {
-  "player": "Brandon Williams",
+ "draymond green": {
+  "player": "Draymond Green",
   "team": "GSW",
-  "base_min": 17.0,
-  "min": 17.6,
-  "dk": 19.4,
-  "salary": 4900,
-  "pos": "PG",
+  "base_min": 21.0,
+  "min": 21.4,
+  "dk": 19.6,
+  "salary": 5700,
+  "pos": "PF/C",
   "opp": "ORL",
   "ou": 223.5,
   "slate": "main",
-  "own": 2.6
+  "own": 1.1
+ },
+ "jose alvarado": {
+  "player": "Jose Alvarado",
+  "team": "NYK",
+  "base_min": 19.0,
+  "min": 12.9,
+  "dk": 12.9,
+  "salary": 3700,
+  "pos": "PG",
+  "opp": "CLE",
+  "ou": 222.5,
+  "slate": "main",
+  "own": 0.5
  },
  "tj mcconnell": {
   "player": "T.J. McConnell",
@@ -1014,18 +1002,18 @@
   "ou": 229.5,
   "slate": "off"
  },
- "jose alvarado": {
-  "player": "Jose Alvarado",
-  "team": "NYK",
-  "base_min": 19.0,
-  "min": 12.9,
-  "dk": 12.7,
-  "salary": 3700,
+ "brandon williams": {
+  "player": "Brandon Williams",
+  "team": "GSW",
+  "base_min": 17.0,
+  "min": 17.6,
+  "dk": 19.3,
+  "salary": 4900,
   "pos": "PG",
-  "opp": "CLE",
-  "ou": 222.5,
+  "opp": "ORL",
+  "ou": 223.5,
   "slate": "main",
-  "own": 0.5
+  "own": 2.4
  },
  "tari eason": {
   "player": "Tari Eason",
@@ -1038,20 +1026,20 @@
   "opp": "PHX",
   "ou": 223.5,
   "slate": "main",
-  "own": 3.0
+  "own": 2.4
  },
  "luguentz dort": {
   "player": "Luguentz Dort",
   "team": "ATL",
   "base_min": 27.0,
   "min": 27.5,
-  "dk": 20.0,
+  "dk": 20.2,
   "salary": 5200,
   "pos": "SF/PF",
   "opp": "BKN",
   "ou": 228.5,
   "slate": "main",
-  "own": 1.8
+  "own": 2.1
  },
  "moritz wagner": {
   "player": "Moritz Wagner",
@@ -1064,7 +1052,7 @@
   "opp": "ATL",
   "ou": 228.5,
   "slate": "main",
-  "own": 4.2
+  "own": 5.5
  },
  "kenrich williams": {
   "player": "Kenrich Williams",
@@ -1077,7 +1065,7 @@
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 28.7
+  "own": 29.2
  },
  "kelly oubre": {
   "player": "Kelly Oubre",
@@ -1102,7 +1090,7 @@
   "opp": "CLE",
   "ou": 222.5,
   "slate": "main",
-  "own": 1.1
+  "own": 1.2
  },
  "carlton carrington": {
   "player": "Carlton Carrington",
@@ -1115,7 +1103,7 @@
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 0.9
+  "own": 0.7
  },
  "aaron wiggins": {
   "player": "Aaron Wiggins",
@@ -1128,20 +1116,7 @@
   "opp": "BKN",
   "ou": 228.5,
   "slate": "main",
-  "own": 3.3
- },
- "reed sheppard": {
-  "player": "Reed Sheppard",
-  "team": "HOU",
-  "base_min": 18.0,
-  "min": 19.5,
-  "dk": 19.1,
-  "salary": 4900,
-  "pos": "SG",
-  "opp": "PHX",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 1.1
+  "own": 3.4
  },
  "landry shamet": {
   "player": "Landry Shamet",
@@ -1154,7 +1129,7 @@
   "opp": "CLE",
   "ou": 222.5,
   "slate": "main",
-  "own": 1.3
+  "own": 1.2
  },
  "jase richardson": {
   "player": "Jase Richardson",
@@ -1167,7 +1142,19 @@
   "opp": "GSW",
   "ou": 223.5,
   "slate": "main",
-  "own": 6.8
+  "own": 6.7
+ },
+ "julian champagnie": {
+  "player": "Julian Champagnie",
+  "team": "SAS",
+  "base_min": 21.0,
+  "min": 21.4,
+  "dk": 18.5,
+  "salary": null,
+  "pos": "SG",
+  "opp": "POR",
+  "ou": 229.5,
+  "slate": "off"
  },
  "aday mara": {
   "player": "Aday Mara",
@@ -1180,27 +1167,40 @@
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 3.0
+  "own": 3.2
  },
  "danny wolf": {
   "player": "Danny Wolf",
   "team": "BKN",
   "base_min": 17.0,
   "min": 15.3,
-  "dk": 15.4,
+  "dk": 15.3,
   "salary": 3500,
   "pos": "C",
   "opp": "ATL",
   "ou": 228.5,
   "slate": "main",
-  "own": 5.8
+  "own": 4.4
  },
- "julian champagnie": {
-  "player": "Julian Champagnie",
+ "reed sheppard": {
+  "player": "Reed Sheppard",
+  "team": "HOU",
+  "base_min": 18.0,
+  "min": 19.5,
+  "dk": 18.6,
+  "salary": 4900,
+  "pos": "SG",
+  "opp": "PHX",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 1.2
+ },
+ "keldon johnson": {
+  "player": "Keldon Johnson",
   "team": "SAS",
-  "base_min": 21.0,
-  "min": 21.4,
-  "dk": 18.2,
+  "base_min": 19.0,
+  "min": 22.5,
+  "dk": 20.0,
   "salary": null,
   "pos": "SG",
   "opp": "POR",
@@ -1220,31 +1220,6 @@
   "slate": "main",
   "own": 0.5
  },
- "keldon johnson": {
-  "player": "Keldon Johnson",
-  "team": "SAS",
-  "base_min": 19.0,
-  "min": 22.5,
-  "dk": 19.5,
-  "salary": null,
-  "pos": "SG",
-  "opp": "POR",
-  "ou": 229.5,
-  "slate": "off"
- },
- "gui santos": {
-  "player": "Gui Santos",
-  "team": "GSW",
-  "base_min": 18.0,
-  "min": 16.0,
-  "dk": 14.6,
-  "salary": 5800,
-  "pos": "SF/PF",
-  "opp": "ORL",
-  "ou": 223.5,
-  "slate": "main",
-  "own": 0.4
- },
  "bennett stirtz": {
   "player": "Bennett Stirtz",
   "team": "OKC",
@@ -1256,20 +1231,20 @@
   "opp": "WAS",
   "ou": 223.5,
   "slate": "main",
-  "own": 9.7
+  "own": 9.8
  },
- "noah clowney": {
-  "player": "Noah Clowney",
-  "team": "BKN",
-  "base_min": 21.0,
-  "min": 19.7,
-  "dk": 15.0,
-  "salary": 3900,
+ "gui santos": {
+  "player": "Gui Santos",
+  "team": "GSW",
+  "base_min": 18.0,
+  "min": 16.0,
+  "dk": 14.5,
+  "salary": 5800,
   "pos": "SF/PF",
-  "opp": "ATL",
-  "ou": 228.5,
+  "opp": "ORL",
+  "ou": 223.5,
   "slate": "main",
-  "own": 1.5
+  "own": 0.4
  },
  "tre johnson": {
   "player": "Tre Johnson",
@@ -1282,33 +1257,46 @@
   "opp": "OKC",
   "ou": 223.5,
   "slate": "main",
-  "own": 1.5
+  "own": 1.6
  },
- "luke kennard": {
-  "player": "Luke Kennard",
-  "team": "PHX",
-  "base_min": 18.0,
-  "min": 18.6,
-  "dk": 14.7,
-  "salary": 4000,
-  "pos": "PG/SG",
-  "opp": "HOU",
-  "ou": 223.5,
+ "noah clowney": {
+  "player": "Noah Clowney",
+  "team": "BKN",
+  "base_min": 21.0,
+  "min": 19.7,
+  "dk": 14.9,
+  "salary": 3900,
+  "pos": "SF/PF",
+  "opp": "ATL",
+  "ou": 228.5,
   "slate": "main",
-  "own": 0.9
+  "own": 1.4
  },
  "georges niang": {
   "player": "Georges Niang",
   "team": "GSW",
   "base_min": 19.0,
   "min": 18.6,
-  "dk": 14.5,
+  "dk": 14.8,
   "salary": 4400,
   "pos": "PF",
   "opp": "ORL",
   "ou": 223.5,
   "slate": "main",
-  "own": 0.9
+  "own": 1.2
+ },
+ "luke kennard": {
+  "player": "Luke Kennard",
+  "team": "PHX",
+  "base_min": 18.0,
+  "min": 18.6,
+  "dk": 14.6,
+  "salary": 4000,
+  "pos": "PG/SG",
+  "opp": "HOU",
+  "ou": 223.5,
+  "slate": "main",
+  "own": 0.7
  },
  "tyrese proctor": {
   "player": "Tyrese Proctor",
@@ -1321,41 +1309,33 @@
   "opp": "NYK",
   "ou": 222.5,
   "slate": "main",
-  "own": 17.4
+  "own": 17.2
  },
  "marcus smart": {
   "player": "Marcus Smart",
   "team": "HOU",
   "base_min": 19.0,
   "min": 22.7,
-  "dk": 17.2,
+  "dk": 17.1,
   "salary": 5000,
   "pos": "PG/SG",
   "opp": "PHX",
   "ou": 223.5,
   "slate": "main",
-  "own": 1.0
+  "own": 0.8
  },
  "thomas bryant": {
   "player": "Thomas Bryant",
   "team": "CLE",
   "base_min": 12.0,
   "min": 12.2,
-  "dk": 14.9,
+  "dk": 14.8,
   "salary": 4400,
   "pos": "C",
   "opp": "NYK",
   "ou": 222.5,
   "slate": "main",
   "own": 0.6
- },
- "jordan goodwin": {
-  "player": "Jordan Goodwin",
-  "team": "PHX",
-  "base_min": 15.0,
-  "min": 0.0,
-  "dk": 0.0,
-  "salary": 4300
  },
  "jarace walker": {
   "player": "Jarace Walker",
@@ -1366,6 +1346,38 @@
   "salary": null,
   "pos": "PF",
   "opp": "DEN",
+  "ou": 229.5,
+  "slate": "off"
+ },
+ "jordan goodwin": {
+  "player": "Jordan Goodwin",
+  "team": "PHX",
+  "base_min": 15.0,
+  "min": 0.0,
+  "dk": 0.0,
+  "salary": 4300
+ },
+ "sidy cissoko": {
+  "player": "Sidy Cissoko",
+  "team": "POR",
+  "base_min": 18.0,
+  "min": 21.0,
+  "dk": 15.5,
+  "salary": null,
+  "pos": "SG",
+  "opp": "SAS",
+  "ou": 229.5,
+  "slate": "off"
+ },
+ "harrison barnes": {
+  "player": "Harrison Barnes",
+  "team": "SAS",
+  "base_min": 18.0,
+  "min": 17.8,
+  "dk": 12.6,
+  "salary": null,
+  "pos": "PF",
+  "opp": "POR",
   "ou": 229.5,
   "slate": "off"
  },
@@ -1395,27 +1407,15 @@
   "slate": "main",
   "own": 0.7
  },
- "harrison barnes": {
-  "player": "Harrison Barnes",
+ "luke kornet": {
+  "player": "Luke Kornet",
   "team": "SAS",
-  "base_min": 18.0,
-  "min": 17.8,
-  "dk": 12.2,
+  "base_min": 14.0,
+  "min": 15.5,
+  "dk": 14.1,
   "salary": null,
-  "pos": "PF",
+  "pos": "C",
   "opp": "POR",
-  "ou": 229.5,
-  "slate": "off"
- },
- "sidy cissoko": {
-  "player": "Sidy Cissoko",
-  "team": "POR",
-  "base_min": 18.0,
-  "min": 20.4,
-  "dk": 14.0,
-  "salary": null,
-  "pos": "SG",
-  "opp": "SAS",
   "ou": 229.5,
   "slate": "off"
  },
@@ -1430,7 +1430,7 @@
   "opp": "PHX",
   "ou": 223.5,
   "slate": "main",
-  "own": 0.5
+  "own": 0.6
  },
  "jordan clarkson": {
   "player": "Jordan Clarkson",
@@ -1443,31 +1443,7 @@
   "opp": "CLE",
   "ou": 222.5,
   "slate": "main",
-  "own": 0.7
- },
- "luke kornet": {
-  "player": "Luke Kornet",
-  "team": "SAS",
-  "base_min": 14.0,
-  "min": 15.5,
-  "dk": 13.5,
-  "salary": null,
-  "pos": "C",
-  "opp": "POR",
-  "ou": 229.5,
-  "slate": "off"
- },
- "marvin bagley": {
-  "player": "Marvin Bagley III",
-  "team": "DEN",
-  "base_min": 11.0,
-  "min": 10.7,
-  "dk": 11.4,
-  "salary": null,
-  "pos": "PF",
-  "opp": "IND",
-  "ou": 229.5,
-  "slate": "off"
+  "own": 0.8
  },
  "craig porter": {
   "player": "Craig Porter Jr.",
@@ -1493,7 +1469,7 @@
   "opp": "GSW",
   "ou": 223.5,
   "slate": "main",
-  "own": 0.8
+  "own": 0.9
  },
  "keon ellis": {
   "player": "Keon Ellis",
@@ -1508,30 +1484,30 @@
   "slate": "main",
   "own": 0.8
  },
- "trevon brazile": {
-  "player": "Trevon Brazile",
-  "team": "DEN",
-  "base_min": 14.0,
-  "min": 16.2,
-  "dk": 14.1,
-  "salary": null,
-  "pos": "PF",
-  "opp": "IND",
-  "ou": 229.5,
-  "slate": "off"
- },
  "charles bassey": {
   "player": "Charles Bassey",
   "team": "GSW",
   "base_min": 10.0,
   "min": 14.2,
-  "dk": 17.8,
+  "dk": 17.9,
   "salary": 4200,
   "pos": "C",
   "opp": "ORL",
   "ou": 223.5,
   "slate": "main",
   "own": 8.0
+ },
+ "trevon brazile": {
+  "player": "Trevon Brazile",
+  "team": "DEN",
+  "base_min": 14.0,
+  "min": 16.2,
+  "dk": 13.9,
+  "salary": null,
+  "pos": "PF",
+  "opp": "IND",
+  "ou": 229.5,
+  "slate": "off"
  },
  "tyus jones": {
   "player": "Tyus Jones",
@@ -1550,10 +1526,22 @@
   "team": "IND",
   "base_min": 13.0,
   "min": 18.4,
-  "dk": 16.7,
+  "dk": 16.9,
   "salary": null,
   "pos": "C",
   "opp": "DEN",
+  "ou": 229.5,
+  "slate": "off"
+ },
+ "marvin bagley": {
+  "player": "Marvin Bagley III",
+  "team": "DEN",
+  "base_min": 11.0,
+  "min": 10.7,
+  "dk": 10.9,
+  "salary": null,
+  "pos": "PF",
+  "opp": "IND",
   "ou": 229.5,
   "slate": "off"
  },
@@ -1568,7 +1556,7 @@
   "opp": "GSW",
   "ou": 223.5,
   "slate": "main",
-  "own": 7.8
+  "own": 8.3
  },
  "chaney johnson": {
   "player": "Chaney Johnson",
@@ -1645,7 +1633,7 @@
   "opp": "ORL",
   "ou": 223.5,
   "slate": "main",
-  "own": 0.8
+  "own": 0.7
  },
  "zuby ejiofor": {
   "player": "Zuby Ejiofor",
@@ -1697,7 +1685,7 @@
   "opp": "ATL",
   "ou": 228.5,
   "slate": "main",
-  "own": 0.9
+  "own": 0.8
  },
  "koa peat": {
   "player": "Koa Peat",
@@ -1708,7 +1696,7 @@
   "salary": 3000,
   "pos": "PF",
   "opp": "HOU",
-  "ou": 223.5,
+  "ou": 224.5,
   "slate": "main",
   "own": 0.0
  },
@@ -1729,7 +1717,7 @@
   "team": "OKC",
   "base_min": 7.0,
   "min": 7.9,
-  "dk": 6.2,
+  "dk": 6.1,
   "salary": 3100,
   "pos": "SF/PF",
   "opp": "WAS",
@@ -1742,7 +1730,7 @@
   "team": "SAS",
   "base_min": 8.0,
   "min": 8.9,
-  "dk": 5.9,
+  "dk": 6.1,
   "salary": null,
   "pos": "SF",
   "opp": "POR",
