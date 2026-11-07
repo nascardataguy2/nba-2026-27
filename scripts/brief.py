@@ -213,8 +213,12 @@ def main():
             # Estimate: hand his recent minutes to teammates who share a position, by their minutes.
             me = pbyk.get((t, norm(name))) or {}
             mypos = set(str(me.get("pos", "")).split("/")) - {""}
-            mates = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")
-                     and (not mypos or mypos & set(str(p.get("pos", "")).split("/")))]
+            near = {"PG": {"PG", "SG"}, "SG": {"PG", "SG", "SF"}, "SF": {"SG", "SF", "PF"}, "PF": {"SF", "PF", "C"}, "C": {"PF", "C"}}
+            rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
+            mates = [p for p in rot if mypos & set(str(p.get("pos", "")).split("/"))] if mypos else rot
+            if not mates and mypos:  # nobody at his position: nearby positions, then the whole rotation
+                wide = set().union(*[near.get(x, {x}) for x in mypos])
+                mates = [p for p in rot if wide & set(str(p.get("pos", "")).split("/"))] or rot
             tot = sum(p["min"] for p in mates)
             if tot > 0:
                 adds = sorted(((min(m * p["min"] / tot, 36 - p["min"]), p) for p in mates), key=lambda x: -x[0])[:2]

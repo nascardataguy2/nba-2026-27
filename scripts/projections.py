@@ -434,6 +434,47 @@ def main():
         r["min"] = max(0.0, r["m0"] * (1 - w) + avg * w + (r["min"] - r["m0"]))
         r["recent"] = round(avg, 1)
 
+    # 2b) What actually happened this season when tonight's outs sat. For each team, find
+    # its games where every rotation player ruled out tonight (15+ minutes a game) also
+    # missed, and move each teammate toward the minutes he played in those games. One
+    # game counts for 25%, two for 40%, three for 50%, more up to 60%.
+    for team, tr in by_team.items():
+        outs = [o for o in out_list if o["team"] == team]
+        if not outs:
+            continue
+        played = {}
+        for pk, gs in recent.items():
+            for x in gs:
+                if x.get("team") == team and x.get("date", "") < day:
+                    played.setdefault(x["date"], {})[pk] = x["min"]
+
+        def avgmin(k):
+            g = sorted([x for x in recent.get(k, []) if x.get("team") == team and x.get("date", "") < day], key=lambda x: x["date"])[-5:]
+            return sum(x["min"] for x in g) / len(g) if g else 0.0
+        big = [o for o in outs if avgmin(norm(o["player"])) >= 15]
+        if not big:
+            continue
+        big.sort(key=lambda o: -avgmin(norm(o["player"])))
+        without = []
+        for k in range(len(big), 0, -1):  # all of them out together, else the biggest ones
+            bk = [norm(o["player"]) for o in big[:k]]
+            without = [d for d, m in played.items() if all(m.get(b, 0) <= 0 for b in bk)]
+            if without:
+                big = big[:k]
+                break
+        if not without or len(played) - len(without) < 2:
+            continue
+        w = min(0.6, len(without) / (len(without) + 3.0))
+        for r in tr:
+            if r["min"] <= 0 or r.get("fixed"):
+                continue
+            wo = [played[d][norm(r["player"])] for d in without if norm(r["player"]) in played[d]]
+            if not wo:
+                continue
+            target = sum(wo) / len(wo)
+            r["min"] = max(0.0, r["min"] * (1 - w) + target * w)
+            r["split"] = (round(target, 1), len(wo), [o["player"] for o in big])
+
     # 3) Each team plays 240 minutes.
     for team, tr in by_team.items():
         live = [r for r in tr if r["min"] > 0]
@@ -474,7 +515,11 @@ def main():
         delta = r["min"] - r["base"]
         if r["min"] > 0 and not r.get("fixed") and abs(delta) >= 2.0:
             outs = [o["player"] for o in out_list if o["team"] == r["team"] and o.get("freed")]
-            if delta > 0 and outs and r.get("m1", 0) - r.get("m0", 0) >= 2.0:
+            sp = r.get("split")
+            if delta > 0 and sp:
+                r["why"].append("More minutes with %s out: he played %s minutes a game in the %d game%s without %s this season." % (
+                    " and ".join(sp[2][:2]), sp[0], sp[1], "" if sp[1] == 1 else "s", "him" if len(sp[2]) == 1 else "them"))
+            elif delta > 0 and outs and r.get("m1", 0) - r.get("m0", 0) >= 2.0:
                 r["why"].append("More minutes with " + " and ".join(outs[:2]) + " out.")
             elif r.get("recent") is not None:
                 r["why"].append("Moved toward his recent minutes (%s a game)." % r["recent"])
