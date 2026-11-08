@@ -1,10 +1,8 @@
 {
  "date": "2026-11-08",
- "updated": "1:21 PM ET",
+ "updated": "2:43 PM ET",
  "games": 7,
- "pending": [
-  "BKN"
- ],
+ "pending": [],
  "first_report": "5:39 AM",
  "cards": [
   {
@@ -12,11 +10,11 @@
    "home": "CHI",
    "time": "2026-11-08T20:30Z",
    "slate": "late",
-   "ou": 238.5,
+   "ou": 237.5,
    "fav": "PHI",
    "line": 9.5,
-   "away_pts": 124.0,
-   "home_pts": 114.5,
+   "away_pts": 123.5,
+   "home_pts": 114.0,
    "tags": [
     "Highest total",
     "Blowout risk"
@@ -32,31 +30,27 @@
      "q": []
     },
     "CHI": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Norman Powell",
-       "min": 28.6
-      },
-      {
-       "player": "Nicolas Claxton",
-       "min": 22.0
+       "min": 27.3
       }
-     ]
+     ],
+     "q": []
     }
    },
-   "key": "Adem Bona is out, so VJ Edgecombe should play more than usual."
+   "key": "Norman Powell is out, so Buddy Hield and Caleb Wilson and Tre Jones should play more than usual."
   },
   {
    "away": "LAL",
    "home": "DET",
    "time": "2026-11-08T23:00Z",
    "slate": "late",
-   "ou": 218.5,
+   "ou": 217.5,
    "fav": "DET",
-   "line": 7.5,
+   "line": 6.5,
    "away_pts": 105.5,
-   "home_pts": 113.0,
+   "home_pts": 112.0,
    "tags": [
     "Lowest total"
    ],
@@ -91,11 +85,11 @@
    "home": "MIN",
    "time": "2026-11-09T00:00Z",
    "slate": "main",
-   "ou": 224.5,
+   "ou": 222.5,
    "fav": "MIN",
    "line": 11.5,
-   "away_pts": 106.5,
-   "home_pts": 118.0,
+   "away_pts": 105.5,
+   "home_pts": 117.0,
    "tags": [
     "Blowout risk"
    ],
@@ -135,11 +129,11 @@
    "home": "DAL",
    "time": "2026-11-09T00:30Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 223.5,
    "fav": "DAL",
    "line": 7.5,
-   "away_pts": 107.5,
-   "home_pts": 115.0,
+   "away_pts": 108.0,
+   "home_pts": 115.5,
    "tags": [
     "BKN on a back-to-back"
    ],
@@ -178,11 +172,11 @@
    "home": "MIL",
    "time": "2026-11-09T01:00Z",
    "slate": "main",
-   "ou": 219.5,
+   "ou": 222.5,
    "fav": "BOS",
    "line": 12.5,
-   "away_pts": 116.0,
-   "home_pts": 103.5,
+   "away_pts": 117.5,
+   "home_pts": 105.0,
    "tags": [
     "Blowout risk"
    ],
@@ -201,7 +195,7 @@
      "q": []
     }
    },
-   "key": "Jayson Tatum has the top projection in this game at 49.4 DK points."
+   "key": "Jayson Tatum has the top projection in this game at 49.3 DK points."
   },
   {
    "away": "MIA",
@@ -214,6 +208,7 @@
    "away_pts": 124.0,
    "home_pts": 113.5,
    "tags": [
+    "Highest total",
     "Blowout risk"
    ],
    "teams": {
@@ -231,7 +226,7 @@
      ]
     }
    },
-   "key": "Giannis Antetokounmpo has the top projection in this game at 63.7 DK points."
+   "key": "Giannis Antetokounmpo has the top projection in this game at 63.6 DK points."
   },
   {
    "away": "NOP",
@@ -270,6 +265,46 @@
   }
  ],
  "changed": [
+  {
+   "player": "Gary Trent Jr.",
+   "team": "MIL",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "2:44 PM"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "-",
+   "time": "2:44 PM"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "2:44 PM"
+  },
+  {
+   "player": "Nic Claxton",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "2:44 PM"
+  },
+  {
+   "player": "Tobe Awaka",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "2:44 PM"
+  },
   {
    "player": "Mitchell Robinson",
    "team": "BOS",
@@ -313,6 +348,84 @@
  ],
  "sits": [
   {
+   "team": "BKN",
+   "outs": [
+    {
+     "player": "Mikel Brown Jr.",
+     "min": 24.0,
+     "note": "Brown played 25 minutes on Saturday, Nov 7, scoring 18 points. The show projects him to sit Sunday on the back-to-back but said it is not confirmed. If he sits, the show expects Keon Ellis to get decent minutes again.",
+     "new": true
+    },
+    {
+     "player": "Egor Demin",
+     "min": 20.0,
+     "note": "The show said Demin should still be out for Brooklyn. He was ruled out on Nov 7 with a right bone bruise.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 44.0,
+   "benefits": [
+    {
+     "player": "Day'Ron Sharpe",
+     "gdk": 14.4,
+     "wmin": 26.0,
+     "recent": 23.9,
+     "n": 1,
+     "min": 26.5,
+     "dk": 29.6,
+     "salary": 5100,
+     "newstart": false
+    },
+    {
+     "player": "Nolan Traore",
+     "gdk": 8.5,
+     "wmin": 30.0,
+     "recent": 21.2,
+     "n": 1,
+     "min": 25.3,
+     "dk": 24.5,
+     "salary": 4900,
+     "newstart": false,
+     "note": "started, 23 minutes, 19 points (11/07)"
+    },
+    {
+     "player": "Moritz Wagner",
+     "gdk": 6.0,
+     "wmin": 21.0,
+     "recent": 18.2,
+     "n": 1,
+     "min": 20.1,
+     "dk": 19.9,
+     "salary": 4300,
+     "newstart": false
+    },
+    {
+     "player": "Michael Porter Jr.",
+     "gdk": 3.0,
+     "wmin": 36.0,
+     "recent": 33.1,
+     "n": 1,
+     "min": 35.7,
+     "dk": 37.3,
+     "salary": 7200,
+     "newstart": false
+    },
+    {
+     "player": "Keon Ellis",
+     "note": "Show: decent minutes (11/08)",
+     "min": 19.7,
+     "dk": 13.1,
+     "salary": 3600,
+     "newstart": false
+    }
+   ],
+   "split_of": [
+    "Mikel Brown Jr.",
+    "Egor Demin"
+   ]
+  },
+  {
    "team": "LAL",
    "outs": [
     {
@@ -331,8 +444,8 @@
      "wmin": 38.0,
      "recent": 24.1,
      "n": 1,
-     "min": 29.7,
-     "dk": 22.5,
+     "min": 28.3,
+     "dk": 25.0,
      "salary": 5100,
      "newstart": false,
      "note": "Show: big streaming option (11/08)"
@@ -343,8 +456,8 @@
      "wmin": 21.0,
      "recent": 16.0,
      "n": 1,
-     "min": 19.0,
-     "dk": 18.2,
+     "min": 17.1,
+     "dk": 19.7,
      "salary": 4400,
      "newstart": false,
      "note": "21 bench minutes, 21 points (10/28)"
@@ -355,8 +468,8 @@
      "wmin": 30.0,
      "recent": 22.4,
      "n": 1,
-     "min": 24.8,
-     "dk": 22.8,
+     "min": 24.0,
+     "dk": 25.0,
      "salary": 4800,
      "newstart": false,
      "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
@@ -367,8 +480,8 @@
      "wmin": 28.0,
      "recent": 23.8,
      "n": 1,
-     "min": 26.1,
-     "dk": 18.1,
+     "min": 23.8,
+     "dk": 19.2,
      "salary": 4700,
      "newstart": false
     },
@@ -378,8 +491,8 @@
      "wmin": 35.0,
      "recent": 22.1,
      "n": 1,
-     "min": 28.4,
-     "dk": 19.9,
+     "min": 27.2,
+     "dk": 22.6,
      "salary": 4300,
      "newstart": false
     }
@@ -387,6 +500,49 @@
    "split_of": [
     "Luka Doncic"
    ]
+  },
+  {
+   "team": "CHI",
+   "outs": [
+    {
+     "player": "Norman Powell",
+     "min": 27.3,
+     "note": "Ruled out tonight.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 27.3,
+   "benefits": [
+    {
+     "player": "Buddy Hield",
+     "subs": 13,
+     "of": 29,
+     "min": 19.8,
+     "dk": 17.4,
+     "salary": 3600,
+     "newstart": false
+    },
+    {
+     "player": "Caleb Wilson",
+     "subs": 3,
+     "of": 29,
+     "min": 33.7,
+     "dk": 39.8,
+     "salary": 7400,
+     "newstart": false
+    },
+    {
+     "player": "Tre Jones",
+     "subs": 2,
+     "of": 29,
+     "min": 22.5,
+     "dk": 24.0,
+     "salary": 4200,
+     "newstart": false
+    }
+   ],
+   "split_of": []
   },
   {
    "team": "LAC",
@@ -406,7 +562,7 @@
      "subs": 15,
      "of": 25,
      "min": 30.1,
-     "dk": 32.1,
+     "dk": 32.2,
      "salary": 4600,
      "newstart": true
     },
@@ -432,84 +588,6 @@
    "split_of": []
   },
   {
-   "team": "BKN",
-   "outs": [
-    {
-     "player": "Mikel Brown Jr.",
-     "min": 24.0,
-     "note": "Brown played 25 minutes on Saturday, Nov 7, scoring 18 points. The show projects him to sit Sunday on the back-to-back but said it is not confirmed. If he sits, the show expects Keon Ellis to get decent minutes again.",
-     "new": false
-    },
-    {
-     "player": "Egor Demin",
-     "min": 20.0,
-     "note": "The show said Demin should still be out for Brooklyn. He was ruled out on Nov 7 with a right bone bruise.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 44.0,
-   "benefits": [
-    {
-     "player": "Day'Ron Sharpe",
-     "gdk": 14.4,
-     "wmin": 26.0,
-     "recent": 23.9,
-     "n": 1,
-     "min": 26.5,
-     "dk": 29.6,
-     "salary": 5100,
-     "newstart": false
-    },
-    {
-     "player": "Nolan Traore",
-     "gdk": 8.5,
-     "wmin": 30.0,
-     "recent": 21.2,
-     "n": 1,
-     "min": 25.3,
-     "dk": 24.6,
-     "salary": 4900,
-     "newstart": false,
-     "note": "started, 23 minutes, 19 points (11/07)"
-    },
-    {
-     "player": "Moritz Wagner",
-     "gdk": 6.0,
-     "wmin": 21.0,
-     "recent": 18.2,
-     "n": 1,
-     "min": 20.1,
-     "dk": 19.9,
-     "salary": 4300,
-     "newstart": false
-    },
-    {
-     "player": "Michael Porter Jr.",
-     "gdk": 3.0,
-     "wmin": 36.0,
-     "recent": 33.1,
-     "n": 1,
-     "min": 35.7,
-     "dk": 37.5,
-     "salary": 7200,
-     "newstart": false
-    },
-    {
-     "player": "Keon Ellis",
-     "note": "Show: decent minutes (11/08)",
-     "min": 19.7,
-     "dk": 13.3,
-     "salary": 3600,
-     "newstart": false
-    }
-   ],
-   "split_of": [
-    "Mikel Brown Jr.",
-    "Egor Demin"
-   ]
-  },
-  {
    "team": "MIN",
    "outs": [
     {
@@ -529,7 +607,7 @@
      "recent": 26.2,
      "n": 6,
      "min": 33.6,
-     "dk": 36.7,
+     "dk": 36.5,
      "salary": 6600,
      "newstart": false,
      "note": "added usage (11/04)"
@@ -541,7 +619,7 @@
      "recent": 8.0,
      "n": 6,
      "min": 13.3,
-     "dk": 16.3,
+     "dk": 16.0,
      "salary": 3400,
      "newstart": false
     },
@@ -552,7 +630,7 @@
      "recent": 3.7,
      "n": 6,
      "min": 17.8,
-     "dk": 13.7,
+     "dk": 13.4,
      "salary": 3700,
      "newstart": false,
      "note": "moved into the rotation, 7 minutes (10/28)"
@@ -564,7 +642,7 @@
      "recent": 25.0,
      "n": 6,
      "min": 28.8,
-     "dk": 44.4,
+     "dk": 44.6,
      "salary": 8000,
      "newstart": false,
      "note": "Show: role will grow (11/02)"
@@ -587,7 +665,7 @@
      "recent": 31.8,
      "n": 6,
      "min": 33.4,
-     "dk": 33.6,
+     "dk": 33.0,
      "salary": 6500,
      "newstart": false,
      "note": "heavy minutes; 39 minutes Oct. 31 (10/31)"
@@ -596,7 +674,7 @@
      "player": "Jonathan Kuminga",
      "note": "Show: enough work to hold (11/06)",
      "min": 30.1,
-     "dk": 33.5,
+     "dk": 33.4,
      "salary": 6000,
      "newstart": false
     },
@@ -604,7 +682,7 @@
      "player": "Terrence Shannon Jr.",
      "note": "Show: should get more offensive responsibility (11/03)",
      "min": 20.4,
-     "dk": 19.8,
+     "dk": 19.9,
      "salary": 4400,
      "newstart": false
     }
@@ -633,7 +711,7 @@
      "recent": 13.0,
      "n": 5,
      "min": 21.2,
-     "dk": 13.8,
+     "dk": 13.7,
      "salary": 3800,
      "newstart": false
     },
@@ -644,7 +722,7 @@
      "recent": 29.2,
      "n": 5,
      "min": 30.9,
-     "dk": 32.3,
+     "dk": 32.4,
      "salary": 6200,
      "newstart": false
     },
@@ -652,7 +730,7 @@
      "player": "Ace Bailey",
      "note": "40 and 37 minutes in first two games after JJJ went down (11/02)",
      "min": 31.1,
-     "dk": 25.9,
+     "dk": 26.0,
      "salary": 6400,
      "newstart": false
     },
@@ -667,84 +745,6 @@
    ],
    "split_of": [
     "Jaren Jackson Jr."
-   ]
-  },
-  {
-   "team": "NOP",
-   "outs": [
-    {
-     "player": "Yves Missi",
-     "min": 19.5,
-     "note": "The show said Missi is still not back for New Orleans. He has not appeared in a box score this season.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 19.5,
-   "benefits": [
-    {
-     "player": "Jeremiah Fears",
-     "gdk": 23.3,
-     "wmin": 30.7,
-     "recent": 22.5,
-     "n": 7,
-     "min": 26.9,
-     "dk": 24.8,
-     "salary": 6400,
-     "newstart": false
-    },
-    {
-     "player": "Trey Murphy",
-     "gdk": 10.1,
-     "wmin": 33.7,
-     "recent": 31.5,
-     "n": 6,
-     "min": 28.9,
-     "dk": 25.8,
-     "salary": 7100,
-     "newstart": false
-    },
-    {
-     "player": "Herbert Jones",
-     "gdk": 7.5,
-     "wmin": 24.4,
-     "recent": 17.5,
-     "n": 7,
-     "min": 20.7,
-     "dk": 12.4,
-     "salary": 4400,
-     "newstart": false
-    },
-    {
-     "player": "Saddiq Bey",
-     "gdk": 5.0,
-     "wmin": 28.1,
-     "recent": 23.0,
-     "n": 7,
-     "min": 24.3,
-     "dk": 21.5,
-     "salary": 5900,
-     "newstart": false
-    },
-    {
-     "player": "Karlo Matkovic",
-     "note": "started, 18 minutes (11/06)",
-     "min": 16.8,
-     "dk": 15.7,
-     "salary": 4700,
-     "newstart": false
-    },
-    {
-     "player": "Derik Queen",
-     "note": "12.0 points, 7.3 rebounds off the bench Oct. 28 to Nov. 2 (11/02)",
-     "min": 18.7,
-     "dk": 20.4,
-     "salary": 6100,
-     "newstart": true
-    }
-   ],
-   "split_of": [
-    "Yves Missi"
    ]
   }
  ],
@@ -834,47 +834,47 @@
  ],
  "chalk": [
   {
-   "player": "LeBron James",
-   "team": "PHI",
-   "own": 68.0,
-   "dk": 40.7,
-   "salary": 7800
-  },
-  {
-   "player": "VJ Edgecombe",
-   "team": "PHI",
-   "own": 59.2,
-   "dk": 32.3,
-   "salary": 6300
-  },
-  {
    "player": "Tre Jones",
    "team": "CHI",
-   "own": 53.3,
-   "dk": 21.1,
+   "own": 76.8,
+   "dk": 24.0,
    "salary": 4200
   },
   {
-   "player": "Danny Wolf",
-   "team": "BKN",
-   "own": 49.6,
-   "dk": 20.1,
-   "salary": 3000
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "own": 62.1,
+   "dk": 39.8,
+   "salary": 7400
+  },
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "own": 56.7,
+   "dk": 41.4,
+   "salary": 7800
+  },
+  {
+   "player": "Brayden Burries",
+   "team": "MIL",
+   "own": 54.1,
+   "dk": 24.4,
+   "salary": 4300
   }
  ],
  "leverage": [
   {
    "player": "Keaton Wagler",
    "team": "LAC",
-   "own": 8.7,
+   "own": 6.8,
    "dk": 31.8,
    "salary": 5500
   },
   {
    "player": "Malik Monk",
    "team": "SAC",
-   "own": 3.7,
-   "dk": 23.9,
+   "own": 3.3,
+   "dk": 24.1,
    "salary": 4300
   },
   {
@@ -969,12 +969,80 @@
   ]
  },
  "injuries": {
-  "report": "01:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_01_15PM.pdf",
-  "pending": [
-   "BKN"
-  ],
+  "report": "02:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_02_30PM.pdf",
+  "pending": [],
   "rows": [
+   {
+    "game": "PHI at CHI",
+    "time": "2026-11-08T20:30Z",
+    "team": "CHI",
+    "player": "Norman Powell",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "2:44 PM",
+    "min": 27.3,
+    "benefits": [
+     {
+      "player": "Buddy Hield",
+      "subs": 13,
+      "of": 29,
+      "min": 19.8,
+      "dk": 17.4,
+      "salary": 3600,
+      "newstart": false
+     },
+     {
+      "player": "Caleb Wilson",
+      "subs": 3,
+      "of": 29,
+      "min": 33.7,
+      "dk": 39.8,
+      "salary": 7400,
+      "newstart": false
+     },
+     {
+      "player": "Tre Jones",
+      "subs": 2,
+      "of": 29,
+      "min": 22.5,
+      "dk": 24.0,
+      "salary": 4200,
+      "newstart": false
+     },
+     {
+      "player": "Leonard Miller",
+      "subs": 2,
+      "of": 29,
+      "min": 15.4,
+      "dk": 14.1,
+      "salary": 4000,
+      "newstart": false
+     },
+     {
+      "player": "Isaac Okoro",
+      "subs": 2,
+      "of": 29,
+      "min": 21.1,
+      "dk": 12.9,
+      "salary": 3800,
+      "newstart": false
+     },
+     {
+      "player": "Noa Essengue",
+      "subs": 2,
+      "of": 29,
+      "min": 14.8,
+      "dk": 9.9,
+      "salary": 3500,
+      "newstart": false
+     }
+    ],
+    "estimate": false
+   },
    {
     "game": "PHI at CHI",
     "time": "2026-11-08T20:30Z",
@@ -1008,91 +1076,6 @@
    {
     "game": "PHI at CHI",
     "time": "2026-11-08T20:30Z",
-    "team": "CHI",
-    "player": "Norman Powell",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:43 PM",
-    "min": 27.3,
-    "benefits": [
-     {
-      "player": "Buddy Hield",
-      "subs": 13,
-      "of": 29,
-      "min": 12.2,
-      "dk": 10.1,
-      "salary": 3600,
-      "newstart": false
-     },
-     {
-      "player": "Caleb Wilson",
-      "subs": 3,
-      "of": 29,
-      "min": 32.1,
-      "dk": 37.3,
-      "salary": 7400,
-      "newstart": false
-     },
-     {
-      "player": "Tre Jones",
-      "subs": 2,
-      "of": 29,
-      "min": 20.4,
-      "dk": 21.1,
-      "salary": 4200,
-      "newstart": false
-     },
-     {
-      "player": "Leonard Miller",
-      "subs": 2,
-      "of": 29,
-      "min": 13.7,
-      "dk": 12.7,
-      "salary": 4000,
-      "newstart": false
-     },
-     {
-      "player": "Isaac Okoro",
-      "subs": 2,
-      "of": 29,
-      "min": 19.0,
-      "dk": 11.5,
-      "salary": 3800,
-      "newstart": false
-     },
-     {
-      "player": "Noa Essengue",
-      "subs": 2,
-      "of": 29,
-      "min": 13.0,
-      "dk": 8.7,
-      "salary": 3500,
-      "newstart": false
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "PHI at CHI",
-    "time": "2026-11-08T20:30Z",
-    "team": "CHI",
-    "player": "Tobe Awaka",
-    "status": "Questionable",
-    "reason": "Left MCL Sprain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 8.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "PHI at CHI",
-    "time": "2026-11-08T20:30Z",
     "team": "PHI",
     "player": "Joel Embiid",
     "status": "Probable",
@@ -1110,12 +1093,12 @@
     "time": "2026-11-08T20:30Z",
     "team": "CHI",
     "player": "Jalen Smith",
-    "status": "Probable",
-    "reason": "Left Finger Sprain",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "Available",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "2:44 PM",
     "min": 20.7,
     "benefits": [],
     "estimate": false
@@ -1139,8 +1122,8 @@
       "wmin": 38.0,
       "recent": 24.1,
       "n": 1,
-      "min": 29.7,
-      "dk": 22.5,
+      "min": 28.3,
+      "dk": 25.0,
       "salary": 5100,
       "newstart": false,
       "note": "Show: big streaming option (11/08)"
@@ -1151,8 +1134,8 @@
       "wmin": 21.0,
       "recent": 16.0,
       "n": 1,
-      "min": 19.0,
-      "dk": 18.2,
+      "min": 17.1,
+      "dk": 19.7,
       "salary": 4400,
       "newstart": false,
       "note": "21 bench minutes, 21 points (10/28)"
@@ -1163,8 +1146,8 @@
       "wmin": 30.0,
       "recent": 22.4,
       "n": 1,
-      "min": 24.8,
-      "dk": 22.8,
+      "min": 24.0,
+      "dk": 25.0,
       "salary": 4800,
       "newstart": false,
       "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
@@ -1175,8 +1158,8 @@
       "wmin": 28.0,
       "recent": 23.8,
       "n": 1,
-      "min": 26.1,
-      "dk": 18.1,
+      "min": 23.8,
+      "dk": 19.2,
       "salary": 4700,
       "newstart": false
      },
@@ -1186,8 +1169,8 @@
       "wmin": 35.0,
       "recent": 22.1,
       "n": 1,
-      "min": 28.4,
-      "dk": 19.9,
+      "min": 27.2,
+      "dk": 22.6,
       "salary": 4300,
       "newstart": false
      }
@@ -1214,7 +1197,7 @@
       "recent": 17.4,
       "n": 1,
       "min": 21.2,
-      "dk": 13.8,
+      "dk": 13.7,
       "salary": 3800,
       "newstart": false
      },
@@ -1236,7 +1219,7 @@
       "recent": 14.5,
       "n": 1,
       "min": 14.1,
-      "dk": 13.2,
+      "dk": 13.3,
       "salary": 4300,
       "newstart": false,
       "note": "Show: more value if Markkanen sits again (10/30)"
@@ -1248,7 +1231,7 @@
       "recent": 15.3,
       "n": 1,
       "min": 18.3,
-      "dk": 8.9,
+      "dk": 9.0,
       "salary": 3600,
       "newstart": false
      },
@@ -1270,7 +1253,7 @@
       "recent": 30.8,
       "n": 1,
       "min": 30.9,
-      "dk": 32.3,
+      "dk": 32.4,
       "salary": 6200,
       "newstart": false,
       "note": "Show: one of only other Utah players looking for shots if Markkanen sits (10/28)"
@@ -1296,7 +1279,7 @@
       "subs": 8,
       "of": 28,
       "min": 14.1,
-      "dk": 13.2,
+      "dk": 13.3,
       "salary": 4300,
       "newstart": false
      },
@@ -1314,7 +1297,7 @@
       "subs": 5,
       "of": 28,
       "min": 30.9,
-      "dk": 32.3,
+      "dk": 32.4,
       "salary": 6200,
       "newstart": false
      },
@@ -1332,7 +1315,7 @@
       "subs": 1,
       "of": 28,
       "min": 31.1,
-      "dk": 25.9,
+      "dk": 26.0,
       "salary": 6400,
       "newstart": false
      },
@@ -1361,6 +1344,63 @@
     "changed_at": "12:43 PM",
     "min": 11.3,
     "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "BKN at DAL",
+    "time": "2026-11-09T00:30Z",
+    "team": "BKN",
+    "player": "Mikel Brown Jr.",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 24.0,
+    "benefits": [
+     {
+      "player": "Josh Minott",
+      "gdk": 30.4,
+      "wmin": 21.0,
+      "recent": 6.0,
+      "n": 1,
+      "min": 10.3,
+      "dk": 9.3,
+      "salary": 3000,
+      "newstart": false
+     },
+     {
+      "player": "Nolan Traore",
+      "gdk": 11.0,
+      "wmin": 27.5,
+      "recent": 20.7,
+      "n": 2,
+      "min": 25.3,
+      "dk": 24.5,
+      "salary": 4900,
+      "newstart": false
+     },
+     {
+      "player": "Moritz Wagner",
+      "gdk": 5.1,
+      "wmin": 18.0,
+      "recent": 18.7,
+      "n": 2,
+      "min": 20.1,
+      "dk": 19.9,
+      "salary": 4300,
+      "newstart": false
+     },
+     {
+      "player": "Keon Ellis",
+      "note": "Show: decent minutes (11/08)",
+      "min": 19.7,
+      "dk": 13.1,
+      "salary": 3600,
+      "newstart": false
+     }
+    ],
     "estimate": false
    },
    {
@@ -1394,7 +1434,7 @@
       "recent": 30.0,
       "n": 1,
       "min": 30.0,
-      "dk": 36.5,
+      "dk": 36.3,
       "salary": 7300,
       "newstart": false
      },
@@ -1407,6 +1447,21 @@
       "newstart": true
      }
     ],
+    "estimate": false
+   },
+   {
+    "game": "BOS at MIL",
+    "time": "2026-11-09T01:00Z",
+    "team": "MIL",
+    "player": "Gary Trent Jr.",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "2:44 PM",
+    "min": 6.5,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1427,7 +1482,7 @@
       "subs": 15,
       "of": 25,
       "min": 30.1,
-      "dk": 32.1,
+      "dk": 32.2,
       "salary": 4600,
       "newstart": true
      },
@@ -1499,7 +1554,7 @@
       "recent": 36.0,
       "n": 7,
       "min": 37.2,
-      "dk": 50.0,
+      "dk": 50.3,
       "salary": 8400,
       "newstart": false
      },
@@ -1510,7 +1565,7 @@
       "recent": 22.5,
       "n": 6,
       "min": 32.8,
-      "dk": 27.3,
+      "dk": 27.4,
       "salary": 5800,
       "newstart": false,
       "note": "Show: 32 to 37 minutes in last three starts; role expected to shrink when they return (10/31)"
@@ -1538,7 +1593,7 @@
       "recent": 33.5,
       "n": 1,
       "min": 34.4,
-      "dk": 32.3,
+      "dk": 32.9,
       "salary": 6300,
       "newstart": false
      }
@@ -1565,7 +1620,7 @@
       "recent": 32.5,
       "n": 6,
       "min": 33.4,
-      "dk": 45.9,
+      "dk": 48.0,
       "salary": 9400,
       "newstart": false,
       "note": "taking a lot more threes (10/28)"
@@ -1577,7 +1632,7 @@
       "recent": 26.0,
       "n": 5,
       "min": 28.2,
-      "dk": 28.1,
+      "dk": 29.7,
       "salary": 6000,
       "newstart": false
      },
@@ -1588,7 +1643,7 @@
       "recent": 12.5,
       "n": 6,
       "min": 16.6,
-      "dk": 14.6,
+      "dk": 15.1,
       "salary": 4000,
       "newstart": false
      },
@@ -1599,7 +1654,7 @@
       "recent": 28.0,
       "n": 6,
       "min": 31.2,
-      "dk": 26.4,
+      "dk": 27.5,
       "salary": 5300,
       "newstart": false,
       "note": "Show: usage will change once Duren returns (11/06)"
@@ -1608,7 +1663,7 @@
       "player": "John Collins",
       "note": "Show: role gets harder when Duren returns (11/04)",
       "min": 24.9,
-      "dk": 24.0,
+      "dk": 25.5,
       "salary": 5200,
       "newstart": false
      },
@@ -1616,7 +1671,7 @@
       "player": "Paul Reed",
       "note": "Show: keeps starting until Duren is back (11/07)",
       "min": 30.1,
-      "dk": 31.9,
+      "dk": 34.1,
       "salary": 6600,
       "newstart": false
      }
@@ -1643,7 +1698,7 @@
       "recent": 26.0,
       "n": 5,
       "min": 28.2,
-      "dk": 28.1,
+      "dk": 29.7,
       "salary": 6000,
       "newstart": false
      },
@@ -1654,7 +1709,7 @@
       "recent": 32.7,
       "n": 5,
       "min": 33.4,
-      "dk": 45.9,
+      "dk": 48.0,
       "salary": 9400,
       "newstart": false
      },
@@ -1662,7 +1717,7 @@
       "player": "Daniss Jenkins",
       "note": "24 minutes off the bench in each of last three games (10/30)",
       "min": 24.2,
-      "dk": 21.0,
+      "dk": 22.0,
       "salary": 4500,
       "newstart": false
      },
@@ -1670,7 +1725,7 @@
       "player": "Duncan Robinson",
       "note": "Show: usage should come down once Joe and Duren are healthy (11/06)",
       "min": 31.2,
-      "dk": 26.4,
+      "dk": 27.5,
       "salary": 5300,
       "newstart": false
      }
@@ -1697,7 +1752,7 @@
       "recent": 26.2,
       "n": 6,
       "min": 33.6,
-      "dk": 36.7,
+      "dk": 36.5,
       "salary": 6600,
       "newstart": false,
       "note": "added usage (11/04)"
@@ -1709,7 +1764,7 @@
       "recent": 8.0,
       "n": 6,
       "min": 13.3,
-      "dk": 16.3,
+      "dk": 16.0,
       "salary": 3400,
       "newstart": false
      },
@@ -1720,7 +1775,7 @@
       "recent": 3.7,
       "n": 6,
       "min": 17.8,
-      "dk": 13.7,
+      "dk": 13.4,
       "salary": 3700,
       "newstart": false,
       "note": "moved into the rotation, 7 minutes (10/28)"
@@ -1732,7 +1787,7 @@
       "recent": 25.0,
       "n": 6,
       "min": 28.8,
-      "dk": 44.4,
+      "dk": 44.6,
       "salary": 8000,
       "newstart": false,
       "note": "Show: role will grow (11/02)"
@@ -1755,7 +1810,7 @@
       "recent": 31.8,
       "n": 6,
       "min": 33.4,
-      "dk": 33.6,
+      "dk": 33.0,
       "salary": 6500,
       "newstart": false,
       "note": "heavy minutes; 39 minutes Oct. 31 (10/31)"
@@ -1764,7 +1819,7 @@
       "player": "Jonathan Kuminga",
       "note": "Show: enough work to hold (11/06)",
       "min": 30.1,
-      "dk": 33.5,
+      "dk": 33.4,
       "salary": 6000,
       "newstart": false
      },
@@ -1772,7 +1827,7 @@
       "player": "Terrence Shannon Jr.",
       "note": "Show: should get more offensive responsibility (11/03)",
       "min": 20.4,
-      "dk": 19.8,
+      "dk": 19.9,
       "salary": 4400,
       "newstart": false
      }
@@ -1799,7 +1854,7 @@
       "recent": 13.0,
       "n": 5,
       "min": 21.2,
-      "dk": 13.8,
+      "dk": 13.7,
       "salary": 3800,
       "newstart": false
      },
@@ -1810,7 +1865,7 @@
       "recent": 29.2,
       "n": 5,
       "min": 30.9,
-      "dk": 32.3,
+      "dk": 32.4,
       "salary": 6200,
       "newstart": false
      },
@@ -1818,7 +1873,7 @@
       "player": "Ace Bailey",
       "note": "40 and 37 minutes in first two games after JJJ went down (11/02)",
       "min": 31.1,
-      "dk": 25.9,
+      "dk": 26.0,
       "salary": 6400,
       "newstart": false
      },
@@ -1828,6 +1883,53 @@
       "min": 24.6,
       "dk": 21.3,
       "salary": 5500,
+      "newstart": false
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "BKN at DAL",
+    "time": "2026-11-09T00:30Z",
+    "team": "BKN",
+    "player": "Egor Demin",
+    "status": "Out",
+    "reason": "Right Bone Bruise",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 20.0,
+    "benefits": [
+     {
+      "player": "Nolan Traore",
+      "gdk": 12.2,
+      "wmin": 26.0,
+      "recent": 17.5,
+      "n": 5,
+      "min": 25.3,
+      "dk": 24.5,
+      "salary": 4900,
+      "newstart": false,
+      "note": "started, 23 minutes, 19 points (11/07)"
+     },
+     {
+      "player": "Day'Ron Sharpe",
+      "gdk": 10.2,
+      "wmin": 26.2,
+      "recent": 21.5,
+      "n": 5,
+      "min": 26.5,
+      "dk": 29.6,
+      "salary": 5100,
+      "newstart": false
+     },
+     {
+      "player": "Keon Ellis",
+      "note": "Show: absence could open a path back to the lineup or more minutes (10/30)",
+      "min": 19.7,
+      "dk": 13.1,
+      "salary": 3600,
       "newstart": false
      }
     ],
@@ -1853,7 +1955,7 @@
       "recent": 14.5,
       "n": 5,
       "min": 18.3,
-      "dk": 19.6,
+      "dk": 19.4,
       "salary": 3600,
       "newstart": false
      },
@@ -1953,7 +2055,7 @@
       "min": 18.7,
       "dk": 20.4,
       "salary": 6100,
-      "newstart": true
+      "newstart": false
      }
     ],
     "estimate": false
@@ -1961,9 +2063,14 @@
   ],
   "minor": [
    {
+    "player": "Tobe Awaka",
+    "team": "CHI",
+    "status": "Available"
+   },
+   {
     "player": "Nic Claxton",
     "team": "CHI",
-    "status": "Questionable"
+    "status": "Available"
    },
    {
     "player": "Dominick Barlow",
