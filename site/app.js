@@ -116,7 +116,7 @@
       // If he sits
       var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
         var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
-        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.gdk != null || b.pdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'; }).join('<br>');
+        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.gdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' : b.subs != null ? benTxt(b) + ', ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'; }).join('<br>');
         return '<div class="hit">' + tm(s.team) + ' ' + outs + ' <span class="arrow">\u2192</span><p>' + ben + '</p></div>';
       }).join(''));
       // Storylines: tonight's players first, then the rest
@@ -305,7 +305,7 @@
   // Who benefits: real games without him first (DK gained, minutes then), else our projection.
   function benTxt(b, them){
     if (b.gdk != null) return '+' + n1(b.gdk) + ' DK, ' + n1(b.wmin) + ' min (' + b.n + (b.n === 1 ? ' game' : ' games') + ' without ' + (them ? 'them' : 'him') + ')';
-    if (b.pdk != null) return '+' + n1(b.pdk) + ' DK in tonight\u2019s projections vs. his last 3 games';
+    if (b.subs != null) return 'subbed in for him ' + b.subs + ' of ' + b.of + ' times this season \u00b7 ' + n1(b.dk) + ' DK tonight';
     return b.recent != null ? n1(b.min) + ' min, up from ' + n1(b.recent) : '+' + n1(b.plus) + ' min';
   }
   function injuries(){

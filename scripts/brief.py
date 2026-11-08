@@ -95,21 +95,23 @@ def main():
         out.sort(key=lambda b: -b["gdk"])
         return [b for b in out if b["gdk"] >= 3][:top], len(without), names
 
-    def proj_gain(team, names, top=6):
-        """No games without him yet: tonight's projections (SportsLine and DFF, which already
-        have him out) against each teammate's last 3 games. Every position."""
+    subs_all = load_json(os.path.join(D, "subs.json"), {}).get("subs", [])
+
+    def sub_gain(team, names, top=6):
+        """No games without him yet: the teammates who actually sub in for him (ESPN
+        play-by-play), at any position, most often first, with tonight's projection."""
+        cnt = {}
+        keys = {norm(x) for x in names}
+        for sd, st_, pin, pout in subs_all:
+            if st_ == team and sd < day and norm(pout) in keys:
+                cnt[norm(pin)] = cnt.get(norm(pin), 0) + 1
+        tot = sum(cnt.values())
         out = []
         for p in players:
-            if p["team"] != team or p["min"] < 10 or p.get("q") or norm(p["player"]) in {norm(x) for x in names}:
-                continue
-            g = [x for x in games_of(team, p["player"]) if x["min"] > 0][-3:]
-            if len(g) < 2:
-                continue
-            d = p["dk"] - sum(x["dk"] for x in g) / len(g)
-            if d >= 3:
-                out.append({"player": p["player"], "pdk": r1(d), "min": r1(p["min"]), "recent": r1(sum(x["min"] for x in g) / len(g)),
-                            "dk": r1(p["dk"]), "salary": p.get("salary")})
-        out.sort(key=lambda b: -b["pdk"])
+            k = norm(p["player"])
+            if p["team"] == team and p["min"] > 0 and not p.get("q") and k in cnt and k not in keys:
+                out.append({"player": p["player"], "subs": cnt[k], "of": tot, "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary")})
+        out.sort(key=lambda b: -b["subs"])
         return out[:top]
 
     yday = str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=1))
@@ -236,7 +238,7 @@ def main():
         gain.sort(key=lambda x: -x[0])
         sb, sn, snames = split_gain(t, [o["player"] for o in tout])
         if not sb:  # no games without them yet: tonight's projections vs. recent games
-            sb = proj_gain(t, [o["player"] for o in tout], top=3)
+            sb = sub_gain(t, [o["player"] for o in tout], top=3)
             snames = []
         if not sb:
             continue
@@ -265,13 +267,13 @@ def main():
         m = recent_min(t, name)
         ben, est = [], False
         if status in ("Out", "Doubtful") and m >= 12:
-            ben = split_gain(t, [name])[0] or proj_gain(t, [name])
+            ben = split_gain(t, [name])[0] or sub_gain(t, [name])
         elif status == "Questionable" and m >= 10:
             # If he sits: what his teammates actually did in this season's games he missed,
             # at every position. With no such games, his minutes go to the whole rotation
             # by their minutes, again at every position. Either way it is labeled an estimate.
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
-            ben = split_gain(t, [name])[0] or proj_gain(t, [name])
+            ben = split_gain(t, [name])[0] or sub_gain(t, [name])
             est = False
         c = intraday.get(name)
         inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
