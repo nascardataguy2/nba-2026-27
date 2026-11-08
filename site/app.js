@@ -116,7 +116,7 @@
       // If he sits
       var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
         var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
-        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.gdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'; }).join('<br>');
+        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.gdk != null || b.pdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'; }).join('<br>');
         return '<div class="hit">' + tm(s.team) + ' ' + outs + ' <span class="arrow">\u2192</span><p>' + ben + '</p></div>';
       }).join(''));
       // Storylines: tonight's players first, then the rest
@@ -305,7 +305,7 @@
   // Who benefits: real games without him first (DK gained, minutes then), else our projection.
   function benTxt(b, them){
     if (b.gdk != null) return '+' + n1(b.gdk) + ' DK, ' + n1(b.wmin) + ' min (' + b.n + (b.n === 1 ? ' game' : ' games') + ' without ' + (them ? 'them' : 'him') + ')';
-    if (b.pdk != null) return '+' + n1(b.pdk) + ' DK projected';
+    if (b.pdk != null) return '+' + n1(b.pdk) + ' DK in tonight\u2019s projections vs. his last 3 games';
     return b.recent != null ? n1(b.min) + ' min, up from ' + n1(b.recent) : '+' + n1(b.plus) + ' min';
   }
   function injuries(){
@@ -342,7 +342,7 @@
       var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
       return grp + '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
-        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">' + (r.min >= 12 && /Out|Doubtful|Questionable/.test(r.status) ? 'No games without him this season yet' : 'No fantasy impact') + '</span>') + '</td></tr>';
+        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">No fantasy impact</span>') + '</td></tr>';
     }).join('');
     var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr><th>Player</th><th>Status</th><th>New?</th><th>Who benefits</th></tr></thead><tbody>' +
       (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
