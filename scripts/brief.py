@@ -59,7 +59,7 @@ def main():
         g = [x for x in games_of(team, name) if x["min"] > 0][-n:]
         return sum(x["min"] for x in g) / len(g) if g else 0.0
 
-    def split_gain(team, names, top=3):
+    def split_gain(team, names, top=6):
         """Who actually gained when these players sat: this season's games where all of them
         (else the biggest ones) missed, compared with the games they played. Every position.
         Ranked by DK points gained. Only teammates active tonight."""
@@ -246,7 +246,7 @@ def main():
         m = recent_min(t, name)
         ben, est = [], False
         if status in ("Out", "Doubtful") and m >= 12:
-            ben = split_gain(t, [name], top=2)[0]
+            ben = split_gain(t, [name])[0]
             if not ben:
                 # He has not missed a game this season: rank teammates by how far tonight's
                 # projection sits above their recent DK points (every position), as an estimate.
@@ -258,14 +258,14 @@ def main():
                     if len(g) >= 2:
                         gl.append((p["dk"] - sum(x["dk"] for x in g) / len(g), p))
                 gl.sort(key=lambda x: -x[0])
-                ben = [{"player": p["player"], "plus": r1(p["min"] - recent_min(t, p["player"])), "min": r1(p["min"]), "pdk": r1(d)} for d, p in gl[:2] if d >= 3]
+                ben = [{"player": p["player"], "plus": r1(p["min"] - recent_min(t, p["player"])), "min": r1(p["min"]), "pdk": r1(d)} for d, p in gl[:6] if d >= 3]
                 est = bool(ben)
         elif status == "Questionable" and m >= 10:
             # If he sits: what his teammates actually did in this season's games he missed,
             # at every position. With no such games, his minutes go to the whole rotation
             # by their minutes, again at every position. Either way it is labeled an estimate.
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
-            ben = split_gain(t, [name], top=2)[0]
+            ben = split_gain(t, [name])[0]
             if not ben:
                 tot = sum(p["min"] for p in rot)
                 if tot > 0:
@@ -313,7 +313,7 @@ def main():
         gs = sorted([s for s in sits if s["team"] in (g["away"], g["home"])], key=lambda s: -s["lost"])
         if gs:
             s = gs[0]
-            names = [b["player"] for b in s["benefits"][:2]]
+            names = [b["player"] for b in s["benefits"][:6]]
             who = " and ".join(o["player"] for o in s["outs"][:2])
             line = "%s %s out, so %s should play more than usual." % (who, "are" if len(s["outs"]) > 1 else "is", " and ".join(names))
         elif gp:
