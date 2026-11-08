@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updated": "1:18 PM ET",
+ "updated": "1:21 PM ET",
  "games": 7,
  "pending": [
   "BKN"
@@ -62,13 +62,13 @@
    ],
    "teams": {
     "LAL": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Luka Doncic",
-       "min": 36.2
+       "min": 36.3
       }
-     ]
+     ],
+     "q": []
     },
     "DET": {
      "out": [
@@ -84,7 +84,7 @@
      "q": []
     }
    },
-   "key": "Jalen Duren is out, so Cade Cunningham and Ausar Thompson and Ron Holland and Duncan Robinson and John Collins and Paul Reed should play more than usual."
+   "key": "Luka Doncic is out, so Quentin Grimes and Collin Sexton and Sandro Mamukelashvili and Matisse Thybulle and Jake LaRavia should play more than usual."
   },
   {
    "away": "UTA",
@@ -189,7 +189,12 @@
    "teams": {
     "BOS": {
      "out": [],
-     "q": []
+     "q": [
+      {
+       "player": "Mitchell Robinson",
+       "min": 17.5
+      }
+     ]
     },
     "MIL": {
      "out": [],
@@ -266,6 +271,22 @@
  ],
  "changed": [
   {
+   "player": "Mitchell Robinson",
+   "team": "BOS",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "1:22 PM"
+  },
+  {
+   "player": "Luka Doncic",
+   "team": "LAL",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Low Back Tightness",
+   "time": "1:22 PM"
+  },
+  {
    "player": "Joan Beringer",
    "team": "MIN",
    "status": "Available",
@@ -291,6 +312,82 @@
   }
  ],
  "sits": [
+  {
+   "team": "LAL",
+   "outs": [
+    {
+     "player": "Luka Doncic",
+     "min": 36.3,
+     "note": "The show said Doncic is listed as questionable for Sunday, Nov 8, probably because the Lakers just finished a stretch of five games in seven nights. The Lakers also play Monday on a back-to-back. The show said Quentin Grimes becomes a big streaming option if Doncic sits.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 36.3,
+   "benefits": [
+    {
+     "player": "Quentin Grimes",
+     "gdk": 27.2,
+     "wmin": 38.0,
+     "recent": 24.1,
+     "n": 1,
+     "min": 29.7,
+     "dk": 22.5,
+     "salary": 5100,
+     "newstart": false,
+     "note": "Show: big streaming option (11/08)"
+    },
+    {
+     "player": "Collin Sexton",
+     "gdk": 16.3,
+     "wmin": 21.0,
+     "recent": 16.0,
+     "n": 1,
+     "min": 19.0,
+     "dk": 18.2,
+     "salary": 4400,
+     "newstart": false,
+     "note": "21 bench minutes, 21 points (10/28)"
+    },
+    {
+     "player": "Sandro Mamukelashvili",
+     "gdk": 14.3,
+     "wmin": 30.0,
+     "recent": 22.4,
+     "n": 1,
+     "min": 24.8,
+     "dk": 22.8,
+     "salary": 4800,
+     "newstart": false,
+     "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
+    },
+    {
+     "player": "Matisse Thybulle",
+     "gdk": 6.9,
+     "wmin": 28.0,
+     "recent": 23.8,
+     "n": 1,
+     "min": 26.1,
+     "dk": 18.1,
+     "salary": 4700,
+     "newstart": false
+    },
+    {
+     "player": "Jake LaRavia",
+     "gdk": 5.5,
+     "wmin": 35.0,
+     "recent": 22.1,
+     "n": 1,
+     "min": 28.4,
+     "dk": 19.9,
+     "salary": 4300,
+     "newstart": false
+    }
+   ],
+   "split_of": [
+    "Luka Doncic"
+   ]
+  },
   {
    "team": "LAC",
    "outs": [
@@ -649,86 +746,6 @@
    "split_of": [
     "Yves Missi"
    ]
-  },
-  {
-   "team": "DET",
-   "outs": [
-    {
-     "player": "Jalen Duren",
-     "min": 19.0,
-     "note": "The show said it does not expect Duren back yet. He has not appeared in a box score this season, and Isaiah Joe also remains out.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 19.0,
-   "benefits": [
-    {
-     "player": "Cade Cunningham",
-     "gdk": 11.8,
-     "wmin": 33.8,
-     "recent": 32.5,
-     "n": 6,
-     "min": 33.4,
-     "dk": 45.9,
-     "salary": 9400,
-     "newstart": false,
-     "note": "taking a lot more threes (10/28)"
-    },
-    {
-     "player": "Ausar Thompson",
-     "gdk": 5.7,
-     "wmin": 28.0,
-     "recent": 26.0,
-     "n": 5,
-     "min": 28.2,
-     "dk": 28.1,
-     "salary": 6000,
-     "newstart": false
-    },
-    {
-     "player": "Ron Holland",
-     "gdk": 3.5,
-     "wmin": 16.8,
-     "recent": 12.5,
-     "n": 6,
-     "min": 16.6,
-     "dk": 14.6,
-     "salary": 4000,
-     "newstart": false
-    },
-    {
-     "player": "Duncan Robinson",
-     "gdk": 3.0,
-     "wmin": 32.0,
-     "recent": 28.0,
-     "n": 6,
-     "min": 31.2,
-     "dk": 26.4,
-     "salary": 5300,
-     "newstart": false,
-     "note": "Show: usage will change once Duren returns (11/06)"
-    },
-    {
-     "player": "John Collins",
-     "note": "Show: role gets harder when Duren returns (11/04)",
-     "min": 24.9,
-     "dk": 24.0,
-     "salary": 5200,
-     "newstart": false
-    },
-    {
-     "player": "Paul Reed",
-     "note": "Show: keeps starting until Duren is back (11/07)",
-     "min": 30.1,
-     "dk": 31.9,
-     "salary": 6600,
-     "newstart": false
-    }
-   ],
-   "split_of": [
-    "Jalen Duren"
-   ]
   }
  ],
  "hot": [
@@ -819,30 +836,30 @@
   {
    "player": "LeBron James",
    "team": "PHI",
-   "own": 68.3,
+   "own": 68.0,
    "dk": 40.7,
    "salary": 7800
   },
   {
    "player": "VJ Edgecombe",
    "team": "PHI",
-   "own": 62.6,
+   "own": 59.2,
    "dk": 32.3,
    "salary": 6300
   },
   {
    "player": "Tre Jones",
    "team": "CHI",
-   "own": 60.0,
+   "own": 53.3,
    "dk": 21.1,
    "salary": 4200
   },
   {
-   "player": "Jaylen Brown",
-   "team": "PHI",
-   "own": 54.3,
-   "dk": 40.0,
-   "salary": 7900
+   "player": "Danny Wolf",
+   "team": "BKN",
+   "own": 49.6,
+   "dk": 20.1,
+   "salary": 3000
   }
  ],
  "leverage": [
@@ -952,8 +969,8 @@
   ]
  },
  "injuries": {
-  "report": "01:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_01_00PM.pdf",
+  "report": "01:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_01_15PM.pdf",
   "pending": [
    "BKN"
   ],
@@ -1108,12 +1125,12 @@
     "time": "2026-11-08T23:00Z",
     "team": "LAL",
     "player": "Luka Doncic",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Low Back Tightness",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "1:22 PM",
     "min": 36.3,
     "benefits": [
      {
@@ -1122,8 +1139,8 @@
       "wmin": 38.0,
       "recent": 24.1,
       "n": 1,
-      "min": 22.8,
-      "dk": 17.2,
+      "min": 29.7,
+      "dk": 22.5,
       "salary": 5100,
       "newstart": false,
       "note": "Show: big streaming option (11/08)"
@@ -1134,8 +1151,8 @@
       "wmin": 21.0,
       "recent": 16.0,
       "n": 1,
-      "min": 15.3,
-      "dk": 14.6,
+      "min": 19.0,
+      "dk": 18.2,
       "salary": 4400,
       "newstart": false,
       "note": "21 bench minutes, 21 points (10/28)"
@@ -1146,8 +1163,8 @@
       "wmin": 30.0,
       "recent": 22.4,
       "n": 1,
-      "min": 20.1,
-      "dk": 18.5,
+      "min": 24.8,
+      "dk": 22.8,
       "salary": 4800,
       "newstart": false,
       "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
@@ -1158,8 +1175,8 @@
       "wmin": 28.0,
       "recent": 23.8,
       "n": 1,
-      "min": 21.6,
-      "dk": 15.1,
+      "min": 26.1,
+      "dk": 18.1,
       "salary": 4700,
       "newstart": false
      },
@@ -1169,8 +1186,8 @@
       "wmin": 35.0,
       "recent": 22.1,
       "n": 1,
-      "min": 22.6,
-      "dk": 15.8,
+      "min": 28.4,
+      "dk": 19.9,
       "salary": 4300,
       "newstart": false
      }
@@ -1344,6 +1361,52 @@
     "changed_at": "12:43 PM",
     "min": 11.3,
     "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "BOS at MIL",
+    "time": "2026-11-09T01:00Z",
+    "team": "BOS",
+    "player": "Mitchell Robinson",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:22 PM",
+    "min": 16.7,
+    "benefits": [
+     {
+      "player": "Hugo Gonzalez",
+      "gdk": 6.1,
+      "wmin": 14.0,
+      "recent": 13.0,
+      "n": 1,
+      "min": 14.6,
+      "dk": 10.6,
+      "salary": 3400,
+      "newstart": true
+     },
+     {
+      "player": "Paul George",
+      "gdk": 5.7,
+      "wmin": 33.0,
+      "recent": 30.0,
+      "n": 1,
+      "min": 30.0,
+      "dk": 36.5,
+      "salary": 7300,
+      "newstart": false
+     },
+     {
+      "player": "Neemias Queta",
+      "note": "started when Robinson rested (11/01)",
+      "min": 23.6,
+      "dk": 23.9,
+      "salary": 4900,
+      "newstart": true
+     }
+    ],
     "estimate": false
    },
    {
