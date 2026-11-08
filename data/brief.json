@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updated": "4:41 PM ET",
+ "updated": "6:41 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:39 AM",
@@ -97,20 +97,15 @@
     "UTA": {
      "out": [
       {
+       "player": "Lauri Markkanen",
+       "min": 34.7
+      },
+      {
        "player": "Jaren Jackson Jr.",
        "min": 25.3
       }
      ],
-     "q": [
-      {
-       "player": "Lauri Markkanen",
-       "min": 33.1
-      },
-      {
-       "player": "Keyonte George",
-       "min": 30.1
-      }
-     ]
+     "q": []
     },
     "MIN": {
      "out": [
@@ -122,7 +117,7 @@
      "q": []
     }
    },
-   "key": "Anthony Edwards is out, so Ayo Dosunmu and Nah'Shon Hyland and Jaylen Clark and LaMelo Ball and Trey Lyles and Jaden McDaniels should play more than usual."
+   "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Josh Okogie and Brice Sensabaugh and Isaiah Collier and Josh Green and Jaxson Hayes and Keyonte George should play more than usual."
   },
   {
    "away": "BKN",
@@ -172,11 +167,11 @@
    "home": "MIL",
    "time": "2026-11-09T01:00Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 221.5,
    "fav": "BOS",
    "line": 12.5,
-   "away_pts": 117.5,
-   "home_pts": 105.0,
+   "away_pts": 117.0,
+   "home_pts": 104.5,
    "tags": [
     "Blowout risk"
    ],
@@ -195,20 +190,19 @@
      "q": []
     }
    },
-   "key": "Jayson Tatum has the top projection in this game at 49.6 DK points."
+   "key": "Jayson Tatum has the top projection in this game at 49.2 DK points."
   },
   {
    "away": "MIA",
    "home": "SAC",
    "time": "2026-11-09T02:00Z",
    "slate": "main",
-   "ou": 237.5,
+   "ou": 236.5,
    "fav": "MIA",
    "line": 10.5,
-   "away_pts": 124.0,
-   "home_pts": 113.5,
+   "away_pts": 123.5,
+   "home_pts": 113.0,
    "tags": [
-    "Highest total",
     "Blowout risk"
    ],
    "teams": {
@@ -218,10 +212,15 @@
     },
     "SAC": {
      "out": [],
-     "q": []
+     "q": [
+      {
+       "player": "Domantas Sabonis",
+       "min": 29.4
+      }
+     ]
     }
    },
-   "key": "Giannis Antetokounmpo has the top projection in this game at 64.0 DK points."
+   "key": "Giannis Antetokounmpo has the top projection in this game at 63.9 DK points."
   },
   {
    "away": "NOP",
@@ -260,6 +259,30 @@
   }
  ],
  "changed": [
+  {
+   "player": "Domantas Sabonis",
+   "team": "SAC",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Knee Soreness",
+   "time": "6:42 PM"
+  },
+  {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Wrist Sprain",
+   "time": "6:42 PM"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "6:42 PM"
+  },
   {
    "player": "Keegan Murray",
    "team": "SAC",
@@ -315,33 +338,119 @@
    "was": "Questionable",
    "why": "-",
    "time": "2:44 PM"
-  },
-  {
-   "player": "Mitchell Robinson",
-   "team": "BOS",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "1:22 PM"
-  },
-  {
-   "player": "Luka Doncic",
-   "team": "LAL",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Low Back Tightness",
-   "time": "1:22 PM"
-  },
-  {
-   "player": "Joan Beringer",
-   "team": "MIN",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "",
-   "time": "12:43 PM"
   }
  ],
  "sits": [
+  {
+   "team": "UTA",
+   "outs": [
+    {
+     "player": "Lauri Markkanen",
+     "min": 34.7,
+     "note": "Ruled out tonight (right wrist sprain).",
+     "new": true
+    },
+    {
+     "player": "Jaren Jackson Jr.",
+     "min": 25.3,
+     "note": "Jaren Jackson Jr. is out with a torn MCL in his right knee and has not played since Oct. 26. The show noted that his absence has helped keep Keyonte George's usage high.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 60.0,
+   "benefits": [
+    {
+     "player": "Josh Okogie",
+     "gdk": 11.6,
+     "wmin": 28.0,
+     "recent": 17.4,
+     "n": 1,
+     "min": 23.5,
+     "dk": 15.4,
+     "salary": 3800,
+     "newstart": false
+    },
+    {
+     "player": "Brice Sensabaugh",
+     "gdk": 10.1,
+     "wmin": 18.0,
+     "recent": 13.9,
+     "n": 1,
+     "min": 17.3,
+     "dk": 15.1,
+     "salary": 3500,
+     "newstart": false
+    },
+    {
+     "player": "Isaiah Collier",
+     "gdk": 5.9,
+     "wmin": 24.0,
+     "recent": 14.5,
+     "n": 1,
+     "min": 18.9,
+     "dk": 17.9,
+     "salary": 4300,
+     "newstart": false,
+     "note": "Show: more value if Markkanen sits again (10/30)"
+    },
+    {
+     "player": "Josh Green",
+     "gdk": 5.0,
+     "wmin": 24.0,
+     "recent": 15.3,
+     "n": 1,
+     "min": 22.5,
+     "dk": 11.1,
+     "salary": 3600,
+     "newstart": false
+    },
+    {
+     "player": "Jaxson Hayes",
+     "gdk": 4.2,
+     "wmin": 37.0,
+     "recent": 23.1,
+     "n": 1,
+     "min": 29.4,
+     "dk": 25.4,
+     "salary": 5500,
+     "newstart": false,
+     "note": "Show: heavy minutes at center (11/02)"
+    },
+    {
+     "player": "Keyonte George",
+     "gdk": 3.3,
+     "wmin": 37.0,
+     "recent": 31.8,
+     "n": 1,
+     "min": 30.8,
+     "dk": 32.7,
+     "salary": 7900,
+     "newstart": false,
+     "note": "absence helped keep his usage high (11/06)"
+    },
+    {
+     "player": "Ace Bailey",
+     "note": "40 and 37 minutes in first two games after JJJ went down (11/02)",
+     "min": 34.7,
+     "dk": 29.0,
+     "salary": 6400,
+     "newstart": false
+    },
+    {
+     "player": "Darryn Peterson",
+     "note": "Show: one of only other Utah players looking for shots if Markkanen sits (10/28)",
+     "min": 33.6,
+     "dk": 35.4,
+     "salary": 6200,
+     "newstart": false
+    }
+   ],
+   "split_of": [
+    "Lauri Markkanen",
+    "Jaren Jackson Jr."
+   ]
+  },
   {
    "team": "BKN",
    "outs": [
@@ -557,7 +666,7 @@
      "subs": 15,
      "of": 25,
      "min": 30.1,
-     "dk": 32.2,
+     "dk": 31.9,
      "salary": 4600,
      "newstart": true
     },
@@ -566,7 +675,7 @@
      "subs": 2,
      "of": 25,
      "min": 33.8,
-     "dk": 44.1,
+     "dk": 44.2,
      "salary": 8500,
      "newstart": false
     },
@@ -575,7 +684,7 @@
      "subs": 2,
      "of": 25,
      "min": 22.2,
-     "dk": 31.8,
+     "dk": 31.7,
      "salary": 5500,
      "newstart": false
     }
@@ -602,7 +711,7 @@
      "recent": 26.2,
      "n": 6,
      "min": 33.6,
-     "dk": 36.7,
+     "dk": 36.5,
      "salary": 6600,
      "newstart": false,
      "note": "added usage (11/04)"
@@ -625,7 +734,7 @@
      "recent": 3.7,
      "n": 6,
      "min": 17.8,
-     "dk": 13.7,
+     "dk": 13.4,
      "salary": 3700,
      "newstart": false,
      "note": "moved into the rotation, 7 minutes (10/28)"
@@ -637,7 +746,7 @@
      "recent": 25.0,
      "n": 6,
      "min": 28.8,
-     "dk": 44.3,
+     "dk": 44.1,
      "salary": 8000,
      "newstart": false,
      "note": "Show: role will grow (11/02)"
@@ -660,7 +769,7 @@
      "recent": 31.8,
      "n": 6,
      "min": 33.4,
-     "dk": 33.2,
+     "dk": 32.8,
      "salary": 6500,
      "newstart": false,
      "note": "heavy minutes; 39 minutes Oct. 31 (10/31)"
@@ -677,69 +786,13 @@
      "player": "Terrence Shannon Jr.",
      "note": "Show: should get more offensive responsibility (11/03)",
      "min": 20.4,
-     "dk": 19.8,
+     "dk": 19.7,
      "salary": 4400,
      "newstart": false
     }
    ],
    "split_of": [
     "Anthony Edwards"
-   ]
-  },
-  {
-   "team": "UTA",
-   "outs": [
-    {
-     "player": "Jaren Jackson Jr.",
-     "min": 25.3,
-     "note": "Jaren Jackson Jr. is out with a torn MCL in his right knee and has not played since Oct. 26. The show noted that his absence has helped keep Keyonte George's usage high.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 25.3,
-   "benefits": [
-    {
-     "player": "Josh Okogie",
-     "gdk": 10.4,
-     "wmin": 22.2,
-     "recent": 13.0,
-     "n": 5,
-     "min": 21.2,
-     "dk": 13.7,
-     "salary": 3800,
-     "newstart": false
-    },
-    {
-     "player": "Darryn Peterson",
-     "gdk": 9.3,
-     "wmin": 31.0,
-     "recent": 29.2,
-     "n": 5,
-     "min": 30.9,
-     "dk": 32.5,
-     "salary": 6200,
-     "newstart": false
-    },
-    {
-     "player": "Ace Bailey",
-     "note": "40 and 37 minutes in first two games after JJJ went down (11/02)",
-     "min": 31.1,
-     "dk": 25.8,
-     "salary": 6400,
-     "newstart": false
-    },
-    {
-     "player": "Jaxson Hayes",
-     "note": "Show: heavy minutes at center (11/02)",
-     "min": 24.6,
-     "dk": 21.4,
-     "salary": 5500,
-     "newstart": false
-    }
-   ],
-   "split_of": [
-    "Jaren Jackson Jr."
    ]
   }
  ],
@@ -777,12 +830,12 @@
    "n": 6
   },
   {
-   "player": "Lauri Markkanen",
-   "team": "UTA",
-   "kind": "hot",
-   "last": 42.3,
-   "before": 27.7,
-   "n": 5
+   "player": "Domantas Sabonis",
+   "team": "SAC",
+   "kind": "cold",
+   "last": 34.8,
+   "before": 48.8,
+   "n": 6
   }
  ],
  "minutes": [
@@ -850,33 +903,33 @@
    "salary": 7800
   },
   {
-   "player": "Brayden Burries",
-   "team": "MIL",
-   "own": 56.5,
-   "dk": 24.5,
-   "salary": 4300
+   "player": "Sandro Mamukelashvili",
+   "team": "LAL",
+   "own": 56.1,
+   "dk": 25.5,
+   "salary": 4800
   }
  ],
  "leverage": [
   {
+   "player": "Malik Monk",
+   "team": "SAC",
+   "own": 0.9,
+   "dk": 25.2,
+   "salary": 4300
+  },
+  {
    "player": "Keaton Wagler",
    "team": "LAC",
    "own": 0.9,
-   "dk": 31.8,
+   "dk": 31.7,
    "salary": 5500
-  },
-  {
-   "player": "Malik Monk",
-   "team": "SAC",
-   "own": 3.8,
-   "dk": 24.1,
-   "salary": 4300
   },
   {
    "player": "Myles Turner",
    "team": "MIL",
-   "own": 1.4,
-   "dk": 27.0,
+   "own": 0.9,
+   "dk": 26.9,
    "salary": 5100
   }
  ],
@@ -964,8 +1017,8 @@
   ]
  },
  "injuries": {
-  "report": "04:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_04_30PM.pdf",
+  "report": "06:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_06_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1177,12 +1230,12 @@
     "time": "2026-11-09T00:00Z",
     "team": "UTA",
     "player": "Lauri Markkanen",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Right Wrist Sprain",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:42 PM",
     "min": 34.7,
     "benefits": [
      {
@@ -1191,8 +1244,8 @@
       "wmin": 28.0,
       "recent": 17.4,
       "n": 1,
-      "min": 21.2,
-      "dk": 13.7,
+      "min": 23.5,
+      "dk": 15.4,
       "salary": 3800,
       "newstart": false
      },
@@ -1202,8 +1255,8 @@
       "wmin": 18.0,
       "recent": 13.9,
       "n": 1,
-      "min": 14.4,
-      "dk": 12.6,
+      "min": 17.3,
+      "dk": 15.1,
       "salary": 3500,
       "newstart": false
      },
@@ -1213,8 +1266,8 @@
       "wmin": 24.0,
       "recent": 14.5,
       "n": 1,
-      "min": 14.1,
-      "dk": 13.3,
+      "min": 18.9,
+      "dk": 17.9,
       "salary": 4300,
       "newstart": false,
       "note": "Show: more value if Markkanen sits again (10/30)"
@@ -1225,8 +1278,8 @@
       "wmin": 24.0,
       "recent": 15.3,
       "n": 1,
-      "min": 18.3,
-      "dk": 9.0,
+      "min": 22.5,
+      "dk": 11.1,
       "salary": 3600,
       "newstart": false
      },
@@ -1236,22 +1289,30 @@
       "wmin": 37.0,
       "recent": 23.1,
       "n": 1,
-      "min": 24.6,
-      "dk": 21.4,
+      "min": 29.4,
+      "dk": 25.4,
       "salary": 5500,
       "newstart": false
      },
      {
-      "player": "Darryn Peterson",
-      "gdk": 3.1,
-      "wmin": 26.0,
-      "recent": 30.8,
+      "player": "Keyonte George",
+      "gdk": 3.3,
+      "wmin": 37.0,
+      "recent": 31.8,
       "n": 1,
-      "min": 30.9,
-      "dk": 32.5,
-      "salary": 6200,
+      "min": 30.8,
+      "dk": 32.7,
+      "salary": 7900,
       "newstart": false,
       "note": "Show: one of only other Utah players looking for shots if Markkanen sits (10/28)"
+     },
+     {
+      "player": "Darryn Peterson",
+      "note": "Show: one of only other Utah players looking for shots if Markkanen sits (10/28)",
+      "min": 33.6,
+      "dk": 35.4,
+      "salary": 6200,
+      "newstart": false
      }
     ],
     "estimate": false
@@ -1261,69 +1322,14 @@
     "time": "2026-11-09T00:00Z",
     "team": "UTA",
     "player": "Keyonte George",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Illness",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "12:43 PM",
+    "changed_at": "6:42 PM",
     "min": 32.7,
-    "benefits": [
-     {
-      "player": "Isaiah Collier",
-      "subs": 8,
-      "of": 28,
-      "min": 14.1,
-      "dk": 13.3,
-      "salary": 4300,
-      "newstart": false
-     },
-     {
-      "player": "Brice Sensabaugh",
-      "subs": 7,
-      "of": 28,
-      "min": 14.4,
-      "dk": 12.6,
-      "salary": 3500,
-      "newstart": false
-     },
-     {
-      "player": "Darryn Peterson",
-      "subs": 5,
-      "of": 28,
-      "min": 30.9,
-      "dk": 32.5,
-      "salary": 6200,
-      "newstart": false
-     },
-     {
-      "player": "Svi Mykhailiuk",
-      "subs": 3,
-      "of": 28,
-      "min": 15.5,
-      "dk": 9.6,
-      "salary": 3700,
-      "newstart": false
-     },
-     {
-      "player": "Ace Bailey",
-      "subs": 1,
-      "of": 28,
-      "min": 31.1,
-      "dk": 25.8,
-      "salary": 6400,
-      "newstart": false
-     },
-     {
-      "player": "Jaxson Hayes",
-      "subs": 1,
-      "of": 28,
-      "min": 24.6,
-      "dk": 21.4,
-      "salary": 5500,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1361,7 +1367,7 @@
       "recent": 6.0,
       "n": 1,
       "min": 10.3,
-      "dk": 9.2,
+      "dk": 9.3,
       "salary": 3000,
       "newstart": false
      },
@@ -1429,7 +1435,7 @@
       "recent": 30.0,
       "n": 1,
       "min": 30.0,
-      "dk": 36.4,
+      "dk": 36.3,
       "salary": 7300,
       "newstart": false
      },
@@ -1437,7 +1443,7 @@
       "player": "Neemias Queta",
       "note": "started when Robinson rested (11/01)",
       "min": 23.6,
-      "dk": 23.8,
+      "dk": 23.7,
       "salary": 4900,
       "newstart": true
      }
@@ -1477,7 +1483,7 @@
       "subs": 15,
       "of": 25,
       "min": 30.1,
-      "dk": 32.2,
+      "dk": 31.9,
       "salary": 4600,
       "newstart": true
      },
@@ -1486,7 +1492,7 @@
       "subs": 2,
       "of": 25,
       "min": 33.8,
-      "dk": 44.1,
+      "dk": 44.2,
       "salary": 8500,
       "newstart": false
      },
@@ -1495,7 +1501,7 @@
       "subs": 2,
       "of": 25,
       "min": 22.2,
-      "dk": 31.8,
+      "dk": 31.7,
       "salary": 5500,
       "newstart": false
      },
@@ -1513,7 +1519,7 @@
       "subs": 1,
       "of": 25,
       "min": 22.4,
-      "dk": 22.9,
+      "dk": 23.0,
       "salary": 4400,
       "newstart": false
      },
@@ -1524,6 +1530,67 @@
       "min": 25.0,
       "dk": 22.7,
       "salary": 4500,
+      "newstart": false
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "MIA at SAC",
+    "time": "2026-11-09T02:00Z",
+    "team": "SAC",
+    "player": "Domantas Sabonis",
+    "status": "Questionable",
+    "reason": "Left Knee Soreness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "6:42 PM",
+    "min": 32.3,
+    "benefits": [
+     {
+      "player": "Precious Achiuwa",
+      "subs": 8,
+      "of": 28,
+      "min": 24.1,
+      "dk": 23.1,
+      "salary": 6000,
+      "newstart": false
+     },
+     {
+      "player": "Darius Acuff Jr.",
+      "subs": 2,
+      "of": 28,
+      "min": 37.2,
+      "dk": 52.4,
+      "salary": 8400,
+      "newstart": false
+     },
+     {
+      "player": "Zach LaVine",
+      "subs": 2,
+      "of": 28,
+      "min": 33.1,
+      "dk": 32.5,
+      "salary": 6600,
+      "newstart": false
+     },
+     {
+      "player": "Malik Monk",
+      "subs": 2,
+      "of": 28,
+      "min": 24.0,
+      "dk": 25.2,
+      "salary": 4300,
+      "newstart": false
+     },
+     {
+      "player": "Emanuel Sharp",
+      "subs": 1,
+      "of": 28,
+      "min": 19.5,
+      "dk": 13.7,
+      "salary": 3300,
       "newstart": false
      }
     ],
@@ -1723,7 +1790,7 @@
       "recent": 26.2,
       "n": 6,
       "min": 33.6,
-      "dk": 36.7,
+      "dk": 36.5,
       "salary": 6600,
       "newstart": false,
       "note": "added usage (11/04)"
@@ -1746,7 +1813,7 @@
       "recent": 3.7,
       "n": 6,
       "min": 17.8,
-      "dk": 13.7,
+      "dk": 13.4,
       "salary": 3700,
       "newstart": false,
       "note": "moved into the rotation, 7 minutes (10/28)"
@@ -1758,7 +1825,7 @@
       "recent": 25.0,
       "n": 6,
       "min": 28.8,
-      "dk": 44.3,
+      "dk": 44.1,
       "salary": 8000,
       "newstart": false,
       "note": "Show: role will grow (11/02)"
@@ -1781,7 +1848,7 @@
       "recent": 31.8,
       "n": 6,
       "min": 33.4,
-      "dk": 33.2,
+      "dk": 32.8,
       "salary": 6500,
       "newstart": false,
       "note": "heavy minutes; 39 minutes Oct. 31 (10/31)"
@@ -1798,7 +1865,7 @@
       "player": "Terrence Shannon Jr.",
       "note": "Show: should get more offensive responsibility (11/03)",
       "min": 20.4,
-      "dk": 19.8,
+      "dk": 19.7,
       "salary": 4400,
       "newstart": false
      }
@@ -1824,8 +1891,8 @@
       "wmin": 22.2,
       "recent": 13.0,
       "n": 5,
-      "min": 21.2,
-      "dk": 13.7,
+      "min": 23.5,
+      "dk": 15.4,
       "salary": 3800,
       "newstart": false
      },
@@ -1835,25 +1902,33 @@
       "wmin": 31.0,
       "recent": 29.2,
       "n": 5,
-      "min": 30.9,
-      "dk": 32.5,
+      "min": 33.6,
+      "dk": 35.4,
       "salary": 6200,
       "newstart": false
      },
      {
       "player": "Ace Bailey",
       "note": "40 and 37 minutes in first two games after JJJ went down (11/02)",
-      "min": 31.1,
-      "dk": 25.8,
+      "min": 34.7,
+      "dk": 29.0,
       "salary": 6400,
       "newstart": false
      },
      {
       "player": "Jaxson Hayes",
       "note": "Show: heavy minutes at center (11/02)",
-      "min": 24.6,
-      "dk": 21.4,
+      "min": 29.4,
+      "dk": 25.4,
       "salary": 5500,
+      "newstart": false
+     },
+     {
+      "player": "Keyonte George",
+      "note": "absence helped keep his usage high (11/06)",
+      "min": 30.8,
+      "dk": 32.7,
+      "salary": 7900,
       "newstart": false
      }
     ],
@@ -1975,7 +2050,7 @@
       "recent": 22.5,
       "n": 7,
       "min": 26.9,
-      "dk": 25.0,
+      "dk": 24.8,
       "salary": 6400,
       "newstart": false
      },
@@ -1986,7 +2061,7 @@
       "recent": 31.5,
       "n": 6,
       "min": 28.9,
-      "dk": 25.9,
+      "dk": 26.0,
       "salary": 7100,
       "newstart": false
      },
@@ -2008,7 +2083,7 @@
       "recent": 23.0,
       "n": 7,
       "min": 24.3,
-      "dk": 21.6,
+      "dk": 21.5,
       "salary": 5900,
       "newstart": false
      },
@@ -2016,7 +2091,7 @@
       "player": "Karlo Matkovic",
       "note": "started, 18 minutes (11/06)",
       "min": 16.8,
-      "dk": 15.7,
+      "dk": 15.6,
       "salary": 4700,
       "newstart": false
      },
