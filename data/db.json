@@ -2,7 +2,7 @@
  "updated": "2026-11-07",
  "brief": {
   "date": "2026-11-07",
-  "updated": "6:52 PM ET",
+  "updated": "7:20 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:38 AM",
@@ -171,16 +171,7 @@
      },
      "GSW": {
       "out": [],
-      "q": [
-       {
-        "player": "Draymond Green",
-        "min": 21.4
-       },
-       {
-        "player": "Gui Santos",
-        "min": 16.0
-       }
-      ]
+      "q": []
      }
     },
     "key": "Desmond Bane and Paolo Banchero are out, so Nikola Vucevic and Goga Bitadze should play more than usual."
@@ -220,6 +211,22 @@
    }
   ],
   "changed": [
+   {
+    "player": "Gui Santos",
+    "team": "GSW",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Knee Tendinitis",
+    "time": "7:20 PM"
+   },
+   {
+    "player": "Draymond Green",
+    "team": "GSW",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "",
+    "time": "7:20 PM"
+   },
    {
     "player": "Gary Payton II",
     "team": "GSW",
@@ -283,22 +290,6 @@
     "was": "",
     "why": "Illness",
     "time": "12:41 PM"
-   },
-   {
-    "player": "Sam Merrill",
-    "team": "CLE",
-    "status": "Out",
-    "was": "",
-    "why": "",
-    "time": "6:38 AM"
-   },
-   {
-    "player": "Jordan Goodwin",
-    "team": "PHX",
-    "status": "Doubtful",
-    "was": "Out",
-    "why": "",
-    "time": "6:38 AM"
    }
   ],
   "sits": [
@@ -649,53 +640,53 @@
    {
     "player": "Deandre Ayton",
     "team": "WAS",
-    "own": 59.2,
+    "own": 58.3,
     "dk": 22.7,
     "salary": 3200
    },
    {
-    "player": "Anthony Black",
-    "team": "ORL",
-    "own": 36.5,
-    "dk": 37.4,
-    "salary": 6400
-   },
-   {
     "player": "Kyshawn George",
     "team": "WAS",
-    "own": 36.4,
+    "own": 47.0,
     "dk": 30.8,
     "salary": 5900
    },
    {
-    "player": "Alperen Sengun",
-    "team": "HOU",
-    "own": 30.3,
-    "dk": 50.5,
-    "salary": 8900
+    "player": "Alex Sarr",
+    "team": "WAS",
+    "own": 41.2,
+    "dk": 28.0,
+    "salary": 4800
+   },
+   {
+    "player": "Anthony Black",
+    "team": "ORL",
+    "own": 34.2,
+    "dk": 37.4,
+    "salary": 6400
    }
   ],
   "leverage": [
    {
+    "player": "Meleek Thomas",
+    "team": "CLE",
+    "own": 9.2,
+    "dk": 27.3,
+    "salary": 4200
+   },
+   {
     "player": "Wendell Carter Jr.",
     "team": "ORL",
-    "own": 7.9,
+    "own": 6.7,
     "dk": 37.1,
     "salary": 6500
    },
    {
     "player": "Jalen Green",
     "team": "PHX",
-    "own": 2.2,
+    "own": 1.4,
     "dk": 31.2,
     "salary": 6200
-   },
-   {
-    "player": "Devin Booker",
-    "team": "PHX",
-    "own": 7.7,
-    "dk": 41.5,
-    "salary": 8300
    }
   ],
   "last": {
@@ -792,8 +783,8 @@
    ]
   },
   "injuries": {
-   "report": "06:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_06_45PM.pdf",
+   "report": "07:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_07_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -909,52 +900,30 @@
      "time": "2026-11-08T01:30Z",
      "team": "GSW",
      "player": "Draymond Green",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "6:38 AM",
+     "changed_at": "7:20 PM",
      "min": 25.3,
-     "benefits": [
-      {
-       "player": "Yaxel Lendeborg",
-       "plus": 7.2,
-       "min": 36.0
-      },
-      {
-       "player": "Georges Niang",
-       "plus": 6.1,
-       "min": 24.7
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "ORL at GSW",
      "time": "2026-11-08T01:30Z",
      "team": "GSW",
      "player": "Gui Santos",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Left Knee Tendinitis",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "6:38 AM",
+     "changed_at": "7:20 PM",
      "min": 17.7,
-     "benefits": [
-      {
-       "player": "Yaxel Lendeborg",
-       "plus": 6.5,
-       "min": 35.3
-      },
-      {
-       "player": "Georges Niang",
-       "plus": 4.2,
-       "min": 22.8
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "ORL at GSW",
