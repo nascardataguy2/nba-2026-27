@@ -210,20 +210,29 @@ def main():
         if status in ("Out", "Doubtful") and t in sits_by and m >= 15:
             ben = [{"player": b["player"], "min": b["min"], "recent": b["recent"]} for b in sits_by[t]["benefits"][:2]]
         elif status == "Questionable" and m >= 10:
-            # Estimate: hand his recent minutes to teammates who share a position, by their minutes.
-            me = pbyk.get((t, norm(name))) or {}
-            mypos = set(str(me.get("pos", "")).split("/")) - {""}
-            near = {"PG": {"PG", "SG"}, "SG": {"PG", "SG", "SF"}, "SF": {"SG", "SF", "PF"}, "PF": {"SF", "PF", "C"}, "C": {"PF", "C"}}
+            # If he sits: what his teammates actually did in this season's games he missed,
+            # at every position. With no such games, his minutes go to the whole rotation
+            # by their minutes, again at every position. Either way it is labeled an estimate.
+            mine = {x["date"] for x in games_of(t, name) if x["min"] > 0}
+            tdates = {x["date"] for (tt, _), gs in box.items() if tt == t for x in gs}
+            missed = tdates - mine
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
-            mates = [p for p in rot if mypos & set(str(p.get("pos", "")).split("/"))] if mypos else rot
-            if not mates and mypos:  # nobody at his position: nearby positions, then the whole rotation
-                wide = set().union(*[near.get(x, {x}) for x in mypos])
-                mates = [p for p in rot if wide & set(str(p.get("pos", "")).split("/"))] or rot
-            tot = sum(p["min"] for p in mates)
-            if tot > 0:
-                adds = sorted(((min(m * p["min"] / tot, 36 - p["min"]), p) for p in mates), key=lambda x: -x[0])[:2]
+            adds = []
+            if missed and len(mine) >= 2:
+                for p in rot:
+                    g = games_of(t, p["player"])
+                    wo = [x["min"] for x in g if x["date"] in missed and x["min"] > 0]
+                    wi = [x["min"] for x in g if x["date"] in mine and x["min"] > 0]
+                    if wo and wi:
+                        adds.append((sum(wo) / len(wo) - sum(wi) / len(wi), p))
+                adds = sorted(adds, key=lambda x: -x[0])[:2]
                 ben = [{"player": p["player"], "plus": r1(a), "min": r1(p["min"] + a)} for a, p in adds if a >= 1.5]
-                est = True
+            if not ben:
+                tot = sum(p["min"] for p in rot)
+                if tot > 0:
+                    adds = sorted(((min(m * p["min"] / tot, 36 - p["min"]), p) for p in rot), key=lambda x: -x[0])[:2]
+                    ben = [{"player": p["player"], "plus": r1(a), "min": r1(p["min"] + a)} for a, p in adds if a >= 1.5]
+            est = bool(ben)
         c = intraday.get(name)
         inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
                     "status": status, "reason": o.get("reason", "") if o.get("reason") not in ("-", None) else "",
