@@ -218,12 +218,11 @@ def main():
                 gain.append((d, ref, p))
         gain.sort(key=lambda x: -x[0])
         sb, sn, snames = split_gain(t, [o["player"] for o in tout])
-        if not gain and not sb:
+        if not sb:  # only what really happened in games without them
             continue
         sits.append({"team": t, "outs": [{"player": o["player"], "min": o["min"], "note": o["note"], "new": norm(o["player"]) in new_today} for o in tout],
                      "new": any(norm(o["player"]) in new_today for o in tout), "lost": r1(sum(o["min"] for o in tout)),
-                     "benefits": sb or [{"player": p["player"], "plus": r1(d), "recent": r1(ref), "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary")} for d, ref, p in gain[:3]],
-                     "split_of": snames if sb else []})
+                     "benefits": sb, "split_of": snames})
     sits.sort(key=lambda s: (not s["new"], -s["lost"]))
 
     # --- injury table: tonight's official report, new first, with who benefits ---
@@ -247,31 +246,13 @@ def main():
         ben, est = [], False
         if status in ("Out", "Doubtful") and m >= 12:
             ben = split_gain(t, [name])[0]
-            if not ben:
-                # He has not missed a game this season: rank teammates by how far tonight's
-                # projection sits above their recent DK points (every position), as an estimate.
-                gl = []
-                for p in players:
-                    if p["team"] != t or p["min"] < 10 or norm(p["player"]) == norm(name):
-                        continue
-                    g = [x for x in games_of(t, p["player"]) if x["min"] > 0][-3:]
-                    if len(g) >= 2:
-                        gl.append((p["dk"] - sum(x["dk"] for x in g) / len(g), p))
-                gl.sort(key=lambda x: -x[0])
-                ben = [{"player": p["player"], "plus": r1(p["min"] - recent_min(t, p["player"])), "min": r1(p["min"]), "pdk": r1(d)} for d, p in gl[:6] if d >= 3]
-                est = bool(ben)
         elif status == "Questionable" and m >= 10:
             # If he sits: what his teammates actually did in this season's games he missed,
             # at every position. With no such games, his minutes go to the whole rotation
             # by their minutes, again at every position. Either way it is labeled an estimate.
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
             ben = split_gain(t, [name])[0]
-            if not ben:
-                tot = sum(p["min"] for p in rot)
-                if tot > 0:
-                    adds = sorted(((min(m * p["min"] / tot, 36 - p["min"]), p) for p in rot), key=lambda x: -x[0])[:2]
-                    ben = [{"player": p["player"], "plus": r1(a), "min": r1(p["min"] + a)} for a, p in adds if a >= 1.5]
-            est = bool(ben) and "gdk" not in ben[0]
+            est = False
         c = intraday.get(name)
         inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
                     "status": status, "reason": o.get("reason", "") if o.get("reason") not in ("-", None) else "",
