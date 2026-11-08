@@ -597,6 +597,14 @@ def main():
         if r.get("slate"):
             tslate.setdefault(r["team"], r["slate"])
     split = "late" in tslate.values()
+    # After a slate locks, DraftKings stops listing its games, so keep the slate each game
+    # had earlier today (a main-slate game that has not tipped yet stays on the main slate).
+    p0 = load_json(os.path.join(D, "projections.json"), {})
+    if p0.get("date") == day:
+        for g0 in p0.get("games", []):
+            if g0.get("slate") in ("main", "late"):
+                for t0 in (g0["home"], g0["away"]):
+                    tslate.setdefault(t0, g0["slate"])
     for (a, h), g in gm.items():
         # A game on neither DraftKings classic slate (an afternoon game, say) is "off".
         g["slate"] = (tslate.get(h) or tslate.get(a) or "off") if tslate else "main"
