@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updated": "8:41 AM ET",
+ "updated": "12:41 PM ET",
  "games": 7,
  "pending": [
   "BKN"
@@ -12,11 +12,11 @@
    "home": "CHI",
    "time": "2026-11-08T20:30Z",
    "slate": "late",
-   "ou": 237.5,
+   "ou": 238.5,
    "fav": "PHI",
    "line": 9.5,
-   "away_pts": 123.5,
-   "home_pts": 114.0,
+   "away_pts": 124.0,
+   "home_pts": 114.5,
    "tags": [
     "Highest total",
     "Blowout risk"
@@ -34,6 +34,10 @@
     "CHI": {
      "out": [],
      "q": [
+      {
+       "player": "Norman Powell",
+       "min": 28.6
+      },
       {
        "player": "Nicolas Claxton",
        "min": 22.0
@@ -53,9 +57,7 @@
    "line": 4.5,
    "away_pts": 108.5,
    "home_pts": 113.0,
-   "tags": [
-    "Lowest total"
-   ],
+   "tags": [],
    "teams": {
     "LAL": {
      "out": [],
@@ -87,11 +89,11 @@
    "home": "MIN",
    "time": "2026-11-09T00:00Z",
    "slate": "main",
-   "ou": 223.5,
+   "ou": 224.5,
    "fav": "MIN",
    "line": 11.5,
-   "away_pts": 106.0,
-   "home_pts": 117.5,
+   "away_pts": 106.5,
+   "home_pts": 118.0,
    "tags": [
     "Blowout risk"
    ],
@@ -107,6 +109,10 @@
       {
        "player": "Lauri Markkanen",
        "min": 33.1
+      },
+      {
+       "player": "Keyonte George",
+       "min": 30.1
       }
      ]
     },
@@ -117,12 +123,7 @@
        "min": 34.0
       }
      ],
-     "q": [
-      {
-       "player": "Joan Beringer",
-       "min": 15.0
-      }
-     ]
+     "q": []
     }
    },
    "key": "Anthony Edwards is out, so Ayo Dosunmu and Nah'Shon Hyland and Jaylen Clark and LaMelo Ball and Trey Lyles and Jaden McDaniels should play more than usual."
@@ -132,14 +133,12 @@
    "home": "DAL",
    "time": "2026-11-09T00:30Z",
    "slate": "main",
-   "ou": 221.5,
+   "ou": 222.5,
    "fav": "DAL",
-   "line": 9.5,
-   "away_pts": 106.0,
-   "home_pts": 115.5,
+   "line": 7.5,
+   "away_pts": 107.5,
+   "home_pts": 115.0,
    "tags": [
-    "Lowest total",
-    "Blowout risk",
     "BKN on a back-to-back"
    ],
    "teams": {
@@ -177,11 +176,11 @@
    "home": "MIL",
    "time": "2026-11-09T01:00Z",
    "slate": "main",
-   "ou": 221.5,
+   "ou": 219.5,
    "fav": "BOS",
    "line": 12.5,
-   "away_pts": 117.0,
-   "home_pts": 104.5,
+   "away_pts": 116.0,
+   "home_pts": 103.5,
    "tags": [
     "Lowest total",
     "Blowout risk"
@@ -196,7 +195,7 @@
      "q": []
     }
    },
-   "key": "Jayson Tatum has the top projection in this game at 49.3 DK points."
+   "key": "Jayson Tatum has the top projection in this game at 49.4 DK points."
   },
   {
    "away": "MIA",
@@ -205,11 +204,11 @@
    "slate": "main",
    "ou": 237.5,
    "fav": "MIA",
-   "line": 8.5,
-   "away_pts": 123.0,
-   "home_pts": 114.5,
+   "line": 10.5,
+   "away_pts": 124.0,
+   "home_pts": 113.5,
    "tags": [
-    "Highest total"
+    "Blowout risk"
    ],
    "teams": {
     "MIA": {
@@ -226,18 +225,18 @@
      ]
     }
    },
-   "key": "Giannis Antetokounmpo has the top projection in this game at 63.4 DK points."
+   "key": "Giannis Antetokounmpo has the top projection in this game at 63.7 DK points."
   },
   {
    "away": "NOP",
    "home": "LAC",
    "time": "2026-11-09T02:00Z",
    "slate": "main",
-   "ou": 228.5,
+   "ou": 226.5,
    "fav": "NOP",
    "line": 1.5,
-   "away_pts": 115.0,
-   "home_pts": 113.5,
+   "away_pts": 114.0,
+   "home_pts": 112.5,
    "tags": [
     "Close game"
    ],
@@ -264,7 +263,32 @@
    "key": "Isaiah Jackson is out, so Brook Lopez and Darius Garland and Keaton Wagler should play more than usual."
   }
  ],
- "changed": [],
+ "changed": [
+  {
+   "player": "Joan Beringer",
+   "team": "MIN",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "12:43 PM"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "12:43 PM"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "12:43 PM"
+  }
+ ],
  "sits": [
   {
    "team": "LAC",
@@ -284,7 +308,7 @@
      "subs": 15,
      "of": 25,
      "min": 30.1,
-     "dk": 32.5,
+     "dk": 32.1,
      "salary": 4600,
      "newstart": true
     },
@@ -369,7 +393,7 @@
      "recent": 33.1,
      "n": 1,
      "min": 35.7,
-     "dk": 37.2,
+     "dk": 37.5,
      "salary": 7200,
      "newstart": false
     },
@@ -407,7 +431,7 @@
      "recent": 26.2,
      "n": 6,
      "min": 33.6,
-     "dk": 36.6,
+     "dk": 36.7,
      "salary": 6600,
      "newstart": false,
      "note": "added usage (11/04)"
@@ -419,7 +443,7 @@
      "recent": 8.0,
      "n": 6,
      "min": 13.3,
-     "dk": 16.1,
+     "dk": 16.3,
      "salary": 3400,
      "newstart": false
     },
@@ -442,7 +466,7 @@
      "recent": 25.0,
      "n": 6,
      "min": 28.8,
-     "dk": 44.5,
+     "dk": 44.4,
      "salary": 8000,
      "newstart": false,
      "note": "Show: role will grow (11/02)"
@@ -465,7 +489,7 @@
      "recent": 31.8,
      "n": 6,
      "min": 33.4,
-     "dk": 33.1,
+     "dk": 33.6,
      "salary": 6500,
      "newstart": false,
      "note": "heavy minutes; 39 minutes Oct. 31 (10/31)"
@@ -482,7 +506,7 @@
      "player": "Terrence Shannon Jr.",
      "note": "Show: should get more offensive responsibility (11/03)",
      "min": 20.4,
-     "dk": 19.9,
+     "dk": 19.8,
      "salary": 4400,
      "newstart": false
     }
@@ -510,7 +534,7 @@
      "wmin": 22.2,
      "recent": 13.0,
      "n": 5,
-     "min": 20.9,
+     "min": 21.2,
      "dk": 13.8,
      "salary": 3800,
      "newstart": false
@@ -522,7 +546,7 @@
      "recent": 29.2,
      "n": 5,
      "min": 30.9,
-     "dk": 31.9,
+     "dk": 32.3,
      "salary": 6200,
      "newstart": false
     },
@@ -530,7 +554,7 @@
      "player": "Ace Bailey",
      "note": "40 and 37 minutes in first two games after JJJ went down (11/02)",
      "min": 31.1,
-     "dk": 26.2,
+     "dk": 25.9,
      "salary": 6400,
      "newstart": false
     },
@@ -538,16 +562,8 @@
      "player": "Jaxson Hayes",
      "note": "Show: heavy minutes at center (11/02)",
      "min": 24.6,
-     "dk": 21.4,
+     "dk": 21.3,
      "salary": 5500,
-     "newstart": false
-    },
-    {
-     "player": "Keyonte George",
-     "note": "absence helped keep his usage high (11/06)",
-     "min": 32.3,
-     "dk": 33.6,
-     "salary": 7900,
      "newstart": false
     }
    ],
@@ -575,7 +591,7 @@
      "recent": 22.5,
      "n": 7,
      "min": 26.9,
-     "dk": 25.0,
+     "dk": 24.8,
      "salary": 6400,
      "newstart": false
     },
@@ -586,7 +602,7 @@
      "recent": 31.5,
      "n": 6,
      "min": 28.9,
-     "dk": 26.0,
+     "dk": 25.8,
      "salary": 7100,
      "newstart": false
     },
@@ -597,7 +613,7 @@
      "recent": 17.5,
      "n": 7,
      "min": 20.7,
-     "dk": 12.2,
+     "dk": 12.4,
      "salary": 4400,
      "newstart": false
     },
@@ -608,7 +624,7 @@
      "recent": 23.0,
      "n": 7,
      "min": 24.3,
-     "dk": 21.3,
+     "dk": 21.5,
      "salary": 5900,
      "newstart": false
     },
@@ -616,7 +632,7 @@
      "player": "Karlo Matkovic",
      "note": "started, 18 minutes (11/06)",
      "min": 16.8,
-     "dk": 15.6,
+     "dk": 15.7,
      "salary": 4700,
      "newstart": false
     },
@@ -624,7 +640,7 @@
      "player": "Derik Queen",
      "note": "12.0 points, 7.3 rebounds off the bench Oct. 28 to Nov. 2 (11/02)",
      "min": 18.7,
-     "dk": 20.5,
+     "dk": 20.4,
      "salary": 6100,
      "newstart": true
     }
@@ -653,7 +669,7 @@
      "recent": 32.5,
      "n": 6,
      "min": 33.4,
-     "dk": 45.5,
+     "dk": 45.9,
      "salary": 9400,
      "newstart": false,
      "note": "taking a lot more threes (10/28)"
@@ -665,7 +681,7 @@
      "recent": 26.0,
      "n": 5,
      "min": 28.2,
-     "dk": 27.6,
+     "dk": 28.1,
      "salary": 6000,
      "newstart": false
     },
@@ -687,7 +703,7 @@
      "recent": 28.0,
      "n": 6,
      "min": 31.2,
-     "dk": 25.9,
+     "dk": 26.4,
      "salary": 5300,
      "newstart": false,
      "note": "Show: usage will change once Duren returns (11/06)"
@@ -696,7 +712,7 @@
      "player": "John Collins",
      "note": "Show: role gets harder when Duren returns (11/04)",
      "min": 24.9,
-     "dk": 23.8,
+     "dk": 24.0,
      "salary": 5200,
      "newstart": false
     },
@@ -802,53 +818,53 @@
   {
    "player": "LeBron James",
    "team": "PHI",
-   "own": 68.8,
-   "dk": 41.0,
+   "own": 68.1,
+   "dk": 40.7,
    "salary": 7800
   },
   {
    "player": "VJ Edgecombe",
    "team": "PHI",
-   "own": 61.6,
-   "dk": 32.2,
+   "own": 62.1,
+   "dk": 32.3,
    "salary": 6300
   },
   {
    "player": "Tre Jones",
    "team": "CHI",
-   "own": 58.6,
+   "own": 59.2,
    "dk": 21.1,
    "salary": 4200
   },
   {
-   "player": "Caleb Wilson",
-   "team": "CHI",
-   "own": 54.5,
-   "dk": 37.4,
-   "salary": 7400
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "own": 53.7,
+   "dk": 40.0,
+   "salary": 7900
   }
  ],
  "leverage": [
   {
-   "player": "Day'Ron Sharpe",
-   "team": "BKN",
-   "own": 6.8,
-   "dk": 29.6,
-   "salary": 5100
-  },
-  {
-   "player": "Kobe Sanders",
+   "player": "Keaton Wagler",
    "team": "LAC",
-   "own": 7.2,
-   "dk": 22.8,
-   "salary": 4500
+   "own": 8.7,
+   "dk": 31.8,
+   "salary": 5500
   },
   {
-   "player": "PJ Washington",
-   "team": "DAL",
-   "own": 9.3,
-   "dk": 31.3,
-   "salary": 6200
+   "player": "Malik Monk",
+   "team": "SAC",
+   "own": 2.8,
+   "dk": 23.9,
+   "salary": 4300
+  },
+  {
+   "player": "Myles Turner",
+   "team": "MIL",
+   "own": 0.9,
+   "dk": 27.0,
+   "salary": 5100
   }
  ],
  "last": {
@@ -935,8 +951,8 @@
   ]
  },
  "injuries": {
-  "report": "08:30 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_08_30AM.pdf",
+  "report": "12:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_12_30PM.pdf",
   "pending": [
    "BKN"
   ],
@@ -969,6 +985,76 @@
     "changed_at": "",
     "min": 8.7,
     "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "PHI at CHI",
+    "time": "2026-11-08T20:30Z",
+    "team": "CHI",
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:43 PM",
+    "min": 27.3,
+    "benefits": [
+     {
+      "player": "Buddy Hield",
+      "subs": 13,
+      "of": 29,
+      "min": 12.2,
+      "dk": 10.1,
+      "salary": 3600,
+      "newstart": false
+     },
+     {
+      "player": "Caleb Wilson",
+      "subs": 3,
+      "of": 29,
+      "min": 32.1,
+      "dk": 37.3,
+      "salary": 7400,
+      "newstart": false
+     },
+     {
+      "player": "Tre Jones",
+      "subs": 2,
+      "of": 29,
+      "min": 20.4,
+      "dk": 21.1,
+      "salary": 4200,
+      "newstart": false
+     },
+     {
+      "player": "Leonard Miller",
+      "subs": 2,
+      "of": 29,
+      "min": 13.7,
+      "dk": 12.7,
+      "salary": 4000,
+      "newstart": false
+     },
+     {
+      "player": "Isaac Okoro",
+      "subs": 2,
+      "of": 29,
+      "min": 19.0,
+      "dk": 11.5,
+      "salary": 3800,
+      "newstart": false
+     },
+     {
+      "player": "Noa Essengue",
+      "subs": 2,
+      "of": 29,
+      "min": 13.0,
+      "dk": 8.7,
+      "salary": 3500,
+      "newstart": false
+     }
+    ],
     "estimate": false
    },
    {
@@ -1036,7 +1122,7 @@
       "recent": 24.1,
       "n": 1,
       "min": 22.8,
-      "dk": 17.3,
+      "dk": 17.2,
       "salary": 5100,
       "newstart": false,
       "note": "Show: big streaming option (11/08)"
@@ -1109,7 +1195,7 @@
       "wmin": 28.0,
       "recent": 17.4,
       "n": 1,
-      "min": 20.9,
+      "min": 21.2,
       "dk": 13.8,
       "salary": 3800,
       "newstart": false
@@ -1120,8 +1206,8 @@
       "wmin": 18.0,
       "recent": 13.9,
       "n": 1,
-      "min": 14.0,
-      "dk": 12.1,
+      "min": 14.4,
+      "dk": 12.6,
       "salary": 3500,
       "newstart": false
      },
@@ -1131,8 +1217,8 @@
       "wmin": 24.0,
       "recent": 14.5,
       "n": 1,
-      "min": 13.7,
-      "dk": 12.7,
+      "min": 14.1,
+      "dk": 13.2,
       "salary": 4300,
       "newstart": false,
       "note": "Show: more value if Markkanen sits again (10/30)"
@@ -1143,7 +1229,7 @@
       "wmin": 24.0,
       "recent": 15.3,
       "n": 1,
-      "min": 17.8,
+      "min": 18.3,
       "dk": 8.9,
       "salary": 3600,
       "newstart": false
@@ -1155,28 +1241,90 @@
       "recent": 23.1,
       "n": 1,
       "min": 24.6,
-      "dk": 21.4,
+      "dk": 21.3,
       "salary": 5500,
       "newstart": false
      },
      {
-      "player": "Keyonte George",
-      "gdk": 3.3,
-      "wmin": 37.0,
-      "recent": 31.8,
+      "player": "Darryn Peterson",
+      "gdk": 3.1,
+      "wmin": 26.0,
+      "recent": 30.8,
       "n": 1,
-      "min": 32.3,
-      "dk": 33.6,
-      "salary": 7900,
+      "min": 30.9,
+      "dk": 32.3,
+      "salary": 6200,
       "newstart": false,
       "note": "Show: one of only other Utah players looking for shots if Markkanen sits (10/28)"
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "UTA at MIN",
+    "time": "2026-11-09T00:00Z",
+    "team": "UTA",
+    "player": "Keyonte George",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:43 PM",
+    "min": 32.7,
+    "benefits": [
+     {
+      "player": "Isaiah Collier",
+      "subs": 8,
+      "of": 28,
+      "min": 14.1,
+      "dk": 13.2,
+      "salary": 4300,
+      "newstart": false
+     },
+     {
+      "player": "Brice Sensabaugh",
+      "subs": 7,
+      "of": 28,
+      "min": 14.4,
+      "dk": 12.6,
+      "salary": 3500,
+      "newstart": false
      },
      {
       "player": "Darryn Peterson",
-      "note": "Show: one of only other Utah players looking for shots if Markkanen sits (10/28)",
+      "subs": 5,
+      "of": 28,
       "min": 30.9,
-      "dk": 31.9,
+      "dk": 32.3,
       "salary": 6200,
+      "newstart": false
+     },
+     {
+      "player": "Svi Mykhailiuk",
+      "subs": 3,
+      "of": 28,
+      "min": 15.5,
+      "dk": 9.6,
+      "salary": 3700,
+      "newstart": false
+     },
+     {
+      "player": "Ace Bailey",
+      "subs": 1,
+      "of": 28,
+      "min": 31.1,
+      "dk": 25.9,
+      "salary": 6400,
+      "newstart": false
+     },
+     {
+      "player": "Jaxson Hayes",
+      "subs": 1,
+      "of": 28,
+      "min": 24.6,
+      "dk": 21.3,
+      "salary": 5500,
       "newstart": false
      }
     ],
@@ -1187,70 +1335,14 @@
     "time": "2026-11-09T00:00Z",
     "team": "MIN",
     "player": "Joan Beringer",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "12:43 PM",
     "min": 11.3,
-    "benefits": [
-     {
-      "player": "Rudy Gobert",
-      "subs": 17,
-      "of": 27,
-      "min": 27.3,
-      "dk": 29.4,
-      "salary": 5600,
-      "newstart": false
-     },
-     {
-      "player": "LaMelo Ball",
-      "subs": 4,
-      "of": 27,
-      "min": 28.8,
-      "dk": 44.5,
-      "salary": 8000,
-      "newstart": false
-     },
-     {
-      "player": "Jonathan Kuminga",
-      "subs": 1,
-      "of": 27,
-      "min": 30.1,
-      "dk": 33.5,
-      "salary": 6000,
-      "newstart": false
-     },
-     {
-      "player": "Terrence Shannon Jr.",
-      "subs": 1,
-      "of": 27,
-      "min": 20.4,
-      "dk": 19.9,
-      "salary": 4400,
-      "newstart": false
-     },
-     {
-      "player": "Trey Lyles",
-      "subs": 1,
-      "of": 27,
-      "min": 20.3,
-      "dk": 18.2,
-      "salary": 3500,
-      "newstart": false,
-      "note": "Show: streaming option, more frontcourt minutes (11/08)"
-     },
-     {
-      "player": "Jaylen Clark",
-      "subs": 1,
-      "of": 27,
-      "min": 17.8,
-      "dk": 13.7,
-      "salary": 3700,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1271,7 +1363,7 @@
       "subs": 15,
       "of": 25,
       "min": 30.1,
-      "dk": 32.5,
+      "dk": 32.1,
       "salary": 4600,
       "newstart": true
      },
@@ -1307,7 +1399,7 @@
       "subs": 1,
       "of": 25,
       "min": 22.4,
-      "dk": 23.3,
+      "dk": 23.0,
       "salary": 4400,
       "newstart": false
      },
@@ -1316,7 +1408,7 @@
       "subs": 1,
       "of": 25,
       "min": 25.0,
-      "dk": 22.8,
+      "dk": 22.2,
       "salary": 4500,
       "newstart": false
      }
@@ -1343,7 +1435,7 @@
       "recent": 36.0,
       "n": 7,
       "min": 37.2,
-      "dk": 49.9,
+      "dk": 50.0,
       "salary": 8400,
       "newstart": false
      },
@@ -1382,7 +1474,7 @@
       "recent": 33.5,
       "n": 1,
       "min": 34.4,
-      "dk": 32.2,
+      "dk": 32.3,
       "salary": 6300,
       "newstart": false
      }
@@ -1409,7 +1501,7 @@
       "recent": 32.5,
       "n": 6,
       "min": 33.4,
-      "dk": 45.5,
+      "dk": 45.9,
       "salary": 9400,
       "newstart": false,
       "note": "taking a lot more threes (10/28)"
@@ -1421,7 +1513,7 @@
       "recent": 26.0,
       "n": 5,
       "min": 28.2,
-      "dk": 27.6,
+      "dk": 28.1,
       "salary": 6000,
       "newstart": false
      },
@@ -1443,7 +1535,7 @@
       "recent": 28.0,
       "n": 6,
       "min": 31.2,
-      "dk": 25.9,
+      "dk": 26.4,
       "salary": 5300,
       "newstart": false,
       "note": "Show: usage will change once Duren returns (11/06)"
@@ -1452,7 +1544,7 @@
       "player": "John Collins",
       "note": "Show: role gets harder when Duren returns (11/04)",
       "min": 24.9,
-      "dk": 23.8,
+      "dk": 24.0,
       "salary": 5200,
       "newstart": false
      },
@@ -1487,7 +1579,7 @@
       "recent": 26.0,
       "n": 5,
       "min": 28.2,
-      "dk": 27.6,
+      "dk": 28.1,
       "salary": 6000,
       "newstart": false
      },
@@ -1498,7 +1590,7 @@
       "recent": 32.7,
       "n": 5,
       "min": 33.4,
-      "dk": 45.5,
+      "dk": 45.9,
       "salary": 9400,
       "newstart": false
      },
@@ -1506,7 +1598,7 @@
       "player": "Daniss Jenkins",
       "note": "24 minutes off the bench in each of last three games (10/30)",
       "min": 24.2,
-      "dk": 21.2,
+      "dk": 21.0,
       "salary": 4500,
       "newstart": false
      },
@@ -1514,7 +1606,7 @@
       "player": "Duncan Robinson",
       "note": "Show: usage should come down once Joe and Duren are healthy (11/06)",
       "min": 31.2,
-      "dk": 25.9,
+      "dk": 26.4,
       "salary": 5300,
       "newstart": false
      }
@@ -1541,7 +1633,7 @@
       "recent": 26.2,
       "n": 6,
       "min": 33.6,
-      "dk": 36.6,
+      "dk": 36.7,
       "salary": 6600,
       "newstart": false,
       "note": "added usage (11/04)"
@@ -1553,7 +1645,7 @@
       "recent": 8.0,
       "n": 6,
       "min": 13.3,
-      "dk": 16.1,
+      "dk": 16.3,
       "salary": 3400,
       "newstart": false
      },
@@ -1576,7 +1668,7 @@
       "recent": 25.0,
       "n": 6,
       "min": 28.8,
-      "dk": 44.5,
+      "dk": 44.4,
       "salary": 8000,
       "newstart": false,
       "note": "Show: role will grow (11/02)"
@@ -1599,7 +1691,7 @@
       "recent": 31.8,
       "n": 6,
       "min": 33.4,
-      "dk": 33.1,
+      "dk": 33.6,
       "salary": 6500,
       "newstart": false,
       "note": "heavy minutes; 39 minutes Oct. 31 (10/31)"
@@ -1616,7 +1708,7 @@
       "player": "Terrence Shannon Jr.",
       "note": "Show: should get more offensive responsibility (11/03)",
       "min": 20.4,
-      "dk": 19.9,
+      "dk": 19.8,
       "salary": 4400,
       "newstart": false
      }
@@ -1642,7 +1734,7 @@
       "wmin": 22.2,
       "recent": 13.0,
       "n": 5,
-      "min": 20.9,
+      "min": 21.2,
       "dk": 13.8,
       "salary": 3800,
       "newstart": false
@@ -1654,7 +1746,7 @@
       "recent": 29.2,
       "n": 5,
       "min": 30.9,
-      "dk": 31.9,
+      "dk": 32.3,
       "salary": 6200,
       "newstart": false
      },
@@ -1662,7 +1754,7 @@
       "player": "Ace Bailey",
       "note": "40 and 37 minutes in first two games after JJJ went down (11/02)",
       "min": 31.1,
-      "dk": 26.2,
+      "dk": 25.9,
       "salary": 6400,
       "newstart": false
      },
@@ -1670,16 +1762,8 @@
       "player": "Jaxson Hayes",
       "note": "Show: heavy minutes at center (11/02)",
       "min": 24.6,
-      "dk": 21.4,
+      "dk": 21.3,
       "salary": 5500,
-      "newstart": false
-     },
-     {
-      "player": "Keyonte George",
-      "note": "absence helped keep his usage high (11/06)",
-      "min": 32.3,
-      "dk": 33.6,
-      "salary": 7900,
       "newstart": false
      }
     ],
@@ -1705,7 +1789,7 @@
       "recent": 14.5,
       "n": 5,
       "min": 18.3,
-      "dk": 19.4,
+      "dk": 19.6,
       "salary": 3600,
       "newstart": false
      },
@@ -1716,7 +1800,7 @@
       "recent": 27.3,
       "n": 4,
       "min": 31.7,
-      "dk": 36.4,
+      "dk": 36.3,
       "salary": 7800,
       "newstart": false
      },
@@ -1754,7 +1838,7 @@
       "recent": 22.5,
       "n": 7,
       "min": 26.9,
-      "dk": 25.0,
+      "dk": 24.8,
       "salary": 6400,
       "newstart": false
      },
@@ -1765,7 +1849,7 @@
       "recent": 31.5,
       "n": 6,
       "min": 28.9,
-      "dk": 26.0,
+      "dk": 25.8,
       "salary": 7100,
       "newstart": false
      },
@@ -1776,7 +1860,7 @@
       "recent": 17.5,
       "n": 7,
       "min": 20.7,
-      "dk": 12.2,
+      "dk": 12.4,
       "salary": 4400,
       "newstart": false
      },
@@ -1787,7 +1871,7 @@
       "recent": 23.0,
       "n": 7,
       "min": 24.3,
-      "dk": 21.3,
+      "dk": 21.5,
       "salary": 5900,
       "newstart": false
      },
@@ -1795,7 +1879,7 @@
       "player": "Karlo Matkovic",
       "note": "started, 18 minutes (11/06)",
       "min": 16.8,
-      "dk": 15.6,
+      "dk": 15.7,
       "salary": 4700,
       "newstart": false
      },
@@ -1803,7 +1887,7 @@
       "player": "Derik Queen",
       "note": "12.0 points, 7.3 rebounds off the bench Oct. 28 to Nov. 2 (11/02)",
       "min": 18.7,
-      "dk": 20.5,
+      "dk": 20.4,
       "salary": 6100,
       "newstart": true
      }
