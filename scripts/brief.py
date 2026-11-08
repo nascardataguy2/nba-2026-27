@@ -59,6 +59,47 @@ def main():
         g = [x for x in games_of(team, name) if x["min"] > 0][-n:]
         return sum(x["min"] for x in g) / len(g) if g else 0.0
 
+    def new_starter(team, p):
+        """Starting tonight (DFF lineups) after starting under half his games this season."""
+        g = [x for x in games_of(team, p["player"]) if x["min"] > 0]
+        return bool(p.get("start")) and bool(g) and sum(1 for x in g if x.get("start")) < len(g) / 2
+
+    # Notes from the shows and box-score recaps about who gained when a teammate sat
+    # (data/role_facts.json, read from every player-log note). A "happened" note is kept
+    # only if the box score agrees: the missing player did not play that day and the
+    # player who gained did.
+    def fact_ok(f):
+        if f.get("kind") != "happened":
+            return True
+        dd = f.get("date", "")
+        o_ = [x for x in games_of(f["team"], f["out"]) if x["date"] == dd and x["min"] > 0]
+        g_ = [x for x in games_of(f["team"], f["gains"]) if x["date"] == dd and x["min"] > 0]
+        return not o_ and bool(g_)
+    facts = [f for f in load_json(os.path.join(D, "role_facts.json"), []) if f.get("date", "") < day or f.get("kind") == "show_says"]
+    facts = [f for f in facts if fact_ok(f)]
+
+    def add_notes(team, names, ben):
+        """Attach the latest show or recap note to each player who gains, and add teammates
+        the notes name who are playing tonight but are not on the list yet."""
+        keys = {norm(x) for x in names}
+        mine = sorted([f for f in facts if f["team"] == team and norm(f["out"]) in keys], key=lambda f: f["date"])
+        act = {norm(p["player"]): p for p in players if p["team"] == team and p["min"] > 0 and not p.get("q")}
+        have = {norm(b["player"]) for b in ben}
+        for f in mine:
+            k = norm(f["gains"])
+            if k not in act:
+                continue
+            txt = ("Show: " if f["kind"] == "show_says" else "") + f["what"] + " (" + f["date"][5:].replace("-", "/").lstrip("0") + ")"
+            if k in have:
+                for b in ben:
+                    if norm(b["player"]) == k:
+                        b["note"] = txt
+            elif len(ben) < 8:
+                p = act[k]
+                ben.append({"player": p["player"], "note": txt, "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary"), "newstart": new_starter(team, p)})
+                have.add(k)
+        return ben
+
     def split_gain(team, names, top=6):
         """Who actually gained when these players sat: this season's games where all of them
         (else the biggest ones) missed, compared with the games they played. Every position.
@@ -91,7 +132,7 @@ def main():
             dkw, dki = sum(x["dk"] for x in wo) / len(wo), sum(x["dk"] for x in wi) / len(wi)
             mw, mi = sum(x["min"] for x in wo) / len(wo), sum(x["min"] for x in wi) / len(wi)
             out.append({"player": p["player"], "gdk": r1(dkw - dki), "wmin": r1(mw), "recent": r1(mi), "n": len(wo),
-                        "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary")})
+                        "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary"), "newstart": new_starter(team, p)})
         out.sort(key=lambda b: -b["gdk"])
         return [b for b in out if b["gdk"] >= 3][:top], len(without), names
 
@@ -110,7 +151,7 @@ def main():
         for p in players:
             k = norm(p["player"])
             if p["team"] == team and p["min"] > 0 and not p.get("q") and k in cnt and k not in keys:
-                out.append({"player": p["player"], "subs": cnt[k], "of": tot, "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary")})
+                out.append({"player": p["player"], "subs": cnt[k], "of": tot, "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary"), "newstart": new_starter(team, p)})
         out.sort(key=lambda b: -b["subs"])
         return out[:top]
 
@@ -240,6 +281,7 @@ def main():
         if not sb:  # no games without them yet: tonight's projections vs. recent games
             sb = sub_gain(t, [o["player"] for o in tout], top=3)
             snames = []
+        sb = add_notes(t, [o["player"] for o in tout], sb)
         if not sb:
             continue
         sits.append({"team": t, "outs": [{"player": o["player"], "min": o["min"], "note": o["note"], "new": norm(o["player"]) in new_today} for o in tout],
@@ -267,13 +309,13 @@ def main():
         m = recent_min(t, name)
         ben, est = [], False
         if status in ("Out", "Doubtful") and m >= 12:
-            ben = split_gain(t, [name])[0] or sub_gain(t, [name])
+            ben = add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name]))
         elif status == "Questionable" and m >= 10:
             # If he sits: what his teammates actually did in this season's games he missed,
             # at every position. With no such games, his minutes go to the whole rotation
             # by their minutes, again at every position. Either way it is labeled an estimate.
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
-            ben = split_gain(t, [name])[0] or sub_gain(t, [name])
+            ben = add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name]))
             est = False
         c = intraday.get(name)
         inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
