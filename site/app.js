@@ -116,7 +116,7 @@
       // If he sits
       var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
         var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
-        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.gdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' : b.subs != null || b.note ? benTxt(b) + ', ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'; }).join('<br>');
+        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.why ? benTxt(b) + '</span>' : (b.gdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' : b.subs != null || b.note ? benTxt(b) + ', ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'); }).join('<br>');
         return '<div class="hit">' + tm(s.team) + ' ' + outs + ' <span class="arrow">\u2192</span><p>' + ben + '</p></div>';
       }).join(''));
       // Storylines: tonight's players first, then the rest
@@ -304,6 +304,7 @@
 
   // Who benefits: real games without him first (DK gained, minutes then), else our projection.
   function benTxt(b, them){
+    if (b.why) return (b.salary ? money(b.salary) + ': ' : '') + esc(b.why) + ' \u00b7 <b>' + esc(b.much) + '</b>';
     return benCore(b, them) + (b.newstart ? ' \u00b7 starting tonight' : '') + (b.note ? '<br><span class="bn-note">' + esc(b.note) + '</span>' : '');
   }
   function benCore(b, them){

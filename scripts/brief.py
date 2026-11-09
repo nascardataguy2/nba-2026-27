@@ -13,6 +13,7 @@ State for "changed" is kept in data/brief_state.json.
 """
 import glob
 import json
+import re
 import os
 import sys
 from datetime import datetime, timedelta
@@ -78,6 +79,60 @@ def main():
     facts = [f for f in load_json(os.path.join(D, "role_facts.json"), []) if f.get("date", "") < day or f.get("kind") == "show_says"]
     facts = [f for f in facts if fact_ok(f)]
 
+    def tidy(team, names, ben, top=3):
+        """Who benefits, why and how much, in a few words, from real numbers only.
+        why: a verified show or recap note, else what changed in the games without him
+        (started, more minutes), else that he is the one who subs in for him.
+        how much: DK points gained in the games without him, else how far tonight's
+        projection is above his last 3 games. A name with no real "how much" is dropped."""
+        pk = {norm(p["player"]): p for p in players if p["team"] == team}
+        them = len(names) > 1
+        out = []
+        for b in ben:
+            p = pk.get(norm(b["player"]))
+            if not p:
+                continue
+            g3 = [x for x in games_of(team, p["player"]) if x["min"] > 0][-3:]
+            pd = p["dk"] - sum(x["dk"] for x in g3) / len(g3) if g3 else None
+            why, much, score = None, None, None
+            if b.get("gdk") is not None:
+                if b["gdk"] < 5:
+                    continue
+                n = b["n"]
+                much = "+%s DK without %s (%d game%s)" % (r1(b["gdk"]), "them" if them else "him", n, "" if n == 1 else "s")
+                score = b["gdk"]
+                if b.get("starts", 0) >= max(1, n / 2) and b.get("starts_with", 0) < b.get("nwith", 1) / 2:
+                    why = "started %s" % ("that game" if n == 1 else "%d of %d" % (b["starts"], n))
+                elif b["wmin"] - b["recent"] >= 3:
+                    why = "%s minutes, up from %s" % (int(round(b["wmin"])), int(round(b["recent"])))
+                else:
+                    why = "same minutes, more production"
+            elif b.get("subs") is not None:
+                if pd is None or pd < 3 or b["subs"] / max(b["of"], 1) < 0.15:
+                    continue
+                why = "subs in for %s %d of %d times" % ("them" if them else "him", b["subs"], b["of"])
+                much = "+%s DK projected vs. last 3" % r1(pd)
+                score = pd
+            elif b.get("note"):
+                if pd is None or pd < 3:
+                    continue
+                much = "+%s DK projected vs. last 3" % r1(pd)
+                score = pd
+            else:
+                continue
+            # A show or recap note replaces the computed reason only when it says something
+            # concrete about his role (a start or minutes, with a number), not sim odds or praise.
+            nt = b.get("note") or ""
+            if nt and re.search(r"\d", nt.split(" (")[0]) and re.search(r"start|minute|usage|assist|point|rebound", nt, re.I) \
+                    and not re.search(r"sims?\b|%", nt) and (why is None or why == "same minutes, more production" or why.startswith("subs in")):
+                why = nt
+            if why is None:
+                continue
+            out.append({"player": p["player"], "salary": p.get("salary"), "why": why, "much": much, "score": score,
+                        "min": r1(p["min"]), "dk": r1(p["dk"])})
+        out.sort(key=lambda b: -b["score"])
+        return out[:top]
+
     def add_notes(team, names, ben):
         """Attach the latest show or recap note to each player who gains, and add teammates
         the notes name who are playing tonight but are not on the list yet."""
@@ -85,7 +140,10 @@ def main():
         mine = sorted([f for f in facts if f["team"] == team and norm(f["out"]) in keys], key=lambda f: f["date"])
         act = {norm(p["player"]): p for p in players if p["team"] == team and p["min"] > 0 and not p.get("q")}
         have = {norm(b["player"]) for b in ben}
+        fresh = (datetime.now(ZoneInfo("America/New_York")) - timedelta(days=10)).strftime("%Y-%m-%d")
         for f in mine:
+            if f["date"] < fresh:
+                continue
             k = norm(f["gains"])
             if k not in act:
                 continue
@@ -132,6 +190,7 @@ def main():
             dkw, dki = sum(x["dk"] for x in wo) / len(wo), sum(x["dk"] for x in wi) / len(wi)
             mw, mi = sum(x["min"] for x in wo) / len(wo), sum(x["min"] for x in wi) / len(wi)
             out.append({"player": p["player"], "gdk": r1(dkw - dki), "wmin": r1(mw), "recent": r1(mi), "n": len(wo),
+                        "starts": sum(1 for x in wo if x.get("start")), "starts_with": sum(1 for x in wi if x.get("start")), "nwith": len(wi),
                         "min": r1(p["min"]), "dk": r1(p["dk"]), "salary": p.get("salary"), "newstart": new_starter(team, p)})
         out.sort(key=lambda b: -b["gdk"])
         return [b for b in out if b["gdk"] >= 3][:top], len(without), names
@@ -281,7 +340,7 @@ def main():
         if not sb:  # no games without them yet: tonight's projections vs. recent games
             sb = sub_gain(t, [o["player"] for o in tout], top=3)
             snames = []
-        sb = add_notes(t, [o["player"] for o in tout], sb)
+        sb = tidy(t, [o["player"] for o in tout], add_notes(t, [o["player"] for o in tout], sb))
         if not sb:
             continue
         sits.append({"team": t, "outs": [{"player": o["player"], "min": o["min"], "note": o["note"], "new": norm(o["player"]) in new_today} for o in tout],
@@ -309,13 +368,13 @@ def main():
         m = recent_min(t, name)
         ben, est = [], False
         if status in ("Out", "Doubtful") and m >= 12:
-            ben = add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name]))
+            ben = tidy(t, [name], add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name])))
         elif status == "Questionable" and m >= 10:
             # If he sits: what his teammates actually did in this season's games he missed,
             # at every position. With no such games, his minutes go to the whole rotation
             # by their minutes, again at every position. Either way it is labeled an estimate.
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
-            ben = add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name]))
+            ben = tidy(t, [name], add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name])))
             est = False
         c = intraday.get(name)
         inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
@@ -408,7 +467,6 @@ def main():
             if b and b.get("min", 0) > 0 and abs(x["min"] - b["min"]) >= 12:
                 surprise.append({"player": x["player"], "team": x["team"], "min": x["min"], "proj": r1(b["min"])})
         surprise.sort(key=lambda s: -abs(s["min"] - s["proj"]))
-        import re
         hurt = re.compile(r"\b(left (the game|the floor|early|in the|after|with|on [A-Z]|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)|leaving|exited|did not return|hurt his|got hurt|was hurt|went down|helped off|tweaked|rolled his)", re.I)
         inj = [{"player": e["player"], "team": e["team"], "text": e["text"]} for e in plog
                if e["date"] in (prev, day) and e["kind"] == "injury" and hurt.search(e["text"])]
