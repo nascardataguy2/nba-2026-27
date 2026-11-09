@@ -257,6 +257,22 @@
   ],
   "changed": [
    {
+    "player": "Domantas Sabonis",
+    "team": "SAC",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Knee Soreness",
+    "time": "9:06 PM"
+   },
+   {
+    "player": "Jonathan Mogbo",
+    "team": "SAC",
+    "status": "Available",
+    "was": "",
+    "why": "-",
+    "time": "9:06 PM"
+   },
+   {
     "player": "Gary Trent Jr.",
     "team": "MIL",
     "status": "Out",
@@ -318,22 +334,6 @@
     "status": "Questionable",
     "was": "",
     "why": "Illness",
-    "time": "2:44 PM"
-   },
-   {
-    "player": "Jalen Smith",
-    "team": "CHI",
-    "status": "Available",
-    "was": "Probable",
-    "why": "-",
-    "time": "2:44 PM"
-   },
-   {
-    "player": "Norman Powell",
-    "team": "CHI",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "",
     "time": "2:44 PM"
    }
   ],
@@ -881,53 +881,53 @@
    {
     "player": "Tre Jones",
     "team": "CHI",
-    "own": 72.6,
+    "own": 67.5,
     "dk": 24.0,
     "salary": 4200
    },
    {
+    "player": "Brook Lopez",
+    "team": "LAC",
+    "own": 61.0,
+    "dk": 32.2,
+    "salary": 4600
+   },
+   {
     "player": "Caleb Wilson",
     "team": "CHI",
-    "own": 61.6,
+    "own": 60.4,
     "dk": 39.8,
     "salary": 7400
    },
    {
-    "player": "LeBron James",
-    "team": "PHI",
-    "own": 55.4,
-    "dk": 41.4,
-    "salary": 7800
-   },
-   {
-    "player": "Sandro Mamukelashvili",
-    "team": "LAL",
-    "own": 53.8,
-    "dk": 25.5,
-    "salary": 4800
+    "player": "Darius Acuff Jr.",
+    "team": "SAC",
+    "own": 58.1,
+    "dk": 52.3,
+    "salary": 8400
    }
   ],
   "leverage": [
    {
-    "player": "Malik Monk",
-    "team": "SAC",
-    "own": 0.8,
-    "dk": 25.2,
-    "salary": 4300
+    "player": "Myles Turner",
+    "team": "MIL",
+    "own": 7.8,
+    "dk": 27.0,
+    "salary": 5100
    },
    {
-    "player": "Keaton Wagler",
-    "team": "LAC",
-    "own": 0.8,
-    "dk": 31.9,
-    "salary": 5500
+    "player": "Rudy Gobert",
+    "team": "MIN",
+    "own": 7.5,
+    "dk": 29.1,
+    "salary": 5600
    },
    {
-    "player": "Max Strus",
+    "player": "Kobe Sanders",
     "team": "LAC",
-    "own": 8.8,
-    "dk": 23.3,
-    "salary": 4400
+    "own": 8.9,
+    "dk": 22.7,
+    "salary": 4500
    }
   ],
   "last": {
@@ -1014,8 +1014,8 @@
    ]
   },
   "injuries": {
-   "report": "07:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_07_45PM.pdf",
+   "report": "09:00 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_09_00PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1432,6 +1432,67 @@
      "estimate": false
     },
     {
+     "game": "MIA at SAC",
+     "time": "2026-11-09T02:00Z",
+     "team": "SAC",
+     "player": "Domantas Sabonis",
+     "status": "Out",
+     "reason": "Left Knee Soreness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "9:06 PM",
+     "min": 32.3,
+     "benefits": [
+      {
+       "player": "Precious Achiuwa",
+       "subs": 8,
+       "of": 28,
+       "min": 24.1,
+       "dk": 23.2,
+       "salary": 6000,
+       "newstart": false
+      },
+      {
+       "player": "Darius Acuff Jr.",
+       "subs": 2,
+       "of": 28,
+       "min": 37.2,
+       "dk": 52.3,
+       "salary": 8400,
+       "newstart": false
+      },
+      {
+       "player": "Zach LaVine",
+       "subs": 2,
+       "of": 28,
+       "min": 33.1,
+       "dk": 32.5,
+       "salary": 6600,
+       "newstart": false
+      },
+      {
+       "player": "Malik Monk",
+       "subs": 2,
+       "of": 28,
+       "min": 24.0,
+       "dk": 25.2,
+       "salary": 4300,
+       "newstart": false
+      },
+      {
+       "player": "Emanuel Sharp",
+       "subs": 1,
+       "of": 28,
+       "min": 19.5,
+       "dk": 13.7,
+       "salary": 3300,
+       "newstart": false
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "NOP at LAC",
      "time": "2026-11-09T02:00Z",
      "team": "LAC",
@@ -1505,67 +1566,6 @@
      "game": "MIA at SAC",
      "time": "2026-11-09T02:00Z",
      "team": "SAC",
-     "player": "Domantas Sabonis",
-     "status": "Questionable",
-     "reason": "Left Knee Soreness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "6:42 PM",
-     "min": 32.3,
-     "benefits": [
-      {
-       "player": "Precious Achiuwa",
-       "subs": 8,
-       "of": 28,
-       "min": 24.1,
-       "dk": 23.2,
-       "salary": 6000,
-       "newstart": false
-      },
-      {
-       "player": "Darius Acuff Jr.",
-       "subs": 2,
-       "of": 28,
-       "min": 37.2,
-       "dk": 52.3,
-       "salary": 8400,
-       "newstart": false
-      },
-      {
-       "player": "Zach LaVine",
-       "subs": 2,
-       "of": 28,
-       "min": 33.1,
-       "dk": 32.5,
-       "salary": 6600,
-       "newstart": false
-      },
-      {
-       "player": "Malik Monk",
-       "subs": 2,
-       "of": 28,
-       "min": 24.0,
-       "dk": 25.2,
-       "salary": 4300,
-       "newstart": false
-      },
-      {
-       "player": "Emanuel Sharp",
-       "subs": 1,
-       "of": 28,
-       "min": 19.5,
-       "dk": 13.7,
-       "salary": 3300,
-       "newstart": false
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "MIA at SAC",
-     "time": "2026-11-09T02:00Z",
-     "team": "SAC",
      "player": "Keegan Murray",
      "status": "Available",
      "reason": "",
@@ -1574,6 +1574,21 @@
      "known": true,
      "changed_at": "3:33 PM",
      "min": 27.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "MIA at SAC",
+     "time": "2026-11-09T02:00Z",
+     "team": "SAC",
+     "player": "Jonathan Mogbo",
+     "status": "Available",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "9:06 PM",
+     "min": 20.3,
      "benefits": [],
      "estimate": false
     },
@@ -11896,13 +11911,13 @@
   },
   {
    "team": "SAC",
-   "starters": "Darius Acuff Jr. (37), Zach LaVine (34), Domantas Sabonis (36), Precious Achiuwa (27), De'Andre Hunter (31)",
-   "bench": "Leaky Black (24), Malik Monk (16), Emanuel Sharp (19), Dylan Cardwell (14), Alex Karaban (10)",
+   "starters": "Darius Acuff Jr. (37), Zach LaVine (34), Precious Achiuwa (27), De'Andre Hunter (31), Leaky Black (24)",
+   "bench": "Malik Monk (16), Emanuel Sharp (19), Dylan Cardwell (14), Alex Karaban (10)",
    "backup_c": "Dylan Cardwell",
    "coach": "Doug Christie",
    "notes": "Schroder, Westbrook and DeRozan are gone. Sabonis is a trade candidate, and LaVine is in the last year of his deal.",
    "source": "LO-1019b",
-   "out": "Jonathan Mogbo",
+   "out": "Domantas Sabonis",
    "depth_through": "2026-11-06",
    "games": 9
   },
