@@ -2,10 +2,9 @@
  "updated": "2026-11-09",
  "brief": {
   "date": "2026-11-09",
-  "updated": "12:41 PM ET",
+  "updated": "1:39 PM ET",
   "games": 7,
   "pending": [
-   "LAL",
    "DET",
    "DAL"
   ],
@@ -32,12 +31,16 @@
        {
         "player": "Luka Doncic",
         "min": 36.3
+       },
+       {
+        "player": "Quentin Grimes",
+        "min": 25.7
        }
       ],
       "q": [
        {
-        "player": "Quentin Grimes",
-        "min": 31.3
+        "player": "Austin Reaves",
+        "min": 37.3
        }
       ]
      },
@@ -56,18 +59,18 @@
       ]
      }
     },
-    "key": "Luka Doncic is out, so Collin Sexton and Sandro Mamukelashvili and Austin Reaves should play more than usual."
+    "key": "Luka Doncic and Quentin Grimes are out, so Collin Sexton and Sandro Mamukelashvili should play more than usual."
    },
    {
     "away": "WAS",
     "home": "DET",
     "time": "2026-11-10T00:00Z",
     "slate": "main",
-    "ou": 217.5,
+    "ou": 218.5,
     "fav": "DET",
     "line": 10.5,
-    "away_pts": 103.5,
-    "home_pts": 114.0,
+    "away_pts": 104.0,
+    "home_pts": 114.5,
     "tags": [
      "Blowout risk",
      "DET on a back-to-back"
@@ -88,20 +91,16 @@
       ]
      },
      "DET": {
-      "out": [
-       {
-        "player": "Jalen Duren",
-        "min": 19.0
-       },
+      "out": [],
+      "q": [
        {
         "player": "Isaiah Joe",
-        "min": 13.7
+        "min": 15.2
        }
-      ],
-      "q": []
+      ]
      }
     },
-    "key": "Jalen Duren is out, so Cade Cunningham and Kevin Huerter and Daniss Jenkins and Ausar Thompson and John Collins and Paul Reed should play more than usual."
+    "key": "Justin Champagnie is out, so Alex Sarr and Kyshawn George and Will Riley should play more than usual."
    },
    {
     "away": "CLE",
@@ -195,22 +194,26 @@
        {
         "player": "Immanuel Quickley",
         "min": 32.0
+       },
+       {
+        "player": "Collin Murray-Boyles",
+        "min": 25.1
        }
       ]
      }
     },
-    "key": "Kawhi Leonard is out, so Jamal Shead and Trayce Jackson-Davis and Allen Graves and Ja'Kobe Walter and RJ Barrett and Collin Murray-Boyles should play more than usual."
+    "key": "Kawhi Leonard is out, so Jamal Shead and Trayce Jackson-Davis and Allen Graves and Ja'Kobe Walter and RJ Barrett should play more than usual."
    },
    {
     "away": "IND",
     "home": "DAL",
     "time": "2026-11-10T01:00Z",
     "slate": "main",
-    "ou": 222.5,
+    "ou": 226.5,
     "fav": "DAL",
     "line": 3.5,
-    "away_pts": 109.5,
-    "home_pts": 113.0,
+    "away_pts": 111.5,
+    "home_pts": 115.0,
     "tags": [
      "DAL on a back-to-back"
     ],
@@ -234,12 +237,7 @@
       ]
      },
      "DAL": {
-      "out": [
-       {
-        "player": "Sergio de Larrea",
-        "min": 13.3
-       }
-      ],
+      "out": [],
       "q": []
      }
     },
@@ -252,12 +250,10 @@
     "slate": "main",
     "ou": 219.5,
     "fav": "HOU",
-    "line": 9.5,
-    "away_pts": 105.0,
-    "home_pts": 114.5,
-    "tags": [
-     "Blowout risk"
-    ],
+    "line": 8.5,
+    "away_pts": 105.5,
+    "home_pts": 114.0,
+    "tags": [],
     "teams": {
      "DEN": {
       "out": [],
@@ -297,11 +293,11 @@
     "home": "PHX",
     "time": "2026-11-10T02:00Z",
     "slate": "main",
-    "ou": 227.5,
+    "ou": 226.5,
     "fav": "SAS",
     "line": 8.5,
-    "away_pts": 118.0,
-    "home_pts": 109.5,
+    "away_pts": 117.5,
+    "home_pts": 109.0,
     "tags": [],
     "teams": {
      "SAS": {
@@ -327,6 +323,30 @@
    }
   ],
   "changed": [
+   {
+    "player": "Collin Murray-Boyles",
+    "team": "TOR",
+    "status": "Questionable",
+    "was": "",
+    "why": "Illness",
+    "time": "1:40 PM"
+   },
+   {
+    "player": "Austin Reaves",
+    "team": "LAL",
+    "status": "Questionable",
+    "was": "",
+    "why": "Illness",
+    "time": "1:40 PM"
+   },
+   {
+    "player": "Quentin Grimes",
+    "team": "LAL",
+    "status": "Out",
+    "was": "",
+    "why": "Right Finger Sprain",
+    "time": "1:40 PM"
+   },
    {
     "player": "Oscar Tshiebwe",
     "team": "HOU",
@@ -425,6 +445,54 @@
     ]
    },
    {
+    "team": "LAL",
+    "outs": [
+     {
+      "player": "Luka Doncic",
+      "min": 36.3,
+      "note": "Doncic sat on Nov. 8 at Detroit with low back tightness. The show assumed he plays the second leg of the back-to-back against Atlanta on Nov. 9 but noted the back issue left no posted total for that game. The show said he is about 70 DraftKings points per game this year (the box scores show about 67 per game) and that Atlanta's defenders do not matter against him at $12,000.",
+      "new": false
+     },
+     {
+      "player": "Quentin Grimes",
+      "min": 25.7,
+      "note": "Quentin Grimes started for the resting Luka Doncic on Nov 8 and had 12 points and 4 assists in 32 minutes. He hurt his finger late, did not return, and had negative X-rays, so the show said there is some doubt he plays on Nov 9. The show said he does little when Doncic plays.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 62.0,
+    "benefits": [
+     {
+      "player": "Collin Sexton",
+      "gdk": 11.8,
+      "wmin": 22.5,
+      "recent": 16.0,
+      "n": 2,
+      "min": 21.2,
+      "dk": 21.6,
+      "salary": 4100,
+      "newstart": false,
+      "note": "21 bench minutes, 21 points (10/28)"
+     },
+     {
+      "player": "Sandro Mamukelashvili",
+      "gdk": 3.2,
+      "wmin": 24.0,
+      "recent": 22.4,
+      "n": 2,
+      "min": 21.2,
+      "dk": 19.6,
+      "salary": 4700,
+      "newstart": false,
+      "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
+     }
+    ],
+    "split_of": [
+     "Luka Doncic"
+    ]
+   },
+   {
     "team": "CLE",
     "outs": [
      {
@@ -477,56 +545,6 @@
     "split_of": [
      "Sam Merrill",
      "Jaylon Tyson"
-    ]
-   },
-   {
-    "team": "LAL",
-    "outs": [
-     {
-      "player": "Luka Doncic",
-      "min": 36.3,
-      "note": "Doncic sat on Nov. 8 at Detroit with low back tightness. The show assumed he plays the second leg of the back-to-back against Atlanta on Nov. 9 but noted the back issue left no posted total for that game. The show said he is about 70 DraftKings points per game this year (the box scores show about 67 per game) and that Atlanta's defenders do not matter against him at $12,000.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 36.3,
-    "benefits": [
-     {
-      "player": "Collin Sexton",
-      "gdk": 11.8,
-      "wmin": 22.5,
-      "recent": 16.0,
-      "n": 2,
-      "min": 21.1,
-      "dk": 21.4,
-      "salary": 4100,
-      "newstart": false,
-      "note": "21 bench minutes, 21 points (10/28)"
-     },
-     {
-      "player": "Sandro Mamukelashvili",
-      "gdk": 3.2,
-      "wmin": 24.0,
-      "recent": 22.4,
-      "n": 2,
-      "min": 22.1,
-      "dk": 20.5,
-      "salary": 4700,
-      "newstart": false,
-      "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
-     },
-     {
-      "player": "Austin Reaves",
-      "note": "Show: highest-rostered player (11/09)",
-      "min": 39.3,
-      "dk": 41.5,
-      "salary": 8000,
-      "newstart": false
-     }
-    ],
-    "split_of": [
-     "Luka Doncic"
     ]
    },
    {
@@ -674,14 +692,6 @@
       "dk": 39.3,
       "salary": 7600,
       "newstart": false
-     },
-     {
-      "player": "Collin Murray-Boyles",
-      "note": "started, 34 minutes, 19 points (11/06)",
-      "min": 25.1,
-      "dk": 24.9,
-      "salary": 5800,
-      "newstart": false
      }
     ],
     "split_of": [
@@ -820,44 +830,44 @@
    {
     "player": "Walter Clayton Jr.",
     "team": "DAL",
-    "own": 43.2,
+    "own": 49.9,
     "dk": 16.5,
     "salary": 3300
    },
    {
     "player": "Grayson Allen",
     "team": "CHA",
-    "own": 40.0,
+    "own": 40.3,
     "dk": 37.6,
     "salary": 5200
    },
    {
     "player": "Immanuel Quickley",
     "team": "TOR",
-    "own": 34.7,
+    "own": 32.7,
     "dk": 34.6,
     "salary": 6800
    },
    {
-    "player": "Daniss Jenkins",
-    "team": "DET",
-    "own": 32.1,
-    "dk": 25.3,
-    "salary": 4300
+    "player": "Cameron Johnson",
+    "team": "DEN",
+    "own": 31.1,
+    "dk": 21.8,
+    "salary": 4500
    }
   ],
   "leverage": [
    {
     "player": "Royce O'Neale",
     "team": "CHA",
-    "own": 7.0,
+    "own": 7.7,
     "dk": 30.6,
     "salary": 4300
    },
    {
     "player": "Sion James",
     "team": "CHA",
-    "own": 5.9,
+    "own": 5.6,
     "dk": 28.2,
     "salary": 4500
    },
@@ -957,14 +967,83 @@
    ]
   },
   "injuries": {
-   "report": "12:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_12_30PM.pdf",
+   "report": "01:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_30PM.pdf",
    "pending": [
-    "LAL",
     "DET",
     "DAL"
    ],
    "rows": [
+    {
+     "game": "LAL at ATL",
+     "time": "2026-11-10T00:00Z",
+     "team": "LAL",
+     "player": "Quentin Grimes",
+     "status": "Out",
+     "reason": "Right Finger Sprain",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:40 PM",
+     "min": 25.7,
+     "benefits": [
+      {
+       "player": "Ziaire Williams",
+       "subs": 8,
+       "of": 37,
+       "min": 25.2,
+       "dk": 21.0,
+       "salary": 4500,
+       "newstart": false
+      },
+      {
+       "player": "Matisse Thybulle",
+       "subs": 7,
+       "of": 37,
+       "min": 28.4,
+       "dk": 20.0,
+       "salary": 4400,
+       "newstart": false
+      },
+      {
+       "player": "Walker Kessler",
+       "subs": 5,
+       "of": 37,
+       "min": 32.3,
+       "dk": 35.7,
+       "salary": 7700,
+       "newstart": false
+      },
+      {
+       "player": "Collin Sexton",
+       "subs": 5,
+       "of": 37,
+       "min": 21.2,
+       "dk": 21.6,
+       "salary": 4100,
+       "newstart": false
+      },
+      {
+       "player": "Jake LaRavia",
+       "subs": 4,
+       "of": 37,
+       "min": 28.0,
+       "dk": 20.5,
+       "salary": 4800,
+       "newstart": false
+      },
+      {
+       "player": "Sandro Mamukelashvili",
+       "subs": 2,
+       "of": 37,
+       "min": 21.2,
+       "dk": 19.6,
+       "salary": 4700,
+       "newstart": false
+      }
+     ],
+     "estimate": false
+    },
     {
      "game": "CLE at CHA",
      "time": "2026-11-10T00:00Z",
@@ -1079,6 +1158,76 @@
        "min": 24.1,
        "dk": 26.3,
        "salary": 4400,
+       "newstart": false
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "LAL at ATL",
+     "time": "2026-11-10T00:00Z",
+     "team": "LAL",
+     "player": "Austin Reaves",
+     "status": "Questionable",
+     "reason": "Illness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:40 PM",
+     "min": 37.3,
+     "benefits": [
+      {
+       "player": "Collin Sexton",
+       "subs": 7,
+       "of": 43,
+       "min": 21.2,
+       "dk": 21.6,
+       "salary": 4100,
+       "newstart": false
+      },
+      {
+       "player": "Ziaire Williams",
+       "subs": 5,
+       "of": 43,
+       "min": 25.2,
+       "dk": 21.0,
+       "salary": 4500,
+       "newstart": false
+      },
+      {
+       "player": "Jake LaRavia",
+       "subs": 4,
+       "of": 43,
+       "min": 28.0,
+       "dk": 20.5,
+       "salary": 4800,
+       "newstart": false
+      },
+      {
+       "player": "Matisse Thybulle",
+       "subs": 4,
+       "of": 43,
+       "min": 28.4,
+       "dk": 20.0,
+       "salary": 4400,
+       "newstart": false
+      },
+      {
+       "player": "Luka Doncic",
+       "subs": 3,
+       "of": 43,
+       "min": 38.4,
+       "dk": 62.0,
+       "salary": 12000,
+       "newstart": false
+      },
+      {
+       "player": "Sandro Mamukelashvili",
+       "subs": 3,
+       "of": 43,
+       "min": 21.2,
+       "dk": 19.6,
+       "salary": 4700,
        "newstart": false
       }
      ],
@@ -1375,18 +1524,6 @@
        "note": "started, 34 minutes, 16 assists (11/06)"
       },
       {
-       "player": "Collin Murray-Boyles",
-       "gdk": 19.5,
-       "wmin": 34.0,
-       "recent": 20.8,
-       "n": 1,
-       "min": 25.1,
-       "dk": 24.9,
-       "salary": 5800,
-       "newstart": false,
-       "note": "started, 34 minutes (11/06)"
-      },
-      {
        "player": "RJ Barrett",
        "gdk": 3.2,
        "wmin": 37.0,
@@ -1438,18 +1575,6 @@
        "note": "Show: strong play if Quickley sits (11/09)"
       },
       {
-       "player": "Collin Murray-Boyles",
-       "gdk": 19.5,
-       "wmin": 34.0,
-       "recent": 20.8,
-       "n": 1,
-       "min": 25.1,
-       "dk": 24.9,
-       "salary": 5800,
-       "newstart": false,
-       "note": "started, 34 minutes (11/06)"
-      },
-      {
        "player": "RJ Barrett",
        "gdk": 3.2,
        "wmin": 37.0,
@@ -1458,6 +1583,76 @@
        "min": 33.9,
        "dk": 39.3,
        "salary": 7600,
+       "newstart": false
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "MEM at TOR",
+     "time": "2026-11-10T00:30Z",
+     "team": "TOR",
+     "player": "Collin Murray-Boyles",
+     "status": "Questionable",
+     "reason": "Illness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:40 PM",
+     "min": 28.3,
+     "benefits": [
+      {
+       "player": "Jakob Poeltl",
+       "subs": 8,
+       "of": 34,
+       "min": 22.0,
+       "dk": 24.1,
+       "salary": 4900,
+       "newstart": false
+      },
+      {
+       "player": "Trayce Jackson-Davis",
+       "subs": 7,
+       "of": 34,
+       "min": 7.0,
+       "dk": 7.6,
+       "salary": 3000,
+       "newstart": false
+      },
+      {
+       "player": "RJ Barrett",
+       "subs": 4,
+       "of": 34,
+       "min": 33.9,
+       "dk": 39.3,
+       "salary": 7600,
+       "newstart": false
+      },
+      {
+       "player": "Jamal Shead",
+       "subs": 2,
+       "of": 34,
+       "min": 24.2,
+       "dk": 21.5,
+       "salary": 5500,
+       "newstart": false
+      },
+      {
+       "player": "Allen Graves",
+       "subs": 2,
+       "of": 34,
+       "min": 13.2,
+       "dk": 11.3,
+       "salary": 3600,
+       "newstart": false
+      },
+      {
+       "player": "Ja'Kobe Walter",
+       "subs": 1,
+       "of": 34,
+       "min": 30.3,
+       "dk": 24.0,
+       "salary": 5300,
        "newstart": false
       }
      ],
@@ -2226,14 +2421,6 @@
        "min": 33.9,
        "dk": 39.3,
        "salary": 7600,
-       "newstart": false
-      },
-      {
-       "player": "Collin Murray-Boyles",
-       "note": "started, 34 minutes, 19 points (11/06)",
-       "min": 25.1,
-       "dk": 24.9,
-       "salary": 5800,
        "newstart": false
       }
      ],
@@ -12174,12 +12361,12 @@
   {
    "team": "LAL",
    "starters": "Austin Reaves (36), Walker Kessler (31), Matisse Thybulle (25), Jake LaRavia (24), Luka Doncic (36)",
-   "bench": "Quentin Grimes (26), Ziaire Williams (24), Sandro Mamukelashvili (23), Collin Sexton (17), Jarred Vanderbilt (12)",
+   "bench": "Ziaire Williams (24), Sandro Mamukelashvili (23), Collin Sexton (17), Jarred Vanderbilt (12)",
    "backup_c": "Sandro Mamukelashvili (Kevon Looney is the third option)",
    "coach": "JJ Redick",
    "notes": "The fifth starter spot is uncertain and may rotate between Thybulle, LaRavia and Williams. If Luka or Reaves sits, Grimes is the main beneficiary. If Kessler sits, Mamukelashvili plays 30+ minutes. The Lakers have the second-most back-to-backs in the league.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Quentin Grimes",
    "depth_through": "2026-11-08",
    "games": 11
   },
