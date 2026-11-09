@@ -2,7 +2,7 @@
  "updated": "2026-11-09",
  "brief": {
   "date": "2026-11-09",
-  "updated": "5:37 PM ET",
+  "updated": "5:56 PM ET",
   "games": 7,
   "pending": [],
   "first_report": "5:39 AM",
@@ -34,12 +34,7 @@
         "min": 25.7
        }
       ],
-      "q": [
-       {
-        "player": "Austin Reaves",
-        "min": 32.9
-       }
-      ]
+      "q": []
      },
      "ATL": {
       "out": [
@@ -319,6 +314,14 @@
   ],
   "changed": [
    {
+    "player": "Austin Reaves",
+    "team": "LAL",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Illness",
+    "time": "5:57 PM"
+   },
+   {
     "player": "Jock Landale",
     "team": "ATL",
     "status": "Available",
@@ -389,14 +392,6 @@
     "was": "Questionable",
     "why": "",
     "time": "4:10 PM"
-   },
-   {
-    "player": "Morez Johnson Jr.",
-    "team": "DAL",
-    "status": "Questionable",
-    "was": "",
-    "why": "",
-    "time": "4:10 PM"
    }
   ],
   "chg": [
@@ -420,6 +415,22 @@
     ],
     "time": "4:10 PM",
     "size": 191.5
+   },
+   {
+    "key": "Austin Reaves",
+    "team": "LAL",
+    "head": "Austin Reaves OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Collin Sexton",
+      "salary": 4100,
+      "much": "+13.8 DK projected vs. last 3"
+     }
+    ],
+    "time": "5:57 PM",
+    "size": 38.5
    },
    {
     "key": "Moussa Diabate",
@@ -459,22 +470,6 @@
     "size": 25.6
    },
    {
-    "key": "Austin Reaves",
-    "team": "LAL",
-    "head": "Austin Reaves QUESTIONABLE",
-    "st": "Questionable",
-    "act": "Play",
-    "names": [
-     {
-      "player": "Collin Sexton",
-      "salary": 4100,
-      "much": "+10.3 DK projected vs. last 3"
-     }
-    ],
-    "time": "1:40 PM",
-    "size": 19.3
-   },
-   {
     "key": "Quentin Grimes",
     "team": "LAL",
     "head": "Quentin Grimes OUT",
@@ -484,12 +479,12 @@
      {
       "player": "Matisse Thybulle",
       "salary": 4400,
-      "much": "+6.8 DK projected vs. last 3"
+      "much": "+9.8 DK projected vs. last 3"
      },
      {
       "player": "Ziaire Williams",
       "salary": 4500,
-      "much": "+3.2 DK projected vs. last 3"
+      "much": "+7.2 DK projected vs. last 3"
      }
     ],
     "time": "1:40 PM",
@@ -561,7 +556,7 @@
      {
       "player": "Austin Reaves",
       "min": 37.3,
-      "note": "Listed out. Healthy (groin history).",
+      "note": "Ruled out tonight (illness).",
       "new": true
      },
      {
@@ -578,19 +573,19 @@
       "player": "Collin Sexton",
       "salary": 4100,
       "why": "subs in for them 12 of 80 times",
-      "much": "+10.3 DK projected vs. last 3",
-      "score": 10.283333333333333,
-      "min": 21.9,
-      "dk": 24.2
+      "much": "+13.8 DK projected vs. last 3",
+      "score": 13.783333333333333,
+      "min": 25.1,
+      "dk": 27.7
      },
      {
       "player": "Ziaire Williams",
       "salary": 4500,
       "why": "subs in for them 13 of 80 times",
-      "much": "+3.2 DK projected vs. last 3",
-      "score": 3.25,
-      "min": 26.7,
-      "dk": 24.0
+      "much": "+7.2 DK projected vs. last 3",
+      "score": 7.25,
+      "min": 31.1,
+      "dk": 28.0
      }
     ],
     "split_of": []
@@ -824,53 +819,53 @@
    {
     "player": "Walter Clayton Jr.",
     "team": "DAL",
-    "own": 46.9,
+    "own": 41.2,
     "dk": 15.6,
     "salary": 3300
    },
    {
     "player": "Grayson Allen",
     "team": "CHA",
-    "own": 40.9,
+    "own": 40.5,
     "dk": 34.7,
     "salary": 5200
    },
    {
     "player": "Cameron Johnson",
     "team": "DEN",
-    "own": 33.2,
+    "own": 34.3,
     "dk": 21.9,
     "salary": 4500
    },
    {
-    "player": "Keldon Johnson",
-    "team": "SAS",
-    "own": 31.1,
-    "dk": 25.1,
-    "salary": 4400
+    "player": "Immanuel Quickley",
+    "team": "TOR",
+    "own": 32.1,
+    "dk": 32.7,
+    "salary": 6800
    }
   ],
   "leverage": [
    {
     "player": "Royce O'Neale",
     "team": "CHA",
-    "own": 5.4,
+    "own": 8.4,
     "dk": 28.4,
     "salary": 4300
    },
    {
-    "player": "Sion James",
-    "team": "CHA",
-    "own": 5.1,
-    "dk": 26.4,
+    "player": "Ziaire Williams",
+    "team": "LAL",
+    "own": 1.7,
+    "dk": 28.0,
     "salary": 4500
    },
    {
-    "player": "Donovan Mitchell",
-    "team": "CLE",
-    "own": 4.6,
-    "dk": 47.8,
-    "salary": 8400
+    "player": "Sion James",
+    "team": "CHA",
+    "own": 5.5,
+    "dk": 26.4,
+    "salary": 4500
    }
   ],
   "last": {
@@ -956,10 +951,35 @@
    ]
   },
   "injuries": {
-   "report": "05:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_05_30PM.pdf",
+   "report": "05:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_05_45PM.pdf",
    "pending": [],
    "rows": [
+    {
+     "game": "LAL at ATL",
+     "time": "2026-11-10T00:00Z",
+     "team": "LAL",
+     "player": "Austin Reaves",
+     "status": "Out",
+     "reason": "Illness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "5:57 PM",
+     "min": 37.3,
+     "benefits": [
+      {
+       "player": "Collin Sexton",
+       "salary": 4100,
+       "why": "subs in for him 7 of 43 times",
+       "much": "+13.8 DK projected vs. last 3",
+       "score": 13.783333333333333,
+       "min": 25.1,
+       "dk": 27.7
+      }
+     ],
+     "estimate": false
+    },
     {
      "game": "CLE at CHA",
      "time": "2026-11-10T00:00Z",
@@ -1020,19 +1040,19 @@
        "player": "Matisse Thybulle",
        "salary": 4400,
        "why": "subs in for him 7 of 37 times",
-       "much": "+6.8 DK projected vs. last 3",
-       "score": 6.75,
-       "min": 27.3,
-       "dk": 20.0
+       "much": "+9.8 DK projected vs. last 3",
+       "score": 9.75,
+       "min": 31.4,
+       "dk": 23.0
       },
       {
        "player": "Ziaire Williams",
        "salary": 4500,
        "why": "subs in for him 8 of 37 times",
-       "much": "+3.2 DK projected vs. last 3",
-       "score": 3.25,
-       "min": 26.7,
-       "dk": 24.0
+       "much": "+7.2 DK projected vs. last 3",
+       "score": 7.25,
+       "min": 31.1,
+       "dk": 28.0
       }
      ],
      "estimate": false
@@ -1076,31 +1096,6 @@
        "score": 15.450000000000003,
        "min": 28.5,
        "dk": 34.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "LAL at ATL",
-     "time": "2026-11-10T00:00Z",
-     "team": "LAL",
-     "player": "Austin Reaves",
-     "status": "Questionable",
-     "reason": "Illness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:40 PM",
-     "min": 37.3,
-     "benefits": [
-      {
-       "player": "Collin Sexton",
-       "salary": 4100,
-       "why": "subs in for him 7 of 43 times",
-       "much": "+10.3 DK projected vs. last 3",
-       "score": 10.283333333333333,
-       "min": 21.9,
-       "dk": 24.2
       }
      ],
      "estimate": false
@@ -1203,7 +1198,7 @@
      "team": "ATL",
      "player": "Jock Landale",
      "status": "Available",
-     "reason": "Left Hip Strain",
+     "reason": "Face mask",
      "new": true,
      "was": "Questionable",
      "known": true,
@@ -11698,13 +11693,13 @@
   },
   {
    "team": "LAL",
-   "starters": "Austin Reaves (36), Walker Kessler (31), Matisse Thybulle (25), Jake LaRavia (24), Luka Doncic (36)",
-   "bench": "Ziaire Williams (24), Sandro Mamukelashvili (23), Collin Sexton (17), Jarred Vanderbilt (12)",
+   "starters": "Walker Kessler (31), Matisse Thybulle (25), Jake LaRavia (24), Luka Doncic (36), Ziaire Williams (24)",
+   "bench": "Sandro Mamukelashvili (23), Collin Sexton (17), Jarred Vanderbilt (12)",
    "backup_c": "Sandro Mamukelashvili (Kevon Looney is the third option)",
    "coach": "JJ Redick",
    "notes": "The fifth starter spot is uncertain and may rotate between Thybulle, LaRavia and Williams. If Luka or Reaves sits, Grimes is the main beneficiary. If Kessler sits, Mamukelashvili plays 30+ minutes. The Lakers have the second-most back-to-backs in the league.",
    "source": "LO-1019b",
-   "out": "Quentin Grimes",
+   "out": "Austin Reaves, Quentin Grimes",
    "depth_through": "2026-11-08",
    "games": 11
   },
