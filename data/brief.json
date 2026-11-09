@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updated": "5:56 PM ET",
+ "updated": "5:59 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:39 AM",
@@ -177,6 +177,10 @@
     "TOR": {
      "out": [
       {
+       "player": "Scottie Barnes",
+       "min": 35.3
+      },
+      {
        "player": "Kawhi Leonard",
        "min": 26.0
       }
@@ -184,20 +188,20 @@
      "q": [
       {
        "player": "Scottie Barnes",
-       "min": 32.3
+       "min": 30.4
       },
       {
        "player": "Immanuel Quickley",
-       "min": 30.3
+       "min": 27.4
       },
       {
        "player": "Collin Murray-Boyles",
-       "min": 23.7
+       "min": 26.1
       }
      ]
     }
    },
-   "key": "Kawhi Leonard is out, so Alijah Martin and Jamal Shead should play more than usual."
+   "key": "Scottie Barnes and Kawhi Leonard are out, so Alijah Martin and Jakob Poeltl and Jamal Shead should play more than usual."
   },
   {
    "away": "IND",
@@ -589,6 +593,58 @@
    "split_of": []
   },
   {
+   "team": "TOR",
+   "outs": [
+    {
+     "player": "Scottie Barnes",
+     "min": 35.3,
+     "note": "Scottie Barnes was questionable for Nov. 9 against Memphis and appeared in the show's early optimal lineup despite the uncertainty. The show said that if Barnes and Quickley both play, RJ Barrett looks worse but still good.",
+     "new": true
+    },
+    {
+     "player": "Kawhi Leonard",
+     "min": 26.0,
+     "note": "Leonard has not played since October 23. The show said it does not know whether he will be back in week 4.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 61.3,
+   "benefits": [
+    {
+     "player": "Alijah Martin",
+     "salary": 4200,
+     "why": "31 minutes, up from 7",
+     "much": "+34.2 DK without them (1 game)",
+     "score": 34.2,
+     "min": 17.0,
+     "dk": 19.6
+    },
+    {
+     "player": "Jakob Poeltl",
+     "salary": 4900,
+     "why": "31 minutes, up from 20",
+     "much": "+28.8 DK without them (1 game)",
+     "score": 28.8,
+     "min": 23.1,
+     "dk": 25.3
+    },
+    {
+     "player": "Jamal Shead",
+     "salary": 5500,
+     "why": "started that game",
+     "much": "+24.8 DK without them (1 game)",
+     "score": 24.8,
+     "min": 24.1,
+     "dk": 21.7
+    }
+   ],
+   "split_of": [
+    "Scottie Barnes",
+    "Kawhi Leonard"
+   ]
+  },
+  {
    "team": "SAS",
    "outs": [
     {
@@ -691,42 +747,6 @@
    "split_of": [
     "Tyrese Haliburton"
    ]
-  },
-  {
-   "team": "TOR",
-   "outs": [
-    {
-     "player": "Kawhi Leonard",
-     "min": 26.0,
-     "note": "Leonard has not played since October 23. The show said it does not know whether he will be back in week 4.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 26.0,
-   "benefits": [
-    {
-     "player": "Alijah Martin",
-     "salary": 4200,
-     "why": "12 minutes, up from 3",
-     "much": "+12.8 DK without him (6 games)",
-     "score": 12.8,
-     "min": 12.8,
-     "dk": 14.8
-    },
-    {
-     "player": "Jamal Shead",
-     "salary": 5500,
-     "why": "24 minutes, up from 20",
-     "much": "+10.3 DK without him (7 games)",
-     "score": 10.3,
-     "min": 22.9,
-     "dk": 20.6
-    }
-   ],
-   "split_of": [
-    "Kawhi Leonard"
-   ]
   }
  ],
  "hot": [
@@ -817,51 +837,51 @@
   {
    "player": "Walter Clayton Jr.",
    "team": "DAL",
-   "own": 41.2,
+   "own": 46.6,
    "dk": 15.6,
    "salary": 3300
   },
   {
    "player": "Grayson Allen",
    "team": "CHA",
-   "own": 40.5,
+   "own": 41.1,
    "dk": 34.7,
    "salary": 5200
   },
   {
-   "player": "Cameron Johnson",
-   "team": "DEN",
-   "own": 34.3,
-   "dk": 21.9,
-   "salary": 4500
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "own": 33.5,
+   "dk": 25.1,
+   "salary": 4400
   },
   {
-   "player": "Immanuel Quickley",
-   "team": "TOR",
-   "own": 32.1,
-   "dk": 32.7,
-   "salary": 6800
+   "player": "Cameron Johnson",
+   "team": "DEN",
+   "own": 31.4,
+   "dk": 21.9,
+   "salary": 4500
   }
  ],
  "leverage": [
   {
    "player": "Royce O'Neale",
    "team": "CHA",
-   "own": 8.4,
+   "own": 7.8,
    "dk": 28.4,
    "salary": 4300
   },
   {
    "player": "Ziaire Williams",
    "team": "LAL",
-   "own": 1.7,
+   "own": 1.8,
    "dk": 28.0,
    "salary": 4500
   },
   {
    "player": "Sion James",
    "team": "CHA",
-   "own": 5.5,
+   "own": 5.8,
    "dk": 26.4,
    "salary": 4500
   }
@@ -1224,8 +1244,8 @@
       "why": "31 minutes, up from 7",
       "much": "+34.2 DK without him (1 game)",
       "score": 34.2,
-      "min": 12.8,
-      "dk": 14.8
+      "min": 17.0,
+      "dk": 19.6
      },
      {
       "player": "Jakob Poeltl",
@@ -1233,8 +1253,8 @@
       "why": "31 minutes, up from 20",
       "much": "+28.8 DK without him (1 game)",
       "score": 28.8,
-      "min": 20.8,
-      "dk": 22.8
+      "min": 23.1,
+      "dk": 25.3
      },
      {
       "player": "Jamal Shead",
@@ -1242,8 +1262,8 @@
       "why": "started that game",
       "much": "+24.8 DK without him (1 game)",
       "score": 24.8,
-      "min": 22.9,
-      "dk": 20.6
+      "min": 24.1,
+      "dk": 21.7
      }
     ],
     "estimate": false
@@ -1267,8 +1287,8 @@
       "why": "31 minutes, up from 7",
       "much": "+34.2 DK without him (1 game)",
       "score": 34.2,
-      "min": 12.8,
-      "dk": 14.8
+      "min": 17.0,
+      "dk": 19.6
      },
      {
       "player": "Jakob Poeltl",
@@ -1276,8 +1296,8 @@
       "why": "31 minutes, up from 20",
       "much": "+28.8 DK without him (1 game)",
       "score": 28.8,
-      "min": 20.8,
-      "dk": 22.8
+      "min": 23.1,
+      "dk": 25.3
      },
      {
       "player": "Jamal Shead",
@@ -1285,8 +1305,8 @@
       "why": "started that game",
       "much": "+24.8 DK without him (1 game)",
       "score": 24.8,
-      "min": 22.9,
-      "dk": 20.6
+      "min": 24.1,
+      "dk": 21.7
      }
     ],
     "estimate": false
@@ -1757,8 +1777,8 @@
       "why": "12 minutes, up from 3",
       "much": "+12.8 DK without him (6 games)",
       "score": 12.8,
-      "min": 12.8,
-      "dk": 14.8
+      "min": 17.0,
+      "dk": 19.6
      },
      {
       "player": "Jamal Shead",
@@ -1766,8 +1786,8 @@
       "why": "24 minutes, up from 20",
       "much": "+10.3 DK without him (7 games)",
       "score": 10.3,
-      "min": 22.9,
-      "dk": 20.6
+      "min": 24.1,
+      "dk": 21.7
      }
     ],
     "estimate": false
