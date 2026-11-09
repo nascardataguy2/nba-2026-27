@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updated": "9:15 AM ET",
+ "updated": "12:41 PM ET",
  "games": 7,
  "pending": [
   "LAL",
@@ -15,10 +15,10 @@
    "time": "2026-11-10T00:00Z",
    "slate": "main",
    "ou": 236.5,
-   "fav": "LAL",
+   "fav": "ATL",
    "line": 1.5,
-   "away_pts": 119.0,
-   "home_pts": 117.5,
+   "away_pts": 117.5,
+   "home_pts": 119.0,
    "tags": [
     "Highest total",
     "Close game",
@@ -61,13 +61,12 @@
    "home": "DET",
    "time": "2026-11-10T00:00Z",
    "slate": "main",
-   "ou": 218.5,
+   "ou": 217.5,
    "fav": "DET",
    "line": 10.5,
-   "away_pts": 104.0,
-   "home_pts": 114.5,
+   "away_pts": 103.5,
+   "home_pts": 114.0,
    "tags": [
-    "Lowest total",
     "Blowout risk",
     "DET on a back-to-back"
    ],
@@ -107,12 +106,14 @@
    "home": "CHA",
    "time": "2026-11-10T00:00Z",
    "slate": "main",
-   "ou": null,
-   "fav": null,
-   "line": null,
-   "away_pts": null,
-   "home_pts": null,
-   "tags": [],
+   "ou": 214.5,
+   "fav": "CLE",
+   "line": 8.5,
+   "away_pts": 111.5,
+   "home_pts": 103.0,
+   "tags": [
+    "Lowest total"
+   ],
    "teams": {
     "CLE": {
      "out": [
@@ -135,6 +136,10 @@
     "CHA": {
      "out": [
       {
+       "player": "Moussa Diabate",
+       "min": 27.0
+      },
+      {
        "player": "Dennis Schroder",
        "min": 26.0
       },
@@ -143,26 +148,21 @@
        "min": 23.7
       }
      ],
-     "q": [
-      {
-       "player": "Moussa Diabate",
-       "min": 26.7
-      }
-     ]
+     "q": []
     }
    },
-   "key": "Dennis Schroder and Brandon Miller are out, so Royce O'Neale and Christian Anderson and Grayson Allen and Coby White should play more than usual."
+   "key": "Moussa Diabate and Dennis Schroder are out, so Royce O'Neale and Christian Anderson and Ryan Kalkbrenner and Grayson Allen and Coby White should play more than usual."
   },
   {
    "away": "MEM",
    "home": "TOR",
    "time": "2026-11-10T00:30Z",
    "slate": "main",
-   "ou": 231.5,
+   "ou": 228.5,
    "fav": "TOR",
    "line": 3.5,
-   "away_pts": 114.0,
-   "home_pts": 117.5,
+   "away_pts": 112.5,
+   "home_pts": 116.0,
    "tags": [],
    "teams": {
     "MEM": {
@@ -204,11 +204,11 @@
    "home": "DAL",
    "time": "2026-11-10T01:00Z",
    "slate": "main",
-   "ou": null,
-   "fav": null,
-   "line": null,
-   "away_pts": null,
-   "home_pts": null,
+   "ou": 222.5,
+   "fav": "DAL",
+   "line": 3.5,
+   "away_pts": 109.5,
+   "home_pts": 113.0,
    "tags": [
     "DAL on a back-to-back"
    ],
@@ -248,12 +248,14 @@
    "home": "HOU",
    "time": "2026-11-10T01:30Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 219.5,
    "fav": "HOU",
-   "line": 3.5,
-   "away_pts": 109.5,
-   "home_pts": 113.0,
-   "tags": [],
+   "line": 9.5,
+   "away_pts": 105.0,
+   "home_pts": 114.5,
+   "tags": [
+    "Blowout risk"
+   ],
    "teams": {
     "DEN": {
      "out": [],
@@ -293,11 +295,11 @@
    "home": "PHX",
    "time": "2026-11-10T02:00Z",
    "slate": "main",
-   "ou": 226.5,
+   "ou": 227.5,
    "fav": "SAS",
    "line": 8.5,
-   "away_pts": 117.5,
-   "home_pts": 109.0,
+   "away_pts": 118.0,
+   "home_pts": 109.5,
    "tags": [],
    "teams": {
     "SAS": {
@@ -319,14 +321,37 @@
      ]
     }
    },
-   "key": "Victor Wembanyama has the top projection in this game at 51.0 DK points."
+   "key": "Victor Wembanyama has the top projection in this game at 50.8 DK points."
   }
  ],
- "changed": [],
+ "changed": [
+  {
+   "player": "Oscar Tshiebwe",
+   "team": "HOU",
+   "status": "Out",
+   "was": "",
+   "why": "Illness",
+   "time": "12:42 PM"
+  },
+  {
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "",
+   "time": "12:42 PM"
+  }
+ ],
  "sits": [
   {
    "team": "CHA",
    "outs": [
+    {
+     "player": "Moussa Diabate",
+     "min": 27.0,
+     "note": "The show said Moussa Diabate is officially questionable for Monday. He missed Charlotte's game on November 6. If he sits, the show named Hannes Steinbach as the stream, since Steinbach played 27 minutes with 11 rebounds and three blocks in that game.",
+     "new": true
+    },
     {
      "player": "Dennis Schroder",
      "min": 26.0,
@@ -341,7 +366,7 @@
     }
    ],
    "new": true,
-   "lost": 49.7,
+   "lost": 76.7,
    "benefits": [
     {
      "player": "Royce O'Neale",
@@ -349,8 +374,8 @@
      "wmin": 26.0,
      "recent": 18.0,
      "n": 1,
-     "min": 25.2,
-     "dk": 26.1,
+     "min": 29.3,
+     "dk": 30.6,
      "salary": 4300,
      "newstart": false,
      "note": "Show: more minutes (11/09)"
@@ -361,30 +386,39 @@
      "wmin": 25.0,
      "recent": 10.4,
      "n": 1,
-     "min": 16.0,
-     "dk": 15.7,
+     "min": 18.0,
+     "dk": 17.2,
      "salary": 3300,
      "newstart": false,
      "note": "Show: backup guard role (11/09)"
     },
     {
+     "player": "Ryan Kalkbrenner",
+     "note": "started, 21 minutes (11/06)",
+     "min": 24.1,
+     "dk": 26.3,
+     "salary": 4400,
+     "newstart": false
+    },
+    {
      "player": "Grayson Allen",
      "note": "Show: more minutes if Miller misses time (11/07)",
-     "min": 26.5,
-     "dk": 32.6,
+     "min": 30.8,
+     "dk": 37.6,
      "salary": 5200,
      "newstart": true
     },
     {
      "player": "Coby White",
      "note": "Show: more point guard minutes (11/08)",
-     "min": 18.3,
-     "dk": 23.5,
+     "min": 21.8,
+     "dk": 28.0,
      "salary": 5900,
      "newstart": false
     }
    ],
    "split_of": [
+    "Moussa Diabate",
     "Dennis Schroder"
    ]
   },
@@ -425,7 +459,7 @@
      "recent": 28.3,
      "n": 1,
      "min": 27.7,
-     "dk": 26.4,
+     "dk": 26.2,
      "salary": 5900,
      "newstart": false
     },
@@ -463,7 +497,7 @@
      "recent": 16.0,
      "n": 2,
      "min": 21.1,
-     "dk": 21.7,
+     "dk": 21.4,
      "salary": 4100,
      "newstart": false,
      "note": "21 bench minutes, 21 points (10/28)"
@@ -475,7 +509,7 @@
      "recent": 22.4,
      "n": 2,
      "min": 22.1,
-     "dk": 20.2,
+     "dk": 20.5,
      "salary": 4700,
      "newstart": false,
      "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
@@ -484,7 +518,7 @@
      "player": "Austin Reaves",
      "note": "Show: highest-rostered player (11/09)",
      "min": 39.3,
-     "dk": 41.2,
+     "dk": 41.5,
      "salary": 8000,
      "newstart": false
     }
@@ -513,7 +547,7 @@
      "recent": 19.5,
      "n": 6,
      "min": 20.7,
-     "dk": 18.9,
+     "dk": 18.7,
      "salary": 4100,
      "newstart": false,
      "note": "has played well (11/04)"
@@ -536,7 +570,7 @@
      "recent": 32.0,
      "n": 5,
      "min": 31.0,
-     "dk": 28.9,
+     "dk": 28.8,
      "salary": 7200,
      "newstart": false,
      "note": "31 minutes, 8 assists (11/07)"
@@ -619,7 +653,7 @@
      "player": "Allen Graves",
      "note": "Show: could see a few more minutes, not far past 20 (10/28)",
      "min": 13.2,
-     "dk": 11.1,
+     "dk": 11.3,
      "salary": 3600,
      "newstart": false
     },
@@ -627,7 +661,7 @@
      "player": "Ja'Kobe Walter",
      "note": "starting (11/06)",
      "min": 30.3,
-     "dk": 24.1,
+     "dk": 24.0,
      "salary": 5300,
      "newstart": false
     },
@@ -635,7 +669,7 @@
      "player": "RJ Barrett",
      "note": "heavy usage (10/28)",
      "min": 33.9,
-     "dk": 39.4,
+     "dk": 39.3,
      "salary": 7600,
      "newstart": false
     },
@@ -643,7 +677,7 @@
      "player": "Collin Murray-Boyles",
      "note": "started, 34 minutes, 19 points (11/06)",
      "min": 25.1,
-     "dk": 25.1,
+     "dk": 24.9,
      "salary": 5800,
      "newstart": false
     }
@@ -669,8 +703,8 @@
      "player": "Alperen Sengun",
      "subs": 9,
      "of": 22,
-     "min": 35.8,
-     "dk": 47.8,
+     "min": 36.5,
+     "dk": 48.9,
      "salary": 9000,
      "newstart": false
     },
@@ -679,7 +713,7 @@
      "subs": 3,
      "of": 22,
      "min": 24.6,
-     "dk": 22.6,
+     "dk": 22.7,
      "salary": 5000,
      "newstart": false
     },
@@ -687,8 +721,8 @@
      "player": "Jabari Smith",
      "subs": 2,
      "of": 22,
-     "min": 35.7,
-     "dk": 32.1,
+     "min": 36.2,
+     "dk": 32.5,
      "salary": 7000,
      "newstart": false
     }
@@ -782,55 +816,55 @@
  ],
  "chalk": [
   {
-   "player": "Cameron Johnson",
-   "team": "DEN",
-   "own": 46.6,
-   "dk": 21.9,
-   "salary": 4500
-  },
-  {
-   "player": "Onyeka Okongwu",
-   "team": "ATL",
-   "own": 41.9,
-   "dk": 30.2,
-   "salary": 6700
-  },
-  {
-   "player": "Immanuel Quickley",
-   "team": "TOR",
-   "own": 38.4,
-   "dk": 34.8,
-   "salary": 6800
-  },
-  {
-   "player": "Stephon Castle",
-   "team": "SAS",
-   "own": 32.5,
-   "dk": 33.0,
-   "salary": 6500
-  }
- ],
- "leverage": [
-  {
-   "player": "Naz Reid",
-   "team": "CHA",
-   "own": 0.9,
-   "dk": 43.8,
-   "salary": 6900
+   "player": "Walter Clayton Jr.",
+   "team": "DAL",
+   "own": 43.2,
+   "dk": 16.5,
+   "salary": 3300
   },
   {
    "player": "Grayson Allen",
    "team": "CHA",
-   "own": 1.8,
-   "dk": 32.6,
+   "own": 40.0,
+   "dk": 37.6,
    "salary": 5200
+  },
+  {
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "own": 34.7,
+   "dk": 34.6,
+   "salary": 6800
   },
   {
    "player": "Daniss Jenkins",
    "team": "DET",
-   "own": 2.8,
-   "dk": 26.2,
+   "own": 32.1,
+   "dk": 25.3,
    "salary": 4300
+  }
+ ],
+ "leverage": [
+  {
+   "player": "Royce O'Neale",
+   "team": "CHA",
+   "own": 7.0,
+   "dk": 30.6,
+   "salary": 4300
+  },
+  {
+   "player": "Sion James",
+   "team": "CHA",
+   "own": 5.9,
+   "dk": 28.2,
+   "salary": 4500
+  },
+  {
+   "player": "Ryan Kalkbrenner",
+   "team": "CHA",
+   "own": 0.9,
+   "dk": 26.3,
+   "salary": 4400
   }
  ],
  "last": {
@@ -921,8 +955,8 @@
   ]
  },
  "injuries": {
-  "report": "09:15 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_09_15AM.pdf",
+  "report": "12:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_12_30PM.pdf",
   "pending": [
    "LAL",
    "DET",
@@ -946,8 +980,8 @@
       "player": "Naz Reid",
       "subs": 8,
       "of": 39,
-      "min": 31.1,
-      "dk": 43.8,
+      "min": 35.8,
+      "dk": 50.7,
       "salary": 6900,
       "newstart": false
      },
@@ -955,8 +989,8 @@
       "player": "Grayson Allen",
       "subs": 8,
       "of": 39,
-      "min": 26.5,
-      "dk": 32.6,
+      "min": 30.8,
+      "dk": 37.6,
       "salary": 5200,
       "newstart": true,
       "note": "Show: more minutes if Miller misses time (11/07)"
@@ -965,8 +999,8 @@
       "player": "Royce O'Neale",
       "subs": 6,
       "of": 39,
-      "min": 25.2,
-      "dk": 26.1,
+      "min": 29.3,
+      "dk": 30.6,
       "salary": 4300,
       "newstart": false,
       "note": "Show: more minutes (11/09)"
@@ -975,8 +1009,8 @@
       "player": "Sion James",
       "subs": 4,
       "of": 39,
-      "min": 29.0,
-      "dk": 24.3,
+      "min": 33.8,
+      "dk": 28.2,
       "salary": 4500,
       "newstart": false
      },
@@ -984,8 +1018,8 @@
       "player": "Ryan Kalkbrenner",
       "subs": 4,
       "of": 39,
-      "min": 20.9,
-      "dk": 22.6,
+      "min": 24.1,
+      "dk": 26.3,
       "salary": 4400,
       "newstart": false
      },
@@ -993,11 +1027,57 @@
       "player": "Coby White",
       "subs": 1,
       "of": 39,
-      "min": 18.3,
-      "dk": 23.5,
+      "min": 21.8,
+      "dk": 28.0,
       "salary": 5900,
       "newstart": false,
       "note": "Show: large usage bump in limited minutes (11/06)"
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "CLE at CHA",
+    "time": "2026-11-10T00:00Z",
+    "team": "CHA",
+    "player": "Moussa Diabate",
+    "status": "Doubtful",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "12:42 PM",
+    "min": 27.0,
+    "benefits": [
+     {
+      "player": "Royce O'Neale",
+      "gdk": 8.5,
+      "wmin": 26.0,
+      "recent": 18.0,
+      "n": 1,
+      "min": 29.3,
+      "dk": 30.6,
+      "salary": 4300,
+      "newstart": false
+     },
+     {
+      "player": "Christian Anderson",
+      "gdk": 5.9,
+      "wmin": 25.0,
+      "recent": 10.4,
+      "n": 1,
+      "min": 18.0,
+      "dk": 17.2,
+      "salary": 3300,
+      "newstart": false
+     },
+     {
+      "player": "Ryan Kalkbrenner",
+      "note": "started, 21 minutes (11/06)",
+      "min": 24.1,
+      "dk": 26.3,
+      "salary": 4400,
+      "newstart": false
      }
     ],
     "estimate": false
@@ -1034,7 +1114,7 @@
       "recent": 25.1,
       "n": 2,
       "min": 25.1,
-      "dk": 24.5,
+      "dk": 24.3,
       "salary": 5800,
       "newstart": false,
       "note": "Show: easy click at center (11/09)"
@@ -1046,7 +1126,7 @@
       "recent": 4.7,
       "n": 2,
       "min": 10.1,
-      "dk": 6.3,
+      "dk": 6.2,
       "salary": 3600,
       "newstart": false
      },
@@ -1095,54 +1175,8 @@
       "player": "Trae Young",
       "note": "Show: back in play at $7,800 (11/09)",
       "min": 31.4,
-      "dk": 28.6,
+      "dk": 30.7,
       "salary": 7800,
-      "newstart": false
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "CLE at CHA",
-    "time": "2026-11-10T00:00Z",
-    "team": "CHA",
-    "player": "Moussa Diabate",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Royce O'Neale",
-      "gdk": 8.5,
-      "wmin": 26.0,
-      "recent": 18.0,
-      "n": 1,
-      "min": 25.2,
-      "dk": 26.1,
-      "salary": 4300,
-      "newstart": false
-     },
-     {
-      "player": "Christian Anderson",
-      "gdk": 5.9,
-      "wmin": 25.0,
-      "recent": 10.4,
-      "n": 1,
-      "min": 16.0,
-      "dk": 15.7,
-      "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Ryan Kalkbrenner",
-      "note": "started, 21 minutes (11/06)",
-      "min": 20.9,
-      "dk": 22.6,
-      "salary": 4400,
       "newstart": false
      }
     ],
@@ -1203,7 +1237,7 @@
       "recent": 28.3,
       "n": 2,
       "min": 27.7,
-      "dk": 26.4,
+      "dk": 26.2,
       "salary": 5900,
       "newstart": false,
       "note": "started at power forward, 29 minutes (11/07)"
@@ -1212,7 +1246,7 @@
       "player": "Evan Mobley",
       "note": "Show: more interest if Allen out (11/09)",
       "min": 32.6,
-      "dk": 43.2,
+      "dk": 42.7,
       "salary": 7900,
       "newstart": false
      }
@@ -1239,7 +1273,7 @@
       "recent": 4.5,
       "n": 4,
       "min": 13.0,
-      "dk": 10.2,
+      "dk": 10.0,
       "salary": 3700,
       "newstart": false
      },
@@ -1261,7 +1295,7 @@
       "recent": 28.9,
       "n": 4,
       "min": 29.1,
-      "dk": 29.8,
+      "dk": 29.7,
       "salary": 6500,
       "newstart": false
      },
@@ -1294,7 +1328,7 @@
       "recent": 23.7,
       "n": 4,
       "min": 26.5,
-      "dk": 18.6,
+      "dk": 18.8,
       "salary": 4900,
       "newstart": false
      }
@@ -1345,7 +1379,7 @@
       "recent": 20.8,
       "n": 1,
       "min": 25.1,
-      "dk": 25.1,
+      "dk": 24.9,
       "salary": 5800,
       "newstart": false,
       "note": "started, 34 minutes (11/06)"
@@ -1357,7 +1391,7 @@
       "recent": 32.5,
       "n": 1,
       "min": 33.9,
-      "dk": 39.4,
+      "dk": 39.3,
       "salary": 7600,
       "newstart": false,
       "note": "37 minutes, 27 points (11/06)"
@@ -1408,7 +1442,7 @@
       "recent": 20.8,
       "n": 1,
       "min": 25.1,
-      "dk": 25.1,
+      "dk": 24.9,
       "salary": 5800,
       "newstart": false,
       "note": "started, 34 minutes (11/06)"
@@ -1420,7 +1454,7 @@
       "recent": 32.5,
       "n": 1,
       "min": 33.9,
-      "dk": 39.4,
+      "dk": 39.3,
       "salary": 7600,
       "newstart": false
      }
@@ -1445,6 +1479,21 @@
    {
     "game": "DEN at HOU",
     "time": "2026-11-10T01:30Z",
+    "team": "HOU",
+    "player": "Oscar Tshiebwe",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:42 PM",
+    "min": 4.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "DEN at HOU",
+    "time": "2026-11-10T01:30Z",
     "team": "DEN",
     "player": "Nikola Jokic",
     "status": "Questionable",
@@ -1460,7 +1509,7 @@
       "subs": 7,
       "of": 20,
       "min": 11.9,
-      "dk": 11.6,
+      "dk": 11.5,
       "salary": 3300,
       "newstart": false
      },
@@ -1512,7 +1561,7 @@
       "subs": 2,
       "of": 23,
       "min": 11.9,
-      "dk": 11.6,
+      "dk": 11.5,
       "salary": 3300,
       "newstart": false
      },
@@ -1582,7 +1631,7 @@
       "subs": 2,
       "of": 26,
       "min": 11.9,
-      "dk": 11.6,
+      "dk": 11.5,
       "salary": 3300,
       "newstart": false
      },
@@ -1711,7 +1760,7 @@
       "recent": 12.1,
       "n": 1,
       "min": 11.9,
-      "dk": 11.6,
+      "dk": 11.5,
       "salary": 3300,
       "newstart": false
      },
@@ -1744,7 +1793,7 @@
       "subs": 8,
       "of": 32,
       "min": 22.1,
-      "dk": 20.5,
+      "dk": 20.4,
       "salary": 4400,
       "newstart": false
      },
@@ -1762,7 +1811,7 @@
       "subs": 4,
       "of": 32,
       "min": 31.5,
-      "dk": 33.4,
+      "dk": 33.3,
       "salary": 6800,
       "newstart": false
      },
@@ -1771,7 +1820,7 @@
       "subs": 3,
       "of": 32,
       "min": 29.4,
-      "dk": 33.0,
+      "dk": 32.9,
       "salary": 6500,
       "newstart": false
      },
@@ -1780,7 +1829,7 @@
       "subs": 3,
       "of": 32,
       "min": 20.9,
-      "dk": 18.2,
+      "dk": 18.0,
       "salary": 4500,
       "newstart": false,
       "note": "Show: in play at shooting guard (11/09)"
@@ -1790,7 +1839,7 @@
       "subs": 2,
       "of": 32,
       "min": 29.0,
-      "dk": 51.0,
+      "dk": 50.8,
       "salary": 11300,
       "newstart": false
      }
@@ -1828,7 +1877,7 @@
       "recent": 33.2,
       "n": 3,
       "min": 28.9,
-      "dk": 33.2,
+      "dk": 32.8,
       "salary": 7100,
       "newstart": false
      },
@@ -1839,7 +1888,7 @@
       "recent": 34.6,
       "n": 3,
       "min": 34.5,
-      "dk": 38.2,
+      "dk": 38.1,
       "salary": 8200,
       "newstart": false
      },
@@ -1876,8 +1925,8 @@
       "wmin": 26.0,
       "recent": 18.0,
       "n": 1,
-      "min": 25.2,
-      "dk": 26.1,
+      "min": 29.3,
+      "dk": 30.6,
       "salary": 4300,
       "newstart": false
      },
@@ -1887,8 +1936,8 @@
       "wmin": 25.0,
       "recent": 10.4,
       "n": 1,
-      "min": 16.0,
-      "dk": 15.7,
+      "min": 18.0,
+      "dk": 17.2,
       "salary": 3300,
       "newstart": false,
       "note": "Show: backup guard role (11/09)"
@@ -1896,8 +1945,8 @@
      {
       "player": "Coby White",
       "note": "Show: more point guard minutes (11/08)",
-      "min": 18.3,
-      "dk": 23.5,
+      "min": 21.8,
+      "dk": 28.0,
       "salary": 5900,
       "newstart": false
      }
@@ -1935,7 +1984,7 @@
       "recent": 28.3,
       "n": 1,
       "min": 27.7,
-      "dk": 26.4,
+      "dk": 26.2,
       "salary": 5900,
       "newstart": false
      },
@@ -2005,7 +2054,7 @@
       "recent": 24.5,
       "n": 5,
       "min": 25.1,
-      "dk": 24.5,
+      "dk": 24.3,
       "salary": 5800,
       "newstart": false
      },
@@ -2027,7 +2076,7 @@
       "recent": 3.3,
       "n": 5,
       "min": 10.1,
-      "dk": 6.3,
+      "dk": 6.2,
       "salary": 3600,
       "newstart": false
      }
@@ -2054,7 +2103,7 @@
       "recent": 10.2,
       "n": 2,
       "min": 13.0,
-      "dk": 10.2,
+      "dk": 10.0,
       "salary": 3700,
       "newstart": false,
       "note": "Show: deep-league stream (11/09)"
@@ -2088,7 +2137,7 @@
       "recent": 28.6,
       "n": 6,
       "min": 29.1,
-      "dk": 29.8,
+      "dk": 29.7,
       "salary": 6500,
       "newstart": false
      },
@@ -2157,7 +2206,7 @@
       "player": "Allen Graves",
       "note": "Show: could see a few more minutes, not far past 20 (10/28)",
       "min": 13.2,
-      "dk": 11.1,
+      "dk": 11.3,
       "salary": 3600,
       "newstart": false
      },
@@ -2165,7 +2214,7 @@
       "player": "Ja'Kobe Walter",
       "note": "starting (11/06)",
       "min": 30.3,
-      "dk": 24.1,
+      "dk": 24.0,
       "salary": 5300,
       "newstart": false
      },
@@ -2173,7 +2222,7 @@
       "player": "RJ Barrett",
       "note": "heavy usage (10/28)",
       "min": 33.9,
-      "dk": 39.4,
+      "dk": 39.3,
       "salary": 7600,
       "newstart": false
      },
@@ -2181,7 +2230,7 @@
       "player": "Collin Murray-Boyles",
       "note": "started, 34 minutes, 19 points (11/06)",
       "min": 25.1,
-      "dk": 25.1,
+      "dk": 24.9,
       "salary": 5800,
       "newstart": false
      }
@@ -2246,7 +2295,7 @@
       "recent": 18.0,
       "n": 4,
       "min": 20.1,
-      "dk": 21.5,
+      "dk": 21.6,
       "salary": 5100,
       "newstart": false,
       "note": "has taken his assist role (11/04)"
@@ -2274,7 +2323,7 @@
       "recent": 19.5,
       "n": 6,
       "min": 20.7,
-      "dk": 18.9,
+      "dk": 18.7,
       "salary": 4100,
       "newstart": false,
       "note": "has played well (11/04)"
@@ -2297,7 +2346,7 @@
       "recent": 32.0,
       "n": 5,
       "min": 31.0,
-      "dk": 28.9,
+      "dk": 28.8,
       "salary": 7200,
       "newstart": false,
       "note": "31 minutes, 8 assists (11/07)"
@@ -2356,7 +2405,7 @@
       "subs": 1,
       "of": 3,
       "min": 20.7,
-      "dk": 18.9,
+      "dk": 18.7,
       "salary": 4100,
       "newstart": false
      },
@@ -2374,7 +2423,7 @@
       "subs": 1,
       "of": 3,
       "min": 19.1,
-      "dk": 15.5,
+      "dk": 15.4,
       "salary": 4300,
       "newstart": false
      }
@@ -2398,8 +2447,8 @@
       "player": "Alperen Sengun",
       "subs": 9,
       "of": 22,
-      "min": 35.8,
-      "dk": 47.8,
+      "min": 36.5,
+      "dk": 48.9,
       "salary": 9000,
       "newstart": false
      },
@@ -2408,7 +2457,7 @@
       "subs": 3,
       "of": 22,
       "min": 24.6,
-      "dk": 22.6,
+      "dk": 22.7,
       "salary": 5000,
       "newstart": false
      },
@@ -2416,8 +2465,8 @@
       "player": "Jabari Smith",
       "subs": 2,
       "of": 22,
-      "min": 35.7,
-      "dk": 32.1,
+      "min": 36.2,
+      "dk": 32.5,
       "salary": 7000,
       "newstart": false
      },
@@ -2425,8 +2474,8 @@
       "player": "Kevin Durant",
       "subs": 1,
       "of": 22,
-      "min": 35.7,
-      "dk": 39.7,
+      "min": 35.9,
+      "dk": 40.1,
       "salary": 7500,
       "newstart": false
      },
@@ -2435,7 +2484,7 @@
       "subs": 1,
       "of": 22,
       "min": 33.0,
-      "dk": 32.5,
+      "dk": 32.4,
       "salary": 6900,
       "newstart": false
      },
@@ -2443,8 +2492,8 @@
       "player": "Fred VanVleet",
       "subs": 1,
       "of": 22,
-      "min": 29.8,
-      "dk": 26.6,
+      "min": 30.1,
+      "dk": 27.0,
       "salary": 5900,
       "newstart": false
      }
