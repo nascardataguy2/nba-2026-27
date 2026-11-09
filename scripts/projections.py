@@ -382,6 +382,14 @@ def main():
         by_team.setdefault(r["team"], []).append(r)
 
     out_list = []
+    # DFF keeps a player's "out" tag from his last game until news comes in. When his team
+    # has not filed today's official injury report yet, that tag is not today's news: treat
+    # him as questionable until the report says otherwise.
+    pending = set(offr.get("pending", [])) if offr.get("date") == day else set()
+    for r in rows:
+        if r["inj"] == "O" and r["team"] in pending and norm(r["player"]) not in official and not (amap.get(norm(r["player"])) or {}).get("out"):
+            r["inj"] = "Q"
+            r["why"].append("DailyFantasyFuel still lists him out from his last game, but his team has not filed today's injury report yet.")
     # 1) Live outs and our notes.
     for r in rows:
         r["m0"] = r["min"]
@@ -407,7 +415,7 @@ def main():
     # Players DFF lists as out who were not in the baseline at all.
     seen = {norm(o["player"]) for o in out_list}
     for d in dff:
-        if d["inj"] == "O" and d["team"] in slate and norm(d["player"]) not in seen:
+        if d["inj"] == "O" and d["team"] in slate and norm(d["player"]) not in seen and not (d["team"] in pending and norm(d["player"]) not in official):
             out_list.append({"player": d["player"], "team": d["team"], "note": status_note(d["player"])})
             seen.add(norm(d["player"]))
     # Official-report outs who were not in the baseline at all (skip G League assignments).
