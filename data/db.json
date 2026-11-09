@@ -2,7 +2,7 @@
  "updated": "2026-11-09",
  "brief": {
   "date": "2026-11-09",
-  "updated": "5:59 PM ET",
+  "updated": "6:43 PM ET",
   "games": 7,
   "pending": [],
   "first_report": "5:39 AM",
@@ -66,20 +66,15 @@
      "WAS": {
       "out": [
        {
+        "player": "Bilal Coulibaly",
+        "min": 22.3
+       },
+       {
         "player": "Justin Champagnie",
         "min": 17.7
        }
       ],
-      "q": [
-       {
-        "player": "Anthony Davis",
-        "min": 30.4
-       },
-       {
-        "player": "Bilal Coulibaly",
-        "min": 22.8
-       }
-      ]
+      "q": []
      },
      "DET": {
       "out": [
@@ -95,7 +90,7 @@
       "q": []
      }
     },
-    "key": "Jalen Duren is out, so Cade Cunningham and Kevin Huerter should play more than usual."
+    "key": "Bilal Coulibaly and Justin Champagnie are out, so Alex Sarr and Kyshawn George should play more than usual."
    },
    {
     "away": "CLE",
@@ -122,12 +117,7 @@
         "min": 19.7
        }
       ],
-      "q": [
-       {
-        "player": "Jarrett Allen",
-        "min": 21.4
-       }
-      ]
+      "q": []
      },
      "CHA": {
       "out": [
@@ -183,27 +173,22 @@
         "min": 35.3
        },
        {
+        "player": "Immanuel Quickley",
+        "min": 34.3
+       },
+       {
+        "player": "Collin Murray-Boyles",
+        "min": 28.3
+       },
+       {
         "player": "Kawhi Leonard",
         "min": 26.0
        }
       ],
-      "q": [
-       {
-        "player": "Scottie Barnes",
-        "min": 30.4
-       },
-       {
-        "player": "Immanuel Quickley",
-        "min": 27.4
-       },
-       {
-        "player": "Collin Murray-Boyles",
-        "min": 26.1
-       }
-      ]
+      "q": []
      }
     },
-    "key": "Scottie Barnes and Kawhi Leonard are out, so Alijah Martin and Jakob Poeltl and Jamal Shead should play more than usual."
+    "key": "Scottie Barnes and Immanuel Quickley are out, so Alijah Martin and Jakob Poeltl and Jamal Shead should play more than usual."
    },
    {
     "away": "IND",
@@ -240,6 +225,10 @@
      "DAL": {
       "out": [
        {
+        "player": "Morez Johnson",
+        "min": 20.3
+       },
+       {
         "player": "Sergio Larrea",
         "min": 13.3
        }
@@ -247,7 +236,7 @@
       "q": [
        {
         "player": "Morez Johnson Jr.",
-        "min": 17.2
+        "min": 16.5
        }
       ]
      }
@@ -280,7 +269,7 @@
       "q": []
      }
     },
-    "key": "Nikola Jokic has the top projection in this game at 53.5 DK points."
+    "key": "Nikola Jokic has the top projection in this game at 53.4 DK points."
    },
    {
     "away": "SAS",
@@ -318,6 +307,62 @@
   ],
   "changed": [
    {
+    "player": "Morez Johnson",
+    "team": "DAL",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "6:44 PM"
+   },
+   {
+    "player": "Immanuel Quickley",
+    "team": "TOR",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "6:44 PM"
+   },
+   {
+    "player": "Collin Murray-Boyles",
+    "team": "TOR",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Illness",
+    "time": "6:44 PM"
+   },
+   {
+    "player": "Scottie Barnes",
+    "team": "TOR",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Groin Strain",
+    "time": "6:44 PM"
+   },
+   {
+    "player": "Anthony Davis",
+    "team": "WAS",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Right Ankle Sprain",
+    "time": "6:44 PM"
+   },
+   {
+    "player": "Bilal Coulibaly",
+    "team": "WAS",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Hand Soreness",
+    "time": "6:44 PM"
+   },
+   {
+    "player": "Jarrett Allen",
+    "team": "CLE",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Right Knee Contusion",
+    "time": "6:44 PM"
+   },
+   {
     "player": "Austin Reaves",
     "team": "LAL",
     "status": "Out",
@@ -340,62 +385,6 @@
     "was": "Doubtful",
     "why": "",
     "time": "5:38 PM"
-   },
-   {
-    "player": "Devin Vassell",
-    "team": "SAS",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "",
-    "time": "4:10 PM"
-   },
-   {
-    "player": "Jamal Murray",
-    "team": "DEN",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "",
-    "time": "4:10 PM"
-   },
-   {
-    "player": "Nikola Jokic",
-    "team": "DEN",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "Right Elbow Sprain",
-    "time": "4:10 PM"
-   },
-   {
-    "player": "Cameron Johnson",
-    "team": "DEN",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "Right Ankle Sprain",
-    "time": "4:10 PM"
-   },
-   {
-    "player": "Aaron Gordon",
-    "team": "DEN",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "",
-    "time": "4:10 PM"
-   },
-   {
-    "player": "DeMar DeRozan",
-    "team": "DEN",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "Low Back Spasms",
-    "time": "4:10 PM"
-   },
-   {
-    "player": "Christian Braun",
-    "team": "DEN",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "",
-    "time": "4:10 PM"
    }
   ],
   "chg": [
@@ -421,6 +410,48 @@
     "size": 191.5
    },
    {
+    "key": "Scottie Barnes",
+    "team": "TOR",
+    "head": "Scottie Barnes OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Alijah Martin",
+      "salary": 4200,
+      "much": "+34.2 DK without him (1 game)"
+     },
+     {
+      "player": "Jakob Poeltl",
+      "salary": 4900,
+      "much": "+28.8 DK without him (1 game)"
+     }
+    ],
+    "time": "6:44 PM",
+    "size": 45.2
+   },
+   {
+    "key": "WAS",
+    "team": "WAS",
+    "head": "Davis CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Kyshawn George",
+      "salary": 6400,
+      "much": "+15.2 DK without Davis"
+     },
+     {
+      "player": "Alex Sarr",
+      "salary": 5800,
+      "much": "+11.5 DK without Davis"
+     }
+    ],
+    "time": "6:44 PM",
+    "size": 43.1
+   },
+   {
     "key": "Austin Reaves",
     "team": "LAL",
     "head": "Austin Reaves OUT",
@@ -430,11 +461,53 @@
      {
       "player": "Collin Sexton",
       "salary": 4100,
-      "much": "+13.8 DK projected vs. last 3"
+      "much": "+16.0 DK projected vs. last 3"
      }
     ],
     "time": "5:57 PM",
     "size": 38.5
+   },
+   {
+    "key": "Immanuel Quickley",
+    "team": "TOR",
+    "head": "Immanuel Quickley OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Alijah Martin",
+      "salary": 4200,
+      "much": "+34.2 DK without him (1 game)"
+     },
+     {
+      "player": "Jakob Poeltl",
+      "salary": 4900,
+      "much": "+28.8 DK without him (1 game)"
+     }
+    ],
+    "time": "6:44 PM",
+    "size": 33.4
+   },
+   {
+    "key": "CLE",
+    "team": "CLE",
+    "head": "Allen CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Donovan Mitchell",
+      "salary": 8400,
+      "much": "+10.8 DK without Allen"
+     },
+     {
+      "player": "Thomas Bryant",
+      "salary": 4200,
+      "much": "+5.8 DK without Allen"
+     }
+    ],
+    "time": "6:44 PM",
+    "size": 28.9
    },
    {
     "key": "Moussa Diabate",
@@ -474,6 +547,43 @@
     "size": 25.6
    },
    {
+    "key": "Collin Murray-Boyles",
+    "team": "TOR",
+    "head": "Collin Murray-Boyles OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Jakob Poeltl",
+      "salary": 4900,
+      "much": "+28.0 DK projected vs. last 3"
+     },
+     {
+      "player": "Trayce Jackson-Davis",
+      "salary": 3000,
+      "much": "+15.1 DK projected vs. last 3"
+     }
+    ],
+    "time": "6:44 PM",
+    "size": 21.9
+   },
+   {
+    "key": "Bilal Coulibaly",
+    "team": "WAS",
+    "head": "Bilal Coulibaly OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Trae Young",
+      "salary": 7800,
+      "much": "+3.8 DK projected vs. last 3"
+     }
+    ],
+    "time": "6:44 PM",
+    "size": 17.1
+   },
+   {
     "key": "Quentin Grimes",
     "team": "LAL",
     "head": "Quentin Grimes OUT",
@@ -483,19 +593,100 @@
      {
       "player": "Matisse Thybulle",
       "salary": 4400,
-      "much": "+9.8 DK projected vs. last 3"
+      "much": "+10.9 DK projected vs. last 3"
      },
      {
       "player": "Ziaire Williams",
       "salary": 4500,
-      "much": "+7.2 DK projected vs. last 3"
+      "much": "+8.4 DK projected vs. last 3"
      }
     ],
     "time": "1:40 PM",
     "size": 16.9
+   },
+   {
+    "key": "Morez Johnson Jr.",
+    "team": "DAL",
+    "head": "Morez Johnson Jr. QUESTIONABLE",
+    "st": "Questionable",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Daniel Gafford",
+      "salary": 5000,
+      "much": "+4.9 DK projected vs. last 3"
+     }
+    ],
+    "time": "4:10 PM",
+    "size": 8.4
    }
   ],
   "sits": [
+   {
+    "team": "TOR",
+    "outs": [
+     {
+      "player": "Scottie Barnes",
+      "min": 35.3,
+      "note": "Scottie Barnes was questionable for Nov. 9 against Memphis and appeared in the show's early optimal lineup despite the uncertainty. The show said that if Barnes and Quickley both play, RJ Barrett looks worse but still good.",
+      "new": true
+     },
+     {
+      "player": "Immanuel Quickley",
+      "min": 34.3,
+      "note": "Quickley missed Toronto's Nov. 6 game and the show said he is questionable for Nov. 9 against Memphis after a limited practice on Sunday. The show said it would rather play Quickley than Dylan Harper or De'Aaron Fox if he is active.",
+      "new": true
+     },
+     {
+      "player": "Collin Murray-Boyles",
+      "min": 28.3,
+      "note": "Ruled out tonight (illness).",
+      "new": true
+     },
+     {
+      "player": "Kawhi Leonard",
+      "min": 26.0,
+      "note": "Leonard has not played since October 23. The show said it does not know whether he will be back in week 4.",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 123.9,
+    "benefits": [
+     {
+      "player": "Alijah Martin",
+      "salary": 4200,
+      "why": "31 minutes, up from 7",
+      "much": "+34.2 DK without them (1 game)",
+      "score": 34.2,
+      "min": 26.2,
+      "dk": 30.4
+     },
+     {
+      "player": "Jakob Poeltl",
+      "salary": 4900,
+      "why": "31 minutes, up from 20",
+      "much": "+28.8 DK without them (1 game)",
+      "score": 28.8,
+      "min": 36.0,
+      "dk": 59.2
+     },
+     {
+      "player": "Jamal Shead",
+      "salary": 5500,
+      "why": "started that game",
+      "much": "+24.8 DK without them (1 game)",
+      "score": 24.8,
+      "min": 36.0,
+      "dk": 49.0
+     }
+    ],
+    "split_of": [
+     "Scottie Barnes",
+     "Immanuel Quickley",
+     "Kawhi Leonard"
+    ]
+   },
    {
     "team": "CHA",
     "outs": [
@@ -527,17 +718,17 @@
       "why": "27 minutes, up from 8",
       "much": "+19.0 DK without them (1 game)",
       "score": 19.0,
-      "min": 18.2,
-      "dk": 14.2
+      "min": 18.4,
+      "dk": 14.4
      },
      {
       "player": "Coby White",
       "salary": 5900,
       "why": "Show: possible minutes jump to 24-29 (11/09)",
-      "much": "+14.9 DK projected vs. last 3",
-      "score": 14.933333333333335,
-      "min": 20.4,
-      "dk": 26.1
+      "much": "+16.6 DK projected vs. last 3",
+      "score": 16.633333333333333,
+      "min": 19.9,
+      "dk": 27.8
      },
      {
       "player": "Liam McNeeley",
@@ -545,8 +736,8 @@
       "why": "19 minutes, up from 7",
       "much": "+13.2 DK without them (1 game)",
       "score": 13.2,
-      "min": 14.2,
-      "dk": 10.7
+      "min": 14.3,
+      "dk": 10.9
      }
     ],
     "split_of": [
@@ -577,73 +768,63 @@
       "player": "Collin Sexton",
       "salary": 4100,
       "why": "subs in for them 12 of 80 times",
-      "much": "+13.8 DK projected vs. last 3",
-      "score": 13.783333333333333,
-      "min": 25.1,
-      "dk": 27.7
+      "much": "+16.0 DK projected vs. last 3",
+      "score": 15.983333333333333,
+      "min": 23.9,
+      "dk": 29.9
      },
      {
       "player": "Ziaire Williams",
       "salary": 4500,
       "why": "subs in for them 13 of 80 times",
-      "much": "+7.2 DK projected vs. last 3",
-      "score": 7.25,
-      "min": 31.1,
-      "dk": 28.0
+      "much": "+8.4 DK projected vs. last 3",
+      "score": 8.350000000000001,
+      "min": 29.1,
+      "dk": 29.1
      }
     ],
     "split_of": []
    },
    {
-    "team": "TOR",
+    "team": "WAS",
     "outs": [
      {
-      "player": "Scottie Barnes",
-      "min": 35.3,
-      "note": "Scottie Barnes was questionable for Nov. 9 against Memphis and appeared in the show's early optimal lineup despite the uncertainty. The show said that if Barnes and Quickley both play, RJ Barrett looks worse but still good.",
+      "player": "Bilal Coulibaly",
+      "min": 22.3,
+      "note": "Ruled out tonight (left hand soreness).",
       "new": true
      },
      {
-      "player": "Kawhi Leonard",
-      "min": 26.0,
-      "note": "Leonard has not played since October 23. The show said it does not know whether he will be back in week 4.",
+      "player": "Justin Champagnie",
+      "min": 17.7,
+      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
       "new": false
      }
     ],
     "new": true,
-    "lost": 61.3,
+    "lost": 40.0,
     "benefits": [
      {
-      "player": "Alijah Martin",
-      "salary": 4200,
-      "why": "31 minutes, up from 7",
-      "much": "+34.2 DK without them (1 game)",
-      "score": 34.2,
-      "min": 17.0,
-      "dk": 19.6
+      "player": "Alex Sarr",
+      "salary": 5800,
+      "why": "same minutes, more production",
+      "much": "+7.0 DK without them (5 games)",
+      "score": 7.0,
+      "min": 26.6,
+      "dk": 26.0
      },
      {
-      "player": "Jakob Poeltl",
-      "salary": 4900,
-      "why": "31 minutes, up from 20",
-      "much": "+28.8 DK without them (1 game)",
-      "score": 28.8,
-      "min": 23.1,
-      "dk": 25.3
-     },
-     {
-      "player": "Jamal Shead",
-      "salary": 5500,
-      "why": "started that game",
-      "much": "+24.8 DK without them (1 game)",
-      "score": 24.8,
-      "min": 24.1,
-      "dk": 21.7
+      "player": "Kyshawn George",
+      "salary": 6400,
+      "why": "35 minutes, up from 30",
+      "much": "+6.5 DK without them (6 games)",
+      "score": 6.5,
+      "min": 34.5,
+      "dk": 29.1
      }
     ],
     "split_of": [
-     "Scottie Barnes",
-     "Kawhi Leonard"
+     "Justin Champagnie"
     ]
    },
    {
@@ -672,83 +853,29 @@
     "split_of": []
    },
    {
-    "team": "CLE",
+    "team": "DAL",
     "outs": [
      {
-      "player": "Sam Merrill",
-      "min": 22.0,
-      "note": "The show said Merrill is already ruled out for Nov. 9 against Charlotte. He played 13 minutes on Nov. 6 and did not play on Nov. 7.",
-      "new": false
-     },
-     {
-      "player": "Jaylon Tyson",
-      "min": 19.7,
-      "note": "The show said Tyson is already ruled out for Nov. 9. He has not appeared in a Cleveland box score since Oct. 29.",
-      "new": false
+      "player": "Morez Johnson",
+      "min": 20.3,
+      "note": "Ruled out tonight.",
+      "new": true
      }
     ],
-    "new": false,
-    "lost": 41.7,
+    "new": true,
+    "lost": 20.3,
     "benefits": [
      {
-      "player": "Donovan Mitchell",
-      "salary": 8400,
-      "why": "37 minutes, up from 33",
-      "much": "+12.8 DK without them (1 game)",
-      "score": 12.8,
-      "min": 33.4,
-      "dk": 47.8
+      "player": "Daniel Gafford",
+      "salary": 5000,
+      "why": "subs in for him 17 of 41 times",
+      "much": "+4.9 DK projected vs. last 3",
+      "score": 4.866666666666667,
+      "min": 21.9,
+      "dk": 24.7
      }
     ],
-    "split_of": [
-     "Sam Merrill",
-     "Jaylon Tyson"
-    ]
-   },
-   {
-    "team": "IND",
-    "outs": [
-     {
-      "player": "Tyrese Haliburton",
-      "min": 32.7,
-      "note": "The show said Tyrese Haliburton should still be out for Indiana on Monday. He has not played since October 26.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 32.7,
-    "benefits": [
-     {
-      "player": "Quenton Jackson",
-      "salary": 4100,
-      "why": "23 minutes, up from 20",
-      "much": "+10.5 DK without him (6 games)",
-      "score": 10.5,
-      "min": 19.2,
-      "dk": 17.6
-     },
-     {
-      "player": "Larry Nance",
-      "salary": 3400,
-      "why": "19 minutes, up from 12",
-      "much": "+9.0 DK without him (5 games)",
-      "score": 9.0,
-      "min": 14.6,
-      "dk": 10.1
-     },
-     {
-      "player": "Andrew Nembhard",
-      "salary": 7200,
-      "why": "31 minutes, 8 assists (11/07)",
-      "much": "+6.9 DK without him (5 games)",
-      "score": 6.9,
-      "min": 28.8,
-      "dk": 26.8
-     }
-    ],
-    "split_of": [
-     "Tyrese Haliburton"
-    ]
+    "split_of": []
    }
   ],
   "hot": [
@@ -837,55 +964,55 @@
   ],
   "chalk": [
    {
-    "player": "Walter Clayton Jr.",
-    "team": "DAL",
-    "own": 46.6,
-    "dk": 15.6,
-    "salary": 3300
+    "player": "Collin Sexton",
+    "team": "LAL",
+    "own": 55.1,
+    "dk": 29.9,
+    "salary": 4100
    },
    {
-    "player": "Grayson Allen",
-    "team": "CHA",
-    "own": 41.1,
-    "dk": 34.7,
-    "salary": 5200
+    "player": "Jakob Poeltl",
+    "team": "TOR",
+    "own": 52.8,
+    "dk": 59.2,
+    "salary": 4900
    },
    {
-    "player": "Keldon Johnson",
-    "team": "SAS",
-    "own": 33.5,
-    "dk": 25.1,
-    "salary": 4400
+    "player": "RJ Barrett",
+    "team": "TOR",
+    "own": 44.0,
+    "dk": 65.1,
+    "salary": 7600
    },
    {
-    "player": "Cameron Johnson",
-    "team": "DEN",
-    "own": 31.4,
-    "dk": 21.9,
-    "salary": 4500
+    "player": "Jamal Shead",
+    "team": "TOR",
+    "own": 43.9,
+    "dk": 49.0,
+    "salary": 5500
    }
   ],
   "leverage": [
    {
     "player": "Royce O'Neale",
     "team": "CHA",
-    "own": 7.8,
-    "dk": 28.4,
+    "own": 0.9,
+    "dk": 32.0,
     "salary": 4300
    },
    {
-    "player": "Ziaire Williams",
-    "team": "LAL",
-    "own": 1.8,
-    "dk": 28.0,
-    "salary": 4500
+    "player": "Alijah Martin",
+    "team": "TOR",
+    "own": 3.0,
+    "dk": 30.4,
+    "salary": 4200
    },
    {
-    "player": "Sion James",
-    "team": "CHA",
-    "own": 5.8,
-    "dk": 26.4,
-    "salary": 4500
+    "player": "Jamison Battle",
+    "team": "TOR",
+    "own": 0.9,
+    "dk": 26.8,
+    "salary": 4000
    }
   ],
   "last": {
@@ -971,8 +1098,8 @@
    ]
   },
   "injuries": {
-   "report": "05:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_05_45PM.pdf",
+   "report": "06:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_06_30PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -992,10 +1119,10 @@
        "player": "Collin Sexton",
        "salary": 4100,
        "why": "subs in for him 7 of 43 times",
-       "much": "+13.8 DK projected vs. last 3",
-       "score": 13.783333333333333,
-       "min": 25.1,
-       "dk": 27.7
+       "much": "+16.0 DK projected vs. last 3",
+       "score": 15.983333333333333,
+       "min": 23.9,
+       "dk": 29.9
       }
      ],
      "estimate": false
@@ -1019,8 +1146,8 @@
        "why": "27 minutes, up from 8",
        "much": "+19.0 DK without him (1 game)",
        "score": 19.0,
-       "min": 18.2,
-       "dk": 14.2
+       "min": 18.4,
+       "dk": 14.4
       },
       {
        "player": "Liam McNeeley",
@@ -1028,8 +1155,8 @@
        "why": "19 minutes, up from 7",
        "much": "+13.2 DK without him (1 game)",
        "score": 13.2,
-       "min": 14.2,
-       "dk": 10.7
+       "min": 14.3,
+       "dk": 10.9
       },
       {
        "player": "Royce O'Neale",
@@ -1037,8 +1164,8 @@
        "why": "26 minutes, up from 18",
        "much": "+8.5 DK without him (1 game)",
        "score": 8.5,
-       "min": 27.2,
-       "dk": 28.4
+       "min": 27.1,
+       "dk": 32.0
       }
      ],
      "estimate": false
@@ -1060,19 +1187,19 @@
        "player": "Matisse Thybulle",
        "salary": 4400,
        "why": "subs in for him 7 of 37 times",
-       "much": "+9.8 DK projected vs. last 3",
-       "score": 9.75,
-       "min": 31.4,
-       "dk": 23.0
+       "much": "+10.9 DK projected vs. last 3",
+       "score": 10.850000000000001,
+       "min": 29.8,
+       "dk": 24.1
       },
       {
        "player": "Ziaire Williams",
        "salary": 4500,
        "why": "subs in for him 8 of 37 times",
-       "much": "+7.2 DK projected vs. last 3",
-       "score": 7.25,
-       "min": 31.1,
-       "dk": 28.0
+       "much": "+8.4 DK projected vs. last 3",
+       "score": 8.350000000000001,
+       "min": 29.1,
+       "dk": 29.1
       }
      ],
      "estimate": false
@@ -1091,74 +1218,31 @@
      "min": 23.7,
      "benefits": [
       {
-       "player": "Royce O'Neale",
-       "salary": 4300,
-       "why": "subs in for him 6 of 39 times",
-       "much": "+16.3 DK projected vs. last 3",
-       "score": 16.316666666666663,
-       "min": 27.2,
-       "dk": 28.4
-      },
-      {
        "player": "Naz Reid",
        "salary": 6900,
        "why": "subs in for him 8 of 39 times",
-       "much": "+15.5 DK projected vs. last 3",
-       "score": 15.51666666666667,
-       "min": 33.3,
-       "dk": 47.1
+       "much": "+20.6 DK projected vs. last 3",
+       "score": 20.61666666666667,
+       "min": 33.4,
+       "dk": 52.2
+      },
+      {
+       "player": "Royce O'Neale",
+       "salary": 4300,
+       "why": "subs in for him 6 of 39 times",
+       "much": "+19.9 DK projected vs. last 3",
+       "score": 19.916666666666664,
+       "min": 27.1,
+       "dk": 32.0
       },
       {
        "player": "Grayson Allen",
        "salary": 5200,
        "why": "subs in for him 8 of 39 times",
-       "much": "+15.5 DK projected vs. last 3",
-       "score": 15.450000000000003,
-       "min": 28.5,
-       "dk": 34.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "WAS at DET",
-     "time": "2026-11-10T00:00Z",
-     "team": "WAS",
-     "player": "Anthony Davis",
-     "status": "Questionable",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "",
-     "min": 32.7,
-     "benefits": [
-      {
-       "player": "Kyshawn George",
-       "salary": 6400,
-       "why": "same minutes, more production",
-       "much": "+15.2 DK without him (2 games)",
-       "score": 15.2,
-       "min": 32.1,
-       "dk": 27.0
-      },
-      {
-       "player": "Alex Sarr",
-       "salary": 5800,
-       "why": "29 minutes, up from 25",
-       "much": "+11.5 DK without him (2 games)",
-       "score": 11.5,
-       "min": 25.1,
-       "dk": 24.6
-      },
-      {
-       "player": "Will Riley",
-       "salary": 3600,
-       "why": "14 minutes, up from 5",
-       "much": "+7.2 DK without him (2 games)",
-       "score": 7.2,
-       "min": 10.1,
-       "dk": 6.2
+       "much": "+18.9 DK projected vs. last 3",
+       "score": 18.85,
+       "min": 28.3,
+       "dk": 38.1
       }
      ],
      "estimate": false
@@ -1168,13 +1252,38 @@
      "time": "2026-11-10T00:00Z",
      "team": "WAS",
      "player": "Bilal Coulibaly",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "Left Hand Soreness",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "4:10 PM",
+     "changed_at": "6:44 PM",
      "min": 22.3,
+     "benefits": [
+      {
+       "player": "Trae Young",
+       "salary": 7800,
+       "why": "subs in for him 8 of 49 times",
+       "much": "+3.8 DK projected vs. last 3",
+       "score": 3.8166666666666664,
+       "min": 35.0,
+       "dk": 34.4
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "WAS at DET",
+     "time": "2026-11-10T00:00Z",
+     "team": "WAS",
+     "player": "Anthony Davis",
+     "status": "Available",
+     "reason": "Right Ankle Sprain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "6:44 PM",
+     "min": 32.7,
      "benefits": [],
      "estimate": false
     },
@@ -1183,33 +1292,14 @@
      "time": "2026-11-10T00:00Z",
      "team": "CLE",
      "player": "Jarrett Allen",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Right Knee Contusion",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:44 PM",
      "min": 19.7,
-     "benefits": [
-      {
-       "player": "Donovan Mitchell",
-       "salary": 8400,
-       "why": "37 minutes, 37 points (11/07)",
-       "much": "+10.8 DK without him (2 games)",
-       "score": 10.8,
-       "min": 33.4,
-       "dk": 47.8
-      },
-      {
-       "player": "Thomas Bryant",
-       "salary": 4200,
-       "why": "16 minutes, up from 10",
-       "much": "+5.8 DK without him (2 games)",
-       "score": 5.8,
-       "min": 13.6,
-       "dk": 14.7
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1232,12 +1322,12 @@
      "time": "2026-11-10T00:30Z",
      "team": "TOR",
      "player": "Scottie Barnes",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "Left Groin Strain",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:44 PM",
      "min": 35.3,
      "benefits": [
       {
@@ -1246,8 +1336,8 @@
        "why": "31 minutes, up from 7",
        "much": "+34.2 DK without him (1 game)",
        "score": 34.2,
-       "min": 17.0,
-       "dk": 19.6
+       "min": 26.2,
+       "dk": 30.4
       },
       {
        "player": "Jakob Poeltl",
@@ -1255,8 +1345,8 @@
        "why": "31 minutes, up from 20",
        "much": "+28.8 DK without him (1 game)",
        "score": 28.8,
-       "min": 23.1,
-       "dk": 25.3
+       "min": 36.0,
+       "dk": 59.2
       },
       {
        "player": "Jamal Shead",
@@ -1264,8 +1354,8 @@
        "why": "started that game",
        "much": "+24.8 DK without him (1 game)",
        "score": 24.8,
-       "min": 24.1,
-       "dk": 21.7
+       "min": 36.0,
+       "dk": 49.0
       }
      ],
      "estimate": false
@@ -1275,12 +1365,12 @@
      "time": "2026-11-10T00:30Z",
      "team": "TOR",
      "player": "Immanuel Quickley",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:44 PM",
      "min": 34.3,
      "benefits": [
       {
@@ -1289,8 +1379,8 @@
        "why": "31 minutes, up from 7",
        "much": "+34.2 DK without him (1 game)",
        "score": 34.2,
-       "min": 17.0,
-       "dk": 19.6
+       "min": 26.2,
+       "dk": 30.4
       },
       {
        "player": "Jakob Poeltl",
@@ -1298,8 +1388,8 @@
        "why": "31 minutes, up from 20",
        "much": "+28.8 DK without him (1 game)",
        "score": 28.8,
-       "min": 23.1,
-       "dk": 25.3
+       "min": 36.0,
+       "dk": 59.2
       },
       {
        "player": "Jamal Shead",
@@ -1307,8 +1397,8 @@
        "why": "started that game",
        "much": "+24.8 DK without him (1 game)",
        "score": 24.8,
-       "min": 24.1,
-       "dk": 21.7
+       "min": 36.0,
+       "dk": 49.0
       }
      ],
      "estimate": false
@@ -1318,14 +1408,33 @@
      "time": "2026-11-10T00:30Z",
      "team": "TOR",
      "player": "Collin Murray-Boyles",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "Illness",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "1:40 PM",
+     "changed_at": "6:44 PM",
      "min": 28.3,
-     "benefits": [],
+     "benefits": [
+      {
+       "player": "Jakob Poeltl",
+       "salary": 4900,
+       "why": "subs in for him 8 of 34 times",
+       "much": "+28.0 DK projected vs. last 3",
+       "score": 27.950000000000003,
+       "min": 36.0,
+       "dk": 59.2
+      },
+      {
+       "player": "Trayce Jackson-Davis",
+       "salary": 3000,
+       "why": "subs in for him 7 of 34 times",
+       "much": "+15.1 DK projected vs. last 3",
+       "score": 15.083333333333332,
+       "min": 13.9,
+       "dk": 22.5
+      }
+     ],
      "estimate": false
     },
     {
@@ -1340,7 +1449,17 @@
      "known": true,
      "changed_at": "4:10 PM",
      "min": 20.3,
-     "benefits": [],
+     "benefits": [
+      {
+       "player": "Daniel Gafford",
+       "salary": 5000,
+       "why": "subs in for him 17 of 41 times",
+       "much": "+4.9 DK projected vs. last 3",
+       "score": 4.866666666666667,
+       "min": 21.9,
+       "dk": 24.7
+      }
+     ],
      "estimate": false
     },
     {
@@ -1541,8 +1660,8 @@
        "why": "27 minutes, up from 8",
        "much": "+19.0 DK without him (1 game)",
        "score": 19.0,
-       "min": 18.2,
-       "dk": 14.2
+       "min": 18.4,
+       "dk": 14.4
       },
       {
        "player": "Liam McNeeley",
@@ -1550,8 +1669,8 @@
        "why": "19 minutes, up from 7",
        "much": "+13.2 DK without him (1 game)",
        "score": 13.2,
-       "min": 14.2,
-       "dk": 10.7
+       "min": 14.3,
+       "dk": 10.9
       },
       {
        "player": "Royce O'Neale",
@@ -1559,8 +1678,8 @@
        "why": "26 minutes, up from 18",
        "much": "+8.5 DK without him (1 game)",
        "score": 8.5,
-       "min": 27.2,
-       "dk": 28.4
+       "min": 27.1,
+       "dk": 32.0
       }
      ],
      "estimate": false
@@ -1585,7 +1704,7 @@
        "much": "+12.8 DK without him (1 game)",
        "score": 12.8,
        "min": 33.4,
-       "dk": 47.8
+       "dk": 49.8
       }
      ],
      "estimate": false
@@ -1610,7 +1729,7 @@
        "much": "+9.5 DK without him (5 games)",
        "score": 9.5,
        "min": 18.9,
-       "dk": 19.7
+       "dk": 20.3
       },
       {
        "player": "Mario Hezonja",
@@ -1644,7 +1763,7 @@
        "much": "+9.4 DK without him (7 games)",
        "score": 9.4,
        "min": 34.7,
-       "dk": 54.0
+       "dk": 53.9
       },
       {
        "player": "Kevin Huerter",
@@ -1653,7 +1772,7 @@
        "much": "+6.1 DK without him (7 games)",
        "score": 6.1,
        "min": 23.4,
-       "dk": 21.7
+       "dk": 21.5
       }
      ],
      "estimate": false
@@ -1677,8 +1796,8 @@
        "why": "same minutes, more production",
        "much": "+7.0 DK without him (5 games)",
        "score": 7.0,
-       "min": 25.1,
-       "dk": 24.6
+       "min": 26.6,
+       "dk": 26.0
       },
       {
        "player": "Kyshawn George",
@@ -1686,8 +1805,8 @@
        "why": "35 minutes, up from 30",
        "much": "+6.5 DK without him (6 games)",
        "score": 6.5,
-       "min": 32.1,
-       "dk": 27.0
+       "min": 34.5,
+       "dk": 29.1
       }
      ],
      "estimate": false
@@ -1712,7 +1831,7 @@
        "much": "+11.0 DK without him (2 games)",
        "score": 11.0,
        "min": 13.0,
-       "dk": 10.2
+       "dk": 11.2
       },
       {
        "player": "Jalen Johnson",
@@ -1721,7 +1840,7 @@
        "much": "+9.7 DK without him (5 games)",
        "score": 9.7,
        "min": 29.6,
-       "dk": 39.1
+       "dk": 40.3
       },
       {
        "player": "Aaron Wiggins",
@@ -1730,7 +1849,7 @@
        "much": "+7.2 DK without him (6 games)",
        "score": 7.2,
        "min": 22.0,
-       "dk": 19.7
+       "dk": 20.5
       }
      ],
      "estimate": false
@@ -1755,7 +1874,7 @@
        "much": "+5.8 DK without him (6 games)",
        "score": 5.8,
        "min": 23.4,
-       "dk": 21.7
+       "dk": 21.5
       }
      ],
      "estimate": false
@@ -1779,8 +1898,8 @@
        "why": "12 minutes, up from 3",
        "much": "+12.8 DK without him (6 games)",
        "score": 12.8,
-       "min": 17.0,
-       "dk": 19.6
+       "min": 26.2,
+       "dk": 30.4
       },
       {
        "player": "Jamal Shead",
@@ -1788,8 +1907,8 @@
        "why": "24 minutes, up from 20",
        "much": "+10.3 DK without him (7 games)",
        "score": 10.3,
-       "min": 24.1,
-       "dk": 21.7
+       "min": 36.0,
+       "dk": 49.0
       }
      ],
      "estimate": false
@@ -1814,7 +1933,7 @@
        "much": "+12.8 DK without him (1 game)",
        "score": 12.8,
        "min": 16.9,
-       "dk": 15.6
+       "dk": 17.0
       },
       {
        "player": "Ty Jerome",
@@ -1823,7 +1942,7 @@
        "much": "+10.5 DK without him (2 games)",
        "score": 10.5,
        "min": 28.0,
-       "dk": 35.9
+       "dk": 38.3
       }
      ],
      "estimate": false
@@ -1848,7 +1967,7 @@
        "much": "+6.4 DK without him (4 games)",
        "score": 6.4,
        "min": 18.8,
-       "dk": 20.2
+       "dk": 22.2
       },
       {
        "player": "Kris Murray",
@@ -1900,7 +2019,7 @@
        "much": "+6.9 DK without him (5 games)",
        "score": 6.9,
        "min": 28.8,
-       "dk": 26.8
+       "dk": 26.9
       }
      ],
      "estimate": false
@@ -1924,8 +2043,8 @@
        "why": "31 minutes, up from 27",
        "much": "+6.5 DK without him (5 games)",
        "score": 6.5,
-       "min": 30.0,
-       "dk": 35.0
+       "min": 29.6,
+       "dk": 34.4
       }
      ],
      "estimate": false
@@ -11797,13 +11916,13 @@
   },
   {
    "team": "TOR",
-   "starters": "RJ Barrett (33), Ja'Kobe Walter (29), Collin Murray-Boyles (22), Scottie Barnes (33), Immanuel Quickley (32)",
-   "bench": "Jakob Poeltl (22), Jamal Shead (23), Jamison Battle (17), Alijah Martin (10), Allen Graves (13)",
+   "starters": "RJ Barrett (33), Ja'Kobe Walter (29), Jakob Poeltl (22), Jamal Shead (23), Trayce Jackson-Davis (7)",
+   "bench": "Jamison Battle (17), Alijah Martin (10), Allen Graves (13)",
    "backup_c": "Jakob Poeltl",
    "coach": "Darko Rajakovic",
    "notes": "Kawhi arrived by trade from the Clippers. Sandro Mamukelashvili is gone, which opens backup center minutes for Murray-Boyles.",
    "source": "LO-1015",
-   "out": "Kawhi Leonard",
+   "out": "Collin Murray-Boyles, Immanuel Quickley, Kawhi Leonard, Scottie Barnes",
    "depth_through": "2026-11-06",
    "games": 9
   },
@@ -11833,13 +11952,13 @@
   },
   {
    "team": "WAS",
-   "starters": "Kyshawn George (33), Trae Young (35), AJ Dybantsa (32), Alex Sarr (26), Bilal Coulibaly (26)",
-   "bench": "Anthony Davis (33), Tre Johnson (22), Bub Carrington (19), Will Riley (7), Deandre Ayton (15), Tre Mann (6), Anthony Gill (5)",
+   "starters": "Kyshawn George (33), Trae Young (35), AJ Dybantsa (32), Alex Sarr (26), Deandre Ayton (15)",
+   "bench": "Anthony Davis (33), Tre Johnson (22), Bub Carrington (19), Will Riley (7), Tre Mann (6), Anthony Gill (5)",
    "backup_c": "Deandre Ayton",
    "coach": "Brian Keefe",
    "notes": "Washington should be a much better team. Sarr's usage and blocks should drop next to Davis. Sarr will likely be ready for opening night.",
    "source": "LO-1018",
-   "out": "Justin Champagnie, Reece Beekman",
+   "out": "Bilal Coulibaly, Justin Champagnie, Reece Beekman",
    "depth_through": "2026-11-07",
    "games": 10
   },
@@ -11935,7 +12054,7 @@
    "coach": "J.B. Bickerstaff",
    "notes": "Isaiah Stewart and Tobias Harris are gone, and Kevin Huerter, Isaiah Joe and John Collins were added. Jalen Duren re-signed after a contract holdout. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). Detroit has 15 back-to-backs, and rest is not expected to be an issue. Jalen Duren will miss at least two weeks with a strained right hamstring from Friday; Paul Reed started at center Sunday.",
    "source": "LO-1018",
-   "out": "Isaiah Joe, Jalen Duren",
+   "out": "Elijah Harkless, Isaiah Joe, Jalen Duren",
    "depth_through": "2026-11-08",
    "games": 9
   },
