@@ -321,7 +321,7 @@ def main():
         if st.lower().startswith("out"):
             return "Ruled out tonight (" + st[3:].strip(" ();.") + ")." if st[3:].strip(" ();.") else "Ruled out tonight."
         if st and st.lower() != "healthy":
-            return "Ruled out tonight. " + st.rstrip(".") + "."
+            return "Listed out. " + st.rstrip(".") + "."
         return "Ruled out tonight."
 
     rows = []
@@ -385,11 +385,21 @@ def main():
     # DFF keeps a player's "out" tag from his last game until news comes in. When his team
     # has not filed today's official injury report yet, that tag is not today's news: treat
     # him as questionable until the report says otherwise.
-    pending = set(offr.get("pending", [])) if offr.get("date") == day else set()
+    # When his team HAS filed today's report and he is not on it, he is available: the DFF
+    # tag is left over from his last game (Doncic on 11/9 sat Sunday, was not on Monday's report).
+    today_rep = offr.get("date") == day
+    pending = set(offr.get("pending", [])) if today_rep else set()
+
+    def stale_out(team, name):
+        return today_rep and norm(name) not in official and not (amap.get(norm(name)) or {}).get("out")
     for r in rows:
-        if r["inj"] == "O" and r["team"] in pending and norm(r["player"]) not in official and not (amap.get(norm(r["player"])) or {}).get("out"):
-            r["inj"] = "Q"
-            r["why"].append("DailyFantasyFuel still lists him out from his last game, but his team has not filed today's injury report yet.")
+        if r["inj"] == "O" and stale_out(r["team"], r["player"]):
+            if r["team"] in pending:
+                r["inj"] = "Q"
+                r["why"].append("DailyFantasyFuel still lists him out from his last game, but his team has not filed today's injury report yet.")
+            else:
+                r["inj"] = ""
+                r["why"].append("DailyFantasyFuel still lists him out from his last game, but he is not on today's official injury report.")
     # 1) Live outs and our notes.
     for r in rows:
         r["m0"] = r["min"]
@@ -415,7 +425,7 @@ def main():
     # Players DFF lists as out who were not in the baseline at all.
     seen = {norm(o["player"]) for o in out_list}
     for d in dff:
-        if d["inj"] == "O" and d["team"] in slate and norm(d["player"]) not in seen and not (d["team"] in pending and norm(d["player"]) not in official):
+        if d["inj"] == "O" and d["team"] in slate and norm(d["player"]) not in seen and not stale_out(d["team"], d["player"]):
             out_list.append({"player": d["player"], "team": d["team"], "note": status_note(d["player"])})
             seen.add(norm(d["player"]))
     # Official-report outs who were not in the baseline at all (skip G League assignments).
