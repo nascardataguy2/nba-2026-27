@@ -389,6 +389,49 @@ def main():
                 "rows": [r for r in inj if keep_row(r)],
                 "minor": [{"player": r["player"], "team": r["team"], "status": r["status"]} for r in inj if not keep_row(r)]}
 
+    # --- What changed, short: the biggest changes first, one "play" or "less value" line each.
+    # Size = the changed players' own DK points a game this season (half for questionable),
+    # so a star's news outranks a bench player's. Nothing with no real teammate numbers is dropped
+    # unless the player himself scores 20+ DK a game.
+    def avgdk(team, name):
+        g = [x for x in games_of(team, name) if x["min"] > 0]
+        return sum(x["dk"] for x in g) / len(g) if g else 0.0
+    injk = {norm(r["player"]): r for r in inj}
+    items, cleared = [], {}
+    for c in st["log"]:
+        if c["status"] in ("Probable", "Available") and c["was"] in ("Out", "Doubtful", "Questionable"):
+            cleared.setdefault(c["team"], {})[c["player"]] = c
+    for c in reversed(st["log"]):
+        if c["status"] not in ("Out", "Doubtful", "Questionable") or norm(c["player"]) not in injk:
+            continue
+        if any(i["key"] == c["player"] for i in items):
+            continue
+        r = injk[norm(c["player"])]
+        if r["status"] != c["status"]:
+            continue
+        size = avgdk(c["team"], c["player"]) * (0.5 if c["status"] == "Questionable" else 1)
+        names = [{"player": b["player"], "salary": b.get("salary"), "much": b["much"]} for b in r["benefits"][:2]]
+        if not names and size < 20:
+            continue
+        items.append({"key": c["player"], "team": c["team"], "head": c["player"] + " " + c["status"].upper(),
+                      "st": c["status"], "act": "Play" if names else "", "names": names, "time": c["time"], "size": r1(size)})
+    for t, cl in cleared.items():
+        nm = sorted([n for n in cl if recent_min(t, n) >= 15], key=lambda n: -avgdk(t, n))
+        if not nm:
+            continue
+        size = sum(avgdk(t, n) for n in nm)
+        lose = {}
+        for n in nm:  # who scored more in the games each one missed: they lose that edge now
+            for b in tidy(t, [n], split_gain(t, [n])[0]):
+                if b["player"] not in nm and (b["player"] not in lose or b["score"] > lose[b["player"]]["score"]):
+                    lose[b["player"]] = dict(b, without=n)
+        names = [{"player": b["player"], "salary": b.get("salary"), "much": "+%s DK without %s" % (r1(b["score"]), b["without"].split(" ")[-1])}
+                 for b in sorted(lose.values(), key=lambda b: -b["score"])[:2]]
+        head = (", ".join(n.split(" ")[-1] for n in nm[:3]) + (" +%d more" % (len(nm) - 3) if len(nm) > 3 else "")) + " CLEARED"
+        items.append({"key": t, "team": t, "head": head, "st": "Probable", "act": "Less value" if names else "",
+                      "names": names, "time": max(c["time"] for c in cl.values()), "size": r1(size)})
+    items.sort(key=lambda i: -i["size"])
+
     # --- game cards ---
     maxou = max((g.get("ou") or 0) for g in games) if games else 0
     minou = min((g.get("ou") or 999) for g in games) if games else 0
@@ -475,7 +518,7 @@ def main():
                 "surprise": surprise[:4], "injuries": inj[:4]}
 
     out = {"date": day, "updated": doc.get("updated"), "games": len(games), "pending": pending,
-           "first_report": st.get("first"), "cards": cards, "changed": changed, "sits": sits[:6],
+           "first_report": st.get("first"), "cards": cards, "changed": changed, "chg": items, "sits": sits[:6],
            "hot": hot[:5], "minutes": mins[:5], "chalk": [fp(p) for p in chalk], "leverage": [fp(p) for p in lev],
            "last": last, "injuries": injuries}
     json.dump(out, open(os.path.join(D, "brief.json"), "w"), indent=1, ensure_ascii=False)

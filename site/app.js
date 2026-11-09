@@ -102,7 +102,16 @@
           return (phone ? 'Benefits: ' : '') + names + (r.estimate ? ' <span class="bs-n">(estimate)</span>' : '');
         };
         var cls2 = function(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; };
-        html += sec('brief-ch', 'What Changed Today', 'Status changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
+        // Biggest changes first, one action line each; the rest and the full list sit behind "Show more".
+        var chItem = function(i){
+          var c = /Out/.test(i.st) ? 'out' : /Doubtful/.test(i.st) ? 'dbt' : /Questionable/.test(i.st) ? 'q' : 'ok';
+          var line = i.names.length ? '<b>' + esc(i.act) + ':</b> ' + i.names.map(function(n){ return esc(n.player) + (n.salary ? ' ' + money(n.salary) : '') + ' <span class="bs-n">' + esc(n.much) + '</span>'; }).join(' \u00b7 ') : '';
+          return '<div class="chx"><div class="chx-h">' + tm(i.team) + ' <span class="bc-st ' + c + '">' + esc(i.head) + '</span> <span class="bs-n">' + esc(i.time) + '</span></div>' + (line ? '<div class="chx-l">' + line + '</div>' : '') + '</div>';
+        };
+        var CX = B.chg || [], TOPN = 4;
+        html += sec('brief-ch', 'What Changed Today', 'Biggest changes since the first report' + (B.first_report ? ' at ' + esc(B.first_report) : '') + '. Check here right before lock.',
+          CX.slice(0, TOPN).map(chItem).join('') +
+          '<details class="chx-more"><summary>Show more' + (CX.length > TOPN ? ' (' + (CX.length - TOPN) + ' more change' + (CX.length - TOPN === 1 ? '' : 's') + ' + full list)' : ' (full list)') + '</summary>' + CX.slice(TOPN).map(chItem).join('') +
           '<div class="tbl-wrap ch-wrap"><table class="inj-tbl ch-tbl"><thead><tr><th>Player</th><th>Now</th><th>Was</th><th>Who benefits</th><th>Time</th></tr></thead><tbody>' +
           ch.map(function(c){
             return '<tr><td><span class="who">' + esc(c.player) + '</span> ' + tm(c.team) + '</td>' +
@@ -111,7 +120,7 @@
               '<td data-l="Who benefits">' + chBen(c) + '</td>' +
               '<td data-l="Time" class="bs-n">' + esc(c.time) + '</td>' +
               '<td class="ch-m"><span class="bc-st ' + cls2(c.status) + '">' + esc(c.status) + '</span> <span class="bs-n">' + (c.was ? 'was ' + esc(c.was.toLowerCase()) : 'newly listed') + '</span>' + (chBen(c, true) ? '<div class="bs-n">' + chBen(c, true) + '</div>' : '') + '</td></tr>';
-          }).join('') + '</tbody></table></div>');
+          }).join('') + '</tbody></table></div></details>');
       }
       // If he sits
       var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
