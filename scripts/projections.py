@@ -324,6 +324,48 @@ def main():
             return "Listed out. " + st.rstrip(".") + "."
         return "Ruled out tonight."
 
+    # The SportsLine baseline leaves out some rotation players (11/9: Steinbach, Hezonja, Salaun,
+    # Carrington and others with DK salaries and real minutes). Any player on tonight's DK/DFF list
+    # who is missing from it and played 10+ minutes in one of his last 3 games (last game within
+    # 10 days) is added with his own averages from those 3 box scores. The usual minutes steps
+    # (injuries, splits, 240-minute total) then apply to him like everyone else.
+    have = {(norm(x["player"]), x["team"]) for x in sl if x["min"] > 0}
+    have_last = {(norm(x["player"]).split(" ")[-1], x["team"]) for x in sl if x["min"] > 0}
+    gfor = {}
+    for t, gi in games.items():
+        gfor[t] = (gi["opp"] + "@" + t) if gi["home"] else (t + "@" + gi["opp"])
+    bdir = os.path.join(HIST, "box")
+    cut10 = str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=10))
+    bx = {}
+    for fn in sorted(os.listdir(bdir)) if os.path.isdir(bdir) else []:
+        if fn[:10] >= str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=30)) and fn[:10] < day:
+            for x in load_json(os.path.join(bdir, fn), []):
+                bx.setdefault((norm(x["player"]), x["team"]), []).append(x)
+    added = []
+    for d in dff:
+        k = norm(d["player"])
+        if d["team"] not in slate or (k, d["team"]) in have or d["team"] not in gfor:
+            continue
+        if (k.split(" ")[-1], d["team"]) in have_last:
+            continue  # same last name on the same team: the name matcher below pairs them
+        oo = official.get(k)
+        if d["inj"] == "O" and not (official and not oo) or (oo and oo["status"] in ("Out", "Doubtful")):
+            continue  # ruled out: the baseline already left his minutes to his teammates
+        g = sorted([x for x in bx.get((k, d["team"]), []) if x["min"] > 0], key=lambda x: x["date"])[-3:]
+        if not g or g[-1]["date"] < cut10 or max(x["min"] for x in g) < 10:
+            continue
+        n = float(len(g))
+        sl.append({"player": d["player"], "pos": d["pos"], "team": d["team"], "game": gfor[d["team"]],
+                   "dk": sum(x["dk"] for x in g) / n, "pts": sum(x.get("pts", 0) for x in g) / n,
+                   "min": sum(x["min"] for x in g) / n, "ast": sum(x.get("ast", 0) for x in g) / n,
+                   "reb": sum(x.get("reb", 0) for x in g) / n, "blk": sum(x.get("blk", 0) for x in g) / n,
+                   "stl": sum(x.get("stl", 0) for x in g) / n, "to": sum(x.get("to", 0) for x in g) / n,
+                   "fga": 0.0, "fta": 0.0, "added": len(g)})
+        have.add((k, d["team"]))
+        added.append(d["player"])
+    if added:
+        print("added from box scores (missing from baseline):", ", ".join(added))
+
     rows = []
     for s in sl:
         if s["team"] not in slate or s["min"] <= 0:
@@ -345,7 +387,7 @@ def main():
             d = c[0] if len(c) == 1 else None
         r = dict(s)
         r["base"] = s["min"]
-        r["why"] = []
+        r["why"] = ["Not in the SportsLine baseline; projected from his last %d games." % s["added"]] if s.get("added") else []
         dk = dks.get((k, s["team"]))
         if not dk:
             last = k.split(" ")[-1]
@@ -645,7 +687,7 @@ def main():
     for r in rows:
         t = tpl.get(r["team"])
         poss = r["fga"] + 0.44 * r["fta"] + r["to"]
-        r["usg"] = round(100.0 * poss * (t[1] / 5.0) / (r["min"] * t[0]), 1) if (t and r["min"] > 0 and t[0] > 0) else None
+        r["usg"] = round(100.0 * poss * (t[1] / 5.0) / (r["min"] * t[0]), 1) if (t and r["min"] > 0 and t[0] > 0 and not r.get("added")) else None
 
     pub = []
     for r in rows:
