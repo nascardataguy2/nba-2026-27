@@ -2,7 +2,7 @@
  "updated": "2026-11-09",
  "brief": {
   "date": "2026-11-09",
-  "updated": "4:46 PM ET",
+  "updated": "5:37 PM ET",
   "games": 7,
   "pending": [],
   "first_report": "5:39 AM",
@@ -26,6 +26,10 @@
      "LAL": {
       "out": [
        {
+        "player": "Austin Reaves",
+        "min": 37.3
+       },
+       {
         "player": "Quentin Grimes",
         "min": 25.7
        }
@@ -33,7 +37,7 @@
       "q": [
        {
         "player": "Austin Reaves",
-        "min": 35.2
+        "min": 32.9
        }
       ]
      },
@@ -44,26 +48,21 @@
         "min": 15.3
        }
       ],
-      "q": [
-       {
-        "player": "Jock Landale",
-        "min": 9.4
-       }
-      ]
+      "q": []
      }
     },
-    "key": "Quentin Grimes is out, so Matisse Thybulle should play more than usual."
+    "key": "Austin Reaves and Quentin Grimes are out, so Collin Sexton and Ziaire Williams should play more than usual."
    },
    {
     "away": "WAS",
     "home": "DET",
     "time": "2026-11-10T00:00Z",
     "slate": "main",
-    "ou": 218.5,
+    "ou": 219.5,
     "fav": "DET",
     "line": 10.5,
-    "away_pts": 104.0,
-    "home_pts": 114.5,
+    "away_pts": 104.5,
+    "home_pts": 115.0,
     "tags": [
      "Blowout risk",
      "DET on a back-to-back"
@@ -108,11 +107,11 @@
     "home": "CHA",
     "time": "2026-11-10T00:00Z",
     "slate": "main",
-    "ou": 214.5,
+    "ou": 215.5,
     "fav": "CLE",
     "line": 8.5,
-    "away_pts": 111.5,
-    "home_pts": 103.0,
+    "away_pts": 112.0,
+    "home_pts": 103.5,
     "tags": [
      "Lowest total"
     ],
@@ -162,10 +161,12 @@
     "slate": "main",
     "ou": 228.5,
     "fav": "TOR",
-    "line": 3.5,
-    "away_pts": 112.5,
-    "home_pts": 116.0,
-    "tags": [],
+    "line": 2.5,
+    "away_pts": 113.0,
+    "home_pts": 115.5,
+    "tags": [
+     "Close game"
+    ],
     "teams": {
      "MEM": {
       "out": [
@@ -212,9 +213,9 @@
     "slate": "main",
     "ou": 226.5,
     "fav": "DAL",
-    "line": 3.5,
-    "away_pts": 111.5,
-    "home_pts": 115.0,
+    "line": 4.5,
+    "away_pts": 111.0,
+    "home_pts": 115.5,
     "tags": [
      "DAL on a back-to-back"
     ],
@@ -259,10 +260,10 @@
     "home": "HOU",
     "time": "2026-11-10T01:30Z",
     "slate": "main",
-    "ou": 219.5,
+    "ou": 223.5,
     "fav": "HOU",
-    "line": 8.5,
-    "away_pts": 105.5,
+    "line": 4.5,
+    "away_pts": 109.5,
     "home_pts": 114.0,
     "tags": [],
     "teams": {
@@ -280,18 +281,18 @@
       "q": []
      }
     },
-    "key": "Nikola Jokic has the top projection in this game at 53.3 DK points."
+    "key": "Nikola Jokic has the top projection in this game at 53.5 DK points."
    },
    {
     "away": "SAS",
     "home": "PHX",
     "time": "2026-11-10T02:00Z",
     "slate": "main",
-    "ou": 226.5,
+    "ou": 225.5,
     "fav": "SAS",
     "line": 8.5,
-    "away_pts": 117.5,
-    "home_pts": 109.0,
+    "away_pts": 117.0,
+    "home_pts": 108.5,
     "tags": [],
     "teams": {
      "SAS": {
@@ -317,6 +318,22 @@
    }
   ],
   "changed": [
+   {
+    "player": "Jock Landale",
+    "team": "ATL",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Hip Strain",
+    "time": "5:38 PM"
+   },
+   {
+    "player": "Moussa Diabate",
+    "team": "CHA",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "",
+    "time": "5:38 PM"
+   },
    {
     "player": "Devin Vassell",
     "team": "SAS",
@@ -380,22 +397,6 @@
     "was": "",
     "why": "",
     "time": "4:10 PM"
-   },
-   {
-    "player": "Bilal Coulibaly",
-    "team": "WAS",
-    "status": "Questionable",
-    "was": "",
-    "why": "Left Hand Soreness",
-    "time": "4:10 PM"
-   },
-   {
-    "player": "Collin Murray-Boyles",
-    "team": "TOR",
-    "status": "Questionable",
-    "was": "",
-    "why": "Illness",
-    "time": "1:40 PM"
    }
   ],
   "chg": [
@@ -423,8 +424,8 @@
    {
     "key": "Moussa Diabate",
     "team": "CHA",
-    "head": "Moussa Diabate DOUBTFUL",
-    "st": "Doubtful",
+    "head": "Moussa Diabate OUT",
+    "st": "Out",
     "act": "Play",
     "names": [
      {
@@ -438,7 +439,7 @@
       "much": "+13.2 DK without him (1 game)"
      }
     ],
-    "time": "12:42 PM",
+    "time": "5:38 PM",
     "size": 27.8
    },
    {
@@ -451,7 +452,7 @@
      {
       "player": "Keldon Johnson",
       "salary": 4400,
-      "much": "+5.5 DK projected vs. last 3"
+      "much": "+5.9 DK projected vs. last 3"
      }
     ],
     "time": "4:10 PM",
@@ -467,7 +468,7 @@
      {
       "player": "Collin Sexton",
       "salary": 4100,
-      "much": "+6.8 DK projected vs. last 3"
+      "much": "+10.3 DK projected vs. last 3"
      }
     ],
     "time": "1:40 PM",
@@ -483,7 +484,12 @@
      {
       "player": "Matisse Thybulle",
       "salary": 4400,
-      "much": "+5.9 DK projected vs. last 3"
+      "much": "+6.8 DK projected vs. last 3"
+     },
+     {
+      "player": "Ziaire Williams",
+      "salary": 4500,
+      "much": "+3.2 DK projected vs. last 3"
      }
     ],
     "time": "1:40 PM",
@@ -550,6 +556,46 @@
     ]
    },
    {
+    "team": "LAL",
+    "outs": [
+     {
+      "player": "Austin Reaves",
+      "min": 37.3,
+      "note": "Listed out. Healthy (groin history).",
+      "new": true
+     },
+     {
+      "player": "Quentin Grimes",
+      "min": 25.7,
+      "note": "Quentin Grimes started for the resting Luka Doncic on Nov 8 and had 12 points and 4 assists in 32 minutes. He hurt his finger late, did not return, and had negative X-rays, so the show said there is some doubt he plays on Nov 9. The show said he does little when Doncic plays.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 63.0,
+    "benefits": [
+     {
+      "player": "Collin Sexton",
+      "salary": 4100,
+      "why": "subs in for them 12 of 80 times",
+      "much": "+10.3 DK projected vs. last 3",
+      "score": 10.283333333333333,
+      "min": 21.9,
+      "dk": 24.2
+     },
+     {
+      "player": "Ziaire Williams",
+      "salary": 4500,
+      "why": "subs in for them 13 of 80 times",
+      "much": "+3.2 DK projected vs. last 3",
+      "score": 3.25,
+      "min": 26.7,
+      "dk": 24.0
+     }
+    ],
+    "split_of": []
+   },
+   {
     "team": "SAS",
     "outs": [
      {
@@ -566,35 +612,10 @@
       "player": "Keldon Johnson",
       "salary": 4400,
       "why": "subs in for him 8 of 32 times",
-      "much": "+5.5 DK projected vs. last 3",
-      "score": 5.533333333333331,
-      "min": 27.3,
-      "dk": 24.7
-     }
-    ],
-    "split_of": []
-   },
-   {
-    "team": "LAL",
-    "outs": [
-     {
-      "player": "Quentin Grimes",
-      "min": 25.7,
-      "note": "Quentin Grimes started for the resting Luka Doncic on Nov 8 and had 12 points and 4 assists in 32 minutes. He hurt his finger late, did not return, and had negative X-rays, so the show said there is some doubt he plays on Nov 9. The show said he does little when Doncic plays.",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 25.7,
-    "benefits": [
-     {
-      "player": "Matisse Thybulle",
-      "salary": 4400,
-      "why": "subs in for him 7 of 37 times",
       "much": "+5.9 DK projected vs. last 3",
-      "score": 5.949999999999999,
-      "min": 26.6,
-      "dk": 19.2
+      "score": 5.933333333333334,
+      "min": 27.3,
+      "dk": 25.1
      }
     ],
     "split_of": []
@@ -625,7 +646,7 @@
       "much": "+12.8 DK without them (1 game)",
       "score": 12.8,
       "min": 33.4,
-      "dk": 48.0
+      "dk": 47.8
      }
     ],
     "split_of": [
@@ -707,7 +728,7 @@
       "much": "+10.3 DK without him (7 games)",
       "score": 10.3,
       "min": 22.9,
-      "dk": 20.3
+      "dk": 20.6
      }
     ],
     "split_of": [
@@ -803,30 +824,30 @@
    {
     "player": "Walter Clayton Jr.",
     "team": "DAL",
-    "own": 41.5,
+    "own": 46.9,
     "dk": 15.6,
     "salary": 3300
    },
    {
     "player": "Grayson Allen",
     "team": "CHA",
-    "own": 39.7,
+    "own": 40.9,
     "dk": 34.7,
     "salary": 5200
    },
    {
-    "player": "Keldon Johnson",
-    "team": "SAS",
-    "own": 32.6,
-    "dk": 24.7,
-    "salary": 4400
-   },
-   {
     "player": "Cameron Johnson",
     "team": "DEN",
-    "own": 32.4,
-    "dk": 21.8,
+    "own": 33.2,
+    "dk": 21.9,
     "salary": 4500
+   },
+   {
+    "player": "Keldon Johnson",
+    "team": "SAS",
+    "own": 31.1,
+    "dk": 25.1,
+    "salary": 4400
    }
   ],
   "leverage": [
@@ -840,15 +861,15 @@
    {
     "player": "Sion James",
     "team": "CHA",
-    "own": 5.7,
-    "dk": 26.1,
+    "own": 5.1,
+    "dk": 26.4,
     "salary": 4500
    },
    {
     "player": "Donovan Mitchell",
     "team": "CLE",
-    "own": 4.1,
-    "dk": 48.0,
+    "own": 4.6,
+    "dk": 47.8,
     "salary": 8400
    }
   ],
@@ -935,89 +956,21 @@
    ]
   },
   "injuries": {
-   "report": "04:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_04_30PM.pdf",
+   "report": "05:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_05_30PM.pdf",
    "pending": [],
    "rows": [
-    {
-     "game": "LAL at ATL",
-     "time": "2026-11-10T00:00Z",
-     "team": "LAL",
-     "player": "Quentin Grimes",
-     "status": "Out",
-     "reason": "Right Finger Sprain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:40 PM",
-     "min": 25.7,
-     "benefits": [
-      {
-       "player": "Matisse Thybulle",
-       "salary": 4400,
-       "why": "subs in for him 7 of 37 times",
-       "much": "+5.9 DK projected vs. last 3",
-       "score": 5.949999999999999,
-       "min": 26.6,
-       "dk": 19.2
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "CLE at CHA",
-     "time": "2026-11-10T00:00Z",
-     "team": "CHA",
-     "player": "Brandon Miller",
-     "status": "Out",
-     "reason": "Right Hip Strain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 23.7,
-     "benefits": [
-      {
-       "player": "Royce O'Neale",
-       "salary": 4300,
-       "why": "subs in for him 6 of 39 times",
-       "much": "+16.3 DK projected vs. last 3",
-       "score": 16.316666666666663,
-       "min": 27.2,
-       "dk": 28.4
-      },
-      {
-       "player": "Grayson Allen",
-       "salary": 5200,
-       "why": "subs in for him 8 of 39 times",
-       "much": "+15.5 DK projected vs. last 3",
-       "score": 15.450000000000003,
-       "min": 28.5,
-       "dk": 34.7
-      },
-      {
-       "player": "Naz Reid",
-       "salary": 6900,
-       "why": "subs in for him 8 of 39 times",
-       "much": "+15.4 DK projected vs. last 3",
-       "score": 15.416666666666668,
-       "min": 33.3,
-       "dk": 47.0
-      }
-     ],
-     "estimate": false
-    },
     {
      "game": "CLE at CHA",
      "time": "2026-11-10T00:00Z",
      "team": "CHA",
      "player": "Moussa Diabate",
-     "status": "Doubtful",
+     "status": "Out",
      "reason": "",
      "new": true,
-     "was": "Questionable",
+     "was": "Doubtful",
      "known": true,
-     "changed_at": "12:42 PM",
+     "changed_at": "5:38 PM",
      "min": 27.0,
      "benefits": [
       {
@@ -1054,6 +1007,83 @@
      "game": "LAL at ATL",
      "time": "2026-11-10T00:00Z",
      "team": "LAL",
+     "player": "Quentin Grimes",
+     "status": "Out",
+     "reason": "Right Finger Sprain",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "1:40 PM",
+     "min": 25.7,
+     "benefits": [
+      {
+       "player": "Matisse Thybulle",
+       "salary": 4400,
+       "why": "subs in for him 7 of 37 times",
+       "much": "+6.8 DK projected vs. last 3",
+       "score": 6.75,
+       "min": 27.3,
+       "dk": 20.0
+      },
+      {
+       "player": "Ziaire Williams",
+       "salary": 4500,
+       "why": "subs in for him 8 of 37 times",
+       "much": "+3.2 DK projected vs. last 3",
+       "score": 3.25,
+       "min": 26.7,
+       "dk": 24.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "CLE at CHA",
+     "time": "2026-11-10T00:00Z",
+     "team": "CHA",
+     "player": "Brandon Miller",
+     "status": "Out",
+     "reason": "Right Hip Strain",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 23.7,
+     "benefits": [
+      {
+       "player": "Royce O'Neale",
+       "salary": 4300,
+       "why": "subs in for him 6 of 39 times",
+       "much": "+16.3 DK projected vs. last 3",
+       "score": 16.316666666666663,
+       "min": 27.2,
+       "dk": 28.4
+      },
+      {
+       "player": "Naz Reid",
+       "salary": 6900,
+       "why": "subs in for him 8 of 39 times",
+       "much": "+15.5 DK projected vs. last 3",
+       "score": 15.51666666666667,
+       "min": 33.3,
+       "dk": 47.1
+      },
+      {
+       "player": "Grayson Allen",
+       "salary": 5200,
+       "why": "subs in for him 8 of 39 times",
+       "much": "+15.5 DK projected vs. last 3",
+       "score": 15.450000000000003,
+       "min": 28.5,
+       "dk": 34.7
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "LAL at ATL",
+     "time": "2026-11-10T00:00Z",
+     "team": "LAL",
      "player": "Austin Reaves",
      "status": "Questionable",
      "reason": "Illness",
@@ -1067,10 +1097,10 @@
        "player": "Collin Sexton",
        "salary": 4100,
        "why": "subs in for him 7 of 43 times",
-       "much": "+6.8 DK projected vs. last 3",
-       "score": 6.783333333333333,
-       "min": 18.9,
-       "dk": 20.7
+       "much": "+10.3 DK projected vs. last 3",
+       "score": 10.283333333333333,
+       "min": 21.9,
+       "dk": 24.2
       }
      ],
      "estimate": false
@@ -1153,7 +1183,7 @@
        "much": "+10.8 DK without him (2 games)",
        "score": 10.8,
        "min": 33.4,
-       "dk": 48.0
+       "dk": 47.8
       },
       {
        "player": "Thomas Bryant",
@@ -1162,7 +1192,7 @@
        "much": "+5.8 DK without him (2 games)",
        "score": 5.8,
        "min": 13.6,
-       "dk": 14.8
+       "dk": 14.7
       }
      ],
      "estimate": false
@@ -1172,42 +1202,14 @@
      "time": "2026-11-10T00:00Z",
      "team": "ATL",
      "player": "Jock Landale",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Left Hip Strain",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "5:38 PM",
      "min": 11.0,
-     "benefits": [
-      {
-       "player": "Zuby Ejiofor",
-       "salary": 3700,
-       "why": "16 minutes, up from 4",
-       "much": "+16.2 DK without him (4 games)",
-       "score": 16.2,
-       "min": 13.0,
-       "dk": 10.2
-      },
-      {
-       "player": "Onyeka Okongwu",
-       "salary": 6700,
-       "why": "32 minutes, up from 28",
-       "much": "+12.6 DK without him (4 games)",
-       "score": 12.6,
-       "min": 28.8,
-       "dk": 30.3
-      },
-      {
-       "player": "Dyson Daniels",
-       "salary": 6500,
-       "why": "33 minutes, up from 29",
-       "much": "+11.3 DK without him (4 games)",
-       "score": 11.3,
-       "min": 29.1,
-       "dk": 29.8
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1248,7 +1250,7 @@
        "much": "+24.8 DK without him (1 game)",
        "score": 24.8,
        "min": 22.9,
-       "dk": 20.3
+       "dk": 20.6
       }
      ],
      "estimate": false
@@ -1291,7 +1293,7 @@
        "much": "+24.8 DK without him (1 game)",
        "score": 24.8,
        "min": 22.9,
-       "dk": 20.3
+       "dk": 20.6
       }
      ],
      "estimate": false
@@ -1463,10 +1465,10 @@
        "player": "Keldon Johnson",
        "salary": 4400,
        "why": "subs in for him 8 of 32 times",
-       "much": "+5.5 DK projected vs. last 3",
-       "score": 5.533333333333331,
+       "much": "+5.9 DK projected vs. last 3",
+       "score": 5.933333333333334,
        "min": 27.3,
-       "dk": 24.7
+       "dk": 25.1
       }
      ],
      "estimate": false
@@ -1491,7 +1493,7 @@
        "much": "+8.6 DK without him (3 games)",
        "score": 8.6,
        "min": 18.5,
-       "dk": 15.2
+       "dk": 15.1
       },
       {
        "player": "Miles Bridges",
@@ -1500,7 +1502,7 @@
        "much": "+7.8 DK without him (3 games)",
        "score": 7.8,
        "min": 28.9,
-       "dk": 33.1
+       "dk": 32.9
       }
      ],
      "estimate": false
@@ -1568,7 +1570,7 @@
        "much": "+12.8 DK without him (1 game)",
        "score": 12.8,
        "min": 33.4,
-       "dk": 48.0
+       "dk": 47.8
       }
      ],
      "estimate": false
@@ -1627,7 +1629,7 @@
        "much": "+9.4 DK without him (7 games)",
        "score": 9.4,
        "min": 34.7,
-       "dk": 53.7
+       "dk": 54.0
       },
       {
        "player": "Kevin Huerter",
@@ -1636,7 +1638,7 @@
        "much": "+6.1 DK without him (7 games)",
        "score": 6.1,
        "min": 23.4,
-       "dk": 21.5
+       "dk": 21.7
       }
      ],
      "estimate": false
@@ -1713,7 +1715,7 @@
        "much": "+7.2 DK without him (6 games)",
        "score": 7.2,
        "min": 22.0,
-       "dk": 20.0
+       "dk": 19.7
       }
      ],
      "estimate": false
@@ -1738,7 +1740,7 @@
        "much": "+5.8 DK without him (6 games)",
        "score": 5.8,
        "min": 23.4,
-       "dk": 21.5
+       "dk": 21.7
       }
      ],
      "estimate": false
@@ -1772,7 +1774,7 @@
        "much": "+10.3 DK without him (7 games)",
        "score": 10.3,
        "min": 22.9,
-       "dk": 20.3
+       "dk": 20.6
       }
      ],
      "estimate": false
@@ -1797,7 +1799,7 @@
        "much": "+12.8 DK without him (1 game)",
        "score": 12.8,
        "min": 16.9,
-       "dk": 15.2
+       "dk": 15.6
       },
       {
        "player": "Ty Jerome",
@@ -1806,7 +1808,7 @@
        "much": "+10.5 DK without him (2 games)",
        "score": 10.5,
        "min": 28.0,
-       "dk": 35.6
+       "dk": 35.9
       }
      ],
      "estimate": false
@@ -11678,7 +11680,7 @@
    "coach": "Quin Snyder",
    "notes": "All five starters are expected to play 30+ minutes. If Jalen Johnson sits, his usage scatters to McCollum, Alexander-Walker and possibly Flemings. If Okongwu sits, Landale starts and plays 30+ minutes. The team has 14 back-to-backs.",
    "source": "LO-1018",
-   "out": "Asa Newell",
+   "out": "Asa Newell, RayJ Dennis",
    "depth_through": "2026-11-07",
    "games": 11
   },
@@ -11864,13 +11866,13 @@
   },
   {
    "team": "NOP",
-   "starters": "Dejounte Murray (34), Zion Williamson (33), Jeremiah Fears (29), Karlo Matkovic (19), Herbert Jones (23)",
-   "bench": "Saddiq Bey (27), Derik Queen (22), Bennedict Mathurin (15)",
+   "starters": "Dejounte Murray (34), Jeremiah Fears (29), Karlo Matkovic (19), Herbert Jones (23), Saddiq Bey (27)",
+   "bench": "Derik Queen (22), Bennedict Mathurin (15)",
    "backup_c": "Derik Queen",
    "coach": "Jamahl Mosley",
    "notes": "Mathurin signed for 2 years and $16 million. The team is still built around Zion. New Orleans plays only 2 games in the final week of Yahoo's default playoffs.",
    "source": "LO-1019b",
-   "out": "Trendon Watford, Trey Murphy III, Yves Missi",
+   "out": "Trendon Watford, Trey Murphy III, Yves Missi, Zion Williamson",
    "depth_through": "2026-11-08",
    "games": 10
   },
