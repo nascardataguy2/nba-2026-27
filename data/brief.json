@@ -1,11 +1,8 @@
 {
  "date": "2026-11-09",
- "updated": "1:39 PM ET",
+ "updated": "4:09 PM ET",
  "games": 7,
- "pending": [
-  "DET",
-  "DAL"
- ],
+ "pending": [],
  "first_report": "5:39 AM",
  "cards": [
   {
@@ -27,10 +24,6 @@
     "LAL": {
      "out": [
       {
-       "player": "Luka Doncic",
-       "min": 36.3
-      },
-      {
        "player": "Quentin Grimes",
        "min": 25.7
       }
@@ -38,7 +31,7 @@
      "q": [
       {
        "player": "Austin Reaves",
-       "min": 37.3
+       "min": 35.2
       }
      ]
     },
@@ -57,7 +50,7 @@
      ]
     }
    },
-   "key": "Luka Doncic and Quentin Grimes are out, so Collin Sexton and Sandro Mamukelashvili should play more than usual."
+   "key": "Quentin Grimes is out, so Matisse Thybulle should play more than usual."
   },
   {
    "away": "WAS",
@@ -85,20 +78,28 @@
       {
        "player": "Anthony Davis",
        "min": 30.4
+      },
+      {
+       "player": "Bilal Coulibaly",
+       "min": 22.8
       }
      ]
     },
     "DET": {
-     "out": [],
-     "q": [
+     "out": [
+      {
+       "player": "Jalen Duren",
+       "min": 19.0
+      },
       {
        "player": "Isaiah Joe",
-       "min": 15.2
+       "min": 13.7
       }
-     ]
+     ],
+     "q": []
     }
    },
-   "key": "Justin Champagnie is out, so Alex Sarr and Kyshawn George and Will Riley should play more than usual."
+   "key": "Jalen Duren is out, so Cade Cunningham and Kevin Huerter should play more than usual."
   },
   {
    "away": "CLE",
@@ -150,7 +151,7 @@
      "q": []
     }
    },
-   "key": "Moussa Diabate and Dennis Schroder are out, so Royce O'Neale and Christian Anderson and Ryan Kalkbrenner and Grayson Allen and Coby White should play more than usual."
+   "key": "Moussa Diabate and Dennis Schroder are out, so Coby White and Royce O'Neale and Christian Anderson should play more than usual."
   },
   {
    "away": "MEM",
@@ -200,7 +201,7 @@
      ]
     }
    },
-   "key": "Kawhi Leonard is out, so Jamal Shead and Trayce Jackson-Davis and Allen Graves and Ja'Kobe Walter and RJ Barrett should play more than usual."
+   "key": "Kawhi Leonard is out, so Jamal Shead should play more than usual."
   },
   {
    "away": "IND",
@@ -235,11 +236,25 @@
      ]
     },
     "DAL": {
-     "out": [],
-     "q": []
+     "out": [
+      {
+       "player": "Sergio Larrea",
+       "min": 13.3
+      },
+      {
+       "player": "Sergio de Larrea",
+       "min": 13.3
+      }
+     ],
+     "q": [
+      {
+       "player": "Morez Johnson Jr.",
+       "min": 18.1
+      }
+     ]
     }
    },
-   "key": "Tyrese Haliburton is out, so Quenton Jackson and Larry Nance and Andrew Nembhard and Jarace Walker and Jalen Slawson and Aaron Nesmith should play more than usual."
+   "key": "Tyrese Haliburton is out, so Quenton Jackson and Larry Nance and Andrew Nembhard should play more than usual."
   },
   {
    "away": "DEN",
@@ -255,24 +270,7 @@
    "teams": {
     "DEN": {
      "out": [],
-     "q": [
-      {
-       "player": "Nikola Jokic",
-       "min": 33.1
-      },
-      {
-       "player": "Jamal Murray",
-       "min": 32.9
-      },
-      {
-       "player": "Christian Braun",
-       "min": 30.8
-      },
-      {
-       "player": "Cameron Johnson",
-       "min": 27.2
-      }
-     ]
+     "q": []
     },
     "HOU": {
      "out": [
@@ -284,7 +282,7 @@
      "q": []
     }
    },
-   "key": "Clint Capela is out, so Alperen Sengun and Tari Eason and Jabari Smith should play more than usual."
+   "key": "Nikola Jokic has the top projection in this game at 53.3 DK points."
   },
   {
    "away": "SAS",
@@ -299,13 +297,13 @@
    "tags": [],
    "teams": {
     "SAS": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Devin Vassell",
        "min": 28.0
       }
-     ]
+     ],
+     "q": []
     },
     "PHX": {
      "out": [],
@@ -317,10 +315,82 @@
      ]
     }
    },
-   "key": "Victor Wembanyama has the top projection in this game at 50.8 DK points."
+   "key": "Devin Vassell is out, so Keldon Johnson should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Devin Vassell",
+   "team": "SAS",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "Nikola Jokic",
+   "team": "DEN",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "Right Elbow Sprain",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "Cameron Johnson",
+   "team": "DEN",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "Right Ankle Sprain",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "Aaron Gordon",
+   "team": "DEN",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "DeMar DeRozan",
+   "team": "DEN",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "Low Back Spasms",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "Christian Braun",
+   "team": "DEN",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "Morez Johnson Jr.",
+   "team": "DAL",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "4:10 PM"
+  },
+  {
+   "player": "Bilal Coulibaly",
+   "team": "WAS",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Hand Soreness",
+   "time": "4:10 PM"
+  },
   {
    "player": "Collin Murray-Boyles",
    "team": "TOR",
@@ -328,38 +398,6 @@
    "was": "",
    "why": "Illness",
    "time": "1:40 PM"
-  },
-  {
-   "player": "Austin Reaves",
-   "team": "LAL",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "1:40 PM"
-  },
-  {
-   "player": "Quentin Grimes",
-   "team": "LAL",
-   "status": "Out",
-   "was": "",
-   "why": "Right Finger Sprain",
-   "time": "1:40 PM"
-  },
-  {
-   "player": "Oscar Tshiebwe",
-   "team": "HOU",
-   "status": "Out",
-   "was": "",
-   "why": "Illness",
-   "time": "12:42 PM"
-  },
-  {
-   "player": "Moussa Diabate",
-   "team": "CHA",
-   "status": "Doubtful",
-   "was": "Questionable",
-   "why": "",
-   "time": "12:42 PM"
   }
  ],
  "sits": [
@@ -389,52 +427,31 @@
    "lost": 76.7,
    "benefits": [
     {
+     "player": "Coby White",
+     "salary": 5900,
+     "why": "Show: possible minutes jump to 24-29 (11/09)",
+     "much": "+16.7 DK projected vs. last 3",
+     "score": 16.733333333333334,
+     "min": 21.8,
+     "dk": 27.9
+    },
+    {
      "player": "Royce O'Neale",
-     "gdk": 8.5,
-     "wmin": 26.0,
-     "recent": 18.0,
-     "n": 1,
-     "min": 29.3,
-     "dk": 30.6,
      "salary": 4300,
-     "newstart": false,
-     "note": "Show: more minutes (11/09)"
+     "why": "26 minutes, up from 18",
+     "much": "+8.5 DK without them (1 game)",
+     "score": 8.5,
+     "min": 29.3,
+     "dk": 30.6
     },
     {
      "player": "Christian Anderson",
-     "gdk": 5.9,
-     "wmin": 25.0,
-     "recent": 10.4,
-     "n": 1,
-     "min": 18.0,
-     "dk": 17.2,
      "salary": 3300,
-     "newstart": false,
-     "note": "Show: backup guard role (11/09)"
-    },
-    {
-     "player": "Ryan Kalkbrenner",
-     "note": "started, 21 minutes (11/06)",
-     "min": 24.1,
-     "dk": 26.3,
-     "salary": 4400,
-     "newstart": false
-    },
-    {
-     "player": "Grayson Allen",
-     "note": "Show: more minutes if Miller misses time (11/07)",
-     "min": 30.8,
-     "dk": 37.6,
-     "salary": 5200,
-     "newstart": true
-    },
-    {
-     "player": "Coby White",
-     "note": "Show: more point guard minutes (11/08)",
-     "min": 21.8,
-     "dk": 28.0,
-     "salary": 5900,
-     "newstart": false
+     "why": "25 minutes, up from 10",
+     "much": "+5.9 DK without them (1 game)",
+     "score": 5.9,
+     "min": 18.0,
+     "dk": 17.4
     }
    ],
    "split_of": [
@@ -443,14 +460,33 @@
    ]
   },
   {
-   "team": "LAL",
+   "team": "SAS",
    "outs": [
     {
-     "player": "Luka Doncic",
-     "min": 36.3,
-     "note": "Doncic sat on Nov. 8 at Detroit with low back tightness. The show assumed he plays the second leg of the back-to-back against Atlanta on Nov. 9 but noted the back issue left no posted total for that game. The show said he is about 70 DraftKings points per game this year (the box scores show about 67 per game) and that Atlanta's defenders do not matter against him at $12,000.",
-     "new": false
-    },
+     "player": "Devin Vassell",
+     "min": 28.0,
+     "note": "Ruled out tonight.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 28.0,
+   "benefits": [
+    {
+     "player": "Keldon Johnson",
+     "salary": 4400,
+     "why": "subs in for him 8 of 32 times",
+     "much": "+5.7 DK projected vs. last 3",
+     "score": 5.733333333333331,
+     "min": 27.5,
+     "dk": 24.9
+    }
+   ],
+   "split_of": []
+  },
+  {
+   "team": "LAL",
+   "outs": [
     {
      "player": "Quentin Grimes",
      "min": 25.7,
@@ -459,36 +495,19 @@
     }
    ],
    "new": true,
-   "lost": 62.0,
+   "lost": 25.7,
    "benefits": [
     {
-     "player": "Collin Sexton",
-     "gdk": 11.8,
-     "wmin": 22.5,
-     "recent": 16.0,
-     "n": 2,
-     "min": 21.2,
-     "dk": 21.6,
-     "salary": 4100,
-     "newstart": false,
-     "note": "21 bench minutes, 21 points (10/28)"
-    },
-    {
-     "player": "Sandro Mamukelashvili",
-     "gdk": 3.2,
-     "wmin": 24.0,
-     "recent": 22.4,
-     "n": 2,
-     "min": 21.2,
-     "dk": 19.6,
-     "salary": 4700,
-     "newstart": false,
-     "note": "30 minutes, 13 points, 8 rebounds when Doncic sat (10/28)"
+     "player": "Matisse Thybulle",
+     "salary": 4400,
+     "why": "subs in for him 7 of 37 times",
+     "much": "+5.9 DK projected vs. last 3",
+     "score": 5.949999999999999,
+     "min": 26.6,
+     "dk": 19.2
     }
    ],
-   "split_of": [
-    "Luka Doncic"
-   ]
+   "split_of": []
   },
   {
    "team": "CLE",
@@ -511,33 +530,12 @@
    "benefits": [
     {
      "player": "Donovan Mitchell",
-     "gdk": 12.8,
-     "wmin": 37.0,
-     "recent": 33.1,
-     "n": 1,
-     "min": 34.6,
-     "dk": 49.8,
      "salary": 8400,
-     "newstart": false
-    },
-    {
-     "player": "Peyton Watson",
-     "gdk": 4.7,
-     "wmin": 29.0,
-     "recent": 28.3,
-     "n": 1,
-     "min": 27.7,
-     "dk": 26.2,
-     "salary": 5900,
-     "newstart": false
-    },
-    {
-     "player": "Meleek Thomas",
-     "note": "Show: stream play (11/09)",
-     "min": 22.2,
-     "dk": 22.1,
-     "salary": 4300,
-     "newstart": false
+     "why": "37 minutes, up from 33",
+     "much": "+12.8 DK without them (1 game)",
+     "score": 12.8,
+     "min": 34.6,
+     "dk": 49.8
     }
    ],
    "split_of": [
@@ -560,71 +558,30 @@
    "benefits": [
     {
      "player": "Quenton Jackson",
-     "gdk": 10.5,
-     "wmin": 22.7,
-     "recent": 19.5,
-     "n": 6,
-     "min": 20.7,
-     "dk": 18.7,
      "salary": 4100,
-     "newstart": false,
-     "note": "has played well (11/04)"
+     "why": "23 minutes, up from 20",
+     "much": "+10.5 DK without him (6 games)",
+     "score": 10.5,
+     "min": 20.7,
+     "dk": 18.9
     },
     {
      "player": "Larry Nance",
-     "gdk": 9.0,
-     "wmin": 18.8,
-     "recent": 11.8,
-     "n": 5,
-     "min": 15.7,
-     "dk": 10.9,
      "salary": 3400,
-     "newstart": false
+     "why": "19 minutes, up from 12",
+     "much": "+9.0 DK without him (5 games)",
+     "score": 9.0,
+     "min": 15.7,
+     "dk": 10.9
     },
     {
      "player": "Andrew Nembhard",
-     "gdk": 6.9,
-     "wmin": 33.8,
-     "recent": 32.0,
-     "n": 5,
-     "min": 31.0,
-     "dk": 28.8,
      "salary": 7200,
-     "newstart": false,
-     "note": "31 minutes, 8 assists (11/07)"
-    },
-    {
-     "player": "Jarace Walker",
-     "gdk": 6.3,
-     "wmin": 25.3,
-     "recent": 21.0,
-     "n": 6,
-     "min": 22.0,
-     "dk": 18.4,
-     "salary": 4500,
-     "newstart": false
-    },
-    {
-     "player": "Jalen Slawson",
-     "gdk": 4.9,
-     "wmin": 17.8,
-     "recent": 9.0,
-     "n": 6,
-     "min": 15.7,
-     "dk": 12.5,
-     "salary": 3300,
-     "newstart": false
-    },
-    {
-     "player": "Aaron Nesmith",
-     "gdk": 4.4,
-     "wmin": 27.0,
-     "recent": 20.0,
-     "n": 5,
-     "min": 24.5,
-     "dk": 20.0,
-     "salary": 4400,
-     "newstart": false
+     "why": "31 minutes, 8 assists (11/07)",
+     "much": "+6.9 DK without him (5 games)",
+     "score": 6.9,
+     "min": 31.0,
+     "dk": 28.8
     }
    ],
    "split_of": [
@@ -646,98 +603,17 @@
    "benefits": [
     {
      "player": "Jamal Shead",
-     "gdk": 10.3,
-     "wmin": 23.7,
-     "recent": 20.0,
-     "n": 7,
-     "min": 24.2,
-     "dk": 21.5,
      "salary": 5500,
-     "newstart": false,
-     "note": "6+ assists in each of last five games off the bench, 20 to 25 minutes (11/04)"
-    },
-    {
-     "player": "Trayce Jackson-Davis",
-     "gdk": 3.9,
-     "wmin": 7.0,
-     "recent": 5.5,
-     "n": 6,
-     "min": 7.0,
-     "dk": 7.6,
-     "salary": 3000,
-     "newstart": false
-    },
-    {
-     "player": "Allen Graves",
-     "note": "Show: could see a few more minutes, not far past 20 (10/28)",
-     "min": 13.2,
-     "dk": 11.3,
-     "salary": 3600,
-     "newstart": false
-    },
-    {
-     "player": "Ja'Kobe Walter",
-     "note": "starting (11/06)",
-     "min": 30.3,
-     "dk": 24.0,
-     "salary": 5300,
-     "newstart": false
-    },
-    {
-     "player": "RJ Barrett",
-     "note": "heavy usage (10/28)",
-     "min": 33.9,
-     "dk": 39.3,
-     "salary": 7600,
-     "newstart": false
+     "why": "24 minutes, up from 20",
+     "much": "+10.3 DK without him (7 games)",
+     "score": 10.3,
+     "min": 24.2,
+     "dk": 21.5
     }
    ],
    "split_of": [
     "Kawhi Leonard"
    ]
-  },
-  {
-   "team": "HOU",
-   "outs": [
-    {
-     "player": "Clint Capela",
-     "min": 20.7,
-     "note": "Capela started on Oct. 30 with Alperen Sengun and Steven Adams out, but he is now out himself. He missed Nov. 2 with a right ankle sprain.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 20.7,
-   "benefits": [
-    {
-     "player": "Alperen Sengun",
-     "subs": 9,
-     "of": 22,
-     "min": 36.5,
-     "dk": 48.9,
-     "salary": 9000,
-     "newstart": false
-    },
-    {
-     "player": "Tari Eason",
-     "subs": 3,
-     "of": 22,
-     "min": 24.6,
-     "dk": 22.7,
-     "salary": 5000,
-     "newstart": false
-    },
-    {
-     "player": "Jabari Smith",
-     "subs": 2,
-     "of": 22,
-     "min": 36.2,
-     "dk": 32.5,
-     "salary": 7000,
-     "newstart": false
-    }
-   ],
-   "split_of": []
   }
  ],
  "hot": [
@@ -828,52 +704,52 @@
   {
    "player": "Walter Clayton Jr.",
    "team": "DAL",
-   "own": 49.9,
+   "own": 46.4,
    "dk": 16.5,
    "salary": 3300
   },
   {
    "player": "Grayson Allen",
    "team": "CHA",
-   "own": 40.3,
-   "dk": 37.6,
+   "own": 37.7,
+   "dk": 37.5,
    "salary": 5200
-  },
-  {
-   "player": "Immanuel Quickley",
-   "team": "TOR",
-   "own": 32.7,
-   "dk": 34.6,
-   "salary": 6800
   },
   {
    "player": "Cameron Johnson",
    "team": "DEN",
-   "own": 31.1,
+   "own": 34.5,
    "dk": 21.8,
    "salary": 4500
+  },
+  {
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "own": 32.8,
+   "dk": 24.9,
+   "salary": 4400
   }
  ],
  "leverage": [
   {
    "player": "Royce O'Neale",
    "team": "CHA",
-   "own": 7.7,
+   "own": 8.0,
    "dk": 30.6,
    "salary": 4300
   },
   {
    "player": "Sion James",
    "team": "CHA",
-   "own": 5.6,
-   "dk": 28.2,
+   "own": 6.4,
+   "dk": 28.0,
    "salary": 4500
   },
   {
    "player": "Ryan Kalkbrenner",
    "team": "CHA",
    "own": 0.9,
-   "dk": 26.3,
+   "dk": 26.2,
    "salary": 4400
   }
  ],
@@ -948,11 +824,6 @@
   ],
   "injuries": [
    {
-    "player": "Jarrett Allen",
-    "team": "CLE",
-    "text": "Allen left after 7 minutes on Nov. 4 and missed the Nov. 6 and Nov. 7 games. The show treated him as uncertain for Nov. 9 and said Evan Mobley becomes more interesting if Allen is out again, though it called Mobley a boring play who does not shoot more when others sit."
-   },
-   {
     "player": "Quentin Grimes",
     "team": "LAL",
     "text": "Quentin Grimes started for the resting Luka Doncic on Nov 8 and had 12 points and 4 assists in 32 minutes. He hurt his finger late, did not return, and had negative X-rays, so the show said there is some doubt he plays on Nov 9. The show said he does little when Doncic plays."
@@ -965,12 +836,9 @@
   ]
  },
  "injuries": {
-  "report": "01:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_30PM.pdf",
-  "pending": [
-   "DET",
-   "DAL"
-  ],
+  "report": "04:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_04_00PM.pdf",
+  "pending": [],
   "rows": [
    {
     "game": "LAL at ATL",
@@ -986,58 +854,13 @@
     "min": 25.7,
     "benefits": [
      {
-      "player": "Ziaire Williams",
-      "subs": 8,
-      "of": 37,
-      "min": 25.2,
-      "dk": 21.0,
-      "salary": 4500,
-      "newstart": false
-     },
-     {
       "player": "Matisse Thybulle",
-      "subs": 7,
-      "of": 37,
-      "min": 28.4,
-      "dk": 20.0,
       "salary": 4400,
-      "newstart": false
-     },
-     {
-      "player": "Walker Kessler",
-      "subs": 5,
-      "of": 37,
-      "min": 32.3,
-      "dk": 35.7,
-      "salary": 7700,
-      "newstart": false
-     },
-     {
-      "player": "Collin Sexton",
-      "subs": 5,
-      "of": 37,
-      "min": 21.2,
-      "dk": 21.6,
-      "salary": 4100,
-      "newstart": false
-     },
-     {
-      "player": "Jake LaRavia",
-      "subs": 4,
-      "of": 37,
-      "min": 28.0,
-      "dk": 20.5,
-      "salary": 4800,
-      "newstart": false
-     },
-     {
-      "player": "Sandro Mamukelashvili",
-      "subs": 2,
-      "of": 37,
-      "min": 21.2,
-      "dk": 19.6,
-      "salary": 4700,
-      "newstart": false
+      "why": "subs in for him 7 of 37 times",
+      "much": "+5.9 DK projected vs. last 3",
+      "score": 5.949999999999999,
+      "min": 26.6,
+      "dk": 19.2
      }
     ],
     "estimate": false
@@ -1057,60 +880,30 @@
     "benefits": [
      {
       "player": "Naz Reid",
-      "subs": 8,
-      "of": 39,
-      "min": 35.8,
-      "dk": 50.7,
       "salary": 6900,
-      "newstart": false
-     },
-     {
-      "player": "Grayson Allen",
-      "subs": 8,
-      "of": 39,
-      "min": 30.8,
-      "dk": 37.6,
-      "salary": 5200,
-      "newstart": true,
-      "note": "Show: more minutes if Miller misses time (11/07)"
+      "why": "subs in for him 8 of 39 times",
+      "much": "+18.9 DK projected vs. last 3",
+      "score": 18.916666666666668,
+      "min": 35.8,
+      "dk": 50.5
      },
      {
       "player": "Royce O'Neale",
-      "subs": 6,
-      "of": 39,
-      "min": 29.3,
-      "dk": 30.6,
       "salary": 4300,
-      "newstart": false,
-      "note": "Show: more minutes (11/09)"
+      "why": "subs in for him 6 of 39 times",
+      "much": "+18.5 DK projected vs. last 3",
+      "score": 18.516666666666666,
+      "min": 29.3,
+      "dk": 30.6
      },
      {
-      "player": "Sion James",
-      "subs": 4,
-      "of": 39,
-      "min": 33.8,
-      "dk": 28.2,
-      "salary": 4500,
-      "newstart": false
-     },
-     {
-      "player": "Ryan Kalkbrenner",
-      "subs": 4,
-      "of": 39,
-      "min": 24.1,
-      "dk": 26.3,
-      "salary": 4400,
-      "newstart": false
-     },
-     {
-      "player": "Coby White",
-      "subs": 1,
-      "of": 39,
-      "min": 21.8,
-      "dk": 28.0,
-      "salary": 5900,
-      "newstart": false,
-      "note": "Show: large usage bump in limited minutes (11/06)"
+      "player": "Grayson Allen",
+      "salary": 5200,
+      "why": "subs in for him 8 of 39 times",
+      "much": "+18.2 DK projected vs. last 3",
+      "score": 18.25,
+      "min": 30.8,
+      "dk": 37.5
      }
     ],
     "estimate": false
@@ -1130,33 +923,21 @@
     "benefits": [
      {
       "player": "Royce O'Neale",
-      "gdk": 8.5,
-      "wmin": 26.0,
-      "recent": 18.0,
-      "n": 1,
-      "min": 29.3,
-      "dk": 30.6,
       "salary": 4300,
-      "newstart": false
+      "why": "26 minutes, up from 18",
+      "much": "+8.5 DK without him (1 game)",
+      "score": 8.5,
+      "min": 29.3,
+      "dk": 30.6
      },
      {
       "player": "Christian Anderson",
-      "gdk": 5.9,
-      "wmin": 25.0,
-      "recent": 10.4,
-      "n": 1,
-      "min": 18.0,
-      "dk": 17.2,
       "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Ryan Kalkbrenner",
-      "note": "started, 21 minutes (11/06)",
-      "min": 24.1,
-      "dk": 26.3,
-      "salary": 4400,
-      "newstart": false
+      "why": "25 minutes, up from 10",
+      "much": "+5.9 DK without him (1 game)",
+      "score": 5.9,
+      "min": 18.0,
+      "dk": 17.4
      }
     ],
     "estimate": false
@@ -1176,57 +957,12 @@
     "benefits": [
      {
       "player": "Collin Sexton",
-      "subs": 7,
-      "of": 43,
-      "min": 21.2,
-      "dk": 21.6,
       "salary": 4100,
-      "newstart": false
-     },
-     {
-      "player": "Ziaire Williams",
-      "subs": 5,
-      "of": 43,
-      "min": 25.2,
-      "dk": 21.0,
-      "salary": 4500,
-      "newstart": false
-     },
-     {
-      "player": "Jake LaRavia",
-      "subs": 4,
-      "of": 43,
-      "min": 28.0,
-      "dk": 20.5,
-      "salary": 4800,
-      "newstart": false
-     },
-     {
-      "player": "Matisse Thybulle",
-      "subs": 4,
-      "of": 43,
-      "min": 28.4,
-      "dk": 20.0,
-      "salary": 4400,
-      "newstart": false
-     },
-     {
-      "player": "Luka Doncic",
-      "subs": 3,
-      "of": 43,
-      "min": 38.4,
-      "dk": 62.0,
-      "salary": 12000,
-      "newstart": false
-     },
-     {
-      "player": "Sandro Mamukelashvili",
-      "subs": 3,
-      "of": 43,
-      "min": 21.2,
-      "dk": 19.6,
-      "salary": 4700,
-      "newstart": false
+      "why": "subs in for him 7 of 43 times",
+      "much": "+6.8 DK projected vs. last 3",
+      "score": 6.783333333333333,
+      "min": 18.9,
+      "dk": 20.7
      }
     ],
     "estimate": false
@@ -1246,89 +982,47 @@
     "benefits": [
      {
       "player": "Kyshawn George",
-      "gdk": 15.2,
-      "wmin": 34.5,
-      "recent": 32.8,
-      "n": 2,
-      "min": 32.1,
-      "dk": 27.0,
       "salary": 6400,
-      "newstart": false,
-      "note": "Show: highest-rostered player (11/09)"
+      "why": "same minutes, more production",
+      "much": "+15.2 DK without him (2 games)",
+      "score": 15.2,
+      "min": 32.1,
+      "dk": 27.0
      },
      {
       "player": "Alex Sarr",
-      "gdk": 11.5,
-      "wmin": 29.0,
-      "recent": 25.1,
-      "n": 2,
-      "min": 25.1,
-      "dk": 24.3,
       "salary": 5800,
-      "newstart": false,
-      "note": "Show: easy click at center (11/09)"
+      "why": "29 minutes, up from 25",
+      "much": "+11.5 DK without him (2 games)",
+      "score": 11.5,
+      "min": 25.1,
+      "dk": 24.6
      },
      {
       "player": "Will Riley",
-      "gdk": 7.2,
-      "wmin": 14.5,
-      "recent": 4.7,
-      "n": 2,
-      "min": 10.1,
-      "dk": 6.2,
       "salary": 3600,
-      "newstart": false
-     },
-     {
-      "player": "Tre Johnson",
-      "gdk": 6.2,
-      "wmin": 27.5,
-      "recent": 20.0,
-      "n": 2,
-      "min": 20.0,
-      "dk": 12.5,
-      "salary": 3800,
-      "newstart": false
-     },
-     {
-      "player": "AJ Dybantsa",
-      "gdk": 4.3,
-      "wmin": 33.5,
-      "recent": 30.5,
-      "n": 2,
-      "min": 29.8,
-      "dk": 28.9,
-      "salary": 6600,
-      "newstart": false
-     },
-     {
-      "player": "Carlton Carrington",
-      "gdk": 4.1,
-      "wmin": 18.0,
-      "recent": 19.6,
-      "n": 2,
-      "min": 24.0,
-      "dk": 15.9,
-      "salary": 4000,
-      "newstart": false
-     },
-     {
-      "player": "Deandre Ayton",
-      "note": "started, 23 minutes, 11 rebounds (11/06)",
-      "min": 14.3,
-      "dk": 12.1,
-      "salary": 3900,
-      "newstart": false
-     },
-     {
-      "player": "Trae Young",
-      "note": "Show: back in play at $7,800 (11/09)",
-      "min": 31.4,
-      "dk": 30.7,
-      "salary": 7800,
-      "newstart": false
+      "why": "14 minutes, up from 5",
+      "much": "+7.2 DK without him (2 games)",
+      "score": 7.2,
+      "min": 10.1,
+      "dk": 6.2
      }
     ],
+    "estimate": false
+   },
+   {
+    "game": "WAS at DET",
+    "time": "2026-11-10T00:00Z",
+    "team": "WAS",
+    "player": "Bilal Coulibaly",
+    "status": "Questionable",
+    "reason": "Left Hand Soreness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "4:10 PM",
+    "min": 22.3,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1346,58 +1040,21 @@
     "benefits": [
      {
       "player": "Donovan Mitchell",
-      "gdk": 10.8,
-      "wmin": 35.0,
-      "recent": 33.1,
-      "n": 2,
-      "min": 34.6,
-      "dk": 49.8,
       "salary": 8400,
-      "newstart": false,
-      "note": "37 minutes, 37 points (11/07)"
+      "why": "37 minutes, 37 points (11/07)",
+      "much": "+10.8 DK without him (2 games)",
+      "score": 10.8,
+      "min": 34.6,
+      "dk": 49.8
      },
      {
       "player": "Thomas Bryant",
-      "gdk": 5.8,
-      "wmin": 15.5,
-      "recent": 9.7,
-      "n": 2,
-      "min": 14.0,
-      "dk": 15.3,
       "salary": 4200,
-      "newstart": false,
-      "note": "16 minutes, 13 points (11/06)"
-     },
-     {
-      "player": "Tyrese Proctor",
-      "gdk": 3.7,
-      "wmin": 21.0,
-      "recent": 14.4,
-      "n": 2,
-      "min": 19.6,
-      "dk": 20.5,
-      "salary": 3900,
-      "newstart": false
-     },
-     {
-      "player": "Peyton Watson",
-      "gdk": 3.6,
-      "wmin": 28.5,
-      "recent": 28.3,
-      "n": 2,
-      "min": 27.7,
-      "dk": 26.2,
-      "salary": 5900,
-      "newstart": false,
-      "note": "started at power forward, 29 minutes (11/07)"
-     },
-     {
-      "player": "Evan Mobley",
-      "note": "Show: more interest if Allen out (11/09)",
-      "min": 32.6,
-      "dk": 42.7,
-      "salary": 7900,
-      "newstart": false
+      "why": "16 minutes, up from 10",
+      "much": "+5.8 DK without him (2 games)",
+      "score": 5.8,
+      "min": 14.0,
+      "dk": 15.3
      }
     ],
     "estimate": false
@@ -1417,69 +1074,30 @@
     "benefits": [
      {
       "player": "Zuby Ejiofor",
-      "gdk": 16.2,
-      "wmin": 16.2,
-      "recent": 4.5,
-      "n": 4,
-      "min": 13.0,
-      "dk": 10.0,
       "salary": 3700,
-      "newstart": false
+      "why": "16 minutes, up from 4",
+      "much": "+16.2 DK without him (4 games)",
+      "score": 16.2,
+      "min": 13.0,
+      "dk": 10.2
      },
      {
       "player": "Onyeka Okongwu",
-      "gdk": 12.6,
-      "wmin": 31.8,
-      "recent": 28.3,
-      "n": 4,
-      "min": 28.8,
-      "dk": 30.2,
       "salary": 6700,
-      "newstart": false
+      "why": "32 minutes, up from 28",
+      "much": "+12.6 DK without him (4 games)",
+      "score": 12.6,
+      "min": 28.8,
+      "dk": 30.3
      },
      {
       "player": "Dyson Daniels",
-      "gdk": 11.3,
-      "wmin": 32.8,
-      "recent": 28.9,
-      "n": 4,
-      "min": 29.1,
-      "dk": 29.7,
       "salary": 6500,
-      "newstart": false
-     },
-     {
-      "player": "Nickeil Alexander-Walker",
-      "gdk": 7.8,
-      "wmin": 31.8,
-      "recent": 30.0,
-      "n": 4,
-      "min": 27.4,
-      "dk": 26.7,
-      "salary": 7100,
-      "newstart": false
-     },
-     {
-      "player": "C.J. McCollum",
-      "gdk": 6.7,
-      "wmin": 25.2,
-      "recent": 26.0,
-      "n": 4,
-      "min": 20.8,
-      "dk": 21.3,
-      "salary": 5600,
-      "newstart": false
-     },
-     {
-      "player": "Luguentz Dort",
-      "gdk": 6.1,
-      "wmin": 28.5,
-      "recent": 23.7,
-      "n": 4,
-      "min": 26.5,
-      "dk": 18.8,
-      "salary": 4900,
-      "newstart": false
+      "why": "33 minutes, up from 29",
+      "much": "+11.3 DK without him (4 games)",
+      "score": 11.3,
+      "min": 29.1,
+      "dk": 29.8
      }
     ],
     "estimate": false
@@ -1499,39 +1117,21 @@
     "benefits": [
      {
       "player": "Jakob Poeltl",
-      "gdk": 28.8,
-      "wmin": 31.0,
-      "recent": 20.0,
-      "n": 1,
-      "min": 22.0,
-      "dk": 24.1,
       "salary": 4900,
-      "newstart": false,
-      "note": "Show: starts, good value at $4,900 (11/09)"
+      "why": "31 minutes, up from 20",
+      "much": "+28.8 DK without him (1 game)",
+      "score": 28.8,
+      "min": 22.0,
+      "dk": 24.1
      },
      {
       "player": "Jamal Shead",
-      "gdk": 24.8,
-      "wmin": 34.0,
-      "recent": 21.5,
-      "n": 1,
-      "min": 24.2,
-      "dk": 21.5,
       "salary": 5500,
-      "newstart": false,
-      "note": "started, 34 minutes, 16 assists (11/06)"
-     },
-     {
-      "player": "RJ Barrett",
-      "gdk": 3.2,
-      "wmin": 37.0,
-      "recent": 32.5,
-      "n": 1,
-      "min": 33.9,
-      "dk": 39.3,
-      "salary": 7600,
-      "newstart": false,
-      "note": "37 minutes, 27 points (11/06)"
+      "why": "started that game",
+      "much": "+24.8 DK without him (1 game)",
+      "score": 24.8,
+      "min": 24.2,
+      "dk": 21.5
      }
     ],
     "estimate": false
@@ -1551,37 +1151,21 @@
     "benefits": [
      {
       "player": "Jakob Poeltl",
-      "gdk": 28.8,
-      "wmin": 31.0,
-      "recent": 20.0,
-      "n": 1,
-      "min": 22.0,
-      "dk": 24.1,
       "salary": 4900,
-      "newstart": false
+      "why": "31 minutes, up from 20",
+      "much": "+28.8 DK without him (1 game)",
+      "score": 28.8,
+      "min": 22.0,
+      "dk": 24.1
      },
      {
       "player": "Jamal Shead",
-      "gdk": 24.8,
-      "wmin": 34.0,
-      "recent": 21.5,
-      "n": 1,
-      "min": 24.2,
-      "dk": 21.5,
       "salary": 5500,
-      "newstart": false,
-      "note": "Show: strong play if Quickley sits (11/09)"
-     },
-     {
-      "player": "RJ Barrett",
-      "gdk": 3.2,
-      "wmin": 37.0,
-      "recent": 32.5,
-      "n": 1,
-      "min": 33.9,
-      "dk": 39.3,
-      "salary": 7600,
-      "newstart": false
+      "why": "started that game",
+      "much": "+24.8 DK without him (1 game)",
+      "score": 24.8,
+      "min": 24.2,
+      "dk": 21.5
      }
     ],
     "estimate": false
@@ -1598,62 +1182,22 @@
     "known": true,
     "changed_at": "1:40 PM",
     "min": 28.3,
-    "benefits": [
-     {
-      "player": "Jakob Poeltl",
-      "subs": 8,
-      "of": 34,
-      "min": 22.0,
-      "dk": 24.1,
-      "salary": 4900,
-      "newstart": false
-     },
-     {
-      "player": "Trayce Jackson-Davis",
-      "subs": 7,
-      "of": 34,
-      "min": 7.0,
-      "dk": 7.6,
-      "salary": 3000,
-      "newstart": false
-     },
-     {
-      "player": "RJ Barrett",
-      "subs": 4,
-      "of": 34,
-      "min": 33.9,
-      "dk": 39.3,
-      "salary": 7600,
-      "newstart": false
-     },
-     {
-      "player": "Jamal Shead",
-      "subs": 2,
-      "of": 34,
-      "min": 24.2,
-      "dk": 21.5,
-      "salary": 5500,
-      "newstart": false
-     },
-     {
-      "player": "Allen Graves",
-      "subs": 2,
-      "of": 34,
-      "min": 13.2,
-      "dk": 11.3,
-      "salary": 3600,
-      "newstart": false
-     },
-     {
-      "player": "Ja'Kobe Walter",
-      "subs": 1,
-      "of": 34,
-      "min": 30.3,
-      "dk": 24.0,
-      "salary": 5300,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "IND at DAL",
+    "time": "2026-11-10T01:00Z",
+    "team": "DAL",
+    "player": "Morez Johnson Jr.",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "4:10 PM",
+    "min": 20.3,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1691,42 +1235,14 @@
     "time": "2026-11-10T01:30Z",
     "team": "DEN",
     "player": "Nikola Jokic",
-    "status": "Questionable",
+    "status": "Probable",
     "reason": "Right Elbow Sprain",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:10 PM",
     "min": 34.0,
-    "benefits": [
-     {
-      "player": "Marvin Bagley III",
-      "subs": 7,
-      "of": 20,
-      "min": 11.9,
-      "dk": 11.5,
-      "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Tyus Jones",
-      "subs": 2,
-      "of": 20,
-      "min": 13.1,
-      "dk": 9.2,
-      "salary": 3100,
-      "newstart": false
-     },
-     {
-      "player": "Trevon Brazile",
-      "subs": 1,
-      "of": 20,
-      "min": 16.4,
-      "dk": 13.4,
-      "salary": 4300,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1734,60 +1250,14 @@
     "time": "2026-11-10T01:30Z",
     "team": "DEN",
     "player": "Jamal Murray",
-    "status": "Questionable",
+    "status": "Probable",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:10 PM",
     "min": 33.7,
-    "benefits": [
-     {
-      "player": "Tyus Jones",
-      "subs": 9,
-      "of": 23,
-      "min": 13.1,
-      "dk": 9.2,
-      "salary": 3100,
-      "newstart": false
-     },
-     {
-      "player": "Marvin Bagley III",
-      "subs": 2,
-      "of": 23,
-      "min": 11.9,
-      "dk": 11.5,
-      "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Trevon Brazile",
-      "subs": 1,
-      "of": 23,
-      "min": 16.4,
-      "dk": 13.4,
-      "salary": 4300,
-      "newstart": false
-     },
-     {
-      "player": "Spencer Jones",
-      "subs": 1,
-      "of": 23,
-      "min": 17.7,
-      "dk": 10.2,
-      "salary": 3500,
-      "newstart": false
-     },
-     {
-      "player": "Bryce Hopkins",
-      "subs": 1,
-      "of": 23,
-      "min": 13.6,
-      "dk": 10.0,
-      "salary": 3000,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1795,60 +1265,14 @@
     "time": "2026-11-10T01:30Z",
     "team": "DEN",
     "player": "Christian Braun",
-    "status": "Questionable",
+    "status": "Probable",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:10 PM",
     "min": 31.3,
-    "benefits": [
-     {
-      "player": "Trevon Brazile",
-      "subs": 5,
-      "of": 26,
-      "min": 16.4,
-      "dk": 13.4,
-      "salary": 4300,
-      "newstart": false
-     },
-     {
-      "player": "Tyus Jones",
-      "subs": 3,
-      "of": 26,
-      "min": 13.1,
-      "dk": 9.2,
-      "salary": 3100,
-      "newstart": false
-     },
-     {
-      "player": "Marvin Bagley III",
-      "subs": 2,
-      "of": 26,
-      "min": 11.9,
-      "dk": 11.5,
-      "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Spencer Jones",
-      "subs": 2,
-      "of": 26,
-      "min": 17.7,
-      "dk": 10.2,
-      "salary": 3500,
-      "newstart": false
-     },
-     {
-      "player": "Bryce Hopkins",
-      "subs": 2,
-      "of": 26,
-      "min": 13.6,
-      "dk": 10.0,
-      "salary": 3000,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1856,26 +1280,14 @@
     "time": "2026-11-10T01:30Z",
     "team": "DEN",
     "player": "Cameron Johnson",
-    "status": "Questionable",
-    "reason": "",
+    "status": "Probable",
+    "reason": "Right Ankle Sprain",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:10 PM",
     "min": 31.0,
-    "benefits": [
-     {
-      "player": "Trevon Brazile",
-      "gdk": 6.1,
-      "wmin": 25.7,
-      "recent": 18.4,
-      "n": 3,
-      "min": 16.4,
-      "dk": 13.4,
-      "salary": 4300,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1883,33 +1295,14 @@
     "time": "2026-11-10T01:30Z",
     "team": "DEN",
     "player": "Aaron Gordon",
-    "status": "Questionable",
+    "status": "Probable",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:10 PM",
     "min": 27.3,
-    "benefits": [
-     {
-      "player": "Trevon Brazile",
-      "subs": 13,
-      "of": 29,
-      "min": 16.4,
-      "dk": 13.4,
-      "salary": 4300,
-      "newstart": false
-     },
-     {
-      "player": "Bryce Hopkins",
-      "subs": 4,
-      "of": 29,
-      "min": 13.6,
-      "dk": 10.0,
-      "salary": 3000,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1917,57 +1310,14 @@
     "time": "2026-11-10T01:30Z",
     "team": "DEN",
     "player": "DeMar DeRozan",
-    "status": "Questionable",
+    "status": "Probable",
     "reason": "Low Back Spasms",
     "new": true,
-    "was": "Available",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:10 PM",
     "min": 22.0,
-    "benefits": [
-     {
-      "player": "Bryce Hopkins",
-      "gdk": 21.8,
-      "wmin": 28.0,
-      "recent": 13.8,
-      "n": 1,
-      "min": 13.6,
-      "dk": 10.0,
-      "salary": 3000,
-      "newstart": false,
-      "note": "28 minutes off the bench, 18 points (11/04)"
-     },
-     {
-      "player": "Tyus Jones",
-      "gdk": 11.8,
-      "wmin": 18.0,
-      "recent": 10.3,
-      "n": 1,
-      "min": 13.1,
-      "dk": 9.2,
-      "salary": 3100,
-      "newstart": false
-     },
-     {
-      "player": "Marvin Bagley III",
-      "gdk": 3.4,
-      "wmin": 14.0,
-      "recent": 12.1,
-      "n": 1,
-      "min": 11.9,
-      "dk": 11.5,
-      "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Trevon Brazile",
-      "note": "23 minutes off the bench; about 21 to 22 if DeRozan sits again (11/04)",
-      "min": 16.4,
-      "dk": 13.4,
-      "salary": 4300,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1975,68 +1325,22 @@
     "time": "2026-11-10T02:00Z",
     "team": "SAS",
     "player": "Devin Vassell",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:10 PM",
     "min": 28.0,
     "benefits": [
      {
       "player": "Keldon Johnson",
-      "subs": 8,
-      "of": 32,
-      "min": 22.1,
-      "dk": 20.4,
       "salary": 4400,
-      "newstart": false
-     },
-     {
-      "player": "Carter Bryant",
-      "subs": 6,
-      "of": 32,
-      "min": 10.2,
-      "dk": 7.0,
-      "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Dylan Harper",
-      "subs": 4,
-      "of": 32,
-      "min": 31.5,
-      "dk": 33.3,
-      "salary": 6800,
-      "newstart": false
-     },
-     {
-      "player": "Stephon Castle",
-      "subs": 3,
-      "of": 32,
-      "min": 29.4,
-      "dk": 32.9,
-      "salary": 6500,
-      "newstart": false
-     },
-     {
-      "player": "Julian Champagnie",
-      "subs": 3,
-      "of": 32,
-      "min": 20.9,
-      "dk": 18.0,
-      "salary": 4500,
-      "newstart": false,
-      "note": "Show: in play at shooting guard (11/09)"
-     },
-     {
-      "player": "Victor Wembanyama",
-      "subs": 2,
-      "of": 32,
-      "min": 29.0,
-      "dk": 50.8,
-      "salary": 11300,
-      "newstart": false
+      "why": "subs in for him 8 of 32 times",
+      "much": "+5.7 DK projected vs. last 3",
+      "score": 5.733333333333331,
+      "min": 27.5,
+      "dk": 24.9
      }
     ],
     "estimate": false
@@ -2056,47 +1360,21 @@
     "benefits": [
      {
       "player": "Ryan Dunn",
-      "gdk": 8.6,
-      "wmin": 22.0,
-      "recent": 12.4,
-      "n": 3,
-      "min": 18.5,
-      "dk": 14.9,
       "salary": 4200,
-      "newstart": false
+      "why": "22 minutes, up from 12",
+      "much": "+8.6 DK without him (3 games)",
+      "score": 8.6,
+      "min": 18.5,
+      "dk": 15.2
      },
      {
       "player": "Miles Bridges",
-      "gdk": 7.8,
-      "wmin": 31.0,
-      "recent": 33.2,
-      "n": 3,
-      "min": 28.9,
-      "dk": 32.8,
       "salary": 7100,
-      "newstart": false
-     },
-     {
-      "player": "Devin Booker",
-      "gdk": 4.2,
-      "wmin": 35.7,
-      "recent": 34.6,
-      "n": 3,
-      "min": 34.5,
-      "dk": 38.1,
-      "salary": 8200,
-      "newstart": false
-     },
-     {
-      "player": "Khaman Maluach",
-      "gdk": 3.2,
-      "wmin": 18.7,
-      "recent": 20.2,
-      "n": 3,
-      "min": 15.4,
-      "dk": 15.3,
-      "salary": 4800,
-      "newstart": false
+      "why": "same minutes, more production",
+      "much": "+7.8 DK without him (3 games)",
+      "score": 7.8,
+      "min": 28.9,
+      "dk": 33.1
      }
     ],
     "estimate": false
@@ -2116,34 +1394,21 @@
     "benefits": [
      {
       "player": "Royce O'Neale",
-      "gdk": 8.5,
-      "wmin": 26.0,
-      "recent": 18.0,
-      "n": 1,
-      "min": 29.3,
-      "dk": 30.6,
       "salary": 4300,
-      "newstart": false
+      "why": "26 minutes, up from 18",
+      "much": "+8.5 DK without him (1 game)",
+      "score": 8.5,
+      "min": 29.3,
+      "dk": 30.6
      },
      {
       "player": "Christian Anderson",
-      "gdk": 5.9,
-      "wmin": 25.0,
-      "recent": 10.4,
-      "n": 1,
-      "min": 18.0,
-      "dk": 17.2,
       "salary": 3300,
-      "newstart": false,
-      "note": "Show: backup guard role (11/09)"
-     },
-     {
-      "player": "Coby White",
-      "note": "Show: more point guard minutes (11/08)",
-      "min": 21.8,
-      "dk": 28.0,
-      "salary": 5900,
-      "newstart": false
+      "why": "25 minutes, up from 10",
+      "much": "+5.9 DK without him (1 game)",
+      "score": 5.9,
+      "min": 18.0,
+      "dk": 17.4
      }
     ],
     "estimate": false
@@ -2163,33 +1428,12 @@
     "benefits": [
      {
       "player": "Donovan Mitchell",
-      "gdk": 12.8,
-      "wmin": 37.0,
-      "recent": 33.1,
-      "n": 1,
-      "min": 34.6,
-      "dk": 49.8,
       "salary": 8400,
-      "newstart": false
-     },
-     {
-      "player": "Peyton Watson",
-      "gdk": 4.7,
-      "wmin": 29.0,
-      "recent": 28.3,
-      "n": 1,
-      "min": 27.7,
-      "dk": 26.2,
-      "salary": 5900,
-      "newstart": false
-     },
-     {
-      "player": "Meleek Thomas",
-      "note": "Show: stream play (11/09)",
-      "min": 22.2,
-      "dk": 22.1,
-      "salary": 4300,
-      "newstart": false
+      "why": "37 minutes, up from 33",
+      "much": "+12.8 DK without him (1 game)",
+      "score": 12.8,
+      "min": 34.6,
+      "dk": 49.8
      }
     ],
     "estimate": false
@@ -2209,22 +1453,46 @@
     "benefits": [
      {
       "player": "Tyrese Proctor",
-      "gdk": 9.5,
-      "wmin": 20.2,
-      "recent": 10.5,
-      "n": 5,
-      "min": 19.6,
-      "dk": 20.5,
       "salary": 3900,
-      "newstart": false
+      "why": "20 minutes, up from 10",
+      "much": "+9.5 DK without him (5 games)",
+      "score": 9.5,
+      "min": 19.6,
+      "dk": 20.5
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "WAS at DET",
+    "time": "2026-11-10T00:00Z",
+    "team": "DET",
+    "player": "Jalen Duren",
+    "status": "Out",
+    "reason": "Right Hamstring Strain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 19.0,
+    "benefits": [
+     {
+      "player": "Cade Cunningham",
+      "salary": 9500,
+      "why": "same minutes, more production",
+      "much": "+9.4 DK without him (7 games)",
+      "score": 9.4,
+      "min": 34.7,
+      "dk": 53.7
      },
      {
-      "player": "Meleek Thomas",
-      "note": "started (11/02)",
-      "min": 22.2,
-      "dk": 22.1,
-      "salary": 4300,
-      "newstart": false
+      "player": "Kevin Huerter",
+      "salary": 4100,
+      "why": "23 minutes, up from 19",
+      "much": "+6.1 DK without him (7 games)",
+      "score": 6.1,
+      "min": 23.4,
+      "dk": 21.5
      }
     ],
     "estimate": false
@@ -2244,36 +1512,21 @@
     "benefits": [
      {
       "player": "Alex Sarr",
-      "gdk": 7.0,
-      "wmin": 27.2,
-      "recent": 24.5,
-      "n": 5,
-      "min": 25.1,
-      "dk": 24.3,
       "salary": 5800,
-      "newstart": false
+      "why": "same minutes, more production",
+      "much": "+7.0 DK without him (5 games)",
+      "score": 7.0,
+      "min": 25.1,
+      "dk": 24.6
      },
      {
       "player": "Kyshawn George",
-      "gdk": 6.5,
-      "wmin": 35.2,
-      "recent": 30.0,
-      "n": 6,
-      "min": 32.1,
-      "dk": 27.0,
       "salary": 6400,
-      "newstart": false
-     },
-     {
-      "player": "Will Riley",
-      "gdk": 3.0,
-      "wmin": 9.4,
-      "recent": 3.3,
-      "n": 5,
-      "min": 10.1,
-      "dk": 6.2,
-      "salary": 3600,
-      "newstart": false
+      "why": "35 minutes, up from 30",
+      "much": "+6.5 DK without him (6 games)",
+      "score": 6.5,
+      "min": 32.1,
+      "dk": 27.0
      }
     ],
     "estimate": false
@@ -2293,70 +1546,55 @@
     "benefits": [
      {
       "player": "Zuby Ejiofor",
-      "gdk": 11.0,
-      "wmin": 16.5,
-      "recent": 10.2,
-      "n": 2,
-      "min": 13.0,
-      "dk": 10.0,
       "salary": 3700,
-      "newstart": false,
-      "note": "Show: deep-league stream (11/09)"
+      "why": "16 minutes, up from 10",
+      "much": "+11.0 DK without him (2 games)",
+      "score": 11.0,
+      "min": 13.0,
+      "dk": 10.2
      },
      {
       "player": "Jalen Johnson",
-      "gdk": 9.7,
-      "wmin": 34.4,
-      "recent": 31.0,
-      "n": 5,
-      "min": 29.6,
-      "dk": 39.1,
       "salary": 9700,
-      "newstart": false
+      "why": "34 minutes, up from 31",
+      "much": "+9.7 DK without him (5 games)",
+      "score": 9.7,
+      "min": 29.6,
+      "dk": 39.1
      },
      {
       "player": "Aaron Wiggins",
-      "gdk": 7.2,
-      "wmin": 27.3,
-      "recent": 25.0,
-      "n": 6,
-      "min": 22.0,
-      "dk": 20.0,
       "salary": 5700,
-      "newstart": false
-     },
+      "why": "same minutes, more production",
+      "much": "+7.2 DK without him (6 games)",
+      "score": 7.2,
+      "min": 22.0,
+      "dk": 20.0
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "WAS at DET",
+    "time": "2026-11-10T00:00Z",
+    "team": "DET",
+    "player": "Isaiah Joe",
+    "status": "Out",
+    "reason": "Right Hip Contusion",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 13.7,
+    "benefits": [
      {
-      "player": "Dyson Daniels",
-      "gdk": 6.4,
-      "wmin": 31.7,
-      "recent": 28.6,
-      "n": 6,
-      "min": 29.1,
-      "dk": 29.7,
-      "salary": 6500,
-      "newstart": false
-     },
-     {
-      "player": "Onyeka Okongwu",
-      "gdk": 4.5,
-      "wmin": 30.3,
-      "recent": 28.6,
-      "n": 6,
-      "min": 28.8,
-      "dk": 30.2,
-      "salary": 6700,
-      "newstart": false
-     },
-     {
-      "player": "Nickeil Alexander-Walker",
-      "gdk": 4.1,
-      "wmin": 31.5,
-      "recent": 29.6,
-      "n": 6,
-      "min": 27.4,
-      "dk": 26.7,
-      "salary": 7100,
-      "newstart": false
+      "player": "Kevin Huerter",
+      "salary": 4100,
+      "why": "same minutes, more production",
+      "much": "+5.8 DK without him (6 games)",
+      "score": 5.8,
+      "min": 23.4,
+      "dk": 21.5
      }
     ],
     "estimate": false
@@ -2376,50 +1614,12 @@
     "benefits": [
      {
       "player": "Jamal Shead",
-      "gdk": 10.3,
-      "wmin": 23.7,
-      "recent": 20.0,
-      "n": 7,
-      "min": 24.2,
-      "dk": 21.5,
       "salary": 5500,
-      "newstart": false,
-      "note": "6+ assists in each of last five games off the bench, 20 to 25 minutes (11/04)"
-     },
-     {
-      "player": "Trayce Jackson-Davis",
-      "gdk": 3.9,
-      "wmin": 7.0,
-      "recent": 5.5,
-      "n": 6,
-      "min": 7.0,
-      "dk": 7.6,
-      "salary": 3000,
-      "newstart": false
-     },
-     {
-      "player": "Allen Graves",
-      "note": "Show: could see a few more minutes, not far past 20 (10/28)",
-      "min": 13.2,
-      "dk": 11.3,
-      "salary": 3600,
-      "newstart": false
-     },
-     {
-      "player": "Ja'Kobe Walter",
-      "note": "starting (11/06)",
-      "min": 30.3,
-      "dk": 24.0,
-      "salary": 5300,
-      "newstart": false
-     },
-     {
-      "player": "RJ Barrett",
-      "note": "heavy usage (10/28)",
-      "min": 33.9,
-      "dk": 39.3,
-      "salary": 7600,
-      "newstart": false
+      "why": "24 minutes, up from 20",
+      "much": "+10.3 DK without him (7 games)",
+      "score": 10.3,
+      "min": 24.2,
+      "dk": 21.5
      }
     ],
     "estimate": false
@@ -2439,25 +1639,21 @@
     "benefits": [
      {
       "player": "Gregory Jackson",
-      "gdk": 12.8,
-      "wmin": 19.0,
-      "recent": 15.1,
-      "n": 1,
-      "min": 18.0,
-      "dk": 16.7,
       "salary": 3400,
-      "newstart": false
+      "why": "19 minutes, up from 15",
+      "much": "+12.8 DK without him (1 game)",
+      "score": 12.8,
+      "min": 18.0,
+      "dk": 16.2
      },
      {
       "player": "Ty Jerome",
-      "gdk": 10.5,
-      "wmin": 30.0,
-      "recent": 30.7,
-      "n": 2,
-      "min": 29.9,
-      "dk": 38.3,
       "salary": 8300,
-      "newstart": false
+      "why": "same minutes, more production",
+      "much": "+10.5 DK without him (2 games)",
+      "score": 10.5,
+      "min": 29.9,
+      "dk": 38.0
      }
     ],
     "estimate": false
@@ -2477,15 +1673,12 @@
     "benefits": [
      {
       "player": "Cam Spencer",
-      "gdk": 6.4,
-      "wmin": 21.8,
-      "recent": 18.0,
-      "n": 4,
-      "min": 20.1,
-      "dk": 21.6,
       "salary": 5100,
-      "newstart": false,
-      "note": "has taken his assist role (11/04)"
+      "why": "22 minutes, up from 18",
+      "much": "+6.4 DK without him (4 games)",
+      "score": 6.4,
+      "min": 20.1,
+      "dk": 21.6
      }
     ],
     "estimate": false
@@ -2505,71 +1698,55 @@
     "benefits": [
      {
       "player": "Quenton Jackson",
-      "gdk": 10.5,
-      "wmin": 22.7,
-      "recent": 19.5,
-      "n": 6,
-      "min": 20.7,
-      "dk": 18.7,
       "salary": 4100,
-      "newstart": false,
-      "note": "has played well (11/04)"
+      "why": "23 minutes, up from 20",
+      "much": "+10.5 DK without him (6 games)",
+      "score": 10.5,
+      "min": 20.7,
+      "dk": 18.9
      },
      {
       "player": "Larry Nance",
-      "gdk": 9.0,
-      "wmin": 18.8,
-      "recent": 11.8,
-      "n": 5,
-      "min": 15.7,
-      "dk": 10.9,
       "salary": 3400,
-      "newstart": false
+      "why": "19 minutes, up from 12",
+      "much": "+9.0 DK without him (5 games)",
+      "score": 9.0,
+      "min": 15.7,
+      "dk": 10.9
      },
      {
       "player": "Andrew Nembhard",
-      "gdk": 6.9,
-      "wmin": 33.8,
-      "recent": 32.0,
-      "n": 5,
-      "min": 31.0,
-      "dk": 28.8,
       "salary": 7200,
-      "newstart": false,
-      "note": "31 minutes, 8 assists (11/07)"
-     },
+      "why": "31 minutes, 8 assists (11/07)",
+      "much": "+6.9 DK without him (5 games)",
+      "score": 6.9,
+      "min": 31.0,
+      "dk": 28.8
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "IND at DAL",
+    "time": "2026-11-10T01:00Z",
+    "team": "DAL",
+    "player": "Sergio Larrea",
+    "status": "Out",
+    "reason": "Right Knee Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 13.3,
+    "benefits": [
      {
-      "player": "Jarace Walker",
-      "gdk": 6.3,
-      "wmin": 25.3,
-      "recent": 21.0,
-      "n": 6,
-      "min": 22.0,
-      "dk": 18.4,
-      "salary": 4500,
-      "newstart": false
-     },
-     {
-      "player": "Jalen Slawson",
-      "gdk": 4.9,
-      "wmin": 17.8,
-      "recent": 9.0,
-      "n": 6,
-      "min": 15.7,
-      "dk": 12.5,
-      "salary": 3300,
-      "newstart": false
-     },
-     {
-      "player": "Aaron Nesmith",
-      "gdk": 4.4,
-      "wmin": 27.0,
-      "recent": 20.0,
-      "n": 5,
-      "min": 24.5,
-      "dk": 20.0,
-      "salary": 4400,
-      "newstart": false
+      "player": "Kyrie Irving",
+      "salary": 7400,
+      "why": "31 minutes, up from 27",
+      "much": "+6.5 DK without him (5 games)",
+      "score": 6.5,
+      "min": 31.7,
+      "dk": 36.9
      }
     ],
     "estimate": false
@@ -2586,35 +1763,7 @@
     "known": true,
     "changed_at": "",
     "min": 12.0,
-    "benefits": [
-     {
-      "player": "Quenton Jackson",
-      "subs": 1,
-      "of": 3,
-      "min": 20.7,
-      "dk": 18.7,
-      "salary": 4100,
-      "newstart": false
-     },
-     {
-      "player": "Jarace Walker",
-      "subs": 1,
-      "of": 3,
-      "min": 22.0,
-      "dk": 18.4,
-      "salary": 4500,
-      "newstart": false
-     },
-     {
-      "player": "Kelly Oubre",
-      "subs": 1,
-      "of": 3,
-      "min": 19.1,
-      "dk": 15.4,
-      "salary": 4300,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -2629,62 +1778,7 @@
     "known": true,
     "changed_at": "",
     "min": 20.7,
-    "benefits": [
-     {
-      "player": "Alperen Sengun",
-      "subs": 9,
-      "of": 22,
-      "min": 36.5,
-      "dk": 48.9,
-      "salary": 9000,
-      "newstart": false
-     },
-     {
-      "player": "Tari Eason",
-      "subs": 3,
-      "of": 22,
-      "min": 24.6,
-      "dk": 22.7,
-      "salary": 5000,
-      "newstart": false
-     },
-     {
-      "player": "Jabari Smith",
-      "subs": 2,
-      "of": 22,
-      "min": 36.2,
-      "dk": 32.5,
-      "salary": 7000,
-      "newstart": false
-     },
-     {
-      "player": "Kevin Durant",
-      "subs": 1,
-      "of": 22,
-      "min": 35.9,
-      "dk": 40.1,
-      "salary": 7500,
-      "newstart": false
-     },
-     {
-      "player": "Amen Thompson",
-      "subs": 1,
-      "of": 22,
-      "min": 33.0,
-      "dk": 32.4,
-      "salary": 6900,
-      "newstart": false
-     },
-     {
-      "player": "Fred VanVleet",
-      "subs": 1,
-      "of": 22,
-      "min": 30.1,
-      "dk": 27.0,
-      "salary": 5900,
-      "newstart": false
-     }
-    ],
+    "benefits": [],
     "estimate": false
    }
   ],
@@ -2747,6 +1841,16 @@
    {
     "player": "Johnny Furphy",
     "team": "IND",
+    "status": "Out"
+   },
+   {
+    "player": "Tarik Biberovic",
+    "team": "DAL",
+    "status": "Out"
+   },
+   {
+    "player": "Dereck Lively II",
+    "team": "DAL",
     "status": "Out"
    },
    {
