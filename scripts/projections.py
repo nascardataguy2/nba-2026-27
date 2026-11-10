@@ -726,6 +726,14 @@ def main():
     hist = {norm(r["player"]): {"player": r["player"], "team": r["team"], "base_min": r["base"], "min": round(r["min"], 1),
                                 "dk": round(r["dk"], 1), "slr": round(r["slr"], 3) if r.get("slr") else None, "salary": r.get("salary")} for r in rows}
 
+    # Keep the lock-time ownership fields ownership.py saved earlier today (own, osim, ofdk,
+    # oslate, lock); ownership.py decides whether they may still change.
+    ph0 = load_json(os.path.join(HIST, day + ".json"), {})
+    for k, v in hist.items():
+        for f in ("own", "osim", "ofdk", "oslate", "lock"):
+            if f in ph0.get(k, {}):
+                v[f] = ph0[k][f]
+
     pmap = {(p["player"], p["team"]): p for p in pub}
     for v in hist.values():
         q = pmap.get((v["player"], v["team"])) or {}

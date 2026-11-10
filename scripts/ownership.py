@@ -187,16 +187,28 @@ def save_history_own(doc, sims=None):
     if not hist:
         return
     now = os.environ.get("NOW_UTC") or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
-    locked = set()
+    # Ownership is set when the slate locks, not when each game tips: once the main slate's
+    # first game starts, DraftKings and DFF drop it and later runs fall back to our own
+    # projections (11/9: the 7:18 PM run wrote Barrett 68.5% over the 6:48 PM 43.9%; real was
+    # 50.7%). So each row keeps the lock time it first got, and is never written after it.
+    tip = {}
     for g in doc.get("games", []):
-        if g.get("time") and g["time"] <= now:
-            locked.update((g.get("home"), g.get("away")))
+        if g.get("time"):
+            tip[g.get("home")] = tip[g.get("away")] = g["time"]
+    main_teams = {p["team"] for p in doc["players"] if (sims or {}).get(p["player"], (0, 0, ""))[2] == "main"}
+    main_lock = min([tip[t] for t in main_teams if t in tip] or [""]) or None
     for p in doc["players"]:
         h = hist.get(norm(p["player"]))
-        if h is None or p["team"] in locked or p.get("own") is None:
+        if h is None or p.get("own") is None:
+            continue
+        sm = (sims or {}).get(p["player"])
+        if not h.get("lock"):
+            lk = main_lock if (sm and sm[2] == "main" and main_lock) else tip.get(p["team"])
+            if lk:
+                h["lock"] = lk
+        if h.get("lock") and h["lock"] <= now:
             continue
         h["own"] = p["own"]
-        sm = (sims or {}).get(p["player"])
         if sm:
             h["osim"], h["ofdk"], h["oslate"] = round(sm[0], 2), round(sm[1], 2), sm[2]
             h["salary"] = p.get("salary")
