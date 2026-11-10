@@ -1,8 +1,11 @@
-"""Run projections right before every NBA lock, without Claude.
+"""Run projections on time all day, without Claude.
 
-Reads today's schedule from ESPN, builds the update times (every 30 minutes
-from 5:30 PM ET up to the first lock, plus 45, 15 and 5 minutes before each
-lock), then sleeps until each time and dispatches projections.yml.
+Morning runs (5:30, 6:30, 7:30 AM ET so shorts.txt is ready for the 8:30
+video), daytime backups (8:40 AM, 12:40, 4:40 PM) and lock-time updates
+(every 30 minutes from 5:30 PM ET up to the first lock, plus 45, 15 and 5
+minutes before each lock, from today's ESPN schedule). It sleeps until each
+time and dispatches projections.yml. After a run, if today's projections
+have no Own% values, it runs once more.
 
 GitHub jobs stop after 6 hours, so this script stops itself once the next
 update is more than WINDOW hours after it started. The workflow chains a few
@@ -47,18 +50,23 @@ def lock_times(day):
     return sorted(out)
 
 
-def update_times(locks, now):
-    if not locks:
-        return []
-    first = locks[0]
+DAY_TIMES = [(5, 30), (6, 30), (7, 30), (8, 40), (12, 40), (16, 40)]
+
+
+def update_times(locks, now, day_times=True):
     times = set()
-    t = first.replace(hour=17, minute=30, second=0, microsecond=0)
-    while t < first:
-        times.add(t)
-        t += timedelta(minutes=30)
-    for lock in locks:
-        for m in (45, 15, 5):
-            times.add(lock - timedelta(minutes=m))
+    if day_times:
+        for h, m in DAY_TIMES:
+            times.add(now.replace(hour=h, minute=m, second=0, microsecond=0))
+    if locks:
+        first = locks[0]
+        t = first.replace(hour=17, minute=30, second=0, microsecond=0)
+        while t < first:
+            times.add(t)
+            t += timedelta(minutes=30)
+        for lock in locks:
+            for m in (45, 15, 5):
+                times.add(lock - timedelta(minutes=m))
     kept = []
     for t in sorted(times):
         if kept and t - kept[-1] <= timedelta(minutes=4):
@@ -80,7 +88,19 @@ def latest_run_id():
         return None
 
 
-def run_update():
+def own_missing():
+    """True when the live projections are for today but have no Own% values."""
+    try:
+        url = f"https://nascardataguy2.github.io/nba-2026-27/data/projections.json?t={int(time.time())}"
+        p = get(url)
+    except Exception:  # noqa: BLE001
+        return False
+    today = datetime.now(ET).date().isoformat()
+    players = p.get("players", [])
+    return p.get("date") == today and players and not any(x.get("own") is not None for x in players)
+
+
+def run_update(retry_own=True):
     before = latest_run_id()
     for attempt in range(6):
         r = gh("workflow", "run", "projections.yml", "--repo", REPO, "--ref", "main")
@@ -120,17 +140,25 @@ def run_update():
                 f"https://purge.jsdelivr.net/gh/{REPO}@main/{f}", timeout=30).read()
         except Exception as e:  # noqa: BLE001
             print(f"purge {f} failed: {e}")
+    if retry_own:
+        time.sleep(60)  # give GitHub Pages a moment to publish
+        if own_missing():
+            print("  today's projections have no Own% values; running once more")
+            err = run_update(retry_own=False)
+            if err:
+                return err
+            time.sleep(60)
+            if own_missing():
+                return "Own% values still missing after a second run"
     return None
 
 
 def main():
     started = datetime.now(ET)
-    # Before 6 AM ET we are still on last night's slate.
-    day = (started - timedelta(hours=6)).date()
-    if day.isoformat() == "2026-11-10":  # Claude tasks already cover this night
-        print("11/10 is covered by the Claude tasks; nothing to do")
-        return
+    day = started.date()
     locks = lock_times(day)
+    if day.isoformat() == "2026-11-10":  # Claude tasks already cover tonight's locks
+        locks = []
     times = update_times(locks, started)
     print("locks:", ", ".join(f"{t:%-I:%M %p}" for t in locks) or "none")
     print("updates:", ", ".join(f"{t:%-I:%M %p}" for t in times) or "none left")
