@@ -1,0 +1,48 @@
+name: lock-timer
+# Runs projections right before every lock (5:30 PM ET every 30 minutes until
+# the first lock, then 45, 15 and 5 minutes before each lock). It starts in the
+# afternoon, sleeps until each update time and dispatches projections.yml.
+# A daily Claude task also dispatches this once, in case GitHub skips the cron.
+on:
+  schedule:
+    - cron: "7 20,21 * * *"   # 3:07/4:07 PM ET in winter, 4:07/5:07 PM in summer
+    - cron: "37 20,21 * * *"
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+# Only one timer at a time; extra starts wait and then find nothing left to do.
+concurrency:
+  group: lock-timer
+  cancel-in-progress: false
+jobs:
+  # A GitHub job stops after 6 hours, so three chained jobs each cover
+  # just over 5 hours, picking up whatever updates are still ahead.
+  part1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/lock_timer.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+  part2:
+    needs: part1
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/lock_timer.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+  part3:
+    needs: part2
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/lock_timer.py
+        env:
+          GH_TOKEN: ${{ github.token }}
