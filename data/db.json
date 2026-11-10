@@ -2,7 +2,7 @@
  "updated": "2026-11-10",
  "brief": {
   "date": "2026-11-10",
-  "updated": "6:01 PM ET",
+  "updated": "6:31 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:38 AM",
@@ -22,17 +22,13 @@
     ],
     "teams": {
      "MIL": {
-      "out": [],
-      "q": [
+      "out": [
        {
         "player": "Tyler Herro",
-        "min": 31.4
-       },
-       {
-        "player": "Kel'El Ware",
-        "min": 13.5
+        "min": 31.7
        }
-      ]
+      ],
+      "q": []
      },
      "NYK": {
       "out": [
@@ -185,6 +181,30 @@
   ],
   "changed": [
    {
+    "player": "Josh Hart",
+    "team": "NYK",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "Illness",
+    "time": "6:32 PM"
+   },
+   {
+    "player": "Kel'el Ware",
+    "team": "MIL",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Ankle Sprain",
+    "time": "6:32 PM"
+   },
+   {
+    "player": "Tyler Herro",
+    "team": "MIL",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Right Contusion",
+    "time": "6:32 PM"
+   },
+   {
     "player": "Tristan da Silva",
     "team": "ORL",
     "status": "Questionable",
@@ -264,6 +284,16 @@
     "size": 59.8
    },
    {
+    "key": "Tyler Herro",
+    "team": "MIL",
+    "head": "Tyler Herro OUT",
+    "st": "Out",
+    "act": "",
+    "names": [],
+    "time": "6:32 PM",
+    "size": 36.4
+   },
+   {
     "key": "Lauri Markkanen",
     "team": "UTA",
     "head": "Lauri Markkanen OUT",
@@ -287,8 +317,8 @@
    {
     "key": "Josh Hart",
     "team": "NYK",
-    "head": "Josh Hart DOUBTFUL",
-    "st": "Doubtful",
+    "head": "Josh Hart OUT",
+    "st": "Out",
     "act": "Play",
     "names": [
      {
@@ -302,7 +332,7 @@
       "much": "+17.2 DK without him (2 games)"
      }
     ],
-    "time": "2:55 PM",
+    "time": "6:32 PM",
     "size": 28.5
    },
    {
@@ -325,22 +355,6 @@
     ],
     "time": "4:44 PM",
     "size": 12.4
-   },
-   {
-    "key": "Kel'el Ware",
-    "team": "MIL",
-    "head": "Kel'el Ware QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Myles Turner",
-      "salary": 5000,
-      "much": "about +5.6 DK if he sits (estimate)"
-     }
-    ],
-    "time": "12:46 PM",
-    "size": 10.4
    }
   ],
   "sits": [
@@ -615,53 +629,53 @@
    {
     "player": "Isaiah Collier",
     "team": "UTA",
-    "own": 68.1,
+    "own": 67.6,
     "dk": 23.8,
     "salary": 4400
    },
    {
     "player": "Brice Sensabaugh",
     "team": "UTA",
-    "own": 52.0,
+    "own": 52.3,
     "dk": 20.0,
     "salary": 3500
    },
    {
     "player": "Darryn Peterson",
     "team": "UTA",
-    "own": 39.2,
+    "own": 39.3,
     "dk": 40.9,
     "salary": 6800
    },
    {
     "player": "Karl-Anthony Towns",
     "team": "NYK",
-    "own": 37.9,
+    "own": 38.5,
     "dk": 46.6,
     "salary": 8900
    }
   ],
   "leverage": [
    {
-    "player": "Tyler Herro",
-    "team": "MIL",
-    "own": 9.5,
-    "dk": 35.0,
-    "salary": 6900
-   },
-   {
-    "player": "Davion Mitchell",
-    "team": "MIA",
-    "own": 9.6,
-    "dk": 34.2,
-    "salary": 6800
-   },
-   {
     "player": "Myles Turner",
     "team": "MIL",
-    "own": 7.5,
-    "dk": 24.3,
+    "own": 6.9,
+    "dk": 27.0,
     "salary": 5000
+   },
+   {
+    "player": "Jaime Jaquez Jr",
+    "team": "MIL",
+    "own": 2.3,
+    "dk": 30.2,
+    "salary": 5800
+   },
+   {
+    "player": "Leaky Black",
+    "team": "SAC",
+    "own": 0.9,
+    "dk": 17.7,
+    "salary": 3700
    }
   ],
   "last": {
@@ -753,21 +767,36 @@
    ]
   },
   "injuries": {
-   "report": "05:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_05_45PM.pdf",
+   "report": "06:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_06_15PM.pdf",
    "pending": [],
    "rows": [
     {
      "game": "MIL at NYK",
      "time": "2026-11-11T00:30Z",
-     "team": "NYK",
-     "player": "Josh Hart",
-     "status": "Doubtful",
-     "reason": "Illness",
+     "team": "MIL",
+     "player": "Tyler Herro",
+     "status": "Out",
+     "reason": "Right Contusion",
      "new": true,
      "was": "Questionable",
      "known": true,
-     "changed_at": "2:55 PM",
+     "changed_at": "6:32 PM",
+     "min": 31.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "MIL at NYK",
+     "time": "2026-11-11T00:30Z",
+     "team": "NYK",
+     "player": "Josh Hart",
+     "status": "Out",
+     "reason": "Illness",
+     "new": true,
+     "was": "Doubtful",
+     "known": true,
+     "changed_at": "6:32 PM",
      "min": 31.3,
      "benefits": [
       {
@@ -804,60 +833,16 @@
      "game": "MIL at NYK",
      "time": "2026-11-11T00:30Z",
      "team": "MIL",
-     "player": "Tyler Herro",
-     "status": "Questionable",
-     "reason": "Right Contusion",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 31.7,
-     "benefits": [
-      {
-       "player": "Brayden Burries",
-       "salary": 4800,
-       "why": "subs in for him 9 of 30 times",
-       "much": "about +9.5 DK",
-       "score": 9.463601532567049,
-       "min": 26.1,
-       "dk": 26.0
-      },
-      {
-       "player": "AJ Green",
-       "salary": 3900,
-       "why": "subs in for him 6 of 30 times",
-       "much": "about +3.9 DK",
-       "score": 3.931034482758621,
-       "min": 20.3,
-       "dk": 12.6
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "MIL at NYK",
-     "time": "2026-11-11T00:30Z",
-     "team": "MIL",
      "player": "Kel'el Ware",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Left Ankle Sprain",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "12:46 PM",
+     "changed_at": "6:32 PM",
      "min": 12.7,
-     "benefits": [
-      {
-       "player": "Myles Turner",
-       "salary": 5000,
-       "why": "subs in for him 15 of 30 times",
-       "much": "about +5.6 DK",
-       "score": 5.616788321167884,
-       "min": 27.4,
-       "dk": 24.3
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "MIA at UTA",
@@ -10933,13 +10918,13 @@
   },
   {
    "team": "MIL",
-   "starters": "Tyler Herro (31), Kyle Kuzma (27), Brayden Burries (21), Myles Turner (27), Jaime Jaquez (28)",
-   "bench": "AJ Green (20), Ryan Rollins (23), Nate Ament (16), Kel'el Ware (17), Kasparas Jakucionis (19), Ousmane Dieng (11)",
+   "starters": "Kyle Kuzma (27), Brayden Burries (21), Myles Turner (27), Jaime Jaquez (28), Ryan Rollins (23)",
+   "bench": "AJ Green (20), Nate Ament (16), Kel'el Ware (17), Kasparas Jakucionis (19), Ousmane Dieng (11)",
    "backup_c": "Kel'el Ware",
    "coach": "Taylor Jenkins",
    "notes": "Giannis is gone to Miami. The roster is crowded with guards, and Milwaukee does not own its pick, so there is tanking risk.",
    "source": "LO-1018",
-   "out": "",
+   "out": "Tyler Herro",
    "depth_through": "2026-11-08",
    "games": 10
   },
