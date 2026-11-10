@@ -1486,6 +1486,7 @@
     try { starsRender(); } catch (e) {}
     setSub();
     teamOptions($('r4p-team')); teamOptions($('r4p-pteam')); teamOptions($('r4p-steam'));
+    if (db.rankings_rule && $('r4p-rrule')) $('r4p-rrule').textContent = db.rankings_rule;
     badgeInit(); syncToggles(); quick(); ranks(); teams(); players(); injuries(); moves(); proj(); research(); optPool();
     $('r4p-rq').addEventListener('input', ranks);
     $('r4p-rpos').addEventListener('change', ranks);

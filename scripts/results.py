@@ -27,6 +27,14 @@ def dk_points(s):
     return round(dk, 2)
 
 
+def att(x):
+    """Attempts from ESPN's "made-attempted" text (None when ESPN leaves it out)."""
+    try:
+        return float(str(x).split("-")[1])
+    except (IndexError, ValueError):
+        return None
+
+
 def num(x):
     try:
         return float(str(x).split("-")[0])
@@ -59,7 +67,9 @@ def day_box(day):
                             "dk": dk_points(line), "start": bool(a.get("starter")),
                             "pos": (a["athlete"].get("position") or {}).get("abbreviation", ""),
                             "pts": line[0], "reb": line[1], "ast": line[2], "stl": line[3], "blk": line[4],
-                            "to": line[5], "tpm": line[6]})
+                            "to": line[5], "tpm": line[6],
+                            "fga": att(v.get("fieldGoalsMade-fieldGoalsAttempted")),
+                            "fta": att(v.get("freeThrowsMade-freeThrowsAttempted"))})
     return out
 
 

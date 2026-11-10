@@ -68,6 +68,43 @@ for r in base["rows"]:
                      "flag": flag, "change": {"up": "Role up", "down": "Role down", "out": "Out to start", "rest": "Rest watch"}.get(flag, ""), "note": text, "source": "NBA-0929",
                      "gp": sz["gp"] if sz else 0, "dk_avg": round(sz["dk"], 1) if sz else None, "season_rank": sz.get("rank") if sz else None})
 
+from datetime import datetime as _dt_
+# Season rankings (weekly, scripts/season_badges.py): this season's order by DK points a game,
+# with how far each player has moved from his preseason rank. Falls back to preseason order.
+try:
+    with open(os.path.join(D, "rankings", "season.json"), encoding="utf-8") as f:
+        _sr = json.load(f)
+except FileNotFoundError:
+    _sr = None
+if _sr and _sr.get("rows"):
+    _old = {norm(r["player"]): r for r in rankings}
+    try:
+        with open(os.path.join(D, "projections.json"), encoding="utf-8") as f:
+            _dkpos = {norm(x["player"]): x.get("pos", "") for x in json.load(f).get("players", [])}
+    except FileNotFoundError:
+        _dkpos = {}
+    rankings = []
+    for r in _sr["rows"]:
+        k = norm(r["player"])
+        o = _old.get(k, {})
+        flag, text = "", ""  # preseason tags and notes are out of date by now; the line below is this season's
+        mv = ""
+        if r.get("pre"):
+            d = r["pre"] - r["rank"]
+            mv = "Preseason No. %d (%s)." % (r["pre"], "up %d" % d if d > 0 else "down %d" % -d if d < 0 else "same")
+        else:
+            mv = "Not in the preseason Top 250."
+        line = "%.1f DK points in %d minutes a game over %d games. %s" % (r["dk"], round(r["min"]), r["g"], mv)
+        rankings.append({"rank": r["rank"], "player": r["player"], "pos": o.get("pos") or _dkpos.get(k) or {"G": "PG,SG", "F": "SF,PF", "C": "C"}.get(r["pos"], r["pos"]), "team": r["team"],
+                         "flag": flag, "change": {"up": "Role up", "down": "Role down", "out": "Out to start", "rest": "Rest watch"}.get(flag, ""),
+                         "note": (line + (" " + text if text else "")).strip(), "source": "", "gp": r["g"], "dk_avg": r["dk"],
+                         "season_rank": r["rank"], "pre": r.get("pre")})
+    _thr = _dt_.strptime(_sr["through"], "%Y-%m-%d")
+    rankings_rule = ("This season's order by DK points a game, minimum %d games, games through %s. Badges: gold = top 10 and "
+                     "silver = 11 to 30 in each stat this season. Both update every Monday.") % (_sr["min_games"], _thr.strftime("%b. ") + str(_thr.day))
+else:
+    rankings_rule = "Preseason points-league order."
+
 # Picks tab: last season's badges, with current team and role from our database.
 import base64
 from PIL import Image as _Img
@@ -108,7 +145,7 @@ updated = _dt.now(_Z("America/New_York")).date().isoformat()
 brief = load("brief") if os.path.exists(os.path.join(D, "brief.json")) else {}
 plog = load("player_log") if os.path.exists(os.path.join(D, "player_log.json")) else []
 db = {"updated": updated, "brief": brief, "log": [[e["player"], e["date"], e["kind"], e["text"]] for e in plog], "players": players, "teams": teams, "injuries": injuries,
-      "moves": moves, "sources": sources, "quickhits": quickhits, "rankings": rankings, "picks": picks, "badge_icons": badge_icons, "picks_rule": badge_src["rule"] + " (" + badge_src["season"] + " season)"}
+      "moves": moves, "sources": sources, "quickhits": quickhits, "rankings": rankings, "picks": picks, "badge_icons": badge_icons, "picks_rule": badge_src["rule"] + " (" + badge_src["season"] + " season)", "rankings_rule": rankings_rule}
 with open(os.path.join(D, "db.json"), "w", encoding="utf-8") as f:
     json.dump(db, f, indent=1, ensure_ascii=False)
 

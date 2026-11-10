@@ -59,6 +59,7 @@ jobs:
           python3 scripts/actual_own.py || echo "actual ownership failed"
           python3 scripts/own_fit.py || echo "ownership refit failed"
           python3 scripts/scorecard.py || echo "scorecard failed"
+          python3 scripts/season_badges.py || echo "season badges failed"
           python3 scripts/season.py || echo "season failed"
           python3 scripts/timelines.py || echo "timelines failed"
           python3 scripts/wowy.py || echo "wowy failed"
