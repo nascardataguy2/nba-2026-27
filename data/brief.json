@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updated": "3:28 PM ET",
+ "updated": "4:18 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:38 AM",
@@ -170,22 +170,29 @@
     },
     "SAC": {
      "out": [],
-     "q": [
-      {
-       "player": "Domantas Sabonis",
-       "min": 28.1
-      },
-      {
-       "player": "Keegan Murray",
-       "min": 24.1
-      }
-     ]
+     "q": []
     }
    },
    "key": "Paolo Banchero and Jalen Suggs are out, so Jamal Cain and Jase Richardson and Desmond Bane should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Domantas Sabonis",
+   "team": "SAC",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "4:19 PM"
+  },
+  {
+   "player": "Keegan Murray",
+   "team": "SAC",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "4:19 PM"
+  },
   {
    "player": "Lauri Markkanen",
    "team": "UTA",
@@ -220,6 +227,27 @@
   }
  ],
  "chg": [
+  {
+   "key": "SAC",
+   "team": "SAC",
+   "head": "Sabonis, Murray CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Darius Acuff Jr.",
+     "salary": 8600,
+     "much": "+12.9 DK without Sabonis"
+    },
+    {
+     "player": "De'Andre Hunter",
+     "salary": 5700,
+     "much": "+9.5 DK without Murray"
+    }
+   ],
+   "time": "4:19 PM",
+   "size": 59.7
+  },
   {
    "key": "Lauri Markkanen",
    "team": "UTA",
@@ -535,44 +563,44 @@
   {
    "player": "Isaiah Collier",
    "team": "UTA",
-   "own": 70.6,
+   "own": 71.3,
    "dk": 23.8,
    "salary": 4400
   },
   {
    "player": "Brayden Burries",
    "team": "MIL",
-   "own": 43.0,
+   "own": 43.4,
    "dk": 26.0,
    "salary": 4800
   },
   {
    "player": "Brice Sensabaugh",
    "team": "UTA",
-   "own": 40.0,
+   "own": 41.7,
    "dk": 20.1,
    "salary": 3500
   },
   {
-   "player": "Jalen Green",
-   "team": "PHX",
-   "own": 37.2,
-   "dk": 25.6,
-   "salary": 6000
+   "player": "Klay Thompson",
+   "team": "MIA",
+   "own": 34.4,
+   "dk": 24.7,
+   "salary": 4900
   }
  ],
  "leverage": [
   {
    "player": "Jaxson Hayes",
    "team": "UTA",
-   "own": 5.7,
+   "own": 5.4,
    "dk": 29.5,
    "salary": 5500
   },
   {
    "player": "Myles Turner",
    "team": "MIL",
-   "own": 9.8,
+   "own": 9.3,
    "dk": 24.3,
    "salary": 5000
   },
@@ -673,8 +701,8 @@
   ]
  },
  "injuries": {
-  "report": "03:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_03_15PM.pdf",
+  "report": "04:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_04_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -886,24 +914,14 @@
     "time": "2026-11-11T03:00Z",
     "team": "SAC",
     "player": "Domantas Sabonis",
-    "status": "Questionable",
-    "reason": "Left Knee Soreness",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:19 PM",
     "min": 32.3,
-    "benefits": [
-     {
-      "player": "Darius Acuff Jr.",
-      "salary": 8600,
-      "why": "same minutes, more production",
-      "much": "+12.9 DK without him (1 game)",
-      "score": 12.9,
-      "min": 33.4,
-      "dk": 39.8
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -911,42 +929,14 @@
     "time": "2026-11-11T03:00Z",
     "team": "SAC",
     "player": "Keegan Murray",
-    "status": "Questionable",
-    "reason": "Right Wrist Soreness",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "Available",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:19 PM",
     "min": 25.7,
-    "benefits": [
-     {
-      "player": "De'Andre Hunter",
-      "salary": 5700,
-      "why": "34 minutes, up from 25",
-      "much": "+9.5 DK without him (6 games)",
-      "score": 9.5,
-      "min": 27.8,
-      "dk": 20.8
-     },
-     {
-      "player": "Malik Monk",
-      "salary": 4200,
-      "why": "same minutes, more production",
-      "much": "+7.9 DK without him (7 games)",
-      "score": 7.9,
-      "min": 17.6,
-      "dk": 17.0
-     },
-     {
-      "player": "Darius Acuff Jr.",
-      "salary": 8600,
-      "why": "same minutes, more production",
-      "much": "+5.4 DK without him (7 games)",
-      "score": 5.4,
-      "min": 33.4,
-      "dk": 39.8
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
