@@ -612,6 +612,15 @@
   "src": "FA-1109"
  },
  {
+  "player": "Anthony Davis",
+  "team": "WAS",
+  "date": "2026-11-09",
+  "kind": "stat",
+  "text": "Anthony Davis was a game-time decision with an ankle issue Monday at Detroit, then played 34 minutes with 44 points and 13 rebounds.",
+  "expires": null,
+  "src": "ESPN-1110"
+ },
+ {
   "player": "Anthony Edwards",
   "team": "MIN",
   "date": "2026-11-08",
@@ -677,20 +686,20 @@
  {
   "player": "Austin Reaves",
   "team": "LAL",
-  "date": "2026-11-06",
-  "kind": "stat",
-  "text": "Austin Reaves scored 25 points in 38 minutes Friday against Portland.",
-  "expires": null,
-  "src": "ESPN-1107"
- },
- {
-  "player": "Austin Reaves",
-  "team": "LAL",
   "date": "2026-11-08",
   "kind": "usage",
   "text": "With Luka Doncic out, Austin Reaves scored 43 points in 37 minutes in a road win at Detroit. The show said the Lakers used extra screens to get Reaves switches away from Ausar Thompson. Reaves was later ruled out for the November 9 game with an illness.",
   "expires": null,
   "src": "OMS-1109"
+ },
+ {
+  "player": "Austin Reaves",
+  "team": "LAL",
+  "date": "2026-11-09",
+  "kind": "injury",
+  "text": "Austin Reaves missed the Lakers game at Atlanta on Monday, Nov. 9, with an illness, one day after scoring 43 points at Detroit.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Ayo Dosunmu",
@@ -900,6 +909,15 @@
   "src": "LO-1110"
  },
  {
+  "player": "Braden Smith",
+  "team": "IND",
+  "date": "2026-11-09",
+  "kind": "minutes",
+  "text": "Braden Smith started Monday at Dallas but played only 10 minutes and did not score.",
+  "expires": null,
+  "src": "ESPN-1110"
+ },
+ {
   "player": "Bradley Beal",
   "team": "LAC",
   "date": "2026-11-04",
@@ -943,6 +961,15 @@
   "text": "Podziemski started and had nine points and six rebounds in 32 minutes on Thursday against Miami. The show said his role should stay steady unless injured Warriors return.",
   "expires": null,
   "src": "OMS-1106b"
+ },
+ {
+  "player": "Brandin Podziemski",
+  "team": "GSW",
+  "date": "2026-11-09",
+  "kind": "stat",
+  "text": "Brandin Podziemski started Monday and scored 25 points with five 3-pointers in 26 minutes against New Orleans.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Brandon Ingram",
@@ -1147,9 +1174,9 @@
   "team": "DET",
   "date": "2026-11-09",
   "kind": "minutes",
-  "text": "Cade Cunningham played only 27 minutes because of foul trouble and had 17 points, 3 rebounds and 7 assists. The show said the lower minutes let Daniss Jenkins do more.",
+  "text": "Cade Cunningham played only 27 minutes Monday against Washington after picking up his fifth foul in the third quarter; he did not return until midway through the fourth.",
   "expires": null,
-  "src": "LO-1110"
+  "src": "ESPN-1110"
  },
  {
   "player": "Caleb Martin",
@@ -1213,6 +1240,15 @@
   "text": "The show said Caleb Wilson has a usage rate of about 26 percent, which it said has cut into the usage of everyone else on the Bulls.",
   "expires": null,
   "src": "OMS-1106"
+ },
+ {
+  "player": "Cam Christie",
+  "team": "LAC",
+  "date": "2026-11-10",
+  "kind": "injury",
+  "text": "Cam Christie is listed questionable for Tuesday, Nov. 10, on the official injury report (right ankle sprain).",
+  "expires": "2026-11-10",
+  "src": "INJ-1110"
  },
  {
   "player": "Cam Johnson",
@@ -1654,6 +1690,15 @@
   "text": "Collin Murray-Boyles has started Toronto's last three games on Nov. 2, Nov. 4 and Nov. 6. He played 34 minutes on Nov. 6 and had 19 points, seven rebounds and four steals.",
   "expires": null,
   "src": "RW-1107"
+ },
+ {
+  "player": "Collin Murray-Boyles",
+  "team": "TOR",
+  "date": "2026-11-09",
+  "kind": "injury",
+  "text": "Collin Murray-Boyles sat out Monday against Memphis with an illness.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Collin Sexton",
@@ -2522,20 +2567,29 @@
  {
   "player": "Devin Booker",
   "team": "PHX",
-  "date": "2026-11-05",
-  "kind": "stat",
-  "text": "Devin Booker had 30 points, eight assists and three steals in 34 minutes in Phoenix's win over Orlando on Nov. 5. The show said Booker, Miles Bridges and Dillon Brooks are carrying most of the load in Phoenix.",
-  "expires": null,
-  "src": "RW-1107"
- },
- {
-  "player": "Devin Booker",
-  "team": "PHX",
   "date": "2026-11-07",
   "kind": "stat",
   "text": "Devin Booker scored 24 points in 39 minutes Saturday against Houston, including seven straight points to break a 95-95 tie late.",
   "expires": null,
   "src": "ESPN-1108"
+ },
+ {
+  "player": "Devin Booker",
+  "team": "PHX",
+  "date": "2026-11-09",
+  "kind": "stat",
+  "text": "Devin Booker scored 32 points in 29 minutes Monday against San Antonio in a 26-point loss. Phoenix plays the Clippers on Tuesday on the second night of a back-to-back.",
+  "expires": null,
+  "src": "ESPN-1110"
+ },
+ {
+  "player": "Devin Booker",
+  "team": "PHX",
+  "date": "2026-11-10",
+  "kind": "news",
+  "text": "Phoenix hosts the Clippers on the second night of a back-to-back after a 26-point loss to San Antonio, where Booker scored 32 in 29 minutes. Phoenix has not posted its injury report yet.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Devin Vassell",
@@ -2668,9 +2722,9 @@
   "team": "SAC",
   "date": "2026-11-10",
   "kind": "news",
-  "text": "He is questionable tonight vs ORL.",
+  "text": "He is questionable with left knee soreness after missing Sunday, and Keegan Murray is questionable with right wrist soreness. Maxime Raynaud and Ben Simmons are out, so Dylan Cardwell and Leaky Black are next up.",
   "expires": null,
-  "src": "AUTO-1110"
+  "src": "INJ-1110"
  },
  {
   "player": "Dominick Barlow",
@@ -2752,6 +2806,15 @@
   "text": "Donovan Mitchell scored a season-high 37 points in 37 minutes Saturday against New York, 21 of them in the fourth quarter.",
   "expires": null,
   "src": "ESPN-1108"
+ },
+ {
+  "player": "Donovan Mitchell",
+  "team": "CLE",
+  "date": "2026-11-09",
+  "kind": "minutes",
+  "text": "Donovan Mitchell played only 23 minutes Monday at Charlotte, and James Harden played 25, because Kenny Atkinson used his reserves for the entire fourth quarter.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Donovan Mitchell",
@@ -2934,6 +2997,15 @@
   "src": "FA-1109"
  },
  {
+  "player": "Dyson Daniels",
+  "team": "ATL",
+  "date": "2026-11-09",
+  "kind": "role",
+  "text": "Dyson Daniels was the primary defender on Luka Doncic Monday and had 10 points, eight assists and four steals in 31 minutes.",
+  "expires": null,
+  "src": "ESPN-1110"
+ },
+ {
   "player": "Egor Demin",
   "team": "BKN",
   "date": "2026-10-30",
@@ -3085,6 +3157,15 @@
   "text": "The show said Giannis Antetokounmpo is probable for Nov. 10 at Utah with a wrist issue. He had 29 points and 14 rebounds in 34 minutes on Nov. 8.",
   "expires": "2026-11-10",
   "src": "FA-1110"
+ },
+ {
+  "player": "Giannis Antetokounmpo",
+  "team": "MIA",
+  "date": "2026-11-10",
+  "kind": "news",
+  "text": "He is probable with a right wrist sprain at Utah, which is without Jaren Jackson Jr., Jusuf Nurkic and Keyonte George. Miami-Utah has the highest total on the slate.",
+  "expires": null,
+  "src": "INJ-1110"
  },
  {
   "player": "Gradey Dick",
@@ -3418,6 +3499,15 @@
   "text": "Isaiah Stewart backs up Zach Edey and played 15 to 28 minutes in his previous five games, but he played only 10 minutes Wednesday when Edey played 25. He has two blocks in two of his seven games.",
   "expires": null,
   "src": "OMS-1104"
+ },
+ {
+  "player": "Isaiah Stewart",
+  "team": "MEM",
+  "date": "2026-11-09",
+  "kind": "injury",
+  "text": "Isaiah Stewart missed his second straight game Monday at Toronto with a right knee issue.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Ivica Zubac",
@@ -4484,11 +4574,11 @@
  {
   "player": "Jimmy Butler",
   "team": "GSW",
-  "date": "2026-11-05",
+  "date": "2026-11-09",
   "kind": "injury",
-  "text": "Jimmy Butler is out Thursday against Miami as he recovers from his knee injury; a return around January is the expectation.",
+  "text": "Jimmy Butler remains out injured and sat on the bench in coaching staff attire Monday.",
   "expires": null,
-  "src": "WEB-1105"
+  "src": "ESPN-1110"
  },
  {
   "player": "Joan Beringer",
@@ -4943,11 +5033,11 @@
  {
   "player": "Kawhi Leonard",
   "team": "TOR",
-  "date": "2026-11-07",
+  "date": "2026-11-09",
   "kind": "injury",
-  "text": "Leonard has not played since October 23. The show said it does not know whether he will be back in week 4.",
-  "expires": "2026-11-15",
-  "src": "LO-1107b"
+  "text": "Kawhi Leonard missed his sixth straight game Monday with his left knee injury.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Keaton Wagler",
@@ -5215,9 +5305,9 @@
   "team": "UTA",
   "date": "2026-11-10",
   "kind": "news",
-  "text": "He is ruled out tonight (right ankle sprain).",
+  "text": "He is out with a right ankle sprain, the first night of a Utah back-to-back. Darryn Peterson takes on more point guard work, and Isaiah Collier is in line to start; Lauri Markkanen is questionable with a right wrist sprain.",
   "expires": null,
-  "src": "AUTO-1110"
+  "src": "INJ-1110"
  },
  {
   "player": "Khaman Maluach",
@@ -5575,9 +5665,9 @@
   "team": "DAL",
   "date": "2026-11-09",
   "kind": "minutes",
-  "text": "Kyrie Irving played 38 minutes on the second night of a back-to-back and scored 35 points with 7 threes. The show said his minutes are now ramping up, which lifts his value.",
+  "text": "Kyrie Irving played both ends of a back-to-back for the first time this season, logging a season-high 38 minutes Monday with 35 points and seven 3-pointers after 28 minutes Sunday.",
   "expires": null,
-  "src": "LO-1110"
+  "src": "ESPN-1110"
  },
  {
   "player": "Kyrie Irving",
@@ -7290,6 +7380,15 @@
   "src": "LO-1110"
  },
  {
+  "player": "Quinten Post",
+  "team": "MEM",
+  "date": "2026-11-09",
+  "kind": "injury",
+  "text": "Quinten Post left Monday at Toronto in the first quarter after being elbowed in the face; he played two minutes.",
+  "expires": null,
+  "src": "ESPN-1110"
+ },
+ {
   "player": "Reed Sheppard",
   "team": "HOU",
   "date": "2026-10-23",
@@ -7680,10 +7779,10 @@
   "player": "Sandro Mamukelashvili",
   "team": "LAL",
   "date": "2026-11-09",
-  "kind": "usage",
-  "text": "Sandro Mamukelashvili scored 23 points with 8 rebounds and 5 threes in 32 minutes off the bench. Austin Reaves and Quentin Grimes were both out, and the show said that is why he had a bigger role.",
+  "kind": "minutes",
+  "text": "With Austin Reaves out Monday, Sandro Mamukelashvili played 32 minutes off the bench and scored 23 points with five 3-pointers.",
   "expires": null,
-  "src": "LO-1110"
+  "src": "ESPN-1110"
  },
  {
   "player": "Santi Aldama",
@@ -7760,20 +7859,20 @@
  {
   "player": "Scottie Barnes",
   "team": "TOR",
-  "date": "2026-11-04",
-  "kind": "stat",
-  "text": "Over his last five games through November 4, Scottie Barnes averaged 27.4 points, 7.6 rebounds, 5.6 assists, and 2.4 steals in about 35 minutes. The show said his free throw shooting and three-point shooting have been very poor and should improve. He was ruled out on November 9 with a left groin strain.",
-  "expires": null,
-  "src": "LO-1109c"
- },
- {
-  "player": "Scottie Barnes",
-  "team": "TOR",
   "date": "2026-11-06",
   "kind": "news",
   "text": "He is questionable Friday at Milwaukee after playing 32 minutes Wednesday, and Kawhi Leonard is out again.",
   "expires": null,
   "src": "INJ-1106"
+ },
+ {
+  "player": "Scottie Barnes",
+  "team": "TOR",
+  "date": "2026-11-09",
+  "kind": "injury",
+  "text": "Scottie Barnes missed his second straight game Monday with a left groin injury.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Scotty Pippen Jr.",
@@ -7846,6 +7945,15 @@
   "text": "The show said Shai Gilgeous-Alexander is not getting the same foul calls as last season, although he drew more fouls in his last two games. It said his shooting percentage is also down because he has to create every shot.",
   "expires": null,
   "src": "RW-1107"
+ },
+ {
+  "player": "Shai Gilgeous-Alexander",
+  "team": "OKC",
+  "date": "2026-11-10",
+  "kind": "news",
+  "text": "Oklahoma City is without Chet Holmgren, Jalen Williams, Cason Wallace and Jaylin Williams at Portland, which is missing Ja Morant and Shaedon Sharpe. This late game is off the main slate.",
+  "expires": null,
+  "src": "INJ-1110"
  },
  {
   "player": "Sidy Cissoko",
@@ -7923,10 +8031,10 @@
   "player": "Stephen Curry",
   "team": "GSW",
   "date": "2026-11-09",
-  "kind": "stat",
-  "text": "Stephen Curry scored 25 points with 5 rebounds and 4 threes in only 21 minutes in a blowout win. Brandin Podziemski added 25 points with 5 threes.",
+  "kind": "minutes",
+  "text": "Stephen Curry scored 25 points in 21 minutes Monday in a 51-point win over New Orleans, after scoring 41 on Saturday.",
   "expires": null,
-  "src": "LO-1110"
+  "src": "ESPN-1110"
  },
  {
   "player": "Stephon Castle",
@@ -7999,6 +8107,15 @@
   "text": "Tari Eason played only 19 minutes off the bench but had 12 points, 5 rebounds, 2 steals, 2 threes and 1 block. The show said his usage was about 25 percent.",
   "expires": null,
   "src": "LO-1110"
+ },
+ {
+  "player": "Taylor Hendricks",
+  "team": "MEM",
+  "date": "2026-11-09",
+  "kind": "minutes",
+  "text": "Taylor Hendricks played 16 minutes off the bench Monday at Toronto with Isaiah Stewart out and Quinten Post hurt early.",
+  "expires": null,
+  "src": "ESPN-1110"
  },
  {
   "player": "Terrence Shannon Jr.",
@@ -8307,6 +8424,15 @@
   "src": "OMS-1109"
  },
  {
+  "player": "Trey Murphy III",
+  "team": "NOP",
+  "date": "2026-11-09",
+  "kind": "injury",
+  "text": "Trey Murphy III sat out Monday at Golden State to manage his knees, a day after scoring 26 points against the Clippers.",
+  "expires": null,
+  "src": "ESPN-1110"
+ },
+ {
   "player": "Tristan da Silva",
   "team": "ORL",
   "date": "2026-11-04",
@@ -8368,6 +8494,15 @@
   "text": "Tyler Herro suffered a laceration against Boston on Nov. 8 and played 27 minutes, and the show said he was questionable for Nov. 10 against New York. The show said Ryan Rollins played the rest of the third quarter after Herro went out early in the second half.",
   "expires": "2026-11-10",
   "src": "FA-1110"
+ },
+ {
+  "player": "Tyler Herro",
+  "team": "MIL",
+  "date": "2026-11-10",
+  "kind": "news",
+  "text": "He is questionable with a right contusion at New York, and Josh Hart is questionable for the Knicks with right ankle soreness. New York is a 16.5-point favorite.",
+  "expires": null,
+  "src": "INJ-1110"
  },
  {
   "player": "Tyler Kolek",
@@ -8876,20 +9011,11 @@
  {
   "player": "Zion Williamson",
   "team": "NOP",
-  "date": "2026-11-06",
-  "kind": "stat",
-  "text": "Zion Williamson has played in all eight of New Orleans' games and is averaging 33 minutes, 2.6 steals and 0.6 blocks. The show said his steals are far above his career norm and should come down.",
+  "date": "2026-11-09",
+  "kind": "injury",
+  "text": "New Orleans rested Zion Williamson Monday at Golden State, the night after a road game against the Clippers.",
   "expires": null,
-  "src": "OMS-1106"
- },
- {
-  "player": "Zion Williamson",
-  "team": "NOP",
-  "date": "2026-11-08",
-  "kind": "stat",
-  "text": "Zion Williamson scored 25 points in 31 minutes, and the show said he shot a perfect nine for nine from the field and seven of nine at the line. He had no steals after a run of high steal games. He was ruled out of the November 9 game for rest.",
-  "expires": null,
-  "src": "OMS-1109"
+  "src": "ESPN-1110"
  },
  {
   "player": "Zuby Ejiofor",
