@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updated": "12:45 PM ET",
+ "updated": "2:54 PM ET",
  "games": 5,
  "pending": [
   "PHX"
@@ -12,11 +12,11 @@
    "home": "NYK",
    "time": "2026-11-11T00:30Z",
    "slate": "main",
-   "ou": 220.5,
+   "ou": 221.5,
    "fav": "NYK",
    "line": 15.5,
-   "away_pts": 102.5,
-   "home_pts": 118.0,
+   "away_pts": 103.0,
+   "home_pts": 118.5,
    "tags": [
     "Blowout risk"
    ],
@@ -35,16 +35,16 @@
      ]
     },
     "NYK": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Josh Hart",
-       "min": 30.1
+       "min": 31.3
       }
-     ]
+     ],
+     "q": []
     }
    },
-   "key": "Karl-Anthony Towns has the top projection in this game at 42.3 DK points."
+   "key": "Josh Hart is out, so James Wiseman and Mohamed Diawara and Jalen Brunson should play more than usual."
   },
   {
    "away": "BOS",
@@ -84,9 +84,9 @@
    "slate": "main",
    "ou": 228.5,
    "fav": "MIA",
-   "line": 8.5,
-   "away_pts": 118.5,
-   "home_pts": 110.0,
+   "line": 7.5,
+   "away_pts": 118.0,
+   "home_pts": 110.5,
    "tags": [
     "Highest total"
    ],
@@ -102,19 +102,18 @@
        "min": 35.3
       },
       {
+       "player": "Lauri Markkanen",
+       "min": 34.7
+      },
+      {
        "player": "Jaren Jackson Jr.",
        "min": 25.3
       }
      ],
-     "q": [
-      {
-       "player": "Lauri Markkanen",
-       "min": 31.3
-      }
-     ]
+     "q": []
     }
    },
-   "key": "Keyonte George and Jaren Jackson Jr. are out, so Darryn Peterson and Josh Okogie and Kyle Filipowski should play more than usual."
+   "key": "Keyonte George and Lauri Markkanen are out, so Kyle Filipowski and Darryn Peterson and Josh Green should play more than usual."
   },
   {
    "away": "LAC",
@@ -156,10 +155,10 @@
    "home": "SAC",
    "time": "2026-11-11T03:00Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 223.5,
    "fav": "ORL",
-   "line": 5.5,
-   "away_pts": 114.0,
+   "line": 6.5,
+   "away_pts": 115.0,
    "home_pts": 108.5,
    "tags": [],
    "teams": {
@@ -195,6 +194,22 @@
  ],
  "changed": [
   {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Wrist Sprain",
+   "time": "2:55 PM"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "2:55 PM"
+  },
+  {
    "player": "Tristan Silva",
    "team": "ORL",
    "status": "Questionable",
@@ -211,7 +226,50 @@
    "time": "12:46 PM"
   }
  ],
- "chg": [],
+ "chg": [
+  {
+   "key": "Lauri Markkanen",
+   "team": "UTA",
+   "head": "Lauri Markkanen OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Kyle Filipowski",
+     "salary": 4500,
+     "much": "+14.5 DK without him (1 game)"
+    },
+    {
+     "player": "Darryn Peterson",
+     "salary": 6800,
+     "much": "+8.5 DK without him (2 games)"
+    }
+   ],
+   "time": "2:55 PM",
+   "size": 33.2
+  },
+  {
+   "key": "Josh Hart",
+   "team": "NYK",
+   "head": "Josh Hart DOUBTFUL",
+   "st": "Doubtful",
+   "act": "Play",
+   "names": [
+    {
+     "player": "James Wiseman",
+     "salary": 3200,
+     "much": "+21.9 DK without him (1 game)"
+    },
+    {
+     "player": "Mohamed Diawara",
+     "salary": 3700,
+     "much": "+17.2 DK without him (2 games)"
+    }
+   ],
+   "time": "2:55 PM",
+   "size": 28.5
+  }
+ ],
  "sits": [
   {
    "team": "UTA",
@@ -223,6 +281,12 @@
      "new": true
     },
     {
+     "player": "Lauri Markkanen",
+     "min": 34.7,
+     "note": "Lauri Markkanen was listed as questionable against Miami on Nov. 10, and he did not play on Nov. 8. Utah was already without Keyonte George, Jaren Jackson Jr. and Jusuf Nurkic.",
+     "new": true
+    },
+    {
      "player": "Jaren Jackson Jr.",
      "min": 25.3,
      "note": "Jaren Jackson Jr. is out with a torn MCL in his right knee and has not played since Oct. 26. The show noted that his absence has helped keep Keyonte George's usage high.",
@@ -230,38 +294,84 @@
     }
    ],
    "new": true,
-   "lost": 60.6,
+   "lost": 95.3,
    "benefits": [
+    {
+     "player": "Kyle Filipowski",
+     "salary": 4500,
+     "why": "15 minutes, up from 7",
+     "much": "+14.5 DK without them (1 game)",
+     "score": 14.5,
+     "min": 15.1,
+     "dk": 15.1
+    },
     {
      "player": "Darryn Peterson",
      "salary": 6800,
      "why": "same minutes, more production",
-     "much": "+10.9 DK without them (6 games)",
-     "score": 10.9,
-     "min": 33.4,
-     "dk": 35.1
+     "much": "+8.5 DK without them (2 games)",
+     "score": 8.5,
+     "min": 36.1,
+     "dk": 40.9
     },
     {
-     "player": "Josh Okogie",
-     "salary": 3800,
-     "why": "21 minutes, up from 13",
-     "much": "+8.3 DK without them (6 games)",
-     "score": 8.3,
-     "min": 20.1,
-     "dk": 12.7
-    },
-    {
-     "player": "Kyle Filipowski",
-     "salary": 4500,
-     "why": "same minutes, more production",
-     "much": "+5.7 DK without them (4 games)",
-     "score": 5.7,
-     "min": 11.3,
-     "dk": 10.7
+     "player": "Josh Green",
+     "salary": 4000,
+     "why": "started 2 of 2",
+     "much": "+5.2 DK without them (2 games)",
+     "score": 5.2,
+     "min": 28.5,
+     "dk": 15.7
     }
    ],
    "split_of": [
+    "Lauri Markkanen",
     "Jaren Jackson Jr."
+   ]
+  },
+  {
+   "team": "NYK",
+   "outs": [
+    {
+     "player": "Josh Hart",
+     "min": 31.3,
+     "note": "Josh Hart missed New York's games on Nov. 4 and Nov. 7, and Landry Shamet started both. The show said OG Anunoby will draw ownership if Hart does not play on Nov. 10.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 31.3,
+   "benefits": [
+    {
+     "player": "James Wiseman",
+     "salary": 3200,
+     "why": "10 minutes, up from 3",
+     "much": "+21.9 DK without him (1 game)",
+     "score": 21.9,
+     "min": 7.6,
+     "dk": 9.4
+    },
+    {
+     "player": "Mohamed Diawara",
+     "salary": 3700,
+     "why": "18 minutes, up from 4",
+     "much": "+17.2 DK without him (2 games)",
+     "score": 17.2,
+     "min": 13.9,
+     "dk": 11.4
+    },
+    {
+     "player": "Jalen Brunson",
+     "salary": 8500,
+     "why": "same minutes, more production",
+     "much": "+9.8 DK without him (2 games)",
+     "score": 9.8,
+     "min": 34.2,
+     "dk": 41.3
+    }
+   ],
+   "split_of": [
+    "Josh Hart"
    ]
   },
   {
@@ -370,20 +480,20 @@
    "n": 7
   },
   {
-   "player": "Lauri Markkanen",
-   "team": "UTA",
-   "kind": "hot",
-   "last": 42.3,
-   "before": 27.7,
-   "n": 5
-  },
-  {
    "player": "Domantas Sabonis",
    "team": "SAC",
    "kind": "cold",
    "last": 34.8,
    "before": 48.8,
    "n": 6
+  },
+  {
+   "player": "Kasparas Jakucionis",
+   "team": "MIL",
+   "kind": "cold",
+   "last": 5.4,
+   "before": 19.3,
+   "n": 7
   }
  ],
  "minutes": [
@@ -432,46 +542,46 @@
   {
    "player": "Isaiah Collier",
    "team": "UTA",
-   "own": 61.9,
-   "dk": 20.6,
+   "own": 70.3,
+   "dk": 23.8,
    "salary": 4400
   },
   {
    "player": "Brayden Burries",
    "team": "MIL",
-   "own": 47.4,
+   "own": 42.9,
    "dk": 26.0,
    "salary": 4800
   },
   {
    "player": "Brice Sensabaugh",
    "team": "UTA",
-   "own": 44.7,
-   "dk": 17.4,
+   "own": 39.9,
+   "dk": 20.1,
    "salary": 3500
   },
   {
    "player": "Jalen Green",
    "team": "PHX",
-   "own": 38.0,
-   "dk": 25.7,
+   "own": 37.1,
+   "dk": 25.6,
    "salary": 6000
   }
  ],
  "leverage": [
   {
-   "player": "Tyler Herro",
-   "team": "MIL",
-   "own": 9.5,
-   "dk": 34.8,
-   "salary": 6900
+   "player": "Jaxson Hayes",
+   "team": "UTA",
+   "own": 5.7,
+   "dk": 29.5,
+   "salary": 5500
   },
   {
-   "player": "Davion Mitchell",
-   "team": "MIA",
-   "own": 7.8,
-   "dk": 33.8,
-   "salary": 6800
+   "player": "Myles Turner",
+   "team": "MIL",
+   "own": 9.8,
+   "dk": 24.3,
+   "salary": 5000
   },
   {
    "player": "Leaky Black",
@@ -570,12 +680,55 @@
   ]
  },
  "injuries": {
-  "report": "12:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_12_30PM.pdf",
+  "report": "02:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_45PM.pdf",
   "pending": [
    "PHX"
   ],
   "rows": [
+   {
+    "game": "MIL at NYK",
+    "time": "2026-11-11T00:30Z",
+    "team": "NYK",
+    "player": "Josh Hart",
+    "status": "Doubtful",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "2:55 PM",
+    "min": 31.3,
+    "benefits": [
+     {
+      "player": "James Wiseman",
+      "salary": 3200,
+      "why": "10 minutes, up from 3",
+      "much": "+21.9 DK without him (1 game)",
+      "score": 21.9,
+      "min": 7.6,
+      "dk": 9.4
+     },
+     {
+      "player": "Mohamed Diawara",
+      "salary": 3700,
+      "why": "18 minutes, up from 4",
+      "much": "+17.2 DK without him (2 games)",
+      "score": 17.2,
+      "min": 13.9,
+      "dk": 11.4
+     },
+     {
+      "player": "Jalen Brunson",
+      "salary": 8500,
+      "why": "same minutes, more production",
+      "much": "+9.8 DK without him (2 games)",
+      "score": 9.8,
+      "min": 34.2,
+      "dk": 41.3
+     }
+    ],
+    "estimate": false
+   },
    {
     "game": "MIL at NYK",
     "time": "2026-11-11T00:30Z",
@@ -589,49 +742,6 @@
     "changed_at": "",
     "min": 31.7,
     "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "MIL at NYK",
-    "time": "2026-11-11T00:30Z",
-    "team": "NYK",
-    "player": "Josh Hart",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 31.3,
-    "benefits": [
-     {
-      "player": "James Wiseman",
-      "salary": 3200,
-      "why": "10 minutes, up from 3",
-      "much": "+21.9 DK without him (1 game)",
-      "score": 21.9,
-      "min": 5.3,
-      "dk": 6.5
-     },
-     {
-      "player": "Mohamed Diawara",
-      "salary": 3700,
-      "why": "18 minutes, up from 4",
-      "much": "+17.2 DK without him (2 games)",
-      "score": 17.2,
-      "min": 10.6,
-      "dk": 8.7
-     },
-     {
-      "player": "Jalen Brunson",
-      "salary": 8500,
-      "why": "same minutes, more production",
-      "much": "+9.8 DK without him (2 games)",
-      "score": 9.8,
-      "min": 30.8,
-      "dk": 37.2
-     }
-    ],
     "estimate": false
    },
    {
@@ -666,19 +776,28 @@
       "player": "Isaiah Collier",
       "salary": 4400,
       "why": "subs in for him 8 of 31 times",
-      "much": "+12.3 DK projected vs. last 3",
-      "score": 12.266666666666667,
-      "min": 19.1,
-      "dk": 20.6
+      "much": "+15.5 DK projected vs. last 3",
+      "score": 15.466666666666667,
+      "min": 21.3,
+      "dk": 23.8
      },
      {
       "player": "Brice Sensabaugh",
       "salary": 3500,
       "why": "subs in for him 7 of 31 times",
-      "much": "+8.6 DK projected vs. last 3",
-      "score": 8.649999999999999,
-      "min": 16.9,
-      "dk": 17.4
+      "much": "+11.4 DK projected vs. last 3",
+      "score": 11.350000000000001,
+      "min": 18.0,
+      "dk": 20.1
+     },
+     {
+      "player": "Darryn Peterson",
+      "salary": 6800,
+      "why": "subs in for him 6 of 31 times",
+      "much": "+6.7 DK projected vs. last 3",
+      "score": 6.733333333333334,
+      "min": 36.1,
+      "dk": 40.9
      }
     ],
     "estimate": false
@@ -688,12 +807,12 @@
     "time": "2026-11-11T02:00Z",
     "team": "UTA",
     "player": "Lauri Markkanen",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Right Wrist Sprain",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "2:55 PM",
     "min": 34.7,
     "benefits": [
      {
@@ -702,8 +821,8 @@
       "why": "15 minutes, up from 7",
       "much": "+14.5 DK without him (1 game)",
       "score": 14.5,
-      "min": 11.3,
-      "dk": 10.7
+      "min": 15.1,
+      "dk": 15.1
      },
      {
       "player": "Darryn Peterson",
@@ -711,8 +830,8 @@
       "why": "26 points, 35 minutes (11/08)",
       "much": "+8.5 DK without him (2 games)",
       "score": 8.5,
-      "min": 33.4,
-      "dk": 35.1
+      "min": 36.1,
+      "dk": 40.9
      },
      {
       "player": "Josh Green",
@@ -720,8 +839,8 @@
       "why": "started 2 of 2",
       "much": "+5.2 DK without him (2 games)",
       "score": 5.2,
-      "min": 23.0,
-      "dk": 11.6
+      "min": 28.5,
+      "dk": 15.7
      }
     ],
     "estimate": false
@@ -791,7 +910,7 @@
       "much": "+12.9 DK without him (1 game)",
       "score": 12.9,
       "min": 33.4,
-      "dk": 40.0
+      "dk": 39.8
      }
     ],
     "estimate": false
@@ -834,7 +953,7 @@
       "much": "+5.4 DK without him (7 games)",
       "score": 5.4,
       "min": 33.4,
-      "dk": 40.0
+      "dk": 39.8
      }
     ],
     "estimate": false
@@ -883,8 +1002,17 @@
       "why": "same minutes, more production",
       "much": "+10.9 DK without him (6 games)",
       "score": 10.9,
-      "min": 33.4,
-      "dk": 35.1
+      "min": 36.1,
+      "dk": 40.9
+     },
+     {
+      "player": "Ace Bailey",
+      "salary": 6700,
+      "why": "40 and 37 minutes in first two games after JJJ went down (11/02)",
+      "much": "+10.6 DK projected vs. last 3",
+      "score": 10.649999999999999,
+      "min": 32.4,
+      "dk": 32.4
      },
      {
       "player": "Josh Okogie",
@@ -892,17 +1020,8 @@
       "why": "21 minutes, up from 13",
       "much": "+8.3 DK without him (6 games)",
       "score": 8.3,
-      "min": 20.1,
-      "dk": 12.7
-     },
-     {
-      "player": "Kyle Filipowski",
-      "salary": 4500,
-      "why": "same minutes, more production",
-      "much": "+5.7 DK without him (4 games)",
-      "score": 5.7,
-      "min": 11.3,
-      "dk": 10.7
+      "min": 24.7,
+      "dk": 17.0
      }
     ],
     "estimate": false
@@ -927,7 +1046,7 @@
       "much": "+8.4 DK without him (1 game)",
       "score": 8.4,
       "min": 22.5,
-      "dk": 22.8
+      "dk": 22.4
      }
     ],
     "estimate": false
