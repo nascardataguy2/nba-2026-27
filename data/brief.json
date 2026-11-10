@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updated": "8:44 AM ET",
+ "updated": "12:45 PM ET",
  "games": 5,
  "pending": [
   "PHX"
@@ -14,9 +14,9 @@
    "slate": "main",
    "ou": 220.5,
    "fav": "NYK",
-   "line": 16.5,
-   "away_pts": 102.0,
-   "home_pts": 118.5,
+   "line": 15.5,
+   "away_pts": 102.5,
+   "home_pts": 118.0,
    "tags": [
     "Blowout risk"
    ],
@@ -26,7 +26,11 @@
      "q": [
       {
        "player": "Tyler Herro",
-       "min": 31.5
+       "min": 31.4
+      },
+      {
+       "player": "Kel'El Ware",
+       "min": 13.5
       }
      ]
     },
@@ -40,7 +44,7 @@
      ]
     }
    },
-   "key": "Karl-Anthony Towns has the top projection in this game at 42.2 DK points."
+   "key": "Karl-Anthony Towns has the top projection in this game at 42.3 DK points."
   },
   {
    "away": "BOS",
@@ -80,12 +84,11 @@
    "slate": "main",
    "ou": 228.5,
    "fav": "MIA",
-   "line": 9.5,
-   "away_pts": 119.0,
-   "home_pts": 109.5,
+   "line": 8.5,
+   "away_pts": 118.5,
+   "home_pts": 110.0,
    "tags": [
-    "Highest total",
-    "Blowout risk"
+    "Highest total"
    ],
    "teams": {
     "MIA": {
@@ -118,11 +121,11 @@
    "home": "PHX",
    "time": "2026-11-11T02:00Z",
    "slate": "main",
-   "ou": 225.5,
+   "ou": 224.5,
    "fav": "PHX",
    "line": 3.5,
-   "away_pts": 111.0,
-   "home_pts": 114.5,
+   "away_pts": 110.5,
+   "home_pts": 114.0,
    "tags": [
     "PHX on a back-to-back"
    ],
@@ -153,11 +156,11 @@
    "home": "SAC",
    "time": "2026-11-11T03:00Z",
    "slate": "main",
-   "ou": 223.5,
+   "ou": 222.5,
    "fav": "ORL",
    "line": 5.5,
-   "away_pts": 114.5,
-   "home_pts": 109.0,
+   "away_pts": 114.0,
+   "home_pts": 108.5,
    "tags": [],
    "teams": {
     "ORL": {
@@ -190,7 +193,24 @@
    "key": "Paolo Banchero and Jalen Suggs are out, so Jamal Cain and Jase Richardson and Desmond Bane should play more than usual."
   }
  ],
- "changed": [],
+ "changed": [
+  {
+   "player": "Tristan Silva",
+   "team": "ORL",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Calf Strain",
+   "time": "12:46 PM"
+  },
+  {
+   "player": "Kel'el Ware",
+   "team": "MIL",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Ankle Sprain",
+   "time": "12:46 PM"
+  }
+ ],
  "chg": [],
  "sits": [
   {
@@ -219,7 +239,7 @@
      "much": "+10.9 DK without them (6 games)",
      "score": 10.9,
      "min": 33.4,
-     "dk": 35.0
+     "dk": 35.1
     },
     {
      "player": "Josh Okogie",
@@ -270,7 +290,7 @@
      "much": "+13.1 DK without them (6 games)",
      "score": 13.1,
      "min": 21.1,
-     "dk": 15.2
+     "dk": 15.1
     },
     {
      "player": "Jase Richardson",
@@ -288,7 +308,7 @@
      "much": "+5.2 DK without them (5 games)",
      "score": 5.2,
      "min": 32.5,
-     "dk": 31.8
+     "dk": 32.0
     }
    ],
    "split_of": [
@@ -410,55 +430,55 @@
  ],
  "chalk": [
   {
-   "player": "Brook Lopez",
-   "team": "LAC",
-   "own": 49.2,
-   "dk": 22.6,
-   "salary": 5000
-  },
-  {
-   "player": "Desmond Bane",
-   "team": "ORL",
-   "own": 47.1,
-   "dk": 31.8,
-   "salary": 7200
-  },
-  {
-   "player": "Jalen Green",
-   "team": "PHX",
-   "own": 34.4,
-   "dk": 25.6,
-   "salary": 6000
+   "player": "Isaiah Collier",
+   "team": "UTA",
+   "own": 61.9,
+   "dk": 20.6,
+   "salary": 4400
   },
   {
    "player": "Brayden Burries",
    "team": "MIL",
-   "own": 32.2,
+   "own": 47.4,
    "dk": 26.0,
    "salary": 4800
+  },
+  {
+   "player": "Brice Sensabaugh",
+   "team": "UTA",
+   "own": 44.7,
+   "dk": 17.4,
+   "salary": 3500
+  },
+  {
+   "player": "Jalen Green",
+   "team": "PHX",
+   "own": 38.0,
+   "dk": 25.7,
+   "salary": 6000
   }
  ],
  "leverage": [
   {
-   "player": "Klay Thompson",
-   "team": "MIA",
-   "own": 9.7,
-   "dk": 24.5,
-   "salary": 4900
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "own": 9.5,
+   "dk": 34.8,
+   "salary": 6900
   },
   {
    "player": "Davion Mitchell",
    "team": "MIA",
-   "own": 2.8,
+   "own": 7.8,
    "dk": 33.8,
    "salary": 6800
   },
   {
-   "player": "Lauri Markkanen",
-   "team": "UTA",
+   "player": "Leaky Black",
+   "team": "SAC",
    "own": 0.9,
-   "dk": 36.2,
-   "salary": 7500
+   "dk": 17.7,
+   "salary": 3700
   }
  ],
  "last": {
@@ -541,12 +561,17 @@
     "player": "Brandon Williams",
     "team": "GSW",
     "text": "Brandon Williams played only 2 minutes Monday before the show said he hurt his hamstring. The show expects both he and Will Richard to miss time, which could push De'Anthony Melton from about 18 minutes to about 24 minutes."
+   },
+   {
+    "player": "Quinten Post",
+    "team": "MEM",
+    "text": "Quinten Post left Monday at Toronto in the first quarter after being elbowed in the face; he played two minutes."
    }
   ]
  },
  "injuries": {
-  "report": "08:30 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_08_30AM.pdf",
+  "report": "12:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_12_30PM.pdf",
   "pending": [
    "PHX"
   ],
@@ -572,7 +597,7 @@
     "team": "NYK",
     "player": "Josh Hart",
     "status": "Questionable",
-    "reason": "Right Ankle Soreness",
+    "reason": "Illness",
     "new": true,
     "was": "Out",
     "known": true,
@@ -604,9 +629,24 @@
       "much": "+9.8 DK without him (2 games)",
       "score": 9.8,
       "min": 30.8,
-      "dk": 37.3
+      "dk": 37.2
      }
     ],
+    "estimate": false
+   },
+   {
+    "game": "MIL at NYK",
+    "time": "2026-11-11T00:30Z",
+    "team": "MIL",
+    "player": "Kel'el Ware",
+    "status": "Questionable",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:46 PM",
+    "min": 12.7,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -672,7 +712,7 @@
       "much": "+8.5 DK without him (2 games)",
       "score": 8.5,
       "min": 33.4,
-      "dk": 35.0
+      "dk": 35.1
      },
      {
       "player": "Josh Green",
@@ -719,6 +759,21 @@
    {
     "game": "ORL at SAC",
     "time": "2026-11-11T03:00Z",
+    "team": "ORL",
+    "player": "Tristan Silva",
+    "status": "Questionable",
+    "reason": "Left Calf Strain",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:46 PM",
+    "min": 33.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "ORL at SAC",
+    "time": "2026-11-11T03:00Z",
     "team": "SAC",
     "player": "Domantas Sabonis",
     "status": "Questionable",
@@ -736,7 +791,7 @@
       "much": "+12.9 DK without him (1 game)",
       "score": 12.9,
       "min": 33.4,
-      "dk": 40.1
+      "dk": 40.0
      }
     ],
     "estimate": false
@@ -761,7 +816,7 @@
       "much": "+9.5 DK without him (6 games)",
       "score": 9.5,
       "min": 27.8,
-      "dk": 21.0
+      "dk": 20.8
      },
      {
       "player": "Malik Monk",
@@ -779,7 +834,7 @@
       "much": "+5.4 DK without him (7 games)",
       "score": 5.4,
       "min": 33.4,
-      "dk": 40.1
+      "dk": 40.0
      }
     ],
     "estimate": false
@@ -829,7 +884,7 @@
       "much": "+10.9 DK without him (6 games)",
       "score": 10.9,
       "min": 33.4,
-      "dk": 35.0
+      "dk": 35.1
      },
      {
       "player": "Josh Okogie",
@@ -872,7 +927,7 @@
       "much": "+8.4 DK without him (1 game)",
       "score": 8.4,
       "min": 22.5,
-      "dk": 22.6
+      "dk": 22.8
      }
     ],
     "estimate": false
@@ -897,7 +952,7 @@
       "much": "+16.0 DK without him (7 games)",
       "score": 16.0,
       "min": 21.1,
-      "dk": 15.2
+      "dk": 15.1
      },
      {
       "player": "Desmond Bane",
@@ -906,7 +961,7 @@
       "much": "+11.4 DK without him (6 games)",
       "score": 11.4,
       "min": 32.5,
-      "dk": 31.8
+      "dk": 32.0
      },
      {
       "player": "Franz Wagner",
@@ -940,7 +995,7 @@
       "much": "+13.1 DK without him (6 games)",
       "score": 13.1,
       "min": 21.1,
-      "dk": 15.2
+      "dk": 15.1
      },
      {
       "player": "Jase Richardson",
@@ -958,7 +1013,7 @@
       "much": "+5.2 DK without him (5 games)",
       "score": 5.2,
       "min": 32.5,
-      "dk": 31.8
+      "dk": 32.0
      }
     ],
     "estimate": false
