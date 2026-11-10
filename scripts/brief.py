@@ -119,7 +119,7 @@ def main():
                     est = if_sits * share * p["dk"] / p["min"]
                     if est < 3:
                         continue
-                    much = "about +%s DK if he sits (estimate)" % r1(est)
+                    much = "about +%s DK" % r1(est)
                     score = est
                 else:
                     if pd is None or pd < 3:
@@ -424,11 +424,11 @@ def main():
         if r["status"] != c["status"]:
             continue
         size = avgdk(c["team"], c["player"]) * (0.5 if c["status"] == "Questionable" else 1)
-        names = [{"player": b["player"], "salary": b.get("salary"), "much": b["much"]} for b in r["benefits"][:2]]
+        names = [{"player": b["player"], "salary": b.get("salary"), "much": b["much"] + (" if he sits (estimate)" if r.get("estimate") else "")} for b in r["benefits"][:2]]
         if not names and size < 20:
             continue
         items.append({"key": c["player"], "team": c["team"], "head": c["player"] + " " + c["status"].upper(),
-                      "st": c["status"], "act": "Play" if names else "", "names": names, "time": c["time"], "size": r1(size)})
+                      "st": c["status"], "act": ("Play" if c["status"] != "Questionable" else "If he sits, play") if names else "", "names": names, "time": c["time"], "size": r1(size)})
     for t, cl in cleared.items():
         nm = sorted([n for n in cl if recent_min(t, n) >= 15], key=lambda n: -avgdk(t, n))
         if not nm:

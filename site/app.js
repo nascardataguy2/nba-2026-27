@@ -128,10 +128,24 @@
         var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.why ? benTxt(b) + '</span>' : (b.gdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' : b.subs != null || b.note ? benTxt(b) + ', ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'); }).join('<br>');
         return '<div class="hit">' + tm(s.team) + ' ' + outs + ' <span class="arrow">\u2192</span><p>' + ben + '</p></div>';
       }).join(''));
+      // A storyline is written from the morning shows. When a player it names has changed status on
+      // today's official report since then, say so under it, so it never reads stale.
+      var storyUpd = function(it){
+        var seen = {}, out = [];
+        (B.changed || []).forEach(function(c){  // newest first
+          if (seen[c.player]) return;
+          var last = c.player.split(' ').slice(-1)[0];
+          if (c.team !== it.team && c.player !== it.player) return;
+          if (it.text.indexOf(c.player) < 0 && it.text.indexOf(last) < 0 && c.player !== it.player) return;
+          seen[c.player] = 1;
+          out.push(esc(c.player) + ' is now <b>' + esc(c.status.toLowerCase()) + '</b> (' + esc(c.time) + ')');
+        });
+        return out.length ? '<p class="st-upd">Update: ' + out.join('; ') + '.</p>' : '';
+      };
       // Storylines: tonight's players first, then the rest
       var st = q.storylines || {}, items = (st.items || []).slice().sort(function(a, b){ return (SLATE[b.team] ? 1 : 0) - (SLATE[a.team] ? 1 : 0); });
       var storyH = sec('story', 'Storylines', 'Tonight\u2019s players first, then the rest of the league.', items.slice(0, 5).map(function(it){
-        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p></div>';
+        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
       }).join(''));
       // Trending
       var tr = (B.hot || []).map(function(h){
@@ -151,7 +165,7 @@
     } else {
       var st2 = q.storylines || {};
       html += sec('story', 'Storylines', 'The biggest news around the league.', (st2.items || []).slice(0, 8).map(function(it){
-        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p></div>';
+        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
       }).join(''));
     }
     // Last night
@@ -356,7 +370,7 @@
       var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
       return grp + '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
-        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">No fantasy impact</span>') + '</td></tr>';
+        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">' + (/Probable|Available/.test(r.status) ? 'Expected to play' : 'No fantasy impact') + '</span>') + '</td></tr>';
     }).join('');
     var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr><th>Player</th><th>Status</th><th>New?</th><th>Who benefits</th></tr></thead><tbody>' +
       (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
