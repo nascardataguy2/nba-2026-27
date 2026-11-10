@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updated": "4:50 PM ET",
+ "updated": "4:53 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:38 AM",
@@ -308,7 +308,7 @@
    "team": "ORL",
    "head": "Tristan da Silva QUESTIONABLE",
    "st": "Questionable",
-   "act": "Play",
+   "act": "If he sits, play",
    "names": [
     {
      "player": "Franz Wagner",
@@ -329,7 +329,7 @@
    "team": "MIL",
    "head": "Kel'el Ware QUESTIONABLE",
    "st": "Questionable",
-   "act": "Play",
+   "act": "If he sits, play",
    "names": [
     {
      "player": "Myles Turner",
@@ -613,53 +613,53 @@
   {
    "player": "Isaiah Collier",
    "team": "UTA",
-   "own": 71.3,
+   "own": 67.9,
    "dk": 23.8,
    "salary": 4400
   },
   {
-   "player": "Brayden Burries",
-   "team": "MIL",
-   "own": 43.4,
-   "dk": 26.0,
-   "salary": 4800
-  },
-  {
    "player": "Brice Sensabaugh",
    "team": "UTA",
-   "own": 41.7,
+   "own": 53.9,
    "dk": 20.1,
    "salary": 3500
   },
   {
-   "player": "Klay Thompson",
-   "team": "MIA",
-   "own": 34.4,
-   "dk": 24.7,
-   "salary": 4900
+   "player": "Darryn Peterson",
+   "team": "UTA",
+   "own": 38.7,
+   "dk": 40.9,
+   "salary": 6800
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "own": 36.2,
+   "dk": 46.6,
+   "salary": 8900
   }
  ],
  "leverage": [
   {
-   "player": "Jaxson Hayes",
-   "team": "UTA",
-   "own": 5.4,
-   "dk": 29.5,
-   "salary": 5500
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "own": 7.7,
+   "dk": 34.9,
+   "salary": 6900
+  },
+  {
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "own": 9.1,
+   "dk": 34.2,
+   "salary": 6800
   },
   {
    "player": "Myles Turner",
    "team": "MIL",
-   "own": 9.3,
+   "own": 6.8,
    "dk": 24.3,
    "salary": 5000
-  },
-  {
-   "player": "Leaky Black",
-   "team": "SAC",
-   "own": 0.9,
-   "dk": 17.7,
-   "salary": 3700
   }
  ],
  "last": {
@@ -815,7 +815,7 @@
       "player": "Brayden Burries",
       "salary": 4800,
       "why": "subs in for him 9 of 30 times",
-      "much": "about +9.5 DK if he sits (estimate)",
+      "much": "about +9.5 DK",
       "score": 9.463601532567049,
       "min": 26.1,
       "dk": 26.0
@@ -824,7 +824,7 @@
       "player": "AJ Green",
       "salary": 3900,
       "why": "subs in for him 6 of 30 times",
-      "much": "about +3.9 DK if he sits (estimate)",
+      "much": "about +3.9 DK",
       "score": 3.931034482758621,
       "min": 20.3,
       "dk": 12.6
@@ -849,7 +849,7 @@
       "player": "Myles Turner",
       "salary": 5000,
       "why": "subs in for him 15 of 30 times",
-      "much": "about +5.6 DK if he sits (estimate)",
+      "much": "about +5.6 DK",
       "score": 5.616788321167884,
       "min": 27.4,
       "dk": 24.3
@@ -990,7 +990,7 @@
       "player": "Franz Wagner",
       "salary": 9000,
       "why": "subs in for him 7 of 29 times",
-      "much": "about +10.1 DK if he sits (estimate)",
+      "much": "about +10.1 DK",
       "score": 10.134422614274257,
       "min": 34.4,
       "dk": 42.9
@@ -999,7 +999,7 @@
       "player": "Anthony Black",
       "salary": 6900,
       "why": "subs in for him 5 of 29 times",
-      "much": "about +6.5 DK if he sits (estimate)",
+      "much": "about +6.5 DK",
       "score": 6.517443032869529,
       "min": 28.5,
       "dk": 32.0
@@ -1008,7 +1008,7 @@
       "player": "Jamal Cain",
       "salary": 4300,
       "why": "subs in for him 5 of 29 times",
-      "much": "about +4.2 DK if he sits (estimate)",
+      "much": "about +4.2 DK",
       "score": 4.154001198452906,
       "min": 21.1,
       "dk": 15.1
