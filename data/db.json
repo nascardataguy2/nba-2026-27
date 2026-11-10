@@ -2,8 +2,8 @@
  "updated": "2026-11-09",
  "brief": {
   "date": "2026-11-09",
-  "updated": "6:47 PM ET",
-  "games": 7,
+  "updated": "7:18 PM ET",
+  "games": 8,
   "pending": [],
   "first_report": "5:39 AM",
   "cards": [
@@ -144,11 +144,11 @@
     "home": "TOR",
     "time": "2026-11-10T00:30Z",
     "slate": "main",
-    "ou": 228.5,
-    "fav": "TOR",
-    "line": 2.5,
-    "away_pts": 113.0,
-    "home_pts": 115.5,
+    "ou": 225.5,
+    "fav": "MEM",
+    "line": 1.5,
+    "away_pts": 113.5,
+    "home_pts": 112.0,
     "tags": [
      "Close game"
     ],
@@ -188,7 +188,7 @@
       "q": []
      }
     },
-    "key": "Scottie Barnes and Immanuel Quickley are out, so Alijah Martin and Jakob Poeltl and Jamal Shead should play more than usual."
+    "key": "Scottie Barnes and Immanuel Quickley are out, so Jakob Poeltl and Jamal Shead should play more than usual."
    },
    {
     "away": "IND",
@@ -215,17 +215,12 @@
         "min": 12.0
        }
       ],
-      "q": [
-       {
-        "player": "T.J. McConnell",
-        "min": 8.3
-       }
-      ]
+      "q": []
      },
      "DAL": {
       "out": [
        {
-        "player": "Morez Johnson",
+        "player": "Morez Johnson Jr.",
         "min": 20.3
        },
        {
@@ -233,12 +228,7 @@
         "min": 13.3
        }
       ],
-      "q": [
-       {
-        "player": "Morez Johnson Jr.",
-        "min": 16.5
-       }
-      ]
+      "q": []
      }
     },
     "key": "Tyrese Haliburton is out, so Quenton Jackson and Larry Nance and Andrew Nembhard should play more than usual."
@@ -269,7 +259,7 @@
       "q": []
      }
     },
-    "key": "Nikola Jokic has the top projection in this game at 53.4 DK points."
+    "key": "Nikola Jokic has the top projection in this game at 53.6 DK points."
    },
    {
     "away": "SAS",
@@ -303,9 +293,126 @@
      }
     },
     "key": "Devin Vassell is out, so Keldon Johnson should play more than usual."
+   },
+   {
+    "away": "NOP",
+    "home": "GSW",
+    "time": "2026-11-10T03:00Z",
+    "slate": "main",
+    "ou": 228.5,
+    "fav": "GSW",
+    "line": 11.5,
+    "away_pts": 108.5,
+    "home_pts": 120.0,
+    "tags": [
+     "Blowout risk",
+     "NOP on a back-to-back"
+    ],
+    "teams": {
+     "NOP": {
+      "out": [
+       {
+        "player": "Zion Williamson",
+        "min": 35.0
+       },
+       {
+        "player": "Trey Murphy III",
+        "min": 34.7
+       },
+       {
+        "player": "Yves Missi",
+        "min": 19.5
+       },
+       {
+        "player": "Trendon Watford",
+        "min": 18.7
+       }
+      ],
+      "q": []
+     },
+     "GSW": {
+      "out": [
+       {
+        "player": "Will Richard",
+        "min": 18.7
+       }
+      ],
+      "q": [
+       {
+        "player": "Gary Payton",
+        "min": 13.6
+       }
+      ]
+     }
+    },
+    "key": "Zion Williamson and Trey Murphy III are out, so Herbert Jones and Derik Queen and Dejounte Murray should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "Gui Santos",
+    "team": "GSW",
+    "status": "Probable",
+    "was": "Available",
+    "why": "Left Knee Tendinitis",
+    "time": "7:18 PM"
+   },
+   {
+    "player": "Will Richard",
+    "team": "GSW",
+    "status": "Out",
+    "was": "",
+    "why": "Left Thumb UCL Tear",
+    "time": "7:18 PM"
+   },
+   {
+    "player": "Gary Payton II",
+    "team": "GSW",
+    "status": "Questionable",
+    "was": "Available",
+    "why": "",
+    "time": "7:18 PM"
+   },
+   {
+    "player": "Zion Williamson",
+    "team": "NOP",
+    "status": "Out",
+    "was": "",
+    "why": "Rest",
+    "time": "7:18 PM"
+   },
+   {
+    "player": "Trendon Watford",
+    "team": "NOP",
+    "status": "Out",
+    "was": "",
+    "why": "Right Ankle Sprain",
+    "time": "7:18 PM"
+   },
+   {
+    "player": "Trey Murphy III",
+    "team": "NOP",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "7:18 PM"
+   },
+   {
+    "player": "Morez Johnson Jr.",
+    "team": "DAL",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "7:18 PM"
+   },
+   {
+    "player": "T.J. McConnell",
+    "team": "IND",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Right Hamstring Strain",
+    "time": "7:18 PM"
+   },
    {
     "player": "Morez Johnson",
     "team": "DAL",
@@ -321,70 +428,6 @@
     "was": "Questionable",
     "why": "",
     "time": "6:44 PM"
-   },
-   {
-    "player": "Collin Murray-Boyles",
-    "team": "TOR",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Illness",
-    "time": "6:44 PM"
-   },
-   {
-    "player": "Scottie Barnes",
-    "team": "TOR",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Left Groin Strain",
-    "time": "6:44 PM"
-   },
-   {
-    "player": "Anthony Davis",
-    "team": "WAS",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Right Ankle Sprain",
-    "time": "6:44 PM"
-   },
-   {
-    "player": "Bilal Coulibaly",
-    "team": "WAS",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Left Hand Soreness",
-    "time": "6:44 PM"
-   },
-   {
-    "player": "Jarrett Allen",
-    "team": "CLE",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Right Knee Contusion",
-    "time": "6:44 PM"
-   },
-   {
-    "player": "Austin Reaves",
-    "team": "LAL",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Illness",
-    "time": "5:57 PM"
-   },
-   {
-    "player": "Jock Landale",
-    "team": "ATL",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Left Hip Strain",
-    "time": "5:38 PM"
-   },
-   {
-    "player": "Moussa Diabate",
-    "team": "CHA",
-    "status": "Out",
-    "was": "Doubtful",
-    "why": "",
-    "time": "5:38 PM"
    }
   ],
   "chg": [
@@ -417,14 +460,14 @@
     "act": "Play",
     "names": [
      {
-      "player": "Alijah Martin",
-      "salary": 4200,
-      "much": "+34.2 DK without him (1 game)"
-     },
-     {
       "player": "Jakob Poeltl",
       "salary": 4900,
       "much": "+28.8 DK without him (1 game)"
+     },
+     {
+      "player": "Jamal Shead",
+      "salary": 5500,
+      "much": "+24.8 DK without him (1 game)"
      }
     ],
     "time": "6:44 PM",
@@ -468,6 +511,22 @@
     "size": 38.5
    },
    {
+    "key": "Zion Williamson",
+    "team": "NOP",
+    "head": "Zion Williamson OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Herbert Jones",
+      "salary": 4500,
+      "much": "+17.4 DK projected vs. last 3"
+     }
+    ],
+    "time": "7:18 PM",
+    "size": 36.6
+   },
+   {
     "key": "Immanuel Quickley",
     "team": "TOR",
     "head": "Immanuel Quickley OUT",
@@ -475,18 +534,39 @@
     "act": "Play",
     "names": [
      {
-      "player": "Alijah Martin",
-      "salary": 4200,
-      "much": "+34.2 DK without him (1 game)"
-     },
-     {
       "player": "Jakob Poeltl",
       "salary": 4900,
       "much": "+28.8 DK without him (1 game)"
+     },
+     {
+      "player": "Jamal Shead",
+      "salary": 5500,
+      "much": "+24.8 DK without him (1 game)"
      }
     ],
     "time": "6:44 PM",
     "size": 33.4
+   },
+   {
+    "key": "Trey Murphy III",
+    "team": "NOP",
+    "head": "Trey Murphy III OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Herbert Jones",
+      "salary": 4500,
+      "much": "+17.4 DK projected vs. last 3"
+     },
+     {
+      "player": "Derik Queen",
+      "salary": 5900,
+      "much": "+15.3 DK without him (1 game)"
+     }
+    ],
+    "time": "7:18 PM",
+    "size": 29.6
    },
    {
     "key": "CLE",
@@ -556,12 +636,12 @@
      {
       "player": "Jakob Poeltl",
       "salary": 4900,
-      "much": "+28.0 DK projected vs. last 3"
+      "much": "+27.5 DK projected vs. last 3"
      },
      {
       "player": "Trayce Jackson-Davis",
       "salary": 3000,
-      "much": "+15.1 DK projected vs. last 3"
+      "much": "+19.9 DK projected vs. last 3"
      }
     ],
     "time": "6:44 PM",
@@ -607,18 +687,55 @@
    {
     "key": "Morez Johnson Jr.",
     "team": "DAL",
-    "head": "Morez Johnson Jr. QUESTIONABLE",
-    "st": "Questionable",
+    "head": "Morez Johnson Jr. OUT",
+    "st": "Out",
     "act": "Play",
     "names": [
      {
       "player": "Daniel Gafford",
       "salary": 5000,
-      "much": "+4.9 DK projected vs. last 3"
+      "much": "+7.8 DK projected vs. last 3"
      }
     ],
-    "time": "4:10 PM",
-    "size": 8.4
+    "time": "7:18 PM",
+    "size": 16.8
+   },
+   {
+    "key": "Morez Johnson",
+    "team": "DAL",
+    "head": "Morez Johnson OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Daniel Gafford",
+      "salary": 5000,
+      "much": "+7.8 DK projected vs. last 3"
+     }
+    ],
+    "time": "6:44 PM",
+    "size": 16.8
+   },
+   {
+    "key": "Trendon Watford",
+    "team": "NOP",
+    "head": "Trendon Watford OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Dejounte Murray",
+      "salary": 7400,
+      "much": "+13.9 DK without him (4 games)"
+     },
+     {
+      "player": "Benedict Mathurin",
+      "salary": 3800,
+      "much": "+5.0 DK without him (4 games)"
+     }
+    ],
+    "time": "7:18 PM",
+    "size": 15.4
    }
   ],
   "sits": [
@@ -654,22 +771,13 @@
     "lost": 123.9,
     "benefits": [
      {
-      "player": "Alijah Martin",
-      "salary": 4200,
-      "why": "31 minutes, up from 7",
-      "much": "+34.2 DK without them (1 game)",
-      "score": 34.2,
-      "min": 26.2,
-      "dk": 30.4
-     },
-     {
       "player": "Jakob Poeltl",
       "salary": 4900,
       "why": "31 minutes, up from 20",
       "much": "+28.8 DK without them (1 game)",
       "score": 28.8,
       "min": 36.0,
-      "dk": 59.2
+      "dk": 58.8
      },
      {
       "player": "Jamal Shead",
@@ -678,13 +786,77 @@
       "much": "+24.8 DK without them (1 game)",
       "score": 24.8,
       "min": 36.0,
-      "dk": 49.0
+      "dk": 48.9
      }
     ],
     "split_of": [
      "Scottie Barnes",
      "Immanuel Quickley",
      "Kawhi Leonard"
+    ]
+   },
+   {
+    "team": "NOP",
+    "outs": [
+     {
+      "player": "Zion Williamson",
+      "min": 35.0,
+      "note": "Ruled out tonight (rest).",
+      "new": true
+     },
+     {
+      "player": "Trey Murphy III",
+      "min": 34.7,
+      "note": "Ruled out tonight.",
+      "new": true
+     },
+     {
+      "player": "Yves Missi",
+      "min": 19.5,
+      "note": "The show said Yves Missi remains out for New Orleans on Monday. He has not played since October 23.",
+      "new": false
+     },
+     {
+      "player": "Trendon Watford",
+      "min": 18.7,
+      "note": "Ruled out tonight (right ankle sprain).",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 107.9,
+    "benefits": [
+     {
+      "player": "Herbert Jones",
+      "salary": 4500,
+      "why": "37 minutes (OT), only 2 points (11/04)",
+      "much": "+17.4 DK projected vs. last 3",
+      "score": 17.416666666666668,
+      "min": 37.9,
+      "dk": 24.5
+     },
+     {
+      "player": "Derik Queen",
+      "salary": 5900,
+      "why": "27 minutes, up from 22",
+      "much": "+15.3 DK without them (1 game)",
+      "score": 15.3,
+      "min": 24.6,
+      "dk": 27.5
+     },
+     {
+      "player": "Dejounte Murray",
+      "salary": 7400,
+      "why": "45 minutes, up from 32",
+      "much": "+11.1 DK without them (1 game)",
+      "score": 11.1,
+      "min": 32.8,
+      "dk": 36.0
+     }
+    ],
+    "split_of": [
+     "Trey Murphy III",
+     "Yves Missi"
     ]
    },
    {
@@ -851,42 +1023,9 @@
      }
     ],
     "split_of": []
-   },
-   {
-    "team": "DAL",
-    "outs": [
-     {
-      "player": "Morez Johnson",
-      "min": 20.3,
-      "note": "Ruled out tonight.",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 20.3,
-    "benefits": [
-     {
-      "player": "Daniel Gafford",
-      "salary": 5000,
-      "why": "subs in for him 17 of 41 times",
-      "much": "+4.9 DK projected vs. last 3",
-      "score": 4.866666666666667,
-      "min": 21.9,
-      "dk": 24.7
-     }
-    ],
-    "split_of": []
    }
   ],
   "hot": [
-   {
-    "player": "Braden Smith",
-    "team": "IND",
-    "kind": "hot",
-    "last": 25.8,
-    "before": 2.0,
-    "n": 3
-   },
    {
     "player": "Jakob Poeltl",
     "team": "TOR",
@@ -918,17 +1057,17 @@
     "last": 69.9,
     "before": 55.3,
     "n": 7
+   },
+   {
+    "player": "Onyeka Okongwu",
+    "team": "ATL",
+    "kind": "hot",
+    "last": 42.7,
+    "before": 28.1,
+    "n": 8
    }
   ],
   "minutes": [
-   {
-    "player": "Braden Smith",
-    "team": "IND",
-    "kind": "up",
-    "last": 26.0,
-    "before": 6.0,
-    "n": 3
-   },
    {
     "player": "Max Christie",
     "team": "DAL",
@@ -944,6 +1083,14 @@
     "last": 15.0,
     "before": 29.0,
     "n": 2
+   },
+   {
+    "player": "Gui Santos",
+    "team": "GSW",
+    "kind": "down",
+    "last": 12.3,
+    "before": 24.0,
+    "n": 4
    },
    {
     "player": "Will Riley",
@@ -964,55 +1111,55 @@
   ],
   "chalk": [
    {
-    "player": "Collin Sexton",
-    "team": "LAL",
-    "own": 55.8,
-    "dk": 29.9,
-    "salary": 4100
-   },
-   {
     "player": "Jakob Poeltl",
     "team": "TOR",
-    "own": 52.7,
-    "dk": 59.2,
+    "own": 70.6,
+    "dk": 58.8,
     "salary": 4900
-   },
-   {
-    "player": "Jamal Shead",
-    "team": "TOR",
-    "own": 44.2,
-    "dk": 49.0,
-    "salary": 5500
    },
    {
     "player": "RJ Barrett",
     "team": "TOR",
-    "own": 43.9,
-    "dk": 65.1,
+    "own": 68.5,
+    "dk": 65.5,
     "salary": 7600
+   },
+   {
+    "player": "Jamal Shead",
+    "team": "TOR",
+    "own": 65.2,
+    "dk": 48.9,
+    "salary": 5500
+   },
+   {
+    "player": "Ja'Kobe Walter",
+    "team": "TOR",
+    "own": 54.3,
+    "dk": 42.7,
+    "salary": 5300
    }
   ],
   "leverage": [
    {
-    "player": "Royce O'Neale",
+    "player": "Jordan Poole",
+    "team": "NOP",
+    "own": 1.0,
+    "dk": 23.2,
+    "salary": 3400
+   },
+   {
+    "player": "Ryan Kalkbrenner",
     "team": "CHA",
-    "own": 0.9,
-    "dk": 32.0,
-    "salary": 4300
+    "own": 3.5,
+    "dk": 28.0,
+    "salary": 4400
    },
    {
-    "player": "Alijah Martin",
-    "team": "TOR",
-    "own": 2.9,
-    "dk": 30.4,
-    "salary": 4200
-   },
-   {
-    "player": "Jamison Battle",
-    "team": "TOR",
-    "own": 0.9,
-    "dk": 26.8,
-    "salary": 4000
+    "player": "Jeremiah Fears",
+    "team": "NOP",
+    "own": 4.8,
+    "dk": 39.9,
+    "salary": 6400
    }
   ],
   "last": {
@@ -1098,8 +1245,8 @@
    ]
   },
   "injuries": {
-   "report": "06:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_06_30PM.pdf",
+   "report": "07:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_07_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1331,22 +1478,13 @@
      "min": 35.3,
      "benefits": [
       {
-       "player": "Alijah Martin",
-       "salary": 4200,
-       "why": "31 minutes, up from 7",
-       "much": "+34.2 DK without him (1 game)",
-       "score": 34.2,
-       "min": 26.2,
-       "dk": 30.4
-      },
-      {
        "player": "Jakob Poeltl",
        "salary": 4900,
        "why": "31 minutes, up from 20",
        "much": "+28.8 DK without him (1 game)",
        "score": 28.8,
        "min": 36.0,
-       "dk": 59.2
+       "dk": 58.8
       },
       {
        "player": "Jamal Shead",
@@ -1355,7 +1493,7 @@
        "much": "+24.8 DK without him (1 game)",
        "score": 24.8,
        "min": 36.0,
-       "dk": 49.0
+       "dk": 48.9
       }
      ],
      "estimate": false
@@ -1374,22 +1512,13 @@
      "min": 34.3,
      "benefits": [
       {
-       "player": "Alijah Martin",
-       "salary": 4200,
-       "why": "31 minutes, up from 7",
-       "much": "+34.2 DK without him (1 game)",
-       "score": 34.2,
-       "min": 26.2,
-       "dk": 30.4
-      },
-      {
        "player": "Jakob Poeltl",
        "salary": 4900,
        "why": "31 minutes, up from 20",
        "much": "+28.8 DK without him (1 game)",
        "score": 28.8,
        "min": 36.0,
-       "dk": 59.2
+       "dk": 58.8
       },
       {
        "player": "Jamal Shead",
@@ -1398,7 +1527,7 @@
        "much": "+24.8 DK without him (1 game)",
        "score": 24.8,
        "min": 36.0,
-       "dk": 49.0
+       "dk": 48.9
       }
      ],
      "estimate": false
@@ -1420,19 +1549,19 @@
        "player": "Jakob Poeltl",
        "salary": 4900,
        "why": "subs in for him 8 of 34 times",
-       "much": "+28.0 DK projected vs. last 3",
-       "score": 27.950000000000003,
+       "much": "+27.5 DK projected vs. last 3",
+       "score": 27.549999999999997,
        "min": 36.0,
-       "dk": 59.2
+       "dk": 58.8
       },
       {
        "player": "Trayce Jackson-Davis",
        "salary": 3000,
        "why": "subs in for him 7 of 34 times",
-       "much": "+15.1 DK projected vs. last 3",
-       "score": 15.083333333333332,
-       "min": 13.9,
-       "dk": 22.5
+       "much": "+19.9 DK projected vs. last 3",
+       "score": 19.883333333333333,
+       "min": 16.8,
+       "dk": 27.3
       }
      ],
      "estimate": false
@@ -1442,39 +1571,24 @@
      "time": "2026-11-10T01:00Z",
      "team": "DAL",
      "player": "Morez Johnson Jr.",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "4:10 PM",
+     "changed_at": "7:18 PM",
      "min": 20.3,
      "benefits": [
       {
        "player": "Daniel Gafford",
        "salary": 5000,
        "why": "subs in for him 17 of 41 times",
-       "much": "+4.9 DK projected vs. last 3",
-       "score": 4.866666666666667,
-       "min": 21.9,
-       "dk": 24.7
+       "much": "+7.8 DK projected vs. last 3",
+       "score": 7.766666666666669,
+       "min": 24.6,
+       "dk": 27.6
       }
      ],
-     "estimate": false
-    },
-    {
-     "game": "IND at DAL",
-     "time": "2026-11-10T01:00Z",
-     "team": "IND",
-     "player": "T.J. McConnell",
-     "status": "Questionable",
-     "reason": "Right Hamstring Strain",
-     "new": true,
-     "was": "Available",
-     "known": true,
-     "changed_at": "",
-     "min": 9.0,
-     "benefits": [],
      "estimate": false
     },
     {
@@ -1639,6 +1753,153 @@
        "dk": 32.9
       }
      ],
+     "estimate": false
+    },
+    {
+     "game": "NOP at GSW",
+     "time": "2026-11-10T03:00Z",
+     "team": "NOP",
+     "player": "Zion Williamson",
+     "status": "Out",
+     "reason": "Rest",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "7:18 PM",
+     "min": 35.0,
+     "benefits": [
+      {
+       "player": "Herbert Jones",
+       "salary": 4500,
+       "why": "subs in for him 4 of 25 times",
+       "much": "+17.4 DK projected vs. last 3",
+       "score": 17.416666666666668,
+       "min": 37.9,
+       "dk": 24.5
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "NOP at GSW",
+     "time": "2026-11-10T03:00Z",
+     "team": "NOP",
+     "player": "Trey Murphy III",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "7:18 PM",
+     "min": 34.7,
+     "benefits": [
+      {
+       "player": "Herbert Jones",
+       "salary": 4500,
+       "why": "37 minutes (OT), only 2 points (11/04)",
+       "much": "+17.4 DK projected vs. last 3",
+       "score": 17.416666666666668,
+       "min": 37.9,
+       "dk": 24.5
+      },
+      {
+       "player": "Derik Queen",
+       "salary": 5900,
+       "why": "27 minutes, up from 22",
+       "much": "+15.3 DK without him (1 game)",
+       "score": 15.3,
+       "min": 24.6,
+       "dk": 27.5
+      },
+      {
+       "player": "Dejounte Murray",
+       "salary": 7400,
+       "why": "45 minutes, up from 32",
+       "much": "+11.1 DK without him (1 game)",
+       "score": 11.1,
+       "min": 32.8,
+       "dk": 36.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "NOP at GSW",
+     "time": "2026-11-10T03:00Z",
+     "team": "NOP",
+     "player": "Trendon Watford",
+     "status": "Out",
+     "reason": "Right Ankle Sprain",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "7:18 PM",
+     "min": 18.7,
+     "benefits": [
+      {
+       "player": "Dejounte Murray",
+       "salary": 7400,
+       "why": "same minutes, more production",
+       "much": "+13.9 DK without him (4 games)",
+       "score": 13.9,
+       "min": 32.8,
+       "dk": 36.0
+      },
+      {
+       "player": "Benedict Mathurin",
+       "salary": 3800,
+       "why": "17 minutes, up from 14",
+       "much": "+5.0 DK without him (4 games)",
+       "score": 5.0,
+       "min": 22.7,
+       "dk": 19.1
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "NOP at GSW",
+     "time": "2026-11-10T03:00Z",
+     "team": "GSW",
+     "player": "Will Richard",
+     "status": "Out",
+     "reason": "Left Thumb UCL Tear",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "7:18 PM",
+     "min": 18.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "NOP at GSW",
+     "time": "2026-11-10T03:00Z",
+     "team": "GSW",
+     "player": "Gary Payton II",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "Available",
+     "known": true,
+     "changed_at": "7:18 PM",
+     "min": 14.3,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "NOP at GSW",
+     "time": "2026-11-10T03:00Z",
+     "team": "GSW",
+     "player": "Gui Santos",
+     "status": "Probable",
+     "reason": "Left Knee Tendinitis",
+     "new": true,
+     "was": "Available",
+     "known": true,
+     "changed_at": "7:18 PM",
+     "min": 12.3,
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1893,22 +2154,13 @@
      "min": 26.0,
      "benefits": [
       {
-       "player": "Alijah Martin",
-       "salary": 4200,
-       "why": "12 minutes, up from 3",
-       "much": "+12.8 DK without him (6 games)",
-       "score": 12.8,
-       "min": 26.2,
-       "dk": 30.4
-      },
-      {
        "player": "Jamal Shead",
        "salary": 5500,
        "why": "24 minutes, up from 20",
        "much": "+10.3 DK without him (7 games)",
        "score": 10.3,
        "min": 36.0,
-       "dk": 49.0
+       "dk": 48.9
       }
      ],
      "estimate": false
@@ -1932,8 +2184,8 @@
        "why": "19 minutes, up from 15",
        "much": "+12.8 DK without him (1 game)",
        "score": 12.8,
-       "min": 16.9,
-       "dk": 17.0
+       "min": 18.0,
+       "dk": 17.9
       },
       {
        "player": "Ty Jerome",
@@ -1941,8 +2193,8 @@
        "why": "same minutes, more production",
        "much": "+10.5 DK without him (2 games)",
        "score": 10.5,
-       "min": 28.0,
-       "dk": 38.3
+       "min": 29.9,
+       "dk": 40.9
       }
      ],
      "estimate": false
@@ -1966,17 +2218,8 @@
        "why": "22 minutes, up from 18",
        "much": "+6.4 DK without him (4 games)",
        "score": 6.4,
-       "min": 18.8,
-       "dk": 22.2
-      },
-      {
-       "player": "Kris Murray",
-       "salary": 3500,
-       "why": "17 minutes, up from 8",
-       "much": "+5.0 DK without him (4 games)",
-       "score": 5.0,
-       "min": 14.1,
-       "dk": 8.5
+       "min": 20.1,
+       "dk": 23.6
       }
      ],
      "estimate": false
@@ -2000,8 +2243,8 @@
        "why": "23 minutes, up from 20",
        "much": "+10.5 DK without him (6 games)",
        "score": 10.5,
-       "min": 19.2,
-       "dk": 17.6
+       "min": 20.7,
+       "dk": 19.2
       },
       {
        "player": "Larry Nance",
@@ -2009,8 +2252,8 @@
        "why": "19 minutes, up from 12",
        "much": "+9.0 DK without him (5 games)",
        "score": 9.0,
-       "min": 14.6,
-       "dk": 10.1
+       "min": 15.7,
+       "dk": 11.1
       },
       {
        "player": "Andrew Nembhard",
@@ -2018,8 +2261,8 @@
        "why": "31 minutes, 8 assists (11/07)",
        "much": "+6.9 DK without him (5 games)",
        "score": 6.9,
-       "min": 28.8,
-       "dk": 26.9
+       "min": 31.0,
+       "dk": 29.3
       }
      ],
      "estimate": false
@@ -2043,8 +2286,8 @@
        "why": "31 minutes, up from 27",
        "much": "+6.5 DK without him (5 games)",
        "score": 6.5,
-       "min": 29.6,
-       "dk": 34.4
+       "min": 32.6,
+       "dk": 37.7
       }
      ],
      "estimate": false
@@ -2078,6 +2321,49 @@
      "min": 20.7,
      "benefits": [],
      "estimate": false
+    },
+    {
+     "game": "NOP at GSW",
+     "time": "2026-11-10T03:00Z",
+     "team": "NOP",
+     "player": "Yves Missi",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 19.5,
+     "benefits": [
+      {
+       "player": "Jeremiah Fears",
+       "salary": 6400,
+       "why": "30 minutes, up from 22",
+       "much": "+24.5 DK without him (8 games)",
+       "score": 24.5,
+       "min": 39.6,
+       "dk": 39.9
+      },
+      {
+       "player": "Herbert Jones",
+       "salary": 4500,
+       "why": "started 4 of 8",
+       "much": "+6.3 DK without him (8 games)",
+       "score": 6.3,
+       "min": 37.9,
+       "dk": 24.5
+      },
+      {
+       "player": "Derik Queen",
+       "salary": 5900,
+       "why": "12.0 points, 7.3 rebounds off the bench Oct. 28 to Nov. 2 (11/02)",
+       "much": "+3.3 DK projected vs. last 3",
+       "score": 3.333333333333332,
+       "min": 24.6,
+       "dk": 27.5
+      }
+     ],
+     "estimate": false
     }
    ],
    "minor": [
@@ -2085,6 +2371,11 @@
      "player": "Richie Saunders",
      "team": "MEM",
      "status": "Out"
+    },
+    {
+     "player": "T.J. McConnell",
+     "team": "IND",
+     "status": "Available"
     },
     {
      "player": "Kon Knueppel",
@@ -2174,6 +2465,21 @@
     {
      "player": "Mark Williams",
      "team": "PHX",
+     "status": "Out"
+    },
+    {
+     "player": "Jimmy Butler III",
+     "team": "GSW",
+     "status": "Out"
+    },
+    {
+     "player": "Moses Moody",
+     "team": "GSW",
+     "status": "Out"
+    },
+    {
+     "player": "Kristaps Porzingis",
+     "team": "GSW",
      "status": "Out"
     }
    ]
@@ -11989,12 +12295,12 @@
   {
    "team": "DAL",
    "starters": "Cooper Flagg (34), PJ Washington (34), Kyrie Irving (30), Daniel Gafford (22), Caleb Martin (18)",
-   "bench": "Naji Marshall (25), Morez Johnson Jr. (17), Walter Clayton Jr. (16), Zaccharie Risacher (25), Santi Aldama (14), Max Christie (21)",
+   "bench": "Naji Marshall (25), Walter Clayton Jr. (16), Zaccharie Risacher (25), Santi Aldama (14), Max Christie (21)",
    "backup_c": "Not named while Dereck Lively II is out",
    "coach": "Dusty May (new)",
    "notes": "Dereck Lively II is out to start the season with a broken foot. Dallas has a 4-4-4 fantasy playoff schedule, the best possible, but also a league-high 16 back-to-backs.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Morez Johnson Jr.",
    "depth_through": "2026-11-08",
    "games": 10
   },
@@ -12114,7 +12420,7 @@
    "coach": "Tuomas Iisalo",
    "notes": "Boozer is expected to start and could lead the team in assists.",
    "source": "LO-1019b",
-   "out": "Isaiah Stewart, Karim Lopez, Scotty Pippen Jr.",
+   "out": "Isaiah Stewart, Jahmai Mashack, Karim Lopez, Scotty Pippen Jr.",
    "depth_through": "2026-11-06",
    "games": 9
   },
