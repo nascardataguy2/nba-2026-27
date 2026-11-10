@@ -617,6 +617,26 @@ def main():
             elif r.get("recent") is not None:
                 r["why"].append("Moved toward his recent minutes (%s a game)." % r["recent"])
 
+    # 5) Points per minute: blend SportsLine's rate with his own season rate (3+ games before
+    # today). SportsLine already bumps the rate when a teammate sits, and those bumps ran hot
+    # (11/9: Barrett 1.76 DK a minute vs. 1.12 for his season). The weight w is re-tested on real
+    # box scores every run by scripts/rate_fit.py and only changes when it beats the old one.
+    w = load_json(os.path.join(D, "rate_model.json"), {}).get("w", 0.0)
+    glog = load_json(os.path.join(D, "gamelogs.json"), {})
+    for r in rows:
+        if r["min"] <= 0:
+            continue
+        r["slr"] = r["dk"] / r["min"]
+        if not w or r.get("added"):
+            continue
+        prior = [g for g in glog.get(norm(r["player"]), []) if g[0] < day and g[5] > 0]
+        if len(prior) < 3:
+            continue
+        season = sum(g[13] for g in prior) / sum(g[5] for g in prior)
+        f = ((1 - w) * r["slr"] + w * season) / r["slr"] if r["slr"] > 0 else 1.0
+        for st in STATS + ("dk",):
+            r[st] = r[st] * f
+
     # Games block.
     gm = {}
     for d in dff:
@@ -704,7 +724,7 @@ def main():
     games_out = list(gm.values())
     outs_pub = [{"player": o["player"], "team": o["team"], "note": o["note"]} for o in out_list]
     hist = {norm(r["player"]): {"player": r["player"], "team": r["team"], "base_min": r["base"], "min": round(r["min"], 1),
-                                "dk": round(r["dk"], 1), "salary": r.get("salary")} for r in rows}
+                                "dk": round(r["dk"], 1), "slr": round(r["slr"], 3) if r.get("slr") else None, "salary": r.get("salary")} for r in rows}
 
     pmap = {(p["player"], p["team"]): p for p in pub}
     for v in hist.values():

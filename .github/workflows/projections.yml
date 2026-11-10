@@ -58,6 +58,7 @@ jobs:
           python3 scripts/results.py || echo "results failed"
           python3 scripts/actual_own.py || echo "actual ownership failed"
           python3 scripts/own_fit.py || echo "ownership refit failed"
+          python3 scripts/scorecard.py || echo "scorecard failed"
           python3 scripts/season.py || echo "season failed"
           python3 scripts/timelines.py || echo "timelines failed"
           python3 scripts/wowy.py || echo "wowy failed"
@@ -67,6 +68,7 @@ jobs:
           python3 scripts/depth.py || echo "depth failed"
           python3 scripts/moves.py || echo "moves failed"
           python3 scripts/subs.py || echo "subs failed"
+          python3 scripts/rate_fit.py || echo "rate refit failed"
           python3 scripts/projections.py
           python3 scripts/stars.py
           python3 scripts/ownership.py || echo "ownership failed"

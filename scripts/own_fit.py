@@ -5,7 +5,7 @@ scripts/actual_own.py) and data/proj_history/DATE.json (each player's
 simulated share "osim" and field projection "ofdk" at lock, saved by
 scripts/ownership.py).
 
-Once a week (or with --force) it tests on the real slates added since the last
+Once a day, when 3+ new real slates have come in (or with --force), it tests on the real slates added since the last
 fit, which the current weights have never seen:
   - current: the weights in data/own_model.json
   - new: weights fit only on the slates before those test slates
@@ -105,8 +105,8 @@ def main():
     b0 = model.get("beta") or BETA_DEFAULT
     today = (datetime.now(timezone.utc) - timedelta(hours=5)).date()
     last = model.get("fit_date")
-    if not a.force and last and (today - date.fromisoformat(last)).days < 7:
-        return
+    if not a.force and last == today.isoformat():
+        return  # once a day; it refits whenever 3+ real slates have come in since the last fit
     S = slates()
     through = model.get("through", "")
     test = [d for d in S if d > through]
@@ -117,9 +117,9 @@ def main():
     cur = miss(b0, S, test)
     cand = fit(S, train, b0) if len(train) >= 5 else b0
     new = miss(cand, S, test)
-    keep = new < cur - 0.1
+    keep = bool(new < cur - 0.1)
     card = load_json(CARD, [])
-    card.append({"date": today.isoformat(), "test_slates": test, "current_miss": round(cur, 2), "new_miss": round(new, 2), "adopted": keep})
+    card.append({"date": today.isoformat(), "test_slates": test, "current_miss": round(float(cur), 2), "new_miss": round(float(new), 2), "adopted": keep})
     with open(CARD, "w", encoding="utf-8") as fh:
         json.dump(card, fh, indent=1)
     model.update({"fit_date": today.isoformat()})
