@@ -2,7 +2,7 @@
  "updated": "2026-11-10",
  "brief": {
   "date": "2026-11-10",
-  "updated": "4:40 PM ET",
+  "updated": "4:43 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:38 AM",
@@ -168,7 +168,12 @@
         "min": 33.3
        }
       ],
-      "q": []
+      "q": [
+       {
+        "player": "Tristan da Silva",
+        "min": 29.1
+       }
+      ]
      },
      "SAC": {
       "out": [],
@@ -179,6 +184,14 @@
    }
   ],
   "changed": [
+   {
+    "player": "Tristan da Silva",
+    "team": "ORL",
+    "status": "Questionable",
+    "was": "",
+    "why": "Left Calf Strain",
+    "time": "4:44 PM"
+   },
    {
     "player": "Domantas Sabonis",
     "team": "SAC",
@@ -291,6 +304,43 @@
     ],
     "time": "2:55 PM",
     "size": 28.5
+   },
+   {
+    "key": "Tristan da Silva",
+    "team": "ORL",
+    "head": "Tristan da Silva QUESTIONABLE",
+    "st": "Questionable",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Franz Wagner",
+      "salary": 9000,
+      "much": "about +10.1 DK if he sits (estimate)"
+     },
+     {
+      "player": "Anthony Black",
+      "salary": 6900,
+      "much": "about +6.5 DK if he sits (estimate)"
+     }
+    ],
+    "time": "4:44 PM",
+    "size": 12.4
+   },
+   {
+    "key": "Kel'el Ware",
+    "team": "MIL",
+    "head": "Kel'el Ware QUESTIONABLE",
+    "st": "Questionable",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Myles Turner",
+      "salary": 5000,
+      "much": "about +5.6 DK if he sits (estimate)"
+     }
+    ],
+    "time": "12:46 PM",
+    "size": 10.4
    }
   ],
   "sits": [
@@ -762,8 +812,27 @@
      "known": true,
      "changed_at": "",
      "min": 31.7,
-     "benefits": [],
-     "estimate": false
+     "benefits": [
+      {
+       "player": "Brayden Burries",
+       "salary": 4800,
+       "why": "subs in for him 9 of 30 times",
+       "much": "about +9.5 DK if he sits (estimate)",
+       "score": 9.463601532567049,
+       "min": 26.1,
+       "dk": 26.0
+      },
+      {
+       "player": "AJ Green",
+       "salary": 3900,
+       "why": "subs in for him 6 of 30 times",
+       "much": "about +3.9 DK if he sits (estimate)",
+       "score": 3.931034482758621,
+       "min": 20.3,
+       "dk": 12.6
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "MIL at NYK",
@@ -777,8 +846,18 @@
      "known": true,
      "changed_at": "12:46 PM",
      "min": 12.7,
-     "benefits": [],
-     "estimate": false
+     "benefits": [
+      {
+       "player": "Myles Turner",
+       "salary": 5000,
+       "why": "subs in for him 15 of 30 times",
+       "much": "about +5.6 DK if he sits (estimate)",
+       "score": 5.616788321167884,
+       "min": 27.4,
+       "dk": 24.3
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "MIA at UTA",
@@ -900,16 +979,44 @@
      "game": "ORL at SAC",
      "time": "2026-11-11T03:00Z",
      "team": "ORL",
-     "player": "Tristan Silva",
+     "player": "Tristan da Silva",
      "status": "Questionable",
      "reason": "Left Calf Strain",
      "new": true,
      "was": "",
      "known": true,
-     "changed_at": "12:46 PM",
+     "changed_at": "4:44 PM",
      "min": 33.7,
-     "benefits": [],
-     "estimate": false
+     "benefits": [
+      {
+       "player": "Franz Wagner",
+       "salary": 9000,
+       "why": "subs in for him 7 of 29 times",
+       "much": "about +10.1 DK if he sits (estimate)",
+       "score": 10.134422614274257,
+       "min": 34.4,
+       "dk": 42.9
+      },
+      {
+       "player": "Anthony Black",
+       "salary": 6900,
+       "why": "subs in for him 5 of 29 times",
+       "much": "about +6.5 DK if he sits (estimate)",
+       "score": 6.517443032869529,
+       "min": 28.5,
+       "dk": 32.0
+      },
+      {
+       "player": "Jamal Cain",
+       "salary": 4300,
+       "why": "subs in for him 5 of 29 times",
+       "much": "about +4.2 DK if he sits (estimate)",
+       "score": 4.154001198452906,
+       "min": 21.1,
+       "dk": 15.1
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "ORL at SAC",
