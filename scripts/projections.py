@@ -387,7 +387,7 @@ def main():
             d = c[0] if len(c) == 1 else None
         r = dict(s)
         r["base"] = s["min"]
-        r["why"] = ["Not in the SportsLine baseline; projected from his last %d games." % s["added"]] if s.get("added") else []
+        r["why"] = ["Projected from his last %d games." % s["added"]] if s.get("added") else []
         dk = dks.get((k, s["team"]))
         if not dk:
             last = k.split(" ")[-1]

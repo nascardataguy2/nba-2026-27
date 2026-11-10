@@ -79,7 +79,7 @@ def main():
     facts = [f for f in load_json(os.path.join(D, "role_facts.json"), []) if f.get("date", "") < day or f.get("kind") == "show_says"]
     facts = [f for f in facts if fact_ok(f)]
 
-    def tidy(team, names, ben, top=3):
+    def tidy(team, names, ben, top=3, if_sits=None):
         """Who benefits, why and how much, in a few words, from real numbers only.
         why: a verified show or recap note, else what changed in the games without him
         (started, more minutes), else that he is the one who subs in for him.
@@ -108,11 +108,24 @@ def main():
                 else:
                     why = "same minutes, more production"
             elif b.get("subs") is not None:
-                if pd is None or pd < 3 or b["subs"] / max(b["of"], 1) < 0.15:
+                share = b["subs"] / max(b["of"], 1)
+                if share < 0.15:
                     continue
                 why = "subs in for %s %d of %d times" % ("them" if them else "him", b["subs"], b["of"])
-                much = "+%s DK projected vs. last 3" % r1(pd)
-                score = pd
+                if if_sits and p["min"] > 0:
+                    # Questionable and he has never missed a game: no real "without him" number
+                    # exists. Estimate = his minutes x this player's share of the subs for him x
+                    # this player's DK per minute tonight, and it says "estimate".
+                    est = if_sits * share * p["dk"] / p["min"]
+                    if est < 3:
+                        continue
+                    much = "about +%s DK if he sits (estimate)" % r1(est)
+                    score = est
+                else:
+                    if pd is None or pd < 3:
+                        continue
+                    much = "+%s DK projected vs. last 3" % r1(pd)
+                    score = pd
             elif b.get("note"):
                 if pd is None or pd < 3:
                     continue
@@ -374,8 +387,9 @@ def main():
             # at every position. With no such games, his minutes go to the whole rotation
             # by their minutes, again at every position. Either way it is labeled an estimate.
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
-            ben = tidy(t, [name], add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name])))
-            est = False
+            sg = split_gain(t, [name])[0]
+            ben = tidy(t, [name], add_notes(t, [name], sg or sub_gain(t, [name])), if_sits=None if sg else m)
+            est = not sg and bool(ben)
         c = intraday.get(name)
         inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
                     "status": status, "reason": o.get("reason", "") if o.get("reason") not in ("-", None) else "",

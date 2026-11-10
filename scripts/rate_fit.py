@@ -72,12 +72,12 @@ def main():
     with open(MODEL, "w") as fh:
         json.dump({"w": new, "updated": stamp, "games": len(rs), "days": len(days)}, fh, indent=1)
     card = load_json(CARD, [])
-    card.append({"when": stamp, "test_games": len(late), "sportsline_only_miss": round(sl_only, 2),
+    card.append({"when": stamp, "test_games": len(late), "baseline_only_miss": round(sl_only, 2),
                  "blend_miss": round(blend, 2), "current_w_miss": round(current, 2),
                  "w_test": w_early, "w_live": new, "adopted": adopt})
     with open(CARD, "w") as fh:
         json.dump(card[-200:], fh, indent=1)
-    print("rate_fit: test %d games, SportsLine only %.2f, blend %.2f (w=%.2f), current %.2f -> live w=%.2f" % (
+    print("rate_fit: test %d games, baseline only %.2f, blend %.2f (w=%.2f), current %.2f -> live w=%.2f" % (
         len(late), sl_only, blend, w_early, current, new))
 
 

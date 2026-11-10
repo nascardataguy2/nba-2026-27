@@ -87,6 +87,37 @@ def parse(text, day):
     return players, pending
 
 
+def canon(players):
+    """Use our box-score spelling when the PDF's differs. The PDF parse can drop a lowercase
+    particle ("da Silva, Tristan" came out "Tristan Silva" on 11/10 and his row lost its
+    who-benefits data). Match on team + first name + last name; leave it if 0 or 2+ match."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from projections import norm
+    try:
+        logs = json.load(open(os.path.join(D, "gamelogs.json")))
+    except Exception:
+        return
+    try:
+        shown = {norm(x["player"]): x["player"] for x in json.load(open(os.path.join(D, "projections.json"))).get("players", [])}
+    except Exception:
+        shown = {}
+    team_names = {}
+    for k, rows in logs.items():
+        if rows:
+            last = max(rows, key=lambda r: r[0])
+            team_names.setdefault(last[1], {})[k] = k
+    for p in players:
+        k = norm(p["player"])
+        names = team_names.get(p["team"], {})
+        if not k or k in names:
+            continue
+        w = k.split(" ")
+        hit = [n for n in names if n.split(" ")[0] == w[0] and n.split(" ")[-1] == w[-1]]
+        if len(hit) == 1:
+            p["player"] = shown.get(hit[0]) or " ".join(x[:1].upper() + x[1:] for x in hit[0].split(" "))
+            p["matched_from"] = k
+
+
 def main():
     day = sys.argv[1] if len(sys.argv) > 1 else datetime.now(ET).strftime("%Y-%m-%d")
     try:
@@ -106,6 +137,7 @@ def main():
     except Exception as e:  # never break the projections run
         print("official injuries: skipped (%s)" % e)
         return
+    canon(players)
     out = {"date": day, "report": "%s:%s %s" % (hh, mm, ap), "url": url, "players": players, "pending": pending}
     json.dump(out, open(os.path.join(D, "injury_report.json"), "w"), indent=1, ensure_ascii=False)
     print("official injuries:", day, out["report"], len(players), "players,", len(pending), "teams pending")
