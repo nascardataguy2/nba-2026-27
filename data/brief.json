@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updated": "5:30 PM ET",
+ "updated": "5:45 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:38 AM",
@@ -77,12 +77,7 @@
     },
     "NYK": {
      "out": [],
-     "q": [
-      {
-       "player": "Karl-Anthony Towns",
-       "min": 26.8
-      }
-     ]
+     "q": []
     }
    },
    "key": "Sam Merrill is out, so Craig Porter Jr. should play more than usual."
@@ -122,16 +117,7 @@
        "min": 26.0
       }
      ],
-     "q": [
-      {
-       "player": "Immanuel Quickley",
-       "min": 30.1
-      },
-      {
-       "player": "Collin Murray-Boyles",
-       "min": 28.1
-      }
-     ]
+     "q": []
     }
    },
    "key": "Scottie Barnes and Kawhi Leonard are out, so Jakob Poeltl and Jamal Shead and Alijah Martin should play more than usual."
@@ -407,6 +393,38 @@
  ],
  "changed": [
   {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Sore Calf",
+   "time": "5:46 PM"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Illness",
+   "time": "5:46 PM"
+  },
+  {
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "5:46 PM"
+  },
+  {
+   "player": "Collin Murray-Boyles",
+   "team": "TOR",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "5:46 PM"
+  },
+  {
    "player": "Nolan Traore",
    "team": "BKN",
    "status": "Out",
@@ -453,41 +471,51 @@
    "was": "Questionable",
    "why": "Low Back Tightness",
    "time": "2:49 PM"
-  },
-  {
-   "player": "Myles Turner",
-   "team": "MIL",
-   "status": "Out",
-   "was": "",
-   "why": "Rest",
-   "time": "2:49 PM"
-  },
-  {
-   "player": "Tyler Herro",
-   "team": "MIL",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "Right Knee Contusion",
-   "time": "2:49 PM"
-  },
-  {
-   "player": "Quentin Grimes",
-   "team": "LAL",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Right Finger Sprain",
-   "time": "2:49 PM"
-  },
-  {
-   "player": "Egor Demin",
-   "team": "BKN",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Right Bone Bruise",
-   "time": "2:49 PM"
   }
  ],
  "chg": [
+  {
+   "key": "NYK",
+   "team": "NYK",
+   "head": "Towns, Hart CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Mohamed Diawara",
+     "salary": 3800,
+     "much": "+15.5 DK without Hart"
+    },
+    {
+     "player": "James Wiseman",
+     "salary": 3200,
+     "much": "+11.8 DK without Hart"
+    }
+   ],
+   "time": "5:46 PM",
+   "size": 74.7
+  },
+  {
+   "key": "TOR",
+   "team": "TOR",
+   "head": "Quickley, Murray-Boyles CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Jakob Poeltl",
+     "salary": 5200,
+     "much": "+26.5 DK without Quickley"
+    },
+    {
+     "player": "Jamal Shead",
+     "salary": 5800,
+     "much": "+25.6 DK without Quickley"
+    }
+   ],
+   "time": "5:46 PM",
+   "size": 55.4
+  },
   {
    "key": "Paul George",
    "team": "BOS",
@@ -541,27 +569,6 @@
    "size": 29.6
   },
   {
-   "key": "NYK",
-   "team": "NYK",
-   "head": "Hart CLEARED",
-   "st": "Probable",
-   "act": "Less value",
-   "names": [
-    {
-     "player": "Mohamed Diawara",
-     "salary": 3800,
-     "much": "+15.5 DK without Hart"
-    },
-    {
-     "player": "James Wiseman",
-     "salary": 3200,
-     "much": "+11.8 DK without Hart"
-    }
-   ],
-   "time": "2:49 PM",
-   "size": 28.5
-  },
-  {
    "key": "Nolan Traore",
    "team": "BKN",
    "head": "Nolan Traore OUT",
@@ -576,27 +583,6 @@
    ],
    "time": "5:32 PM",
    "size": 23.2
-  },
-  {
-   "key": "Karl-Anthony Towns",
-   "team": "NYK",
-   "head": "Karl-Anthony Towns QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Andre Drummond",
-     "salary": 4200,
-     "much": "about +13.6 DK if he sits (estimate)"
-    },
-    {
-     "player": "Landry Shamet",
-     "salary": 4500,
-     "much": "about +3.2 DK if he sits (estimate)"
-    }
-   ],
-   "time": "2:49 PM",
-   "size": 23.1
   },
   {
    "key": "Myles Turner",
@@ -1244,8 +1230,8 @@
   ]
  },
  "injuries": {
-  "report": "05:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_15PM.pdf",
+  "report": "05:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1298,126 +1284,6 @@
     "estimate": false
    },
    {
-    "game": "BOS at TOR",
-    "time": "2026-11-12T00:00Z",
-    "team": "TOR",
-    "player": "Immanuel Quickley",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 34.3,
-    "benefits": [
-     {
-      "player": "Jakob Poeltl",
-      "salary": 5200,
-      "why": "31 minutes, up from 20",
-      "much": "+26.5 DK without him (2 games)",
-      "score": 26.5,
-      "min": 27.8,
-      "dk": 29.7
-     },
-     {
-      "player": "Jamal Shead",
-      "salary": 5800,
-      "why": "started 2 of 2",
-      "much": "+25.6 DK without him (2 games)",
-      "score": 25.6,
-      "min": 28.5,
-      "dk": 27.9
-     },
-     {
-      "player": "Alijah Martin",
-      "salary": 4400,
-      "why": "26 minutes, up from 7",
-      "much": "+19.8 DK without him (2 games)",
-      "score": 19.8,
-      "min": 20.9,
-      "dk": 20.8
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "CLE at NYK",
-    "time": "2026-11-12T00:00Z",
-    "team": "NYK",
-    "player": "Karl-Anthony Towns",
-    "status": "Questionable",
-    "reason": "Left Sore Calf",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "2:49 PM",
-    "min": 28.7,
-    "benefits": [
-     {
-      "player": "Andre Drummond",
-      "salary": 4200,
-      "why": "subs in for him 17 of 45 times",
-      "much": "about +13.6 DK",
-      "score": 13.647094248720265,
-      "min": 12.3,
-      "dk": 15.5
-     },
-     {
-      "player": "Landry Shamet",
-      "salary": 4500,
-      "why": "subs in for him 8 of 45 times",
-      "much": "about +3.2 DK",
-      "score": 3.164823270759344,
-      "min": 21.9,
-      "dk": 13.6
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "BOS at TOR",
-    "time": "2026-11-12T00:00Z",
-    "team": "TOR",
-    "player": "Collin Murray-Boyles",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 28.3,
-    "benefits": [
-     {
-      "player": "Jamal Shead",
-      "salary": 5800,
-      "why": "started that game",
-      "much": "+23.8 DK without him (1 game)",
-      "score": 23.8,
-      "min": 28.5,
-      "dk": 27.9
-     },
-     {
-      "player": "Jakob Poeltl",
-      "salary": 5200,
-      "why": "31 minutes, up from 22",
-      "much": "+20.0 DK without him (1 game)",
-      "score": 20.0,
-      "min": 27.8,
-      "dk": 29.7
-     },
-     {
-      "player": "Jamison Battle",
-      "salary": 4300,
-      "why": "29 minutes, up from 17",
-      "much": "+11.9 DK without him (1 game)",
-      "score": 11.9,
-      "min": 20.1,
-      "dk": 15.9
-     }
-    ],
-    "estimate": false
-   },
-   {
     "game": "CLE at NYK",
     "time": "2026-11-12T00:00Z",
     "team": "CLE",
@@ -1467,17 +1333,62 @@
     "estimate": false
    },
    {
+    "game": "BOS at TOR",
+    "time": "2026-11-12T00:00Z",
+    "team": "TOR",
+    "player": "Immanuel Quickley",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:46 PM",
+    "min": 34.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
     "game": "CLE at NYK",
     "time": "2026-11-12T00:00Z",
     "team": "NYK",
     "player": "Josh Hart",
-    "status": "Probable",
+    "status": "Available",
     "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Probable",
     "known": true,
-    "changed_at": "2:49 PM",
+    "changed_at": "5:46 PM",
     "min": 31.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "CLE at NYK",
+    "time": "2026-11-12T00:00Z",
+    "team": "NYK",
+    "player": "Karl-Anthony Towns",
+    "status": "Available",
+    "reason": "Left Sore Calf",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:46 PM",
+    "min": 28.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "BOS at TOR",
+    "time": "2026-11-12T00:00Z",
+    "team": "TOR",
+    "player": "Collin Murray-Boyles",
+    "status": "Available",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:46 PM",
+    "min": 28.3,
     "benefits": [],
     "estimate": false
    },
