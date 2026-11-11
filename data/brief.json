@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updated": "7:57 PM ET",
+ "updated": "8:20 PM ET",
  "games": 6,
  "pending": [],
  "first_report": "5:38 AM",
@@ -87,12 +87,7 @@
    "teams": {
     "MIA": {
      "out": [],
-     "q": [
-      {
-       "player": "Giannis Antetokounmpo",
-       "min": 32.4
-      }
-     ]
+     "q": []
     },
     "UTA": {
      "out": [
@@ -235,6 +230,14 @@
  ],
  "changed": [
   {
+   "player": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Right Wrist Sprain",
+   "time": "8:21 PM"
+  },
+  {
    "player": "Cam Christie",
    "team": "LAC",
    "status": "Out",
@@ -305,14 +308,6 @@
    "was": "Questionable",
    "why": "Right Wrist Sprain",
    "time": "2:55 PM"
-  },
-  {
-   "player": "Josh Hart",
-   "team": "NYK",
-   "status": "Doubtful",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "2:55 PM"
   }
  ],
  "chg": [
@@ -336,6 +331,16 @@
    ],
    "time": "4:19 PM",
    "size": 59.8
+  },
+  {
+   "key": "MIA",
+   "team": "MIA",
+   "head": "Antetokounmpo CLEARED",
+   "st": "Probable",
+   "act": "",
+   "names": [],
+   "time": "8:21 PM",
+   "size": 55.6
   },
   {
    "key": "Tyler Herro",
@@ -394,27 +399,6 @@
    ],
    "time": "6:32 PM",
    "size": 28.5
-  },
-  {
-   "key": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "head": "Giannis Antetokounmpo QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Bobby Portis",
-     "salary": 5000,
-     "much": "about +11.3 DK if he sits (estimate)"
-    },
-    {
-     "player": "Bam Adebayo",
-     "salary": 8200,
-     "much": "about +10.6 DK if he sits (estimate)"
-    }
-   ],
-   "time": "7:27 PM",
-   "size": 27.8
   },
   {
    "key": "Tristan da Silva",
@@ -480,7 +464,7 @@
      "much": "+8.5 DK without them (2 games)",
      "score": 8.5,
      "min": 36.1,
-     "dk": 40.8
+     "dk": 40.7
     },
     {
      "player": "Josh Green",
@@ -489,7 +473,7 @@
      "much": "+5.2 DK without them (2 games)",
      "score": 5.2,
      "min": 28.5,
-     "dk": 15.6
+     "dk": 15.5
     }
    ],
    "split_of": [
@@ -605,7 +589,7 @@
      "much": "+14.8 DK without them (3 games)",
      "score": 14.8,
      "min": 24.3,
-     "dk": 18.4
+     "dk": 18.5
     },
     {
      "player": "Aday Mara",
@@ -659,7 +643,7 @@
      "much": "+13.1 DK without them (6 games)",
      "score": 13.1,
      "min": 22.0,
-     "dk": 15.8
+     "dk": 15.7
     },
     {
      "player": "Desmond Bane",
@@ -705,7 +689,7 @@
      "much": "+5.1 DK without him (5 games)",
      "score": 5.1,
      "min": 25.8,
-     "dk": 32.1
+     "dk": 32.2
     }
    ],
    "split_of": [
@@ -801,7 +785,7 @@
   {
    "player": "Brayden Burries",
    "team": "MIL",
-   "own": 61.1,
+   "own": 61.4,
    "dk": 32.2,
    "salary": 4800
   },
@@ -815,23 +799,23 @@
   {
    "player": "Mikal Bridges",
    "team": "NYK",
-   "own": 51.3,
+   "own": 50.7,
    "dk": 19.2,
    "salary": 5000
   },
   {
-   "player": "Brice Sensabaugh",
-   "team": "UTA",
-   "own": 32.8,
-   "dk": 20.0,
-   "salary": 3500
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "own": 33.0,
+   "dk": 26.5,
+   "salary": 4600
   }
  ],
  "leverage": [
   {
    "player": "Davion Mitchell",
    "team": "MIA",
-   "own": 5.8,
+   "own": 6.0,
    "dk": 34.2,
    "salary": 6800
   },
@@ -843,11 +827,11 @@
    "salary": 6300
   },
   {
-   "player": "Jaylen Brown",
-   "team": "PHI",
-   "own": 6.2,
-   "dk": 38.3,
-   "salary": 8000
+   "player": "Ace Bailey",
+   "team": "UTA",
+   "own": 9.7,
+   "dk": 32.3,
+   "salary": 6700
   }
  ],
  "last": {
@@ -939,8 +923,8 @@
   ]
  },
  "injuries": {
-  "report": "07:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_07_45PM.pdf",
+  "report": "08:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_08_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1061,10 +1045,10 @@
       "player": "Darryn Peterson",
       "salary": 6800,
       "why": "subs in for him 6 of 31 times",
-      "much": "+6.6 DK projected vs. last 3",
-      "score": 6.633333333333333,
+      "much": "+6.5 DK projected vs. last 3",
+      "score": 6.5333333333333385,
       "min": 36.1,
-      "dk": 40.8
+      "dk": 40.7
      }
     ],
     "estimate": false
@@ -1098,7 +1082,7 @@
       "much": "+8.5 DK without him (2 games)",
       "score": 8.5,
       "min": 36.1,
-      "dk": 40.8
+      "dk": 40.7
      },
      {
       "player": "Josh Green",
@@ -1107,7 +1091,7 @@
       "much": "+5.2 DK without him (2 games)",
       "score": 5.2,
       "min": 28.5,
-      "dk": 15.6
+      "dk": 15.5
      }
     ],
     "estimate": false
@@ -1132,34 +1116,15 @@
     "time": "2026-11-11T02:00Z",
     "team": "MIA",
     "player": "Giannis Antetokounmpo",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Right Wrist Sprain",
     "new": true,
-    "was": "Probable",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "7:27 PM",
+    "changed_at": "8:21 PM",
     "min": 35.3,
-    "benefits": [
-     {
-      "player": "Bobby Portis",
-      "salary": 5000,
-      "why": "subs in for him 13 of 43 times",
-      "much": "about +11.3 DK",
-      "score": 11.342304677292915,
-      "min": 17.8,
-      "dk": 18.9
-     },
-     {
-      "player": "Bam Adebayo",
-      "salary": 8200,
-      "why": "subs in for him 10 of 43 times",
-      "much": "about +10.6 DK",
-      "score": 10.64709775004727,
-      "min": 32.8,
-      "dk": 42.5
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "ORL at SAC",
@@ -1188,18 +1153,18 @@
       "salary": 6900,
       "why": "subs in for him 5 of 29 times",
       "much": "about +6.5 DK",
-      "score": 6.46909710128101,
+      "score": 6.48864120128488,
       "min": 29.7,
-      "dk": 33.1
+      "dk": 33.2
      },
      {
       "player": "Jamal Cain",
       "salary": 4300,
       "why": "subs in for him 5 of 29 times",
-      "much": "about +4.2 DK",
-      "score": 4.168756530825497,
+      "much": "about +4.1 DK",
+      "score": 4.142371995820271,
       "min": 22.0,
-      "dk": 15.8
+      "dk": 15.7
      }
     ],
     "estimate": true
@@ -1278,7 +1243,7 @@
       "much": "+10.9 DK without him (6 games)",
       "score": 10.9,
       "min": 36.1,
-      "dk": 40.8
+      "dk": 40.7
      },
      {
       "player": "Josh Okogie",
@@ -1287,7 +1252,7 @@
       "much": "+8.3 DK without him (6 games)",
       "score": 8.3,
       "min": 24.7,
-      "dk": 17.2
+      "dk": 17.1
      }
     ],
     "estimate": false
@@ -1337,7 +1302,7 @@
       "much": "+16.0 DK without him (7 games)",
       "score": 16.0,
       "min": 22.0,
-      "dk": 15.8
+      "dk": 15.7
      },
      {
       "player": "Desmond Bane",
@@ -1380,7 +1345,7 @@
       "much": "+13.1 DK without him (6 games)",
       "score": 13.1,
       "min": 22.0,
-      "dk": 15.8
+      "dk": 15.7
      },
      {
       "player": "Desmond Bane",
@@ -1423,7 +1388,7 @@
       "much": "+15.6 DK without him (7 games)",
       "score": 15.6,
       "min": 24.3,
-      "dk": 18.4
+      "dk": 18.5
      },
      {
       "player": "Aday Mara",
@@ -1466,7 +1431,7 @@
       "much": "+15.6 DK without him (7 games)",
       "score": 15.6,
       "min": 24.3,
-      "dk": 18.4
+      "dk": 18.5
      },
      {
       "player": "Aday Mara",
@@ -1509,7 +1474,7 @@
       "much": "+5.1 DK without him (5 games)",
       "score": 5.1,
       "min": 25.8,
-      "dk": 32.1
+      "dk": 32.2
      }
     ],
     "estimate": false
@@ -1534,7 +1499,7 @@
       "much": "+14.8 DK without him (3 games)",
       "score": 14.8,
       "min": 24.3,
-      "dk": 18.4
+      "dk": 18.5
      },
      {
       "player": "Aday Mara",
@@ -1577,7 +1542,7 @@
       "much": "+15.6 DK without him (7 games)",
       "score": 15.6,
       "min": 24.3,
-      "dk": 18.4
+      "dk": 18.5
      },
      {
       "player": "Aday Mara",
@@ -1626,10 +1591,10 @@
       "player": "Scoot Henderson",
       "salary": 4700,
       "why": "Show: minutes could rise toward 28 (11/04)",
-      "much": "+6.0 DK projected vs. last 3",
-      "score": 5.966666666666667,
+      "much": "+5.9 DK projected vs. last 3",
+      "score": 5.866666666666665,
       "min": 25.1,
-      "dk": 17.8
+      "dk": 17.7
      }
     ],
     "estimate": false
