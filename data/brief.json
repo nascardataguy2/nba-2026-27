@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updated": "7:01 PM ET",
+ "updated": "7:16 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:38 AM",
@@ -38,7 +38,7 @@
      "q": []
     }
    },
-   "key": "Josh Hart is out, so James Wiseman and Mohamed Diawara and Jalen Brunson should play more than usual."
+   "key": "Tyler Herro is out, so AJ Green should play more than usual."
   },
   {
    "away": "BOS",
@@ -286,8 +286,14 @@
    "team": "MIL",
    "head": "Tyler Herro OUT",
    "st": "Out",
-   "act": "",
-   "names": [],
+   "act": "Play",
+   "names": [
+    {
+     "player": "AJ Green",
+     "salary": 3900,
+     "much": "+3.3 DK projected vs. last 3"
+    }
+   ],
    "time": "6:32 PM",
    "size": 36.4
   },
@@ -397,7 +403,7 @@
      "much": "+8.5 DK without them (2 games)",
      "score": 8.5,
      "min": 36.1,
-     "dk": 40.9
+     "dk": 40.8
     },
     {
      "player": "Josh Green",
@@ -406,13 +412,38 @@
      "much": "+5.2 DK without them (2 games)",
      "score": 5.2,
      "min": 28.5,
-     "dk": 15.7
+     "dk": 15.6
     }
    ],
    "split_of": [
     "Lauri Markkanen",
     "Jaren Jackson Jr."
    ]
+  },
+  {
+   "team": "MIL",
+   "outs": [
+    {
+     "player": "Tyler Herro",
+     "min": 31.7,
+     "note": "Tyler Herro suffered a laceration against Boston on Nov. 8 and played 27 minutes, and the show said he was questionable for Nov. 10 against New York. The show said Ryan Rollins played the rest of the third quarter after Herro went out early in the second half.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 31.7,
+   "benefits": [
+    {
+     "player": "AJ Green",
+     "salary": 3900,
+     "why": "subs in for him 6 of 30 times",
+     "much": "+3.3 DK projected vs. last 3",
+     "score": 3.2666666666666675,
+     "min": 25.0,
+     "dk": 16.1
+    }
+   ],
+   "split_of": []
   },
   {
    "team": "NYK",
@@ -443,7 +474,7 @@
      "much": "+17.2 DK without him (2 games)",
      "score": 17.2,
      "min": 14.2,
-     "dk": 12.0
+     "dk": 12.3
     },
     {
      "player": "Jalen Brunson",
@@ -452,7 +483,7 @@
      "much": "+9.8 DK without him (2 games)",
      "score": 9.8,
      "min": 32.2,
-     "dk": 39.5
+     "dk": 40.1
     }
    ],
    "split_of": [
@@ -485,7 +516,7 @@
      "much": "+13.1 DK without them (6 games)",
      "score": 13.1,
      "min": 21.1,
-     "dk": 15.1
+     "dk": 15.2
     },
     {
      "player": "Desmond Bane",
@@ -494,7 +525,7 @@
      "much": "+5.9 DK without them (5 games)",
      "score": 5.9,
      "min": 32.5,
-     "dk": 31.9
+     "dk": 31.7
     },
     {
      "player": "Jase Richardson",
@@ -627,37 +658,37 @@
   {
    "player": "Isaiah Collier",
    "team": "UTA",
-   "own": 65.4,
+   "own": 67.1,
    "dk": 23.8,
    "salary": 4400
   },
   {
    "player": "Brice Sensabaugh",
    "team": "UTA",
-   "own": 45.8,
-   "dk": 20.1,
+   "own": 47.1,
+   "dk": 20.0,
    "salary": 3500
-  },
-  {
-   "player": "Brayden Burries",
-   "team": "MIL",
-   "own": 40.1,
-   "dk": 32.0,
-   "salary": 4800
   },
   {
    "player": "Darryn Peterson",
    "team": "UTA",
-   "own": 39.7,
-   "dk": 40.9,
+   "own": 40.4,
+   "dk": 40.8,
    "salary": 6800
+  },
+  {
+   "player": "Brayden Burries",
+   "team": "MIL",
+   "own": 39.5,
+   "dk": 32.2,
+   "salary": 4800
   }
  ],
  "leverage": [
   {
    "player": "Davion Mitchell",
    "team": "MIA",
-   "own": 9.6,
+   "own": 9.5,
    "dk": 34.2,
    "salary": 6800
   },
@@ -671,7 +702,7 @@
   {
    "player": "LeBron James",
    "team": "PHI",
-   "own": 2.0,
+   "own": 1.8,
    "dk": 36.7,
    "salary": 7900
   }
@@ -765,8 +796,8 @@
   ]
  },
  "injuries": {
-  "report": "06:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_06_45PM.pdf",
+  "report": "07:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_07_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -781,7 +812,17 @@
     "known": true,
     "changed_at": "6:32 PM",
     "min": 31.7,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "AJ Green",
+      "salary": 3900,
+      "why": "subs in for him 6 of 30 times",
+      "much": "+3.3 DK projected vs. last 3",
+      "score": 3.2666666666666675,
+      "min": 25.0,
+      "dk": 16.1
+     }
+    ],
     "estimate": false
    },
    {
@@ -813,7 +854,7 @@
       "much": "+17.2 DK without him (2 games)",
       "score": 17.2,
       "min": 14.2,
-      "dk": 12.0
+      "dk": 12.3
      },
      {
       "player": "Jalen Brunson",
@@ -822,7 +863,7 @@
       "much": "+9.8 DK without him (2 games)",
       "score": 9.8,
       "min": 32.2,
-      "dk": 39.5
+      "dk": 40.1
      }
     ],
     "estimate": false
@@ -868,19 +909,19 @@
       "player": "Brice Sensabaugh",
       "salary": 3500,
       "why": "subs in for him 7 of 31 times",
-      "much": "+11.4 DK projected vs. last 3",
-      "score": 11.350000000000001,
+      "much": "+11.2 DK projected vs. last 3",
+      "score": 11.25,
       "min": 18.0,
-      "dk": 20.1
+      "dk": 20.0
      },
      {
       "player": "Darryn Peterson",
       "salary": 6800,
       "why": "subs in for him 6 of 31 times",
-      "much": "+6.7 DK projected vs. last 3",
-      "score": 6.733333333333334,
+      "much": "+6.6 DK projected vs. last 3",
+      "score": 6.633333333333333,
       "min": 36.1,
-      "dk": 40.9
+      "dk": 40.8
      }
     ],
     "estimate": false
@@ -914,7 +955,7 @@
       "much": "+8.5 DK without him (2 games)",
       "score": 8.5,
       "min": 36.1,
-      "dk": 40.9
+      "dk": 40.8
      },
      {
       "player": "Josh Green",
@@ -923,7 +964,7 @@
       "much": "+5.2 DK without him (2 games)",
       "score": 5.2,
       "min": 28.5,
-      "dk": 15.7
+      "dk": 15.6
      }
     ],
     "estimate": false
@@ -985,18 +1026,18 @@
       "salary": 6900,
       "why": "subs in for him 5 of 29 times",
       "much": "about +6.5 DK",
-      "score": 6.497076023391813,
+      "score": 6.456342004436378,
       "min": 28.5,
-      "dk": 31.9
+      "dk": 31.7
      },
      {
       "player": "Jamal Cain",
       "salary": 4300,
       "why": "subs in for him 5 of 29 times",
       "much": "about +4.2 DK",
-      "score": 4.154001198452906,
+      "score": 4.181511140164514,
       "min": 21.1,
-      "dk": 15.1
+      "dk": 15.2
      }
     ],
     "estimate": true
@@ -1085,7 +1126,7 @@
       "much": "+10.9 DK without him (6 games)",
       "score": 10.9,
       "min": 36.1,
-      "dk": 40.9
+      "dk": 40.8
      },
      {
       "player": "Josh Okogie",
@@ -1119,7 +1160,7 @@
       "much": "+8.4 DK without him (1 game)",
       "score": 8.4,
       "min": 22.5,
-      "dk": 22.7
+      "dk": 22.6
      }
     ],
     "estimate": false
@@ -1144,7 +1185,7 @@
       "much": "+16.0 DK without him (7 games)",
       "score": 16.0,
       "min": 21.1,
-      "dk": 15.1
+      "dk": 15.2
      },
      {
       "player": "Desmond Bane",
@@ -1153,7 +1194,7 @@
       "much": "+12.4 DK without him (6 games)",
       "score": 12.4,
       "min": 32.5,
-      "dk": 31.9
+      "dk": 31.7
      },
      {
       "player": "Franz Wagner",
@@ -1187,7 +1228,7 @@
       "much": "+13.1 DK without him (6 games)",
       "score": 13.1,
       "min": 21.1,
-      "dk": 15.1
+      "dk": 15.2
      },
      {
       "player": "Desmond Bane",
@@ -1196,7 +1237,7 @@
       "much": "+5.9 DK without him (5 games)",
       "score": 5.9,
       "min": 32.5,
-      "dk": 31.9
+      "dk": 31.7
      },
      {
       "player": "Jase Richardson",
