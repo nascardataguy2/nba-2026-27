@@ -2,7 +2,7 @@
  "updated": "2026-11-10",
  "brief": {
   "date": "2026-11-10",
-  "updated": "7:46 PM ET",
+  "updated": "7:57 PM ET",
   "games": 6,
   "pending": [],
   "first_report": "5:38 AM",
@@ -237,6 +237,14 @@
   ],
   "changed": [
    {
+    "player": "Cam Christie",
+    "team": "LAC",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Right Ankle Sprain",
+    "time": "7:58 PM"
+   },
+   {
     "player": "Giannis Antetokounmpo",
     "team": "MIA",
     "status": "Questionable",
@@ -307,14 +315,6 @@
     "was": "Questionable",
     "why": "Illness",
     "time": "2:55 PM"
-   },
-   {
-    "player": "Tristan Silva",
-    "team": "ORL",
-    "status": "Questionable",
-    "was": "",
-    "why": "Left Calf Strain",
-    "time": "12:46 PM"
    }
   ],
   "chg": [
@@ -803,30 +803,30 @@
    {
     "player": "Brayden Burries",
     "team": "MIL",
-    "own": 60.6,
+    "own": 61.1,
     "dk": 32.2,
     "salary": 4800
    },
    {
     "player": "Isaiah Collier",
     "team": "UTA",
-    "own": 52.7,
+    "own": 53.4,
     "dk": 23.8,
     "salary": 4400
    },
    {
     "player": "Mikal Bridges",
     "team": "NYK",
-    "own": 51.0,
+    "own": 51.3,
     "dk": 19.2,
     "salary": 5000
    },
    {
-    "player": "Kyle Kuzma",
-    "team": "MIL",
-    "own": 32.7,
-    "dk": 26.5,
-    "salary": 4600
+    "player": "Brice Sensabaugh",
+    "team": "UTA",
+    "own": 32.8,
+    "dk": 20.0,
+    "salary": 3500
    }
   ],
   "leverage": [
@@ -840,14 +840,14 @@
    {
     "player": "VJ Edgecombe",
     "team": "PHI",
-    "own": 4.3,
+    "own": 5.3,
     "dk": 30.7,
     "salary": 6300
    },
    {
     "player": "Jaylen Brown",
     "team": "PHI",
-    "own": 6.4,
+    "own": 6.2,
     "dk": 38.3,
     "salary": 8000
    }
@@ -941,8 +941,8 @@
    ]
   },
   "injuries": {
-   "report": "07:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_07_30PM.pdf",
+   "report": "07:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_07_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1115,6 +1115,21 @@
      "estimate": false
     },
     {
+     "game": "LAC at PHX",
+     "time": "2026-11-11T02:00Z",
+     "team": "LAC",
+     "player": "Cam Christie",
+     "status": "Out",
+     "reason": "Right Ankle Sprain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "7:58 PM",
+     "min": 4.3,
+     "benefits": [],
+     "estimate": false
+    },
+    {
      "game": "MIA at UTA",
      "time": "2026-11-11T02:00Z",
      "team": "MIA",
@@ -1147,21 +1162,6 @@
       }
      ],
      "estimate": true
-    },
-    {
-     "game": "LAC at PHX",
-     "time": "2026-11-11T02:00Z",
-     "team": "LAC",
-     "player": "Cam Christie",
-     "status": "Questionable",
-     "reason": "Right Ankle Sprain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 4.3,
-     "benefits": [],
-     "estimate": false
     },
     {
      "game": "ORL at SAC",
@@ -1313,8 +1313,8 @@
        "why": "same minutes, more production",
        "much": "+8.4 DK without him (1 game)",
        "score": 8.4,
-       "min": 22.5,
-       "dk": 22.6
+       "min": 22.4,
+       "dk": 22.5
       }
      ],
      "estimate": false
@@ -11346,7 +11346,7 @@
    "coach": "Ty Lue",
    "notes": "Four players are hurt, three of them long-term: Brandon Ingram, Bradley Beal, Jordan Miller and Yanic Konan Niederhauser. The Clippers do not control their own pick this season. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). They have 13 back-to-backs, one of the lowest totals in the league. The NBA took five first-round picks from the Clippers and fined Steve Ballmer $30 million after the Kawhi investigation; the Clippers say they will challenge it.",
    "source": "LO-1019b",
-   "out": "Nick Martinelli",
+   "out": "Cam Christie, Nick Martinelli",
    "depth_through": "2026-11-08",
    "games": 9
   },
