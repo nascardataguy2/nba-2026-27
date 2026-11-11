@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updated": "8:20 PM ET",
+ "updated": "8:46 PM ET",
  "games": 6,
  "pending": [],
  "first_report": "5:38 AM",
@@ -76,11 +76,11 @@
    "home": "UTA",
    "time": "2026-11-11T02:00Z",
    "slate": "main",
-   "ou": 228.5,
+   "ou": 226.5,
    "fav": "MIA",
    "line": 8.5,
-   "away_pts": 118.5,
-   "home_pts": 110.0,
+   "away_pts": 117.5,
+   "home_pts": 109.0,
    "tags": [
     "Highest total"
    ],
@@ -154,6 +154,10 @@
     "ORL": {
      "out": [
       {
+       "player": "Tristan da Silva",
+       "min": 33.7
+      },
+      {
        "player": "Paolo Banchero",
        "min": 33.5
       },
@@ -162,19 +166,14 @@
        "min": 33.3
       }
      ],
-     "q": [
-      {
-       "player": "Tristan da Silva",
-       "min": 30.4
-      }
-     ]
+     "q": []
     },
     "SAC": {
      "out": [],
      "q": []
     }
    },
-   "key": "Paolo Banchero and Jalen Suggs are out, so Jamal Cain and Desmond Bane and Jase Richardson should play more than usual."
+   "key": "Tristan da Silva and Paolo Banchero are out, so Jamal Cain and Desmond Bane and Jase Richardson should play more than usual."
   },
   {
    "away": "OKC",
@@ -187,6 +186,7 @@
    "away_pts": 114.0,
    "home_pts": 112.5,
    "tags": [
+    "Highest total",
     "Close game"
    ],
    "teams": {
@@ -229,6 +229,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Tristan da Silva",
+   "team": "ORL",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Left Calf Strain",
+   "time": "8:47 PM"
+  },
   {
    "player": "Giannis Antetokounmpo",
    "team": "MIA",
@@ -300,14 +308,6 @@
    "was": "Questionable",
    "why": "-",
    "time": "4:19 PM"
-  },
-  {
-   "player": "Lauri Markkanen",
-   "team": "UTA",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Right Wrist Sprain",
-   "time": "2:55 PM"
   }
  ],
  "chg": [
@@ -403,26 +403,73 @@
   {
    "key": "Tristan da Silva",
    "team": "ORL",
-   "head": "Tristan da Silva QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Franz Wagner",
-     "salary": 9000,
-     "much": "about +10.2 DK if he sits (estimate)"
-    },
-    {
-     "player": "Anthony Black",
-     "salary": 6900,
-     "much": "about +6.5 DK if he sits (estimate)"
-    }
-   ],
-   "time": "4:44 PM",
-   "size": 12.4
+   "head": "Tristan da Silva OUT",
+   "st": "Out",
+   "act": "",
+   "names": [],
+   "time": "8:47 PM",
+   "size": 24.8
   }
  ],
  "sits": [
+  {
+   "team": "ORL",
+   "outs": [
+    {
+     "player": "Tristan da Silva",
+     "min": 33.7,
+     "note": "Ruled out tonight (left calf strain).",
+     "new": true
+    },
+    {
+     "player": "Paolo Banchero",
+     "min": 33.5,
+     "note": "The show noted that Orlando is still without Paolo Banchero and Jalen Suggs, and it said things will be tough for the Magic until both return. Banchero did not appear in Orlando's Nov. 5 box score.",
+     "new": false
+    },
+    {
+     "player": "Jalen Suggs",
+     "min": 33.3,
+     "note": "Jalen Suggs remains out for Orlando and did not play on Nov. 5. The show said Anthony Black should still play sixth-man minutes or close to it once Suggs returns.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 100.5,
+   "benefits": [
+    {
+     "player": "Jamal Cain",
+     "salary": 4300,
+     "why": "22 minutes, up from 13",
+     "much": "+13.1 DK without them (6 games)",
+     "score": 13.1,
+     "min": 26.9,
+     "dk": 19.1
+    },
+    {
+     "player": "Desmond Bane",
+     "salary": 7200,
+     "why": "36 minutes, up from 32",
+     "much": "+5.9 DK without them (5 games)",
+     "score": 5.9,
+     "min": 38.6,
+     "dk": 37.7
+    },
+    {
+     "player": "Jase Richardson",
+     "salary": 4700,
+     "why": "started 6 of 6",
+     "much": "+5.4 DK without them (6 games)",
+     "score": 5.4,
+     "min": 27.9,
+     "dk": 19.5
+    }
+   ],
+   "split_of": [
+    "Paolo Banchero",
+    "Jalen Suggs"
+   ]
+  },
   {
    "team": "UTA",
    "outs": [
@@ -618,58 +665,6 @@
    ]
   },
   {
-   "team": "ORL",
-   "outs": [
-    {
-     "player": "Paolo Banchero",
-     "min": 33.5,
-     "note": "The show noted that Orlando is still without Paolo Banchero and Jalen Suggs, and it said things will be tough for the Magic until both return. Banchero did not appear in Orlando's Nov. 5 box score.",
-     "new": false
-    },
-    {
-     "player": "Jalen Suggs",
-     "min": 33.3,
-     "note": "Jalen Suggs remains out for Orlando and did not play on Nov. 5. The show said Anthony Black should still play sixth-man minutes or close to it once Suggs returns.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 66.8,
-   "benefits": [
-    {
-     "player": "Jamal Cain",
-     "salary": 4300,
-     "why": "22 minutes, up from 13",
-     "much": "+13.1 DK without them (6 games)",
-     "score": 13.1,
-     "min": 22.0,
-     "dk": 15.7
-    },
-    {
-     "player": "Desmond Bane",
-     "salary": 7200,
-     "why": "36 minutes, up from 32",
-     "much": "+5.9 DK without them (5 games)",
-     "score": 5.9,
-     "min": 33.9,
-     "dk": 33.1
-    },
-    {
-     "player": "Jase Richardson",
-     "salary": 4700,
-     "why": "started 6 of 6",
-     "much": "+5.4 DK without them (6 games)",
-     "score": 5.4,
-     "min": 24.8,
-     "dk": 17.4
-    }
-   ],
-   "split_of": [
-    "Paolo Banchero",
-    "Jalen Suggs"
-   ]
-  },
-  {
    "team": "POR",
    "outs": [
     {
@@ -689,7 +684,7 @@
      "much": "+5.1 DK without him (5 games)",
      "score": 5.1,
      "min": 25.8,
-     "dk": 32.2
+     "dk": 32.1
     }
    ],
    "split_of": [
@@ -785,52 +780,52 @@
   {
    "player": "Brayden Burries",
    "team": "MIL",
-   "own": 61.4,
+   "own": 62.5,
    "dk": 32.2,
    "salary": 4800
   },
   {
    "player": "Isaiah Collier",
    "team": "UTA",
-   "own": 53.4,
+   "own": 54.2,
    "dk": 23.8,
    "salary": 4400
   },
   {
    "player": "Mikal Bridges",
    "team": "NYK",
-   "own": 50.7,
+   "own": 51.1,
    "dk": 19.2,
    "salary": 5000
   },
   {
-   "player": "Kyle Kuzma",
-   "team": "MIL",
-   "own": 33.0,
-   "dk": 26.5,
-   "salary": 4600
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "own": 45.6,
+   "dk": 51.2,
+   "salary": 9000
   }
  ],
  "leverage": [
   {
    "player": "Davion Mitchell",
    "team": "MIA",
-   "own": 6.0,
+   "own": 3.3,
    "dk": 34.2,
    "salary": 6800
   },
   {
    "player": "VJ Edgecombe",
    "team": "PHI",
-   "own": 5.3,
+   "own": 2.8,
    "dk": 30.7,
    "salary": 6300
   },
   {
    "player": "Ace Bailey",
    "team": "UTA",
-   "own": 9.7,
-   "dk": 32.3,
+   "own": 7.4,
+   "dk": 32.2,
    "salary": 6700
   }
  ],
@@ -923,8 +918,8 @@
   ]
  },
  "injuries": {
-  "report": "08:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_08_15PM.pdf",
+  "report": "08:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_08_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1131,43 +1126,15 @@
     "time": "2026-11-11T03:00Z",
     "team": "ORL",
     "player": "Tristan da Silva",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Left Calf Strain",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "4:44 PM",
+    "changed_at": "8:47 PM",
     "min": 33.7,
-    "benefits": [
-     {
-      "player": "Franz Wagner",
-      "salary": 9000,
-      "why": "subs in for him 7 of 29 times",
-      "much": "about +10.2 DK",
-      "score": 10.169395749052848,
-      "min": 35.8,
-      "dk": 44.8
-     },
-     {
-      "player": "Anthony Black",
-      "salary": 6900,
-      "why": "subs in for him 5 of 29 times",
-      "much": "about +6.5 DK",
-      "score": 6.48864120128488,
-      "min": 29.7,
-      "dk": 33.2
-     },
-     {
-      "player": "Jamal Cain",
-      "salary": 4300,
-      "why": "subs in for him 5 of 29 times",
-      "much": "about +4.1 DK",
-      "score": 4.142371995820271,
-      "min": 22.0,
-      "dk": 15.7
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "ORL at SAC",
@@ -1228,15 +1195,6 @@
     "min": 25.3,
     "benefits": [
      {
-      "player": "Ace Bailey",
-      "salary": 6700,
-      "why": "40 and 37 minutes in first two games after JJJ went down (11/02)",
-      "much": "+11.0 DK projected vs. last 3",
-      "score": 10.966666666666665,
-      "min": 32.4,
-      "dk": 32.3
-     },
-     {
       "player": "Darryn Peterson",
       "salary": 6800,
       "why": "same minutes, more production",
@@ -1246,13 +1204,22 @@
       "dk": 40.7
      },
      {
+      "player": "Ace Bailey",
+      "salary": 6700,
+      "why": "40 and 37 minutes in first two games after JJJ went down (11/02)",
+      "much": "+10.9 DK projected vs. last 3",
+      "score": 10.86666666666667,
+      "min": 32.4,
+      "dk": 32.2
+     },
+     {
       "player": "Josh Okogie",
       "salary": 3800,
       "why": "21 minutes, up from 13",
       "much": "+8.3 DK without him (6 games)",
       "score": 8.3,
       "min": 24.7,
-      "dk": 17.1
+      "dk": 17.0
      }
     ],
     "estimate": false
@@ -1301,8 +1268,8 @@
       "why": "21 minutes, up from 12",
       "much": "+16.0 DK without him (7 games)",
       "score": 16.0,
-      "min": 22.0,
-      "dk": 15.7
+      "min": 26.9,
+      "dk": 19.1
      },
      {
       "player": "Desmond Bane",
@@ -1310,8 +1277,8 @@
       "why": "36 minutes, up from 30",
       "much": "+12.4 DK without him (6 games)",
       "score": 12.4,
-      "min": 33.9,
-      "dk": 33.1
+      "min": 38.6,
+      "dk": 37.7
      },
      {
       "player": "Franz Wagner",
@@ -1319,8 +1286,8 @@
       "why": "38 minutes, up from 31",
       "much": "+10.5 DK without him (7 games)",
       "score": 10.5,
-      "min": 35.8,
-      "dk": 44.8
+      "min": 40.8,
+      "dk": 51.2
      }
     ],
     "estimate": false
@@ -1344,8 +1311,8 @@
       "why": "22 minutes, up from 13",
       "much": "+13.1 DK without him (6 games)",
       "score": 13.1,
-      "min": 22.0,
-      "dk": 15.7
+      "min": 26.9,
+      "dk": 19.1
      },
      {
       "player": "Desmond Bane",
@@ -1353,8 +1320,8 @@
       "why": "36 minutes, up from 32",
       "much": "+5.9 DK without him (5 games)",
       "score": 5.9,
-      "min": 33.9,
-      "dk": 33.1
+      "min": 38.6,
+      "dk": 37.7
      },
      {
       "player": "Jase Richardson",
@@ -1362,8 +1329,8 @@
       "why": "started 6 of 6",
       "much": "+5.4 DK without him (6 games)",
       "score": 5.4,
-      "min": 24.8,
-      "dk": 17.4
+      "min": 27.9,
+      "dk": 19.5
      }
     ],
     "estimate": false
@@ -1474,7 +1441,7 @@
       "much": "+5.1 DK without him (5 games)",
       "score": 5.1,
       "min": 25.8,
-      "dk": 32.2
+      "dk": 32.1
      }
     ],
     "estimate": false
