@@ -1,11 +1,8 @@
 {
  "date": "2026-11-11",
- "updated": "3:12 PM ET",
+ "updated": "4:40 PM ET",
  "games": 9,
- "pending": [
-  "OKC",
-  "POR"
- ],
+ "pending": [],
  "first_report": "5:38 AM",
  "cards": [
   {
@@ -81,21 +78,16 @@
      ]
     },
     "NYK": {
-     "out": [
-      {
-       "player": "Josh Hart",
-       "min": 31.3
-      }
-     ],
+     "out": [],
      "q": [
       {
        "player": "Karl-Anthony Towns",
-       "min": 26.1
+       "min": 26.8
       }
      ]
     }
    },
-   "key": "Josh Hart is out, so Mohamed Diawara and James Wiseman and Mikal Bridges should play more than usual."
+   "key": "Sam Merrill is out, so Craig Porter Jr. should play more than usual."
   },
   {
    "away": "BOS",
@@ -188,7 +180,7 @@
      ]
     }
    },
-   "key": "Victor Wembanyama has the top projection in this game at 53.0 DK points."
+   "key": "Victor Wembanyama has the top projection in this game at 53.2 DK points."
   },
   {
    "away": "DEN",
@@ -265,7 +257,7 @@
      "q": [
       {
        "player": "Tyler Herro",
-       "min": 34.2
+       "min": 32.6
       }
      ]
     }
@@ -320,18 +312,18 @@
      "q": []
     }
    },
-   "key": "Trey Murphy and Yves Missi are out, so Dejounte Murray and Jordan Poole and Bryce McGowens should play more than usual."
+   "key": "Trey Murphy and Yves Missi are out, so Dejounte Murray and Bryce McGowens and Jordan Poole should play more than usual."
   },
   {
    "away": "GSW",
    "home": "HOU",
    "time": "2026-11-12T02:30Z",
    "slate": "late",
-   "ou": 220.5,
+   "ou": 219.5,
    "fav": "HOU",
    "line": 6.5,
-   "away_pts": 107.0,
-   "home_pts": 113.5,
+   "away_pts": 106.5,
+   "home_pts": 113.0,
    "tags": [],
    "teams": {
     "GSW": {
@@ -364,29 +356,75 @@
    "home": "POR",
    "time": "2026-11-12T03:00Z",
    "slate": "late",
-   "ou": 225.5,
-   "fav": "OKC",
-   "line": 1.5,
-   "away_pts": 113.5,
-   "home_pts": 112.0,
+   "ou": 224.5,
+   "fav": "POR",
+   "line": 2.5,
+   "away_pts": 111.0,
+   "home_pts": 113.5,
    "tags": [
     "Close game",
     "Both teams on a back-to-back"
    ],
    "teams": {
     "OKC": {
-     "out": [],
+     "out": [
+      {
+       "player": "Jalen Williams",
+       "min": 31.7
+      },
+      {
+       "player": "Chet Holmgren",
+       "min": 30.0
+      },
+      {
+       "player": "Ajay Mitchell",
+       "min": 26.7
+      },
+      {
+       "player": "Jaylin Williams",
+       "min": 22.0
+      }
+     ],
      "q": []
     },
     "POR": {
-     "out": [],
+     "out": [
+      {
+       "player": "Ja Morant",
+       "min": 27.0
+      },
+      {
+       "player": "Chris Youngblood",
+       "min": 18.3
+      },
+      {
+       "player": "Vit Krejci",
+       "min": 12.7
+      }
+     ],
      "q": []
     }
    },
-   "key": "Shai Gilgeous-Alexander has the top projection in this game at 45.0 DK points."
+   "key": "Jalen Williams and Chet Holmgren are out, so Bennett Stirtz and Aday Mara and Jared McCain should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Chris Youngblood",
+   "team": "POR",
+   "status": "Out",
+   "was": "",
+   "why": "Right Bone Bruise",
+   "time": "4:42 PM"
+  },
+  {
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "status": "Out",
+   "was": "",
+   "why": "Left Ankle Sprain",
+   "time": "4:42 PM"
+  },
   {
    "player": "Will Richard",
    "team": "GSW",
@@ -450,22 +488,6 @@
    "was": "",
    "why": "Left Sore Calf",
    "time": "2:49 PM"
-  },
-  {
-   "player": "Josh Hart",
-   "team": "NYK",
-   "status": "Probable",
-   "was": "Out",
-   "why": "Illness",
-   "time": "2:49 PM"
-  },
-  {
-   "player": "Trayce Jackson-Davis",
-   "team": "TOR",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "2:49 PM"
   }
  ],
  "chg": [
@@ -491,6 +513,16 @@
    "size": 39.6
   },
   {
+   "key": "Ajay Mitchell",
+   "team": "OKC",
+   "head": "Ajay Mitchell OUT",
+   "st": "Out",
+   "act": "",
+   "names": [],
+   "time": "4:42 PM",
+   "size": 30.7
+  },
+  {
    "key": "Trey Murphy III",
    "team": "NOP",
    "head": "Trey Murphy III DOUBTFUL",
@@ -503,9 +535,9 @@
      "much": "+13.2 DK projected vs. last 3"
     },
     {
-     "player": "Jordan Poole",
-     "salary": 4000,
-     "much": "+10.1 DK projected vs. last 3"
+     "player": "Bryce McGowens",
+     "salary": 3900,
+     "much": "+10.0 DK without him (1 game)"
     }
    ],
    "time": "12:42 PM",
@@ -542,7 +574,7 @@
     {
      "player": "Andre Drummond",
      "salary": 4200,
-     "much": "about +13.7 DK if he sits (estimate)"
+     "much": "about +13.6 DK if he sits (estimate)"
     },
     {
      "player": "Landry Shamet",
@@ -563,7 +595,7 @@
     {
      "player": "Kel'El Ware",
      "salary": 4800,
-     "much": "+15.0 DK projected vs. last 3"
+     "much": "+16.3 DK projected vs. last 3"
     }
    ],
    "time": "2:49 PM",
@@ -633,6 +665,27 @@
    "size": 16.9
   },
   {
+   "key": "Chris Youngblood",
+   "team": "POR",
+   "head": "Chris Youngblood OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Robert Williams",
+     "salary": 4400,
+     "much": "+7.0 DK without him (3 games)"
+    },
+    {
+     "player": "Toumani Camara",
+     "salary": 5500,
+     "much": "+5.5 DK without him (4 games)"
+    }
+   ],
+   "time": "4:42 PM",
+   "size": 10.8
+  },
+  {
    "key": "Bennedict Mathurin",
    "team": "NOP",
    "head": "Bennedict Mathurin OUT",
@@ -642,7 +695,7 @@
     {
      "player": "Zion Williamson",
      "salary": 7500,
-     "much": "+10.1 DK projected vs. last 3"
+     "much": "+10.3 DK projected vs. last 3"
     },
     {
      "player": "Herbert Jones",
@@ -676,6 +729,78 @@
   }
  ],
  "sits": [
+  {
+   "team": "OKC",
+   "outs": [
+    {
+     "player": "Jalen Williams",
+     "min": 31.7,
+     "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
+     "new": false
+    },
+    {
+     "player": "Chet Holmgren",
+     "min": 30.0,
+     "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
+     "new": false
+    },
+    {
+     "player": "Ajay Mitchell",
+     "min": 26.7,
+     "note": "Ruled out tonight (left ankle sprain).",
+     "new": true
+    },
+    {
+     "player": "Jaylin Williams",
+     "min": 22.0,
+     "note": "Jaylin Williams missed his fourth straight game Tuesday with back spasms.",
+     "new": false
+    },
+    {
+     "player": "Cason Wallace",
+     "min": 16.3,
+     "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 126.7,
+   "benefits": [
+    {
+     "player": "Bennett Stirtz",
+     "salary": 3800,
+     "why": "23 minutes, up from 15",
+     "much": "+13.5 DK without them (4 games)",
+     "score": 13.5,
+     "min": 30.8,
+     "dk": 23.2
+    },
+    {
+     "player": "Aday Mara",
+     "salary": 5100,
+     "why": "started 2 of 4",
+     "much": "+9.8 DK without them (4 games)",
+     "score": 9.8,
+     "min": 25.6,
+     "dk": 26.5
+    },
+    {
+     "player": "Jared McCain",
+     "salary": 5600,
+     "why": "started 2 of 4",
+     "much": "+9.4 DK without them (4 games)",
+     "score": 9.4,
+     "min": 32.8,
+     "dk": 29.3
+    }
+   ],
+   "split_of": [
+    "Jalen Williams",
+    "Chet Holmgren",
+    "Jaylin Williams",
+    "Cason Wallace"
+   ]
+  },
   {
    "team": "NOP",
    "outs": [
@@ -711,15 +836,6 @@
      "dk": 30.0
     },
     {
-     "player": "Jordan Poole",
-     "salary": 4000,
-     "why": "34 minutes (11/09)",
-     "much": "+10.1 DK projected vs. last 3",
-     "score": 10.083333333333334,
-     "min": 27.3,
-     "dk": 25.0
-    },
-    {
      "player": "Bryce McGowens",
      "salary": 3900,
      "why": "28 minutes, up from 7",
@@ -727,6 +843,15 @@
      "score": 10.0,
      "min": 17.3,
      "dk": 8.3
+    },
+    {
+     "player": "Jordan Poole",
+     "salary": 4000,
+     "why": "34 minutes (11/09)",
+     "much": "+9.7 DK projected vs. last 3",
+     "score": 9.683333333333335,
+     "min": 27.3,
+     "dk": 24.6
     }
    ],
    "split_of": [
@@ -760,8 +885,8 @@
      "why": "22 minutes, up from 16",
      "much": "+6.2 DK without them (1 game)",
      "score": 6.2,
-     "min": 19.1,
-     "dk": 14.2
+     "min": 20.1,
+     "dk": 15.0
     },
     {
      "player": "Ousmane Dieng",
@@ -769,8 +894,8 @@
      "why": "24 minutes, up from 11",
      "much": "+6.1 DK without them (1 game)",
      "score": 6.1,
-     "min": 16.1,
-     "dk": 10.2
+     "min": 16.7,
+     "dk": 10.7
     }
    ],
    "split_of": [
@@ -778,48 +903,36 @@
    ]
   },
   {
-   "team": "NYK",
+   "team": "POR",
    "outs": [
     {
-     "player": "Josh Hart",
-     "min": 31.3,
-     "note": "The Knicks were on a back-to-back and had no injury report when the show aired. The show expected Josh Hart to be listed as questionable, as it said he will be often this season.",
+     "player": "Ja Morant",
+     "min": 27.0,
+     "note": "Ja Morant is out at least four weeks with a left hamstring strain.",
+     "new": false
+    },
+    {
+     "player": "Chris Youngblood",
+     "min": 18.3,
+     "note": "Ruled out tonight (right bone bruise).",
      "new": true
     }
    ],
    "new": true,
-   "lost": 31.3,
+   "lost": 45.3,
    "benefits": [
     {
-     "player": "Mohamed Diawara",
-     "salary": 3800,
-     "why": "18 minutes, up from 4",
-     "much": "+15.5 DK without him (3 games)",
-     "score": 15.5,
-     "min": 14.2,
-     "dk": 10.7
-    },
-    {
-     "player": "James Wiseman",
-     "salary": 3200,
-     "why": "8 minutes, up from 3",
-     "much": "+11.8 DK without him (2 games)",
-     "score": 11.8,
-     "min": 5.7,
-     "dk": 9.8
-    },
-    {
-     "player": "Mikal Bridges",
-     "salary": 5000,
-     "why": "started, 31 minutes, 9-6-4 (11/07)",
-     "much": "+7.3 DK without him (3 games)",
-     "score": 7.3,
-     "min": 21.7,
-     "dk": 15.7
+     "player": "Deni Avdija",
+     "salary": 8800,
+     "why": "39 minutes, 11 assists, extra usage (11/06)",
+     "much": "+4.6 DK projected vs. last 3",
+     "score": 4.583333333333336,
+     "min": 34.4,
+     "dk": 44.5
     }
    ],
    "split_of": [
-    "Josh Hart"
+    "Ja Morant"
    ]
   },
   {
@@ -842,7 +955,7 @@
      "much": "+9.8 DK without him (1 game)",
      "score": 9.8,
      "min": 20.8,
-     "dk": 15.6
+     "dk": 15.8
     },
     {
      "player": "Luka Garza",
@@ -877,8 +990,8 @@
      "why": "32 minutes, up from 23",
      "much": "+25.2 DK without him (1 game)",
      "score": 25.2,
-     "min": 23.8,
-     "dk": 22.2
+     "min": 23.9,
+     "dk": 22.6
     },
     {
      "player": "Collin Sexton",
@@ -886,8 +999,8 @@
      "why": "27 minutes, up from 17",
      "much": "+16.0 DK without him (1 game)",
      "score": 16.0,
-     "min": 21.7,
-     "dk": 22.3
+     "min": 20.7,
+     "dk": 21.8
     },
     {
      "player": "Walker Kessler",
@@ -895,39 +1008,12 @@
      "why": "same minutes, more production",
      "much": "+5.5 DK without him (1 game)",
      "score": 5.5,
-     "min": 32.3,
-     "dk": 38.5
+     "min": 30.4,
+     "dk": 36.8
     }
    ],
    "split_of": [
     "Quentin Grimes"
-   ]
-  },
-  {
-   "team": "MEM",
-   "outs": [
-    {
-     "player": "Isaiah Stewart",
-     "min": 19.7,
-     "note": "Isaiah Stewart was questionable for Memphis against Denver, while Scotty Pippen Jr. and Quinten Post were out again. The show said it would like Stewart available to defend Nikola Jokic.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 19.7,
-   "benefits": [
-    {
-     "player": "Ty Jerome",
-     "salary": 8200,
-     "why": "same minutes, more production",
-     "much": "+6.8 DK without him (3 games)",
-     "score": 6.8,
-     "min": 28.4,
-     "dk": 38.0
-    }
-   ],
-   "split_of": [
-    "Isaiah Stewart"
    ]
   }
  ],
@@ -1017,32 +1103,32 @@
  ],
  "chalk": [
   {
+   "player": "Bennett Stirtz",
+   "team": "OKC",
+   "own": 75.5,
+   "dk": 23.2,
+   "salary": 3800
+  },
+  {
+   "player": "Kel'El Ware",
+   "team": "MIL",
+   "own": 60.6,
+   "dk": 26.2,
+   "salary": 4800
+  },
+  {
    "player": "Stephen Curry",
    "team": "GSW",
-   "own": 71.4,
+   "own": 59.7,
    "dk": 45.4,
    "salary": 7700
   },
   {
    "player": "Yaxel Lendeborg",
    "team": "GSW",
-   "own": 64.3,
-   "dk": 40.0,
+   "own": 56.1,
+   "dk": 40.1,
    "salary": 6900
-  },
-  {
-   "player": "Charles Bassey",
-   "team": "GSW",
-   "own": 63.5,
-   "dk": 21.7,
-   "salary": 3800
-  },
-  {
-   "player": "Day'Ron Sharpe",
-   "team": "BKN",
-   "own": 56.6,
-   "dk": 24.2,
-   "salary": 5300
   }
  ],
  "leverage": [
@@ -1050,22 +1136,22 @@
    "player": "Jordan Poole",
    "team": "NOP",
    "own": 0.8,
-   "dk": 25.0,
+   "dk": 24.6,
    "salary": 4000
   },
   {
-   "player": "Tyler Herro",
-   "team": "MIL",
-   "own": 2.4,
-   "dk": 39.3,
-   "salary": 7100
+   "player": "Zion Williamson",
+   "team": "NOP",
+   "own": 4.3,
+   "dk": 44.0,
+   "salary": 7500
   },
   {
-   "player": "Collin Murray-Boyles",
-   "team": "TOR",
-   "own": 0.8,
-   "dk": 29.3,
-   "salary": 5700
+   "player": "Luka Doncic",
+   "team": "LAL",
+   "own": 7.2,
+   "dk": 65.9,
+   "salary": 12300
   }
  ],
  "last": {
@@ -1157,12 +1243,9 @@
   ]
  },
  "injuries": {
-  "report": "03:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_03_00PM.pdf",
-  "pending": [
-   "OKC",
-   "POR"
-  ],
+  "report": "04:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_04_30PM.pdf",
+  "pending": [],
   "rows": [
    {
     "game": "BOS at TOR",
@@ -1184,7 +1267,7 @@
       "much": "+9.8 DK without him (1 game)",
       "score": 9.8,
       "min": 20.8,
-      "dk": 15.6
+      "dk": 15.8
      },
      {
       "player": "Luka Garza",
@@ -1233,7 +1316,7 @@
       "much": "+26.5 DK without him (2 games)",
       "score": 26.5,
       "min": 27.8,
-      "dk": 29.9
+      "dk": 29.7
      },
      {
       "player": "Jamal Shead",
@@ -1273,19 +1356,19 @@
       "player": "Andre Drummond",
       "salary": 4200,
       "why": "subs in for him 17 of 45 times",
-      "much": "about +13.7 DK",
-      "score": 13.735140018066845,
+      "much": "about +13.6 DK",
+      "score": 13.647094248720265,
       "min": 12.3,
-      "dk": 15.6
+      "dk": 15.5
      },
      {
       "player": "Landry Shamet",
       "salary": 4500,
       "why": "subs in for him 8 of 45 times",
       "much": "about +3.2 DK",
-      "score": 3.1769119769119767,
-      "min": 23.1,
-      "dk": 14.4
+      "score": 3.164823270759344,
+      "min": 21.9,
+      "dk": 13.6
      }
     ],
     "estimate": true
@@ -1319,7 +1402,7 @@
       "much": "+20.0 DK without him (1 game)",
       "score": 20.0,
       "min": 27.8,
-      "dk": 29.9
+      "dk": 29.7
      },
      {
       "player": "Jamison Battle",
@@ -1416,8 +1499,8 @@
       "why": "32 minutes, up from 23",
       "much": "+25.2 DK without him (1 game)",
       "score": 25.2,
-      "min": 23.8,
-      "dk": 22.2
+      "min": 23.9,
+      "dk": 22.6
      },
      {
       "player": "Collin Sexton",
@@ -1425,8 +1508,8 @@
       "why": "27 minutes, up from 17",
       "much": "+16.0 DK without him (1 game)",
       "score": 16.0,
-      "min": 21.7,
-      "dk": 22.3
+      "min": 20.7,
+      "dk": 21.8
      },
      {
       "player": "Walker Kessler",
@@ -1434,8 +1517,8 @@
       "why": "same minutes, more production",
       "much": "+5.5 DK without him (1 game)",
       "score": 5.5,
-      "min": 32.3,
-      "dk": 38.5
+      "min": 30.4,
+      "dk": 36.8
      }
     ],
     "estimate": false
@@ -1457,10 +1540,10 @@
       "player": "Kel'El Ware",
       "salary": 4800,
       "why": "subs in for him 23 of 41 times",
-      "much": "+15.0 DK projected vs. last 3",
-      "score": 14.983333333333333,
-      "min": 21.8,
-      "dk": 24.9
+      "much": "+16.3 DK projected vs. last 3",
+      "score": 16.28333333333333,
+      "min": 22.5,
+      "dk": 26.2
      }
     ],
     "estimate": false
@@ -1482,10 +1565,10 @@
       "player": "Zion Williamson",
       "salary": 7500,
       "why": "subs in for him 4 of 21 times",
-      "much": "+10.1 DK projected vs. last 3",
-      "score": 10.133333333333333,
+      "much": "+10.3 DK projected vs. last 3",
+      "score": 10.333333333333336,
       "min": 38.3,
-      "dk": 43.8
+      "dk": 44.0
      },
      {
       "player": "Herbert Jones",
@@ -1552,15 +1635,6 @@
       "dk": 30.0
      },
      {
-      "player": "Jordan Poole",
-      "salary": 4000,
-      "why": "34 minutes (11/09)",
-      "much": "+10.1 DK projected vs. last 3",
-      "score": 10.083333333333334,
-      "min": 27.3,
-      "dk": 25.0
-     },
-     {
       "player": "Bryce McGowens",
       "salary": 3900,
       "why": "28 minutes, up from 7",
@@ -1568,6 +1642,15 @@
       "score": 10.0,
       "min": 17.3,
       "dk": 8.3
+     },
+     {
+      "player": "Jordan Poole",
+      "salary": 4000,
+      "why": "34 minutes (11/09)",
+      "much": "+9.7 DK projected vs. last 3",
+      "score": 9.683333333333335,
+      "min": 27.3,
+      "dk": 24.6
      }
     ],
     "estimate": false
@@ -1591,8 +1674,8 @@
       "why": "22 minutes, up from 16",
       "much": "+6.2 DK without him (1 game)",
       "score": 6.2,
-      "min": 19.1,
-      "dk": 14.2
+      "min": 20.1,
+      "dk": 15.0
      },
      {
       "player": "Ousmane Dieng",
@@ -1600,8 +1683,8 @@
       "why": "24 minutes, up from 11",
       "much": "+6.1 DK without him (1 game)",
       "score": 6.1,
-      "min": 16.1,
-      "dk": 10.2
+      "min": 16.7,
+      "dk": 10.7
      }
     ],
     "estimate": false
@@ -1660,7 +1743,7 @@
       "much": "+18.5 DK without him (1 game)",
       "score": 18.5,
       "min": 27.1,
-      "dk": 53.0
+      "dk": 53.2
      },
      {
       "player": "Harrison Barnes",
@@ -1703,7 +1786,7 @@
       "much": "+23.9 DK without him (1 game)",
       "score": 23.9,
       "min": 25.8,
-      "dk": 29.3
+      "dk": 29.5
      },
      {
       "player": "Jalen Smith",
@@ -1855,6 +1938,55 @@
     "estimate": false
    },
    {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "OKC",
+    "player": "Ajay Mitchell",
+    "status": "Out",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "4:42 PM",
+    "min": 26.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "POR",
+    "player": "Chris Youngblood",
+    "status": "Out",
+    "reason": "Right Bone Bruise",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "4:42 PM",
+    "min": 18.3,
+    "benefits": [
+     {
+      "player": "Robert Williams",
+      "salary": 4400,
+      "why": "same minutes, more production",
+      "much": "+7.0 DK without him (3 games)",
+      "score": 7.0,
+      "min": 16.6,
+      "dk": 20.3
+     },
+     {
+      "player": "Toumani Camara",
+      "salary": 5500,
+      "why": "same minutes, more production",
+      "much": "+5.5 DK without him (4 games)",
+      "score": 5.5,
+      "min": 30.4,
+      "dk": 24.7
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "BOS at TOR",
     "time": "2026-11-12T00:00Z",
     "team": "TOR",
@@ -1874,7 +2006,7 @@
       "much": "+26.5 DK without him (2 games)",
       "score": 26.5,
       "min": 27.8,
-      "dk": 29.9
+      "dk": 29.7
      },
      {
       "player": "Jamal Shead",
@@ -1976,9 +2108,9 @@
       "salary": 5500,
       "why": "moved from bench to starter, 27-35 minutes (11/09)",
       "much": "+5.6 DK projected vs. last 3",
-      "score": 5.649999999999999,
+      "score": 5.550000000000001,
       "min": 27.6,
-      "dk": 23.4
+      "dk": 23.3
      }
     ],
     "estimate": false
@@ -2003,7 +2135,7 @@
       "much": "+5.7 DK without him (2 games)",
       "score": 5.7,
       "min": 13.1,
-      "dk": 9.6
+      "dk": 9.7
      }
     ],
     "estimate": false
@@ -2028,7 +2160,7 @@
       "much": "+7.2 DK without him (5 games)",
       "score": 7.2,
       "min": 30.3,
-      "dk": 40.7
+      "dk": 40.6
      }
     ],
     "estimate": false
@@ -2093,7 +2225,7 @@
       "much": "+23.4 DK without him (9 games)",
       "score": 23.4,
       "min": 33.6,
-      "dk": 34.7
+      "dk": 34.6
      },
      {
       "player": "Herbert Jones",
@@ -2108,10 +2240,10 @@
       "player": "Derik Queen",
       "salary": 6100,
       "why": "12.0 points, 7.3 rebounds off the bench Oct. 28 to Nov. 2 (11/02)",
-      "much": "+6.6 DK projected vs. last 3",
-      "score": 6.649999999999999,
+      "much": "+6.8 DK projected vs. last 3",
+      "score": 6.75,
       "min": 21.9,
-      "dk": 25.9
+      "dk": 26.0
      }
     ],
     "estimate": false
@@ -2173,10 +2305,10 @@
       "player": "Alperen Sengun",
       "salary": 9000,
       "why": "subs in for him 9 of 22 times",
-      "much": "+3.2 DK projected vs. last 3",
-      "score": 3.2333333333333343,
+      "much": "+3.1 DK projected vs. last 3",
+      "score": 3.133333333333333,
       "min": 35.4,
-      "dk": 48.9
+      "dk": 48.8
      }
     ],
     "estimate": false
@@ -2220,6 +2352,237 @@
       "score": 7.2,
       "min": 32.3,
       "dk": 31.8
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "OKC",
+    "player": "Jalen Williams",
+    "status": "Out",
+    "reason": "Left Ankle Surgery",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 31.7,
+    "benefits": [
+     {
+      "player": "Aday Mara",
+      "salary": 5100,
+      "why": "23 minutes, up from 13",
+      "much": "+15.8 DK without him (8 games)",
+      "score": 15.8,
+      "min": 25.6,
+      "dk": 26.5
+     },
+     {
+      "player": "Bennett Stirtz",
+      "salary": 3800,
+      "why": "23 minutes, up from 5",
+      "much": "+15.7 DK without him (8 games)",
+      "score": 15.7,
+      "min": 30.8,
+      "dk": 23.2
+     },
+     {
+      "player": "Jared McCain",
+      "salary": 5600,
+      "why": "started 5 of 8",
+      "much": "+12.2 DK without him (8 games)",
+      "score": 12.2,
+      "min": 32.8,
+      "dk": 29.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "OKC",
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 30.0,
+    "benefits": [
+     {
+      "player": "Aday Mara",
+      "salary": 5100,
+      "why": "23 minutes, up from 13",
+      "much": "+15.8 DK without him (8 games)",
+      "score": 15.8,
+      "min": 25.6,
+      "dk": 26.5
+     },
+     {
+      "player": "Bennett Stirtz",
+      "salary": 3800,
+      "why": "23 minutes, up from 5",
+      "much": "+15.7 DK without him (8 games)",
+      "score": 15.7,
+      "min": 30.8,
+      "dk": 23.2
+     },
+     {
+      "player": "Jared McCain",
+      "salary": 5600,
+      "why": "started 5 of 8",
+      "much": "+12.2 DK without him (8 games)",
+      "score": 12.2,
+      "min": 32.8,
+      "dk": 29.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "POR",
+    "player": "Ja Morant",
+    "status": "Out",
+    "reason": "Left Hamstring Strain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 27.0,
+    "benefits": [
+     {
+      "player": "Deni Avdija",
+      "salary": 8800,
+      "why": "39 minutes, 11 assists, extra usage (11/06)",
+      "much": "+4.6 DK projected vs. last 3",
+      "score": 4.583333333333336,
+      "min": 34.4,
+      "dk": 44.5
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "OKC",
+    "player": "Jaylin Williams",
+    "status": "Out",
+    "reason": "Low Back Spasms",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 22.0,
+    "benefits": [
+     {
+      "player": "Bennett Stirtz",
+      "salary": 3800,
+      "why": "23 minutes, up from 15",
+      "much": "+13.5 DK without him (4 games)",
+      "score": 13.5,
+      "min": 30.8,
+      "dk": 23.2
+     },
+     {
+      "player": "Aday Mara",
+      "salary": 5100,
+      "why": "started 2 of 4",
+      "much": "+9.8 DK without him (4 games)",
+      "score": 9.8,
+      "min": 25.6,
+      "dk": 26.5
+     },
+     {
+      "player": "Jared McCain",
+      "salary": 5600,
+      "why": "started 2 of 4",
+      "much": "+9.4 DK without him (4 games)",
+      "score": 9.4,
+      "min": 32.8,
+      "dk": 29.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "OKC",
+    "player": "Cason Wallace",
+    "status": "Out",
+    "reason": "Left Shoulder Surgery",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 16.3,
+    "benefits": [
+     {
+      "player": "Aday Mara",
+      "salary": 5100,
+      "why": "23 minutes, up from 13",
+      "much": "+15.8 DK without him (8 games)",
+      "score": 15.8,
+      "min": 25.6,
+      "dk": 26.5
+     },
+     {
+      "player": "Bennett Stirtz",
+      "salary": 3800,
+      "why": "23 minutes, up from 5",
+      "much": "+15.7 DK without him (8 games)",
+      "score": 15.7,
+      "min": 30.8,
+      "dk": 23.2
+     },
+     {
+      "player": "Jared McCain",
+      "salary": 5600,
+      "why": "started 5 of 8",
+      "much": "+12.2 DK without him (8 games)",
+      "score": 12.2,
+      "min": 32.8,
+      "dk": 29.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at POR",
+    "time": "2026-11-12T03:00Z",
+    "team": "POR",
+    "player": "Vit Krejci",
+    "status": "Out",
+    "reason": "Left Ankle Fracture",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 12.7,
+    "benefits": [
+     {
+      "player": "Micah Potter",
+      "salary": 3500,
+      "why": "same minutes, more production",
+      "much": "+5.3 DK without him (2 games)",
+      "score": 5.3,
+      "min": 7.7,
+      "dk": 6.6
+     },
+     {
+      "player": "Scoot Henderson",
+      "salary": 4800,
+      "why": "Show: minutes could rise toward 28 (11/04)",
+      "much": "+4.6 DK projected vs. last 3",
+      "score": 4.583333333333334,
+      "min": 25.5,
+      "dk": 18.5
      }
     ],
     "estimate": false
@@ -2294,6 +2657,16 @@
    {
     "player": "Kristaps Porzingis",
     "team": "GSW",
+    "status": "Out"
+   },
+   {
+    "player": "Thomas Sorber",
+    "team": "OKC",
+    "status": "Out"
+   },
+   {
+    "player": "Shaedon Sharpe",
+    "team": "POR",
     "status": "Out"
    }
   ]
