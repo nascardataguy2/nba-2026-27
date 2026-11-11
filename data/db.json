@@ -2,7 +2,7 @@
  "updated": "2026-11-10",
  "brief": {
   "date": "2026-11-10",
-  "updated": "7:16 PM ET",
+  "updated": "7:26 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:38 AM",
@@ -89,7 +89,12 @@
     "teams": {
      "MIA": {
       "out": [],
-      "q": []
+      "q": [
+       {
+        "player": "Giannis Antetokounmpo",
+        "min": 32.4
+       }
+      ]
      },
      "UTA": {
       "out": [
@@ -181,6 +186,14 @@
   ],
   "changed": [
    {
+    "player": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "status": "Questionable",
+    "was": "Probable",
+    "why": "Right Wrist Sprain",
+    "time": "7:27 PM"
+   },
+   {
     "player": "Josh Hart",
     "team": "NYK",
     "status": "Out",
@@ -250,14 +263,6 @@
     "status": "Questionable",
     "was": "",
     "why": "Left Calf Strain",
-    "time": "12:46 PM"
-   },
-   {
-    "player": "Kel'el Ware",
-    "team": "MIL",
-    "status": "Questionable",
-    "was": "",
-    "why": "Left Ankle Sprain",
     "time": "12:46 PM"
    }
   ],
@@ -340,6 +345,27 @@
     ],
     "time": "6:32 PM",
     "size": 28.5
+   },
+   {
+    "key": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "head": "Giannis Antetokounmpo QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Bobby Portis",
+      "salary": 5000,
+      "much": "about +11.3 DK if he sits (estimate)"
+     },
+     {
+      "player": "Bam Adebayo",
+      "salary": 8200,
+      "much": "about +10.6 DK if he sits (estimate)"
+     }
+    ],
+    "time": "7:27 PM",
+    "size": 27.8
    },
    {
     "key": "Tristan da Silva",
@@ -667,30 +693,37 @@
    {
     "player": "Brice Sensabaugh",
     "team": "UTA",
-    "own": 47.1,
+    "own": 47.4,
     "dk": 20.0,
     "salary": 3500
    },
    {
     "player": "Darryn Peterson",
     "team": "UTA",
-    "own": 40.4,
+    "own": 40.7,
     "dk": 40.8,
     "salary": 6800
    },
    {
     "player": "Brayden Burries",
     "team": "MIL",
-    "own": 39.5,
+    "own": 39.6,
     "dk": 32.2,
     "salary": 4800
    }
   ],
   "leverage": [
    {
+    "player": "Jaime Jaquez Jr",
+    "team": "MIL",
+    "own": 8.9,
+    "dk": 29.6,
+    "salary": 5800
+   },
+   {
     "player": "Davion Mitchell",
     "team": "MIA",
-    "own": 9.5,
+    "own": 9.4,
     "dk": 34.2,
     "salary": 6800
    },
@@ -700,13 +733,6 @@
     "own": 0.9,
     "dk": 17.7,
     "salary": 3700
-   },
-   {
-    "player": "LeBron James",
-    "team": "PHI",
-    "own": 1.8,
-    "dk": 36.7,
-    "salary": 7900
    }
   ],
   "last": {
@@ -798,8 +824,8 @@
    ]
   },
   "injuries": {
-   "report": "07:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_07_00PM.pdf",
+   "report": "07:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_07_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -972,6 +998,40 @@
      "estimate": false
     },
     {
+     "game": "MIA at UTA",
+     "time": "2026-11-11T02:00Z",
+     "team": "MIA",
+     "player": "Giannis Antetokounmpo",
+     "status": "Questionable",
+     "reason": "Right Wrist Sprain",
+     "new": true,
+     "was": "Probable",
+     "known": true,
+     "changed_at": "7:27 PM",
+     "min": 35.3,
+     "benefits": [
+      {
+       "player": "Bobby Portis",
+       "salary": 5000,
+       "why": "subs in for him 13 of 43 times",
+       "much": "about +11.3 DK",
+       "score": 11.342304677292915,
+       "min": 17.8,
+       "dk": 18.9
+      },
+      {
+       "player": "Bam Adebayo",
+       "salary": 8200,
+       "why": "subs in for him 10 of 43 times",
+       "much": "about +10.6 DK",
+       "score": 10.64709775004727,
+       "min": 32.8,
+       "dk": 42.5
+      }
+     ],
+     "estimate": true
+    },
+    {
      "game": "LAC at PHX",
      "time": "2026-11-11T02:00Z",
      "team": "LAC",
@@ -983,21 +1043,6 @@
      "known": true,
      "changed_at": "",
      "min": 4.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "MIA at UTA",
-     "time": "2026-11-11T02:00Z",
-     "team": "MIA",
-     "player": "Giannis Antetokounmpo",
-     "status": "Probable",
-     "reason": "Right Wrist Sprain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 35.3,
      "benefits": [],
      "estimate": false
     },
