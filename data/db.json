@@ -2,7 +2,7 @@
  "updated": "2026-11-11",
  "brief": {
   "date": "2026-11-11",
-  "updated": "6:46 PM ET",
+  "updated": "6:55 PM ET",
   "games": 9,
   "pending": [],
   "first_report": "5:38 AM",
@@ -386,6 +386,14 @@
   ],
   "changed": [
    {
+    "player": "Trey Murphy III",
+    "team": "NOP",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "",
+    "time": "6:57 PM"
+   },
+   {
     "player": "Devin Vassell",
     "team": "SAS",
     "status": "Out",
@@ -456,14 +464,6 @@
     "was": "Questionable",
     "why": "",
     "time": "5:32 PM"
-   },
-   {
-    "player": "Chris Youngblood",
-    "team": "POR",
-    "status": "Out",
-    "was": "",
-    "why": "Right Bone Bruise",
-    "time": "4:42 PM"
    }
   ],
   "chg": [
@@ -543,8 +543,8 @@
    {
     "key": "Trey Murphy III",
     "team": "NOP",
-    "head": "Trey Murphy III DOUBTFUL",
-    "st": "Doubtful",
+    "head": "Trey Murphy III OUT",
+    "st": "Out",
     "act": "Play",
     "names": [
      {
@@ -558,7 +558,7 @@
       "much": "+10.0 DK without him (1 game)"
      }
     ],
-    "time": "12:42 PM",
+    "time": "6:57 PM",
     "size": 29.6
    },
    {
@@ -1150,7 +1150,7 @@
    {
     "player": "Stephon Castle",
     "team": "SAS",
-    "own": 56.1,
+    "own": 55.7,
     "dk": 36.5,
     "salary": 6600
    },
@@ -1173,7 +1173,7 @@
    {
     "player": "Luka Doncic",
     "team": "LAL",
-    "own": 6.3,
+    "own": 5.7,
     "dk": 66.1,
     "salary": 12300
    },
@@ -1274,8 +1274,8 @@
    ]
   },
   "injuries": {
-   "report": "06:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_06_30PM.pdf",
+   "report": "06:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_06_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1400,6 +1400,49 @@
      "changed_at": "6:47 PM",
      "min": 19.7,
      "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "BKN at NOP",
+     "time": "2026-11-12T01:00Z",
+     "team": "NOP",
+     "player": "Trey Murphy III",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "Doubtful",
+     "known": true,
+     "changed_at": "6:57 PM",
+     "min": 34.7,
+     "benefits": [
+      {
+       "player": "Dejounte Murray",
+       "salary": 7400,
+       "why": "started in his place, 45 minutes (OT) (11/04)",
+       "much": "+13.1 DK projected vs. last 3",
+       "score": 13.066666666666666,
+       "min": 29.0,
+       "dk": 29.9
+      },
+      {
+       "player": "Bryce McGowens",
+       "salary": 3900,
+       "why": "28 minutes, up from 7",
+       "much": "+10.0 DK without him (1 game)",
+       "score": 10.0,
+       "min": 17.3,
+       "dk": 8.3
+      },
+      {
+       "player": "Jordan Poole",
+       "salary": 4000,
+       "why": "34 minutes (11/09)",
+       "much": "+10.0 DK projected vs. last 3",
+       "score": 9.983333333333333,
+       "min": 27.3,
+       "dk": 24.9
+      }
+     ],
      "estimate": false
     },
     {
@@ -1600,49 +1643,6 @@
      "changed_at": "2:49 PM",
      "min": 8.7,
      "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "BKN at NOP",
-     "time": "2026-11-12T01:00Z",
-     "team": "NOP",
-     "player": "Trey Murphy III",
-     "status": "Doubtful",
-     "reason": "",
-     "new": true,
-     "was": "Probable",
-     "known": true,
-     "changed_at": "12:42 PM",
-     "min": 34.7,
-     "benefits": [
-      {
-       "player": "Dejounte Murray",
-       "salary": 7400,
-       "why": "started in his place, 45 minutes (OT) (11/04)",
-       "much": "+13.1 DK projected vs. last 3",
-       "score": 13.066666666666666,
-       "min": 29.0,
-       "dk": 29.9
-      },
-      {
-       "player": "Bryce McGowens",
-       "salary": 3900,
-       "why": "28 minutes, up from 7",
-       "much": "+10.0 DK without him (1 game)",
-       "score": 10.0,
-       "min": 17.3,
-       "dk": 8.3
-      },
-      {
-       "player": "Jordan Poole",
-       "salary": 4000,
-       "why": "34 minutes (11/09)",
-       "much": "+10.0 DK projected vs. last 3",
-       "score": 9.983333333333333,
-       "min": 27.3,
-       "dk": 24.9
-      }
-     ],
      "estimate": false
     },
     {
