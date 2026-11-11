@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updated": "4:58 PM ET",
+ "updated": "5:30 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:38 AM",
@@ -10,14 +10,12 @@
    "home": "IND",
    "time": "2026-11-12T00:00Z",
    "slate": "main",
-   "ou": 228.5,
+   "ou": 227.5,
    "fav": "IND",
-   "line": 2.5,
-   "away_pts": 113.0,
+   "line": 3.5,
+   "away_pts": 112.0,
    "home_pts": 115.5,
-   "tags": [
-    "Close game"
-   ],
+   "tags": [],
    "teams": {
     "WAS": {
      "out": [
@@ -54,10 +52,10 @@
    "home": "NYK",
    "time": "2026-11-12T00:00Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 221.5,
    "fav": "NYK",
-   "line": 3.5,
-   "away_pts": 109.5,
+   "line": 4.5,
+   "away_pts": 108.5,
    "home_pts": 113.0,
    "tags": [
     "NYK on a back-to-back"
@@ -143,11 +141,11 @@
    "home": "CHI",
    "time": "2026-11-12T01:00Z",
    "slate": "main",
-   "ou": 238.5,
+   "ou": 237.5,
    "fav": "SAS",
    "line": 15.5,
-   "away_pts": 127.0,
-   "home_pts": 111.5,
+   "away_pts": 126.5,
+   "home_pts": 111.0,
    "tags": [
     "Highest total",
     "Blowout risk"
@@ -224,11 +222,11 @@
    "home": "MIL",
    "time": "2026-11-12T01:00Z",
    "slate": "main",
-   "ou": 229.5,
+   "ou": 228.5,
    "fav": "LAL",
    "line": 14.5,
-   "away_pts": 122.0,
-   "home_pts": 107.5,
+   "away_pts": 121.5,
+   "home_pts": 107.0,
    "tags": [
     "Blowout risk",
     "MIL on a back-to-back"
@@ -269,11 +267,11 @@
    "home": "NOP",
    "time": "2026-11-12T01:00Z",
    "slate": "main",
-   "ou": 228.5,
+   "ou": 227.5,
    "fav": "NOP",
    "line": 3.5,
-   "away_pts": 112.5,
-   "home_pts": 116.0,
+   "away_pts": 112.0,
+   "home_pts": 115.5,
    "tags": [],
    "teams": {
     "BKN": {
@@ -281,14 +279,13 @@
       {
        "player": "Mikel Brown Jr.",
        "min": 24.0
-      }
-     ],
-     "q": [
+      },
       {
        "player": "Nolan Traore",
-       "min": 22.5
+       "min": 23.7
       }
-     ]
+     ],
+     "q": []
     },
     "NOP": {
      "out": [
@@ -410,6 +407,14 @@
  ],
  "changed": [
   {
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "5:32 PM"
+  },
+  {
    "player": "Chris Youngblood",
    "team": "POR",
    "status": "Out",
@@ -479,14 +484,6 @@
    "status": "Available",
    "was": "Probable",
    "why": "Right Bone Bruise",
-   "time": "2:49 PM"
-  },
-  {
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "status": "Questionable",
-   "was": "",
-   "why": "Left Sore Calf",
    "time": "2:49 PM"
   }
  ],
@@ -563,6 +560,22 @@
    ],
    "time": "2:49 PM",
    "size": 28.5
+  },
+  {
+   "key": "Nolan Traore",
+   "team": "BKN",
+   "head": "Nolan Traore OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Chaney Johnson",
+     "salary": 3900,
+     "much": "+5.5 DK projected vs. last 3"
+    }
+   ],
+   "time": "5:32 PM",
+   "size": 23.2
   },
   {
    "key": "Karl-Anthony Towns",
@@ -903,6 +916,39 @@
    ]
   },
   {
+   "team": "BKN",
+   "outs": [
+    {
+     "player": "Mikel Brown Jr.",
+     "min": 24.0,
+     "note": "Mikel Brown Jr. sat out Sunday at Dallas because he is not yet cleared for back-to-backs as he comes back from a back injury.",
+     "new": false
+    },
+    {
+     "player": "Nolan Traore",
+     "min": 23.7,
+     "note": "Nolan Traore was questionable for Brooklyn at New Orleans. The show said he has played well this season and is shooting about 46% from three on modest volume.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 47.7,
+   "benefits": [
+    {
+     "player": "Josh Minott",
+     "salary": 3400,
+     "why": "16 minutes, up from 6",
+     "much": "+24.2 DK without them (2 games)",
+     "score": 24.2,
+     "min": 7.8,
+     "dk": 8.5
+    }
+   ],
+   "split_of": [
+    "Mikel Brown Jr."
+   ]
+  },
+  {
    "team": "POR",
    "outs": [
     {
@@ -969,51 +1015,6 @@
    ],
    "split_of": [
     "Paul George"
-   ]
-  },
-  {
-   "team": "LAL",
-   "outs": [
-    {
-     "player": "Quentin Grimes",
-     "min": 25.7,
-     "note": "Quentin Grimes was questionable for the Lakers at Milwaukee after missing recent games. The show said the rest of the Lakers roster appeared available.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 25.7,
-   "benefits": [
-    {
-     "player": "Sandro Mamukelashvili",
-     "salary": 4900,
-     "why": "32 minutes, up from 23",
-     "much": "+25.2 DK without him (1 game)",
-     "score": 25.2,
-     "min": 23.9,
-     "dk": 22.6
-    },
-    {
-     "player": "Collin Sexton",
-     "salary": 4500,
-     "why": "27 minutes, up from 17",
-     "much": "+16.0 DK without him (1 game)",
-     "score": 16.0,
-     "min": 20.7,
-     "dk": 21.8
-    },
-    {
-     "player": "Walker Kessler",
-     "salary": 7500,
-     "why": "same minutes, more production",
-     "much": "+5.5 DK without him (1 game)",
-     "score": 5.5,
-     "min": 30.4,
-     "dk": 36.8
-    }
-   ],
-   "split_of": [
-    "Quentin Grimes"
    ]
   }
  ],
@@ -1110,18 +1111,18 @@
    "salary": 3800
   },
   {
-   "player": "Kel'El Ware",
-   "team": "MIL",
-   "own": 60.5,
-   "dk": 26.2,
-   "salary": 4800
-  },
-  {
    "player": "Stephen Curry",
    "team": "GSW",
    "own": 59.7,
    "dk": 45.4,
    "salary": 7700
+  },
+  {
+   "player": "Kel'El Ware",
+   "team": "MIL",
+   "own": 59.1,
+   "dk": 26.2,
+   "salary": 4800
   },
   {
    "player": "Yaxel Lendeborg",
@@ -1142,14 +1143,14 @@
   {
    "player": "Luka Doncic",
    "team": "LAL",
-   "own": 7.0,
+   "own": 6.6,
    "dk": 65.9,
    "salary": 12300
   },
   {
    "player": "Tyler Herro",
    "team": "MIL",
-   "own": 5.6,
+   "own": 5.9,
    "dk": 37.9,
    "salary": 7100
   }
@@ -1243,8 +1244,8 @@
   ]
  },
  "injuries": {
-  "report": "04:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_04_45PM.pdf",
+  "report": "05:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1551,6 +1552,31 @@
    {
     "game": "BKN at NOP",
     "time": "2026-11-12T01:00Z",
+    "team": "BKN",
+    "player": "Nolan Traore",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:32 PM",
+    "min": 23.7,
+    "benefits": [
+     {
+      "player": "Chaney Johnson",
+      "salary": 3900,
+      "why": "subs in for him 5 of 32 times",
+      "much": "+5.5 DK projected vs. last 3",
+      "score": 5.466666666666668,
+      "min": 18.5,
+      "dk": 11.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "BKN at NOP",
+    "time": "2026-11-12T01:00Z",
     "team": "NOP",
     "player": "Bennedict Mathurin",
     "status": "Out",
@@ -1807,21 +1833,6 @@
       "dk": 7.8
      }
     ],
-    "estimate": false
-   },
-   {
-    "game": "BKN at NOP",
-    "time": "2026-11-12T01:00Z",
-    "team": "BKN",
-    "player": "Nolan Traore",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 23.7,
-    "benefits": [],
     "estimate": false
    },
    {
@@ -2199,8 +2210,8 @@
       "why": "16 minutes, up from 6",
       "much": "+24.2 DK without him (2 games)",
       "score": 24.2,
-      "min": 11.4,
-      "dk": 12.3
+      "min": 7.8,
+      "dk": 8.5
      }
     ],
     "estimate": false
