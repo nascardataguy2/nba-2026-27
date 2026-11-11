@@ -4,7 +4,7 @@
  "seen": {
   "Scottie Barnes": "Out",
   "Nate Bittle": "Out",
-  "Trayce Jackson-Davis": "Questionable",
+  "Trayce Jackson-Davis": "Out",
   "Kawhi Leonard": "Out",
   "Collin Murray-Boyles": "Questionable",
   "Immanuel Quickley": "Questionable",
@@ -19,7 +19,7 @@
   "Tyrese Haliburton": "Out",
   "T.J. McConnell": "Questionable",
   "Ben Sheppard": "Out",
-  "Egor Demin": "Probable",
+  "Egor Demin": "Available",
   "Nolan Traore": "Questionable",
   "Yves Missi": "Out",
   "Trey Murphy III": "Doubtful",
@@ -29,23 +29,29 @@
   "Quinten Post": "Out",
   "Richie Saunders": "Out",
   "Isaiah Stewart": "Questionable",
-  "Quentin Grimes": "Questionable",
+  "Quentin Grimes": "Out",
   "Walker Kessler": "Available",
   "Tobias Harris": "Out",
   "Jayden Quaintance": "Out",
   "Devin Vassell": "Questionable",
-  "Tobe Awaka": "Questionable",
+  "Tobe Awaka": "Out",
   "Zach Collins": "Questionable",
   "Norman Powell": "Questionable",
   "Jimmy Butler III": "Out",
   "Moses Moody": "Out",
   "Gary Payton II": "Out",
   "Kristaps Porzingis": "Out",
-  "Will Richard": "Questionable",
+  "Will Richard": "Probable",
   "Brandon Williams": "Out",
   "Steven Adams": "Out",
   "Clint Capela": "Out",
-  "Bennedict Mathurin": "Out"
+  "Bennedict Mathurin": "Out",
+  "Paul George": "Out",
+  "Josh Hart": "Probable",
+  "Karl-Anthony Towns": "Questionable",
+  "Tyler Herro": "Questionable",
+  "Myles Turner": "Out",
+  "Caleb Wilson": "Questionable"
  },
  "log": [
   {
@@ -63,10 +69,99 @@
    "was": "Probable",
    "why": "",
    "time": "12:42 PM"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "status": "Out",
+   "was": "",
+   "why": "Illness",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Trayce Jackson-Davis",
+   "team": "TOR",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "status": "Probable",
+   "was": "Out",
+   "why": "Illness",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Sore Calf",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Egor Demin",
+   "team": "BKN",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Bone Bruise",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Quentin Grimes",
+   "team": "LAL",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Finger Sprain",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Right Knee Contusion",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Myles Turner",
+   "team": "MIL",
+   "status": "Out",
+   "was": "",
+   "why": "Rest",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Tobe Awaka",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Low Back Tightness",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "2:49 PM"
+  },
+  {
+   "player": "Will Richard",
+   "team": "GSW",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "Left Thumb UCL Tear",
+   "time": "2:49 PM"
   }
  ],
  "teams": [
   "BKN",
+  "BOS",
   "CHI",
   "CLE",
   "DEN",
@@ -75,7 +170,9 @@
   "IND",
   "LAL",
   "MEM",
+  "MIL",
   "NOP",
+  "NYK",
   "SAS",
   "TOR",
   "WAS"
