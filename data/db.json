@@ -2,7 +2,7 @@
  "updated": "2026-11-11",
  "brief": {
   "date": "2026-11-11",
-  "updated": "5:45 PM ET",
+  "updated": "6:00 PM ET",
   "games": 9,
   "pending": [],
   "first_report": "5:38 AM",
@@ -39,12 +39,7 @@
         "min": 12.0
        }
       ],
-      "q": [
-       {
-        "player": "T.J. McConnell",
-        "min": 7.4
-       }
-      ]
+      "q": []
      }
     },
     "key": "Tyrese Haliburton is out, so Quenton Jackson and Larry Nance and Andrew Nembhard should play more than usual."
@@ -160,6 +155,10 @@
         "min": 24.1
        },
        {
+        "player": "Dailyn Swain",
+        "min": 8.0
+       },
+       {
         "player": "Zach Collins",
         "min": 7.7
        }
@@ -187,10 +186,6 @@
      "MEM": {
       "out": [
        {
-        "player": "Isaiah Stewart",
-        "min": 19.7
-       },
-       {
         "player": "Scotty Pippen Jr.",
         "min": 14.7
        }
@@ -198,12 +193,12 @@
       "q": [
        {
         "player": "Isaiah Stewart",
-        "min": 15.6
+        "min": 16.9
        }
       ]
      }
     },
-    "key": "Isaiah Stewart is out, so Ty Jerome should play more than usual."
+    "key": "Nikola Jokic has the top projection in this game at 55.6 DK points."
    },
    {
     "away": "LAL",
@@ -395,6 +390,22 @@
   ],
   "changed": [
    {
+    "player": "Dailyn Swain",
+    "team": "CHI",
+    "status": "Questionable",
+    "was": "Out",
+    "why": "Right Disc Irritation",
+    "time": "6:01 PM"
+   },
+   {
+    "player": "T.J. McConnell",
+    "team": "IND",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Right Hamstring Strain",
+    "time": "6:01 PM"
+   },
+   {
     "player": "Karl-Anthony Towns",
     "team": "NYK",
     "status": "Available",
@@ -456,22 +467,6 @@
     "status": "Probable",
     "was": "Questionable",
     "why": "Left Thumb UCL Tear",
-    "time": "2:49 PM"
-   },
-   {
-    "player": "Caleb Wilson",
-    "team": "CHI",
-    "status": "Questionable",
-    "was": "",
-    "why": "",
-    "time": "2:49 PM"
-   },
-   {
-    "player": "Tobe Awaka",
-    "team": "CHI",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Low Back Tightness",
     "time": "2:49 PM"
    }
   ],
@@ -580,7 +575,7 @@
      {
       "player": "Chaney Johnson",
       "salary": 3900,
-      "much": "+5.5 DK projected vs. last 3"
+      "much": "+4.9 DK projected vs. last 3"
      }
     ],
     "time": "5:32 PM",
@@ -928,8 +923,8 @@
       "why": "16 minutes, up from 6",
       "much": "+24.2 DK without them (2 games)",
       "score": 24.2,
-      "min": 7.8,
-      "dk": 8.5
+      "min": 7.5,
+      "dk": 8.2
      }
     ],
     "split_of": [
@@ -988,7 +983,7 @@
       "why": "started that game",
       "much": "+9.8 DK without him (1 game)",
       "score": 9.8,
-      "min": 20.8,
+      "min": 20.9,
       "dk": 15.8
      },
      {
@@ -1108,7 +1103,7 @@
    {
     "player": "Kel'El Ware",
     "team": "MIL",
-    "own": 59.1,
+    "own": 57.7,
     "dk": 26.2,
     "salary": 4800
    },
@@ -1131,14 +1126,14 @@
    {
     "player": "Luka Doncic",
     "team": "LAL",
-    "own": 6.6,
+    "own": 7.8,
     "dk": 65.9,
     "salary": 12300
    },
    {
     "player": "Tyler Herro",
     "team": "MIL",
-    "own": 5.9,
+    "own": 6.8,
     "dk": 37.9,
     "salary": 7100
    }
@@ -1232,8 +1227,8 @@
    ]
   },
   "injuries": {
-   "report": "05:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_30PM.pdf",
+   "report": "05:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1255,7 +1250,7 @@
        "why": "started that game",
        "much": "+9.8 DK without him (1 game)",
        "score": 9.8,
-       "min": 20.8,
+       "min": 20.9,
        "dk": 15.8
       },
       {
@@ -1317,21 +1312,6 @@
        "dk": 17.0
       }
      ],
-     "estimate": false
-    },
-    {
-     "game": "WAS at IND",
-     "time": "2026-11-12T00:00Z",
-     "team": "IND",
-     "player": "T.J. McConnell",
-     "status": "Questionable",
-     "reason": "Right Hamstring Strain",
-     "new": true,
-     "was": "Available",
-     "known": true,
-     "changed_at": "",
-     "min": 8.5,
-     "benefits": [],
      "estimate": false
     },
     {
@@ -1479,10 +1459,10 @@
        "player": "Chaney Johnson",
        "salary": 3900,
        "why": "subs in for him 5 of 32 times",
-       "much": "+5.5 DK projected vs. last 3",
-       "score": 5.466666666666668,
-       "min": 18.5,
-       "dk": 11.3
+       "much": "+4.9 DK projected vs. last 3",
+       "score": 4.866666666666666,
+       "min": 17.6,
+       "dk": 10.7
       }
      ],
      "estimate": false
@@ -1768,9 +1748,24 @@
        "much": "+6.8 DK without him (3 games)",
        "score": 6.8,
        "min": 28.4,
-       "dk": 38.0
+       "dk": 38.1
       }
      ],
+     "estimate": false
+    },
+    {
+     "game": "SAS at CHI",
+     "time": "2026-11-12T01:00Z",
+     "team": "CHI",
+     "player": "Dailyn Swain",
+     "status": "Questionable",
+     "reason": "Right Disc Irritation",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "6:01 PM",
+     "min": 9.5,
+     "benefits": [],
      "estimate": false
     },
     {
@@ -2123,8 +2118,8 @@
        "why": "16 minutes, up from 6",
        "much": "+24.2 DK without him (2 games)",
        "score": 24.2,
-       "min": 7.8,
-       "dk": 8.5
+       "min": 7.5,
+       "dk": 8.2
       }
      ],
      "estimate": false
@@ -2513,6 +2508,11 @@
     }
    ],
    "minor": [
+    {
+     "player": "T.J. McConnell",
+     "team": "IND",
+     "status": "Available"
+    },
     {
      "player": "Reece Beekman",
      "team": "WAS",
