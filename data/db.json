@@ -2,12 +2,9 @@
  "updated": "2026-11-12",
  "brief": {
   "date": "2026-11-12",
-  "updated": "12:40 PM ET",
+  "updated": "3:16 PM ET",
   "games": 4,
-  "pending": [
-   "WAS",
-   "TOR"
-  ],
+  "pending": [],
   "first_report": "5:46 AM",
   "cards": [
    {
@@ -15,27 +12,34 @@
     "home": "PHI",
     "time": "2026-11-13T00:00Z",
     "slate": "main",
-    "ou": 221.5,
+    "ou": 224.5,
     "fav": "PHI",
-    "line": 9.5,
-    "away_pts": 106.0,
-    "home_pts": 115.5,
+    "line": 7.5,
+    "away_pts": 108.5,
+    "home_pts": 116.0,
     "tags": [
-     "Blowout risk",
      "TOR on a back-to-back"
     ],
     "teams": {
      "TOR": {
-      "out": [],
-      "q": [
+      "out": [
        {
         "player": "Scottie Barnes",
-        "min": 27.0
+        "min": 35.3
+       },
+       {
+        "player": "Kawhi Leonard",
+        "min": 26.0
        }
-      ]
+      ],
+      "q": []
      },
      "PHI": {
       "out": [
+       {
+        "player": "LeBron James",
+        "min": 31.3
+       },
        {
         "player": "Adem Bona",
         "min": 17.0
@@ -43,17 +47,13 @@
       ],
       "q": [
        {
-        "player": "LeBron James",
-        "min": 32.3
-       },
-       {
         "player": "Joel Embiid",
-        "min": 29.6
+        "min": 32.8
        }
       ]
      }
     },
-    "key": "Tyrese Maxey has the top projection in this game at 41.7 DK points."
+    "key": "Scottie Barnes and Kawhi Leonard are out, so Jakob Poeltl and Jamal Shead and RJ Barrett should play more than usual."
    },
    {
     "away": "DET",
@@ -84,7 +84,12 @@
       "q": []
      },
      "WAS": {
-      "out": [],
+      "out": [
+       {
+        "player": "Justin Champagnie",
+        "min": 17.7
+       }
+      ],
       "q": []
      }
     },
@@ -95,11 +100,11 @@
     "home": "MIN",
     "time": "2026-11-13T01:00Z",
     "slate": "main",
-    "ou": 227.5,
+    "ou": 225.5,
     "fav": "MIN",
     "line": 5.5,
-    "away_pts": 111.0,
-    "home_pts": 116.5,
+    "away_pts": 110.0,
+    "home_pts": 115.5,
     "tags": [
      "Highest total"
     ],
@@ -130,11 +135,11 @@
     "home": "PHX",
     "time": "2026-11-13T02:00Z",
     "slate": "main",
-    "ou": 213.5,
+    "ou": 214.5,
     "fav": "PHX",
     "line": 6.5,
-    "away_pts": 103.5,
-    "home_pts": 110.0,
+    "away_pts": 104.0,
+    "home_pts": 110.5,
     "tags": [
      "Lowest total"
     ],
@@ -160,9 +165,150 @@
     "key": "Dennis Schroder and Brandon Miller are out, so Ryan Kalkbrenner and Grayson Allen and Naz Reid should play more than usual."
    }
   ],
-  "changed": [],
-  "chg": [],
+  "changed": [
+   {
+    "player": "Grant Williams",
+    "team": "CHA",
+    "status": "Available",
+    "was": "Probable",
+    "why": "Right Hamstring Strain",
+    "time": "3:16 PM"
+   },
+   {
+    "player": "Moussa Diabate",
+    "team": "CHA",
+    "status": "Available",
+    "was": "Probable",
+    "why": "",
+    "time": "3:16 PM"
+   },
+   {
+    "player": "LeBron James",
+    "team": "PHI",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "3:16 PM"
+   }
+  ],
+  "chg": [
+   {
+    "key": "LeBron James",
+    "team": "PHI",
+    "head": "LeBron James OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Dean Wade",
+      "salary": 3900,
+      "much": "+12.7 DK without him (2 games)"
+     },
+     {
+      "player": "VJ Edgecombe",
+      "salary": 6100,
+      "much": "+10.0 DK without him (2 games)"
+     }
+    ],
+    "time": "3:16 PM",
+    "size": 37.4
+   }
+  ],
   "sits": [
+   {
+    "team": "PHI",
+    "outs": [
+     {
+      "player": "LeBron James",
+      "min": 31.3,
+      "note": "LeBron James is listed as questionable for Thursday with low back sciatica management, even though it is not a back-to-back. The show expects him to sit one game of Philadelphia's upcoming back-to-back as well.",
+      "new": true
+     },
+     {
+      "player": "Adem Bona",
+      "min": 17.0,
+      "note": "Adem Bona is out for Philadelphia on Thursday. He has not played since Nov. 4.",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 48.3,
+    "benefits": [
+     {
+      "player": "Dean Wade",
+      "salary": 3900,
+      "why": "started 2 of 2",
+      "much": "+12.7 DK without them (2 games)",
+      "score": 12.7,
+      "min": 25.0,
+      "dk": 16.0
+     },
+     {
+      "player": "VJ Edgecombe",
+      "salary": 6100,
+      "why": "same minutes, more production",
+      "much": "+10.0 DK without them (2 games)",
+      "score": 10.0,
+      "min": 34.0,
+      "dk": 32.0
+     }
+    ],
+    "split_of": [
+     "LeBron James"
+    ]
+   },
+   {
+    "team": "TOR",
+    "outs": [
+     {
+      "player": "Scottie Barnes",
+      "min": 35.3,
+      "note": "Scottie Barnes (left groin strain) missed Toronto's games on Nov 9 and Nov 11. The show expects him to be ruled out again for the second leg of the back-to-back on Nov 12.",
+      "new": false
+     },
+     {
+      "player": "Kawhi Leonard",
+      "min": 26.0,
+      "note": "Kawhi Leonard (left knee) missed his ninth straight game Wednesday. Coach Darko Rajakovic said he is progressing well with individual conditioning, and Toronto said Tuesday it would update his status in a week.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 61.3,
+    "benefits": [
+     {
+      "player": "Jakob Poeltl",
+      "salary": 5500,
+      "why": "31 minutes, up from 20",
+      "much": "+18.9 DK without them (3 games)",
+      "score": 18.9,
+      "min": 34.8,
+      "dk": 37.9
+     },
+     {
+      "player": "Jamal Shead",
+      "salary": 6000,
+      "why": "started 2 of 3",
+      "much": "+16.5 DK without them (3 games)",
+      "score": 16.5,
+      "min": 30.0,
+      "dk": 29.6
+     },
+     {
+      "player": "RJ Barrett",
+      "salary": 8300,
+      "why": "Show: more usage at $8,300 (11/12)",
+      "much": "+8.0 DK projected vs. last 3",
+      "score": 8.0,
+      "min": 35.1,
+      "dk": 43.0
+     }
+    ],
+    "split_of": [
+     "Scottie Barnes",
+     "Kawhi Leonard"
+    ]
+   },
    {
     "team": "CHA",
     "outs": [
@@ -189,7 +335,7 @@
       "much": "+23.9 DK without them (1 game)",
       "score": 23.9,
       "min": 26.2,
-      "dk": 24.2
+      "dk": 24.3
      },
      {
       "player": "Grayson Allen",
@@ -198,7 +344,7 @@
       "much": "+22.5 DK without them (1 game)",
       "score": 22.5,
       "min": 28.8,
-      "dk": 30.0
+      "dk": 29.9
      },
      {
       "player": "Naz Reid",
@@ -207,7 +353,7 @@
       "much": "+21.2 DK without them (1 game)",
       "score": 21.2,
       "min": 30.6,
-      "dk": 36.7
+      "dk": 36.4
      }
     ],
     "split_of": [
@@ -235,7 +381,7 @@
       "much": "+14.2 DK without him (7 games)",
       "score": 14.2,
       "min": 33.0,
-      "dk": 35.0
+      "dk": 34.9
      },
      {
       "player": "Nah'Shon Hyland",
@@ -253,7 +399,7 @@
       "much": "+8.3 DK without him (7 games)",
       "score": 8.3,
       "min": 17.9,
-      "dk": 12.8
+      "dk": 13.0
      }
     ],
     "split_of": [
@@ -280,7 +426,7 @@
       "much": "+8.0 DK without him (8 games)",
       "score": 8.0,
       "min": 27.9,
-      "dk": 28.2
+      "dk": 28.3
      },
      {
       "player": "Cade Cunningham",
@@ -303,6 +449,33 @@
     ],
     "split_of": [
      "Jalen Duren"
+    ]
+   },
+   {
+    "team": "WAS",
+    "outs": [
+     {
+      "player": "Justin Champagnie",
+      "min": 17.7,
+      "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 17.7,
+    "benefits": [
+     {
+      "player": "Anthony Davis",
+      "salary": 9000,
+      "why": "same minutes, more production",
+      "much": "+6.4 DK without him (6 games)",
+      "score": 6.4,
+      "min": 30.6,
+      "dk": 40.4
+     }
+    ],
+    "split_of": [
+     "Justin Champagnie"
     ]
    }
   ],
@@ -392,55 +565,55 @@
   ],
   "chalk": [
    {
-    "player": "Sion James",
-    "team": "CHA",
-    "own": 68.3,
-    "dk": 21.9,
-    "salary": 4900
+    "player": "Jakob Poeltl",
+    "team": "TOR",
+    "own": 73.3,
+    "dk": 37.9,
+    "salary": 5500
    },
    {
     "player": "Daniss Jenkins",
     "team": "DET",
-    "own": 52.3,
-    "dk": 28.2,
+    "own": 51.3,
+    "dk": 28.3,
     "salary": 5000
    },
    {
     "player": "Duncan Robinson",
     "team": "DET",
-    "own": 42.4,
-    "dk": 29.3,
+    "own": 42.6,
+    "dk": 29.5,
     "salary": 5400
    },
    {
-    "player": "Rudy Gobert",
-    "team": "MIN",
-    "own": 40.0,
-    "dk": 27.0,
-    "salary": 5800
+    "player": "Grant Williams",
+    "team": "CHA",
+    "own": 37.7,
+    "dk": 20.2,
+    "salary": 3000
    }
   ],
   "leverage": [
    {
-    "player": "Jaylen Brown",
-    "team": "PHI",
-    "own": 6.1,
-    "dk": 36.4,
-    "salary": 8100
+    "player": "Ryan Kalkbrenner",
+    "team": "CHA",
+    "own": 5.8,
+    "dk": 24.3,
+    "salary": 5000
    },
    {
-    "player": "AJ Dybantsa",
-    "team": "WAS",
-    "own": 8.5,
-    "dk": 29.2,
-    "salary": 6600
+    "player": "Moussa Diabate",
+    "team": "CHA",
+    "own": 2.6,
+    "dk": 27.2,
+    "salary": 5600
    },
    {
-    "player": "Jalen Green",
-    "team": "PHX",
-    "own": 1.0,
-    "dk": 25.2,
-    "salary": 5700
+    "player": "Ausar Thompson",
+    "team": "DET",
+    "own": 6.9,
+    "dk": 31.0,
+    "salary": 6500
    }
   ],
   "last": {
@@ -542,24 +715,21 @@
    ]
   },
   "injuries": {
-   "report": "12:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_12_30PM.pdf",
-   "pending": [
-    "WAS",
-    "TOR"
-   ],
+   "report": "03:00 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_03_00PM.pdf",
+   "pending": [],
    "rows": [
     {
      "game": "TOR at PHI",
      "time": "2026-11-13T00:00Z",
      "team": "PHI",
      "player": "LeBron James",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "3:16 PM",
      "min": 31.3,
      "benefits": [
       {
@@ -568,8 +738,8 @@
        "why": "started 2 of 2",
        "much": "+12.7 DK without him (2 games)",
        "score": 12.7,
-       "min": 19.4,
-       "dk": 11.7
+       "min": 25.0,
+       "dk": 16.0
       },
       {
        "player": "VJ Edgecombe",
@@ -577,8 +747,8 @@
        "why": "same minutes, more production",
        "much": "+10.0 DK without him (2 games)",
        "score": 10.0,
-       "min": 33.3,
-       "dk": 30.0
+       "min": 34.0,
+       "dk": 32.0
       }
      ],
      "estimate": false
@@ -602,8 +772,8 @@
        "why": "started 2 of 2",
        "much": "+14.4 DK without him (2 games)",
        "score": 14.4,
-       "min": 19.4,
-       "dk": 11.7
+       "min": 25.0,
+       "dk": 16.0
       },
       {
        "player": "Anfernee Simons",
@@ -611,8 +781,8 @@
        "why": "26 minutes, up from 21",
        "much": "+10.3 DK without him (2 games)",
        "score": 10.3,
-       "min": 18.5,
-       "dk": 14.5
+       "min": 21.8,
+       "dk": 17.8
       },
       {
        "player": "Tyrese Maxey",
@@ -620,8 +790,8 @@
        "why": "same minutes, more production",
        "much": "+10.2 DK without him (2 games)",
        "score": 10.2,
-       "min": 35.0,
-       "dk": 41.7
+       "min": 36.0,
+       "dk": 44.5
       }
      ],
      "estimate": false
@@ -646,7 +816,7 @@
        "much": "+9.0 DK without him (6 games)",
        "score": 9.0,
        "min": 17.2,
-       "dk": 16.0
+       "dk": 16.3
       },
       {
        "player": "Kyrie Irving",
@@ -655,7 +825,7 @@
        "much": "+7.2 DK without him (6 games)",
        "score": 7.2,
        "min": 30.5,
-       "dk": 34.7
+       "dk": 34.9
       }
      ],
      "estimate": false
@@ -680,14 +850,100 @@
      "time": "2026-11-13T02:00Z",
      "team": "CHA",
      "player": "Moussa Diabate",
-     "status": "Probable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "Out",
+     "was": "Probable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "3:16 PM",
      "min": 27.0,
      "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "TOR at PHI",
+     "time": "2026-11-13T00:00Z",
+     "team": "TOR",
+     "player": "Scottie Barnes",
+     "status": "Out",
+     "reason": "Left Groin Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 35.3,
+     "benefits": [
+      {
+       "player": "Jakob Poeltl",
+       "salary": 5500,
+       "why": "31 minutes, up from 20",
+       "much": "+18.9 DK without him (3 games)",
+       "score": 18.9,
+       "min": 34.8,
+       "dk": 37.9
+      },
+      {
+       "player": "Jamal Shead",
+       "salary": 6000,
+       "why": "started 2 of 3",
+       "much": "+16.5 DK without him (3 games)",
+       "score": 16.5,
+       "min": 30.0,
+       "dk": 29.6
+      },
+      {
+       "player": "RJ Barrett",
+       "salary": 8300,
+       "why": "Show: more usage at $8,300 (11/12)",
+       "much": "+8.0 DK projected vs. last 3",
+       "score": 8.0,
+       "min": 35.1,
+       "dk": 43.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "TOR at PHI",
+     "time": "2026-11-13T00:00Z",
+     "team": "TOR",
+     "player": "Kawhi Leonard",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 26.0,
+     "benefits": [
+      {
+       "player": "Jamal Shead",
+       "salary": 6000,
+       "why": "25 minutes, up from 20",
+       "much": "+11.9 DK without him (9 games)",
+       "score": 11.9,
+       "min": 30.0,
+       "dk": 29.6
+      },
+      {
+       "player": "Collin Murray-Boyles",
+       "salary": 5700,
+       "why": "started, 34 minutes, 19 points (11/06)",
+       "much": "+4.3 DK projected vs. last 3",
+       "score": 4.300000000000001,
+       "min": 27.6,
+       "dk": 29.3
+      },
+      {
+       "player": "Ja'Kobe Walter",
+       "salary": 5600,
+       "why": "35 minutes, 17 points (11/11)",
+       "much": "+4.1 DK projected vs. last 3",
+       "score": 4.149999999999999,
+       "min": 32.2,
+       "dk": 27.4
+      }
+     ],
      "estimate": false
     },
     {
@@ -710,7 +966,7 @@
        "much": "+8.0 DK without him (8 games)",
        "score": 8.0,
        "min": 27.9,
-       "dk": 28.2
+       "dk": 28.3
       },
       {
        "player": "Cade Cunningham",
@@ -734,6 +990,31 @@
      "estimate": false
     },
     {
+     "game": "DET at WAS",
+     "time": "2026-11-13T00:00Z",
+     "team": "WAS",
+     "player": "Justin Champagnie",
+     "status": "Out",
+     "reason": "Right Foot Surgery",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 17.7,
+     "benefits": [
+      {
+       "player": "Anthony Davis",
+       "salary": 9000,
+       "why": "same minutes, more production",
+       "much": "+6.4 DK without him (6 games)",
+       "score": 6.4,
+       "min": 30.6,
+       "dk": 40.4
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "TOR at PHI",
      "time": "2026-11-13T00:00Z",
      "team": "PHI",
@@ -745,7 +1026,17 @@
      "known": true,
      "changed_at": "",
      "min": 17.0,
-     "benefits": [],
+     "benefits": [
+      {
+       "player": "Dean Wade",
+       "salary": 3900,
+       "why": "subs in for him 7 of 29 times",
+       "much": "+5.9 DK projected vs. last 3",
+       "score": 5.916666666666666,
+       "min": 25.0,
+       "dk": 16.0
+      }
+     ],
      "estimate": false
     },
     {
@@ -768,7 +1059,7 @@
        "much": "+5.8 DK without him (7 games)",
        "score": 5.8,
        "min": 25.7,
-       "dk": 22.0
+       "dk": 22.2
       }
      ],
      "estimate": false
@@ -793,7 +1084,7 @@
        "much": "+14.2 DK without him (7 games)",
        "score": 14.2,
        "min": 33.0,
-       "dk": 35.0
+       "dk": 34.9
       },
       {
        "player": "Nah'Shon Hyland",
@@ -811,7 +1102,7 @@
        "much": "+8.3 DK without him (7 games)",
        "score": 8.3,
        "min": 17.9,
-       "dk": 12.8
+       "dk": 13.0
       }
      ],
      "estimate": false
@@ -836,7 +1127,7 @@
        "much": "+8.9 DK without him (2 games)",
        "score": 8.9,
        "min": 26.2,
-       "dk": 24.2
+       "dk": 24.3
       },
       {
        "player": "Royce O'Neale",
@@ -845,7 +1136,7 @@
        "much": "+7.9 DK without him (2 games)",
        "score": 7.9,
        "min": 22.9,
-       "dk": 17.9
+       "dk": 17.8
       },
       {
        "player": "Naz Reid",
@@ -854,7 +1145,7 @@
        "much": "+7.2 DK without him (2 games)",
        "score": 7.2,
        "min": 30.6,
-       "dk": 36.7
+       "dk": 36.4
       }
      ],
      "estimate": false
@@ -879,7 +1170,7 @@
        "much": "+23.9 DK without him (1 game)",
        "score": 23.9,
        "min": 26.2,
-       "dk": 24.2
+       "dk": 24.3
       },
       {
        "player": "Grayson Allen",
@@ -888,7 +1179,7 @@
        "much": "+22.5 DK without him (1 game)",
        "score": 22.5,
        "min": 28.8,
-       "dk": 30.0
+       "dk": 29.9
       },
       {
        "player": "Naz Reid",
@@ -897,7 +1188,7 @@
        "much": "+21.2 DK without him (1 game)",
        "score": 21.2,
        "min": 30.6,
-       "dk": 36.7
+       "dk": 36.4
       }
      ],
      "estimate": false
@@ -907,7 +1198,32 @@
     {
      "player": "Grant Williams",
      "team": "CHA",
-     "status": "Probable"
+     "status": "Available"
+    },
+    {
+     "player": "Trayce Jackson-Davis",
+     "team": "TOR",
+     "status": "Out"
+    },
+    {
+     "player": "Reece Beekman",
+     "team": "WAS",
+     "status": "Out"
+    },
+    {
+     "player": "Tristan Vukcevic",
+     "team": "WAS",
+     "status": "Out"
+    },
+    {
+     "player": "Jamir Watkins",
+     "team": "WAS",
+     "status": "Out"
+    },
+    {
+     "player": "Nate Bittle",
+     "team": "TOR",
+     "status": "Out"
     },
     {
      "player": "Dominick Barlow",
@@ -10498,13 +10814,13 @@
   },
   {
    "team": "PHI",
-   "starters": "Tyrese Maxey (36), VJ Edgecombe (33), Jaylen Brown (35), LeBron James (32), Joel Embiid (32)",
-   "bench": "Dean Wade (25), Kentavious Caldwell-Pope (22), Anfernee Simons (22), Jabari Walker (11)",
+   "starters": "Tyrese Maxey (36), VJ Edgecombe (33), Jaylen Brown (35), Joel Embiid (32), Dean Wade (25)",
+   "bench": "Kentavious Caldwell-Pope (22), Anfernee Simons (22), Jabari Walker (11)",
    "backup_c": "Adem Bona",
    "coach": "Nick Nurse",
    "notes": "Jaylen Brown, LeBron James, Maxey and Embiid together cannot all keep last year's usage, so expect pullbacks. Embiid is expected to miss time.",
    "source": "LO-1018",
-   "out": "Adem Bona",
+   "out": "Adem Bona, LeBron James",
    "depth_through": "2026-11-10",
    "games": 12
   },
@@ -10547,12 +10863,12 @@
   {
    "team": "TOR",
    "starters": "RJ Barrett (33), Ja'Kobe Walter (30), Jakob Poeltl (24), Collin Murray-Boyles (22), Jamal Shead (24)",
-   "bench": "Immanuel Quickley (31), Jamison Battle (19), Alijah Martin (12), Allen Graves (14), Trayce Jackson-Davis (7), Kyle Anderson (8), Jaden Bradley (5)",
+   "bench": "Immanuel Quickley (31), Jamison Battle (19), Alijah Martin (12), Allen Graves (14), Kyle Anderson (8), Jaden Bradley (5)",
    "backup_c": "Jakob Poeltl",
    "coach": "Darko Rajakovic",
    "notes": "Kawhi arrived by trade from the Clippers. Sandro Mamukelashvili is gone, which opens backup center minutes for Murray-Boyles.",
    "source": "LO-1015",
-   "out": "",
+   "out": "Kawhi Leonard, Scottie Barnes, Trayce Jackson-Davis",
    "depth_through": "2026-11-11",
    "games": 11
   },
@@ -10588,7 +10904,7 @@
    "coach": "Brian Keefe",
    "notes": "Washington should be a much better team. Sarr's usage and blocks should drop next to Davis. Sarr will likely be ready for opening night.",
    "source": "LO-1018",
-   "out": "",
+   "out": "Justin Champagnie, Reece Beekman",
    "depth_through": "2026-11-11",
    "games": 12
   },
@@ -20684,7 +21000,7 @@
   {
    "rank": 296,
    "player": "Trayce Jackson-Davis",
-   "pos": "C",
+   "pos": "SF,PF",
    "team": "TOR",
    "flag": "",
    "change": "",

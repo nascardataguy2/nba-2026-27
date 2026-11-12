@@ -8,7 +8,7 @@
   "Adem Bona": "Out",
   "Joel Embiid": "Questionable",
   "Ariel Hukporti": "Out",
-  "LeBron James": "Questionable",
+  "LeBron James": "Out",
   "Tarik Biberovic": "Out",
   "Sergio De Larrea": "Out",
   "Morez Johnson Jr.": "Probable",
@@ -17,21 +17,48 @@
   "Joan Beringer": "Available",
   "Donte DiVincenzo": "Out",
   "Anthony Edwards": "Out",
-  "Moussa Diabate": "Probable",
+  "Moussa Diabate": "Available",
   "Kon Knueppel": "Out",
   "Brandon Miller": "Out",
   "Dennis Schroder": "Out",
-  "Grant Williams": "Probable",
+  "Grant Williams": "Available",
   "Mark Williams": "Out",
   "Ebuka Okorie": "Out"
  },
- "log": [],
+ "log": [
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "3:16 PM"
+  },
+  {
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "3:16 PM"
+  },
+  {
+   "player": "Grant Williams",
+   "team": "CHA",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Hamstring Strain",
+   "time": "3:16 PM"
+  }
+ ],
  "teams": [
   "CHA",
   "DAL",
   "DET",
   "MIN",
   "PHI",
-  "PHX"
+  "PHX",
+  "TOR",
+  "WAS"
  ]
 }
