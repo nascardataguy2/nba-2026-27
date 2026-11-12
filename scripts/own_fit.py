@@ -72,7 +72,7 @@ def miss(b, S, days):
     tot, n = 0.0, 0
     for d in days:
         X, top, low = S[d]
-        v = shares(X, b)
+        v = shares(X, b, cap=85.0)
         ti = {i for i, _ in top}
         tot += sum(abs(v[i] - o) for i, o in top)
         n += len(top)
@@ -84,7 +84,7 @@ def loss(b, S, days, b0):
     L = 0.0
     for d in days:
         X, top, low = S[d]
-        v = shares(X, b)
+        v = shares(X, b, cap=85.0)
         ti = {i for i, _ in top}
         L += sum((np.log(v[i] + 1) - np.log(o + 1)) ** 2 for i, o in top)
         L += sum((np.log(v[j] + 1) - np.log(low + 1)) ** 2 for j in range(len(v)) if j not in ti and v[j] > low)

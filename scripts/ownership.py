@@ -42,7 +42,7 @@ CORE = ["PG", "SG", "SF", "PF", "C", "G", "F"]
 # z-score, log(field value rank), salary / 10000, log(games on the slate). Fit on real
 # DraftKings ownership; scripts/own_fit.py updates data/own_model.json weekly.
 BETA_DEFAULT = [-0.4527, 0.526, -0.1185, 0.0514, -0.16, -0.2294, 0.0128]
-OWN_MAX = 85.0  # real main slates topped out at 83%; the extra goes to everyone else
+OWN_MAX = 40.0  # hard limit (Pearce 11/12): 40% is already very high in the big main GPP; a 70%+ number looks wrong. The extra goes to everyone else.
 
 
 def beta():
@@ -80,8 +80,32 @@ def calibrate(pool, raw):
     """Turn simulated shares into estimates that match real field ownership."""
     if not raw or len(pool) < 8:
         return raw
-    v = shares(features(pool, raw), beta())
+    v = shares(features(pool, raw), beta(), cap=85.0)
+    v = limit(v)
     return {p["player"]: round(float(x), 1) for p, x in zip(pool, v)}
+
+
+KNEE = 25.0   # below this, numbers are left alone
+TOP = 38.0    # the most-owned player shows at most this (always under OWN_MAX)
+
+
+def limit(v):
+    """Site limit (Pearce 11/12): keep Own% believable. Everything above KNEE is squeezed in
+    the same proportion so the top player lands at TOP or lower and the order stays the
+    same (no row of players stuck at the cap). What is taken off goes to the players under
+    KNEE in proportion, so the slate still adds to 800%."""
+    v = np.array(v, dtype=float)
+    hi = v.max()
+    if hi <= TOP:
+        return v
+    k = (TOP - KNEE) / (hi - KNEE)
+    over = v > KNEE
+    cut = ((v[over] - KNEE) * (1 - k)).sum()
+    v[over] = KNEE + (v[over] - KNEE) * k
+    under = ~over
+    if under.any() and v[under].sum() > 0:
+        v[under] += cut * v[under] / v[under].sum()
+    return np.minimum(v, OWN_MAX)
 
 
 def elig(pos):

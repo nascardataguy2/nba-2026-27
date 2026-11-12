@@ -108,3 +108,9 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Every number is checked against data/proj_history/box. No show or host names in the text.
 - playerlog.py drops outdated entries by itself (expired one-night statuses, injuries once he plays again, old roles once a newer role is in, game lines older than 7 days, duplicates).
 - The site shows the log on every player view: Players cards, projection/ranking/optimizer notes, Stars & Scrubs and Injuries.
+
+## Ownership rules (11/12, from Pearce — never break)
+- Own% must never look stupid to a DFS player. It is not about being right; a crazy number makes users leave or attack the site.
+- Hard limit: no player above 40% on the site, on any slate size. The excess goes to everyone else in proportion, so the slate still adds to 800%.
+- Never present ownership as real unless it comes from a known contest. Fantasy Team Advice's history is from an unnamed "tracked contest"; treat it as unverified.
+- Never call a guess research. Real data, a known source, a check against results, or say "estimate".
