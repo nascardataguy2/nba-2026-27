@@ -2,7 +2,7 @@
  "updated": "2026-11-12",
  "brief": {
   "date": "2026-11-12",
-  "updated": "4:51 PM ET",
+  "updated": "5:17 PM ET",
   "games": 4,
   "pending": [],
   "first_report": "5:46 AM",
@@ -53,7 +53,7 @@
       ]
      }
     },
-    "key": "Scottie Barnes and Kawhi Leonard are out, so Jakob Poeltl and Jamal Shead and RJ Barrett should play more than usual."
+    "key": "Scottie Barnes and Kawhi Leonard are out, so Jakob Poeltl and Jamal Shead and Collin Murray-Boyles should play more than usual."
    },
    {
     "away": "DET",
@@ -241,7 +241,7 @@
       "much": "+12.7 DK without them (2 games)",
       "score": 12.7,
       "min": 25.0,
-      "dk": 16.0
+      "dk": 16.1
      },
      {
       "player": "VJ Edgecombe",
@@ -250,7 +250,7 @@
       "much": "+10.0 DK without them (2 games)",
       "score": 10.0,
       "min": 34.0,
-      "dk": 32.0
+      "dk": 32.2
      }
     ],
     "split_of": [
@@ -283,7 +283,7 @@
       "much": "+18.9 DK without them (3 games)",
       "score": 18.9,
       "min": 34.8,
-      "dk": 37.9
+      "dk": 37.8
      },
      {
       "player": "Jamal Shead",
@@ -292,16 +292,16 @@
       "much": "+16.5 DK without them (3 games)",
       "score": 16.5,
       "min": 30.0,
-      "dk": 29.6
+      "dk": 29.5
      },
      {
-      "player": "RJ Barrett",
-      "salary": 8300,
-      "why": "Show: more usage at $8,300 (11/12)",
-      "much": "+8.0 DK projected vs. last 3",
-      "score": 8.0,
-      "min": 35.1,
-      "dk": 43.0
+      "player": "Collin Murray-Boyles",
+      "salary": 5700,
+      "why": "started 2 of 2",
+      "much": "+7.8 DK without them (2 games)",
+      "score": 7.8,
+      "min": 27.6,
+      "dk": 29.0
      }
     ],
     "split_of": [
@@ -335,7 +335,7 @@
       "much": "+23.9 DK without them (1 game)",
       "score": 23.9,
       "min": 26.2,
-      "dk": 24.3
+      "dk": 24.2
      },
      {
       "player": "Grayson Allen",
@@ -344,7 +344,7 @@
       "much": "+22.5 DK without them (1 game)",
       "score": 22.5,
       "min": 28.8,
-      "dk": 29.9
+      "dk": 30.0
      },
      {
       "player": "Naz Reid",
@@ -353,7 +353,7 @@
       "much": "+21.2 DK without them (1 game)",
       "score": 21.2,
       "min": 30.6,
-      "dk": 36.4
+      "dk": 36.5
      }
     ],
     "split_of": [
@@ -381,7 +381,7 @@
       "much": "+14.2 DK without him (7 games)",
       "score": 14.2,
       "min": 33.0,
-      "dk": 34.9
+      "dk": 34.8
      },
      {
       "player": "Nah'Shon Hyland",
@@ -399,7 +399,7 @@
       "much": "+8.3 DK without him (7 games)",
       "score": 8.3,
       "min": 17.9,
-      "dk": 13.0
+      "dk": 12.8
      }
     ],
     "split_of": [
@@ -442,9 +442,9 @@
       "salary": 6400,
       "why": "started, 20 minutes, 10 rebounds (11/08)",
       "much": "+7.4 DK projected vs. last 3",
-      "score": 7.449999999999999,
+      "score": 7.350000000000001,
       "min": 27.1,
-      "dk": 30.7
+      "dk": 30.6
      }
     ],
     "split_of": [
@@ -471,7 +471,7 @@
       "much": "+6.4 DK without him (6 games)",
       "score": 6.4,
       "min": 30.6,
-      "dk": 40.4
+      "dk": 40.6
      }
     ],
     "split_of": [
@@ -568,50 +568,50 @@
     "player": "Jakob Poeltl",
     "team": "TOR",
     "own": 38.0,
-    "dk": 37.9,
+    "dk": 37.8,
     "salary": 5500
    },
    {
     "player": "Daniss Jenkins",
     "team": "DET",
-    "own": 36.6,
+    "own": 36.8,
     "dk": 28.3,
     "salary": 5000
    },
    {
-    "player": "Kyrie Irving",
-    "team": "DAL",
-    "own": 30.3,
-    "dk": 34.9,
-    "salary": 7600
-   },
-   {
     "player": "Kevin Huerter",
     "team": "DET",
-    "own": 30.1,
+    "own": 30.3,
     "dk": 22.2,
     "salary": 3900
+   },
+   {
+    "player": "Grayson Allen",
+    "team": "CHA",
+    "own": 29.5,
+    "dk": 30.0,
+    "salary": 5900
    }
   ],
   "leverage": [
    {
-    "player": "Ryan Kalkbrenner",
-    "team": "CHA",
-    "own": 7.0,
-    "dk": 24.3,
-    "salary": 5000
-   },
-   {
     "player": "Moussa Diabate",
     "team": "CHA",
-    "own": 3.6,
+    "own": 4.2,
     "dk": 27.2,
     "salary": 5600
    },
    {
+    "player": "Ryan Kalkbrenner",
+    "team": "CHA",
+    "own": 6.6,
+    "dk": 24.2,
+    "salary": 5000
+   },
+   {
     "player": "Ausar Thompson",
     "team": "DET",
-    "own": 8.0,
+    "own": 8.4,
     "dk": 31.0,
     "salary": 6500
    }
@@ -715,8 +715,8 @@
    ]
   },
   "injuries": {
-   "report": "04:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_04_45PM.pdf",
+   "report": "05:00 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_05_00PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -739,7 +739,7 @@
        "much": "+12.7 DK without him (2 games)",
        "score": 12.7,
        "min": 25.0,
-       "dk": 16.0
+       "dk": 16.1
       },
       {
        "player": "VJ Edgecombe",
@@ -748,7 +748,7 @@
        "much": "+10.0 DK without him (2 games)",
        "score": 10.0,
        "min": 34.0,
-       "dk": 32.0
+       "dk": 32.2
       }
      ],
      "estimate": false
@@ -773,7 +773,7 @@
        "much": "+14.4 DK without him (2 games)",
        "score": 14.4,
        "min": 25.0,
-       "dk": 16.0
+       "dk": 16.1
       },
       {
        "player": "Anfernee Simons",
@@ -782,7 +782,7 @@
        "much": "+10.3 DK without him (2 games)",
        "score": 10.3,
        "min": 21.8,
-       "dk": 17.8
+       "dk": 18.2
       },
       {
        "player": "Tyrese Maxey",
@@ -791,7 +791,7 @@
        "much": "+10.2 DK without him (2 games)",
        "score": 10.2,
        "min": 36.0,
-       "dk": 44.5
+       "dk": 44.8
       }
      ],
      "estimate": false
@@ -825,7 +825,7 @@
        "much": "+7.2 DK without him (6 games)",
        "score": 7.2,
        "min": 30.5,
-       "dk": 34.9
+       "dk": 34.7
       }
      ],
      "estimate": false
@@ -880,7 +880,7 @@
        "much": "+18.9 DK without him (3 games)",
        "score": 18.9,
        "min": 34.8,
-       "dk": 37.9
+       "dk": 37.8
       },
       {
        "player": "Jamal Shead",
@@ -889,16 +889,16 @@
        "much": "+16.5 DK without him (3 games)",
        "score": 16.5,
        "min": 30.0,
-       "dk": 29.6
+       "dk": 29.5
       },
       {
-       "player": "RJ Barrett",
-       "salary": 8300,
-       "why": "Show: more usage at $8,300 (11/12)",
-       "much": "+8.0 DK projected vs. last 3",
-       "score": 8.0,
-       "min": 35.1,
-       "dk": 43.0
+       "player": "Collin Murray-Boyles",
+       "salary": 5700,
+       "why": "started 2 of 2",
+       "much": "+7.8 DK without him (2 games)",
+       "score": 7.8,
+       "min": 27.6,
+       "dk": 29.0
       }
      ],
      "estimate": false
@@ -923,16 +923,7 @@
        "much": "+11.9 DK without him (9 games)",
        "score": 11.9,
        "min": 30.0,
-       "dk": 29.6
-      },
-      {
-       "player": "Collin Murray-Boyles",
-       "salary": 5700,
-       "why": "started, 34 minutes, 19 points (11/06)",
-       "much": "+4.3 DK projected vs. last 3",
-       "score": 4.300000000000001,
-       "min": 27.6,
-       "dk": 29.3
+       "dk": 29.5
       },
       {
        "player": "Ja'Kobe Walter",
@@ -942,6 +933,15 @@
        "score": 4.149999999999999,
        "min": 32.2,
        "dk": 27.4
+      },
+      {
+       "player": "Collin Murray-Boyles",
+       "salary": 5700,
+       "why": "started, 34 minutes, 19 points (11/06)",
+       "much": "+4.0 DK projected vs. last 3",
+       "score": 4.0,
+       "min": 27.6,
+       "dk": 29.0
       }
      ],
      "estimate": false
@@ -982,9 +982,9 @@
        "salary": 6400,
        "why": "started, 20 minutes, 10 rebounds (11/08)",
        "much": "+7.4 DK projected vs. last 3",
-       "score": 7.449999999999999,
+       "score": 7.350000000000001,
        "min": 27.1,
-       "dk": 30.7
+       "dk": 30.6
       }
      ],
      "estimate": false
@@ -1009,7 +1009,7 @@
        "much": "+6.4 DK without him (6 games)",
        "score": 6.4,
        "min": 30.6,
-       "dk": 40.4
+       "dk": 40.6
       }
      ],
      "estimate": false
@@ -1031,10 +1031,10 @@
        "player": "Dean Wade",
        "salary": 3900,
        "why": "subs in for him 7 of 29 times",
-       "much": "+5.9 DK projected vs. last 3",
-       "score": 5.916666666666666,
+       "much": "+6.0 DK projected vs. last 3",
+       "score": 6.0166666666666675,
        "min": 25.0,
-       "dk": 16.0
+       "dk": 16.1
       }
      ],
      "estimate": false
@@ -1084,7 +1084,7 @@
        "much": "+14.2 DK without him (7 games)",
        "score": 14.2,
        "min": 33.0,
-       "dk": 34.9
+       "dk": 34.8
       },
       {
        "player": "Nah'Shon Hyland",
@@ -1102,7 +1102,7 @@
        "much": "+8.3 DK without him (7 games)",
        "score": 8.3,
        "min": 17.9,
-       "dk": 13.0
+       "dk": 12.8
       }
      ],
      "estimate": false
@@ -1127,7 +1127,7 @@
        "much": "+8.9 DK without him (2 games)",
        "score": 8.9,
        "min": 26.2,
-       "dk": 24.3
+       "dk": 24.2
       },
       {
        "player": "Royce O'Neale",
@@ -1136,7 +1136,7 @@
        "much": "+7.9 DK without him (2 games)",
        "score": 7.9,
        "min": 22.9,
-       "dk": 17.8
+       "dk": 17.9
       },
       {
        "player": "Naz Reid",
@@ -1145,7 +1145,7 @@
        "much": "+7.2 DK without him (2 games)",
        "score": 7.2,
        "min": 30.6,
-       "dk": 36.4
+       "dk": 36.5
       }
      ],
      "estimate": false
@@ -1170,7 +1170,7 @@
        "much": "+23.9 DK without him (1 game)",
        "score": 23.9,
        "min": 26.2,
-       "dk": 24.3
+       "dk": 24.2
       },
       {
        "player": "Grayson Allen",
@@ -1179,7 +1179,7 @@
        "much": "+22.5 DK without him (1 game)",
        "score": 22.5,
        "min": 28.8,
-       "dk": 29.9
+       "dk": 30.0
       },
       {
        "player": "Naz Reid",
@@ -1188,7 +1188,7 @@
        "much": "+21.2 DK without him (1 game)",
        "score": 21.2,
        "min": 30.6,
-       "dk": 36.4
+       "dk": 36.5
       }
      ],
      "estimate": false
