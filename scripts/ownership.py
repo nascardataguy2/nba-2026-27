@@ -76,11 +76,28 @@ def shares(X, b, cap=OWN_MAX):
     return v
 
 
-def calibrate(pool, raw):
-    """Turn simulated shares into estimates that match real field ownership."""
+SHOW_W = 0.5  # starting weight for a show's stated ownership; the nightly scorecard checks it
+
+
+def calibrate(pool, raw, show=None):
+    """Turn simulated shares into estimates that match real field ownership.
+    show = {player: projected own%} stated on today's DFS shows (data/show_own.json, mostly
+    Stokastic). Each named player is pulled halfway to the show's number; the slate is then
+    rescaled to 800% through the other players, and the site limit is applied last.
+    On 11/10 the show's numbers missed real ownership by 9.4 points on average for the four
+    players we can check, ours by 18.5 (four players, so this weight is a starting point)."""
     if not raw or len(pool) < 8:
         return raw
     v = shares(features(pool, raw), beta(), cap=85.0)
+    if show:
+        hit = np.array([p["player"] in show for p in pool])
+        if hit.any():
+            for i, p in enumerate(pool):
+                if hit[i]:
+                    v[i] = (1 - SHOW_W) * v[i] + SHOW_W * show[p["player"]]
+            rest = 800.0 - v[hit].sum()
+            if rest > 0 and v[~hit].sum() > 0:
+                v[~hit] *= rest / v[~hit].sum()
     v = limit(v)
     return {p["player"]: round(float(x), 1) for p, x in zip(pool, v)}
 
@@ -250,13 +267,20 @@ def main():
     ss_names = {p["player"] for p in ss.get("stars", []) + ss.get("scrubs", [])} if ss.get("date") == doc.get("date") else set()
     has_ids = any(p.get("dkid") for p in doc["players"])
     own, sims = {}, {}
+    # Projected ownership the shows stated for today's slate (the transcript helpers write it).
+    show = {}
+    for name, val in load_json(os.path.join(D, "show_own.json"), {}).get(doc.get("date"), {}).items():
+        nk = norm(name)
+        for p in doc["players"]:
+            if norm(p["player"]) == nk:
+                show[p["player"]] = float(val[0]) if isinstance(val, list) else float(val)
     for k, slate in enumerate(("main", "late")):
         pool = [p for p in doc["players"] if p.get("salary") and p.get("dk") and p.get("min", 0) >= 8
                 and (p.get("slate") or "main") == slate and (p.get("dkid") or not has_ids) and not p.get("out")]
         raw = simulate(pool, ss_names if slate == "main" else set(), seed=k + 1)
         for p in pool:
             sims[p["player"]] = (raw.get(p["player"], 0.0), p.get("_fdk") or p["dk"], slate)
-        own.update(calibrate(pool, raw))
+        own.update(calibrate(pool, raw, show if slate == "main" else None))
     for p in doc["players"]:
         if (p.get("slate") or "main") in ("main", "late") and p.get("salary"):
             p["own"] = own.get(p["player"], 0.0)
@@ -264,7 +288,7 @@ def main():
             p.pop("own", None)
     for p in doc["players"]:
         p.pop("_fdk", None)
-    doc["own_note"] = "Estimated ownership from %d simulated lineups per slate built on public projections, corrected against real DraftKings ownership from past slates. It is our estimate, not real ownership." % N
+    doc["own_note"] = "Estimated ownership from %d simulated lineups per slate built on public projections, corrected against real DraftKings ownership from past slates and blended with projected ownership stated on today's DFS shows. It is our estimate, not real ownership." % N
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, indent=1, ensure_ascii=False)
     save_history_own(doc, sims)

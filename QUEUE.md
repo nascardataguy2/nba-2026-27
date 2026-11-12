@@ -114,3 +114,4 @@ One chunk is processed per day at about 4:30 PM ET. Each episode is read in full
 - Hard limit: no player above 40% on the site, on any slate size. The excess goes to everyone else in proportion, so the slate still adds to 800%.
 - Never present ownership as real unless it comes from a known contest. Fantasy Team Advice's history is from an unnamed "tracked contest"; treat it as unverified.
 - Never call a guess research. Real data, a known source, a check against results, or say "estimate".
+- Show ownership (11/12, Pearce): every transcript's stated projected ownership (Stokastic, Splash Play and others) goes into data/show_own.json {date: {player: [own, source]}}; ownership.py pulls each named player halfway to that number, then applies the 38%/40% limit. Splash Play posts weekdays at 2 PM; Grok sends its transcript by 4-5 PM.
