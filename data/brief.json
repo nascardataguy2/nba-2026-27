@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "updated": "6:30 PM ET",
+ "updated": "6:45 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:46 AM",
@@ -43,12 +43,7 @@
        "min": 17.0
       }
      ],
-     "q": [
-      {
-       "player": "Joel Embiid",
-       "min": 32.8
-      }
-     ]
+     "q": []
     }
    },
    "key": "Scottie Barnes and Kawhi Leonard are out, so Jakob Poeltl and Jamal Shead and Collin Murray-Boyles should play more than usual."
@@ -165,6 +160,22 @@
  ],
  "changed": [
   {
+   "player": "Morez Johnson Jr.",
+   "team": "DAL",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "6:46 PM"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:46 PM"
+  },
+  {
    "player": "Grant Williams",
    "team": "CHA",
    "status": "Available",
@@ -198,17 +209,38 @@
    "act": "Play",
    "names": [
     {
+     "player": "Joel Embiid",
+     "salary": 8300,
+     "much": "+24.8 DK without him (1 game)"
+    },
+    {
      "player": "Dean Wade",
      "salary": 3900,
      "much": "+12.7 DK without him (2 games)"
-    },
-    {
-     "player": "VJ Edgecombe",
-     "salary": 6100,
-     "much": "+10.0 DK without him (2 games)"
     }
    ],
    "time": "3:16 PM",
+   "size": 37.4
+  },
+  {
+   "key": "PHI",
+   "team": "PHI",
+   "head": "Embiid CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Dean Wade",
+     "salary": 3900,
+     "much": "+14.4 DK without Embiid"
+    },
+    {
+     "player": "Anfernee Simons",
+     "salary": 4000,
+     "much": "+10.3 DK without Embiid"
+    }
+   ],
+   "time": "6:46 PM",
    "size": 37.4
   }
  ],
@@ -232,6 +264,15 @@
    "new": true,
    "lost": 48.3,
    "benefits": [
+    {
+     "player": "Joel Embiid",
+     "salary": 8300,
+     "why": "36 minutes, up from 31",
+     "much": "+24.8 DK without them (1 game)",
+     "score": 24.8,
+     "min": 32.8,
+     "dk": 41.9
+    },
     {
      "player": "Dean Wade",
      "salary": 3900,
@@ -572,21 +613,21 @@
   {
    "player": "Daniss Jenkins",
    "team": "DET",
-   "own": 37.3,
+   "own": 37.2,
    "dk": 28.3,
    "salary": 5000
   },
   {
    "player": "Kevin Huerter",
    "team": "DET",
-   "own": 30.1,
+   "own": 30.0,
    "dk": 22.2,
    "salary": 3900
   },
   {
    "player": "Kyrie Irving",
    "team": "DAL",
-   "own": 29.7,
+   "own": 29.6,
    "dk": 34.9,
    "salary": 7600
   }
@@ -602,7 +643,7 @@
   {
    "player": "Moussa Diabate",
    "team": "CHA",
-   "own": 2.3,
+   "own": 2.1,
    "dk": 27.2,
    "salary": 5600
   },
@@ -713,8 +754,8 @@
   ]
  },
  "injuries": {
-  "report": "06:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_06_15PM.pdf",
+  "report": "06:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_06_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -730,6 +771,15 @@
     "changed_at": "3:16 PM",
     "min": 31.3,
     "benefits": [
+     {
+      "player": "Joel Embiid",
+      "salary": 8300,
+      "why": "36 minutes, up from 31",
+      "much": "+24.8 DK without him (1 game)",
+      "score": 24.8,
+      "min": 32.8,
+      "dk": 41.9
+     },
      {
       "player": "Dean Wade",
       "salary": 3900,
@@ -756,42 +806,14 @@
     "time": "2026-11-13T00:00Z",
     "team": "PHI",
     "player": "Joel Embiid",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:46 PM",
     "min": 28.3,
-    "benefits": [
-     {
-      "player": "Dean Wade",
-      "salary": 3900,
-      "why": "started 2 of 2",
-      "much": "+14.4 DK without him (2 games)",
-      "score": 14.4,
-      "min": 25.0,
-      "dk": 16.2
-     },
-     {
-      "player": "Anfernee Simons",
-      "salary": 4000,
-      "why": "26 minutes, up from 21",
-      "much": "+10.3 DK without him (2 games)",
-      "score": 10.3,
-      "min": 21.8,
-      "dk": 18.1
-     },
-     {
-      "player": "Tyrese Maxey",
-      "salary": 8600,
-      "why": "same minutes, more production",
-      "much": "+10.2 DK without him (2 games)",
-      "score": 10.2,
-      "min": 36.0,
-      "dk": 44.7
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -833,12 +855,12 @@
     "time": "2026-11-13T01:00Z",
     "team": "DAL",
     "player": "Morez Johnson Jr.",
-    "status": "Probable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:46 PM",
     "min": 20.3,
     "benefits": [],
     "estimate": false
@@ -1025,6 +1047,15 @@
     "changed_at": "",
     "min": 17.0,
     "benefits": [
+     {
+      "player": "Joel Embiid",
+      "salary": 8300,
+      "why": "subs in for him 6 of 29 times",
+      "much": "+13.1 DK projected vs. last 3",
+      "score": 13.149999999999999,
+      "min": 32.8,
+      "dk": 41.9
+     },
      {
       "player": "Dean Wade",
       "salary": 3900,
