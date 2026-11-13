@@ -2,7 +2,7 @@
  "updated": "2026-11-13",
  "brief": {
   "date": "2026-11-13",
-  "updated": "5:42 AM ET",
+  "updated": "6:19 AM ET",
   "games": 6,
   "pending": [],
   "first_report": "5:42 AM",
@@ -271,8 +271,39 @@
     "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Kyle Filipowski and Darryn Peterson and Brice Sensabaugh should play more than usual."
    }
   ],
-  "changed": [],
-  "chg": [],
+  "changed": [
+   {
+    "player": "Tristan da Silva",
+    "team": "ORL",
+    "status": "Questionable",
+    "was": "Out",
+    "why": "Left Calf Strain",
+    "time": "6:20 AM"
+   }
+  ],
+  "chg": [
+   {
+    "key": "Tristan da Silva",
+    "team": "ORL",
+    "head": "Tristan da Silva QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Anthony Black",
+      "salary": 7200,
+      "much": "+11.6 DK without him (2 games)"
+     },
+     {
+      "player": "Franz Wagner",
+      "salary": 9500,
+      "much": "+9.5 DK without him (2 games)"
+     }
+    ],
+    "time": "6:20 AM",
+    "size": 12.4
+   }
+  ],
   "sits": [
    {
     "team": "NOP",
@@ -303,10 +334,10 @@
       "player": "Dejounte Murray",
       "salary": 7200,
       "why": "started in his place, 45 minutes (OT) (11/04)",
-      "much": "+13.7 DK projected vs. last 3",
-      "score": 13.7,
+      "much": "+13.8 DK projected vs. last 3",
+      "score": 13.8,
       "min": 29.6,
-      "dk": 29.2
+      "dk": 29.3
      },
      {
       "player": "Herbert Jones",
@@ -359,7 +390,7 @@
       "much": "+5.7 DK without them (2 games)",
       "score": 5.7,
       "min": 12.5,
-      "dk": 9.9
+      "dk": 9.8
      }
     ],
     "split_of": [
@@ -410,7 +441,7 @@
       "much": "+7.0 DK without them (3 games)",
       "score": 7.0,
       "min": 27.3,
-      "dk": 28.1
+      "dk": 28.2
      }
     ],
     "split_of": [
@@ -655,46 +686,46 @@
    {
     "player": "Dru Smith",
     "team": "MIA",
-    "own": 37.6,
-    "dk": 6.4,
+    "own": 37.8,
+    "dk": 6.3,
     "salary": 3100
    },
    {
     "player": "Jarace Walker",
     "team": "IND",
-    "own": 37.2,
+    "own": 37.4,
     "dk": 14.3,
     "salary": 3900
    },
    {
     "player": "Jarrett Allen",
     "team": "CLE",
-    "own": 35.4,
-    "dk": 35.0,
+    "own": 35.1,
+    "dk": 34.9,
     "salary": 5700
    }
   ],
   "leverage": [
    {
+    "player": "Kevin Durant",
+    "team": "HOU",
+    "own": 9.7,
+    "dk": 40.2,
+    "salary": 7600
+   },
+   {
     "player": "Amen Thompson",
     "team": "HOU",
-    "own": 6.9,
+    "own": 6.3,
     "dk": 35.7,
     "salary": 6900
    },
    {
     "player": "Jabari Smith",
     "team": "HOU",
-    "own": 5.9,
+    "own": 6.3,
     "dk": 34.1,
     "salary": 6600
-   },
-   {
-    "player": "Fred VanVleet",
-    "team": "HOU",
-    "own": 1.1,
-    "dk": 29.6,
-    "salary": 6000
    }
   ],
   "last": {
@@ -791,21 +822,21 @@
    ]
   },
   "injuries": {
-   "report": "05:30 AM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_05_30AM.pdf",
+   "report": "06:15 AM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_06_15AM.pdf",
    "pending": [],
    "rows": [
     {
      "game": "MIL at ORL",
      "time": "2026-11-14T00:00Z",
      "team": "ORL",
-     "player": "Tristan Da Silva",
+     "player": "Tristan da Silva",
      "status": "Questionable",
      "reason": "Left Calf Strain",
      "new": true,
      "was": "Out",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:20 AM",
      "min": 33.7,
      "benefits": [
       {
@@ -815,7 +846,7 @@
        "much": "+11.6 DK without him (2 games)",
        "score": 11.6,
        "min": 27.3,
-       "dk": 30.4
+       "dk": 30.5
       },
       {
        "player": "Franz Wagner",
@@ -883,7 +914,7 @@
        "much": "+28.1 DK without him (1 game)",
        "score": 28.1,
        "min": 13.5,
-       "dk": 11.0
+       "dk": 11.1
       },
       {
        "player": "Jay Huff",
@@ -901,7 +932,7 @@
        "much": "+17.5 DK without him (1 game)",
        "score": 17.5,
        "min": 23.8,
-       "dk": 25.8
+       "dk": 25.7
       }
      ],
      "estimate": false
@@ -944,7 +975,7 @@
        "much": "+7.4 DK without him (1 game)",
        "score": 7.4,
        "min": 27.3,
-       "dk": 30.4
+       "dk": 30.5
       }
      ],
      "estimate": false
@@ -981,10 +1012,10 @@
        "player": "Jarrett Allen",
        "salary": 5700,
        "why": "subs in for him 18 of 44 times",
-       "much": "+13.7 DK projected vs. last 3",
-       "score": 13.666666666666668,
+       "much": "+13.6 DK projected vs. last 3",
+       "score": 13.566666666666666,
        "min": 28.3,
-       "dk": 35.0
+       "dk": 34.9
       },
       {
        "player": "Donovan Mitchell",
@@ -1073,10 +1104,10 @@
        "player": "Dejounte Murray",
        "salary": 7200,
        "why": "started in his place, 45 minutes (OT) (11/04)",
-       "much": "+13.7 DK projected vs. last 3",
-       "score": 13.7,
+       "much": "+13.8 DK projected vs. last 3",
+       "score": 13.8,
        "min": 29.6,
-       "dk": 29.2
+       "dk": 29.3
       },
       {
        "player": "Saddiq Bey",
@@ -1110,7 +1141,7 @@
        "much": "+22.5 DK without him (10 games)",
        "score": 22.5,
        "min": 34.0,
-       "dk": 35.3
+       "dk": 35.2
       },
       {
        "player": "Herbert Jones",
@@ -1153,7 +1184,7 @@
        "much": "+19.0 DK without him (5 games)",
        "score": 19.0,
        "min": 29.6,
-       "dk": 29.2
+       "dk": 29.3
       },
       {
        "player": "Jordan Poole",
@@ -1287,9 +1318,9 @@
        "salary": 11500,
        "why": "subs in for him 6 of 31 times",
        "much": "about +9.3 DK",
-       "score": 9.274392672242133,
+       "score": 9.258064516129032,
        "min": 32.4,
-       "dk": 56.8
+       "dk": 56.7
       },
       {
        "player": "Andrew Wiggins",
@@ -1332,7 +1363,7 @@
        "much": "+23.2 DK without him (1 game)",
        "score": 23.2,
        "min": 20.7,
-       "dk": 21.3
+       "dk": 21.2
       },
       {
        "player": "Nickeil Alexander-Walker",
@@ -1341,7 +1372,7 @@
        "much": "+23.1 DK without him (1 game)",
        "score": 23.1,
        "min": 29.0,
-       "dk": 31.2
+       "dk": 31.1
       },
       {
        "player": "Corey Kispert",
@@ -1350,7 +1381,7 @@
        "much": "+9.4 DK without him (1 game)",
        "score": 9.4,
        "min": 12.9,
-       "dk": 12.7
+       "dk": 12.6
       }
      ],
      "estimate": false
@@ -1423,7 +1454,7 @@
        "much": "+7.0 DK without him (3 games)",
        "score": 7.0,
        "min": 27.3,
-       "dk": 28.1
+       "dk": 28.2
       }
      ],
      "estimate": false
@@ -1559,7 +1590,7 @@
        "much": "+5.7 DK without him (2 games)",
        "score": 5.7,
        "min": 12.5,
-       "dk": 9.9
+       "dk": 9.8
       }
      ],
      "estimate": false
@@ -1584,7 +1615,7 @@
        "much": "+6.3 DK without him (6 games)",
        "score": 6.3,
        "min": 29.6,
-       "dk": 29.2
+       "dk": 29.3
       }
      ],
      "estimate": false
@@ -1609,7 +1640,7 @@
        "much": "+6.9 DK without him (6 games)",
        "score": 6.9,
        "min": 31.7,
-       "dk": 41.6
+       "dk": 41.5
       },
       {
        "player": "Dyson Daniels",
@@ -1618,7 +1649,7 @@
        "much": "+6.3 DK without him (7 games)",
        "score": 6.3,
        "min": 29.7,
-       "dk": 32.3
+       "dk": 32.2
       },
       {
        "player": "Aaron Wiggins",
