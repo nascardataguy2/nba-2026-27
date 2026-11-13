@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updated": "2:56 PM ET",
+ "updated": "3:26 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:42 AM",
@@ -405,6 +405,14 @@
   {
    "player": "Dejounte Murray",
    "team": "NOP",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Left Ankle Sprain",
+   "time": "3:26 PM"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
    "status": "Doubtful",
    "was": "",
    "why": "Left Ankle Sprain",
@@ -473,14 +481,6 @@
    "was": "Out",
    "why": "-",
    "time": "10:55 AM"
-  },
-  {
-   "player": "Ajay Mitchell",
-   "team": "OKC",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "Left Ankle Sprain",
-   "time": "6:46 AM"
   }
  ],
  "chg": [
@@ -524,8 +524,8 @@
   {
    "key": "Dejounte Murray",
    "team": "NOP",
-   "head": "Dejounte Murray DOUBTFUL",
-   "st": "Doubtful",
+   "head": "Dejounte Murray OUT",
+   "st": "Out",
    "act": "Play",
    "names": [
     {
@@ -539,7 +539,7 @@
      "much": "+16.6 DK without him (3 games)"
     }
    ],
-   "time": "1:54 PM",
+   "time": "3:26 PM",
    "size": 29.3
   },
   {
@@ -740,7 +740,7 @@
     {
      "player": "Dejounte Murray",
      "min": 24.7,
-     "note": "Doubtful tonight (left ankle sprain).",
+     "note": "Ruled out tonight (left ankle sprain).",
      "new": true
     },
     {
@@ -1217,8 +1217,8 @@
   ]
  },
  "injuries": {
-  "report": "02:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_02_45PM.pdf",
+  "report": "03:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_03_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1450,6 +1450,49 @@
     "estimate": false
    },
    {
+    "game": "MEM at NOP",
+    "time": "2026-11-14T01:00Z",
+    "team": "NOP",
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "Doubtful",
+    "known": true,
+    "changed_at": "3:26 PM",
+    "min": 24.7,
+    "benefits": [
+     {
+      "player": "Karlo Matkovic",
+      "salary": 4600,
+      "why": "25 minutes, up from 16",
+      "much": "+18.2 DK without him (3 games)",
+      "score": 18.2,
+      "min": 20.4,
+      "dk": 19.6
+     },
+     {
+      "player": "Jeremiah Fears",
+      "salary": 6800,
+      "why": "33 minutes, up from 28",
+      "much": "+16.6 DK without him (3 games)",
+      "score": 16.6,
+      "min": 38.0,
+      "dk": 39.4
+     },
+     {
+      "player": "Herbert Jones",
+      "salary": 4500,
+      "why": "started 3 of 3",
+      "much": "+11.4 DK without him (3 games)",
+      "score": 11.4,
+      "min": 30.4,
+      "dk": 18.6
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "ATL at CHI",
     "time": "2026-11-14T01:00Z",
     "team": "CHI",
@@ -1605,49 +1648,6 @@
       "score": 8.55,
       "min": 31.2,
       "dk": 23.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MEM at NOP",
-    "time": "2026-11-14T01:00Z",
-    "team": "NOP",
-    "player": "Dejounte Murray",
-    "status": "Doubtful",
-    "reason": "Left Ankle Sprain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "1:54 PM",
-    "min": 24.7,
-    "benefits": [
-     {
-      "player": "Karlo Matkovic",
-      "salary": 4600,
-      "why": "25 minutes, up from 16",
-      "much": "+18.2 DK without him (3 games)",
-      "score": 18.2,
-      "min": 20.4,
-      "dk": 19.6
-     },
-     {
-      "player": "Jeremiah Fears",
-      "salary": 6800,
-      "why": "33 minutes, up from 28",
-      "much": "+16.6 DK without him (3 games)",
-      "score": 16.6,
-      "min": 38.0,
-      "dk": 39.4
-     },
-     {
-      "player": "Herbert Jones",
-      "salary": 4500,
-      "why": "started 3 of 3",
-      "much": "+11.4 DK without him (3 games)",
-      "score": 11.4,
-      "min": 30.4,
-      "dk": 18.6
      }
     ],
     "estimate": false
