@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updated": "3:53 PM ET",
+ "updated": "4:26 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:42 AM",
@@ -339,13 +339,13 @@
      "q": []
     },
     "SAC": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Precious Achiuwa",
-       "min": 24.3
+       "min": 24.0
       }
-     ]
+     ],
+     "q": []
     }
    },
    "key": "Ja Morant and Chris Youngblood are out, so Deni Avdija and Toumani Camara and Jrue Holiday should play more than usual."
@@ -402,6 +402,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Left Ankle Soreness",
+   "time": "4:27 PM"
+  },
   {
    "player": "Baba Miller",
    "team": "LAC",
@@ -472,14 +480,6 @@
    "status": "Doubtful",
    "was": "Questionable",
    "why": "Illness",
-   "time": "1:54 PM"
-  },
-  {
-   "player": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Right Wrist Sprain",
    "time": "1:54 PM"
   }
  ],
@@ -567,6 +567,22 @@
    ],
    "time": "1:54 PM",
    "size": 29.1
+  },
+  {
+   "key": "Precious Achiuwa",
+   "team": "SAC",
+   "head": "Precious Achiuwa OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Domantas Sabonis",
+     "salary": 9100,
+     "much": "+13.6 DK projected vs. last 3"
+    }
+   ],
+   "time": "4:27 PM",
+   "size": 24.4
   },
   {
    "key": "Pelle Larsson",
@@ -682,22 +698,6 @@
    ],
    "time": "6:20 AM",
    "size": 12.4
-  },
-  {
-   "key": "Precious Achiuwa",
-   "team": "SAC",
-   "head": "Precious Achiuwa QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Domantas Sabonis",
-     "salary": 9100,
-     "much": "about +5.4 DK if he sits (estimate)"
-    }
-   ],
-   "time": "6:46 AM",
-   "size": 12.2
   },
   {
    "key": "Baba Miller",
@@ -945,6 +945,31 @@
    "split_of": []
   },
   {
+   "team": "SAC",
+   "outs": [
+    {
+     "player": "Precious Achiuwa",
+     "min": 24.0,
+     "note": "Precious Achiuwa started but left after 14 minutes with a lower leg contusion, according to the show. His status for Friday's game against Portland was not given.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 24.0,
+   "benefits": [
+    {
+     "player": "Domantas Sabonis",
+     "salary": 9100,
+     "why": "subs in for him 7 of 37 times",
+     "much": "+13.6 DK projected vs. last 3",
+     "score": 13.649999999999999,
+     "min": 37.2,
+     "dk": 43.9
+    }
+   ],
+   "split_of": []
+  },
+  {
    "team": "GSW",
    "outs": [
     {
@@ -987,51 +1012,6 @@
    ],
    "split_of": [
     "Stephen Curry"
-   ]
-  },
-  {
-   "team": "MEM",
-   "outs": [
-    {
-     "player": "Zach Edey",
-     "min": 21.0,
-     "note": "The show said Zach Edey is out on Nov. 13. He started and played 20 minutes on Nov. 11. The show expects more minutes for Isaiah Stewart and a bump for Jerami Grant, and it said Zion Williamson should have a big game for New Orleans without Edey.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 21.0,
-   "benefits": [
-    {
-     "player": "Jaylen Wells",
-     "salary": 4400,
-     "why": "33 minutes, up from 27",
-     "much": "+14.9 DK without him (1 game)",
-     "score": 14.9,
-     "min": 29.5,
-     "dk": 23.1
-    },
-    {
-     "player": "Isaiah Stewart",
-     "salary": 3900,
-     "why": "started that game",
-     "much": "+11.2 DK without him (1 game)",
-     "score": 11.2,
-     "min": 28.0,
-     "dk": 27.5
-    },
-    {
-     "player": "Ty Jerome",
-     "salary": 8000,
-     "why": "same minutes, more production",
-     "much": "+9.6 DK without him (1 game)",
-     "score": 9.6,
-     "min": 31.4,
-     "dk": 42.4
-    }
-   ],
-   "split_of": [
-    "Zach Edey"
    ]
   }
  ],
@@ -1137,16 +1117,16 @@
   {
    "player": "Aday Mara",
    "team": "OKC",
-   "own": 34.6,
+   "own": 36.4,
    "dk": 27.5,
    "salary": 5400
   },
   {
-   "player": "Damian Lillard",
-   "team": "POR",
-   "own": 34.0,
-   "dk": 38.0,
-   "salary": 7100
+   "player": "Dylan Harper",
+   "team": "SAS",
+   "own": 35.4,
+   "dk": 33.9,
+   "salary": 6900
   }
  ],
  "leverage": [
@@ -1261,8 +1241,8 @@
   ]
  },
  "injuries": {
-  "report": "03:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_03_45PM.pdf",
+  "report": "04:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_04_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -2062,25 +2042,25 @@
     "time": "2026-11-14T03:00Z",
     "team": "SAC",
     "player": "Precious Achiuwa",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Left Ankle Soreness",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "6:46 AM",
+    "changed_at": "4:27 PM",
     "min": 24.0,
     "benefits": [
      {
       "player": "Domantas Sabonis",
       "salary": 9100,
       "why": "subs in for him 7 of 37 times",
-      "much": "about +5.4 DK",
-      "score": 5.367412140575079,
-      "min": 31.3,
-      "dk": 37.0
+      "much": "+13.6 DK projected vs. last 3",
+      "score": 13.649999999999999,
+      "min": 37.2,
+      "dk": 43.9
      }
     ],
-    "estimate": true
+    "estimate": false
    },
    {
     "game": "OKC at LAC",
