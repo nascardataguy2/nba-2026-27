@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updated": "6:45 PM ET",
+ "updated": "6:54 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:42 AM",
@@ -382,6 +382,14 @@
  ],
  "changed": [
   {
+   "player": "Bennedict Mathurin",
+   "team": "NOP",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Right Thumb Sprain",
+   "time": "6:55 PM"
+  },
+  {
    "player": "Kingston Flemings",
    "team": "ATL",
    "status": "Available",
@@ -452,14 +460,6 @@
    "was": "Questionable",
    "why": "",
    "time": "5:32 PM"
-  },
-  {
-   "player": "Precious Achiuwa",
-   "team": "SAC",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Left Ankle Soreness",
-   "time": "4:27 PM"
   }
  ],
  "chg": [
@@ -777,22 +777,6 @@
    ],
    "time": "1:54 PM",
    "size": 8.2
-  },
-  {
-   "key": "Bennedict Mathurin",
-   "team": "NOP",
-   "head": "Bennedict Mathurin QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Herbert Jones",
-     "salary": 4500,
-     "much": "+5.0 DK without him (1 game)"
-    }
-   ],
-   "time": "1:54 PM",
-   "size": 5.4
   }
  ],
  "sits": [
@@ -1179,14 +1163,14 @@
   {
    "player": "Benedict Mathurin",
    "team": "NOP",
-   "own": 3.1,
+   "own": 3.5,
    "dk": 22.4,
    "salary": 3900
   },
   {
    "player": "Tari Eason",
    "team": "HOU",
-   "own": 2.5,
+   "own": 2.9,
    "dk": 29.2,
    "salary": 5100
   }
@@ -1280,8 +1264,8 @@
   ]
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_06_30PM.pdf",
+  "report": "06:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_06_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1717,31 +1701,6 @@
     "estimate": false
    },
    {
-    "game": "MEM at NOP",
-    "time": "2026-11-14T01:00Z",
-    "team": "NOP",
-    "player": "Bennedict Mathurin",
-    "status": "Questionable",
-    "reason": "Right Thumb Sprain",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "1:54 PM",
-    "min": 13.3,
-    "benefits": [
-     {
-      "player": "Herbert Jones",
-      "salary": 4500,
-      "why": "started that game",
-      "much": "+5.0 DK without him (1 game)",
-      "score": 5.0,
-      "min": 30.6,
-      "dk": 19.9
-     }
-    ],
-    "estimate": false
-   },
-   {
     "game": "ATL at CHI",
     "time": "2026-11-14T01:00Z",
     "team": "CHI",
@@ -1783,6 +1742,21 @@
     "known": true,
     "changed_at": "6:47 PM",
     "min": 25.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "MEM at NOP",
+    "time": "2026-11-14T01:00Z",
+    "team": "NOP",
+    "player": "Bennedict Mathurin",
+    "status": "Available",
+    "reason": "Right Thumb Sprain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:55 PM",
+    "min": 13.3,
     "benefits": [],
     "estimate": false
    },
