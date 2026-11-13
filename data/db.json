@@ -2,7 +2,7 @@
  "updated": "2026-11-13",
  "brief": {
   "date": "2026-11-13",
-  "updated": "3:29 PM ET",
+  "updated": "3:35 PM ET",
   "games": 9,
   "pending": [],
   "first_report": "5:42 AM",
@@ -127,7 +127,7 @@
       "q": [
        {
         "player": "Norman Powell",
-        "min": 28.2
+        "min": 28.8
        }
       ]
      }
@@ -393,7 +393,7 @@
      "LAC": {
       "out": [
        {
-        "player": "Jordan Miller",
+        "player": "Baba Miller",
         "min": 14.0
        }
       ],
@@ -404,6 +404,14 @@
    }
   ],
   "changed": [
+   {
+    "player": "Baba Miller",
+    "team": "LAC",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "3:36 PM"
+   },
    {
     "player": "Dejounte Murray",
     "team": "NOP",
@@ -475,14 +483,6 @@
     "was": "Probable",
     "why": "Right Wrist Sprain",
     "time": "1:54 PM"
-   },
-   {
-    "player": "Nikola Topic",
-    "team": "OKC",
-    "status": "Available",
-    "was": "Out",
-    "why": "-",
-    "time": "10:55 AM"
    }
   ],
   "chg": [
@@ -517,7 +517,7 @@
      {
       "player": "Saddiq Bey",
       "salary": 6200,
-      "much": "+10.9 DK projected vs. last 3"
+      "much": "+11.9 DK projected vs. last 3"
      }
     ],
     "time": "1:54 PM",
@@ -557,9 +557,9 @@
       "much": "+22.5 DK without him (10 games)"
      },
      {
-      "player": "Karlo Matkovic",
-      "salary": 4600,
-      "much": "+7.9 DK projected vs. last 3"
+      "player": "Herbert Jones",
+      "salary": 4500,
+      "much": "+7.5 DK without him (10 games)"
      }
     ],
     "time": "1:54 PM",
@@ -575,12 +575,12 @@
      {
       "player": "Giannis Antetokounmpo",
       "salary": 11500,
-      "much": "+15.0 DK projected vs. last 3"
+      "much": "+11.6 DK projected vs. last 3"
      },
      {
       "player": "Andrew Wiggins",
       "salary": 4800,
-      "much": "+8.6 DK projected vs. last 3"
+      "much": "+7.9 DK projected vs. last 3"
      }
     ],
     "time": "1:54 PM",
@@ -697,6 +697,27 @@
     "size": 12.2
    },
    {
+    "key": "Baba Miller",
+    "team": "LAC",
+    "head": "Baba Miller OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Brook Lopez",
+      "salary": 5400,
+      "much": "+9.4 DK without him (1 game)"
+     },
+     {
+      "player": "Derrick Jones Jr.",
+      "salary": 5200,
+      "much": "+5.0 DK without him (1 game)"
+     }
+    ],
+    "time": "3:36 PM",
+    "size": 11.7
+   },
+   {
     "key": "Bryce McGowens",
     "team": "NOP",
     "head": "Bryce McGowens OUT",
@@ -765,19 +786,19 @@
       "player": "Saddiq Bey",
       "salary": 6200,
       "why": "started, 24 minutes (11/09)",
-      "much": "+10.9 DK projected vs. last 3",
-      "score": 10.95,
-      "min": 33.6,
-      "dk": 31.2
+      "much": "+11.9 DK projected vs. last 3",
+      "score": 11.850000000000001,
+      "min": 34.6,
+      "dk": 32.1
      },
      {
       "player": "Karlo Matkovic",
       "salary": 4600,
       "why": "started at center, 22 minutes (11/11)",
-      "much": "+7.9 DK projected vs. last 3",
-      "score": 7.850000000000001,
-      "min": 20.4,
-      "dk": 19.6
+      "much": "+7.4 DK projected vs. last 3",
+      "score": 7.449999999999999,
+      "min": 19.9,
+      "dk": 19.2
      }
     ],
     "split_of": [
@@ -809,8 +830,8 @@
       "why": "16 minutes, up from 8",
       "much": "+5.7 DK without them (2 games)",
       "score": 5.7,
-      "min": 12.5,
-      "dk": 9.8
+      "min": 12.7,
+      "dk": 9.9
      }
     ],
     "split_of": [
@@ -842,8 +863,8 @@
       "why": "16 minutes, up from 10",
       "much": "+13.8 DK without them (3 games)",
       "score": 13.8,
-      "min": 13.7,
-      "dk": 10.9
+      "min": 16.5,
+      "dk": 13.1
      },
      {
       "player": "Reed Sheppard",
@@ -851,8 +872,8 @@
       "why": "26 minutes, up from 17",
       "much": "+13.4 DK without them (3 games)",
       "score": 13.4,
-      "min": 22.1,
-      "dk": 22.1
+      "min": 23.3,
+      "dk": 23.3
      },
      {
       "player": "Tari Eason",
@@ -860,8 +881,8 @@
       "why": "32 minutes, up from 21",
       "much": "+7.0 DK without them (3 games)",
       "score": 7.0,
-      "min": 27.3,
-      "dk": 28.2
+      "min": 28.3,
+      "dk": 29.2
      }
     ],
     "split_of": [
@@ -885,19 +906,19 @@
       "player": "Giannis Antetokounmpo",
       "salary": 11500,
       "why": "subs in for him 6 of 31 times",
-      "much": "+15.0 DK projected vs. last 3",
-      "score": 14.983333333333341,
-      "min": 37.6,
-      "dk": 65.9
+      "much": "+11.6 DK projected vs. last 3",
+      "score": 11.583333333333336,
+      "min": 35.7,
+      "dk": 62.5
      },
      {
       "player": "Andrew Wiggins",
       "salary": 4800,
       "why": "subs in for him 10 of 31 times",
-      "much": "+8.6 DK projected vs. last 3",
-      "score": 8.55,
-      "min": 31.2,
-      "dk": 23.3
+      "much": "+7.9 DK projected vs. last 3",
+      "score": 7.850000000000001,
+      "min": 30.2,
+      "dk": 22.6
      }
     ],
     "split_of": []
@@ -921,8 +942,8 @@
       "why": "started 1 of 2",
       "much": "+23.8 DK without him (2 games)",
       "score": 23.8,
-      "min": 25.5,
-      "dk": 26.0
+      "min": 25.6,
+      "dk": 26.1
      },
      {
       "player": "Yaxel Lendeborg",
@@ -930,8 +951,8 @@
       "why": "35 minutes, up from 32",
       "much": "+14.4 DK without him (2 games)",
       "score": 14.4,
-      "min": 34.5,
-      "dk": 43.7
+      "min": 35.2,
+      "dk": 44.6
      },
      {
       "player": "Charles Bassey",
@@ -975,8 +996,8 @@
       "why": "started that game",
       "much": "+11.2 DK without him (1 game)",
       "score": 11.2,
-      "min": 18.8,
-      "dk": 18.5
+      "min": 28.0,
+      "dk": 27.5
      },
      {
       "player": "Ty Jerome",
@@ -1082,52 +1103,52 @@
     "player": "Yaxel Lendeborg",
     "team": "GSW",
     "own": 38.0,
-    "dk": 43.7,
+    "dk": 44.6,
     "salary": 7500
    },
    {
     "player": "Isaiah Stewart",
     "team": "MEM",
     "own": 38.0,
-    "dk": 18.5,
+    "dk": 27.5,
     "salary": 3900
    },
    {
     "player": "Aday Mara",
     "team": "OKC",
-    "own": 34.5,
+    "own": 34.6,
     "dk": 27.5,
     "salary": 5400
    },
    {
-    "player": "Toumani Camara",
+    "player": "Damian Lillard",
     "team": "POR",
-    "own": 33.9,
-    "dk": 26.5,
-    "salary": 5600
+    "own": 34.0,
+    "dk": 38.0,
+    "salary": 7100
    }
   ],
   "leverage": [
    {
     "player": "Jordan Poole",
     "team": "NOP",
-    "own": 6.7,
-    "dk": 25.1,
+    "own": 7.0,
+    "dk": 25.8,
     "salary": 4000
-   },
-   {
-    "player": "Benedict Mathurin",
-    "team": "NOP",
-    "own": 2.9,
-    "dk": 21.9,
-    "salary": 3900
    },
    {
     "player": "Tari Eason",
     "team": "HOU",
-    "own": 1.6,
-    "dk": 28.2,
+    "own": 3.4,
+    "dk": 29.2,
     "salary": 5100
+   },
+   {
+    "player": "Benedict Mathurin",
+    "team": "NOP",
+    "own": 2.6,
+    "dk": 21.4,
+    "salary": 3900
    }
   ],
   "last": {
@@ -1219,8 +1240,8 @@
    ]
   },
   "injuries": {
-   "report": "03:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_03_15PM.pdf",
+   "report": "03:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_03_30PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1409,10 +1430,10 @@
        "player": "Saddiq Bey",
        "salary": 6200,
        "why": "started, 24 minutes (11/09)",
-       "much": "+10.9 DK projected vs. last 3",
-       "score": 10.95,
-       "min": 33.6,
-       "dk": 31.2
+       "much": "+11.9 DK projected vs. last 3",
+       "score": 11.850000000000001,
+       "min": 34.6,
+       "dk": 32.1
       }
      ],
      "estimate": false
@@ -1434,19 +1455,19 @@
        "player": "Jarrett Allen",
        "salary": 5700,
        "why": "subs in for him 18 of 44 times",
-       "much": "+13.7 DK projected vs. last 3",
-       "score": 13.666666666666668,
-       "min": 28.3,
-       "dk": 35.0
+       "much": "+18.2 DK projected vs. last 3",
+       "score": 18.166666666666668,
+       "min": 32.0,
+       "dk": 39.5
       },
       {
        "player": "Donovan Mitchell",
        "salary": 8100,
        "why": "subs in for him 7 of 44 times",
-       "much": "+6.9 DK projected vs. last 3",
-       "score": 6.916666666666664,
-       "min": 34.8,
-       "dk": 47.5
+       "much": "+7.8 DK projected vs. last 3",
+       "score": 7.816666666666663,
+       "min": 35.4,
+       "dk": 48.4
       }
      ],
      "estimate": false
@@ -1470,8 +1491,8 @@
        "why": "25 minutes, up from 16",
        "much": "+18.2 DK without him (3 games)",
        "score": 18.2,
-       "min": 20.4,
-       "dk": 19.6
+       "min": 19.9,
+       "dk": 19.2
       },
       {
        "player": "Jeremiah Fears",
@@ -1479,8 +1500,8 @@
        "why": "33 minutes, up from 28",
        "much": "+16.6 DK without him (3 games)",
        "score": 16.6,
-       "min": 38.0,
-       "dk": 39.4
+       "min": 37.2,
+       "dk": 38.6
       },
       {
        "player": "Herbert Jones",
@@ -1488,8 +1509,8 @@
        "why": "started 3 of 3",
        "much": "+11.4 DK without him (3 games)",
        "score": 11.4,
-       "min": 30.4,
-       "dk": 18.6
+       "min": 30.7,
+       "dk": 18.8
       }
      ],
      "estimate": false
@@ -1537,8 +1558,8 @@
        "why": "started that game",
        "much": "+11.2 DK without him (1 game)",
        "score": 11.2,
-       "min": 18.8,
-       "dk": 18.5
+       "min": 28.0,
+       "dk": 27.5
       },
       {
        "player": "Ty Jerome",
@@ -1571,17 +1592,8 @@
        "why": "30 minutes, up from 22",
        "much": "+22.5 DK without him (10 games)",
        "score": 22.5,
-       "min": 38.0,
-       "dk": 39.4
-      },
-      {
-       "player": "Karlo Matkovic",
-       "salary": 4600,
-       "why": "started at center, 22 minutes (11/11)",
-       "much": "+7.9 DK projected vs. last 3",
-       "score": 7.850000000000001,
-       "min": 20.4,
-       "dk": 19.6
+       "min": 37.2,
+       "dk": 38.6
       },
       {
        "player": "Herbert Jones",
@@ -1589,8 +1601,17 @@
        "why": "started 6 of 10",
        "much": "+7.5 DK without him (10 games)",
        "score": 7.5,
-       "min": 30.4,
-       "dk": 18.6
+       "min": 30.7,
+       "dk": 18.8
+      },
+      {
+       "player": "Karlo Matkovic",
+       "salary": 4600,
+       "why": "started at center, 22 minutes (11/11)",
+       "much": "+7.4 DK projected vs. last 3",
+       "score": 7.449999999999999,
+       "min": 19.9,
+       "dk": 19.2
       }
      ],
      "estimate": false
@@ -1614,8 +1635,8 @@
        "why": "same minutes, more production",
        "much": "+7.6 DK without him (3 games)",
        "score": 7.6,
-       "min": 28.0,
-       "dk": 25.1
+       "min": 28.7,
+       "dk": 25.8
       }
      ],
      "estimate": false
@@ -1637,19 +1658,19 @@
        "player": "Giannis Antetokounmpo",
        "salary": 11500,
        "why": "subs in for him 6 of 31 times",
-       "much": "+15.0 DK projected vs. last 3",
-       "score": 14.983333333333341,
-       "min": 37.6,
-       "dk": 65.9
+       "much": "+11.6 DK projected vs. last 3",
+       "score": 11.583333333333336,
+       "min": 35.7,
+       "dk": 62.5
       },
       {
        "player": "Andrew Wiggins",
        "salary": 4800,
        "why": "subs in for him 10 of 31 times",
-       "much": "+8.6 DK projected vs. last 3",
-       "score": 8.55,
-       "min": 31.2,
-       "dk": 23.3
+       "much": "+7.9 DK projected vs. last 3",
+       "score": 7.850000000000001,
+       "min": 30.2,
+       "dk": 22.6
       }
      ],
      "estimate": false
@@ -1673,8 +1694,8 @@
        "why": "30 minutes, up from 22",
        "much": "+10.5 DK without him (2 games)",
        "score": 10.5,
-       "min": 23.1,
-       "dk": 27.8
+       "min": 24.6,
+       "dk": 29.6
       },
       {
        "player": "Noa Essengue",
@@ -1682,8 +1703,8 @@
        "why": "same minutes, more production",
        "much": "+10.2 DK without him (2 games)",
        "score": 10.2,
-       "min": 15.8,
-       "dk": 13.8
+       "min": 14.9,
+       "dk": 13.1
       },
       {
        "player": "Josh Giddey",
@@ -1691,8 +1712,8 @@
        "why": "same minutes, more production",
        "much": "+7.5 DK without him (2 games)",
        "score": 7.5,
-       "min": 28.4,
-       "dk": 32.9
+       "min": 27.6,
+       "dk": 32.0
       }
      ],
      "estimate": false
@@ -1759,8 +1780,8 @@
        "why": "started that game",
        "much": "+5.0 DK without him (1 game)",
        "score": 5.0,
-       "min": 30.4,
-       "dk": 18.6
+       "min": 30.7,
+       "dk": 18.8
       }
      ],
      "estimate": false
@@ -1829,8 +1850,8 @@
        "why": "16 minutes, up from 10",
        "much": "+13.8 DK without him (3 games)",
        "score": 13.8,
-       "min": 13.7,
-       "dk": 10.9
+       "min": 16.5,
+       "dk": 13.1
       },
       {
        "player": "Reed Sheppard",
@@ -1838,8 +1859,8 @@
        "why": "26 minutes, up from 17",
        "much": "+13.4 DK without him (3 games)",
        "score": 13.4,
-       "min": 22.1,
-       "dk": 22.1
+       "min": 23.3,
+       "dk": 23.3
       },
       {
        "player": "Tari Eason",
@@ -1847,8 +1868,8 @@
        "why": "32 minutes, up from 21",
        "much": "+7.0 DK without him (3 games)",
        "score": 7.0,
-       "min": 27.3,
-       "dk": 28.2
+       "min": 28.3,
+       "dk": 29.2
       }
      ],
      "estimate": false
@@ -1872,8 +1893,8 @@
        "why": "started 1 of 2",
        "much": "+23.8 DK without him (2 games)",
        "score": 23.8,
-       "min": 25.5,
-       "dk": 26.0
+       "min": 25.6,
+       "dk": 26.1
       },
       {
        "player": "Yaxel Lendeborg",
@@ -1881,8 +1902,8 @@
        "why": "35 minutes, up from 32",
        "much": "+14.4 DK without him (2 games)",
        "score": 14.4,
-       "min": 34.5,
-       "dk": 43.7
+       "min": 35.2,
+       "dk": 44.6
       },
       {
        "player": "Charles Bassey",
@@ -2021,6 +2042,40 @@
       }
      ],
      "estimate": true
+    },
+    {
+     "game": "OKC at LAC",
+     "time": "2026-11-14T03:30Z",
+     "team": "LAC",
+     "player": "Baba Miller",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "3:36 PM",
+     "min": 14.0,
+     "benefits": [
+      {
+       "player": "Brook Lopez",
+       "salary": 5400,
+       "why": "same minutes, more production",
+       "much": "+9.4 DK without him (1 game)",
+       "score": 9.4,
+       "min": 26.5,
+       "dk": 26.6
+      },
+      {
+       "player": "Derrick Jones Jr.",
+       "salary": 5200,
+       "why": "35 minutes, up from 28",
+       "much": "+5.0 DK without him (1 game)",
+       "score": 5.0,
+       "min": 27.6,
+       "dk": 22.7
+      }
+     ],
+     "estimate": false
     },
     {
      "game": "OKC at LAC",
@@ -2195,8 +2250,8 @@
        "why": "16 minutes, up from 8",
        "much": "+5.7 DK without him (2 games)",
        "score": 5.7,
-       "min": 12.5,
-       "dk": 9.8
+       "min": 12.7,
+       "dk": 9.9
       }
      ],
      "estimate": false
@@ -2278,8 +2333,8 @@
        "why": "9 minutes, up from 5",
        "much": "+9.5 DK without him (4 games)",
        "score": 9.5,
-       "min": 11.0,
-       "dk": 11.2
+       "min": 13.3,
+       "dk": 13.5
       }
      ],
      "estimate": false
@@ -2387,10 +2442,10 @@
        "player": "Alperen Sengun",
        "salary": 9400,
        "why": "subs in for him 9 of 22 times",
-       "much": "+5.5 DK projected vs. last 3",
-       "score": 5.549999999999997,
-       "min": 34.8,
-       "dk": 51.3
+       "much": "+5.2 DK projected vs. last 3",
+       "score": 5.25,
+       "min": 34.5,
+       "dk": 51.0
       }
      ],
      "estimate": false
@@ -2423,8 +2478,8 @@
        "why": "started 1 of 2",
        "much": "+5.3 DK without him (2 games)",
        "score": 5.3,
-       "min": 22.0,
-       "dk": 14.5
+       "min": 24.9,
+       "dk": 16.4
       }
      ],
      "estimate": false
@@ -2446,19 +2501,19 @@
        "player": "Jrue Holiday",
        "salary": 5800,
        "why": "30 minutes, 19 points off the bench (11/11)",
-       "much": "+7.3 DK projected vs. last 3",
-       "score": 7.300000000000001,
-       "min": 28.4,
-       "dk": 28.3
+       "much": "+8.3 DK projected vs. last 3",
+       "score": 8.3,
+       "min": 29.5,
+       "dk": 29.3
       },
       {
        "player": "Deni Avdija",
        "salary": 9000,
        "why": "39 minutes, 11 assists, extra usage (11/06)",
-       "much": "+6.7 DK projected vs. last 3",
-       "score": 6.7166666666666615,
-       "min": 34.5,
-       "dk": 46.8
+       "much": "+7.8 DK projected vs. last 3",
+       "score": 7.816666666666663,
+       "min": 35.3,
+       "dk": 47.9
       }
      ],
      "estimate": false
@@ -2482,8 +2537,8 @@
        "why": "same minutes, more production",
        "much": "+6.8 DK without him (5 games)",
        "score": 6.8,
-       "min": 32.3,
-       "dk": 26.5
+       "min": 32.9,
+       "dk": 27.0
       },
       {
        "player": "Deni Avdija",
@@ -2491,8 +2546,8 @@
        "why": "same minutes, more production",
        "much": "+5.8 DK without him (5 games)",
        "score": 5.8,
-       "min": 34.5,
-       "dk": 46.8
+       "min": 35.3,
+       "dk": 47.9
       },
       {
        "player": "Robert Williams",
@@ -2500,8 +2555,8 @@
        "why": "same minutes, more production",
        "much": "+5.8 DK without him (4 games)",
        "score": 5.8,
-       "min": 17.1,
-       "dk": 21.5
+       "min": 17.3,
+       "dk": 21.9
       }
      ],
      "estimate": false
@@ -2689,40 +2744,6 @@
        "score": 12.1,
        "min": 27.8,
        "dk": 25.3
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "OKC at LAC",
-     "time": "2026-11-14T03:30Z",
-     "team": "LAC",
-     "player": "Jordan Miller",
-     "status": "Out",
-     "reason": "",
-     "new": false,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 14.0,
-     "benefits": [
-      {
-       "player": "Brook Lopez",
-       "salary": 5400,
-       "why": "same minutes, more production",
-       "much": "+9.4 DK without him (1 game)",
-       "score": 9.4,
-       "min": 23.8,
-       "dk": 23.9
-      },
-      {
-       "player": "Derrick Jones Jr.",
-       "salary": 5200,
-       "why": "35 minutes, up from 28",
-       "much": "+5.0 DK without him (1 game)",
-       "score": 5.0,
-       "min": 27.6,
-       "dk": 22.7
       }
      ],
      "estimate": false
@@ -12432,12 +12453,12 @@
   {
    "team": "LAC",
    "starters": "Darius Garland (33), Derrick Jones Jr. (29), Rui Hachimura (30), Brook Lopez (23), Kris Dunn (29)",
-   "bench": "Kobe Sanders (24), Max Strus (22), Keaton Wagler (23), Isaiah Jackson (21), Gradey Dick (16), Baba Miller (10)",
+   "bench": "Kobe Sanders (24), Max Strus (22), Keaton Wagler (23), Isaiah Jackson (21), Gradey Dick (16)",
    "backup_c": "Brook Lopez",
    "coach": "Ty Lue",
    "notes": "Four players are hurt, three of them long-term: Brandon Ingram, Bradley Beal, Jordan Miller and Yanic Konan Niederhauser. The Clippers do not control their own pick this season. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). They have 13 back-to-backs, one of the lowest totals in the league. The NBA took five first-round picks from the Clippers and fined Steve Ballmer $30 million after the Kawhi investigation; the Clippers say they will challenge it.",
    "source": "LO-1019b",
-   "out": "Nick Martinelli",
+   "out": "Baba Miller, Nick Martinelli",
    "depth_through": "2026-11-10",
    "games": 10
   },
@@ -22497,7 +22518,7 @@
   {
    "rank": 283,
    "player": "Baba Miller",
-   "pos": "C",
+   "pos": "SF,PF",
    "team": "LAC",
    "flag": "",
    "change": "",
@@ -23071,7 +23092,7 @@
   {
    "rank": 324,
    "player": "LJ Cryer",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "GSW",
    "flag": "",
    "change": "",
@@ -23113,7 +23134,7 @@
   {
    "rank": 327,
    "player": "Kris Murray",
-   "pos": "SF/PF",
+   "pos": "SF,PF",
    "team": "MEM",
    "flag": "",
    "change": "",
