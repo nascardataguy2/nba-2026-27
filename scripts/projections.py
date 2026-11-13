@@ -352,6 +352,20 @@ def main():
     adjust = [a for a in load_json(os.path.join(D, "proj_adjust.json"), []) if a.get("until", "9999") >= day and a.get("from", "0000") <= day]
     amap = {norm(a["player"]): a for a in adjust}
     recent = load_json(os.path.join(HIST, "results.json"), {})
+    # ESPN box-score position (G/F/C) and each player's minutes high over his last 10 games.
+    bpos, pmax = {}, {}
+    try:
+        bfiles = sorted(x for x in os.listdir(os.path.join(HIST, "box")) if x[:10] < day)
+    except Exception:
+        bfiles = []
+    for fn in bfiles:
+        for x in load_json(os.path.join(HIST, "box", fn), []):
+            if x.get("pos"):
+                bpos[norm(x["player"])] = x["pos"]
+    for k, gs in recent.items():
+        g = sorted([x for x in gs if x.get("date", "") < day and x.get("min", 0) > 0], key=lambda x: x["date"])[-10:]
+        if len(g) >= 5:
+            pmax[k] = max(x["min"] for x in g)
     ours = {norm(p["player"]): p for p in load_json(os.path.join(D, "players.json"), [])}
     # The NBA's official injury report (scripts/official_injuries.py) beats every other source.
     offr = load_json(os.path.join(D, "injury_report.json"), {})
@@ -525,6 +539,17 @@ def main():
     for r in rows:
         r["m1"] = r["min"]
     # 2) Recent actual minutes (once games have been played).
+    # Teams missing tonight a player who played 10+ minutes in one of their last 3 games: his
+    # teammates' recent minutes were earned WITH him, so the blend may raise them but never
+    # pull them below the projection that already counts his absence (11/13: Isaiah Stewart was
+    # pulled back to 18.8 minutes with both Memphis centers out).
+    def team_dates(team, n=3):
+        return sorted({x["date"] for gs in recent.values() for x in gs if x.get("team") == team and x.get("date", "") < day})[-n:]
+    newly_out = set()
+    for o in out_list:
+        td = team_dates(o["team"])
+        if any(x.get("team") == o["team"] and x.get("date") in td and x["min"] >= 10 for x in recent.get(norm(o["player"]), [])):
+            newly_out.add(o["team"])
     for r in rows:
         if r["min"] <= 0 or r.get("fixed"):
             continue
@@ -537,7 +562,8 @@ def main():
         # (average miss fell from about 5.0 to about 4.4 minutes). The blend is on the
         # baseline minutes; minutes he picked up from teammates ruled out tonight are kept.
         w = {1: 0.5, 2: 0.7}.get(len(g), 0.65)
-        r["min"] = max(0.0, r["m0"] * (1 - w) + avg * w + (r["min"] - r["m0"]))
+        blend = max(0.0, r["m0"] * (1 - w) + avg * w + (r["min"] - r["m0"]))
+        r["min"] = max(r["min"], blend) if r["team"] in newly_out else blend
         r["recent"] = round(avg, 1)
 
     # 2b) What actually happened this season when tonight's outs sat. For each team, find
@@ -611,6 +637,49 @@ def main():
             r["min"] = min(MAX_MIN, r["min"] + 0.5 * fr * c / tot)
             r.setdefault("subin", []).append((o["player"], c, tot))
 
+    # 2d) Center minutes. When centers who played in the team's last 3 games sit tonight,
+    # the centers left get the center minutes the team has been playing (average of its last 3
+    # games), each up to his own 10-game minutes high. Centers are replaced by centers; the
+    # generic steps above spread a big man's minutes over guards and wings.
+    for team, tr in by_team.items():
+        td = team_dates(team)
+        if not td:
+            continue
+        outk = {norm(o["player"]) for o in out_list if o["team"] == team}
+        c_out = [k for k in outk if bpos.get(k) == "C" and any(x.get("team") == team and x.get("date") in td and x["min"] > 0 for x in recent.get(k, []))]
+        if not c_out:
+            continue
+        per = {}
+        for k, gs in recent.items():
+            if bpos.get(k) != "C":
+                continue
+            for x in gs:
+                if x.get("team") == team and x.get("date") in td:
+                    per[x["date"]] = per.get(x["date"], 0.0) + x["min"]
+        want = sum(per.values()) / len(td)
+        live_c = [r for r in tr if r["min"] > 0 and not r.get("fixed") and (bpos.get(norm(r["player"])) == "C" or (bpos.get(norm(r["player"])) is None and "C" in (r.get("dkpos") or "")))]
+        have = sum(r["min"] for r in live_c)
+        need = want - have
+        if need <= 0.5 or not live_c:
+            continue
+        before = {r["player"]: r["min"] for r in live_c}
+        for _ in range(8):
+            pool = [r for r in live_c if r["min"] < pmax.get(norm(r["player"]), 34.0)]
+            tot = sum(r["min"] for r in pool)
+            if need <= 0.05 or tot <= 0:
+                break
+            given = 0.0
+            for r in pool:
+                add = min(need * r["min"] / tot, pmax.get(norm(r["player"]), 34.0) - r["min"])
+                r["min"] += add
+                given += add
+            need -= given
+        for r in live_c:
+            if r["min"] - before[r["player"]] >= 1:
+                r["cmin"] = True
+                r["why"].append("More center minutes with %s out: the team has played %.0f center minutes a game lately." % (
+                    " and ".join(o["player"] for o in out_list if norm(o["player"]) in c_out), want))
+
     # 3) Each team plays 240 minutes.
     for team, tr in by_team.items():
         live = [r for r in tr if r["min"] > 0]
@@ -652,7 +721,21 @@ def main():
         if ftot > 0:
             k = (240.0 - fixed) / ftot
             for r in free:
-                r["min"] = min(MAX_MIN, r["min"] * k)
+                r["min"] = min(MAX_MIN, pmax.get(norm(r["player"]), MAX_MIN), r["min"] * k)
+    # Nobody is projected past his own minutes high from his last 10 games (Zion at 39.7 on
+    # 11/13 when his high was 38). Minutes cut this way go to teammates still under theirs.
+    for team, tr in by_team.items():
+        over = 0.0
+        for r in tr:
+            cap_ = pmax.get(norm(r["player"]))
+            if cap_ and r["min"] > cap_ and not r.get("fixed"):
+                over += r["min"] - cap_
+                r["min"] = cap_
+        if over > 0.05:
+            pool = [r for r in tr if r["min"] > 0 and not r.get("fixed") and r["min"] < pmax.get(norm(r["player"]), MAX_MIN)]
+            tot = sum(r["min"] for r in pool)
+            for r in pool:
+                r["min"] = min(pmax.get(norm(r["player"]), MAX_MIN), r["min"] + over * r["min"] / tot)
 
     # 4) Scale the stat line and DK points to the new minutes.
     for r in rows:
