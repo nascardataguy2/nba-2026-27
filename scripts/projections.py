@@ -88,6 +88,42 @@ def parse_sl(page):
     return rows
 
 
+DFF_DATA = "https://www.dailyfantasyfuel.com/data/"
+
+
+def dff_all(day):
+    """Every player on DailyFantasyFuel's DraftKings classic slates for the day, from the same
+    public data its free lineup optimizer loads (no login). The projections page itself only
+    shows the top 25 without a login. Same row format as parse_dff, plus "ppg" (DFF's DK
+    projection). Returns [] if DFF has nothing for the day."""
+    import calendar
+    want = "%s %d," % (calendar.month_abbr[int(day[5:7])], int(day[8:10]))
+    slates = json.loads(get(DFF_DATA + "slates/next/nba/dk?x=1"))
+    slates = [x for x in slates if not x.get("showdown_flag") and str(x.get("start_string", "")).startswith(want)]
+    slates.sort(key=lambda x: -int(x.get("game_count") or 0))
+    out, seen = [], set()
+    for sl in slates:
+        rows = json.loads(get(DFF_DATA + "playerdetails/nba/dk/%s?x=1" % sl["url"]))
+        score = {fix_team(r.get("team")): f(r.get("projected_team_score"), None) for r in rows}
+        for r in rows:
+            name = ("%s %s" % (r.get("first_name") or "", r.get("last_name") or "")).strip()
+            team = fix_team(r.get("team"))
+            if not name or (norm(name), team) in seen:
+                continue
+            seen.add((norm(name), team))
+            opp = fix_team(r.get("opp"))
+            pos = r.get("position_code") or ""
+            if r.get("position_code_alt") and r["position_code_alt"] not in pos:
+                pos = pos + "/" + r["position_code_alt"]
+            ts, os_ = score.get(team), score.get(opp)
+            out.append({"player": name, "team": team, "opp": opp, "home": r.get("location") == "vs", "date": day,
+                        "pos": pos, "salary": int(f(r.get("salary"))), "inj": r.get("injury_status") or "",
+                        "start": str(r.get("depth_rank")) == "1" or str(r.get("starter_flag")) == "1",
+                        "spread": f(r.get("team_spread"), None), "ou": (ts + os_) if ts is not None and os_ is not None else None,
+                        "tm_pts": ts, "ppg": f(r.get("ppg"), None)})
+    return out
+
+
 def parse_dff(page):
     out = []
     for attrs, body in re.findall(r'<tr class="[^"]*projections-listing[^"]*"([^>]*)>(.*?)</tr>', page, re.S):
@@ -278,7 +314,14 @@ def main():
             print("No baseline table after 7 PM ET (games under way); keeping the current file.")
             return
         raise
-    dff = parse_dff(open(args.dff).read() if args.dff else get(DFF_URL))
+    dff = []
+    if not args.dff:
+        try:
+            dff = dff_all(day)
+        except Exception as e:
+            print("DFF slate data unavailable (%s); using the projections page" % e)
+    if not dff:
+        dff = parse_dff(open(args.dff).read() if args.dff else get(DFF_URL))
     dff = [r for r in dff if r["date"] in ("", day)]
     if not dff:
         print("Salary/Vegas page not posted for", day, "yet; keeping the current file.")
@@ -595,6 +638,17 @@ def main():
             if gap > 0:
                 spread_minutes(tr, gap, {r["player"] for r in live if r.get("fixed")}, cap=36.0)
             continue
+        # Over 240: players the baseline left out (added from box scores) give up minutes first,
+        # so a deep-bench player's garbage-time average never cuts the regulars' minutes.
+        extra = tot - 240.0
+        for r in sorted([r for r in free if r.get("added")], key=lambda r: r["min"]):
+            if extra <= 0:
+                break
+            cut_ = min(r["min"], extra)
+            r["min"] -= cut_
+            extra -= cut_
+        free = [r for r in free if r["min"] > 0]
+        ftot = sum(r["min"] for r in free)
         if ftot > 0:
             k = (240.0 - fixed) / ftot
             for r in free:

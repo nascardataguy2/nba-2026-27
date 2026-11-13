@@ -193,14 +193,20 @@ def simulate(pool, ss_names, seed):
 
 
 def field_view(doc):
-    """The field's projection for each player: DailyFantasyFuel's DraftKings projection,
-    or ours when DFF has none. Stored as _fdk for the simulation only."""
+    """The field's projection for each player: DailyFantasyFuel's DraftKings projection
+    (every player on its classic slates), or ours when DFF has none. Stored as _fdk for the simulation only."""
     import html
     import re
-    from projections import get, DFF_URL
+    from projections import get, DFF_URL, dff_all
     dff = {}
+    try:  # every player on DFF's classic slates (the projections page shows only 25 without a login)
+        for r in dff_all(doc.get("date")):
+            if r.get("ppg") is not None:
+                dff.setdefault(norm(r["player"]), r["ppg"])
+    except Exception as e:
+        print("ownership: DFF slate data unavailable (%s); using the projections page" % e)
     try:
-        page = get(DFF_URL)
+        page = get(DFF_URL) if not dff else ""
         for attrs in re.findall(r'<tr class="[^"]*projections-listing[^"]*"([^>]*)>', page):
             a = {k: html.unescape(v) for k, v in re.findall(r'data-([a-z_0-9]+)=\s*"([^"]*)"', attrs)}
             if a.get("name") and a.get("start_date", doc.get("date")) == doc.get("date"):
