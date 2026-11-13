@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updated": "12:53 PM ET",
+ "updated": "1:53 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:42 AM",
@@ -12,10 +12,12 @@
    "slate": "main",
    "ou": 223.5,
    "fav": "ORL",
-   "line": 8.5,
-   "away_pts": 107.5,
-   "home_pts": 116.0,
-   "tags": [],
+   "line": 9.5,
+   "away_pts": 107.0,
+   "home_pts": 116.5,
+   "tags": [
+    "Blowout risk"
+   ],
    "teams": {
     "MIL": {
      "out": [],
@@ -90,11 +92,11 @@
    "home": "CHI",
    "time": "2026-11-14T01:00Z",
    "slate": "main",
-   "ou": 246.5,
+   "ou": 245.5,
    "fav": "ATL",
    "line": 6.5,
-   "away_pts": 126.5,
-   "home_pts": 120.0,
+   "away_pts": 126.0,
+   "home_pts": 119.5,
    "tags": [
     "Highest total"
    ],
@@ -158,17 +160,13 @@
      "q": []
     },
     "MIA": {
-     "out": [],
-     "q": [
-      {
-       "player": "Klay Thompson",
-       "min": 27.2
-      },
+     "out": [
       {
        "player": "Pelle Larsson",
-       "min": 27.9
+       "min": 27.3
       }
-     ]
+     ],
+     "q": []
     }
    },
    "key": "Evan Mobley and Sam Merrill are out, so Craig Porter Jr. should play more than usual."
@@ -180,12 +178,10 @@
    "slate": "main",
    "ou": 235.5,
    "fav": "MEM",
-   "line": 2.5,
-   "away_pts": 119.0,
-   "home_pts": 116.5,
-   "tags": [
-    "Close game"
-   ],
+   "line": 3.5,
+   "away_pts": 119.5,
+   "home_pts": 116.0,
+   "tags": [],
    "teams": {
     "MEM": {
      "out": [
@@ -207,33 +203,33 @@
        "min": 34.7
       },
       {
+       "player": "Dejounte Murray",
+       "min": 24.7
+      },
+      {
        "player": "Yves Missi",
        "min": 19.5
       },
       {
        "player": "Trendon Watford",
        "min": 18.7
-      },
-      {
-       "player": "Bryce McGowens",
-       "min": 14.7
       }
      ],
      "q": []
     }
    },
-   "key": "Trey Murphy and Yves Missi are out, so Dejounte Murray and Herbert Jones and Karlo Matkovic should play more than usual."
+   "key": "Trey Murphy and Dejounte Murray are out, so Saddiq Bey and Karlo Matkovic should play more than usual."
   },
   {
    "away": "UTA",
    "home": "HOU",
    "time": "2026-11-14T01:30Z",
    "slate": "main",
-   "ou": 219.5,
+   "ou": 221.5,
    "fav": "HOU",
    "line": 15.5,
-   "away_pts": 102.0,
-   "home_pts": 117.5,
+   "away_pts": 103.0,
+   "home_pts": 118.5,
    "tags": [
     "Blowout risk"
    ],
@@ -274,9 +270,9 @@
    "slate": "late",
    "ou": 218.5,
    "fav": "SAS",
-   "line": 11.5,
-   "away_pts": 103.5,
-   "home_pts": 115.0,
+   "line": 12.5,
+   "away_pts": 103.0,
+   "home_pts": 115.5,
    "tags": [
     "Lowest total",
     "Blowout risk"
@@ -361,9 +357,9 @@
    "slate": "late",
    "ou": 222.5,
    "fav": "OKC",
-   "line": 6.5,
-   "away_pts": 114.5,
-   "home_pts": 108.0,
+   "line": 7.5,
+   "away_pts": 115.0,
+   "home_pts": 107.5,
    "tags": [],
    "teams": {
     "OKC": {
@@ -407,6 +403,70 @@
  ],
  "changed": [
   {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "status": "Doubtful",
+   "was": "",
+   "why": "Left Ankle Sprain",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Yves Missi",
+   "team": "NOP",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Bryce McGowens",
+   "team": "NOP",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Left Elbow Infection",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Bennedict Mathurin",
+   "team": "NOP",
+   "status": "Questionable",
+   "was": "Doubtful",
+   "why": "Right Thumb Sprain",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Klay Thompson",
+   "team": "MIA",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "Left Ankle Soreness",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Pelle Larsson",
+   "team": "MIA",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Wrist Sprain",
+   "time": "1:54 PM"
+  },
+  {
    "player": "Nikola Topic",
    "team": "OKC",
    "status": "Available",
@@ -421,54 +481,6 @@
    "was": "Out",
    "why": "Left Ankle Sprain",
    "time": "6:46 AM"
-  },
-  {
-   "player": "Precious Achiuwa",
-   "team": "SAC",
-   "status": "Questionable",
-   "was": "",
-   "why": "Left Ankle Soreness",
-   "time": "6:46 AM"
-  },
-  {
-   "player": "Devin Vassell",
-   "team": "SAS",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "",
-   "time": "6:46 AM"
-  },
-  {
-   "player": "De'Aaron Fox",
-   "team": "SAS",
-   "status": "Questionable",
-   "was": "",
-   "why": "Left Hip Soreness",
-   "time": "6:46 AM"
-  },
-  {
-   "player": "Stephen Curry",
-   "team": "GSW",
-   "status": "Out",
-   "was": "",
-   "why": "Right Oblique Tear",
-   "time": "6:46 AM"
-  },
-  {
-   "player": "Charles Bassey",
-   "team": "GSW",
-   "status": "Probable",
-   "was": "",
-   "why": "Left Toe Soreness",
-   "time": "6:46 AM"
-  },
-  {
-   "player": "Tristan da Silva",
-   "team": "ORL",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "Left Calf Strain",
-   "time": "6:20 AM"
   }
  ],
  "chg": [
@@ -492,6 +504,95 @@
    ],
    "time": "6:46 AM",
    "size": 41.6
+  },
+  {
+   "key": "Trey Murphy III",
+   "team": "NOP",
+   "head": "Trey Murphy III OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Saddiq Bey",
+     "salary": 6200,
+     "much": "+10.9 DK projected vs. last 3"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 29.6
+  },
+  {
+   "key": "Dejounte Murray",
+   "team": "NOP",
+   "head": "Dejounte Murray DOUBTFUL",
+   "st": "Doubtful",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Karlo Matkovic",
+     "salary": 4600,
+     "much": "+18.2 DK without him (3 games)"
+    },
+    {
+     "player": "Jeremiah Fears",
+     "salary": 6800,
+     "much": "+16.6 DK without him (3 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 29.3
+  },
+  {
+   "key": "Yves Missi",
+   "team": "NOP",
+   "head": "Yves Missi OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jeremiah Fears",
+     "salary": 6800,
+     "much": "+22.5 DK without him (10 games)"
+    },
+    {
+     "player": "Herbert Jones",
+     "salary": 4500,
+     "much": "+7.5 DK without him (10 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 29.1
+  },
+  {
+   "key": "Pelle Larsson",
+   "team": "MIA",
+   "head": "Pelle Larsson DOUBTFUL",
+   "st": "Doubtful",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Giannis Antetokounmpo",
+     "salary": 11500,
+     "much": "+15.0 DK projected vs. last 3"
+    },
+    {
+     "player": "Andrew Wiggins",
+     "salary": 4800,
+     "much": "+8.6 DK projected vs. last 3"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 23.5
+  },
+  {
+   "key": "MIA",
+   "team": "MIA",
+   "head": "Thompson CLEARED",
+   "st": "Probable",
+   "act": "",
+   "names": [],
+   "time": "1:54 PM",
+   "size": 22.3
   },
   {
    "key": "De'Aaron Fox",
@@ -592,6 +693,38 @@
    ],
    "time": "6:46 AM",
    "size": 12.2
+  },
+  {
+   "key": "Bryce McGowens",
+   "team": "NOP",
+   "head": "Bryce McGowens OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jordan Poole",
+     "salary": 4000,
+     "much": "+7.6 DK without him (3 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 8.2
+  },
+  {
+   "key": "Bennedict Mathurin",
+   "team": "NOP",
+   "head": "Bennedict Mathurin QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Herbert Jones",
+     "salary": 4500,
+     "much": "+5.0 DK without him (1 game)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 5.4
   }
  ],
  "sits": [
@@ -602,6 +735,12 @@
      "player": "Trey Murphy",
      "min": 34.7,
      "note": "The show said Trey Murphy III and Bennedict Mathurin are doubtful for Nov. 13, and Yves Missi could return. Murphy has not played since Nov. 8. The show said Jordan Poole gets a bump and is playable for value.",
+     "new": true
+    },
+    {
+     "player": "Dejounte Murray",
+     "min": 24.7,
+     "note": "Doubtful tonight (left ankle sprain).",
      "new": true
     },
     {
@@ -618,40 +757,29 @@
     }
    ],
    "new": true,
-   "lost": 72.9,
+   "lost": 97.6,
    "benefits": [
     {
-     "player": "Dejounte Murray",
-     "salary": 7200,
-     "why": "started in his place, 45 minutes (OT) (11/04)",
-     "much": "+13.7 DK projected vs. last 3",
-     "score": 13.7,
-     "min": 29.5,
-     "dk": 29.2
-    },
-    {
-     "player": "Herbert Jones",
-     "salary": 4500,
-     "why": "started 2 of 2",
-     "much": "+7.3 DK without them (2 games)",
-     "score": 7.3,
-     "min": 27.3,
-     "dk": 16.2
+     "player": "Saddiq Bey",
+     "salary": 6200,
+     "why": "started, 24 minutes (11/09)",
+     "much": "+10.9 DK projected vs. last 3",
+     "score": 10.850000000000001,
+     "min": 33.8,
+     "dk": 31.1
     },
     {
      "player": "Karlo Matkovic",
      "salary": 4600,
      "why": "started at center, 22 minutes (11/11)",
-     "much": "+5.6 DK projected vs. last 3",
-     "score": 5.550000000000001,
-     "min": 18.4,
-     "dk": 17.3
+     "much": "+7.4 DK projected vs. last 3",
+     "score": 7.449999999999999,
+     "min": 20.4,
+     "dk": 19.2
     }
    ],
    "split_of": [
-    "Trey Murphy",
-    "Yves Missi",
-    "Trendon Watford"
+    "Trey Murphy"
    ]
   },
   {
@@ -737,6 +865,40 @@
    "split_of": [
     "Marcus Smart"
    ]
+  },
+  {
+   "team": "MIA",
+   "outs": [
+    {
+     "player": "Pelle Larsson",
+     "min": 27.3,
+     "note": "The show said Pelle Larsson and Klay Thompson are both questionable for Nov. 13 and Giannis Antetokounmpo is probable. The show prefers Larsson to Thompson if he plays.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 27.3,
+   "benefits": [
+    {
+     "player": "Giannis Antetokounmpo",
+     "salary": 11500,
+     "why": "subs in for him 6 of 31 times",
+     "much": "+15.0 DK projected vs. last 3",
+     "score": 14.983333333333341,
+     "min": 37.6,
+     "dk": 65.9
+    },
+    {
+     "player": "Andrew Wiggins",
+     "salary": 4800,
+     "why": "subs in for him 10 of 31 times",
+     "much": "+8.6 DK projected vs. last 3",
+     "score": 8.55,
+     "min": 31.2,
+     "dk": 23.3
+    }
+   ],
+   "split_of": []
   },
   {
    "team": "GSW",
@@ -827,83 +989,9 @@
    "split_of": [
     "Zach Edey"
    ]
-  },
-  {
-   "team": "OKC",
-   "outs": [
-    {
-     "player": "Jalen Williams",
-     "min": 31.7,
-     "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Chet Holmgren",
-     "min": 30.0,
-     "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Jaylin Williams",
-     "min": 22.0,
-     "note": "Jaylin Williams missed his fourth straight game Tuesday with back spasms.",
-     "new": false
-    },
-    {
-     "player": "Cason Wallace",
-     "min": 16.3,
-     "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 100.0,
-   "benefits": [
-    {
-     "player": "Bennett Stirtz",
-     "salary": 4000,
-     "why": "24 minutes, up from 15",
-     "much": "+12.6 DK without them (5 games)",
-     "score": 12.6,
-     "min": 23.3,
-     "dk": 18.0
-    },
-    {
-     "player": "Aday Mara",
-     "salary": 5400,
-     "why": "started 3 of 5",
-     "much": "+8.7 DK without them (5 games)",
-     "score": 8.7,
-     "min": 25.0,
-     "dk": 27.5
-    },
-    {
-     "player": "Jared McCain",
-     "salary": 5900,
-     "why": "started 3 of 5",
-     "much": "+8.6 DK without them (5 games)",
-     "score": 8.6,
-     "min": 27.8,
-     "dk": 25.3
-    }
-   ],
-   "split_of": [
-    "Jalen Williams",
-    "Chet Holmgren",
-    "Jaylin Williams",
-    "Cason Wallace"
-   ]
   }
  ],
  "hot": [
-  {
-   "player": "Dejounte Murray",
-   "team": "NOP",
-   "kind": "cold",
-   "last": 15.5,
-   "before": 36.2,
-   "n": 6
-  },
   {
    "player": "Anthony Black",
    "team": "ORL",
@@ -935,6 +1023,14 @@
    "last": 54.8,
    "before": 41.8,
    "n": 8
+  },
+  {
+   "player": "Mario Hezonja",
+   "team": "CLE",
+   "kind": "cold",
+   "last": 9.2,
+   "before": 22.2,
+   "n": 9
   }
  ],
  "minutes": [
@@ -945,6 +1041,14 @@
    "last": 23.3,
    "before": 7.0,
    "n": 6
+  },
+  {
+   "player": "Tim Hardaway",
+   "team": "MIA",
+   "kind": "down",
+   "last": 6.0,
+   "before": 18.4,
+   "n": 7
   },
   {
    "player": "Jarace Walker",
@@ -969,14 +1073,6 @@
    "last": 27.0,
    "before": 16.3,
    "n": 7
-  },
-  {
-   "player": "Dejounte Murray",
-   "team": "NOP",
-   "kind": "down",
-   "last": 24.7,
-   "before": 34.8,
-   "n": 6
   }
  ],
  "chalk": [
@@ -997,7 +1093,7 @@
   {
    "player": "Jarrett Allen",
    "team": "CLE",
-   "own": 35.3,
+   "own": 35.5,
    "dk": 35.0,
    "salary": 5700
   },
@@ -1011,25 +1107,25 @@
  ],
  "leverage": [
   {
+   "player": "Jordan Poole",
+   "team": "NOP",
+   "own": 8.1,
+   "dk": 24.8,
+   "salary": 4000
+  },
+  {
    "player": "Tari Eason",
    "team": "HOU",
-   "own": 4.1,
+   "own": 5.1,
    "dk": 28.2,
    "salary": 5100
   },
   {
-   "player": "Meleek Thomas",
-   "team": "CLE",
-   "own": 9.7,
-   "dk": 24.0,
-   "salary": 4500
-  },
-  {
-   "player": "Jordan Poole",
-   "team": "NOP",
-   "own": 7.0,
-   "dk": 21.0,
-   "salary": 4000
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "own": 7.8,
+   "dk": 38.1,
+   "salary": 6900
   }
  ],
  "last": {
@@ -1121,8 +1217,8 @@
   ]
  },
  "injuries": {
-  "report": "12:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_12_45PM.pdf",
+  "report": "01:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_01_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1295,6 +1391,31 @@
     "estimate": false
    },
    {
+    "game": "MEM at NOP",
+    "time": "2026-11-14T01:00Z",
+    "team": "NOP",
+    "player": "Trey Murphy III",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Doubtful",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 34.7,
+    "benefits": [
+     {
+      "player": "Saddiq Bey",
+      "salary": 6200,
+      "why": "started, 24 minutes (11/09)",
+      "much": "+10.9 DK projected vs. last 3",
+      "score": 10.850000000000001,
+      "min": 33.8,
+      "dk": 31.1
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "CLE at MIA",
     "time": "2026-11-14T01:00Z",
     "team": "CLE",
@@ -1390,47 +1511,13 @@
     "game": "MEM at NOP",
     "time": "2026-11-14T01:00Z",
     "team": "NOP",
-    "player": "Trey Murphy III",
-    "status": "Doubtful",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 34.7,
-    "benefits": [
-     {
-      "player": "Dejounte Murray",
-      "salary": 7200,
-      "why": "started in his place, 45 minutes (OT) (11/04)",
-      "much": "+13.7 DK projected vs. last 3",
-      "score": 13.7,
-      "min": 29.5,
-      "dk": 29.2
-     },
-     {
-      "player": "Saddiq Bey",
-      "salary": 6200,
-      "why": "started, 24 minutes (11/09)",
-      "much": "+5.2 DK projected vs. last 3",
-      "score": 5.25,
-      "min": 27.7,
-      "dk": 25.5
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MEM at NOP",
-    "time": "2026-11-14T01:00Z",
-    "team": "NOP",
     "player": "Yves Missi",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "",
+    "changed_at": "1:54 PM",
     "min": 19.5,
     "benefits": [
      {
@@ -1439,8 +1526,8 @@
       "why": "30 minutes, up from 22",
       "much": "+22.5 DK without him (10 games)",
       "score": 22.5,
-      "min": 34.1,
-      "dk": 35.3
+      "min": 38.0,
+      "dk": 39.3
      },
      {
       "player": "Herbert Jones",
@@ -1448,17 +1535,17 @@
       "why": "started 6 of 10",
       "much": "+7.5 DK without him (10 games)",
       "score": 7.5,
-      "min": 27.3,
-      "dk": 16.2
+      "min": 30.6,
+      "dk": 18.1
      },
      {
       "player": "Karlo Matkovic",
       "salary": 4600,
       "why": "started at center, 22 minutes (11/11)",
-      "much": "+5.6 DK projected vs. last 3",
-      "score": 5.550000000000001,
-      "min": 18.4,
-      "dk": 17.3
+      "much": "+7.4 DK projected vs. last 3",
+      "score": 7.449999999999999,
+      "min": 20.4,
+      "dk": 19.2
      }
     ],
     "estimate": false
@@ -1468,56 +1555,22 @@
     "time": "2026-11-14T01:00Z",
     "team": "NOP",
     "player": "Bryce McGowens",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "Left Elbow Infection",
     "new": true,
-    "was": "",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "",
+    "changed_at": "1:54 PM",
     "min": 14.7,
     "benefits": [
-     {
-      "player": "Dejounte Murray",
-      "salary": 7200,
-      "why": "36 minutes, up from 26",
-      "much": "+19.0 DK without him (5 games)",
-      "score": 19.0,
-      "min": 29.5,
-      "dk": 29.2
-     },
      {
       "player": "Jordan Poole",
       "salary": 4000,
       "why": "same minutes, more production",
       "much": "+7.6 DK without him (3 games)",
       "score": 7.6,
-      "min": 23.8,
-      "dk": 21.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MEM at NOP",
-    "time": "2026-11-14T01:00Z",
-    "team": "NOP",
-    "player": "Bennedict Mathurin",
-    "status": "Doubtful",
-    "reason": "Right Thumb Sprain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 13.3,
-    "benefits": [
-     {
-      "player": "Herbert Jones",
-      "salary": 4500,
-      "why": "started that game",
-      "much": "+5.0 DK without him (1 game)",
-      "score": 5.0,
-      "min": 27.3,
-      "dk": 16.2
+      "min": 28.1,
+      "dk": 24.8
      }
     ],
     "estimate": false
@@ -1526,35 +1579,78 @@
     "game": "CLE at MIA",
     "time": "2026-11-14T01:00Z",
     "team": "MIA",
-    "player": "Klay Thompson",
-    "status": "Questionable",
-    "reason": "Left Ankle Soreness",
+    "player": "Pelle Larsson",
+    "status": "Doubtful",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 27.3,
+    "benefits": [
+     {
+      "player": "Giannis Antetokounmpo",
+      "salary": 11500,
+      "why": "subs in for him 6 of 31 times",
+      "much": "+15.0 DK projected vs. last 3",
+      "score": 14.983333333333341,
+      "min": 37.6,
+      "dk": 65.9
+     },
+     {
+      "player": "Andrew Wiggins",
+      "salary": 4800,
+      "why": "subs in for him 10 of 31 times",
+      "much": "+8.6 DK projected vs. last 3",
+      "score": 8.55,
+      "min": 31.2,
+      "dk": 23.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "MEM at NOP",
+    "time": "2026-11-14T01:00Z",
+    "team": "NOP",
+    "player": "Dejounte Murray",
+    "status": "Doubtful",
+    "reason": "Left Ankle Sprain",
     "new": true,
     "was": "",
     "known": true,
-    "changed_at": "",
-    "min": 28.3,
+    "changed_at": "1:54 PM",
+    "min": 24.7,
     "benefits": [
      {
-      "player": "Tim Hardaway",
-      "salary": 3200,
-      "why": "subs in for him 8 of 27 times",
-      "much": "about +5.1 DK",
-      "score": 5.125406107862248,
-      "min": 9.5,
-      "dk": 5.8
+      "player": "Karlo Matkovic",
+      "salary": 4600,
+      "why": "25 minutes, up from 16",
+      "much": "+18.2 DK without him (3 games)",
+      "score": 18.2,
+      "min": 20.4,
+      "dk": 19.2
      },
      {
-      "player": "Davion Mitchell",
-      "salary": 6900,
-      "why": "subs in for him 5 of 27 times",
-      "much": "about +5.0 DK",
-      "score": 4.9774774774774775,
-      "min": 37.0,
-      "dk": 35.1
+      "player": "Jeremiah Fears",
+      "salary": 6800,
+      "why": "33 minutes, up from 28",
+      "much": "+16.6 DK without him (3 games)",
+      "score": 16.6,
+      "min": 38.0,
+      "dk": 39.3
+     },
+     {
+      "player": "Herbert Jones",
+      "salary": 4500,
+      "why": "started 3 of 3",
+      "much": "+11.4 DK without him (3 games)",
+      "score": 11.4,
+      "min": 30.6,
+      "dk": 18.1
      }
     ],
-    "estimate": true
+    "estimate": false
    },
    {
     "game": "ATL at CHI",
@@ -1576,7 +1672,7 @@
       "much": "+10.5 DK without him (2 games)",
       "score": 10.5,
       "min": 23.1,
-      "dk": 27.9
+      "dk": 27.8
      },
      {
       "player": "Noa Essengue",
@@ -1598,49 +1694,6 @@
      }
     ],
     "estimate": false
-   },
-   {
-    "game": "CLE at MIA",
-    "time": "2026-11-14T01:00Z",
-    "team": "MIA",
-    "player": "Pelle Larsson",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 27.3,
-    "benefits": [
-     {
-      "player": "Giannis Antetokounmpo",
-      "salary": 11500,
-      "why": "subs in for him 6 of 31 times",
-      "much": "about +9.3 DK",
-      "score": 9.258064516129032,
-      "min": 32.4,
-      "dk": 56.7
-     },
-     {
-      "player": "Andrew Wiggins",
-      "salary": 4800,
-      "why": "subs in for him 10 of 31 times",
-      "much": "about +6.6 DK",
-      "score": 6.603978929955161,
-      "min": 24.7,
-      "dk": 18.5
-     },
-     {
-      "player": "Davion Mitchell",
-      "salary": 6900,
-      "why": "subs in for him 5 of 31 times",
-      "much": "about +4.2 DK",
-      "score": 4.182214472537053,
-      "min": 37.0,
-      "dk": 35.1
-     }
-    ],
-    "estimate": true
    },
    {
     "game": "ATL at CHI",
@@ -1686,6 +1739,31 @@
     "estimate": false
    },
    {
+    "game": "MEM at NOP",
+    "time": "2026-11-14T01:00Z",
+    "team": "NOP",
+    "player": "Bennedict Mathurin",
+    "status": "Questionable",
+    "reason": "Right Thumb Sprain",
+    "new": true,
+    "was": "Doubtful",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 13.3,
+    "benefits": [
+     {
+      "player": "Herbert Jones",
+      "salary": 4500,
+      "why": "started that game",
+      "much": "+5.0 DK without him (1 game)",
+      "score": 5.0,
+      "min": 30.6,
+      "dk": 18.1
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "ATL at CHI",
     "time": "2026-11-14T01:00Z",
     "team": "CHI",
@@ -1704,13 +1782,28 @@
     "game": "CLE at MIA",
     "time": "2026-11-14T01:00Z",
     "team": "MIA",
-    "player": "Giannis Antetokounmpo",
+    "player": "Klay Thompson",
     "status": "Probable",
+    "reason": "Left Ankle Soreness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 28.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "CLE at MIA",
+    "time": "2026-11-14T01:00Z",
+    "team": "MIA",
+    "player": "Giannis Antetokounmpo",
+    "status": "Available",
     "reason": "Right Wrist Sprain",
     "new": true,
-    "was": "Available",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "1:54 PM",
     "min": 32.0,
     "benefits": [],
     "estimate": false
@@ -2118,17 +2211,7 @@
     "known": true,
     "changed_at": "",
     "min": 18.7,
-    "benefits": [
-     {
-      "player": "Dejounte Murray",
-      "salary": 7200,
-      "why": "same minutes, more production",
-      "much": "+6.3 DK without him (6 games)",
-      "score": 6.3,
-      "min": 29.5,
-      "dk": 29.2
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
