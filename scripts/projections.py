@@ -110,13 +110,15 @@ def dk_salaries(day):
     """Official DraftKings classic salaries, positions and player IDs:
     {(norm name, team): (salary, pos, id, slate)}. The main slate is the
     featured classic contest with the most games; when DraftKings splits the
-    night, the biggest featured contest with no main-slate teams is the late
-    slate. Main-slate prices win if a player shows up in both."""
+    night, the biggest classic contest (featured or not) with no main-slate teams
+    is the late slate. Main-slate prices win if a player shows up in both."""
     out = {}
     try:
         lob = json.loads(get("https://www.draftkings.com/lobby/getcontests?sport=NBA"))
+        # Every classic draft group today. DraftKings does not always tag the late ("Night")
+        # classic slate as Featured, so the tag only decides the main slate, not the late one.
         groups = [g for g in lob.get("DraftGroups", []) if g.get("ContestTypeId") == 70 and
-                  str(g.get("StartDateEst", "")).startswith(day) and g.get("DraftGroupTag") == "Featured"]
+                  str(g.get("StartDateEst", "")).startswith(day)]
     except Exception:
         return out
     if not groups:
@@ -137,8 +139,9 @@ def dk_salaries(day):
                 continue
         return rows
 
-    groups.sort(key=lambda x: (-x.get("GameCount", 0), x.get("StartDateEst", "")))
+    groups.sort(key=lambda x: (x.get("DraftGroupTag") != "Featured", -x.get("GameCount", 0), x.get("StartDateEst", "")))
     main = read(groups[0])
+    groups = [groups[0]] + sorted(groups[1:], key=lambda x: (-x.get("GameCount", 0), x.get("StartDateEst", "")))
     for k, v in main.items():
         out[k] = v + ("main",)
     main_teams = {t for _, t in main}
