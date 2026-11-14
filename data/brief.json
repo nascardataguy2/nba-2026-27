@@ -1,1067 +1,509 @@
 {
- "date": "2026-11-13",
- "updated": "10:25 PM ET",
- "games": 9,
+ "date": "2026-11-14",
+ "updated": "5:41 AM ET",
+ "games": 5,
  "pending": [
-  "ATL",
-  "CHI",
-  "CLE",
-  "GSW",
-  "HOU",
-  "IND",
-  "LAC",
-  "MEM",
-  "MIA",
-  "MIL",
   "NOP",
-  "NYK",
-  "OKC",
-  "ORL",
-  "POR",
-  "SAC",
-  "SAS",
-  "UTA"
+  "CLE",
+  "MEM",
+  "CHI",
+  "MIA"
  ],
  "first_report": "5:42 AM",
  "cards": [
   {
-   "away": "MIL",
-   "home": "ORL",
-   "time": "2026-11-14T00:00Z",
+   "away": "DEN",
+   "home": "NOP",
+   "time": "2026-11-15T00:00Z",
    "slate": "main",
-   "ou": 223.5,
-   "fav": "ORL",
-   "line": 9.5,
-   "away_pts": 107.0,
-   "home_pts": 116.5,
+   "ou": 234.5,
+   "fav": "DEN",
+   "line": 11.5,
+   "away_pts": 123.0,
+   "home_pts": 111.5,
    "tags": [
-    "Blowout risk"
+    "Blowout risk",
+    "NOP on a back-to-back"
    ],
    "teams": {
-    "MIL": {
+    "DEN": {
      "out": [],
      "q": []
     },
-    "ORL": {
-     "out": [
-      {
-       "player": "Paolo Banchero",
-       "min": 33.5
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Paolo Banchero is out, so Jamal Cain and Desmond Bane and Franz Wagner should play more than usual."
-  },
-  {
-   "away": "NYK",
-   "home": "IND",
-   "time": "2026-11-14T00:00Z",
-   "slate": "main",
-   "ou": 219.5,
-   "fav": "NYK",
-   "line": 8.5,
-   "away_pts": 114.0,
-   "home_pts": 105.5,
-   "tags": [],
-   "teams": {
-    "NYK": {
+    "NOP": {
      "out": [],
-     "q": []
-    },
-    "IND": {
-     "out": [
+     "q": [
       {
-       "player": "Tyrese Haliburton",
-       "min": 32.7
-      },
-      {
-       "player": "Ben Sheppard",
-       "min": 12.0
+       "player": "Trey Murphy",
+       "min": 29.9
       }
-     ],
-     "q": []
+     ]
     }
    },
-   "key": "Tyrese Haliburton is out, so Quenton Jackson and Andrew Nembhard and Larry Nance should play more than usual."
+   "key": "Nikola Jokic has the top projection in this game at 57.6 DK points."
   },
   {
-   "away": "ATL",
-   "home": "CHI",
-   "time": "2026-11-14T01:00Z",
+   "away": "DAL",
+   "home": "CLE",
+   "time": "2026-11-15T00:30Z",
    "slate": "main",
-   "ou": 245.5,
-   "fav": "ATL",
-   "line": 6.5,
-   "away_pts": 126.0,
-   "home_pts": 119.5,
-   "tags": [
-    "Highest total"
-   ],
-   "teams": {
-    "ATL": {
-     "out": [
-      {
-       "player": "Asa Newell",
-       "min": 15.3
-      }
-     ],
-     "q": []
-    },
-    "CHI": {
-     "out": [
-      {
-       "player": "Caleb Wilson",
-       "min": 23.0
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Asa Newell is out, so Jalen Johnson and Dyson Daniels and Aaron Wiggins should play more than usual."
-  },
-  {
-   "away": "CLE",
-   "home": "MIA",
-   "time": "2026-11-14T01:00Z",
-   "slate": "main",
-   "ou": 236.5,
-   "fav": "MIA",
+   "ou": 231.5,
+   "fav": "CLE",
    "line": 2.5,
-   "away_pts": 117.0,
-   "home_pts": 119.5,
+   "away_pts": 114.5,
+   "home_pts": 117.0,
    "tags": [
-    "Close game"
+    "Close game",
+    "CLE on a back-to-back"
    ],
    "teams": {
-    "CLE": {
+    "DAL": {
      "out": [
+      {
+       "player": "Sergio De Larrea",
+       "min": 13.3
+      }
+     ],
+     "q": [
+      {
+       "player": "Max Christie",
+       "min": 14.8
+      }
+     ]
+    },
+    "CLE": {
+     "out": [],
+     "q": [
       {
        "player": "Evan Mobley",
-       "min": 30.0
+       "min": 30.4
+      }
+     ]
+    }
+   },
+   "key": "Cooper Flagg has the top projection in this game at 44.5 DK points."
+  },
+  {
+   "away": "CHI",
+   "home": "MIN",
+   "time": "2026-11-15T01:00Z",
+   "slate": "main",
+   "ou": 236.5,
+   "fav": "MIN",
+   "line": 14.5,
+   "away_pts": 111.0,
+   "home_pts": 125.5,
+   "tags": [
+    "Highest total",
+    "Blowout risk",
+    "CHI on a back-to-back"
+   ],
+   "teams": {
+    "CHI": {
+     "out": [],
+     "q": [
+      {
+       "player": "Jalen Smith",
+       "min": 28.0
+      }
+     ]
+    },
+    "MIN": {
+     "out": [
+      {
+       "player": "Anthony Edwards",
+       "min": 34.0
+      }
+     ],
+     "q": []
+    }
+   },
+   "key": "Anthony Edwards is out, so Nah'Shon Hyland and Ayo Dosunmu and Jaylen Clark should play more than usual."
+  },
+  {
+   "away": "DET",
+   "home": "MIA",
+   "time": "2026-11-15T01:00Z",
+   "slate": "main",
+   "ou": 228.5,
+   "fav": "DET",
+   "line": 4.5,
+   "away_pts": 116.5,
+   "home_pts": 112.0,
+   "tags": [
+    "MIA on a back-to-back"
+   ],
+   "teams": {
+    "DET": {
+     "out": [
+      {
+       "player": "Jalen Duren",
+       "min": 19.0
       },
       {
-       "player": "Sam Merrill",
-       "min": 22.0
+       "player": "Isaiah Joe",
+       "min": 13.7
       }
      ],
      "q": []
     },
     "MIA": {
-     "out": [
+     "out": [],
+     "q": [
       {
        "player": "Klay Thompson",
-       "min": 28.3
+       "min": 26.5
       },
       {
        "player": "Pelle Larsson",
        "min": 27.3
       }
-     ],
-     "q": []
+     ]
     }
    },
-   "key": "Klay Thompson and Pelle Larsson are out, so Andrew Wiggins should play more than usual."
+   "key": "Jalen Duren is out, so Cade Cunningham and Daniss Jenkins and Ausar Thompson should play more than usual."
   },
   {
-   "away": "MEM",
-   "home": "NOP",
-   "time": "2026-11-14T01:00Z",
+   "away": "BKN",
+   "home": "MEM",
+   "time": "2026-11-15T01:00Z",
    "slate": "main",
-   "ou": 235.5,
+   "ou": 226.5,
    "fav": "MEM",
-   "line": 3.5,
-   "away_pts": 119.5,
+   "line": 5.5,
+   "away_pts": 110.5,
    "home_pts": 116.0,
-   "tags": [],
-   "teams": {
-    "MEM": {
-     "out": [
-      {
-       "player": "Zach Edey",
-       "min": 21.0
-      },
-      {
-       "player": "Scotty Pippen Jr.",
-       "min": 14.7
-      }
-     ],
-     "q": []
-    },
-    "NOP": {
-     "out": [
-      {
-       "player": "Trey Murphy III",
-       "min": 34.7
-      },
-      {
-       "player": "Dejounte Murray",
-       "min": 24.7
-      },
-      {
-       "player": "Yves Missi",
-       "min": 19.5
-      },
-      {
-       "player": "Trendon Watford",
-       "min": 18.7
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Trey Murphy III and Dejounte Murray are out, so Karlo Matkovic should play more than usual."
-  },
-  {
-   "away": "UTA",
-   "home": "HOU",
-   "time": "2026-11-14T01:30Z",
-   "slate": "main",
-   "ou": 221.5,
-   "fav": "HOU",
-   "line": 15.5,
-   "away_pts": 103.0,
-   "home_pts": 118.5,
-   "tags": [
-    "Blowout risk"
-   ],
-   "teams": {
-    "UTA": {
-     "out": [
-      {
-       "player": "Lauri Markkanen",
-       "min": 34.7
-      },
-      {
-       "player": "Jaren Jackson Jr.",
-       "min": 25.3
-      }
-     ],
-     "q": []
-    },
-    "HOU": {
-     "out": [
-      {
-       "player": "Clint Capela",
-       "min": 20.7
-      },
-      {
-       "player": "Marcus Smart",
-       "min": 18.0
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Kyle Filipowski and Darryn Peterson and Brice Sensabaugh should play more than usual."
-  },
-  {
-   "away": "GSW",
-   "home": "SAS",
-   "time": "2026-11-14T02:30Z",
-   "slate": "main",
-   "ou": 216.5,
-   "fav": "SAS",
-   "line": 11.5,
-   "away_pts": 102.5,
-   "home_pts": 114.0,
    "tags": [
     "Lowest total",
-    "Blowout risk"
+    "MEM on a back-to-back"
    ],
    "teams": {
-    "GSW": {
-     "out": [
-      {
-       "player": "Stephen Curry",
-       "min": 21.0
-      },
-      {
-       "player": "Brandon Williams",
-       "min": 13.3
-      }
-     ],
-     "q": []
-    },
-    "SAS": {
+    "BKN": {
      "out": [],
-     "q": []
+     "q": [
+      {
+       "player": "Mikel Brown Jr.",
+       "min": 20.7
+      }
+     ]
+    },
+    "MEM": {
+     "out": [],
+     "q": [
+      {
+       "player": "Zach Edey",
+       "min": 21.3
+      }
+     ]
     }
    },
-   "key": "Stephen Curry is out, so De'Anthony Melton and Yaxel Lendeborg and Charles Bassey should play more than usual."
-  },
-  {
-   "away": "POR",
-   "home": "SAC",
-   "time": "2026-11-14T03:00Z",
-   "slate": "main",
-   "ou": 229.5,
-   "fav": "POR",
-   "line": 10.5,
-   "away_pts": 120.0,
-   "home_pts": 109.5,
-   "tags": [
-    "Blowout risk"
-   ],
-   "teams": {
-    "POR": {
-     "out": [
-      {
-       "player": "Ja Morant",
-       "min": 27.0
-      },
-      {
-       "player": "Chris Youngblood",
-       "min": 18.3
-      },
-      {
-       "player": "Vit Krejci",
-       "min": 12.7
-      }
-     ],
-     "q": []
-    },
-    "SAC": {
-     "out": [
-      {
-       "player": "Precious Achiuwa",
-       "min": 24.0
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Ja Morant and Chris Youngblood are out, so Deni Avdija and Toumani Camara and Jrue Holiday should play more than usual."
-  },
-  {
-   "away": "OKC",
-   "home": "LAC",
-   "time": "2026-11-14T03:30Z",
-   "slate": "main",
-   "ou": 222.5,
-   "fav": "OKC",
-   "line": 7.5,
-   "away_pts": 115.0,
-   "home_pts": 107.5,
-   "tags": [],
-   "teams": {
-    "OKC": {
-     "out": [
-      {
-       "player": "Jalen Williams",
-       "min": 31.7
-      },
-      {
-       "player": "Chet Holmgren",
-       "min": 30.0
-      },
-      {
-       "player": "Ajay Mitchell",
-       "min": 26.7
-      },
-      {
-       "player": "Jaylin Williams",
-       "min": 22.0
-      }
-     ],
-     "q": []
-    },
-    "LAC": {
-     "out": [
-      {
-       "player": "Baba Miller",
-       "min": 14.0
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Jalen Williams and Chet Holmgren are out, so Isaiah Hartenstein and Alex Caruso and Kenrich Williams should play more than usual."
+   "key": "Ty Jerome has the top projection in this game at 38.9 DK points."
   }
  ],
- "changed": [
-  {
-   "player": "Ajay Mitchell",
-   "team": "OKC",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Left Ankle Sprain",
-   "time": "9:45 PM"
-  },
-  {
-   "player": "Devin Vassell",
-   "team": "SAS",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "-",
-   "time": "9:16 PM"
-  },
-  {
-   "player": "De'Aaron Fox",
-   "team": "SAS",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "-",
-   "time": "9:16 PM"
-  },
-  {
-   "player": "Charles Bassey",
-   "team": "GSW",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Left Toe Soreness",
-   "time": "9:16 PM"
-  },
-  {
-   "player": "Dailyn Swain",
-   "team": "CHI",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Right Disc Irritation",
-   "time": "7:47 PM"
-  },
-  {
-   "player": "Norman Powell",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "-",
-   "time": "7:47 PM"
-  },
-  {
-   "player": "Bennedict Mathurin",
-   "team": "NOP",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Right Thumb Sprain",
-   "time": "6:55 PM"
-  },
-  {
-   "player": "Kingston Flemings",
-   "team": "ATL",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Lumbar Spasm",
-   "time": "6:47 PM"
-  },
-  {
-   "player": "Klay Thompson",
-   "team": "MIA",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Left Ankle Soreness",
-   "time": "6:32 PM"
-  },
-  {
-   "player": "Klay Thompson",
-   "team": "MIA",
-   "status": "Questionable",
-   "was": "Probable",
-   "why": "Left Ankle Soreness",
-   "time": "6:17 PM"
-  }
- ],
- "chg": [
-  {
-   "key": "ORL",
-   "team": "ORL",
-   "head": "Suggs, Silva, Cain CLEARED",
-   "st": "Probable",
-   "act": "Less value",
-   "names": [
-    {
-     "player": "Jevon Carter",
-     "salary": 3900,
-     "much": "+19.0 DK without Cain"
-    },
-    {
-     "player": "Anthony Black",
-     "salary": 7200,
-     "much": "+11.6 DK without Silva"
-    }
-   ],
-   "time": "5:32 PM",
-   "size": 63.4
-  },
-  {
-   "key": "SAS",
-   "team": "SAS",
-   "head": "Fox, Vassell CLEARED",
-   "st": "Probable",
-   "act": "Less value",
-   "names": [
-    {
-     "player": "Carter Bryant",
-     "salary": 3300,
-     "much": "+9.4 DK without Vassell"
-    },
-    {
-     "player": "Victor Wembanyama",
-     "salary": 12000,
-     "much": "+9.0 DK without Vassell"
-    }
-   ],
-   "time": "9:16 PM",
-   "size": 57.5
-  },
-  {
-   "key": "CHI",
-   "team": "CHI",
-   "head": "Powell CLEARED",
-   "st": "Probable",
-   "act": "Less value",
-   "names": [
-    {
-     "player": "Jalen Smith",
-     "salary": 5900,
-     "much": "+10.5 DK without Powell"
-    },
-    {
-     "player": "Noa Essengue",
-     "salary": 3500,
-     "much": "+10.2 DK without Powell"
-    }
-   ],
-   "time": "7:47 PM",
-   "size": 28.2
-  },
-  {
-   "key": "MIA",
-   "team": "MIA",
-   "head": "Thompson CLEARED",
-   "st": "Probable",
-   "act": "",
-   "names": [],
-   "time": "1:54 PM",
-   "size": 22.3
-  },
-  {
-   "key": "ATL",
-   "team": "ATL",
-   "head": "Flemings CLEARED",
-   "st": "Probable",
-   "act": "Less value",
-   "names": [
-    {
-     "player": "C.J. McCollum",
-     "salary": 5300,
-     "much": "+23.2 DK without Flemings"
-    },
-    {
-     "player": "Nickeil Alexander-Walker",
-     "salary": 6900,
-     "much": "+23.1 DK without Flemings"
-    }
-   ],
-   "time": "6:47 PM",
-   "size": 19.8
-  },
-  {
-   "key": "IND",
-   "team": "IND",
-   "head": "Nesmith CLEARED",
-   "st": "Probable",
-   "act": "Less value",
-   "names": [
-    {
-     "player": "Jalen Slawson",
-     "salary": 3100,
-     "much": "+28.1 DK without Nesmith"
-    },
-    {
-     "player": "Jay Huff",
-     "salary": 3600,
-     "much": "+24.8 DK without Nesmith"
-    }
-   ],
-   "time": "6:17 PM",
-   "size": 19.4
-  }
- ],
+ "changed": [],
+ "chg": [],
  "sits": [
   {
-   "team": "OKC",
+   "team": "MIN",
    "outs": [
     {
-     "player": "Jalen Williams",
-     "min": 31.7,
-     "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Chet Holmgren",
-     "min": 30.0,
-     "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
-     "new": false
-    },
-    {
-     "player": "Ajay Mitchell",
-     "min": 26.7,
-     "note": "Ajay Mitchell missed the November 11 and November 13 games with a left ankle sprain. The show called his fill-in work for OKC very strong before the injury.",
-     "new": true
-    },
-    {
-     "player": "Jaylin Williams",
-     "min": 22.0,
-     "note": "Jaylin Williams missed his fourth straight game Tuesday with back spasms.",
-     "new": false
-    },
-    {
-     "player": "Cason Wallace",
-     "min": 16.3,
-     "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
-     "new": false
-    }
-   ],
-   "new": true,
-   "lost": 126.7,
-   "benefits": [
-    {
-     "player": "Isaiah Hartenstein",
-     "salary": 6300,
-     "why": "34 minutes, up from 24",
-     "much": "+18.0 DK without them (1 game)",
-     "score": 18.0,
-     "min": 29.7,
-     "dk": 36.9
-    },
-    {
-     "player": "Alex Caruso",
-     "salary": 4700,
-     "why": "started that game",
-     "much": "+12.9 DK without them (1 game)",
-     "score": 12.9,
-     "min": 24.2,
-     "dk": 25.4
-    },
-    {
-     "player": "Kenrich Williams",
-     "salary": 4300,
-     "why": "26 minutes, up from 18",
-     "much": "+6.0 DK without them (1 game)",
-     "score": 6.0,
-     "min": 24.6,
-     "dk": 20.4
-    }
-   ],
-   "split_of": [
-    "Jalen Williams",
-    "Chet Holmgren",
-    "Ajay Mitchell",
-    "Jaylin Williams",
-    "Cason Wallace"
-   ]
-  },
-  {
-   "team": "NOP",
-   "outs": [
-    {
-     "player": "Trey Murphy III",
-     "min": 34.7,
-     "note": "Trey Murphy III was ruled out on Nov. 13. The show listed him as questionable for the Saturday, Nov. 14 second night of the back-to-back because it did not know if he would be available.",
-     "new": true
-    },
-    {
-     "player": "Dejounte Murray",
-     "min": 24.7,
-     "note": "Ruled out tonight (left ankle sprain).",
-     "new": true
-    },
-    {
-     "player": "Yves Missi",
-     "min": 19.5,
-     "note": "Yves Missi was ruled out on Nov. 13, and the show listed him as questionable for Saturday, Nov. 14. The show said that if Missi returns, he would likely be on a solid minutes limit in his first game back.",
-     "new": true
-    },
-    {
-     "player": "Trendon Watford",
-     "min": 18.7,
-     "note": "Ruled out tonight (right ankle sprain).",
-     "new": false
-    }
-   ],
-   "new": true,
-   "lost": 97.6,
-   "benefits": [
-    {
-     "player": "Karlo Matkovic",
-     "salary": 4600,
-     "why": "started at center, 22 minutes (11/11)",
-     "much": "+8.4 DK projected vs. last 3",
-     "score": 8.45,
-     "min": 19.8,
-     "dk": 20.2
-    }
-   ],
-   "split_of": [
-    "Trey Murphy III"
-   ]
-  },
-  {
-   "team": "MIA",
-   "outs": [
-    {
-     "player": "Klay Thompson",
-     "min": 28.3,
-     "note": "Klay Thompson was ruled out on Nov. 13 with left ankle soreness. The show said he is likely to play on Saturday, Nov. 14.",
-     "new": true
-    },
-    {
-     "player": "Pelle Larsson",
-     "min": 27.3,
-     "note": "Pelle Larsson was ruled out on Nov. 13 with an illness. The show listed him as questionable for Saturday, Nov. 14.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 55.6,
-   "benefits": [
-    {
-     "player": "Andrew Wiggins",
-     "salary": 4800,
-     "why": "subs in for them 10 of 58 times",
-     "much": "+9.6 DK projected vs. last 3",
-     "score": 9.649999999999999,
-     "min": 31.3,
-     "dk": 24.4
-    }
-   ],
-   "split_of": []
-  },
-  {
-   "team": "SAC",
-   "outs": [
-    {
-     "player": "Precious Achiuwa",
-     "min": 24.0,
-     "note": "Precious Achiuwa started but left after 14 minutes with a lower leg contusion, according to the show. His status for Friday's game against Portland was not given.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 24.0,
-   "benefits": [
-    {
-     "player": "Domantas Sabonis",
-     "salary": 9100,
-     "why": "subs in for him 7 of 37 times",
-     "much": "+12.6 DK projected vs. last 3",
-     "score": 12.649999999999999,
-     "min": 36.0,
-     "dk": 42.9
-    }
-   ],
-   "split_of": []
-  },
-  {
-   "team": "GSW",
-   "outs": [
-    {
-     "player": "Stephen Curry",
-     "min": 21.0,
-     "note": "Stephen Curry did not play at San Antonio on November 13 after playing only 6 minutes on November 11. The injury report listed him out with a right oblique tear.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 21.0,
-   "benefits": [
-    {
-     "player": "De'Anthony Melton",
-     "salary": 5500,
-     "why": "started 1 of 2",
-     "much": "+23.8 DK without him (2 games)",
-     "score": 23.8,
-     "min": 25.6,
-     "dk": 26.0
-    },
-    {
-     "player": "Yaxel Lendeborg",
-     "salary": 7500,
-     "why": "35 minutes, up from 32",
-     "much": "+14.4 DK without him (2 games)",
-     "score": 14.4,
-     "min": 35.1,
-     "dk": 44.3
-    },
-    {
-     "player": "Charles Bassey",
-     "salary": 4000,
-     "why": "started 1 of 2",
-     "much": "+8.0 DK without him (2 games)",
-     "score": 8.0,
-     "min": 14.9,
-     "dk": 20.1
-    }
-   ],
-   "split_of": [
-    "Stephen Curry"
-   ]
-  },
-  {
-   "team": "UTA",
-   "outs": [
-    {
-     "player": "Lauri Markkanen",
-     "min": 34.7,
-     "note": "Lauri Markkanen has not played since November 6, and the projections list a right hand fracture. The show said Utah being without Markkanen may make Keyonte George harder to buy low on because his role grows.",
-     "new": false
-    },
-    {
-     "player": "Jaren Jackson Jr.",
-     "min": 25.3,
-     "note": "Jaren Jackson Jr. is ruled out for Utah with a right MCL tear. The show said Utah's defense suffers without him and that Utah looks like it is back in tanking mode.",
+     "player": "Anthony Edwards",
+     "min": 34.0,
+     "note": "The show said Anthony Edwards is still out after knee surgery, and his last game was Minnesota's overtime loss in Cleveland. The show said the Wolves have gone 6-2 without him and have the league's best defense.",
      "new": false
     }
    ],
    "new": false,
-   "lost": 60.0,
+   "lost": 34.0,
    "benefits": [
     {
-     "player": "Kyle Filipowski",
-     "salary": 4500,
-     "why": "15 minutes, up from 7",
-     "much": "+11.8 DK without them (2 games)",
-     "score": 11.8,
-     "min": 14.5,
-     "dk": 12.3
+     "player": "Nah'Shon Hyland",
+     "salary": 4300,
+     "why": "16 minutes, up from 8",
+     "much": "+16.3 DK without him (8 games)",
+     "score": 16.3,
+     "min": 13.9,
+     "dk": 18.3
     },
     {
-     "player": "Darryn Peterson",
-     "salary": 7400,
-     "why": "same minutes, more production",
-     "much": "+9.3 DK without them (4 games)",
-     "score": 9.3,
-     "min": 32.2,
-     "dk": 31.4
+     "player": "Ayo Dosunmu",
+     "salary": 7200,
+     "why": "started 8 of 8",
+     "much": "+12.6 DK without him (8 games)",
+     "score": 12.6,
+     "min": 32.8,
+     "dk": 35.3
     },
     {
-     "player": "Brice Sensabaugh",
-     "salary": 4400,
-     "why": "17 minutes, up from 14",
-     "much": "+6.3 DK without them (4 games)",
-     "score": 6.3,
-     "min": 17.2,
-     "dk": 16.3
+     "player": "Jaylen Clark",
+     "salary": 3600,
+     "why": "19 minutes, up from 4",
+     "much": "+9.1 DK without him (8 games)",
+     "score": 9.1,
+     "min": 17.9,
+     "dk": 13.7
     }
    ],
    "split_of": [
-    "Lauri Markkanen",
-    "Jaren Jackson Jr."
+    "Anthony Edwards"
+   ]
+  },
+  {
+   "team": "DET",
+   "outs": [
+    {
+     "player": "Jalen Duren",
+     "min": 19.0,
+     "note": "The show said Jalen Duren is still expected to be out for Detroit. He has not played since Oct. 23.",
+     "new": false
+    }
+   ],
+   "new": false,
+   "lost": 19.0,
+   "benefits": [
+    {
+     "player": "Cade Cunningham",
+     "salary": 9800,
+     "why": "same minutes, more production",
+     "much": "+11.5 DK without him (9 games)",
+     "score": 11.5,
+     "min": 36.3,
+     "dk": 52.2
+    },
+    {
+     "player": "Daniss Jenkins",
+     "salary": 5700,
+     "why": "29 minutes, up from 18",
+     "much": "+8.7 DK without him (9 games)",
+     "score": 8.7,
+     "min": 29.9,
+     "dk": 29.7
+    },
+    {
+     "player": "Ausar Thompson",
+     "salary": 6600,
+     "why": "29 minutes, up from 26",
+     "much": "+7.7 DK without him (8 games)",
+     "score": 7.7,
+     "min": 29.6,
+     "dk": 32.9
+    }
+   ],
+   "split_of": [
+    "Jalen Duren"
    ]
   }
  ],
  "hot": [
   {
-   "player": "Anthony Black",
-   "team": "ORL",
+   "player": "Daniss Jenkins",
+   "team": "DET",
    "kind": "hot",
-   "last": 48.3,
-   "before": 32.3,
-   "n": 5
-  },
-  {
-   "player": "Bobby Portis",
-   "team": "MIA",
-   "kind": "cold",
-   "last": 7.9,
-   "before": 23.7,
+   "last": 44.1,
+   "before": 20.6,
    "n": 8
   },
   {
-   "player": "Domantas Sabonis",
-   "team": "SAC",
-   "kind": "cold",
-   "last": 30.2,
-   "before": 45.3,
-   "n": 7
+   "player": "Taylor Hendricks",
+   "team": "MEM",
+   "kind": "hot",
+   "last": 19.9,
+   "before": 4.4,
+   "n": 4
   },
   {
-   "player": "Franz Wagner",
-   "team": "ORL",
+   "player": "Kevin Huerter",
+   "team": "DET",
    "kind": "hot",
-   "last": 54.8,
-   "before": 41.8,
+   "last": 30.0,
+   "before": 15.0,
    "n": 8
   },
   {
-   "player": "Mario Hezonja",
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "kind": "hot",
+   "last": 42.6,
+   "before": 27.8,
+   "n": 8
+  },
+  {
+   "player": "Evan Mobley",
    "team": "CLE",
    "kind": "cold",
-   "last": 9.2,
-   "before": 22.2,
+   "last": 24.5,
+   "before": 39.2,
    "n": 9
   }
  ],
  "minutes": [
   {
+   "player": "Danny Wolf",
+   "team": "BKN",
+   "kind": "up",
+   "last": 32.0,
+   "before": 15.3,
+   "n": 3
+  },
+  {
    "player": "Ryan Conwell",
    "team": "MIA",
    "kind": "up",
-   "last": 23.3,
-   "before": 7.0,
-   "n": 6
-  },
-  {
-   "player": "Tim Hardaway",
-   "team": "MIA",
-   "kind": "down",
-   "last": 6.0,
-   "before": 18.4,
+   "last": 24.3,
+   "before": 10.3,
    "n": 7
   },
   {
-   "player": "Jarace Walker",
-   "team": "IND",
-   "kind": "down",
-   "last": 12.3,
-   "before": 24.0,
-   "n": 9
-  },
-  {
-   "player": "Josh Green",
-   "team": "UTA",
+   "player": "Daniss Jenkins",
+   "team": "DET",
    "kind": "up",
-   "last": 28.0,
-   "before": 16.6,
-   "n": 7
+   "last": 36.7,
+   "before": 23.9,
+   "n": 8
   },
   {
-   "player": "Jamal Cain",
-   "team": "ORL",
+   "player": "Max Christie",
+   "team": "DAL",
+   "kind": "down",
+   "last": 9.7,
+   "before": 22.0,
+   "n": 8
+  },
+  {
+   "player": "Isaac Okoro",
+   "team": "CHI",
    "kind": "up",
-   "last": 27.0,
-   "before": 16.3,
-   "n": 7
+   "last": 29.7,
+   "before": 17.9,
+   "n": 8
   }
  ],
  "chalk": [
   {
-   "player": "Isaiah Stewart",
-   "team": "MEM",
+   "player": "Day'Ron Sharpe",
+   "team": "BKN",
    "own": 38.0,
-   "dk": 27.5,
-   "salary": 3900
+   "dk": 24.1,
+   "salary": 5600
   },
   {
-   "player": "Jarrett Allen",
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "own": 37.9,
+   "dk": 32.2,
+   "salary": 5800
+  },
+  {
+   "player": "James Harden",
    "team": "CLE",
-   "own": 34.8,
-   "dk": 39.8,
-   "salary": 5700
+   "own": 33.7,
+   "dk": 34.4,
+   "salary": 6900
   },
   {
-   "player": "Jeremiah Fears",
-   "team": "NOP",
-   "own": 29.5,
-   "dk": 40.6,
-   "salary": 6800
-  },
-  {
-   "player": "Donovan Mitchell",
-   "team": "CLE",
-   "own": 28.3,
-   "dk": 48.7,
-   "salary": 8100
+   "player": "Christian Braun",
+   "team": "DEN",
+   "own": 33.7,
+   "dk": 23.8,
+   "salary": 4900
   }
  ],
  "leverage": [
   {
-   "player": "Aday Mara",
-   "team": "OKC",
-   "own": 6.5,
-   "dk": 30.3,
-   "salary": 5400
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "own": 8.6,
+   "dk": 31.3,
+   "salary": 5600
   },
   {
    "player": "Bam Adebayo",
    "team": "MIA",
-   "own": 9.6,
-   "dk": 45.4,
+   "own": 8.3,
+   "dk": 42.4,
    "salary": 8300
   },
   {
-   "player": "Shai Gilgeous-Alexander",
-   "team": "OKC",
-   "own": 8.7,
-   "dk": 56.4,
-   "salary": 10400
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "own": 1.0,
+   "dk": 35.2,
+   "salary": 7000
   }
  ],
  "last": {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "top": [
    {
-    "player": "Cade Cunningham",
-    "team": "DET",
-    "dk": 81.75,
-    "min": 48.0,
-    "pts": 52.0,
-    "reb": 5.0,
-    "ast": 11.0
-   },
-   {
-    "player": "Trae Young",
-    "team": "WAS",
-    "dk": 62.0,
-    "min": 45.0,
-    "pts": 37.0,
-    "reb": 2.0,
-    "ast": 14.0
-   },
-   {
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "dk": 60.75,
-    "min": 43.0,
-    "pts": 17.0,
-    "reb": 11.0,
-    "ast": 11.0
-   },
-   {
-    "player": "RJ Barrett",
-    "team": "TOR",
-    "dk": 58.0,
+    "player": "Alperen Sengun",
+    "team": "HOU",
+    "dk": 71.0,
     "min": 37.0,
-    "pts": 31.0,
-    "reb": 14.0,
+    "pts": 43.0,
+    "reb": 12.0,
     "ast": 5.0
    },
    {
-    "player": "Anthony Davis",
-    "team": "WAS",
-    "dk": 57.25,
-    "min": 44.0,
-    "pts": 30.0,
-    "reb": 15.0,
-    "ast": 4.0
+    "player": "Franz Wagner",
+    "team": "ORL",
+    "dk": 69.75,
+    "min": 36.0,
+    "pts": 35.0,
+    "reb": 9.0,
+    "ast": 12.0
+   },
+   {
+    "player": "Bam Adebayo",
+    "team": "MIA",
+    "dk": 61.5,
+    "min": 38.0,
+    "pts": 37.0,
+    "reb": 14.0,
+    "ast": 3.0
+   },
+   {
+    "player": "Davion Mitchell",
+    "team": "MIA",
+    "dk": 58.25,
+    "min": 39.0,
+    "pts": 22.0,
+    "reb": 5.0,
+    "ast": 17.0
+   },
+   {
+    "player": "Jalen Johnson",
+    "team": "ATL",
+    "dk": 58.25,
+    "min": 40.0,
+    "pts": 27.0,
+    "reb": 11.0,
+    "ast": 10.0
    }
   ],
   "surprise": [
    {
-    "player": "Alex Sarr",
-    "team": "WAS",
-    "min": 44.0,
-    "proj": 24.5
+    "player": "Isaac Okoro",
+    "team": "CHI",
+    "min": 41.0,
+    "proj": 18.8
    },
    {
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "min": 43.0,
-    "proj": 28.3
+    "player": "Mo Bamba",
+    "team": "UTA",
+    "min": 20.0,
+    "proj": 2.3
    },
    {
-    "player": "Daniss Jenkins",
-    "team": "DET",
-    "min": 42.0,
-    "proj": 27.9
+    "player": "Emanuel Sharp",
+    "team": "SAC",
+    "min": 7.0,
+    "proj": 22.1
    },
    {
-    "player": "P.J. Washington",
-    "team": "DAL",
-    "min": 16.0,
-    "proj": 29.8
+    "player": "DeAndre Jordan",
+    "team": "NOP",
+    "min": 17.0,
+    "proj": 1.9
    }
   ],
   "injuries": [
@@ -1078,29 +520,271 @@
   ]
  },
  "injuries": {
-  "report": "05:15 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_05_15AM.pdf",
+  "report": "05:30 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_05_30AM.pdf",
   "pending": [
-   "ATL",
-   "CHI",
-   "CLE",
-   "GSW",
-   "HOU",
-   "IND",
-   "LAC",
-   "MEM",
-   "MIA",
-   "MIL",
    "NOP",
-   "NYK",
-   "OKC",
-   "ORL",
-   "POR",
-   "SAC",
-   "SAS",
-   "UTA"
+   "CLE",
+   "MEM",
+   "CHI",
+   "MIA"
   ],
-  "rows": [],
-  "minor": []
+  "rows": [
+   {
+    "game": "DAL at CLE",
+    "time": "2026-11-15T00:30Z",
+    "team": "DAL",
+    "player": "Max Christie",
+    "status": "Questionable",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 9.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "DAL at CLE",
+    "time": "2026-11-15T00:30Z",
+    "team": "DAL",
+    "player": "Morez Johnson Jr.",
+    "status": "Probable",
+    "reason": "",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "",
+    "min": 18.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "BKN at MEM",
+    "time": "2026-11-15T01:00Z",
+    "team": "BKN",
+    "player": "Mikel Brown Jr.",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "Out",
+    "known": true,
+    "changed_at": "",
+    "min": 24.0,
+    "benefits": [
+     {
+      "player": "Josh Minott",
+      "salary": 3300,
+      "why": "13 minutes, up from 6",
+      "much": "+15.7 DK without him (3 games)",
+      "score": 15.7,
+      "min": 7.3,
+      "dk": 7.5
+     },
+     {
+      "player": "Nolan Traore",
+      "salary": 5200,
+      "why": "25 minutes, up from 21",
+      "much": "+6.3 DK without him (3 games)",
+      "score": 6.3,
+      "min": 20.5,
+      "dk": 20.5
+     },
+     {
+      "player": "Moritz Wagner",
+      "salary": 4100,
+      "why": "same minutes, more production",
+      "much": "+5.2 DK without him (4 games)",
+      "score": 5.2,
+      "min": 15.1,
+      "dk": 14.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "BKN at MEM",
+    "time": "2026-11-15T01:00Z",
+    "team": "BKN",
+    "player": "Nolan Traore",
+    "status": "Probable",
+    "reason": "",
+    "new": true,
+    "was": "Out",
+    "known": true,
+    "changed_at": "",
+    "min": 23.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "DAL at CLE",
+    "time": "2026-11-15T00:30Z",
+    "team": "DAL",
+    "player": "Sergio De Larrea",
+    "status": "Out",
+    "reason": "Right Knee Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 13.3,
+    "benefits": [
+     {
+      "player": "Morez Johnson Jr.",
+      "salary": 3800,
+      "why": "18 minutes, up from 14",
+      "much": "+6.3 DK without him (7 games)",
+      "score": 6.3,
+      "min": 16.7,
+      "dk": 14.5
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "CHI at MIN",
+    "time": "2026-11-15T01:00Z",
+    "team": "MIN",
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 34.0,
+    "benefits": [
+     {
+      "player": "Nah'Shon Hyland",
+      "salary": 4300,
+      "why": "16 minutes, up from 8",
+      "much": "+16.3 DK without him (8 games)",
+      "score": 16.3,
+      "min": 13.9,
+      "dk": 18.3
+     },
+     {
+      "player": "Ayo Dosunmu",
+      "salary": 7200,
+      "why": "started 8 of 8",
+      "much": "+12.6 DK without him (8 games)",
+      "score": 12.6,
+      "min": 32.8,
+      "dk": 35.3
+     },
+     {
+      "player": "Jaylen Clark",
+      "salary": 3600,
+      "why": "19 minutes, up from 4",
+      "much": "+9.1 DK without him (8 games)",
+      "score": 9.1,
+      "min": 17.9,
+      "dk": 13.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "DET at MIA",
+    "time": "2026-11-15T01:00Z",
+    "team": "DET",
+    "player": "Jalen Duren",
+    "status": "Out",
+    "reason": "Right Hamstring Strain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 19.0,
+    "benefits": [
+     {
+      "player": "Cade Cunningham",
+      "salary": 9800,
+      "why": "same minutes, more production",
+      "much": "+11.5 DK without him (9 games)",
+      "score": 11.5,
+      "min": 36.3,
+      "dk": 52.2
+     },
+     {
+      "player": "Daniss Jenkins",
+      "salary": 5700,
+      "why": "29 minutes, up from 18",
+      "much": "+8.7 DK without him (9 games)",
+      "score": 8.7,
+      "min": 29.9,
+      "dk": 29.7
+     },
+     {
+      "player": "Ausar Thompson",
+      "salary": 6600,
+      "why": "29 minutes, up from 26",
+      "much": "+7.7 DK without him (8 games)",
+      "score": 7.7,
+      "min": 29.6,
+      "dk": 32.9
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "DET at MIA",
+    "time": "2026-11-15T01:00Z",
+    "team": "DET",
+    "player": "Isaiah Joe",
+    "status": "Out",
+    "reason": "Right Hip Contusion",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 13.7,
+    "benefits": [
+     {
+      "player": "Ausar Thompson",
+      "salary": 6600,
+      "why": "29 minutes, up from 26",
+      "much": "+7.7 DK without him (8 games)",
+      "score": 7.7,
+      "min": 29.6,
+      "dk": 32.9
+     },
+     {
+      "player": "Cade Cunningham",
+      "salary": 9800,
+      "why": "same minutes, more production",
+      "much": "+5.2 DK without him (8 games)",
+      "score": 5.2,
+      "min": 36.3,
+      "dk": 52.2
+     }
+    ],
+    "estimate": false
+   }
+  ],
+  "minor": [
+   {
+    "player": "Julian Strawther",
+    "team": "DEN",
+    "status": "Out"
+   },
+   {
+    "player": "Tarik Biberovic",
+    "team": "DAL",
+    "status": "Out"
+   },
+   {
+    "player": "Dereck Lively II",
+    "team": "DAL",
+    "status": "Out"
+   },
+   {
+    "player": "Donte DiVincenzo",
+    "team": "MIN",
+    "status": "Out"
+   }
+  ]
  }
 }
