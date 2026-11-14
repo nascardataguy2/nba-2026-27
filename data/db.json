@@ -2,7 +2,7 @@
  "updated": "2026-11-14",
  "brief": {
   "date": "2026-11-14",
-  "updated": "6:15 PM ET",
+  "updated": "6:30 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:42 AM",
@@ -38,12 +38,12 @@
         "min": 24.7
        },
        {
-        "player": "Trendon Watford",
-        "min": 18.7
+        "player": "Yves Missi",
+        "min": 19.5
        },
        {
-        "player": "Bryce McGowens",
-        "min": 14.7
+        "player": "Trendon Watford",
+        "min": 18.7
        }
       ],
       "q": []
@@ -177,6 +177,10 @@
      "MIA": {
       "out": [
        {
+        "player": "Klay Thompson",
+        "min": 28.3
+       },
+       {
         "player": "Pelle Larsson",
         "min": 27.3
        }
@@ -184,7 +188,7 @@
       "q": []
      }
     },
-    "key": "Pelle Larsson is out, so Bam Adebayo and Davion Mitchell and Ryan Conwell should play more than usual."
+    "key": "Klay Thompson and Pelle Larsson are out, so Bam Adebayo and Davion Mitchell and Ryan Conwell should play more than usual."
    },
    {
     "away": "BKN",
@@ -204,13 +208,22 @@
     "teams": {
      "BKN": {
       "out": [],
-      "q": []
+      "q": [
+       {
+        "player": "Michael Porter Jr.",
+        "min": 28.1
+       }
+      ]
      },
      "MEM": {
       "out": [
        {
         "player": "Ty Jerome",
         "min": 31.0
+       },
+       {
+        "player": "Zach Edey",
+        "min": 21.0
        },
        {
         "player": "Scotty Pippen Jr.",
@@ -220,7 +233,7 @@
       "q": [
        {
         "player": "Jerami Grant",
-        "min": 24.5
+        "min": 25.8
        },
        {
         "player": "Zach Edey",
@@ -229,10 +242,58 @@
       ]
      }
     },
-    "key": "Ty Jerome is out, so Cam Spencer and Gregory Jackson and Isaiah Stewart should play more than usual."
+    "key": "Ty Jerome and Zach Edey are out, so Cam Spencer and Gregory Jackson and Isaiah Stewart should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "Klay Thompson",
+    "team": "MIA",
+    "status": "Available",
+    "was": "Probable",
+    "why": "Left Ankle Sprain",
+    "time": "6:31 PM"
+   },
+   {
+    "player": "Pelle Larsson",
+    "team": "MIA",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "Illness",
+    "time": "6:31 PM"
+   },
+   {
+    "player": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "status": "Available",
+    "was": "Probable",
+    "why": "Right Wrist Sprain",
+    "time": "6:31 PM"
+   },
+   {
+    "player": "Michael Porter Jr.",
+    "team": "BKN",
+    "status": "Questionable",
+    "was": "",
+    "why": "Personal Reasons",
+    "time": "6:31 PM"
+   },
+   {
+    "player": "Morez Johnson Jr.",
+    "team": "DAL",
+    "status": "Available",
+    "was": "Probable",
+    "why": "",
+    "time": "6:31 PM"
+   },
+   {
+    "player": "Max Christie",
+    "team": "DAL",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "Left Ankle Sprain",
+    "time": "6:31 PM"
+   },
    {
     "player": "Peyton Watson",
     "team": "CLE",
@@ -264,54 +325,6 @@
     "was": "Questionable",
     "why": "",
     "time": "5:54 PM"
-   },
-   {
-    "player": "Yves Missi",
-    "team": "NOP",
-    "status": "Available",
-    "was": "Probable",
-    "why": "",
-    "time": "5:54 PM"
-   },
-   {
-    "player": "Bennedict Mathurin",
-    "team": "NOP",
-    "status": "Out",
-    "was": "Available",
-    "why": "Left Plantar Fasciitis",
-    "time": "5:54 PM"
-   },
-   {
-    "player": "Ty Jerome",
-    "team": "MEM",
-    "status": "Out",
-    "was": "",
-    "why": "Right Hip Soreness",
-    "time": "2:54 PM"
-   },
-   {
-    "player": "Jerami Grant",
-    "team": "MEM",
-    "status": "Questionable",
-    "was": "",
-    "why": "Head Injury",
-    "time": "2:54 PM"
-   },
-   {
-    "player": "Zach Edey",
-    "team": "MEM",
-    "status": "Questionable",
-    "was": "Out",
-    "why": "",
-    "time": "2:54 PM"
-   },
-   {
-    "player": "Klay Thompson",
-    "team": "MIA",
-    "status": "Probable",
-    "was": "Out",
-    "why": "Left Ankle Sprain",
-    "time": "1:24 PM"
    }
   ],
   "chg": [
@@ -434,8 +447,8 @@
    {
     "key": "Pelle Larsson",
     "team": "MIA",
-    "head": "Pelle Larsson DOUBTFUL",
-    "st": "Doubtful",
+    "head": "Pelle Larsson OUT",
+    "st": "Out",
     "act": "Play",
     "names": [
      {
@@ -449,7 +462,7 @@
       "much": "+22.3 DK without him (1 game)"
      }
     ],
-    "time": "1:24 PM",
+    "time": "6:31 PM",
     "size": 23.5
    },
    {
@@ -493,6 +506,27 @@
     ],
     "time": "1:24 PM",
     "size": 22.3
+   },
+   {
+    "key": "Michael Porter Jr.",
+    "team": "BKN",
+    "head": "Michael Porter Jr. QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Julius Randle",
+      "salary": 7900,
+      "much": "about +6.7 DK if he sits (estimate)"
+     },
+     {
+      "player": "Noah Clowney",
+      "salary": 3600,
+      "much": "about +4.7 DK if he sits (estimate)"
+     }
+    ],
+    "time": "6:31 PM",
+    "size": 18.6
    },
    {
     "key": "Norman Powell",
@@ -688,96 +722,6 @@
     ]
    },
    {
-    "team": "MEM",
-    "outs": [
-     {
-      "player": "Ty Jerome",
-      "min": 31.0,
-      "note": "Ruled out tonight (right hip soreness).",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 31.0,
-    "benefits": [
-     {
-      "player": "Cam Spencer",
-      "salary": 4600,
-      "why": "started that game",
-      "much": "+19.0 DK without him (1 game)",
-      "score": 19.0,
-      "min": 21.4,
-      "dk": 26.3
-     },
-     {
-      "player": "Gregory Jackson",
-      "salary": 3500,
-      "why": "21 minutes, up from 16",
-      "much": "+17.0 DK without him (1 game)",
-      "score": 17.0,
-      "min": 18.0,
-      "dk": 20.3
-     },
-     {
-      "player": "Isaiah Stewart",
-      "salary": 4000,
-      "why": "same minutes, more production",
-      "much": "+13.1 DK without him (1 game)",
-      "score": 13.1,
-      "min": 17.0,
-      "dk": 17.3
-     }
-    ],
-    "split_of": [
-     "Ty Jerome"
-    ]
-   },
-   {
-    "team": "MIA",
-    "outs": [
-     {
-      "player": "Pelle Larsson",
-      "min": 27.3,
-      "note": "Pelle Larsson was ruled out on Nov. 13 with an illness. The show listed him as questionable for Saturday, Nov. 14.",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 27.3,
-    "benefits": [
-     {
-      "player": "Bam Adebayo",
-      "salary": 8300,
-      "why": "38 minutes, up from 33",
-      "much": "+22.8 DK without him (1 game)",
-      "score": 22.8,
-      "min": 37.0,
-      "dk": 45.0
-     },
-     {
-      "player": "Davion Mitchell",
-      "salary": 7000,
-      "why": "39 minutes, up from 36",
-      "much": "+22.3 DK without him (1 game)",
-      "score": 22.3,
-      "min": 38.5,
-      "dk": 37.1
-     },
-     {
-      "player": "Ryan Conwell",
-      "salary": 3500,
-      "why": "33 minutes, up from 12",
-      "much": "+21.0 DK without him (1 game)",
-      "score": 21.0,
-      "min": 23.3,
-      "dk": 17.5
-     }
-    ],
-    "split_of": [
-     "Pelle Larsson"
-    ]
-   },
-   {
     "team": "NOP",
     "outs": [
      {
@@ -793,14 +737,20 @@
       "new": false
      },
      {
+      "player": "Yves Missi",
+      "min": 19.5,
+      "note": "Yves Missi is listed as probable for Saturday with a left knee injury and is set to play for the first time since October 23. The show said to expect a ramp-up, so his minutes may be limited at first.",
+      "new": true
+     },
+     {
       "player": "Trendon Watford",
       "min": 18.7,
       "note": "Ruled out tonight (right ankle sprain).",
       "new": false
      }
     ],
-    "new": false,
-    "lost": 78.1,
+    "new": true,
+    "lost": 97.6,
     "benefits": [
      {
       "player": "Saddiq Bey",
@@ -833,7 +783,111 @@
     "split_of": [
      "Trey Murphy III",
      "Dejounte Murray",
+     "Yves Missi",
      "Trendon Watford"
+    ]
+   },
+   {
+    "team": "MIA",
+    "outs": [
+     {
+      "player": "Klay Thompson",
+      "min": 28.3,
+      "note": "Klay Thompson was ruled out on Nov. 13 with left ankle soreness. The show said he is likely to play on Saturday, Nov. 14.",
+      "new": true
+     },
+     {
+      "player": "Pelle Larsson",
+      "min": 27.3,
+      "note": "Pelle Larsson was ruled out on Nov. 13 with an illness. The show listed him as questionable for Saturday, Nov. 14.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 55.6,
+    "benefits": [
+     {
+      "player": "Bam Adebayo",
+      "salary": 8300,
+      "why": "38 minutes, up from 33",
+      "much": "+22.8 DK without them (1 game)",
+      "score": 22.8,
+      "min": 37.0,
+      "dk": 45.0
+     },
+     {
+      "player": "Davion Mitchell",
+      "salary": 7000,
+      "why": "39 minutes, up from 36",
+      "much": "+22.3 DK without them (1 game)",
+      "score": 22.3,
+      "min": 38.5,
+      "dk": 37.1
+     },
+     {
+      "player": "Ryan Conwell",
+      "salary": 3500,
+      "why": "33 minutes, up from 12",
+      "much": "+21.0 DK without them (1 game)",
+      "score": 21.0,
+      "min": 23.3,
+      "dk": 17.5
+     }
+    ],
+    "split_of": [
+     "Klay Thompson",
+     "Pelle Larsson"
+    ]
+   },
+   {
+    "team": "MEM",
+    "outs": [
+     {
+      "player": "Ty Jerome",
+      "min": 31.0,
+      "note": "Ruled out tonight (right hip soreness).",
+      "new": true
+     },
+     {
+      "player": "Zach Edey",
+      "min": 21.0,
+      "note": "Zach Edey did not play on November 13, and Isaiah Stewart started in his place for 20 minutes with 12 points. The show expects Edey to play on November 14 and Stewart to sit on the back-to-back, which could give Edey extra minutes, and it likes Edey as a value.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 52.0,
+    "benefits": [
+     {
+      "player": "Cam Spencer",
+      "salary": 4600,
+      "why": "started that game",
+      "much": "+19.0 DK without them (1 game)",
+      "score": 19.0,
+      "min": 24.6,
+      "dk": 30.2
+     },
+     {
+      "player": "Gregory Jackson",
+      "salary": 3500,
+      "why": "21 minutes, up from 16",
+      "much": "+17.0 DK without them (1 game)",
+      "score": 17.0,
+      "min": 18.0,
+      "dk": 20.3
+     },
+     {
+      "player": "Isaiah Stewart",
+      "salary": 4000,
+      "why": "started at center, 20 minutes (11/13)",
+      "much": "+13.1 DK without them (1 game)",
+      "score": 13.1,
+      "min": 21.5,
+      "dk": 21.8
+     }
+    ],
+    "split_of": [
+     "Ty Jerome"
     ]
    },
    {
@@ -1022,7 +1076,7 @@
    {
     "player": "Jaylon Tyson",
     "team": "CLE",
-    "own": 34.9,
+    "own": 34.7,
     "dk": 27.7,
     "salary": 4100
    },
@@ -1036,7 +1090,7 @@
    {
     "player": "Thomas Bryant",
     "team": "CLE",
-    "own": 31.5,
+    "own": 31.7,
     "dk": 17.9,
     "salary": 4000
    }
@@ -1046,22 +1100,22 @@
     "player": "Jerami Grant",
     "team": "MEM",
     "own": 1.2,
-    "dk": 23.3,
+    "dk": 24.5,
     "salary": 4200
-   },
-   {
-    "player": "Bam Adebayo",
-    "team": "MIA",
-    "own": 9.7,
-    "dk": 45.0,
-    "salary": 8300
    },
    {
     "player": "Jalen Smith",
     "team": "CHI",
-    "own": 5.9,
+    "own": 5.7,
     "dk": 31.3,
     "salary": 5800
+   },
+   {
+    "player": "Davion Mitchell",
+    "team": "MIA",
+    "own": 6.6,
+    "dk": 37.1,
+    "salary": 7000
    }
   ],
   "last": {
@@ -1158,8 +1212,8 @@
    ]
   },
   "injuries": {
-   "report": "06:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_06_00PM.pdf",
+   "report": "06:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_06_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1352,12 +1406,12 @@
      "time": "2026-11-15T00:30Z",
      "team": "DAL",
      "player": "Max Christie",
-     "status": "Doubtful",
+     "status": "Out",
      "reason": "Left Ankle Sprain",
      "new": true,
-     "was": "Questionable",
+     "was": "Doubtful",
      "known": true,
-     "changed_at": "12:54 PM",
+     "changed_at": "6:31 PM",
      "min": 9.7,
      "benefits": [],
      "estimate": false
@@ -1367,12 +1421,12 @@
      "time": "2026-11-15T00:30Z",
      "team": "DAL",
      "player": "Morez Johnson Jr.",
-     "status": "Probable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "Available",
+     "was": "Probable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:31 PM",
      "min": 18.7,
      "benefits": [],
      "estimate": false
@@ -1396,8 +1450,8 @@
        "why": "started that game",
        "much": "+19.0 DK without him (1 game)",
        "score": 19.0,
-       "min": 21.4,
-       "dk": 26.3
+       "min": 24.6,
+       "dk": 30.2
       },
       {
        "player": "Gregory Jackson",
@@ -1414,8 +1468,8 @@
        "why": "same minutes, more production",
        "much": "+13.1 DK without him (1 game)",
        "score": 13.1,
-       "min": 17.0,
-       "dk": 17.3
+       "min": 21.5,
+       "dk": 21.8
       }
      ],
      "estimate": false
@@ -1425,12 +1479,12 @@
      "time": "2026-11-15T01:00Z",
      "team": "MIA",
      "player": "Pelle Larsson",
-     "status": "Doubtful",
+     "status": "Out",
      "reason": "Illness",
      "new": true,
-     "was": "Out",
+     "was": "Doubtful",
      "known": true,
-     "changed_at": "1:24 PM",
+     "changed_at": "6:31 PM",
      "min": 27.3,
      "benefits": [
       {
@@ -1462,6 +1516,40 @@
       }
      ],
      "estimate": false
+    },
+    {
+     "game": "BKN at MEM",
+     "time": "2026-11-15T01:00Z",
+     "team": "BKN",
+     "player": "Michael Porter Jr.",
+     "status": "Questionable",
+     "reason": "Personal Reasons",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "6:31 PM",
+     "min": 31.0,
+     "benefits": [
+      {
+       "player": "Julius Randle",
+       "salary": 7900,
+       "why": "subs in for him 8 of 39 times",
+       "much": "about +6.7 DK",
+       "score": 6.72105119080208,
+       "min": 28.1,
+       "dk": 29.7
+      },
+      {
+       "player": "Noah Clowney",
+       "salary": 3600,
+       "why": "subs in for him 8 of 39 times",
+       "much": "about +4.7 DK",
+       "score": 4.692484526967284,
+       "min": 14.5,
+       "dk": 10.7
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "CHI at MIN",
@@ -1540,27 +1628,27 @@
        "salary": 8000,
        "why": "subs in for him 7 of 39 times",
        "much": "about +5.3 DK",
-       "score": 5.338202538202538,
-       "min": 33.0,
-       "dk": 43.3
+       "score": 5.322995035569887,
+       "min": 33.4,
+       "dk": 43.7
       },
       {
        "player": "Cedric Coward",
        "salary": 6000,
        "why": "subs in for him 7 of 39 times",
        "much": "about +5.0 DK",
-       "score": 5.031938821412506,
-       "min": 26.6,
-       "dk": 32.9
+       "score": 5.0025957581513145,
+       "min": 27.0,
+       "dk": 33.2
       },
       {
        "player": "Jaylen Wells",
        "salary": 4500,
        "why": "subs in for him 9 of 39 times",
        "much": "about +4.3 DK",
-       "score": 4.33916083916084,
-       "min": 26.4,
-       "dk": 21.9
+       "score": 4.349178910976664,
+       "min": 26.7,
+       "dk": 22.2
       }
      ],
      "estimate": true
@@ -1584,8 +1672,8 @@
        "why": "started 2 of 2",
        "much": "+10.5 DK without him (2 games)",
        "score": 10.5,
-       "min": 17.0,
-       "dk": 17.3
+       "min": 21.5,
+       "dk": 21.8
       },
       {
        "player": "Jaylen Wells",
@@ -1593,8 +1681,8 @@
        "why": "30 minutes, up from 27",
        "much": "+8.8 DK without him (2 games)",
        "score": 8.8,
-       "min": 26.4,
-       "dk": 21.9
+       "min": 26.7,
+       "dk": 22.2
       },
       {
        "player": "Taylor Hendricks",
@@ -1602,8 +1690,8 @@
        "why": "13 minutes, up from 8",
        "much": "+7.8 DK without him (2 games)",
        "score": 7.8,
-       "min": 12.5,
-       "dk": 14.8
+       "min": 13.1,
+       "dk": 15.6
       }
      ],
      "estimate": false
@@ -1634,36 +1722,6 @@
      "estimate": false
     },
     {
-     "game": "DET at MIA",
-     "time": "2026-11-15T01:00Z",
-     "team": "MIA",
-     "player": "Giannis Antetokounmpo",
-     "status": "Probable",
-     "reason": "Right Wrist Sprain",
-     "new": true,
-     "was": "Available",
-     "known": true,
-     "changed_at": "1:24 PM",
-     "min": 32.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "DET at MIA",
-     "time": "2026-11-15T01:00Z",
-     "team": "MIA",
-     "player": "Klay Thompson",
-     "status": "Probable",
-     "reason": "Left Ankle Sprain",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "1:24 PM",
-     "min": 28.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
      "game": "BKN at MEM",
      "time": "2026-11-15T01:00Z",
      "team": "BKN",
@@ -1690,6 +1748,36 @@
      "known": true,
      "changed_at": "",
      "min": 23.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "DET at MIA",
+     "time": "2026-11-15T01:00Z",
+     "team": "MIA",
+     "player": "Giannis Antetokounmpo",
+     "status": "Available",
+     "reason": "Right Wrist Sprain",
+     "new": true,
+     "was": "Probable",
+     "known": true,
+     "changed_at": "6:31 PM",
+     "min": 32.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "DET at MIA",
+     "time": "2026-11-15T01:00Z",
+     "team": "MIA",
+     "player": "Klay Thompson",
+     "status": "Available",
+     "reason": "Left Ankle Sprain",
+     "new": true,
+     "was": "Probable",
+     "known": true,
+     "changed_at": "6:31 PM",
+     "min": 28.3,
      "benefits": [],
      "estimate": false
     },
@@ -2070,8 +2158,8 @@
        "why": "11 minutes, up from 5",
        "much": "+13.8 DK without him (5 games)",
        "score": 13.8,
-       "min": 12.5,
-       "dk": 14.8
+       "min": 13.1,
+       "dk": 15.6
       }
      ],
      "estimate": false
