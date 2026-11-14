@@ -2,7 +2,7 @@
  "updated": "2026-11-14",
  "brief": {
   "date": "2026-11-14",
-  "updated": "12:10 PM ET",
+  "updated": "12:40 PM ET",
   "games": 5,
   "pending": [
    "NOP",
@@ -144,12 +144,7 @@
     "teams": {
      "BKN": {
       "out": [],
-      "q": [
-       {
-        "player": "Mikel Brown Jr.",
-        "min": 20.7
-       }
-      ]
+      "q": []
      },
      "MEM": {
       "out": [],
@@ -212,8 +207,39 @@
     "key": "Jalen Duren is out, so Cade Cunningham and Daniss Jenkins and Ausar Thompson should play more than usual."
    }
   ],
-  "changed": [],
-  "chg": [],
+  "changed": [
+   {
+    "player": "Mikel Brown Jr.",
+    "team": "BKN",
+    "status": "Probable",
+    "was": "Questionable",
+    "why": "Illness",
+    "time": "12:41 PM"
+   }
+  ],
+  "chg": [
+   {
+    "key": "BKN",
+    "team": "BKN",
+    "head": "Jr. CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Josh Minott",
+      "salary": 3300,
+      "much": "+15.7 DK without Jr."
+     },
+     {
+      "player": "Nolan Traore",
+      "salary": 5200,
+      "much": "+6.3 DK without Jr."
+     }
+    ],
+    "time": "12:41 PM",
+    "size": 23.0
+   }
+  ],
   "sits": [
    {
     "team": "MIN",
@@ -474,15 +500,6 @@
      "ast": 3.0
     },
     {
-     "player": "Jalen Johnson",
-     "team": "ATL",
-     "dk": 58.25,
-     "min": 40.0,
-     "pts": 27.0,
-     "reb": 11.0,
-     "ast": 10.0
-    },
-    {
      "player": "Davion Mitchell",
      "team": "MIA",
      "dk": 58.25,
@@ -490,6 +507,15 @@
      "pts": 22.0,
      "reb": 5.0,
      "ast": 17.0
+    },
+    {
+     "player": "Jalen Johnson",
+     "team": "ATL",
+     "dk": 58.25,
+     "min": 40.0,
+     "pts": 27.0,
+     "reb": 11.0,
+     "ast": 10.0
     }
    ],
    "surprise": [
@@ -537,8 +563,8 @@
    ]
   },
   "injuries": {
-   "report": "12:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_12_00PM.pdf",
+   "report": "12:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_12_30PM.pdf",
    "pending": [
     "NOP",
     "CLE",
@@ -582,42 +608,14 @@
      "time": "2026-11-15T01:00Z",
      "team": "BKN",
      "player": "Mikel Brown Jr.",
-     "status": "Questionable",
+     "status": "Probable",
      "reason": "Illness",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "12:41 PM",
      "min": 24.0,
-     "benefits": [
-      {
-       "player": "Josh Minott",
-       "salary": 3300,
-       "why": "13 minutes, up from 6",
-       "much": "+15.7 DK without him (3 games)",
-       "score": 15.7,
-       "min": 7.3,
-       "dk": 7.5
-      },
-      {
-       "player": "Nolan Traore",
-       "salary": 5200,
-       "why": "25 minutes, up from 21",
-       "much": "+6.3 DK without him (3 games)",
-       "score": 6.3,
-       "min": 20.5,
-       "dk": 20.4
-      },
-      {
-       "player": "Moritz Wagner",
-       "salary": 4100,
-       "why": "same minutes, more production",
-       "much": "+5.2 DK without him (4 games)",
-       "score": 5.2,
-       "min": 15.1,
-       "dk": 14.7
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
