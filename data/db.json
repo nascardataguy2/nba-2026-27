@@ -2,7 +2,7 @@
  "updated": "2026-11-13",
  "brief": {
   "date": "2026-11-13",
-  "updated": "7:15 PM ET",
+  "updated": "7:46 PM ET",
   "games": 9,
   "pending": [],
   "first_report": "5:42 AM",
@@ -99,12 +99,7 @@
         "min": 23.0
        }
       ],
-      "q": [
-       {
-        "player": "Norman Powell",
-        "min": 28.8
-       }
-      ]
+      "q": []
      }
     },
     "key": "Asa Newell is out, so Jalen Johnson and Dyson Daniels and Aaron Wiggins should play more than usual."
@@ -199,7 +194,7 @@
       "q": []
      }
     },
-    "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Karlo Matkovic and Jeremiah Fears should play more than usual."
+    "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Jeremiah Fears and Karlo Matkovic should play more than usual."
    },
    {
     "away": "UTA",
@@ -384,6 +379,22 @@
   ],
   "changed": [
    {
+    "player": "Dailyn Swain",
+    "team": "CHI",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Right Disc Irritation",
+    "time": "7:47 PM"
+   },
+   {
+    "player": "Norman Powell",
+    "team": "CHI",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "-",
+    "time": "7:47 PM"
+   },
+   {
     "player": "Bennedict Mathurin",
     "team": "NOP",
     "status": "Available",
@@ -446,22 +457,6 @@
     "was": "Questionable",
     "why": "",
     "time": "5:32 PM"
-   },
-   {
-    "player": "Tristan da Silva",
-    "team": "ORL",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Left Calf Strain",
-    "time": "5:32 PM"
-   },
-   {
-    "player": "Jamal Cain",
-    "team": "ORL",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "",
-    "time": "5:32 PM"
    }
   ],
   "chg": [
@@ -517,12 +512,12 @@
      {
       "player": "Saddiq Bey",
       "salary": 6200,
-      "much": "+13.2 DK projected vs. last 3"
+      "much": "+13.4 DK projected vs. last 3"
      },
      {
       "player": "Jeremiah Fears",
       "salary": 6800,
-      "much": "+8.4 DK projected vs. last 3"
+      "much": "+8.5 DK projected vs. last 3"
      }
     ],
     "time": "1:54 PM",
@@ -564,11 +559,32 @@
      {
       "player": "Karlo Matkovic",
       "salary": 4600,
-      "much": "+8.6 DK projected vs. last 3"
+      "much": "+8.4 DK projected vs. last 3"
      }
     ],
     "time": "1:54 PM",
     "size": 29.1
+   },
+   {
+    "key": "CHI",
+    "team": "CHI",
+    "head": "Powell CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Jalen Smith",
+      "salary": 5900,
+      "much": "+10.5 DK without Powell"
+     },
+     {
+      "player": "Noa Essengue",
+      "salary": 3500,
+      "much": "+10.2 DK without Powell"
+     }
+    ],
+    "time": "7:47 PM",
+    "size": 28.2
    },
    {
     "key": "Precious Achiuwa",
@@ -596,7 +612,7 @@
      {
       "player": "Giannis Antetokounmpo",
       "salary": 11500,
-      "much": "+16.6 DK projected vs. last 3"
+      "much": "+16.5 DK projected vs. last 3"
      },
      {
       "player": "Andrew Wiggins",
@@ -617,7 +633,7 @@
      {
       "player": "Tim Hardaway",
       "salary": 3200,
-      "much": "+13.7 DK projected vs. last 3"
+      "much": "+13.6 DK projected vs. last 3"
      }
     ],
     "time": "6:32 PM",
@@ -685,7 +701,7 @@
      {
       "player": "Julian Champagnie",
       "salary": 5000,
-      "much": "about +6.6 DK if he sits (estimate)"
+      "much": "about +6.5 DK if he sits (estimate)"
      },
      {
       "player": "Dylan Harper",
@@ -817,28 +833,28 @@
       "player": "Saddiq Bey",
       "salary": 6200,
       "why": "started, 24 minutes (11/09)",
-      "much": "+13.2 DK projected vs. last 3",
-      "score": 13.25,
+      "much": "+13.4 DK projected vs. last 3",
+      "score": 13.350000000000001,
       "min": 34.4,
-      "dk": 33.5
-     },
-     {
-      "player": "Karlo Matkovic",
-      "salary": 4600,
-      "why": "started at center, 22 minutes (11/11)",
-      "much": "+8.6 DK projected vs. last 3",
-      "score": 8.55,
-      "min": 19.8,
-      "dk": 20.3
+      "dk": 33.6
      },
      {
       "player": "Jeremiah Fears",
       "salary": 6800,
       "why": "Show: about 34 minutes (11/13)",
-      "much": "+8.4 DK projected vs. last 3",
-      "score": 8.416666666666664,
+      "much": "+8.5 DK projected vs. last 3",
+      "score": 8.516666666666666,
       "min": 37.3,
-      "dk": 40.5
+      "dk": 40.6
+     },
+     {
+      "player": "Karlo Matkovic",
+      "salary": 4600,
+      "why": "started at center, 22 minutes (11/11)",
+      "much": "+8.4 DK projected vs. last 3",
+      "score": 8.45,
+      "min": 19.8,
+      "dk": 20.2
      }
     ],
     "split_of": [
@@ -953,7 +969,7 @@
       "much": "+13.4 DK without them (3 games)",
       "score": 13.4,
       "min": 23.3,
-      "dk": 23.4
+      "dk": 23.3
      },
      {
       "player": "Tari Eason",
@@ -962,7 +978,7 @@
       "much": "+7.0 DK without them (3 games)",
       "score": 7.0,
       "min": 28.3,
-      "dk": 29.2
+      "dk": 29.1
      }
     ],
     "split_of": [
@@ -1032,7 +1048,7 @@
       "much": "+8.0 DK without him (2 games)",
       "score": 8.0,
       "min": 14.9,
-      "dk": 20.1
+      "dk": 20.0
      }
     ],
     "split_of": [
@@ -1136,45 +1152,45 @@
     "player": "Isaiah Stewart",
     "team": "MEM",
     "own": 38.0,
-    "dk": 27.3,
+    "dk": 27.5,
     "salary": 3900
    },
    {
     "player": "Dylan Cardwell",
     "team": "SAC",
-    "own": 37.6,
+    "own": 37.5,
     "dk": 21.2,
     "salary": 4000
    },
    {
     "player": "Aday Mara",
     "team": "OKC",
-    "own": 35.2,
+    "own": 35.1,
     "dk": 27.5,
     "salary": 5400
    }
   ],
   "leverage": [
    {
-    "player": "Giannis Antetokounmpo",
-    "team": "MIA",
-    "own": 9.7,
-    "dk": 67.5,
-    "salary": 11500
-   },
-   {
     "player": "Benedict Mathurin",
     "team": "NOP",
-    "own": 3.2,
-    "dk": 22.4,
+    "own": 1.0,
+    "dk": 22.3,
     "salary": 3900
    },
    {
     "player": "Tari Eason",
     "team": "HOU",
     "own": 3.2,
-    "dk": 29.2,
+    "dk": 29.1,
     "salary": 5100
+   },
+   {
+    "player": "Bobby Portis",
+    "team": "MIA",
+    "own": 0.9,
+    "dk": 27.7,
+    "salary": 4900
    }
   ],
   "last": {
@@ -1266,8 +1282,8 @@
    ]
   },
   "injuries": {
-   "report": "07:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_07_00PM.pdf",
+   "report": "07:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_07_30PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1362,19 +1378,19 @@
        "player": "Saddiq Bey",
        "salary": 6200,
        "why": "started, 24 minutes (11/09)",
-       "much": "+13.2 DK projected vs. last 3",
-       "score": 13.25,
+       "much": "+13.4 DK projected vs. last 3",
+       "score": 13.350000000000001,
        "min": 34.4,
-       "dk": 33.5
+       "dk": 33.6
       },
       {
        "player": "Jeremiah Fears",
        "salary": 6800,
        "why": "Show: about 34 minutes (11/13)",
-       "much": "+8.4 DK projected vs. last 3",
-       "score": 8.416666666666664,
+       "much": "+8.5 DK projected vs. last 3",
+       "score": 8.516666666666666,
        "min": 37.3,
-       "dk": 40.5
+       "dk": 40.6
       }
      ],
      "estimate": false
@@ -1396,19 +1412,10 @@
        "player": "Jarrett Allen",
        "salary": 5700,
        "why": "subs in for him 18 of 44 times",
-       "much": "+18.7 DK projected vs. last 3",
-       "score": 18.666666666666668,
+       "much": "+18.5 DK projected vs. last 3",
+       "score": 18.466666666666665,
        "min": 32.0,
-       "dk": 40.0
-      },
-      {
-       "player": "Donovan Mitchell",
-       "salary": 8100,
-       "why": "subs in for him 7 of 44 times",
-       "much": "+8.2 DK projected vs. last 3",
-       "score": 8.216666666666661,
-       "min": 35.4,
-       "dk": 48.8
+       "dk": 39.8
       },
       {
        "player": "Jaylon Tyson",
@@ -1418,6 +1425,15 @@
        "score": 8.149999999999999,
        "min": 21.0,
        "dk": 18.9
+      },
+      {
+       "player": "Donovan Mitchell",
+       "salary": 8100,
+       "why": "subs in for him 7 of 44 times",
+       "much": "+8.1 DK projected vs. last 3",
+       "score": 8.116666666666667,
+       "min": 35.4,
+       "dk": 48.7
       }
      ],
      "estimate": false
@@ -1439,10 +1455,10 @@
        "player": "Tim Hardaway",
        "salary": 3200,
        "why": "subs in for him 8 of 27 times",
-       "much": "+13.7 DK projected vs. last 3",
-       "score": 13.666666666666666,
+       "much": "+13.6 DK projected vs. last 3",
+       "score": 13.566666666666666,
        "min": 22.0,
-       "dk": 14.0
+       "dk": 13.9
       }
      ],
      "estimate": false
@@ -1464,10 +1480,10 @@
        "player": "Giannis Antetokounmpo",
        "salary": 11500,
        "why": "subs in for him 6 of 31 times",
-       "much": "+16.6 DK projected vs. last 3",
-       "score": 16.583333333333336,
+       "much": "+16.5 DK projected vs. last 3",
+       "score": 16.48333333333334,
        "min": 37.3,
-       "dk": 67.5
+       "dk": 67.4
       },
       {
        "player": "Andrew Wiggins",
@@ -1501,7 +1517,7 @@
        "much": "+18.2 DK without him (3 games)",
        "score": 18.2,
        "min": 19.8,
-       "dk": 20.3
+       "dk": 20.2
       },
       {
        "player": "Jeremiah Fears",
@@ -1510,7 +1526,7 @@
        "much": "+16.6 DK without him (3 games)",
        "score": 16.6,
        "min": 37.3,
-       "dk": 40.5
+       "dk": 40.6
       },
       {
        "player": "Herbert Jones",
@@ -1519,7 +1535,7 @@
        "much": "+11.4 DK without him (3 games)",
        "score": 11.4,
        "min": 30.6,
-       "dk": 19.9
+       "dk": 19.8
       }
      ],
      "estimate": false
@@ -1568,7 +1584,7 @@
        "much": "+11.2 DK without him (1 game)",
        "score": 11.2,
        "min": 28.0,
-       "dk": 27.3
+       "dk": 27.5
       },
       {
        "player": "Ty Jerome",
@@ -1577,7 +1593,7 @@
        "much": "+9.6 DK without him (1 game)",
        "score": 9.6,
        "min": 31.4,
-       "dk": 42.1
+       "dk": 42.3
       }
      ],
      "estimate": false
@@ -1602,16 +1618,16 @@
        "much": "+22.5 DK without him (10 games)",
        "score": 22.5,
        "min": 37.3,
-       "dk": 40.5
+       "dk": 40.6
       },
       {
        "player": "Karlo Matkovic",
        "salary": 4600,
        "why": "started at center, 22 minutes (11/11)",
-       "much": "+8.6 DK projected vs. last 3",
-       "score": 8.55,
+       "much": "+8.4 DK projected vs. last 3",
+       "score": 8.45,
        "min": 19.8,
-       "dk": 20.3
+       "dk": 20.2
       },
       {
        "player": "Herbert Jones",
@@ -1620,7 +1636,7 @@
        "much": "+7.5 DK without him (10 games)",
        "score": 7.5,
        "min": 30.6,
-       "dk": 19.9
+       "dk": 19.8
       }
      ],
      "estimate": false
@@ -1654,50 +1670,7 @@
        "much": "+7.6 DK without him (3 games)",
        "score": 7.6,
        "min": 28.6,
-       "dk": 27.1
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "ATL at CHI",
-     "time": "2026-11-14T01:00Z",
-     "team": "CHI",
-     "player": "Norman Powell",
-     "status": "Questionable",
-     "reason": "Low Back Spasms",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "",
-     "min": 27.3,
-     "benefits": [
-      {
-       "player": "Jalen Smith",
-       "salary": 5900,
-       "why": "30 minutes, up from 22",
-       "much": "+10.5 DK without him (2 games)",
-       "score": 10.5,
-       "min": 24.6,
-       "dk": 29.6
-      },
-      {
-       "player": "Noa Essengue",
-       "salary": 3500,
-       "why": "same minutes, more production",
-       "much": "+10.2 DK without him (2 games)",
-       "score": 10.2,
-       "min": 14.9,
-       "dk": 13.1
-      },
-      {
-       "player": "Josh Giddey",
-       "salary": 7900,
-       "why": "same minutes, more production",
-       "much": "+7.5 DK without him (2 games)",
-       "score": 7.5,
-       "min": 27.6,
-       "dk": 31.9
+       "dk": 27.2
       }
      ],
      "estimate": false
@@ -1707,12 +1680,12 @@
      "time": "2026-11-14T01:00Z",
      "team": "CHI",
      "player": "Dailyn Swain",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "Right Disc Irritation",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "7:47 PM",
      "min": 9.5,
      "benefits": [],
      "estimate": false
@@ -1729,6 +1702,21 @@
      "known": true,
      "changed_at": "1:54 PM",
      "min": 32.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "ATL at CHI",
+     "time": "2026-11-14T01:00Z",
+     "team": "CHI",
+     "player": "Norman Powell",
+     "status": "Available",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "7:47 PM",
+     "min": 27.3,
      "benefits": [],
      "estimate": false
     },
@@ -1791,7 +1779,7 @@
        "much": "+13.4 DK without him (3 games)",
        "score": 13.4,
        "min": 23.3,
-       "dk": 23.4
+       "dk": 23.3
       },
       {
        "player": "Tari Eason",
@@ -1800,7 +1788,7 @@
        "much": "+7.0 DK without him (3 games)",
        "score": 7.0,
        "min": 28.3,
-       "dk": 29.2
+       "dk": 29.1
       }
      ],
      "estimate": false
@@ -1843,7 +1831,7 @@
        "much": "+8.0 DK without him (2 games)",
        "score": 8.0,
        "min": 14.9,
-       "dk": 20.1
+       "dk": 20.0
       }
      ],
      "estimate": false
@@ -1908,10 +1896,10 @@
        "player": "Julian Champagnie",
        "salary": 5000,
        "why": "subs in for him 16 of 55 times",
-       "much": "about +6.6 DK",
-       "score": 6.575291375291375,
+       "much": "about +6.5 DK",
+       "score": 6.544708624708624,
        "min": 26.0,
-       "dk": 21.5
+       "dk": 21.4
       },
       {
        "player": "Dylan Harper",
@@ -1927,9 +1915,9 @@
        "salary": 6800,
        "why": "subs in for him 9 of 55 times",
        "much": "about +4.8 DK",
-       "score": 4.833684210526315,
+       "score": 4.849377990430622,
        "min": 28.5,
-       "dk": 30.8
+       "dk": 30.9
       }
      ],
      "estimate": true
@@ -2028,7 +2016,7 @@
        "much": "+18.0 DK without him (1 game)",
        "score": 18.0,
        "min": 25.4,
-       "dk": 31.7
+       "dk": 31.6
       },
       {
        "player": "Alex Caruso",
@@ -2037,7 +2025,7 @@
        "much": "+12.9 DK without him (1 game)",
        "score": 12.9,
        "min": 20.2,
-       "dk": 21.3
+       "dk": 21.2
       },
       {
        "player": "Kenrich Williams",
@@ -2046,7 +2034,7 @@
        "much": "+6.0 DK without him (1 game)",
        "score": 6.0,
        "min": 22.6,
-       "dk": 18.3
+       "dk": 18.4
       }
      ],
      "estimate": false
@@ -2280,7 +2268,7 @@
        "much": "+11.8 DK without him (2 games)",
        "score": 11.8,
        "min": 14.5,
-       "dk": 12.3
+       "dk": 12.2
       },
       {
        "player": "Darryn Peterson",
@@ -2332,7 +2320,7 @@
        "much": "+8.8 DK without him (8 games)",
        "score": 8.8,
        "min": 19.0,
-       "dk": 11.5
+       "dk": 11.6
       },
       {
        "player": "Kyle Filipowski",
@@ -2341,7 +2329,7 @@
        "much": "+6.6 DK without him (5 games)",
        "score": 6.6,
        "min": 14.5,
-       "dk": 12.3
+       "dk": 12.2
       }
      ],
      "estimate": false
@@ -2391,7 +2379,7 @@
        "much": "+7.2 DK without him (2 games)",
        "score": 7.2,
        "min": 14.9,
-       "dk": 20.1
+       "dk": 20.0
       },
       {
        "player": "Will Richard",
@@ -2431,10 +2419,10 @@
        "player": "Deni Avdija",
        "salary": 9000,
        "why": "39 minutes, 11 assists, extra usage (11/06)",
-       "much": "+8.0 DK projected vs. last 3",
-       "score": 8.016666666666666,
+       "much": "+8.1 DK projected vs. last 3",
+       "score": 8.116666666666667,
        "min": 35.3,
-       "dk": 48.1
+       "dk": 48.2
       }
      ],
      "estimate": false
@@ -2468,7 +2456,7 @@
        "much": "+5.8 DK without him (5 games)",
        "score": 5.8,
        "min": 35.3,
-       "dk": 48.1
+       "dk": 48.2
       },
       {
        "player": "Robert Williams",
@@ -2517,7 +2505,7 @@
        "much": "+15.7 DK without him (9 games)",
        "score": 15.7,
        "min": 23.3,
-       "dk": 18.0
+       "dk": 18.1
       },
       {
        "player": "Aday Mara",
@@ -2560,7 +2548,7 @@
        "much": "+15.7 DK without him (9 games)",
        "score": 15.7,
        "min": 23.3,
-       "dk": 18.0
+       "dk": 18.1
       },
       {
        "player": "Aday Mara",
@@ -2603,7 +2591,7 @@
        "much": "+12.6 DK without him (5 games)",
        "score": 12.6,
        "min": 23.3,
-       "dk": 18.0
+       "dk": 18.1
       },
       {
        "player": "Aday Mara",
@@ -2646,7 +2634,7 @@
        "much": "+15.7 DK without him (9 games)",
        "score": 15.7,
        "min": 23.3,
-       "dk": 18.0
+       "dk": 18.1
       },
       {
        "player": "Aday Mara",
@@ -12529,7 +12517,7 @@
    "coach": "Tiago Splitter (new)",
    "notes": "Coby White and Ayo Dosunmu are gone, and Norman Powell, Nic Claxton, Buddy Hield and rookie Caleb Wilson arrived. Leonard Miller gets about 25 minutes if Buzelis or Wilson is hurt. Fantasy playoff weeks run 3-3-4 (March 28 end) and 3-4-4 (April 4 end). Chicago has 15 back-to-backs, and no one is hurt to start the season.",
    "source": "LO-1018",
-   "out": "Caleb Wilson, Jaylin Sellers, Tobe Awaka",
+   "out": "Caleb Wilson, Dailyn Swain, Jaylin Sellers, Tobe Awaka",
    "depth_through": "2026-11-11",
    "games": 10
   },
