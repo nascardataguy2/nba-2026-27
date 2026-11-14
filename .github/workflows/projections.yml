@@ -62,6 +62,7 @@ jobs:
           python3 scripts/season_badges.py || echo "season badges failed"
           python3 scripts/season.py || echo "season failed"
           python3 scripts/timelines.py || echo "timelines failed"
+          python3 scripts/blowouts.py || echo "blowout notes failed"
           python3 scripts/wowy.py || echo "wowy failed"
       - name: Projections and database
         run: |
