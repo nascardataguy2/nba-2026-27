@@ -66,7 +66,10 @@ def played_after():
 
 
 def clean(e):
+    new = e.get("_new")
     e = {k: e.get(k) for k in ("player", "team", "date", "kind", "text", "expires", "src")}
+    if new:
+        e["_new"] = 1
     if not e["src"]:
         e["src"] = ""
     e["text"] = re.sub(r"\s+", " ", str(e["text"] or "")).strip()
@@ -136,7 +139,9 @@ def prune(log, today):
     out = []
     for k, es in by.items():
         pref = {k: i for i, k in enumerate(("injury", "role", "minutes", "usage", "news", "stat"))}
-        es.sort(key=lambda e: (e["date"], -pref[e["kind"]], len(e["text"])), reverse=True)
+        # same date: what was just added is newer news than what the log already had
+        # (11/14: Missi's "probable" was dropped for an older "questionable" note)
+        es.sort(key=lambda e: (e["date"], e.get("_new", 0), -pref[e["kind"]], len(e["text"])), reverse=True)
         keep, count = [], {}
         cut14 = str(t - timedelta(days=14))
         detailed = [x for x in es if x["kind"] == "injury" and not bland(x) and x["date"] >= cut14]
@@ -171,11 +176,13 @@ def main():
     log = load(PATH, [])
     n0 = len(log)
     for f in a.add:
-        log += load(f, [])
+        log += [dict(e, _new=1) for e in load(f, [])]
     for e in storylines():  # skip a storyline the log already has in some form
         if not any(x["player"] == e["player"] and difflib.SequenceMatcher(None, x["text"].lower(), e["text"].lower()).ratio() > 0.6 for x in log):
             log.append(e)
     log = prune(log, today)
+    for e in log:
+        e.pop("_new", None)
     json.dump(log, open(PATH, "w"), indent=1, ensure_ascii=False)
     print("player log:", len(log), "entries for", len({norm(e['player']) for e in log}), "players (was", n0, ")")
 
