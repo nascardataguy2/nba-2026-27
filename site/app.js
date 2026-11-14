@@ -350,16 +350,19 @@
     el.className = 'inj-wrap';
     var tb = el.parentNode.querySelector('.toolbar'); if (tb) tb.style.display = 'none';
     function cls(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; }
-    var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games.' + (injSort() === 'team' ? ' Grouped by team.' : ' New statuses are listed first.') +
+    var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games.' + (injSort() === 'team' ? ' Grouped by team.' : injSort() === 'min' ? ' Biggest minutes impact first: players who are out or doubtful, then questionable, each sorted by the minutes a game they play.' : ' New statuses are listed first.') +
       ((IJ.pending || []).length ? ' Not filed yet: ' + IJ.pending.map(function(t){ return tm(t); }).join(' ') + '.' : ' Every team on the slate has filed.') +
       (IJ.url ? ' <a href="' + esc(IJ.url) + '" target="_blank" rel="noopener">Open the NBA\u2019s PDF</a>.' : '') + '</p></div>';
-    var byTeam = injSort() === 'team', ORD = {out:0, dbt:1, q:2, ok:3}, last = '';
+    var byTeam = injSort() === 'team', byMin = injSort() === 'min', ORD = {out:0, dbt:1, q:2, ok:3}, last = '';
     var list = (IJ.rows || []).slice();
+    // Biggest minutes impact: out and doubtful first, then questionable, then everyone expected to play; most minutes first in each.
+    var TIER = {out:0, dbt:0, q:1, ok:2};
+    if (byMin) list.sort(function(a,b){ return (TIER[cls(a.status)] - TIER[cls(b.status)]) || ((b.min || 0) - (a.min || 0)); });
     if (byTeam) list.sort(function(a,b){
       var ta = NAMES[a.team] || a.team, tb2 = NAMES[b.team] || b.team;
       return ta < tb2 ? -1 : ta > tb2 ? 1 : (ORD[cls(a.status)] - ORD[cls(b.status)]) || ((b.min || 0) - (a.min || 0));
     });
-    var bar = '<div class="inj-sort"><span class="bs-n">Sort:</span> <button type="button" class="btn' + (byTeam ? '' : ' solid') + '" data-isort="new">New first</button> <button type="button" class="btn' + (byTeam ? ' solid' : '') + '" data-isort="team">By team</button></div>';
+    var bar = '<div class="inj-sort"><span class="bs-n">Sort:</span> <button type="button" class="btn' + (byTeam || byMin ? '' : ' solid') + '" data-isort="new">New first</button> <button type="button" class="btn' + (byTeam ? ' solid' : '') + '" data-isort="team">By team</button> <button type="button" class="btn' + (byMin ? ' solid' : '') + '" data-isort="min">Biggest minutes impact</button></div>';
     var rows = list.map(function(r){
       var grp = '';
       if (byTeam && r.team !== last){ last = r.team; grp = '<tr class="inj-grp"><td colspan="4">' + tm(r.team, true) + ' ' + esc(NAMES[r.team] || r.team) + '</td></tr>'; }
