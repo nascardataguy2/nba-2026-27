@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updated": "8:46 PM ET",
+ "updated": "9:15 PM ET",
  "games": 9,
  "pending": [],
  "first_report": "5:42 AM",
@@ -267,16 +267,7 @@
     },
     "SAS": {
      "out": [],
-     "q": [
-      {
-       "player": "De'Aaron Fox",
-       "min": 27.2
-      },
-      {
-       "player": "Devin Vassell",
-       "min": 28.0
-      }
-     ]
+     "q": []
     }
    },
    "key": "Stephen Curry is out, so De'Anthony Melton and Yaxel Lendeborg and Charles Bassey should play more than usual."
@@ -377,6 +368,30 @@
  ],
  "changed": [
   {
+   "player": "Devin Vassell",
+   "team": "SAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "9:16 PM"
+  },
+  {
+   "player": "De'Aaron Fox",
+   "team": "SAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "9:16 PM"
+  },
+  {
+   "player": "Charles Bassey",
+   "team": "GSW",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Left Toe Soreness",
+   "time": "9:16 PM"
+  },
+  {
    "player": "Dailyn Swain",
    "team": "CHI",
    "status": "Out",
@@ -431,30 +446,6 @@
    "was": "Doubtful",
    "why": "Illness",
    "time": "6:17 PM"
-  },
-  {
-   "player": "Aaron Nesmith",
-   "team": "IND",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Right Knee Soreness",
-   "time": "6:17 PM"
-  },
-  {
-   "player": "T.J. McConnell",
-   "team": "IND",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Right Hamstring Strain",
-   "time": "6:17 PM"
-  },
-  {
-   "player": "Jalen Suggs",
-   "team": "ORL",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "",
-   "time": "5:32 PM"
   }
  ],
  "chg": [
@@ -478,6 +469,27 @@
    ],
    "time": "5:32 PM",
    "size": 63.4
+  },
+  {
+   "key": "SAS",
+   "team": "SAS",
+   "head": "Fox, Vassell CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Carter Bryant",
+     "salary": 3300,
+     "much": "+9.4 DK without Vassell"
+    },
+    {
+     "player": "Victor Wembanyama",
+     "salary": 12000,
+     "much": "+9.0 DK without Vassell"
+    }
+   ],
+   "time": "9:16 PM",
+   "size": 57.5
   },
   {
    "key": "Stephen Curry",
@@ -690,27 +702,6 @@
    "size": 19.4
   },
   {
-   "key": "De'Aaron Fox",
-   "team": "SAS",
-   "head": "De'Aaron Fox QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Julian Champagnie",
-     "salary": 5000,
-     "much": "about +6.5 DK if he sits (estimate)"
-    },
-    {
-     "player": "Dylan Harper",
-     "salary": 6900,
-     "much": "about +6.0 DK if he sits (estimate)"
-    }
-   ],
-   "time": "6:46 AM",
-   "size": 15.9
-  },
-  {
    "key": "Ajay Mitchell",
    "team": "OKC",
    "head": "Ajay Mitchell QUESTIONABLE",
@@ -730,27 +721,6 @@
    ],
    "time": "6:46 AM",
    "size": 15.3
-  },
-  {
-   "key": "Devin Vassell",
-   "team": "SAS",
-   "head": "Devin Vassell QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Carter Bryant",
-     "salary": 3300,
-     "much": "+9.4 DK without him (2 games)"
-    },
-    {
-     "player": "Victor Wembanyama",
-     "salary": 12000,
-     "much": "+9.0 DK without him (2 games)"
-    }
-   ],
-   "time": "6:46 AM",
-   "size": 12.8
   },
   {
    "key": "Baba Miller",
@@ -1028,7 +998,7 @@
      "much": "+23.8 DK without him (2 games)",
      "score": 23.8,
      "min": 25.6,
-     "dk": 26.1
+     "dk": 26.0
     },
     {
      "player": "Yaxel Lendeborg",
@@ -1037,7 +1007,7 @@
      "much": "+14.4 DK without him (2 games)",
      "score": 14.4,
      "min": 35.1,
-     "dk": 44.4
+     "dk": 44.3
     },
     {
      "player": "Charles Bassey",
@@ -1046,7 +1016,7 @@
      "much": "+8.0 DK without him (2 games)",
      "score": 8.0,
      "min": 14.9,
-     "dk": 20.0
+     "dk": 20.1
     }
    ],
    "split_of": [
@@ -1149,21 +1119,21 @@
   {
    "player": "Jarrett Allen",
    "team": "CLE",
-   "own": 35.5,
+   "own": 35.6,
    "dk": 39.8,
    "salary": 5700
   },
   {
    "player": "Jeremiah Fears",
    "team": "NOP",
-   "own": 31.1,
+   "own": 31.0,
    "dk": 40.6,
    "salary": 6800
   },
   {
    "player": "Zion Williamson",
    "team": "NOP",
-   "own": 27.7,
+   "own": 27.6,
    "dk": 46.8,
    "salary": 7400
   }
@@ -1179,15 +1149,15 @@
   {
    "player": "Yaxel Lendeborg",
    "team": "GSW",
-   "own": 5.8,
-   "dk": 44.4,
+   "own": 5.6,
+   "dk": 44.3,
    "salary": 7500
   },
   {
    "player": "Malik Monk",
    "team": "SAC",
    "own": 0.6,
-   "dk": 21.9,
+   "dk": 22.0,
    "salary": 3900
   }
  ],
@@ -1280,8 +1250,8 @@
   ]
  },
  "injuries": {
-  "report": "08:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_08_30PM.pdf",
+  "report": "09:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_09_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1811,7 +1781,7 @@
       "much": "+23.8 DK without him (2 games)",
       "score": 23.8,
       "min": 25.6,
-      "dk": 26.1
+      "dk": 26.0
      },
      {
       "player": "Yaxel Lendeborg",
@@ -1820,7 +1790,7 @@
       "much": "+14.4 DK without him (2 games)",
       "score": 14.4,
       "min": 35.1,
-      "dk": 44.4
+      "dk": 44.3
      },
      {
       "player": "Charles Bassey",
@@ -1829,7 +1799,7 @@
       "much": "+8.0 DK without him (2 games)",
       "score": 8.0,
       "min": 14.9,
-      "dk": 20.0
+      "dk": 20.1
      }
     ],
     "estimate": false
@@ -1839,42 +1809,14 @@
     "time": "2026-11-14T02:30Z",
     "team": "SAS",
     "player": "Devin Vassell",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "6:46 AM",
+    "changed_at": "9:16 PM",
     "min": 28.0,
-    "benefits": [
-     {
-      "player": "Carter Bryant",
-      "salary": 3300,
-      "why": "14 minutes, up from 10",
-      "much": "+9.4 DK without him (2 games)",
-      "score": 9.4,
-      "min": 12.8,
-      "dk": 8.5
-     },
-     {
-      "player": "Victor Wembanyama",
-      "salary": 12000,
-      "why": "same minutes, more production",
-      "much": "+9.0 DK without him (2 games)",
-      "score": 9.0,
-      "min": 28.4,
-      "dk": 54.7
-     },
-     {
-      "player": "Dylan Harper",
-      "salary": 6900,
-      "why": "same minutes, more production",
-      "much": "+8.1 DK without him (2 games)",
-      "score": 8.1,
-      "min": 31.0,
-      "dk": 33.9
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1882,55 +1824,27 @@
     "time": "2026-11-14T02:30Z",
     "team": "SAS",
     "player": "De'Aaron Fox",
-    "status": "Questionable",
-    "reason": "Left Hip Soreness",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "6:46 AM",
+    "changed_at": "9:16 PM",
     "min": 27.3,
-    "benefits": [
-     {
-      "player": "Julian Champagnie",
-      "salary": 5000,
-      "why": "subs in for him 16 of 55 times",
-      "much": "about +6.5 DK",
-      "score": 6.544708624708624,
-      "min": 26.0,
-      "dk": 21.4
-     },
-     {
-      "player": "Dylan Harper",
-      "salary": 6900,
-      "why": "subs in for him 11 of 55 times",
-      "much": "about +6.0 DK",
-      "score": 5.978064516129032,
-      "min": 31.0,
-      "dk": 33.9
-     },
-     {
-      "player": "Stephon Castle",
-      "salary": 6800,
-      "why": "subs in for him 9 of 55 times",
-      "much": "about +4.8 DK",
-      "score": 4.849377990430622,
-      "min": 28.5,
-      "dk": 30.9
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "game": "GSW at SAS",
     "time": "2026-11-14T02:30Z",
     "team": "GSW",
     "player": "Charles Bassey",
-    "status": "Probable",
+    "status": "Available",
     "reason": "Left Toe Soreness",
     "new": true,
-    "was": "",
+    "was": "Probable",
     "known": true,
-    "changed_at": "6:46 AM",
+    "changed_at": "9:16 PM",
     "min": 14.0,
     "benefits": [],
     "estimate": false
@@ -1980,7 +1894,7 @@
       "much": "+9.4 DK without him (1 game)",
       "score": 9.4,
       "min": 26.5,
-      "dk": 26.5
+      "dk": 26.6
      },
      {
       "player": "Derrick Jones Jr.",
@@ -2014,7 +1928,7 @@
       "much": "+18.0 DK without him (1 game)",
       "score": 18.0,
       "min": 25.4,
-      "dk": 31.7
+      "dk": 31.5
      },
      {
       "player": "Alex Caruso",
@@ -2023,7 +1937,7 @@
       "much": "+12.9 DK without him (1 game)",
       "score": 12.9,
       "min": 20.2,
-      "dk": 21.3
+      "dk": 21.2
      },
      {
       "player": "Kenrich Williams",
@@ -2032,7 +1946,7 @@
       "much": "+6.0 DK without him (1 game)",
       "score": 6.0,
       "min": 22.6,
-      "dk": 18.5
+      "dk": 18.4
      }
     ],
     "estimate": false
@@ -2377,7 +2291,7 @@
       "much": "+7.2 DK without him (2 games)",
       "score": 7.2,
       "min": 14.9,
-      "dk": 20.0
+      "dk": 20.1
      },
      {
       "player": "Will Richard",
@@ -2408,10 +2322,10 @@
       "player": "Jrue Holiday",
       "salary": 5800,
       "why": "30 minutes, 19 points off the bench (11/11)",
-      "much": "+8.5 DK projected vs. last 3",
-      "score": 8.5,
+      "much": "+8.6 DK projected vs. last 3",
+      "score": 8.600000000000001,
       "min": 29.5,
-      "dk": 29.5
+      "dk": 29.6
      },
      {
       "player": "Deni Avdija",
