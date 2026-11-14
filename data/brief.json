@@ -318,8 +318,19 @@
    "team": "CLE",
    "head": "Donovan Mitchell OUT",
    "st": "Out",
-   "act": "",
-   "names": [],
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jaylon Tyson",
+     "salary": 4100,
+     "much": "+11.4 DK projected vs. last 3"
+    },
+    {
+     "player": "Craig Porter Jr.",
+     "salary": 3300,
+     "much": "+3.7 DK projected vs. last 3"
+    }
+   ],
    "time": "5:54 PM",
    "size": 41.1
   },
@@ -349,8 +360,19 @@
    "team": "CLE",
    "head": "James Harden OUT",
    "st": "Out",
-   "act": "",
-   "names": [],
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jaylon Tyson",
+     "salary": 4100,
+     "much": "+11.4 DK projected vs. last 3"
+    },
+    {
+     "player": "Craig Porter Jr.",
+     "salary": 3300,
+     "much": "+3.7 DK projected vs. last 3"
+    }
+   ],
    "time": "5:54 PM",
    "size": 34.4
   },
@@ -543,6 +565,27 @@
    ],
    "time": "12:54 PM",
    "size": 10.1
+  },
+  {
+   "key": "Bennedict Mathurin",
+   "team": "NOP",
+   "head": "Bennedict Mathurin OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Benedict Mathurin",
+     "salary": 3900,
+     "much": "+11.4 DK projected vs. last 3"
+    },
+    {
+     "player": "Jeremiah Fears",
+     "salary": 7000,
+     "much": "+7.6 DK projected vs. last 3"
+    }
+   ],
+   "time": "5:54 PM",
+   "size": 9.9
   },
   {
    "key": "Jerami Grant",
@@ -1129,7 +1172,35 @@
     "known": true,
     "changed_at": "5:54 PM",
     "min": 14.3,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Benedict Mathurin",
+      "salary": 3900,
+      "why": "projected 21 minutes tonight, up from 13",
+      "much": "+11.4 DK projected vs. last 3",
+      "score": 11.366666666666667,
+      "min": 21.1,
+      "dk": 17.2
+     },
+     {
+      "player": "Jeremiah Fears",
+      "salary": 7000,
+      "why": "projected 36 minutes tonight, up from 31",
+      "much": "+7.6 DK projected vs. last 3",
+      "score": 7.600000000000001,
+      "min": 35.9,
+      "dk": 38.1
+     },
+     {
+      "player": "Derik Queen",
+      "salary": 5700,
+      "why": "projected 24 minutes tonight, up from 18",
+      "much": "+6.3 DK projected vs. last 3",
+      "score": 6.333333333333332,
+      "min": 23.8,
+      "dk": 27.5
+     }
+    ],
     "estimate": false
    },
    {
@@ -1159,7 +1230,35 @@
     "known": true,
     "changed_at": "5:54 PM",
     "min": 31.0,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Jaylon Tyson",
+      "salary": 4100,
+      "why": "projected 30 minutes tonight, up from 22",
+      "much": "+11.4 DK projected vs. last 3",
+      "score": 11.45,
+      "min": 30.0,
+      "dk": 26.2
+     },
+     {
+      "player": "Craig Porter Jr.",
+      "salary": 3300,
+      "why": "projected 17 minutes tonight, up from 12",
+      "much": "+3.7 DK projected vs. last 3",
+      "score": 3.6500000000000004,
+      "min": 17.0,
+      "dk": 13.4
+     },
+     {
+      "player": "Tyrese Proctor",
+      "salary": 4300,
+      "why": "projected 27 minutes tonight, up from 23",
+      "much": "+2.4 DK projected vs. last 3",
+      "score": 2.3999999999999986,
+      "min": 27.0,
+      "dk": 26.4
+     }
+    ],
     "estimate": false
    },
    {
@@ -1174,7 +1273,35 @@
     "known": true,
     "changed_at": "5:54 PM",
     "min": 30.7,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Jaylon Tyson",
+      "salary": 4100,
+      "why": "projected 30 minutes tonight, up from 22",
+      "much": "+11.4 DK projected vs. last 3",
+      "score": 11.45,
+      "min": 30.0,
+      "dk": 26.2
+     },
+     {
+      "player": "Craig Porter Jr.",
+      "salary": 3300,
+      "why": "projected 17 minutes tonight, up from 12",
+      "much": "+3.7 DK projected vs. last 3",
+      "score": 3.6500000000000004,
+      "min": 17.0,
+      "dk": 13.4
+     },
+     {
+      "player": "Tyrese Proctor",
+      "salary": 4300,
+      "why": "projected 27 minutes tonight, up from 23",
+      "much": "+2.4 DK projected vs. last 3",
+      "score": 2.3999999999999986,
+      "min": 27.0,
+      "dk": 26.4
+     }
+    ],
     "estimate": false
    },
    {

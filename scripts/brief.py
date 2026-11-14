@@ -146,6 +146,53 @@ def main():
         out.sort(key=lambda b: -b["score"])
         return out[:top]
 
+    def bpos(team, name):
+        g = [x for x in games_of(team, name) if x.get("pos")]
+        return g[-1]["pos"] if g else None
+
+    def proj_gain(team, name, status, m, top=3):
+        """Who gains, read from tonight's projections (Pearce 11/14: his minutes always go to
+        someone, whether or not he has missed a game before).
+        Out or doubtful: our projections already give his minutes to teammates, so list the
+        teammates projected for more minutes or DK points than their recent games, players at
+        his position (G/F/C) first.
+        Questionable: tonight's projections assume he plays, so split his minutes among the
+        teammates at his position by their projected minutes; that is labeled an estimate."""
+        mypos = bpos(team, name)
+        mates = [p for p in players if p["team"] == team and p["min"] > 0 and not p.get("q") and norm(p["player"]) != norm(name)]
+        out = []
+        if status in ("Out", "Doubtful"):
+            for p in mates:
+                g5 = [x for x in games_of(team, p["player"]) if x["min"] > 0][-5:]
+                g3 = g5[-3:]
+                if len(g3) < 2:
+                    continue
+                um = p["min"] - sum(x["min"] for x in g5) / len(g5)
+                ud = p["dk"] - sum(x["dk"] for x in g3) / len(g3)
+                if um < 2 and ud < 3:
+                    continue
+                why = "projected %d minutes tonight, up from %d" % (int(round(p["min"])), int(round(p["min"] - um))) if um >= 2 \
+                    else "projected %d minutes tonight" % int(round(p["min"]))
+                much = "+%s DK projected vs. last 3" % r1(ud) if ud >= 1 else "more minutes"
+                out.append({"player": p["player"], "salary": p.get("salary"), "why": why, "much": much,
+                            "score": (1 if bpos(team, p["player"]) == mypos else 0, ud), "min": r1(p["min"]), "dk": r1(p["dk"])})
+            out.sort(key=lambda b: b["score"], reverse=True)
+        else:
+            pm = [p for p in mates if bpos(team, p["player"]) == mypos and p["min"] >= 8] or [p for p in mates if p["min"] >= 15]
+            tot = sum(p["min"] for p in pm)
+            for p in pm:
+                share = p["min"] / tot if tot else 0
+                est = m * share * p["dk"] / p["min"]
+                if est < 2:
+                    continue
+                out.append({"player": p["player"], "salary": p.get("salary"),
+                            "why": "plays his position (%s), %d minutes tonight" % (mypos or "rotation", int(round(p["min"]))),
+                            "much": "about +%s DK" % r1(est), "score": est, "min": r1(p["min"]), "dk": r1(p["dk"])})
+            out.sort(key=lambda b: -b["score"])
+        for b in out:
+            b["score"] = b["score"][1] if isinstance(b["score"], tuple) else b["score"]
+        return out[:top]
+
     def add_notes(team, names, ben):
         """Attach the latest show or recap note to each player who gains, and add teammates
         the notes name who are playing tonight but are not on the list yet."""
@@ -382,6 +429,8 @@ def main():
         ben, est = [], False
         if status in ("Out", "Doubtful") and m >= 12:
             ben = tidy(t, [name], add_notes(t, [name], split_gain(t, [name])[0] or sub_gain(t, [name])))
+            if not ben:
+                ben = proj_gain(t, name, status, m)
         elif status == "Questionable" and m >= 10:
             # If he sits: what his teammates actually did in this season's games he missed,
             # at every position. With no such games, his minutes go to the whole rotation
@@ -389,6 +438,8 @@ def main():
             rot = [p for p in players if p["team"] == t and norm(p["player"]) != norm(name) and p["min"] >= 10 and not p.get("q")]
             sg = split_gain(t, [name])[0]
             ben = tidy(t, [name], add_notes(t, [name], sg or sub_gain(t, [name])), if_sits=None if sg else m)
+            if not ben:
+                ben = proj_gain(t, name, status, m)
             est = not sg and bool(ben)
         c = intraday.get(name)
         inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
