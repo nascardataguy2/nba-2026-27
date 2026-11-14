@@ -4,7 +4,7 @@
  "seen": {
   "Julian Strawther": "Out",
   "Tarik Biberovic": "Out",
-  "Max Christie": "Questionable",
+  "Max Christie": "Doubtful",
   "Sergio De Larrea": "Out",
   "Morez Johnson Jr.": "Probable",
   "Dereck Lively II": "Out",
@@ -16,7 +16,11 @@
   "Anthony Edwards": "Out",
   "Jalen Duren": "Out",
   "Isaiah Joe": "Out",
-  "Ebuka Okorie": "Out"
+  "Ebuka Okorie": "Out",
+  "Yves Missi": "Probable",
+  "Nic Claxton": "Questionable",
+  "Norman Powell": "Questionable",
+  "Jalen Smith": "Questionable"
  },
  "log": [
   {
@@ -26,13 +30,55 @@
    "was": "Questionable",
    "why": "Illness",
    "time": "12:41 PM"
+  },
+  {
+   "player": "Yves Missi",
+   "team": "NOP",
+   "status": "Probable",
+   "was": "Out",
+   "why": "",
+   "time": "12:54 PM"
+  },
+  {
+   "player": "Max Christie",
+   "team": "DAL",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "Left Ankle Sprain",
+   "time": "12:54 PM"
+  },
+  {
+   "player": "Nic Claxton",
+   "team": "CHI",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "12:54 PM"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "status": "Questionable",
+   "was": "Available",
+   "why": "",
+   "time": "12:54 PM"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Finger Sprain",
+   "time": "12:54 PM"
   }
  ],
  "teams": [
   "BKN",
+  "CHI",
   "DAL",
   "DEN",
   "DET",
-  "MIN"
+  "MIN",
+  "NOP"
  ]
 }

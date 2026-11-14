@@ -2,13 +2,11 @@
  "updated": "2026-11-14",
  "brief": {
   "date": "2026-11-14",
-  "updated": "12:40 PM ET",
+  "updated": "12:53 PM ET",
   "games": 5,
   "pending": [
-   "NOP",
    "CLE",
    "MEM",
-   "CHI",
    "MIA"
   ],
   "first_report": "5:42 AM",
@@ -34,20 +32,28 @@
       "q": []
      },
      "NOP": {
-      "out": [],
-      "q": [
+      "out": [
        {
         "player": "Trey Murphy",
-        "min": 32.6
+        "min": 34.7
+       },
+       {
+        "player": "Dejounte Murray",
+        "min": 24.7
        },
        {
         "player": "Yves Missi",
-        "min": 19.4
+        "min": 19.5
+       },
+       {
+        "player": "Trendon Watford",
+        "min": 18.7
        }
-      ]
+      ],
+      "q": []
      }
     },
-    "key": "Nikola Jokic has the top projection in this game at 57.6 DK points."
+    "key": "Trey Murphy and Dejounte Murray are out, so Saddiq Bey and Jeremiah Fears and Jordan Poole should play more than usual."
    },
    {
     "away": "DAL",
@@ -71,12 +77,7 @@
         "min": 13.3
        }
       ],
-      "q": [
-       {
-        "player": "Max Christie",
-        "min": 14.8
-       }
-      ]
+      "q": []
      },
      "CLE": {
       "out": [],
@@ -88,7 +89,7 @@
       ]
      }
     },
-    "key": "Cooper Flagg has the top projection in this game at 45.1 DK points."
+    "key": "Cooper Flagg has the top projection in this game at 47.6 DK points."
    },
    {
     "away": "CHI",
@@ -107,11 +108,24 @@
     ],
     "teams": {
      "CHI": {
-      "out": [],
+      "out": [
+       {
+        "player": "Caleb Wilson",
+        "min": 23.0
+       }
+      ],
       "q": [
        {
         "player": "Jalen Smith",
-        "min": 27.8
+        "min": 26.9
+       },
+       {
+        "player": "Norman Powell",
+        "min": 27.5
+       },
+       {
+        "player": "Nicolas Claxton",
+        "min": 22.2
        }
       ]
      },
@@ -160,7 +174,7 @@
       ]
      }
     },
-    "key": "Ty Jerome has the top projection in this game at 38.9 DK points."
+    "key": "Ty Jerome has the top projection in this game at 39.0 DK points."
    },
    {
     "away": "DET",
@@ -209,6 +223,46 @@
   ],
   "changed": [
    {
+    "player": "Jalen Smith",
+    "team": "CHI",
+    "status": "Questionable",
+    "was": "",
+    "why": "Left Finger Sprain",
+    "time": "12:54 PM"
+   },
+   {
+    "player": "Norman Powell",
+    "team": "CHI",
+    "status": "Questionable",
+    "was": "Available",
+    "why": "",
+    "time": "12:54 PM"
+   },
+   {
+    "player": "Nic Claxton",
+    "team": "CHI",
+    "status": "Questionable",
+    "was": "",
+    "why": "",
+    "time": "12:54 PM"
+   },
+   {
+    "player": "Max Christie",
+    "team": "DAL",
+    "status": "Doubtful",
+    "was": "Questionable",
+    "why": "Left Ankle Sprain",
+    "time": "12:54 PM"
+   },
+   {
+    "player": "Yves Missi",
+    "team": "NOP",
+    "status": "Probable",
+    "was": "Out",
+    "why": "",
+    "time": "12:54 PM"
+   },
+   {
     "player": "Mikel Brown Jr.",
     "team": "BKN",
     "status": "Probable",
@@ -218,6 +272,27 @@
    }
   ],
   "chg": [
+   {
+    "key": "NOP",
+    "team": "NOP",
+    "head": "Missi CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Jeremiah Fears",
+      "salary": 7000,
+      "much": "+23.0 DK without Missi"
+     },
+     {
+      "player": "Herbert Jones",
+      "salary": 4400,
+      "much": "+7.9 DK without Missi"
+     }
+    ],
+    "time": "12:54 PM",
+    "size": 29.1
+   },
    {
     "key": "BKN",
     "team": "BKN",
@@ -238,9 +313,128 @@
     ],
     "time": "12:41 PM",
     "size": 23.0
+   },
+   {
+    "key": "Norman Powell",
+    "team": "CHI",
+    "head": "Norman Powell QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Noa Essengue",
+      "salary": 3500,
+      "much": "+10.4 DK without him (2 games)"
+     }
+    ],
+    "time": "12:54 PM",
+    "size": 15.0
+   },
+   {
+    "key": "Jalen Smith",
+    "team": "CHI",
+    "head": "Jalen Smith QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Leonard Miller",
+      "salary": 3800,
+      "much": "about +6.1 DK if he sits (estimate)"
+     },
+     {
+      "player": "Zach Collins",
+      "salary": 4200,
+      "much": "about +3.9 DK if he sits (estimate)"
+     }
+    ],
+    "time": "12:54 PM",
+    "size": 14.8
+   },
+   {
+    "key": "Nic Claxton",
+    "team": "CHI",
+    "head": "Nic Claxton QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Tre Jones",
+      "salary": 4600,
+      "much": "+7.8 DK without him (8 games)"
+     }
+    ],
+    "time": "12:54 PM",
+    "size": 10.1
    }
   ],
   "sits": [
+   {
+    "team": "NOP",
+    "outs": [
+     {
+      "player": "Trey Murphy",
+      "min": 34.7,
+      "note": "Trey Murphy III was ruled out on Nov. 13. The show listed him as questionable for the Saturday, Nov. 14 second night of the back-to-back because it did not know if he would be available.",
+      "new": false
+     },
+     {
+      "player": "Dejounte Murray",
+      "min": 24.7,
+      "note": "Ruled out tonight (left ankle sprain).",
+      "new": false
+     },
+     {
+      "player": "Yves Missi",
+      "min": 19.5,
+      "note": "Yves Missi was ruled out on Nov. 13, and the show listed him as questionable for Saturday, Nov. 14. The show said that if Missi returns, he would likely be on a solid minutes limit in his first game back.",
+      "new": true
+     },
+     {
+      "player": "Trendon Watford",
+      "min": 18.7,
+      "note": "Ruled out tonight (right ankle sprain).",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 97.6,
+    "benefits": [
+     {
+      "player": "Saddiq Bey",
+      "salary": 6100,
+      "why": "started that game",
+      "much": "+23.4 DK without them (1 game)",
+      "score": 23.4,
+      "min": 34.9,
+      "dk": 33.0
+     },
+     {
+      "player": "Jeremiah Fears",
+      "salary": 7000,
+      "why": "34 minutes, up from 29",
+      "much": "+9.4 DK without them (1 game)",
+      "score": 9.4,
+      "min": 35.7,
+      "dk": 38.0
+     },
+     {
+      "player": "Jordan Poole",
+      "salary": 4100,
+      "why": "same minutes, more production",
+      "much": "+7.0 DK without them (1 game)",
+      "score": 7.0,
+      "min": 22.2,
+      "dk": 19.8
+     }
+    ],
+    "split_of": [
+     "Trey Murphy",
+     "Dejounte Murray",
+     "Yves Missi",
+     "Trendon Watford"
+    ]
+   },
    {
     "team": "MIN",
     "outs": [
@@ -261,7 +455,7 @@
       "much": "+16.3 DK without him (8 games)",
       "score": 16.3,
       "min": 13.9,
-      "dk": 18.3
+      "dk": 18.1
      },
      {
       "player": "Ayo Dosunmu",
@@ -270,7 +464,7 @@
       "much": "+12.6 DK without him (8 games)",
       "score": 12.6,
       "min": 32.8,
-      "dk": 35.3
+      "dk": 35.2
      },
      {
       "player": "Jaylen Clark",
@@ -279,11 +473,56 @@
       "much": "+9.1 DK without him (8 games)",
       "score": 9.1,
       "min": 17.9,
-      "dk": 13.8
+      "dk": 13.7
      }
     ],
     "split_of": [
      "Anthony Edwards"
+    ]
+   },
+   {
+    "team": "CHI",
+    "outs": [
+     {
+      "player": "Caleb Wilson",
+      "min": 23.0,
+      "note": "Caleb Wilson played only 15 minutes on Nov. 11 after getting hurt and was ruled out on Nov. 13. The show said his absence moves Matas Buzelis from the three to the four and opens more minutes for players like Norman Powell and Tre Jones.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 23.0,
+    "benefits": [
+     {
+      "player": "Josh Giddey",
+      "salary": 7700,
+      "why": "39 minutes, up from 28",
+      "much": "+27.6 DK without him (1 game)",
+      "score": 27.6,
+      "min": 29.7,
+      "dk": 33.2
+     },
+     {
+      "player": "Isaac Okoro",
+      "salary": 4000,
+      "why": "started that game",
+      "much": "+15.5 DK without him (1 game)",
+      "score": 15.5,
+      "min": 29.0,
+      "dk": 16.0
+     },
+     {
+      "player": "Buddy Hield",
+      "salary": 3200,
+      "why": "25 minutes, up from 13",
+      "much": "+14.2 DK without him (1 game)",
+      "score": 14.2,
+      "min": 14.6,
+      "dk": 11.9
+     }
+    ],
+    "split_of": [
+     "Caleb Wilson"
     ]
    },
    {
@@ -306,7 +545,7 @@
       "much": "+11.5 DK without him (9 games)",
       "score": 11.5,
       "min": 36.3,
-      "dk": 52.2
+      "dk": 52.1
      },
      {
       "player": "Daniss Jenkins",
@@ -324,7 +563,7 @@
       "much": "+7.7 DK without him (8 games)",
       "score": 7.7,
       "min": 29.6,
-      "dk": 33.0
+      "dk": 32.9
      }
     ],
     "split_of": [
@@ -400,20 +639,20 @@
     "n": 8
    },
    {
-    "player": "Max Christie",
-    "team": "DAL",
-    "kind": "down",
-    "last": 9.7,
-    "before": 22.0,
-    "n": 8
-   },
-   {
     "player": "Isaac Okoro",
     "team": "CHI",
     "kind": "up",
     "last": 29.7,
     "before": 17.9,
     "n": 8
+   },
+   {
+    "player": "Egor Demin",
+    "team": "BKN",
+    "kind": "down",
+    "last": 17.3,
+    "before": 29.0,
+    "n": 2
    }
   ],
   "chalk": [
@@ -421,52 +660,52 @@
     "player": "Kevin Huerter",
     "team": "DET",
     "own": 38.0,
-    "dk": 21.3,
+    "dk": 21.4,
     "salary": 4200
-   },
-   {
-    "player": "Daniss Jenkins",
-    "team": "DET",
-    "own": 31.8,
-    "dk": 29.7,
-    "salary": 5700
    },
    {
     "player": "Jarrett Allen",
     "team": "CLE",
-    "own": 30.4,
+    "own": 31.7,
     "dk": 33.2,
     "salary": 5600
    },
    {
-    "player": "Jalen Smith",
-    "team": "CHI",
-    "own": 28.4,
-    "dk": 31.8,
-    "salary": 5800
+    "player": "Daniss Jenkins",
+    "team": "DET",
+    "own": 31.6,
+    "dk": 29.7,
+    "salary": 5700
+   },
+   {
+    "player": "Nikola Jokic",
+    "team": "DEN",
+    "own": 28.0,
+    "dk": 57.6,
+    "salary": 11700
    }
   ],
   "leverage": [
    {
-    "player": "Cade Cunningham",
-    "team": "DET",
-    "own": 7.9,
-    "dk": 52.2,
-    "salary": 9800
-   },
-   {
     "player": "Jaylon Tyson",
     "team": "CLE",
-    "own": 8.7,
+    "own": 7.6,
     "dk": 21.8,
     "salary": 4100
    },
    {
-    "player": "Bam Adebayo",
-    "team": "MIA",
-    "own": 4.7,
-    "dk": 42.0,
-    "salary": 8300
+    "player": "Cade Cunningham",
+    "team": "DET",
+    "own": 8.6,
+    "dk": 52.1,
+    "salary": 9800
+   },
+   {
+    "player": "Derik Queen",
+    "team": "NOP",
+    "own": 1.9,
+    "dk": 29.6,
+    "salary": 5700
    }
   ],
   "last": {
@@ -563,27 +802,40 @@
    ]
   },
   "injuries": {
-   "report": "12:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_12_30PM.pdf",
+   "report": "12:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_12_45PM.pdf",
    "pending": [
-    "NOP",
     "CLE",
     "MEM",
-    "CHI",
     "MIA"
    ],
    "rows": [
+    {
+     "game": "DEN at NOP",
+     "time": "2026-11-15T00:00Z",
+     "team": "NOP",
+     "player": "Yves Missi",
+     "status": "Probable",
+     "reason": "",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "12:54 PM",
+     "min": 19.5,
+     "benefits": [],
+     "estimate": false
+    },
     {
      "game": "DAL at CLE",
      "time": "2026-11-15T00:30Z",
      "team": "DAL",
      "player": "Max Christie",
-     "status": "Questionable",
+     "status": "Doubtful",
      "reason": "Left Ankle Sprain",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "12:54 PM",
      "min": 9.7,
      "benefits": [],
      "estimate": false
@@ -601,6 +853,90 @@
      "changed_at": "",
      "min": 18.7,
      "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "CHI at MIN",
+     "time": "2026-11-15T01:00Z",
+     "team": "CHI",
+     "player": "Jalen Smith",
+     "status": "Questionable",
+     "reason": "Left Finger Sprain",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "12:54 PM",
+     "min": 30.7,
+     "benefits": [
+      {
+       "player": "Leonard Miller",
+       "salary": 3800,
+       "why": "subs in for him 11 of 45 times",
+       "much": "about +6.1 DK",
+       "score": 6.1194255479969755,
+       "min": 9.8,
+       "dk": 8.0
+      },
+      {
+       "player": "Zach Collins",
+       "salary": 4200,
+       "why": "subs in for him 7 of 45 times",
+       "much": "about +3.9 DK",
+       "score": 3.9355555555555557,
+       "min": 8.0,
+       "dk": 6.6
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "game": "CHI at MIN",
+     "time": "2026-11-15T01:00Z",
+     "team": "CHI",
+     "player": "Norman Powell",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "Available",
+     "known": true,
+     "changed_at": "12:54 PM",
+     "min": 27.3,
+     "benefits": [
+      {
+       "player": "Noa Essengue",
+       "salary": 3500,
+       "why": "same minutes, more production",
+       "much": "+10.4 DK without him (2 games)",
+       "score": 10.4,
+       "min": 9.8,
+       "dk": 8.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "CHI at MIN",
+     "time": "2026-11-15T01:00Z",
+     "team": "CHI",
+     "player": "Nic Claxton",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "12:54 PM",
+     "min": 18.7,
+     "benefits": [
+      {
+       "player": "Tre Jones",
+       "salary": 4600,
+       "why": "same minutes, more production",
+       "much": "+7.8 DK without him (8 games)",
+       "score": 7.8,
+       "min": 16.0,
+       "dk": 15.8
+      }
+     ],
      "estimate": false
     },
     {
@@ -634,6 +970,142 @@
      "estimate": false
     },
     {
+     "game": "DEN at NOP",
+     "time": "2026-11-15T00:00Z",
+     "team": "NOP",
+     "player": "Trey Murphy III",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 34.7,
+     "benefits": [
+      {
+       "player": "Jeremiah Fears",
+       "salary": 7000,
+       "why": "Show: about 34 minutes (11/13)",
+       "much": "+7.5 DK projected vs. last 3",
+       "score": 7.5,
+       "min": 35.7,
+       "dk": 38.0
+      },
+      {
+       "player": "Herbert Jones",
+       "salary": 4400,
+       "why": "started 4 of 4",
+       "much": "+5.1 DK without him (4 games)",
+       "score": 5.1,
+       "min": 29.6,
+       "dk": 17.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "DEN at NOP",
+     "time": "2026-11-15T00:00Z",
+     "team": "NOP",
+     "player": "Dejounte Murray",
+     "status": "Out",
+     "reason": "Left Ankle Sprain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 24.7,
+     "benefits": [
+      {
+       "player": "Jeremiah Fears",
+       "salary": 7000,
+       "why": "33 minutes, up from 28",
+       "much": "+15.8 DK without him (4 games)",
+       "score": 15.8,
+       "min": 35.7,
+       "dk": 38.0
+      },
+      {
+       "player": "Karlo Matkovic",
+       "salary": 4500,
+       "why": "24 minutes, up from 16",
+       "much": "+12.0 DK without him (4 games)",
+       "score": 12.0,
+       "min": 17.1,
+       "dk": 15.1
+      },
+      {
+       "player": "Herbert Jones",
+       "salary": 4400,
+       "why": "started 4 of 4",
+       "much": "+10.7 DK without him (4 games)",
+       "score": 10.7,
+       "min": 29.6,
+       "dk": 17.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "DEN at NOP",
+     "time": "2026-11-15T00:00Z",
+     "team": "NOP",
+     "player": "Trendon Watford",
+     "status": "Out",
+     "reason": "Right Ankle Sprain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 18.7,
+     "benefits": [
+      {
+       "player": "Jeremiah Fears",
+       "salary": 7000,
+       "why": "subs in for him 8 of 17 times",
+       "much": "+7.5 DK projected vs. last 3",
+       "score": 7.5,
+       "min": 35.7,
+       "dk": 38.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "DEN at NOP",
+     "time": "2026-11-15T00:00Z",
+     "team": "NOP",
+     "player": "Bryce McGowens",
+     "status": "Out",
+     "reason": "Left Elbow Infection",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 14.7,
+     "benefits": [
+      {
+       "player": "Jordan Poole",
+       "salary": 4100,
+       "why": "same minutes, more production",
+       "much": "+8.4 DK without him (4 games)",
+       "score": 8.4,
+       "min": 22.2,
+       "dk": 19.8
+      },
+      {
+       "player": "Saddiq Bey",
+       "salary": 6100,
+       "why": "same minutes, more production",
+       "much": "+7.4 DK without him (6 games)",
+       "score": 7.4,
+       "min": 34.9,
+       "dk": 33.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "DAL at CLE",
      "time": "2026-11-15T00:30Z",
      "team": "DAL",
@@ -652,8 +1124,8 @@
        "why": "18 minutes, up from 14",
        "much": "+6.3 DK without him (7 games)",
        "score": 6.3,
-       "min": 16.7,
-       "dk": 14.9
+       "min": 16.5,
+       "dk": 14.7
       }
      ],
      "estimate": false
@@ -678,7 +1150,7 @@
        "much": "+16.3 DK without him (8 games)",
        "score": 16.3,
        "min": 13.9,
-       "dk": 18.3
+       "dk": 18.1
       },
       {
        "player": "Ayo Dosunmu",
@@ -687,7 +1159,7 @@
        "much": "+12.6 DK without him (8 games)",
        "score": 12.6,
        "min": 32.8,
-       "dk": 35.3
+       "dk": 35.2
       },
       {
        "player": "Jaylen Clark",
@@ -696,7 +1168,50 @@
        "much": "+9.1 DK without him (8 games)",
        "score": 9.1,
        "min": 17.9,
-       "dk": 13.8
+       "dk": 13.7
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "CHI at MIN",
+     "time": "2026-11-15T01:00Z",
+     "team": "CHI",
+     "player": "Caleb Wilson",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 23.0,
+     "benefits": [
+      {
+       "player": "Josh Giddey",
+       "salary": 7700,
+       "why": "39 minutes, up from 28",
+       "much": "+27.6 DK without him (1 game)",
+       "score": 27.6,
+       "min": 29.7,
+       "dk": 33.2
+      },
+      {
+       "player": "Isaac Okoro",
+       "salary": 4000,
+       "why": "started that game",
+       "much": "+15.5 DK without him (1 game)",
+       "score": 15.5,
+       "min": 29.0,
+       "dk": 16.0
+      },
+      {
+       "player": "Buddy Hield",
+       "salary": 3200,
+       "why": "25 minutes, up from 13",
+       "much": "+14.2 DK without him (1 game)",
+       "score": 14.2,
+       "min": 14.6,
+       "dk": 11.9
       }
      ],
      "estimate": false
@@ -721,7 +1236,7 @@
        "much": "+11.5 DK without him (9 games)",
        "score": 11.5,
        "min": 36.3,
-       "dk": 52.2
+       "dk": 52.1
       },
       {
        "player": "Daniss Jenkins",
@@ -739,7 +1254,7 @@
        "much": "+7.7 DK without him (8 games)",
        "score": 7.7,
        "min": 29.6,
-       "dk": 33.0
+       "dk": 32.9
       }
      ],
      "estimate": false
@@ -764,7 +1279,7 @@
        "much": "+7.7 DK without him (8 games)",
        "score": 7.7,
        "min": 29.6,
-       "dk": 33.0
+       "dk": 32.9
       },
       {
        "player": "Cade Cunningham",
@@ -773,7 +1288,7 @@
        "much": "+5.2 DK without him (8 games)",
        "score": 5.2,
        "min": 36.3,
-       "dk": 52.2
+       "dk": 52.1
       }
      ],
      "estimate": false
@@ -793,6 +1308,11 @@
     {
      "player": "Dereck Lively II",
      "team": "DAL",
+     "status": "Out"
+    },
+    {
+     "player": "Tobe Awaka",
+     "team": "CHI",
      "status": "Out"
     },
     {
@@ -10967,24 +11487,24 @@
   {
    "team": "DAL",
    "starters": "Cooper Flagg (34), Kyrie Irving (30), PJ Washington (32), Caleb Martin (19), Daniel Gafford (22)",
-   "bench": "Naji Marshall (25), Walter Clayton Jr. (17), Zaccharie Risacher (24), Morez Johnson Jr. (17), Santi Aldama (14), Max Christie (19), Marcus Sasser (16)",
+   "bench": "Naji Marshall (25), Walter Clayton Jr. (17), Zaccharie Risacher (24), Morez Johnson Jr. (17), Santi Aldama (14), Marcus Sasser (16), Tobi Lawal (4)",
    "backup_c": "Not named while Dereck Lively II is out",
    "coach": "Dusty May (new)",
    "notes": "Dereck Lively II is out to start the season with a broken foot. Dallas has a 4-4-4 fantasy playoff schedule, the best possible, but also a league-high 16 back-to-backs.",
    "source": "LO-1019b",
-   "out": "Sergio de Larrea",
+   "out": "Max Christie, Sergio de Larrea",
    "depth_through": "2026-11-12",
    "games": 12
   },
   {
    "team": "NOP",
-   "starters": "Jeremiah Fears (29), Herbert Jones (24), Zion Williamson (33), Saddiq Bey (27), Dejounte Murray (31)",
-   "bench": "Jordan Poole (20), Bryce McGowens (11), Karlo Matkovic (19), Derik Queen (22), Bennedict Mathurin (15), DeAndre Jordan (15)",
+   "starters": "Jeremiah Fears (29), Herbert Jones (24), Zion Williamson (33), Saddiq Bey (27), Karlo Matkovic (19)",
+   "bench": "Jordan Poole (20), Derik Queen (22), Bennedict Mathurin (15), DeAndre Jordan (15)",
    "backup_c": "Derik Queen",
    "coach": "Jamahl Mosley",
    "notes": "Mathurin signed for 2 years and $16 million. The team is still built around Zion. New Orleans plays only 2 games in the final week of Yahoo's default playoffs.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Bryce McGowens, Dejounte Murray, Trendon Watford, Trey Murphy III",
    "depth_through": "2026-11-13",
    "games": 13
   },
@@ -11002,13 +11522,13 @@
   },
   {
    "team": "CHI",
-   "starters": "Josh Giddey (29), Jalen Smith (25), Matas Buzelis (27), Isaac Okoro (21), Caleb Wilson (31)",
-   "bench": "Norman Powell (29), Patrick Williams (24), Buddy Hield (14), Jordan Hawkins (10), Tre Jones (18), Nic Claxton (19), Noa Essengue (13)",
+   "starters": "Josh Giddey (29), Jalen Smith (25), Matas Buzelis (27), Isaac Okoro (21), Norman Powell (29)",
+   "bench": "Patrick Williams (24), Buddy Hield (14), Jordan Hawkins (10), Tre Jones (18), Nic Claxton (19), Noa Essengue (13)",
    "backup_c": "Nic Claxton",
    "coach": "Tiago Splitter (new)",
    "notes": "Coby White and Ayo Dosunmu are gone, and Norman Powell, Nic Claxton, Buddy Hield and rookie Caleb Wilson arrived. Leonard Miller gets about 25 minutes if Buzelis or Wilson is hurt. Fantasy playoff weeks run 3-3-4 (March 28 end) and 3-4-4 (April 4 end). Chicago has 15 back-to-backs, and no one is hurt to start the season.",
    "source": "LO-1018",
-   "out": "",
+   "out": "Caleb Wilson, Dailyn Swain, Jaylin Sellers, Tobe Awaka",
    "depth_through": "2026-11-13",
    "games": 11
   },
@@ -20848,7 +21368,7 @@
   {
    "rank": 260,
    "player": "Max Christie",
-   "pos": "SG",
+   "pos": "PG,SG",
    "team": "DAL",
    "flag": "",
    "change": "",
