@@ -42,7 +42,7 @@ CORE = ["PG", "SG", "SF", "PF", "C", "G", "F"]
 # z-score, log(field value rank), salary / 10000, log(games on the slate). Fit on real
 # DraftKings ownership; scripts/own_fit.py updates data/own_model.json weekly.
 BETA_DEFAULT = [-0.4527, 0.526, -0.1185, 0.0514, -0.16, -0.2294, 0.0128]
-OWN_MAX = 40.0  # hard limit (Pearce 11/12): 40% is already very high in the big main GPP; a 70%+ number looks wrong. The extra goes to everyone else.
+OWN_MAX = 40.0  # hard limit for any number our model makes on its own (Pearce 11/12). Only a number a show stated can go higher (SHOW_TOP).
 
 
 def beta():
@@ -76,34 +76,37 @@ def shares(X, b, cap=OWN_MAX):
     return v
 
 
-SHOW_W = 0.5  # starting weight for a show's stated ownership; the nightly scorecard checks it
+SHOW_TOP = 60.0  # a show-stated number is used as stated, up to this (11/12 shows said 71%; real was 77.5%)
 
 
 def calibrate(pool, raw, show=None):
-    """Turn simulated shares into estimates that match real field ownership.
-    show = {player: projected own%} stated on today's DFS shows (data/show_own.json, mostly
-    Stokastic). Each named player is pulled halfway to the show's number; the slate is then
-    rescaled to 800% through the other players, and the site limit is applied last.
-    On 11/10 the show's numbers missed real ownership by 9.4 points on average for the four
-    players we can check, ours by 18.5 (four players, so this weight is a starting point)."""
+    """Turn simulated shares into Own% for the site.
+    show = {player: projected own%} stated on today's DFS shows (data/show_own.json: Stokastic,
+    Splash Play; a later show that day replaces an earlier one).
+      - A player a show named gets the show's number, up to SHOW_TOP.
+      - Everyone else gets our model's number, rescaled so the slate adds to 800%, then the site
+        limit (KNEE/TOP) so a number nobody stated can never look silly.
+    Checked against real top-5 ownership (data/actual_own.json) on the nights shows gave numbers:
+      11/10 our old numbers missed by 16.1, this rule 8.8; 11/12 19.7 vs 5.2; 11/13 8.3 vs 4.3.
+      11/11 (one show number) 28.0 vs 28.5: with no show numbers we are only as good as the model."""
     if not raw or len(pool) < 8:
         return raw
     v = shares(features(pool, raw), beta(), cap=85.0)
-    if show:
-        hit = np.array([p["player"] in show for p in pool])
-        if hit.any():
-            for i, p in enumerate(pool):
-                if hit[i]:
-                    v[i] = (1 - SHOW_W) * v[i] + SHOW_W * show[p["player"]]
-            rest = 800.0 - v[hit].sum()
-            if rest > 0 and v[~hit].sum() > 0:
-                v[~hit] *= rest / v[~hit].sum()
-    v = limit(v)
+    hit = np.array([bool(show) and p["player"] in show for p in pool])
+    if hit.any():
+        for i, p in enumerate(pool):
+            if hit[i]:
+                v[i] = min(SHOW_TOP, float(show[p["player"]]))
+        rest = max(0.0, 800.0 - v[hit].sum())
+        if v[~hit].sum() > 0:
+            v[~hit] *= rest / v[~hit].sum()
+    if (~hit).any():
+        v[~hit] = limit(v[~hit])
     return {p["player"]: round(float(x), 1) for p, x in zip(pool, v)}
 
 
 KNEE = 25.0   # below this, numbers are left alone
-TOP = 38.0    # the most-owned player shows at most this (always under OWN_MAX)
+TOP = 38.0    # our model's own top number shows at most this (always under OWN_MAX)
 
 
 def limit(v):
