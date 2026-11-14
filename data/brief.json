@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "updated": "6:45 PM ET",
+ "updated": "6:53 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:42 AM",
@@ -122,24 +122,11 @@
        "min": 23.0
       },
       {
-       "player": "Nic Claxton",
+       "player": "Nicolas Claxton",
        "min": 18.7
       }
      ],
-     "q": [
-      {
-       "player": "Jalen Smith",
-       "min": 28.1
-      },
-      {
-       "player": "Norman Powell",
-       "min": 25.5
-      },
-      {
-       "player": "Nicolas Claxton",
-       "min": 19.9
-      }
-     ]
+     "q": []
     },
     "MIN": {
      "out": [
@@ -151,7 +138,7 @@
      "q": []
     }
    },
-   "key": "Jalen Smith and Caleb Wilson are out, so Josh Giddey and Isaac Okoro and Buddy Hield should play more than usual."
+   "key": "Jalen Smith and Caleb Wilson are out, so Josh Giddey and Norman Powell and Isaac Okoro should play more than usual."
   },
   {
    "away": "DET",
@@ -245,6 +232,54 @@
  ],
  "changed": [
   {
+   "player": "Nicolas Claxton",
+   "team": "CHI",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "6:53 PM"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Left Finger Sprain",
+   "time": "6:53 PM"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "6:53 PM"
+  },
+  {
+   "player": "Nic Claxton",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:53 PM"
+  },
+  {
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "6:53 PM"
+  },
+  {
+   "player": "Mikel Brown Jr.",
+   "team": "BKN",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Illness",
+   "time": "6:53 PM"
+  },
+  {
    "player": "Klay Thompson",
    "team": "MIA",
    "status": "Available",
@@ -275,54 +310,6 @@
    "was": "",
    "why": "Personal Reasons",
    "time": "6:31 PM"
-  },
-  {
-   "player": "Morez Johnson Jr.",
-   "team": "DAL",
-   "status": "Available",
-   "was": "Probable",
-   "why": "",
-   "time": "6:31 PM"
-  },
-  {
-   "player": "Max Christie",
-   "team": "DAL",
-   "status": "Out",
-   "was": "Doubtful",
-   "why": "Left Ankle Sprain",
-   "time": "6:31 PM"
-  },
-  {
-   "player": "Peyton Watson",
-   "team": "CLE",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "5:54 PM"
-  },
-  {
-   "player": "Donovan Mitchell",
-   "team": "CLE",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "5:54 PM"
-  },
-  {
-   "player": "James Harden",
-   "team": "CLE",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "5:54 PM"
-  },
-  {
-   "player": "Jarrett Allen",
-   "team": "CLE",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "5:54 PM"
   }
  ],
  "chg": [
@@ -388,6 +375,38 @@
    ],
    "time": "5:54 PM",
    "size": 34.4
+  },
+  {
+   "key": "CHI",
+   "team": "CHI",
+   "head": "Powell CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Noa Essengue",
+     "salary": 3500,
+     "much": "+10.4 DK without Powell"
+    }
+   ],
+   "time": "6:53 PM",
+   "size": 30.1
+  },
+  {
+   "key": "Jalen Smith",
+   "team": "CHI",
+   "head": "Jalen Smith OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Leonard Miller",
+     "salary": 3800,
+     "much": "+4.6 DK projected vs. last 3"
+    }
+   ],
+   "time": "6:53 PM",
+   "size": 29.7
   },
   {
    "key": "NOP",
@@ -511,6 +530,38 @@
    "size": 22.3
   },
   {
+   "key": "Nicolas Claxton",
+   "team": "CHI",
+   "head": "Nicolas Claxton OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Tre Jones",
+     "salary": 4600,
+     "much": "+7.8 DK without him (8 games)"
+    }
+   ],
+   "time": "6:53 PM",
+   "size": 20.2
+  },
+  {
+   "key": "Nic Claxton",
+   "team": "CHI",
+   "head": "Nic Claxton OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Tre Jones",
+     "salary": 4600,
+     "much": "+7.8 DK without him (8 games)"
+    }
+   ],
+   "time": "6:53 PM",
+   "size": 20.2
+  },
+  {
    "key": "Michael Porter Jr.",
    "team": "BKN",
    "head": "Michael Porter Jr. QUESTIONABLE",
@@ -532,43 +583,6 @@
    "size": 18.6
   },
   {
-   "key": "Norman Powell",
-   "team": "CHI",
-   "head": "Norman Powell QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Noa Essengue",
-     "salary": 3500,
-     "much": "+10.4 DK without him (2 games)"
-    }
-   ],
-   "time": "12:54 PM",
-   "size": 15.0
-  },
-  {
-   "key": "Jalen Smith",
-   "team": "CHI",
-   "head": "Jalen Smith QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Leonard Miller",
-     "salary": 3800,
-     "much": "about +6.2 DK if he sits (estimate)"
-    },
-    {
-     "player": "Zach Collins",
-     "salary": 4200,
-     "much": "about +4.0 DK if he sits (estimate)"
-    }
-   ],
-   "time": "12:54 PM",
-   "size": 14.8
-  },
-  {
    "key": "Zach Edey",
    "team": "MEM",
    "head": "Zach Edey QUESTIONABLE",
@@ -588,22 +602,6 @@
    ],
    "time": "2:54 PM",
    "size": 10.4
-  },
-  {
-   "key": "Nic Claxton",
-   "team": "CHI",
-   "head": "Nic Claxton QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Tre Jones",
-     "salary": 4600,
-     "much": "+7.8 DK without him (8 games)"
-    }
-   ],
-   "time": "12:54 PM",
-   "size": 10.1
   },
   {
    "key": "Bennedict Mathurin",
@@ -740,7 +738,7 @@
      "new": false
     },
     {
-     "player": "Nic Claxton",
+     "player": "Nicolas Claxton",
      "min": 18.7,
      "note": "The show listed Nic Claxton as doubtful for Saturday, Nov. 14 because it is the second night of a back-to-back. He played 22 minutes off the bench on Nov. 13.",
      "new": true
@@ -755,8 +753,17 @@
      "why": "39 minutes, up from 28",
      "much": "+27.6 DK without them (1 game)",
      "score": 27.6,
-     "min": 28.5,
-     "dk": 32.1
+     "min": 35.2,
+     "dk": 39.7
+    },
+    {
+     "player": "Norman Powell",
+     "salary": 6000,
+     "why": "same minutes, more production",
+     "much": "+16.5 DK without them (1 game)",
+     "score": 16.5,
+     "min": 31.6,
+     "dk": 31.3
     },
     {
      "player": "Isaac Okoro",
@@ -764,17 +771,8 @@
      "why": "started that game",
      "much": "+15.5 DK without them (1 game)",
      "score": 15.5,
-     "min": 28.8,
-     "dk": 15.9
-    },
-    {
-     "player": "Buddy Hield",
-     "salary": 3200,
-     "why": "25 minutes, up from 13",
-     "much": "+14.2 DK without them (1 game)",
-     "score": 14.2,
-     "min": 15.3,
-     "dk": 12.8
+     "min": 36.5,
+     "dk": 20.1
     }
    ],
    "split_of": [
@@ -1071,23 +1069,23 @@
   {
    "player": "Mario Hezonja",
    "team": "CLE",
-   "own": 34.3,
+   "own": 34.1,
    "dk": 23.1,
    "salary": 4200
   },
   {
    "player": "Nikola Jokic",
    "team": "DEN",
-   "own": 31.4,
+   "own": 32.7,
    "dk": 58.3,
    "salary": 11700
   },
   {
-   "player": "Thomas Bryant",
+   "player": "Craig Porter Jr.",
    "team": "CLE",
-   "own": 29.7,
-   "dk": 27.3,
-   "salary": 4000
+   "own": 30.5,
+   "dk": 24.1,
+   "salary": 3300
   }
  ],
  "leverage": [
@@ -1207,8 +1205,8 @@
   ]
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_06_30PM.pdf",
+  "report": "06:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_06_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1479,6 +1477,31 @@
     "estimate": false
    },
    {
+    "game": "CHI at MIN",
+    "time": "2026-11-15T01:00Z",
+    "team": "CHI",
+    "player": "Jalen Smith",
+    "status": "Out",
+    "reason": "Left Finger Sprain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:53 PM",
+    "min": 30.7,
+    "benefits": [
+     {
+      "player": "Leonard Miller",
+      "salary": 3800,
+      "why": "subs in for him 11 of 45 times",
+      "much": "+4.6 DK projected vs. last 3",
+      "score": 4.616666666666665,
+      "min": 16.1,
+      "dk": 13.2
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "DET at MIA",
     "time": "2026-11-15T01:00Z",
     "team": "MIA",
@@ -1522,6 +1545,31 @@
     "estimate": false
    },
    {
+    "game": "CHI at MIN",
+    "time": "2026-11-15T01:00Z",
+    "team": "CHI",
+    "player": "Nic Claxton",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:53 PM",
+    "min": 18.7,
+    "benefits": [
+     {
+      "player": "Tre Jones",
+      "salary": 4600,
+      "why": "same minutes, more production",
+      "much": "+7.8 DK without him (8 games)",
+      "score": 7.8,
+      "min": 22.0,
+      "dk": 21.4
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "BKN at MEM",
     "time": "2026-11-15T01:00Z",
     "team": "BKN",
@@ -1554,65 +1602,6 @@
      }
     ],
     "estimate": true
-   },
-   {
-    "game": "CHI at MIN",
-    "time": "2026-11-15T01:00Z",
-    "team": "CHI",
-    "player": "Jalen Smith",
-    "status": "Questionable",
-    "reason": "Left Finger Sprain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:54 PM",
-    "min": 30.7,
-    "benefits": [
-     {
-      "player": "Leonard Miller",
-      "salary": 3800,
-      "why": "subs in for him 11 of 45 times",
-      "much": "about +6.2 DK",
-      "score": 6.155495332731104,
-      "min": 12.3,
-      "dk": 10.1
-     },
-     {
-      "player": "Zach Collins",
-      "salary": 4200,
-      "why": "subs in for him 7 of 45 times",
-      "much": "about +4.0 DK",
-      "score": 3.966939571150098,
-      "min": 9.5,
-      "dk": 7.9
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "game": "CHI at MIN",
-    "time": "2026-11-15T01:00Z",
-    "team": "CHI",
-    "player": "Norman Powell",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "12:54 PM",
-    "min": 27.3,
-    "benefits": [
-     {
-      "player": "Noa Essengue",
-      "salary": 3500,
-      "why": "same minutes, more production",
-      "much": "+10.4 DK without him (2 games)",
-      "score": 10.4,
-      "min": 9.9,
-      "dk": 8.5
-     }
-    ],
-    "estimate": false
    },
    {
     "game": "BKN at MEM",
@@ -1701,61 +1690,6 @@
     "estimate": false
    },
    {
-    "game": "CHI at MIN",
-    "time": "2026-11-15T01:00Z",
-    "team": "CHI",
-    "player": "Nic Claxton",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:54 PM",
-    "min": 18.7,
-    "benefits": [
-     {
-      "player": "Tre Jones",
-      "salary": 4600,
-      "why": "same minutes, more production",
-      "much": "+7.8 DK without him (8 games)",
-      "score": 7.8,
-      "min": 17.3,
-      "dk": 16.8
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "BKN at MEM",
-    "time": "2026-11-15T01:00Z",
-    "team": "BKN",
-    "player": "Mikel Brown Jr.",
-    "status": "Probable",
-    "reason": "Illness",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "12:41 PM",
-    "min": 24.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "BKN at MEM",
-    "time": "2026-11-15T01:00Z",
-    "team": "BKN",
-    "player": "Nolan Traore",
-    "status": "Probable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 23.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
     "game": "DET at MIA",
     "time": "2026-11-15T01:00Z",
     "team": "MIA",
@@ -1782,6 +1716,51 @@
     "known": true,
     "changed_at": "6:31 PM",
     "min": 28.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "CHI at MIN",
+    "time": "2026-11-15T01:00Z",
+    "team": "CHI",
+    "player": "Norman Powell",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:53 PM",
+    "min": 27.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "BKN at MEM",
+    "time": "2026-11-15T01:00Z",
+    "team": "BKN",
+    "player": "Mikel Brown Jr.",
+    "status": "Available",
+    "reason": "Illness",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "6:53 PM",
+    "min": 24.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "BKN at MEM",
+    "time": "2026-11-15T01:00Z",
+    "team": "BKN",
+    "player": "Nolan Traore",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "6:53 PM",
+    "min": 23.7,
     "benefits": [],
     "estimate": false
    },
@@ -2094,8 +2073,17 @@
       "why": "39 minutes, up from 28",
       "much": "+27.6 DK without him (1 game)",
       "score": 27.6,
-      "min": 28.5,
-      "dk": 32.1
+      "min": 35.2,
+      "dk": 39.7
+     },
+     {
+      "player": "Norman Powell",
+      "salary": 6000,
+      "why": "same minutes, more production",
+      "much": "+16.5 DK without him (1 game)",
+      "score": 16.5,
+      "min": 31.6,
+      "dk": 31.3
      },
      {
       "player": "Isaac Okoro",
@@ -2103,17 +2091,8 @@
       "why": "started that game",
       "much": "+15.5 DK without him (1 game)",
       "score": 15.5,
-      "min": 28.8,
-      "dk": 15.9
-     },
-     {
-      "player": "Buddy Hield",
-      "salary": 3200,
-      "why": "25 minutes, up from 13",
-      "much": "+14.2 DK without him (1 game)",
-      "score": 14.2,
-      "min": 15.3,
-      "dk": 12.8
+      "min": 36.5,
+      "dk": 20.1
      }
     ],
     "estimate": false
