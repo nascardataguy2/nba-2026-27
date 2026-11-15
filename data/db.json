@@ -2,7 +2,7 @@
  "updated": "2026-11-15",
  "brief": {
   "date": "2026-11-15",
-  "updated": "3:24 PM ET",
+  "updated": "3:45 PM ET",
   "games": 8,
   "pending": [],
   "first_report": "5:41 AM",
@@ -86,13 +86,13 @@
     ],
     "teams": {
      "SAS": {
-      "out": [],
-      "q": [
+      "out": [
        {
         "player": "De'Aaron Fox",
-        "min": 26.1
+        "min": 25.7
        }
-      ]
+      ],
+      "q": []
      },
      "UTA": {
       "out": [
@@ -337,6 +337,14 @@
   ],
   "changed": [
    {
+    "player": "De'Aaron Fox",
+    "team": "SAS",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Left Hip Tightness",
+    "time": "3:46 PM"
+   },
+   {
     "player": "Keegan Murray",
     "team": "SAC",
     "status": "Available",
@@ -407,14 +415,6 @@
     "was": "Out",
     "why": "Left Ankle Sprain",
     "time": "1:55 PM"
-   },
-   {
-    "player": "Santi Aldama",
-    "team": "DAL",
-    "status": "Questionable",
-    "was": "",
-    "why": "Left Ankle Sprain",
-    "time": "1:55 PM"
    }
   ],
   "chg": [
@@ -438,6 +438,27 @@
     ],
     "time": "2:54 PM",
     "size": 38.6
+   },
+   {
+    "key": "De'Aaron Fox",
+    "team": "SAS",
+    "head": "De'Aaron Fox OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Stephon Castle",
+      "salary": 6800,
+      "much": "+7.7 DK projected vs. last 3"
+     },
+     {
+      "player": "Dylan Harper",
+      "salary": 7100,
+      "much": "+7.2 DK projected vs. last 3"
+     }
+    ],
+    "time": "3:46 PM",
+    "size": 30.6
    },
    {
     "key": "SAC",
@@ -501,27 +522,6 @@
     ],
     "time": "2:54 PM",
     "size": 17.9
-   },
-   {
-    "key": "De'Aaron Fox",
-    "team": "SAS",
-    "head": "De'Aaron Fox QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Julian Champagnie",
-      "salary": 5000,
-      "much": "about +7.0 DK if he sits (estimate)"
-     },
-     {
-      "player": "Dylan Harper",
-      "salary": 7100,
-      "much": "about +5.5 DK if he sits (estimate)"
-     }
-    ],
-    "time": "1:55 PM",
-    "size": 15.3
    },
    {
     "key": "Ryan Rollins",
@@ -796,6 +796,49 @@
     ]
    },
    {
+    "team": "SAS",
+    "outs": [
+     {
+      "player": "De'Aaron Fox",
+      "min": 25.7,
+      "note": "Ruled out tonight (left hip tightness).",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 25.7,
+    "benefits": [
+     {
+      "player": "Stephon Castle",
+      "salary": 6800,
+      "why": "subs in for him 10 of 58 times",
+      "much": "+7.7 DK projected vs. last 3",
+      "score": 7.666666666666664,
+      "min": 33.7,
+      "dk": 40.0
+     },
+     {
+      "player": "Dylan Harper",
+      "salary": 7100,
+      "why": "subs in for him 11 of 58 times",
+      "much": "+7.2 DK projected vs. last 3",
+      "score": 7.200000000000003,
+      "min": 37.1,
+      "dk": 41.7
+     },
+     {
+      "player": "Julian Champagnie",
+      "salary": 5000,
+      "why": "subs in for him 18 of 58 times",
+      "much": "+5.1 DK projected vs. last 3",
+      "score": 5.149999999999999,
+      "min": 31.8,
+      "dk": 27.9
+     }
+    ],
+    "split_of": []
+   },
+   {
     "team": "MIL",
     "outs": [
      {
@@ -829,72 +872,6 @@
     ],
     "split_of": [
      "Ousmane Dieng"
-    ]
-   },
-   {
-    "team": "OKC",
-    "outs": [
-     {
-      "player": "Jalen Williams",
-      "min": 31.7,
-      "note": "The show said Williams is probably out for the entire season. He has not played since Oct. 25.",
-      "new": false
-     },
-     {
-      "player": "Chet Holmgren",
-      "min": 30.0,
-      "note": "Chet Holmgren is out eight to 10 weeks with a small patellar tendon tear and will not need surgery. He has not played since Oct. 25.",
-      "new": false
-     },
-     {
-      "player": "Jaylin Williams",
-      "min": 22.0,
-      "note": "Jaylin Williams missed his fourth straight game Tuesday with back spasms.",
-      "new": false
-     },
-     {
-      "player": "Cason Wallace",
-      "min": 16.3,
-      "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 100.0,
-    "benefits": [
-     {
-      "player": "Bennett Stirtz",
-      "salary": 4200,
-      "why": "22 minutes, up from 15",
-      "much": "+10.2 DK without them (6 games)",
-      "score": 10.2,
-      "min": 20.7,
-      "dk": 16.2
-     },
-     {
-      "player": "Jared McCain",
-      "salary": 6100,
-      "why": "started 4 of 6",
-      "much": "+9.6 DK without them (6 games)",
-      "score": 9.6,
-      "min": 28.8,
-      "dk": 27.1
-     },
-     {
-      "player": "Isaiah Hartenstein",
-      "salary": 6700,
-      "why": "Show: larger frontcourt role; 25 to 28 minutes in last six games (11/06)",
-      "much": "+7.8 DK without them (6 games)",
-      "score": 7.8,
-      "min": 26.9,
-      "dk": 34.0
-     }
-    ],
-    "split_of": [
-     "Jalen Williams",
-     "Chet Holmgren",
-     "Jaylin Williams",
-     "Cason Wallace"
     ]
    }
   ],
@@ -1008,7 +985,7 @@
     "player": "Stephon Castle",
     "team": "SAS",
     "own": 32.7,
-    "dk": 34.0,
+    "dk": 40.0,
     "salary": 6800
    }
   ],
@@ -1016,7 +993,7 @@
    {
     "player": "Brook Lopez",
     "team": "LAC",
-    "own": 1.4,
+    "own": 1.5,
     "dk": 27.8,
     "salary": 5400
    },
@@ -1134,8 +1111,8 @@
    ]
   },
   "injuries": {
-   "report": "03:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_03_15PM.pdf",
+   "report": "03:30 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_03_30PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1229,6 +1206,49 @@
     {
      "game": "SAS at UTA",
      "time": "2026-11-15T22:00Z",
+     "team": "SAS",
+     "player": "De'Aaron Fox",
+     "status": "Out",
+     "reason": "Left Hip Tightness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "3:46 PM",
+     "min": 25.7,
+     "benefits": [
+      {
+       "player": "Stephon Castle",
+       "salary": 6800,
+       "why": "subs in for him 10 of 58 times",
+       "much": "+7.7 DK projected vs. last 3",
+       "score": 7.666666666666664,
+       "min": 33.7,
+       "dk": 40.0
+      },
+      {
+       "player": "Dylan Harper",
+       "salary": 7100,
+       "why": "subs in for him 11 of 58 times",
+       "much": "+7.2 DK projected vs. last 3",
+       "score": 7.200000000000003,
+       "min": 37.1,
+       "dk": 41.7
+      },
+      {
+       "player": "Julian Champagnie",
+       "salary": 5000,
+       "why": "subs in for him 18 of 58 times",
+       "much": "+5.1 DK projected vs. last 3",
+       "score": 5.149999999999999,
+       "min": 31.8,
+       "dk": 27.9
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "SAS at UTA",
+     "time": "2026-11-15T22:00Z",
      "team": "UTA",
      "player": "Jaxson Hayes",
      "status": "Out",
@@ -1268,49 +1288,6 @@
       }
      ],
      "estimate": false
-    },
-    {
-     "game": "SAS at UTA",
-     "time": "2026-11-15T22:00Z",
-     "team": "SAS",
-     "player": "De'Aaron Fox",
-     "status": "Questionable",
-     "reason": "Left Hip Tightness",
-     "new": true,
-     "was": "Available",
-     "known": true,
-     "changed_at": "1:55 PM",
-     "min": 25.7,
-     "benefits": [
-      {
-       "player": "Julian Champagnie",
-       "salary": 5000,
-       "why": "subs in for him 18 of 58 times",
-       "much": "about +7.0 DK",
-       "score": 6.984688625836336,
-       "min": 26.8,
-       "dk": 23.5
-      },
-      {
-       "player": "Dylan Harper",
-       "salary": 7100,
-       "why": "subs in for him 11 of 58 times",
-       "much": "about +5.5 DK",
-       "score": 5.4602805505142165,
-       "min": 30.4,
-       "dk": 34.1
-      },
-      {
-       "player": "Stephon Castle",
-       "salary": 6800,
-       "why": "subs in for him 10 of 58 times",
-       "much": "about +5.2 DK",
-       "score": 5.242500700869079,
-       "min": 28.7,
-       "dk": 34.0
-      }
-     ],
-     "estimate": true
     },
     {
      "game": "DAL at BOS",
@@ -12436,13 +12413,13 @@
   },
   {
    "team": "SAS",
-   "starters": "Dylan Harper (31), Stephon Castle (29), Victor Wembanyama (29), De’Aaron Fox (29), Julian Champagnie (26)",
-   "bench": "Keldon Johnson (24), Devin Vassell (30), Harrison Barnes (14), Carter Bryant (11), Luke Kornet (15), Jordan McLaughlin (8)",
+   "starters": "Dylan Harper (31), Stephon Castle (29), Victor Wembanyama (29), Julian Champagnie (26), Devin Vassell (30)",
+   "bench": "Keldon Johnson (24), Harrison Barnes (14), Carter Bryant (11), Luke Kornet (15), Jordan McLaughlin (8)",
    "backup_c": "Luke Kornet",
    "coach": "Mitch Johnson",
    "notes": "Jayden Quaintance is out most of the season after knee surgery.",
    "source": "LO-1019b",
-   "out": "Ja'Kobi Gillespie, Maliq Brown",
+   "out": "De’Aaron Fox, Ja'Kobi Gillespie, Maliq Brown",
    "depth_through": "2026-11-13",
    "games": 13
   },
