@@ -2,7 +2,7 @@
  "updated": "2026-11-15",
  "brief": {
   "date": "2026-11-15",
-  "updated": "2:23 PM ET",
+  "updated": "2:53 PM ET",
   "games": 8,
   "pending": [],
   "first_report": "5:41 AM",
@@ -26,19 +26,14 @@
         "min": 33.3
        }
       ],
-      "q": [
-       {
-        "player": "Collin Sexton",
-        "min": 22.9
-       }
-      ]
+      "q": []
      },
      "PHX": {
       "out": [],
       "q": []
      }
     },
-    "key": "Austin Reaves is out, so Sandro Mamukelashvili and Luka Doncic and Walker Kessler should play more than usual."
+    "key": "Austin Reaves is out, so Sandro Mamukelashvili and Collin Sexton and Luka Doncic should play more than usual."
    },
    {
     "away": "CHA",
@@ -230,10 +225,6 @@
       ],
       "q": [
        {
-        "player": "Alex Sarr",
-        "min": 26.1
-       },
-       {
         "player": "Tre Johnson",
         "min": 22.7
        }
@@ -335,10 +326,6 @@
       "out": [],
       "q": [
        {
-        "player": "Keegan Murray",
-        "min": 30.4
-       },
-       {
         "player": "Precious Achiuwa",
         "min": 25.4
        }
@@ -349,6 +336,54 @@
    }
   ],
   "changed": [
+   {
+    "player": "Keegan Murray",
+    "team": "SAC",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "-",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Alex Sarr",
+    "team": "WAS",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Illness",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Bub Carrington",
+    "team": "WAS",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Adou Thiero",
+    "team": "LAL",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Ankle Sprain",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Collin Sexton",
+    "team": "LAL",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Bronny James",
+    "team": "LAL",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Illness",
+    "time": "2:54 PM"
+   },
    {
     "player": "Kyrie Irving",
     "team": "DAL",
@@ -380,41 +415,51 @@
     "was": "",
     "why": "Left Ankle Sprain",
     "time": "1:55 PM"
-   },
-   {
-    "player": "De'Aaron Fox",
-    "team": "SAS",
-    "status": "Questionable",
-    "was": "Available",
-    "why": "Left Hip Tightness",
-    "time": "1:55 PM"
-   },
-   {
-    "player": "Jock Landale",
-    "team": "ATL",
-    "status": "Questionable",
-    "was": "Available",
-    "why": "",
-    "time": "12:54 PM"
-   },
-   {
-    "player": "Ryan Rollins",
-    "team": "MIL",
-    "status": "Questionable",
-    "was": "",
-    "why": "Illness",
-    "time": "12:41 PM"
-   },
-   {
-    "player": "Steven Adams",
-    "team": "HOU",
-    "status": "Available",
-    "was": "Probable",
-    "why": "Right Soleus Strain",
-    "time": "12:41 PM"
    }
   ],
   "chg": [
+   {
+    "key": "WAS",
+    "team": "WAS",
+    "head": "Sarr, Carrington CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "AJ Dybantsa",
+      "salary": 6400,
+      "much": "+8.2 DK without Sarr"
+     },
+     {
+      "player": "Kyshawn George",
+      "salary": 6800,
+      "much": "+6.6 DK without Sarr"
+     }
+    ],
+    "time": "2:54 PM",
+    "size": 38.6
+   },
+   {
+    "key": "SAC",
+    "team": "SAC",
+    "head": "Murray CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Leaky Black",
+      "salary": 3400,
+      "much": "+9.5 DK without Murray"
+     },
+     {
+      "player": "Malik Monk",
+      "salary": 3900,
+      "much": "+8.6 DK without Murray"
+     }
+    ],
+    "time": "2:54 PM",
+    "size": 21.1
+   },
    {
     "key": "Kyrie Irving",
     "team": "DAL",
@@ -435,6 +480,27 @@
     ],
     "time": "1:55 PM",
     "size": 19.0
+   },
+   {
+    "key": "LAL",
+    "team": "LAL",
+    "head": "Sexton CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Kevon Looney",
+      "salary": 3000,
+      "much": "+11.7 DK without Sexton"
+     },
+     {
+      "player": "Quentin Grimes",
+      "salary": 5100,
+      "much": "+6.2 DK without Sexton"
+     }
+    ],
+    "time": "2:54 PM",
+    "size": 17.9
    },
    {
     "key": "De'Aaron Fox",
@@ -707,6 +773,15 @@
       "dk": 24.7
      },
      {
+      "player": "Collin Sexton",
+      "salary": 5100,
+      "why": "27 minutes, up from 17",
+      "much": "+15.9 DK without him (1 game)",
+      "score": 15.9,
+      "min": 22.9,
+      "dk": 24.0
+     },
+     {
       "player": "Luka Doncic",
       "salary": 12100,
       "why": "39 minutes, up from 36",
@@ -714,15 +789,6 @@
       "score": 5.8,
       "min": 38.2,
       "dk": 68.3
-     },
-     {
-      "player": "Walker Kessler",
-      "salary": 7300,
-      "why": "same minutes, more production",
-      "much": "+5.8 DK without him (1 game)",
-      "score": 5.8,
-      "min": 32.0,
-      "dk": 38.8
      }
     ],
     "split_of": [
@@ -1068,8 +1134,8 @@
    ]
   },
   "injuries": {
-   "report": "02:15 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_02_15PM.pdf",
+   "report": "02:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_02_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1095,6 +1161,15 @@
        "dk": 24.7
       },
       {
+       "player": "Collin Sexton",
+       "salary": 5100,
+       "why": "27 minutes, up from 17",
+       "much": "+15.9 DK without him (1 game)",
+       "score": 15.9,
+       "min": 22.9,
+       "dk": 24.0
+      },
+      {
        "player": "Luka Doncic",
        "salary": 12100,
        "why": "39 minutes, up from 36",
@@ -1102,15 +1177,6 @@
        "score": 5.8,
        "min": 38.2,
        "dk": 68.3
-      },
-      {
-       "player": "Walker Kessler",
-       "salary": 7300,
-       "why": "same minutes, more production",
-       "much": "+5.8 DK without him (1 game)",
-       "score": 5.8,
-       "min": 32.0,
-       "dk": 38.8
       }
      ],
      "estimate": false
@@ -1134,70 +1200,6 @@
      "game": "LAL at PHX",
      "time": "2026-11-15T21:00Z",
      "team": "LAL",
-     "player": "Collin Sexton",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 21.3,
-     "benefits": [
-      {
-       "player": "Kevon Looney",
-       "salary": 3000,
-       "why": "15 minutes, up from 5",
-       "much": "+11.7 DK without him (1 game)",
-       "score": 11.7,
-       "min": 13.0,
-       "dk": 10.3
-      },
-      {
-       "player": "Quentin Grimes",
-       "salary": 5100,
-       "why": "same minutes, more production",
-       "much": "+6.2 DK without him (1 game)",
-       "score": 6.2,
-       "min": 27.0,
-       "dk": 20.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "LAL at PHX",
-     "time": "2026-11-15T21:00Z",
-     "team": "LAL",
-     "player": "Adou Thiero",
-     "status": "Questionable",
-     "reason": "Left Ankle Sprain",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 9.7,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "LAL at PHX",
-     "time": "2026-11-15T21:00Z",
-     "team": "LAL",
-     "player": "Bronny James",
-     "status": "Questionable",
-     "reason": "Illness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 2.0,
-     "benefits": [],
-     "estimate": false
-    },
-    {
-     "game": "LAL at PHX",
-     "time": "2026-11-15T21:00Z",
-     "team": "LAL",
      "player": "Quentin Grimes",
      "status": "Available",
      "reason": "Right Finger Splint",
@@ -1206,6 +1208,21 @@
      "known": true,
      "changed_at": "",
      "min": 25.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "LAL at PHX",
+     "time": "2026-11-15T21:00Z",
+     "team": "LAL",
+     "player": "Collin Sexton",
+     "status": "Available",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "2:54 PM",
+     "min": 21.3,
      "benefits": [],
      "estimate": false
     },
@@ -1501,40 +1518,6 @@
      "game": "HOU at WAS",
      "time": "2026-11-16T00:00Z",
      "team": "WAS",
-     "player": "Alex Sarr",
-     "status": "Questionable",
-     "reason": "Illness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 31.3,
-     "benefits": [
-      {
-       "player": "AJ Dybantsa",
-       "salary": 6400,
-       "why": "same minutes, more production",
-       "much": "+8.2 DK without him (1 game)",
-       "score": 8.2,
-       "min": 31.5,
-       "dk": 27.3
-      },
-      {
-       "player": "Kyshawn George",
-       "salary": 6800,
-       "why": "37 minutes, up from 33",
-       "much": "+6.6 DK without him (1 game)",
-       "score": 6.6,
-       "min": 30.5,
-       "dk": 28.4
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "HOU at WAS",
-     "time": "2026-11-16T00:00Z",
-     "team": "WAS",
      "player": "Tre Johnson",
      "status": "Questionable",
      "reason": "Low Back Soreness",
@@ -1552,6 +1535,15 @@
        "score": 11.5,
        "min": 22.9,
        "dk": 15.8
+      },
+      {
+       "player": "Alex Sarr",
+       "salary": 5800,
+       "why": "same minutes, more production",
+       "much": "+10.5 DK without him (1 game)",
+       "score": 10.5,
+       "min": 26.1,
+       "dk": 25.2
       }
      ],
      "estimate": false
@@ -1560,26 +1552,31 @@
      "game": "HOU at WAS",
      "time": "2026-11-16T00:00Z",
      "team": "WAS",
+     "player": "Alex Sarr",
+     "status": "Available",
+     "reason": "Illness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "2:54 PM",
+     "min": 31.3,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "HOU at WAS",
+     "time": "2026-11-16T00:00Z",
+     "team": "WAS",
      "player": "Bub Carrington",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "2:54 PM",
      "min": 15.0,
-     "benefits": [
-      {
-       "player": "Trae Young",
-       "salary": 7600,
-       "why": "subs in for him 10 of 51 times",
-       "much": "about +3.1 DK",
-       "score": 3.0670983989926244,
-       "min": 32.7,
-       "dk": 34.1
-      }
-     ],
-     "estimate": true
+     "benefits": [],
+     "estimate": false
     },
     {
      "game": "ATL at MIL",
@@ -1729,40 +1726,6 @@
     {
      "game": "OKC at SAC",
      "time": "2026-11-16T02:00Z",
-     "team": "SAC",
-     "player": "Keegan Murray",
-     "status": "Questionable",
-     "reason": "Illness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "",
-     "min": 29.0,
-     "benefits": [
-      {
-       "player": "Leaky Black",
-       "salary": 3400,
-       "why": "24 minutes, up from 17",
-       "much": "+9.5 DK without him (4 games)",
-       "score": 9.5,
-       "min": 1.4,
-       "dk": 0.8
-      },
-      {
-       "player": "Malik Monk",
-       "salary": 3900,
-       "why": "17 minutes, up from 14",
-       "much": "+8.6 DK without him (7 games)",
-       "score": 8.6,
-       "min": 12.9,
-       "dk": 12.7
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "OKC at SAC",
-     "time": "2026-11-16T02:00Z",
      "team": "OKC",
      "player": "Ajay Mitchell",
      "status": "Questionable",
@@ -1817,6 +1780,15 @@
      "min": 24.0,
      "benefits": [
       {
+       "player": "Keegan Murray",
+       "salary": 5400,
+       "why": "40 minutes, up from 25",
+       "much": "+18.3 DK without him (1 game)",
+       "score": 18.3,
+       "min": 30.4,
+       "dk": 22.8
+      },
+      {
        "player": "De'Andre Hunter",
        "salary": 5800,
        "why": "42 minutes, up from 32",
@@ -1826,6 +1798,21 @@
        "dk": 24.6
       }
      ],
+     "estimate": false
+    },
+    {
+     "game": "OKC at SAC",
+     "time": "2026-11-16T02:00Z",
+     "team": "SAC",
+     "player": "Keegan Murray",
+     "status": "Available",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "2:54 PM",
+     "min": 29.0,
+     "benefits": [],
      "estimate": false
     },
     {
@@ -2157,6 +2144,15 @@
        "score": 7.7,
        "min": 31.7,
        "dk": 40.9
+      },
+      {
+       "player": "Alex Sarr",
+       "salary": 5800,
+       "why": "29 minutes, up from 24",
+       "much": "+6.2 DK without him (8 games)",
+       "score": 6.2,
+       "min": 26.1,
+       "dk": 25.2
       }
      ],
      "estimate": false
@@ -2369,6 +2365,16 @@
     }
    ],
    "minor": [
+    {
+     "player": "Adou Thiero",
+     "team": "LAL",
+     "status": "Available"
+    },
+    {
+     "player": "Bronny James",
+     "team": "LAL",
+     "status": "Available"
+    },
     {
      "player": "Steven Adams",
      "team": "HOU",
