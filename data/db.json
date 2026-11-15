@@ -2,7 +2,7 @@
  "updated": "2026-11-14",
  "brief": {
   "date": "2026-11-14",
-  "updated": "7:45 PM ET",
+  "updated": "7:55 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:42 AM",
@@ -225,18 +225,21 @@
         "min": 14.7
        }
       ],
-      "q": [
-       {
-        "player": "Zach Edey",
-        "min": 22.2
-       }
-      ]
+      "q": []
      }
     },
     "key": "Ty Jerome and Jerami Grant are out, so Cam Spencer and Gregory Jackson and Isaiah Stewart should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "Zach Edey",
+    "team": "MEM",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "7:56 PM"
+   },
    {
     "player": "Jerami Grant",
     "team": "MEM",
@@ -307,14 +310,6 @@
     "status": "Available",
     "was": "Probable",
     "why": "Left Ankle Sprain",
-    "time": "6:31 PM"
-   },
-   {
-    "player": "Pelle Larsson",
-    "team": "MIA",
-    "status": "Out",
-    "was": "Doubtful",
-    "why": "Illness",
     "time": "6:31 PM"
    }
   ],
@@ -557,6 +552,27 @@
     "size": 22.3
    },
    {
+    "key": "Zach Edey",
+    "team": "MEM",
+    "head": "Zach Edey OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Isaiah Stewart",
+      "salary": 4000,
+      "much": "+10.5 DK without him (2 games)"
+     },
+     {
+      "player": "Jaylen Wells",
+      "salary": 4500,
+      "much": "+8.8 DK without him (2 games)"
+     }
+    ],
+    "time": "7:56 PM",
+    "size": 20.9
+   },
+   {
     "key": "Nicolas Claxton",
     "team": "CHI",
     "head": "Nicolas Claxton OUT",
@@ -603,32 +619,11 @@
      {
       "player": "Cedric Coward",
       "salary": 6000,
-      "much": "+8.3 DK projected vs. last 3"
+      "much": "+9.7 DK projected vs. last 3"
      }
     ],
     "time": "7:26 PM",
     "size": 19.9
-   },
-   {
-    "key": "Zach Edey",
-    "team": "MEM",
-    "head": "Zach Edey QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Isaiah Stewart",
-      "salary": 4000,
-      "much": "+10.5 DK without him (2 games)"
-     },
-     {
-      "player": "Jaylen Wells",
-      "salary": 4500,
-      "much": "+8.8 DK without him (2 games)"
-     }
-    ],
-    "time": "2:54 PM",
-    "size": 10.4
    },
    {
     "key": "Bennedict Mathurin",
@@ -768,8 +763,8 @@
       "why": "21 minutes, up from 16",
       "much": "+17.0 DK without them (1 game)",
       "score": 17.0,
-      "min": 20.3,
-      "dk": 22.4
+      "min": 24.4,
+      "dk": 27.0
      },
      {
       "player": "Isaiah Stewart",
@@ -777,8 +772,8 @@
       "why": "started at center, 20 minutes (11/13)",
       "much": "+13.1 DK without them (1 game)",
       "score": 13.1,
-      "min": 24.1,
-      "dk": 24.5
+      "min": 28.0,
+      "dk": 28.4
      }
     ],
     "split_of": [
@@ -1067,21 +1062,21 @@
    {
     "player": "Mario Hezonja",
     "team": "CLE",
-    "own": 33.6,
+    "own": 33.4,
     "dk": 23.1,
     "salary": 4200
    },
    {
     "player": "Nikola Jokic",
     "team": "DEN",
-    "own": 31.7,
+    "own": 31.8,
     "dk": 58.3,
     "salary": 11700
    },
    {
     "player": "Cade Cunningham",
     "team": "DET",
-    "own": 30.3,
+    "own": 31.5,
     "dk": 52.1,
     "salary": 9800
    }
@@ -1095,18 +1090,18 @@
     "salary": 3100
    },
    {
-    "player": "Isaiah Stewart",
+    "player": "Gregory Jackson",
     "team": "MEM",
-    "own": 4.2,
-    "dk": 24.5,
-    "salary": 4000
+    "own": 4.9,
+    "dk": 27.0,
+    "salary": 3500
    },
    {
-    "player": "Naji Marshall",
-    "team": "DAL",
+    "player": "Isaiah Stewart",
+    "team": "MEM",
     "own": 1.2,
-    "dk": 26.7,
-    "salary": 4900
+    "dk": 28.4,
+    "salary": 4000
    }
   ],
   "last": {
@@ -1203,8 +1198,8 @@
    ]
   },
   "injuries": {
-   "report": "07:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_07_30PM.pdf",
+   "report": "07:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_07_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1484,8 +1479,8 @@
        "why": "21 minutes, up from 16",
        "much": "+17.0 DK without him (1 game)",
        "score": 17.0,
-       "min": 20.3,
-       "dk": 22.4
+       "min": 24.4,
+       "dk": 27.0
       },
       {
        "player": "Isaiah Stewart",
@@ -1493,8 +1488,8 @@
        "why": "same minutes, more production",
        "much": "+13.1 DK without him (1 game)",
        "score": 13.1,
-       "min": 24.1,
-       "dk": 24.5
+       "min": 28.0,
+       "dk": 28.4
       }
      ],
      "estimate": false
@@ -1602,10 +1597,62 @@
        "player": "Cedric Coward",
        "salary": 6000,
        "why": "subs in for him 7 of 39 times",
-       "much": "+8.3 DK projected vs. last 3",
-       "score": 8.299999999999997,
-       "min": 31.9,
-       "dk": 39.3
+       "much": "+9.7 DK projected vs. last 3",
+       "score": 9.700000000000003,
+       "min": 33.0,
+       "dk": 40.7
+      },
+      {
+       "player": "Jaylen Wells",
+       "salary": 4500,
+       "why": "subs in for him 9 of 39 times",
+       "much": "+4.4 DK projected vs. last 3",
+       "score": 4.366666666666667,
+       "min": 34.0,
+       "dk": 28.2
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "BKN at MEM",
+     "time": "2026-11-15T01:00Z",
+     "team": "MEM",
+     "player": "Zach Edey",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "7:56 PM",
+     "min": 21.0,
+     "benefits": [
+      {
+       "player": "Isaiah Stewart",
+       "salary": 4000,
+       "why": "started 2 of 2",
+       "much": "+10.5 DK without him (2 games)",
+       "score": 10.5,
+       "min": 28.0,
+       "dk": 28.4
+      },
+      {
+       "player": "Jaylen Wells",
+       "salary": 4500,
+       "why": "30 minutes, up from 27",
+       "much": "+8.8 DK without him (2 games)",
+       "score": 8.8,
+       "min": 34.0,
+       "dk": 28.2
+      },
+      {
+       "player": "Taylor Hendricks",
+       "salary": 3400,
+       "why": "13 minutes, up from 8",
+       "much": "+7.8 DK without him (2 games)",
+       "score": 7.8,
+       "min": 17.8,
+       "dk": 21.1
       }
      ],
      "estimate": false
@@ -1631,49 +1678,6 @@
        "score": 7.8,
        "min": 24.7,
        "dk": 24.5
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "game": "BKN at MEM",
-     "time": "2026-11-15T01:00Z",
-     "team": "MEM",
-     "player": "Zach Edey",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "2:54 PM",
-     "min": 21.0,
-     "benefits": [
-      {
-       "player": "Isaiah Stewart",
-       "salary": 4000,
-       "why": "started 2 of 2",
-       "much": "+10.5 DK without him (2 games)",
-       "score": 10.5,
-       "min": 24.1,
-       "dk": 24.5
-      },
-      {
-       "player": "Jaylen Wells",
-       "salary": 4500,
-       "why": "30 minutes, up from 27",
-       "much": "+8.8 DK without him (2 games)",
-       "score": 8.8,
-       "min": 32.2,
-       "dk": 26.8
-      },
-      {
-       "player": "Taylor Hendricks",
-       "salary": 3400,
-       "why": "13 minutes, up from 8",
-       "much": "+7.8 DK without him (2 games)",
-       "score": 7.8,
-       "min": 14.9,
-       "dk": 17.7
       }
      ],
      "estimate": false
@@ -2148,8 +2152,8 @@
        "why": "11 minutes, up from 5",
        "much": "+13.8 DK without him (5 games)",
        "score": 13.8,
-       "min": 14.9,
-       "dk": 17.7
+       "min": 17.8,
+       "dk": 21.1
       }
      ],
      "estimate": false
@@ -12516,13 +12520,13 @@
   },
   {
    "team": "MEM",
-   "starters": "Cameron Boozer (32), Cedric Coward (28), Jaylen Wells (27), Zach Edey (21), Isaiah Stewart (18)",
-   "bench": "Cam Spencer (20), Javon Small (19), GG Jackson (16), Taylor Hendricks (9)",
+   "starters": "Cameron Boozer (32), Cedric Coward (28), Jaylen Wells (27), Isaiah Stewart (18), Cam Spencer (20)",
+   "bench": "Javon Small (19), GG Jackson (16), Taylor Hendricks (9)",
    "backup_c": "Isaiah Stewart",
    "coach": "Tuomas Iisalo",
    "notes": "Boozer is expected to start and could lead the team in assists.",
    "source": "LO-1019b",
-   "out": "Jerami Grant, Quinten Post, Scotty Pippen Jr., Ty Jerome",
+   "out": "Jerami Grant, Quinten Post, Scotty Pippen Jr., Ty Jerome, Zach Edey",
    "depth_through": "2026-11-13",
    "games": 12
   },
