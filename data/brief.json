@@ -1,10 +1,8 @@
 {
  "date": "2026-11-15",
- "updated": "12:57 PM ET",
+ "updated": "1:54 PM ET",
  "games": 8,
- "pending": [
-  "DAL"
- ],
+ "pending": [],
  "first_report": "5:41 AM",
  "cards": [
   {
@@ -12,11 +10,11 @@
    "home": "PHX",
    "time": "2026-11-15T21:00Z",
    "slate": "late",
-   "ou": 227.5,
+   "ou": 225.5,
    "fav": "LAL",
    "line": 3.5,
-   "away_pts": 115.5,
-   "home_pts": 112.0,
+   "away_pts": 114.5,
+   "home_pts": 111.0,
    "tags": [],
    "teams": {
     "LAL": {
@@ -45,11 +43,11 @@
    "home": "LAC",
    "time": "2026-11-15T21:30Z",
    "slate": "late",
-   "ou": 214.5,
+   "ou": 212.5,
    "fav": "CHA",
    "line": 1.5,
-   "away_pts": 108.0,
-   "home_pts": 106.5,
+   "away_pts": 107.0,
+   "home_pts": 105.5,
    "tags": [
     "Lowest total",
     "Close game"
@@ -81,18 +79,23 @@
    "home": "UTA",
    "time": "2026-11-15T22:00Z",
    "slate": "late",
-   "ou": 225.5,
+   "ou": 226.5,
    "fav": "SAS",
-   "line": 16.5,
+   "line": 15.5,
    "away_pts": 121.0,
-   "home_pts": 104.5,
+   "home_pts": 105.5,
    "tags": [
     "Blowout risk"
    ],
    "teams": {
     "SAS": {
      "out": [],
-     "q": []
+     "q": [
+      {
+       "player": "De'Aaron Fox",
+       "min": 27.2
+      }
+     ]
     },
     "UTA": {
      "out": [
@@ -130,15 +133,20 @@
    ],
    "teams": {
     "DAL": {
-     "out": [],
+     "out": [
+      {
+       "player": "Sergio de Larrea",
+       "min": 13.3
+      }
+     ],
      "q": [
       {
-       "player": "Daniel Gafford",
-       "min": 18.0
+       "player": "Kyrie Irving",
+       "min": 33.8
       },
       {
-       "player": "Max Christie",
-       "min": 14.4
+       "player": "Santi Aldama",
+       "min": 13.4
       }
      ]
     },
@@ -154,10 +162,10 @@
    "home": "TOR",
    "time": "2026-11-15T23:00Z",
    "slate": "main",
-   "ou": 216.5,
+   "ou": 217.5,
    "fav": "NYK",
-   "line": 4.5,
-   "away_pts": 110.5,
+   "line": 5.5,
+   "away_pts": 111.5,
    "home_pts": 106.0,
    "tags": [],
    "teams": {
@@ -187,11 +195,11 @@
    "home": "WAS",
    "time": "2026-11-16T00:00Z",
    "slate": "main",
-   "ou": 223.5,
+   "ou": 224.5,
    "fav": "HOU",
    "line": 8.5,
-   "away_pts": 116.0,
-   "home_pts": 107.5,
+   "away_pts": 116.5,
+   "home_pts": 108.0,
    "tags": [],
    "teams": {
     "HOU": {
@@ -237,11 +245,11 @@
    "home": "MIL",
    "time": "2026-11-16T01:00Z",
    "slate": "main",
-   "ou": 234.5,
+   "ou": 233.5,
    "fav": "ATL",
-   "line": 7.5,
+   "line": 8.5,
    "away_pts": 121.0,
-   "home_pts": 113.5,
+   "home_pts": 112.5,
    "tags": [
     "Highest total"
    ],
@@ -286,11 +294,11 @@
    "home": "SAC",
    "time": "2026-11-16T02:00Z",
    "slate": "main",
-   "ou": 221.5,
+   "ou": 222.5,
    "fav": "OKC",
    "line": 11.5,
-   "away_pts": 116.5,
-   "home_pts": 105.0,
+   "away_pts": 117.0,
+   "home_pts": 105.5,
    "tags": [
     "Blowout risk"
    ],
@@ -340,6 +348,46 @@
  ],
  "changed": [
   {
+   "player": "Kyrie Irving",
+   "team": "DAL",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "status": "Probable",
+   "was": "",
+   "why": "Right Shoulder Stinger",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Max Christie",
+   "team": "DAL",
+   "status": "Doubtful",
+   "was": "Out",
+   "why": "Left Ankle Sprain",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Santi Aldama",
+   "team": "DAL",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Ankle Sprain",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "De'Aaron Fox",
+   "team": "SAS",
+   "status": "Questionable",
+   "was": "Available",
+   "why": "Left Hip Tightness",
+   "time": "1:55 PM"
+  },
+  {
    "player": "Jock Landale",
    "team": "ATL",
    "status": "Questionable",
@@ -365,6 +413,48 @@
   }
  ],
  "chg": [
+  {
+   "key": "Kyrie Irving",
+   "team": "DAL",
+   "head": "Kyrie Irving QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Daniel Gafford",
+     "salary": 5100,
+     "much": "+13.1 DK without him (2 games)"
+    },
+    {
+     "player": "Walter Clayton Jr.",
+     "salary": 3800,
+     "much": "+6.4 DK without him (2 games)"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 19.0
+  },
+  {
+   "key": "De'Aaron Fox",
+   "team": "SAS",
+   "head": "De'Aaron Fox QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Julian Champagnie",
+     "salary": 5000,
+     "much": "about +6.9 DK if he sits (estimate)"
+    },
+    {
+     "player": "Dylan Harper",
+     "salary": 7100,
+     "much": "about +5.4 DK if he sits (estimate)"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 15.3
+  },
   {
    "key": "Ryan Rollins",
    "team": "MIL",
@@ -401,6 +491,27 @@
    ],
    "time": "12:54 PM",
    "size": 8.2
+  },
+  {
+   "key": "Santi Aldama",
+   "team": "DAL",
+   "head": "Santi Aldama QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Naji Marshall",
+     "salary": 4900,
+     "much": "+9.4 DK without him (5 games)"
+    },
+    {
+     "player": "Marcus Sasser",
+     "salary": 3000,
+     "much": "+7.6 DK without him (8 games)"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 7.5
   }
  ],
  "sits": [
@@ -436,7 +547,7 @@
      "much": "+11.1 DK without them (5 games)",
      "score": 11.1,
      "min": 33.0,
-     "dk": 36.0
+     "dk": 35.9
     },
     {
      "player": "Kyle Filipowski",
@@ -690,7 +801,7 @@
      "much": "+10.2 DK without them (6 games)",
      "score": 10.2,
      "min": 20.7,
-     "dk": 16.2
+     "dk": 16.0
     },
     {
      "player": "Jared McCain",
@@ -699,7 +810,7 @@
      "much": "+9.6 DK without them (6 games)",
      "score": 9.6,
      "min": 28.8,
-     "dk": 27.4
+     "dk": 27.2
     },
     {
      "player": "Isaiah Hartenstein",
@@ -708,7 +819,7 @@
      "much": "+7.8 DK without them (6 games)",
      "score": 7.8,
      "min": 26.9,
-     "dk": 34.0
+     "dk": 33.9
     }
    ],
    "split_of": [
@@ -763,14 +874,6 @@
  ],
  "minutes": [
   {
-   "player": "Max Christie",
-   "team": "DAL",
-   "kind": "down",
-   "last": 9.7,
-   "before": 22.0,
-   "n": 8
-  },
-  {
    "player": "AJ Green",
    "team": "MIL",
    "kind": "down",
@@ -801,6 +904,14 @@
    "last": 23.0,
    "before": 32.4,
    "n": 8
+  },
+  {
+   "player": "Jamison Battle",
+   "team": "TOR",
+   "kind": "up",
+   "last": 26.3,
+   "before": 17.0,
+   "n": 9
   }
  ],
  "chalk": [
@@ -821,14 +932,14 @@
   {
    "player": "Sandro Mamukelashvili",
    "team": "LAL",
-   "own": 37.2,
+   "own": 36.1,
    "dk": 24.7,
    "salary": 4700
   },
   {
    "player": "Myles Turner",
    "team": "MIL",
-   "own": 34.7,
+   "own": 34.2,
    "dk": 24.1,
    "salary": 4800
   }
@@ -837,7 +948,7 @@
   {
    "player": "Brook Lopez",
    "team": "LAC",
-   "own": 1.4,
+   "own": 1.5,
    "dk": 27.8,
    "salary": 5400
   },
@@ -845,15 +956,15 @@
    "player": "Darius Acuff Jr.",
    "team": "SAC",
    "own": 1.2,
-   "dk": 45.2,
+   "dk": 45.1,
    "salary": 8900
   },
   {
-   "player": "Scottie Barnes",
-   "team": "TOR",
+   "player": "Naji Marshall",
+   "team": "DAL",
    "own": 1.2,
-   "dk": 43.1,
-   "salary": 8800
+   "dk": 24.4,
+   "salary": 4900
   }
  ],
  "last": {
@@ -955,11 +1066,9 @@
   ]
  },
  "injuries": {
-  "report": "12:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_12_45PM.pdf",
-  "pending": [
-   "DAL"
-  ],
+  "report": "01:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_01_45PM.pdf",
+  "pending": [],
   "rows": [
    {
     "game": "LAL at PHX",
@@ -1142,6 +1251,64 @@
     "estimate": false
    },
    {
+    "game": "SAS at UTA",
+    "time": "2026-11-15T22:00Z",
+    "team": "SAS",
+    "player": "De'Aaron Fox",
+    "status": "Questionable",
+    "reason": "Left Hip Tightness",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "min": 25.7,
+    "benefits": [
+     {
+      "player": "Julian Champagnie",
+      "salary": 5000,
+      "why": "subs in for him 18 of 58 times",
+      "much": "about +6.9 DK",
+      "score": 6.9252444673185805,
+      "min": 26.8,
+      "dk": 23.3
+     },
+     {
+      "player": "Dylan Harper",
+      "salary": 7100,
+      "why": "subs in for him 11 of 58 times",
+      "much": "about +5.4 DK",
+      "score": 5.444267997580157,
+      "min": 30.4,
+      "dk": 34.0
+     },
+     {
+      "player": "Stephon Castle",
+      "salary": 6800,
+      "why": "subs in for him 10 of 58 times",
+      "much": "about +5.2 DK",
+      "score": 5.22708158116064,
+      "min": 28.7,
+      "dk": 33.9
+     }
+    ],
+    "estimate": true
+   },
+   {
+    "game": "DAL at BOS",
+    "time": "2026-11-15T23:00Z",
+    "team": "DAL",
+    "player": "Max Christie",
+    "status": "Doubtful",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "Out",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "min": 9.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
     "game": "NYK at TOR",
     "time": "2026-11-15T23:00Z",
     "team": "TOR",
@@ -1161,7 +1328,7 @@
       "much": "+15.8 DK without him (4 games)",
       "score": 15.8,
       "min": 24.4,
-      "dk": 23.4
+      "dk": 23.3
      },
      {
       "player": "Jamal Shead",
@@ -1182,6 +1349,107 @@
       "dk": 9.0
      }
     ],
+    "estimate": false
+   },
+   {
+    "game": "DAL at BOS",
+    "time": "2026-11-15T23:00Z",
+    "team": "DAL",
+    "player": "Kyrie Irving",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "min": 34.0,
+    "benefits": [
+     {
+      "player": "Daniel Gafford",
+      "salary": 5100,
+      "why": "24 minutes, up from 21",
+      "much": "+13.1 DK without him (2 games)",
+      "score": 13.1,
+      "min": 19.5,
+      "dk": 20.0
+     },
+     {
+      "player": "Walter Clayton Jr.",
+      "salary": 3800,
+      "why": "20 minutes, up from 16",
+      "much": "+6.4 DK without him (2 games)",
+      "score": 6.4,
+      "min": 18.0,
+      "dk": 16.1
+     },
+     {
+      "player": "Marcus Sasser",
+      "salary": 3000,
+      "why": "23 minutes, up from 14",
+      "much": "+6.0 DK without him (2 games)",
+      "score": 6.0,
+      "min": 9.6,
+      "dk": 6.2
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "DAL at BOS",
+    "time": "2026-11-15T23:00Z",
+    "team": "DAL",
+    "player": "Santi Aldama",
+    "status": "Questionable",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "min": 15.0,
+    "benefits": [
+     {
+      "player": "Naji Marshall",
+      "salary": 4900,
+      "why": "27 minutes, up from 24",
+      "much": "+9.4 DK without him (5 games)",
+      "score": 9.4,
+      "min": 27.1,
+      "dk": 24.4
+     },
+     {
+      "player": "Marcus Sasser",
+      "salary": 3000,
+      "why": "17 minutes, up from 9",
+      "much": "+7.6 DK without him (8 games)",
+      "score": 7.6,
+      "min": 9.6,
+      "dk": 6.2
+     },
+     {
+      "player": "Daniel Gafford",
+      "salary": 5100,
+      "why": "23 minutes, up from 18",
+      "much": "+7.2 DK without him (8 games)",
+      "score": 7.2,
+      "min": 19.5,
+      "dk": 20.0
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "DAL at BOS",
+    "time": "2026-11-15T23:00Z",
+    "team": "DAL",
+    "player": "Daniel Gafford",
+    "status": "Probable",
+    "reason": "Right Shoulder Stinger",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "min": 17.7,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1213,7 +1481,7 @@
       "much": "+10.4 DK without him (2 games)",
       "score": 10.4,
       "min": 33.1,
-      "dk": 30.6
+      "dk": 30.5
      },
      {
       "player": "Amen Thompson",
@@ -1281,7 +1549,7 @@
       "much": "+11.5 DK without him (1 game)",
       "score": 11.5,
       "min": 22.9,
-      "dk": 15.9
+      "dk": 15.8
      }
     ],
     "estimate": false
@@ -1304,9 +1572,9 @@
       "salary": 7600,
       "why": "subs in for him 10 of 51 times",
       "much": "about +3.1 DK",
-      "score": 3.076092822450081,
+      "score": 3.0670983989926244,
       "min": 32.7,
-      "dk": 34.2
+      "dk": 34.1
      }
     ],
     "estimate": true
@@ -1442,7 +1710,7 @@
       "much": "+10.7 DK without him (4 games)",
       "score": 10.7,
       "min": 29.7,
-      "dk": 32.7
+      "dk": 32.8
      },
      {
       "player": "Dyson Daniels",
@@ -1510,7 +1778,7 @@
       "much": "+21.6 DK without him (2 games)",
       "score": 21.6,
       "min": 26.9,
-      "dk": 34.0
+      "dk": 33.9
      },
      {
       "player": "Kenrich Williams",
@@ -1528,7 +1796,7 @@
       "much": "+6.7 DK without him (2 games)",
       "score": 6.7,
       "min": 28.8,
-      "dk": 27.4
+      "dk": 27.2
      }
     ],
     "estimate": false
@@ -1578,7 +1846,7 @@
       "much": "+8.1 DK without him (3 games)",
       "score": 8.1,
       "min": 19.2,
-      "dk": 18.2
+      "dk": 18.3
      },
      {
       "player": "Sion James",
@@ -1630,7 +1898,7 @@
       "much": "+6.9 DK without him (2 games)",
       "score": 6.9,
       "min": 26.1,
-      "dk": 22.0
+      "dk": 21.9
      }
     ],
     "estimate": false
@@ -1655,7 +1923,7 @@
       "much": "+11.1 DK without him (5 games)",
       "score": 11.1,
       "min": 33.0,
-      "dk": 36.0
+      "dk": 35.9
      },
      {
       "player": "Kyle Filipowski",
@@ -1698,7 +1966,7 @@
       "much": "+13.2 DK without him (9 games)",
       "score": 13.2,
       "min": 33.0,
-      "dk": 36.0
+      "dk": 35.9
      },
      {
       "player": "Josh Okogie",
@@ -1756,6 +2024,31 @@
     "estimate": false
    },
    {
+    "game": "DAL at BOS",
+    "time": "2026-11-15T23:00Z",
+    "team": "DAL",
+    "player": "Sergio De Larrea",
+    "status": "Out",
+    "reason": "Right Knee Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 13.3,
+    "benefits": [
+     {
+      "player": "Morez Johnson Jr.",
+      "salary": 3900,
+      "why": "18 minutes, up from 14",
+      "much": "+5.2 DK without him (8 games)",
+      "score": 5.2,
+      "min": 15.3,
+      "dk": 12.5
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "HOU at WAS",
     "time": "2026-11-16T00:00Z",
     "team": "HOU",
@@ -1781,10 +2074,10 @@
       "player": "Jabari Smith",
       "salary": 6500,
       "why": "projected 33 minutes tonight",
-      "much": "+6.4 DK projected vs. last 3",
-      "score": 6.433333333333334,
+      "much": "+6.3 DK projected vs. last 3",
+      "score": 6.333333333333332,
       "min": 33.1,
-      "dk": 30.6
+      "dk": 30.5
      },
      {
       "player": "Amen Thompson",
@@ -1827,7 +2120,7 @@
       "much": "+11.5 DK without him (3 games)",
       "score": 11.5,
       "min": 35.0,
-      "dk": 50.4
+      "dk": 50.3
      },
      {
       "player": "Reed Sheppard",
@@ -1861,7 +2154,7 @@
       "much": "+7.7 DK without him (7 games)",
       "score": 7.7,
       "min": 31.7,
-      "dk": 41.0
+      "dk": 40.9
      }
     ],
     "estimate": false
@@ -1920,7 +2213,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.2
      },
      {
       "player": "Bennett Stirtz",
@@ -1929,7 +2222,7 @@
       "much": "+14.6 DK without him (10 games)",
       "score": 14.6,
       "min": 20.7,
-      "dk": 16.2
+      "dk": 16.0
      },
      {
       "player": "Jared McCain",
@@ -1938,7 +2231,7 @@
       "much": "+12.9 DK without him (10 games)",
       "score": 12.9,
       "min": 28.8,
-      "dk": 27.4
+      "dk": 27.2
      }
     ],
     "estimate": false
@@ -1963,7 +2256,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.2
      },
      {
       "player": "Bennett Stirtz",
@@ -1972,7 +2265,7 @@
       "much": "+14.6 DK without him (10 games)",
       "score": 14.6,
       "min": 20.7,
-      "dk": 16.2
+      "dk": 16.0
      },
      {
       "player": "Jared McCain",
@@ -1981,7 +2274,7 @@
       "much": "+12.9 DK without him (10 games)",
       "score": 12.9,
       "min": 28.8,
-      "dk": 27.4
+      "dk": 27.2
      }
     ],
     "estimate": false
@@ -2006,7 +2299,7 @@
       "much": "+10.2 DK without him (6 games)",
       "score": 10.2,
       "min": 20.7,
-      "dk": 16.2
+      "dk": 16.0
      },
      {
       "player": "Jared McCain",
@@ -2015,7 +2308,7 @@
       "much": "+9.6 DK without him (6 games)",
       "score": 9.6,
       "min": 28.8,
-      "dk": 27.4
+      "dk": 27.2
      },
      {
       "player": "Isaiah Hartenstein",
@@ -2024,7 +2317,7 @@
       "much": "+7.8 DK without him (6 games)",
       "score": 7.8,
       "min": 26.9,
-      "dk": 34.0
+      "dk": 33.9
      }
     ],
     "estimate": false
@@ -2049,7 +2342,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.2
      },
      {
       "player": "Bennett Stirtz",
@@ -2058,7 +2351,7 @@
       "much": "+14.6 DK without him (10 games)",
       "score": 14.6,
       "min": 20.7,
-      "dk": 16.2
+      "dk": 16.0
      },
      {
       "player": "Jared McCain",
@@ -2067,7 +2360,7 @@
       "much": "+12.9 DK without him (10 games)",
       "score": 12.9,
       "min": 28.8,
-      "dk": 27.4
+      "dk": 27.2
      }
     ],
     "estimate": false
@@ -2117,6 +2410,16 @@
    {
     "player": "Jusuf Nurkic",
     "team": "UTA",
+    "status": "Out"
+   },
+   {
+    "player": "Tarik Biberovic",
+    "team": "DAL",
+    "status": "Out"
+   },
+   {
+    "player": "Dereck Lively II",
+    "team": "DAL",
     "status": "Out"
    },
    {
