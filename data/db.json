@@ -2,7 +2,7 @@
  "updated": "2026-11-15",
  "brief": {
   "date": "2026-11-15",
-  "updated": "4:45 PM ET",
+  "updated": "4:53 PM ET",
   "games": 8,
   "pending": [],
   "first_report": "5:41 AM",
@@ -334,6 +334,14 @@
    {
     "player": "Scottie Barnes",
     "team": "TOR",
+    "status": "Available",
+    "was": "Probable",
+    "why": "Left Groin Strain",
+    "time": "4:54 PM"
+   },
+   {
+    "player": "Scottie Barnes",
+    "team": "TOR",
     "status": "Probable",
     "was": "Questionable",
     "why": "Left Groin Strain",
@@ -401,14 +409,6 @@
     "status": "Available",
     "was": "Questionable",
     "why": "",
-    "time": "2:54 PM"
-   },
-   {
-    "player": "Bronny James",
-    "team": "LAL",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Illness",
     "time": "2:54 PM"
    }
   ],
@@ -1136,8 +1136,8 @@
    ]
   },
   "injuries": {
-   "report": "04:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_04_30PM.pdf",
+   "report": "04:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_04_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1416,21 +1416,6 @@
      "estimate": false
     },
     {
-     "game": "NYK at TOR",
-     "time": "2026-11-15T23:00Z",
-     "team": "TOR",
-     "player": "Scottie Barnes",
-     "status": "Probable",
-     "reason": "Left Groin Strain",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "4:41 PM",
-     "min": 35.3,
-     "benefits": [],
-     "estimate": false
-    },
-    {
      "game": "DAL at BOS",
      "time": "2026-11-15T23:00Z",
      "team": "DAL",
@@ -1442,6 +1427,21 @@
      "known": true,
      "changed_at": "1:55 PM",
      "min": 17.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "NYK at TOR",
+     "time": "2026-11-15T23:00Z",
+     "team": "TOR",
+     "player": "Scottie Barnes",
+     "status": "Available",
+     "reason": "Left Groin Strain",
+     "new": true,
+     "was": "Probable",
+     "known": true,
+     "changed_at": "4:54 PM",
+     "min": 35.3,
      "benefits": [],
      "estimate": false
     },
