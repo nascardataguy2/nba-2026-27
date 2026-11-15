@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updated": "12:45 PM ET",
+ "updated": "12:53 PM ET",
  "games": 8,
  "pending": [
   "DAL"
@@ -257,7 +257,12 @@
        "min": 15.3
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Jock Landale",
+       "min": 13.2
+      }
+     ]
     },
     "MIL": {
      "out": [
@@ -335,6 +340,14 @@
  ],
  "changed": [
   {
+   "player": "Jock Landale",
+   "team": "ATL",
+   "status": "Questionable",
+   "was": "Available",
+   "why": "",
+   "time": "12:54 PM"
+  },
+  {
    "player": "Ryan Rollins",
    "team": "MIL",
    "status": "Questionable",
@@ -367,6 +380,27 @@
    ],
    "time": "12:41 PM",
    "size": 12.3
+  },
+  {
+   "key": "Jock Landale",
+   "team": "ATL",
+   "head": "Jock Landale QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Zuby Ejiofor",
+     "salary": 3300,
+     "much": "+16.4 DK without him (4 games)"
+    },
+    {
+     "player": "Onyeka Okongwu",
+     "salary": 6600,
+     "much": "+10.7 DK without him (4 games)"
+    }
+   ],
+   "time": "12:54 PM",
+   "size": 8.2
   }
  ],
  "sits": [
@@ -921,8 +955,8 @@
   ]
  },
  "injuries": {
-  "report": "12:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_12_30PM.pdf",
+  "report": "12:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_12_45PM.pdf",
   "pending": [
    "DAL"
   ],
@@ -1378,6 +1412,49 @@
      }
     ],
     "estimate": true
+   },
+   {
+    "game": "ATL at MIL",
+    "time": "2026-11-16T01:00Z",
+    "team": "ATL",
+    "player": "Jock Landale",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "12:54 PM",
+    "min": 11.0,
+    "benefits": [
+     {
+      "player": "Zuby Ejiofor",
+      "salary": 3300,
+      "why": "16 minutes, up from 4",
+      "much": "+16.4 DK without him (4 games)",
+      "score": 16.4,
+      "min": 11.9,
+      "dk": 11.7
+     },
+     {
+      "player": "Onyeka Okongwu",
+      "salary": 6600,
+      "why": "same minutes, more production",
+      "much": "+10.7 DK without him (4 games)",
+      "score": 10.7,
+      "min": 29.7,
+      "dk": 32.7
+     },
+     {
+      "player": "Dyson Daniels",
+      "salary": 7000,
+      "why": "same minutes, more production",
+      "much": "+10.4 DK without him (4 games)",
+      "score": 10.4,
+      "min": 30.2,
+      "dk": 32.8
+     }
+    ],
+    "estimate": false
    },
    {
     "game": "OKC at SAC",
