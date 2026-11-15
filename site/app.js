@@ -72,22 +72,7 @@
     var today = PJ && PJ.date ? PJ.date : '';
     var live = B.date && B.date === today && Object.keys(SLATE).length > 0;
     if (live){
-      // Game cards in lock-time order, heat-mapped by game total (site orange = highest, site blue = lowest).
-      var cardsL = (B.cards || []).slice();  // keep lock-time order
-      var ous = cardsL.map(function(c){ return c.ou || 0; }), omax = Math.max.apply(null, ous), omin = Math.min.apply(null, ous);
-      function heat(ou){
-        // Above the middle of the slate fades to orange, below it fades to blue (no muddy mix).
-        var t = omax > omin ? (ou - omin) / (omax - omin) : 1, hot = t >= 0.5, k = Math.abs(t - 0.5) * 2;
-        var c = hot ? '228,87,46' : '29,53,87';
-        return {edge: 'rgba(' + c + ',' + (0.25 + 0.75 * k).toFixed(2) + ')', bg: 'rgba(' + c + ',' + (0.03 + 0.11 * k).toFixed(3) + ')'};
-      }
-      var ncol = cardsL.length ? Math.ceil(cardsL.length / Math.ceil(cardsL.length / 5)) : 1;  // up to 5 across, rows as even as possible
-      html += '<div class="bg-grid" style="--cols:' + ncol + '">' + cardsL.map(function(c){
-        var fav = c.fav ? c.fav + ' \u2212' + c.line : 'Pick\u2019em', h = heat(c.ou || 0);
-        var blow = (c.line || 0) >= 9 ? '<span class="bg-blow">Blowout risk</span>' : '';
-        return '<div class="bg-card" style="border-left:6px solid ' + h.edge + ';background:' + h.bg + '"><div class="bg-head"><span class="bg-match">' + esc(c.away) + ' at ' + esc(c.home) + '</span><span class="bg-time">' + esc(gameTime(c.time)) + (c.slate === 'late' ? ' \u00b7 late' : '') + '</span></div>' +
-          '<div class="bg-nums">Total <b>' + n1(c.ou) + '</b> \u00b7 ' + esc(fav) + blow + '</div></div>';
-      }).join('') + '</div>';
+      html += gameTiles(B.cards || []);
       // What changed (a line in the top panel when nothing has changed)
       var ch = B.changed || [];
       if (ch.length){
@@ -336,6 +321,28 @@
     if (b.subs != null) return 'subbed in for him ' + b.subs + ' of ' + b.of + ' times this season \u00b7 ' + n1(b.dk) + ' DK tonight';
     return b.recent != null ? n1(b.min) + ' min, up from ' + n1(b.recent) : '+' + n1(b.plus) + ' min';
   }
+  // Game tiles in lock-time order, heat-mapped by game total (site orange = highest, site blue = lowest).
+  // extra(c) adds a line to a tile; pick marks the tile whose key matches (injury page filter).
+  function gameTiles(cards, extra, pick){
+    var cardsL = (cards || []).slice();
+    var ous = cardsL.map(function(c){ return c.ou || 0; }), omax = Math.max.apply(null, ous), omin = Math.min.apply(null, ous);
+    function heat(ou){
+      // Above the middle of the slate fades to orange, below it fades to blue (no muddy mix).
+      var t = omax > omin ? (ou - omin) / (omax - omin) : 1, hot = t >= 0.5, k = Math.abs(t - 0.5) * 2;
+      var c = hot ? '228,87,46' : '29,53,87';
+      return {edge: 'rgba(' + c + ',' + (0.25 + 0.75 * k).toFixed(2) + ')', bg: 'rgba(' + c + ',' + (0.03 + 0.11 * k).toFixed(3) + ')'};
+    }
+    var ncol = cardsL.length ? Math.ceil(cardsL.length / Math.ceil(cardsL.length / 5)) : 1;  // up to 5 across, rows as even as possible
+    return '<div class="bg-grid" style="--cols:' + ncol + '">' + cardsL.map(function(c){
+      var fav = c.fav ? c.fav + ' \u2212' + c.line : 'Pick\u2019em', h = heat(c.ou || 0), key = c.away + '@' + c.home;
+      var blow = (c.line || 0) >= 9 ? '<span class="bg-blow">Blowout risk</span>' : '';
+      var tag = extra ? 'button type="button" data-game="' + esc(key) + '"' : 'div';
+      return '<' + tag + ' class="bg-card' + (extra ? ' bg-pick' : '') + (pick === key ? ' on' : '') + '" style="border-left:6px solid ' + h.edge + ';background:' + h.bg + '"><div class="bg-head"><span class="bg-match">' + esc(c.away) + ' at ' + esc(c.home) + '</span><span class="bg-time">' + esc(gameTime(c.time)) + (c.slate === 'late' ? ' \u00b7 late' : '') + '</span></div>' +
+        '<div class="bg-nums">Total <b>' + n1(c.ou) + '</b> \u00b7 ' + esc(fav) + blow + '</div>' + (extra ? extra(c) : '') + '</' + (extra ? 'button' : 'div') + '>';
+    }).join('') + '</div>';
+  }
+
+  var INJ_GAME = '';
   function injuries(){
     var B = db.brief || {}, IJ = B.injuries || {}, el = $('r4p-injcards');
     var live = B.date && PJ && B.date === PJ.date && Object.keys(SLATE).length > 0 && IJ.rows;
@@ -354,7 +361,18 @@
       ((IJ.pending || []).length ? ' Not filed yet: ' + IJ.pending.map(function(t){ return tm(t); }).join(' ') + '.' : ' Every team on the slate has filed.') +
       (IJ.url ? ' <a href="' + esc(IJ.url) + '" target="_blank" rel="noopener">Open the NBA\u2019s PDF</a>.' : '') + '</p></div>';
     var byTeam = injSort() === 'team', byMin = injSort() === 'min', ORD = {out:0, dbt:1, q:2, ok:3}, last = '';
-    var list = (IJ.rows || []).slice();
+    var all = (IJ.rows || []).slice();
+    var gkey = function(t){ var c = (B.cards || []).filter(function(c){ return c.away === t || c.home === t; })[0]; return c ? c.away + '@' + c.home : ''; };
+    if (INJ_GAME && !(B.cards || []).some(function(c){ return c.away + '@' + c.home === INJ_GAME; })) INJ_GAME = '';
+    var list = INJ_GAME ? all.filter(function(r){ return gkey(r.team) === INJ_GAME; }) : all;
+    // Each tile lists the key new statuses for its two teams: biggest minutes first, up to three.
+    var SH = {Out:'out', Doubtful:'doubtful', Questionable:'questionable', Probable:'probable', Available:'available'};
+    var tiles = gameTiles(B.cards || [], function(c){
+      var nw = all.filter(function(r){ return r.new && (r.team === c.away || r.team === c.home) && (r.min || 0) >= 10 && /Out|Doubtful|Questionable/.test(r.status); })
+        .sort(function(a,b){ return (b.min || 0) - (a.min || 0); }).slice(0, 3);
+      return nw.length ? '<div class="bg-inj"><b>New:</b> ' + nw.map(function(r){ return esc(r.player.replace(/^(\S)\S*\s+/, '$1. ')) + ' ' + esc(SH[r.status] || r.status.toLowerCase()); }).join(', ') + '</div>' : '';
+    }, INJ_GAME);
+    var gnote = '<p class="hint inj-gnote">' + (INJ_GAME ? 'Showing ' + esc(INJ_GAME.replace('@', ' at ')) + ' only. <button type="button" class="linkbtn" data-game="">Show all games</button>' : 'Click a game to see only its injuries.') + '</p>';
     // Biggest minutes impact: out and doubtful first, then questionable, then everyone expected to play; most minutes first in each.
     var TIER = {out:0, dbt:0, q:1, ok:2};
     if (byMin) list.sort(function(a,b){ return (TIER[cls(a.status)] - TIER[cls(b.status)]) || ((b.min || 0) - (a.min || 0)); });
@@ -379,9 +397,12 @@
       (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
     var minor = (IJ.minor || []).length ? '<details class="inj-minor"><summary>Also on the report (' + IJ.minor.length + ' players under 10 minutes a game)</summary><p>' +
       IJ.minor.map(function(m){ return esc(m.player) + ' ' + tm(m.team) + ' ' + esc(m.status); }).join(' \u00b7 ') + '</p></details>' : '';
-    el.innerHTML = head + bar + tbl + minor;
+    el.innerHTML = head + tiles + gnote + bar + tbl + (INJ_GAME ? '' : minor);
     Array.prototype.forEach.call(el.querySelectorAll('[data-isort]'), function(b){
       b.addEventListener('click', function(){ injSort(b.getAttribute('data-isort')); injuries(); });
+    });
+    Array.prototype.forEach.call(el.querySelectorAll('[data-game]'), function(b){
+      b.addEventListener('click', function(){ var g = b.getAttribute('data-game'); INJ_GAME = (g && g !== INJ_GAME) ? g : ''; injuries(); });
     });
   }
 

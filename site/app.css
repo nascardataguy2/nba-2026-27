@@ -468,3 +468,12 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .chx{padding:10px 0;border-bottom:1px solid #eee}.chx-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.chx-h .bc-st{font-weight:700}.chx-l{margin-top:4px;line-height:1.45}
 .chx-more{margin-top:8px}.chx-more summary{cursor:pointer;font-weight:700;padding:8px 0;color:#1d3557}
 .st-upd{margin-top:4px;color:#b42318;font-size:.92em}
+
+/* Injury page game tiles: click to filter */
+.bg-card.bg-pick{font:inherit;color:inherit;text-align:left;cursor:pointer;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch}
+.bg-card.bg-pick:hover{filter:brightness(.97)}
+.bg-card.bg-pick.on{outline:3px solid #1d3557;outline-offset:-1px}
+.bg-inj{margin-top:6px;font-size:13px;line-height:1.35;color:#9b1c1c}
+.bg-inj b{color:#9b1c1c}
+.inj-gnote{margin:6px 2px 10px}
+.linkbtn{background:none;border:0;padding:0;color:inherit;text-decoration:underline;font:inherit;cursor:pointer}
