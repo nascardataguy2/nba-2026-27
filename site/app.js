@@ -342,7 +342,7 @@
     }).join('') + '</div>';
   }
 
-  var INJ_GAME = '';
+  var INJ_GAME = '', INJ_COL = null;
   function injuries(){
     var B = db.brief || {}, IJ = B.injuries || {}, el = $('r4p-injcards');
     var live = B.date && PJ && B.date === PJ.date && Object.keys(SLATE).length > 0 && IJ.rows;
@@ -357,7 +357,7 @@
     el.className = 'inj-wrap';
     var tb = el.parentNode.querySelector('.toolbar'); if (tb) tb.style.display = 'none';
     function cls(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; }
-    var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games.' + (injSort() === 'team' ? ' Grouped by team.' : injSort() === 'min' ? ' Biggest minutes impact first: players who are out or doubtful, then questionable, each sorted by the minutes a game they play.' : ' New statuses are listed first.') +
+    var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games.' + (injSort() === 'team' ? ' Grouped by team.' : injSort() === 'min' ? ' Biggest minutes impact first: players who are out or doubtful, then questionable, each sorted by the minutes a game they play.' : ' Newest changes are listed first.') + ' Click a column name to sort by it.' +
       ((IJ.pending || []).length ? ' Not filed yet: ' + IJ.pending.map(function(t){ return tm(t); }).join(' ') + '.' : ' Every team on the slate has filed.') +
       (IJ.url ? ' <a href="' + esc(IJ.url) + '" target="_blank" rel="noopener">Open the NBA\u2019s PDF</a>.' : '') + '</p></div>';
     var byTeam = injSort() === 'team', byMin = injSort() === 'min', ORD = {out:0, dbt:1, q:2, ok:3}, last = '';
@@ -375,12 +375,25 @@
     var gnote = '<p class="hint inj-gnote">' + (INJ_GAME ? 'Showing ' + esc(INJ_GAME.replace('@', ' at ')) + ' only. <button type="button" class="linkbtn" data-game="">Show all games</button>' : 'Click a game to see only its injuries.') + '</p>';
     // Biggest minutes impact: out and doubtful first, then questionable, then everyone expected to play; most minutes first in each.
     var TIER = {out:0, dbt:0, q:1, ok:2};
+    // When the status last changed, in minutes after midnight ("3:46 PM" -> 946); new rows from the first report have no time.
+    function tmin(r){ var m = /(\d+):(\d+)\s*([AP]M)/i.exec(r.changed_at || ''); if (!m) return -1; return (+m[1] % 12 + (/p/i.test(m[3]) ? 12 : 0)) * 60 + +m[2]; }
+    function newRank(r){ return r.new ? (tmin(r) >= 0 ? 2000 + tmin(r) : 1000) : (r.known ? 0 : 500); }
+    function gain(r){ return Math.max.apply(null, [0].concat((r.benefits || []).map(function(b){ var m = /\+(\d+(\.\d+)?)/.exec(b.much || ''); return m ? +m[1] : 0; }))); }
+    if (!byTeam && !byMin) list.sort(function(a,b){ return newRank(b) - newRank(a) || ((b.min || 0) - (a.min || 0)); });
     if (byMin) list.sort(function(a,b){ return (TIER[cls(a.status)] - TIER[cls(b.status)]) || ((b.min || 0) - (a.min || 0)); });
     if (byTeam) list.sort(function(a,b){
       var ta = NAMES[a.team] || a.team, tb2 = NAMES[b.team] || b.team;
       return ta < tb2 ? -1 : ta > tb2 ? 1 : (ORD[cls(a.status)] - ORD[cls(b.status)]) || ((b.min || 0) - (a.min || 0));
     });
-    var bar = '<div class="inj-sort"><span class="bs-n">Sort:</span> <button type="button" class="btn' + (byTeam || byMin ? '' : ' solid') + '" data-isort="new">New first</button> <button type="button" class="btn' + (byTeam ? ' solid' : '') + '" data-isort="team">By team</button> <button type="button" class="btn' + (byMin ? ' solid' : '') + '" data-isort="min">Biggest minutes impact</button></div>';
+    // Clickable column headers; clicking the same one again flips the order.
+    var COLS = {player: function(a,b){ return a.player < b.player ? -1 : a.player > b.player ? 1 : 0; },
+      status: function(a,b){ return (ORD[cls(a.status)] - ORD[cls(b.status)]) || ((b.min || 0) - (a.min || 0)); },
+      new: function(a,b){ return newRank(b) - newRank(a) || ((b.min || 0) - (a.min || 0)); },
+      ben: function(a,b){ return gain(b) - gain(a) || ((b.min || 0) - (a.min || 0)); }};
+    if (INJ_COL && COLS[INJ_COL.k]){ list.sort(COLS[INJ_COL.k]); if (INJ_COL.rev) list.reverse(); byTeam = false; }
+    function th(k, label){ var on = INJ_COL && INJ_COL.k === k; return '<th><button type="button" class="th-sort' + (on ? ' on' : '') + '" data-col="' + k + '">' + label + (on ? (INJ_COL.rev ? ' \u25b2' : ' \u25bc') : '') + '</button></th>'; }
+    var colOn = !!INJ_COL;
+    var bar = '<div class="inj-sort"><span class="bs-n">Sort:</span> <button type="button" class="btn' + (byTeam || byMin || colOn ? '' : ' solid') + '" data-isort="new">New first</button> <button type="button" class="btn' + (byTeam && !colOn ? ' solid' : '') + '" data-isort="team">By team</button> <button type="button" class="btn' + (byMin && !colOn ? ' solid' : '') + '" data-isort="min">Biggest minutes impact</button></div>';
     var rows = list.map(function(r){
       var grp = '';
       if (byTeam && r.team !== last){ last = r.team; grp = '<tr class="inj-grp"><td colspan="4">' + tm(r.team, true) + ' ' + esc(NAMES[r.team] || r.team) + '</td></tr>'; }
@@ -393,13 +406,16 @@
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
         '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">' + (/Probable|Available/.test(r.status) ? 'Expected to play' : 'No teammate is projected to gain much') + '</span>') + '</td></tr>';
     }).join('');
-    var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr><th>Player</th><th>Status</th><th>New?</th><th>Who benefits</th></tr></thead><tbody>' +
+    var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr>' + th('player', 'Player') + th('status', 'Status') + th('new', 'New?') + th('ben', 'Who benefits') + '</tr></thead><tbody>' +
       (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
     var minor = (IJ.minor || []).length ? '<details class="inj-minor"><summary>Also on the report (' + IJ.minor.length + ' players under 10 minutes a game)</summary><p>' +
       IJ.minor.map(function(m){ return esc(m.player) + ' ' + tm(m.team) + ' ' + esc(m.status); }).join(' \u00b7 ') + '</p></details>' : '';
     el.innerHTML = head + tiles + gnote + bar + tbl + (INJ_GAME ? '' : minor);
     Array.prototype.forEach.call(el.querySelectorAll('[data-isort]'), function(b){
-      b.addEventListener('click', function(){ injSort(b.getAttribute('data-isort')); injuries(); });
+      b.addEventListener('click', function(){ INJ_COL = null; injSort(b.getAttribute('data-isort')); injuries(); });
+    });
+    Array.prototype.forEach.call(el.querySelectorAll('[data-col]'), function(b){
+      b.addEventListener('click', function(){ var k = b.getAttribute('data-col'); INJ_COL = INJ_COL && INJ_COL.k === k ? {k: k, rev: !INJ_COL.rev} : {k: k, rev: false}; injuries(); });
     });
     Array.prototype.forEach.call(el.querySelectorAll('[data-game]'), function(b){
       b.addEventListener('click', function(){ var g = b.getAttribute('data-game'); INJ_GAME = (g && g !== INJ_GAME) ? g : ''; injuries(); });
