@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updated": "4:25 PM ET",
+ "updated": "4:40 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:41 AM",
@@ -141,7 +141,7 @@
      "q": [
       {
        "player": "Santi Aldama",
-       "min": 15.5
+       "min": 14.6
       }
      ]
     },
@@ -175,12 +175,7 @@
        "min": 26.0
       }
      ],
-     "q": [
-      {
-       "player": "Scottie Barnes",
-       "min": 32.7
-      }
-     ]
+     "q": []
     }
    },
    "key": "Kawhi Leonard is out, so Jamal Shead and Trayce Jackson-Davis should play more than usual."
@@ -335,6 +330,14 @@
  ],
  "changed": [
   {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "status": "Probable",
+   "was": "Questionable",
+   "why": "Left Groin Strain",
+   "time": "4:41 PM"
+  },
+  {
    "player": "Kyrie Irving",
    "team": "DAL",
    "status": "Out",
@@ -405,17 +408,30 @@
    "was": "Questionable",
    "why": "Illness",
    "time": "2:54 PM"
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "status": "Questionable",
-   "was": "",
-   "why": "",
-   "time": "1:55 PM"
   }
  ],
  "chg": [
+  {
+   "key": "TOR",
+   "team": "TOR",
+   "head": "Barnes CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Jakob Poeltl",
+     "salary": 5500,
+     "much": "+15.8 DK without Barnes"
+    },
+    {
+     "player": "Jamal Shead",
+     "salary": 5800,
+     "much": "+11.6 DK without Barnes"
+    }
+   ],
+   "time": "4:41 PM",
+   "size": 45.1
+  },
   {
    "key": "WAS",
    "team": "WAS",
@@ -468,12 +484,12 @@
     {
      "player": "Julian Champagnie",
      "salary": 5000,
-     "much": "+6.1 DK projected vs. last 3"
+     "much": "+6.2 DK projected vs. last 3"
     },
     {
      "player": "Stephon Castle",
      "salary": 6800,
-     "much": "+5.3 DK projected vs. last 3"
+     "much": "+5.4 DK projected vs. last 3"
     }
    ],
    "time": "3:46 PM",
@@ -613,7 +629,7 @@
      "much": "+11.1 DK without them (5 games)",
      "score": 11.1,
      "min": 33.0,
-     "dk": 35.9
+     "dk": 35.8
     },
     {
      "player": "Kyle Filipowski",
@@ -622,7 +638,7 @@
      "much": "+7.3 DK without them (3 games)",
      "score": 7.3,
      "min": 15.0,
-     "dk": 13.8
+     "dk": 13.6
     },
     {
      "player": "Josh Green",
@@ -689,7 +705,7 @@
      "much": "+5.9 DK without them (1 game)",
      "score": 5.9,
      "min": 17.8,
-     "dk": 14.5
+     "dk": 14.6
     }
    ],
    "split_of": [
@@ -732,7 +748,7 @@
      "much": "+22.2 DK without them (1 game)",
      "score": 22.2,
      "min": 25.6,
-     "dk": 27.1
+     "dk": 27.0
     },
     {
      "player": "Corey Kispert",
@@ -767,8 +783,8 @@
      "why": "24 minutes, up from 21",
      "much": "+13.1 DK without him (2 games)",
      "score": 13.1,
-     "min": 24.3,
-     "dk": 24.7
+     "min": 22.7,
+     "dk": 23.7
     },
     {
      "player": "Walter Clayton Jr.",
@@ -776,8 +792,8 @@
      "why": "20 minutes, up from 16",
      "much": "+6.4 DK without him (2 games)",
      "score": 6.4,
-     "min": 19.7,
-     "dk": 17.5
+     "min": 19.8,
+     "dk": 18.3
     },
     {
      "player": "Marcus Sasser",
@@ -785,8 +801,8 @@
      "why": "23 minutes, up from 14",
      "much": "+6.0 DK without him (2 games)",
      "score": 6.0,
-     "min": 16.8,
-     "dk": 10.7
+     "min": 18.2,
+     "dk": 12.2
     }
    ],
    "split_of": [
@@ -855,19 +871,19 @@
      "player": "Julian Champagnie",
      "salary": 5000,
      "why": "subs in for him 18 of 58 times",
-     "much": "+6.1 DK projected vs. last 3",
-     "score": 6.050000000000001,
+     "much": "+6.2 DK projected vs. last 3",
+     "score": 6.25,
      "min": 32.5,
-     "dk": 28.8
+     "dk": 29.0
     },
     {
      "player": "Stephon Castle",
      "salary": 6800,
      "why": "subs in for him 10 of 58 times",
-     "much": "+5.3 DK projected vs. last 3",
-     "score": 5.266666666666666,
+     "much": "+5.4 DK projected vs. last 3",
+     "score": 5.366666666666667,
      "min": 30.8,
-     "dk": 37.6
+     "dk": 37.7
     },
     {
      "player": "Dylan Harper",
@@ -982,32 +998,25 @@
    "salary": 4700
   },
   {
-   "player": "Myles Turner",
-   "team": "MIL",
-   "own": 34.3,
-   "dk": 24.1,
-   "salary": 4800
+   "player": "Stephon Castle",
+   "team": "SAS",
+   "own": 32.9,
+   "dk": 37.7,
+   "salary": 6800
   },
   {
    "player": "Brice Sensabaugh",
    "team": "UTA",
-   "own": 32.7,
+   "own": 32.5,
    "dk": 19.9,
    "salary": 4200
   }
  ],
  "leverage": [
   {
-   "player": "Naji Marshall",
-   "team": "DAL",
-   "own": 1.2,
-   "dk": 25.4,
-   "salary": 4900
-  },
-  {
    "player": "Brook Lopez",
    "team": "LAC",
-   "own": 1.8,
+   "own": 2.1,
    "dk": 27.8,
    "salary": 5400
   },
@@ -1017,6 +1026,13 @@
    "own": 1.2,
    "dk": 45.0,
    "salary": 8900
+  },
+  {
+   "player": "Cooper Flagg",
+   "team": "DAL",
+   "own": 2.1,
+   "dk": 50.6,
+   "salary": 10200
   }
  ],
  "last": {
@@ -1118,8 +1134,8 @@
   ]
  },
  "injuries": {
-  "report": "04:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_04_15PM.pdf",
+  "report": "04:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_04_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1227,19 +1243,19 @@
       "player": "Julian Champagnie",
       "salary": 5000,
       "why": "subs in for him 18 of 58 times",
-      "much": "+6.1 DK projected vs. last 3",
-      "score": 6.050000000000001,
+      "much": "+6.2 DK projected vs. last 3",
+      "score": 6.25,
       "min": 32.5,
-      "dk": 28.8
+      "dk": 29.0
      },
      {
       "player": "Stephon Castle",
       "salary": 6800,
       "why": "subs in for him 10 of 58 times",
-      "much": "+5.3 DK projected vs. last 3",
-      "score": 5.266666666666666,
+      "much": "+5.4 DK projected vs. last 3",
+      "score": 5.366666666666667,
       "min": 30.8,
-      "dk": 37.6
+      "dk": 37.7
      },
      {
       "player": "Dylan Harper",
@@ -1273,7 +1289,7 @@
       "much": "+14.9 DK without him (1 game)",
       "score": 14.9,
       "min": 34.0,
-      "dk": 32.6
+      "dk": 32.3
      },
      {
       "player": "Mo Bamba",
@@ -1291,7 +1307,7 @@
       "much": "+13.0 DK without him (1 game)",
       "score": 13.0,
       "min": 21.7,
-      "dk": 22.5
+      "dk": 22.4
      }
     ],
     "estimate": false
@@ -1315,8 +1331,8 @@
       "why": "24 minutes, up from 21",
       "much": "+13.1 DK without him (2 games)",
       "score": 13.1,
-      "min": 24.3,
-      "dk": 24.7
+      "min": 22.7,
+      "dk": 23.7
      },
      {
       "player": "Walter Clayton Jr.",
@@ -1324,8 +1340,8 @@
       "why": "20 minutes, up from 16",
       "much": "+6.4 DK without him (2 games)",
       "score": 6.4,
-      "min": 19.7,
-      "dk": 17.5
+      "min": 19.8,
+      "dk": 18.3
      },
      {
       "player": "Marcus Sasser",
@@ -1333,8 +1349,8 @@
       "why": "23 minutes, up from 14",
       "much": "+6.0 DK without him (2 games)",
       "score": 6.0,
-      "min": 16.8,
-      "dk": 10.7
+      "min": 18.2,
+      "dk": 12.2
      }
     ],
     "estimate": false
@@ -1352,49 +1368,6 @@
     "changed_at": "4:27 PM",
     "min": 9.7,
     "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "NYK at TOR",
-    "time": "2026-11-15T23:00Z",
-    "team": "TOR",
-    "player": "Scottie Barnes",
-    "status": "Questionable",
-    "reason": "Left Groin Strain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 35.3,
-    "benefits": [
-     {
-      "player": "Jakob Poeltl",
-      "salary": 5500,
-      "why": "30 minutes, up from 20",
-      "much": "+15.8 DK without him (4 games)",
-      "score": 15.8,
-      "min": 24.4,
-      "dk": 23.2
-     },
-     {
-      "player": "Jamal Shead",
-      "salary": 5800,
-      "why": "started 2 of 4",
-      "much": "+11.6 DK without him (4 games)",
-      "score": 11.6,
-      "min": 24.2,
-      "dk": 21.5
-     },
-     {
-      "player": "Trayce Jackson-Davis",
-      "salary": 3800,
-      "why": "14 minutes, up from 7",
-      "much": "+10.4 DK without him (1 game)",
-      "score": 10.4,
-      "min": 7.6,
-      "dk": 8.9
-     }
-    ],
     "estimate": false
    },
    {
@@ -1416,8 +1389,8 @@
       "why": "27 minutes, up from 24",
       "much": "+9.4 DK without him (5 games)",
       "score": 9.4,
-      "min": 28.4,
-      "dk": 25.4
+      "min": 25.9,
+      "dk": 23.6
      },
      {
       "player": "Marcus Sasser",
@@ -1425,8 +1398,8 @@
       "why": "17 minutes, up from 9",
       "much": "+7.6 DK without him (8 games)",
       "score": 7.6,
-      "min": 16.8,
-      "dk": 10.7
+      "min": 18.2,
+      "dk": 12.2
      },
      {
       "player": "Daniel Gafford",
@@ -1434,10 +1407,25 @@
       "why": "23 minutes, up from 18",
       "much": "+7.2 DK without him (8 games)",
       "score": 7.2,
-      "min": 24.3,
-      "dk": 24.7
+      "min": 22.7,
+      "dk": 23.7
      }
     ],
+    "estimate": false
+   },
+   {
+    "game": "NYK at TOR",
+    "time": "2026-11-15T23:00Z",
+    "team": "TOR",
+    "player": "Scottie Barnes",
+    "status": "Probable",
+    "reason": "Left Groin Strain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "4:41 PM",
+    "min": 35.3,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1484,7 +1472,7 @@
       "much": "+10.4 DK without him (2 games)",
       "score": 10.4,
       "min": 33.1,
-      "dk": 30.7
+      "dk": 30.6
      },
      {
       "player": "Amen Thompson",
@@ -1518,7 +1506,7 @@
       "much": "+11.5 DK without him (1 game)",
       "score": 11.5,
       "min": 22.9,
-      "dk": 15.9
+      "dk": 16.0
      },
      {
       "player": "Alex Sarr",
@@ -1591,7 +1579,7 @@
       "much": "+22.2 DK without him (1 game)",
       "score": 22.2,
       "min": 25.6,
-      "dk": 27.1
+      "dk": 27.0
      },
      {
       "player": "Corey Kispert",
@@ -1684,7 +1672,7 @@
       "much": "+16.4 DK without him (4 games)",
       "score": 16.4,
       "min": 12.2,
-      "dk": 11.7
+      "dk": 11.6
      },
      {
       "player": "Onyeka Okongwu",
@@ -1693,7 +1681,7 @@
       "much": "+10.7 DK without him (4 games)",
       "score": 10.7,
       "min": 29.8,
-      "dk": 33.0
+      "dk": 32.9
      },
      {
       "player": "Dyson Daniels",
@@ -1702,7 +1690,7 @@
       "much": "+10.4 DK without him (4 games)",
       "score": 10.4,
       "min": 30.3,
-      "dk": 33.0
+      "dk": 33.1
      }
     ],
     "estimate": false
@@ -1770,7 +1758,7 @@
       "much": "+18.3 DK without him (1 game)",
       "score": 18.3,
       "min": 30.4,
-      "dk": 22.9
+      "dk": 22.8
      },
      {
       "player": "De'Andre Hunter",
@@ -1779,7 +1767,7 @@
       "much": "+15.9 DK without him (1 game)",
       "score": 15.9,
       "min": 33.3,
-      "dk": 24.6
+      "dk": 24.5
      }
     ],
     "estimate": false
@@ -1896,7 +1884,7 @@
       "much": "+11.1 DK without him (5 games)",
       "score": 11.1,
       "min": 33.0,
-      "dk": 35.9
+      "dk": 35.8
      },
      {
       "player": "Kyle Filipowski",
@@ -1905,7 +1893,7 @@
       "much": "+7.3 DK without him (3 games)",
       "score": 7.3,
       "min": 15.0,
-      "dk": 13.8
+      "dk": 13.6
      },
      {
       "player": "Josh Green",
@@ -1939,7 +1927,7 @@
       "much": "+13.2 DK without him (9 games)",
       "score": 13.2,
       "min": 33.0,
-      "dk": 35.9
+      "dk": 35.8
      },
      {
       "player": "Josh Okogie",
@@ -1948,7 +1936,7 @@
       "much": "+9.1 DK without him (9 games)",
       "score": 9.1,
       "min": 20.5,
-      "dk": 13.3
+      "dk": 13.2
      },
      {
       "player": "Kyle Filipowski",
@@ -1957,7 +1945,7 @@
       "much": "+5.4 DK without him (6 games)",
       "score": 5.4,
       "min": 15.0,
-      "dk": 13.8
+      "dk": 13.6
      }
     ],
     "estimate": false
@@ -1991,7 +1979,7 @@
       "much": "+5.3 DK without him (7 games)",
       "score": 5.3,
       "min": 7.6,
-      "dk": 8.9
+      "dk": 9.0
      }
     ],
     "estimate": false
@@ -2015,8 +2003,8 @@
       "why": "18 minutes, up from 14",
       "much": "+5.2 DK without him (8 games)",
       "score": 5.2,
-      "min": 16.1,
-      "dk": 13.2
+      "min": 16.8,
+      "dk": 14.1
      }
     ],
     "estimate": false
@@ -2047,10 +2035,10 @@
       "player": "Jabari Smith",
       "salary": 6500,
       "why": "projected 33 minutes tonight",
-      "much": "+6.5 DK projected vs. last 3",
-      "score": 6.533333333333331,
+      "much": "+6.4 DK projected vs. last 3",
+      "score": 6.433333333333334,
       "min": 33.1,
-      "dk": 30.7
+      "dk": 30.6
      },
      {
       "player": "Amen Thompson",
@@ -2084,7 +2072,7 @@
       "much": "+14.0 DK without him (4 games)",
       "score": 14.0,
       "min": 17.8,
-      "dk": 14.5
+      "dk": 14.6
      },
      {
       "player": "Alperen Sengun",
@@ -2170,7 +2158,7 @@
       "much": "+5.2 DK without him (8 games)",
       "score": 5.2,
       "min": 30.3,
-      "dk": 33.0
+      "dk": 33.1
      }
     ],
     "estimate": false
@@ -2195,7 +2183,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.2
      },
      {
       "player": "Bennett Stirtz",
@@ -2238,7 +2226,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.2
      },
      {
       "player": "Bennett Stirtz",
@@ -2324,7 +2312,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.2
      },
      {
       "player": "Bennett Stirtz",
