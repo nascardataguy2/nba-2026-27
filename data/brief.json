@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "updated": "7:25 PM ET",
+ "updated": "7:45 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:42 AM",
@@ -215,6 +215,10 @@
        "min": 22.7
       },
       {
+       "player": "Zach Edey",
+       "min": 21.0
+      },
+      {
        "player": "Scotty Pippen Jr.",
        "min": 14.7
       }
@@ -222,7 +226,7 @@
      "q": [
       {
        "player": "Zach Edey",
-       "min": 22.3
+       "min": 22.2
       }
      ]
     }
@@ -597,7 +601,7 @@
     {
      "player": "Cedric Coward",
      "salary": 6000,
-     "much": "+8.0 DK projected vs. last 3"
+     "much": "+8.3 DK projected vs. last 3"
     }
    ],
    "time": "7:26 PM",
@@ -723,6 +727,63 @@
    ]
   },
   {
+   "team": "MEM",
+   "outs": [
+    {
+     "player": "Ty Jerome",
+     "min": 31.0,
+     "note": "Ruled out tonight (right hip soreness).",
+     "new": true
+    },
+    {
+     "player": "Jerami Grant",
+     "min": 22.7,
+     "note": "Jerami Grant left Friday's win at New Orleans with 7:36 left after colliding with Herbert Jones on a drive. He scored 22 points off the bench in 26 minutes.",
+     "new": true
+    },
+    {
+     "player": "Zach Edey",
+     "min": 21.0,
+     "note": "Zach Edey did not play on November 13, and Isaiah Stewart started in his place for 20 minutes with 12 points. The show expects Edey to play on November 14 and Stewart to sit on the back-to-back, which could give Edey extra minutes, and it likes Edey as a value.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 74.7,
+   "benefits": [
+    {
+     "player": "Cam Spencer",
+     "salary": 4600,
+     "why": "started that game",
+     "much": "+19.0 DK without them (1 game)",
+     "score": 19.0,
+     "min": 25.0,
+     "dk": 30.7
+    },
+    {
+     "player": "Gregory Jackson",
+     "salary": 3500,
+     "why": "21 minutes, up from 16",
+     "much": "+17.0 DK without them (1 game)",
+     "score": 17.0,
+     "min": 20.3,
+     "dk": 22.4
+    },
+    {
+     "player": "Isaiah Stewart",
+     "salary": 4000,
+     "why": "started at center, 20 minutes (11/13)",
+     "much": "+13.1 DK without them (1 game)",
+     "score": 13.1,
+     "min": 24.1,
+     "dk": 24.5
+    }
+   ],
+   "split_of": [
+    "Ty Jerome"
+   ]
+  },
+  {
    "team": "CHI",
    "outs": [
     {
@@ -777,57 +838,6 @@
    ],
    "split_of": [
     "Caleb Wilson"
-   ]
-  },
-  {
-   "team": "MEM",
-   "outs": [
-    {
-     "player": "Ty Jerome",
-     "min": 31.0,
-     "note": "Ruled out tonight (right hip soreness).",
-     "new": true
-    },
-    {
-     "player": "Jerami Grant",
-     "min": 22.7,
-     "note": "Jerami Grant left Friday's win at New Orleans with 7:36 left after colliding with Herbert Jones on a drive. He scored 22 points off the bench in 26 minutes.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 53.7,
-   "benefits": [
-    {
-     "player": "Cam Spencer",
-     "salary": 4600,
-     "why": "started that game",
-     "much": "+19.0 DK without them (1 game)",
-     "score": 19.0,
-     "min": 24.1,
-     "dk": 29.5
-    },
-    {
-     "player": "Gregory Jackson",
-     "salary": 3500,
-     "why": "21 minutes, up from 16",
-     "much": "+17.0 DK without them (1 game)",
-     "score": 17.0,
-     "min": 20.4,
-     "dk": 22.5
-    },
-    {
-     "player": "Isaiah Stewart",
-     "salary": 4000,
-     "why": "same minutes, more production",
-     "much": "+13.1 DK without them (1 game)",
-     "score": 13.1,
-     "min": 19.2,
-     "dk": 19.5
-    }
-   ],
-   "split_of": [
-    "Ty Jerome"
    ]
   },
   {
@@ -1055,23 +1065,23 @@
   {
    "player": "Mario Hezonja",
    "team": "CLE",
-   "own": 33.4,
+   "own": 33.6,
    "dk": 23.1,
    "salary": 4200
   },
   {
    "player": "Nikola Jokic",
    "team": "DEN",
-   "own": 31.3,
+   "own": 31.7,
    "dk": 58.3,
    "salary": 11700
   },
   {
-   "player": "Thomas Bryant",
-   "team": "CLE",
-   "own": 29.7,
-   "dk": 27.1,
-   "salary": 4000
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "own": 30.3,
+   "dk": 52.1,
+   "salary": 9800
   }
  ],
  "leverage": [
@@ -1083,18 +1093,18 @@
    "salary": 3100
   },
   {
+   "player": "Isaiah Stewart",
+   "team": "MEM",
+   "own": 4.2,
+   "dk": 24.5,
+   "salary": 4000
+  },
+  {
    "player": "Naji Marshall",
    "team": "DAL",
    "own": 1.2,
    "dk": 26.7,
    "salary": 4900
-  },
-  {
-   "player": "Jordan Poole",
-   "team": "NOP",
-   "own": 1.2,
-   "dk": 22.2,
-   "salary": 4100
   }
  ],
  "last": {
@@ -1191,8 +1201,8 @@
   ]
  },
  "injuries": {
-  "report": "07:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_07_15PM.pdf",
+  "report": "07:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_07_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1463,8 +1473,8 @@
       "why": "started that game",
       "much": "+19.0 DK without him (1 game)",
       "score": 19.0,
-      "min": 24.1,
-      "dk": 29.5
+      "min": 25.0,
+      "dk": 30.7
      },
      {
       "player": "Gregory Jackson",
@@ -1472,8 +1482,8 @@
       "why": "21 minutes, up from 16",
       "much": "+17.0 DK without him (1 game)",
       "score": 17.0,
-      "min": 20.4,
-      "dk": 22.5
+      "min": 20.3,
+      "dk": 22.4
      },
      {
       "player": "Isaiah Stewart",
@@ -1481,8 +1491,8 @@
       "why": "same minutes, more production",
       "much": "+13.1 DK without him (1 game)",
       "score": 13.1,
-      "min": 19.2,
-      "dk": 19.5
+      "min": 24.1,
+      "dk": 24.5
      }
     ],
     "estimate": false
@@ -1590,10 +1600,10 @@
       "player": "Cedric Coward",
       "salary": 6000,
       "why": "subs in for him 7 of 39 times",
-      "much": "+8.0 DK projected vs. last 3",
-      "score": 8.0,
-      "min": 31.6,
-      "dk": 39.0
+      "much": "+8.3 DK projected vs. last 3",
+      "score": 8.299999999999997,
+      "min": 31.9,
+      "dk": 39.3
      }
     ],
     "estimate": false
@@ -1642,8 +1652,8 @@
       "why": "started 2 of 2",
       "much": "+10.5 DK without him (2 games)",
       "score": 10.5,
-      "min": 19.2,
-      "dk": 19.5
+      "min": 24.1,
+      "dk": 24.5
      },
      {
       "player": "Jaylen Wells",
@@ -1651,8 +1661,8 @@
       "why": "30 minutes, up from 27",
       "much": "+8.8 DK without him (2 games)",
       "score": 8.8,
-      "min": 32.0,
-      "dk": 26.6
+      "min": 32.2,
+      "dk": 26.8
      },
      {
       "player": "Taylor Hendricks",
@@ -1660,8 +1670,8 @@
       "why": "13 minutes, up from 8",
       "much": "+7.8 DK without him (2 games)",
       "score": 7.8,
-      "min": 14.3,
-      "dk": 16.9
+      "min": 14.9,
+      "dk": 17.7
      }
     ],
     "estimate": false
@@ -2136,8 +2146,8 @@
       "why": "11 minutes, up from 5",
       "much": "+13.8 DK without him (5 games)",
       "score": 13.8,
-      "min": 14.3,
-      "dk": 16.9
+      "min": 14.9,
+      "dk": 17.7
      }
     ],
     "estimate": false
