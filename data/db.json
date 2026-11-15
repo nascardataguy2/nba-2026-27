@@ -2,7 +2,7 @@
  "updated": "2026-11-14",
  "brief": {
   "date": "2026-11-14",
-  "updated": "7:15 PM ET",
+  "updated": "7:25 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:42 AM",
@@ -204,12 +204,7 @@
         "min": 31.0
        }
       ],
-      "q": [
-       {
-        "player": "Michael Porter Jr.",
-        "min": 23.8
-       }
-      ]
+      "q": []
      },
      "MEM": {
       "out": [
@@ -218,26 +213,42 @@
         "min": 31.0
        },
        {
+        "player": "Jerami Grant",
+        "min": 22.7
+       },
+       {
         "player": "Scotty Pippen Jr.",
         "min": 14.7
        }
       ],
       "q": [
        {
-        "player": "Jerami Grant",
-        "min": 24.5
-       },
-       {
         "player": "Zach Edey",
-        "min": 19.4
+        "min": 22.3
        }
       ]
      }
     },
-    "key": "Ty Jerome is out, so Cam Spencer and Gregory Jackson and Isaiah Stewart should play more than usual."
+    "key": "Ty Jerome and Jerami Grant are out, so Cam Spencer and Gregory Jackson and Isaiah Stewart should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "Jerami Grant",
+    "team": "MEM",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Head Injury",
+    "time": "7:26 PM"
+   },
+   {
+    "player": "Michael Porter Jr.",
+    "team": "BKN",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Personal Reasons",
+    "time": "7:26 PM"
+   },
    {
     "player": "Nicolas Claxton",
     "team": "CHI",
@@ -301,22 +312,6 @@
     "was": "Doubtful",
     "why": "Illness",
     "time": "6:31 PM"
-   },
-   {
-    "player": "Giannis Antetokounmpo",
-    "team": "MIA",
-    "status": "Available",
-    "was": "Probable",
-    "why": "Right Wrist Sprain",
-    "time": "6:31 PM"
-   },
-   {
-    "player": "Michael Porter Jr.",
-    "team": "BKN",
-    "status": "Questionable",
-    "was": "",
-    "why": "Personal Reasons",
-    "time": "6:31 PM"
    }
   ],
   "chg": [
@@ -361,6 +356,22 @@
     ],
     "time": "2:54 PM",
     "size": 39.3
+   },
+   {
+    "key": "Michael Porter Jr.",
+    "team": "BKN",
+    "head": "Michael Porter Jr. OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Julius Randle",
+      "salary": 7900,
+      "much": "+5.0 DK projected vs. last 3"
+     }
+    ],
+    "time": "7:26 PM",
+    "size": 37.2
    },
    {
     "key": "James Harden",
@@ -574,25 +585,25 @@
     "size": 20.2
    },
    {
-    "key": "Michael Porter Jr.",
-    "team": "BKN",
-    "head": "Michael Porter Jr. QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
+    "key": "Jerami Grant",
+    "team": "MEM",
+    "head": "Jerami Grant OUT",
+    "st": "Out",
+    "act": "Play",
     "names": [
      {
-      "player": "Julius Randle",
-      "salary": 7900,
-      "much": "about +6.8 DK if he sits (estimate)"
+      "player": "Cameron Boozer",
+      "salary": 8000,
+      "much": "+11.3 DK projected vs. last 3"
      },
      {
-      "player": "Noah Clowney",
-      "salary": 3600,
-      "much": "about +4.8 DK if he sits (estimate)"
+      "player": "Cedric Coward",
+      "salary": 6000,
+      "much": "+8.0 DK projected vs. last 3"
      }
     ],
-    "time": "6:31 PM",
-    "size": 18.6
+    "time": "7:26 PM",
+    "size": 19.9
    },
    {
     "key": "Zach Edey",
@@ -634,27 +645,6 @@
      }
     ],
     "time": "5:54 PM",
-    "size": 9.9
-   },
-   {
-    "key": "Jerami Grant",
-    "team": "MEM",
-    "head": "Jerami Grant QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Cameron Boozer",
-      "salary": 8000,
-      "much": "about +5.3 DK if he sits (estimate)"
-     },
-     {
-      "player": "Cedric Coward",
-      "salary": 6000,
-      "much": "about +5.0 DK if he sits (estimate)"
-     }
-    ],
-    "time": "2:54 PM",
     "size": 9.9
    }
   ],
@@ -799,42 +789,73 @@
       "min": 31.0,
       "note": "Ruled out tonight (right hip soreness).",
       "new": true
+     },
+     {
+      "player": "Jerami Grant",
+      "min": 22.7,
+      "note": "Jerami Grant left Friday's win at New Orleans with 7:36 left after colliding with Herbert Jones on a drive. He scored 22 points off the bench in 26 minutes.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 53.7,
+    "benefits": [
+     {
+      "player": "Cam Spencer",
+      "salary": 4600,
+      "why": "started that game",
+      "much": "+19.0 DK without them (1 game)",
+      "score": 19.0,
+      "min": 24.1,
+      "dk": 29.5
+     },
+     {
+      "player": "Gregory Jackson",
+      "salary": 3500,
+      "why": "21 minutes, up from 16",
+      "much": "+17.0 DK without them (1 game)",
+      "score": 17.0,
+      "min": 20.4,
+      "dk": 22.5
+     },
+     {
+      "player": "Isaiah Stewart",
+      "salary": 4000,
+      "why": "same minutes, more production",
+      "much": "+13.1 DK without them (1 game)",
+      "score": 13.1,
+      "min": 19.2,
+      "dk": 19.5
+     }
+    ],
+    "split_of": [
+     "Ty Jerome"
+    ]
+   },
+   {
+    "team": "BKN",
+    "outs": [
+     {
+      "player": "Michael Porter Jr.",
+      "min": 31.0,
+      "note": "Ruled out tonight (personal reasons).",
+      "new": true
      }
     ],
     "new": true,
     "lost": 31.0,
     "benefits": [
      {
-      "player": "Cam Spencer",
-      "salary": 4600,
-      "why": "started that game",
-      "much": "+19.0 DK without him (1 game)",
-      "score": 19.0,
-      "min": 21.4,
-      "dk": 26.3
-     },
-     {
-      "player": "Gregory Jackson",
-      "salary": 3500,
-      "why": "21 minutes, up from 16",
-      "much": "+17.0 DK without him (1 game)",
-      "score": 17.0,
-      "min": 18.0,
-      "dk": 19.9
-     },
-     {
-      "player": "Isaiah Stewart",
-      "salary": 4000,
-      "why": "same minutes, more production",
-      "much": "+13.1 DK without him (1 game)",
-      "score": 13.1,
-      "min": 17.0,
-      "dk": 17.3
+      "player": "Julius Randle",
+      "salary": 7900,
+      "why": "subs in for him 8 of 39 times",
+      "much": "+5.0 DK projected vs. last 3",
+      "score": 4.966666666666665,
+      "min": 33.1,
+      "dk": 35.3
      }
     ],
-    "split_of": [
-     "Ty Jerome"
-    ]
+    "split_of": []
    },
    {
     "team": "MIA",
@@ -939,51 +960,6 @@
      "Dejounte Murray",
      "Trendon Watford"
     ]
-   },
-   {
-    "team": "MIN",
-    "outs": [
-     {
-      "player": "Anthony Edwards",
-      "min": 34.0,
-      "note": "The show said Anthony Edwards is still out after knee surgery, and his last game was Minnesota's overtime loss in Cleveland. The show said the Wolves have gone 6-2 without him and have the league's best defense.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 34.0,
-    "benefits": [
-     {
-      "player": "Nah'Shon Hyland",
-      "salary": 4300,
-      "why": "16 minutes, up from 8",
-      "much": "+16.3 DK without him (8 games)",
-      "score": 16.3,
-      "min": 13.9,
-      "dk": 18.9
-     },
-     {
-      "player": "Ayo Dosunmu",
-      "salary": 7200,
-      "why": "started 8 of 8",
-      "much": "+12.6 DK without him (8 games)",
-      "score": 12.6,
-      "min": 32.8,
-      "dk": 36.0
-     },
-     {
-      "player": "Jaylen Clark",
-      "salary": 3600,
-      "why": "19 minutes, up from 4",
-      "much": "+9.1 DK without him (8 games)",
-      "score": 9.1,
-      "min": 17.9,
-      "dk": 14.3
-     }
-    ],
-    "split_of": [
-     "Anthony Edwards"
-    ]
    }
   ],
   "hot": [
@@ -1081,21 +1057,21 @@
    {
     "player": "Mario Hezonja",
     "team": "CLE",
-    "own": 34.1,
+    "own": 33.4,
     "dk": 23.1,
     "salary": 4200
    },
    {
     "player": "Nikola Jokic",
     "team": "DEN",
-    "own": 32.4,
+    "own": 31.3,
     "dk": 58.3,
     "salary": 11700
    },
    {
     "player": "Thomas Bryant",
     "team": "CLE",
-    "own": 30.5,
+    "own": 29.7,
     "dk": 27.1,
     "salary": 4000
    }
@@ -1109,18 +1085,18 @@
     "salary": 3100
    },
    {
-    "player": "Jerami Grant",
-    "team": "MEM",
-    "own": 1.2,
-    "dk": 23.1,
-    "salary": 4200
-   },
-   {
     "player": "Naji Marshall",
     "team": "DAL",
     "own": 1.2,
     "dk": 26.7,
     "salary": 4900
+   },
+   {
+    "player": "Jordan Poole",
+    "team": "NOP",
+    "own": 1.2,
+    "dk": 22.2,
+    "salary": 4100
    }
   ],
   "last": {
@@ -1217,8 +1193,8 @@
    ]
   },
   "injuries": {
-   "report": "07:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_07_00PM.pdf",
+   "report": "07:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_07_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1448,6 +1424,31 @@
     {
      "game": "BKN at MEM",
      "time": "2026-11-15T01:00Z",
+     "team": "BKN",
+     "player": "Michael Porter Jr.",
+     "status": "Out",
+     "reason": "Personal Reasons",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "7:26 PM",
+     "min": 31.0,
+     "benefits": [
+      {
+       "player": "Julius Randle",
+       "salary": 7900,
+       "why": "subs in for him 8 of 39 times",
+       "much": "+5.0 DK projected vs. last 3",
+       "score": 4.966666666666665,
+       "min": 33.1,
+       "dk": 35.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "BKN at MEM",
+     "time": "2026-11-15T01:00Z",
      "team": "MEM",
      "player": "Ty Jerome",
      "status": "Out",
@@ -1464,8 +1465,8 @@
        "why": "started that game",
        "much": "+19.0 DK without him (1 game)",
        "score": 19.0,
-       "min": 21.4,
-       "dk": 26.3
+       "min": 24.1,
+       "dk": 29.5
       },
       {
        "player": "Gregory Jackson",
@@ -1473,8 +1474,8 @@
        "why": "21 minutes, up from 16",
        "much": "+17.0 DK without him (1 game)",
        "score": 17.0,
-       "min": 18.0,
-       "dk": 19.9
+       "min": 20.4,
+       "dk": 22.5
       },
       {
        "player": "Isaiah Stewart",
@@ -1482,8 +1483,8 @@
        "why": "same minutes, more production",
        "much": "+13.1 DK without him (1 game)",
        "score": 13.1,
-       "min": 17.0,
-       "dk": 17.3
+       "min": 19.2,
+       "dk": 19.5
       }
      ],
      "estimate": false
@@ -1566,6 +1567,40 @@
      "estimate": false
     },
     {
+     "game": "BKN at MEM",
+     "time": "2026-11-15T01:00Z",
+     "team": "MEM",
+     "player": "Jerami Grant",
+     "status": "Out",
+     "reason": "Head Injury",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "7:26 PM",
+     "min": 22.7,
+     "benefits": [
+      {
+       "player": "Cameron Boozer",
+       "salary": 8000,
+       "why": "subs in for him 7 of 39 times",
+       "much": "+11.3 DK projected vs. last 3",
+       "score": 11.299999999999997,
+       "min": 38.0,
+       "dk": 49.8
+      },
+      {
+       "player": "Cedric Coward",
+       "salary": 6000,
+       "why": "subs in for him 7 of 39 times",
+       "much": "+8.0 DK projected vs. last 3",
+       "score": 8.0,
+       "min": 31.6,
+       "dk": 39.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "CHI at MIN",
      "time": "2026-11-15T01:00Z",
      "team": "CHI",
@@ -1593,83 +1628,6 @@
     {
      "game": "BKN at MEM",
      "time": "2026-11-15T01:00Z",
-     "team": "BKN",
-     "player": "Michael Porter Jr.",
-     "status": "Questionable",
-     "reason": "Personal Reasons",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "6:31 PM",
-     "min": 31.0,
-     "benefits": [
-      {
-       "player": "Julius Randle",
-       "salary": 7900,
-       "why": "subs in for him 8 of 39 times",
-       "much": "about +6.8 DK",
-       "score": 6.787188120521454,
-       "min": 29.7,
-       "dk": 31.7
-      },
-      {
-       "player": "Noah Clowney",
-       "salary": 3600,
-       "why": "subs in for him 8 of 39 times",
-       "much": "about +4.8 DK",
-       "score": 4.7500772320049425,
-       "min": 16.6,
-       "dk": 12.4
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "BKN at MEM",
-     "time": "2026-11-15T01:00Z",
-     "team": "MEM",
-     "player": "Jerami Grant",
-     "status": "Questionable",
-     "reason": "Head Injury",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "2:54 PM",
-     "min": 22.7,
-     "benefits": [
-      {
-       "player": "Cameron Boozer",
-       "salary": 8000,
-       "why": "subs in for him 7 of 39 times",
-       "much": "about +5.3 DK",
-       "score": 5.338202538202538,
-       "min": 33.0,
-       "dk": 43.3
-      },
-      {
-       "player": "Cedric Coward",
-       "salary": 6000,
-       "why": "subs in for him 7 of 39 times",
-       "much": "about +5.0 DK",
-       "score": 5.031938821412506,
-       "min": 26.6,
-       "dk": 32.9
-      },
-      {
-       "player": "Jaylen Wells",
-       "salary": 4500,
-       "why": "subs in for him 9 of 39 times",
-       "much": "about +4.3 DK",
-       "score": 4.33916083916084,
-       "min": 26.4,
-       "dk": 21.9
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "game": "BKN at MEM",
-     "time": "2026-11-15T01:00Z",
      "team": "MEM",
      "player": "Zach Edey",
      "status": "Questionable",
@@ -1686,8 +1644,8 @@
        "why": "started 2 of 2",
        "much": "+10.5 DK without him (2 games)",
        "score": 10.5,
-       "min": 17.0,
-       "dk": 17.3
+       "min": 19.2,
+       "dk": 19.5
       },
       {
        "player": "Jaylen Wells",
@@ -1695,8 +1653,8 @@
        "why": "30 minutes, up from 27",
        "much": "+8.8 DK without him (2 games)",
        "score": 8.8,
-       "min": 26.4,
-       "dk": 21.9
+       "min": 32.0,
+       "dk": 26.6
       },
       {
        "player": "Taylor Hendricks",
@@ -1704,8 +1662,8 @@
        "why": "13 minutes, up from 8",
        "much": "+7.8 DK without him (2 games)",
        "score": 7.8,
-       "min": 12.5,
-       "dk": 14.7
+       "min": 14.3,
+       "dk": 16.9
       }
      ],
      "estimate": false
@@ -2180,8 +2138,8 @@
        "why": "11 minutes, up from 5",
        "much": "+13.8 DK without him (5 games)",
        "score": 13.8,
-       "min": 12.5,
-       "dk": 14.7
+       "min": 14.3,
+       "dk": 16.9
       }
      ],
      "estimate": false
@@ -12344,13 +12302,13 @@
   },
   {
    "team": "BKN",
-   "starters": "Danny Wolf (24), Julius Randle (33), Michael Porter Jr. (33), Day'Ron Sharpe (23), Nolan Traore (22)",
-   "bench": "Mikel Brown Jr. (23), Keon Ellis (23), Egor Demin (22), Terance Mann (16), Moritz Wagner (18), Noah Clowney (20), Chaney Johnson (19)",
+   "starters": "Danny Wolf (24), Julius Randle (33), Day'Ron Sharpe (23), Nolan Traore (22), Egor Demin (22)",
+   "bench": "Mikel Brown Jr. (23), Keon Ellis (23), Terance Mann (16), Moritz Wagner (18), Noah Clowney (20), Chaney Johnson (19), Josh Minott (10)",
    "backup_c": "Moritz Wagner",
    "coach": "",
    "notes": "Brooklyn does not own its pick (it goes to Houston). Nic Claxton was traded to Chicago in the deal that brought Julius Randle. A Michael Porter Jr. trade is possible, and Randle could sit some March games. Fantasy playoff weeks run 3-4-3 (March 28 end) and 4-3-4 (April 4 end). Brooklyn has 16 back-to-backs, tied for the most in the league.",
    "source": "LO-1018",
-   "out": "Ben Saraf, Joshua Jefferson",
+   "out": "Ben Saraf, Joshua Jefferson, Michael Porter Jr.",
    "depth_through": "2026-11-11",
    "games": 11
   },
@@ -12549,12 +12507,12 @@
   {
    "team": "MEM",
    "starters": "Cameron Boozer (32), Cedric Coward (28), Jaylen Wells (27), Zach Edey (21), Isaiah Stewart (18)",
-   "bench": "Jerami Grant (24), Cam Spencer (20), Javon Small (19), GG Jackson (16), Taylor Hendricks (9)",
+   "bench": "Cam Spencer (20), Javon Small (19), GG Jackson (16), Taylor Hendricks (9)",
    "backup_c": "Isaiah Stewart",
    "coach": "Tuomas Iisalo",
    "notes": "Boozer is expected to start and could lead the team in assists.",
    "source": "LO-1019b",
-   "out": "Quinten Post, Scotty Pippen Jr., Ty Jerome",
+   "out": "Jerami Grant, Quinten Post, Scotty Pippen Jr., Ty Jerome",
    "depth_through": "2026-11-13",
    "games": 12
   },
