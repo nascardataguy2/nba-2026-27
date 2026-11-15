@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updated": "12:15 PM ET",
+ "updated": "12:40 PM ET",
  "games": 8,
  "pending": [
   "DAL"
@@ -266,7 +266,12 @@
        "min": 15.7
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Ryan Rollins",
+       "min": 26.0
+      }
+     ]
     }
    },
    "key": "Kingston Flemings and Asa Newell are out, so Nickeil Alexander-Walker and C.J. McCollum and Corey Kispert should play more than usual."
@@ -328,8 +333,42 @@
    "key": "Jalen Williams and Chet Holmgren are out, so Bennett Stirtz and Jared McCain and Isaiah Hartenstein should play more than usual."
   }
  ],
- "changed": [],
- "chg": [],
+ "changed": [
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "12:41 PM"
+  },
+  {
+   "player": "Steven Adams",
+   "team": "HOU",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Soleus Strain",
+   "time": "12:41 PM"
+  }
+ ],
+ "chg": [
+  {
+   "key": "Ryan Rollins",
+   "team": "MIL",
+   "head": "Ryan Rollins QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Kasparas Jakucionis",
+     "salary": 3500,
+     "much": "about +6.8 DK if he sits (estimate)"
+    }
+   ],
+   "time": "12:41 PM",
+   "size": 12.3
+  }
+ ],
  "sits": [
   {
    "team": "UTA",
@@ -882,8 +921,8 @@
   ]
  },
  "injuries": {
-  "report": "12:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_12_00PM.pdf",
+  "report": "12:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_12_30PM.pdf",
   "pending": [
    "DAL"
   ],
@@ -1314,6 +1353,31 @@
      }
     ],
     "estimate": false
+   },
+   {
+    "game": "ATL at MIL",
+    "time": "2026-11-16T01:00Z",
+    "team": "MIL",
+    "player": "Ryan Rollins",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:41 PM",
+    "min": 25.7,
+    "benefits": [
+     {
+      "player": "Kasparas Jakucionis",
+      "salary": 3500,
+      "why": "subs in for him 14 of 43 times",
+      "much": "about +6.8 DK",
+      "score": 6.774276409339022,
+      "min": 16.9,
+      "dk": 13.7
+     }
+    ],
+    "estimate": true
    },
    {
     "game": "OKC at SAC",
@@ -1936,7 +2000,7 @@
    {
     "player": "Steven Adams",
     "team": "HOU",
-    "status": "Probable"
+    "status": "Available"
    },
    {
     "player": "Mark Williams",
