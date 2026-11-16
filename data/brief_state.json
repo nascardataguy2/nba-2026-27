@@ -16,7 +16,7 @@
   "Scotty Pippen Jr.": "Out",
   "Quinten Post": "Questionable",
   "Richie Saunders": "Out",
-  "Isaiah Stewart": "Questionable",
+  "Isaiah Stewart": "Out",
   "Paolo Banchero": "Out",
   "Jonathan Isaac": "Out",
   "Izaiyah Nelson": "Out",
@@ -43,7 +43,13 @@
   "Donte DiVincenzo": "Out",
   "Anthony Edwards": "Out",
   "Jimmy Butler": "Out",
-  "Nikola Jovic": "Questionable"
+  "Nikola Jovic": "Questionable",
+  "Tre Johnson": "Questionable",
+  "Neemias Queta": "Questionable",
+  "Steven Adams": "Out",
+  "Amen Thompson": "Questionable",
+  "Joel Embiid": "Questionable",
+  "LeBron James": "Out"
  },
  "log": [
   {
@@ -69,17 +75,77 @@
    "was": "Questionable",
    "why": "Illness",
    "time": "12:55 PM"
+  },
+  {
+   "player": "Isaiah Stewart",
+   "team": "MEM",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Tre Johnson",
+   "team": "WAS",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Low Back Soreness",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Neemias Queta",
+   "team": "BOS",
+   "status": "Questionable",
+   "was": "",
+   "why": "Rest",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Steven Adams",
+   "team": "HOU",
+   "status": "Out",
+   "was": "Available",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Amen Thompson",
+   "team": "HOU",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Knee Soreness",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "1:54 PM"
   }
  ],
  "teams": [
+  "BOS",
   "CHI",
   "CLE",
   "GSW",
+  "HOU",
   "MEM",
   "MIA",
   "MIN",
   "NOP",
   "ORL",
-  "POR"
+  "PHI",
+  "POR",
+  "WAS"
  ]
 }

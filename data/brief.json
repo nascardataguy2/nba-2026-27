@@ -1,13 +1,8 @@
 {
  "date": "2026-11-16",
- "updated": "12:54 PM ET",
+ "updated": "1:53 PM ET",
  "games": 7,
- "pending": [
-  "WAS",
-  "BOS",
-  "HOU",
-  "PHI"
- ],
+ "pending": [],
  "first_report": "5:25 AM",
  "cards": [
   {
@@ -17,12 +12,11 @@
    "slate": "main",
    "ou": 241.5,
    "fav": "CLE",
-   "line": 9.5,
-   "away_pts": 116.0,
-   "home_pts": 125.5,
+   "line": 8.5,
+   "away_pts": 116.5,
+   "home_pts": 125.0,
    "tags": [
-    "Highest total",
-    "Blowout risk"
+    "Highest total"
    ],
    "teams": {
     "CHI": {
@@ -69,11 +63,11 @@
    "home": "WAS",
    "time": "2026-11-17T00:00Z",
    "slate": "main",
-   "ou": 230.5,
+   "ou": 232.5,
    "fav": "MEM",
    "line": 3.5,
-   "away_pts": 117.0,
-   "home_pts": 113.5,
+   "away_pts": 118.0,
+   "home_pts": 114.5,
    "tags": [
     "WAS on a back-to-back"
    ],
@@ -83,6 +77,10 @@
       {
        "player": "Ty Jerome",
        "min": 31.0
+      },
+      {
+       "player": "Isaiah Stewart",
+       "min": 17.7
       },
       {
        "player": "Scotty Pippen Jr.",
@@ -96,29 +94,30 @@
      "q": [
       {
        "player": "Zach Edey",
-       "min": 19.4
-      },
-      {
-       "player": "Isaiah Stewart",
-       "min": 16.5
+       "min": 20.5
       },
       {
        "player": "Quinten Post",
-       "min": 15.7
+       "min": 17.9
       }
      ]
     },
     "WAS": {
-     "out": [],
+     "out": [
+      {
+       "player": "Justin Champagnie",
+       "min": 17.7
+      }
+     ],
      "q": [
       {
        "player": "Tre Johnson",
-       "min": 23.6
+       "min": 23.0
       }
      ]
     }
    },
-   "key": "Ty Jerome is out, so Cam Spencer and Taylor Hendricks and Kris Murray should play more than usual."
+   "key": "Ty Jerome and Isaiah Stewart are out, so Cam Spencer and Taylor Hendricks and Kris Murray should play more than usual."
   },
   {
    "away": "ORL",
@@ -146,7 +145,12 @@
     },
     "BOS": {
      "out": [],
-     "q": []
+     "q": [
+      {
+       "player": "Neemias Queta",
+       "min": 23.1
+      }
+     ]
     }
    },
    "key": "Paolo Banchero is out, so Jamal Cain and Franz Wagner and Desmond Bane should play more than usual."
@@ -167,11 +171,20 @@
    ],
    "teams": {
     "HOU": {
-     "out": [],
+     "out": [
+      {
+       "player": "Clint Capela",
+       "min": 20.7
+      },
+      {
+       "player": "Marcus Smart",
+       "min": 18.0
+      }
+     ],
      "q": [
       {
-       "player": "Fred VanVleet",
-       "min": 27.8
+       "player": "Amen Thompson",
+       "min": 36.1
       }
      ]
     },
@@ -185,7 +198,7 @@
      "q": []
     }
    },
-   "key": "Pelle Larsson is out, so Klay Thompson and Ryan Conwell and Davion Mitchell should play more than usual."
+   "key": "Clint Capela and Marcus Smart are out, so Bogdan Bogdanovic and Tari Eason and Alperen Sengun should play more than usual."
   },
   {
    "away": "PHI",
@@ -194,19 +207,28 @@
    "slate": "main",
    "ou": 225.5,
    "fav": "PHI",
-   "line": 5.5,
-   "away_pts": 115.5,
-   "home_pts": 110.0,
+   "line": 4.5,
+   "away_pts": 115.0,
+   "home_pts": 110.5,
    "tags": [
     "PHI on a back-to-back"
    ],
    "teams": {
     "PHI": {
-     "out": [],
+     "out": [
+      {
+       "player": "LeBron James",
+       "min": 31.7
+      },
+      {
+       "player": "Adem Bona",
+       "min": 17.0
+      }
+     ],
      "q": [
       {
        "player": "Joel Embiid",
-       "min": 29.9
+       "min": 33.9
       }
      ]
     },
@@ -215,7 +237,7 @@
      "q": []
     }
    },
-   "key": "Tyrese Maxey has the top projection in this game at 43.4 DK points."
+   "key": "LeBron James and Adem Bona are out, so VJ Edgecombe and Kentavious Caldwell-Pope and Anfernee Simons should play more than usual."
   },
   {
    "away": "POR",
@@ -269,11 +291,11 @@
    "home": "NOP",
    "time": "2026-11-17T01:00Z",
    "slate": "main",
-   "ou": 225.5,
+   "ou": 223.5,
    "fav": "GSW",
    "line": 3.5,
-   "away_pts": 114.5,
-   "home_pts": 111.0,
+   "away_pts": 113.5,
+   "home_pts": 110.0,
    "tags": [],
    "teams": {
     "GSW": {
@@ -321,6 +343,62 @@
  ],
  "changed": [
   {
+   "player": "LeBron James",
+   "team": "PHI",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Amen Thompson",
+   "team": "HOU",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Knee Soreness",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Steven Adams",
+   "team": "HOU",
+   "status": "Out",
+   "was": "Available",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Neemias Queta",
+   "team": "BOS",
+   "status": "Questionable",
+   "was": "",
+   "why": "Rest",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Tre Johnson",
+   "team": "WAS",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Low Back Soreness",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Isaiah Stewart",
+   "team": "MEM",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "1:54 PM"
+  },
+  {
    "player": "Pelle Larsson",
    "team": "MIA",
    "status": "Doubtful",
@@ -346,6 +424,27 @@
   }
  ],
  "chg": [
+  {
+   "key": "LeBron James",
+   "team": "PHI",
+   "head": "LeBron James OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "VJ Edgecombe",
+     "salary": 6300,
+     "much": "+12.7 DK without him (3 games)"
+    },
+    {
+     "player": "Dean Wade",
+     "salary": 4200,
+     "much": "+7.8 DK without him (3 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 37.9
+  },
   {
    "key": "Pelle Larsson",
    "team": "MIA",
@@ -382,6 +481,101 @@
    ],
    "time": "12:55 PM",
    "size": 19.2
+  },
+  {
+   "key": "Joel Embiid",
+   "team": "PHI",
+   "head": "Joel Embiid QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Dean Wade",
+     "salary": 4200,
+     "much": "+15.5 DK without him (3 games)"
+    },
+    {
+     "player": "Jabari Walker",
+     "salary": 3800,
+     "much": "+11.1 DK without him (2 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 18.5
+  },
+  {
+   "key": "Isaiah Stewart",
+   "team": "MEM",
+   "head": "Isaiah Stewart OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Cameron Boozer",
+     "salary": 8100,
+     "much": "+11.5 DK projected vs. last 3"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 18.3
+  },
+  {
+   "key": "Amen Thompson",
+   "team": "HOU",
+   "head": "Amen Thompson QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Tari Eason",
+     "salary": 5300,
+     "much": "about +9.7 DK if he sits (estimate)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 16.4
+  },
+  {
+   "key": "Neemias Queta",
+   "team": "BOS",
+   "head": "Neemias Queta QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Mitchell Robinson",
+     "salary": 3900,
+     "much": "about +7.6 DK if he sits (estimate)"
+    },
+    {
+     "player": "Luka Garza",
+     "salary": 3800,
+     "much": "about +5.9 DK if he sits (estimate)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 11.5
+  },
+  {
+   "key": "Tre Johnson",
+   "team": "WAS",
+   "head": "Tre Johnson QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Will Riley",
+     "salary": 3100,
+     "much": "+17.9 DK without him (1 game)"
+    },
+    {
+     "player": "Alex Sarr",
+     "salary": 6200,
+     "much": "+15.4 DK without him (2 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 7.8
   },
   {
    "key": "Nikola Jovic",
@@ -464,6 +658,109 @@
    ]
   },
   {
+   "team": "MEM",
+   "outs": [
+    {
+     "player": "Ty Jerome",
+     "min": 31.0,
+     "note": "Ty Jerome sat Memphis's game on November 14 after playing 29 minutes on November 13. The show said he is ruled out for Monday, November 16, and that it had wrongly thought he sat on November 14 only because of flight delays.",
+     "new": false
+    },
+    {
+     "player": "Isaiah Stewart",
+     "min": 17.7,
+     "note": "Isaiah Stewart is questionable for Monday, November 16, with an illness after starting at center in both games Zach Edey missed.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 48.7,
+   "benefits": [
+    {
+     "player": "Cam Spencer",
+     "salary": 5100,
+     "why": "started 2 of 2",
+     "much": "+16.0 DK without them (2 games)",
+     "score": 16.0,
+     "min": 28.4,
+     "dk": 35.1
+    },
+    {
+     "player": "Taylor Hendricks",
+     "salary": 3900,
+     "why": "16 minutes, up from 10",
+     "much": "+9.2 DK without them (2 games)",
+     "score": 9.2,
+     "min": 19.6,
+     "dk": 23.6
+    },
+    {
+     "player": "Kris Murray",
+     "salary": 3400,
+     "why": "20 minutes, up from 9",
+     "much": "+8.2 DK without them (2 games)",
+     "score": 8.2,
+     "min": 9.3,
+     "dk": 8.7
+    }
+   ],
+   "split_of": [
+    "Ty Jerome"
+   ]
+  },
+  {
+   "team": "PHI",
+   "outs": [
+    {
+     "player": "LeBron James",
+     "min": 31.7,
+     "note": "The show said LeBron James is playing Sunday, November 15, after missing the November 12 game. Because the 76ers are on a back-to-back, the show guessed he probably sits Monday, November 16.",
+     "new": true
+    },
+    {
+     "player": "Adem Bona",
+     "min": 17.0,
+     "note": "The show said Adem Bona is out for Philadelphia on Monday, November 16. He has not played since November 4.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 48.7,
+   "benefits": [
+    {
+     "player": "VJ Edgecombe",
+     "salary": 6300,
+     "why": "same minutes, more production",
+     "much": "+16.1 DK without them (1 game)",
+     "score": 16.1,
+     "min": 36.8,
+     "dk": 34.2
+    },
+    {
+     "player": "Kentavious Caldwell-Pope",
+     "salary": 4400,
+     "why": "27 minutes, up from 22",
+     "much": "+15.7 DK without them (1 game)",
+     "score": 15.7,
+     "min": 25.4,
+     "dk": 17.0
+    },
+    {
+     "player": "Anfernee Simons",
+     "salary": 4300,
+     "why": "same minutes, more production",
+     "much": "+10.2 DK without them (1 game)",
+     "score": 10.2,
+     "min": 25.2,
+     "dk": 20.8
+    }
+   ],
+   "split_of": [
+    "LeBron James",
+    "Adem Bona"
+   ]
+  },
+  {
    "team": "MIA",
    "outs": [
     {
@@ -483,7 +780,7 @@
      "much": "+15.9 DK without him (1 game)",
      "score": 15.9,
      "min": 25.5,
-     "dk": 23.5
+     "dk": 23.6
     },
     {
      "player": "Ryan Conwell",
@@ -492,7 +789,7 @@
      "much": "+14.9 DK without him (2 games)",
      "score": 14.9,
      "min": 25.7,
-     "dk": 18.9
+     "dk": 18.8
     },
     {
      "player": "Davion Mitchell",
@@ -609,96 +906,6 @@
     "Ja Morant",
     "Chris Youngblood"
    ]
-  },
-  {
-   "team": "MIN",
-   "outs": [
-    {
-     "player": "Anthony Edwards",
-     "min": 34.0,
-     "note": "Anthony Edwards remained out on 11/14 and has not played since 10/26. The show said he will be out a long while and does not expect anything to change for Minnesota until he returns.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 34.0,
-   "benefits": [
-    {
-     "player": "Nah'Shon Hyland",
-     "salary": 4400,
-     "why": "16 minutes, up from 8",
-     "much": "+15.4 DK without him (9 games)",
-     "score": 15.4,
-     "min": 14.0,
-     "dk": 17.7
-    },
-    {
-     "player": "Ayo Dosunmu",
-     "salary": 7400,
-     "why": "started 9 of 9",
-     "much": "+12.2 DK without him (9 games)",
-     "score": 12.2,
-     "min": 34.6,
-     "dk": 36.9
-    },
-    {
-     "player": "LaMelo Ball",
-     "salary": 8600,
-     "why": "29 minutes, up from 25",
-     "much": "+9.2 DK without him (9 games)",
-     "score": 9.2,
-     "min": 30.5,
-     "dk": 42.1
-    }
-   ],
-   "split_of": [
-    "Anthony Edwards"
-   ]
-  },
-  {
-   "team": "ORL",
-   "outs": [
-    {
-     "player": "Paolo Banchero",
-     "min": 33.5,
-     "note": "Paolo Banchero is out again on Monday, November 16, at Boston with his ankle injury. Orlando is also without Jonathan Isaac (knee), Noah Penda (hamstring) and Izaiyah Nelson (ankle).",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 33.5,
-   "benefits": [
-    {
-     "player": "Jamal Cain",
-     "salary": 3800,
-     "why": "19 minutes, up from 12",
-     "much": "+14.5 DK without him (9 games)",
-     "score": 14.5,
-     "min": 15.9,
-     "dk": 10.3
-    },
-    {
-     "player": "Franz Wagner",
-     "salary": 9700,
-     "why": "38 minutes, up from 31",
-     "much": "+14.3 DK without him (10 games)",
-     "score": 14.3,
-     "min": 32.2,
-     "dk": 39.4
-    },
-    {
-     "player": "Desmond Bane",
-     "salary": 7200,
-     "why": "36 minutes, up from 30",
-     "much": "+13.2 DK without him (9 games)",
-     "score": 13.2,
-     "min": 30.4,
-     "dk": 27.3
-    }
-   ],
-   "split_of": [
-    "Paolo Banchero"
-   ]
   }
  ],
  "hot": [
@@ -709,14 +916,6 @@
    "last": 38.2,
    "before": 14.3,
    "n": 10
-  },
-  {
-   "player": "Clint Capela",
-   "team": "HOU",
-   "kind": "hot",
-   "last": 24.6,
-   "before": 4.8,
-   "n": 3
   },
   {
    "player": "Taylor Hendricks",
@@ -741,6 +940,14 @@
    "last": 58.7,
    "before": 43.6,
    "n": 9
+  },
+  {
+   "player": "Craig Porter Jr.",
+   "team": "CLE",
+   "kind": "hot",
+   "last": 19.1,
+   "before": 4.9,
+   "n": 8
   }
  ],
  "minutes": [
@@ -761,14 +968,6 @@
    "n": 8
   },
   {
-   "player": "Clint Capela",
-   "team": "HOU",
-   "kind": "up",
-   "last": 20.7,
-   "before": 7.7,
-   "n": 3
-  },
-  {
    "player": "Isaac Okoro",
    "team": "CHI",
    "kind": "up",
@@ -783,6 +982,14 @@
    "last": 19.7,
    "before": 6.8,
    "n": 5
+  },
+  {
+   "player": "Danny Wolf",
+   "team": "BKN",
+   "kind": "up",
+   "last": 31.0,
+   "before": 19.2,
+   "n": 4
   }
  ],
  "chalk": [
@@ -790,52 +997,52 @@
    "player": "Cam Spencer",
    "team": "MEM",
    "own": 38.0,
-   "dk": 33.2,
+   "dk": 35.1,
    "salary": 5100
   },
   {
    "player": "Jarrett Allen",
    "team": "CLE",
-   "own": 34.7,
+   "own": 34.9,
    "dk": 35.4,
    "salary": 5600
   },
   {
-   "player": "Yaxel Lendeborg",
-   "team": "GSW",
-   "own": 28.7,
-   "dk": 40.8,
-   "salary": 7700
+   "player": "Jerami Grant",
+   "team": "MEM",
+   "own": 28.8,
+   "dk": 25.9,
+   "salary": 4100
   },
   {
    "player": "James Harden",
    "team": "CLE",
-   "own": 28.4,
+   "own": 28.0,
    "dk": 38.1,
    "salary": 7200
   }
  ],
  "leverage": [
   {
+   "player": "Tari Eason",
+   "team": "HOU",
+   "own": 1.4,
+   "dk": 31.1,
+   "salary": 5300
+  },
+  {
    "player": "Bam Adebayo",
    "team": "MIA",
-   "own": 7.7,
+   "own": 9.3,
    "dk": 45.9,
    "salary": 8200
   },
   {
    "player": "Derik Queen",
    "team": "NOP",
-   "own": 2.0,
+   "own": 1.0,
    "dk": 30.2,
    "salary": 5400
-  },
-  {
-   "player": "Jordan Poole",
-   "team": "NOP",
-   "own": 1.6,
-   "dk": 22.6,
-   "salary": 4300
   }
  ],
  "last": {
@@ -916,22 +1123,42 @@
   "injuries": []
  },
  "injuries": {
-  "report": "12:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_12_45PM.pdf",
-  "pending": [
-   "WAS",
-   "BOS",
-   "HOU",
-   "PHI"
-  ],
+  "report": "01:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_01_45PM.pdf",
+  "pending": [],
   "rows": [
+   {
+    "game": "MEM at WAS",
+    "time": "2026-11-17T00:00Z",
+    "team": "MEM",
+    "player": "Isaiah Stewart",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 17.7,
+    "benefits": [
+     {
+      "player": "Cameron Boozer",
+      "salary": 8100,
+      "why": "subs in for him 7 of 39 times",
+      "much": "+11.5 DK projected vs. last 3",
+      "score": 11.549999999999997,
+      "min": 36.4,
+      "dk": 49.3
+     }
+    ],
+    "estimate": false
+   },
    {
     "game": "MEM at WAS",
     "time": "2026-11-17T00:00Z",
     "team": "MEM",
     "player": "GG Jackson",
     "status": "Out",
-    "reason": "Left Foot Injury",
+    "reason": "Left 5th Metatarsal",
     "new": true,
     "was": "",
     "known": true,
@@ -942,10 +1169,10 @@
       "player": "Cameron Boozer",
       "salary": 8100,
       "why": "subs in for him 7 of 41 times",
-      "much": "+7.2 DK projected vs. last 3",
-      "score": 7.25,
-      "min": 33.2,
-      "dk": 45.0
+      "much": "+11.5 DK projected vs. last 3",
+      "score": 11.549999999999997,
+      "min": 36.4,
+      "dk": 49.3
      }
     ],
     "estimate": false
@@ -1019,6 +1246,49 @@
     "estimate": false
    },
    {
+    "game": "MEM at WAS",
+    "time": "2026-11-17T00:00Z",
+    "team": "WAS",
+    "player": "Tre Johnson",
+    "status": "Questionable",
+    "reason": "Low Back Soreness",
+    "new": true,
+    "was": "Out",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 29.3,
+    "benefits": [
+     {
+      "player": "Will Riley",
+      "salary": 3100,
+      "why": "16 minutes, up from 6",
+      "much": "+17.9 DK without him (1 game)",
+      "score": 17.9,
+      "min": 8.0,
+      "dk": 5.2
+     },
+     {
+      "player": "Alex Sarr",
+      "salary": 6200,
+      "why": "same minutes, more production",
+      "much": "+15.4 DK without him (2 games)",
+      "score": 15.4,
+      "min": 26.5,
+      "dk": 27.2
+     },
+     {
+      "player": "Bilal Coulibaly",
+      "salary": 4200,
+      "why": "same minutes, more production",
+      "much": "+6.5 DK without him (2 games)",
+      "score": 6.5,
+      "min": 23.0,
+      "dk": 16.6
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "CHI at CLE",
     "time": "2026-11-17T00:00Z",
     "team": "CLE",
@@ -1062,6 +1332,40 @@
     "estimate": false
    },
    {
+    "game": "ORL at BOS",
+    "time": "2026-11-17T00:00Z",
+    "team": "BOS",
+    "player": "Neemias Queta",
+    "status": "Questionable",
+    "reason": "Rest",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 22.7,
+    "benefits": [
+     {
+      "player": "Mitchell Robinson",
+      "salary": 3900,
+      "why": "subs in for him 21 of 59 times",
+      "much": "about +7.6 DK",
+      "score": 7.580480036400863,
+      "min": 14.9,
+      "dk": 14.0
+     },
+     {
+      "player": "Luka Garza",
+      "salary": 3800,
+      "why": "subs in for him 14 of 59 times",
+      "much": "about +5.9 DK",
+      "score": 5.858757062146893,
+      "min": 11.2,
+      "dk": 12.2
+     }
+    ],
+    "estimate": true
+   },
+   {
     "game": "MEM at WAS",
     "time": "2026-11-17T00:00Z",
     "team": "MEM",
@@ -1080,8 +1384,8 @@
       "why": "18 minutes, up from 8",
       "much": "+13.3 DK without him (3 games)",
       "score": 13.3,
-      "min": 17.6,
-      "dk": 21.2
+      "min": 19.6,
+      "dk": 23.6
      },
      {
       "player": "Cedric Coward",
@@ -1089,8 +1393,8 @@
       "why": "32 minutes, up from 28",
       "much": "+10.0 DK without him (3 games)",
       "score": 10.0,
-      "min": 29.6,
-      "dk": 38.3
+      "min": 30.5,
+      "dk": 39.4
      },
      {
       "player": "Javon Small",
@@ -1098,36 +1402,11 @@
       "why": "same minutes, more production",
       "much": "+10.0 DK without him (2 games)",
       "score": 10.0,
-      "min": 22.0,
-      "dk": 24.1
+      "min": 23.2,
+      "dk": 25.4
      }
     ],
     "estimate": false
-   },
-   {
-    "game": "MEM at WAS",
-    "time": "2026-11-17T00:00Z",
-    "team": "MEM",
-    "player": "Isaiah Stewart",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 17.7,
-    "benefits": [
-     {
-      "player": "Cameron Boozer",
-      "salary": 8100,
-      "why": "subs in for him 7 of 39 times",
-      "much": "about +4.3 DK",
-      "score": 4.297961075069509,
-      "min": 33.2,
-      "dk": 45.0
-     }
-    ],
-    "estimate": true
    },
    {
     "game": "MEM at WAS",
@@ -1141,6 +1420,64 @@
     "known": true,
     "changed_at": "",
     "min": 9.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "PHI at BKN",
+    "time": "2026-11-17T00:30Z",
+    "team": "PHI",
+    "player": "LeBron James",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 31.7,
+    "benefits": [
+     {
+      "player": "VJ Edgecombe",
+      "salary": 6300,
+      "why": "same minutes, more production",
+      "much": "+12.7 DK without him (3 games)",
+      "score": 12.7,
+      "min": 36.8,
+      "dk": 34.2
+     },
+     {
+      "player": "Dean Wade",
+      "salary": 4200,
+      "why": "started 3 of 3",
+      "much": "+7.8 DK without him (3 games)",
+      "score": 7.8,
+      "min": 30.8,
+      "dk": 19.1
+     },
+     {
+      "player": "Jabari Walker",
+      "salary": 3800,
+      "why": "16 minutes, up from 12",
+      "much": "+7.3 DK without him (3 games)",
+      "score": 7.3,
+      "min": 10.3,
+      "dk": 9.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "HOU at MIA",
+    "time": "2026-11-17T00:30Z",
+    "team": "HOU",
+    "player": "Steven Adams",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 10.0,
     "benefits": [],
     "estimate": false
    },
@@ -1164,7 +1501,7 @@
       "much": "+15.9 DK without him (1 game)",
       "score": 15.9,
       "min": 25.5,
-      "dk": 23.5
+      "dk": 23.6
      },
      {
       "player": "Ryan Conwell",
@@ -1173,7 +1510,7 @@
       "much": "+14.9 DK without him (2 games)",
       "score": 14.9,
       "min": 25.7,
-      "dk": 18.9
+      "dk": 18.8
      },
      {
       "player": "Davion Mitchell",
@@ -1183,6 +1520,74 @@
       "score": 13.7,
       "min": 37.6,
       "dk": 36.6
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "HOU at MIA",
+    "time": "2026-11-17T00:30Z",
+    "team": "HOU",
+    "player": "Amen Thompson",
+    "status": "Questionable",
+    "reason": "Left Knee Soreness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 33.0,
+    "benefits": [
+     {
+      "player": "Tari Eason",
+      "salary": 5300,
+      "why": "subs in for him 19 of 64 times",
+      "much": "about +9.7 DK",
+      "score": 9.672470238095238,
+      "min": 31.5,
+      "dk": 31.1
+     }
+    ],
+    "estimate": true
+   },
+   {
+    "game": "PHI at BKN",
+    "time": "2026-11-17T00:30Z",
+    "team": "PHI",
+    "player": "Joel Embiid",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "Out",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "min": 29.3,
+    "benefits": [
+     {
+      "player": "Dean Wade",
+      "salary": 4200,
+      "why": "started 2 of 3",
+      "much": "+15.5 DK without him (3 games)",
+      "score": 15.5,
+      "min": 30.8,
+      "dk": 19.1
+     },
+     {
+      "player": "Jabari Walker",
+      "salary": 3800,
+      "why": "started 1 of 2",
+      "much": "+11.1 DK without him (2 games)",
+      "score": 11.1,
+      "min": 10.3,
+      "dk": 9.4
+     },
+     {
+      "player": "Tyrese Maxey",
+      "salary": 8800,
+      "why": "same minutes, more production",
+      "much": "+7.5 DK without him (3 games)",
+      "score": 7.5,
+      "min": 38.0,
+      "dk": 46.2
      }
     ],
     "estimate": false
@@ -1207,7 +1612,7 @@
       "much": "+8.1 DK without him (4 games)",
       "score": 8.1,
       "min": 25.5,
-      "dk": 23.5
+      "dk": 23.6
      },
      {
       "player": "Bam Adebayo",
@@ -1360,8 +1765,8 @@
       "why": "started 2 of 2",
       "much": "+16.0 DK without him (2 games)",
       "score": 16.0,
-      "min": 26.9,
-      "dk": 33.2
+      "min": 28.4,
+      "dk": 35.1
      },
      {
       "player": "Taylor Hendricks",
@@ -1369,8 +1774,8 @@
       "why": "16 minutes, up from 10",
       "much": "+9.2 DK without him (2 games)",
       "score": 9.2,
-      "min": 17.6,
-      "dk": 21.2
+      "min": 19.6,
+      "dk": 23.6
      },
      {
       "player": "Kris Murray",
@@ -1378,8 +1783,8 @@
       "why": "20 minutes, up from 9",
       "much": "+8.2 DK without him (2 games)",
       "score": 8.2,
-      "min": 7.5,
-      "dk": 7.0
+      "min": 9.3,
+      "dk": 8.7
      }
     ],
     "estimate": false
@@ -1516,6 +1921,40 @@
    {
     "game": "MEM at WAS",
     "time": "2026-11-17T00:00Z",
+    "team": "WAS",
+    "player": "Justin Champagnie",
+    "status": "Out",
+    "reason": "Right Foot Surgery",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 17.7,
+    "benefits": [
+     {
+      "player": "Alex Sarr",
+      "salary": 6200,
+      "why": "29 minutes, up from 24",
+      "much": "+8.2 DK without him (9 games)",
+      "score": 8.2,
+      "min": 26.5,
+      "dk": 27.2
+     },
+     {
+      "player": "Anthony Davis",
+      "salary": 9000,
+      "why": "same minutes, more production",
+      "much": "+6.1 DK without him (8 games)",
+      "score": 6.1,
+      "min": 31.4,
+      "dk": 41.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "MEM at WAS",
+    "time": "2026-11-17T00:00Z",
     "team": "MEM",
     "player": "Scotty Pippen Jr.",
     "status": "Out",
@@ -1532,8 +1971,8 @@
       "why": "14 minutes, up from 5",
       "much": "+16.8 DK without him (6 games)",
       "score": 16.8,
-      "min": 17.6,
-      "dk": 21.2
+      "min": 19.6,
+      "dk": 23.6
      },
      {
       "player": "Cam Spencer",
@@ -1541,8 +1980,119 @@
       "why": "23 minutes, up from 18",
       "much": "+5.8 DK without him (8 games)",
       "score": 5.8,
-      "min": 26.9,
-      "dk": 33.2
+      "min": 28.4,
+      "dk": 35.1
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "HOU at MIA",
+    "time": "2026-11-17T00:30Z",
+    "team": "HOU",
+    "player": "Clint Capela",
+    "status": "Out",
+    "reason": "Right Ankle Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 20.7,
+    "benefits": [
+     {
+      "player": "Jabari Smith",
+      "salary": 6300,
+      "why": "projected 32 minutes tonight",
+      "much": "+6.0 DK projected vs. last 3",
+      "score": 5.983333333333331,
+      "min": 32.3,
+      "dk": 29.4
+     },
+     {
+      "player": "Kevin Durant",
+      "salary": 7500,
+      "why": "projected 36 minutes tonight",
+      "much": "+4.8 DK projected vs. last 3",
+      "score": 4.7833333333333385,
+      "min": 35.8,
+      "dk": 40.2
+     },
+     {
+      "player": "Tari Eason",
+      "salary": 5300,
+      "why": "projected 32 minutes tonight, up from 25",
+      "much": "+4.4 DK projected vs. last 3",
+      "score": 4.350000000000001,
+      "min": 31.5,
+      "dk": 31.1
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "HOU at MIA",
+    "time": "2026-11-17T00:30Z",
+    "team": "HOU",
+    "player": "Marcus Smart",
+    "status": "Out",
+    "reason": "League Suspension",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 18.0,
+    "benefits": [
+     {
+      "player": "Bogdan Bogdanovic",
+      "salary": 3300,
+      "why": "16 minutes, up from 10",
+      "much": "+14.7 DK without him (5 games)",
+      "score": 14.7,
+      "min": 15.9,
+      "dk": 13.5
+     },
+     {
+      "player": "Tari Eason",
+      "salary": 5300,
+      "why": "32 minutes, up from 21",
+      "much": "+9.6 DK without him (5 games)",
+      "score": 9.6,
+      "min": 31.5,
+      "dk": 31.1
+     },
+     {
+      "player": "Reed Sheppard",
+      "salary": 4500,
+      "why": "24 minutes, up from 17",
+      "much": "+9.5 DK without him (5 games)",
+      "score": 9.5,
+      "min": 21.7,
+      "dk": 20.2
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "PHI at BKN",
+    "time": "2026-11-17T00:30Z",
+    "team": "PHI",
+    "player": "Adem Bona",
+    "status": "Out",
+    "reason": "Cervical Spine Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 17.0,
+    "benefits": [
+     {
+      "player": "Jabari Walker",
+      "salary": 3800,
+      "why": "18 minutes, up from 8",
+      "much": "+10.2 DK without him (5 games)",
+      "score": 10.2,
+      "min": 10.3,
+      "dk": 9.4
      }
     ],
     "estimate": false
@@ -1956,6 +2506,11 @@
     "status": "Out"
    },
    {
+    "player": "Reece Beekman",
+    "team": "WAS",
+    "status": "Out"
+   },
+   {
     "player": "Nae'Qwan Tomlin",
     "team": "CLE",
     "status": "Out"
@@ -1963,6 +2518,16 @@
    {
     "player": "Richie Saunders",
     "team": "MEM",
+    "status": "Out"
+   },
+   {
+    "player": "Tristan Vukcevic",
+    "team": "WAS",
+    "status": "Out"
+   },
+   {
+    "player": "Jamir Watkins",
+    "team": "WAS",
     "status": "Out"
    },
    {
@@ -1978,6 +2543,16 @@
    {
     "player": "Noah Penda",
     "team": "ORL",
+    "status": "Out"
+   },
+   {
+    "player": "Dominick Barlow",
+    "team": "PHI",
+    "status": "Out"
+   },
+   {
+    "player": "Ariel Hukporti",
+    "team": "PHI",
     "status": "Out"
    },
    {
