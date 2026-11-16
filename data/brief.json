@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updated": "11:53 AM ET",
+ "updated": "12:54 PM ET",
  "games": 7,
  "pending": [
   "WAS",
@@ -46,6 +46,10 @@
        "min": 30.0
       },
       {
+       "player": "Jaylon Tyson",
+       "min": 29.0
+      },
+      {
        "player": "Sam Merrill",
        "min": 22.0
       }
@@ -53,16 +57,12 @@
      "q": [
       {
        "player": "Peyton Watson",
-       "min": 26.8
-      },
-      {
-       "player": "Jaylon Tyson",
-       "min": 26.2
+       "min": 32.6
       }
      ]
     }
    },
-   "key": "Evan Mobley and Sam Merrill are out, so Tyrese Proctor and James Harden and Thomas Bryant should play more than usual."
+   "key": "Evan Mobley and Jaylon Tyson are out, so Tyrese Proctor and James Harden and Thomas Bryant should play more than usual."
   },
   {
    "away": "MEM",
@@ -176,16 +176,16 @@
      ]
     },
     "MIA": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Pelle Larsson",
-       "min": 27.5
+       "min": 27.3
       }
-     ]
+     ],
+     "q": []
     }
    },
-   "key": "Giannis Antetokounmpo has the top projection in this game at 53.5 DK points."
+   "key": "Pelle Larsson is out, so Klay Thompson and Ryan Conwell and Davion Mitchell should play more than usual."
   },
   {
    "away": "PHI",
@@ -319,9 +319,195 @@
    "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Jordan Poole and Jeremiah Fears should play more than usual."
   }
  ],
- "changed": [],
- "chg": [],
+ "changed": [
+  {
+   "player": "Pelle Larsson",
+   "team": "MIA",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "12:55 PM"
+  },
+  {
+   "player": "Nikola Jovic",
+   "team": "MIA",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "12:55 PM"
+  },
+  {
+   "player": "Jaylon Tyson",
+   "team": "CLE",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "",
+   "time": "12:55 PM"
+  }
+ ],
+ "chg": [
+  {
+   "key": "Pelle Larsson",
+   "team": "MIA",
+   "head": "Pelle Larsson DOUBTFUL",
+   "st": "Doubtful",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Klay Thompson",
+     "salary": 5500,
+     "much": "+15.9 DK without him (1 game)"
+    },
+    {
+     "player": "Ryan Conwell",
+     "salary": 3700,
+     "much": "+14.9 DK without him (2 games)"
+    }
+   ],
+   "time": "12:55 PM",
+   "size": 23.5
+  },
+  {
+   "key": "Jaylon Tyson",
+   "team": "CLE",
+   "head": "Jaylon Tyson DOUBTFUL",
+   "st": "Doubtful",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Mario Hezonja",
+     "salary": 4700,
+     "much": "+6.3 DK without him (6 games)"
+    }
+   ],
+   "time": "12:55 PM",
+   "size": 19.2
+  },
+  {
+   "key": "Nikola Jovic",
+   "team": "MIA",
+   "head": "Nikola Jovic QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Klay Thompson",
+     "salary": 5500,
+     "much": "+8.1 DK without him (4 games)"
+    },
+    {
+     "player": "Bam Adebayo",
+     "salary": 8200,
+     "much": "+7.1 DK without him (5 games)"
+    }
+   ],
+   "time": "12:55 PM",
+   "size": 4.3
+  }
+ ],
  "sits": [
+  {
+   "team": "CLE",
+   "outs": [
+    {
+     "player": "Evan Mobley",
+     "min": 30.0,
+     "note": "Mobley is out for Cleveland on 11/16 against Chicago and has not played since 11/11. The show said his absence makes Jarrett Allen an elite play and weakens Cleveland's defense for Chicago players such as Josh Giddey and Matas Buzelis.",
+     "new": false
+    },
+    {
+     "player": "Jaylon Tyson",
+     "min": 29.0,
+     "note": "Tyson is questionable for 11/16 after starting and playing 30 and 34 minutes on 11/13 and 11/14. The show called him a good perimeter defender and said his absence would make Josh Giddey and the Cleveland backups more interesting.",
+     "new": true
+    },
+    {
+     "player": "Sam Merrill",
+     "min": 22.0,
+     "note": "Merrill is already ruled out for 11/16, and he has not played since 11/06. His absence keeps the wing minutes open for Meleek Thomas and the other Cleveland reserves.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 81.0,
+   "benefits": [
+    {
+     "player": "Tyrese Proctor",
+     "salary": 6300,
+     "why": "started 1 of 2",
+     "much": "+31.7 DK without them (2 games)",
+     "score": 31.7,
+     "min": 26.3,
+     "dk": 27.7
+    },
+    {
+     "player": "James Harden",
+     "salary": 7200,
+     "why": "same minutes, more production",
+     "much": "+14.2 DK without them (1 game)",
+     "score": 14.2,
+     "min": 33.9,
+     "dk": 38.1
+    },
+    {
+     "player": "Thomas Bryant",
+     "salary": 4500,
+     "why": "started 1 of 2",
+     "much": "+13.3 DK without them (2 games)",
+     "score": 13.3,
+     "min": 20.0,
+     "dk": 21.9
+    }
+   ],
+   "split_of": [
+    "Evan Mobley"
+   ]
+  },
+  {
+   "team": "MIA",
+   "outs": [
+    {
+     "player": "Pelle Larsson",
+     "min": 27.3,
+     "note": "Pelle Larsson missed Miami's game on November 14 and has not played since November 10. The show said he is questionable again for Monday, November 16, with an illness.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 27.3,
+   "benefits": [
+    {
+     "player": "Klay Thompson",
+     "salary": 5500,
+     "why": "same minutes, more production",
+     "much": "+15.9 DK without him (1 game)",
+     "score": 15.9,
+     "min": 25.5,
+     "dk": 23.5
+    },
+    {
+     "player": "Ryan Conwell",
+     "salary": 3700,
+     "why": "30 minutes, up from 12",
+     "much": "+14.9 DK without him (2 games)",
+     "score": 14.9,
+     "min": 25.7,
+     "dk": 18.9
+    },
+    {
+     "player": "Davion Mitchell",
+     "salary": 7100,
+     "why": "same minutes, more production",
+     "much": "+13.7 DK without him (2 games)",
+     "score": 13.7,
+     "min": 37.6,
+     "dk": 36.6
+    }
+   ],
+   "split_of": [
+    "Pelle Larsson"
+   ]
+  },
   {
    "team": "NOP",
    "outs": [
@@ -354,7 +540,7 @@
      "much": "+15.1 DK without them (2 games)",
      "score": 15.1,
      "min": 37.1,
-     "dk": 35.4
+     "dk": 35.5
     },
     {
      "player": "Jordan Poole",
@@ -363,7 +549,7 @@
      "much": "+7.3 DK without them (2 games)",
      "score": 7.3,
      "min": 24.0,
-     "dk": 22.7
+     "dk": 22.6
     },
     {
      "player": "Jeremiah Fears",
@@ -379,58 +565,6 @@
     "Trey Murphy III",
     "Dejounte Murray",
     "Trendon Watford"
-   ]
-  },
-  {
-   "team": "CLE",
-   "outs": [
-    {
-     "player": "Evan Mobley",
-     "min": 30.0,
-     "note": "Mobley is out for Cleveland on 11/16 against Chicago and has not played since 11/11. The show said his absence makes Jarrett Allen an elite play and weakens Cleveland's defense for Chicago players such as Josh Giddey and Matas Buzelis.",
-     "new": false
-    },
-    {
-     "player": "Sam Merrill",
-     "min": 22.0,
-     "note": "Merrill is already ruled out for 11/16, and he has not played since 11/06. His absence keeps the wing minutes open for Meleek Thomas and the other Cleveland reserves.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 52.0,
-   "benefits": [
-    {
-     "player": "Tyrese Proctor",
-     "salary": 6300,
-     "why": "started 1 of 2",
-     "much": "+31.7 DK without them (2 games)",
-     "score": 31.7,
-     "min": 24.1,
-     "dk": 25.3
-    },
-    {
-     "player": "James Harden",
-     "salary": 7200,
-     "why": "same minutes, more production",
-     "much": "+14.2 DK without them (1 game)",
-     "score": 14.2,
-     "min": 30.8,
-     "dk": 34.6
-    },
-    {
-     "player": "Thomas Bryant",
-     "salary": 4500,
-     "why": "started 1 of 2",
-     "much": "+13.3 DK without them (2 games)",
-     "score": 13.3,
-     "min": 18.8,
-     "dk": 20.5
-    }
-   ],
-   "split_of": [
-    "Evan Mobley",
-    "Sam Merrill"
    ]
   },
   {
@@ -459,7 +593,7 @@
      "much": "+8.8 DK without them (2 games)",
      "score": 8.8,
      "min": 35.0,
-     "dk": 46.2
+     "dk": 46.1
     },
     {
      "player": "Toumani Camara",
@@ -468,7 +602,7 @@
      "much": "+6.1 DK without them (2 games)",
      "score": 6.1,
      "min": 33.3,
-     "dk": 26.3
+     "dk": 26.2
     }
    ],
    "split_of": [
@@ -564,51 +698,6 @@
    ],
    "split_of": [
     "Paolo Banchero"
-   ]
-  },
-  {
-   "team": "MEM",
-   "outs": [
-    {
-     "player": "Ty Jerome",
-     "min": 31.0,
-     "note": "Ty Jerome sat Memphis's game on November 14 after playing 29 minutes on November 13. The show said he is ruled out for Monday, November 16, and that it had wrongly thought he sat on November 14 only because of flight delays.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 31.0,
-   "benefits": [
-    {
-     "player": "Cam Spencer",
-     "salary": 5100,
-     "why": "started 2 of 2",
-     "much": "+16.0 DK without him (2 games)",
-     "score": 16.0,
-     "min": 26.9,
-     "dk": 33.2
-    },
-    {
-     "player": "Taylor Hendricks",
-     "salary": 3900,
-     "why": "16 minutes, up from 10",
-     "much": "+9.2 DK without him (2 games)",
-     "score": 9.2,
-     "min": 17.6,
-     "dk": 21.2
-    },
-    {
-     "player": "Kris Murray",
-     "salary": 3400,
-     "why": "20 minutes, up from 9",
-     "much": "+8.2 DK without him (2 games)",
-     "score": 8.2,
-     "min": 7.5,
-     "dk": 7.0
-    }
-   ],
-   "split_of": [
-    "Ty Jerome"
    ]
   }
  ],
@@ -707,44 +796,44 @@
   {
    "player": "Jarrett Allen",
    "team": "CLE",
-   "own": 34.0,
-   "dk": 30.9,
+   "own": 34.7,
+   "dk": 35.4,
    "salary": 5600
   },
   {
-   "player": "Jaylon Tyson",
-   "team": "CLE",
-   "own": 30.4,
-   "dk": 22.4,
-   "salary": 4600
+   "player": "Yaxel Lendeborg",
+   "team": "GSW",
+   "own": 28.7,
+   "dk": 40.8,
+   "salary": 7700
   },
   {
    "player": "James Harden",
    "team": "CLE",
-   "own": 28.1,
-   "dk": 34.6,
+   "own": 28.4,
+   "dk": 38.1,
    "salary": 7200
   }
  ],
  "leverage": [
   {
+   "player": "Bam Adebayo",
+   "team": "MIA",
+   "own": 7.7,
+   "dk": 45.9,
+   "salary": 8200
+  },
+  {
    "player": "Derik Queen",
    "team": "NOP",
-   "own": 1.0,
+   "own": 2.0,
    "dk": 30.2,
    "salary": 5400
   },
   {
    "player": "Jordan Poole",
    "team": "NOP",
-   "own": 1.0,
-   "dk": 22.7,
-   "salary": 4300
-  },
-  {
-   "player": "Jaylen Wells",
-   "team": "MEM",
-   "own": 7.1,
+   "own": 1.6,
    "dk": 22.6,
    "salary": 4300
   }
@@ -827,8 +916,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "11:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_11_45AM.pdf",
+  "report": "12:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_12_45PM.pdf",
   "pending": [
    "WAS",
    "BOS",
@@ -853,10 +942,35 @@
       "player": "Cameron Boozer",
       "salary": 8100,
       "why": "subs in for him 7 of 41 times",
-      "much": "+7.5 DK projected vs. last 3",
-      "score": 7.450000000000003,
+      "much": "+7.2 DK projected vs. last 3",
+      "score": 7.25,
       "min": 33.2,
-      "dk": 45.2
+      "dk": 45.0
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "CHI at CLE",
+    "time": "2026-11-17T00:00Z",
+    "team": "CLE",
+    "player": "Jaylon Tyson",
+    "status": "Doubtful",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "12:55 PM",
+    "min": 29.0,
+    "benefits": [
+     {
+      "player": "Mario Hezonja",
+      "salary": 4700,
+      "why": "22 minutes, up from 17",
+      "much": "+6.3 DK without him (6 games)",
+      "score": 6.3,
+      "min": 21.1,
+      "dk": 21.9
      }
     ],
     "estimate": false
@@ -908,31 +1022,6 @@
     "game": "CHI at CLE",
     "time": "2026-11-17T00:00Z",
     "team": "CLE",
-    "player": "Jaylon Tyson",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 29.0,
-    "benefits": [
-     {
-      "player": "Mario Hezonja",
-      "salary": 4700,
-      "why": "22 minutes, up from 17",
-      "much": "+6.3 DK without him (6 games)",
-      "score": 6.3,
-      "min": 18.2,
-      "dk": 18.9
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "CHI at CLE",
-    "time": "2026-11-17T00:00Z",
-    "team": "CLE",
     "player": "Peyton Watson",
     "status": "Questionable",
     "reason": "",
@@ -948,8 +1037,8 @@
       "why": "28 minutes, up from 17",
       "much": "+14.4 DK without him (3 games)",
       "score": 14.4,
-      "min": 18.2,
-      "dk": 18.9
+      "min": 21.1,
+      "dk": 21.9
      },
      {
       "player": "Tyrese Proctor",
@@ -957,8 +1046,8 @@
       "why": "started 2 of 3",
       "much": "+12.8 DK without him (3 games)",
       "score": 12.8,
-      "min": 24.1,
-      "dk": 25.3
+      "min": 26.3,
+      "dk": 27.7
      },
      {
       "player": "Craig Porter Jr.",
@@ -966,8 +1055,8 @@
       "why": "17 minutes, up from 10",
       "much": "+7.0 DK without him (3 games)",
       "score": 7.0,
-      "min": 15.6,
-      "dk": 12.5
+      "min": 17.6,
+      "dk": 14.2
      }
     ],
     "estimate": false
@@ -1033,9 +1122,9 @@
       "salary": 8100,
       "why": "subs in for him 7 of 39 times",
       "much": "about +4.3 DK",
-      "score": 4.31706312429204,
+      "score": 4.297961075069509,
       "min": 33.2,
-      "dk": 45.2
+      "dk": 45.0
      }
     ],
     "estimate": true
@@ -1060,12 +1149,12 @@
     "time": "2026-11-17T00:30Z",
     "team": "MIA",
     "player": "Pelle Larsson",
-    "status": "Questionable",
+    "status": "Doubtful",
     "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "12:55 PM",
     "min": 27.3,
     "benefits": [
      {
@@ -1074,8 +1163,8 @@
       "why": "same minutes, more production",
       "much": "+15.9 DK without him (1 game)",
       "score": 15.9,
-      "min": 26.1,
-      "dk": 24.3
+      "min": 25.5,
+      "dk": 23.5
      },
      {
       "player": "Ryan Conwell",
@@ -1083,8 +1172,8 @@
       "why": "30 minutes, up from 12",
       "much": "+14.9 DK without him (2 games)",
       "score": 14.9,
-      "min": 21.6,
-      "dk": 15.8
+      "min": 25.7,
+      "dk": 18.9
      },
      {
       "player": "Davion Mitchell",
@@ -1092,8 +1181,51 @@
       "why": "same minutes, more production",
       "much": "+13.7 DK without him (2 games)",
       "score": 13.7,
-      "min": 35.0,
-      "dk": 34.0
+      "min": 37.6,
+      "dk": 36.6
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "HOU at MIA",
+    "time": "2026-11-17T00:30Z",
+    "team": "MIA",
+    "player": "Nikola Jovic",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:55 PM",
+    "min": 10.0,
+    "benefits": [
+     {
+      "player": "Klay Thompson",
+      "salary": 5500,
+      "why": "28 minutes, up from 22",
+      "much": "+8.1 DK without him (4 games)",
+      "score": 8.1,
+      "min": 25.5,
+      "dk": 23.5
+     },
+     {
+      "player": "Bam Adebayo",
+      "salary": 8200,
+      "why": "36 minutes, up from 32",
+      "much": "+7.1 DK without him (5 games)",
+      "score": 7.1,
+      "min": 38.5,
+      "dk": 45.9
+     },
+     {
+      "player": "Davion Mitchell",
+      "salary": 7100,
+      "why": "39 minutes, up from 34",
+      "much": "+6.2 DK without him (5 games)",
+      "score": 6.2,
+      "min": 37.6,
+      "dk": 36.6
      }
     ],
     "estimate": false
@@ -1271,8 +1403,8 @@
       "why": "started 1 of 2",
       "much": "+31.7 DK without him (2 games)",
       "score": 31.7,
-      "min": 24.1,
-      "dk": 25.3
+      "min": 26.3,
+      "dk": 27.7
      },
      {
       "player": "James Harden",
@@ -1280,8 +1412,8 @@
       "why": "same minutes, more production",
       "much": "+14.2 DK without him (1 game)",
       "score": 14.2,
-      "min": 30.8,
-      "dk": 34.6
+      "min": 33.9,
+      "dk": 38.1
      },
      {
       "player": "Thomas Bryant",
@@ -1289,8 +1421,8 @@
       "why": "started 1 of 2",
       "much": "+13.3 DK without him (2 games)",
       "score": 13.3,
-      "min": 18.8,
-      "dk": 20.5
+      "min": 20.0,
+      "dk": 21.9
      }
     ],
     "estimate": false
@@ -1357,8 +1489,8 @@
       "why": "26 minutes, up from 15",
       "much": "+15.1 DK without him (5 games)",
       "score": 15.1,
-      "min": 24.1,
-      "dk": 25.3
+      "min": 26.3,
+      "dk": 27.7
      },
      {
       "player": "Craig Porter Jr.",
@@ -1366,8 +1498,8 @@
       "why": "17 minutes, up from 8",
       "much": "+9.8 DK without him (4 games)",
       "score": 9.8,
-      "min": 15.6,
-      "dk": 12.5
+      "min": 17.6,
+      "dk": 14.2
      },
      {
       "player": "Thomas Bryant",
@@ -1375,8 +1507,8 @@
       "why": "18 minutes, up from 11",
       "much": "+8.1 DK without him (4 games)",
       "score": 8.1,
-      "min": 18.8,
-      "dk": 20.5
+      "min": 20.0,
+      "dk": 21.9
      }
     ],
     "estimate": false
@@ -1537,7 +1669,7 @@
       "much": "+9.9 DK without him (5 games)",
       "score": 9.9,
       "min": 37.1,
-      "dk": 35.4
+      "dk": 35.5
      },
      {
       "player": "Karlo Matkovic",
@@ -1586,10 +1718,10 @@
       "player": "Will Richard",
       "salary": 3800,
       "why": "started, 30 minutes (11/13)",
-      "much": "+4.5 DK projected vs. last 3",
-      "score": 4.466666666666667,
+      "much": "+4.8 DK projected vs. last 3",
+      "score": 4.7666666666666675,
       "min": 25.5,
-      "dk": 16.8
+      "dk": 17.1
      }
     ],
     "estimate": false
@@ -1639,7 +1771,7 @@
       "much": "+6.4 DK without him (6 games)",
       "score": 6.4,
       "min": 35.0,
-      "dk": 46.2
+      "dk": 46.1
      },
      {
       "player": "Toumani Camara",
@@ -1648,7 +1780,7 @@
       "much": "+6.4 DK without him (6 games)",
       "score": 6.4,
       "min": 33.3,
-      "dk": 26.3
+      "dk": 26.2
      }
     ],
     "estimate": false
@@ -1682,7 +1814,7 @@
       "much": "+9.0 DK without him (5 games)",
       "score": 9.0,
       "min": 24.0,
-      "dk": 22.7
+      "dk": 22.6
      },
      {
       "player": "Saddiq Bey",
@@ -1691,7 +1823,7 @@
       "much": "+7.5 DK without him (7 games)",
       "score": 7.5,
       "min": 37.1,
-      "dk": 35.4
+      "dk": 35.5
      }
     ],
     "estimate": false
@@ -1722,10 +1854,10 @@
       "player": "Jordan Poole",
       "salary": 4300,
       "why": "projected 24 minutes tonight, up from 21",
-      "much": "+1.0 DK projected vs. last 3",
-      "score": 1.0333333333333314,
+      "much": "more minutes",
+      "score": 0.9333333333333336,
       "min": 24.0,
-      "dk": 22.7
+      "dk": 22.6
      },
      {
       "player": "Derik Queen",
@@ -1809,9 +1941,9 @@
       "salary": 7300,
       "why": "projected 32 minutes tonight, up from 29",
       "much": "more minutes",
-      "score": 0.7333333333333343,
+      "score": 0.4333333333333371,
       "min": 32.1,
-      "dk": 36.4
+      "dk": 36.1
      }
     ],
     "estimate": false
