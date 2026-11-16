@@ -2,7 +2,7 @@
  "updated": "2026-11-16",
  "brief": {
   "date": "2026-11-16",
-  "updated": "4:53 PM ET",
+  "updated": "5:25 PM ET",
   "games": 7,
   "pending": [],
   "first_report": "5:25 AM",
@@ -146,13 +146,13 @@
       "q": []
      },
      "BOS": {
-      "out": [],
-      "q": [
+      "out": [
        {
         "player": "Neemias Queta",
-        "min": 23.1
+        "min": 22.7
        }
-      ]
+      ],
+      "q": []
      }
     },
     "key": "Paolo Banchero is out, so Jamal Cain and Franz Wagner and Desmond Bane should play more than usual."
@@ -162,11 +162,11 @@
     "home": "MIA",
     "time": "2026-11-17T00:30Z",
     "slate": "main",
-    "ou": 231.5,
+    "ou": 232.5,
     "fav": "HOU",
-    "line": 2.5,
+    "line": 1.5,
     "away_pts": 117.0,
-    "home_pts": 114.5,
+    "home_pts": 115.5,
     "tags": [
      "Close game",
      "HOU on a back-to-back"
@@ -207,11 +207,11 @@
     "home": "BKN",
     "time": "2026-11-17T00:30Z",
     "slate": "main",
-    "ou": 225.5,
+    "ou": 226.5,
     "fav": "PHI",
     "line": 4.5,
-    "away_pts": 115.0,
-    "home_pts": 110.5,
+    "away_pts": 115.5,
+    "home_pts": 111.0,
     "tags": [
      "PHI on a back-to-back"
     ],
@@ -246,11 +246,11 @@
     "home": "MIN",
     "time": "2026-11-17T01:00Z",
     "slate": "main",
-    "ou": 227.5,
+    "ou": 228.5,
     "fav": "MIN",
     "line": 2.5,
-    "away_pts": 112.5,
-    "home_pts": 115.0,
+    "away_pts": 113.0,
+    "home_pts": 115.5,
     "tags": [
      "Close game"
     ],
@@ -345,6 +345,14 @@
   ],
   "changed": [
    {
+    "player": "Neemias Queta",
+    "team": "BOS",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Rest",
+    "time": "5:26 PM"
+   },
+   {
     "player": "LeBron James",
     "team": "PHI",
     "status": "Out",
@@ -415,14 +423,6 @@
     "was": "",
     "why": "Illness",
     "time": "12:55 PM"
-   },
-   {
-    "player": "Jaylon Tyson",
-    "team": "CLE",
-    "status": "Doubtful",
-    "was": "Questionable",
-    "why": "",
-    "time": "12:55 PM"
    }
   ],
   "chg": [
@@ -467,6 +467,27 @@
     ],
     "time": "12:55 PM",
     "size": 23.5
+   },
+   {
+    "key": "Neemias Queta",
+    "team": "BOS",
+    "head": "Neemias Queta OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Luka Garza",
+      "salary": 3800,
+      "much": "+11.4 DK projected vs. last 3"
+     },
+     {
+      "player": "Mitchell Robinson",
+      "salary": 3900,
+      "much": "+8.5 DK projected vs. last 3"
+     }
+    ],
+    "time": "5:26 PM",
+    "size": 22.9
    },
    {
     "key": "Jaylon Tyson",
@@ -536,27 +557,6 @@
     ],
     "time": "1:54 PM",
     "size": 16.4
-   },
-   {
-    "key": "Neemias Queta",
-    "team": "BOS",
-    "head": "Neemias Queta QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Mitchell Robinson",
-      "salary": 3900,
-      "much": "about +7.4 DK if he sits (estimate)"
-     },
-     {
-      "player": "Luka Garza",
-      "salary": 3800,
-      "much": "about +5.9 DK if he sits (estimate)"
-     }
-    ],
-    "time": "1:54 PM",
-    "size": 11.5
    },
    {
     "key": "Tre Johnson",
@@ -808,6 +808,40 @@
     ]
    },
    {
+    "team": "BOS",
+    "outs": [
+     {
+      "player": "Neemias Queta",
+      "min": 22.7,
+      "note": "Ruled out tonight (rest).",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 22.7,
+    "benefits": [
+     {
+      "player": "Luka Garza",
+      "salary": 3800,
+      "why": "subs in for him 14 of 59 times",
+      "much": "+11.4 DK projected vs. last 3",
+      "score": 11.399999999999999,
+      "min": 18.7,
+      "dk": 20.4
+     },
+     {
+      "player": "Mitchell Robinson",
+      "salary": 3900,
+      "why": "subs in for him 21 of 59 times",
+      "much": "+8.5 DK projected vs. last 3",
+      "score": 8.516666666666667,
+      "min": 22.3,
+      "dk": 20.6
+     }
+    ],
+    "split_of": []
+   },
+   {
     "team": "NOP",
     "outs": [
      {
@@ -864,49 +898,6 @@
      "Trey Murphy III",
      "Dejounte Murray",
      "Trendon Watford"
-    ]
-   },
-   {
-    "team": "POR",
-    "outs": [
-     {
-      "player": "Ja Morant",
-      "min": 27.0,
-      "note": "Ja Morant is out at least four weeks with a left hamstring strain.",
-      "new": false
-     },
-     {
-      "player": "Chris Youngblood",
-      "min": 18.3,
-      "note": "The show said Chris Youngblood has missed Portland's last one or two games with a foot injury. He has not played since November 10.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 45.3,
-    "benefits": [
-     {
-      "player": "Deni Avdija",
-      "salary": 9300,
-      "why": "39 minutes, 11 assists, extra usage (11/06)",
-      "much": "+8.8 DK without them (2 games)",
-      "score": 8.8,
-      "min": 35.0,
-      "dk": 46.1
-     },
-     {
-      "player": "Toumani Camara",
-      "salary": 5500,
-      "why": "37 minutes, up from 28",
-      "much": "+6.1 DK without them (2 games)",
-      "score": 6.1,
-      "min": 33.3,
-      "dk": 26.2
-     }
-    ],
-    "split_of": [
-     "Ja Morant",
-     "Chris Youngblood"
     ]
    }
   ],
@@ -1026,13 +1017,6 @@
   ],
   "leverage": [
    {
-    "player": "Tari Eason",
-    "team": "HOU",
-    "own": 0.9,
-    "dk": 32.2,
-    "salary": 5300
-   },
-   {
     "player": "Bam Adebayo",
     "team": "MIA",
     "own": 6.0,
@@ -1045,6 +1029,13 @@
     "own": 9.0,
     "dk": 53.8,
     "salary": 9500
+   },
+   {
+    "player": "Derik Queen",
+    "team": "NOP",
+    "own": 0.9,
+    "dk": 30.3,
+    "salary": 5400
    }
   ],
   "last": {
@@ -1125,10 +1116,44 @@
    "injuries": []
   },
   "injuries": {
-   "report": "04:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_04_45PM.pdf",
+   "report": "05:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_05_15PM.pdf",
    "pending": [],
    "rows": [
+    {
+     "game": "ORL at BOS",
+     "time": "2026-11-17T00:00Z",
+     "team": "BOS",
+     "player": "Neemias Queta",
+     "status": "Out",
+     "reason": "Rest",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "5:26 PM",
+     "min": 22.7,
+     "benefits": [
+      {
+       "player": "Luka Garza",
+       "salary": 3800,
+       "why": "subs in for him 14 of 59 times",
+       "much": "+11.4 DK projected vs. last 3",
+       "score": 11.399999999999999,
+       "min": 18.7,
+       "dk": 20.4
+      },
+      {
+       "player": "Mitchell Robinson",
+       "salary": 3900,
+       "why": "subs in for him 21 of 59 times",
+       "much": "+8.5 DK projected vs. last 3",
+       "score": 8.516666666666667,
+       "min": 22.3,
+       "dk": 20.6
+      }
+     ],
+     "estimate": false
+    },
     {
      "game": "MEM at WAS",
      "time": "2026-11-17T00:00Z",
@@ -1332,40 +1357,6 @@
       }
      ],
      "estimate": false
-    },
-    {
-     "game": "ORL at BOS",
-     "time": "2026-11-17T00:00Z",
-     "team": "BOS",
-     "player": "Neemias Queta",
-     "status": "Questionable",
-     "reason": "Rest",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:54 PM",
-     "min": 22.7,
-     "benefits": [
-      {
-       "player": "Mitchell Robinson",
-       "salary": 3900,
-       "why": "subs in for him 21 of 59 times",
-       "much": "about +7.4 DK",
-       "score": 7.435028248587569,
-       "min": 15.3,
-       "dk": 14.1
-      },
-      {
-       "player": "Luka Garza",
-       "salary": 3800,
-       "why": "subs in for him 14 of 59 times",
-       "much": "about +5.9 DK",
-       "score": 5.858757062146893,
-       "min": 11.2,
-       "dk": 12.2
-      }
-     ],
-     "estimate": true
     },
     {
      "game": "MEM at WAS",
@@ -12716,13 +12707,13 @@
   },
   {
    "team": "BOS",
-   "starters": "Jayson Tatum (34), Derrick White (29), Neemias Queta (22), Paul George (30), Jordan Walsh (16)",
-   "bench": "Payton Pritchard (27), Baylor Scheierman (20), Sam Hauser (20), Hugo Gonzalez (13), Mitchell Robinson (18), Devin Carter (12), Luka Garza (13)",
+   "starters": "Jayson Tatum (34), Derrick White (29), Paul George (30), Jordan Walsh (16), Baylor Scheierman (20)",
+   "bench": "Payton Pritchard (27), Sam Hauser (20), Hugo Gonzalez (13), Mitchell Robinson (18), Devin Carter (12), Luka Garza (13), Ron Harper Jr. (7)",
    "backup_c": "Mitchell Robinson",
    "coach": "Joe Mazzulla",
    "notes": "Jaylen Brown is gone, and Paul George is the No. 2 option behind Tatum. Derrick White's team is unconfirmed. Boston has the most back-to-backs (16), including 3 in the fantasy playoffs.",
    "source": "LO-1018",
-   "out": "",
+   "out": "Neemias Queta",
    "depth_through": "2026-11-15",
    "games": 13
   },
@@ -24448,7 +24439,7 @@
   {
    "rank": 368,
    "player": "Ron Harper Jr.",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "BOS",
    "flag": "",
    "change": "",
