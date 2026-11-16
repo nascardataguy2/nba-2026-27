@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updated": "5:30 PM ET",
+ "updated": "5:49 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:25 AM",
@@ -48,12 +48,7 @@
        "min": 22.0
       }
      ],
-     "q": [
-      {
-       "player": "Peyton Watson",
-       "min": 32.6
-      }
-     ]
+     "q": []
     }
    },
    "key": "Evan Mobley and Jaylon Tyson are out, so Tyrese Proctor and James Harden and Thomas Bryant should play more than usual."
@@ -109,12 +104,7 @@
        "min": 17.7
       }
      ],
-     "q": [
-      {
-       "player": "Tre Johnson",
-       "min": 23.1
-      }
-     ]
+     "q": []
     }
    },
    "key": "Ty Jerome and Isaiah Stewart are out, so Cam Spencer and Taylor Hendricks and Kris Murray should play more than usual."
@@ -343,6 +333,54 @@
  ],
  "changed": [
   {
+   "player": "Pelle Larsson",
+   "team": "MIA",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Illness",
+   "time": "5:50 PM"
+  },
+  {
+   "player": "Nikola Jovic",
+   "team": "MIA",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "5:50 PM"
+  },
+  {
+   "player": "Tre Johnson",
+   "team": "WAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Low Back Soreness",
+   "time": "5:50 PM"
+  },
+  {
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "5:50 PM"
+  },
+  {
+   "player": "Jaylon Tyson",
+   "team": "CLE",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "",
+   "time": "5:50 PM"
+  },
+  {
+   "player": "Khalifa Diop",
+   "team": "CLE",
+   "status": "Available",
+   "was": "",
+   "why": "-",
+   "time": "5:50 PM"
+  },
+  {
    "player": "Neemias Queta",
    "team": "BOS",
    "status": "Out",
@@ -373,54 +411,6 @@
    "was": "",
    "why": "Left Knee Soreness",
    "time": "1:54 PM"
-  },
-  {
-   "player": "Steven Adams",
-   "team": "HOU",
-   "status": "Out",
-   "was": "Available",
-   "why": "",
-   "time": "1:54 PM"
-  },
-  {
-   "player": "Neemias Queta",
-   "team": "BOS",
-   "status": "Questionable",
-   "was": "",
-   "why": "Rest",
-   "time": "1:54 PM"
-  },
-  {
-   "player": "Tre Johnson",
-   "team": "WAS",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "Low Back Soreness",
-   "time": "1:54 PM"
-  },
-  {
-   "player": "Isaiah Stewart",
-   "team": "MEM",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "1:54 PM"
-  },
-  {
-   "player": "Pelle Larsson",
-   "team": "MIA",
-   "status": "Doubtful",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "12:55 PM"
-  },
-  {
-   "player": "Nikola Jovic",
-   "team": "MIA",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "12:55 PM"
   }
  ],
  "chg": [
@@ -446,10 +436,31 @@
    "size": 37.9
   },
   {
+   "key": "CLE",
+   "team": "CLE",
+   "head": "Watson CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Mario Hezonja",
+     "salary": 4700,
+     "much": "+14.4 DK without Watson"
+    },
+    {
+     "player": "Tyrese Proctor",
+     "salary": 6300,
+     "much": "+12.8 DK without Watson"
+    }
+   ],
+   "time": "5:50 PM",
+   "size": 24.3
+  },
+  {
    "key": "Pelle Larsson",
    "team": "MIA",
-   "head": "Pelle Larsson DOUBTFUL",
-   "st": "Doubtful",
+   "head": "Pelle Larsson OUT",
+   "st": "Out",
    "act": "Play",
    "names": [
     {
@@ -463,7 +474,7 @@
      "much": "+14.9 DK without him (2 games)"
     }
    ],
-   "time": "12:55 PM",
+   "time": "5:50 PM",
    "size": 23.5
   },
   {
@@ -490,8 +501,8 @@
   {
    "key": "Jaylon Tyson",
    "team": "CLE",
-   "head": "Jaylon Tyson DOUBTFUL",
-   "st": "Doubtful",
+   "head": "Jaylon Tyson OUT",
+   "st": "Out",
    "act": "Play",
    "names": [
     {
@@ -500,7 +511,7 @@
      "much": "+6.3 DK without him (6 games)"
     }
    ],
-   "time": "12:55 PM",
+   "time": "5:50 PM",
    "size": 19.2
   },
   {
@@ -557,46 +568,25 @@
    "size": 16.4
   },
   {
-   "key": "Tre Johnson",
+   "key": "WAS",
    "team": "WAS",
-   "head": "Tre Johnson QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
+   "head": "Johnson CLEARED",
+   "st": "Probable",
+   "act": "Less value",
    "names": [
     {
      "player": "Will Riley",
      "salary": 3100,
-     "much": "+17.9 DK without him (1 game)"
+     "much": "+17.9 DK without Johnson"
     },
     {
      "player": "Alex Sarr",
      "salary": 6200,
-     "much": "+15.4 DK without him (2 games)"
+     "much": "+15.4 DK without Johnson"
     }
    ],
-   "time": "1:54 PM",
-   "size": 7.8
-  },
-  {
-   "key": "Nikola Jovic",
-   "team": "MIA",
-   "head": "Nikola Jovic QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Klay Thompson",
-     "salary": 5500,
-     "much": "+8.1 DK without him (4 games)"
-    },
-    {
-     "player": "Bam Adebayo",
-     "salary": 8200,
-     "much": "+7.1 DK without him (5 games)"
-    }
-   ],
-   "time": "12:55 PM",
-   "size": 4.3
+   "time": "5:50 PM",
+   "size": 15.5
   }
  ],
  "sits": [
@@ -612,7 +602,7 @@
     {
      "player": "Jaylon Tyson",
      "min": 29.0,
-     "note": "Doubtful tonight.",
+     "note": "Ruled out tonight.",
      "new": true
     },
     {
@@ -779,8 +769,8 @@
      "why": "same minutes, more production",
      "much": "+15.9 DK without him (1 game)",
      "score": 15.9,
-     "min": 25.5,
-     "dk": 23.7
+     "min": 25.9,
+     "dk": 24.1
     },
     {
      "player": "Ryan Conwell",
@@ -788,8 +778,8 @@
      "why": "30 minutes, up from 12",
      "much": "+14.9 DK without him (2 games)",
      "score": 14.9,
-     "min": 25.7,
-     "dk": 19.2
+     "min": 25.1,
+     "dk": 18.8
     },
     {
      "player": "Davion Mitchell",
@@ -797,8 +787,8 @@
      "why": "same minutes, more production",
      "much": "+13.7 DK without him (2 games)",
      "score": 13.7,
-     "min": 37.6,
-     "dk": 37.2
+     "min": 36.8,
+     "dk": 36.4
     }
    ],
    "split_of": [
@@ -1018,7 +1008,7 @@
    "player": "Bam Adebayo",
    "team": "MIA",
    "own": 6.0,
-   "dk": 46.6,
+   "dk": 48.5,
    "salary": 8200
   },
   {
@@ -1114,10 +1104,35 @@
   "injuries": []
  },
  "injuries": {
-  "report": "05:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_05_15PM.pdf",
+  "report": "05:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_05_45PM.pdf",
   "pending": [],
   "rows": [
+   {
+    "game": "CHI at CLE",
+    "time": "2026-11-17T00:00Z",
+    "team": "CLE",
+    "player": "Jaylon Tyson",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Doubtful",
+    "known": true,
+    "changed_at": "5:50 PM",
+    "min": 29.0,
+    "benefits": [
+     {
+      "player": "Mario Hezonja",
+      "salary": 4700,
+      "why": "22 minutes, up from 17",
+      "much": "+6.3 DK without him (6 games)",
+      "score": 6.3,
+      "min": 21.1,
+      "dk": 21.9
+     }
+    ],
+    "estimate": false
+   },
    {
     "game": "ORL at BOS",
     "time": "2026-11-17T00:00Z",
@@ -1205,31 +1220,6 @@
    {
     "game": "CHI at CLE",
     "time": "2026-11-17T00:00Z",
-    "team": "CLE",
-    "player": "Jaylon Tyson",
-    "status": "Doubtful",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "12:55 PM",
-    "min": 29.0,
-    "benefits": [
-     {
-      "player": "Mario Hezonja",
-      "salary": 4700,
-      "why": "22 minutes, up from 17",
-      "much": "+6.3 DK without him (6 games)",
-      "score": 6.3,
-      "min": 21.1,
-      "dk": 21.9
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "CHI at CLE",
-    "time": "2026-11-17T00:00Z",
     "team": "CHI",
     "player": "Jalen Smith",
     "status": "Questionable",
@@ -1266,92 +1256,6 @@
       "score": 12.1,
       "min": 28.0,
       "dk": 16.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MEM at WAS",
-    "time": "2026-11-17T00:00Z",
-    "team": "WAS",
-    "player": "Tre Johnson",
-    "status": "Questionable",
-    "reason": "Low Back Soreness",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "1:54 PM",
-    "min": 29.3,
-    "benefits": [
-     {
-      "player": "Will Riley",
-      "salary": 3100,
-      "why": "16 minutes, up from 6",
-      "much": "+17.9 DK without him (1 game)",
-      "score": 17.9,
-      "min": 8.0,
-      "dk": 5.3
-     },
-     {
-      "player": "Alex Sarr",
-      "salary": 6200,
-      "why": "same minutes, more production",
-      "much": "+15.4 DK without him (2 games)",
-      "score": 15.4,
-      "min": 26.6,
-      "dk": 27.5
-     },
-     {
-      "player": "Bilal Coulibaly",
-      "salary": 4200,
-      "why": "same minutes, more production",
-      "much": "+6.5 DK without him (2 games)",
-      "score": 6.5,
-      "min": 23.0,
-      "dk": 16.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "CHI at CLE",
-    "time": "2026-11-17T00:00Z",
-    "team": "CLE",
-    "player": "Peyton Watson",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Mario Hezonja",
-      "salary": 4700,
-      "why": "28 minutes, up from 17",
-      "much": "+14.4 DK without him (3 games)",
-      "score": 14.4,
-      "min": 21.1,
-      "dk": 21.9
-     },
-     {
-      "player": "Tyrese Proctor",
-      "salary": 6300,
-      "why": "started 2 of 3",
-      "much": "+12.8 DK without him (3 games)",
-      "score": 12.8,
-      "min": 26.3,
-      "dk": 27.7
-     },
-     {
-      "player": "Craig Porter Jr.",
-      "salary": 4300,
-      "why": "17 minutes, up from 10",
-      "much": "+7.0 DK without him (3 games)",
-      "score": 7.0,
-      "min": 17.6,
-      "dk": 14.2
      }
     ],
     "estimate": false
@@ -1415,6 +1319,36 @@
     "estimate": false
    },
    {
+    "game": "MEM at WAS",
+    "time": "2026-11-17T00:00Z",
+    "team": "WAS",
+    "player": "Tre Johnson",
+    "status": "Available",
+    "reason": "Low Back Soreness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:50 PM",
+    "min": 29.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "CHI at CLE",
+    "time": "2026-11-17T00:00Z",
+    "team": "CLE",
+    "player": "Peyton Watson",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:50 PM",
+    "min": 27.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
     "game": "PHI at BKN",
     "time": "2026-11-17T00:30Z",
     "team": "PHI",
@@ -1460,6 +1394,49 @@
    {
     "game": "HOU at MIA",
     "time": "2026-11-17T00:30Z",
+    "team": "MIA",
+    "player": "Pelle Larsson",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "Doubtful",
+    "known": true,
+    "changed_at": "5:50 PM",
+    "min": 27.3,
+    "benefits": [
+     {
+      "player": "Klay Thompson",
+      "salary": 5500,
+      "why": "same minutes, more production",
+      "much": "+15.9 DK without him (1 game)",
+      "score": 15.9,
+      "min": 25.9,
+      "dk": 24.1
+     },
+     {
+      "player": "Ryan Conwell",
+      "salary": 3700,
+      "why": "30 minutes, up from 12",
+      "much": "+14.9 DK without him (2 games)",
+      "score": 14.9,
+      "min": 25.1,
+      "dk": 18.8
+     },
+     {
+      "player": "Davion Mitchell",
+      "salary": 7100,
+      "why": "same minutes, more production",
+      "much": "+13.7 DK without him (2 games)",
+      "score": 13.7,
+      "min": 36.8,
+      "dk": 36.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "HOU at MIA",
+    "time": "2026-11-17T00:30Z",
     "team": "HOU",
     "player": "Steven Adams",
     "status": "Out",
@@ -1476,43 +1453,15 @@
     "game": "HOU at MIA",
     "time": "2026-11-17T00:30Z",
     "team": "MIA",
-    "player": "Pelle Larsson",
-    "status": "Doubtful",
+    "player": "Nikola Jovic",
+    "status": "Out",
     "reason": "Illness",
     "new": true,
     "was": "Questionable",
     "known": true,
-    "changed_at": "12:55 PM",
-    "min": 27.3,
-    "benefits": [
-     {
-      "player": "Klay Thompson",
-      "salary": 5500,
-      "why": "same minutes, more production",
-      "much": "+15.9 DK without him (1 game)",
-      "score": 15.9,
-      "min": 25.5,
-      "dk": 23.7
-     },
-     {
-      "player": "Ryan Conwell",
-      "salary": 3700,
-      "why": "30 minutes, up from 12",
-      "much": "+14.9 DK without him (2 games)",
-      "score": 14.9,
-      "min": 25.7,
-      "dk": 19.2
-     },
-     {
-      "player": "Davion Mitchell",
-      "salary": 7100,
-      "why": "same minutes, more production",
-      "much": "+13.7 DK without him (2 games)",
-      "score": 13.7,
-      "min": 37.6,
-      "dk": 37.2
-     }
-    ],
+    "changed_at": "5:50 PM",
+    "min": 10.0,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1579,49 +1528,6 @@
       "score": 7.5,
       "min": 36.7,
       "dk": 46.5
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "HOU at MIA",
-    "time": "2026-11-17T00:30Z",
-    "team": "MIA",
-    "player": "Nikola Jovic",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:55 PM",
-    "min": 10.0,
-    "benefits": [
-     {
-      "player": "Klay Thompson",
-      "salary": 5500,
-      "why": "28 minutes, up from 22",
-      "much": "+8.1 DK without him (4 games)",
-      "score": 8.1,
-      "min": 25.5,
-      "dk": 23.7
-     },
-     {
-      "player": "Bam Adebayo",
-      "salary": 8200,
-      "why": "36 minutes, up from 32",
-      "much": "+7.1 DK without him (5 games)",
-      "score": 7.1,
-      "min": 38.5,
-      "dk": 46.6
-     },
-     {
-      "player": "Davion Mitchell",
-      "salary": 7100,
-      "why": "39 minutes, up from 34",
-      "much": "+6.2 DK without him (5 games)",
-      "score": 6.2,
-      "min": 37.6,
-      "dk": 37.2
      }
     ],
     "estimate": false
@@ -2491,6 +2397,11 @@
    }
   ],
   "minor": [
+   {
+    "player": "Khalifa Diop",
+    "team": "CLE",
+    "status": "Available"
+   },
    {
     "player": "Tobe Awaka",
     "team": "CHI",
