@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updated": "6:15 PM ET",
+ "updated": "6:31 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:25 AM",
@@ -86,16 +86,7 @@
        "min": 12.7
       }
      ],
-     "q": [
-      {
-       "player": "Zach Edey",
-       "min": 20.1
-      },
-      {
-       "player": "Quinten Post",
-       "min": 17.2
-      }
-     ]
+     "q": []
     },
     "WAS": {
      "out": [
@@ -333,6 +324,22 @@
  ],
  "changed": [
   {
+   "player": "Quinten Post",
+   "team": "MEM",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Concussion Protocol",
+   "time": "6:32 PM"
+  },
+  {
+   "player": "Zach Edey",
+   "team": "MEM",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:32 PM"
+  },
+  {
    "player": "Pelle Larsson",
    "team": "MIA",
    "status": "Out",
@@ -394,22 +401,6 @@
    "status": "Out",
    "was": "",
    "why": "",
-   "time": "1:54 PM"
-  },
-  {
-   "player": "Joel Embiid",
-   "team": "PHI",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "",
-   "time": "1:54 PM"
-  },
-  {
-   "player": "Amen Thompson",
-   "team": "HOU",
-   "status": "Questionable",
-   "was": "",
-   "why": "Left Knee Soreness",
    "time": "1:54 PM"
   }
  ],
@@ -497,6 +488,27 @@
    ],
    "time": "5:26 PM",
    "size": 22.9
+  },
+  {
+   "key": "MEM",
+   "team": "MEM",
+   "head": "Edey CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Taylor Hendricks",
+     "salary": 3900,
+     "much": "+13.3 DK without Edey"
+    },
+    {
+     "player": "Cedric Coward",
+     "salary": 6500,
+     "much": "+10.0 DK without Edey"
+    }
+   ],
+   "time": "6:32 PM",
+   "size": 20.9
   },
   {
    "key": "Jaylon Tyson",
@@ -1104,8 +1116,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "06:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_06_00PM.pdf",
+  "report": "06:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_06_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1263,64 +1275,6 @@
    {
     "game": "MEM at WAS",
     "time": "2026-11-17T00:00Z",
-    "team": "MEM",
-    "player": "Zach Edey",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 21.0,
-    "benefits": [
-     {
-      "player": "Taylor Hendricks",
-      "salary": 3900,
-      "why": "18 minutes, up from 8",
-      "much": "+13.3 DK without him (3 games)",
-      "score": 13.3,
-      "min": 19.2,
-      "dk": 23.5
-     },
-     {
-      "player": "Cedric Coward",
-      "salary": 6500,
-      "why": "32 minutes, up from 28",
-      "much": "+10.0 DK without him (3 games)",
-      "score": 10.0,
-      "min": 29.7,
-      "dk": 39.3
-     },
-     {
-      "player": "Javon Small",
-      "salary": 4400,
-      "why": "same minutes, more production",
-      "much": "+10.0 DK without him (2 games)",
-      "score": 10.0,
-      "min": 22.6,
-      "dk": 24.8
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "MEM at WAS",
-    "time": "2026-11-17T00:00Z",
-    "team": "MEM",
-    "player": "Quinten Post",
-    "status": "Questionable",
-    "reason": "Concussion Protocol",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 9.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "MEM at WAS",
-    "time": "2026-11-17T00:00Z",
     "team": "WAS",
     "player": "Tre Johnson",
     "status": "Available",
@@ -1345,6 +1299,21 @@
     "known": true,
     "changed_at": "5:50 PM",
     "min": 27.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "MEM at WAS",
+    "time": "2026-11-17T00:00Z",
+    "team": "MEM",
+    "player": "Zach Edey",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:32 PM",
+    "min": 21.0,
     "benefits": [],
     "estimate": false
    },
@@ -2397,6 +2366,11 @@
    }
   ],
   "minor": [
+   {
+    "player": "Quinten Post",
+    "team": "MEM",
+    "status": "Available"
+   },
    {
     "player": "Khalifa Diop",
     "team": "CLE",
