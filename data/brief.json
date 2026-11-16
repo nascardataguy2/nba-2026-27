@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updated": "8:15 PM ET",
+ "updated": "8:45 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:41 AM",
@@ -272,11 +272,11 @@
    "home": "SAC",
    "time": "2026-11-16T02:00Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 221.5,
    "fav": "OKC",
-   "line": 11.5,
+   "line": 12.5,
    "away_pts": 117.0,
-   "home_pts": 105.5,
+   "home_pts": 104.5,
    "tags": [
     "Blowout risk"
    ],
@@ -305,6 +305,10 @@
     "SAC": {
      "out": [
       {
+       "player": "De'Andre Hunter",
+       "min": 35.7
+      },
+      {
        "player": "Zach LaVine",
        "min": 31.3
       },
@@ -313,18 +317,21 @@
        "min": 24.0
       }
      ],
-     "q": [
-      {
-       "player": "De'Andre Hunter",
-       "min": 41.3
-      }
-     ]
+     "q": []
     }
    },
    "key": "Jalen Williams and Chet Holmgren are out, so Bennett Stirtz and Jared McCain and Isaiah Hartenstein should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "8:46 PM"
+  },
   {
    "player": "Zach LaVine",
    "team": "SAC",
@@ -396,14 +403,6 @@
    "was": "Questionable",
    "why": "Left Ankle Sprain",
    "time": "5:46 PM"
-  },
-  {
-   "player": "Scottie Barnes",
-   "team": "TOR",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Left Groin Strain",
-   "time": "4:54 PM"
   }
  ],
  "chg": [
@@ -481,6 +480,11 @@
      "player": "Emanuel Sharp",
      "salary": 3100,
      "much": "+9.3 DK projected vs. last 3"
+    },
+    {
+     "player": "Leaky Black",
+     "salary": 3400,
+     "much": "+4.8 DK projected vs. last 3"
     }
    ],
    "time": "8:07 PM",
@@ -559,6 +563,27 @@
    ],
    "time": "7:47 PM",
    "size": 24.4
+  },
+  {
+   "key": "De'Andre Hunter",
+   "team": "SAC",
+   "head": "De'Andre Hunter OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Leaky Black",
+     "salary": 3400,
+     "much": "+15.8 DK without him (1 game)"
+    },
+    {
+     "player": "Malik Monk",
+     "salary": 3900,
+     "much": "+7.9 DK without him (1 game)"
+    }
+   ],
+   "time": "8:46 PM",
+   "size": 23.3
   },
   {
    "key": "SAC",
@@ -643,30 +668,66 @@
    ],
    "time": "5:46 PM",
    "size": 15.1
-  },
+  }
+ ],
+ "sits": [
   {
-   "key": "De'Andre Hunter",
    "team": "SAC",
-   "head": "De'Andre Hunter QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
+   "outs": [
+    {
+     "player": "De'Andre Hunter",
+     "min": 35.7,
+     "note": "Ruled out tonight.",
+     "new": true
+    },
+    {
+     "player": "Zach LaVine",
+     "min": 31.3,
+     "note": "Ruled out tonight (illness).",
+     "new": true
+    },
+    {
+     "player": "Precious Achiuwa",
+     "min": 24.0,
+     "note": "The show listed Precious Achiuwa as questionable for Sunday; he missed the November 13 game after leaving November 10 with a lower-leg contusion. The show said Maxime Raynaud remains out.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 91.0,
+   "benefits": [
     {
      "player": "Leaky Black",
      "salary": 3400,
-     "much": "+15.8 DK without him (1 game)"
+     "why": "started that game",
+     "much": "+15.8 DK without them (1 game)",
+     "score": 15.8,
+     "min": 24.4,
+     "dk": 15.1
     },
     {
      "player": "Malik Monk",
      "salary": 3900,
-     "much": "+7.9 DK without him (1 game)"
+     "why": "same minutes, more production",
+     "much": "+7.9 DK without them (1 game)",
+     "score": 7.9,
+     "min": 21.4,
+     "dk": 21.4
+    },
+    {
+     "player": "Emanuel Sharp",
+     "salary": 3100,
+     "why": "31 minutes, up from 16",
+     "much": "+7.6 DK without them (1 game)",
+     "score": 7.6,
+     "min": 31.0,
+     "dk": 17.4
     }
    ],
-   "time": "7:47 PM",
-   "size": 11.6
-  }
- ],
- "sits": [
+   "split_of": [
+    "De'Andre Hunter"
+   ]
+  },
   {
    "team": "UTA",
    "outs": [
@@ -781,39 +842,6 @@
    "split_of": [
     "Fred VanVleet",
     "Marcus Smart"
-   ]
-  },
-  {
-   "team": "SAC",
-   "outs": [
-    {
-     "player": "Zach LaVine",
-     "min": 31.3,
-     "note": "Ruled out tonight (illness).",
-     "new": true
-    },
-    {
-     "player": "Precious Achiuwa",
-     "min": 24.0,
-     "note": "The show listed Precious Achiuwa as questionable for Sunday; he missed the November 13 game after leaving November 10 with a lower-leg contusion. The show said Maxime Raynaud remains out.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 55.3,
-   "benefits": [
-    {
-     "player": "Keegan Murray",
-     "salary": 5400,
-     "why": "40 minutes, up from 25",
-     "much": "+18.3 DK without them (1 game)",
-     "score": 18.3,
-     "min": 40.0,
-     "dk": 30.9
-    }
-   ],
-   "split_of": [
-    "Precious Achiuwa"
    ]
   },
   {
@@ -1070,18 +1098,18 @@
  ],
  "leverage": [
   {
+   "player": "Dylan Cardwell",
+   "team": "SAC",
+   "own": 1.1,
+   "dk": 30.5,
+   "salary": 5000
+  },
+  {
    "player": "Emanuel Sharp",
    "team": "SAC",
    "own": 1.1,
    "dk": 17.4,
    "salary": 3100
-  },
-  {
-   "player": "Darius Acuff Jr.",
-   "team": "SAC",
-   "own": 8.0,
-   "dk": 49.8,
-   "salary": 8900
   },
   {
    "player": "Dylan Harper",
@@ -1190,8 +1218,8 @@
   ]
  },
  "injuries": {
-  "report": "08:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_08_00PM.pdf",
+  "report": "08:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_08_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1727,6 +1755,49 @@
     "game": "OKC at SAC",
     "time": "2026-11-16T02:00Z",
     "team": "SAC",
+    "player": "De'Andre Hunter",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:46 PM",
+    "min": 35.7,
+    "benefits": [
+     {
+      "player": "Leaky Black",
+      "salary": 3400,
+      "why": "started that game",
+      "much": "+15.8 DK without him (1 game)",
+      "score": 15.8,
+      "min": 24.4,
+      "dk": 15.1
+     },
+     {
+      "player": "Malik Monk",
+      "salary": 3900,
+      "why": "same minutes, more production",
+      "much": "+7.9 DK without him (1 game)",
+      "score": 7.9,
+      "min": 21.4,
+      "dk": 21.4
+     },
+     {
+      "player": "Emanuel Sharp",
+      "salary": 3100,
+      "why": "31 minutes, up from 16",
+      "much": "+7.6 DK without him (1 game)",
+      "score": 7.6,
+      "min": 31.0,
+      "dk": 17.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at SAC",
+    "time": "2026-11-16T02:00Z",
+    "team": "SAC",
     "player": "Zach LaVine",
     "status": "Out",
     "reason": "Illness",
@@ -1744,6 +1815,15 @@
       "score": 9.316666666666665,
       "min": 31.0,
       "dk": 17.4
+     },
+     {
+      "player": "Leaky Black",
+      "salary": 3400,
+      "why": "subs in for him 8 of 42 times",
+      "much": "+4.8 DK projected vs. last 3",
+      "score": 4.766666666666666,
+      "min": 24.4,
+      "dk": 15.1
      }
     ],
     "estimate": false
@@ -1769,49 +1849,6 @@
       "score": 18.3,
       "min": 40.0,
       "dk": 30.9
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "OKC at SAC",
-    "time": "2026-11-16T02:00Z",
-    "team": "SAC",
-    "player": "De'Andre Hunter",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "7:47 PM",
-    "min": 35.7,
-    "benefits": [
-     {
-      "player": "Leaky Black",
-      "salary": 3400,
-      "why": "started that game",
-      "much": "+15.8 DK without him (1 game)",
-      "score": 15.8,
-      "min": 1.1,
-      "dk": 0.7
-     },
-     {
-      "player": "Malik Monk",
-      "salary": 3900,
-      "why": "same minutes, more production",
-      "much": "+7.9 DK without him (1 game)",
-      "score": 7.9,
-      "min": 16.8,
-      "dk": 16.8
-     },
-     {
-      "player": "Emanuel Sharp",
-      "salary": 3100,
-      "why": "31 minutes, up from 16",
-      "much": "+7.6 DK without him (1 game)",
-      "score": 7.6,
-      "min": 31.0,
-      "dk": 17.4
      }
     ],
     "estimate": false
