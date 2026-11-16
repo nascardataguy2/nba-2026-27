@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updated": "7:15 PM ET",
+ "updated": "7:45 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:41 AM",
@@ -308,11 +308,16 @@
      ]
     },
     "SAC": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Precious Achiuwa",
-       "min": 25.4
+       "min": 24.0
+      }
+     ],
+     "q": [
+      {
+       "player": "De'Andre Hunter",
+       "min": 37.8
       }
      ]
     }
@@ -321,6 +326,22 @@
   }
  ],
  "changed": [
+  {
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "7:47 PM"
+  },
+  {
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Left Ankle Soreness",
+   "time": "7:47 PM"
+  },
   {
    "player": "Ryan Rollins",
    "team": "MIL",
@@ -384,22 +405,6 @@
    "was": "Questionable",
    "why": "",
    "time": "4:27 PM"
-  },
-  {
-   "player": "Max Christie",
-   "team": "DAL",
-   "status": "Out",
-   "was": "Doubtful",
-   "why": "Left Ankle Sprain",
-   "time": "4:27 PM"
-  },
-  {
-   "player": "De'Aaron Fox",
-   "team": "SAS",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Left Hip Tightness",
-   "time": "3:46 PM"
   }
  ],
  "chg": [
@@ -504,17 +509,28 @@
    "size": 24.6
   },
   {
+   "key": "Precious Achiuwa",
+   "team": "SAC",
+   "head": "Precious Achiuwa OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Keegan Murray",
+     "salary": 5400,
+     "much": "+18.3 DK without him (1 game)"
+    }
+   ],
+   "time": "7:47 PM",
+   "size": 24.4
+  },
+  {
    "key": "SAC",
    "team": "SAC",
    "head": "Murray CLEARED",
    "st": "Probable",
    "act": "Less value",
    "names": [
-    {
-     "player": "Leaky Black",
-     "salary": 3400,
-     "much": "+9.5 DK without Murray"
-    },
     {
      "player": "Malik Monk",
      "salary": 3900,
@@ -586,6 +602,27 @@
    ],
    "time": "5:46 PM",
    "size": 15.1
+  },
+  {
+   "key": "De'Andre Hunter",
+   "team": "SAC",
+   "head": "De'Andre Hunter QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Malik Monk",
+     "salary": 3900,
+     "much": "+7.9 DK without him (1 game)"
+    },
+    {
+     "player": "Emanuel Sharp",
+     "salary": 3100,
+     "much": "+7.6 DK without him (1 game)"
+    }
+   ],
+   "time": "7:47 PM",
+   "size": 11.6
   }
  ],
  "sits": [
@@ -826,7 +863,7 @@
      "much": "+12.0 DK without them (3 games)",
      "score": 12.0,
      "min": 23.7,
-     "dk": 24.3
+     "dk": 24.2
     },
     {
      "player": "AJ Green",
@@ -835,7 +872,7 @@
      "much": "+9.2 DK without them (3 games)",
      "score": 9.2,
      "min": 23.6,
-     "dk": 15.6
+     "dk": 15.4
     }
    ],
    "split_of": [
@@ -868,7 +905,7 @@
      "much": "+22.9 DK without them (1 game)",
      "score": 22.9,
      "min": 30.9,
-     "dk": 32.8
+     "dk": 32.9
     },
     {
      "player": "C.J. McCollum",
@@ -1019,15 +1056,15 @@
   {
    "player": "Cooper Flagg",
    "team": "DAL",
-   "own": 1.9,
+   "own": 1.5,
    "dk": 55.2,
    "salary": 10200
   },
   {
    "player": "Darius Acuff Jr.",
    "team": "SAC",
-   "own": 6.1,
-   "dk": 45.0,
+   "own": 4.6,
+   "dk": 45.6,
    "salary": 8900
   }
  ],
@@ -1130,8 +1167,8 @@
   ]
  },
  "injuries": {
-  "report": "07:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_07_00PM.pdf",
+  "report": "07:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_07_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1591,7 +1628,7 @@
       "much": "+22.9 DK without him (1 game)",
       "score": 22.9,
       "min": 30.9,
-      "dk": 32.8
+      "dk": 32.9
      },
      {
       "player": "C.J. McCollum",
@@ -1634,7 +1671,7 @@
       "much": "+12.0 DK without him (3 games)",
       "score": 12.0,
       "min": 23.7,
-      "dk": 24.3
+      "dk": 24.2
      },
      {
       "player": "AJ Green",
@@ -1643,7 +1680,7 @@
       "much": "+9.2 DK without him (3 games)",
       "score": 9.2,
       "min": 23.6,
-      "dk": 15.6
+      "dk": 15.4
      }
     ],
     "estimate": false
@@ -1666,6 +1703,65 @@
    {
     "game": "OKC at SAC",
     "time": "2026-11-16T02:00Z",
+    "team": "SAC",
+    "player": "Precious Achiuwa",
+    "status": "Out",
+    "reason": "Left Ankle Soreness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "7:47 PM",
+    "min": 24.0,
+    "benefits": [
+     {
+      "player": "Keegan Murray",
+      "salary": 5400,
+      "why": "40 minutes, up from 25",
+      "much": "+18.3 DK without him (1 game)",
+      "score": 18.3,
+      "min": 37.5,
+      "dk": 28.1
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at SAC",
+    "time": "2026-11-16T02:00Z",
+    "team": "SAC",
+    "player": "De'Andre Hunter",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "7:47 PM",
+    "min": 35.7,
+    "benefits": [
+     {
+      "player": "Malik Monk",
+      "salary": 3900,
+      "why": "same minutes, more production",
+      "much": "+7.9 DK without him (1 game)",
+      "score": 7.9,
+      "min": 15.1,
+      "dk": 14.8
+     },
+     {
+      "player": "Emanuel Sharp",
+      "salary": 3100,
+      "why": "31 minutes, up from 16",
+      "much": "+7.6 DK without him (1 game)",
+      "score": 7.6,
+      "min": 16.0,
+      "dk": 8.6
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at SAC",
+    "time": "2026-11-16T02:00Z",
     "team": "OKC",
     "player": "Ajay Mitchell",
     "status": "Questionable",
@@ -1683,7 +1779,7 @@
       "much": "+21.6 DK without him (2 games)",
       "score": 21.6,
       "min": 26.9,
-      "dk": 33.9
+      "dk": 33.8
      },
      {
       "player": "Kenrich Williams",
@@ -1702,40 +1798,6 @@
       "score": 6.7,
       "min": 28.8,
       "dk": 27.2
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "OKC at SAC",
-    "time": "2026-11-16T02:00Z",
-    "team": "SAC",
-    "player": "Precious Achiuwa",
-    "status": "Questionable",
-    "reason": "Left Ankle Soreness",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 24.0,
-    "benefits": [
-     {
-      "player": "Keegan Murray",
-      "salary": 5400,
-      "why": "40 minutes, up from 25",
-      "much": "+18.3 DK without him (1 game)",
-      "score": 18.3,
-      "min": 30.4,
-      "dk": 22.9
-     },
-     {
-      "player": "De'Andre Hunter",
-      "salary": 5800,
-      "why": "42 minutes, up from 32",
-      "much": "+15.9 DK without him (1 game)",
-      "score": 15.9,
-      "min": 33.3,
-      "dk": 24.6
      }
     ],
     "estimate": false
@@ -2126,7 +2188,7 @@
       "much": "+5.2 DK without him (8 games)",
       "score": 5.2,
       "min": 31.6,
-      "dk": 34.3
+      "dk": 34.5
      }
     ],
     "estimate": false
@@ -2151,7 +2213,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.1
      },
      {
       "player": "Bennett Stirtz",
@@ -2194,7 +2256,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.1
      },
      {
       "player": "Bennett Stirtz",
@@ -2255,7 +2317,7 @@
       "much": "+7.8 DK without him (6 games)",
       "score": 7.8,
       "min": 26.9,
-      "dk": 33.9
+      "dk": 33.8
      }
     ],
     "estimate": false
@@ -2280,7 +2342,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.3
+      "dk": 26.1
      },
      {
       "player": "Bennett Stirtz",
