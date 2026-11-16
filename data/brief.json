@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updated": "7:55 PM ET",
+ "updated": "8:05 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:41 AM",
@@ -300,15 +300,14 @@
        "min": 16.3
       }
      ],
-     "q": [
-      {
-       "player": "Ajay Mitchell",
-       "min": 27.5
-      }
-     ]
+     "q": []
     },
     "SAC": {
      "out": [
+      {
+       "player": "Zach LaVine",
+       "min": 31.3
+      },
       {
        "player": "Precious Achiuwa",
        "min": 24.0
@@ -317,7 +316,7 @@
      "q": [
       {
        "player": "De'Andre Hunter",
-       "min": 37.8
+       "min": 41.3
       }
      ]
     }
@@ -326,6 +325,22 @@
   }
  ],
  "changed": [
+  {
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "status": "Out",
+   "was": "",
+   "why": "Illness",
+   "time": "8:07 PM"
+  },
+  {
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Ankle Sprain",
+   "time": "8:07 PM"
+  },
   {
    "player": "De'Andre Hunter",
    "team": "SAC",
@@ -389,22 +404,6 @@
    "was": "Probable",
    "why": "Left Groin Strain",
    "time": "4:54 PM"
-  },
-  {
-   "player": "Scottie Barnes",
-   "team": "TOR",
-   "status": "Probable",
-   "was": "Questionable",
-   "why": "Left Groin Strain",
-   "time": "4:41 PM"
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "4:27 PM"
   }
  ],
  "chg": [
@@ -472,6 +471,43 @@
    "size": 38.0
   },
   {
+   "key": "Zach LaVine",
+   "team": "SAC",
+   "head": "Zach LaVine OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Emanuel Sharp",
+     "salary": 3100,
+     "much": "+9.3 DK projected vs. last 3"
+    }
+   ],
+   "time": "8:07 PM",
+   "size": 32.5
+  },
+  {
+   "key": "OKC",
+   "team": "OKC",
+   "head": "Mitchell CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Isaiah Hartenstein",
+     "salary": 6700,
+     "much": "+21.6 DK without Mitchell"
+    },
+    {
+     "player": "Kenrich Williams",
+     "salary": 4600,
+     "much": "+11.2 DK without Mitchell"
+    }
+   ],
+   "time": "8:07 PM",
+   "size": 30.7
+  },
+  {
    "key": "De'Aaron Fox",
    "team": "SAS",
    "head": "De'Aaron Fox OUT",
@@ -531,6 +567,11 @@
    "st": "Probable",
    "act": "Less value",
    "names": [
+    {
+     "player": "Leaky Black",
+     "salary": 3400,
+     "much": "+9.5 DK without Murray"
+    },
     {
      "player": "Malik Monk",
      "salary": 3900,
@@ -611,14 +652,14 @@
    "act": "If he sits, play",
    "names": [
     {
+     "player": "Leaky Black",
+     "salary": 3400,
+     "much": "+15.8 DK without him (1 game)"
+    },
+    {
      "player": "Malik Monk",
      "salary": 3900,
      "much": "+7.9 DK without him (1 game)"
-    },
-    {
-     "player": "Emanuel Sharp",
-     "salary": 3100,
-     "much": "+7.6 DK without him (1 game)"
     }
    ],
    "time": "7:47 PM",
@@ -740,6 +781,39 @@
    "split_of": [
     "Fred VanVleet",
     "Marcus Smart"
+   ]
+  },
+  {
+   "team": "SAC",
+   "outs": [
+    {
+     "player": "Zach LaVine",
+     "min": 31.3,
+     "note": "Ruled out tonight (illness).",
+     "new": true
+    },
+    {
+     "player": "Precious Achiuwa",
+     "min": 24.0,
+     "note": "The show listed Precious Achiuwa as questionable for Sunday; he missed the November 13 game after leaving November 10 with a lower-leg contusion. The show said Maxime Raynaud remains out.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 55.3,
+   "benefits": [
+    {
+     "player": "Keegan Murray",
+     "salary": 5400,
+     "why": "40 minutes, up from 25",
+     "much": "+18.3 DK without them (1 game)",
+     "score": 18.3,
+     "min": 40.0,
+     "dk": 30.9
+    }
+   ],
+   "split_of": [
+    "Precious Achiuwa"
    ]
   },
   {
@@ -878,57 +952,6 @@
    "split_of": [
     "Ousmane Dieng"
    ]
-  },
-  {
-   "team": "ATL",
-   "outs": [
-    {
-     "player": "Kingston Flemings",
-     "min": 22.7,
-     "note": "Kingston Flemings left the November 13 game after 17 minutes with back tightness, which the show said was called a lumbar sprain. The show said to monitor it because back injuries can be tricky, and that CJ McCollum starts if Flemings misses time.",
-     "new": true
-    },
-    {
-     "player": "Asa Newell",
-     "min": 15.3,
-     "note": "Ruled out tonight.",
-     "new": false
-    }
-   ],
-   "new": true,
-   "lost": 38.0,
-   "benefits": [
-    {
-     "player": "Nickeil Alexander-Walker",
-     "salary": 7100,
-     "why": "same minutes, more production",
-     "much": "+22.9 DK without them (1 game)",
-     "score": 22.9,
-     "min": 30.9,
-     "dk": 32.9
-    },
-    {
-     "player": "C.J. McCollum",
-     "salary": 5500,
-     "why": "32 minutes, up from 26",
-     "much": "+22.2 DK without them (1 game)",
-     "score": 22.2,
-     "min": 27.6,
-     "dk": 29.5
-    },
-    {
-     "player": "Corey Kispert",
-     "salary": 3000,
-     "why": "18 minutes, up from 8",
-     "much": "+9.4 DK without them (1 game)",
-     "score": 9.4,
-     "min": 17.6,
-     "dk": 17.2
-    }
-   ],
-   "split_of": [
-    "Kingston Flemings"
-   ]
   }
  ],
  "hot": [
@@ -1047,25 +1070,25 @@
  ],
  "leverage": [
   {
+   "player": "Emanuel Sharp",
+   "team": "SAC",
+   "own": 1.1,
+   "dk": 17.4,
+   "salary": 3100
+  },
+  {
+   "player": "Darius Acuff Jr.",
+   "team": "SAC",
+   "own": 8.0,
+   "dk": 49.8,
+   "salary": 8900
+  },
+  {
    "player": "Dylan Harper",
    "team": "SAS",
    "own": 2.0,
    "dk": 39.2,
    "salary": 7100
-  },
-  {
-   "player": "Kasparas Jakucionis",
-   "team": "MIL",
-   "own": 3.1,
-   "dk": 19.1,
-   "salary": 3500
-  },
-  {
-   "player": "Cooper Flagg",
-   "team": "DAL",
-   "own": 1.1,
-   "dk": 55.2,
-   "salary": 10200
   }
  ],
  "last": {
@@ -1167,8 +1190,8 @@
   ]
  },
  "injuries": {
-  "report": "07:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_07_45PM.pdf",
+  "report": "08:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_08_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1704,6 +1727,31 @@
     "game": "OKC at SAC",
     "time": "2026-11-16T02:00Z",
     "team": "SAC",
+    "player": "Zach LaVine",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "8:07 PM",
+    "min": 31.3,
+    "benefits": [
+     {
+      "player": "Emanuel Sharp",
+      "salary": 3100,
+      "why": "subs in for him 19 of 42 times",
+      "much": "+9.3 DK projected vs. last 3",
+      "score": 9.316666666666665,
+      "min": 31.0,
+      "dk": 17.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "game": "OKC at SAC",
+    "time": "2026-11-16T02:00Z",
+    "team": "SAC",
     "player": "Precious Achiuwa",
     "status": "Out",
     "reason": "Left Ankle Soreness",
@@ -1719,8 +1767,8 @@
       "why": "40 minutes, up from 25",
       "much": "+18.3 DK without him (1 game)",
       "score": 18.3,
-      "min": 37.5,
-      "dk": 28.1
+      "min": 40.0,
+      "dk": 30.9
      }
     ],
     "estimate": false
@@ -1739,13 +1787,22 @@
     "min": 35.7,
     "benefits": [
      {
+      "player": "Leaky Black",
+      "salary": 3400,
+      "why": "started that game",
+      "much": "+15.8 DK without him (1 game)",
+      "score": 15.8,
+      "min": 1.1,
+      "dk": 0.7
+     },
+     {
       "player": "Malik Monk",
       "salary": 3900,
       "why": "same minutes, more production",
       "much": "+7.9 DK without him (1 game)",
       "score": 7.9,
-      "min": 15.1,
-      "dk": 14.8
+      "min": 16.8,
+      "dk": 16.8
      },
      {
       "player": "Emanuel Sharp",
@@ -1753,51 +1810,8 @@
       "why": "31 minutes, up from 16",
       "much": "+7.6 DK without him (1 game)",
       "score": 7.6,
-      "min": 16.0,
-      "dk": 8.6
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "OKC at SAC",
-    "time": "2026-11-16T02:00Z",
-    "team": "OKC",
-    "player": "Ajay Mitchell",
-    "status": "Questionable",
-    "reason": "Left Ankle Sprain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "min": 26.7,
-    "benefits": [
-     {
-      "player": "Isaiah Hartenstein",
-      "salary": 6700,
-      "why": "32 minutes, up from 24",
-      "much": "+21.6 DK without him (2 games)",
-      "score": 21.6,
-      "min": 26.9,
-      "dk": 33.8
-     },
-     {
-      "player": "Kenrich Williams",
-      "salary": 4600,
-      "why": "30 minutes, up from 18",
-      "much": "+11.2 DK without him (2 games)",
-      "score": 11.2,
-      "min": 25.0,
-      "dk": 20.6
-     },
-     {
-      "player": "Jared McCain",
-      "salary": 6100,
-      "why": "started 2 of 2",
-      "much": "+6.7 DK without him (2 games)",
-      "score": 6.7,
-      "min": 28.8,
-      "dk": 27.2
+      "min": 31.0,
+      "dk": 17.4
      }
     ],
     "estimate": false
@@ -1814,6 +1828,21 @@
     "known": true,
     "changed_at": "2:54 PM",
     "min": 29.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "game": "OKC at SAC",
+    "time": "2026-11-16T02:00Z",
+    "team": "OKC",
+    "player": "Ajay Mitchell",
+    "status": "Available",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:07 PM",
+    "min": 26.7,
     "benefits": [],
     "estimate": false
    },
@@ -2213,7 +2242,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.1
+      "dk": 26.5
      },
      {
       "player": "Bennett Stirtz",
@@ -2231,7 +2260,7 @@
       "much": "+12.9 DK without him (10 games)",
       "score": 12.9,
       "min": 28.8,
-      "dk": 27.2
+      "dk": 27.4
      }
     ],
     "estimate": false
@@ -2256,7 +2285,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.1
+      "dk": 26.5
      },
      {
       "player": "Bennett Stirtz",
@@ -2274,7 +2303,7 @@
       "much": "+12.9 DK without him (10 games)",
       "score": 12.9,
       "min": 28.8,
-      "dk": 27.2
+      "dk": 27.4
      }
     ],
     "estimate": false
@@ -2308,7 +2337,7 @@
       "much": "+9.6 DK without him (6 games)",
       "score": 9.6,
       "min": 28.8,
-      "dk": 27.2
+      "dk": 27.4
      },
      {
       "player": "Isaiah Hartenstein",
@@ -2317,7 +2346,7 @@
       "much": "+7.8 DK without him (6 games)",
       "score": 7.8,
       "min": 26.9,
-      "dk": 33.8
+      "dk": 34.2
      }
     ],
     "estimate": false
@@ -2342,7 +2371,7 @@
       "much": "+14.8 DK without him (10 games)",
       "score": 14.8,
       "min": 25.0,
-      "dk": 26.1
+      "dk": 26.5
      },
      {
       "player": "Bennett Stirtz",
@@ -2360,7 +2389,7 @@
       "much": "+12.9 DK without him (10 games)",
       "score": 12.9,
       "min": 28.8,
-      "dk": 27.2
+      "dk": 27.4
      }
     ],
     "estimate": false
