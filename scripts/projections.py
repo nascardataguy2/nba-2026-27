@@ -710,7 +710,9 @@ def main():
         # Over 240: players the baseline left out (added from box scores) give up minutes first,
         # so a deep-bench player's garbage-time average never cuts the regulars' minutes.
         extra = tot - 240.0
-        for r in sorted([r for r in free if r.get("added")], key=lambda r: r["min"]):
+        # A projected starter is never one of them (Mo Bamba, 11/17: started and played 36 with
+        # Utah's centers out, but was cut to 8 minutes as an "added" player).
+        for r in sorted([r for r in free if r.get("added") and not r.get("start")], key=lambda r: r["min"]):
             if extra <= 0:
                 break
             cut_ = min(r["min"], extra)

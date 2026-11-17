@@ -116,7 +116,9 @@ def canon(players):
         if not hit:
             # First name spelled differently ("Bennedict Mathurin" on 11/13): the only player on
             # his team with that last name.
-            hit = [n for n in names if n.split(" ")[-1] == w[-1]]
+            # Same first initial too, so an injured player with no games (Jordan Miller, 11/17)
+            # is never moved onto a healthy teammate with his last name (Baba Miller).
+            hit = [n for n in names if n.split(" ")[-1] == w[-1] and n[:1] == w[0][:1]]
         if len(hit) == 1:
             p["player"] = shown.get(hit[0]) or " ".join(x[:1].upper() + x[1:] for x in hit[0].split(" "))
             p["matched_from"] = k
