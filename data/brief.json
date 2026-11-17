@@ -500,7 +500,7 @@
     {
      "player": "Jonathan Kuminga",
      "min": 29.3,
-     "note": "Kuminga was listed as questionable for the 11/17 game against Portland. The show said his status was the main news to wait on for that game, and it noted that neither Portland nor Minnesota had posted an injury report yet that morning.",
+     "note": "Kuminga was ruled out for 11/17 against Portland, joining Anthony Edwards on the sidelines. The show said Jaden McDaniels should take on more of the work and that Trey Lyles only becomes a real value play if he moves into the starting lineup, since his roughly 22-minute projection off the bench does not change much.",
      "new": true
     }
    ],
@@ -513,8 +513,8 @@
      "why": "16 minutes, up from 8",
      "much": "+14.6 DK without them (10 games)",
      "score": 14.6,
-     "min": 14.0,
-     "dk": 19.5
+     "min": 15.9,
+     "dk": 19.1
     },
     {
      "player": "Ayo Dosunmu",
@@ -775,13 +775,6 @@
  ],
  "chalk": [
   {
-   "player": "Mo Bamba",
-   "team": "UTA",
-   "own": 60.0,
-   "dk": 33.9,
-   "salary": 5300
-  },
-  {
    "player": "Sandro Mamukelashvili",
    "team": "LAL",
    "own": 60.0,
@@ -798,32 +791,39 @@
   {
    "player": "Luka Doncic",
    "team": "LAL",
-   "own": 43.0,
+   "own": 53.0,
    "dk": 71.1,
    "salary": 12200
+  },
+  {
+   "player": "Mo Bamba",
+   "team": "UTA",
+   "own": 51.0,
+   "dk": 33.9,
+   "salary": 5300
   }
  ],
  "leverage": [
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 3.6,
-   "dk": 31.4,
+   "own": 3.5,
+   "dk": 31.8,
    "salary": 5200
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "own": 8.0,
+   "dk": 60.9,
+   "salary": 10000
   },
   {
    "player": "Paul Reed",
    "team": "DET",
-   "own": 5.7,
+   "own": 6.6,
    "dk": 33.1,
    "salary": 5800
-  },
-  {
-   "player": "Isaiah Collier",
-   "team": "UTA",
-   "own": 0.9,
-   "dk": 24.6,
-   "salary": 4700
   }
  ],
  "last": {
@@ -979,10 +979,10 @@
       "player": "Javonte Green",
       "salary": 3500,
       "why": "subs in for him 10 of 64 times",
-      "much": "+8.4 DK projected vs. last 3",
-      "score": 8.45,
-      "min": 21.9,
-      "dk": 16.7
+      "much": "+8.1 DK projected vs. last 3",
+      "score": 8.05,
+      "min": 22.0,
+      "dk": 16.3
      },
      {
       "player": "Kevin Huerter",
@@ -1289,8 +1289,8 @@
       "why": "16 minutes, up from 8",
       "much": "+14.6 DK without him (10 games)",
       "score": 14.6,
-      "min": 14.0,
-      "dk": 19.5
+      "min": 15.9,
+      "dk": 19.1
      },
      {
       "player": "Ayo Dosunmu",
@@ -1333,7 +1333,7 @@
       "much": "+5.5 DK without him (9 games)",
       "score": 5.5,
       "min": 25.6,
-      "dk": 33.4
+      "dk": 33.0
      }
     ],
     "estimate": false
@@ -1411,15 +1411,6 @@
       "score": 2.916666666666668,
       "min": 29.5,
       "dk": 33.0
-     },
-     {
-      "player": "Toumani Camara",
-      "salary": 5700,
-      "why": "projected 32 minutes tonight",
-      "much": "+3.3 DK projected vs. last 3",
-      "score": 3.2833333333333314,
-      "min": 31.5,
-      "dk": 24.2
      }
     ],
     "estimate": false
@@ -1488,15 +1479,6 @@
       "score": 2.916666666666668,
       "min": 29.5,
       "dk": 33.0
-     },
-     {
-      "player": "Toumani Camara",
-      "salary": 5700,
-      "why": "projected 32 minutes tonight",
-      "much": "+3.3 DK projected vs. last 3",
-      "score": 3.2833333333333314,
-      "min": 31.5,
-      "dk": 24.2
      }
     ],
     "estimate": false
