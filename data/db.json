@@ -2,12 +2,9 @@
  "updated": "2026-11-17",
  "brief": {
   "date": "2026-11-17",
-  "updated": "1:53 PM ET",
+  "updated": "2:53 PM ET",
   "games": 5,
-  "pending": [
-   "POR",
-   "MIN"
-  ],
+  "pending": [],
   "first_report": "5:26 AM",
   "cards": [
    {
@@ -66,26 +63,42 @@
        {
         "player": "Ja Morant",
         "min": 27.0
+       },
+       {
+        "player": "Chris Youngblood",
+        "min": 18.3
+       },
+       {
+        "player": "Vit Krejci",
+        "min": 12.7
        }
       ],
-      "q": []
+      "q": [
+       {
+        "player": "Deni Avdija",
+        "min": 33.2
+       }
+      ]
      },
      "MIN": {
       "out": [
        {
         "player": "Anthony Edwards",
         "min": 34.0
-       }
-      ],
-      "q": [
+       },
        {
         "player": "Jonathan Kuminga",
-        "min": 29.8
+        "min": 29.3
+       },
+       {
+        "player": "Jaylen Clark",
+        "min": 13.7
        }
-      ]
+      ],
+      "q": []
      }
     },
-    "key": "Anthony Edwards is out, so Nah'Shon Hyland and Ayo Dosunmu and LaMelo Ball should play more than usual."
+    "key": "Anthony Edwards and Jonathan Kuminga are out, so Nah'Shon Hyland and Ayo Dosunmu and LaMelo Ball should play more than usual."
    },
    {
     "away": "DET",
@@ -210,6 +223,38 @@
   ],
   "changed": [
    {
+    "player": "Zyon Pullin",
+    "team": "MIN",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Jonathan Kuminga",
+    "team": "MIN",
+    "status": "Out",
+    "was": "",
+    "why": "",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Branden Carlson",
+    "team": "POR",
+    "status": "Available",
+    "was": "",
+    "why": "Face Mask",
+    "time": "2:54 PM"
+   },
+   {
+    "player": "Deni Avdija",
+    "team": "POR",
+    "status": "Questionable",
+    "was": "",
+    "why": "",
+    "time": "2:54 PM"
+   },
+   {
     "player": "Isaiah Joe",
     "team": "DET",
     "status": "Out",
@@ -236,6 +281,22 @@
   ],
   "chg": [
    {
+    "key": "Jonathan Kuminga",
+    "team": "MIN",
+    "head": "Jonathan Kuminga OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Trey Lyles",
+      "salary": 3500,
+      "much": "+11.3 DK projected vs. last 3"
+     }
+    ],
+    "time": "2:54 PM",
+    "size": 27.3
+   },
+   {
     "key": "Scottie Barnes",
     "team": "TOR",
     "head": "Scottie Barnes QUESTIONABLE",
@@ -255,6 +316,27 @@
     ],
     "time": "12:41 PM",
     "size": 23.1
+   },
+   {
+    "key": "Deni Avdija",
+    "team": "POR",
+    "head": "Deni Avdija QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Sidy Cissoko",
+      "salary": 4400,
+      "much": "about +5.2 DK if he sits (estimate)"
+     },
+     {
+      "player": "Scoot Henderson",
+      "salary": 4700,
+      "much": "about +3.8 DK if he sits (estimate)"
+     }
+    ],
+    "time": "2:54 PM",
+    "size": 21.9
    },
    {
     "key": "Isaiah Joe",
@@ -409,6 +491,57 @@
     ]
    },
    {
+    "team": "MIN",
+    "outs": [
+     {
+      "player": "Anthony Edwards",
+      "min": 34.0,
+      "note": "Anthony Edwards remained out on 11/14 and has not played since 10/26. The show said he will be out a long while and does not expect anything to change for Minnesota until he returns.",
+      "new": false
+     },
+     {
+      "player": "Jonathan Kuminga",
+      "min": 29.3,
+      "note": "Kuminga was listed as questionable for the 11/17 game against Portland. The show said his status was the main news to wait on for that game, and it noted that neither Portland nor Minnesota had posted an injury report yet that morning.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 63.3,
+    "benefits": [
+     {
+      "player": "Nah'Shon Hyland",
+      "salary": 4200,
+      "why": "16 minutes, up from 8",
+      "much": "+14.6 DK without them (10 games)",
+      "score": 14.6,
+      "min": 15.9,
+      "dk": 19.1
+     },
+     {
+      "player": "Ayo Dosunmu",
+      "salary": 7000,
+      "why": "started 10 of 10",
+      "much": "+10.3 DK without them (10 games)",
+      "score": 10.3,
+      "min": 38.1,
+      "dk": 39.1
+     },
+     {
+      "player": "LaMelo Ball",
+      "salary": 8500,
+      "why": "28 minutes, up from 25",
+      "much": "+7.0 DK without them (10 games)",
+      "score": 7.0,
+      "min": 31.8,
+      "dk": 42.4
+     }
+    ],
+    "split_of": [
+     "Anthony Edwards"
+    ]
+   },
+   {
     "team": "UTA",
     "outs": [
      {
@@ -468,78 +601,6 @@
     ]
    },
    {
-    "team": "MIN",
-    "outs": [
-     {
-      "player": "Anthony Edwards",
-      "min": 34.0,
-      "note": "Anthony Edwards remained out on 11/14 and has not played since 10/26. The show said he will be out a long while and does not expect anything to change for Minnesota until he returns.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 34.0,
-    "benefits": [
-     {
-      "player": "Nah'Shon Hyland",
-      "salary": 4200,
-      "why": "16 minutes, up from 8",
-      "much": "+14.6 DK without him (10 games)",
-      "score": 14.6,
-      "min": 14.0,
-      "dk": 16.9
-     },
-     {
-      "player": "Ayo Dosunmu",
-      "salary": 7000,
-      "why": "started 10 of 10",
-      "much": "+10.3 DK without him (10 games)",
-      "score": 10.3,
-      "min": 32.4,
-      "dk": 33.2
-     },
-     {
-      "player": "LaMelo Ball",
-      "salary": 8500,
-      "why": "28 minutes, up from 25",
-      "much": "+7.0 DK without him (10 games)",
-      "score": 7.0,
-      "min": 28.0,
-      "dk": 37.3
-     }
-    ],
-    "split_of": [
-     "Anthony Edwards"
-    ]
-   },
-   {
-    "team": "POR",
-    "outs": [
-     {
-      "player": "Ja Morant",
-      "min": 27.0,
-      "note": "Ja Morant remains out for Portland with a left hamstring strain that is expected to keep him out at least four weeks. The show confirmed he will not play on the Nov. 17 slate.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 27.0,
-    "benefits": [
-     {
-      "player": "Donovan Clingan",
-      "salary": 6700,
-      "why": "same minutes, more production",
-      "much": "+5.5 DK without him (9 games)",
-      "score": 5.5,
-      "min": 25.6,
-      "dk": 33.0
-     }
-    ],
-    "split_of": [
-     "Ja Morant"
-    ]
-   },
-   {
     "team": "CHA",
     "outs": [
      {
@@ -582,6 +643,51 @@
     ],
     "split_of": [
      "Dennis Schroder"
+    ]
+   },
+   {
+    "team": "TOR",
+    "outs": [
+     {
+      "player": "Kawhi Leonard",
+      "min": 26.0,
+      "note": "Leonard was ruled out for the 11/17 game against the Knicks. The show said the rest of Toronto is available and that the matchup suits Karl-Anthony Towns better with Leonard out.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 26.0,
+    "benefits": [
+     {
+      "player": "Jamal Shead",
+      "salary": 5500,
+      "why": "25 minutes, up from 20",
+      "much": "+11.3 DK without him (11 games)",
+      "score": 11.3,
+      "min": 23.5,
+      "dk": 21.2
+     },
+     {
+      "player": "Trayce Jackson-Davis",
+      "salary": 3300,
+      "why": "same minutes, more production",
+      "much": "+5.3 DK without him (7 games)",
+      "score": 5.3,
+      "min": 7.6,
+      "dk": 8.9
+     },
+     {
+      "player": "Ja'Kobe Walter",
+      "salary": 5200,
+      "why": "35 minutes, 17 points (11/11)",
+      "much": "+4.8 DK projected vs. last 3",
+      "score": 4.833333333333332,
+      "min": 31.1,
+      "dk": 22.5
+     }
+    ],
+    "split_of": [
+     "Kawhi Leonard"
     ]
    }
   ],
@@ -688,7 +794,7 @@
     "player": "Terrence Shannon Jr.",
     "team": "MIN",
     "own": 60.0,
-    "dk": 23.4,
+    "dk": 28.9,
     "salary": 4100
    },
    {
@@ -703,23 +809,23 @@
    {
     "player": "John Collins",
     "team": "DET",
-    "own": 5.1,
+    "own": 4.7,
     "dk": 31.4,
     "salary": 5200
    },
    {
-    "player": "Paul Reed",
-    "team": "DET",
-    "own": 7.8,
-    "dk": 33.1,
-    "salary": 5800
+    "player": "Trey Lyles",
+    "team": "MIN",
+    "own": 1.0,
+    "dk": 20.8,
+    "salary": 3500
    },
    {
-    "player": "Isaiah Collier",
-    "team": "UTA",
-    "own": 1.0,
-    "dk": 24.6,
-    "salary": 4700
+    "player": "Paul Reed",
+    "team": "DET",
+    "own": 7.0,
+    "dk": 33.1,
+    "salary": 5800
    }
   ],
   "last": {
@@ -806,12 +912,9 @@
    ]
   },
   "injuries": {
-   "report": "01:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_01_45PM.pdf",
-   "pending": [
-    "POR",
-    "MIN"
-   ],
+   "report": "02:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_02_45PM.pdf",
+   "pending": [],
    "rows": [
     {
      "game": "NYK at TOR",
@@ -886,6 +989,31 @@
        "score": 5.716666666666665,
        "min": 37.5,
        "dk": 32.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "MIN",
+     "player": "Jonathan Kuminga",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "2:54 PM",
+     "min": 29.3,
+     "benefits": [
+      {
+       "player": "Trey Lyles",
+       "salary": 3500,
+       "why": "subs in for him 17 of 46 times",
+       "much": "+11.3 DK projected vs. last 3",
+       "score": 11.3,
+       "min": 27.1,
+       "dk": 20.8
       }
      ],
      "estimate": false
@@ -992,6 +1120,70 @@
      "estimate": false
     },
     {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "MIN",
+     "player": "Zyon Pullin",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "2:54 PM",
+     "min": 3.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "POR",
+     "player": "Deni Avdija",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "2:54 PM",
+     "min": 33.3,
+     "benefits": [
+      {
+       "player": "Sidy Cissoko",
+       "salary": 4400,
+       "why": "subs in for him 14 of 61 times",
+       "much": "about +5.2 DK",
+       "score": 5.236047657439757,
+       "min": 24.4,
+       "dk": 16.7
+      },
+      {
+       "player": "Scoot Henderson",
+       "salary": 4700,
+       "why": "subs in for him 10 of 61 times",
+       "much": "about +3.8 DK",
+       "score": 3.7758859260301603,
+       "min": 23.3,
+       "dk": 16.1
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "POR",
+     "player": "Branden Carlson",
+     "status": "Available",
+     "reason": "Face Mask",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "2:54 PM",
+     "min": 10.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
      "game": "UTA at LAC",
      "time": "2026-11-18T03:30Z",
      "team": "LAC",
@@ -1094,6 +1286,74 @@
      "estimate": false
     },
     {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "MIN",
+     "player": "Anthony Edwards",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 34.0,
+     "benefits": [
+      {
+       "player": "Nah'Shon Hyland",
+       "salary": 4200,
+       "why": "16 minutes, up from 8",
+       "much": "+14.6 DK without him (10 games)",
+       "score": 14.6,
+       "min": 15.9,
+       "dk": 19.1
+      },
+      {
+       "player": "Ayo Dosunmu",
+       "salary": 7000,
+       "why": "started 10 of 10",
+       "much": "+10.3 DK without him (10 games)",
+       "score": 10.3,
+       "min": 38.1,
+       "dk": 39.1
+      },
+      {
+       "player": "LaMelo Ball",
+       "salary": 8500,
+       "why": "28 minutes, up from 25",
+       "much": "+7.0 DK without him (10 games)",
+       "score": 7.0,
+       "min": 31.8,
+       "dk": 42.4
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "POR",
+     "player": "Ja Morant",
+     "status": "Out",
+     "reason": "Left Hamstring Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 27.0,
+     "benefits": [
+      {
+       "player": "Donovan Clingan",
+       "salary": 6700,
+       "why": "same minutes, more production",
+       "much": "+5.5 DK without him (9 games)",
+       "score": 5.5,
+       "min": 25.6,
+       "dk": 33.0
+      }
+     ],
+     "estimate": false
+    },
+    {
      "game": "DET at SAS",
      "time": "2026-11-18T01:00Z",
      "team": "DET",
@@ -1132,6 +1392,108 @@
        "score": 7.8,
        "min": 37.0,
        "dk": 42.1
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "POR",
+     "player": "Chris Youngblood",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 18.3,
+     "benefits": [
+      {
+       "player": "Scoot Henderson",
+       "salary": 4700,
+       "why": "projected 23 minutes tonight",
+       "much": "+4.7 DK projected vs. last 3",
+       "score": 4.683333333333335,
+       "min": 23.3,
+       "dk": 16.1
+      },
+      {
+       "player": "Damian Lillard",
+       "salary": 7100,
+       "why": "projected 30 minutes tonight, up from 27",
+       "much": "+2.8 DK projected vs. last 3",
+       "score": 2.8166666666666664,
+       "min": 29.5,
+       "dk": 32.9
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "MIN",
+     "player": "Jaylen Clark",
+     "status": "Out",
+     "reason": "Right Hamstring Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 13.7,
+     "benefits": [
+      {
+       "player": "Terrence Shannon Jr.",
+       "salary": 4100,
+       "why": "30 minutes, up from 21",
+       "much": "+19.9 DK without him (2 games)",
+       "score": 19.9,
+       "min": 29.9,
+       "dk": 28.9
+      },
+      {
+       "player": "Rudy Gobert",
+       "salary": 6100,
+       "why": "34 minutes, up from 28",
+       "much": "+15.3 DK without him (2 games)",
+       "score": 15.3,
+       "min": 32.1,
+       "dk": 31.1
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "POR",
+     "player": "Vit Krejci",
+     "status": "Out",
+     "reason": "Left Ankle Fracture",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "min": 12.7,
+     "benefits": [
+      {
+       "player": "Scoot Henderson",
+       "salary": 4700,
+       "why": "projected 23 minutes tonight",
+       "much": "+4.7 DK projected vs. last 3",
+       "score": 4.683333333333335,
+       "min": 23.3,
+       "dk": 16.1
+      },
+      {
+       "player": "Damian Lillard",
+       "salary": 7100,
+       "why": "projected 30 minutes tonight, up from 27",
+       "much": "+2.8 DK projected vs. last 3",
+       "score": 2.8166666666666664,
+       "min": 29.5,
+       "dk": 32.9
       }
      ],
      "estimate": false
@@ -1366,6 +1728,16 @@
     {
      "player": "Jayden Quaintance",
      "team": "SAS",
+     "status": "Out"
+    },
+    {
+     "player": "Shaedon Sharpe",
+     "team": "POR",
+     "status": "Out"
+    },
+    {
+     "player": "Donte DiVincenzo",
+     "team": "MIN",
      "status": "Out"
     },
     {
@@ -11251,13 +11623,13 @@
   },
   {
    "team": "MIN",
-   "starters": "Jaden McDaniels (33), Ayo Dosunmu (31), Jonathan Kuminga (30), Rudy Gobert (29), LaMelo Ball (28)",
-   "bench": "Terrence Shannon Jr. (23), Bones Hyland (14), Trey Lyles (18), Joan Beringer (17), Jaylen Clark (14)",
+   "starters": "Jaden McDaniels (33), Ayo Dosunmu (31), Rudy Gobert (29), LaMelo Ball (28), Joan Beringer (17)",
+   "bench": "Terrence Shannon Jr. (23), Bones Hyland (14), Trey Lyles (18)",
    "backup_c": "Joan Beringer",
    "coach": "Chris Finch",
    "notes": "Kuminga signed and is expected to start. Naz Reid and Julius Randle are gone. If Gobert sits, Beringer is the backup center to watch. Beringer projects at about 18 minutes behind Gobert. Minnesota plays only 2 games in the week of March 15, which falls in most fantasy playoffs.",
    "source": "LO-1019b",
-   "out": "Anthony Edwards",
+   "out": "Anthony Edwards, Jaylen Clark, Jonathan Kuminga, Zyon Pullin",
    "depth_through": "2026-11-16",
    "games": 14
   },
@@ -11305,7 +11677,7 @@
    "coach": "Micah Nori",
    "notes": "Shaedon Sharpe tore his meniscus and is out for basically the whole season. Holiday moves to the three in a low-usage role, and Morant's usage should fall about five points.",
    "source": "ESPN-1021",
-   "out": "Ja Morant",
+   "out": "Chris Youngblood, Ja Morant, Vit Krejci",
    "depth_through": "2026-11-16",
    "games": 13
   },
