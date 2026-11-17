@@ -417,6 +417,36 @@ def main():
     order = {"Out": 0, "Doubtful": 1, "Questionable": 2, "Probable": 3, "Available": 4}
     pbyk = {(p["team"], norm(p["player"])): p for p in players}
     inj = []
+
+    # Each injured player's last game (11/17, for the injury table): date, opponent, final score,
+    # his DK points and minutes, from our box scores and the Games tab files.
+    _box = {}
+    for f in sorted(glob.glob(os.path.join(D, "proj_history", "box", "2*.json"))):
+        day_ = os.path.basename(f)[:10]
+        if day_ >= str(datetime.now(ZoneInfo("America/New_York")).date()):
+            continue
+        for x in load_json(f, []):
+            if (x.get("min") or 0) > 0:
+                _box[norm(x["player"])] = (day_, x)
+    _games = {}
+
+    def last_game(name):
+        hit = _box.get(norm(name))
+        if not hit:
+            return None
+        day_, x = hit
+        if day_ not in _games:
+            _games[day_] = load_json(os.path.join(D, "games", day_ + ".json"), [])
+        g = next((g for g in _games[day_] if x["team"] in (g.get("away"), g.get("home"))), None)
+        out = {"date": day_, "dk": round(x.get("dk") or 0, 1), "min": round(x.get("min") or 0)}
+        if g and g.get("final"):
+            home = g["home"] == x["team"]
+            opp = g["away"] if home else g["home"]
+            a, h = g["final"]
+            me, them = (h, a) if home else (a, h)
+            out.update({"opp": opp, "ha": "vs" if home else "@", "res": "W" if me > them else "L", "score": "%d-%d" % (max(me, them), min(me, them))})
+        return out
+
     for o in offp:
         if o["team"] not in teams or o.get("reason", "").startswith("G League"):
             continue
@@ -442,7 +472,8 @@ def main():
                 ben = proj_gain(t, name, status, m)
             est = not sg and bool(ben)
         c = intraday.get(name)
-        inj.append({"game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
+        lg = last_game(name)
+        inj.append({"last": lg, "game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
                     "status": status, "reason": o.get("reason", "") if o.get("reason") not in ("-", None) else "",
                     "new": isnew, "was": (c["was"] if c else (ps or "")) if isnew else "", "known": known,
                     "changed_at": c["time"] if c else "", "min": r1(m), "benefits": ben, "estimate": est})
@@ -581,6 +612,15 @@ def main():
         last = {"date": prev, "top": [{"player": x["player"], "team": x["team"], "dk": x["dk"], "min": x["min"],
                                        "pts": x["pts"], "reb": x["reb"], "ast": x["ast"]} for x in top],
                 "surprise": surprise[:4], "injuries": inj[:4]}
+
+    # Season DK average per game played, shown next to each "who benefits" boost.
+    glog = load_json(os.path.join(D, "gamelogs.json"), {})
+    def savg(name):
+        g = [x for x in glog.get(norm(name), []) if x[5] and x[5] > 0]
+        return round(sum(x[13] for x in g) / len(g), 1) if g else None
+    for r in (injuries.get("rows") or []) + sits:
+        for b in r.get("benefits") or []:
+            b["avg"] = savg(b["player"])
 
     out = {"date": day, "updated": doc.get("updated"), "games": len(games), "pending": pending,
            "first_report": st.get("first"), "cards": cards, "changed": changed, "chg": items, "sits": sits[:6],
