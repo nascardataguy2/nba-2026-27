@@ -2,7 +2,7 @@
  "updated": "2026-11-16",
  "brief": {
   "date": "2026-11-16",
-  "updated": "7:15 PM ET",
+  "updated": "7:18 PM ET",
   "games": 8,
   "pending": [],
   "first_report": "5:25 AM",
@@ -286,12 +286,7 @@
         "min": 13.3
        }
       ],
-      "q": [
-       {
-        "player": "Gui Santos",
-        "min": 18.8
-       }
-      ]
+      "q": []
      },
      "NOP": {
       "out": [
@@ -350,6 +345,14 @@
    }
   ],
   "changed": [
+   {
+    "player": "Gui Santos",
+    "team": "GSW",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "",
+    "time": "7:19 PM"
+   },
    {
     "player": "Ryan Dunn",
     "team": "PHX",
@@ -420,14 +423,6 @@
     "status": "Available",
     "was": "Questionable",
     "why": "Low Back Soreness",
-    "time": "5:50 PM"
-   },
-   {
-    "player": "Peyton Watson",
-    "team": "CLE",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "",
     "time": "5:50 PM"
    }
   ],
@@ -647,6 +642,22 @@
     ],
     "time": "5:50 PM",
     "size": 15.5
+   },
+   {
+    "key": "GSW",
+    "team": "GSW",
+    "head": "Santos CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Georges Niang",
+      "salary": 3500,
+      "much": "+8.2 DK without Santos"
+     }
+    ],
+    "time": "7:19 PM",
+    "size": 14.1
    },
    {
     "key": "Ryan Dunn",
@@ -1179,8 +1190,8 @@
    "injuries": []
   },
   "injuries": {
-   "report": "07:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_07_00PM.pdf",
+   "report": "07:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_07_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1556,24 +1567,14 @@
      "time": "2026-11-17T01:00Z",
      "team": "GSW",
      "player": "Gui Santos",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "7:19 PM",
      "min": 18.0,
-     "benefits": [
-      {
-       "player": "Georges Niang",
-       "salary": 3500,
-       "why": "22 minutes, up from 19",
-       "much": "+8.2 DK without him (3 games)",
-       "score": 8.2,
-       "min": 19.5,
-       "dk": 15.7
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
