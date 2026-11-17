@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updated": "8:54 AM ET",
+ "updated": "9:50 AM ET",
  "games": 5,
  "pending": [
   "POR",
@@ -13,11 +13,11 @@
    "home": "TOR",
    "time": "2026-11-18T00:30Z",
    "slate": "main",
-   "ou": 216.5,
+   "ou": 214.5,
    "fav": "NYK",
    "line": 3.5,
-   "away_pts": 110.0,
-   "home_pts": 106.5,
+   "away_pts": 109.0,
+   "home_pts": 105.5,
    "tags": [
     "Lowest total"
    ],
@@ -85,12 +85,14 @@
    "home": "SAS",
    "time": "2026-11-18T01:00Z",
    "slate": "main",
-   "ou": 221.5,
+   "ou": 222.5,
    "fav": "SAS",
-   "line": 8.5,
+   "line": 9.5,
    "away_pts": 106.5,
-   "home_pts": 115.0,
-   "tags": [],
+   "home_pts": 116.0,
+   "tags": [
+    "Blowout risk"
+   ],
    "teams": {
     "DET": {
      "out": [
@@ -152,7 +154,7 @@
     "LAC": {
      "out": [
       {
-       "player": "Baba Miller",
+       "player": "Jordan Miller",
        "min": 13.7
       }
      ],
@@ -199,8 +201,39 @@
    "key": "Austin Reaves and Walker Kessler are out, so Quentin Grimes and Collin Sexton and Sandro Mamukelashvili should play more than usual."
   }
  ],
- "changed": [],
- "chg": [],
+ "changed": [
+  {
+   "player": "Jordan Miller",
+   "team": "LAC",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "9:51 AM"
+  }
+ ],
+ "chg": [
+  {
+   "key": "Jordan Miller",
+   "team": "LAC",
+   "head": "Jordan Miller OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Brook Lopez",
+     "salary": 5600,
+     "much": "+15.2 DK without him (2 games)"
+    },
+    {
+     "player": "Derrick Jones Jr.",
+     "salary": 5500,
+     "much": "+7.0 DK without him (2 games)"
+    }
+   ],
+   "time": "9:51 AM",
+   "size": 10.8
+  }
+ ],
  "sits": [
   {
    "team": "DET",
@@ -208,7 +241,7 @@
     {
      "player": "Duncan Robinson",
      "min": 30.7,
-     "note": "The show said Duncan Robinson is out for Detroit's game against San Antonio on November 17. He played only 17 minutes on November 14 after playing at least 27 minutes in his previous five games.",
+     "note": "Duncan Robinson is ruled out Tuesday in San Antonio with a left quadriceps strain, his first missed game of the season. He left Saturday's game after 17 minutes.",
      "new": true
     },
     {
@@ -265,13 +298,13 @@
     {
      "player": "Austin Reaves",
      "min": 33.3,
-     "note": "Austin Reaves did not play on Nov. 15, and Quentin Grimes started and played 37 minutes in his place. The show said Reaves' status for Nov. 17 is still uncertain. If Reaves sits, the show said Collin Sexton and Grimes become playable values, and if he plays, the show would fade most of the Lakers' value.",
+     "note": "Austin Reaves is out again Tuesday with a left heel contusion and bone bruise, his second straight absence. Quentin Grimes started in his place Sunday and played 37 minutes.",
      "new": false
     },
     {
      "player": "Walker Kessler",
      "min": 30.3,
-     "note": "The show said Walker Kessler will not play against Charlotte on November 17. He started and played 32 minutes on November 15, so this is a new absence that opens the Lakers' center spot.",
+     "note": "Walker Kessler is ruled out Tuesday against Charlotte with right lower-leg soreness, his first absence of the season. Sandro Mamukelashvili, Jarred Vanderbilt and Kevon Looney are in line to split the frontcourt minutes; his next chance is Wednesday in Utah.",
      "new": true
     }
    ],
@@ -341,8 +374,8 @@
      "why": "started that game",
      "much": "+27.0 DK without them (1 game)",
      "score": 27.0,
-     "min": 8.4,
-     "dk": 9.5
+     "min": 29.9,
+     "dk": 33.9
     },
     {
      "player": "Brice Sensabaugh",
@@ -350,8 +383,8 @@
      "why": "30 minutes, up from 16",
      "much": "+11.3 DK without them (1 game)",
      "score": 11.3,
-     "min": 25.8,
-     "dk": 24.3
+     "min": 23.4,
+     "dk": 22.0
     },
     {
      "player": "Josh Okogie",
@@ -359,8 +392,8 @@
      "why": "27 minutes, up from 19",
      "much": "+9.6 DK without them (1 game)",
      "score": 9.6,
-     "min": 21.9,
-     "dk": 14.5
+     "min": 19.8,
+     "dk": 13.1
     }
    ],
    "split_of": [
@@ -582,14 +615,14 @@
   {
    "player": "Daniss Jenkins",
    "team": "DET",
-   "own": 33.5,
+   "own": 33.7,
    "dk": 35.8,
    "salary": 6000
   },
   {
    "player": "Damian Lillard",
    "team": "POR",
-   "own": 32.9,
+   "own": 31.7,
    "dk": 32.9,
    "salary": 7100
   },
@@ -605,23 +638,23 @@
   {
    "player": "Ausar Thompson",
    "team": "DET",
-   "own": 5.7,
+   "own": 8.3,
    "dk": 42.2,
    "salary": 6500
   },
   {
-   "player": "John Collins",
-   "team": "DET",
-   "own": 1.6,
-   "dk": 31.3,
-   "salary": 5200
+   "player": "Mo Bamba",
+   "team": "UTA",
+   "own": 3.0,
+   "dk": 33.9,
+   "salary": 5300
   },
   {
-   "player": "Isaiah Collier",
-   "team": "UTA",
-   "own": 1.0,
-   "dk": 24.9,
-   "salary": 4700
+   "player": "John Collins",
+   "team": "DET",
+   "own": 2.8,
+   "dk": 31.3,
+   "salary": 5200
   }
  ],
  "last": {
@@ -701,30 +734,25 @@
   ],
   "injuries": [
    {
-    "player": "Bam Adebayo",
-    "team": "MIA",
-    "text": "Bam Adebayo left with hip stiffness after 16 minutes, and the team called it precautionary. The show said he might miss zero games and that Miami does not play again until a 12-game Wednesday and then Sunday, so it would not add a replacement."
+    "player": "Duncan Robinson",
+    "team": "DET",
+    "text": "Duncan Robinson is ruled out Tuesday in San Antonio with a left quadriceps strain, his first missed game of the season. He left Saturday's game after 17 minutes."
    },
    {
-    "player": "Patrick Williams",
-    "team": "CHI",
-    "text": "Patrick Williams hurt his finger on Monday and finished with zero points in 13 minutes. The show said that if he is out, Tre Jones and Isaac Okoro gain."
+    "player": "Jonathan Kuminga",
+    "team": "MIN",
+    "text": "Jonathan Kuminga left Monday's win over Portland with 6:35 left in the fourth quarter with a right shoulder injury, and no diagnosis had been confirmed by Tuesday morning. Minnesota plays Portland again Tuesday."
    },
    {
     "player": "Peyton Watson",
     "team": "CLE",
     "text": "Watson started but left early after a hard fall and finished with 22 minutes. He had played about 30 minutes in each of his previous two games. The show said his injury could open up more time for Meleek Thomas and Tyrese Proctor."
-   },
-   {
-    "player": "Stephen Curry",
-    "team": "GSW",
-    "text": "Stephen Curry was ruled out on November 16 with a right oblique tear, and he has not played since leaving after six minutes on November 11. The show said it does not believe he will be out only two weeks and said Golden State could be without him for about a month."
    }
   ]
  },
  "injuries": {
-  "report": "08:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_08_45AM.pdf",
+  "report": "09:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_09_45AM.pdf",
   "pending": [
    "POR",
    "MIN"
@@ -866,6 +894,40 @@
     "estimate": false
    },
    {
+    "game": "UTA at LAC",
+    "time": "2026-11-18T03:30Z",
+    "team": "LAC",
+    "player": "Jordan Miller",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "9:51 AM",
+    "min": 13.7,
+    "benefits": [
+     {
+      "player": "Brook Lopez",
+      "salary": 5600,
+      "why": "same minutes, more production",
+      "much": "+15.2 DK without him (2 games)",
+      "score": 15.2,
+      "min": 25.8,
+      "dk": 28.0
+     },
+     {
+      "player": "Derrick Jones Jr.",
+      "salary": 5500,
+      "why": "32 minutes, up from 28",
+      "much": "+7.0 DK without him (2 games)",
+      "score": 7.0,
+      "min": 25.8,
+      "dk": 22.8
+     }
+    ],
+    "estimate": false
+   },
+   {
     "game": "CHA at LAL",
     "time": "2026-11-18T04:00Z",
     "team": "LAL",
@@ -995,8 +1057,8 @@
       "why": "same minutes, more production",
       "much": "+10.2 DK without him (6 games)",
       "score": 10.2,
-      "min": 34.0,
-      "dk": 36.5
+      "min": 30.8,
+      "dk": 33.1
      },
      {
       "player": "Kyle Filipowski",
@@ -1013,8 +1075,8 @@
       "why": "21 minutes, up from 14",
       "much": "+6.2 DK without him (6 games)",
       "score": 6.2,
-      "min": 25.8,
-      "dk": 24.3
+      "min": 23.4,
+      "dk": 22.0
      }
     ],
     "estimate": false
@@ -1038,8 +1100,8 @@
       "why": "32 minutes, up from 29",
       "much": "+12.9 DK without him (10 games)",
       "score": 12.9,
-      "min": 34.0,
-      "dk": 36.5
+      "min": 30.8,
+      "dk": 33.1
      },
      {
       "player": "Josh Okogie",
@@ -1047,8 +1109,8 @@
       "why": "21 minutes, up from 13",
       "much": "+9.8 DK without him (10 games)",
       "score": 9.8,
-      "min": 21.9,
-      "dk": 14.5
+      "min": 19.8,
+      "dk": 13.1
      },
      {
       "player": "Kyle Filipowski",
@@ -1081,8 +1143,8 @@
       "why": "started 1 of 2",
       "much": "+21.0 DK without him (2 games)",
       "score": 21.0,
-      "min": 8.4,
-      "dk": 9.5
+      "min": 29.9,
+      "dk": 33.9
      },
      {
       "player": "Isaiah Collier",
@@ -1090,8 +1152,8 @@
       "why": "21 minutes, up from 16",
       "much": "+13.0 DK without him (1 game)",
       "score": 13.0,
-      "min": 24.0,
-      "dk": 24.9
+      "min": 23.6,
+      "dk": 24.5
      },
      {
       "player": "Josh Green",
@@ -1099,42 +1161,8 @@
       "why": "started 1 of 2",
       "much": "+6.7 DK without him (2 games)",
       "score": 6.7,
-      "min": 19.5,
-      "dk": 9.2
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "game": "UTA at LAC",
-    "time": "2026-11-18T03:30Z",
-    "team": "LAC",
-    "player": "Baba Miller",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 13.7,
-    "benefits": [
-     {
-      "player": "Brook Lopez",
-      "salary": 5600,
-      "why": "same minutes, more production",
-      "much": "+15.2 DK without him (2 games)",
-      "score": 15.2,
-      "min": 27.3,
-      "dk": 29.6
-     },
-     {
-      "player": "Derrick Jones Jr.",
-      "salary": 5500,
-      "why": "32 minutes, up from 28",
-      "much": "+7.0 DK without him (2 games)",
-      "score": 7.0,
-      "min": 25.4,
-      "dk": 22.4
+      "min": 17.7,
+      "dk": 8.4
      }
     ],
     "estimate": false
