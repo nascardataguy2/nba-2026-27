@@ -398,14 +398,17 @@
       var grp = '';
       if (byTeam && r.team !== last){ last = r.team; grp = '<tr class="inj-grp"><td colspan="8">' + tm(r.team, true) + ' ' + esc(NAMES[r.team] || r.team) + '</td></tr>'; }
       var ben = (r.benefits || []).map(function(b){
-        return '<div><span class="who">' + esc(b.player) + '</span> <span class="bs-n">' + benTxt(b) + '</span></div>';
+        var mm = b.why ? /^(about )?([+-]?[\d.]+ DK)\s*(.*)$/.exec(b.much || '') : null;
+        var big = b.why ? (mm ? esc(mm[2]) : esc(b.much)) : (b.gdk != null ? '+' + n1(b.gdk) + ' DK' : n1(b.dk) + ' DK');
+        var sub = b.why ? esc(b.why) + (mm && mm[3] ? ' \u00b7 ' + esc((/\((\d+ games?)\)/.exec(mm[3]) || [0, mm[3]])[1]) : '') : benCore(b);
+        return '<div class="ben-it"><div class="ben-top"><span class="who">' + esc(b.player) + '</span><span class="nowrap"><b>' + big + '</b>' + (b.avg != null ? ' <span class="ben-avg">avg ' + n1(b.avg) + '</span>' : '') + '</span></div><div class="ben-sub">' + (b.salary ? money(b.salary) + ' \u00b7 ' : '') + sub + '</div></div>';
       }).join('');
       if (ben && r.estimate) ben = '<div class="bs-n">If he sits (estimate):</div>' + ben;
-      var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
-      var gm = (r.game || '').split(' at '), opp = gm.length === 2 ? (gm[1] === r.team ? 'vs ' + gm[0] : '@ ' + gm[1]) : '';
-      var L = r.last, lg = L ? esc(L.date.slice(5).replace('-', '/').replace(/^0/, '')) + (L.opp ? ' ' + esc(L.ha) + ' ' + esc(L.opp) + ' <span class="nowrap">(' + esc(L.res) + ' ' + esc(L.score) + ')</span>' : '') + ': <b>' + n1(L.dk) + ' DK</b> in ' + L.min + ' min' : '<span class="bs-n">\u2013</span>';
-      return grp + '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span></td>' +
-        '<td data-l="Team">' + tm(r.team) + '</td><td data-l="Opp" class="nowrap">' + esc(opp) + '</td><td data-l="Game time" class="nowrap">' + esc(gameTime(r.time)) + '</td>' +
+      var nw = r.new ? '<span class="nowrap"><span class="bc-new">New</span>' + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') + '</span>' + (r.was ? '<div class="ben-sub">was ' + esc(r.was.toLowerCase()) + '</div>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
+      var gm = (r.game || '').split(' at '), opp = gm.length === 2 ? (gm[1] === r.team ? 'vs ' + tm(gm[0]) : '@ ' + tm(gm[1])) : '';
+      var L = r.last, lg = L ? '<div class="nowrap">' + esc(L.date.slice(5).replace('-', '/').replace(/^0/, '')) + (L.opp ? ' ' + esc(L.ha) + ' ' + esc(L.opp) + ' (' + esc(L.res) + ' ' + esc(L.score) + ')' : '') + '</div><div class="nowrap"><b>' + n1(L.dk) + ' DK</b> in ' + L.min + ' min</div>' : '<span class="bs-n">\u2013</span>';
+      return grp + '<tr' + (r.new ? ' class="is-new"' : '') + '><td class="nowrap"><span class="who">' + esc(r.player) + '</span></td>' +
+        '<td data-l="Team">' + tm(r.team) + '</td><td data-l="Opp" class="nowrap">' + opp + '</td><td data-l="Game time" class="nowrap">' + esc(gameTime(r.time)) + '</td>' +
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
         '<td data-l="New?">' + nw + '</td><td data-l="Last game">' + lg + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">' + (/Probable|Available/.test(r.status) ? 'Expected to play' : 'No teammate is projected to gain much') + '</span>') + '</td></tr>';
     }).join('');

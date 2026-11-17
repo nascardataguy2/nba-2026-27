@@ -613,6 +613,15 @@ def main():
                                        "pts": x["pts"], "reb": x["reb"], "ast": x["ast"]} for x in top],
                 "surprise": surprise[:4], "injuries": inj[:4]}
 
+    # Season DK average per game played, shown next to each "who benefits" boost.
+    glog = load_json(os.path.join(D, "gamelogs.json"), {})
+    def savg(name):
+        g = [x for x in glog.get(norm(name), []) if x[5] and x[5] > 0]
+        return round(sum(x[13] for x in g) / len(g), 1) if g else None
+    for r in (injuries.get("rows") or []) + sits:
+        for b in r.get("benefits") or []:
+            b["avg"] = savg(b["player"])
+
     out = {"date": day, "updated": doc.get("updated"), "games": len(games), "pending": pending,
            "first_report": st.get("first"), "cards": cards, "changed": changed, "chg": items, "sits": sits[:6],
            "hot": hot[:5], "minutes": mins[:5], "chalk": [fp(p) for p in chalk], "leverage": [fp(p) for p in lev],
