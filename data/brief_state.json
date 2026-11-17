@@ -3,7 +3,7 @@
  "first": "5:25 AM",
  "seen": {
   "Tobe Awaka": "Out",
-  "Jalen Smith": "Questionable",
+  "Jalen Smith": "Available",
   "Caleb Wilson": "Out",
   "Sam Merrill": "Out",
   "Evan Mobley": "Out",
@@ -48,9 +48,10 @@
   "Neemias Queta": "Out",
   "Steven Adams": "Out",
   "Amen Thompson": "Out",
-  "Joel Embiid": "Questionable",
+  "Joel Embiid": "Available",
   "LeBron James": "Out",
-  "Khalifa Diop": "Available"
+  "Khalifa Diop": "Available",
+  "Ryan Dunn": "Questionable"
  },
  "log": [
   {
@@ -212,12 +213,37 @@
    "was": "Questionable",
    "why": "Left Knee Soreness",
    "time": "6:54 PM"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "7:16 PM"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "7:16 PM"
+  },
+  {
+   "player": "Ryan Dunn",
+   "team": "PHX",
+   "status": "Questionable",
+   "was": "",
+   "why": "Right Thumb Soreness",
+   "time": "7:16 PM"
   }
  ],
  "teams": [
   "BOS",
   "CHI",
   "CLE",
+  "DEN",
   "GSW",
   "HOU",
   "MEM",
@@ -226,6 +252,7 @@
   "NOP",
   "ORL",
   "PHI",
+  "PHX",
   "POR",
   "WAS"
  ]

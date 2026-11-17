@@ -2,8 +2,8 @@
  "updated": "2026-11-16",
  "brief": {
   "date": "2026-11-16",
-  "updated": "6:55 PM ET",
-  "games": 7,
+  "updated": "7:15 PM ET",
+  "games": 8,
   "pending": [],
   "first_report": "5:25 AM",
   "cards": [
@@ -142,7 +142,7 @@
     "away": "HOU",
     "home": "MIA",
     "time": "2026-11-17T00:30Z",
-    "slate": "main",
+    "slate": "late",
     "ou": 232.5,
     "fav": "HOU",
     "line": 1.5,
@@ -186,7 +186,7 @@
     "away": "PHI",
     "home": "BKN",
     "time": "2026-11-17T00:30Z",
-    "slate": "main",
+    "slate": "late",
     "ou": 226.5,
     "fav": "PHI",
     "line": 4.5,
@@ -207,12 +207,7 @@
         "min": 17.0
        }
       ],
-      "q": [
-       {
-        "player": "Joel Embiid",
-        "min": 31.5
-       }
-      ]
+      "q": []
      },
      "BKN": {
       "out": [],
@@ -321,9 +316,64 @@
      }
     },
     "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Jordan Poole and Jeremiah Fears should play more than usual."
+   },
+   {
+    "away": "PHX",
+    "home": "DEN",
+    "time": "2026-11-17T02:00Z",
+    "slate": "main",
+    "ou": 229.5,
+    "fav": "DEN",
+    "line": 9.5,
+    "away_pts": 110.0,
+    "home_pts": 119.5,
+    "tags": [
+     "Blowout risk",
+     "PHX on a back-to-back"
+    ],
+    "teams": {
+     "PHX": {
+      "out": [],
+      "q": [
+       {
+        "player": "Ryan Dunn",
+        "min": 17.7
+       }
+      ]
+     },
+     "DEN": {
+      "out": [],
+      "q": []
+     }
+    },
+    "key": "Nikola Jokic has the top projection in this game at 58.3 DK points."
    }
   ],
   "changed": [
+   {
+    "player": "Ryan Dunn",
+    "team": "PHX",
+    "status": "Questionable",
+    "was": "",
+    "why": "Right Thumb Soreness",
+    "time": "7:16 PM"
+   },
+   {
+    "player": "Joel Embiid",
+    "team": "PHI",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "",
+    "time": "7:16 PM"
+   },
+   {
+    "player": "Jalen Smith",
+    "team": "CHI",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "-",
+    "time": "7:16 PM"
+   },
    {
     "player": "Amen Thompson",
     "team": "HOU",
@@ -379,30 +429,6 @@
     "was": "Questionable",
     "why": "",
     "time": "5:50 PM"
-   },
-   {
-    "player": "Jaylon Tyson",
-    "team": "CLE",
-    "status": "Out",
-    "was": "Doubtful",
-    "why": "",
-    "time": "5:50 PM"
-   },
-   {
-    "player": "Khalifa Diop",
-    "team": "CLE",
-    "status": "Available",
-    "was": "",
-    "why": "-",
-    "time": "5:50 PM"
-   },
-   {
-    "player": "Neemias Queta",
-    "team": "BOS",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Rest",
-    "time": "5:26 PM"
    }
   ],
   "chg": [
@@ -419,13 +445,34 @@
       "much": "+12.7 DK without him (3 games)"
      },
      {
-      "player": "Dean Wade",
-      "salary": 4200,
-      "much": "+7.8 DK without him (3 games)"
+      "player": "Joel Embiid",
+      "salary": 8300,
+      "much": "+11.2 DK without him (2 games)"
      }
     ],
     "time": "1:54 PM",
     "size": 37.9
+   },
+   {
+    "key": "PHI",
+    "team": "PHI",
+    "head": "Embiid CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Dean Wade",
+      "salary": 4200,
+      "much": "+15.5 DK without Embiid"
+     },
+     {
+      "player": "Jabari Walker",
+      "salary": 3800,
+      "much": "+11.1 DK without Embiid"
+     }
+    ],
+    "time": "7:16 PM",
+    "size": 37.0
    },
    {
     "key": "Amen Thompson",
@@ -442,6 +489,27 @@
     ],
     "time": "6:54 PM",
     "size": 32.9
+   },
+   {
+    "key": "CHI",
+    "team": "CHI",
+    "head": "Smith CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Zach Collins",
+      "salary": 4400,
+      "much": "+14.6 DK without Smith"
+     },
+     {
+      "player": "Buddy Hield",
+      "salary": 3500,
+      "much": "+13.9 DK without Smith"
+     }
+    ],
+    "time": "7:16 PM",
+    "size": 29.7
    },
    {
     "key": "CLE",
@@ -544,27 +612,6 @@
     "size": 19.2
    },
    {
-    "key": "Joel Embiid",
-    "team": "PHI",
-    "head": "Joel Embiid QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Dean Wade",
-      "salary": 4200,
-      "much": "+15.5 DK without him (3 games)"
-     },
-     {
-      "player": "Jabari Walker",
-      "salary": 3800,
-      "much": "+11.1 DK without him (2 games)"
-     }
-    ],
-    "time": "1:54 PM",
-    "size": 18.5
-   },
-   {
     "key": "Isaiah Stewart",
     "team": "MEM",
     "head": "Isaiah Stewart OUT",
@@ -600,6 +647,22 @@
     ],
     "time": "5:50 PM",
     "size": 15.5
+   },
+   {
+    "key": "Ryan Dunn",
+    "team": "PHX",
+    "head": "Ryan Dunn QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Miles Bridges",
+      "salary": 6800,
+      "much": "about +3.5 DK if he sits (estimate)"
+     }
+    ],
+    "time": "7:16 PM",
+    "size": 7.4
    }
   ],
   "sits": [
@@ -1008,34 +1071,34 @@
     "salary": 7700
    },
    {
-    "player": "Tari Eason",
-    "team": "HOU",
-    "own": 38.0,
-    "dk": 33.3,
-    "salary": 5300
+    "player": "Tyrese Maxey",
+    "team": "PHI",
+    "own": 40.0,
+    "dk": 46.6,
+    "salary": 8800
    }
   ],
   "leverage": [
    {
-    "player": "Alperen Sengun",
-    "team": "HOU",
-    "own": 9.0,
-    "dk": 57.5,
-    "salary": 9500
-   },
-   {
     "player": "Mitchell Robinson",
     "team": "BOS",
-    "own": 0.9,
+    "own": 3.3,
     "dk": 23.0,
     "salary": 3900
    },
    {
-    "player": "Bam Adebayo",
-    "team": "MIA",
+    "player": "Derik Queen",
+    "team": "NOP",
+    "own": 1.0,
+    "dk": 30.3,
+    "salary": 5400
+   },
+   {
+    "player": "Jaylen Wells",
+    "team": "MEM",
     "own": 6.0,
-    "dk": 47.6,
-    "salary": 8200
+    "dk": 22.8,
+    "salary": 4300
    }
   ],
   "last": {
@@ -1116,8 +1179,8 @@
    "injuries": []
   },
   "injuries": {
-   "report": "06:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_06_45PM.pdf",
+   "report": "07:00 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_07_00PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1234,42 +1297,14 @@
      "time": "2026-11-17T00:00Z",
      "team": "CHI",
      "player": "Jalen Smith",
-     "status": "Questionable",
-     "reason": "Left Finger Sprain",
+     "status": "Available",
+     "reason": "",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "7:16 PM",
      "min": 30.7,
-     "benefits": [
-      {
-       "player": "Zach Collins",
-       "salary": 4400,
-       "why": "started that game",
-       "much": "+14.6 DK without him (1 game)",
-       "score": 14.6,
-       "min": 16.1,
-       "dk": 13.0
-      },
-      {
-       "player": "Buddy Hield",
-       "salary": 3500,
-       "why": "20 minutes, up from 14",
-       "much": "+13.9 DK without him (1 game)",
-       "score": 13.9,
-       "min": 15.3,
-       "dk": 13.7
-      },
-      {
-       "player": "Isaac Okoro",
-       "salary": 4200,
-       "why": "started that game",
-       "much": "+12.1 DK without him (1 game)",
-       "score": 12.1,
-       "min": 28.0,
-       "dk": 16.1
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1365,6 +1400,15 @@
        "dk": 33.4
       },
       {
+       "player": "Joel Embiid",
+       "salary": 8300,
+       "why": "same minutes, more production",
+       "much": "+11.2 DK without him (2 games)",
+       "score": 11.2,
+       "min": 31.5,
+       "dk": 40.5
+      },
+      {
        "player": "Dean Wade",
        "salary": 4200,
        "why": "started 3 of 3",
@@ -1372,15 +1416,6 @@
        "score": 7.8,
        "min": 29.3,
        "dk": 19.6
-      },
-      {
-       "player": "Jabari Walker",
-       "salary": 3800,
-       "why": "16 minutes, up from 12",
-       "much": "+7.3 DK without him (3 games)",
-       "score": 7.3,
-       "min": 17.2,
-       "dk": 15.7
       }
      ],
      "estimate": false
@@ -1463,42 +1498,14 @@
      "time": "2026-11-17T00:30Z",
      "team": "PHI",
      "player": "Joel Embiid",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "1:54 PM",
+     "changed_at": "7:16 PM",
      "min": 29.3,
-     "benefits": [
-      {
-       "player": "Dean Wade",
-       "salary": 4200,
-       "why": "started 2 of 3",
-       "much": "+15.5 DK without him (3 games)",
-       "score": 15.5,
-       "min": 29.3,
-       "dk": 19.6
-      },
-      {
-       "player": "Jabari Walker",
-       "salary": 3800,
-       "why": "started 1 of 2",
-       "much": "+11.1 DK without him (2 games)",
-       "score": 11.1,
-       "min": 17.2,
-       "dk": 15.7
-      },
-      {
-       "player": "Tyrese Maxey",
-       "salary": 8800,
-       "why": "same minutes, more production",
-       "much": "+7.5 DK without him (3 games)",
-       "score": 7.5,
-       "min": 36.7,
-       "dk": 46.6
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1568,6 +1575,31 @@
       }
      ],
      "estimate": false
+    },
+    {
+     "game": "PHX at DEN",
+     "time": "2026-11-17T02:00Z",
+     "team": "PHX",
+     "player": "Ryan Dunn",
+     "status": "Questionable",
+     "reason": "Right Thumb Soreness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "7:16 PM",
+     "min": 19.7,
+     "benefits": [
+      {
+       "player": "Miles Bridges",
+       "salary": 6800,
+       "why": "subs in for him 5 of 31 times",
+       "much": "about +3.5 DK",
+       "score": 3.459223859462808,
+       "min": 24.3,
+       "dk": 26.5
+      }
+     ],
+     "estimate": true
     },
     {
      "game": "ORL at BOS",
@@ -2454,6 +2486,16 @@
     {
      "player": "Donte DiVincenzo",
      "team": "MIN",
+     "status": "Out"
+    },
+    {
+     "player": "Mark Williams",
+     "team": "PHX",
+     "status": "Out"
+    },
+    {
+     "player": "Julian Strawther",
+     "team": "DEN",
      "status": "Out"
     }
    ]
