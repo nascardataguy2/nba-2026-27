@@ -396,18 +396,21 @@
     var bar = '<div class="inj-sort"><span class="bs-n">Sort:</span> <button type="button" class="btn' + (byTeam || byMin || colOn ? '' : ' solid') + '" data-isort="new">New first</button> <button type="button" class="btn' + (byTeam && !colOn ? ' solid' : '') + '" data-isort="team">By team</button> <button type="button" class="btn' + (byMin && !colOn ? ' solid' : '') + '" data-isort="min">Biggest minutes impact</button></div>';
     var rows = list.map(function(r){
       var grp = '';
-      if (byTeam && r.team !== last){ last = r.team; grp = '<tr class="inj-grp"><td colspan="4">' + tm(r.team, true) + ' ' + esc(NAMES[r.team] || r.team) + '</td></tr>'; }
+      if (byTeam && r.team !== last){ last = r.team; grp = '<tr class="inj-grp"><td colspan="8">' + tm(r.team, true) + ' ' + esc(NAMES[r.team] || r.team) + '</td></tr>'; }
       var ben = (r.benefits || []).map(function(b){
         return '<div><span class="who">' + esc(b.player) + '</span> <span class="bs-n">' + benTxt(b) + '</span></div>';
       }).join('');
       if (ben && r.estimate) ben = '<div class="bs-n">If he sits (estimate):</div>' + ben;
       var nw = r.new ? '<span class="bc-new">New</span>' + (r.was ? ' <span class="bs-n">was ' + esc(r.was.toLowerCase()) + '</span>' : ' <span class="bs-n">newly listed</span>') + (r.changed_at ? ' <span class="bs-n">' + esc(r.changed_at) + '</span>' : '') : (r.known ? '<span class="bs-n">Same as last report</span>' : '<span class="bs-n">\u2013</span>');
-      return grp + '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span> ' + tm(r.team) + bdg(r.player) + '<div class="bs-n">' + esc(r.game) + ' \u00b7 ' + esc(gameTime(r.time)) + ' \u00b7 ' + n1(r.min) + ' min a game</div></td>' +
+      var gm = (r.game || '').split(' at '), opp = gm.length === 2 ? (gm[1] === r.team ? 'vs ' + gm[0] : '@ ' + gm[1]) : '';
+      var L = r.last, lg = L ? esc(L.date.slice(5).replace('-', '/').replace(/^0/, '')) + (L.opp ? ' ' + esc(L.ha) + ' ' + esc(L.opp) + ' <span class="nowrap">(' + esc(L.res) + ' ' + esc(L.score) + ')</span>' : '') + ': <b>' + n1(L.dk) + ' DK</b> in ' + L.min + ' min' : '<span class="bs-n">\u2013</span>';
+      return grp + '<tr' + (r.new ? ' class="is-new"' : '') + '><td><span class="who">' + esc(r.player) + '</span></td>' +
+        '<td data-l="Team">' + tm(r.team) + '</td><td data-l="Opp" class="nowrap">' + esc(opp) + '</td><td data-l="Game time" class="nowrap">' + esc(gameTime(r.time)) + '</td>' +
         '<td data-l="Status"><span class="bc-st ' + cls(r.status) + '">' + esc(r.status) + '</span>' + (r.reason ? '<div class="bs-n">' + esc(r.reason) + '</div>' : '') + '</td>' +
-        '<td data-l="New?">' + nw + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">' + (/Probable|Available/.test(r.status) ? 'Expected to play' : 'No teammate is projected to gain much') + '</span>') + '</td></tr>';
+        '<td data-l="New?">' + nw + '</td><td data-l="Last game">' + lg + '</td><td data-l="Who benefits">' + (ben || '<span class="bs-n">' + (/Probable|Available/.test(r.status) ? 'Expected to play' : 'No teammate is projected to gain much') + '</span>') + '</td></tr>';
     }).join('');
-    var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr>' + th('player', 'Player') + th('status', 'Status') + th('new', 'New?') + th('ben', 'Who benefits') + '</tr></thead><tbody>' +
-      (rows || '<tr><td colspan="4" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
+    var tbl = '<div class="tbl-wrap"><table class="inj-tbl"><thead><tr>' + th('player', 'Player') + '<th>Team</th><th>Opp</th><th>Game time</th>' + th('status', 'Status') + th('new', 'New?') + '<th>Last game</th>' + th('ben', 'Who benefits') + '</tr></thead><tbody>' +
+      (rows || '<tr><td colspan="8" class="sub">No rotation players on tonight\u2019s report.</td></tr>') + '</tbody></table></div>';
     var minor = (IJ.minor || []).length ? '<details class="inj-minor"><summary>Also on the report (' + IJ.minor.length + ' players under 10 minutes a game)</summary><p>' +
       IJ.minor.map(function(m){ return esc(m.player) + ' ' + tm(m.team) + ' ' + esc(m.status); }).join(' \u00b7 ') + '</p></details>' : '';
     el.innerHTML = head + tiles + gnote + bar + tbl + (INJ_GAME ? '' : minor);
