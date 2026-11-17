@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updated": "6:01 PM ET",
+ "updated": "6:31 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:26 AM",
@@ -30,12 +30,7 @@
        "min": 26.0
       }
      ],
-     "q": [
-      {
-       "player": "Scottie Barnes",
-       "min": 33.2
-      }
-     ]
+     "q": []
     }
    },
    "key": "Kawhi Leonard is out, so Jamal Shead and Trayce Jackson-Davis and Ja'Kobe Walter should play more than usual."
@@ -221,6 +216,14 @@
  ],
  "changed": [
   {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "6:32 PM"
+  },
+  {
    "player": "Zyon Pullin",
    "team": "MIN",
    "status": "Out",
@@ -279,6 +282,27 @@
  ],
  "chg": [
   {
+   "key": "TOR",
+   "team": "TOR",
+   "head": "Barnes CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Jakob Poeltl",
+     "salary": 5400,
+     "much": "+15.0 DK without Barnes"
+    },
+    {
+     "player": "Jamal Shead",
+     "salary": 5500,
+     "much": "+10.5 DK without Barnes"
+    }
+   ],
+   "time": "6:32 PM",
+   "size": 46.2
+  },
+  {
    "key": "Jonathan Kuminga",
    "team": "MIN",
    "head": "Jonathan Kuminga OUT",
@@ -293,27 +317,6 @@
    ],
    "time": "2:54 PM",
    "size": 27.3
-  },
-  {
-   "key": "Scottie Barnes",
-   "team": "TOR",
-   "head": "Scottie Barnes QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Jakob Poeltl",
-     "salary": 5400,
-     "much": "+15.0 DK without him (4 games)"
-    },
-    {
-     "player": "Jamal Shead",
-     "salary": 5500,
-     "much": "+10.5 DK without him (4 games)"
-    }
-   ],
-   "time": "12:41 PM",
-   "size": 23.1
   },
   {
    "key": "Deni Avdija",
@@ -832,14 +835,14 @@
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 2.3,
+   "own": 2.4,
    "dk": 31.8,
    "salary": 5200
   },
   {
    "player": "Paul Reed",
    "team": "DET",
-   "own": 6.3,
+   "own": 6.6,
    "dk": 33.1,
    "salary": 5800
   }
@@ -933,8 +936,8 @@
   ]
  },
  "injuries": {
-  "report": "05:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_05_45PM.pdf",
+  "report": "06:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_06_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -951,45 +954,14 @@
     "time": "2026-11-18T00:30Z",
     "team": "TOR",
     "player": "Scottie Barnes",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Illness",
     "new": true,
-    "was": "Available",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "12:41 PM",
+    "changed_at": "6:32 PM",
     "min": 35.3,
-    "benefits": [
-     {
-      "player": "Jakob Poeltl",
-      "salary": 5400,
-      "why": "30 minutes, up from 20",
-      "much": "+15.0 DK without him (4 games)",
-      "score": 15.0,
-      "min": 22.8,
-      "dk": 22.3,
-      "avg": 21.6
-     },
-     {
-      "player": "Jamal Shead",
-      "salary": 5500,
-      "why": "started 2 of 4",
-      "much": "+10.5 DK without him (4 games)",
-      "score": 10.5,
-      "min": 23.5,
-      "dk": 21.2,
-      "avg": 22.8
-     },
-     {
-      "player": "Trayce Jackson-Davis",
-      "salary": 3300,
-      "why": "14 minutes, up from 7",
-      "much": "+10.4 DK without him (1 game)",
-      "score": 10.4,
-      "min": 7.6,
-      "dk": 8.9,
-      "avg": 9.2
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
