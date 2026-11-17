@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updated": "12:53 PM ET",
+ "updated": "1:53 PM ET",
  "games": 5,
  "pending": [
   "POR",
@@ -15,9 +15,9 @@
    "slate": "main",
    "ou": 214.5,
    "fav": "NYK",
-   "line": 3.5,
-   "away_pts": 109.0,
-   "home_pts": 105.5,
+   "line": 4.5,
+   "away_pts": 109.5,
+   "home_pts": 105.0,
    "tags": [
     "Lowest total"
    ],
@@ -50,9 +50,9 @@
    "slate": "main",
    "ou": 227.5,
    "fav": "MIN",
-   "line": 2.5,
-   "away_pts": 112.5,
-   "home_pts": 115.0,
+   "line": 1.5,
+   "away_pts": 113.0,
+   "home_pts": 114.5,
    "tags": [
     "Highest total",
     "Close game",
@@ -208,6 +208,14 @@
  ],
  "changed": [
   {
+   "player": "Isaiah Joe",
+   "team": "DET",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Right Hip Contusion",
+   "time": "1:54 PM"
+  },
+  {
    "player": "Scottie Barnes",
    "team": "TOR",
    "status": "Questionable",
@@ -245,6 +253,27 @@
    ],
    "time": "12:41 PM",
    "size": 23.1
+  },
+  {
+   "key": "Isaiah Joe",
+   "team": "DET",
+   "head": "Isaiah Joe OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Ausar Thompson",
+     "salary": 6500,
+     "much": "+7.8 DK without him (9 games)"
+    },
+    {
+     "player": "Kevin Huerter",
+     "salary": 4700,
+     "much": "+7.4 DK without him (9 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 12.4
   },
   {
    "key": "Jordan Miller",
@@ -775,8 +804,8 @@
   ]
  },
  "injuries": {
-  "report": "12:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_12_45PM.pdf",
+  "report": "01:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_01_45PM.pdf",
   "pending": [
    "POR",
    "MIN"
@@ -906,28 +935,13 @@
     "game": "DET at SAS",
     "time": "2026-11-18T01:00Z",
     "team": "DET",
-    "player": "Taurean Prince",
-    "status": "Out",
-    "reason": "Right Knee Soreness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "min": 7.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "game": "DET at SAS",
-    "time": "2026-11-18T01:00Z",
-    "team": "DET",
     "player": "Isaiah Joe",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "Right Hip Contusion",
     "new": true,
-    "was": "Out",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "",
+    "changed_at": "1:54 PM",
     "min": 13.7,
     "benefits": [
      {
@@ -958,6 +972,21 @@
       "dk": 56.4
      }
     ],
+    "estimate": false
+   },
+   {
+    "game": "DET at SAS",
+    "time": "2026-11-18T01:00Z",
+    "team": "DET",
+    "player": "Taurean Prince",
+    "status": "Out",
+    "reason": "Right Knee Soreness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "min": 7.0,
+    "benefits": [],
     "estimate": false
    },
    {
