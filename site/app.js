@@ -39,14 +39,22 @@
   // Team primary colors (Color 1 from teamcolorcodes.com NBA team color codes).
   var TEAMC = {ATL:'#E03A3E',BOS:'#007A33',BKN:'#000000',CHA:'#1D1160',CHI:'#CE1141',CLE:'#860038',DAL:'#00538C',DEN:'#0E2240',DET:'#C8102E',GSW:'#1D428A',HOU:'#CE1141',IND:'#002D62',LAC:'#C8102E',LAL:'#552583',MEM:'#5D76A9',MIA:'#98002E',MIL:'#00471B',MIN:'#0C2340',NOP:'#0C2340',NYK:'#006BB6',OKC:'#007AC1',ORL:'#0077C0',PHI:'#006BB6',PHX:'#1D1160',POR:'#E03A3E',SAC:'#5A2D81',SAS:'#C4CED4',TOR:'#CE1141',UTA:'#002B5C',WAS:'#002B5C'};
   var LIGHT = {SAS:1};
+  // Team badges: every team a different, easy-to-read look ([background, text, outline]).
+  var TBADGE = {ATL:['#C1D32F','#26282A'],BOS:['#007A33','#FFFFFF'],BKN:['#FFFFFF','#000000','#000000'],CHA:['#00788C','#FFFFFF'],
+    CHI:['#CE1141','#FFFFFF'],CLE:['#860038','#FDBB30'],DAL:['#B8C4CA','#00538C'],DEN:['#FEC524','#0E2240'],DET:['#1D42BA','#FFFFFF'],
+    GSW:['#1D428A','#FFC72C'],HOU:['#000000','#C4CED4'],IND:['#002D62','#FDBB30'],LAC:['#FFFFFF','#C8102E','#1D428A'],LAL:['#552583','#FDB927'],
+    MEM:['#5D76A9','#FFFFFF'],MIA:['#000000','#F9A01B'],MIL:['#00471B','#EEE1C6'],MIN:['#0C2340','#78BE20'],NOP:['#85714D','#FFFFFF'],
+    NYK:['#F58426','#0B1E3C'],OKC:['#007AC1','#FFFFFF'],ORL:['#FFFFFF','#000000','#0077C0'],PHI:['#FFFFFF','#006BB6','#006BB6'],
+    PHX:['#1D1160','#E56020'],POR:['#000000','#E03A3E'],SAC:['#5A2D81','#FFFFFF'],SAS:['#C4CED4','#000000'],TOR:['#FFFFFF','#BA0C2F','#BA0C2F'],
+    UTA:['#002B5C','#FFFFFF'],WAS:['#FFFFFF','#002B5C','#E31837']};
   var db = null, srcById = {};
   function $(id){ return document.getElementById(id); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function srcLink(id){ return ''; }
   function tm(code, first){
     if (!code) return '';
-    var bg = TEAMC[code] || '#5d6370', fg = LIGHT[code] ? '#15171c' : '#ffffff';
-    return '<span class="tm' + (first ? ' first' : '') + '" style="background:' + bg + ';color:' + fg + '" title="' + esc(NAMES[code] || code) + '">' + esc(code) + '</span>';
+    var b = TBADGE[code], bg = b ? b[0] : (TEAMC[code] || '#5d6370'), fg = b ? b[1] : (LIGHT[code] ? '#15171c' : '#ffffff');
+    return '<span class="tm' + (first ? ' first' : '') + '" style="background:' + bg + ';color:' + fg + (b && b[2] ? ';box-shadow:inset 0 0 0 1.5px ' + b[2] : '') + '" title="' + esc(NAMES[code] || code) + '">' + esc(code) + '</span>';
   }
 
   function fetchFirst(urls, asText){
