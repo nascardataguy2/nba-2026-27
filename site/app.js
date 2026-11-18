@@ -1475,7 +1475,7 @@
     var b = document.createElement('button'); b.className = 'tab'; b.type = 'button'; b.setAttribute('data-v', 'live'); b.textContent = 'Live';
     inj.parentNode.insertBefore(b, inj.nextSibling);
     var sec = document.createElement('section'); sec.className = 'view'; sec.id = 'v-live'; sec.hidden = true;
-    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. On Track For is the DK he is on track to finish with at his current rate over his projected minutes, colored against our projection.</p>' +
+    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. On Track For is the DK he is on track to finish with at his current rate over his projected minutes, colored against our projection. \ud83d\udd25 means he is blowing away his projection and \u2744\ufe0f means he is well short of it.</p>' +
       '<div class="lv-tiles" id="r4p-lvtiles"></div>' +
       '<div class="toolbar lv-tools"><input type="search" id="r4p-lvq" placeholder="Search a player or team" aria-label="Search live players"/>' +
       '<select id="r4p-lvgame" aria-label="Game filter"><option value="">All games</option></select>' +
@@ -1526,7 +1526,12 @@
       th('dk', 'DK', 'n') + th('proj', 'Proj', 'n') + th('pace', 'On Track For', 'n') + th('own', 'Own%', 'n') + '</tr></thead><tbody>' +
       rows.map(function(r){
         var s = r.s, line = s.pts + ' pts, ' + s.reb + ' reb, ' + s.ast + ' ast' + (s.stl ? ', ' + s.stl + ' stl' : '') + (s.blk ? ', ' + s.blk + ' blk' : '') + (s.t3 ? ', ' + s.t3 + ' 3pm' : '') + (s.to ? ', ' + s.to + ' to' : '');
-        return '<tr><td class="nowrap"><span class="who">' + esc(r.name) + '</span>' + (r.sal ? ' <span class="bs-n">' + money(r.sal) + '</span>' : '') + '</td><td class="lv-team">' + tm(r.team) + '</td>' +
+        // Fire: on track to beat our projection by 12+ DK and 30%+. Snowflake: on track to miss it by 10+ DK and 30%+.
+        // Only after 8 minutes (or a final), so a hot or cold first few minutes does not flag him.
+        var vs = (r.pace != null && r.proj) ? r.pace - r.proj : null, ok = r.mins >= 8 || r.fin;
+        var flag = (ok && vs != null && vs >= 12 && r.pace >= 1.3 * r.proj) ? ' <span title="Blowing away his projection">\ud83d\udd25</span>' :
+                   (ok && vs != null && vs <= -10 && r.pace <= 0.7 * r.proj) ? ' <span title="Well short of his projection">\u2744\ufe0f</span>' : '';
+        return '<tr><td class="nowrap"><span class="who">' + esc(r.name) + '</span>' + flag + (r.sal ? ' <span class="bs-n">' + money(r.sal) + '</span>' : '') + '</td><td class="lv-team">' + tm(r.team) + '</td>' +
           '<td class="lv-game bs-n">' + esc(r.game) + '</td><td class="n lv-min">' + r.mins + '</td><td class="lv-line bs-n">' + esc(line) + '</td>' +
           '<td class="n lv-dk"><span class="lv-heat" style="' + lvHeat(r.diff) + '">' + n1(r.dk) + '</span></td><td class="n lv-proj">' + (r.proj != null ? n1(r.proj) : '\u2013') + '</td>' +
           '<td class="n lv-pace"><span class="lv-heat" style="' + lvHeat(r.pace == null ? null : r.pace - r.proj) + '">' + (r.pace != null ? n1(r.pace) : '\u2013') + '</span></td>' +
@@ -1563,7 +1568,7 @@
             var name = at.athlete.displayName, p = pj[lvNorm(name) + '|' + team], v = lvDk(s);
             var exp = p ? (state === 'post' ? p.dk : p.dk * Math.min(1, mins / Math.max(p.min, 1))) : null;
             var pace = p ? (state === 'post' ? v : v / mins * Math.max(p.min, mins)) : null;
-            rows.push({gid:e.id, slate:p && p.slate, pos:p && p.pos, name:name, team:team, sal:p && p.salary, game:game, mins:mins, s:s, dk:v, proj:p && p.dk, own:p && p.own, diff:exp == null ? null : v - exp, pace:pace});
+            rows.push({fin:state === 'post', gid:e.id, slate:p && p.slate, pos:p && p.pos, name:name, team:team, sal:p && p.salary, game:game, mins:mins, s:s, dk:v, proj:p && p.dk, own:p && p.own, diff:exp == null ? null : v - exp, pace:pace});
           });
         });
       });
