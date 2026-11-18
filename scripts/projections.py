@@ -930,7 +930,9 @@ def main():
     now = datetime.now(ET)
     doc = {"date": day, "updated": now.strftime("%-I:%M %p ET"),
            "games": sorted(games_out, key=lambda g: (g["time"], g["home"])),
-           "players": pub, "out": sorted(outs_pub, key=lambda o: (o["team"], o["player"]))}
+           "players": pub, "out": sorted(outs_pub, key=lambda o: (o["team"], o["player"])),
+           # Every DraftKings salary tonight, including players ruled out (the injury page shows them).
+           "salaries": {"%s|%s" % (n, t): v[0] for (n, t), v in dks.items()}}
     auto_storylines(day, doc)
     acc = load_json(os.path.join(HIST, "accuracy.json"), None)
     if acc:

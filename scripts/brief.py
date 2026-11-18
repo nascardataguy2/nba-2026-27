@@ -473,10 +473,11 @@ def main():
             est = not sg and bool(ben)
         c = intraday.get(name)
         lg = last_game(name)
+        sal = (byname.get(norm(name)) or {}).get("salary") or doc.get("salaries", {}).get("%s|%s" % (norm(name), t))
         inj.append({"last": lg, "game": gtime.get(t, ("", ""))[1], "time": gtime.get(t, ("", ""))[0], "team": t, "player": name,
                     "status": status, "reason": o.get("reason", "") if o.get("reason") not in ("-", None) else "",
                     "new": isnew, "was": (c["was"] if c else (ps or "")) if isnew else "", "known": known,
-                    "changed_at": c["time"] if c else "", "min": r1(m), "benefits": ben, "estimate": est})
+                    "changed_at": c["time"] if c else "", "salary": sal, "min": r1(m), "benefits": ben, "estimate": est})
     inj.sort(key=lambda r: (not r["new"], r["time"], order.get(r["status"], 9), -r["min"]))
 
     def keep_row(r):  # players who matter: real minutes, or a new status for someone in the rotation
