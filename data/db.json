@@ -2,7 +2,7 @@
  "updated": "2026-11-17",
  "brief": {
   "date": "2026-11-17",
-  "updated": "7:45 PM ET",
+  "updated": "7:55 PM ET",
   "games": 5,
   "pending": [],
   "first_report": "5:26 AM",
@@ -70,12 +70,7 @@
         "min": 12.7
        }
       ],
-      "q": [
-       {
-        "player": "Deni Avdija",
-        "min": 32.3
-       }
-      ]
+      "q": []
      },
      "MIN": {
       "out": [
@@ -222,6 +217,14 @@
   ],
   "changed": [
    {
+    "player": "Deni Avdija",
+    "team": "POR",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "7:56 PM"
+   },
+   {
     "player": "Scottie Barnes",
     "team": "TOR",
     "status": "Available",
@@ -309,6 +312,27 @@
     "size": 46.2
    },
    {
+    "key": "Deni Avdija",
+    "team": "POR",
+    "head": "Deni Avdija OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Scoot Henderson",
+      "salary": 4700,
+      "much": "+9.3 DK projected vs. last 3"
+     },
+     {
+      "player": "Sidy Cissoko",
+      "salary": 4400,
+      "much": "+6.5 DK projected vs. last 3"
+     }
+    ],
+    "time": "7:56 PM",
+    "size": 43.7
+   },
+   {
     "key": "Jonathan Kuminga",
     "team": "MIN",
     "head": "Jonathan Kuminga OUT",
@@ -323,27 +347,6 @@
     ],
     "time": "2:54 PM",
     "size": 27.3
-   },
-   {
-    "key": "Deni Avdija",
-    "team": "POR",
-    "head": "Deni Avdija QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Sidy Cissoko",
-      "salary": 4400,
-      "much": "about +5.3 DK if he sits (estimate)"
-     },
-     {
-      "player": "Scoot Henderson",
-      "salary": 4700,
-      "much": "about +3.8 DK if he sits (estimate)"
-     }
-    ],
-    "time": "2:54 PM",
-    "size": 21.9
    },
    {
     "key": "Isaiah Joe",
@@ -823,11 +826,11 @@
     "salary": 5300
    },
    {
-    "player": "Javonte Green",
-    "team": "DET",
-    "own": 38.9,
-    "dk": 16.7,
-    "salary": 3500
+    "player": "Dylan Harper",
+    "team": "SAS",
+    "own": 40.0,
+    "dk": 35.4,
+    "salary": 7400
    }
   ],
   "leverage": [
@@ -947,8 +950,8 @@
    ]
   },
   "injuries": {
-   "report": "07:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_07_00PM.pdf",
+   "report": "07:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_07_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -974,6 +977,52 @@
      "salary": 8600,
      "min": 35.3,
      "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-16",
+      "dk": 46.0,
+      "min": 30,
+      "opp": "MIN",
+      "ha": "@",
+      "res": "L",
+      "score": "106-98"
+     },
+     "game": "POR at MIN",
+     "time": "2026-11-18T01:00Z",
+     "team": "POR",
+     "player": "Deni Avdija",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "7:56 PM",
+     "salary": 9000,
+     "min": 33.3,
+     "benefits": [
+      {
+       "player": "Scoot Henderson",
+       "salary": 4700,
+       "why": "subs in for him 10 of 61 times",
+       "much": "+9.3 DK projected vs. last 3",
+       "score": 9.283333333333333,
+       "min": 30.0,
+       "dk": 20.7,
+       "avg": 13.6
+      },
+      {
+       "player": "Sidy Cissoko",
+       "salary": 4400,
+       "why": "subs in for him 14 of 61 times",
+       "much": "+6.5 DK projected vs. last 3",
+       "score": 6.5,
+       "min": 31.7,
+       "dk": 22.0,
+       "avg": 16.7
+      }
+     ],
      "estimate": false
     },
     {
@@ -1199,52 +1248,6 @@
      "min": 3.7,
      "benefits": [],
      "estimate": false
-    },
-    {
-     "last": {
-      "date": "2026-11-16",
-      "dk": 46.0,
-      "min": 30,
-      "opp": "MIN",
-      "ha": "@",
-      "res": "L",
-      "score": "106-98"
-     },
-     "game": "POR at MIN",
-     "time": "2026-11-18T01:00Z",
-     "team": "POR",
-     "player": "Deni Avdija",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "2:54 PM",
-     "salary": 9000,
-     "min": 33.3,
-     "benefits": [
-      {
-       "player": "Sidy Cissoko",
-       "salary": 4400,
-       "why": "subs in for him 14 of 61 times",
-       "much": "about +5.3 DK",
-       "score": 5.298422444920737,
-       "min": 28.3,
-       "dk": 19.6,
-       "avg": 16.7
-      },
-      {
-       "player": "Scoot Henderson",
-       "salary": 4700,
-       "why": "subs in for him 10 of 61 times",
-       "much": "about +3.8 DK",
-       "score": 3.768607499528924,
-       "min": 26.1,
-       "dk": 18.0,
-       "avg": 13.6
-      }
-     ],
-     "estimate": true
     },
     {
      "last": {
@@ -1486,8 +1489,8 @@
        "why": "same minutes, more production",
        "much": "+5.5 DK without him (9 games)",
        "score": 5.5,
-       "min": 24.9,
-       "dk": 32.4,
+       "min": 28.8,
+       "dk": 37.4,
        "avg": 32.6
       }
      ],
@@ -1573,33 +1576,33 @@
      "min": 18.3,
      "benefits": [
       {
-       "player": "Scoot Henderson",
-       "salary": 4700,
-       "why": "projected 26 minutes tonight, up from 22",
-       "much": "+6.6 DK projected vs. last 3",
-       "score": 6.583333333333334,
-       "min": 26.1,
-       "dk": 18.0,
-       "avg": 13.6
-      },
-      {
        "player": "Damian Lillard",
        "salary": 7100,
-       "why": "projected 32 minutes tonight, up from 27",
-       "much": "+5.5 DK projected vs. last 3",
-       "score": 5.516666666666669,
-       "min": 31.7,
-       "dk": 35.6,
+       "why": "projected 37 minutes tonight, up from 27",
+       "much": "+11.3 DK projected vs. last 3",
+       "score": 11.316666666666666,
+       "min": 36.9,
+       "dk": 41.4,
        "avg": 32.1
+      },
+      {
+       "player": "Scoot Henderson",
+       "salary": 4700,
+       "why": "projected 30 minutes tonight, up from 22",
+       "much": "+9.3 DK projected vs. last 3",
+       "score": 9.283333333333333,
+       "min": 30.0,
+       "dk": 20.7,
+       "avg": 13.6
       },
       {
        "player": "Sidy Cissoko",
        "salary": 4400,
-       "why": "projected 28 minutes tonight",
-       "much": "+4.1 DK projected vs. last 3",
-       "score": 4.100000000000001,
-       "min": 28.3,
-       "dk": 19.6,
+       "why": "projected 32 minutes tonight, up from 26",
+       "much": "+6.5 DK projected vs. last 3",
+       "score": 6.5,
+       "min": 31.7,
+       "dk": 22.0,
        "avg": 16.7
       }
      ],
@@ -1678,10 +1681,10 @@
        "player": "Damian Lillard",
        "salary": 7100,
        "why": "subs in for him 3 of 13 times",
-       "much": "+5.5 DK projected vs. last 3",
-       "score": 5.516666666666669,
-       "min": 31.7,
-       "dk": 35.6,
+       "much": "+11.3 DK projected vs. last 3",
+       "score": 11.316666666666666,
+       "min": 36.9,
+       "dk": 41.4,
        "avg": 32.1
       }
      ],
@@ -11955,13 +11958,13 @@
   },
   {
    "team": "POR",
-   "starters": "Toumani Camara (29), Deni Avdija (33), Damian Lillard (29), Sidy Cissoko (24), Donovan Clingan (25)",
-   "bench": "Jrue Holiday (26), Scoot Henderson (22), Robert Williams III (16), Jayson Kent (10), Branden Carlson (9)",
+   "starters": "Toumani Camara (29), Damian Lillard (29), Sidy Cissoko (24), Donovan Clingan (25), Scoot Henderson (22)",
+   "bench": "Jrue Holiday (26), Robert Williams III (16), Jayson Kent (10), Branden Carlson (9)",
    "backup_c": "Robert Williams III",
    "coach": "Micah Nori",
    "notes": "Shaedon Sharpe tore his meniscus and is out for basically the whole season. Holiday moves to the three in a low-usage role, and Morant's usage should fall about five points.",
    "source": "ESPN-1021",
-   "out": "Chris Youngblood, Ja Morant, Vit Krejci",
+   "out": "Chris Youngblood, Deni Avdija, Ja Morant, Vit Krejci",
    "depth_through": "2026-11-16",
    "games": 13
   },
