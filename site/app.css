@@ -513,3 +513,14 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   .lv-tbl td.lv-pace::before{content:'Pace ';font-size:12px;color:var(--muted)}
   .lv-tbl td.lv-dk{grid-column:2}
 }
+
+.lv-tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.lv-tile{cursor:pointer}
+.lv-tile.pick{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.lv-tbl .th-sort{white-space:nowrap}
+#v-live .lv-tools input{flex:1 1 200px}
+#v-live .lv-tools select{flex:0 1 auto}
+@media (max-width:700px){
+  #v-live .lv-tools input{flex:1 1 100%}
+  #v-live .lv-tools select{flex:1 1 40%;font-size:15px;padding:9px 6px}
+}
