@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updated": "8:53 AM ET",
+ "updated": "9:29 AM ET",
  "games": 12,
  "pending": [
   "TOR",
@@ -75,9 +75,9 @@
    "slate": "main",
    "ou": 234.5,
    "fav": "MIA",
-   "line": 12.5,
-   "away_pts": 111.0,
-   "home_pts": 123.5,
+   "line": 11.5,
+   "away_pts": 111.5,
+   "home_pts": 123.0,
    "tags": [
     "Blowout risk"
    ],
@@ -103,11 +103,11 @@
    "home": "IND",
    "time": "2026-11-19T00:00Z",
    "slate": "main",
-   "ou": 223.5,
+   "ou": 225.5,
    "fav": "HOU",
    "line": 7.5,
-   "away_pts": 115.5,
-   "home_pts": 108.0,
+   "away_pts": 116.5,
+   "home_pts": 109.0,
    "tags": [],
    "teams": {
     "HOU": {
@@ -150,12 +150,13 @@
    "home": "ORL",
    "time": "2026-11-19T00:00Z",
    "slate": "main",
-   "ou": 222.5,
+   "ou": 221.5,
    "fav": "PHI",
-   "line": 2.5,
-   "away_pts": 112.5,
+   "line": 1.5,
+   "away_pts": 111.5,
    "home_pts": 110.0,
    "tags": [
+    "Lowest total",
     "Close game"
    ],
    "teams": {
@@ -189,11 +190,11 @@
    "home": "BKN",
    "time": "2026-11-19T00:30Z",
    "slate": "main",
-   "ou": 238.5,
+   "ou": 239.5,
    "fav": "BKN",
    "line": 2.5,
-   "away_pts": 118.0,
-   "home_pts": 120.5,
+   "away_pts": 118.5,
+   "home_pts": 121.0,
    "tags": [
     "Highest total",
     "Close game"
@@ -220,11 +221,11 @@
    "home": "TOR",
    "time": "2026-11-19T00:30Z",
    "slate": "main",
-   "ou": 227.5,
+   "ou": 228.5,
    "fav": "TOR",
    "line": 6.5,
-   "away_pts": 110.5,
-   "home_pts": 117.0,
+   "away_pts": 111.0,
+   "home_pts": 117.5,
    "tags": [
     "TOR on a back-to-back"
    ],
@@ -244,57 +245,6 @@
     }
    },
    "key": "Justin Champagnie is out, so Alex Sarr should play more than usual."
-  },
-  {
-   "away": "DET",
-   "home": "NOP",
-   "time": "2026-11-19T01:00Z",
-   "slate": "main",
-   "ou": 229.5,
-   "fav": "DET",
-   "line": 7.5,
-   "away_pts": 118.5,
-   "home_pts": 111.0,
-   "tags": [
-    "DET on a back-to-back"
-   ],
-   "teams": {
-    "DET": {
-     "out": [],
-     "q": [
-      {
-       "player": "Ron Holland",
-       "min": 15.4
-      },
-      {
-       "player": "Isaiah Joe",
-       "min": 15.7
-      }
-     ]
-    },
-    "NOP": {
-     "out": [
-      {
-       "player": "Trey Murphy III",
-       "min": 34.7
-      },
-      {
-       "player": "Dejounte Murray",
-       "min": 24.7
-      },
-      {
-       "player": "Trendon Watford",
-       "min": 18.7
-      },
-      {
-       "player": "Bryce McGowens",
-       "min": 14.7
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Jeremiah Fears and Jordan Poole should play more than usual."
   },
   {
    "away": "ATL",
@@ -355,18 +305,67 @@
    "key": "Jalen Williams and Chet Holmgren are out, so Aday Mara and Bennett Stirtz and Jared McCain should play more than usual."
   },
   {
+   "away": "DET",
+   "home": "NOP",
+   "time": "2026-11-19T01:00Z",
+   "slate": "main",
+   "ou": 226.5,
+   "fav": "DET",
+   "line": 6.5,
+   "away_pts": 116.5,
+   "home_pts": 110.0,
+   "tags": [
+    "DET on a back-to-back"
+   ],
+   "teams": {
+    "DET": {
+     "out": [],
+     "q": [
+      {
+       "player": "Ron Holland",
+       "min": 15.4
+      },
+      {
+       "player": "Isaiah Joe",
+       "min": 15.7
+      }
+     ]
+    },
+    "NOP": {
+     "out": [
+      {
+       "player": "Trey Murphy III",
+       "min": 34.7
+      },
+      {
+       "player": "Dejounte Murray",
+       "min": 24.7
+      },
+      {
+       "player": "Trendon Watford",
+       "min": 18.7
+      },
+      {
+       "player": "Bryce McGowens",
+       "min": 14.7
+      }
+     ],
+     "q": []
+    }
+   },
+   "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Jeremiah Fears and Jordan Poole should play more than usual."
+  },
+  {
    "away": "GSW",
    "home": "DAL",
    "time": "2026-11-19T01:00Z",
    "slate": "main",
-   "ou": 221.5,
+   "ou": 222.5,
    "fav": "DAL",
-   "line": 6.5,
-   "away_pts": 107.5,
-   "home_pts": 114.0,
-   "tags": [
-    "Lowest total"
-   ],
+   "line": 4.5,
+   "away_pts": 109.0,
+   "home_pts": 113.5,
+   "tags": [],
    "teams": {
     "GSW": {
      "out": [
@@ -482,11 +481,11 @@
    "home": "SAC",
    "time": "2026-11-19T03:00Z",
    "slate": "late",
-   "ou": 226.5,
+   "ou": 227.5,
    "fav": "PHX",
    "line": 6.5,
-   "away_pts": 116.5,
-   "home_pts": 110.0,
+   "away_pts": 117.0,
+   "home_pts": 110.5,
    "tags": [],
    "teams": {
     "PHX": {
@@ -531,7 +530,7 @@
     {
      "player": "Jaylin Williams",
      "min": 22.0,
-     "note": "Jaylin Williams missed his fourth straight game Tuesday with back spasms.",
+     "note": "Jaylin Williams (low back spasms) was upgraded to questionable for Wednesday against Atlanta after missing four straight games.",
      "new": true
     },
     {
@@ -594,13 +593,13 @@
     {
      "player": "Kingston Flemings",
      "min": 22.7,
-     "note": "Kingston Flemings is out with a lumbar strain, so Atlanta is without both McCollum and Flemings at guard. The show said Atlanta does not really have a point guard right now.",
+     "note": "Kingston Flemings (lumbar strain) is out Wednesday at Oklahoma City, his second straight absence, though he practiced Tuesday. With CJ McCollum also out, Atlanta's ball handling falls to Dyson Daniels, Jalen Johnson and RayJ Dennis.",
      "new": false
     },
     {
      "player": "Asa Newell",
      "min": 15.3,
-     "note": "Asa Newell had surgery on Tuesday for a torn plantar plate in his left big toe and will be re-evaluated in about four months, per the Hawks. He has not played since November 4 and was a 10-to-19-minute bench forward before that, so Atlanta's rotation does not change much.",
+     "note": "Asa Newell had surgery Tuesday to repair a plantar plate tear in his left big toe, hurt November 4. He will be re-evaluated in about four months.",
      "new": false
     }
    ],
@@ -645,7 +644,7 @@
     {
      "player": "Jaylon Tyson",
      "min": 29.0,
-     "note": "The show said Jaylon Tyson is doubtful for Wednesday. He did not play on 11/16 after starting and playing 34 minutes on 11/14.",
+     "note": "Jaylon Tyson is doubtful Wednesday against Memphis for right ankle injury management after sitting Monday.",
      "new": true
     }
    ],
@@ -694,7 +693,7 @@
     {
      "player": "Jaylen Brown",
      "min": 33.7,
-     "note": "The show said Jaylen Brown is out for the 11/18 slate. Brown had scored 31 points in each of his last two games, and the show expects Dean Wade, Anfernee Simons and Kentavious Caldwell-Pope to pick up more minutes. The show likes Simons and Tyrese Maxey in tournaments but called it a bad spot for Wade and VJ Edgecombe.",
+     "note": "Jaylen Brown is out Wednesday at Orlando with a left hamstring strain after feeling tightness late in Monday's win over Brooklyn.",
      "new": true
     },
     {
@@ -800,13 +799,13 @@
     {
      "player": "Ty Jerome",
      "min": 31.0,
-     "note": "The show said Ty Jerome is out again on Wednesday, the first night of a back-to-back, and it is possible Memphis is holding him out only for the first night. He also missed the 11/14 and 11/16 games.",
+     "note": "Ty Jerome is out Wednesday at Cleveland with a right hip impingement, his third straight absence.",
      "new": false
     },
     {
      "player": "Isaiah Stewart",
      "min": 17.7,
-     "note": "Ruled out tonight (illness).",
+     "note": "Isaiah Stewart is out Wednesday at Cleveland with an illness, his second straight absence.",
      "new": false
     }
    ],
@@ -943,23 +942,23 @@
    "salary": 5600
   },
   {
-   "player": "Mitchell Robinson",
-   "team": "BOS",
+   "player": "Brice Sensabaugh",
+   "team": "UTA",
    "own": 38.0,
-   "dk": 13.6,
-   "salary": 3700
+   "dk": 21.8,
+   "salary": 4500
   },
   {
-   "player": "Luka Doncic",
-   "team": "LAL",
-   "own": 36.5,
-   "dk": 60.1,
-   "salary": 12300
+   "player": "Mohamed Bamba",
+   "team": "UTA",
+   "own": 34.9,
+   "dk": 20.0,
+   "salary": 5300
   },
   {
    "player": "Jarrett Allen",
    "team": "CLE",
-   "own": 33.3,
+   "own": 32.8,
    "dk": 32.8,
    "salary": 6000
   }
@@ -968,23 +967,23 @@
   {
    "player": "Onyeka Okongwu",
    "team": "ATL",
-   "own": 5.6,
+   "own": 4.7,
    "dk": 39.9,
-   "salary": 6700
-  },
-  {
-   "player": "Cedric Coward",
-   "team": "MEM",
-   "own": 7.3,
-   "dk": 38.6,
    "salary": 6700
   },
   {
    "player": "Dyson Daniels",
    "team": "ATL",
-   "own": 2.4,
+   "own": 2.3,
    "dk": 39.1,
    "salary": 7100
+  },
+  {
+   "player": "Anfernee Simons",
+   "team": "PHI",
+   "own": 0.8,
+   "dk": 22.3,
+   "salary": 4100
   }
  ],
  "last": {
@@ -1054,13 +1053,13 @@
    {
     "player": "Dylan Harper",
     "team": "SAS",
-    "text": "Dylan Harper slipped on a wet spot with about 40 seconds left on Tuesday and strained his groin after playing 35 minutes. Mitch Johnson gave no timeline, but the show guessed it looks like a grade two strain and expects him out until around January. This is the show's guess, not a confirmed timeline."
+    "text": "Dylan Harper limped off with 53.6 seconds left Tuesday after slipping on the court and needed help getting off. San Antonio had not announced a diagnosis."
    }
   ]
  },
  "injuries": {
-  "report": "08:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_08_45AM.pdf",
+  "report": "09:15 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_09_15AM.pdf",
   "pending": [
    "TOR",
    "DET",
