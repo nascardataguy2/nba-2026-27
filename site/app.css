@@ -510,7 +510,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
   .lv-tbl td.lv-team,.lv-tbl td.lv-min,.lv-tbl td.lv-proj,.lv-tbl td.lv-own{display:none}
   .lv-tbl td:first-child{grid-column:1/-1}
   .lv-tbl td.lv-dk::before{content:'DK ';font-size:12px;color:var(--muted)}
-  .lv-tbl td.lv-pace::before{content:'Pace ';font-size:12px;color:var(--muted)}
+  .lv-tbl td.lv-pace::before{content:'On track for ';font-size:12px;color:var(--muted)}
   .lv-tbl td.lv-dk{grid-column:2}
 }
 

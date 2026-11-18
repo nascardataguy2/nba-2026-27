@@ -1475,13 +1475,13 @@
     var b = document.createElement('button'); b.className = 'tab'; b.type = 'button'; b.setAttribute('data-v', 'live'); b.textContent = 'Live';
     inj.parentNode.insertBefore(b, inj.nextSibling);
     var sec = document.createElement('section'); sec.className = 'view'; sec.id = 'v-live'; sec.hidden = true;
-    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. Pace is the DK he is on track to finish with, colored against our projection.</p>' +
+    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. On Track For is the DK he is on track to finish with at his current rate over his projected minutes, colored against our projection.</p>' +
       '<div class="lv-tiles" id="r4p-lvtiles"></div>' +
       '<div class="toolbar lv-tools"><input type="search" id="r4p-lvq" placeholder="Search a player or team" aria-label="Search live players"/>' +
       '<select id="r4p-lvgame" aria-label="Game filter"><option value="">All games</option></select>' +
       '<select id="r4p-lvslate" aria-label="Slate filter"><option value="">Both slates</option><option value="main">Main slate</option><option value="late">Late slate</option></select>' +
       '<select id="r4p-lvpos" aria-label="Position filter"><option value="">All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>' +
-      '<select id="r4p-lvsort" aria-label="Sort"><option value="" hidden>Sort: by column</option><option value="dk">Sort: Most DK</option><option value="pace">Sort: Best pace</option><option value="vs">Sort: Most ahead of projection</option><option value="-vs">Sort: Most behind projection</option><option value="own">Sort: Highest Own%</option><option value="sal">Sort: Salary</option><option value="mins">Sort: Minutes</option></select></div>' +
+      '<select id="r4p-lvsort" aria-label="Sort"><option value="" hidden>Sort: by column</option><option value="dk">Sort: Most DK</option><option value="pace">Sort: Highest on track for</option><option value="vs">Sort: Most ahead of projection</option><option value="-vs">Sort: Most behind projection</option><option value="own">Sort: Highest Own%</option><option value="sal">Sort: Salary</option><option value="mins">Sort: Minutes</option></select></div>' +
       '<div class="lv-key"><span>Behind projection</span><span class="lv-bar"></span><span>Ahead of projection</span></div><div id="r4p-lvtbl"></div></div>';
     $('r4p-app').appendChild(sec);
     ['r4p-lvq','r4p-lvgame','r4p-lvslate','r4p-lvpos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-lvq' ? 'input' : 'change', lvRender); });
@@ -1523,7 +1523,7 @@
     });
     function th(key, label, cls){ return '<th' + (cls ? ' class="' + cls + '"' : '') + '><button type="button" class="th-sort' + (k === key ? ' on' : '') + '" data-lvk="' + key + '">' + label + (k === key ? (d < 0 ? ' \u2193' : ' \u2191') : '') + '</button></th>'; }
     box.innerHTML = '<p class="count">' + rows.length + ' of ' + LV_ROWS.length + ' players</p><table class="lv-tbl"><thead><tr>' + th('name', 'Player') + th('team', 'Team') + '<th>Game</th>' + th('mins', 'Min', 'n') + '<th>Stat line</th>' +
-      th('dk', 'DK', 'n') + th('proj', 'Proj', 'n') + th('pace', 'Pace', 'n') + th('own', 'Own%', 'n') + '</tr></thead><tbody>' +
+      th('dk', 'DK', 'n') + th('proj', 'Proj', 'n') + th('pace', 'On Track For', 'n') + th('own', 'Own%', 'n') + '</tr></thead><tbody>' +
       rows.map(function(r){
         var s = r.s, line = s.pts + ' pts, ' + s.reb + ' reb, ' + s.ast + ' ast' + (s.stl ? ', ' + s.stl + ' stl' : '') + (s.blk ? ', ' + s.blk + ' blk' : '') + (s.t3 ? ', ' + s.t3 + ' 3pm' : '') + (s.to ? ', ' + s.to + ' to' : '');
         return '<tr><td class="nowrap"><span class="who">' + esc(r.name) + '</span>' + (r.sal ? ' <span class="bs-n">' + money(r.sal) + '</span>' : '') + '</td><td class="lv-team">' + tm(r.team) + '</td>' +
