@@ -1475,9 +1475,63 @@
     var b = document.createElement('button'); b.className = 'tab'; b.type = 'button'; b.setAttribute('data-v', 'live'); b.textContent = 'Live';
     inj.parentNode.insertBefore(b, inj.nextSibling);
     var sec = document.createElement('section'); sec.className = 'view'; sec.id = 'v-live'; sec.hidden = true;
-    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. Pace is the DK he is on track to finish with, colored against our projection.</p>' +
-      '<div class="lv-tiles" id="r4p-lvtiles"></div><div class="lv-key"><span>Behind projection</span><span class="lv-bar"></span><span>Ahead of projection</span></div><div id="r4p-lvtbl"></div></div>';
+    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. On Track For is the DK he is on track to finish with at his current rate over his projected minutes, colored against our projection.</p>' +
+      '<div class="lv-tiles" id="r4p-lvtiles"></div>' +
+      '<div class="toolbar lv-tools"><input type="search" id="r4p-lvq" placeholder="Search a player or team" aria-label="Search live players"/>' +
+      '<select id="r4p-lvgame" aria-label="Game filter"><option value="">All games</option></select>' +
+      '<select id="r4p-lvslate" aria-label="Slate filter"><option value="">Both slates</option><option value="main">Main slate</option><option value="late">Late slate</option></select>' +
+      '<select id="r4p-lvpos" aria-label="Position filter"><option value="">All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>' +
+      '<select id="r4p-lvsort" aria-label="Sort"><option value="" hidden>Sort: by column</option><option value="dk">Sort: Most DK</option><option value="pace">Sort: Highest on track for</option><option value="vs">Sort: Most ahead of projection</option><option value="-vs">Sort: Most behind projection</option><option value="own">Sort: Highest Own%</option><option value="sal">Sort: Salary</option><option value="mins">Sort: Minutes</option></select></div>' +
+      '<div class="lv-key"><span>Behind projection</span><span class="lv-bar"></span><span>Ahead of projection</span></div><div id="r4p-lvtbl"></div></div>';
     $('r4p-app').appendChild(sec);
+    ['r4p-lvq','r4p-lvgame','r4p-lvslate','r4p-lvpos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-lvq' ? 'input' : 'change', lvRender); });
+    $('r4p-lvsort').addEventListener('change', function(){ var v = this.value; LV_SORT = {k: v.replace('-', ''), dir: v.charAt(0) === '-' ? 1 : -1}; lvRender(); });
+    sec.addEventListener('click', function(e){
+      var h = e.target.closest ? e.target.closest('[data-lvk]') : null;
+      if (h){ var k = h.getAttribute('data-lvk'); LV_SORT = {k:k, dir: LV_SORT.k === k ? -LV_SORT.dir : (k === 'name' || k === 'team' ? 1 : -1)}; $('r4p-lvsort').value = ''; lvRender(); return; }
+      var t = e.target.closest ? e.target.closest('[data-lvg]') : null;
+      if (t){ var g = t.getAttribute('data-lvg'); $('r4p-lvgame').value = $('r4p-lvgame').value === g ? '' : g; lvRender(); }
+    });
+  }
+  var LV_ROWS = [], LV_SORT = {k:'dk', dir:-1}, LV_GAMES = [];
+  function lvVal(r, k){
+    if (k === 'vs') return r.pace == null || r.proj == null ? null : r.pace - r.proj;
+    return r[k];
+  }
+  function lvRender(){
+    var box = $('r4p-lvtbl'); if (!box) return;
+    var gs = $('r4p-lvgame'), cur = gs.value;
+    gs.innerHTML = '<option value="">All games</option>' + LV_GAMES.map(function(g){ return '<option value="' + esc(g.id) + '">' + esc(g.label) + '</option>'; }).join('');
+    gs.value = cur;
+    var tiles = document.querySelectorAll('#r4p-lvtiles .lv-tile');
+    for (var i = 0; i < tiles.length; i++) tiles[i].classList.toggle('pick', tiles[i].getAttribute('data-lvg') === gs.value);
+    if (!LV_ROWS.length){ box.innerHTML = '<p class="sub">No games have started yet tonight. Scores show up here as soon as the first game tips.</p>'; return; }
+    var q = ($('r4p-lvq').value || '').toLowerCase().trim(), sl = $('r4p-lvslate').value, pos = $('r4p-lvpos').value;
+    var rows = LV_ROWS.filter(function(r){
+      if (gs.value && r.gid !== gs.value) return false;
+      if (sl && r.slate !== sl) return false;
+      if (pos && (r.pos || '').split('/').indexOf(pos) < 0) return false;
+      if (q && (r.name + ' ' + r.team + ' ' + (NAMES[r.team] || '')).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    var k = LV_SORT.k, d = LV_SORT.dir;
+    rows.sort(function(a, b){
+      var x = lvVal(a, k), y = lvVal(b, k);
+      if (x == null && y == null) return b.dk - a.dk; if (x == null) return 1; if (y == null) return -1;
+      if (typeof x === 'string') return d * x.localeCompare(y);
+      return d * (x - y) || b.dk - a.dk;
+    });
+    function th(key, label, cls){ return '<th' + (cls ? ' class="' + cls + '"' : '') + '><button type="button" class="th-sort' + (k === key ? ' on' : '') + '" data-lvk="' + key + '">' + label + (k === key ? (d < 0 ? ' \u2193' : ' \u2191') : '') + '</button></th>'; }
+    box.innerHTML = '<p class="count">' + rows.length + ' of ' + LV_ROWS.length + ' players</p><table class="lv-tbl"><thead><tr>' + th('name', 'Player') + th('team', 'Team') + '<th>Game</th>' + th('mins', 'Min', 'n') + '<th>Stat line</th>' +
+      th('dk', 'DK', 'n') + th('proj', 'Proj', 'n') + th('pace', 'On Track For', 'n') + th('own', 'Own%', 'n') + '</tr></thead><tbody>' +
+      rows.map(function(r){
+        var s = r.s, line = s.pts + ' pts, ' + s.reb + ' reb, ' + s.ast + ' ast' + (s.stl ? ', ' + s.stl + ' stl' : '') + (s.blk ? ', ' + s.blk + ' blk' : '') + (s.t3 ? ', ' + s.t3 + ' 3pm' : '') + (s.to ? ', ' + s.to + ' to' : '');
+        return '<tr><td class="nowrap"><span class="who">' + esc(r.name) + '</span>' + (r.sal ? ' <span class="bs-n">' + money(r.sal) + '</span>' : '') + '</td><td class="lv-team">' + tm(r.team) + '</td>' +
+          '<td class="lv-game bs-n">' + esc(r.game) + '</td><td class="n lv-min">' + r.mins + '</td><td class="lv-line bs-n">' + esc(line) + '</td>' +
+          '<td class="n lv-dk"><span class="lv-heat" style="' + lvHeat(r.diff) + '">' + n1(r.dk) + '</span></td><td class="n lv-proj">' + (r.proj != null ? n1(r.proj) : '\u2013') + '</td>' +
+          '<td class="n lv-pace"><span class="lv-heat" style="' + lvHeat(r.pace == null ? null : r.pace - r.proj) + '">' + (r.pace != null ? n1(r.pace) : '\u2013') + '</span></td>' +
+          '<td class="n lv-own">' + (r.own != null ? Math.round(r.own) + '%' : '\u2013') + '</td></tr>';
+      }).join('') + '</tbody></table>' + (rows.length ? '' : '<p class="sub">No players match these filters.</p>');
   }
   function liveLoad(){
     if (!LV_ON) return;
@@ -1485,8 +1539,9 @@
       var evs = sb.events || [];
       $('r4p-lvtiles').innerHTML = evs.map(function(e){
         var c = e.competitions[0].competitors, a = c.filter(function(x){ return x.homeAway === 'away'; })[0], h = c.filter(function(x){ return x.homeAway === 'home'; })[0], st = e.status.type.state;
-        return '<div class="lv-tile' + (st === 'in' ? ' on' : '') + '">' + tm(lvFix(a.team.abbreviation)) + ' <b>' + (st === 'pre' ? '' : esc(a.score)) + '</b> @ ' + tm(lvFix(h.team.abbreviation)) + ' <b>' + (st === 'pre' ? '' : esc(h.score)) + '</b><div class="lv-st">' + esc(e.status.type.shortDetail) + '</div></div>';
+        return '<div class="lv-tile' + (st === 'in' ? ' on' : '') + '" data-lvg="' + esc(e.id) + '" role="button" tabindex="0">' + tm(lvFix(a.team.abbreviation)) + ' <b>' + (st === 'pre' ? '' : esc(a.score)) + '</b> @ ' + tm(lvFix(h.team.abbreviation)) + ' <b>' + (st === 'pre' ? '' : esc(h.score)) + '</b><div class="lv-st">' + esc(e.status.type.shortDetail) + '</div></div>';
       }).join('');
+      LV_GAMES = evs.map(function(e){ var c = e.competitions[0].competitors; return {id: e.id, label: lvFix(c.filter(function(x){ return x.homeAway === 'away'; })[0].team.abbreviation) + ' @ ' + lvFix(c.filter(function(x){ return x.homeAway === 'home'; })[0].team.abbreviation)}; });
       var go = evs.filter(function(e){ return e.status.type.state !== 'pre'; });
       return Promise.all(go.map(function(e){ return fetch(LV_ESPN + 'summary?event=' + e.id + '&t=' + Date.now()).then(function(r){ return r.json(); }).then(function(s){ return {e:e, s:s}; }).catch(function(){ return null; }); }));
     }).then(function(list){
@@ -1508,21 +1563,11 @@
             var name = at.athlete.displayName, p = pj[lvNorm(name) + '|' + team], v = lvDk(s);
             var exp = p ? (state === 'post' ? p.dk : p.dk * Math.min(1, mins / Math.max(p.min, 1))) : null;
             var pace = p ? (state === 'post' ? v : v / mins * Math.max(p.min, mins)) : null;
-            rows.push({name:name, team:team, sal:p && p.salary, game:game, mins:mins, s:s, dk:v, proj:p && p.dk, own:p && p.own, diff:exp == null ? null : v - exp, pace:pace});
+            rows.push({gid:e.id, slate:p && p.slate, pos:p && p.pos, name:name, team:team, sal:p && p.salary, game:game, mins:mins, s:s, dk:v, proj:p && p.dk, own:p && p.own, diff:exp == null ? null : v - exp, pace:pace});
           });
         });
       });
-      rows.sort(function(x, y){ return y.dk - x.dk; });
-      if (!rows.length){ $('r4p-lvtbl').innerHTML = '<p class="sub">No games have started yet tonight. Scores show up here as soon as the first game tips.</p>'; return; }
-      $('r4p-lvtbl').innerHTML = '<table class="lv-tbl"><thead><tr><th>Player</th><th>Team</th><th>Game</th><th class="n">Min</th><th>Stat line</th><th class="n">DK</th><th class="n">Proj</th><th class="n">Pace</th><th class="n">Own%</th></tr></thead><tbody>' +
-        rows.map(function(r){
-          var s = r.s, line = s.pts + ' pts, ' + s.reb + ' reb, ' + s.ast + ' ast' + (s.stl ? ', ' + s.stl + ' stl' : '') + (s.blk ? ', ' + s.blk + ' blk' : '') + (s.t3 ? ', ' + s.t3 + ' 3pm' : '') + (s.to ? ', ' + s.to + ' to' : '');
-          return '<tr><td class="nowrap"><span class="who">' + esc(r.name) + '</span>' + (r.sal ? ' <span class="bs-n">' + money(r.sal) + '</span>' : '') + '</td><td class="lv-team">' + tm(r.team) + '</td>' +
-            '<td class="lv-game bs-n">' + esc(r.game) + '</td><td class="n lv-min">' + r.mins + '</td><td class="lv-line bs-n">' + esc(line) + '</td>' +
-            '<td class="n lv-dk"><span class="lv-heat" style="' + lvHeat(r.diff) + '">' + n1(r.dk) + '</span></td><td class="n lv-proj">' + (r.proj != null ? n1(r.proj) : '–') + '</td>' +
-            '<td class="n lv-pace"><span class="lv-heat" style="' + lvHeat(r.pace == null ? null : r.pace - r.proj) + '">' + (r.pace != null ? n1(r.pace) : '–') + '</span></td>' +
-            '<td class="n lv-own">' + (r.own != null ? Math.round(r.own) + '%' : '–') + '</td></tr>';
-        }).join('') + '</tbody></table>';
+      LV_ROWS = rows; lvRender();
     }).catch(function(){ if (!$('r4p-lvtbl').innerHTML) $('r4p-lvtbl').innerHTML = '<p class="sub">Live scores could not load. Trying again in 30 seconds.</p>'; });
   }
   function liveStart(on){
