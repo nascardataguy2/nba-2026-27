@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updated": "5:17 PM ET",
+ "updated": "5:32 PM ET",
  "games": 12,
  "pending": [],
  "first_report": "5:42 AM",
@@ -10,11 +10,11 @@
    "home": "CLE",
    "time": "2026-11-19T00:00Z",
    "slate": "main",
-   "ou": 236.5,
+   "ou": 238.5,
    "fav": "CLE",
-   "line": 5.5,
-   "away_pts": 115.5,
-   "home_pts": 121.0,
+   "line": 4.5,
+   "away_pts": 117.0,
+   "home_pts": 121.5,
    "tags": [],
    "teams": {
     "MEM": {
@@ -68,11 +68,11 @@
    "home": "MIA",
    "time": "2026-11-19T00:00Z",
    "slate": "main",
-   "ou": 236.5,
+   "ou": 235.5,
    "fav": "MIA",
    "line": 11.5,
-   "away_pts": 112.5,
-   "home_pts": 124.0,
+   "away_pts": 112.0,
+   "home_pts": 123.5,
    "tags": [
     "Blowout risk"
    ],
@@ -131,6 +131,10 @@
     "IND": {
      "out": [
       {
+       "player": "Andrew Nembhard",
+       "min": 34.0
+      },
+      {
        "player": "Tyrese Haliburton",
        "min": 32.7
       },
@@ -139,15 +143,10 @@
        "min": 12.0
       }
      ],
-     "q": [
-      {
-       "player": "Andrew Nembhard",
-       "min": 31.2
-      }
-     ]
+     "q": []
     }
    },
-   "key": "Tyrese Haliburton is out, so Quenton Jackson and Kelly Oubre and Larry Nance should play more than usual."
+   "key": "Andrew Nembhard and Tyrese Haliburton are out, so Quenton Jackson and Jalen Slawson and Jay Huff should play more than usual."
   },
   {
    "away": "PHI",
@@ -200,9 +199,9 @@
    "slate": "main",
    "ou": 240.5,
    "fav": "BKN",
-   "line": 2.5,
-   "away_pts": 119.0,
-   "home_pts": 121.5,
+   "line": 1.5,
+   "away_pts": 119.5,
+   "home_pts": 121.0,
    "tags": [
     "Highest total",
     "Close game"
@@ -269,14 +268,123 @@
    "key": "Scottie Barnes and Kawhi Leonard are out, so Alijah Martin and Jakob Poeltl and Jamal Shead should play more than usual."
   },
   {
+   "away": "ATL",
+   "home": "OKC",
+   "time": "2026-11-19T01:00Z",
+   "slate": "main",
+   "ou": 228.5,
+   "fav": "OKC",
+   "line": 5.5,
+   "away_pts": 111.5,
+   "home_pts": 117.0,
+   "tags": [],
+   "teams": {
+    "ATL": {
+     "out": [
+      {
+       "player": "CJ McCollum",
+       "min": 28.7
+      },
+      {
+       "player": "Kingston Flemings",
+       "min": 22.7
+      },
+      {
+       "player": "Asa Newell",
+       "min": 15.3
+      }
+     ],
+     "q": []
+    },
+    "OKC": {
+     "out": [
+      {
+       "player": "Jalen Williams",
+       "min": 31.7
+      },
+      {
+       "player": "Chet Holmgren",
+       "min": 30.0
+      },
+      {
+       "player": "Jaylin Williams",
+       "min": 22.0
+      },
+      {
+       "player": "Cason Wallace",
+       "min": 16.3
+      }
+     ],
+     "q": [
+      {
+       "player": "Jaylin Williams",
+       "min": 23.4
+      }
+     ]
+    }
+   },
+   "key": "Jalen Williams and Chet Holmgren are out, so Aday Mara and Bennett Stirtz and Jared McCain should play more than usual."
+  },
+  {
+   "away": "GSW",
+   "home": "DAL",
+   "time": "2026-11-19T01:00Z",
+   "slate": "main",
+   "ou": 225.5,
+   "fav": "DAL",
+   "line": 4.5,
+   "away_pts": 110.5,
+   "home_pts": 115.0,
+   "tags": [],
+   "teams": {
+    "GSW": {
+     "out": [
+      {
+       "player": "Stephen Curry",
+       "min": 21.0
+      },
+      {
+       "player": "Brandon Williams",
+       "min": 13.3
+      }
+     ],
+     "q": [
+      {
+       "player": "Draymond Green",
+       "min": 21.5
+      },
+      {
+       "player": "Al Horford",
+       "min": 14.2
+      }
+     ]
+    },
+    "DAL": {
+     "out": [
+      {
+       "player": "Sergio de Larrea",
+       "min": 13.3
+      }
+     ],
+     "q": [
+      {
+       "player": "Max Christie",
+       "min": 21.6
+      }
+     ]
+    }
+   },
+   "key": "Stephen Curry is out, so De'Anthony Melton and Graham Ike should play more than usual."
+  },
+  {
    "away": "DET",
    "home": "NOP",
    "time": "2026-11-19T01:00Z",
    "slate": "main",
-   "ou": 227.5,
+   "ou": 225.5,
    "fav": "DET",
-   "line": 6.5,
-   "away_pts": 117.0,
+   "line": 4.5,
+   "away_pts": 115.0,
    "home_pts": 110.5,
    "tags": [
     "DET on a back-to-back"
@@ -333,124 +441,15 @@
    "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Jeremiah Fears and Jordan Poole should play more than usual."
   },
   {
-   "away": "ATL",
-   "home": "OKC",
-   "time": "2026-11-19T01:00Z",
-   "slate": "main",
-   "ou": 227.5,
-   "fav": "OKC",
-   "line": 6.5,
-   "away_pts": 110.5,
-   "home_pts": 117.0,
-   "tags": [],
-   "teams": {
-    "ATL": {
-     "out": [
-      {
-       "player": "CJ McCollum",
-       "min": 28.7
-      },
-      {
-       "player": "Kingston Flemings",
-       "min": 22.7
-      },
-      {
-       "player": "Asa Newell",
-       "min": 15.3
-      }
-     ],
-     "q": []
-    },
-    "OKC": {
-     "out": [
-      {
-       "player": "Jalen Williams",
-       "min": 31.7
-      },
-      {
-       "player": "Chet Holmgren",
-       "min": 30.0
-      },
-      {
-       "player": "Jaylin Williams",
-       "min": 22.0
-      },
-      {
-       "player": "Cason Wallace",
-       "min": 16.3
-      }
-     ],
-     "q": [
-      {
-       "player": "Jaylin Williams",
-       "min": 23.4
-      }
-     ]
-    }
-   },
-   "key": "Jalen Williams and Chet Holmgren are out, so Aday Mara and Bennett Stirtz and Jared McCain should play more than usual."
-  },
-  {
-   "away": "GSW",
-   "home": "DAL",
-   "time": "2026-11-19T01:00Z",
-   "slate": "main",
-   "ou": 224.5,
-   "fav": "DAL",
-   "line": 4.5,
-   "away_pts": 110.0,
-   "home_pts": 114.5,
-   "tags": [],
-   "teams": {
-    "GSW": {
-     "out": [
-      {
-       "player": "Stephen Curry",
-       "min": 21.0
-      },
-      {
-       "player": "Brandon Williams",
-       "min": 13.3
-      }
-     ],
-     "q": [
-      {
-       "player": "Draymond Green",
-       "min": 21.5
-      },
-      {
-       "player": "Al Horford",
-       "min": 14.2
-      }
-     ]
-    },
-    "DAL": {
-     "out": [
-      {
-       "player": "Sergio de Larrea",
-       "min": 13.3
-      }
-     ],
-     "q": [
-      {
-       "player": "Max Christie",
-       "min": 21.6
-      }
-     ]
-    }
-   },
-   "key": "Stephen Curry is out, so De'Anthony Melton and Graham Ike should play more than usual."
-  },
-  {
    "away": "BOS",
    "home": "DEN",
    "time": "2026-11-19T02:30Z",
    "slate": "late",
-   "ou": 220.5,
+   "ou": 219.5,
    "fav": "BOS",
    "line": 2.5,
-   "away_pts": 111.5,
-   "home_pts": 109.0,
+   "away_pts": 111.0,
+   "home_pts": 108.5,
    "tags": [
     "Lowest total",
     "Close game"
@@ -472,11 +471,11 @@
    "home": "LAL",
    "time": "2026-11-19T03:00Z",
    "slate": "late",
-   "ou": 228.5,
+   "ou": 231.5,
    "fav": "LAL",
-   "line": 10.5,
-   "away_pts": 109.0,
-   "home_pts": 119.5,
+   "line": 11.5,
+   "away_pts": 110.0,
+   "home_pts": 121.5,
    "tags": [
     "Blowout risk",
     "Both teams on a back-to-back"
@@ -537,6 +536,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "5:34 PM"
+  },
   {
    "player": "Jaxson Hayes",
    "team": "UTA",
@@ -608,14 +615,6 @@
    "was": "Probable",
    "why": "",
    "time": "1:55 PM"
-  },
-  {
-   "player": "Peyton Watson",
-   "team": "CLE",
-   "status": "Doubtful",
-   "was": "Questionable",
-   "why": "Low Back Contusion",
-   "time": "1:55 PM"
   }
  ],
  "chg": [
@@ -660,6 +659,27 @@
    ],
    "time": "12:56 PM",
    "size": 44.9
+  },
+  {
+   "key": "Andrew Nembhard",
+   "team": "IND",
+   "head": "Andrew Nembhard OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Quenton Jackson",
+     "salary": 4700,
+     "much": "+11.1 DK without him (3 games)"
+    },
+    {
+     "player": "Jay Huff",
+     "salary": 3400,
+     "much": "+10.8 DK without him (3 games)"
+    }
+   ],
+   "time": "5:34 PM",
+   "size": 32.5
   },
   {
    "key": "Cade Cunningham",
@@ -998,6 +1018,61 @@
    ]
   },
   {
+   "team": "IND",
+   "outs": [
+    {
+     "player": "Andrew Nembhard",
+     "min": 34.0,
+     "note": "Andrew Nembhard was moved from questionable to out for tonight on the NBA's 05:30 PM injury report. He had averaged 34 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
+    {
+     "player": "Tyrese Haliburton",
+     "min": 32.7,
+     "note": "The show said Tyrese Haliburton could be back as early as the end of next week, but that later in November is more realistic. The show said there have been no reported setbacks in his recovery.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 66.7,
+   "benefits": [
+    {
+     "player": "Quenton Jackson",
+     "salary": 4700,
+     "why": "started 2 of 2",
+     "much": "+21.0 DK without them (2 games)",
+     "score": 21.0,
+     "min": 23.9,
+     "dk": 22.7,
+     "avg": 21.7
+    },
+    {
+     "player": "Jalen Slawson",
+     "salary": 3200,
+     "why": "started 1 of 2",
+     "much": "+19.7 DK without them (2 games)",
+     "score": 19.7,
+     "min": 17.2,
+     "dk": 14.1,
+     "avg": 12.1
+    },
+    {
+     "player": "Jay Huff",
+     "salary": 3400,
+     "why": "started 1 of 2",
+     "much": "+15.0 DK without them (2 games)",
+     "score": 15.0,
+     "min": 18.4,
+     "dk": 16.2,
+     "avg": 14.7
+    }
+   ],
+   "split_of": [
+    "Andrew Nembhard",
+    "Tyrese Haliburton"
+   ]
+  },
+  {
    "team": "TOR",
    "outs": [
     {
@@ -1094,54 +1169,6 @@
    ],
    "split_of": [
     "Jaylen Brown"
-   ]
-  },
-  {
-   "team": "MIA",
-   "outs": [
-    {
-     "player": "Myron Gardner",
-     "min": 23.0,
-     "note": "Myron Gardner was moved from questionable to out for tonight on the NBA's 01:45 PM injury report. He had averaged 16 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 23.0,
-   "benefits": [
-    {
-     "player": "Bobby Portis",
-     "salary": 4500,
-     "why": "22 minutes, up from 19",
-     "much": "+9.5 DK without him (5 games)",
-     "score": 9.5,
-     "min": 21.0,
-     "dk": 21.3,
-     "avg": 19.5
-    },
-    {
-     "player": "Pelle Larsson",
-     "salary": 5300,
-     "why": "32 minutes, up from 28",
-     "much": "+6.4 DK without him (5 games)",
-     "score": 6.4,
-     "min": 28.8,
-     "dk": 23.0,
-     "avg": 23.5
-    },
-    {
-     "player": "Dru Smith",
-     "salary": 3000,
-     "why": "14 minutes, up from 6",
-     "much": "+6.3 DK without him (2 games)",
-     "score": 6.3,
-     "min": 12.3,
-     "dk": 9.9,
-     "avg": 5.9
-    }
-   ],
-   "split_of": [
-    "Myron Gardner"
    ]
   }
  ],
@@ -1254,7 +1281,7 @@
   {
    "player": "Collin Gillespie",
    "team": "PHX",
-   "own": 34.3,
+   "own": 34.6,
    "dk": 23.6,
    "salary": 5200
   }
@@ -1263,7 +1290,7 @@
   {
    "player": "Onyeka Okongwu",
    "team": "ATL",
-   "own": 1.6,
+   "own": 2.0,
    "dk": 39.9,
    "salary": 6700
   },
@@ -1277,7 +1304,7 @@
   {
    "player": "Cedric Coward",
    "team": "MEM",
-   "own": 6.5,
+   "own": 8.4,
    "dk": 38.6,
    "salary": 6700
   }
@@ -1354,10 +1381,66 @@
   ]
  },
  "injuries": {
-  "report": "05:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_05_15PM.pdf",
+  "report": "05:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_05_30PM.pdf",
   "pending": [],
   "rows": [
+   {
+    "last": {
+     "date": "2026-11-13",
+     "dk": 23.5,
+     "min": 34,
+     "opp": "NYK",
+     "ha": "vs",
+     "res": "W",
+     "score": "106-104"
+    },
+    "game": "HOU at IND",
+    "time": "2026-11-19T00:00Z",
+    "team": "IND",
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:34 PM",
+    "salary": 7000,
+    "min": 34.0,
+    "benefits": [
+     {
+      "player": "Quenton Jackson",
+      "salary": 4700,
+      "why": "started 2 of 3",
+      "much": "+11.1 DK without him (3 games)",
+      "score": 11.1,
+      "min": 23.9,
+      "dk": 22.7,
+      "avg": 21.7
+     },
+     {
+      "player": "Jay Huff",
+      "salary": 3400,
+      "why": "started 2 of 3",
+      "much": "+10.8 DK without him (3 games)",
+      "score": 10.8,
+      "min": 18.4,
+      "dk": 16.2,
+      "avg": 14.7
+     },
+     {
+      "player": "T.J. McConnell",
+      "salary": 4300,
+      "why": "19 minutes, up from 12",
+      "much": "+10.6 DK without him (1 game)",
+      "score": 10.6,
+      "min": 16.3,
+      "dk": 20.9,
+      "avg": 18.2
+     }
+    ],
+    "estimate": false
+   },
    {
     "last": {
      "date": "2026-11-16",
@@ -1548,62 +1631,6 @@
       "min": 18.8,
       "dk": 15.0,
       "avg": 9.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-13",
-     "dk": 23.5,
-     "min": 34,
-     "opp": "NYK",
-     "ha": "vs",
-     "res": "W",
-     "score": "106-104"
-    },
-    "game": "HOU at IND",
-    "time": "2026-11-19T00:00Z",
-    "team": "IND",
-    "player": "Andrew Nembhard",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 7000,
-    "min": 34.0,
-    "benefits": [
-     {
-      "player": "Quenton Jackson",
-      "salary": 4700,
-      "why": "started 2 of 3",
-      "much": "+11.1 DK without him (3 games)",
-      "score": 11.1,
-      "min": 20.3,
-      "dk": 19.3,
-      "avg": 21.7
-     },
-     {
-      "player": "Jay Huff",
-      "salary": 3400,
-      "why": "started 2 of 3",
-      "much": "+10.8 DK without him (3 games)",
-      "score": 10.8,
-      "min": 13.9,
-      "dk": 12.3,
-      "avg": 14.7
-     },
-     {
-      "player": "T.J. McConnell",
-      "salary": 4300,
-      "why": "19 minutes, up from 12",
-      "much": "+10.6 DK without him (1 game)",
-      "score": 10.6,
-      "min": 13.1,
-      "dk": 16.8,
-      "avg": 18.2
      }
     ],
     "estimate": false
@@ -2550,8 +2577,8 @@
       "why": "23 minutes, up from 20",
       "much": "+9.5 DK without him (10 games)",
       "score": 9.5,
-      "min": 20.3,
-      "dk": 19.3,
+      "min": 23.9,
+      "dk": 22.7,
       "avg": 21.7
      },
      {
@@ -2560,8 +2587,8 @@
       "why": "started, 34 and 30 minutes (11/13)",
       "much": "+5.7 DK without him (8 games)",
       "score": 5.7,
-      "min": 25.2,
-      "dk": 20.3,
+      "min": 29.1,
+      "dk": 23.5,
       "avg": 19.6
      },
      {
@@ -2570,8 +2597,8 @@
       "why": "15 minutes, up from 12",
       "much": "+5.4 DK without him (9 games)",
       "score": 5.4,
-      "min": 11.6,
-      "dk": 8.9,
+      "min": 9.3,
+      "dk": 7.1,
       "avg": 10.7
      }
     ],
@@ -3038,10 +3065,10 @@
       "player": "Jarace Walker",
       "salary": 3700,
       "why": "subs in for him 1 of 3 times",
-      "much": "+5.3 DK projected vs. last 3",
-      "score": 5.316666666666666,
-      "min": 15.5,
-      "dk": 13.4,
+      "much": "+9.0 DK projected vs. last 3",
+      "score": 9.016666666666667,
+      "min": 19.8,
+      "dk": 17.1,
       "avg": 17.5
      }
     ],
