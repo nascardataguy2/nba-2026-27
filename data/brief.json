@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updated": "9:02 PM ET",
+ "updated": "9:18 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:26 AM",
@@ -190,6 +190,10 @@
     "CHA": {
      "out": [
       {
+       "player": "Grayson Allen",
+       "min": 31.0
+      },
+      {
        "player": "Dennis Schroder",
        "min": 26.0
       }
@@ -214,6 +218,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "9:19 PM"
+  },
   {
    "player": "Deni Avdija",
    "team": "POR",
@@ -345,6 +357,22 @@
    ],
    "time": "2:54 PM",
    "size": 27.3
+  },
+  {
+   "key": "Grayson Allen",
+   "team": "CHA",
+   "head": "Grayson Allen OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Royce O'Neale",
+     "salary": 3900,
+     "much": "+4.8 DK projected vs. last 3"
+    }
+   ],
+   "time": "9:19 PM",
+   "size": 26.4
   },
   {
    "key": "Isaiah Joe",
@@ -559,6 +587,60 @@
    ]
   },
   {
+   "team": "CHA",
+   "outs": [
+    {
+     "player": "Grayson Allen",
+     "min": 31.0,
+     "note": "Ruled out tonight.",
+     "new": true
+    },
+    {
+     "player": "Dennis Schroder",
+     "min": 26.0,
+     "note": "Ruled out tonight (left hamstring strain).",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 57.0,
+   "benefits": [
+    {
+     "player": "Christian Anderson",
+     "salary": 3900,
+     "why": "19 minutes, up from 10",
+     "much": "+10.3 DK without them (4 games)",
+     "score": 10.3,
+     "min": 16.0,
+     "dk": 13.7,
+     "avg": 10.8
+    },
+    {
+     "player": "Coby White",
+     "salary": 5400,
+     "why": "same minutes, more production",
+     "much": "+8.6 DK without them (4 games)",
+     "score": 8.6,
+     "min": 20.0,
+     "dk": 20.3,
+     "avg": 18.1
+    },
+    {
+     "player": "Sion James",
+     "salary": 4500,
+     "why": "30 minutes, up from 25",
+     "much": "+6.8 DK without them (4 games)",
+     "score": 6.8,
+     "min": 34.2,
+     "dk": 21.9,
+     "avg": 16.7
+    }
+   ],
+   "split_of": [
+    "Dennis Schroder"
+   ]
+  },
+  {
    "team": "UTA",
    "outs": [
     {
@@ -618,54 +700,6 @@
     "Lauri Markkanen",
     "Jaren Jackson Jr.",
     "Jaxson Hayes"
-   ]
-  },
-  {
-   "team": "CHA",
-   "outs": [
-    {
-     "player": "Dennis Schroder",
-     "min": 26.0,
-     "note": "Ruled out tonight (left hamstring strain).",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 26.0,
-   "benefits": [
-    {
-     "player": "Christian Anderson",
-     "salary": 3900,
-     "why": "19 minutes, up from 10",
-     "much": "+10.3 DK without him (4 games)",
-     "score": 10.3,
-     "min": 17.3,
-     "dk": 14.9,
-     "avg": 10.8
-    },
-    {
-     "player": "Coby White",
-     "salary": 5400,
-     "why": "same minutes, more production",
-     "much": "+8.6 DK without him (4 games)",
-     "score": 8.6,
-     "min": 20.0,
-     "dk": 20.3,
-     "avg": 18.1
-    },
-    {
-     "player": "Sion James",
-     "salary": 4500,
-     "why": "30 minutes, up from 25",
-     "much": "+6.8 DK without him (4 games)",
-     "score": 6.8,
-     "min": 30.8,
-     "dk": 19.7,
-     "avg": 16.7
-    }
-   ],
-   "split_of": [
-    "Dennis Schroder"
    ]
   },
   {
@@ -835,23 +869,23 @@
   {
    "player": "Isaiah Collier",
    "team": "UTA",
-   "own": 2.4,
+   "own": 2.2,
    "dk": 24.4,
    "salary": 4700
   },
   {
-   "player": "Ziaire Williams",
-   "team": "LAL",
-   "own": 8.9,
-   "dk": 23.7,
-   "salary": 4700
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "own": 5.0,
+   "dk": 30.1,
+   "salary": 5900
   },
   {
-   "player": "Quentin Grimes",
+   "player": "Ziaire Williams",
    "team": "LAL",
-   "own": 5.0,
-   "dk": 27.2,
-   "salary": 5400
+   "own": 8.0,
+   "dk": 23.7,
+   "salary": 4700
   }
  ],
  "last": {
@@ -948,8 +982,8 @@
   ]
  },
  "injuries": {
-  "report": "09:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_09_00PM.pdf",
+  "report": "09:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_09_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1306,6 +1340,42 @@
       "min": 25.8,
       "dk": 22.8,
       "avg": 24.1
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-15",
+     "dk": 27.2,
+     "min": 25,
+     "opp": "LAC",
+     "ha": "@",
+     "res": "L",
+     "score": "113-105"
+    },
+    "game": "CHA at LAL",
+    "time": "2026-11-18T04:00Z",
+    "team": "CHA",
+    "player": "Grayson Allen",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "9:19 PM",
+    "salary": 6400,
+    "min": 31.0,
+    "benefits": [
+     {
+      "player": "Royce O'Neale",
+      "salary": 3900,
+      "why": "subs in for him 8 of 49 times",
+      "much": "+4.8 DK projected vs. last 3",
+      "score": 4.800000000000001,
+      "min": 25.7,
+      "dk": 17.8,
+      "avg": 12.1
      }
     ],
     "estimate": false
@@ -1941,8 +2011,8 @@
       "why": "19 minutes, up from 10",
       "much": "+10.3 DK without him (4 games)",
       "score": 10.3,
-      "min": 17.3,
-      "dk": 14.9,
+      "min": 16.0,
+      "dk": 13.7,
       "avg": 10.8
      },
      {
@@ -1961,8 +2031,8 @@
       "why": "30 minutes, up from 25",
       "much": "+6.8 DK without him (4 games)",
       "score": 6.8,
-      "min": 30.8,
-      "dk": 19.7,
+      "min": 34.2,
+      "dk": 21.9,
       "avg": 16.7
      }
     ],
