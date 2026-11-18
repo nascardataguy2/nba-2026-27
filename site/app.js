@@ -1469,10 +1469,11 @@
   function lvHeat(d){ if (d == null) return 'background:#f3f4f6;color:#15171c'; var x = Math.max(-1, Math.min(1, d / 15)), c = LV_STOPS[Math.round((x + 1) / 2 * 6)];
     return 'background:' + c + ';color:' + ((c === '#d73027' || c === '#1a9850') ? '#fff' : '#15171c'); }
   function liveSetup(){
-    var mv = document.querySelector('#r4p-tabs .tab[data-v="moves"]');
-    if (!mv || document.querySelector('#r4p-tabs .tab[data-v="live"]')) return;
+    var inj = document.querySelector('#r4p-tabs .tab[data-v="injuries"]'), mv = document.querySelector('#r4p-tabs .tab[data-v="moves"]');
+    if (mv) mv.parentNode.removeChild(mv);  // the Moves tab was dropped so the tab bar fits on one line
+    if (!inj || document.querySelector('#r4p-tabs .tab[data-v="live"]')) return;
     var b = document.createElement('button'); b.className = 'tab'; b.type = 'button'; b.setAttribute('data-v', 'live'); b.textContent = 'Live';
-    mv.parentNode.insertBefore(b, mv);
+    inj.parentNode.insertBefore(b, inj.nextSibling);
     var sec = document.createElement('section'); sec.className = 'view'; sec.id = 'v-live'; sec.hidden = true;
     sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. Pace is the DK he is on track to finish with, colored against our projection.</p>' +
       '<div class="lv-tiles" id="r4p-lvtiles"></div><div class="lv-key"><span>Behind projection</span><span class="lv-bar"></span><span>Ahead of projection</span></div><div id="r4p-lvtbl"></div></div>';
