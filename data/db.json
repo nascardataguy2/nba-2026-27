@@ -2,7 +2,7 @@
  "updated": "2026-11-18",
  "brief": {
   "date": "2026-11-18",
-  "updated": "6:32 PM ET",
+  "updated": "6:47 PM ET",
   "games": 12,
   "pending": [],
   "first_report": "5:42 AM",
@@ -305,12 +305,7 @@
         "min": 16.3
        }
       ],
-      "q": [
-       {
-        "player": "Jaylin Williams",
-        "min": 23.2
-       }
-      ]
+      "q": []
      }
     },
     "key": "Jalen Williams and Chet Holmgren are out, so Aday Mara and Bennett Stirtz and Kenrich Williams should play more than usual."
@@ -522,6 +517,14 @@
   ],
   "changed": [
    {
+    "player": "Jaylin Williams",
+    "team": "OKC",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Low Back Spasms",
+    "time": "6:49 PM"
+   },
+   {
     "player": "Al Horford",
     "team": "GSW",
     "status": "Out",
@@ -592,14 +595,6 @@
     "was": "",
     "why": "Right Foot Soreness",
     "time": "6:04 PM"
-   },
-   {
-    "player": "Patrick Williams",
-    "team": "CHI",
-    "status": "Available",
-    "was": "Probable",
-    "why": "-",
-    "time": "5:49 PM"
    }
   ],
   "chg": [
@@ -880,6 +875,27 @@
     ],
     "time": "4:17 PM",
     "size": 11.3
+   },
+   {
+    "key": "OKC",
+    "team": "OKC",
+    "head": "Williams CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Aday Mara",
+      "salary": 5500,
+      "much": "+9.0 DK without Williams"
+     },
+     {
+      "player": "Bennett Stirtz",
+      "salary": 4000,
+      "much": "+8.8 DK without Williams"
+     }
+    ],
+    "time": "6:49 PM",
+    "size": 11.1
    },
    {
     "key": "Myron Gardner",
@@ -1381,25 +1397,25 @@
   ],
   "leverage": [
    {
-    "player": "Jabari Walker",
-    "team": "PHI",
-    "own": 2.9,
-    "dk": 26.6,
-    "salary": 3600
-   },
-   {
     "player": "Charles Bassey",
     "team": "GSW",
-    "own": 0.7,
+    "own": 2.5,
     "dk": 27.3,
     "salary": 4000
    },
    {
     "player": "Jamal Shead",
     "team": "TOR",
-    "own": 7.1,
+    "own": 6.1,
     "dk": 38.2,
     "salary": 5600
+   },
+   {
+    "player": "Joel Embiid",
+    "team": "PHI",
+    "own": 7.4,
+    "dk": 52.5,
+    "salary": 8300
    }
   ],
   "last": {
@@ -1474,8 +1490,8 @@
    ]
   },
   "injuries": {
-   "report": "06:30 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_06_30PM.pdf",
+   "report": "06:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_06_45PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -2282,62 +2298,6 @@
     },
     {
      "last": {
-      "date": "2026-11-02",
-      "dk": 11.8,
-      "min": 20,
-      "opp": "CLE",
-      "ha": "@",
-      "res": "W",
-      "score": "117-112"
-     },
-     "game": "ATL at OKC",
-     "time": "2026-11-19T01:00Z",
-     "team": "OKC",
-     "player": "Jaylin Williams",
-     "status": "Questionable",
-     "reason": "Low Back Spasms",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "",
-     "salary": 4700,
-     "min": 22.0,
-     "benefits": [
-      {
-       "player": "Aday Mara",
-       "salary": 5500,
-       "why": "started 4 of 7",
-       "much": "+9.0 DK without him (7 games)",
-       "score": 9.0,
-       "min": 24.6,
-       "dk": 25.4,
-       "avg": 22.4
-      },
-      {
-       "player": "Bennett Stirtz",
-       "salary": 4000,
-       "why": "21 minutes, up from 15",
-       "much": "+8.8 DK without him (7 games)",
-       "score": 8.8,
-       "min": 20.6,
-       "dk": 14.6,
-       "avg": 12.6
-      },
-      {
-       "player": "Jared McCain",
-       "salary": 6100,
-       "why": "started 5 of 7",
-       "much": "+8.2 DK without him (7 games)",
-       "score": 8.2,
-       "min": 29.0,
-       "dk": 24.9,
-       "avg": 23.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "last": {
       "date": "2026-10-25",
       "dk": 2.0,
       "min": 4,
@@ -2489,6 +2449,31 @@
      "changed_at": "6:33 PM",
      "salary": 5000,
      "min": 22.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-02",
+      "dk": 11.8,
+      "min": 20,
+      "opp": "CLE",
+      "ha": "@",
+      "res": "W",
+      "score": "117-112"
+     },
+     "game": "ATL at OKC",
+     "time": "2026-11-19T01:00Z",
+     "team": "OKC",
+     "player": "Jaylin Williams",
+     "status": "Available",
+     "reason": "Low Back Spasms",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "6:49 PM",
+     "salary": 4700,
+     "min": 22.0,
      "benefits": [],
      "estimate": false
     },
