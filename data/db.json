@@ -2,10 +2,9 @@
  "updated": "2026-11-18",
  "brief": {
   "date": "2026-11-18",
-  "updated": "1:53 PM ET",
+  "updated": "2:53 PM ET",
   "games": 12,
   "pending": [
-   "DET",
    "UTA",
    "LAL"
   ],
@@ -183,7 +182,7 @@
       "q": [
        {
         "player": "Dean Wade",
-        "min": 29.5
+        "min": 28.7
        }
       ]
      },
@@ -267,12 +266,12 @@
       "q": [
        {
         "player": "RJ Barrett",
-        "min": 37.1
+        "min": 35.6
        }
       ]
      }
     },
-    "key": "Scottie Barnes and Kawhi Leonard are out, so Jakob Poeltl and Jamal Shead and Trayce Jackson-Davis should play more than usual."
+    "key": "Scottie Barnes and Kawhi Leonard are out, so Alijah Martin and Jakob Poeltl and Jamal Shead should play more than usual."
    },
    {
     "away": "DET",
@@ -289,15 +288,32 @@
     ],
     "teams": {
      "DET": {
-      "out": [],
-      "q": [
+      "out": [
+       {
+        "player": "Duncan Robinson",
+        "min": 30.7
+       },
+       {
+        "player": "Jalen Duren",
+        "min": 19.0
+       },
        {
         "player": "Ron Holland",
-        "min": 15.1
+        "min": 17.0
        },
        {
         "player": "Isaiah Joe",
-        "min": 15.7
+        "min": 13.7
+       }
+      ],
+      "q": [
+       {
+        "player": "Cade Cunningham",
+        "min": 39.8
+       },
+       {
+        "player": "Isaiah Joe",
+        "min": 21.3
        }
       ]
      },
@@ -458,7 +474,7 @@
       "q": []
      }
     },
-    "key": "Nikola Jokic has the top projection in this game at 57.0 DK points."
+    "key": "Nikola Jokic has the top projection in this game at 56.8 DK points."
    },
    {
     "away": "UTA",
@@ -540,6 +556,22 @@
   ],
   "changed": [
    {
+    "player": "Isaiah Joe",
+    "team": "DET",
+    "status": "Questionable",
+    "was": "Out",
+    "why": "Right Hip Contusion",
+    "time": "2:55 PM"
+   },
+   {
+    "player": "Cade Cunningham",
+    "team": "DET",
+    "status": "Questionable",
+    "was": "",
+    "why": "Right Knee Soreness",
+    "time": "2:55 PM"
+   },
+   {
     "player": "Dean Wade",
     "team": "PHI",
     "status": "Questionable",
@@ -613,18 +645,39 @@
     "act": "Play",
     "names": [
      {
+      "player": "Alijah Martin",
+      "salary": 4000,
+      "much": "+15.9 DK without him (4 games)"
+     },
+     {
       "player": "Jakob Poeltl",
       "salary": 5300,
       "much": "+15.3 DK without him (4 games)"
-     },
-     {
-      "player": "Jamal Shead",
-      "salary": 5600,
-      "much": "+10.9 DK without him (4 games)"
      }
     ],
     "time": "12:56 PM",
     "size": 44.9
+   },
+   {
+    "key": "Cade Cunningham",
+    "team": "DET",
+    "head": "Cade Cunningham QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Daniss Jenkins",
+      "salary": 6200,
+      "much": "about +15.8 DK if he sits (estimate)"
+     },
+     {
+      "player": "Kevin Huerter",
+      "salary": 4900,
+      "much": "about +6.0 DK if he sits (estimate)"
+     }
+    ],
+    "time": "2:55 PM",
+    "size": 24.1
    },
    {
     "key": "Peyton Watson",
@@ -671,14 +724,9 @@
     "act": "If he sits, play",
     "names": [
      {
-      "player": "Collin Murray-Boyles",
-      "salary": 5700,
-      "much": "about +14.0 DK if he sits (estimate)"
-     },
-     {
-      "player": "Trayce Jackson-Davis",
-      "salary": 3600,
-      "much": "about +7.2 DK if he sits (estimate)"
+      "player": "Alijah Martin",
+      "salary": 4000,
+      "much": "about +3.9 DK if he sits (estimate)"
      }
     ],
     "time": "12:56 PM",
@@ -720,6 +768,27 @@
     ],
     "time": "1:55 PM",
     "size": 8.2
+   },
+   {
+    "key": "Isaiah Joe",
+    "team": "DET",
+    "head": "Isaiah Joe QUESTIONABLE",
+    "st": "Questionable",
+    "act": "If he sits, play",
+    "names": [
+     {
+      "player": "Ausar Thompson",
+      "salary": 6700,
+      "much": "+9.8 DK without him (10 games)"
+     },
+     {
+      "player": "Kevin Huerter",
+      "salary": 4900,
+      "much": "+6.9 DK without him (10 games)"
+     }
+    ],
+    "time": "2:55 PM",
+    "size": 6.2
    }
   ],
   "sits": [
@@ -761,7 +830,7 @@
       "much": "+9.0 DK without them (7 games)",
       "score": 9.0,
       "min": 25.2,
-      "dk": 26.0,
+      "dk": 26.1,
       "avg": 22.4
      },
      {
@@ -823,8 +892,8 @@
       "why": "started that game",
       "much": "+39.6 DK without them (1 game)",
       "score": 39.6,
-      "min": 28.3,
-      "dk": 28.6,
+      "min": 28.0,
+      "dk": 28.2,
       "avg": 20.4
      },
      {
@@ -833,8 +902,8 @@
       "why": "started that game",
       "much": "+24.7 DK without them (1 game)",
       "score": 24.7,
-      "min": 18.9,
-      "dk": 21.0,
+      "min": 19.6,
+      "dk": 21.2,
       "avg": 17.3
      },
      {
@@ -843,8 +912,8 @@
       "why": "28 minutes, up from 10",
       "much": "+23.8 DK without them (1 game)",
       "score": 23.8,
-      "min": 18.2,
-      "dk": 14.8,
+      "min": 18.8,
+      "dk": 14.9,
       "avg": 9.0
      }
     ],
@@ -924,13 +993,23 @@
     "lost": 60.0,
     "benefits": [
      {
+      "player": "Alijah Martin",
+      "salary": 4000,
+      "why": "22 minutes, up from 8",
+      "much": "+15.9 DK without them (4 games)",
+      "score": 15.9,
+      "min": 7.7,
+      "dk": 4.7,
+      "avg": 10.6
+     },
+     {
       "player": "Jakob Poeltl",
       "salary": 5300,
       "why": "30 minutes, up from 19",
       "much": "+15.3 DK without them (4 games)",
       "score": 15.3,
-      "min": 28.8,
-      "dk": 29.0,
+      "min": 27.7,
+      "dk": 29.8,
       "avg": 21.0
      },
      {
@@ -939,19 +1018,9 @@
       "why": "started 2 of 4",
       "much": "+10.9 DK without them (4 games)",
       "score": 10.9,
-      "min": 28.1,
-      "dk": 25.9,
+      "min": 27.9,
+      "dk": 27.2,
       "avg": 22.3
-     },
-     {
-      "player": "Trayce Jackson-Davis",
-      "salary": 3600,
-      "why": "14 minutes, up from 7",
-      "much": "+10.4 DK without them (1 game)",
-      "score": 10.4,
-      "min": 12.7,
-      "dk": 15.3,
-      "avg": 9.2
      }
     ],
     "split_of": [
@@ -985,7 +1054,7 @@
       "much": "+11.1 DK without them (1 game)",
       "score": 11.1,
       "min": 27.2,
-      "dk": 22.2,
+      "dk": 22.5,
       "avg": 16.6
      },
      {
@@ -995,7 +1064,7 @@
       "much": "+10.3 DK without them (1 game)",
       "score": 10.3,
       "min": 34.0,
-      "dk": 40.4,
+      "dk": 40.6,
       "avg": 37.9
      }
     ],
@@ -1023,7 +1092,7 @@
       "much": "+9.5 DK without him (5 games)",
       "score": 9.5,
       "min": 21.0,
-      "dk": 21.2,
+      "dk": 21.3,
       "avg": 19.5
      },
      {
@@ -1033,7 +1102,7 @@
       "much": "+6.4 DK without him (5 games)",
       "score": 6.4,
       "min": 28.8,
-      "dk": 23.0,
+      "dk": 23.3,
       "avg": 23.5
      },
      {
@@ -1145,48 +1214,48 @@
     "salary": 4500
    },
    {
-    "player": "Trayce Jackson-Davis",
-    "team": "TOR",
-    "own": 38.0,
-    "dk": 15.3,
-    "salary": 3600
-   },
-   {
     "player": "Cam Spencer",
     "team": "MEM",
-    "own": 35.3,
-    "dk": 35.5,
+    "own": 37.1,
+    "dk": 35.8,
     "salary": 5600
    },
    {
     "player": "Norman Powell",
     "team": "CHI",
     "own": 35.0,
-    "dk": 28.5,
+    "dk": 28.6,
     "salary": 6200
+   },
+   {
+    "player": "Mohamed Bamba",
+    "team": "UTA",
+    "own": 34.3,
+    "dk": 20.0,
+    "salary": 5300
    }
   ],
   "leverage": [
    {
     "player": "Onyeka Okongwu",
     "team": "ATL",
-    "own": 0.8,
+    "own": 0.9,
     "dk": 39.9,
     "salary": 6700
    },
    {
-    "player": "Dyson Daniels",
-    "team": "ATL",
-    "own": 4.1,
-    "dk": 39.1,
-    "salary": 7100
+    "player": "Cedric Coward",
+    "team": "MEM",
+    "own": 8.9,
+    "dk": 38.7,
+    "salary": 6700
    },
    {
-    "player": "Jakob Poeltl",
-    "team": "TOR",
-    "own": 0.8,
-    "dk": 29.0,
-    "salary": 5300
+    "player": "Cade Cunningham",
+    "team": "DET",
+    "own": 7.0,
+    "dk": 56.6,
+    "salary": 10000
    }
   ],
   "last": {
@@ -1261,10 +1330,9 @@
    ]
   },
   "injuries": {
-   "report": "01:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_01_45PM.pdf",
+   "report": "02:45 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_02_45PM.pdf",
    "pending": [
-    "DET",
     "UTA",
     "LAL"
    ],
@@ -1299,7 +1367,7 @@
        "much": "+11.1 DK without him (1 game)",
        "score": 11.1,
        "min": 27.2,
-       "dk": 22.2,
+       "dk": 22.5,
        "avg": 16.6
       },
       {
@@ -1309,7 +1377,7 @@
        "much": "+10.3 DK without him (1 game)",
        "score": 10.3,
        "min": 34.0,
-       "dk": 40.4,
+       "dk": 40.6,
        "avg": 37.9
       }
      ],
@@ -1344,8 +1412,8 @@
        "why": "21 minutes, up from 17",
        "much": "+5.6 DK without him (7 games)",
        "score": 5.6,
-       "min": 23.0,
-       "dk": 23.7,
+       "min": 23.7,
+       "dk": 24.0,
        "avg": 19.4
       }
      ],
@@ -1381,7 +1449,7 @@
        "much": "+9.5 DK without him (5 games)",
        "score": 9.5,
        "min": 21.0,
-       "dk": 21.2,
+       "dk": 21.3,
        "avg": 19.5
       },
       {
@@ -1391,7 +1459,7 @@
        "much": "+6.4 DK without him (5 games)",
        "score": 6.4,
        "min": 28.8,
-       "dk": 23.0,
+       "dk": 23.3,
        "avg": 23.5
       },
       {
@@ -1436,8 +1504,8 @@
        "why": "28 minutes, up from 17",
        "much": "+14.2 DK without him (3 games)",
        "score": 14.2,
-       "min": 23.0,
-       "dk": 23.7,
+       "min": 23.7,
+       "dk": 24.0,
        "avg": 19.4
       },
       {
@@ -1446,8 +1514,8 @@
        "why": "started 2 of 3",
        "much": "+11.7 DK without him (3 games)",
        "score": 11.7,
-       "min": 28.3,
-       "dk": 28.6,
+       "min": 28.0,
+       "dk": 28.2,
        "avg": 20.4
       },
       {
@@ -1456,8 +1524,8 @@
        "why": "17 minutes, up from 10",
        "much": "+6.5 DK without him (3 games)",
        "score": 6.5,
-       "min": 18.2,
-       "dk": 14.8,
+       "min": 18.8,
+       "dk": 14.9,
        "avg": 9.0
       }
      ],
@@ -1549,7 +1617,7 @@
        "much": "+8.4 DK without him (2 games)",
        "score": 8.4,
        "min": 37.2,
-       "dk": 45.8,
+       "dk": 45.9,
        "avg": 43.4
       }
      ],
@@ -1620,8 +1688,8 @@
        "why": "26 minutes, up from 15",
        "much": "+15.0 DK without him (6 games)",
        "score": 15.0,
-       "min": 28.3,
-       "dk": 28.6,
+       "min": 28.0,
+       "dk": 28.2,
        "avg": 20.4
       },
       {
@@ -1630,8 +1698,8 @@
        "why": "17 minutes, up from 8",
        "much": "+9.0 DK without him (5 games)",
        "score": 9.0,
-       "min": 18.2,
-       "dk": 14.8,
+       "min": 18.8,
+       "dk": 14.9,
        "avg": 9.0
       },
       {
@@ -1640,8 +1708,8 @@
        "why": "18 minutes, up from 11",
        "much": "+8.6 DK without him (5 games)",
        "score": 8.6,
-       "min": 18.9,
-       "dk": 21.0,
+       "min": 19.6,
+       "dk": 21.2,
        "avg": 17.3
       }
      ],
@@ -1771,13 +1839,23 @@
      "min": 34.0,
      "benefits": [
       {
+       "player": "Alijah Martin",
+       "salary": 4000,
+       "why": "22 minutes, up from 8",
+       "much": "+15.9 DK without him (4 games)",
+       "score": 15.9,
+       "min": 7.7,
+       "dk": 4.7,
+       "avg": 10.6
+      },
+      {
        "player": "Jakob Poeltl",
        "salary": 5300,
        "why": "30 minutes, up from 19",
        "much": "+15.3 DK without him (4 games)",
        "score": 15.3,
-       "min": 28.8,
-       "dk": 29.0,
+       "min": 27.7,
+       "dk": 29.8,
        "avg": 21.0
       },
       {
@@ -1786,19 +1864,9 @@
        "why": "started 2 of 4",
        "much": "+10.9 DK without him (4 games)",
        "score": 10.9,
-       "min": 28.1,
-       "dk": 25.9,
+       "min": 27.9,
+       "dk": 27.2,
        "avg": 22.3
-      },
-      {
-       "player": "Trayce Jackson-Davis",
-       "salary": 3600,
-       "why": "14 minutes, up from 7",
-       "much": "+10.4 DK without him (1 game)",
-       "score": 10.4,
-       "min": 12.7,
-       "dk": 15.3,
-       "avg": 9.2
       }
      ],
      "estimate": false
@@ -1827,34 +1895,14 @@
      "min": 37.7,
      "benefits": [
       {
-       "player": "Collin Murray-Boyles",
-       "salary": 5700,
-       "why": "plays his position (F), 32 minutes tonight",
-       "much": "about +14.0 DK",
-       "score": 14.03726708074534,
-       "min": 32.0,
-       "dk": 30.0,
-       "avg": 22.8
-      },
-      {
-       "player": "Trayce Jackson-Davis",
-       "salary": 3600,
-       "why": "plays his position (F), 13 minutes tonight",
-       "much": "about +7.2 DK",
-       "score": 7.159006211180124,
-       "min": 12.7,
-       "dk": 15.3,
-       "avg": 9.2
-      },
-      {
-       "player": "Jamison Battle",
-       "salary": 3900,
-       "why": "plays his position (F), 21 minutes tonight",
-       "much": "about +7.1 DK",
-       "score": 7.065424430641821,
-       "min": 20.8,
-       "dk": 15.1,
-       "avg": 12.8
+       "player": "Alijah Martin",
+       "salary": 4000,
+       "why": "subs in for him 10 of 59 times",
+       "much": "about +3.9 DK",
+       "score": 3.8968376256511847,
+       "min": 7.7,
+       "dk": 4.7,
+       "avg": 10.6
       }
      ],
      "estimate": true
@@ -1947,6 +1995,52 @@
     },
     {
      "last": {
+      "date": "2026-11-17",
+      "dk": 43.8,
+      "min": 38,
+      "opp": "SAS",
+      "ha": "@",
+      "res": "W",
+      "score": "105-93"
+     },
+     "game": "DET at NOP",
+     "time": "2026-11-19T01:00Z",
+     "team": "DET",
+     "player": "Cade Cunningham",
+     "status": "Questionable",
+     "reason": "Right Knee Soreness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "2:55 PM",
+     "salary": 10000,
+     "min": 40.7,
+     "benefits": [
+      {
+       "player": "Daniss Jenkins",
+       "salary": 6200,
+       "why": "subs in for him 22 of 56 times",
+       "much": "about +15.8 DK",
+       "score": 15.760296010296008,
+       "min": 37.0,
+       "dk": 36.5,
+       "avg": 27.8
+      },
+      {
+       "player": "Kevin Huerter",
+       "salary": 4900,
+       "why": "subs in for him 10 of 56 times",
+       "much": "about +6.0 DK",
+       "score": 6.040876527602191,
+       "min": 33.9,
+       "dk": 28.2,
+       "avg": 20.8
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "last": {
       "date": "2026-11-16",
       "dk": 23.5,
       "min": 25,
@@ -1985,7 +2079,7 @@
        "much": "+15.5 DK without him (2 games)",
        "score": 15.5,
        "min": 30.8,
-       "dk": 38.4,
+       "dk": 38.3,
        "avg": 38.6
       },
       {
@@ -2031,7 +2125,7 @@
        "much": "+9.0 DK without him (7 games)",
        "score": 9.0,
        "min": 25.2,
-       "dk": 26.0,
+       "dk": 26.1,
        "avg": 22.4
       },
       {
@@ -2109,6 +2203,62 @@
        "min": 25.0,
        "dk": 16.4,
        "avg": 11.9
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-10-25",
+      "dk": 2.0,
+      "min": 4,
+      "opp": "PHI",
+      "ha": "@",
+      "res": "W",
+      "score": "106-93"
+     },
+     "game": "DET at NOP",
+     "time": "2026-11-19T01:00Z",
+     "team": "DET",
+     "player": "Isaiah Joe",
+     "status": "Questionable",
+     "reason": "Right Hip Contusion",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "2:55 PM",
+     "salary": 3800,
+     "min": 13.7,
+     "benefits": [
+      {
+       "player": "Ausar Thompson",
+       "salary": 6700,
+       "why": "same minutes, more production",
+       "much": "+9.8 DK without him (10 games)",
+       "score": 9.8,
+       "min": 30.6,
+       "dk": 36.5,
+       "avg": 34.1
+      },
+      {
+       "player": "Kevin Huerter",
+       "salary": 4900,
+       "why": "26 minutes, up from 21",
+       "much": "+6.9 DK without him (10 games)",
+       "score": 6.9,
+       "min": 33.9,
+       "dk": 28.2,
+       "avg": 20.8
+      },
+      {
+       "player": "Daniss Jenkins",
+       "salary": 6200,
+       "why": "started, 42 minutes (11/12)",
+       "much": "+3.7 DK projected vs. last 3",
+       "score": 3.6666666666666643,
+       "min": 37.0,
+       "dk": 36.5,
+       "avg": 27.8
       }
      ],
      "estimate": false
@@ -2320,7 +2470,7 @@
        "much": "+13.8 DK without him (11 games)",
        "score": 13.8,
        "min": 32.5,
-       "dk": 40.3,
+       "dk": 40.4,
        "avg": 47.2
       },
       {
@@ -2422,7 +2572,7 @@
        "much": "+14.5 DK without him (3 games)",
        "score": 14.5,
        "min": 28.7,
-       "dk": 35.5,
+       "dk": 35.8,
        "avg": 24.4
       },
       {
@@ -2442,7 +2592,7 @@
        "much": "+7.9 DK without him (3 games)",
        "score": 7.9,
        "min": 29.6,
-       "dk": 38.6,
+       "dk": 38.7,
        "avg": 34.5
       }
      ],
@@ -2477,8 +2627,8 @@
        "why": "started 2 of 3",
        "much": "+25.7 DK without him (3 games)",
        "score": 25.7,
-       "min": 28.3,
-       "dk": 28.6,
+       "min": 28.0,
+       "dk": 28.2,
        "avg": 20.4
       },
       {
@@ -2487,8 +2637,8 @@
        "why": "20 minutes, up from 12",
        "much": "+12.2 DK without him (3 games)",
        "score": 12.2,
-       "min": 18.9,
-       "dk": 21.0,
+       "min": 19.6,
+       "dk": 21.2,
        "avg": 17.3
       },
       {
@@ -2497,8 +2647,8 @@
        "why": "17 minutes, up from 10",
        "much": "+10.0 DK without him (3 games)",
        "score": 10.0,
-       "min": 18.2,
-       "dk": 14.8,
+       "min": 18.8,
+       "dk": 14.9,
        "avg": 9.0
       }
      ],
@@ -2533,8 +2683,8 @@
        "why": "26 minutes, up from 18",
        "much": "+30.8 DK without him (1 game)",
        "score": 30.8,
-       "min": 18.3,
-       "dk": 16.4,
+       "min": 18.7,
+       "dk": 17.2,
        "avg": 17.3
       },
       {
@@ -2543,8 +2693,8 @@
        "why": "30 minutes, up from 8",
        "much": "+24.5 DK without him (1 game)",
        "score": 24.5,
-       "min": 19.5,
-       "dk": 15.1,
+       "min": 21.8,
+       "dk": 16.8,
        "avg": 9.6
       },
       {
@@ -2553,8 +2703,8 @@
        "why": "29 minutes, up from 21",
        "much": "+12.6 DK without him (1 game)",
        "score": 12.6,
-       "min": 23.7,
-       "dk": 22.9,
+       "min": 23.0,
+       "dk": 22.4,
        "avg": 21.3
       }
      ],
@@ -2672,7 +2822,7 @@
        "much": "+10.8 DK without him (6 games)",
        "score": 10.8,
        "min": 16.5,
-       "dk": 16.8,
+       "dk": 16.9,
        "avg": 13.8
       }
      ],
@@ -2707,8 +2857,8 @@
        "why": "30 minutes, up from 8",
        "much": "+24.5 DK without him (1 game)",
        "score": 24.5,
-       "min": 19.5,
-       "dk": 15.1,
+       "min": 21.8,
+       "dk": 16.8,
        "avg": 9.6
       },
       {
@@ -2717,8 +2867,8 @@
        "why": "28 minutes, up from 20",
        "much": "+12.8 DK without him (4 games)",
        "score": 12.8,
-       "min": 23.7,
-       "dk": 22.9,
+       "min": 23.0,
+       "dk": 22.4,
        "avg": 21.3
       },
       {
@@ -2727,8 +2877,8 @@
        "why": "21 minutes, up from 17",
        "much": "+9.8 DK without him (4 games)",
        "score": 9.8,
-       "min": 18.3,
-       "dk": 16.4,
+       "min": 18.7,
+       "dk": 17.2,
        "avg": 17.3
       }
      ],
@@ -2774,7 +2924,7 @@
        "much": "+6.6 DK without him (9 games)",
        "score": 6.6,
        "min": 28.7,
-       "dk": 35.5,
+       "dk": 35.8,
        "avg": 24.4
       }
      ],
@@ -2886,34 +3036,34 @@
      "min": 26.0,
      "benefits": [
       {
+       "player": "Alijah Martin",
+       "salary": 4000,
+       "why": "14 minutes, up from 3",
+       "much": "+11.4 DK without him (11 games)",
+       "score": 11.4,
+       "min": 7.7,
+       "dk": 4.7,
+       "avg": 10.6
+      },
+      {
        "player": "Jamal Shead",
        "salary": 5600,
        "why": "24 minutes, up from 20",
        "much": "+10.6 DK without him (12 games)",
        "score": 10.6,
-       "min": 28.1,
-       "dk": 25.9,
+       "min": 27.9,
+       "dk": 27.2,
        "avg": 22.3
       },
       {
        "player": "Ja'Kobe Walter",
        "salary": 5400,
        "why": "35 minutes, 17 points (11/11)",
-       "much": "+5.5 DK projected vs. last 3",
-       "score": 5.466666666666669,
-       "min": 34.0,
-       "dk": 25.8,
+       "much": "+6.1 DK projected vs. last 3",
+       "score": 6.066666666666666,
+       "min": 32.6,
+       "dk": 26.4,
        "avg": 23.1
-      },
-      {
-       "player": "Trayce Jackson-Davis",
-       "salary": 3600,
-       "why": "same minutes, more production",
-       "much": "+5.3 DK without him (7 games)",
-       "score": 5.3,
-       "min": 12.7,
-       "dk": 15.3,
-       "avg": 9.2
       }
      ],
      "estimate": false
@@ -3004,7 +3154,7 @@
        "much": "+6.7 DK without him (10 games)",
        "score": 6.7,
        "min": 27.6,
-       "dk": 27.0,
+       "dk": 27.5,
        "avg": 27.5
       }
      ],
@@ -3086,7 +3236,7 @@
        "much": "+15.8 DK without him (11 games)",
        "score": 15.8,
        "min": 25.2,
-       "dk": 26.0,
+       "dk": 26.1,
        "avg": 22.4
       },
       {
@@ -3108,6 +3258,62 @@
        "min": 24.4,
        "dk": 19.4,
        "avg": 15.5
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-14",
+      "dk": 13.8,
+      "min": 17,
+      "opp": "MIA",
+      "ha": "@",
+      "res": "L",
+      "score": "137-117"
+     },
+     "game": "DET at NOP",
+     "time": "2026-11-19T01:00Z",
+     "team": "DET",
+     "player": "Duncan Robinson",
+     "status": "Out",
+     "reason": "Left Quadriceps Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 5600,
+     "min": 30.7,
+     "benefits": [
+      {
+       "player": "Ausar Thompson",
+       "salary": 6700,
+       "why": "same minutes, more production",
+       "much": "+21.4 DK without him (1 game)",
+       "score": 21.4,
+       "min": 30.6,
+       "dk": 36.5,
+       "avg": 34.1
+      },
+      {
+       "player": "Daniss Jenkins",
+       "salary": 6200,
+       "why": "started that game",
+       "much": "+15.1 DK without him (1 game)",
+       "score": 15.1,
+       "min": 37.0,
+       "dk": 36.5,
+       "avg": 27.8
+      },
+      {
+       "player": "Paul Reed",
+       "salary": 6000,
+       "why": "same minutes, more production",
+       "much": "+5.7 DK without him (1 game)",
+       "score": 5.7,
+       "min": 27.4,
+       "dk": 30.5,
+       "avg": 27.7
       }
      ],
      "estimate": false
@@ -3142,7 +3348,7 @@
        "much": "+15.8 DK without him (11 games)",
        "score": 15.8,
        "min": 25.2,
-       "dk": 26.0,
+       "dk": 26.1,
        "avg": 22.4
       },
       {
@@ -3198,7 +3404,7 @@
        "much": "+15.2 DK without him (6 games)",
        "score": 15.2,
        "min": 34.3,
-       "dk": 38.0,
+       "dk": 38.1,
        "avg": 32.3
       },
       {
@@ -3254,7 +3460,7 @@
        "much": "+13.3 DK without him (2 games)",
        "score": 13.3,
        "min": 33.3,
-       "dk": 35.3,
+       "dk": 35.4,
        "avg": 34.5
       },
       {
@@ -3310,8 +3516,64 @@
        "much": "+6.9 DK without him (4 games)",
        "score": 6.9,
        "min": 9.3,
-       "dk": 11.4,
+       "dk": 11.3,
        "avg": 11.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-10-23",
+      "dk": 19.5,
+      "min": 10,
+      "opp": "MIA",
+      "ha": "@",
+      "res": "W",
+      "score": "128-111"
+     },
+     "game": "DET at NOP",
+     "time": "2026-11-19T01:00Z",
+     "team": "DET",
+     "player": "Jalen Duren",
+     "status": "Out",
+     "reason": "Right Hamstring Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 6800,
+     "min": 19.0,
+     "benefits": [
+      {
+       "player": "John Collins",
+       "salary": 5200,
+       "why": "started at center, 23 minutes (11/17)",
+       "much": "+12.0 DK projected vs. last 3",
+       "score": 12.033333333333331,
+       "min": 31.0,
+       "dk": 28.7,
+       "avg": 21.6
+      },
+      {
+       "player": "Ausar Thompson",
+       "salary": 6700,
+       "why": "same minutes, more production",
+       "much": "+9.8 DK without him (10 games)",
+       "score": 9.8,
+       "min": 30.6,
+       "dk": 36.5,
+       "avg": 34.1
+      },
+      {
+       "player": "Daniss Jenkins",
+       "salary": 6200,
+       "why": "31 minutes, up from 18",
+       "much": "+9.4 DK without him (11 games)",
+       "score": 9.4,
+       "min": 37.0,
+       "dk": 36.5,
+       "avg": 27.8
       }
      ],
      "estimate": false
@@ -3374,6 +3636,62 @@
     },
     {
      "last": {
+      "date": "2026-11-14",
+      "dk": 20.8,
+      "min": 22,
+      "opp": "MIA",
+      "ha": "@",
+      "res": "L",
+      "score": "137-117"
+     },
+     "game": "DET at NOP",
+     "time": "2026-11-19T01:00Z",
+     "team": "DET",
+     "player": "Ronald Holland II",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3700,
+     "min": 17.0,
+     "benefits": [
+      {
+       "player": "Ausar Thompson",
+       "salary": 6700,
+       "why": "same minutes, more production",
+       "much": "+21.4 DK without him (1 game)",
+       "score": 21.4,
+       "min": 30.6,
+       "dk": 36.5,
+       "avg": 34.1
+      },
+      {
+       "player": "Daniss Jenkins",
+       "salary": 6200,
+       "why": "started that game",
+       "much": "+15.1 DK without him (1 game)",
+       "score": 15.1,
+       "min": 37.0,
+       "dk": 36.5,
+       "avg": 27.8
+      },
+      {
+       "player": "Paul Reed",
+       "salary": 6000,
+       "why": "same minutes, more production",
+       "much": "+5.7 DK without him (1 game)",
+       "score": 5.7,
+       "min": 27.4,
+       "dk": 30.5,
+       "avg": 27.7
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
       "date": "2026-10-25",
       "dk": 12.2,
       "min": 6,
@@ -3402,7 +3720,7 @@
        "much": "+15.8 DK without him (11 games)",
        "score": 15.8,
        "min": 25.2,
-       "dk": 26.0,
+       "dk": 26.1,
        "avg": 22.4
       },
       {
@@ -3458,7 +3776,7 @@
        "much": "+7.2 DK without him (8 games)",
        "score": 7.2,
        "min": 39.0,
-       "dk": 51.6,
+       "dk": 51.5,
        "avg": 43.8
       },
       {
@@ -3514,7 +3832,7 @@
        "much": "+9.2 DK without him (6 games)",
        "score": 9.2,
        "min": 25.3,
-       "dk": 22.8,
+       "dk": 22.9,
        "avg": 18.8
       },
       {
@@ -3558,9 +3876,9 @@
        "salary": 7000,
        "why": "projected 34 minutes tonight, up from 31",
        "much": "more minutes",
-       "score": -2.0833333333333357,
+       "score": -1.9833333333333343,
        "min": 34.3,
-       "dk": 38.0,
+       "dk": 38.1,
        "avg": 32.3
       },
       {
@@ -3577,10 +3895,10 @@
        "player": "Yves Missi",
        "salary": 5500,
        "why": "projected 23 minutes tonight",
-       "much": "+5.7 DK projected vs. last 3",
-       "score": 5.716666666666669,
+       "much": "+5.6 DK projected vs. last 3",
+       "score": 5.616666666666667,
        "min": 22.8,
-       "dk": 26.8,
+       "dk": 26.7,
        "avg": 28.1
       }
      ],
@@ -3768,6 +4086,11 @@
     {
      "player": "Nate Bittle",
      "team": "TOR",
+     "status": "Out"
+    },
+    {
+     "player": "Taurean Prince",
+     "team": "DET",
      "status": "Out"
     },
     {
@@ -13844,13 +14167,13 @@
   },
   {
    "team": "DET",
-   "starters": "Cade Cunningham (35), Daniss Jenkins (29), Ausar Thompson (28), John Collins (26), Duncan Robinson (31)",
-   "bench": "Kevin Huerter (25), Paul Reed (27), Chaz Lanier (8), Ron Holland (16), Javonte Green (17), Taurean Prince (7)",
+   "starters": "Cade Cunningham (35), Daniss Jenkins (29), Ausar Thompson (28), John Collins (26), Kevin Huerter (25)",
+   "bench": "Paul Reed (27), Chaz Lanier (8), Ron Holland (16), Javonte Green (17)",
    "backup_c": "Paul Reed",
    "coach": "J.B. Bickerstaff",
    "notes": "Isaiah Stewart and Tobias Harris are gone, and Kevin Huerter, Isaiah Joe and John Collins were added. Jalen Duren re-signed after a contract holdout. Fantasy playoff weeks run 4-3-4 (March 28 end) and 3-4-4 (April 4 end). Detroit has 15 back-to-backs, and rest is not expected to be an issue. Jalen Duren will miss at least two weeks with a strained right hamstring from Friday; Paul Reed started at center Sunday.",
    "source": "LO-1018",
-   "out": "Jalen Duren",
+   "out": "Duncan Robinson, Ebuka Okorie, Jalen Duren, Taurean Prince",
    "depth_through": "2026-11-17",
    "games": 13
   },
@@ -24536,7 +24859,7 @@
   {
    "rank": 284,
    "player": "Alijah Martin",
-   "pos": "PG,SG",
+   "pos": "SG",
    "team": "TOR",
    "flag": "",
    "change": "",
@@ -25796,7 +26119,7 @@
   {
    "rank": 374,
    "player": "Ebuka Okorie",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "DET",
    "flag": "",
    "change": "",
