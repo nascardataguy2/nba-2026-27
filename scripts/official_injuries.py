@@ -124,6 +124,41 @@ def canon(players):
             p["matched_from"] = k
 
 
+def log_downgrades(day, out, prev):
+    """When today's report rules a rotation player out (or doubtful) who was listed as
+    questionable, probable or available earlier today, add a player log note so an older
+    "questionable" note never sits on top of his page after he is ruled out."""
+    if not prev:
+        return
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from projections import norm
+    glog = json.load(open(os.path.join(D, "gamelogs.json")))
+    rank = {"Available": 0, "Probable": 1, "Questionable": 2, "Doubtful": 3, "Out": 4}
+    notes = []
+    for x in out["players"]:
+        was = prev.get((x["player"], x["team"]))
+        if not was or x["status"] not in ("Out", "Doubtful") or rank.get(x["status"], 0) <= rank.get(was, 0):
+            continue
+        g = [r for r in glog.get(norm(x["player"]), []) if r[0] < day and r[5]][:5]
+        if not g:
+            continue
+        mins = sum(r[5] for r in g) / len(g)
+        if mins < 15:
+            continue
+        why = " (%s)" % x["reason"].lower() if x.get("reason") and x["reason"] != "Not With Team" else ""
+        notes.append({"player": x["player"], "team": x["team"], "date": day, "kind": "injury", "src": "NBA-INJ",
+                      "expires": day,
+                      "text": "%s was moved from %s to %s for tonight%s on the NBA's %s injury report. He had averaged %.0f minutes over "
+                              "his last %d games, so those minutes go to teammates; the injury page lists who gains."
+                              % (x["player"], was.lower(), x["status"].lower(), why, out["report"], mins, len(g))})
+    if notes:
+        tmp = os.path.join(D, "_downgrades.json")
+        json.dump(notes, open(tmp, "w"), indent=1, ensure_ascii=False)
+        subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "playerlog.py"), "--add", tmp], check=False)
+        os.remove(tmp)
+        print("official injuries: %d downgrade notes" % len(notes))
+
+
 def main():
     day = sys.argv[1] if len(sys.argv) > 1 else datetime.now(ET).strftime("%Y-%m-%d")
     try:
@@ -145,7 +180,18 @@ def main():
         return
     canon(players)
     out = {"date": day, "report": "%s:%s %s" % (hh, mm, ap), "url": url, "players": players, "pending": pending}
+    prev = {}
+    try:
+        old = json.load(open(os.path.join(D, "injury_report.json")))
+        if old.get("date") == day:
+            prev = {(x["player"], x["team"]): x["status"] for x in old.get("players", [])}
+    except Exception:
+        pass
     json.dump(out, open(os.path.join(D, "injury_report.json"), "w"), indent=1, ensure_ascii=False)
+    try:
+        log_downgrades(day, out, prev)
+    except Exception as e:  # never break the projections run
+        print("official injuries: log notes skipped (%s)" % e)
     print("official injuries:", day, out["report"], len(players), "players,", len(pending), "teams pending")
 
 
