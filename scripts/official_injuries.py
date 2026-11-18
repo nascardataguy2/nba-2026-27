@@ -17,7 +17,7 @@ import subprocess
 import sys
 import tempfile
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
@@ -162,9 +162,44 @@ def log_downgrades(day, out, prev):
 def main():
     day = sys.argv[1] if len(sys.argv) > 1 else datetime.now(ET).strftime("%Y-%m-%d")
     try:
-        page = get(PAGE)
-        links = sorted(set(re.findall(r"https://ak-static\.cms\.nba\.com/referee/injury/Injury-Report_(%s)_(\d\d)_(\d\d)(AM|PM)\.pdf" % day, page)),
-                       key=lambda t: ((int(t[1]) % 12) + (12 if t[3] == "PM" else 0), int(t[2])))
+        key = lambda t: ((int(t[1]) % 12) + (12 if t[3] == "PM" else 0), int(t[2]))
+        try:
+            page = get(PAGE)
+        except Exception:
+            page = ""
+        links = set(re.findall(r"https://ak-static\.cms\.nba\.com/referee/injury/Injury-Report_(%s)_(\d\d)_(\d\d)(AM|PM)\.pdf" % day, page))
+        # The NBA's listing page is often cached and behind (on 11/17 it still showed the
+        # 7:00 PM report at 7:46 PM, after the 7:30 PM report had ruled Deni Avdija out).
+        # So also try the newest 15-minute report files directly, newest first.
+        now = datetime.now(ET)
+        if now.strftime("%Y-%m-%d") == day:
+            for back in range(0, 8):
+                t = now - timedelta(minutes=15 * back)
+                t = t.replace(minute=t.minute - t.minute % 15)
+                cand = (day, t.strftime("%I"), t.strftime("%M"), t.strftime("%p"))
+                if cand in links:
+                    break
+                try:
+                    req = urllib.request.Request("https://ak-static.cms.nba.com/referee/injury/Injury-Report_%s_%s_%s%s.pdf" % cand,
+                                                 headers=UA, method="HEAD")
+                    with urllib.request.urlopen(req, timeout=15) as r:
+                        if r.status == 200:
+                            links.add(cand)
+                            break
+                except Exception:
+                    continue
+        links = sorted(links, key=key)
+        # Never step back to an older report than the one already saved today.
+        try:
+            saved = json.load(open(os.path.join(D, "injury_report.json")))
+            if saved.get("date") == day and links:
+                hh0, rest = saved["report"].split(":")
+                mm0, ap0 = rest.split(" ")
+                if key((day, hh0, mm0, ap0)) > key(links[-1]):
+                    print("official injuries: listing is behind the saved %s report; keeping it" % saved["report"])
+                    return
+        except Exception:
+            pass
         if not links:
             print("official injuries: no report posted for", day, "yet")
             return
