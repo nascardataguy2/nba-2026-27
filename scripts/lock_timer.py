@@ -2,8 +2,8 @@
 
 Morning runs (5:30, 6:30, 7:30 AM ET so shorts.txt is ready for the 8:30
 video), daytime backups (8:40 AM, 12:40, 4:40 PM) and lock-time updates
-(every 30 minutes from 5:30 PM ET up to the first lock, plus 45, 15 and 5
-minutes before each lock, from today's ESPN schedule). It sleeps until each
+(2 minutes after every 15-minute NBA injury report from 5:02 PM ET until the
+last game tips, plus 5 minutes before each lock, from today's ESPN schedule). It sleeps until each
 time and dispatches projections.yml. After a run, if today's projections
 have no Own% values, it runs once more.
 
@@ -59,17 +59,19 @@ def update_times(locks, now, day_times=True):
         for h, m in DAY_TIMES:
             times.add(now.replace(hour=h, minute=m, second=0, microsecond=0))
     if locks:
-        first = locks[0]
-        t = first.replace(hour=17, minute=30, second=0, microsecond=0)
-        while t < first:
+        # The NBA posts its injury report every 15 minutes (:00, :15, :30, :45).
+        # From 5 PM ET until the last game tips, update 2 minutes after each report,
+        # plus 5 minutes before each lock.
+        first, last = locks[0], locks[-1]
+        t = first.replace(hour=17, minute=2, second=0, microsecond=0)
+        while t <= last:
             times.add(t)
-            t += timedelta(minutes=30)
+            t += timedelta(minutes=15)
         for lock in locks:
-            for m in (45, 15, 5):
-                times.add(lock - timedelta(minutes=m))
+            times.add(lock - timedelta(minutes=5))
     kept = []
     for t in sorted(times):
-        if kept and t - kept[-1] <= timedelta(minutes=4):
+        if kept and t - kept[-1] < timedelta(minutes=2):
             continue
         kept.append(t)
     return [t for t in kept if t > now]
