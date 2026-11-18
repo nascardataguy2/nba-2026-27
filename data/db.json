@@ -2,7 +2,7 @@
  "updated": "2026-11-18",
  "brief": {
   "date": "2026-11-18",
-  "updated": "6:02 PM ET",
+  "updated": "6:17 PM ET",
   "games": 12,
   "pending": [],
   "first_report": "5:42 AM",
@@ -55,12 +55,7 @@
         "min": 27.3
        }
       ],
-      "q": [
-       {
-        "player": "Sam Merrill",
-        "min": 22.2
-       }
-      ]
+      "q": []
      }
     },
     "key": "Evan Mobley and Jaylon Tyson are out, so Tyrese Proctor and Thomas Bryant and Craig Porter Jr. should play more than usual."
@@ -123,12 +118,7 @@
         "min": 20.7
        }
       ],
-      "q": [
-       {
-        "player": "Amen Thompson",
-        "min": 31.6
-       }
-      ]
+      "q": []
      },
      "IND": {
       "out": [
@@ -167,6 +157,10 @@
      "PHI": {
       "out": [
        {
+        "player": "Dean Wade",
+        "min": 33.7
+       },
+       {
         "player": "Jaylen Brown",
         "min": 33.7
        },
@@ -178,11 +172,7 @@
       "q": [
        {
         "player": "Tyrese Maxey",
-        "min": 37.2
-       },
-       {
-        "player": "Dean Wade",
-        "min": 28.7
+        "min": 38.0
        }
       ]
      },
@@ -196,7 +186,7 @@
       "q": []
      }
     },
-    "key": "Jaylen Brown and Adem Bona are out, so Anfernee Simons and LeBron James should play more than usual."
+    "key": "Dean Wade and Jaylen Brown are out, so Anfernee Simons and LeBron James should play more than usual."
    },
    {
     "away": "CHI",
@@ -469,7 +459,7 @@
       "q": []
      }
     },
-    "key": "Nikola Jokic has the top projection in this game at 56.9 DK points."
+    "key": "Nikola Jokic has the top projection in this game at 56.8 DK points."
    },
    {
     "away": "UTA",
@@ -537,10 +527,42 @@
       "q": []
      }
     },
-    "key": "Darius Acuff Jr. has the top projection in this game at 43.0 DK points."
+    "key": "Darius Acuff Jr. has the top projection in this game at 42.9 DK points."
    }
   ],
   "changed": [
+   {
+    "player": "Dean Wade",
+    "team": "PHI",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "",
+    "time": "6:19 PM"
+   },
+   {
+    "player": "Peyton Watson",
+    "team": "CLE",
+    "status": "Out",
+    "was": "Doubtful",
+    "why": "Low Back Contusion",
+    "time": "6:19 PM"
+   },
+   {
+    "player": "Sam Merrill",
+    "team": "CLE",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "",
+    "time": "6:19 PM"
+   },
+   {
+    "player": "Amen Thompson",
+    "team": "HOU",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Knee Soreness",
+    "time": "6:19 PM"
+   },
    {
     "player": "RJ Barrett",
     "team": "TOR",
@@ -588,38 +610,6 @@
     "was": "Out",
     "why": "Left Knee Strain",
     "time": "4:17 PM"
-   },
-   {
-    "player": "De'Andre Hunter",
-    "team": "SAC",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "",
-    "time": "4:17 PM"
-   },
-   {
-    "player": "Precious Achiuwa",
-    "team": "SAC",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "",
-    "time": "4:17 PM"
-   },
-   {
-    "player": "Isaiah Joe",
-    "team": "DET",
-    "status": "Questionable",
-    "was": "Out",
-    "why": "Right Hip Contusion",
-    "time": "2:55 PM"
-   },
-   {
-    "player": "Cade Cunningham",
-    "team": "DET",
-    "status": "Questionable",
-    "was": "",
-    "why": "Right Knee Soreness",
-    "time": "2:55 PM"
    }
   ],
   "chg": [
@@ -675,7 +665,7 @@
      {
       "player": "Collin Murray-Boyles",
       "salary": 5700,
-      "much": "+11.5 DK projected vs. last 3"
+      "much": "+11.6 DK projected vs. last 3"
      },
      {
       "player": "Jamison Battle",
@@ -685,6 +675,16 @@
     ],
     "time": "6:04 PM",
     "size": 37.2
+   },
+   {
+    "key": "HOU",
+    "team": "HOU",
+    "head": "Thompson CLEARED",
+    "st": "Probable",
+    "act": "",
+    "names": [],
+    "time": "6:19 PM",
+    "size": 32.9
    },
    {
     "key": "Andrew Nembhard",
@@ -731,8 +731,8 @@
    {
     "key": "Peyton Watson",
     "team": "CLE",
-    "head": "Peyton Watson DOUBTFUL",
-    "st": "Doubtful",
+    "head": "Peyton Watson OUT",
+    "st": "Out",
     "act": "Play",
     "names": [
      {
@@ -746,7 +746,7 @@
       "much": "+11.7 DK without him (3 games)"
      }
     ],
-    "time": "1:55 PM",
+    "time": "6:19 PM",
     "size": 24.0
    },
    {
@@ -787,6 +787,48 @@
     "size": 19.2
    },
    {
+    "key": "CLE",
+    "team": "CLE",
+    "head": "Merrill CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Tyrese Proctor",
+      "salary": 6100,
+      "much": "+15.0 DK without Merrill"
+     },
+     {
+      "player": "Craig Porter Jr.",
+      "salary": 4000,
+      "much": "+9.0 DK without Merrill"
+     }
+    ],
+    "time": "6:19 PM",
+    "size": 17.6
+   },
+   {
+    "key": "Dean Wade",
+    "team": "PHI",
+    "head": "Dean Wade OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "LeBron James",
+      "salary": 7800,
+      "much": "+4.4 DK projected vs. last 3"
+     },
+     {
+      "player": "Jabari Walker",
+      "salary": 3600,
+      "much": "more minutes"
+     }
+    ],
+    "time": "6:19 PM",
+    "size": 17.0
+   },
+   {
     "key": "Jaxson Hayes",
     "team": "UTA",
     "head": "Jaxson Hayes QUESTIONABLE",
@@ -806,27 +848,6 @@
     ],
     "time": "4:17 PM",
     "size": 11.3
-   },
-   {
-    "key": "Dean Wade",
-    "team": "PHI",
-    "head": "Dean Wade QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "LeBron James",
-      "salary": 7800,
-      "much": "about +27.0 DK"
-     },
-     {
-      "player": "Jabari Walker",
-      "salary": 3600,
-      "much": "about +11.3 DK"
-     }
-    ],
-    "time": "1:55 PM",
-    "size": 8.5
    },
    {
     "key": "Myron Gardner",
@@ -920,7 +941,7 @@
       "much": "+8.8 DK without them (7 games)",
       "score": 8.8,
       "min": 20.2,
-      "dk": 14.3,
+      "dk": 14.4,
       "avg": 12.6
      },
      {
@@ -930,7 +951,7 @@
       "much": "+8.2 DK without them (7 games)",
       "score": 8.2,
       "min": 29.0,
-      "dk": 24.9,
+      "dk": 25.0,
       "avg": 23.0
      }
     ],
@@ -1020,7 +1041,7 @@
      {
       "player": "Peyton Watson",
       "min": 27.3,
-      "note": "Peyton Watson was moved from questionable to doubtful for tonight (low back contusion) on the NBA's 01:45 PM injury report. He had averaged 26 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+      "note": "Peyton Watson was moved from doubtful to out for tonight (low back contusion) on the NBA's 06:15 PM injury report. He had averaged 26 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
       "new": true
      }
     ],
@@ -1044,7 +1065,7 @@
       "much": "+24.7 DK without them (1 game)",
       "score": 24.7,
       "min": 19.6,
-      "dk": 21.5,
+      "dk": 21.4,
       "avg": 17.3
      },
      {
@@ -1061,6 +1082,56 @@
     "split_of": [
      "Evan Mobley",
      "Peyton Watson"
+    ]
+   },
+   {
+    "team": "PHI",
+    "outs": [
+     {
+      "player": "Dean Wade",
+      "min": 33.7,
+      "note": "Dean Wade was moved from questionable to out for tonight on the NBA's 06:15 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+      "new": true
+     },
+     {
+      "player": "Jaylen Brown",
+      "min": 33.7,
+      "note": "Jaylen Brown is out for Philadelphia tonight at Orlando with a left hamstring strain. The show said his absence should reshape Philly and open up more opportunities for Tyrese Maxey, VJ Edgecombe, LeBron James and Joel Embiid. The show also called it a pace-down spot because Orlando plays slowly.",
+      "new": true
+     },
+     {
+      "player": "Adem Bona",
+      "min": 17.0,
+      "note": "Ruled out tonight (cervical spine sprain).",
+      "new": false
+     }
+    ],
+    "new": true,
+    "lost": 84.4,
+    "benefits": [
+     {
+      "player": "Anfernee Simons",
+      "salary": 4100,
+      "why": "31 minutes, up from 21",
+      "much": "+11.1 DK without them (1 game)",
+      "score": 11.1,
+      "min": 31.0,
+      "dk": 25.5,
+      "avg": 16.6
+     },
+     {
+      "player": "LeBron James",
+      "salary": 7800,
+      "why": "same minutes, more production",
+      "much": "+10.3 DK without them (1 game)",
+      "score": 10.3,
+      "min": 34.0,
+      "dk": 40.6,
+      "avg": 37.9
+     }
+    ],
+    "split_of": [
+     "Jaylen Brown"
     ]
    },
    {
@@ -1139,8 +1210,8 @@
       "why": "started 2 of 2",
       "much": "+21.0 DK without them (2 games)",
       "score": 21.0,
-      "min": 23.8,
-      "dk": 22.7,
+      "min": 24.2,
+      "dk": 24.0,
       "avg": 21.7
      },
      {
@@ -1149,8 +1220,8 @@
       "why": "started 1 of 2",
       "much": "+19.7 DK without them (2 games)",
       "score": 19.7,
-      "min": 17.2,
-      "dk": 14.1,
+      "min": 18.5,
+      "dk": 15.8,
       "avg": 12.1
      },
      {
@@ -1159,58 +1230,14 @@
       "why": "started 1 of 2",
       "much": "+15.0 DK without them (2 games)",
       "score": 15.0,
-      "min": 18.4,
-      "dk": 16.2,
+      "min": 19.6,
+      "dk": 18.0,
       "avg": 14.7
      }
     ],
     "split_of": [
      "Andrew Nembhard",
      "Tyrese Haliburton"
-    ]
-   },
-   {
-    "team": "PHI",
-    "outs": [
-     {
-      "player": "Jaylen Brown",
-      "min": 33.7,
-      "note": "Jaylen Brown is out for Philadelphia tonight at Orlando with a left hamstring strain. The show said his absence should reshape Philly and open up more opportunities for Tyrese Maxey, VJ Edgecombe, LeBron James and Joel Embiid. The show also called it a pace-down spot because Orlando plays slowly.",
-      "new": true
-     },
-     {
-      "player": "Adem Bona",
-      "min": 17.0,
-      "note": "Ruled out tonight (cervical spine sprain).",
-      "new": false
-     }
-    ],
-    "new": true,
-    "lost": 50.7,
-    "benefits": [
-     {
-      "player": "Anfernee Simons",
-      "salary": 4100,
-      "why": "31 minutes, up from 21",
-      "much": "+11.1 DK without them (1 game)",
-      "score": 11.1,
-      "min": 27.2,
-      "dk": 22.3,
-      "avg": 16.6
-     },
-     {
-      "player": "LeBron James",
-      "salary": 7800,
-      "why": "same minutes, more production",
-      "much": "+10.3 DK without them (1 game)",
-      "score": 10.3,
-      "min": 34.0,
-      "dk": 40.5,
-      "avg": 37.9
-     }
-    ],
-    "split_of": [
-     "Jaylen Brown"
     ]
    }
   ],
@@ -1310,45 +1337,45 @@
     "player": "Brice Sensabaugh",
     "team": "UTA",
     "own": 38.0,
-    "dk": 23.1,
+    "dk": 23.0,
     "salary": 4500
    },
    {
     "player": "Cam Spencer",
     "team": "MEM",
     "own": 37.0,
-    "dk": 35.6,
+    "dk": 35.5,
     "salary": 5600
    },
    {
-    "player": "Collin Sexton",
-    "team": "LAL",
-    "own": 35.1,
-    "dk": 23.9,
+    "player": "Mohamed Bamba",
+    "team": "UTA",
+    "own": 34.6,
+    "dk": 19.7,
     "salary": 5300
    }
   ],
   "leverage": [
    {
-    "player": "Collin Murray-Boyles",
-    "team": "TOR",
-    "own": 9.6,
-    "dk": 38.8,
-    "salary": 5700
-   },
-   {
     "player": "Jamal Shead",
     "team": "TOR",
-    "own": 0.7,
+    "own": 7.2,
     "dk": 35.2,
     "salary": 5600
    },
    {
-    "player": "Jakob Poeltl",
-    "team": "TOR",
-    "own": 0.7,
-    "dk": 32.9,
-    "salary": 5300
+    "player": "Jabari Walker",
+    "team": "PHI",
+    "own": 0.6,
+    "dk": 22.6,
+    "salary": 3600
+   },
+   {
+    "player": "Anfernee Simons",
+    "team": "PHI",
+    "own": 0.6,
+    "dk": 25.5,
+    "salary": 4100
    }
   ],
   "last": {
@@ -1373,15 +1400,6 @@
      "ast": 3.0
     },
     {
-     "player": "Luka Doncic",
-     "team": "LAL",
-     "dk": 58.0,
-     "min": 42.0,
-     "pts": 36.0,
-     "reb": 6.0,
-     "ast": 7.0
-    },
-    {
      "player": "Victor Wembanyama",
      "team": "SAS",
      "dk": 58.0,
@@ -1389,6 +1407,15 @@
      "pts": 25.0,
      "reb": 18.0,
      "ast": 4.0
+    },
+    {
+     "player": "Luka Doncic",
+     "team": "LAL",
+     "dk": 58.0,
+     "min": 42.0,
+     "pts": 36.0,
+     "reb": 6.0,
+     "ast": 7.0
     },
     {
      "player": "Keyonte George",
@@ -1423,8 +1450,8 @@
    ]
   },
   "injuries": {
-   "report": "06:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_06_00PM.pdf",
+   "report": "06:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_06_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1456,8 +1483,8 @@
        "why": "started 2 of 3",
        "much": "+11.1 DK without him (3 games)",
        "score": 11.1,
-       "min": 23.8,
-       "dk": 22.7,
+       "min": 24.2,
+       "dk": 24.0,
        "avg": 21.7
       },
       {
@@ -1466,8 +1493,8 @@
        "why": "started 2 of 3",
        "much": "+10.8 DK without him (3 games)",
        "score": 10.8,
-       "min": 18.4,
-       "dk": 16.2,
+       "min": 19.6,
+       "dk": 18.0,
        "avg": 14.7
       },
       {
@@ -1476,8 +1503,8 @@
        "why": "19 minutes, up from 12",
        "much": "+10.6 DK without him (1 game)",
        "score": 10.6,
-       "min": 16.3,
-       "dk": 20.9,
+       "min": 17.0,
+       "dk": 22.7,
        "avg": 18.2
       }
      ],
@@ -1512,8 +1539,8 @@
        "why": "31 minutes, up from 21",
        "much": "+11.1 DK without him (1 game)",
        "score": 11.1,
-       "min": 27.2,
-       "dk": 22.3,
+       "min": 31.0,
+       "dk": 25.5,
        "avg": 16.6
       },
       {
@@ -1523,8 +1550,64 @@
        "much": "+10.3 DK without him (1 game)",
        "score": 10.3,
        "min": 34.0,
-       "dk": 40.5,
+       "dk": 40.6,
        "avg": 37.9
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-16",
+      "dk": 29.8,
+      "min": 32,
+      "opp": "BKN",
+      "ha": "@",
+      "res": "W",
+      "score": "135-123"
+     },
+     "game": "PHI at ORL",
+     "time": "2026-11-19T00:00Z",
+     "team": "PHI",
+     "player": "Dean Wade",
+     "status": "Out",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "6:19 PM",
+     "salary": 4100,
+     "min": 33.7,
+     "benefits": [
+      {
+       "player": "LeBron James",
+       "salary": 7800,
+       "why": "projected 34 minutes tonight, up from 32",
+       "much": "+4.4 DK projected vs. last 3",
+       "score": 4.433333333333337,
+       "min": 34.0,
+       "dk": 40.6,
+       "avg": 37.9
+      },
+      {
+       "player": "Jabari Walker",
+       "salary": 3600,
+       "why": "projected 22 minutes tonight, up from 18",
+       "much": "more minutes",
+       "score": 0.26666666666666927,
+       "min": 22.1,
+       "dk": 22.6,
+       "avg": 13.8
+      },
+      {
+       "player": "Joel Embiid",
+       "salary": 8300,
+       "why": "projected 39 minutes tonight, up from 29",
+       "much": "+14.4 DK projected vs. last 3",
+       "score": 14.350000000000001,
+       "min": 39.0,
+       "dk": 50.1,
+       "avg": 38.1
       }
      ],
      "estimate": false
@@ -1559,8 +1642,64 @@
        "much": "+5.6 DK without him (7 games)",
        "score": 5.6,
        "min": 23.7,
-       "dk": 24.0,
+       "dk": 24.1,
        "avg": 19.4
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-16",
+      "dk": 20.5,
+      "min": 22,
+      "opp": "CHI",
+      "ha": "vs",
+      "res": "W",
+      "score": "126-115"
+     },
+     "game": "MEM at CLE",
+     "time": "2026-11-19T00:00Z",
+     "team": "CLE",
+     "player": "Peyton Watson",
+     "status": "Out",
+     "reason": "Low Back Contusion",
+     "new": true,
+     "was": "Doubtful",
+     "known": true,
+     "changed_at": "6:19 PM",
+     "salary": 5500,
+     "min": 27.3,
+     "benefits": [
+      {
+       "player": "Mario Hezonja",
+       "salary": 4500,
+       "why": "28 minutes, up from 17",
+       "much": "+14.2 DK without him (3 games)",
+       "score": 14.2,
+       "min": 23.7,
+       "dk": 24.1,
+       "avg": 19.4
+      },
+      {
+       "player": "Tyrese Proctor",
+       "salary": 6100,
+       "why": "started 2 of 3",
+       "much": "+11.7 DK without him (3 games)",
+       "score": 11.7,
+       "min": 28.0,
+       "dk": 28.5,
+       "avg": 20.4
+      },
+      {
+       "player": "Craig Porter Jr.",
+       "salary": 4000,
+       "why": "17 minutes, up from 10",
+       "much": "+6.5 DK without him (3 games)",
+       "score": 6.5,
+       "min": 18.8,
+       "dk": 15.0,
+       "avg": 9.0
       }
      ],
      "estimate": false
@@ -1624,62 +1763,6 @@
     {
      "last": {
       "date": "2026-11-16",
-      "dk": 20.5,
-      "min": 22,
-      "opp": "CHI",
-      "ha": "vs",
-      "res": "W",
-      "score": "126-115"
-     },
-     "game": "MEM at CLE",
-     "time": "2026-11-19T00:00Z",
-     "team": "CLE",
-     "player": "Peyton Watson",
-     "status": "Doubtful",
-     "reason": "Low Back Contusion",
-     "new": true,
-     "was": "Questionable",
-     "known": true,
-     "changed_at": "1:55 PM",
-     "salary": 5500,
-     "min": 27.3,
-     "benefits": [
-      {
-       "player": "Mario Hezonja",
-       "salary": 4500,
-       "why": "28 minutes, up from 17",
-       "much": "+14.2 DK without him (3 games)",
-       "score": 14.2,
-       "min": 23.7,
-       "dk": 24.0,
-       "avg": 19.4
-      },
-      {
-       "player": "Tyrese Proctor",
-       "salary": 6100,
-       "why": "started 2 of 3",
-       "much": "+11.7 DK without him (3 games)",
-       "score": 11.7,
-       "min": 28.0,
-       "dk": 28.5,
-       "avg": 20.4
-      },
-      {
-       "player": "Craig Porter Jr.",
-       "salary": 4000,
-       "why": "17 minutes, up from 10",
-       "much": "+6.5 DK without him (3 games)",
-       "score": 6.5,
-       "min": 18.8,
-       "dk": 15.0,
-       "avg": 9.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "last": {
-      "date": "2026-11-16",
       "dk": 41.2,
       "min": 35,
       "opp": "BKN",
@@ -1705,9 +1788,9 @@
        "salary": 4100,
        "why": "subs in for him 17 of 51 times",
        "much": "about +9.7 DK",
-       "score": 9.656045751633988,
-       "min": 27.2,
-       "dk": 22.3,
+       "score": 9.688172043010754,
+       "min": 31.0,
+       "dk": 25.5,
        "avg": 16.6
       },
       {
@@ -1715,9 +1798,9 @@
        "salary": 6400,
        "why": "subs in for him 11 of 51 times",
        "much": "about +7.3 DK",
-       "score": 7.289570900824098,
-       "min": 34.5,
-       "dk": 33.0,
+       "score": 7.270764882529589,
+       "min": 37.0,
+       "dk": 35.3,
        "avg": 30.9
       },
       {
@@ -1725,59 +1808,13 @@
        "salary": 4200,
        "why": "subs in for him 8 of 51 times",
        "much": "about +3.6 DK",
-       "score": 3.598144634197766,
-       "min": 24.8,
-       "dk": 16.1,
+       "score": 3.6115538688593722,
+       "min": 31.0,
+       "dk": 20.2,
        "avg": 14.1
       }
      ],
      "estimate": true
-    },
-    {
-     "last": {
-      "date": "2026-11-16",
-      "dk": 29.8,
-      "min": 32,
-      "opp": "BKN",
-      "ha": "@",
-      "res": "W",
-      "score": "135-123"
-     },
-     "game": "PHI at ORL",
-     "time": "2026-11-19T00:00Z",
-     "team": "PHI",
-     "player": "Dean Wade",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "1:55 PM",
-     "salary": 4100,
-     "min": 33.7,
-     "benefits": [
-      {
-       "player": "LeBron James",
-       "salary": 7800,
-       "why": "plays his position (F), 34 minutes tonight",
-       "much": "about +27.0 DK",
-       "score": 27.0,
-       "min": 34.0,
-       "dk": 40.5,
-       "avg": 37.9
-      },
-      {
-       "player": "Jabari Walker",
-       "salary": 3600,
-       "why": "plays his position (F), 16 minutes tonight",
-       "much": "about +11.3 DK",
-       "score": 11.266666666666666,
-       "min": 16.5,
-       "dk": 16.9,
-       "avg": 13.8
-      }
-     ],
-     "estimate": false
     },
     {
      "last": {
@@ -1793,82 +1830,15 @@
      "time": "2026-11-19T00:00Z",
      "team": "HOU",
      "player": "Amen Thompson",
-     "status": "Questionable",
+     "status": "Available",
      "reason": "Left Knee Soreness",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "6:19 PM",
      "salary": 7000,
      "min": 33.0,
-     "benefits": [
-      {
-       "player": "Tari Eason",
-       "salary": 5600,
-       "why": "subs in for him 19 of 64 times",
-       "much": "about +9.4 DK",
-       "score": 9.44277108433735,
-       "min": 24.9,
-       "dk": 24.0,
-       "avg": 24.2
-      }
-     ],
-     "estimate": true
-    },
-    {
-     "last": {
-      "date": "2026-11-06",
-      "dk": 7.2,
-      "min": 13,
-      "opp": "PHI",
-      "ha": "vs",
-      "res": "W",
-      "score": "119-95"
-     },
-     "game": "MEM at CLE",
-     "time": "2026-11-19T00:00Z",
-     "team": "CLE",
-     "player": "Sam Merrill",
-     "status": "Questionable",
-     "reason": "",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "",
-     "salary": 4400,
-     "min": 22.0,
-     "benefits": [
-      {
-       "player": "Tyrese Proctor",
-       "salary": 6100,
-       "why": "26 minutes, up from 15",
-       "much": "+15.0 DK without him (6 games)",
-       "score": 15.0,
-       "min": 28.0,
-       "dk": 28.5,
-       "avg": 20.4
-      },
-      {
-       "player": "Craig Porter Jr.",
-       "salary": 4000,
-       "why": "17 minutes, up from 8",
-       "much": "+9.0 DK without him (5 games)",
-       "score": 9.0,
-       "min": 18.8,
-       "dk": 15.0,
-       "avg": 9.0
-      },
-      {
-       "player": "Thomas Bryant",
-       "salary": 4300,
-       "why": "18 minutes, up from 11",
-       "much": "+8.6 DK without him (5 games)",
-       "score": 8.6,
-       "min": 19.6,
-       "dk": 21.5,
-       "avg": 17.3
-      }
-     ],
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1918,6 +1888,31 @@
      "changed_at": "",
      "salary": 5300,
      "min": 27.3,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-06",
+      "dk": 7.2,
+      "min": 13,
+      "opp": "PHI",
+      "ha": "vs",
+      "res": "W",
+      "score": "119-95"
+     },
+     "game": "MEM at CLE",
+     "time": "2026-11-19T00:00Z",
+     "team": "CLE",
+     "player": "Sam Merrill",
+     "status": "Available",
+     "reason": "",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "6:19 PM",
+     "salary": 4400,
+     "min": 22.0,
      "benefits": [],
      "estimate": false
     },
@@ -1998,10 +1993,10 @@
        "player": "Collin Murray-Boyles",
        "salary": 5700,
        "why": "projected 39 minutes tonight, up from 32",
-       "much": "+11.5 DK projected vs. last 3",
-       "score": 11.466666666666665,
+       "much": "+11.6 DK projected vs. last 3",
+       "score": 11.566666666666666,
        "min": 38.8,
-       "dk": 38.8,
+       "dk": 38.9,
        "avg": 22.8
       },
       {
@@ -2197,9 +2192,9 @@
        "salary": 6200,
        "why": "subs in for him 22 of 56 times",
        "much": "about +16.1 DK",
-       "score": 16.105378000256703,
+       "score": 16.14844050827878,
        "min": 37.1,
-       "dk": 37.4,
+       "dk": 37.5,
        "avg": 27.8
       },
       {
@@ -2207,9 +2202,9 @@
        "salary": 4900,
        "why": "subs in for him 10 of 56 times",
        "much": "about +6.2 DK",
-       "score": 6.166173570019724,
+       "score": 6.187658495350804,
        "min": 33.8,
-       "dk": 28.7,
+       "dk": 28.8,
        "avg": 20.8
       }
      ],
@@ -2245,7 +2240,7 @@
        "much": "+24.1 DK without him (2 games)",
        "score": 24.1,
        "min": 20.7,
-       "dk": 21.3,
+       "dk": 21.2,
        "avg": 22.0
       },
       {
@@ -2311,7 +2306,7 @@
        "much": "+8.8 DK without him (7 games)",
        "score": 8.8,
        "min": 20.2,
-       "dk": 14.3,
+       "dk": 14.4,
        "avg": 12.6
       },
       {
@@ -2321,7 +2316,7 @@
        "much": "+8.2 DK without him (7 games)",
        "score": 8.2,
        "min": 29.0,
-       "dk": 24.9,
+       "dk": 25.0,
        "avg": 23.0
       }
      ],
@@ -2367,7 +2362,7 @@
        "much": "+11.1 DK without him (2 games)",
        "score": 11.1,
        "min": 20.7,
-       "dk": 21.3,
+       "dk": 21.2,
        "avg": 22.0
       },
       {
@@ -2423,17 +2418,17 @@
        "much": "+6.9 DK without him (10 games)",
        "score": 6.9,
        "min": 33.8,
-       "dk": 28.7,
+       "dk": 28.8,
        "avg": 20.8
       },
       {
        "player": "Daniss Jenkins",
        "salary": 6200,
        "why": "started, 42 minutes (11/12)",
-       "much": "+4.6 DK projected vs. last 3",
-       "score": 4.566666666666663,
+       "much": "+4.7 DK projected vs. last 3",
+       "score": 4.666666666666664,
        "min": 37.1,
-       "dk": 37.4,
+       "dk": 37.5,
        "avg": 27.8
       }
      ],
@@ -2544,7 +2539,7 @@
        "much": "+21.0 DK without him (3 games)",
        "score": 21.0,
        "min": 22.7,
-       "dk": 23.1,
+       "dk": 23.0,
        "avg": 19.2
       },
       {
@@ -2554,7 +2549,7 @@
        "much": "+19.8 DK without him (3 games)",
        "score": 19.8,
        "min": 18.9,
-       "dk": 19.8,
+       "dk": 19.7,
        "avg": null
       },
       {
@@ -2564,7 +2559,7 @@
        "much": "+13.0 DK without him (1 game)",
        "score": 13.0,
        "min": 17.6,
-       "dk": 18.1,
+       "dk": 18.2,
        "avg": 17.0
       }
      ],
@@ -2660,7 +2655,7 @@
        "much": "+13.8 DK without him (11 games)",
        "score": 13.8,
        "min": 32.5,
-       "dk": 40.3,
+       "dk": 40.4,
        "avg": 47.2
       },
       {
@@ -2705,8 +2700,8 @@
        "why": "23 minutes, up from 20",
        "much": "+9.5 DK without him (10 games)",
        "score": 9.5,
-       "min": 23.8,
-       "dk": 22.7,
+       "min": 24.2,
+       "dk": 24.0,
        "avg": 21.7
       },
       {
@@ -2715,8 +2710,8 @@
        "why": "started, 34 and 30 minutes (11/13)",
        "much": "+5.7 DK without him (8 games)",
        "score": 5.7,
-       "min": 29.2,
-       "dk": 23.5,
+       "min": 27.7,
+       "dk": 22.5,
        "avg": 19.6
       },
       {
@@ -2725,8 +2720,8 @@
        "why": "15 minutes, up from 12",
        "much": "+5.4 DK without him (9 games)",
        "score": 5.4,
-       "min": 9.3,
-       "dk": 7.1,
+       "min": 10.3,
+       "dk": 7.9,
        "avg": 10.7
       }
      ],
@@ -2762,7 +2757,7 @@
        "much": "+14.5 DK without him (3 games)",
        "score": 14.5,
        "min": 28.7,
-       "dk": 35.6,
+       "dk": 35.5,
        "avg": 24.4
       },
       {
@@ -2828,7 +2823,7 @@
        "much": "+12.2 DK without him (3 games)",
        "score": 12.2,
        "min": 19.6,
-       "dk": 21.5,
+       "dk": 21.4,
        "avg": 17.3
       },
       {
@@ -2884,7 +2879,7 @@
        "much": "+24.5 DK without him (1 game)",
        "score": 24.5,
        "min": 21.8,
-       "dk": 17.0,
+       "dk": 16.9,
        "avg": 9.6
       },
       {
@@ -2894,7 +2889,7 @@
        "much": "+12.6 DK without him (1 game)",
        "score": 12.6,
        "min": 23.0,
-       "dk": 22.8,
+       "dk": 22.6,
        "avg": 21.3
       }
      ],
@@ -2927,10 +2922,10 @@
        "player": "Jabari Smith",
        "salary": 6200,
        "why": "projected 31 minutes tonight",
-       "much": "+5.6 DK projected vs. last 3",
-       "score": 5.583333333333332,
+       "much": "+5.7 DK projected vs. last 3",
+       "score": 5.683333333333334,
        "min": 30.7,
-       "dk": 27.5,
+       "dk": 27.6,
        "avg": 31.0
       },
       {
@@ -2976,7 +2971,7 @@
        "much": "+5.4 DK without him (4 games)",
        "score": 5.4,
        "min": 22.5,
-       "dk": 26.1,
+       "dk": 26.0,
        "avg": 22.6
       }
      ],
@@ -3011,8 +3006,8 @@
        "why": "18 minutes, up from 8",
        "much": "+10.8 DK without him (6 games)",
        "score": 10.8,
-       "min": 16.5,
-       "dk": 16.9,
+       "min": 22.1,
+       "dk": 22.6,
        "avg": 13.8
       }
      ],
@@ -3048,7 +3043,7 @@
        "much": "+24.5 DK without him (1 game)",
        "score": 24.5,
        "min": 21.8,
-       "dk": 17.0,
+       "dk": 16.9,
        "avg": 9.6
       },
       {
@@ -3058,7 +3053,7 @@
        "much": "+12.8 DK without him (4 games)",
        "score": 12.8,
        "min": 23.0,
-       "dk": 22.8,
+       "dk": 22.6,
        "avg": 21.3
       },
       {
@@ -3114,7 +3109,7 @@
        "much": "+6.6 DK without him (9 games)",
        "score": 6.6,
        "min": 28.7,
-       "dk": 35.6,
+       "dk": 35.5,
        "avg": 24.4
       }
      ],
@@ -3150,7 +3145,7 @@
        "much": "+10.0 DK without him (2 games)",
        "score": 10.0,
        "min": 22.5,
-       "dk": 26.1,
+       "dk": 26.0,
        "avg": 22.6
       },
       {
@@ -3193,10 +3188,10 @@
        "player": "Jarace Walker",
        "salary": 3700,
        "why": "subs in for him 1 of 3 times",
-       "much": "+9.0 DK projected vs. last 3",
-       "score": 9.016666666666667,
-       "min": 19.8,
-       "dk": 17.1,
+       "much": "+10.7 DK projected vs. last 3",
+       "score": 10.716666666666667,
+       "min": 22.0,
+       "dk": 18.8,
        "avg": 17.5
       }
      ],
@@ -3344,7 +3339,7 @@
        "much": "+6.7 DK without him (10 games)",
        "score": 6.7,
        "min": 27.6,
-       "dk": 27.6,
+       "dk": 27.7,
        "avg": 27.5
       }
      ],
@@ -3380,7 +3375,7 @@
        "much": "+5.9 DK without him (6 games)",
        "score": 5.9,
        "min": 36.6,
-       "dk": 35.5,
+       "dk": 35.4,
        "avg": 28.7
       },
       {
@@ -3390,7 +3385,7 @@
        "much": "+5.3 DK without him (6 games)",
        "score": 5.3,
        "min": 30.5,
-       "dk": 19.0,
+       "dk": 19.2,
        "avg": 14.4
       }
      ],
@@ -3436,7 +3431,7 @@
        "much": "+13.9 DK without him (11 games)",
        "score": 13.9,
        "min": 20.2,
-       "dk": 14.3,
+       "dk": 14.4,
        "avg": 12.6
       },
       {
@@ -3446,7 +3441,7 @@
        "much": "+12.5 DK without him (11 games)",
        "score": 12.5,
        "min": 24.4,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 15.5
       }
      ],
@@ -3492,7 +3487,7 @@
        "much": "+15.1 DK without him (1 game)",
        "score": 15.1,
        "min": 37.1,
-       "dk": 37.4,
+       "dk": 37.5,
        "avg": 27.8
       },
       {
@@ -3548,7 +3543,7 @@
        "much": "+13.9 DK without him (11 games)",
        "score": 13.9,
        "min": 20.2,
-       "dk": 14.3,
+       "dk": 14.4,
        "avg": 12.6
       },
       {
@@ -3558,7 +3553,7 @@
        "much": "+12.5 DK without him (11 games)",
        "score": 12.5,
        "min": 24.4,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 15.5
       }
      ],
@@ -3604,7 +3599,7 @@
        "much": "+11.2 DK without him (6 games)",
        "score": 11.2,
        "min": 36.6,
-       "dk": 35.5,
+       "dk": 35.4,
        "avg": 28.7
       },
       {
@@ -3614,7 +3609,7 @@
        "much": "+9.6 DK without him (6 games)",
        "score": 9.6,
        "min": 30.5,
-       "dk": 19.0,
+       "dk": 19.2,
        "avg": 14.4
       }
      ],
@@ -3650,7 +3645,7 @@
        "much": "+13.3 DK without him (2 games)",
        "score": 13.3,
        "min": 33.3,
-       "dk": 35.4,
+       "dk": 35.3,
        "avg": 34.5
       },
       {
@@ -3696,7 +3691,7 @@
        "much": "+11.0 DK without him (4 games)",
        "score": 11.0,
        "min": 20.7,
-       "dk": 21.3,
+       "dk": 21.2,
        "avg": 22.0
       },
       {
@@ -3706,7 +3701,7 @@
        "much": "+6.9 DK without him (4 games)",
        "score": 6.9,
        "min": 9.3,
-       "dk": 11.4,
+       "dk": 11.3,
        "avg": 11.0
       }
      ],
@@ -3739,10 +3734,10 @@
        "player": "John Collins",
        "salary": 5200,
        "why": "started at center, 23 minutes (11/17)",
-       "much": "+12.4 DK projected vs. last 3",
-       "score": 12.433333333333334,
+       "much": "+12.5 DK projected vs. last 3",
+       "score": 12.533333333333331,
        "min": 30.9,
-       "dk": 29.1,
+       "dk": 29.2,
        "avg": 21.6
       },
       {
@@ -3762,7 +3757,7 @@
        "much": "+9.4 DK without him (11 games)",
        "score": 9.4,
        "min": 37.1,
-       "dk": 37.4,
+       "dk": 37.5,
        "avg": 27.8
       }
      ],
@@ -3806,9 +3801,9 @@
        "salary": 4100,
        "why": "projected 30 minutes tonight, up from 26",
        "much": "more minutes",
-       "score": 0.6666666666666679,
+       "score": 0.8666666666666671,
        "min": 30.5,
-       "dk": 19.0,
+       "dk": 19.2,
        "avg": 14.4
       },
       {
@@ -3816,9 +3811,9 @@
        "salary": 6500,
        "why": "projected 37 minutes tonight, up from 32",
        "much": "more minutes",
-       "score": -5.5,
+       "score": -5.600000000000001,
        "min": 36.6,
-       "dk": 35.5,
+       "dk": 35.4,
        "avg": 28.7
       }
      ],
@@ -3864,7 +3859,7 @@
        "much": "+15.1 DK without him (1 game)",
        "score": 15.1,
        "min": 37.1,
-       "dk": 37.4,
+       "dk": 37.5,
        "avg": 27.8
       },
       {
@@ -3920,7 +3915,7 @@
        "much": "+13.9 DK without him (11 games)",
        "score": 13.9,
        "min": 20.2,
-       "dk": 14.3,
+       "dk": 14.4,
        "avg": 12.6
       },
       {
@@ -3930,7 +3925,7 @@
        "much": "+12.5 DK without him (11 games)",
        "score": 12.5,
        "min": 24.4,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 15.5
       }
      ],
@@ -3966,7 +3961,7 @@
        "much": "+7.2 DK without him (8 games)",
        "score": 7.2,
        "min": 39.0,
-       "dk": 51.6,
+       "dk": 51.5,
        "avg": 43.8
       },
       {
@@ -4032,7 +4027,7 @@
        "much": "+8.8 DK without him (8 games)",
        "score": 8.8,
        "min": 36.6,
-       "dk": 35.5,
+       "dk": 35.4,
        "avg": 28.7
       }
      ],
@@ -4241,7 +4236,7 @@
        "much": "+13.1 DK without him (7 games)",
        "score": 13.1,
        "min": 22.7,
-       "dk": 23.1,
+       "dk": 23.0,
        "avg": 19.2
       },
       {
@@ -4251,7 +4246,7 @@
        "much": "+8.1 DK without him (7 games)",
        "score": 8.1,
        "min": 30.7,
-       "dk": 31.7,
+       "dk": 31.6,
        "avg": 31.9
       },
       {
@@ -4261,7 +4256,7 @@
        "much": "+7.3 DK without him (3 games)",
        "score": 7.3,
        "min": 10.9,
-       "dk": 9.4,
+       "dk": 9.5,
        "avg": 5.9
       }
      ],
@@ -4297,7 +4292,7 @@
        "much": "+33.4 DK without him (2 games)",
        "score": 33.4,
        "min": 36.5,
-       "dk": 31.9,
+       "dk": 31.8,
        "avg": 22.0
       },
       {
@@ -4353,7 +4348,7 @@
        "much": "+11.8 DK without him (11 games)",
        "score": 11.8,
        "min": 30.7,
-       "dk": 31.7,
+       "dk": 31.6,
        "avg": 31.9
       },
       {
@@ -4363,7 +4358,7 @@
        "much": "+10.4 DK without him (11 games)",
        "score": 10.4,
        "min": 20.1,
-       "dk": 13.2,
+       "dk": 13.1,
        "avg": 12.8
       },
       {
@@ -4373,7 +4368,7 @@
        "much": "+7.6 DK without him (11 games)",
        "score": 7.6,
        "min": 22.7,
-       "dk": 23.1,
+       "dk": 23.0,
        "avg": 19.2
       }
      ],
@@ -6073,6 +6068,12 @@
    "2026-11-17",
    "usage",
    "Dean Wade has played 32 to 35 minutes in his last three games and should keep a big role with Jaylen Brown out Wednesday. His DraftKings output swings hard, though: 16.3 points in 34 minutes on November 12 and 29.8 in 32 minutes on Monday. He scores little himself, so he needs rebounds and threes to hit value."
+  ],
+  [
+   "Dean Wade",
+   "2026-11-18",
+   "injury",
+   "Dean Wade was moved from questionable to out for tonight on the NBA's 06:15 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains."
   ],
   [
    "Dean Wade",
@@ -9744,7 +9745,7 @@
    "Peyton Watson",
    "2026-11-18",
    "injury",
-   "Peyton Watson was moved from questionable to doubtful for tonight (low back contusion) on the NBA's 01:45 PM injury report. He had averaged 26 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains."
+   "Peyton Watson was moved from doubtful to out for tonight (low back contusion) on the NBA's 06:15 PM injury report. He had averaged 26 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains."
   ],
   [
    "PJ Washington",
@@ -14392,13 +14393,13 @@
   },
   {
    "team": "PHI",
-   "starters": "Tyrese Maxey (36), VJ Edgecombe (33), Dean Wade (27), Joel Embiid (32), LeBron James (33)",
-   "bench": "Kentavious Caldwell-Pope (23), Anfernee Simons (22), Jabari Walker (13)",
+   "starters": "Tyrese Maxey (36), VJ Edgecombe (33), Joel Embiid (32), LeBron James (33), Jabari Walker (13)",
+   "bench": "Kentavious Caldwell-Pope (23), Anfernee Simons (22)",
    "backup_c": "Adem Bona",
    "coach": "Nick Nurse",
    "notes": "Jaylen Brown, LeBron James, Maxey and Embiid together cannot all keep last year's usage, so expect pullbacks. Embiid is expected to miss time.",
    "source": "LO-1018",
-   "out": "Adem Bona, Jaylen Brown",
+   "out": "Adem Bona, Dean Wade, Jaylen Brown",
    "depth_through": "2026-11-16",
    "games": 15
   },
@@ -24508,7 +24509,7 @@
   {
    "rank": 229,
    "player": "Dean Wade",
-   "pos": "SF/PF",
+   "pos": "SF,PF",
    "team": "PHI",
    "flag": "",
    "change": "",
