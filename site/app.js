@@ -1455,6 +1455,81 @@
       '<div class="panel ss-panel scrubs"><h2>Scrubs</h2><p class="hint">Cheap value that popped up today, $4,500 and under. Every scrub has a reason.</p><div class="ssc-grid">' + ((SS.scrubs || []).map(card).join('') || '<p class="sub">No scrubs with a real reason yet today.</p>') + '</div></div>';
   }
 
+  // ---- Live scoring tab: live box scores straight from ESPN in the visitor's browser.
+  var LV_ESPN = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/', LV_T = null, LV_ON = false;
+  var LV_FIX = {NY:'NYK',SA:'SAS',GS:'GSW',NO:'NOP',UTAH:'UTA',WSH:'WAS',PHO:'PHX',BK:'BKN'};
+  function lvFix(t){ return LV_FIX[t] || t; }
+  function lvNorm(s){ return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\./g, '').replace(/\s+(jr|sr|ii|iii|iv)$/, '').trim(); }
+  function lvDk(s){
+    var v = s.pts + .5 * s.t3 + 1.25 * s.reb + 1.5 * s.ast + 2 * s.stl + 2 * s.blk - .5 * s.to;
+    var d = [s.pts, s.reb, s.ast, s.stl, s.blk].filter(function(x){ return x >= 10; }).length;
+    if (d >= 2) v += 1.5; if (d >= 3) v += 3; return v;
+  }
+  var LV_STOPS = ['#d73027','#fc8d59','#fee08b','#f3f4f6','#d9ef8b','#66bd63','#1a9850'];
+  function lvHeat(d){ if (d == null) return 'background:#f3f4f6;color:#15171c'; var x = Math.max(-1, Math.min(1, d / 15)), c = LV_STOPS[Math.round((x + 1) / 2 * 6)];
+    return 'background:' + c + ';color:' + ((c === '#d73027' || c === '#1a9850') ? '#fff' : '#15171c'); }
+  function liveSetup(){
+    var mv = document.querySelector('#r4p-tabs .tab[data-v="moves"]');
+    if (!mv || document.querySelector('#r4p-tabs .tab[data-v="live"]')) return;
+    var b = document.createElement('button'); b.className = 'tab'; b.type = 'button'; b.setAttribute('data-v', 'live'); b.textContent = 'Live';
+    mv.parentNode.insertBefore(b, mv);
+    var sec = document.createElement('section'); sec.className = 'view'; sec.id = 'v-live'; sec.hidden = true;
+    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. Pace is the DK he is on track to finish with, colored against our projection.</p>' +
+      '<div class="lv-tiles" id="r4p-lvtiles"></div><div class="lv-key"><span>Behind projection</span><span class="lv-bar"></span><span>Ahead of projection</span></div><div id="r4p-lvtbl"></div></div>';
+    $('r4p-app').appendChild(sec);
+  }
+  function liveLoad(){
+    if (!LV_ON) return;
+    fetch(LV_ESPN + 'scoreboard?t=' + Date.now()).then(function(r){ return r.json(); }).then(function(sb){
+      var evs = sb.events || [];
+      $('r4p-lvtiles').innerHTML = evs.map(function(e){
+        var c = e.competitions[0].competitors, a = c.filter(function(x){ return x.homeAway === 'away'; })[0], h = c.filter(function(x){ return x.homeAway === 'home'; })[0], st = e.status.type.state;
+        return '<div class="lv-tile' + (st === 'in' ? ' on' : '') + '">' + tm(lvFix(a.team.abbreviation)) + ' <b>' + (st === 'pre' ? '' : esc(a.score)) + '</b> @ ' + tm(lvFix(h.team.abbreviation)) + ' <b>' + (st === 'pre' ? '' : esc(h.score)) + '</b><div class="lv-st">' + esc(e.status.type.shortDetail) + '</div></div>';
+      }).join('');
+      var go = evs.filter(function(e){ return e.status.type.state !== 'pre'; });
+      return Promise.all(go.map(function(e){ return fetch(LV_ESPN + 'summary?event=' + e.id + '&t=' + Date.now()).then(function(r){ return r.json(); }).then(function(s){ return {e:e, s:s}; }).catch(function(){ return null; }); }));
+    }).then(function(list){
+      var pj = {}; ((PJ && PJ.players) || []).forEach(function(x){ pj[lvNorm(x.player) + '|' + x.team] = x; });
+      var rows = [];
+      (list || []).forEach(function(o){
+        if (!o) return;
+        var e = o.e, state = e.status.type.state, c = e.competitions[0].competitors;
+        var a = c.filter(function(x){ return x.homeAway === 'away'; })[0], h = c.filter(function(x){ return x.homeAway === 'home'; })[0];
+        var game = lvFix(a.team.abbreviation) + ' ' + a.score + ' @ ' + lvFix(h.team.abbreviation) + ' ' + h.score + ' · ' + e.status.type.shortDetail;
+        ((o.s.boxscore || {}).players || []).forEach(function(t){
+          var team = lvFix(t.team.abbreviation), st0 = (t.statistics || [])[0]; if (!st0) return; var keys = st0.keys || [];
+          (st0.athletes || []).forEach(function(at){
+            if (!at.stats || !at.stats.length) return;
+            var g = function(k){ return at.stats[keys.indexOf(k)]; }, mins = parseInt(g('minutes'), 10) || 0;
+            if (!mins) return;
+            var s = {pts:+g('points')||0, reb:+g('rebounds')||0, ast:+g('assists')||0, stl:+g('steals')||0, blk:+g('blocks')||0, to:+g('turnovers')||0,
+                     t3:parseInt(g('threePointFieldGoalsMade-threePointFieldGoalsAttempted'), 10) || 0};
+            var name = at.athlete.displayName, p = pj[lvNorm(name) + '|' + team], v = lvDk(s);
+            var exp = p ? (state === 'post' ? p.dk : p.dk * Math.min(1, mins / Math.max(p.min, 1))) : null;
+            var pace = p ? (state === 'post' ? v : v / mins * Math.max(p.min, mins)) : null;
+            rows.push({name:name, team:team, sal:p && p.salary, game:game, mins:mins, s:s, dk:v, proj:p && p.dk, own:p && p.own, diff:exp == null ? null : v - exp, pace:pace});
+          });
+        });
+      });
+      rows.sort(function(x, y){ return y.dk - x.dk; });
+      if (!rows.length){ $('r4p-lvtbl').innerHTML = '<p class="sub">No games have started yet tonight. Scores show up here as soon as the first game tips.</p>'; return; }
+      $('r4p-lvtbl').innerHTML = '<table class="lv-tbl"><thead><tr><th>Player</th><th>Team</th><th>Game</th><th class="n">Min</th><th>Stat line</th><th class="n">DK</th><th class="n">Proj</th><th class="n">Pace</th><th class="n">Own%</th></tr></thead><tbody>' +
+        rows.map(function(r){
+          var s = r.s, line = s.pts + ' pts, ' + s.reb + ' reb, ' + s.ast + ' ast' + (s.stl ? ', ' + s.stl + ' stl' : '') + (s.blk ? ', ' + s.blk + ' blk' : '') + (s.t3 ? ', ' + s.t3 + ' 3pm' : '') + (s.to ? ', ' + s.to + ' to' : '');
+          return '<tr><td class="nowrap"><span class="who">' + esc(r.name) + '</span>' + (r.sal ? ' <span class="bs-n">' + money(r.sal) + '</span>' : '') + '</td><td class="lv-team">' + tm(r.team) + '</td>' +
+            '<td class="lv-game bs-n">' + esc(r.game) + '</td><td class="n lv-min">' + r.mins + '</td><td class="lv-line bs-n">' + esc(line) + '</td>' +
+            '<td class="n lv-dk"><span class="lv-heat" style="' + lvHeat(r.diff) + '">' + n1(r.dk) + '</span></td><td class="n lv-proj">' + (r.proj != null ? n1(r.proj) : '–') + '</td>' +
+            '<td class="n lv-pace"><span class="lv-heat" style="' + lvHeat(r.pace == null ? null : r.pace - r.proj) + '">' + (r.pace != null ? n1(r.pace) : '–') + '</span></td>' +
+            '<td class="n lv-own">' + (r.own != null ? Math.round(r.own) + '%' : '–') + '</td></tr>';
+        }).join('') + '</tbody></table>';
+    }).catch(function(){ if (!$('r4p-lvtbl').innerHTML) $('r4p-lvtbl').innerHTML = '<p class="sub">Live scores could not load. Trying again in 30 seconds.</p>'; });
+  }
+  function liveStart(on){
+    LV_ON = on; clearInterval(LV_T); LV_T = null;
+    if (on){ liveLoad(); LV_T = setInterval(liveLoad, 30000); }
+  }
+  liveSetup();
+
   function show(v){
     var tabs = document.querySelectorAll('#r4p-tabs .tab');
     for (var i = 0; i < tabs.length; i++) tabs[i].classList.toggle('on', tabs[i].getAttribute('data-v') === v);
@@ -1462,6 +1537,7 @@
     for (var j = 0; j < views.length; j++) views[j].hidden = views[j].id !== 'v-' + v;
     if (v === 'games') gFit();
     if (v === 'results') nightsLoad();
+    liveStart(v === 'live');
     try { window.scrollTo(0, 0); } catch (e) {}
   }
 
