@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updated": "5:36 PM ET",
+ "updated": "5:47 PM ET",
  "games": 12,
  "pending": [],
  "first_report": "5:42 AM",
@@ -537,6 +537,22 @@
  ],
  "changed": [
   {
+   "player": "Patrick Williams",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "-",
+   "time": "5:49 PM"
+  },
+  {
+   "player": "T.J. McConnell",
+   "team": "IND",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Hamstring Strain",
+   "time": "5:49 PM"
+  },
+  {
    "player": "Andrew Nembhard",
    "team": "IND",
    "status": "Out",
@@ -598,22 +614,6 @@
    "status": "Available",
    "was": "Probable",
    "why": "Illness",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Myron Gardner",
-   "team": "MIA",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Bam Adebayo",
-   "team": "MIA",
-   "status": "Available",
-   "was": "Probable",
-   "why": "",
    "time": "1:55 PM"
   }
  ],
@@ -1331,15 +1331,6 @@
     "ast": 3.0
    },
    {
-    "player": "Victor Wembanyama",
-    "team": "SAS",
-    "dk": 58.0,
-    "min": 34.0,
-    "pts": 25.0,
-    "reb": 18.0,
-    "ast": 4.0
-   },
-   {
     "player": "Luka Doncic",
     "team": "LAL",
     "dk": 58.0,
@@ -1347,6 +1338,15 @@
     "pts": 36.0,
     "reb": 6.0,
     "ast": 7.0
+   },
+   {
+    "player": "Victor Wembanyama",
+    "team": "SAS",
+    "dk": 58.0,
+    "min": 34.0,
+    "pts": 25.0,
+    "reb": 18.0,
+    "ast": 4.0
    },
    {
     "player": "Keyonte George",
@@ -1381,8 +1381,8 @@
   ]
  },
  "injuries": {
-  "report": "05:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_05_30PM.pdf",
+  "report": "05:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_05_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1765,31 +1765,6 @@
    },
    {
     "last": {
-     "date": "2026-11-15",
-     "dk": 26.8,
-     "min": 19,
-     "opp": "PHI",
-     "ha": "@",
-     "res": "L",
-     "score": "131-124"
-    },
-    "game": "HOU at IND",
-    "time": "2026-11-19T00:00Z",
-    "team": "IND",
-    "player": "T.J. McConnell",
-    "status": "Probable",
-    "reason": "Right Hamstring Strain",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "",
-    "salary": 4300,
-    "min": 16.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-16",
      "dk": 11.8,
      "min": 16,
@@ -1835,6 +1810,31 @@
     "changed_at": "",
     "salary": 5300,
     "min": 27.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-15",
+     "dk": 26.8,
+     "min": 19,
+     "opp": "PHI",
+     "ha": "@",
+     "res": "L",
+     "score": "131-124"
+    },
+    "game": "HOU at IND",
+    "time": "2026-11-19T00:00Z",
+    "team": "IND",
+    "player": "T.J. McConnell",
+    "status": "Available",
+    "reason": "Right Hamstring Strain",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "5:49 PM",
+    "salary": 4300,
+    "min": 16.7,
     "benefits": [],
     "estimate": false
    },
@@ -1969,12 +1969,12 @@
     "time": "2026-11-19T00:30Z",
     "team": "CHI",
     "player": "Patrick Williams",
-    "status": "Probable",
-    "reason": "Right Finger",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "5:49 PM",
     "salary": 3800,
     "min": 21.0,
     "benefits": [],
@@ -2457,7 +2457,7 @@
     "team": "SAC",
     "player": "De'Andre Hunter",
     "status": "Available",
-    "reason": "",
+    "reason": "Left Hip Soreness /",
     "new": true,
     "was": "Questionable",
     "known": true,
