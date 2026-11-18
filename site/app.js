@@ -1563,6 +1563,10 @@
       (list || []).forEach(function(o){
         if (!o) return;
         var e = o.e, state = e.status.type.state, c = e.competitions[0].competitors;
+        // Game minutes played and left, from the period and clock (overtime periods are 5 minutes).
+        var per = e.status.period || 1, clk = (e.status.clock || 0) / 60;
+        var gone = per <= 4 ? (per - 1) * 12 + (12 - clk) : 48 + (per - 5) * 5 + (5 - clk);
+        var left = state === 'post' ? 0 : (per <= 4 ? 48 - gone : 5 - (5 - clk) % 5);
         var a = c.filter(function(x){ return x.homeAway === 'away'; })[0], h = c.filter(function(x){ return x.homeAway === 'home'; })[0];
         var game = lvFix(a.team.abbreviation) + ' ' + a.score + ' @ ' + lvFix(h.team.abbreviation) + ' ' + h.score + ' · ' + e.status.type.shortDetail;
         ((o.s.boxscore || {}).players || []).forEach(function(t){
@@ -1575,7 +1579,18 @@
                      t3:parseInt(g('threePointFieldGoalsMade-threePointFieldGoalsAttempted'), 10) || 0};
             var name = at.athlete.displayName, p = pj[lvNorm(name) + '|' + team], v = lvDk(s);
             var exp = p ? (state === 'post' ? p.dk : p.dk * Math.min(1, mins / Math.max(p.min, 1))) : null;
-            var pace = p ? (state === 'post' ? v : v / mins * Math.max(p.min, mins)) : null;
+            // On Track For = DK so far + his DK rate x the minutes he is likely to still play.
+            // Early on that is what is left of his projected minutes; as the game goes on it shifts to his
+            // actual share of the game so far times the game minutes left, so it settles down late.
+            var pace = null;
+            if (p){
+              if (state === 'post') pace = v;
+              else {
+                var w = Math.max(0, Math.min(1, gone / 48)), r1 = Math.max(0, p.min - mins), r2 = (gone > 0 ? Math.min(1, mins / gone) : 0) * left;
+                var more = Math.min(left, (1 - w) * r1 + w * r2);
+                pace = v + v / mins * more;
+              }
+            }
             rows.push({fin:state === 'post', gid:e.id, slate:p && p.slate, pos:p && p.pos, name:name, team:team, sal:p && p.salary, game:game, mins:mins, s:s, dk:v, proj:p && p.dk, own:p && p.own, diff:exp == null ? null : v - exp, pace:pace});
           });
         });
