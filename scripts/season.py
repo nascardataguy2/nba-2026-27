@@ -17,7 +17,9 @@ STATS = ("min", "dk", "pts", "reb", "ast", "stl", "blk", "to", "tpm")
 
 def write_gamelogs(games, nights):
     """data/gamelogs.json: {norm name: [[date, team, opp, home, start, min, pts, reb, ast,
-    stl, blk, to, tpm, dk, proj_min, proj_dk, salary], ...]} newest first."""
+    stl, blk, to, tpm, dk, proj_min, proj_dk, salary, usage], ...]} newest first.
+    usage = our estimate from the box score: 100 * (FGA + 0.44*FTA + TO) * (team minutes / 5)
+    / (his minutes * team (FGA + 0.44*FTA + TO)); None when the box lacks shot data."""
     opp = {}
     gdir = os.path.join(D, "games")
     for d in nights:
@@ -25,6 +27,20 @@ def write_gamelogs(games, nights):
             opp[(d, g["away"])] = (g["home"], False)
             opp[(d, g["home"])] = (g["away"], True)
     snaps = {d: load_json(os.path.join(HIST, d + ".json"), {}) for d in nights}
+    tot = {}
+    for g in games.values():
+        for x in g:
+            if x.get("min") and x.get("fga") is not None:
+                t = tot.setdefault((x["date"], x["team"]), [0.0, 0.0])
+                t[0] += (x.get("fga") or 0) + 0.44 * (x.get("fta") or 0) + (x.get("to") or 0)
+                t[1] += x["min"]
+
+    def usg(x):
+        t = tot.get((x["date"], x["team"]))
+        if not t or not t[0] or not x.get("min") or x.get("fga") is None:
+            return None
+        return round(100 * ((x.get("fga") or 0) + 0.44 * (x.get("fta") or 0) + (x.get("to") or 0)) * (t[1] / 5.0) / (x["min"] * t[0]), 1)
+
     out = {}
     for k, g in games.items():
         rows = []
@@ -33,7 +49,7 @@ def write_gamelogs(games, nights):
             pj = snaps.get(x["date"], {}).get(k) or {}
             rows.append([x["date"], x["team"], o, home, bool(x.get("start")), x["min"], x.get("pts", 0), x.get("reb", 0),
                          x.get("ast", 0), x.get("stl", 0), x.get("blk", 0), x.get("to", 0), x.get("tpm", 0), x["dk"],
-                         pj.get("min"), pj.get("dk"), pj.get("salary")])
+                         pj.get("min"), pj.get("dk"), pj.get("salary"), usg(x)])
         out[k] = rows
     with open(os.path.join(D, "gamelogs.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, separators=(",", ":"), ensure_ascii=False)
