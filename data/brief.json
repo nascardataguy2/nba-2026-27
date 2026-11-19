@@ -1,9 +1,8 @@
 {
  "date": "2026-11-19",
- "updated": "1:43 PM ET",
+ "updated": "1:53 PM ET",
  "games": 4,
  "pending": [
-  "GSW",
   "MEM",
   "MIL"
  ],
@@ -77,15 +76,24 @@
    ],
    "teams": {
     "GSW": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Draymond Green",
-       "min": 21.2
+       "min": 21.3
       },
       {
        "player": "Stephen Curry",
-       "min": 1.9
+       "min": 21.0
+      },
+      {
+       "player": "Brandon Williams",
+       "min": 13.3
+      }
+     ],
+     "q": [
+      {
+       "player": "L.J. Cryer",
+       "min": 15.1
       }
      ]
     },
@@ -103,7 +111,7 @@
      ]
     }
    },
-   "key": "Ty Jerome has the top projection in this game at 39.4 DK points."
+   "key": "Draymond Green and Stephen Curry are out, so De'Anthony Melton and Yaxel Lendeborg and Brandin Podziemski should play more than usual."
   },
   {
    "away": "LAC",
@@ -176,8 +184,71 @@
    "key": "Anthony Edwards is out, so Nah'Shon Hyland and Ayo Dosunmu and LaMelo Ball should play more than usual."
   }
  ],
- "changed": [],
- "chg": [],
+ "changed": [
+  {
+   "player": "Zyon Pullin",
+   "team": "MIN",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Draymond Green",
+   "team": "GSW",
+   "status": "Out",
+   "was": "Available",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "LJ Cryer",
+   "team": "GSW",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "1:54 PM"
+  }
+ ],
+ "chg": [
+  {
+   "key": "Draymond Green",
+   "team": "GSW",
+   "head": "Draymond Green OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "De'Anthony Melton",
+     "salary": 5500,
+     "much": "+24.8 DK without him (2 games)"
+    },
+    {
+     "player": "Yaxel Lendeborg",
+     "salary": 8500,
+     "much": "+16.1 DK without him (2 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 21.4
+  },
+  {
+   "key": "LJ Cryer",
+   "team": "GSW",
+   "head": "LJ Cryer QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Graham Ike",
+     "salary": 3200,
+     "much": "+6.2 DK without him (1 game)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 5.8
+  }
+ ],
  "sits": [
   {
    "team": "POR",
@@ -218,6 +289,61 @@
    "split_of": [
     "Ja Morant",
     "Robert Williams"
+   ]
+  },
+  {
+   "team": "GSW",
+   "outs": [
+    {
+     "player": "Draymond Green",
+     "min": 21.3,
+     "note": "Green played 23 minutes on 11/18 through right elbow inflammation, and the Warriors play the second night of a back-to-back at Memphis on Thursday. The show said Green and Al Horford are almost certainly not both playing both nights and projected Green to sit Thursday.",
+     "new": true
+    },
+    {
+     "player": "Stephen Curry",
+     "min": 21.0,
+     "note": "Curry is expected to miss at least another week with his torn oblique. Golden State has lost by 38, 21 and 22 points in its three full games without him.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 42.3,
+   "benefits": [
+    {
+     "player": "De'Anthony Melton",
+     "salary": 5500,
+     "why": "started 1 of 2",
+     "much": "+24.8 DK without them (2 games)",
+     "score": 24.8,
+     "min": 24.6,
+     "dk": 24.6,
+     "avg": 21.1
+    },
+    {
+     "player": "Yaxel Lendeborg",
+     "salary": 8500,
+     "why": "35 minutes, up from 31",
+     "much": "+16.1 DK without them (2 games)",
+     "score": 16.1,
+     "min": 35.8,
+     "dk": 44.3,
+     "avg": 38.0
+    },
+    {
+     "player": "Brandin Podziemski",
+     "salary": 7300,
+     "why": "37 minutes, up from 32",
+     "much": "+8.6 DK without them (1 game)",
+     "score": 8.6,
+     "min": 33.4,
+     "dk": 33.5,
+     "avg": 31.6
+    }
+   ],
+   "split_of": [
+    "Stephen Curry",
+    "Draymond Green"
    ]
   },
   {
@@ -391,39 +517,39 @@
  ],
  "chalk": [
   {
+   "player": "Charles Bassey",
+   "team": "GSW",
+   "own": 38.0,
+   "dk": 20.5,
+   "salary": 4100
+  },
+  {
    "player": "Stephon Castle",
    "team": "SAS",
-   "own": 38.0,
+   "own": 36.3,
    "dk": 37.7,
    "salary": 7200
   },
   {
-   "player": "Charles Bassey",
+   "player": "Al Horford",
    "team": "GSW",
-   "own": 37.6,
-   "dk": 20.6,
-   "salary": 4100
+   "own": 31.5,
+   "dk": 16.6,
+   "salary": 3500
   },
   {
    "player": "Donovan Clingan",
    "team": "POR",
-   "own": 32.9,
+   "own": 31.1,
    "dk": 44.5,
    "salary": 6900
-  },
-  {
-   "player": "Damian Lillard",
-   "team": "POR",
-   "own": 31.4,
-   "dk": 34.8,
-   "salary": 7600
   }
  ],
  "leverage": [
   {
    "player": "Terrence Shannon Jr.",
    "team": "MIN",
-   "own": 3.2,
+   "own": 1.1,
    "dk": 26.1,
    "salary": 4800
   },
@@ -437,7 +563,7 @@
   {
    "player": "Ayo Dosunmu",
    "team": "MIN",
-   "own": 5.5,
+   "own": 5.8,
    "dk": 35.0,
    "salary": 7000
   }
@@ -541,10 +667,9 @@
   ]
  },
  "injuries": {
-  "report": "01:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_01_30PM.pdf",
+  "report": "01:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_01_45PM.pdf",
   "pending": [
-   "GSW",
    "MEM",
    "MIL"
   ],
@@ -581,6 +706,62 @@
       "min": 33.9,
       "dk": 37.3,
       "avg": 29.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 13.2,
+     "min": 23,
+     "opp": "DAL",
+     "ha": "@",
+     "res": "L",
+     "score": "116-94"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "GSW",
+    "player": "Draymond Green",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "salary": 5100,
+    "min": 21.3,
+    "benefits": [
+     {
+      "player": "De'Anthony Melton",
+      "salary": 5500,
+      "why": "started 1 of 2",
+      "much": "+24.8 DK without him (2 games)",
+      "score": 24.8,
+      "min": 24.6,
+      "dk": 24.6,
+      "avg": 21.1
+     },
+     {
+      "player": "Yaxel Lendeborg",
+      "salary": 8500,
+      "why": "35 minutes, up from 31",
+      "much": "+16.1 DK without him (2 games)",
+      "score": 16.1,
+      "min": 35.8,
+      "dk": 44.3,
+      "avg": 38.0
+     },
+     {
+      "player": "Brandin Podziemski",
+      "salary": 7300,
+      "why": "37 minutes, up from 32",
+      "much": "+8.6 DK without him (1 game)",
+      "score": 8.6,
+      "min": 33.4,
+      "dk": 33.5,
+      "avg": 31.6
      }
     ],
     "estimate": false
@@ -801,27 +982,38 @@
    },
    {
     "last": {
-     "date": "2026-11-16",
-     "dk": 1.2,
-     "min": 4,
-     "opp": "POR",
-     "ha": "vs",
-     "res": "W",
-     "score": "106-98"
+     "date": "2026-11-18",
+     "dk": 13.5,
+     "min": 19,
+     "opp": "DAL",
+     "ha": "@",
+     "res": "L",
+     "score": "116-94"
     },
-    "game": "NYK at MIN",
+    "game": "GSW at MEM",
     "time": "2026-11-20T01:00Z",
-    "team": "MIN",
-    "player": "Zyon Pullin",
+    "team": "GSW",
+    "player": "LJ Cryer",
     "status": "Questionable",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "",
     "known": true,
-    "changed_at": "",
-    "salary": 3000,
-    "min": 3.7,
-    "benefits": [],
+    "changed_at": "1:54 PM",
+    "salary": 4000,
+    "min": 22.3,
+    "benefits": [
+     {
+      "player": "Graham Ike",
+      "salary": 3200,
+      "why": "started that game",
+      "much": "+6.2 DK without him (1 game)",
+      "score": 6.2,
+      "min": 13.3,
+      "dk": 15.3,
+      "avg": 11.3
+     }
+    ],
     "estimate": false
    },
    {
@@ -912,6 +1104,62 @@
       "min": 32.0,
       "dk": 44.5,
       "avg": 33.0
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-11",
+     "dk": 3.0,
+     "min": 6,
+     "opp": "HOU",
+     "ha": "@",
+     "res": "L",
+     "score": "115-108"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "GSW",
+    "player": "Stephen Curry",
+    "status": "Out",
+    "reason": "Right Oblique Tear",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 8100,
+    "min": 21.0,
+    "benefits": [
+     {
+      "player": "Will Richard",
+      "salary": 3900,
+      "why": "27 minutes, up from 15",
+      "much": "+8.1 DK without him (5 games)",
+      "score": 8.1,
+      "min": 26.5,
+      "dk": 19.1,
+      "avg": 13.3
+     },
+     {
+      "player": "De'Anthony Melton",
+      "salary": 5500,
+      "why": "same minutes, more production",
+      "much": "+6.9 DK without him (5 games)",
+      "score": 6.9,
+      "min": 24.6,
+      "dk": 24.6,
+      "avg": 21.1
+     },
+     {
+      "player": "Graham Ike",
+      "salary": 3200,
+      "why": "14 minutes, up from 7",
+      "much": "+6.7 DK without him (5 games)",
+      "score": 6.7,
+      "min": 13.3,
+      "dk": 15.3,
+      "avg": 11.3
      }
     ],
     "estimate": false
@@ -1010,6 +1258,42 @@
    },
    {
     "last": {
+     "date": "2026-11-09",
+     "dk": 4.0,
+     "min": 2,
+     "opp": "NOP",
+     "ha": "vs",
+     "res": "W",
+     "score": "138-87"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "GSW",
+    "player": "Brandon Williams",
+    "status": "Out",
+    "reason": "Left Hamstring Strain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 4500,
+    "min": 13.3,
+    "benefits": [
+     {
+      "player": "Will Richard",
+      "salary": 3900,
+      "why": "25 minutes, up from 16",
+      "much": "+9.3 DK without him (5 games)",
+      "score": 9.3,
+      "min": 26.5,
+      "dk": 19.1,
+      "avg": 13.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-04",
      "dk": 12.2,
      "min": 12,
@@ -1067,8 +1351,28 @@
   ],
   "minor": [
    {
+    "player": "Zyon Pullin",
+    "team": "MIN",
+    "status": "Available"
+   },
+   {
     "player": "Jordan Miller",
     "team": "LAC",
+    "status": "Out"
+   },
+   {
+    "player": "Jimmy Butler III",
+    "team": "GSW",
+    "status": "Out"
+   },
+   {
+    "player": "Moses Moody",
+    "team": "GSW",
+    "status": "Out"
+   },
+   {
+    "player": "Kristaps Porzingis",
+    "team": "GSW",
     "status": "Out"
    },
    {
