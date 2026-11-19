@@ -341,10 +341,13 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .gl-h span{font:12px/1.2 var(--body);letter-spacing:0;text-transform:none;color:var(--muted);margin-left:4px}
 .gl-w{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:8px;background:#fff}
 .gl-t{border-collapse:collapse;width:100%;table-layout:fixed;font:700 13px/1.2 var(--head)}
-.gl-t th:nth-child(1),.gl-t td:nth-child(1){width:72px}.gl-t th:nth-child(2),.gl-t td:nth-child(2){width:72px}
+.gl-t th:nth-child(1),.gl-t td:nth-child(1){width:54px}.gl-t th:nth-child(2),.gl-t td:nth-child(2){width:58px}
 .gl-t th{background:var(--soft);font:700 11px/1 var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:6px 5px;text-align:right;white-space:nowrap}
 .gl-t td{padding:5px;text-align:right;border-top:1px solid var(--soft);white-space:nowrap;color:var(--ink)}
-.gl-t th:nth-child(-n+2),.gl-t td:nth-child(-n+2){text-align:left}
+.gl-t th:nth-child(-n+3),.gl-t td:nth-child(-n+3){text-align:left}
+.gl-t th:nth-child(3),.gl-t td:nth-child(3){width:74px}
+.pjt .pj-notes .gl-t td,.gl-t td{white-space:nowrap}
+.gl-t .gl-sc{color:var(--muted);font-weight:600}.gl-t .gl-sc b.w{color:var(--good)}.gl-t .gl-sc b.l{color:var(--bad)}
 .gl-t td i{font-style:normal;font-size:10px;color:var(--good)}
 .gl-t .gl-p{color:var(--muted);font-weight:600}
 .gl-t .gl-dk{color:var(--navy)}

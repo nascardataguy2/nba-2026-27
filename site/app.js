@@ -652,7 +652,7 @@
     var g = name ? glRows(name) : [];
     var right = '';
     if (g.length){
-      var head = '<tr><th>Date</th><th>Opp</th><th>Min</th><th>Proj</th><th>DK</th><th>Proj</th><th title="DK points per minute">DK/M</th><th title="Usage: share of team shots, free throws and turnovers while he played (our estimate from the box score)">Usg</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th><th>Stl</th><th>Blk</th><th>TO</th></tr>';
+      var head = '<tr><th>Date</th><th>Opp</th><th>Score</th><th>Min</th><th>Proj</th><th>DK</th><th>Proj</th><th title="DK points per minute">DK/M</th><th title="Usage: share of team shots, free throws and turnovers while he played (our estimate from the box score)">Usg</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th><th>Stl</th><th>Blk</th><th>TO</th></tr>';
       // Colored against the whole league: green = top 25% of every 15+ minute game this season,
       // red = bottom 25%, navy = in between.
       glRows(name);
@@ -663,7 +663,8 @@
       var row = function(r){
         var d = r[0].slice(5).replace('-', '/').replace(/^0/, ''), op = r[2] ? (r[3] ? 'vs\u00a0' : '@') + r[2] : '';
         var hit = r[15] != null ? (r[13] >= r[15] ? ' up' : ' down') : '';
-        return '<tr><td>' + esc(d) + (r[4] ? ' <i>S</i>' : '') + '</td><td>' + esc(op) + '</td><td>' + n1(r[5]) + '</td><td class="gl-p">' + (r[14] == null ? '\u2013' : n1(r[14])) + '</td>' +
+        var f = r[18], sc = f ? '<td class="gl-sc"><b class="' + (f[0] > f[1] ? 'w' : 'l') + '">' + (f[0] > f[1] ? 'W' : 'L') + '</b>\u00a0' + f[0] + '\u2011' + f[1] + '</td>' : '<td>\u2013</td>';
+        return '<tr><td>' + esc(d) + (r[4] ? ' <i>S</i>' : '') + '</td><td>' + esc(op) + '</td>' + sc + '<td>' + n1(r[5]) + '</td><td class="gl-p">' + (r[14] == null ? '\u2013' : n1(r[14])) + '</td>' +
           '<td class="gl-dk' + hit + '">' + n1(r[13]) + '</td><td class="gl-p">' + (r[15] == null ? '\u2013' : n1(r[15])) + '</td>' +
           heat(r[5] ? r[13] / r[5] : null, GLIDX.cut.pm, r[5] ? (r[13] / r[5]).toFixed(2) : '\u2013') +
           heat(r[17], GLIDX.cut.us, r[17] == null ? '\u2013' : Math.round(r[17]) + '%') +
