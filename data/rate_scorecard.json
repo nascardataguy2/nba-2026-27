@@ -1,15 +1,5 @@
 [
  {
-  "when": "2026-11-14 18:41 UTC",
-  "test_games": 1284,
-  "baseline_only_miss": 7.88,
-  "blend_miss": 7.73,
-  "current_w_miss": 7.72,
-  "w_test": 0.5,
-  "w_live": 0.55,
-  "adopted": false
- },
- {
   "when": "2026-11-14 18:45 UTC",
   "test_games": 1284,
   "baseline_only_miss": 7.88,
@@ -1995,6 +1985,16 @@
   "baseline_only_miss": 8.13,
   "blend_miss": 7.87,
   "current_w_miss": 7.86,
+  "w_test": 0.5,
+  "w_live": 0.55,
+  "adopted": false
+ },
+ {
+  "when": "2026-11-19 07:20 UTC",
+  "test_games": 1541,
+  "baseline_only_miss": 8.06,
+  "blend_miss": 7.8,
+  "current_w_miss": 7.79,
   "w_test": 0.5,
   "w_live": 0.55,
   "adopted": false
