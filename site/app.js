@@ -653,13 +653,12 @@
     var right = '';
     if (g.length){
       var head = '<tr><th>Date</th><th>Opp</th><th>Min</th><th>Proj</th><th>DK</th><th>Proj</th><th title="DK points per minute">DK/M</th><th title="Usage: share of team shots, free throws and turnovers while he played (our estimate from the box score)">Usg</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th><th>Stl</th><th>Blk</th><th>TO</th></tr>';
-      // Heat map against the whole league: each number is colored by where it ranks among every
-      // game of 15+ minutes this season (red = bottom 10%, gray = middle, dark green = top 10%).
+      // Colored against the whole league: green = top 25% of every 15+ minute game this season,
+      // red = bottom 25%, navy = in between.
       glRows(name);
       var heat = function(v, c, txt){
-        if (v == null || !c) return '<td>' + txt + '</td>';
-        var i = 0; while (i < 6 && v >= c[i]) i++;
-        return '<td class="gl-heat" style="' + lvHeat((i - 3) * 5) + '">' + txt + '</td>';
+        var k = v == null || !c ? '' : (v >= c[4] ? ' up' : (v <= c[1] ? ' down' : ''));
+        return '<td class="gl-dk' + k + '">' + txt + '</td>';
       };
       var row = function(r){
         var d = r[0].slice(5).replace('-', '/').replace(/^0/, ''), op = r[2] ? (r[3] ? 'vs\u00a0' : '@') + r[2] : '';

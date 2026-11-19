@@ -350,8 +350,6 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .gl-t .gl-dk{color:var(--navy)}
 .gl-t .gl-dk.up{color:var(--good)}
 .gl-t .gl-dk.down{color:var(--bad)}
-.gl-t th:nth-child(7),.gl-t td:nth-child(7),.gl-t th:nth-child(8),.gl-t td:nth-child(8){width:44px}
-.gl-t td.gl-heat{text-align:center;border-top:1px solid #fff}
 .gl-t tbody tr:first-child td{border-top:none}
 @media (max-width:900px){
   .nt-box.two{display:block}
