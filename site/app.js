@@ -623,6 +623,12 @@
         var rows = GL[k] || [], t = rows.length ? rows[0][1] : '', l = gkey(k.split(' ').slice(-1)[0]) + '|' + t;
         GLIDX.last[l] = GLIDX.last[l] === undefined ? rows : null;
       });
+      // Field cutoffs for the game log heat map: every game of 15+ minutes this season, all players.
+      var pm = [], us = [];
+      Object.keys(GL).forEach(function(k){ (GL[k] || []).forEach(function(r){
+        if (r[5] >= 15){ pm.push(r[13] / r[5]); if (r[17] != null) us.push(r[17]); } }); });
+      var cuts = function(a){ a.sort(function(x, y){ return x - y; }); return a.length ? [.1, .25, .4, .6, .75, .9].map(function(q){ return a[Math.floor(q * (a.length - 1))]; }) : null; };
+      GLIDX.cut = {pm: cuts(pm), us: cuts(us)};
     }
     var g = gkey(name), hit = GLIDX.k[g] || GLIDX.k[GLALIAS[g]];
     if (hit) return hit;
@@ -647,18 +653,21 @@
     var right = '';
     if (g.length){
       var head = '<tr><th>Date</th><th>Opp</th><th>Min</th><th>Proj</th><th>DK</th><th>Proj</th><th title="DK points per minute">DK/M</th><th title="Usage: share of team shots, free throws and turnovers while he played (our estimate from the box score)">Usg</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th><th>Stl</th><th>Blk</th><th>TO</th></tr>';
-      // His own averages over these games, so DK/Min and Usage show green on his big nights and red on his small ones.
-      var tm = 0, tdk = 0, us = 0, un = 0;
-      g.forEach(function(r){ if (r[5]){ tm += r[5]; tdk += r[13]; } if (r[17] != null){ us += r[17]; un++; } });
-      var aPm = tm ? tdk / tm : null, aUs = un ? us / un : null;
-      var cmp = function(v, a){ return v == null || a == null ? '' : (v >= a * 1.1 ? ' up' : (v <= a * 0.9 ? ' down' : '')); };
+      // Heat map against the whole league: each number is colored by where it ranks among every
+      // game of 15+ minutes this season (red = bottom 10%, gray = middle, dark green = top 10%).
+      glRows(name);
+      var heat = function(v, c, txt){
+        if (v == null || !c) return '<td>' + txt + '</td>';
+        var i = 0; while (i < 6 && v >= c[i]) i++;
+        return '<td class="gl-heat" style="' + lvHeat((i - 3) * 5) + '">' + txt + '</td>';
+      };
       var row = function(r){
         var d = r[0].slice(5).replace('-', '/').replace(/^0/, ''), op = r[2] ? (r[3] ? 'vs\u00a0' : '@') + r[2] : '';
         var hit = r[15] != null ? (r[13] >= r[15] ? ' up' : ' down') : '';
         return '<tr><td>' + esc(d) + (r[4] ? ' <i>S</i>' : '') + '</td><td>' + esc(op) + '</td><td>' + n1(r[5]) + '</td><td class="gl-p">' + (r[14] == null ? '\u2013' : n1(r[14])) + '</td>' +
           '<td class="gl-dk' + hit + '">' + n1(r[13]) + '</td><td class="gl-p">' + (r[15] == null ? '\u2013' : n1(r[15])) + '</td>' +
-          '<td class="gl-dk' + cmp(r[5] ? r[13] / r[5] : null, aPm) + '">' + (r[5] ? (r[13] / r[5]).toFixed(2) : '\u2013') + '</td>' +
-          '<td class="gl-dk' + cmp(r[17], aUs) + '">' + (r[17] == null ? '\u2013' : Math.round(r[17]) + '%') + '</td>' +
+          heat(r[5] ? r[13] / r[5] : null, GLIDX.cut.pm, r[5] ? (r[13] / r[5]).toFixed(2) : '\u2013') +
+          heat(r[17], GLIDX.cut.us, r[17] == null ? '\u2013' : Math.round(r[17]) + '%') +
           [6, 7, 8, 12, 9, 10, 11].map(function(i){ return '<td>' + Math.round(r[i]) + '</td>'; }).join('') + '</tr>';
       };
       right = '<div class="gl"><p class="gl-h">Game log <span>' + g.length + (g.length === 1 ? ' game' : ' games') + ' \u00b7 S = started \u00b7 Proj = our projection that night</span></p>' +
