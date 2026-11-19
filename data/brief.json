@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "updated": "6:33 PM ET",
+ "updated": "6:47 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:41 AM",
@@ -100,12 +100,7 @@
        "min": 13.3
       }
      ],
-     "q": [
-      {
-       "player": "L.J. Cryer",
-       "min": 15.1
-      }
-     ]
+     "q": []
     },
     "MEM": {
      "out": [
@@ -208,6 +203,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "LJ Cryer",
+   "team": "GSW",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:48 PM"
+  },
   {
    "player": "Myles Turner",
    "team": "MIL",
@@ -346,6 +349,22 @@
    "size": 21.4
   },
   {
+   "key": "GSW",
+   "team": "GSW",
+   "head": "Cryer CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Graham Ike",
+     "salary": 3200,
+     "much": "+6.2 DK without Cryer"
+    }
+   ],
+   "time": "6:48 PM",
+   "size": 11.5
+  },
+  {
    "key": "Isaiah Stewart",
    "team": "MEM",
    "head": "Isaiah Stewart QUESTIONABLE",
@@ -360,22 +379,6 @@
    ],
    "time": "2:54 PM",
    "size": 9.2
-  },
-  {
-   "key": "LJ Cryer",
-   "team": "GSW",
-   "head": "LJ Cryer QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Graham Ike",
-     "salary": 3200,
-     "much": "+6.2 DK without him (1 game)"
-    }
-   ],
-   "time": "1:54 PM",
-   "size": 5.8
   }
  ],
  "sits": [
@@ -911,8 +914,8 @@
   ]
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_06_30PM.pdf",
+  "report": "06:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_06_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1341,42 +1344,6 @@
    },
    {
     "last": {
-     "date": "2026-11-18",
-     "dk": 13.5,
-     "min": 19,
-     "opp": "DAL",
-     "ha": "@",
-     "res": "L",
-     "score": "116-94"
-    },
-    "game": "GSW at MEM",
-    "time": "2026-11-20T01:00Z",
-    "team": "GSW",
-    "player": "LJ Cryer",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "1:54 PM",
-    "salary": 4000,
-    "min": 22.3,
-    "benefits": [
-     {
-      "player": "Graham Ike",
-      "salary": 3200,
-      "why": "started that game",
-      "much": "+6.2 DK without him (1 game)",
-      "score": 6.2,
-      "min": 13.2,
-      "dk": 16.4,
-      "avg": 11.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-14",
      "dk": 18.2,
      "min": 15,
@@ -1410,6 +1377,31 @@
      }
     ],
     "estimate": true
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 13.5,
+     "min": 19,
+     "opp": "DAL",
+     "ha": "@",
+     "res": "L",
+     "score": "116-94"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "GSW",
+    "player": "LJ Cryer",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:48 PM",
+    "salary": 4000,
+    "min": 22.3,
+    "benefits": [],
+    "estimate": false
    },
    {
     "last": {
@@ -1841,6 +1833,16 @@
       "min": 26.0,
       "dk": 19.8,
       "avg": 13.3
+     },
+     {
+      "player": "L.J. Cryer",
+      "salary": 4000,
+      "why": "17 minutes, up from 8",
+      "much": "+8.2 DK without him (5 games)",
+      "score": 8.2,
+      "min": 15.1,
+      "dk": 14.0,
+      "avg": 11.5
      }
     ],
     "estimate": false
