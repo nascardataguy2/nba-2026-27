@@ -183,7 +183,7 @@ for p in sorted(players, key=lambda x: (x["team"], x["player"])):
         bits.append("Usage: " + p["usage"])
     if p["status"]:
         bits.append("Status: " + p["status"])
-    L.append(f"{p['player']} ({p['team']}) | " + " | ".join(bits) + f" | {p['note']} [{src[p['source']]['date']}]")
+    L.append(f"{p['player']} ({p['team']}) | " + " | ".join(bits) + f" | {p['note']} [{src.get(p['source'], {}).get('date', '')}]")
 L.append("")
 L.append("== INJURIES / HEALTH ==")
 for p in injuries:
