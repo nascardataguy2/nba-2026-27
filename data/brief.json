@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updated": "7:25 PM ET",
+ "updated": "7:32 PM ET",
  "games": 12,
  "pending": [],
  "first_report": "5:42 AM",
@@ -366,6 +366,10 @@
     "DET": {
      "out": [
       {
+       "player": "Cade Cunningham",
+       "min": 40.7
+      },
+      {
        "player": "Duncan Robinson",
        "min": 30.7
       },
@@ -378,16 +382,7 @@
        "min": 17.0
       }
      ],
-     "q": [
-      {
-       "player": "Cade Cunningham",
-       "min": 39.7
-      },
-      {
-       "player": "Isaiah Joe",
-       "min": 20.9
-      }
-     ]
+     "q": []
     },
     "NOP": {
      "out": [
@@ -411,7 +406,7 @@
      "q": []
     }
    },
-   "key": "Trey Murphy III and Dejounte Murray are out, so Saddiq Bey and Jeremiah Fears and Jordan Poole should play more than usual."
+   "key": "Cade Cunningham and Duncan Robinson are out, so Ausar Thompson and Daniss Jenkins and John Collins should play more than usual."
   },
   {
    "away": "BOS",
@@ -510,6 +505,22 @@
  ],
  "changed": [
   {
+   "player": "Isaiah Joe",
+   "team": "DET",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Right Hip Contusion",
+   "time": "7:35 PM"
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Knee Soreness",
+   "time": "7:35 PM"
+  },
+  {
    "player": "Tobi Lawal",
    "team": "DAL",
    "status": "Out",
@@ -572,25 +583,30 @@
    "was": "Questionable",
    "why": "Right Foot Soreness",
    "time": "6:33 PM"
-  },
-  {
-   "player": "Dean Wade",
-   "team": "PHI",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "6:19 PM"
-  },
-  {
-   "player": "Peyton Watson",
-   "team": "CLE",
-   "status": "Out",
-   "was": "Doubtful",
-   "why": "Low Back Contusion",
-   "time": "6:19 PM"
   }
  ],
  "chg": [
+  {
+   "key": "Cade Cunningham",
+   "team": "DET",
+   "head": "Cade Cunningham OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Kevin Huerter",
+     "salary": 4900,
+     "much": "+7.5 DK projected vs. last 3"
+    },
+    {
+     "player": "Daniss Jenkins",
+     "salary": 6200,
+     "much": "+7.5 DK projected vs. last 3"
+    }
+   ],
+   "time": "7:35 PM",
+   "size": 48.2
+  },
   {
    "key": "SAC",
    "team": "SAC",
@@ -705,27 +721,6 @@
    ],
    "time": "5:34 PM",
    "size": 32.5
-  },
-  {
-   "key": "Cade Cunningham",
-   "team": "DET",
-   "head": "Cade Cunningham QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Daniss Jenkins",
-     "salary": 6200,
-     "much": "about +16.1 DK if he sits (estimate)"
-    },
-    {
-     "player": "Kevin Huerter",
-     "salary": 4900,
-     "much": "about +6.2 DK if he sits (estimate)"
-    }
-   ],
-   "time": "2:55 PM",
-   "size": 24.1
   },
   {
    "key": "Peyton Watson",
@@ -910,27 +905,6 @@
    ],
    "time": "1:55 PM",
    "size": 8.2
-  },
-  {
-   "key": "Isaiah Joe",
-   "team": "DET",
-   "head": "Isaiah Joe QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Ausar Thompson",
-     "salary": 6700,
-     "much": "+9.8 DK without him (10 games)"
-    },
-    {
-     "player": "Kevin Huerter",
-     "salary": 4900,
-     "much": "+6.9 DK without him (10 games)"
-    }
-   ],
-   "time": "2:55 PM",
-   "size": 6.2
   }
  ],
  "sits": [
@@ -988,6 +962,74 @@
    ],
    "split_of": [
     "Jaylen Brown"
+   ]
+  },
+  {
+   "team": "DET",
+   "outs": [
+    {
+     "player": "Cade Cunningham",
+     "min": 40.7,
+     "note": "Cade Cunningham was moved from questionable to out for tonight (right knee soreness) on the NBA's 07:30 PM injury report. He had averaged 37 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
+    {
+     "player": "Duncan Robinson",
+     "min": 30.7,
+     "note": "The show listed Duncan Robinson as out for Detroit, and he also did not play on 11/17. His absence is part of why Kevin Huerter moved into the starting lineup.",
+     "new": false
+    },
+    {
+     "player": "Jalen Duren",
+     "min": 19.0,
+     "note": "The show said Detroit is probably still a week and change away from getting Jalen Duren back. Paul Reed has kept the backup-center role meanwhile, and the show liked him at $6,000 against New Orleans.",
+     "new": false
+    },
+    {
+     "player": "Ronald Holland II",
+     "min": 17.0,
+     "note": "Ron Holland missed Detroit's game on 11/17 and is questionable tonight at New Orleans. The show said he will likely play on the back-to-back, which could take minutes from the Pistons wings who started without him.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 107.4,
+   "benefits": [
+    {
+     "player": "Ausar Thompson",
+     "salary": 6700,
+     "why": "same minutes, more production",
+     "much": "+21.4 DK without them (1 game)",
+     "score": 21.4,
+     "min": 39.9,
+     "dk": 48.6,
+     "avg": 34.1
+    },
+    {
+     "player": "Daniss Jenkins",
+     "salary": 6200,
+     "why": "started that game",
+     "much": "+15.1 DK without them (1 game)",
+     "score": 15.1,
+     "min": 39.9,
+     "dk": 40.3,
+     "avg": 27.8
+    },
+    {
+     "player": "John Collins",
+     "salary": 5200,
+     "why": "started at center, 23 minutes (11/17)",
+     "much": "+13.5 DK projected vs. last 3",
+     "score": 13.533333333333331,
+     "min": 32.0,
+     "dk": 30.2,
+     "avg": 21.6
+    }
+   ],
+   "split_of": [
+    "Duncan Robinson",
+    "Jalen Duren",
+    "Ronald Holland II"
    ]
   },
   {
@@ -1217,61 +1259,6 @@
     "Andrew Nembhard",
     "Tyrese Haliburton"
    ]
-  },
-  {
-   "team": "GSW",
-   "outs": [
-    {
-     "player": "Stephen Curry",
-     "min": 21.0,
-     "note": "Stephen Curry is out at least two weeks with a right oblique tear suffered November 11 in Houston. Golden State has lost three straight, the last two by more than 20 points.",
-     "new": false
-    },
-    {
-     "player": "Al Horford",
-     "min": 15.0,
-     "note": "Al Horford is questionable Wednesday at Dallas for low back injury management.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 36.0,
-   "benefits": [
-    {
-     "player": "De'Anthony Melton",
-     "salary": 5500,
-     "why": "27 minutes, up from 22",
-     "much": "+25.1 DK without them (1 game)",
-     "score": 25.1,
-     "min": 22.0,
-     "dk": 22.5,
-     "avg": 22.0
-    },
-    {
-     "player": "Graham Ike",
-     "salary": 3000,
-     "why": "started that game",
-     "much": "+21.4 DK without them (1 game)",
-     "score": 21.4,
-     "min": 10.1,
-     "dk": 12.2,
-     "avg": 11.0
-    },
-    {
-     "player": "Yaxel Lendeborg",
-     "salary": 8300,
-     "why": "36 minutes, up from 31",
-     "much": "+11.0 DK without them (1 game)",
-     "score": 11.0,
-     "min": 33.7,
-     "dk": 42.1,
-     "avg": 38.6
-    }
-   ],
-   "split_of": [
-    "Stephen Curry",
-    "Al Horford"
-   ]
   }
  ],
  "hot": [
@@ -1370,7 +1357,7 @@
    "player": "Kevin Huerter",
    "team": "DET",
    "own": 38.0,
-   "dk": 28.7,
+   "dk": 32.3,
    "salary": 4900
   },
   {
@@ -1383,7 +1370,7 @@
   {
    "player": "Collin Murray-Boyles",
    "team": "TOR",
-   "own": 34.0,
+   "own": 34.1,
    "dk": 39.1,
    "salary": 5700
   }
@@ -1392,7 +1379,7 @@
   {
    "player": "Jamal Shead",
    "team": "TOR",
-   "own": 6.5,
+   "own": 7.4,
    "dk": 38.2,
    "salary": 5600
   },
@@ -1406,7 +1393,7 @@
   {
    "player": "Jakob Poeltl",
    "team": "TOR",
-   "own": 1.6,
+   "own": 2.2,
    "dk": 32.8,
    "salary": 5300
   }
@@ -1483,8 +1470,8 @@
   ]
  },
  "injuries": {
-  "report": "07:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_07_15PM.pdf",
+  "report": "07:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_07_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -2128,6 +2115,52 @@
    },
    {
     "last": {
+     "date": "2026-11-17",
+     "dk": 43.8,
+     "min": 38,
+     "opp": "SAS",
+     "ha": "@",
+     "res": "W",
+     "score": "105-93"
+    },
+    "game": "DET at NOP",
+    "time": "2026-11-19T01:00Z",
+    "team": "DET",
+    "player": "Cade Cunningham",
+    "status": "Out",
+    "reason": "Right Knee Soreness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "7:35 PM",
+    "salary": 10000,
+    "min": 40.7,
+    "benefits": [
+     {
+      "player": "Kevin Huerter",
+      "salary": 4900,
+      "why": "subs in for him 10 of 56 times",
+      "much": "+7.5 DK projected vs. last 3",
+      "score": 7.466666666666665,
+      "min": 38.0,
+      "dk": 32.3,
+      "avg": 20.8
+     },
+     {
+      "player": "Daniss Jenkins",
+      "salary": 6200,
+      "why": "subs in for him 22 of 56 times",
+      "much": "+7.5 DK projected vs. last 3",
+      "score": 7.4666666666666615,
+      "min": 39.9,
+      "dk": 40.3,
+      "avg": 27.8
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-15",
      "dk": 36.5,
      "min": 30,
@@ -2245,108 +2278,6 @@
    },
    {
     "last": {
-     "date": "2026-11-17",
-     "dk": 43.8,
-     "min": 38,
-     "opp": "SAS",
-     "ha": "@",
-     "res": "W",
-     "score": "105-93"
-    },
-    "game": "DET at NOP",
-    "time": "2026-11-19T01:00Z",
-    "team": "DET",
-    "player": "Cade Cunningham",
-    "status": "Questionable",
-    "reason": "Right Knee Soreness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "2:55 PM",
-    "salary": 10000,
-    "min": 40.7,
-    "benefits": [
-     {
-      "player": "Daniss Jenkins",
-      "salary": 6200,
-      "why": "subs in for him 22 of 56 times",
-      "much": "about +16.1 DK",
-      "score": 16.105378000256703,
-      "min": 37.1,
-      "dk": 37.4,
-      "avg": 27.8
-     },
-     {
-      "player": "Kevin Huerter",
-      "salary": 4900,
-      "why": "subs in for him 10 of 56 times",
-      "much": "about +6.2 DK",
-      "score": 6.166173570019724,
-      "min": 33.8,
-      "dk": 28.7,
-      "avg": 20.8
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "last": {
-     "date": "2026-10-25",
-     "dk": 2.0,
-     "min": 4,
-     "opp": "PHI",
-     "ha": "@",
-     "res": "W",
-     "score": "106-93"
-    },
-    "game": "DET at NOP",
-    "time": "2026-11-19T01:00Z",
-    "team": "DET",
-    "player": "Isaiah Joe",
-    "status": "Questionable",
-    "reason": "Right Hip Contusion",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "2:55 PM",
-    "salary": 3800,
-    "min": 13.7,
-    "benefits": [
-     {
-      "player": "Ausar Thompson",
-      "salary": 6700,
-      "why": "same minutes, more production",
-      "much": "+9.8 DK without him (10 games)",
-      "score": 9.8,
-      "min": 30.5,
-      "dk": 37.1,
-      "avg": 34.1
-     },
-     {
-      "player": "Kevin Huerter",
-      "salary": 4900,
-      "why": "26 minutes, up from 21",
-      "much": "+6.9 DK without him (10 games)",
-      "score": 6.9,
-      "min": 33.8,
-      "dk": 28.7,
-      "avg": 20.8
-     },
-     {
-      "player": "Daniss Jenkins",
-      "salary": 6200,
-      "why": "started, 42 minutes (11/12)",
-      "much": "+4.6 DK projected vs. last 3",
-      "score": 4.566666666666663,
-      "min": 37.1,
-      "dk": 37.4,
-      "avg": 27.8
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-16",
      "dk": 23.5,
      "min": 25,
@@ -2442,6 +2373,31 @@
     "changed_at": "7:04 PM",
     "salary": 4200,
     "min": 15.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-10-25",
+     "dk": 2.0,
+     "min": 4,
+     "opp": "PHI",
+     "ha": "@",
+     "res": "W",
+     "score": "106-93"
+    },
+    "game": "DET at NOP",
+    "time": "2026-11-19T01:00Z",
+    "team": "DET",
+    "player": "Isaiah Joe",
+    "status": "Available",
+    "reason": "Right Hip Contusion",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "7:35 PM",
+    "salary": 3800,
+    "min": 13.7,
     "benefits": [],
     "estimate": false
    },
@@ -3412,8 +3368,8 @@
       "why": "same minutes, more production",
       "much": "+21.4 DK without him (1 game)",
       "score": 21.4,
-      "min": 30.5,
-      "dk": 37.1,
+      "min": 39.9,
+      "dk": 48.6,
       "avg": 34.1
      },
      {
@@ -3422,8 +3378,8 @@
       "why": "started that game",
       "much": "+15.1 DK without him (1 game)",
       "score": 15.1,
-      "min": 37.1,
-      "dk": 37.4,
+      "min": 39.9,
+      "dk": 40.3,
       "avg": 27.8
      },
      {
@@ -3432,8 +3388,8 @@
       "why": "same minutes, more production",
       "much": "+5.7 DK without him (1 game)",
       "score": 5.7,
-      "min": 27.3,
-      "dk": 31.1,
+      "min": 33.0,
+      "dk": 37.7,
       "avg": 27.7
      }
     ],
@@ -3670,10 +3626,10 @@
       "player": "John Collins",
       "salary": 5200,
       "why": "started at center, 23 minutes (11/17)",
-      "much": "+12.5 DK projected vs. last 3",
-      "score": 12.533333333333331,
-      "min": 30.9,
-      "dk": 29.2,
+      "much": "+13.5 DK projected vs. last 3",
+      "score": 13.533333333333331,
+      "min": 32.0,
+      "dk": 30.2,
       "avg": 21.6
      },
      {
@@ -3682,8 +3638,8 @@
       "why": "same minutes, more production",
       "much": "+9.8 DK without him (10 games)",
       "score": 9.8,
-      "min": 30.5,
-      "dk": 37.1,
+      "min": 39.9,
+      "dk": 48.6,
       "avg": 34.1
      },
      {
@@ -3692,8 +3648,8 @@
       "why": "31 minutes, up from 18",
       "much": "+9.4 DK without him (11 games)",
       "score": 9.4,
-      "min": 37.1,
-      "dk": 37.4,
+      "min": 39.9,
+      "dk": 40.3,
       "avg": 27.8
      }
     ],
@@ -3784,8 +3740,8 @@
       "why": "same minutes, more production",
       "much": "+21.4 DK without him (1 game)",
       "score": 21.4,
-      "min": 30.5,
-      "dk": 37.1,
+      "min": 39.9,
+      "dk": 48.6,
       "avg": 34.1
      },
      {
@@ -3794,8 +3750,8 @@
       "why": "started that game",
       "much": "+15.1 DK without him (1 game)",
       "score": 15.1,
-      "min": 37.1,
-      "dk": 37.4,
+      "min": 39.9,
+      "dk": 40.3,
       "avg": 27.8
      },
      {
@@ -3804,8 +3760,8 @@
       "why": "same minutes, more production",
       "much": "+5.7 DK without him (1 game)",
       "score": 5.7,
-      "min": 27.3,
-      "dk": 31.1,
+      "min": 33.0,
+      "dk": 37.7,
       "avg": 27.7
      }
     ],
