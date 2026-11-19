@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updated": "7:00 PM ET",
+ "updated": "7:03 PM ET",
  "games": 12,
  "pending": [],
  "first_report": "5:42 AM",
@@ -263,7 +263,7 @@
    "away": "ATL",
    "home": "OKC",
    "time": "2026-11-19T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 228.5,
    "fav": "OKC",
    "line": 5.5,
@@ -312,7 +312,7 @@
    "away": "GSW",
    "home": "DAL",
    "time": "2026-11-19T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 225.5,
    "fav": "DAL",
    "line": 4.5,
@@ -344,12 +344,7 @@
        "min": 13.3
       }
      ],
-     "q": [
-      {
-       "player": "Max Christie",
-       "min": 21.6
-      }
-     ]
+     "q": []
     }
    },
    "key": "Stephen Curry and Al Horford are out, so De'Anthony Melton and Graham Ike and Yaxel Lendeborg should play more than usual."
@@ -358,7 +353,7 @@
    "away": "DET",
    "home": "NOP",
    "time": "2026-11-19T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 225.5,
    "fav": "DET",
    "line": 4.5,
@@ -422,7 +417,7 @@
    "away": "BOS",
    "home": "DEN",
    "time": "2026-11-19T02:30Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 219.5,
    "fav": "BOS",
    "line": 2.5,
@@ -448,7 +443,7 @@
    "away": "UTA",
    "home": "LAL",
    "time": "2026-11-19T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 231.5,
    "fav": "LAL",
    "line": 11.5,
@@ -493,7 +488,7 @@
    "away": "PHX",
    "home": "SAC",
    "time": "2026-11-19T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 226.5,
    "fav": "PHX",
    "line": 7.5,
@@ -514,6 +509,38 @@
   }
  ],
  "changed": [
+  {
+   "player": "Tobi Lawal",
+   "team": "DAL",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Right Groin Tightness",
+   "time": "7:04 PM"
+  },
+  {
+   "player": "Walter Clayton Jr.",
+   "team": "DAL",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Ankle Sprain",
+   "time": "7:04 PM"
+  },
+  {
+   "player": "Max Christie",
+   "team": "DAL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Ankle Sprain",
+   "time": "7:04 PM"
+  },
+  {
+   "player": "Santi Aldama",
+   "team": "DAL",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Left Ankle Sprain",
+   "time": "7:04 PM"
+  },
   {
    "player": "Jaylin Williams",
    "team": "OKC",
@@ -561,38 +588,6 @@
    "was": "Doubtful",
    "why": "Low Back Contusion",
    "time": "6:19 PM"
-  },
-  {
-   "player": "Sam Merrill",
-   "team": "CLE",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "",
-   "time": "6:19 PM"
-  },
-  {
-   "player": "Amen Thompson",
-   "team": "HOU",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Left Knee Soreness",
-   "time": "6:19 PM"
-  },
-  {
-   "player": "RJ Barrett",
-   "team": "TOR",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "6:04 PM"
-  },
-  {
-   "player": "Tyrese Maxey",
-   "team": "PHI",
-   "status": "Questionable",
-   "was": "",
-   "why": "Right Foot Soreness",
-   "time": "6:04 PM"
   }
  ],
  "chg": [
@@ -1372,11 +1367,11 @@
    "salary": 6800
   },
   {
-   "player": "Brice Sensabaugh",
-   "team": "UTA",
+   "player": "Kevin Huerter",
+   "team": "DET",
    "own": 38.0,
-   "dk": 23.0,
-   "salary": 4500
+   "dk": 28.7,
+   "salary": 4900
   },
   {
    "player": "Cam Spencer",
@@ -1386,34 +1381,34 @@
    "salary": 5600
   },
   {
-   "player": "Jordan Goodwin",
-   "team": "PHX",
-   "own": 34.7,
-   "dk": 23.8,
-   "salary": 4500
+   "player": "Collin Murray-Boyles",
+   "team": "TOR",
+   "own": 34.0,
+   "dk": 39.1,
+   "salary": 5700
   }
  ],
  "leverage": [
   {
-   "player": "Charles Bassey",
-   "team": "GSW",
-   "own": 2.2,
-   "dk": 27.3,
-   "salary": 4000
-  },
-  {
    "player": "Jamal Shead",
    "team": "TOR",
-   "own": 6.0,
+   "own": 6.5,
    "dk": 38.2,
    "salary": 5600
   },
   {
    "player": "Joel Embiid",
    "team": "PHI",
-   "own": 7.9,
+   "own": 9.3,
    "dk": 52.5,
    "salary": 8300
+  },
+  {
+   "player": "Jakob Poeltl",
+   "team": "TOR",
+   "own": 1.6,
+   "dk": 32.8,
+   "salary": 5300
   }
  ],
  "last": {
@@ -1438,15 +1433,6 @@
     "ast": 3.0
    },
    {
-    "player": "Luka Doncic",
-    "team": "LAL",
-    "dk": 58.0,
-    "min": 42.0,
-    "pts": 36.0,
-    "reb": 6.0,
-    "ast": 7.0
-   },
-   {
     "player": "Victor Wembanyama",
     "team": "SAS",
     "dk": 58.0,
@@ -1454,6 +1440,15 @@
     "pts": 25.0,
     "reb": 18.0,
     "ast": 4.0
+   },
+   {
+    "player": "Luka Doncic",
+    "team": "LAL",
+    "dk": 58.0,
+    "min": 42.0,
+    "pts": 36.0,
+    "reb": 6.0,
+    "ast": 7.0
    },
    {
     "player": "Keyonte George",
@@ -1488,8 +1483,8 @@
   ]
  },
  "injuries": {
-  "report": "06:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_06_45PM.pdf",
+  "report": "07:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_07_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1512,7 +1507,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:33 PM",
-    "salary": 8800,
+    "salary": null,
     "min": 35.3,
     "benefits": [
      {
@@ -1558,7 +1553,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "5:34 PM",
-    "salary": 7000,
+    "salary": null,
     "min": 34.0,
     "benefits": [
      {
@@ -1614,7 +1609,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8200,
+    "salary": null,
     "min": 33.7,
     "benefits": [
      {
@@ -1660,7 +1655,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:19 PM",
-    "salary": 4100,
+    "salary": null,
     "min": 33.7,
     "benefits": [
      {
@@ -1716,7 +1711,7 @@
     "was": "Doubtful",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 4600,
+    "salary": null,
     "min": 29.0,
     "benefits": [
      {
@@ -1752,7 +1747,7 @@
     "was": "Doubtful",
     "known": true,
     "changed_at": "6:19 PM",
-    "salary": 5500,
+    "salary": null,
     "min": 27.3,
     "benefits": [
      {
@@ -1808,7 +1803,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 3800,
+    "salary": null,
     "min": 23.0,
     "benefits": [
      {
@@ -1989,7 +1984,7 @@
     "was": "Probable",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 3300,
+    "salary": null,
     "min": 10.0,
     "benefits": [],
     "estimate": false
@@ -2014,7 +2009,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:04 PM",
-    "salary": 8100,
+    "salary": null,
     "min": 37.7,
     "benefits": [
      {
@@ -2070,7 +2065,7 @@
     "was": "Available",
     "known": true,
     "changed_at": "12:56 PM",
-    "salary": 8600,
+    "salary": null,
     "min": 34.0,
     "benefits": [
      {
@@ -2237,12 +2232,12 @@
     "time": "2026-11-19T01:00Z",
     "team": "DAL",
     "player": "Tobi Lawal",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "Right Groin Tightness",
     "new": true,
-    "was": "",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "",
+    "changed_at": "7:04 PM",
     "salary": 3000,
     "min": 8.7,
     "benefits": [],
@@ -2352,81 +2347,6 @@
    },
    {
     "last": {
-     "date": "2026-11-12",
-     "dk": 8.0,
-     "min": 7,
-     "opp": "MIN",
-     "ha": "@",
-     "res": "L",
-     "score": "133-94"
-    },
-    "game": "GSW at DAL",
-    "time": "2026-11-19T01:00Z",
-    "team": "DAL",
-    "player": "Max Christie",
-    "status": "Questionable",
-    "reason": "Left Ankle Sprain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 3800,
-    "min": 9.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-15",
-     "dk": 25.5,
-     "min": 23,
-     "opp": "BOS",
-     "ha": "@",
-     "res": "L",
-     "score": "131-94"
-    },
-    "game": "GSW at DAL",
-    "time": "2026-11-19T01:00Z",
-    "team": "DAL",
-    "player": "Walter Clayton Jr.",
-    "status": "Probable",
-    "reason": "Right Ankle Sprain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": 4100,
-    "min": 19.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-14",
-     "dk": 14.0,
-     "min": 16,
-     "opp": "CLE",
-     "ha": "@",
-     "res": "L",
-     "score": "125-117"
-    },
-    "game": "GSW at DAL",
-    "time": "2026-11-19T01:00Z",
-    "team": "DAL",
-    "player": "Santi Aldama",
-    "status": "Probable",
-    "reason": "Left Ankle Sprain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 4200,
-    "min": 15.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-16",
      "dk": 23.5,
      "min": 25,
@@ -2472,6 +2392,56 @@
     "changed_at": "6:49 PM",
     "salary": 4700,
     "min": 22.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-15",
+     "dk": 25.5,
+     "min": 23,
+     "opp": "BOS",
+     "ha": "@",
+     "res": "L",
+     "score": "131-94"
+    },
+    "game": "GSW at DAL",
+    "time": "2026-11-19T01:00Z",
+    "team": "DAL",
+    "player": "Walter Clayton Jr.",
+    "status": "Available",
+    "reason": "Right Ankle Sprain",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "7:04 PM",
+    "salary": 4100,
+    "min": 19.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-14",
+     "dk": 14.0,
+     "min": 16,
+     "opp": "CLE",
+     "ha": "@",
+     "res": "L",
+     "score": "125-117"
+    },
+    "game": "GSW at DAL",
+    "time": "2026-11-19T01:00Z",
+    "team": "DAL",
+    "player": "Santi Aldama",
+    "status": "Available",
+    "reason": "Left Ankle Sprain",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "7:04 PM",
+    "salary": 4200,
+    "min": 15.0,
     "benefits": [],
     "estimate": false
    },
@@ -2571,7 +2541,7 @@
     "team": "SAC",
     "player": "Precious Achiuwa",
     "status": "Available",
-    "reason": "",
+    "reason": "Left Lower Leg",
     "new": true,
     "was": "Questionable",
     "known": true,
@@ -2601,7 +2571,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8700,
+    "salary": null,
     "min": 33.5,
     "benefits": [
      {
@@ -2657,7 +2627,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8400,
+    "salary": null,
     "min": 32.7,
     "benefits": [
      {
@@ -2713,7 +2683,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8200,
+    "salary": null,
     "min": 31.0,
     "benefits": [
      {
@@ -2769,7 +2739,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7400,
+    "salary": null,
     "min": 30.0,
     "benefits": [
      {
@@ -2825,7 +2795,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 5100,
+    "salary": null,
     "min": 25.7,
     "benefits": [
      {
@@ -2881,7 +2851,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3400,
+    "salary": null,
     "min": 20.7,
     "benefits": [
      {
@@ -2927,7 +2897,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4500,
+    "salary": null,
     "min": 17.7,
     "benefits": [
      {
@@ -2963,7 +2933,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3500,
+    "salary": null,
     "min": 17.0,
     "benefits": [
      {
@@ -2999,7 +2969,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3800,
+    "salary": null,
     "min": 15.7,
     "benefits": [
      {
@@ -3055,7 +3025,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4200,
+    "salary": null,
     "min": 14.7,
     "benefits": [
      {
@@ -3147,7 +3117,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 12.0,
     "benefits": [
      {
@@ -3183,7 +3153,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7800,
+    "salary": null,
     "min": 26.0,
     "benefits": [
      {
@@ -3239,7 +3209,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6800,
+    "salary": null,
     "min": 23.0,
     "benefits": [
      {
@@ -3295,7 +3265,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 17.7,
     "benefits": [
      {
@@ -4342,6 +4312,11 @@
    }
   ],
   "minor": [
+   {
+    "player": "Max Christie",
+    "team": "DAL",
+    "status": "Available"
+   },
    {
     "player": "Johnny Furphy",
     "team": "IND",
