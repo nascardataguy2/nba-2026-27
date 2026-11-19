@@ -367,7 +367,7 @@
     function cls(st){ return /Out/.test(st) ? 'out' : /Doubtful/.test(st) ? 'dbt' : /Questionable/.test(st) ? 'q' : 'ok'; }
     var head = '<div class="panel inj-head"><h2>Injury Report</h2><p class="hint">Official NBA report' + (IJ.report ? ' from ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ' for tonight\u2019s games.' + (injSort() === 'team' ? ' Grouped by team.' : injSort() === 'min' ? ' Biggest minutes impact first: players who are out or doubtful, then questionable, each sorted by the minutes a game they play.' : ' Newest changes are listed first.') + ' Click a column name to sort by it.' +
       ((IJ.pending || []).length ? ' Not filed yet: ' + IJ.pending.map(function(t){ return tm(t); }).join(' ') + '.' : ' Every team on the slate has filed.') +
-      (IJ.url ? ' <a href="' + esc(IJ.url) + '" target="_blank" rel="noopener">Open the NBA\u2019s PDF</a>.' : '') + '</p></div>';
+      ' <a href="https://official.nba.com/nba-injury-report-2026-27-season/" target="_blank" rel="noopener">Open the NBA\u2019s injury report page</a>.</p></div>';
     var byTeam = injSort() === 'team', byMin = injSort() === 'min', ORD = {out:0, dbt:1, q:2, ok:3}, last = '';
     var all = (IJ.rows || []).slice();
     var gkey = function(t){ var c = (B.cards || []).filter(function(c){ return c.away === t || c.home === t; })[0]; return c ? c.away + '@' + c.home : ''; };
