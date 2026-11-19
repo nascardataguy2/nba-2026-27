@@ -17,15 +17,17 @@ STATS = ("min", "dk", "pts", "reb", "ast", "stl", "blk", "to", "tpm")
 
 def write_gamelogs(games, nights):
     """data/gamelogs.json: {norm name: [[date, team, opp, home, start, min, pts, reb, ast,
-    stl, blk, to, tpm, dk, proj_min, proj_dk, salary, usage], ...]} newest first.
+    stl, blk, to, tpm, dk, proj_min, proj_dk, salary, usage, score], ...]} newest first.
+    score = [his team's points, opponent's points] from the final, or None.
     usage = our estimate from the box score: 100 * (FGA + 0.44*FTA + TO) * (team minutes / 5)
     / (his minutes * team (FGA + 0.44*FTA + TO)); None when the box lacks shot data."""
     opp = {}
     gdir = os.path.join(D, "games")
     for d in nights:
         for g in load_json(os.path.join(gdir, d + ".json"), []):
-            opp[(d, g["away"])] = (g["home"], False)
-            opp[(d, g["home"])] = (g["away"], True)
+            f = g.get("final") or [None, None]
+            opp[(d, g["away"])] = (g["home"], False, [f[0], f[1]] if f[0] is not None else None)
+            opp[(d, g["home"])] = (g["away"], True, [f[1], f[0]] if f[0] is not None else None)
     snaps = {d: load_json(os.path.join(HIST, d + ".json"), {}) for d in nights}
     tot = {}
     for g in games.values():
@@ -45,11 +47,11 @@ def write_gamelogs(games, nights):
     for k, g in games.items():
         rows = []
         for x in sorted(g, key=lambda r: r["date"], reverse=True):
-            o, home = opp.get((x["date"], x["team"]), ("", False))
+            o, home, sc = opp.get((x["date"], x["team"]), ("", False, None))
             pj = snaps.get(x["date"], {}).get(k) or {}
             rows.append([x["date"], x["team"], o, home, bool(x.get("start")), x["min"], x.get("pts", 0), x.get("reb", 0),
                          x.get("ast", 0), x.get("stl", 0), x.get("blk", 0), x.get("to", 0), x.get("tpm", 0), x["dk"],
-                         pj.get("min"), pj.get("dk"), pj.get("salary"), usg(x)])
+                         pj.get("min"), pj.get("dk"), pj.get("salary"), usg(x), sc])
         out[k] = rows
     with open(os.path.join(D, "gamelogs.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, separators=(",", ":"), ensure_ascii=False)
