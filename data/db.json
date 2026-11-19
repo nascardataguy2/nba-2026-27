@@ -2,7 +2,7 @@
  "updated": "2026-11-18",
  "brief": {
   "date": "2026-11-18",
-  "updated": "8:47 PM ET",
+  "updated": "9:03 PM ET",
   "games": 12,
   "pending": [],
   "first_report": "5:42 AM",
@@ -462,12 +462,7 @@
         "min": 25.3
        }
       ],
-      "q": [
-       {
-        "player": "Jaxson Hayes",
-        "min": 22.5
-       }
-      ]
+      "q": []
      },
      "LAL": {
       "out": [
@@ -506,6 +501,14 @@
    }
   ],
   "changed": [
+   {
+    "player": "Jaxson Hayes",
+    "team": "UTA",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Knee Strain",
+    "time": "9:05 PM"
+   },
    {
     "player": "Isaiah Joe",
     "team": "DET",
@@ -576,14 +579,6 @@
     "status": "Available",
     "was": "Questionable",
     "why": "",
-    "time": "6:33 PM"
-   },
-   {
-    "player": "Tyrese Maxey",
-    "team": "PHI",
-    "status": "Out",
-    "was": "Questionable",
-    "why": "Right Foot Soreness",
     "time": "6:33 PM"
    }
   ],
@@ -746,6 +741,27 @@
     "size": 24.0
    },
    {
+    "key": "UTA",
+    "team": "UTA",
+    "head": "Hayes CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Brice Sensabaugh",
+      "salary": 4500,
+      "much": "+21.0 DK without Hayes"
+     },
+     {
+      "player": "Mohamed Bamba",
+      "salary": 5300,
+      "much": "+19.8 DK without Hayes"
+     }
+    ],
+    "time": "9:05 PM",
+    "size": 22.5
+   },
+   {
     "key": "GSW",
     "team": "GSW",
     "head": "Green CLEARED",
@@ -844,27 +860,6 @@
     ],
     "time": "6:33 PM",
     "size": 14.2
-   },
-   {
-    "key": "Jaxson Hayes",
-    "team": "UTA",
-    "head": "Jaxson Hayes QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Brice Sensabaugh",
-      "salary": 4500,
-      "much": "+21.0 DK without him (3 games)"
-     },
-     {
-      "player": "Mohamed Bamba",
-      "salary": 5300,
-      "much": "+19.8 DK without him (3 games)"
-     }
-    ],
-    "time": "4:17 PM",
-    "size": 11.3
    },
    {
     "key": "OKC",
@@ -1422,15 +1417,6 @@
      "ast": 3.0
     },
     {
-     "player": "Victor Wembanyama",
-     "team": "SAS",
-     "dk": 58.0,
-     "min": 34.0,
-     "pts": 25.0,
-     "reb": 18.0,
-     "ast": 4.0
-    },
-    {
      "player": "Luka Doncic",
      "team": "LAL",
      "dk": 58.0,
@@ -1438,6 +1424,15 @@
      "pts": 36.0,
      "reb": 6.0,
      "ast": 7.0
+    },
+    {
+     "player": "Victor Wembanyama",
+     "team": "SAS",
+     "dk": 58.0,
+     "min": 34.0,
+     "pts": 25.0,
+     "reb": 18.0,
+     "ast": 4.0
     },
     {
      "player": "Keyonte George",
@@ -1472,8 +1467,8 @@
    ]
   },
   "injuries": {
-   "report": "08:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_08_45PM.pdf",
+   "report": "09:00 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_09_00PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -2406,62 +2401,6 @@
     {
      "last": {
       "date": "2026-11-13",
-      "dk": 19.8,
-      "min": 13,
-      "opp": "HOU",
-      "ha": "@",
-      "res": "L",
-      "score": "125-118"
-     },
-     "game": "UTA at LAL",
-     "time": "2026-11-19T03:00Z",
-     "team": "UTA",
-     "player": "Jaxson Hayes",
-     "status": "Questionable",
-     "reason": "Left Knee Strain",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "4:17 PM",
-     "salary": 5500,
-     "min": 20.0,
-     "benefits": [
-      {
-       "player": "Brice Sensabaugh",
-       "salary": 4500,
-       "why": "25 minutes, up from 16",
-       "much": "+21.0 DK without him (3 games)",
-       "score": 21.0,
-       "min": 22.7,
-       "dk": 23.0,
-       "avg": 19.2
-      },
-      {
-       "player": "Mohamed Bamba",
-       "salary": 5300,
-       "why": "started 2 of 3",
-       "much": "+19.8 DK without him (3 games)",
-       "score": 19.8,
-       "min": 18.9,
-       "dk": 19.6,
-       "avg": null
-      },
-      {
-       "player": "Isaiah Collier",
-       "salary": 4600,
-       "why": "21 minutes, up from 16",
-       "much": "+13.0 DK without him (1 game)",
-       "score": 13.0,
-       "min": 17.6,
-       "dk": 18.1,
-       "avg": 17.0
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "last": {
-      "date": "2026-11-13",
       "dk": 37.8,
       "min": 42,
       "opp": "POR",
@@ -2499,13 +2438,38 @@
      "team": "SAC",
      "player": "Precious Achiuwa",
      "status": "Available",
-     "reason": "Left Lower Leg",
+     "reason": "",
      "new": true,
      "was": "Questionable",
      "known": true,
      "changed_at": "4:17 PM",
      "salary": 5500,
      "min": 24.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-13",
+      "dk": 19.8,
+      "min": 13,
+      "opp": "HOU",
+      "ha": "@",
+      "res": "L",
+      "score": "125-118"
+     },
+     "game": "UTA at LAL",
+     "time": "2026-11-19T03:00Z",
+     "team": "UTA",
+     "player": "Jaxson Hayes",
+     "status": "Available",
+     "reason": "Left Knee Strain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "9:05 PM",
+     "salary": 5500,
+     "min": 20.0,
      "benefits": [],
      "estimate": false
     },
@@ -14448,7 +14412,7 @@
    "coach": "",
    "notes": "Bridges gives Phoenix a true forward. Maluach could push for a bigger role at about 24 minutes.",
    "source": "LO-1019b",
-   "out": "",
+   "out": "Duop Reath, Pat Spencer",
    "depth_through": "2026-11-16",
    "games": 13
   },
