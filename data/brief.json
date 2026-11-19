@@ -1,11 +1,8 @@
 {
  "date": "2026-11-19",
- "updated": "1:53 PM ET",
+ "updated": "2:53 PM ET",
  "games": 4,
- "pending": [
-  "MEM",
-  "MIL"
- ],
+ "pending": [],
  "first_report": "5:41 AM",
  "cards": [
   {
@@ -55,11 +52,24 @@
      ]
     },
     "MIL": {
-     "out": [],
+     "out": [
+      {
+       "player": "Kyle Kuzma",
+       "min": 27.7
+      },
+      {
+       "player": "Myles Turner",
+       "min": 25.0
+      },
+      {
+       "player": "Ousmane Dieng",
+       "min": 15.7
+      }
+     ],
      "q": []
     }
    },
-   "key": "Ja Morant and Chris Youngblood are out, so Scoot Henderson should play more than usual."
+   "key": "Kyle Kuzma and Myles Turner are out, so Jaime Jaquez Jr and Tyler Herro and Kel'El Ware should play more than usual."
   },
   {
    "away": "GSW",
@@ -98,20 +108,33 @@
      ]
     },
     "MEM": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Ty Jerome",
-       "min": 30.7
+       "min": 31.0
       },
       {
        "player": "Zach Edey",
-       "min": 21.1
+       "min": 20.7
+      },
+      {
+       "player": "Scotty Pippen Jr.",
+       "min": 14.7
+      },
+      {
+       "player": "GG Jackson",
+       "min": 12.7
+      }
+     ],
+     "q": [
+      {
+       "player": "Isaiah Stewart",
+       "min": 15.1
       }
      ]
     }
    },
-   "key": "Draymond Green and Stephen Curry are out, so De'Anthony Melton and Yaxel Lendeborg and Brandin Podziemski should play more than usual."
+   "key": "Ty Jerome and Zach Edey are out, so Cedric Coward and Taylor Hendricks and Olivier-Maxence Prosper should play more than usual."
   },
   {
    "away": "LAC",
@@ -186,6 +209,38 @@
  ],
  "changed": [
   {
+   "player": "Myles Turner",
+   "team": "MIL",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "2:54 PM"
+  },
+  {
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "2:54 PM"
+  },
+  {
+   "player": "Isaiah Stewart",
+   "team": "MEM",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Illness",
+   "time": "2:54 PM"
+  },
+  {
+   "player": "Zach Edey",
+   "team": "MEM",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "2:54 PM"
+  },
+  {
    "player": "Zyon Pullin",
    "team": "MIN",
    "status": "Available",
@@ -212,6 +267,64 @@
  ],
  "chg": [
   {
+   "key": "Kyle Kuzma",
+   "team": "MIL",
+   "head": "Kyle Kuzma OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "AJ Green",
+     "salary": 3500,
+     "much": "+10.2 DK projected vs. last 3"
+    }
+   ],
+   "time": "2:54 PM",
+   "size": 25.4
+  },
+  {
+   "key": "Myles Turner",
+   "team": "MIL",
+   "head": "Myles Turner OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jaime Jaquez Jr",
+     "salary": 6300,
+     "much": "+12.9 DK without him (1 game)"
+    },
+    {
+     "player": "Tyler Herro",
+     "salary": 7700,
+     "much": "+8.7 DK without him (1 game)"
+    }
+   ],
+   "time": "2:54 PM",
+   "size": 23.8
+  },
+  {
+   "key": "Zach Edey",
+   "team": "MEM",
+   "head": "Zach Edey OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Taylor Hendricks",
+     "salary": 3700,
+     "much": "+9.5 DK without him (3 games)"
+    },
+    {
+     "player": "Cedric Coward",
+     "salary": 6800,
+     "much": "+8.7 DK without him (3 games)"
+    }
+   ],
+   "time": "2:54 PM",
+   "size": 22.2
+  },
+  {
    "key": "Draymond Green",
    "team": "GSW",
    "head": "Draymond Green OUT",
@@ -233,6 +346,22 @@
    "size": 21.4
   },
   {
+   "key": "Isaiah Stewart",
+   "team": "MEM",
+   "head": "Isaiah Stewart QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Cameron Boozer",
+     "salary": 8400,
+     "much": "about +4.6 DK if he sits (estimate)"
+    }
+   ],
+   "time": "2:54 PM",
+   "size": 9.2
+  },
+  {
    "key": "LJ Cryer",
    "team": "GSW",
    "head": "LJ Cryer QUESTIONABLE",
@@ -250,6 +379,66 @@
   }
  ],
  "sits": [
+  {
+   "team": "MIL",
+   "outs": [
+    {
+     "player": "Kyle Kuzma",
+     "min": 27.7,
+     "note": "Ruled out tonight.",
+     "new": true
+    },
+    {
+     "player": "Myles Turner",
+     "min": 25.0,
+     "note": "Ruled out tonight.",
+     "new": true
+    },
+    {
+     "player": "Ousmane Dieng",
+     "min": 15.7,
+     "note": "Ousmane Dieng fractured a finger on his left hand on Friday at Orlando and is set to have surgery on Monday, November 16.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 68.4,
+   "benefits": [
+    {
+     "player": "Jaime Jaquez Jr",
+     "salary": 6300,
+     "why": "same minutes, more production",
+     "much": "+12.9 DK without them (1 game)",
+     "score": 12.9,
+     "min": 31.0,
+     "dk": 33.4,
+     "avg": 28.2
+    },
+    {
+     "player": "Tyler Herro",
+     "salary": 7700,
+     "why": "35 minutes, up from 30",
+     "much": "+8.7 DK without them (1 game)",
+     "score": 8.7,
+     "min": 31.4,
+     "dk": 37.0,
+     "avg": 33.4
+    },
+    {
+     "player": "Kel'El Ware",
+     "salary": 5000,
+     "why": "Show: 25 minutes during Turner foul trouble (11/15)",
+     "much": "+7.1 DK projected vs. last 3",
+     "score": 7.066666666666666,
+     "min": 25.0,
+     "dk": 31.4,
+     "avg": 21.5
+    }
+   ],
+   "split_of": [
+    "Myles Turner"
+   ]
+  },
   {
    "team": "POR",
    "outs": [
@@ -276,19 +465,84 @@
    "lost": 61.3,
    "benefits": [
     {
+     "player": "Yang Hansen",
+     "salary": 3000,
+     "why": "26 minutes, up from 7",
+     "much": "+22.8 DK without them (1 game)",
+     "score": 22.8,
+     "min": 16.0,
+     "dk": 15.8,
+     "avg": 9.1
+    },
+    {
      "player": "Scoot Henderson",
      "salary": 4500,
      "why": "started that game",
      "much": "+7.3 DK without them (1 game)",
      "score": 7.3,
      "min": 24.0,
-     "dk": 18.1,
+     "dk": 18.6,
      "avg": 13.7
     }
    ],
    "split_of": [
     "Ja Morant",
     "Robert Williams"
+   ]
+  },
+  {
+   "team": "MEM",
+   "outs": [
+    {
+     "player": "Ty Jerome",
+     "min": 31.0,
+     "note": "Jerome has missed three straight games since playing on 11/13, including Wednesday's game on 11/18. The show listed him as questionable for Thursday.",
+     "new": false
+    },
+    {
+     "player": "Zach Edey",
+     "min": 20.7,
+     "note": "Edey played 21 minutes on 11/18, and Memphis hosts Golden State on the second night of a back-to-back Thursday. The show does not expect Edey to play Thursday.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 51.7,
+   "benefits": [
+    {
+     "player": "Cedric Coward",
+     "salary": 6800,
+     "why": "33 minutes, up from 29",
+     "much": "+21.4 DK without them (1 game)",
+     "score": 21.4,
+     "min": 30.9,
+     "dk": 40.9,
+     "avg": 34.7
+    },
+    {
+     "player": "Taylor Hendricks",
+     "salary": 3700,
+     "why": "29 minutes, up from 12",
+     "much": "+19.7 DK without them (1 game)",
+     "score": 19.7,
+     "min": 22.7,
+     "dk": 28.0,
+     "avg": 15.6
+    },
+    {
+     "player": "Olivier-Maxence Prosper",
+     "salary": 3600,
+     "why": "20 minutes, up from 8",
+     "much": "+12.4 DK without them (1 game)",
+     "score": 12.4,
+     "min": 15.8,
+     "dk": 12.1,
+     "avg": 8.0
+    }
+   ],
+   "split_of": [
+    "Ty Jerome",
+    "Zach Edey"
    ]
   },
   {
@@ -316,8 +570,8 @@
      "why": "started 1 of 2",
      "much": "+24.8 DK without them (2 games)",
      "score": 24.8,
-     "min": 24.6,
-     "dk": 24.6,
+     "min": 24.2,
+     "dk": 25.8,
      "avg": 21.1
     },
     {
@@ -326,8 +580,8 @@
      "why": "35 minutes, up from 31",
      "much": "+16.1 DK without them (2 games)",
      "score": 16.1,
-     "min": 35.8,
-     "dk": 44.3,
+     "min": 35.0,
+     "dk": 45.5,
      "avg": 38.0
     },
     {
@@ -336,8 +590,8 @@
      "why": "37 minutes, up from 32",
      "much": "+8.6 DK without them (1 game)",
      "score": 8.6,
-     "min": 33.4,
-     "dk": 33.5,
+     "min": 32.8,
+     "dk": 34.8,
      "avg": 31.6
     }
    ],
@@ -363,20 +617,20 @@
      "player": "De'Aaron Fox",
      "salary": 6800,
      "why": "subs in for him 20 of 72 times",
-     "much": "+13.4 DK projected vs. last 3",
-     "score": 13.38333333333333,
-     "min": 33.9,
-     "dk": 37.3,
+     "much": "+14.0 DK projected vs. last 3",
+     "score": 13.98333333333333,
+     "min": 34.4,
+     "dk": 37.9,
      "avg": 29.4
     },
     {
      "player": "Julian Champagnie",
      "salary": 5200,
      "why": "Show: start, 30-31 minutes (11/19)",
-     "much": "+7.1 DK projected vs. last 3",
-     "score": 7.116666666666667,
-     "min": 31.6,
-     "dk": 27.2,
+     "much": "+7.6 DK projected vs. last 3",
+     "score": 7.616666666666667,
+     "min": 32.0,
+     "dk": 27.7,
      "avg": 21.1
     }
    ],
@@ -402,7 +656,7 @@
      "much": "+14.4 DK without him (11 games)",
      "score": 14.4,
      "min": 14.0,
-     "dk": 16.6,
+     "dk": 16.7,
      "avg": null
     },
     {
@@ -412,7 +666,7 @@
      "much": "+11.3 DK without him (11 games)",
      "score": 11.3,
      "min": 34.2,
-     "dk": 35.0,
+     "dk": 35.2,
      "avg": 33.0
     },
     {
@@ -422,7 +676,7 @@
      "much": "+6.7 DK without him (11 games)",
      "score": 6.7,
      "min": 28.1,
-     "dk": 36.5,
+     "dk": 36.7,
      "avg": 34.9
     }
    ],
@@ -499,20 +753,20 @@
    "n": 8
   },
   {
+   "player": "Olivier-Maxence Prosper",
+   "team": "MEM",
+   "kind": "up",
+   "last": 17.3,
+   "before": 4.7,
+   "n": 6
+  },
+  {
    "player": "Cam Spencer",
    "team": "MEM",
    "kind": "up",
    "last": 31.7,
    "before": 19.8,
    "n": 12
-  },
-  {
-   "player": "Will Richard",
-   "team": "GSW",
-   "kind": "up",
-   "last": 26.7,
-   "before": 17.3,
-   "n": 11
   }
  ],
  "chalk": [
@@ -520,52 +774,52 @@
    "player": "Charles Bassey",
    "team": "GSW",
    "own": 38.0,
-   "dk": 20.5,
+   "dk": 21.6,
    "salary": 4100
+  },
+  {
+   "player": "Donovan Clingan",
+   "team": "POR",
+   "own": 34.7,
+   "dk": 35.8,
+   "salary": 6900
   },
   {
    "player": "Stephon Castle",
    "team": "SAS",
-   "own": 36.3,
-   "dk": 37.7,
+   "own": 31.3,
+   "dk": 38.3,
    "salary": 7200
   },
   {
    "player": "Al Horford",
    "team": "GSW",
-   "own": 31.5,
-   "dk": 16.6,
+   "own": 29.2,
+   "dk": 17.3,
    "salary": 3500
-  },
-  {
-   "player": "Donovan Clingan",
-   "team": "POR",
-   "own": 31.1,
-   "dk": 44.5,
-   "salary": 6900
   }
  ],
  "leverage": [
   {
-   "player": "Terrence Shannon Jr.",
-   "team": "MIN",
-   "own": 1.1,
-   "dk": 26.1,
-   "salary": 4800
+   "player": "Kel'El Ware",
+   "team": "MIL",
+   "own": 4.7,
+   "dk": 31.4,
+   "salary": 5000
   },
   {
    "player": "Cam Spencer",
    "team": "MEM",
-   "own": 1.1,
-   "dk": 31.4,
+   "own": 6.3,
+   "dk": 37.1,
    "salary": 6000
   },
   {
-   "player": "Ayo Dosunmu",
-   "team": "MIN",
-   "own": 5.8,
-   "dk": 35.0,
-   "salary": 7000
+   "player": "Javon Small",
+   "team": "MEM",
+   "own": 2.4,
+   "dk": 29.1,
+   "salary": 4800
   }
  ],
  "last": {
@@ -608,13 +862,13 @@
     "ast": 6.0
    },
    {
-    "player": "Joel Embiid",
-    "team": "PHI",
+    "player": "Anthony Davis",
+    "team": "WAS",
     "dk": 52.5,
-    "min": 36.0,
-    "pts": 26.0,
-    "reb": 6.0,
-    "ast": 7.0
+    "min": 34.0,
+    "pts": 25.0,
+    "reb": 14.0,
+    "ast": 2.0
    }
   ],
   "surprise": [
@@ -667,12 +921,9 @@
   ]
  },
  "injuries": {
-  "report": "01:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_01_45PM.pdf",
-  "pending": [
-   "MEM",
-   "MIL"
-  ],
+  "report": "02:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_02_45PM.pdf",
+  "pending": [],
   "rows": [
    {
     "last": {
@@ -701,11 +952,103 @@
       "player": "De'Aaron Fox",
       "salary": 6800,
       "why": "subs in for him 20 of 72 times",
-      "much": "+13.4 DK projected vs. last 3",
-      "score": 13.38333333333333,
-      "min": 33.9,
-      "dk": 37.3,
+      "much": "+14.0 DK projected vs. last 3",
+      "score": 13.98333333333333,
+      "min": 34.4,
+      "dk": 37.9,
       "avg": 29.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 39.2,
+     "min": 30,
+     "opp": "MIA",
+     "ha": "@",
+     "res": "L",
+     "score": "137-130"
+    },
+    "game": "POR at MIL",
+    "time": "2026-11-20T01:00Z",
+    "team": "MIL",
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "2:54 PM",
+    "salary": 5300,
+    "min": 27.7,
+    "benefits": [
+     {
+      "player": "AJ Green",
+      "salary": 3500,
+      "why": "subs in for him 14 of 53 times",
+      "much": "+10.2 DK projected vs. last 3",
+      "score": 10.233333333333334,
+      "min": 24.0,
+      "dk": 15.9,
+      "avg": 10.6
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 21.8,
+     "min": 21,
+     "opp": "MIA",
+     "ha": "@",
+     "res": "L",
+     "score": "137-130"
+    },
+    "game": "POR at MIL",
+    "time": "2026-11-20T01:00Z",
+    "team": "MIL",
+    "player": "Myles Turner",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "2:54 PM",
+    "salary": 5500,
+    "min": 25.0,
+    "benefits": [
+     {
+      "player": "Jaime Jaquez Jr",
+      "salary": 6300,
+      "why": "same minutes, more production",
+      "much": "+12.9 DK without him (1 game)",
+      "score": 12.9,
+      "min": 31.0,
+      "dk": 33.4,
+      "avg": 28.2
+     },
+     {
+      "player": "Tyler Herro",
+      "salary": 7700,
+      "why": "35 minutes, up from 30",
+      "much": "+8.7 DK without him (1 game)",
+      "score": 8.7,
+      "min": 31.4,
+      "dk": 37.0,
+      "avg": 33.4
+     },
+     {
+      "player": "Kel'El Ware",
+      "salary": 5000,
+      "why": "Show: 25 minutes during Turner foul trouble (11/15)",
+      "much": "+7.1 DK projected vs. last 3",
+      "score": 7.066666666666666,
+      "min": 25.0,
+      "dk": 31.4,
+      "avg": 21.5
      }
     ],
     "estimate": false
@@ -739,8 +1082,8 @@
       "why": "started 1 of 2",
       "much": "+24.8 DK without him (2 games)",
       "score": 24.8,
-      "min": 24.6,
-      "dk": 24.6,
+      "min": 24.2,
+      "dk": 25.8,
       "avg": 21.1
      },
      {
@@ -749,8 +1092,8 @@
       "why": "35 minutes, up from 31",
       "much": "+16.1 DK without him (2 games)",
       "score": 16.1,
-      "min": 35.8,
-      "dk": 44.3,
+      "min": 35.0,
+      "dk": 45.5,
       "avg": 38.0
      },
      {
@@ -759,9 +1102,65 @@
       "why": "37 minutes, up from 32",
       "much": "+8.6 DK without him (1 game)",
       "score": 8.6,
-      "min": 33.4,
-      "dk": 33.5,
+      "min": 32.8,
+      "dk": 34.8,
       "avg": 31.6
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 18.5,
+     "min": 21,
+     "opp": "CLE",
+     "ha": "@",
+     "res": "W",
+     "score": "124-121"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "MEM",
+    "player": "Zach Edey",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "2:54 PM",
+    "salary": 4900,
+    "min": 20.7,
+    "benefits": [
+     {
+      "player": "Taylor Hendricks",
+      "salary": 3700,
+      "why": "18 minutes, up from 11",
+      "much": "+9.5 DK without him (3 games)",
+      "score": 9.5,
+      "min": 22.7,
+      "dk": 28.0,
+      "avg": 15.6
+     },
+     {
+      "player": "Cedric Coward",
+      "salary": 6800,
+      "why": "32 minutes, up from 28",
+      "much": "+8.7 DK without him (3 games)",
+      "score": 8.7,
+      "min": 30.9,
+      "dk": 40.9,
+      "avg": 34.7
+     },
+     {
+      "player": "Javon Small",
+      "salary": 4800,
+      "why": "same minutes, more production",
+      "much": "+6.7 DK without him (2 games)",
+      "score": 6.7,
+      "min": 27.5,
+      "dk": 29.1,
+      "avg": 21.5
      }
     ],
     "estimate": false
@@ -790,34 +1189,14 @@
     "min": 16.0,
     "benefits": [
      {
-      "player": "Donovan Clingan",
-      "salary": 6900,
-      "why": "projected 32 minutes tonight, up from 27",
-      "much": "+6.1 DK projected vs. last 3",
-      "score": 6.083333333333336,
-      "min": 32.0,
-      "dk": 44.5,
-      "avg": 33.0
-     },
-     {
-      "player": "Branden Carlson",
-      "salary": 3300,
-      "why": "projected 14 minutes tonight, up from 11",
-      "much": "+1.8 DK projected vs. last 3",
-      "score": 1.7666666666666657,
-      "min": 14.0,
-      "dk": 12.6,
-      "avg": 7.5
-     },
-     {
-      "player": "Scoot Henderson",
-      "salary": 4500,
-      "why": "projected 24 minutes tonight, up from 22",
-      "much": "+4.9 DK projected vs. last 3",
-      "score": 4.933333333333335,
-      "min": 24.0,
-      "dk": 18.1,
-      "avg": 13.7
+      "player": "Yang Hansen",
+      "salary": 3000,
+      "why": "16 minutes, up from 7",
+      "much": "+13.6 DK without him (2 games)",
+      "score": 13.6,
+      "min": 16.0,
+      "dk": 15.8,
+      "avg": 9.1
      }
     ],
     "estimate": false
@@ -852,7 +1231,7 @@
       "much": "+20.5 DK without him (1 game)",
       "score": 20.5,
       "min": 26.8,
-      "dk": 27.6,
+      "dk": 28.4,
       "avg": 26.8
      },
      {
@@ -872,7 +1251,7 @@
       "much": "+6.7 DK without him (1 game)",
       "score": 6.7,
       "min": 29.0,
-      "dk": 34.8,
+      "dk": 35.6,
       "avg": 32.5
      }
     ],
@@ -905,20 +1284,20 @@
       "player": "Sidy Cissoko",
       "salary": 4200,
       "why": "subs in for him 14 of 51 times",
-      "much": "about +6.3 DK",
-      "score": 6.257324768988055,
+      "much": "about +6.5 DK",
+      "score": 6.519607843137255,
       "min": 23.2,
-      "dk": 16.7,
+      "dk": 17.4,
       "avg": 16.8
      },
      {
       "player": "Scoot Henderson",
       "salary": 4500,
       "why": "subs in for him 8 of 51 times",
-      "much": "about +3.7 DK",
-      "score": 3.746187363834423,
+      "much": "about +3.8 DK",
+      "score": 3.8496732026143796,
       "min": 24.0,
-      "dk": 18.1,
+      "dk": 18.6,
       "avg": 13.7
      }
     ],
@@ -954,7 +1333,7 @@
       "much": "+13.9 DK without him (1 game)",
       "score": 13.9,
       "min": 34.2,
-      "dk": 35.0,
+      "dk": 35.2,
       "avg": 33.0
      },
      {
@@ -1009,12 +1388,48 @@
       "why": "started that game",
       "much": "+6.2 DK without him (1 game)",
       "score": 6.2,
-      "min": 13.3,
-      "dk": 15.3,
+      "min": 13.2,
+      "dk": 16.2,
       "avg": 11.3
      }
     ],
     "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-14",
+     "dk": 18.2,
+     "min": 15,
+     "opp": "BKN",
+     "ha": "vs",
+     "res": "W",
+     "score": "129-110"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "MEM",
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "Out",
+    "known": true,
+    "changed_at": "2:54 PM",
+    "salary": 4500,
+    "min": 17.7,
+    "benefits": [
+     {
+      "player": "Cameron Boozer",
+      "salary": 8400,
+      "why": "subs in for him 7 of 39 times",
+      "much": "about +4.6 DK",
+      "score": 4.5600227231647175,
+      "min": 33.1,
+      "dk": 47.6,
+      "avg": 39.6
+     }
+    ],
+    "estimate": true
    },
    {
     "last": {
@@ -1046,7 +1461,7 @@
       "much": "+14.4 DK without him (11 games)",
       "score": 14.4,
       "min": 14.0,
-      "dk": 16.6,
+      "dk": 16.7,
       "avg": null
      },
      {
@@ -1056,7 +1471,7 @@
       "much": "+11.3 DK without him (11 games)",
       "score": 11.3,
       "min": 34.2,
-      "dk": 35.0,
+      "dk": 35.2,
       "avg": 33.0
      },
      {
@@ -1066,8 +1481,64 @@
       "much": "+6.7 DK without him (11 games)",
       "score": 6.7,
       "min": 28.1,
-      "dk": 36.5,
+      "dk": 36.7,
       "avg": 34.9
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-13",
+     "dk": 34.5,
+     "min": 29,
+     "opp": "NOP",
+     "ha": "@",
+     "res": "W",
+     "score": "142-111"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "MEM",
+    "player": "Ty Jerome",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 8300,
+    "min": 31.0,
+    "benefits": [
+     {
+      "player": "Cam Spencer",
+      "salary": 6000,
+      "why": "started 4 of 4",
+      "much": "+15.9 DK without him (4 games)",
+      "score": 15.9,
+      "min": 29.6,
+      "dk": 37.1,
+      "avg": 25.5
+     },
+     {
+      "player": "Taylor Hendricks",
+      "salary": 3700,
+      "why": "18 minutes, up from 10",
+      "much": "+10.0 DK without him (4 games)",
+      "score": 10.0,
+      "min": 22.7,
+      "dk": 28.0,
+      "avg": 15.6
+     },
+     {
+      "player": "Javon Small",
+      "salary": 4800,
+      "why": "25 minutes, up from 19",
+      "much": "+7.6 DK without him (4 games)",
+      "score": 7.6,
+      "min": 27.5,
+      "dk": 29.1,
+      "avg": 21.5
      }
     ],
     "estimate": false
@@ -1101,8 +1572,8 @@
       "why": "same minutes, more production",
       "much": "+6.0 DK without him (10 games)",
       "score": 6.0,
-      "min": 32.0,
-      "dk": 44.5,
+      "min": 25.0,
+      "dk": 35.8,
       "avg": 33.0
      }
     ],
@@ -1137,8 +1608,8 @@
       "why": "27 minutes, up from 15",
       "much": "+8.1 DK without him (5 games)",
       "score": 8.1,
-      "min": 26.5,
-      "dk": 19.1,
+      "min": 26.0,
+      "dk": 19.7,
       "avg": 13.3
      },
      {
@@ -1147,8 +1618,8 @@
       "why": "same minutes, more production",
       "much": "+6.9 DK without him (5 games)",
       "score": 6.9,
-      "min": 24.6,
-      "dk": 24.6,
+      "min": 24.2,
+      "dk": 25.8,
       "avg": 21.1
      },
      {
@@ -1157,8 +1628,8 @@
       "why": "14 minutes, up from 7",
       "much": "+6.7 DK without him (5 games)",
       "score": 6.7,
-      "min": 13.3,
-      "dk": 15.3,
+      "min": 13.2,
+      "dk": 16.2,
       "avg": 11.3
      }
     ],
@@ -1191,31 +1662,133 @@
       "player": "Scoot Henderson",
       "salary": 4500,
       "why": "projected 24 minutes tonight, up from 22",
-      "much": "+4.9 DK projected vs. last 3",
-      "score": 4.933333333333335,
+      "much": "+5.4 DK projected vs. last 3",
+      "score": 5.433333333333335,
       "min": 24.0,
-      "dk": 18.1,
+      "dk": 18.6,
       "avg": 13.7
      },
      {
-      "player": "Donovan Clingan",
-      "salary": 6900,
-      "why": "projected 32 minutes tonight, up from 27",
-      "much": "+6.1 DK projected vs. last 3",
-      "score": 6.083333333333336,
-      "min": 32.0,
-      "dk": 44.5,
-      "avg": 33.0
+      "player": "Sidy Cissoko",
+      "salary": 4200,
+      "why": "projected 23 minutes tonight",
+      "much": "+3.3 DK projected vs. last 3",
+      "score": 3.3166666666666647,
+      "min": 23.2,
+      "dk": 17.4,
+      "avg": 16.8
      },
      {
-      "player": "Branden Carlson",
-      "salary": 3300,
-      "why": "projected 14 minutes tonight, up from 11",
-      "much": "+1.8 DK projected vs. last 3",
-      "score": 1.7666666666666657,
-      "min": 14.0,
-      "dk": 12.6,
-      "avg": 7.5
+      "player": "Yang Hansen",
+      "salary": 3000,
+      "why": "projected 16 minutes tonight, up from 9",
+      "much": "+3.3 DK projected vs. last 3",
+      "score": 3.3000000000000007,
+      "min": 16.0,
+      "dk": 15.8,
+      "avg": 9.1
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-13",
+     "dk": 0,
+     "min": 5,
+     "opp": "ORL",
+     "ha": "@",
+     "res": "L",
+     "score": "107-99"
+    },
+    "game": "POR at MIL",
+    "time": "2026-11-20T01:00Z",
+    "team": "MIL",
+    "player": "Ousmane Dieng",
+    "status": "Out",
+    "reason": "Left Finger Fracture",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 3800,
+    "min": 15.7,
+    "benefits": [
+     {
+      "player": "Brayden Burries",
+      "salary": 5700,
+      "why": "27 minutes, up from 20",
+      "much": "+13.6 DK without him (5 games)",
+      "score": 13.6,
+      "min": 22.8,
+      "dk": 24.2,
+      "avg": 22.1
+     },
+     {
+      "player": "Gary Trent Jr.",
+      "salary": 4100,
+      "why": "23 minutes, up from 8",
+      "much": "+12.6 DK without him (2 games)",
+      "score": 12.6,
+      "min": 20.1,
+      "dk": 15.0,
+      "avg": 9.1
+     },
+     {
+      "player": "Kasparas Jakucionis",
+      "salary": 4200,
+      "why": "22 minutes, up from 17",
+      "much": "+12.3 DK without him (5 games)",
+      "score": 12.3,
+      "min": 20.1,
+      "dk": 19.8,
+      "avg": 18.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-10-29",
+     "dk": 2.0,
+     "min": 14,
+     "opp": "POR",
+     "ha": "@",
+     "res": "W",
+     "score": "124-103"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "MEM",
+    "player": "Scotty Pippen Jr.",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 4700,
+    "min": 14.7,
+    "benefits": [
+     {
+      "player": "Taylor Hendricks",
+      "salary": 3700,
+      "why": "15 minutes, up from 5",
+      "much": "+17.9 DK without him (8 games)",
+      "score": 17.9,
+      "min": 22.7,
+      "dk": 28.0,
+      "avg": 15.6
+     },
+     {
+      "player": "Cam Spencer",
+      "salary": 6000,
+      "why": "24 minutes, up from 18",
+      "much": "+8.0 DK without him (10 games)",
+      "score": 8.0,
+      "min": 29.6,
+      "dk": 37.1,
+      "avg": 25.5
      }
     ],
     "estimate": false
@@ -1250,7 +1823,7 @@
       "much": "+13.3 DK without him (3 games)",
       "score": 13.3,
       "min": 28.0,
-      "dk": 26.1,
+      "dk": 26.3,
       "avg": 22.3
      }
     ],
@@ -1285,9 +1858,65 @@
       "why": "25 minutes, up from 16",
       "much": "+9.3 DK without him (5 games)",
       "score": 9.3,
-      "min": 26.5,
-      "dk": 19.1,
+      "min": 26.0,
+      "dk": 19.7,
       "avg": 13.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-14",
+     "dk": 3.5,
+     "min": 3,
+     "opp": "BKN",
+     "ha": "vs",
+     "res": "W",
+     "score": "129-110"
+    },
+    "game": "GSW at MEM",
+    "time": "2026-11-20T01:00Z",
+    "team": "MEM",
+    "player": "GG Jackson",
+    "status": "Out",
+    "reason": "",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": null,
+    "min": 12.7,
+    "benefits": [
+     {
+      "player": "Jaylen Wells",
+      "salary": 4300,
+      "why": "projected 26 minutes tonight",
+      "much": "+6.9 DK projected vs. last 3",
+      "score": 6.933333333333335,
+      "min": 26.0,
+      "dk": 21.6,
+      "avg": 19.2
+     },
+     {
+      "player": "Jerami Grant",
+      "salary": 4400,
+      "why": "projected 24 minutes tonight, up from 22",
+      "much": "+3.7 DK projected vs. last 3",
+      "score": 3.6999999999999993,
+      "min": 24.2,
+      "dk": 23.7,
+      "avg": 19.5
+     },
+     {
+      "player": "Cameron Boozer",
+      "salary": 8400,
+      "why": "projected 33 minutes tonight, up from 29",
+      "much": "+2.2 DK projected vs. last 3",
+      "score": 2.183333333333337,
+      "min": 33.1,
+      "dk": 47.6,
+      "avg": 39.6
      }
     ],
     "estimate": false
@@ -1319,31 +1948,31 @@
       "player": "Scoot Henderson",
       "salary": 4500,
       "why": "projected 24 minutes tonight, up from 22",
-      "much": "+4.9 DK projected vs. last 3",
-      "score": 4.933333333333335,
+      "much": "+5.4 DK projected vs. last 3",
+      "score": 5.433333333333335,
       "min": 24.0,
-      "dk": 18.1,
+      "dk": 18.6,
       "avg": 13.7
      },
      {
-      "player": "Donovan Clingan",
-      "salary": 6900,
-      "why": "projected 32 minutes tonight, up from 27",
-      "much": "+6.1 DK projected vs. last 3",
-      "score": 6.083333333333336,
-      "min": 32.0,
-      "dk": 44.5,
-      "avg": 33.0
+      "player": "Sidy Cissoko",
+      "salary": 4200,
+      "why": "projected 23 minutes tonight",
+      "much": "+3.3 DK projected vs. last 3",
+      "score": 3.3166666666666647,
+      "min": 23.2,
+      "dk": 17.4,
+      "avg": 16.8
      },
      {
-      "player": "Branden Carlson",
-      "salary": 3300,
-      "why": "projected 14 minutes tonight, up from 11",
-      "much": "+1.8 DK projected vs. last 3",
-      "score": 1.7666666666666657,
-      "min": 14.0,
-      "dk": 12.6,
-      "avg": 7.5
+      "player": "Yang Hansen",
+      "salary": 3000,
+      "why": "projected 16 minutes tonight, up from 9",
+      "much": "+3.3 DK projected vs. last 3",
+      "score": 3.3000000000000007,
+      "min": 16.0,
+      "dk": 15.8,
+      "avg": 9.1
      }
     ],
     "estimate": false
@@ -1373,6 +2002,11 @@
    {
     "player": "Kristaps Porzingis",
     "team": "GSW",
+    "status": "Out"
+   },
+   {
+    "player": "Richie Saunders",
+    "team": "MEM",
     "status": "Out"
    },
    {
