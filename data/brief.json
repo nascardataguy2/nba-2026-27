@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updated": "4:05 PM ET",
+ "updated": "4:41 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:19 AM",
@@ -373,6 +373,14 @@
  ],
  "changed": [
   {
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "",
+   "time": "4:42 PM"
+  },
+  {
    "player": "Jalen Smith",
    "team": "CHI",
    "status": "Questionable",
@@ -390,6 +398,27 @@
   }
  ],
  "chg": [
+  {
+   "key": "Precious Achiuwa",
+   "team": "SAC",
+   "head": "Precious Achiuwa OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Malik Monk",
+     "salary": 4000,
+     "much": "+10.7 DK without him (2 games)"
+    },
+    {
+     "player": "Alex Karaban",
+     "salary": 3200,
+     "much": "+7.0 DK without him (1 game)"
+    }
+   ],
+   "time": "4:42 PM",
+   "size": 22.3
+  },
   {
    "key": "Jalen Smith",
    "team": "CHI",
@@ -623,7 +652,7 @@
     {
      "player": "Precious Achiuwa",
      "min": 19.3,
-     "note": "Doubtful tonight.",
+     "note": "Precious Achiuwa was moved from doubtful to out for tonight on the NBA's 04:30 PM injury report. He had averaged 19 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     }
    ],
@@ -982,8 +1011,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "04:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_00PM.pdf",
+  "report": "04:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1640,12 +1669,12 @@
     "time": "2026-11-21T03:00Z",
     "team": "SAC",
     "player": "Precious Achiuwa",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "",
     "new": true,
-    "was": "Available",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:42 PM",
     "salary": 5000,
     "min": 19.3,
     "benefits": [
