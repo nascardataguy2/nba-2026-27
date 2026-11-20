@@ -943,7 +943,11 @@
     ['ou','O/U','n'], ['spread','Spread','s'], ['gp','GP','n'], ['min','Min','n'], ['dk','DK','n'], ['fppm','FP/Min','n'],
     ['l3_dk','L3 DK','n'], ['pts','Pts','n'], ['reb','Reb','n'], ['ast','Ast','n'], ['stl','Stl','n'], ['blk','Blk','n'], ['to','TO','n'], ['tpm','3PM','n']
   ];
-  var RH = {min:1, dk:1, fppm:1, l3_dk:1, pts:1, reb:1, ast:1, stl:1, blk:1, to:-1, tpm:1};
+  // Heat map direction: 1 = higher is better, -1 = lower is better. Spread is judged by its size
+  // (close game = green, blowout risk = red); salary: cheap = green, expensive = red.
+  var RH = {min:1, dk:1, fppm:1, l3_dk:1, pts:1, reb:1, ast:1, stl:1, blk:1, to:-1, tpm:1, ou:1, spread:-1, salary:-1};
+  var RGAME = {ou:1, spread:1, salary:1};
+  function rVal(key, v){ return key === 'spread' && v != null ? Math.abs(v) : v; }
   var RSORT = {key:'dk', dir:-1};
   function rRows(){
     if (!SEA) return [];
@@ -958,13 +962,17 @@
   }
   function rHeat(key, v){
     var vals = RHEAT[key];
+    v = rVal(key, v);
     if (!RH[key] || v == null || !vals || vals.length < 3) return '';
     var lo = 0, eq = 0;
     for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
     var t = (lo + eq / 2) / vals.length;
     if (RH[key] < 0) t = 1 - t;
-    if (t >= 0.6) return 'background:rgba(31,122,77,' + ((t - 0.6) / 0.4 * 0.20).toFixed(3) + ')';
-    if (t <= 0.4) return 'background:rgba(228,87,46,' + ((0.4 - t) / 0.4 * 0.14).toFixed(3) + ')';
+    // Five steps: top 10% dark green, next 20% light green, middle plain, next 20% light red, bottom 10% dark red.
+    if (t >= 0.9) return 'background:rgba(31,122,77,.34)';
+    if (t >= 0.7) return 'background:rgba(31,122,77,.13)';
+    if (t <= 0.1) return 'background:rgba(206,45,45,.28)';
+    if (t <= 0.3) return 'background:rgba(206,45,45,.11)';
     return '';
   }
   function rFmt(p, k){
@@ -988,7 +996,12 @@
     if (!SEA || !$('r4p-statlist')) return;
     var all = rRows();
     RHEAT = {};
-    Object.keys(RH).forEach(function(key){ RHEAT[key] = all.filter(function(p){ return p.min >= 10; }).map(function(p){ return p[key]; }).filter(function(x){ return x != null; }); });
+    // Stats are ranked against rotation players (20+ minutes a game); salary, O/U and spread against
+    // everyone playing tonight.
+    Object.keys(RH).forEach(function(key){
+      RHEAT[key] = all.filter(function(p){ return RGAME[key] ? p.salary != null : p.min >= 20; })
+        .map(function(p){ return rVal(key, p[key]); }).filter(function(x){ return x != null; });
+    });
     var q = $('r4p-sq').value.trim().toLowerCase(), tf = $('r4p-steam').value, pos = $('r4p-spos').value;
     var k = RSORT.key, dir = RSORT.dir;
     var list = all.filter(function(p){
