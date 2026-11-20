@@ -968,9 +968,12 @@
     for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
     var t = (lo + eq / 2) / vals.length;
     if (RH[key] < 0) t = 1 - t;
-    // Five steps: top 10% dark green, next 20% light green, middle plain, next 20% light red, bottom 10% dark red.
+    // Seven steps: top 3% solid green (elite), next 7% dark green, next 20% light green, middle plain,
+    // then light red, dark red, and solid red for the bottom 3%.
+    if (t >= 0.97) return 'background:#1f7a4d;color:#fff;font-weight:700';
     if (t >= 0.9) return 'background:rgba(31,122,77,.34)';
     if (t >= 0.7) return 'background:rgba(31,122,77,.13)';
+    if (t <= 0.03) return 'background:#b83232;color:#fff;font-weight:700';
     if (t <= 0.1) return 'background:rgba(206,45,45,.28)';
     if (t <= 0.3) return 'background:rgba(206,45,45,.11)';
     return '';
