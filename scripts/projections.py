@@ -387,7 +387,8 @@ def main():
     # The SportsLine baseline leaves out some rotation players (11/9: Steinbach, Hezonja, Salaun,
     # Carrington and others with DK salaries and real minutes). Any player on tonight's DK/DFF list
     # who is missing from it and played 10+ minutes in one of his last 3 games (last game within
-    # 10 days) is added with his own averages from those 3 box scores. The usual minutes steps
+    # 10 days, or older when today's official report lists him as returning) is added with his own
+    # averages from those 3 box scores. The usual minutes steps
     # (injuries, splits, 240-minute total) then apply to him like everyone else.
     have = {(norm(x["player"]), x["team"]) for x in sl if x["min"] > 0}
     have_last = {(norm(x["player"]).split(" ")[-1], x["team"]) for x in sl if x["min"] > 0}
@@ -398,7 +399,7 @@ def main():
     cut10 = str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=10))
     bx = {}
     for fn in sorted(os.listdir(bdir)) if os.path.isdir(bdir) else []:
-        if fn[:10] >= str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=30)) and fn[:10] < day:
+        if fn[:10] >= str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=60)) and fn[:10] < day:
             for x in load_json(os.path.join(bdir, fn), []):
                 bx.setdefault((norm(x["player"]), x["team"]), []).append(x)
     added = []
@@ -412,7 +413,13 @@ def main():
         if d["inj"] == "O" and not (official and not oo) or (oo and oo["status"] in ("Out", "Doubtful")):
             continue  # ruled out: the baseline already left his minutes to his teammates
         g = sorted([x for x in bx.get((k, d["team"]), []) if x["min"] > 0], key=lambda x: x["date"])[-3:]
-        if not g or g[-1]["date"] < cut10 or max(x["min"] for x in g) < 10:
+        if not g or max(x["min"] for x in g) < 10:
+            continue
+        back = g[-1]["date"] < cut10
+        # A player whose last game is older than 10 days is added only when today's official
+        # report lists him as returning (questionable, probable or available). 11/20: Trey Murphy III
+        # was available after missing 11/8-11/19 and had a salary but no projection.
+        if back and not (oo and oo["status"] in ("Questionable", "Probable", "Available")):
             continue
         n = float(len(g))
         sl.append({"player": d["player"], "pos": d["pos"], "team": d["team"], "game": gfor[d["team"]],
@@ -420,7 +427,7 @@ def main():
                    "min": sum(x["min"] for x in g) / n, "ast": sum(x.get("ast", 0) for x in g) / n,
                    "reb": sum(x.get("reb", 0) for x in g) / n, "blk": sum(x.get("blk", 0) for x in g) / n,
                    "stl": sum(x.get("stl", 0) for x in g) / n, "to": sum(x.get("to", 0) for x in g) / n,
-                   "fga": 0.0, "fta": 0.0, "added": len(g)})
+                   "fga": 0.0, "fta": 0.0, "added": len(g), "back": g[-1]["date"] if back else ""})
         have.add((k, d["team"]))
         added.append(d["player"])
     if added:
@@ -448,6 +455,8 @@ def main():
         r = dict(s)
         r["base"] = s["min"]
         r["why"] = ["Projected from his last %d games." % s["added"]] if s.get("added") else []
+        if s.get("back"):
+            r["why"].append("Returning from injury; he last played on %d/%d, so his minutes may be limited." % (int(s["back"][5:7]), int(s["back"][8:10])))
         dk = dks.get((k, s["team"]))
         if not dk:
             last = k.split(" ")[-1]
