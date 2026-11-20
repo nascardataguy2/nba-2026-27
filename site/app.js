@@ -72,7 +72,7 @@
 
   function quick(){
     var q = db.quickhits || {}, B = db.brief || {};
-    function nm(name, team){ return '<span class="who">' + esc(name) + '</span>' + tm(team) + bdg(name); }
+    function nm(name, team){ return '<span class="who">' + esc(name) + '</span>' + tm(team); }
     function sec(cls, title, hint, body){ return body ? '<div class="panel ' + cls + '"><h2>' + title + '</h2>' + (hint ? '<p class="hint">' + hint + '</p>' : '') + body + '</div>' : ''; }
     function d1(v){ return (Math.round(v * 10) / 10).toFixed(1); }
     function day(s){ var d = new Date(s + 'T12:00:00'); return isNaN(d) ? s : d.toLocaleDateString('en-US', {weekday:'long', month:'short', day:'numeric'}); }
@@ -118,7 +118,7 @@
       // If he sits
       var sitsH = sec('sits', 'If He Sits, Who Benefits', 'Tonight\u2019s games only. Biggest impact first, and new news is flagged.', (B.sits || []).map(function(s){
         var outs = s.outs.map(function(o){ return '<span class="who">' + esc(o.player) + '</span>' + (o.new ? ' <span class="bc-new">New</span>' : ''); }).join(', ');
-        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + bdg(b.player) + ' <span class="bs-n">' + (b.why ? benTxt(b) + '</span>' : (b.gdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' : b.subs != null || b.note ? benTxt(b) + ', ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'); }).join('<br>');
+        var ben = s.benefits.map(function(b){ return '<span class="who">' + esc(b.player) + '</span>' + ' <span class="bs-n">' + (b.why ? benTxt(b) + '</span>' : (b.gdk != null ? benTxt(b, (s.split_of || []).length > 1) + ' \u00b7 tonight ' : b.subs != null || b.note ? benTxt(b) + ', ' + d1(b.dk) + ' DK, ' : d1(b.min) + ' min (up from ' + d1(b.recent) + '), ' + d1(b.dk) + ' DK, ') + money(b.salary) + '</span>'); }).join('<br>');
         return '<div class="hit">' + tm(s.team) + ' ' + outs + ' <span class="arrow">\u2192</span><p>' + ben + '</p></div>';
       }).join(''));
       // A storyline is written from the morning shows. When a player it names has changed status on
@@ -213,6 +213,7 @@
     });
   }
   function badgesOf(name){ var p = BMAP[nkey(name)]; return p ? p.badges : {}; }
+  // Stat badges are shown only on the Rankings tab.
   function bdg(name){
     var p = BMAP[nkey(name)], icons = db.badge_icons || {};
     if (!p) return '';
@@ -285,7 +286,7 @@
     if (/starter/i.test(p.role)) pills += '<span class="pill start">' + esc(p.role) + '</span>';
     else if (p.role) pills += '<span class="pill">' + esc(p.role) + '</span>';
     if (p.status && !/^healthy$/i.test(p.status)) pills += '<span class="pill hurt">Health note</span>';
-    return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3>' + pills +
+    return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + '</h3>' + pills +
       (p.minutes ? '<span class="lbl">Minutes</span><div class="row">' + esc(p.minutes) + '</div>' : '') +
       (p.usage ? '<span class="lbl">Usage</span><div class="row">' + esc(p.usage) + '</div>' : '') +
       (p.status ? '<span class="lbl">Health</span><div class="row">' + esc(p.status) + '</div>' : '') +
@@ -358,7 +359,7 @@
       el.className = 'cards';
       var tb0 = el.parentNode.querySelector('.toolbar'); if (tb0) tb0.style.display = '';
       el.innerHTML = db.injuries.slice().filter(function(p){ return keep(p.team); }).sort(function(a,b){ return a.team < b.team ? -1 : 1; }).map(function(p){
-        return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + bdg(p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + logRows(p.player, 2) + srcLink(p.source) + '</div>';
+        return '<div class="card"><h3>' + esc(p.player) + ' ' + tm(p.team) + tn(p.team, p.player) + '</h3><div class="row">' + esc(p.status) + '</div>' + (p.note ? '<div class="row">' + esc(p.note) + '</div>' : '') + logRows(p.player, 2) + srcLink(p.source) + '</div>';
       }).join('') || '<p class="sub">No injury notes for tonight\u2019s teams.</p>';
       return;
     }
@@ -449,7 +450,7 @@
       if (!keep(m.to)) return false;
       return !q || (m.player + ' ' + m.from + ' ' + m.to + ' ' + (NAMES[m.from]||'') + ' ' + (NAMES[m.to]||'')).toLowerCase().indexOf(q) > -1;
     }).map(function(m){
-      return '<div class="card"><h3>' + esc(m.player) + tn(m.to, m.player) + bdg(m.player) + '</h3><div class="row">' + (m.from ? tm(m.from, true) : 'Unknown') + ' <span class="arrow">\u2192</span> ' + tm(m.to, true) + (m.type ? ' \u00b7 ' + esc(m.type) : '') + '</div>' + (m.note ? '<div class="row">' + esc(m.note) + '</div>' : '') + srcLink(m.source) + '</div>';
+      return '<div class="card"><h3>' + esc(m.player) + tn(m.to, m.player) + '</h3><div class="row">' + (m.from ? tm(m.from, true) : 'Unknown') + ' <span class="arrow">\u2192</span> ' + tm(m.to, true) + (m.type ? ' \u00b7 ' + esc(m.type) : '') + '</div>' + (m.note ? '<div class="row">' + esc(m.note) + '</div>' : '') + srcLink(m.source) + '</div>';
     }).join('');
   }
 
