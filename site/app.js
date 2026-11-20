@@ -694,20 +694,14 @@
     ['ou','O/U','n'], ['spread','Spread','s'], ['dk','DK','n'], ['value','Val','n'], ['own','Own%','n'], ['min','Min','n'], ['usg','Usg','n'],
     ['pts','Pts','n'], ['reb','Reb','n'], ['ast','Ast','n'], ['stl','Stl','n'], ['blk','Blk','n'], ['to','TO','n']
   ];
-  var HEAT = {ou:1, dk:1, value:1, min:1, usg:1, pts:1, reb:1, ast:1, stl:1, blk:1, to:-1};
+  var HEAT = {ou:1, dk:1, value:1, min:1, usg:1, pts:1, reb:1, ast:1, stl:1, blk:1, to:-1, salary:-1, spread:-1};
   var PSORT = {key:'dk', dir:-1};
   var POSORD = {PG:1, SG:2, SF:3, PF:4, C:5, G:1.5, F:3.5};
   function heatCss(key, v){
     if (!HEAT[key] || v == null || !PJ) return '';
-    var vals = PJ.players.map(function(p){ return p[key]; }).filter(function(x){ return x != null; });
-    if (vals.length < 3) return '';
-    var lo = 0, eq = 0;
-    for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
-    var t = (lo + eq / 2) / vals.length;
-    if (HEAT[key] < 0) t = 1 - t;
-    if (t >= 0.6) return 'background:rgba(31,122,77,' + ((t - 0.6) / 0.4 * 0.20).toFixed(3) + ')';
-    if (t <= 0.4) return 'background:rgba(228,87,46,' + ((0.4 - t) / 0.4 * 0.14).toFixed(3) + ')';
-    return '';
+    var f = function(x){ return key === 'spread' && x != null ? Math.abs(x) : x; };
+    var vals = PJ.players.map(function(p){ return f(p[key]); }).filter(function(x){ return x != null; });
+    return gHeat(vals, f(v), HEAT[key]);
   }
   function sortVal(p, k){
     if (k === 'pos') return POSORD[String(p.pos).split('/')[0]] || 9;
@@ -809,14 +803,7 @@
   function nHeat(list, key, v){
     if (!NH[key] || v == null) return '';
     var vals = list.map(function(p){ return p[key]; }).filter(function(x){ return x != null; });
-    if (vals.length < 3) return '';
-    var lo = 0, eq = 0;
-    for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
-    var t = (lo + eq / 2) / vals.length;
-    if (NH[key] < 0) t = 1 - t;
-    if (t >= 0.6) return 'background:rgba(31,122,77,' + ((t - 0.6) / 0.4 * 0.20).toFixed(3) + ')';
-    if (t <= 0.4) return 'background:rgba(228,87,46,' + ((0.4 - t) / 0.4 * 0.14).toFixed(3) + ')';
-    return '';
+    return gHeat(vals, v, NH[key]);
   }
   function nFmt(p, k){
     var v = p[k];
@@ -972,18 +959,21 @@
     }
     return st[st.length - 1][1];
   }
-  function rHeat(key, v){
-    var vals = RHEAT[key];
-    v = rVal(key, v);
-    if (!RH[key] || v == null || !vals || vals.length < 3) return '';
-    var s = vals.slice().sort(function(a, b){ return a - b; }), q = function(f){ return s[Math.round(f * (s.length - 1))]; };
-    var lo = s[0], mid = q(0.5), hi = s[s.length - 1], x;
+  // Shared gradient heat map used across the site. vals = the comparison pool, dir = 1 when higher
+  // is better, -1 when lower is better. Returns a CSS style string ('' for middle values).
+  function gHeat(vals, v, dir){
+    if (!dir || v == null || isNaN(v) || !vals || vals.length < 3) return '';
+    var s = vals.slice().sort(function(a, b){ return a - b; });
+    var lo = s[0], mid = s[Math.round(0.5 * (s.length - 1))], hi = s[s.length - 1], x;
     if (v >= mid) x = hi > mid ? Math.min(1, (v - mid) / (hi - mid)) : 0;
     else x = mid > lo ? -Math.min(1, (mid - v) / (mid - lo)) : 0;
-    if (RH[key] < 0) x = -x;
+    if (dir < 0) x = -x;
     if (Math.abs(x) < 0.04) return '';
     var c = rMix(x > 0 ? RSTOPS.up : RSTOPS.dn, Math.abs(x));
     return 'background:rgb(' + c.join(',') + ')' + (Math.abs(x) > 0.8 ? ';color:#fff;font-weight:700' : '');
+  }
+  function rHeat(key, v){
+    return RH[key] ? gHeat(RHEAT[key], rVal(key, v), RH[key]) : '';
   }
   function rFmt(p, k){
     var v = p[k];
@@ -1194,11 +1184,19 @@
     if (t.length > 140) t = t.slice(0, 137).replace(/\s+\S*$/, '') + '\u2026';
     return t ? '<div class="op-ctx">' + esc(t) + '</div>' : '';
   }
+  var ODIR = {min:1, ou:1, sal:-1, dk:1, val:1};
   function heat(k, v){
     var r = OHEAT[k];
-    if (v == null || isNaN(v) || !r || !(r[1] > r[0])) return '';
-    var t = (v - r[0]) / (r[1] - r[0]), hot = t >= 0.5, a = Math.abs(t - 0.5) * 2;
-    return ' style="background:rgba(' + (hot ? '228,87,46' : '29,53,87') + ',' + (0.04 + 0.2 * a).toFixed(3) + ')"';
+    if (v == null || isNaN(v) || !r || r.length < 3) return '';
+    if (k === 'own'){
+      // Own% is not good or bad by itself: it keeps the old orange (high) / blue (low) shading.
+      var lo = Math.min.apply(null, r), hi = Math.max.apply(null, r);
+      if (!(hi > lo)) return '';
+      var t = (v - lo) / (hi - lo), hot = t >= 0.5, a = Math.abs(t - 0.5) * 2;
+      return ' style="background:rgba(' + (hot ? '228,87,46' : '29,53,87') + ',' + (0.04 + 0.2 * a).toFixed(3) + ')"';
+    }
+    var st = gHeat(r, v, ODIR[k]);
+    return st ? ' style="' + st + '"' : '';
   }
   function optPool(){
     if (!PJ || !$('r4p-opool')) return;
@@ -1222,11 +1220,11 @@
     });
     $('r4p-opool').innerHTML = (
     (function(){
-      // Heat map for DK, value and Own%: the slate's high end in site orange, low end in site blue.
-      function rng(f){ var v = list.map(f).filter(function(x){ return x != null && !isNaN(x); }); return [Math.min.apply(null, v), Math.max.apply(null, v)]; }
+      // Heat map pools: every value on the slate for each column (see heat()).
+      function rng(f){ return list.map(f).filter(function(x){ return x != null && !isNaN(x); }); }
       OHEAT = {min: rng(function(p){ return p.min; }), ou: rng(function(p){ return p.ou; }), sal: rng(function(p){ return p.salary; }), dk: rng(function(p){ return p.dk; }), val: rng(function(p){ return p.salary ? p.dk / p.salary * 1000 : null; }), own: rng(function(p){ return p.own; })};
     })(),
-    '<div class="op-key"><span>Every number:</span> <i class="k-hi"></i> high tonight <i class="k-lo"></i> low tonight</div>' +
+    '<div class="op-key"><span>Colors:</span> <i class="k-best"></i> best tonight <i class="k-good"></i> good <i class="k-bad"></i> bad (cheap salary is good) <i class="k-hi"></i> Own% high <i class="k-lo"></i> Own% low</div>' +
     '<div class="op-head"><span>Player</span><span class="op-x">Min</span><span class="op-x">O/U</span><span>Sal</span><span>DK</span><span class="op-xp">Val</span><span>Own%</span><span></span></div>' + list.map(function(p){
       var k = nkey(p.player), lk = !!OLOCK[k], ex = !!OEXCL[k];
       var bits = noteBits(p.player), has = bits.length > 0 || glRows(p.player).length > 0, open = has && NOPEN[k];

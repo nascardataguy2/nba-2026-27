@@ -455,7 +455,8 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 @media (max-width:600px){.op-who{display:block} .op-ctx{margin-top:4px}}
 .op-key{font-size:13px;color:var(--muted);margin:2px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .op-key span{font-weight:700} .op-key i{display:inline-block;width:14px;height:14px;border-radius:4px}
-.op-key .k-hi{background:rgba(228,87,46,.24)} .op-key .k-lo{background:rgba(29,53,87,.24);margin-left:8px}
+.op-key .k-hi{background:rgba(228,87,46,.24);margin-left:8px} .op-key .k-lo{background:rgba(29,53,87,.24);margin-left:8px}
+.op-key .k-best{background:rgb(34,84,168)} .op-key .k-good{background:rgb(60,150,100);margin-left:8px} .op-key .k-bad{background:rgb(184,46,46);margin-left:8px}
 
 .nr-strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(112px,1fr);gap:8px;margin:0 0 14px;overflow-x:auto;scrollbar-width:thin}
 .nr-g{border:1px solid var(--line);border-radius:10px;padding:7px 9px;background:var(--bg);font-size:13px;line-height:1.25}
