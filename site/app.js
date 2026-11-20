@@ -960,23 +960,30 @@
       return o;
     });
   }
+  // True heat map: every value gets its own shade from where it sits between the middle of the
+  // pool (white) and the best (green, then deep blue at the very top) or worst (deep red) values.
+  // The ends are the best and worst values in the pool, so only the very top reaches deep blue.
+  var RSTOPS = {up:[[0,[255,255,255]],[0.5,[190,228,201]],[0.85,[60,150,100]],[1,[34,84,168]]],
+                dn:[[0,[255,255,255]],[0.5,[245,182,173]],[1,[184,46,46]]]};
+  function rMix(st, x){
+    for (var i = 1; i < st.length; i++) if (x <= st[i][0]){
+      var a = st[i - 1], b = st[i], f = (x - a[0]) / (b[0] - a[0]);
+      return a[1].map(function(c, j){ return Math.round(c + (b[1][j] - c) * f); });
+    }
+    return st[st.length - 1][1];
+  }
   function rHeat(key, v){
     var vals = RHEAT[key];
     v = rVal(key, v);
     if (!RH[key] || v == null || !vals || vals.length < 3) return '';
-    var lo = 0, eq = 0;
-    for (var i = 0; i < vals.length; i++){ if (vals[i] < v) lo++; else if (vals[i] === v) eq++; }
-    var t = (lo + eq / 2) / vals.length;
-    if (RH[key] < 0) t = 1 - t;
-    // Seven steps: top 3% solid green (elite), next 7% dark green, next 20% light green, middle plain,
-    // then light red, dark red, and solid red for the bottom 3%.
-    if (t >= 0.97) return 'background:#1f7a4d;color:#fff;font-weight:700';
-    if (t >= 0.9) return 'background:rgba(31,122,77,.34)';
-    if (t >= 0.7) return 'background:rgba(31,122,77,.13)';
-    if (t <= 0.03) return 'background:#b83232;color:#fff;font-weight:700';
-    if (t <= 0.1) return 'background:rgba(206,45,45,.28)';
-    if (t <= 0.3) return 'background:rgba(206,45,45,.11)';
-    return '';
+    var s = vals.slice().sort(function(a, b){ return a - b; }), q = function(f){ return s[Math.round(f * (s.length - 1))]; };
+    var lo = s[0], mid = q(0.5), hi = s[s.length - 1], x;
+    if (v >= mid) x = hi > mid ? Math.min(1, (v - mid) / (hi - mid)) : 0;
+    else x = mid > lo ? -Math.min(1, (mid - v) / (mid - lo)) : 0;
+    if (RH[key] < 0) x = -x;
+    if (Math.abs(x) < 0.04) return '';
+    var c = rMix(x > 0 ? RSTOPS.up : RSTOPS.dn, Math.abs(x));
+    return 'background:rgb(' + c.join(',') + ')' + (Math.abs(x) > 0.8 ? ';color:#fff;font-weight:700' : '');
   }
   function rFmt(p, k){
     var v = p[k];
