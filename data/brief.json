@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updated": "5:15 PM ET",
+ "updated": "5:17 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:19 AM",
@@ -41,16 +41,15 @@
        "min": 28.7
       },
       {
+       "player": "Kingston Flemings",
+       "min": 22.7
+      },
+      {
        "player": "Asa Newell",
        "min": 15.3
       }
      ],
-     "q": [
-      {
-       "player": "Kingston Flemings",
-       "min": 21.4
-      }
-     ]
+     "q": []
     }
    },
    "key": "Grayson Allen and Dennis Schroder are out, so Naz Reid and Coby White and Royce O'Neale should play more than usual."
@@ -373,6 +372,14 @@
  ],
  "changed": [
   {
+   "player": "Kingston Flemings",
+   "team": "ATL",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Lumbar Strain",
+   "time": "5:19 PM"
+  },
+  {
    "player": "Precious Achiuwa",
    "team": "SAC",
    "status": "Out",
@@ -418,6 +425,27 @@
    ],
    "time": "4:42 PM",
    "size": 22.3
+  },
+  {
+   "key": "Kingston Flemings",
+   "team": "ATL",
+   "head": "Kingston Flemings OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Corey Kispert",
+     "salary": 3400,
+     "much": "+10.6 DK without him (3 games)"
+    },
+    {
+     "player": "Nickeil Alexander-Walker",
+     "salary": 7000,
+     "much": "+10.5 DK without him (3 games)"
+    }
+   ],
+   "time": "5:19 PM",
+   "size": 18.3
   },
   {
    "key": "Jalen Smith",
@@ -585,6 +613,68 @@
    ]
   },
   {
+   "team": "ATL",
+   "outs": [
+    {
+     "player": "CJ McCollum",
+     "min": 28.7,
+     "note": "CJ McCollum is out for about a month, according to the show. Aaron Wiggins started in his place on Wednesday.",
+     "new": false
+    },
+    {
+     "player": "Kingston Flemings",
+     "min": 22.7,
+     "note": "Kingston Flemings was moved from questionable to out for tonight (lumbar strain) on the NBA's 05:15 PM injury report. He had averaged 23 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
+    {
+     "player": "Asa Newell",
+     "min": 15.3,
+     "note": "Asa Newell had surgery Tuesday to repair a plantar plate tear in his left big toe, hurt November 4. He will be re-evaluated in about four months.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 66.7,
+   "benefits": [
+    {
+     "player": "Onyeka Okongwu",
+     "salary": 6500,
+     "why": "36 minutes, up from 30",
+     "much": "+11.6 DK without them (1 game)",
+     "score": 11.6,
+     "min": 36.0,
+     "dk": 40.7,
+     "avg": 33.4
+    },
+    {
+     "player": "Jalen Johnson",
+     "salary": 9500,
+     "why": "same minutes, more production",
+     "much": "+7.7 DK without them (1 game)",
+     "score": 7.7,
+     "min": 38.0,
+     "dk": 51.8,
+     "avg": 44.4
+    },
+    {
+     "player": "Aaron Wiggins",
+     "salary": 5300,
+     "why": "started, 26 minutes (11/18)",
+     "much": "+7.5 DK projected vs. last 3",
+     "score": 7.5,
+     "min": 27.2,
+     "dk": 26.5,
+     "avg": 25.0
+    }
+   ],
+   "split_of": [
+    "CJ McCollum",
+    "Kingston Flemings",
+    "Asa Newell"
+   ]
+  },
+  {
    "team": "DET",
    "outs": [
     {
@@ -745,61 +835,6 @@
     "Chet Holmgren",
     "Cason Wallace"
    ]
-  },
-  {
-   "team": "CLE",
-   "outs": [
-    {
-     "player": "Evan Mobley",
-     "min": 30.0,
-     "note": "Mobley is out Friday against Indiana with a left great toe sprain, and he is not expected back before Nov. 29.",
-     "new": false
-    },
-    {
-     "player": "Jaylon Tyson",
-     "min": 29.0,
-     "note": "Tyson is out Friday against Indiana with an ankle injury, his third straight missed game.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 59.0,
-   "benefits": [
-    {
-     "player": "Donovan Mitchell",
-     "salary": 8500,
-     "why": "34 points (11/18)",
-     "much": "+9.2 DK without them (2 games)",
-     "score": 9.2,
-     "min": 32.5,
-     "dk": 42.5,
-     "avg": 42.3
-    },
-    {
-     "player": "Jarrett Allen",
-     "salary": 6300,
-     "why": "30 minutes, up from 26",
-     "much": "+8.4 DK without them (2 games)",
-     "score": 8.4,
-     "min": 27.8,
-     "dk": 32.3,
-     "avg": 30.2
-    },
-    {
-     "player": "Mario Hezonja",
-     "salary": 4800,
-     "why": "started 1 of 2",
-     "much": "+7.4 DK without them (2 games)",
-     "score": 7.4,
-     "min": 21.4,
-     "dk": 22.3,
-     "avg": 20.4
-    }
-   ],
-   "split_of": [
-    "Evan Mobley",
-    "Jaylon Tyson"
-   ]
   }
  ],
  "hot": [
@@ -927,14 +962,14 @@
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 1.0,
+   "own": 0.9,
    "dk": 30.4,
    "salary": 5400
   },
   {
    "player": "Daniss Jenkins",
    "team": "DET",
-   "own": 6.9,
+   "own": 7.7,
    "dk": 36.4,
    "salary": 6500
   }
@@ -1011,10 +1046,66 @@
   "injuries": []
  },
  "injuries": {
-  "report": "05:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_05_00PM.pdf",
+  "report": "05:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_05_15PM.pdf",
   "pending": [],
   "rows": [
+   {
+    "last": {
+     "date": "2026-11-13",
+     "dk": 2.2,
+     "min": 17,
+     "opp": "CHI",
+     "ha": "@",
+     "res": "L",
+     "score": "125-117"
+    },
+    "game": "CHA at ATL",
+    "time": "2026-11-21T00:00Z",
+    "team": "ATL",
+    "player": "Kingston Flemings",
+    "status": "Out",
+    "reason": "Lumbar Strain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:19 PM",
+    "salary": 4700,
+    "min": 22.7,
+    "benefits": [
+     {
+      "player": "Corey Kispert",
+      "salary": 3400,
+      "why": "17 minutes, up from 8",
+      "much": "+10.6 DK without him (3 games)",
+      "score": 10.6,
+      "min": 18.0,
+      "dk": 18.7,
+      "avg": 12.8
+     },
+     {
+      "player": "Nickeil Alexander-Walker",
+      "salary": 7000,
+      "why": "same minutes, more production",
+      "much": "+10.5 DK without him (3 games)",
+      "score": 10.5,
+      "min": 34.5,
+      "dk": 37.5,
+      "avg": 34.7
+     },
+     {
+      "player": "Aaron Wiggins",
+      "salary": 5300,
+      "why": "started, 26 minutes (11/18)",
+      "much": "+7.5 DK projected vs. last 3",
+      "score": 7.5,
+      "min": 27.2,
+      "dk": 26.5,
+      "avg": 25.0
+     }
+    ],
+    "estimate": false
+   },
    {
     "last": {
      "date": "2026-11-17",
@@ -1057,62 +1148,6 @@
       "min": 32.2,
       "dk": 38.4,
       "avg": 32.9
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-13",
-     "dk": 2.2,
-     "min": 17,
-     "opp": "CHI",
-     "ha": "@",
-     "res": "L",
-     "score": "125-117"
-    },
-    "game": "CHA at ATL",
-    "time": "2026-11-21T00:00Z",
-    "team": "ATL",
-    "player": "Kingston Flemings",
-    "status": "Questionable",
-    "reason": "Lumbar Strain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 4700,
-    "min": 22.7,
-    "benefits": [
-     {
-      "player": "Corey Kispert",
-      "salary": 3400,
-      "why": "17 minutes, up from 8",
-      "much": "+10.6 DK without him (3 games)",
-      "score": 10.6,
-      "min": 17.5,
-      "dk": 18.2,
-      "avg": 12.8
-     },
-     {
-      "player": "Nickeil Alexander-Walker",
-      "salary": 7000,
-      "why": "same minutes, more production",
-      "much": "+10.5 DK without him (3 games)",
-      "score": 10.5,
-      "min": 31.4,
-      "dk": 34.2,
-      "avg": 34.7
-     },
-     {
-      "player": "Onyeka Okongwu",
-      "salary": 6500,
-      "why": "35 minutes, up from 30",
-      "much": "+5.9 DK without him (3 games)",
-      "score": 5.9,
-      "min": 36.0,
-      "dk": 40.7,
-      "avg": 33.4
      }
     ],
     "estimate": false
@@ -1934,8 +1969,8 @@
       "why": "same minutes, more production",
       "much": "+7.7 DK without him (1 game)",
       "score": 7.7,
-      "min": 34.4,
-      "dk": 47.0,
+      "min": 38.0,
+      "dk": 51.8,
       "avg": 44.4
      },
      {
@@ -1944,8 +1979,8 @@
       "why": "31 minutes, up from 24",
       "much": "+7.0 DK without him (1 game)",
       "score": 7.0,
-      "min": 26.6,
-      "dk": 20.3,
+      "min": 29.3,
+      "dk": 22.3,
       "avg": 18.8
      }
     ],
@@ -2036,8 +2071,8 @@
       "why": "35 minutes, up from 31",
       "much": "+7.8 DK without him (9 games)",
       "score": 7.8,
-      "min": 34.4,
-      "dk": 47.0,
+      "min": 38.0,
+      "dk": 51.8,
       "avg": 44.4
      },
      {
@@ -2046,8 +2081,8 @@
       "why": "16 minutes, up from 8",
       "much": "+6.7 DK without him (3 games)",
       "score": 6.7,
-      "min": 17.5,
-      "dk": 18.2,
+      "min": 18.0,
+      "dk": 18.7,
       "avg": 12.8
      },
      {
