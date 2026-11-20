@@ -138,7 +138,7 @@
       // Storylines: tonight's players first, then the rest
       var st = q.storylines || {}, items = (st.items || []).slice().sort(function(a, b){ return (SLATE[b.team] ? 1 : 0) - (SLATE[a.team] ? 1 : 0); });
       var storyH = sec('story', 'Storylines', 'Tonight\u2019s players first, then the rest of the league.', items.slice(0, 5).map(function(it){
-        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
+        return '<div class="hit">' + nm(it.player, it.team) + stLine(it.player) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
       }).join(''));
       // Trending
       var tr = (B.hot || []).map(function(h){
@@ -158,7 +158,7 @@
     } else {
       var st2 = q.storylines || {};
       html += sec('story', 'Storylines', 'The biggest news around the league.', (st2.items || []).slice(0, 8).map(function(it){
-        return '<div class="hit">' + nm(it.player, it.team) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
+        return '<div class="hit">' + nm(it.player, it.team) + stLine(it.player) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
       }).join(''));
     }
     // Last night
@@ -616,6 +616,22 @@
     s = String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[ .]+(iii|ii|iv|jr|sr)\.?$/, '');
     return s.replace(/[^a-z]/g, '');
   }
+  // Storylines stat line: salary (tonight's, or his most recent with its date), DK points a game
+  // this season, and DK points a game over his last 3.
+  function stLine(name){
+    var k = nkey(name), bits = [], pj = null, i;
+    if (PJ) for (i = 0; i < PJ.players.length; i++){ var x = PJ.players[i]; if (nkey(x.player) === k && SLATE[x.team]){ pj = x; break; } }
+    if (pj && pj.salary) bits.push(money(pj.salary) + ' tonight');
+    else {
+      var g = glRows(name);
+      for (i = 0; i < g.length; i++) if (g[i][16]){ bits.push(money(g[i][16]) + ' on ' + (+g[i][0].slice(5, 7)) + '/' + (+g[i][0].slice(8, 10))); break; }
+    }
+    if (SEA) for (i = 0; i < SEA.players.length; i++){
+      var r = SEA.players[i];
+      if (nkey(r.player) === k){ bits.push(n1(r.dk) + ' DK a game'); if (r.l3_dk != null) bits.push(n1(r.l3_dk) + ' last 3'); break; }
+    }
+    return bits.length ? '<div class="st-line">' + bits.join(' \u00b7 ') + '</div>' : '';
+  }
   function glRows(name){
     if (!GLIDX){
       GLIDX = {k: {}, last: {}};
@@ -866,7 +882,7 @@
       var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has);
       var tds = NCOLS.map(function(c){
         var key = c[0];
-        if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + '</td>';
+        if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + (p.why ? '<div class="nr-why">' + esc(p.why) + '</div>' : '') + '</td>';
         if (key === 'team') return '<td class="c-team">' + tm(p.team, true) + '</td>';
         if (key === 'opp') return '<td class="c-opp">' + (p.opp ? tm(p.opp, true) : '') + '</td>';
         if (key === 'pos') return '<td class="c-pos">' + esc(p.pos) + '</td>';
@@ -883,6 +899,7 @@
         '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 Sal ' + nFmt(p, 'sal') + '</div>' +
         '<div class="pjc-nums">' + box('dk', 'DK') + box('proj', 'Proj') + box('diff', '+/\u2212') + '<div class="pjc-n"' + (nHeat(all, 'min', p.min) ? ' style="' + nHeat(all, 'min', p.min) + '"' : '') + '><span>Min</span>' + (p.min == null ? '\u2013' : Math.round(p.min)) + '/' + nFmt(p, 'pmin') + '</div>' + box('val', 'Val') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['tpm','3pm'],['to','to']].map(function(x){ return '<b>' + nFmt(p, x[0]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
+        (p.why ? '<div class="nr-why">' + esc(p.why) + '</div>' : '') +
         (open ? noteHtml(noteBits(p.player), p.player) : '') + '</div>';
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
     $('r4p-nlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
@@ -1689,9 +1706,10 @@
   $('r4p-ocsv').addEventListener('click', optCsv);
   $('r4p-oq').addEventListener('input', optPool);
   ['r4p-sq','r4p-steam','r4p-spos'].forEach(function(id){ $(id).addEventListener(id === 'r4p-sq' ? 'input' : 'change', research); });
-  fetchFirst(GLSOURCES, false).then(function(d){ GL = d || {}; GLIDX = null; proj(); research(); optPool(); }).catch(function(){});
+  fetchFirst(GLSOURCES, false).then(function(d){ GL = d || {}; GLIDX = null; proj(); research(); optPool(); if (db) quick(); }).catch(function(){});
   fetchFirst(RSOURCES, false).then(function(d){
     SEA = d;
+    if (db) quick();
     var dd = d.through ? new Date(d.through + 'T12:00:00') : null;
     var thru = dd && !isNaN(dd) ? dd.toLocaleDateString('en-US', {month:'short', day:'numeric'}) : '';
     $('r4p-rsub').textContent = 'We watch ball. We know ball. Season stats through ' + thru + ' \u00b7 ' + d.nights + (d.nights === 1 ? ' night' : ' nights') + ' of games \u00b7 ' + d.players.length + ' players.';

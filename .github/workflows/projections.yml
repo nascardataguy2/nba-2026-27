@@ -64,6 +64,7 @@ jobs:
           python3 scripts/timelines.py || echo "timelines failed"
           python3 scripts/blowouts.py || echo "blowout notes failed"
           python3 scripts/wowy.py || echo "wowy failed"
+          python3 scripts/night_why.py || echo "last night why lines failed"
       - name: Projections and database
         run: |
           python3 scripts/official_injuries.py || echo "official injuries failed"
