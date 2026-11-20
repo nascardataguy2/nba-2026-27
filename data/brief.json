@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updated": "6:46 PM ET",
+ "updated": "6:49 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:19 AM",
@@ -90,12 +90,7 @@
        "min": 29.0
       }
      ],
-     "q": [
-      {
-       "player": "Peyton Watson",
-       "min": 24.6
-      }
-     ]
+     "q": []
     }
    },
    "key": "Evan Mobley and Jaylon Tyson are out, so Donovan Mitchell and Jarrett Allen and Mario Hezonja should play more than usual."
@@ -252,12 +247,7 @@
        "min": 14.3
       }
      ],
-     "q": [
-      {
-       "player": "Trey Murphy",
-       "min": 32.0
-      }
-     ]
+     "q": []
     },
     "OKC": {
      "out": [
@@ -365,6 +355,46 @@
  ],
  "changed": [
   {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Gastrointestinal Illness",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Noa Essengue",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "-",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Low Back Contusion",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "T.J. McConnell",
+   "team": "IND",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Hamstring Strain",
+   "time": "6:49 PM"
+  },
+  {
    "player": "Alex Caruso",
    "team": "OKC",
    "status": "Out",
@@ -403,22 +433,6 @@
    "was": "Doubtful",
    "why": "",
    "time": "4:42 PM"
-  },
-  {
-   "player": "Jalen Smith",
-   "team": "CHI",
-   "status": "Questionable",
-   "was": "",
-   "why": "Gastrointestinal Illness",
-   "time": "12:42 PM"
-  },
-  {
-   "player": "Ronald Holland II",
-   "team": "DET",
-   "status": "Doubtful",
-   "was": "Out",
-   "why": "",
-   "time": "12:42 PM"
   }
  ],
  "chg": [
@@ -442,6 +456,69 @@
    ],
    "time": "6:19 PM",
    "size": 32.5
+  },
+  {
+   "key": "Jalen Smith",
+   "team": "CHI",
+   "head": "Jalen Smith OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Zach Collins",
+     "salary": 3800,
+     "much": "+14.3 DK without him (1 game)"
+    },
+    {
+     "player": "Patrick Williams",
+     "salary": 3500,
+     "much": "+14.0 DK without him (1 game)"
+    }
+   ],
+   "time": "6:49 PM",
+   "size": 30.8
+  },
+  {
+   "key": "NOP",
+   "team": "NOP",
+   "head": "III CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Jordan Poole",
+     "salary": 4600,
+     "much": "+6.7 DK without III"
+    },
+    {
+     "player": "Saddiq Bey",
+     "salary": 6700,
+     "much": "+5.7 DK without III"
+    }
+   ],
+   "time": "6:49 PM",
+   "size": 29.6
+  },
+  {
+   "key": "CLE",
+   "team": "CLE",
+   "head": "Watson CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Mario Hezonja",
+     "salary": 4800,
+     "much": "+15.3 DK without Watson"
+    },
+    {
+     "player": "Tyrese Proctor",
+     "salary": 5900,
+     "much": "+7.3 DK without Watson"
+    }
+   ],
+   "time": "6:49 PM",
+   "size": 24.0
   },
   {
    "key": "Precious Achiuwa",
@@ -505,27 +582,6 @@
    ],
    "time": "5:19 PM",
    "size": 18.3
-  },
-  {
-   "key": "Jalen Smith",
-   "team": "CHI",
-   "head": "Jalen Smith QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Zach Collins",
-     "salary": 3800,
-     "much": "+14.3 DK without him (1 game)"
-    },
-    {
-     "player": "Patrick Williams",
-     "salary": 3500,
-     "much": "+14.0 DK without him (1 game)"
-    }
-   ],
-   "time": "12:42 PM",
-   "size": 15.4
   },
   {
    "key": "Ronald Holland II",
@@ -850,7 +906,7 @@
     {
      "player": "Jalen Smith",
      "min": 27.0,
-     "note": "Jalen Smith was listed as questionable for the 11/20 game against Washington with an illness, and the projections carry him as a Q tag. The show said he stays in the player pool until he is downgraded, and that Nicolas Claxton becomes a much better play if Smith sits.",
+     "note": "Jalen Smith was moved from questionable to out for tonight (gastrointestinal illness) on the NBA's 06:45 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     },
     {
@@ -1109,8 +1165,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_06_30PM.pdf",
+  "report": "06:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_06_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1329,62 +1385,6 @@
    },
    {
     "last": {
-     "date": "2026-11-16",
-     "dk": 20.5,
-     "min": 22,
-     "opp": "CHI",
-     "ha": "vs",
-     "res": "W",
-     "score": "126-115"
-    },
-    "game": "IND at CLE",
-    "time": "2026-11-21T00:30Z",
-    "team": "CLE",
-    "player": "Peyton Watson",
-    "status": "Questionable",
-    "reason": "Low Back Contusion",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 5500,
-    "min": 27.3,
-    "benefits": [
-     {
-      "player": "Mario Hezonja",
-      "salary": 4800,
-      "why": "started 2 of 4",
-      "much": "+15.3 DK without him (4 games)",
-      "score": 15.3,
-      "min": 21.4,
-      "dk": 22.2,
-      "avg": 20.4
-     },
-     {
-      "player": "Tyrese Proctor",
-      "salary": 5900,
-      "why": "started 3 of 4",
-      "much": "+7.3 DK without him (4 games)",
-      "score": 7.3,
-      "min": 25.3,
-      "dk": 25.0,
-      "avg": 19.9
-     },
-     {
-      "player": "Craig Porter Jr.",
-      "salary": 4000,
-      "why": "16 minutes, up from 10",
-      "much": "+5.8 DK without him (4 games)",
-      "score": 5.8,
-      "min": 14.0,
-      "dk": 11.4,
-      "avg": 9.2
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-17",
      "dk": 43.8,
      "min": 38,
@@ -1405,31 +1405,6 @@
     "changed_at": "",
     "salary": 10000,
     "min": 40.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 27.0,
-     "min": 18,
-     "opp": "HOU",
-     "ha": "vs",
-     "res": "L",
-     "score": "119-104"
-    },
-    "game": "IND at CLE",
-    "time": "2026-11-21T00:30Z",
-    "team": "IND",
-    "player": "T.J. McConnell",
-    "status": "Probable",
-    "reason": "Right Hamstring Strain",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "",
-    "salary": 4400,
-    "min": 18.0,
     "benefits": [],
     "estimate": false
    },
@@ -1460,6 +1435,56 @@
    },
    {
     "last": {
+     "date": "2026-11-16",
+     "dk": 20.5,
+     "min": 22,
+     "opp": "CHI",
+     "ha": "vs",
+     "res": "W",
+     "score": "126-115"
+    },
+    "game": "IND at CLE",
+    "time": "2026-11-21T00:30Z",
+    "team": "CLE",
+    "player": "Peyton Watson",
+    "status": "Available",
+    "reason": "Low Back Contusion",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:49 PM",
+    "salary": 5500,
+    "min": 27.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 27.0,
+     "min": 18,
+     "opp": "HOU",
+     "ha": "vs",
+     "res": "L",
+     "score": "119-104"
+    },
+    "game": "IND at CLE",
+    "time": "2026-11-21T00:30Z",
+    "team": "IND",
+    "player": "T.J. McConnell",
+    "status": "Available",
+    "reason": "Right Hamstring Strain",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "6:49 PM",
+    "salary": 4400,
+    "min": 18.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-18",
      "dk": 23.8,
      "min": 18,
@@ -1481,6 +1506,62 @@
     "salary": 3300,
     "min": 13.3,
     "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 28.0,
+     "min": 21,
+     "opp": "BKN",
+     "ha": "@",
+     "res": "W",
+     "score": "137-107"
+    },
+    "game": "WAS at CHI",
+    "time": "2026-11-21T01:00Z",
+    "team": "CHI",
+    "player": "Jalen Smith",
+    "status": "Out",
+    "reason": "Gastrointestinal Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:49 PM",
+    "salary": 6100,
+    "min": 27.0,
+    "benefits": [
+     {
+      "player": "Zach Collins",
+      "salary": 3800,
+      "why": "started that game",
+      "much": "+14.3 DK without him (1 game)",
+      "score": 14.3,
+      "min": 16.1,
+      "dk": 13.9,
+      "avg": 7.8
+     },
+     {
+      "player": "Patrick Williams",
+      "salary": 3500,
+      "why": "26 minutes, up from 20",
+      "much": "+14.0 DK without him (1 game)",
+      "score": 14.0,
+      "min": 21.1,
+      "dk": 16.2,
+      "avg": 16.2
+     },
+     {
+      "player": "Buddy Hield",
+      "salary": 3600,
+      "why": "20 minutes, up from 15",
+      "much": "+13.2 DK without him (1 game)",
+      "score": 13.2,
+      "min": 16.9,
+      "dk": 16.1,
+      "avg": 14.9
+     }
+    ],
     "estimate": false
    },
    {
@@ -1578,102 +1659,15 @@
     "time": "2026-11-21T01:00Z",
     "team": "NOP",
     "player": "Trey Murphy III",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:49 PM",
     "salary": 6900,
     "min": 34.7,
-    "benefits": [
-     {
-      "player": "Jordan Poole",
-      "salary": 4600,
-      "why": "27 minutes, up from 16",
-      "much": "+6.7 DK without him (6 games)",
-      "score": 6.7,
-      "min": 24.0,
-      "dk": 21.9,
-      "avg": 20.5
-     },
-     {
-      "player": "Saddiq Bey",
-      "salary": 6700,
-      "why": "started 5 of 7",
-      "much": "+5.7 DK without him (7 games)",
-      "score": 5.7,
-      "min": 35.2,
-      "dk": 32.4,
-      "avg": 28.8
-     },
-     {
-      "player": "Herbert Jones",
-      "salary": 4200,
-      "why": "started 7 of 7",
-      "much": "+5.3 DK without him (7 games)",
-      "score": 5.3,
-      "min": 25.8,
-      "dk": 15.1,
-      "avg": 14.6
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 28.0,
-     "min": 21,
-     "opp": "BKN",
-     "ha": "@",
-     "res": "W",
-     "score": "137-107"
-    },
-    "game": "WAS at CHI",
-    "time": "2026-11-21T01:00Z",
-    "team": "CHI",
-    "player": "Jalen Smith",
-    "status": "Questionable",
-    "reason": "Gastrointestinal Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:42 PM",
-    "salary": 6100,
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Zach Collins",
-      "salary": 3800,
-      "why": "started that game",
-      "much": "+14.3 DK without him (1 game)",
-      "score": 14.3,
-      "min": 16.1,
-      "dk": 13.9,
-      "avg": 7.8
-     },
-     {
-      "player": "Patrick Williams",
-      "salary": 3500,
-      "why": "26 minutes, up from 20",
-      "much": "+14.0 DK without him (1 game)",
-      "score": 14.0,
-      "min": 21.1,
-      "dk": 16.2,
-      "avg": 16.2
-     },
-     {
-      "player": "Buddy Hield",
-      "salary": 3600,
-      "why": "20 minutes, up from 15",
-      "much": "+13.2 DK without him (1 game)",
-      "score": 13.2,
-      "min": 16.9,
-      "dk": 16.1,
-      "avg": 14.9
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1690,12 +1684,12 @@
     "time": "2026-11-21T01:00Z",
     "team": "CHI",
     "player": "Noa Essengue",
-    "status": "Probable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:49 PM",
     "salary": 3300,
     "min": 12.0,
     "benefits": [],
