@@ -81,8 +81,8 @@
     function lastQ(L){
       var lastH = '';
       if (L.date){
-          var lt = (L.top || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + ' <span class="bs-n">' + d1(x.dk) + ' DK in ' + Math.round(x.min) + ' min (' + x.pts + ' pts, ' + x.reb + ' reb, ' + x.ast + ' ast)</span></div>'; }).join('');
-          var ls = (L.surprise || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>He played ' + Math.round(x.min) + ' minutes; we projected ' + d1(x.proj) + '.</p></div>'; }).join('');
+          var lt = (L.top || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + ' <span class="bs-n">' + d1(x.dk) + ' DK in ' + Math.round(x.min) + ' min (' + x.pts + ' pts, ' + x.reb + ' reb, ' + x.ast + ' ast)</span>' + (x.why ? '<p class="tr-why">' + esc(x.why) + '</p>' : '') + '</div>'; }).join('');
+          var ls = (L.surprise || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>He played ' + Math.round(x.min) + ' minutes; we projected ' + d1(x.proj) + '.</p>' + (x.why && !/^He played \d+ minutes/.test(x.why) ? '<p class="tr-why">' + esc(x.why) + '</p>' : '') + '</div>'; }).join('');
           var li = (L.injuries || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>' + esc(x.text) + '</p></div>'; }).join('');
           lastH = sec('last', 'Last Night', esc(day(L.date)) + '. More on each player in his notes.',
             (lt ? '<h3 class="bf-h">Top DK games</h3>' + lt : '') + (li ? '<h3 class="bf-h">Injuries</h3>' + li : '') + (ls ? '<h3 class="bf-h">Minutes surprises</h3>' + ls : ''));

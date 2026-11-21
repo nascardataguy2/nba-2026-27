@@ -80,7 +80,7 @@ def recaps(day):
 
 def first_sentence(t, cap=230):
     t = t.strip()
-    m = re.match(r"(.+?[.!?])(\s|$)", t)
+    m = re.match(r"(.+?(?<!Jan)(?<!Feb)(?<!Mar)(?<!Apr)(?<!Jun)(?<!Jul)(?<!Aug)(?<!Sep)(?<!Oct)(?<!Nov)(?<!Dec)(?<!Jr)(?<!Sr)(?<!St)(?<!Mr)(?<!vs)(?<!No)[.!?])(\s|$)", t)
     s = m.group(1) if m else t
     if len(s) > cap:
         s = s[:cap].rsplit(" ", 1)[0].rstrip(",;") + "."

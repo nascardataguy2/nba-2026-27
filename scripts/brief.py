@@ -596,7 +596,7 @@ def main():
     week = str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=7))
 
     def first_sentence(t, cap=230):
-        m = re.match(r"(.+?[.!?])(\s|$)", t.strip())
+        m = re.match(r"(.+?(?<!Jan)(?<!Feb)(?<!Mar)(?<!Apr)(?<!Jun)(?<!Jul)(?<!Aug)(?<!Sep)(?<!Oct)(?<!Nov)(?<!Dec)(?<!Jr)(?<!Sr)(?<!St)(?<!Mr)(?<!vs)(?<!No)[.!?])(\s|$)", t.strip())
         out = m.group(1) if m else t.strip()
         return out if len(out) <= cap else out[:cap].rsplit(" ", 1)[0].rstrip(",;") + "."
 
@@ -653,8 +653,15 @@ def main():
         hurt = re.compile(r"\b(left (the game|the floor|early|in the|after|with|on [A-Z]|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)|leaving|exited|did not return|hurt his|got hurt|was hurt|went down|helped off|tweaked|rolled his)", re.I)
         inj = [{"player": e["player"], "team": e["team"], "text": e["text"]} for e in plog
                if e["date"] in (prev, day) and e["kind"] == "injury" and hurt.search(e["text"])]
-        last = {"date": prev, "top": [{"player": x["player"], "team": x["team"], "dk": x["dk"], "min": x["min"],
-                                       "pts": x["pts"], "reb": x["reb"], "ast": x["ast"]} for x in top],
+        # Why lines from the Last Night tab (shows first, then research); night_why.py writes them.
+        nw = load_json(os.path.join(D, "nights.json"), {}).get("nights", {}).get(prev, {})
+        why = {norm(r["player"]): r["why"] for r in nw.get("players", []) if r.get("why")}
+        for x in surprise:
+            if why.get(norm(x["player"])):
+                x["why"] = why[norm(x["player"])]
+        last = {"date": prev, "top": [dict({"player": x["player"], "team": x["team"], "dk": x["dk"], "min": x["min"],
+                                       "pts": x["pts"], "reb": x["reb"], "ast": x["ast"]},
+                                      **({"why": why[norm(x["player"])]} if why.get(norm(x["player"])) else {})) for x in top],
                 "surprise": surprise[:4], "injuries": inj[:4]}
 
     # Season DK average per game played, shown next to each "who benefits" boost.
