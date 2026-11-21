@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "5:17 PM ET",
+ "updated": "5:33 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:41 AM",
@@ -12,11 +12,12 @@
    "slate": "main",
    "ou": 215.5,
    "fav": "NYK",
-   "line": 3.5,
-   "away_pts": 106.0,
-   "home_pts": 109.5,
+   "line": 1.5,
+   "away_pts": 107.0,
+   "home_pts": 108.5,
    "tags": [
-    "Lowest total"
+    "Lowest total",
+    "Close game"
    ],
    "teams": {
     "POR": {
@@ -34,12 +35,7 @@
        "min": 12.7
       }
      ],
-     "q": [
-      {
-       "player": "Deni Avdija",
-       "min": 33.2
-      }
-     ]
+     "q": []
     },
     "NYK": {
      "out": [
@@ -64,9 +60,9 @@
    "slate": "main",
    "ou": 230.5,
    "fav": "DAL",
-   "line": 5.5,
-   "away_pts": 112.5,
-   "home_pts": 118.0,
+   "line": 4.5,
+   "away_pts": 113.0,
+   "home_pts": 117.5,
    "tags": [
     "Highest total"
    ],
@@ -150,11 +146,11 @@
    "home": "SAS",
    "time": "2026-11-22T01:00Z",
    "slate": "main",
-   "ou": 227.5,
+   "ou": 228.5,
    "fav": "SAS",
-   "line": 18.5,
+   "line": 19.5,
    "away_pts": 104.5,
-   "home_pts": 123.0,
+   "home_pts": 124.0,
    "tags": [
     "Blowout risk",
     "NOP on a back-to-back"
@@ -195,6 +191,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Deni Avdija",
+   "team": "POR",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Foot Contusion",
+   "time": "5:33 PM"
+  },
   {
    "player": "Karl-Anthony Towns",
    "team": "NYK",
@@ -276,6 +280,27 @@
    ],
    "time": "5:18 PM",
    "size": 48.5
+  },
+  {
+   "key": "POR",
+   "team": "POR",
+   "head": "Avdija CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Jrue Holiday",
+     "salary": 6200,
+     "much": "+18.6 DK without Avdija"
+    },
+    {
+     "player": "Scoot Henderson",
+     "salary": 4700,
+     "much": "+16.7 DK without Avdija"
+    }
+   ],
+   "time": "5:33 PM",
+   "size": 43.7
   },
   {
    "key": "OG Anunoby",
@@ -511,6 +536,16 @@
    "lost": 45.3,
    "benefits": [
     {
+     "player": "Deni Avdija",
+     "salary": 9200,
+     "why": "more usage, 27 points (11/16)",
+     "much": "+7.2 DK without them (3 games)",
+     "score": 7.2,
+     "min": 33.2,
+     "dk": 44.1,
+     "avg": 43.7
+    },
+    {
      "player": "Jrue Holiday",
      "salary": 6200,
      "why": "29 minutes, up from 26",
@@ -728,21 +763,21 @@
   {
    "player": "Josh Hart",
    "team": "NYK",
-   "own": 35.9,
+   "own": 36.0,
    "dk": 31.6,
    "salary": 5200
   },
   {
    "player": "Max Strus",
    "team": "LAC",
-   "own": 33.4,
+   "own": 33.5,
    "dk": 23.4,
    "salary": 4700
   },
   {
    "player": "Kyrie Irving",
    "team": "DAL",
-   "own": 32.4,
+   "own": 32.3,
    "dk": 40.7,
    "salary": 7800
   }
@@ -765,7 +800,7 @@
   {
    "player": "Landry Shamet",
    "team": "NYK",
-   "own": 7.5,
+   "own": 7.6,
    "dk": 20.5,
    "salary": 3900
   }
@@ -870,8 +905,8 @@
   ]
  },
  "injuries": {
-  "report": "05:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_05_15PM.pdf",
+  "report": "05:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_05_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -995,46 +1030,15 @@
     "time": "2026-11-22T00:30Z",
     "team": "POR",
     "player": "Deni Avdija",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Left Foot Contusion",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "5:33 PM",
     "salary": 9200,
     "min": 33.3,
-    "benefits": [
-     {
-      "player": "Jrue Holiday",
-      "salary": 6200,
-      "why": "31 minutes, up from 26",
-      "much": "+18.6 DK without him (2 games)",
-      "score": 18.6,
-      "min": 28.0,
-      "dk": 27.7,
-      "avg": 27.8
-     },
-     {
-      "player": "Scoot Henderson",
-      "salary": 4700,
-      "why": "28 minutes, up from 22",
-      "much": "+16.7 DK without him (2 games)",
-      "score": 16.7,
-      "min": 25.1,
-      "dk": 18.3,
-      "avg": 15.8
-     },
-     {
-      "player": "Toumani Camara",
-      "salary": 5800,
-      "why": "35 minutes, up from 29",
-      "much": "+11.4 DK without him (2 games)",
-      "score": 11.4,
-      "min": 31.6,
-      "dk": 25.0,
-      "avg": 23.1
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1452,6 +1456,16 @@
     "salary": 3300,
     "min": 18.3,
     "benefits": [
+     {
+      "player": "Deni Avdija",
+      "salary": 9200,
+      "why": "same minutes, more production",
+      "much": "+6.3 DK without him (7 games)",
+      "score": 6.3,
+      "min": 33.2,
+      "dk": 44.1,
+      "avg": 43.7
+     },
      {
       "player": "Toumani Camara",
       "salary": 5800,
