@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "6:02 PM ET",
+ "updated": "6:17 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:41 AM",
@@ -191,6 +191,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Isaiah Evans",
+   "team": "MIN",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "6:18 PM"
+  },
   {
    "player": "Deni Avdija",
    "team": "POR",
@@ -763,21 +771,21 @@
   {
    "player": "Josh Hart",
    "team": "NYK",
-   "own": 35.0,
+   "own": 35.2,
    "dk": 31.6,
    "salary": 5200
   },
   {
    "player": "Naji Marshall",
    "team": "DAL",
-   "own": 31.1,
+   "own": 31.0,
    "dk": 26.4,
    "salary": 5100
   },
   {
    "player": "Cedric Coward",
    "team": "MEM",
-   "own": 30.6,
+   "own": 30.5,
    "dk": 40.8,
    "salary": 7000
   }
@@ -800,7 +808,7 @@
   {
    "player": "Terrence Shannon Jr.",
    "team": "MIN",
-   "own": 9.2,
+   "own": 8.9,
    "dk": 25.8,
    "salary": 4600
   }
@@ -905,8 +913,8 @@
   ]
  },
  "injuries": {
-  "report": "06:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_06_00PM.pdf",
+  "report": "06:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_06_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1335,31 +1343,6 @@
       "avg": 23.9
      }
     ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-16",
-     "dk": 0,
-     "min": 4,
-     "opp": "POR",
-     "ha": "vs",
-     "res": "W",
-     "score": "106-98"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MIN",
-    "player": "Isaiah Evans",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "1:54 PM",
-    "salary": 3000,
-    "min": 4.7,
-    "benefits": [],
     "estimate": false
    },
    {
@@ -1986,6 +1969,11 @@
    }
   ],
   "minor": [
+   {
+    "player": "Isaiah Evans",
+    "team": "MIN",
+    "status": "Available"
+   },
    {
     "player": "Shaedon Sharpe",
     "team": "POR",
