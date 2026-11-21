@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "4:43 PM ET",
+ "updated": "4:54 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:41 AM",
@@ -197,6 +197,14 @@
  ],
  "changed": [
   {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Left Calf Tightness",
+   "time": "4:54 PM"
+  },
+  {
    "player": "Ty Jerome",
    "team": "MEM",
    "status": "Available",
@@ -249,8 +257,8 @@
   {
    "key": "OG Anunoby",
    "team": "NYK",
-   "head": "OG Anunoby DOUBTFUL",
-   "st": "Doubtful",
+   "head": "OG Anunoby OUT",
+   "st": "Out",
    "act": "Play",
    "names": [
     {
@@ -264,7 +272,7 @@
      "much": "+9.2 DK projected vs. last 3"
     }
    ],
-   "time": "11:54 AM",
+   "time": "4:54 PM",
    "size": 29.9
   },
   {
@@ -445,7 +453,7 @@
     {
      "player": "OG Anunoby",
      "min": 38.7,
-     "note": "OG Anunoby was moved from questionable to doubtful for tonight (left calf tightness) on the NBA's 11:45 AM injury report. He had averaged 37 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "note": "OG Anunoby was moved from doubtful to out for tonight (left calf tightness) on the NBA's 04:45 PM injury report. He had averaged 37 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     }
    ],
@@ -712,14 +720,14 @@
   {
    "player": "Cedric Coward",
    "team": "MEM",
-   "own": 36.9,
+   "own": 37.0,
    "dk": 41.0,
    "salary": 7000
   },
   {
    "player": "Kyrie Irving",
    "team": "DAL",
-   "own": 32.9,
+   "own": 33.1,
    "dk": 40.5,
    "salary": 7800
   },
@@ -735,21 +743,21 @@
   {
    "player": "Terrence Shannon Jr.",
    "team": "MIN",
-   "own": 8.9,
+   "own": 8.8,
    "dk": 25.8,
    "salary": 4600
   },
   {
    "player": "Cam Spencer",
    "team": "MEM",
-   "own": 1.1,
+   "own": 1.0,
    "dk": 35.2,
    "salary": 6400
   },
   {
    "player": "Karl-Anthony Towns",
    "team": "NYK",
-   "own": 5.7,
+   "own": 5.6,
    "dk": 53.5,
    "salary": 9900
   }
@@ -854,35 +862,10 @@
   ]
  },
  "injuries": {
-  "report": "04:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_04_30PM.pdf",
+  "report": "04:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_04_45PM.pdf",
   "pending": [],
   "rows": [
-   {
-    "last": {
-     "date": "2026-11-17",
-     "dk": 2.5,
-     "min": 8,
-     "opp": "TOR",
-     "ha": "@",
-     "res": "W",
-     "score": "111-102"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "NYK",
-    "player": "Jordan Clarkson",
-    "status": "Out",
-    "reason": "Right Plantar Fasciitis",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": 3100,
-    "min": 8.0,
-    "benefits": [],
-    "estimate": false
-   },
    {
     "last": {
      "date": "2026-11-19",
@@ -897,12 +880,12 @@
     "time": "2026-11-22T00:30Z",
     "team": "NYK",
     "player": "OG Anunoby",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "Left Calf Tightness",
     "new": true,
-    "was": "Questionable",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "11:54 AM",
+    "changed_at": "4:54 PM",
     "salary": 6500,
     "min": 38.7,
     "benefits": [
@@ -927,6 +910,31 @@
       "avg": 15.7
      }
     ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-17",
+     "dk": 2.5,
+     "min": 8,
+     "opp": "TOR",
+     "ha": "@",
+     "res": "W",
+     "score": "111-102"
+    },
+    "game": "POR at NYK",
+    "time": "2026-11-22T00:30Z",
+    "team": "NYK",
+    "player": "Jordan Clarkson",
+    "status": "Out",
+    "reason": "Right Plantar Fasciitis",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 3100,
+    "min": 8.0,
+    "benefits": [],
     "estimate": false
    },
    {
