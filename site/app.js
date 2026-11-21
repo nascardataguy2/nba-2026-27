@@ -1552,11 +1552,39 @@
     sec.addEventListener('click', function(e){
       var h = e.target.closest ? e.target.closest('[data-lvk]') : null;
       if (h){ var k = h.getAttribute('data-lvk'); LV_SORT = {k:k, dir: LV_SORT.k === k ? -LV_SORT.dir : (k === 'name' || k === 'team' ? 1 : -1)}; $('r4p-lvsort').value = ''; lvRender(); return; }
+      var sb = e.target.closest ? e.target.closest('[data-lvss]') : null;
+      if (sb){ LV_SS = sb.getAttribute('data-lvss'); lvRender(); return; }
       var t = e.target.closest ? e.target.closest('[data-lvg]') : null;
       if (t){ var g = t.getAttribute('data-lvg'); $('r4p-lvgame').value = $('r4p-lvgame').value === g ? '' : g; lvRender(); }
     });
   }
-  var LV_ROWS = [], LV_SORT = {k:'dk', dir:-1}, LV_GAMES = [];
+  var LV_ROWS = [], LV_SORT = {k:'dk', dir:-1}, LV_GAMES = [], LV_SS = 'stars';
+  // Fire: on track to beat our projection by 12+ DK and 30%+. Snowflake: on track to miss it by 10+ DK and 30%+.
+  // Only after 8 minutes (or a final), so a hot or cold first few minutes does not flag him.
+  function lvFlag(r){
+    var vs = (r.pace != null && r.proj) ? r.pace - r.proj : null, ok = r.mins >= 8 || r.fin;
+    return (ok && vs != null && vs >= 12 && r.pace >= 1.3 * r.proj) ? ' <span title="Blowing away his projection">\ud83d\udd25</span>' :
+           (ok && vs != null && vs <= -10 && r.pace <= 0.7 * r.proj) ? ' <span title="Well short of his projection">\u2744\ufe0f</span>' : '';
+  }
+  // Live Stars & Scrubs: tonight's top scorers and the best DK per $1K of salary so far.
+  function lvSS(rows){
+    var card = function(r){
+      var s = r.s, opp = '', val = r.sal ? r.dk / (r.sal / 1000) : null;
+      var g = LV_GAMES.filter(function(x){ return x.id === r.gid; })[0];
+      var line = [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['t3','3pm'],['to','to']].map(function(x){ return '<b>' + s[x[0]] + '</b> ' + x[1]; }).join(' \u00b7 ');
+      var box = function(lbl, v, st){ return '<div class="ssc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + v + '</div>'; };
+      return '<div class="ssc lv-ssc"><div class="ssc-top"><div class="ssc-who"><span class="ssc-name">' + esc(r.name) + '</span>' + lvFlag(r) + '</div><div class="ssc-sal">' + (r.sal ? money(r.sal) : '') + '</div></div>' +
+        '<div class="ssc-game">' + tm(r.team) + ' \u00b7 ' + esc(g ? g.label : r.game) + ' \u00b7 ' + r.mins + ' min</div>' +
+        '<div class="ssc-nums">' + box('DK', n1(r.dk), lvHeat(r.diff)) + box('Proj', r.proj != null ? n1(r.proj) : '\u2013') + box('Value', val != null ? val.toFixed(1) + 'x' : '\u2013') +
+        box('On track', r.pace != null ? n1(r.pace) : '\u2013', r.pace != null && r.proj ? lvHeat(r.pace - r.proj) : '') + '</div>' +
+        '<div class="ssc-line">' + line + '</div></div>';
+    };
+    var stars = rows.slice().sort(function(a, b){ return b.dk - a.dk; }).slice(0, 8);
+    var scrubs = rows.filter(function(r){ return r.sal; }).sort(function(a, b){ return b.dk / b.sal - a.dk / a.sal || b.dk - a.dk; }).slice(0, 8);
+    return '<div class="lv-ssbtns"><button type="button" data-lvss="stars" class="' + (LV_SS === 'stars' ? 'on' : '') + '">Top Scores</button><button type="button" data-lvss="scrubs" class="' + (LV_SS === 'scrubs' ? 'on' : '') + '">Best Value</button></div>' +
+      '<div class="lv-ss show-' + LV_SS + '"><div class="lv-ss-col lv-ss-stars"><h3>Top Scores</h3><p class="sub">Most DK points tonight.</p>' + stars.map(card).join('') + '</div>' +
+      '<div class="lv-ss-col lv-ss-scrubs"><h3>Best Value</h3><p class="sub">Most DK points per $1K of salary tonight.</p>' + scrubs.map(card).join('') + '</div></div>';
+  }
   function lvVal(r, k){
     if (k === 'vs') return r.pace == null || r.proj == null ? null : r.pace - r.proj;
     return r[k];
@@ -1585,15 +1613,13 @@
       return d * (x - y) || b.dk - a.dk;
     });
     function th(key, label, cls){ return '<th' + (cls ? ' class="' + cls + '"' : '') + '><button type="button" class="th-sort' + (k === key ? ' on' : '') + '" data-lvk="' + key + '">' + label + (k === key ? (d < 0 ? ' \u2193' : ' \u2191') : '') + '</button></th>'; }
-    box.innerHTML = '<p class="count">' + rows.length + ' of ' + LV_ROWS.length + ' players</p><table class="lv-tbl"><thead><tr>' + th('name', 'Player') + th('team', 'Team') + '<th>Game</th>' + th('mins', 'Min', 'n') + '<th>Stat line</th>' +
+    box.innerHTML = lvSS(rows) + '<h3 class="lv-allh">All players</h3><p class="count">' + rows.length + ' of ' + LV_ROWS.length + ' players</p><table class="lv-tbl"><thead><tr>' + th('name', 'Player') + th('team', 'Team') + '<th>Game</th>' + th('mins', 'Min', 'n') + '<th>Stat line</th>' +
       th('dk', 'DK', 'n') + th('proj', 'Proj', 'n') + th('pace', 'On Track For', 'n') + th('own', 'Own%', 'n') + '</tr></thead><tbody>' +
       rows.map(function(r){
         var s = r.s, line = s.pts + ' pts, ' + s.reb + ' reb, ' + s.ast + ' ast' + (s.stl ? ', ' + s.stl + ' stl' : '') + (s.blk ? ', ' + s.blk + ' blk' : '') + (s.t3 ? ', ' + s.t3 + ' 3pm' : '') + (s.to ? ', ' + s.to + ' to' : '');
         // Fire: on track to beat our projection by 12+ DK and 30%+. Snowflake: on track to miss it by 10+ DK and 30%+.
         // Only after 8 minutes (or a final), so a hot or cold first few minutes does not flag him.
-        var vs = (r.pace != null && r.proj) ? r.pace - r.proj : null, ok = r.mins >= 8 || r.fin;
-        var flag = (ok && vs != null && vs >= 12 && r.pace >= 1.3 * r.proj) ? ' <span title="Blowing away his projection">\ud83d\udd25</span>' :
-                   (ok && vs != null && vs <= -10 && r.pace <= 0.7 * r.proj) ? ' <span title="Well short of his projection">\u2744\ufe0f</span>' : '';
+        var flag = lvFlag(r);
         return '<tr><td class="nowrap"><span class="who">' + esc(r.name) + '</span>' + flag + (r.sal ? ' <span class="bs-n">' + money(r.sal) + '</span>' : '') + '</td><td class="lv-team">' + tm(r.team) + '</td>' +
           '<td class="lv-game bs-n">' + esc(r.game) + '</td><td class="n lv-min">' + r.mins + '</td><td class="lv-line bs-n">' + esc(line) + '</td>' +
           '<td class="n lv-dk"><span class="lv-heat" style="' + lvHeat(r.diff) + '">' + n1(r.dk) + '</span></td><td class="n lv-proj">' + (r.proj != null ? n1(r.proj) : '\u2013') + '</td>' +

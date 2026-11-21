@@ -534,3 +534,18 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .nr-why{font-size:12.5px;line-height:1.35;color:var(--muted);font-weight:400;white-space:normal;margin-top:3px;max-width:340px}
 .pjc .nr-why{max-width:none;margin-top:6px}
 .st-line{font-size:13px;color:var(--muted);margin:2px 0 0;font-variant-numeric:tabular-nums}
+
+.lv-ss{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:6px 0 18px}
+.lv-ss-col h3,.lv-allh{font:700 22px/1.1 var(--head);text-transform:uppercase;color:var(--navy);margin:0}
+.lv-ss-col .sub{margin:2px 0 10px}
+.lv-ss-col .lv-ssc{margin-bottom:10px}
+.lv-ssbtns{display:none}
+.lv-allh{margin:8px 0 4px}
+@media (max-width:760px){
+ .lv-ss{grid-template-columns:1fr}
+ .lv-ss.show-stars .lv-ss-scrubs,.lv-ss.show-scrubs .lv-ss-stars{display:none}
+ .lv-ss-col h3{display:none}
+ .lv-ssbtns{display:flex;gap:8px;margin:4px 0 8px}
+ .lv-ssbtns button{flex:1;font:700 15px var(--head);text-transform:uppercase;letter-spacing:.04em;padding:9px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer}
+ .lv-ssbtns button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+}
