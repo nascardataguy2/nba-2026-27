@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updated": "8:47 PM ET",
+ "updated": "9:03 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:19 AM",
@@ -294,12 +294,7 @@
        "min": 19.3
       }
      ],
-     "q": [
-      {
-       "player": "De'Andre Hunter",
-       "min": 37.3
-      }
-     ]
+     "q": []
     },
     "LAL": {
      "out": [
@@ -334,26 +329,41 @@
        "min": 20.7
       }
      ],
-     "q": [
-      {
-       "player": "Alperen Sengun",
-       "min": 29.5
-      },
-      {
-       "player": "Steven Adams",
-       "min": 12.0
-      }
-     ]
+     "q": []
     },
     "DEN": {
      "out": [],
      "q": []
     }
    },
-   "key": "Nikola Jokic has the top projection in this game at 58.9 DK points."
+   "key": "Clint Capela is out, so Alperen Sengun should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "9:04 PM"
+  },
+  {
+   "player": "Alperen Sengun",
+   "team": "HOU",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Eye Corneal",
+   "time": "9:04 PM"
+  },
+  {
+   "player": "Steven Adams",
+   "team": "HOU",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "9:04 PM"
+  },
   {
    "player": "Ronald Holland II",
    "team": "DET",
@@ -409,33 +419,30 @@
    "was": "Probable",
    "why": "Right Hamstring Strain",
    "time": "6:49 PM"
-  },
-  {
-   "player": "Alex Caruso",
-   "team": "OKC",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Right Hip Soreness",
-   "time": "6:19 PM"
-  },
-  {
-   "player": "Braden Smith",
-   "team": "IND",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Right Ankle Sprain",
-   "time": "6:19 PM"
-  },
-  {
-   "player": "Andrew Nembhard",
-   "team": "IND",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Left Hip Sprain",
-   "time": "6:19 PM"
   }
  ],
  "chg": [
+  {
+   "key": "HOU",
+   "team": "HOU",
+   "head": "Sengun CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Fred VanVleet",
+     "salary": 6200,
+     "much": "+11.6 DK without Sengun"
+    },
+    {
+     "player": "Bogdan Bogdanovic",
+     "salary": 3300,
+     "much": "+9.9 DK without Sengun"
+    }
+   ],
+   "time": "9:04 PM",
+   "size": 47.2
+  },
   {
    "key": "IND",
    "team": "IND",
@@ -521,6 +528,27 @@
    "size": 24.0
   },
   {
+   "key": "SAC",
+   "team": "SAC",
+   "head": "Hunter CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Malik Monk",
+     "salary": 4000,
+     "much": "+13.4 DK without Hunter"
+    },
+    {
+     "player": "Emanuel Sharp",
+     "salary": 3600,
+     "much": "+6.7 DK without Hunter"
+    }
+   ],
+   "time": "9:04 PM",
+   "size": 22.6
+  },
+  {
    "key": "Precious Achiuwa",
    "team": "SAC",
    "head": "Precious Achiuwa OUT",
@@ -528,14 +556,14 @@
    "act": "Play",
    "names": [
     {
+     "player": "De'Andre Hunter",
+     "salary": 5700,
+     "much": "+16.5 DK without him (1 game)"
+    },
+    {
      "player": "Malik Monk",
      "salary": 4000,
      "much": "+10.7 DK without him (2 games)"
-    },
-    {
-     "player": "Alex Karaban",
-     "salary": 3200,
-     "much": "+7.0 DK without him (1 game)"
     }
    ],
    "time": "4:42 PM",
@@ -1044,7 +1072,7 @@
   {
    "player": "Quentin Grimes",
    "team": "LAL",
-   "own": 38.7,
+   "own": 39.4,
    "dk": 32.3,
    "salary": 6000
   },
@@ -1065,7 +1093,7 @@
   {
    "player": "Naz Reid",
    "team": "CHA",
-   "own": 35.6,
+   "own": 35.5,
    "dk": 45.9,
    "salary": 7500
   }
@@ -1088,7 +1116,7 @@
   {
    "player": "Ausar Thompson",
    "team": "DET",
-   "own": 1.7,
+   "own": 1.1,
    "dk": 36.2,
    "salary": 7000
   }
@@ -1165,8 +1193,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "08:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_08_45PM.pdf",
+  "report": "09:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_09_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1719,6 +1747,16 @@
     "min": 19.3,
     "benefits": [
      {
+      "player": "De'Andre Hunter",
+      "salary": 5700,
+      "why": "42 minutes, up from 32",
+      "much": "+16.5 DK without him (1 game)",
+      "score": 16.5,
+      "min": 37.3,
+      "dk": 27.8,
+      "avg": 22.6
+     },
+     {
       "player": "Malik Monk",
       "salary": 4000,
       "why": "started 1 of 2",
@@ -1755,36 +1793,15 @@
     "time": "2026-11-21T03:00Z",
     "team": "SAC",
     "player": "De'Andre Hunter",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Available",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "9:04 PM",
     "salary": 5700,
     "min": 37.0,
-    "benefits": [
-     {
-      "player": "Malik Monk",
-      "salary": 4000,
-      "why": "started 1 of 2",
-      "much": "+13.4 DK without him (2 games)",
-      "score": 13.4,
-      "min": 22.9,
-      "dk": 22.5,
-      "avg": 16.6
-     },
-     {
-      "player": "Emanuel Sharp",
-      "salary": 3600,
-      "why": "26 minutes, up from 16",
-      "much": "+6.7 DK without him (2 games)",
-      "score": 6.7,
-      "min": 14.6,
-      "dk": 8.9,
-      "avg": 10.1
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1801,46 +1818,15 @@
     "time": "2026-11-21T03:00Z",
     "team": "HOU",
     "player": "Alperen Sengun",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Left Eye Corneal",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "9:04 PM",
     "salary": 9200,
     "min": 24.0,
-    "benefits": [
-     {
-      "player": "Fred VanVleet",
-      "salary": 6200,
-      "why": "same minutes, more production",
-      "much": "+11.6 DK without him (2 games)",
-      "score": 11.6,
-      "min": 28.5,
-      "dk": 27.0,
-      "avg": 29.3
-     },
-     {
-      "player": "Bogdan Bogdanovic",
-      "salary": 3300,
-      "why": "same minutes, more production",
-      "much": "+9.9 DK without him (2 games)",
-      "score": 9.9,
-      "min": 13.4,
-      "dk": 9.9,
-      "avg": 9.7
-     },
-     {
-      "player": "Tari Eason",
-      "salary": 5100,
-      "why": "started 1 of 2",
-      "much": "+5.8 DK without him (2 games)",
-      "score": 5.8,
-      "min": 24.4,
-      "dk": 23.0,
-      "avg": 24.2
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1857,26 +1843,15 @@
     "time": "2026-11-21T03:00Z",
     "team": "HOU",
     "player": "Steven Adams",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "9:04 PM",
     "salary": 4100,
     "min": 12.0,
-    "benefits": [
-     {
-      "player": "Jabari Smith",
-      "salary": 6900,
-      "why": "34 minutes, up from 29",
-      "much": "+6.5 DK without him (13 games)",
-      "score": 6.5,
-      "min": 30.7,
-      "dk": 27.5,
-      "avg": 30.9
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -3104,7 +3079,18 @@
     "changed_at": "",
     "salary": 3900,
     "min": 20.7,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Alperen Sengun",
+      "salary": 9200,
+      "why": "Show: more center minutes, 35-37 expected (11/16)",
+      "much": "+9.1 DK projected vs. last 3",
+      "score": 9.066666666666663,
+      "min": 29.5,
+      "dk": 41.4,
+      "avg": 47.2
+     }
+    ],
     "estimate": false
    }
   ],
