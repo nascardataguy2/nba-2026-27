@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "5:02 PM ET",
+ "updated": "5:17 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:41 AM",
@@ -46,17 +46,16 @@
       {
        "player": "OG Anunoby",
        "min": 38.7
-      }
-     ],
-     "q": [
+      },
       {
        "player": "Karl-Anthony Towns",
-       "min": 37.6
+       "min": 37.3
       }
-     ]
+     ],
+     "q": []
     }
    },
-   "key": "Ja Morant and Chris Youngblood are out, so Jrue Holiday should play more than usual."
+   "key": "OG Anunoby and Karl-Anthony Towns are out, so Josh Hart and Andre Drummond should play more than usual."
   },
   {
    "away": "LAC",
@@ -197,6 +196,14 @@
  ],
  "changed": [
   {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "5:18 PM"
+  },
+  {
    "player": "OG Anunoby",
    "team": "NYK",
    "status": "Out",
@@ -255,6 +262,22 @@
  ],
  "chg": [
   {
+   "key": "Karl-Anthony Towns",
+   "team": "NYK",
+   "head": "Karl-Anthony Towns OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Andre Drummond",
+     "salary": 3800,
+     "much": "+9.9 DK projected vs. last 3"
+    }
+   ],
+   "time": "5:18 PM",
+   "size": 48.5
+  },
+  {
    "key": "OG Anunoby",
    "team": "NYK",
    "head": "OG Anunoby OUT",
@@ -264,12 +287,12 @@
     {
      "player": "Josh Hart",
      "salary": 5200,
-     "much": "+10.0 DK projected vs. last 3"
+     "much": "+14.2 DK projected vs. last 3"
     },
     {
      "player": "Andre Drummond",
      "salary": 3800,
-     "much": "+9.2 DK projected vs. last 3"
+     "much": "+9.9 DK projected vs. last 3"
     }
    ],
    "time": "4:54 PM",
@@ -306,35 +329,56 @@
     {
      "player": "Daniel Gafford",
      "salary": 4700,
-     "much": "+6.1 DK projected vs. last 3"
+     "much": "+6.0 DK projected vs. last 3"
     }
    ],
    "time": "2:39 PM",
    "size": 28.0
-  },
-  {
-   "key": "Karl-Anthony Towns",
-   "team": "NYK",
-   "head": "Karl-Anthony Towns QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Andre Drummond",
-     "salary": 3800,
-     "much": "about +15.8 DK if he sits (estimate)"
-    },
-    {
-     "player": "Landry Shamet",
-     "salary": 3900,
-     "much": "about +3.6 DK if he sits (estimate)"
-    }
-   ],
-   "time": "11:54 AM",
-   "size": 24.2
   }
  ],
  "sits": [
+  {
+   "team": "NYK",
+   "outs": [
+    {
+     "player": "OG Anunoby",
+     "min": 38.7,
+     "note": "OG Anunoby was moved from doubtful to out for tonight (left calf tightness) on the NBA's 04:45 PM injury report. He had averaged 37 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
+    {
+     "player": "Karl-Anthony Towns",
+     "min": 37.3,
+     "note": "Karl-Anthony Towns was moved from questionable to out for tonight (illness) on the NBA's 05:15 PM injury report. He had averaged 36 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 76.0,
+   "benefits": [
+    {
+     "player": "Josh Hart",
+     "salary": 5200,
+     "why": "subs in for them 21 of 136 times",
+     "much": "+14.2 DK projected vs. last 3",
+     "score": 14.183333333333334,
+     "min": 36.0,
+     "dk": 31.6,
+     "avg": 23.3
+    },
+    {
+     "player": "Andre Drummond",
+     "salary": 3800,
+     "why": "subs in for them 40 of 136 times",
+     "much": "+9.9 DK projected vs. last 3",
+     "score": 9.95,
+     "min": 16.0,
+     "dk": 19.7,
+     "avg": 15.7
+    }
+   ],
+   "split_of": []
+  },
   {
    "team": "NOP",
    "outs": [
@@ -367,7 +411,7 @@
      "much": "+12.0 DK without them (4 games)",
      "score": 12.0,
      "min": 37.5,
-     "dk": 34.7,
+     "dk": 35.2,
      "avg": 29.3
     },
     {
@@ -377,7 +421,7 @@
      "much": "+11.3 DK without them (4 games)",
      "score": 11.3,
      "min": 25.9,
-     "dk": 23.1,
+     "dk": 23.5,
      "avg": 19.4
     },
     {
@@ -387,7 +431,7 @@
      "much": "+7.1 DK without them (4 games)",
      "score": 7.1,
      "min": 31.9,
-     "dk": 33.5,
+     "dk": 33.7,
      "avg": 32.5
     }
    ],
@@ -429,7 +473,7 @@
      "much": "+8.6 DK without them (7 games)",
      "score": 8.6,
      "min": 32.9,
-     "dk": 47.7,
+     "dk": 47.6,
      "avg": 39.3
     },
     {
@@ -446,42 +490,6 @@
    "split_of": [
     "Javon Small"
    ]
-  },
-  {
-   "team": "NYK",
-   "outs": [
-    {
-     "player": "OG Anunoby",
-     "min": 38.7,
-     "note": "OG Anunoby was moved from doubtful to out for tonight (left calf tightness) on the NBA's 04:45 PM injury report. He had averaged 37 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 38.7,
-   "benefits": [
-    {
-     "player": "Josh Hart",
-     "salary": 5200,
-     "why": "subs in for him 12 of 63 times",
-     "much": "+10.0 DK projected vs. last 3",
-     "score": 9.98333333333333,
-     "min": 32.8,
-     "dk": 27.4,
-     "avg": 23.3
-    },
-    {
-     "player": "Andre Drummond",
-     "salary": 3800,
-     "why": "subs in for him 14 of 63 times",
-     "much": "+9.2 DK projected vs. last 3",
-     "score": 9.25,
-     "min": 16.0,
-     "dk": 19.0,
-     "avg": 15.7
-    }
-   ],
-   "split_of": []
   },
   {
    "team": "POR",
@@ -509,7 +517,7 @@
      "much": "+6.9 DK without them (5 games)",
      "score": 6.9,
      "min": 28.0,
-     "dk": 27.4,
+     "dk": 27.7,
      "avg": 27.8
     }
    ],
@@ -548,7 +556,7 @@
      "much": "+9.9 DK without him (12 games)",
      "score": 9.9,
      "min": 33.6,
-     "dk": 35.0,
+     "dk": 34.9,
      "avg": 32.1
     },
     {
@@ -558,7 +566,7 @@
      "much": "+6.8 DK without him (12 games)",
      "score": 6.8,
      "min": 29.8,
-     "dk": 39.7,
+     "dk": 39.8,
      "avg": 35.1
     }
    ],
@@ -586,7 +594,7 @@
      "much": "+20.3 DK without him (1 game)",
      "score": 20.3,
      "min": 32.5,
-     "dk": 39.6,
+     "dk": 39.5,
      "avg": 34.0
     },
     {
@@ -606,7 +614,7 @@
      "much": "+6.9 DK without him (1 game)",
      "score": 6.9,
      "min": 29.8,
-     "dk": 25.6,
+     "dk": 25.8,
      "avg": 21.5
     }
    ],
@@ -711,55 +719,55 @@
  ],
  "chalk": [
   {
-   "player": "Josh Hart",
-   "team": "NYK",
-   "own": 38.0,
-   "dk": 27.4,
-   "salary": 5200
-  },
-  {
    "player": "Naji Marshall",
    "team": "DAL",
-   "own": 37.3,
-   "dk": 26.3,
+   "own": 38.0,
+   "dk": 26.4,
    "salary": 5100
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "own": 35.9,
+   "dk": 31.6,
+   "salary": 5200
   },
   {
    "player": "Max Strus",
    "team": "LAC",
-   "own": 35.2,
+   "own": 33.4,
    "dk": 23.4,
    "salary": 4700
   },
   {
    "player": "Kyrie Irving",
    "team": "DAL",
-   "own": 34.1,
-   "dk": 40.5,
+   "own": 32.4,
+   "dk": 40.7,
    "salary": 7800
   }
  ],
  "leverage": [
   {
-   "player": "Terrence Shannon Jr.",
-   "team": "MIN",
-   "own": 8.9,
-   "dk": 25.8,
-   "salary": 4600
+   "player": "Miles McBride",
+   "team": "NYK",
+   "own": 1.1,
+   "dk": 21.0,
+   "salary": 3300
   },
   {
    "player": "Cam Spencer",
    "team": "MEM",
-   "own": 1.0,
+   "own": 1.1,
    "dk": 35.2,
    "salary": 6400
   },
   {
-   "player": "Karl-Anthony Towns",
+   "player": "Landry Shamet",
    "team": "NYK",
-   "own": 6.9,
-   "dk": 54.4,
-   "salary": 9900
+   "own": 7.5,
+   "dk": 20.5,
+   "salary": 3900
   }
  ],
  "last": {
@@ -862,8 +870,8 @@
   ]
  },
  "injuries": {
-  "report": "05:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_05_00PM.pdf",
+  "report": "05:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_05_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -893,20 +901,56 @@
       "player": "Josh Hart",
       "salary": 5200,
       "why": "subs in for him 12 of 63 times",
-      "much": "+10.0 DK projected vs. last 3",
-      "score": 9.98333333333333,
-      "min": 32.8,
-      "dk": 27.4,
+      "much": "+14.2 DK projected vs. last 3",
+      "score": 14.183333333333334,
+      "min": 36.0,
+      "dk": 31.6,
       "avg": 23.3
      },
      {
       "player": "Andre Drummond",
       "salary": 3800,
       "why": "subs in for him 14 of 63 times",
-      "much": "+9.2 DK projected vs. last 3",
-      "score": 9.25,
+      "much": "+9.9 DK projected vs. last 3",
+      "score": 9.95,
       "min": 16.0,
-      "dk": 19.0,
+      "dk": 19.7,
+      "avg": 15.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-19",
+     "dk": 49.5,
+     "min": 33,
+     "opp": "MIN",
+     "ha": "@",
+     "res": "W",
+     "score": "102-97"
+    },
+    "game": "POR at NYK",
+    "time": "2026-11-22T00:30Z",
+    "team": "NYK",
+    "player": "Karl-Anthony Towns",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:18 PM",
+    "salary": 9900,
+    "min": 37.3,
+    "benefits": [
+     {
+      "player": "Andre Drummond",
+      "salary": 3800,
+      "why": "subs in for him 26 of 73 times",
+      "much": "+9.9 DK projected vs. last 3",
+      "score": 9.95,
+      "min": 16.0,
+      "dk": 19.7,
       "avg": 15.7
      }
     ],
@@ -939,52 +983,6 @@
    },
    {
     "last": {
-     "date": "2026-11-19",
-     "dk": 49.5,
-     "min": 33,
-     "opp": "MIN",
-     "ha": "@",
-     "res": "W",
-     "score": "102-97"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "NYK",
-    "player": "Karl-Anthony Towns",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "11:54 AM",
-    "salary": 9900,
-    "min": 37.3,
-    "benefits": [
-     {
-      "player": "Andre Drummond",
-      "salary": 3800,
-      "why": "subs in for him 26 of 73 times",
-      "much": "about +15.8 DK",
-      "score": 15.789954337899543,
-      "min": 16.0,
-      "dk": 19.0,
-      "avg": 15.7
-     },
-     {
-      "player": "Landry Shamet",
-      "salary": 3900,
-      "why": "subs in for him 11 of 73 times",
-      "much": "about +3.6 DK",
-      "score": 3.6191171993911717,
-      "min": 30.0,
-      "dk": 19.3,
-      "avg": 16.9
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "last": {
      "date": "2026-11-16",
      "dk": 46.0,
      "min": 30,
@@ -1013,7 +1011,7 @@
       "much": "+18.6 DK without him (2 games)",
       "score": 18.6,
       "min": 28.0,
-      "dk": 27.4,
+      "dk": 27.7,
       "avg": 27.8
      },
      {
@@ -1023,7 +1021,7 @@
       "much": "+16.7 DK without him (2 games)",
       "score": 16.7,
       "min": 25.1,
-      "dk": 18.2,
+      "dk": 18.3,
       "avg": 15.8
      },
      {
@@ -1033,7 +1031,7 @@
       "much": "+11.4 DK without him (2 games)",
       "score": 11.4,
       "min": 31.6,
-      "dk": 24.5,
+      "dk": 25.0,
       "avg": 23.1
      }
     ],
@@ -1069,7 +1067,7 @@
       "much": "+8.4 DK without him (6 games)",
       "score": 8.4,
       "min": 25.9,
-      "dk": 23.1,
+      "dk": 23.5,
       "avg": 19.4
      }
     ],
@@ -1112,10 +1110,10 @@
       "player": "Cedric Coward",
       "salary": 7000,
       "why": "projected 31 minutes tonight",
-      "much": "+3.2 DK projected vs. last 3",
-      "score": 3.25,
+      "much": "+3.0 DK projected vs. last 3",
+      "score": 3.049999999999997,
       "min": 30.9,
-      "dk": 41.0,
+      "dk": 40.8,
       "avg": 34.8
      },
      {
@@ -1161,7 +1159,7 @@
       "much": "+8.6 DK without him (7 games)",
       "score": 8.6,
       "min": 32.9,
-      "dk": 47.7,
+      "dk": 47.6,
       "avg": 39.3
      },
      {
@@ -1207,7 +1205,7 @@
       "much": "+21.2 DK without him (1 game)",
       "score": 21.2,
       "min": 30.9,
-      "dk": 41.0,
+      "dk": 40.8,
       "avg": 34.8
      },
      {
@@ -1217,7 +1215,7 @@
       "much": "+18.9 DK without him (1 game)",
       "score": 18.9,
       "min": 19.4,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 16.1
      },
      {
@@ -1270,10 +1268,10 @@
       "player": "Daniel Gafford",
       "salary": 4700,
       "why": "projected 21 minutes tonight, up from 19",
-      "much": "+6.1 DK projected vs. last 3",
-      "score": 6.116666666666667,
+      "much": "+6.0 DK projected vs. last 3",
+      "score": 6.016666666666669,
       "min": 21.3,
-      "dk": 23.2,
+      "dk": 23.1,
       "avg": 21.8
      },
      {
@@ -1329,7 +1327,7 @@
       "much": "+6.2 DK without him (1 game)",
       "score": 6.2,
       "min": 26.9,
-      "dk": 26.3,
+      "dk": 26.4,
       "avg": 23.9
      }
     ],
@@ -1415,7 +1413,7 @@
       "much": "+5.5 DK without him (11 games)",
       "score": 5.5,
       "min": 26.2,
-      "dk": 32.2,
+      "dk": 32.8,
       "avg": 32.8
      },
      {
@@ -1425,7 +1423,7 @@
       "much": "+5.3 DK without him (11 games)",
       "score": 5.3,
       "min": 25.1,
-      "dk": 18.2,
+      "dk": 18.3,
       "avg": 15.8
      }
     ],
@@ -1461,7 +1459,7 @@
       "much": "+5.9 DK without him (9 games)",
       "score": 5.9,
       "min": 31.6,
-      "dk": 24.5,
+      "dk": 25.0,
       "avg": 23.1
      }
     ],
@@ -1532,7 +1530,7 @@
       "much": "+9.9 DK without him (12 games)",
       "score": 9.9,
       "min": 33.6,
-      "dk": 35.0,
+      "dk": 34.9,
       "avg": 32.1
      },
      {
@@ -1542,7 +1540,7 @@
       "much": "+6.8 DK without him (12 games)",
       "score": 6.8,
       "min": 29.8,
-      "dk": 39.7,
+      "dk": 39.8,
       "avg": 35.1
      }
     ],
@@ -1578,7 +1576,7 @@
       "much": "+20.3 DK without him (1 game)",
       "score": 20.3,
       "min": 32.5,
-      "dk": 39.6,
+      "dk": 39.5,
       "avg": 34.0
      },
      {
@@ -1598,7 +1596,7 @@
       "much": "+6.9 DK without him (1 game)",
       "score": 6.9,
       "min": 29.8,
-      "dk": 25.6,
+      "dk": 25.8,
       "avg": 21.5
      }
     ],
@@ -1634,7 +1632,7 @@
       "much": "+13.3 DK without him (8 games)",
       "score": 13.3,
       "min": 31.9,
-      "dk": 33.5,
+      "dk": 33.7,
       "avg": 32.5
      },
      {
@@ -1644,7 +1642,7 @@
       "much": "+10.8 DK without him (8 games)",
       "score": 10.8,
       "min": 37.5,
-      "dk": 34.7,
+      "dk": 35.2,
       "avg": 29.3
      },
      {
@@ -1654,7 +1652,7 @@
       "much": "+9.8 DK without him (8 games)",
       "score": 9.8,
       "min": 30.1,
-      "dk": 18.0,
+      "dk": 18.2,
       "avg": 15.1
      }
     ],
@@ -1687,30 +1685,30 @@
       "player": "Karlo Matkovic",
       "salary": 3700,
       "why": "projected 16 minutes tonight, up from 14",
-      "much": "+9.2 DK projected vs. last 3",
-      "score": 9.2,
+      "much": "+9.4 DK projected vs. last 3",
+      "score": 9.4,
       "min": 16.3,
-      "dk": 13.2,
+      "dk": 13.4,
       "avg": 14.4
      },
      {
       "player": "Yves Missi",
       "salary": 5300,
       "why": "projected 22 minutes tonight, up from 19",
-      "much": "+2.1 DK projected vs. last 3",
-      "score": 2.1499999999999986,
+      "much": "+2.2 DK projected vs. last 3",
+      "score": 2.25,
       "min": 21.7,
-      "dk": 21.4,
+      "dk": 21.5,
       "avg": 23.0
      },
      {
       "player": "Jordan Poole",
       "salary": 4100,
       "why": "projected 26 minutes tonight, up from 24",
-      "much": "more minutes",
-      "score": 0.8500000000000014,
+      "much": "+1.2 DK projected vs. last 3",
+      "score": 1.25,
       "min": 25.9,
-      "dk": 23.1,
+      "dk": 23.5,
       "avg": 19.4
      }
     ],
@@ -1746,7 +1744,7 @@
       "much": "+18.1 DK without him (9 games)",
       "score": 18.1,
       "min": 19.4,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 16.1
      },
      {
@@ -1802,7 +1800,7 @@
       "much": "+9.2 DK without him (8 games)",
       "score": 9.2,
       "min": 25.9,
-      "dk": 23.1,
+      "dk": 23.5,
       "avg": 19.4
      },
      {
@@ -1812,7 +1810,7 @@
       "much": "+9.0 DK without him (10 games)",
       "score": 9.0,
       "min": 37.5,
-      "dk": 34.7,
+      "dk": 35.2,
       "avg": 29.3
      }
     ],
@@ -1848,7 +1846,7 @@
       "much": "+5.7 DK without him (5 games)",
       "score": 5.7,
       "min": 30.1,
-      "dk": 18.0,
+      "dk": 18.2,
       "avg": 15.1
      }
     ],
@@ -1920,7 +1918,7 @@
       "much": "+7.2 DK without him (9 games)",
       "score": 7.2,
       "min": 33.1,
-      "dk": 40.5,
+      "dk": 40.7,
       "avg": 37.8
      }
     ],
