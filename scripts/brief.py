@@ -588,6 +588,49 @@ def main():
     hot.sort(key=lambda x: -abs(x["last"] - x["before"]))
     mins.sort(key=lambda x: -abs(x["last"] - x["before"]))
 
+    # Why he is trending, in 1-2 short sentences: what the shows and helpers said this week first,
+    # then research (who was out in his last 3 games, a change in his starts). No line if no reason.
+    facts = load_json(os.path.join(D, "role_facts.json"), [])
+    SHOWS = ("LO-", "OMS-", "FA-", "SE-", "DB-", "SP-", "STK-", "RW-", "TL-", "N2S-")
+    RESEARCH = ("ESPN-", "WEB-", "NBA-INJ", "BLOW", "WOWY")
+    week = str(datetime.strptime(day, "%Y-%m-%d").date() - timedelta(days=7))
+
+    def first_sentence(t, cap=230):
+        m = re.match(r"(.+?[.!?])(\s|$)", t.strip())
+        out = m.group(1) if m else t.strip()
+        return out if len(out) <= cap else out[:cap].rsplit(" ", 1)[0].rstrip(",;") + "."
+
+    def trend_why(t):
+        k = norm(t["player"])
+        notes = [e for e in plog if norm(e["player"]) == k and e["date"] >= week
+                 and e.get("src", "").startswith(SHOWS + RESEARCH) and e.get("kind") != "injury"]
+        notes.sort(key=lambda e: (0 if e["src"].startswith(SHOWS) else 1, -int(e["date"].replace("-", ""))))
+        if notes:
+            return first_sentence(notes[0]["text"])
+        g = [x for x in games_of(t["team"], t["player"]) if x["min"] > 0]
+        last3, before = g[-3:], g[:-3]
+        up = t["kind"] in ("hot", "up")
+        if up:
+            ds = {x["date"] for x in last3}
+            outs = []
+            for f in facts:
+                if f.get("kind") == "happened" and f.get("date") in ds and norm(f.get("gains", "")) == k and f["out"] not in outs:
+                    outs.append(f["out"])
+            if outs:
+                who = outs[0] if len(outs) == 1 else ", ".join(outs[:-1]) + " and " + outs[-1]
+                return "His last 3 games came with %s out." % who
+        s3, sb = sum(1 for x in last3 if x.get("start")), sum(1 for x in before if x.get("start"))
+        if s3 == 3 and sb <= len(before) / 3:
+            return "He has started his last 3 games after starting %d of his %d before that." % (sb, len(before))
+        if s3 == 0 and sb >= len(before) * 2 / 3:
+            return "He has come off the bench in his last 3 games after starting %d of his %d before that." % (sb, len(before))
+        return ""
+
+    for t in hot + mins:
+        w = trend_why(t)
+        if w:
+            t["why"] = w
+
     # --- where the field is going (our Own% estimate) ---
     owned = [p for p in players if p.get("own") is not None and p.get("salary")]
     chalk = sorted(owned, key=lambda p: -p["own"])[:4]

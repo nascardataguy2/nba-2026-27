@@ -141,10 +141,11 @@
         return '<div class="hit">' + nm(it.player, it.team) + stLine(it.player) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
       }).join(''));
       // Trending
+      var trWhy = function(h){ return h.why ? '<p class="tr-why">' + esc(h.why) + '</p>' : ''; };
       var tr = (B.hot || []).map(function(h){
-        return '<div class="hit">' + nm(h.player, h.team) + ' <span class="tag ' + (h.kind === 'hot' ? 'up' : 'down') + '">' + (h.kind === 'hot' ? 'Hot' : 'Cold') + '</span><p>' + d1(h.last) + ' DK points a game over his last 3, ' + (h.kind === 'hot' ? 'up' : 'down') + ' from ' + d1(h.before) + ' in his ' + h.n + ' games before that.</p></div>';
+        return '<div class="hit">' + nm(h.player, h.team) + ' <span class="tag ' + (h.kind === 'hot' ? 'up' : 'down') + '">' + (h.kind === 'hot' ? 'Hot' : 'Cold') + '</span><p>' + d1(h.last) + ' DK points a game over his last 3, ' + (h.kind === 'hot' ? 'up' : 'down') + ' from ' + d1(h.before) + ' in his ' + h.n + ' games before that.</p>' + trWhy(h) + '</div>';
       }).concat((B.minutes || []).map(function(h){
-        return '<div class="hit">' + nm(h.player, h.team) + ' <span class="tag ' + (h.kind === 'up' ? 'up' : 'down') + '">Minutes ' + h.kind + '</span><p>' + d1(h.last) + ' minutes a game over his last 3, ' + (h.kind === 'up' ? 'up' : 'down') + ' from ' + d1(h.before) + ' in his ' + h.n + ' games before that.</p></div>';
+        return '<div class="hit">' + nm(h.player, h.team) + ' <span class="tag ' + (h.kind === 'up' ? 'up' : 'down') + '">Minutes ' + h.kind + '</span><p>' + d1(h.last) + ' minutes a game over his last 3, ' + (h.kind === 'up' ? 'up' : 'down') + ' from ' + d1(h.before) + ' in his ' + h.n + ' games before that.</p>' + trWhy(h) + '</div>';
       })).join('');
       // Field
       var fl = (B.chalk || []).map(function(p){ return '<div class="hit">' + nm(p.player, p.team) + ' <span class="bs-n">' + d1(p.own) + '% \u00b7 ' + d1(p.dk) + ' DK \u00b7 ' + money(p.salary) + '</span></div>'; }).join('');
