@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updated": "7:02 PM ET",
+ "updated": "7:17 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:19 AM",
@@ -355,6 +355,22 @@
  ],
  "changed": [
   {
+   "player": "Ronald Holland II",
+   "team": "DET",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "",
+   "time": "7:19 PM"
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Knee Soreness",
+   "time": "7:19 PM"
+  },
+  {
    "player": "Jalen Smith",
    "team": "CHI",
    "status": "Out",
@@ -417,22 +433,6 @@
    "was": "Questionable",
    "why": "Left Hip Sprain",
    "time": "6:19 PM"
-  },
-  {
-   "player": "Kingston Flemings",
-   "team": "ATL",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Lumbar Strain",
-   "time": "5:19 PM"
-  },
-  {
-   "player": "Precious Achiuwa",
-   "team": "SAC",
-   "status": "Out",
-   "was": "Doubtful",
-   "why": "",
-   "time": "4:42 PM"
   }
  ],
  "chg": [
@@ -586,8 +586,8 @@
   {
    "key": "Ronald Holland II",
    "team": "DET",
-   "head": "Ronald Holland II DOUBTFUL",
-   "st": "Doubtful",
+   "head": "Ronald Holland II OUT",
+   "st": "Out",
    "act": "Play",
    "names": [
     {
@@ -601,7 +601,7 @@
      "much": "+11.7 DK without him (2 games)"
     }
    ],
-   "time": "12:42 PM",
+   "time": "7:19 PM",
    "size": 15.0
   }
  ],
@@ -856,7 +856,7 @@
     {
      "player": "Ron Holland",
      "min": 17.0,
-     "note": "Doubtful tonight.",
+     "note": "Ronald Holland II was moved from doubtful to out for tonight on the NBA's 07:15 PM injury report. He had averaged 15 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     }
    ],
@@ -1042,32 +1042,32 @@
  ],
  "chalk": [
   {
+   "player": "Jalen Suggs",
+   "team": "ORL",
+   "own": 38.0,
+   "dk": 22.9,
+   "salary": 5400
+  },
+  {
    "player": "Onyeka Okongwu",
    "team": "ATL",
-   "own": 38.0,
+   "own": 36.8,
    "dk": 42.2,
    "salary": 6500
   },
   {
    "player": "Jarrett Allen",
    "team": "CLE",
-   "own": 38.0,
+   "own": 36.3,
    "dk": 32.4,
    "salary": 6300
   },
   {
-   "player": "Jalen Suggs",
-   "team": "ORL",
-   "own": 37.6,
-   "dk": 22.9,
-   "salary": 5400
-  },
-  {
-   "player": "Luka Doncic",
-   "team": "LAL",
-   "own": 34.1,
-   "dk": 67.3,
-   "salary": 12200
+   "player": "Aday Mara",
+   "team": "OKC",
+   "own": 36.2,
+   "dk": 25.7,
+   "salary": 5500
   }
  ],
  "leverage": [
@@ -1165,8 +1165,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "07:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_07_00PM.pdf",
+  "report": "07:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_07_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1341,12 +1341,12 @@
     "time": "2026-11-21T00:30Z",
     "team": "DET",
     "player": "Ronald Holland II",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "12:42 PM",
+    "changed_at": "7:19 PM",
     "salary": 3700,
     "min": 17.0,
     "benefits": [
@@ -1397,12 +1397,12 @@
     "time": "2026-11-21T00:30Z",
     "team": "DET",
     "player": "Cade Cunningham",
-    "status": "Probable",
+    "status": "Available",
     "reason": "Right Knee Soreness",
     "new": true,
-    "was": "Out",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "7:19 PM",
     "salary": 10000,
     "min": 40.7,
     "benefits": [],
