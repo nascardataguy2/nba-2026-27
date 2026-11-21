@@ -1581,9 +1581,9 @@
     };
     var stars = rows.slice().sort(function(a, b){ return b.dk - a.dk; }).slice(0, 8);
     var scrubs = rows.filter(function(r){ return r.sal; }).sort(function(a, b){ return b.dk / b.sal - a.dk / a.sal || b.dk - a.dk; }).slice(0, 8);
-    return '<div class="lv-ssbtns"><button type="button" data-lvss="stars" class="' + (LV_SS === 'stars' ? 'on' : '') + '">Top Scores</button><button type="button" data-lvss="scrubs" class="' + (LV_SS === 'scrubs' ? 'on' : '') + '">Best Value</button></div>' +
-      '<div class="lv-ss show-' + LV_SS + '"><div class="lv-ss-col lv-ss-stars"><h3>Top Scores</h3><p class="sub">Most DK points tonight.</p>' + stars.map(card).join('') + '</div>' +
-      '<div class="lv-ss-col lv-ss-scrubs"><h3>Best Value</h3><p class="sub">Most DK points per $1K of salary tonight.</p>' + scrubs.map(card).join('') + '</div></div>';
+    return '<h3 class="lv-allh">Stars &amp; Scrubs Live</h3><div class="lv-ssbtns"><button type="button" data-lvss="stars" class="' + (LV_SS === 'stars' ? 'on' : '') + '">Stars</button><button type="button" data-lvss="scrubs" class="' + (LV_SS === 'scrubs' ? 'on' : '') + '">Scrubs</button></div>' +
+      '<div class="lv-ss show-' + LV_SS + '"><div class="lv-ss-col lv-ss-stars"><h3>Stars</h3><p class="sub">Top scores: most DK points tonight.</p>' + stars.map(card).join('') + '</div>' +
+      '<div class="lv-ss-col lv-ss-scrubs"><h3>Scrubs</h3><p class="sub">Best value: most DK points per $1K of salary tonight.</p>' + scrubs.map(card).join('') + '</div></div>';
   }
   function lvVal(r, k){
     if (k === 'vs') return r.pace == null || r.proj == null ? null : r.pace - r.proj;
