@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updated": "6:55 PM ET",
+ "updated": "7:02 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:19 AM",
@@ -58,7 +58,7 @@
    "away": "IND",
    "home": "CLE",
    "time": "2026-11-21T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 234.5,
    "fav": "CLE",
    "line": 5.5,
@@ -99,7 +99,7 @@
    "away": "ORL",
    "home": "BKN",
    "time": "2026-11-21T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 223.5,
    "fav": "ORL",
    "line": 6.5,
@@ -127,7 +127,7 @@
    "away": "TOR",
    "home": "DET",
    "time": "2026-11-21T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 215.5,
    "fav": "DET",
    "line": 6.5,
@@ -277,7 +277,7 @@
    "away": "SAC",
    "home": "LAL",
    "time": "2026-11-21T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 229.5,
    "fav": "LAL",
    "line": 14.5,
@@ -317,7 +317,7 @@
    "away": "HOU",
    "home": "DEN",
    "time": "2026-11-21T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 226.5,
    "fav": "DEN",
    "line": 1.5,
@@ -1042,55 +1042,55 @@
  ],
  "chalk": [
   {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "own": 38.0,
+   "dk": 42.2,
+   "salary": 6500
+  },
+  {
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "own": 38.0,
+   "dk": 32.4,
+   "salary": 6300
+  },
+  {
+   "player": "Jalen Suggs",
+   "team": "ORL",
+   "own": 37.6,
+   "dk": 22.9,
+   "salary": 5400
+  },
+  {
    "player": "Luka Doncic",
    "team": "LAL",
-   "own": 38.0,
+   "own": 34.1,
    "dk": 67.3,
    "salary": 12200
-  },
-  {
-   "player": "DeMar DeRozan",
-   "team": "DEN",
-   "own": 35.8,
-   "dk": 16.7,
-   "salary": 4400
-  },
-  {
-   "player": "Amen Thompson",
-   "team": "HOU",
-   "own": 35.6,
-   "dk": 32.1,
-   "salary": 7200
-  },
-  {
-   "player": "Darius Acuff Jr.",
-   "team": "SAC",
-   "own": 35.1,
-   "dk": 43.5,
-   "salary": 9000
   }
  ],
  "leverage": [
   {
-   "player": "Jakob Poeltl",
-   "team": "TOR",
-   "own": 6.0,
-   "dk": 31.9,
-   "salary": 5500
+   "player": "Carlton Carrington",
+   "team": "WAS",
+   "own": 1.2,
+   "dk": 16.8,
+   "salary": 3000
   },
   {
-   "player": "John Collins",
-   "team": "DET",
-   "own": 0.9,
-   "dk": 30.5,
-   "salary": 5400
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "own": 9.0,
+   "dk": 51.4,
+   "salary": 9500
   },
   {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "own": 8.0,
-   "dk": 56.4,
-   "salary": 10000
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "own": 9.0,
+   "dk": 37.1,
+   "salary": 7000
   }
  ],
  "last": {
@@ -1165,8 +1165,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "06:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_06_45PM.pdf",
+  "report": "07:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_07_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1189,7 +1189,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "5:19 PM",
-    "salary": 4700,
+    "salary": null,
     "min": 22.7,
     "benefits": [
      {
@@ -1245,7 +1245,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3700,
+    "salary": null,
     "min": 22.0,
     "benefits": [
      {
@@ -1528,7 +1528,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:49 PM",
-    "salary": 6100,
+    "salary": null,
     "min": 27.0,
     "benefits": [
      {
@@ -1584,7 +1584,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:19 PM",
-    "salary": 4900,
+    "salary": null,
     "min": 18.0,
     "benefits": [
      {
@@ -1640,7 +1640,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 11.3,
     "benefits": [],
     "estimate": false
@@ -1899,7 +1899,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6400,
+    "salary": null,
     "min": 31.0,
     "benefits": [
      {
@@ -1955,7 +1955,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 5700,
+    "salary": null,
     "min": 28.7,
     "benefits": [
      {
@@ -2011,7 +2011,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 5200,
+    "salary": null,
     "min": 26.0,
     "benefits": [
      {
@@ -2067,7 +2067,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 15.3,
     "benefits": [
      {
@@ -2123,7 +2123,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4100,
+    "salary": null,
     "min": 11.0,
     "benefits": [],
     "estimate": false
@@ -2612,7 +2612,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 31.7,
     "benefits": [
      {
@@ -2668,7 +2668,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6500,
+    "salary": null,
     "min": 30.0,
     "benefits": [
      {
@@ -2724,7 +2724,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6600,
+    "salary": null,
     "min": 24.7,
     "benefits": [
      {
@@ -2780,7 +2780,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6600,
+    "salary": null,
     "min": 23.0,
     "benefits": [
      {
@@ -2836,7 +2836,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3600,
+    "salary": null,
     "min": 18.7,
     "benefits": [
      {
@@ -2872,7 +2872,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 17.7,
     "benefits": [
      {
@@ -2918,7 +2918,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 16.3,
     "benefits": [
      {
@@ -2974,7 +2974,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3800,
+    "salary": null,
     "min": 14.7,
     "benefits": [
      {
@@ -3030,7 +3030,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3900,
+    "salary": null,
     "min": 14.3,
     "benefits": [
      {
