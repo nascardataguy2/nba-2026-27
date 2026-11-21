@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "10:53 AM ET",
+ "updated": "11:53 AM ET",
  "games": 4,
  "pending": [
   "NOP"
@@ -44,11 +44,16 @@
      ]
     },
     "NYK": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "OG Anunoby",
-       "min": 37.1
+       "min": 38.7
+      }
+     ],
+     "q": [
+      {
+       "player": "Karl-Anthony Towns",
+       "min": 36.9
       }
      ]
     }
@@ -175,8 +180,68 @@
    "key": "Dylan Harper is out, so Stephon Castle and Devin Vassell and Julian Champagnie should play more than usual."
   }
  ],
- "changed": [],
- "chg": [],
+ "changed": [
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Questionable",
+   "was": "Available",
+   "why": "Illness",
+   "time": "11:54 AM"
+  },
+  {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "Left Calf Tightness",
+   "time": "11:54 AM"
+  }
+ ],
+ "chg": [
+  {
+   "key": "OG Anunoby",
+   "team": "NYK",
+   "head": "OG Anunoby DOUBTFUL",
+   "st": "Doubtful",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Josh Hart",
+     "salary": 5200,
+     "much": "+10.4 DK projected vs. last 3"
+    },
+    {
+     "player": "Andre Drummond",
+     "salary": 3800,
+     "much": "+9.4 DK projected vs. last 3"
+    }
+   ],
+   "time": "11:54 AM",
+   "size": 29.9
+  },
+  {
+   "key": "Karl-Anthony Towns",
+   "team": "NYK",
+   "head": "Karl-Anthony Towns QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Andre Drummond",
+     "salary": 3800,
+     "much": "about +15.9 DK if he sits (estimate)"
+    },
+    {
+     "player": "Landry Shamet",
+     "salary": 3900,
+     "much": "about +3.6 DK if he sits (estimate)"
+    }
+   ],
+   "time": "11:54 AM",
+   "size": 24.2
+  }
+ ],
  "sits": [
   {
    "team": "MEM",
@@ -227,6 +292,42 @@
    "split_of": [
     "Javon Small"
    ]
+  },
+  {
+   "team": "NYK",
+   "outs": [
+    {
+     "player": "OG Anunoby",
+     "min": 38.7,
+     "note": "OG Anunoby was moved from questionable to doubtful for tonight (left calf tightness) on the NBA's 11:45 AM injury report. He had averaged 37 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 38.7,
+   "benefits": [
+    {
+     "player": "Josh Hart",
+     "salary": 5200,
+     "why": "subs in for him 12 of 63 times",
+     "much": "+10.4 DK projected vs. last 3",
+     "score": 10.383333333333333,
+     "min": 33.4,
+     "dk": 27.8,
+     "avg": 23.3
+    },
+    {
+     "player": "Andre Drummond",
+     "salary": 3800,
+     "why": "subs in for him 14 of 63 times",
+     "much": "+9.4 DK projected vs. last 3",
+     "score": 9.350000000000001,
+     "min": 16.0,
+     "dk": 19.1,
+     "avg": 15.7
+    }
+   ],
+   "split_of": []
   },
   {
    "team": "POR",
@@ -455,37 +556,37 @@
   {
    "player": "Cedric Coward",
    "team": "MEM",
-   "own": 35.4,
+   "own": 36.4,
    "dk": 41.3,
    "salary": 7000
   },
   {
    "player": "Zach Edey",
    "team": "MEM",
-   "own": 30.7,
+   "own": 32.7,
    "dk": 27.4,
    "salary": 4900
   },
   {
-   "player": "Max Strus",
-   "team": "LAC",
-   "own": 30.6,
-   "dk": 23.6,
-   "salary": 4700
+   "player": "Stephon Castle",
+   "team": "SAS",
+   "own": 31.8,
+   "dk": 39.3,
+   "salary": 7700
   }
  ],
  "leverage": [
   {
-   "player": "OG Anunoby",
+   "player": "Miles McBride",
    "team": "NYK",
-   "own": 7.5,
-   "dk": 34.8,
-   "salary": 6500
+   "own": 1.0,
+   "dk": 17.3,
+   "salary": 3300
   },
   {
    "player": "Saddiq Bey",
    "team": "NOP",
-   "own": 6.8,
+   "own": 7.0,
    "dk": 33.2,
    "salary": 6600
   },
@@ -591,8 +692,8 @@
   ]
  },
  "injuries": {
-  "report": "10:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_10_45AM.pdf",
+  "report": "11:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_11_45AM.pdf",
   "pending": [
    "NOP"
   ],
@@ -636,34 +737,80 @@
     "time": "2026-11-22T00:30Z",
     "team": "NYK",
     "player": "OG Anunoby",
-    "status": "Questionable",
+    "status": "Doubtful",
     "reason": "Left Calf Tightness",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "11:54 AM",
     "salary": 6500,
     "min": 38.7,
     "benefits": [
      {
-      "player": "Andre Drummond",
-      "salary": 3800,
-      "why": "subs in for him 14 of 63 times",
-      "much": "about +10.2 DK",
-      "score": 10.21250758955677,
-      "min": 12.2,
-      "dk": 14.5,
-      "avg": 15.7
-     },
-     {
       "player": "Josh Hart",
       "salary": 5200,
       "why": "subs in for him 12 of 63 times",
-      "much": "about +6.1 DK",
-      "score": 6.137566137566136,
-      "min": 27.6,
-      "dk": 23.0,
+      "much": "+10.4 DK projected vs. last 3",
+      "score": 10.383333333333333,
+      "min": 33.4,
+      "dk": 27.8,
       "avg": 23.3
+     },
+     {
+      "player": "Andre Drummond",
+      "salary": 3800,
+      "why": "subs in for him 14 of 63 times",
+      "much": "+9.4 DK projected vs. last 3",
+      "score": 9.350000000000001,
+      "min": 16.0,
+      "dk": 19.1,
+      "avg": 15.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-19",
+     "dk": 49.5,
+     "min": 33,
+     "opp": "MIN",
+     "ha": "@",
+     "res": "W",
+     "score": "102-97"
+    },
+    "game": "POR at NYK",
+    "time": "2026-11-22T00:30Z",
+    "team": "NYK",
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "11:54 AM",
+    "salary": 9900,
+    "min": 37.3,
+    "benefits": [
+     {
+      "player": "Andre Drummond",
+      "salary": 3800,
+      "why": "subs in for him 26 of 73 times",
+      "much": "about +15.9 DK",
+      "score": 15.873059360730593,
+      "min": 16.0,
+      "dk": 19.1,
+      "avg": 15.7
+     },
+     {
+      "player": "Landry Shamet",
+      "salary": 3900,
+      "why": "subs in for him 11 of 73 times",
+      "much": "about +3.6 DK",
+      "score": 3.6191171993911717,
+      "min": 30.0,
+      "dk": 19.3,
+      "avg": 16.9
      }
     ],
     "estimate": true
