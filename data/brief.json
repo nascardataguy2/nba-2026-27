@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "6:17 PM ET",
+ "updated": "6:32 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:41 AM",
@@ -82,12 +82,7 @@
        "min": 13.3
       }
      ],
-     "q": [
-      {
-       "player": "Walter Clayton Jr.",
-       "min": 18.9
-      }
-     ]
+     "q": []
     }
    },
    "key": "Cooper Flagg has the top projection in this game at 49.5 DK points."
@@ -192,6 +187,22 @@
  ],
  "changed": [
   {
+   "player": "P.J. Washington",
+   "team": "DAL",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Illness",
+   "time": "6:33 PM"
+  },
+  {
+   "player": "Walter Clayton Jr.",
+   "team": "DAL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Patellar Tendinitis",
+   "time": "6:33 PM"
+  },
+  {
    "player": "Isaiah Evans",
    "team": "MIN",
    "status": "Available",
@@ -254,22 +265,6 @@
    "was": "",
    "why": "Illness",
    "time": "1:54 PM"
-  },
-  {
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "status": "Questionable",
-   "was": "Available",
-   "why": "Illness",
-   "time": "11:54 AM"
-  },
-  {
-   "player": "OG Anunoby",
-   "team": "NYK",
-   "status": "Doubtful",
-   "was": "Questionable",
-   "why": "Left Calf Tightness",
-   "time": "11:54 AM"
   }
  ],
  "chg": [
@@ -350,8 +345,8 @@
   {
    "key": "P.J. Washington",
    "team": "DAL",
-   "head": "P.J. Washington DOUBTFUL",
-   "st": "Doubtful",
+   "head": "P.J. Washington OUT",
+   "st": "Out",
    "act": "Play",
    "names": [
     {
@@ -365,8 +360,29 @@
      "much": "+6.0 DK projected vs. last 3"
     }
    ],
-   "time": "2:39 PM",
+   "time": "6:33 PM",
    "size": 28.0
+  },
+  {
+   "key": "DAL",
+   "team": "DAL",
+   "head": "Jr. CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Marcus Sasser",
+     "salary": 3100,
+     "much": "+15.0 DK without Jr."
+    },
+    {
+     "player": "Naji Marshall",
+     "salary": 5100,
+     "much": "+6.2 DK without Jr."
+    }
+   ],
+   "time": "6:33 PM",
+   "size": 17.4
   }
  ],
  "sits": [
@@ -771,23 +787,23 @@
   {
    "player": "Josh Hart",
    "team": "NYK",
-   "own": 35.2,
+   "own": 35.1,
    "dk": 31.6,
    "salary": 5200
   },
   {
-   "player": "Naji Marshall",
-   "team": "DAL",
-   "own": 31.0,
-   "dk": 26.4,
-   "salary": 5100
+   "player": "Max Strus",
+   "team": "LAC",
+   "own": 32.5,
+   "dk": 23.4,
+   "salary": 4700
   },
   {
-   "player": "Cedric Coward",
-   "team": "MEM",
-   "own": 30.5,
-   "dk": 40.8,
-   "salary": 7000
+   "player": "Kyrie Irving",
+   "team": "DAL",
+   "own": 30.6,
+   "dk": 40.7,
+   "salary": 7800
   }
  ],
  "leverage": [
@@ -801,14 +817,14 @@
   {
    "player": "Jaylen Wells",
    "team": "MEM",
-   "own": 8.8,
+   "own": 8.5,
    "dk": 25.8,
    "salary": 4200
   },
   {
    "player": "Terrence Shannon Jr.",
    "team": "MIN",
-   "own": 8.9,
+   "own": 8.8,
    "dk": 25.8,
    "salary": 4600
   }
@@ -913,8 +929,8 @@
   ]
  },
  "injuries": {
-  "report": "06:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_06_15PM.pdf",
+  "report": "06:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_06_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1143,6 +1159,62 @@
    },
    {
     "last": {
+     "date": "2026-11-18",
+     "dk": 40.8,
+     "min": 25,
+     "opp": "GSW",
+     "ha": "vs",
+     "res": "W",
+     "score": "116-94"
+    },
+    "game": "LAC at DAL",
+    "time": "2026-11-22T01:00Z",
+    "team": "DAL",
+    "player": "P.J. Washington",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "Doubtful",
+    "known": true,
+    "changed_at": "6:33 PM",
+    "salary": 5900,
+    "min": 25.3,
+    "benefits": [
+     {
+      "player": "Cooper Flagg",
+      "salary": 9700,
+      "why": "projected 34 minutes tonight",
+      "much": "+7.0 DK projected vs. last 3",
+      "score": 7.0,
+      "min": 34.2,
+      "dk": 49.5,
+      "avg": 47.4
+     },
+     {
+      "player": "Daniel Gafford",
+      "salary": 4700,
+      "why": "projected 21 minutes tonight, up from 19",
+      "much": "+6.0 DK projected vs. last 3",
+      "score": 6.016666666666669,
+      "min": 21.3,
+      "dk": 23.1,
+      "avg": 21.8
+     },
+     {
+      "player": "Morez Johnson Jr.",
+      "salary": 3700,
+      "why": "projected 18 minutes tonight",
+      "much": "+4.3 DK projected vs. last 3",
+      "score": 4.35,
+      "min": 17.6,
+      "dk": 15.1,
+      "avg": 14.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-19",
      "dk": 32.2,
      "min": 25,
@@ -1245,108 +1317,6 @@
    },
    {
     "last": {
-     "date": "2026-11-18",
-     "dk": 40.8,
-     "min": 25,
-     "opp": "GSW",
-     "ha": "vs",
-     "res": "W",
-     "score": "116-94"
-    },
-    "game": "LAC at DAL",
-    "time": "2026-11-22T01:00Z",
-    "team": "DAL",
-    "player": "P.J. Washington",
-    "status": "Doubtful",
-    "reason": "Illness",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "2:39 PM",
-    "salary": 5900,
-    "min": 25.3,
-    "benefits": [
-     {
-      "player": "Cooper Flagg",
-      "salary": 9700,
-      "why": "projected 34 minutes tonight",
-      "much": "+7.0 DK projected vs. last 3",
-      "score": 7.0,
-      "min": 34.2,
-      "dk": 49.5,
-      "avg": 47.4
-     },
-     {
-      "player": "Daniel Gafford",
-      "salary": 4700,
-      "why": "projected 21 minutes tonight, up from 19",
-      "much": "+6.0 DK projected vs. last 3",
-      "score": 6.016666666666669,
-      "min": 21.3,
-      "dk": 23.1,
-      "avg": 21.8
-     },
-     {
-      "player": "Morez Johnson Jr.",
-      "salary": 3700,
-      "why": "projected 18 minutes tonight",
-      "much": "+4.3 DK projected vs. last 3",
-      "score": 4.35,
-      "min": 17.6,
-      "dk": 15.1,
-      "avg": 14.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 20.5,
-     "min": 27,
-     "opp": "GSW",
-     "ha": "vs",
-     "res": "W",
-     "score": "116-94"
-    },
-    "game": "LAC at DAL",
-    "time": "2026-11-22T01:00Z",
-    "team": "DAL",
-    "player": "Walter Clayton Jr.",
-    "status": "Questionable",
-    "reason": "Left Patellar Tendinitis",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "",
-    "salary": 3900,
-    "min": 21.0,
-    "benefits": [
-     {
-      "player": "Marcus Sasser",
-      "salary": 3100,
-      "why": "24 minutes, up from 14",
-      "much": "+15.0 DK without him (1 game)",
-      "score": 15.0,
-      "min": 10.0,
-      "dk": 7.2,
-      "avg": 9.5
-     },
-     {
-      "player": "Naji Marshall",
-      "salary": 5100,
-      "why": "29 minutes, up from 25",
-      "much": "+6.2 DK without him (1 game)",
-      "score": 6.2,
-      "min": 26.9,
-      "dk": 26.4,
-      "avg": 23.9
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-13",
      "dk": 34.5,
      "min": 29,
@@ -1367,6 +1337,31 @@
     "changed_at": "2:39 PM",
     "salary": 8300,
     "min": 31.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-18",
+     "dk": 20.5,
+     "min": 27,
+     "opp": "GSW",
+     "ha": "vs",
+     "res": "W",
+     "score": "116-94"
+    },
+    "game": "LAC at DAL",
+    "time": "2026-11-22T01:00Z",
+    "team": "DAL",
+    "player": "Walter Clayton Jr.",
+    "status": "Available",
+    "reason": "Left Patellar Tendinitis",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:33 PM",
+    "salary": 3900,
+    "min": 21.0,
     "benefits": [],
     "estimate": false
    },
