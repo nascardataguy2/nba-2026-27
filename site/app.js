@@ -76,6 +76,19 @@
     function sec(cls, title, hint, body){ return body ? '<div class="panel ' + cls + '"><h2>' + title + '</h2>' + (hint ? '<p class="hint">' + hint + '</p>' : '') + body + '</div>' : ''; }
     function d1(v){ return (Math.round(v * 10) / 10).toFixed(1); }
     function day(s){ var d = new Date(s + 'T12:00:00'); return isNaN(d) ? s : d.toLocaleDateString('en-US', {weekday:'long', month:'short', day:'numeric'}); }
+    // Last Night recap for Quick Hits: in the left column under Where the Field Is Going on slate
+    // days, full width when there are no games.
+    function lastQ(L){
+      var lastH = '';
+      if (L.date){
+          var lt = (L.top || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + ' <span class="bs-n">' + d1(x.dk) + ' DK in ' + Math.round(x.min) + ' min (' + x.pts + ' pts, ' + x.reb + ' reb, ' + x.ast + ' ast)</span></div>'; }).join('');
+          var ls = (L.surprise || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>He played ' + Math.round(x.min) + ' minutes; we projected ' + d1(x.proj) + '.</p></div>'; }).join('');
+          var li = (L.injuries || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>' + esc(x.text) + '</p></div>'; }).join('');
+          lastH = sec('last', 'Last Night', esc(day(L.date)) + '. More on each player in his notes.',
+            (lt ? '<h3 class="bf-h">Top DK games</h3>' + lt : '') + (li ? '<h3 class="bf-h">Injuries</h3>' + li : '') + (ls ? '<h3 class="bf-h">Minutes surprises</h3>' + ls : ''));
+      }
+      return lastH;
+    }
     var html = '';
     var today = PJ && PJ.date ? PJ.date : '';
     var live = B.date && B.date === today && Object.keys(SLATE).length > 0;
@@ -155,22 +168,14 @@
       // Two columns on wide screens, so If He Sits and Storylines sit side by side with no gaps.
       var IJ = B.injuries || {};
       var injL = '<button class="inj-link" type="button" data-go="injuries">Injury report' + (IJ.report ? ' \u00b7 ' + esc(IJ.report.replace(/^0/, '')) + ' ET' : '') + ((IJ.rows || []).filter(function(r){ return r.new; }).length ? ' \u00b7 <b>' + IJ.rows.filter(function(r){ return r.new; }).length + ' new</b>' : '') + ' \u2192</button>';
-      html += '<div class="bg-cols"><div class="bg-col">' + injL + sitsH + fieldH + '</div><div class="bg-col">' + storyH + trendH + '</div></div>';
+      html += '<div class="bg-cols"><div class="bg-col">' + injL + sitsH + fieldH + lastQ(B.last || {}) + '</div><div class="bg-col">' + storyH + trendH + '</div></div>';
     } else {
       var st2 = q.storylines || {};
       html += sec('story', 'Storylines', 'The biggest news around the league.', (st2.items || []).slice(0, 8).map(function(it){
         return '<div class="hit">' + nm(it.player, it.team) + stLine(it.player) + '<p>' + esc(it.text) + '</p>' + storyUpd(it) + '</div>';
       }).join(''));
     }
-    // Last night
-    var L = B.last || {};
-    if (L.date){
-      var lt = (L.top || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + ' <span class="bs-n">' + d1(x.dk) + ' DK in ' + Math.round(x.min) + ' min (' + x.pts + ' pts, ' + x.reb + ' reb, ' + x.ast + ' ast)</span></div>'; }).join('');
-      var ls = (L.surprise || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>He played ' + Math.round(x.min) + ' minutes; we projected ' + d1(x.proj) + '.</p></div>'; }).join('');
-      var li = (L.injuries || []).slice(0, 3).map(function(x){ return '<div class="hit">' + nm(x.player, x.team) + '<p>' + esc(x.text) + '</p></div>'; }).join('');
-      html += sec('last', 'Last Night', esc(day(L.date)) + '. More on each player in his notes.',
-        (lt ? '<h3 class="bf-h">Top DK games</h3>' + lt : '') + (li ? '<h3 class="bf-h">Injuries</h3>' + li : '') + (ls ? '<h3 class="bf-h">Minutes surprises</h3>' + ls : ''));
-    }
+    if (!live) html += lastQ(B.last || {});
     $('v-quick').innerHTML = html;
   }
 
