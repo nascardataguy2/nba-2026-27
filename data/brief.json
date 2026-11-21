@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updated": "7:25 PM ET",
+ "updated": "7:32 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:19 AM",
@@ -178,7 +178,7 @@
    "away": "WAS",
    "home": "CHI",
    "time": "2026-11-21T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 238.5,
    "fav": "CHI",
    "line": 2.5,
@@ -218,7 +218,7 @@
    "away": "NOP",
    "home": "OKC",
    "time": "2026-11-21T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 227.5,
    "fav": "OKC",
    "line": 11.5,
@@ -1042,39 +1042,46 @@
  ],
  "chalk": [
   {
-   "player": "Jalen Suggs",
-   "team": "ORL",
-   "own": 38.0,
-   "dk": 22.9,
-   "salary": 5400
-  },
-  {
    "player": "Onyeka Okongwu",
    "team": "ATL",
-   "own": 36.8,
+   "own": 38.0,
    "dk": 42.2,
    "salary": 6500
   },
   {
-   "player": "Jarrett Allen",
-   "team": "CLE",
-   "own": 36.3,
-   "dk": 32.4,
+   "player": "Tre Jones",
+   "team": "CHI",
+   "own": 38.0,
+   "dk": 25.1,
+   "salary": 4200
+  },
+  {
+   "player": "AJ Dybantsa",
+   "team": "WAS",
+   "own": 37.6,
+   "dk": 29.1,
    "salary": 6300
   },
   {
-   "player": "Aday Mara",
-   "team": "OKC",
+   "player": "Luka Doncic",
+   "team": "LAL",
    "own": 36.2,
-   "dk": 25.7,
-   "salary": 5500
+   "dk": 67.3,
+   "salary": 12200
   }
  ],
  "leverage": [
   {
+   "player": "John Collins",
+   "team": "DET",
+   "own": 1.0,
+   "dk": 30.5,
+   "salary": 5400
+  },
+  {
    "player": "Carlton Carrington",
    "team": "WAS",
-   "own": 1.2,
+   "own": 1.0,
    "dk": 16.8,
    "salary": 3000
   },
@@ -1084,13 +1091,6 @@
    "own": 9.0,
    "dk": 51.4,
    "salary": 9500
-  },
-  {
-   "player": "Nickeil Alexander-Walker",
-   "team": "ATL",
-   "own": 9.0,
-   "dk": 37.1,
-   "salary": 7000
   }
  ],
  "last": {
@@ -1165,8 +1165,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "07:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_07_15PM.pdf",
+  "report": "07:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_07_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1291,7 +1291,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6200,
+    "salary": null,
     "min": 26.0,
     "benefits": [
      {
@@ -1347,7 +1347,7 @@
     "was": "Doubtful",
     "known": true,
     "changed_at": "7:19 PM",
-    "salary": 3700,
+    "salary": null,
     "min": 17.0,
     "benefits": [
      {
@@ -1503,7 +1503,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:19 PM",
-    "salary": 3300,
+    "salary": null,
     "min": 13.3,
     "benefits": [],
     "estimate": false
@@ -1528,7 +1528,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:49 PM",
-    "salary": null,
+    "salary": 6100,
     "min": 27.0,
     "benefits": [
      {
@@ -1584,7 +1584,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:19 PM",
-    "salary": null,
+    "salary": 4900,
     "min": 18.0,
     "benefits": [
      {
@@ -1640,7 +1640,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3000,
     "min": 11.3,
     "benefits": [],
     "estimate": false
@@ -2148,7 +2148,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8100,
+    "salary": null,
     "min": 37.7,
     "benefits": [
      {
@@ -2204,7 +2204,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8700,
+    "salary": null,
     "min": 33.5,
     "benefits": [
      {
@@ -2260,7 +2260,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8400,
+    "salary": null,
     "min": 32.7,
     "benefits": [
      {
@@ -2316,7 +2316,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 5300,
+    "salary": null,
     "min": 30.7,
     "benefits": [
      {
@@ -2372,7 +2372,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7400,
+    "salary": null,
     "min": 30.0,
     "benefits": [
      {
@@ -2428,7 +2428,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4600,
+    "salary": null,
     "min": 29.0,
     "benefits": [
      {
@@ -2464,7 +2464,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7800,
+    "salary": null,
     "min": 26.0,
     "benefits": [
      {
@@ -2520,7 +2520,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6800,
+    "salary": null,
     "min": 19.0,
     "benefits": [
      {
@@ -2576,7 +2576,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 12.0,
     "benefits": [
      {
@@ -2612,7 +2612,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3000,
     "min": 31.7,
     "benefits": [
      {
@@ -2668,7 +2668,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 6500,
     "min": 30.0,
     "benefits": [
      {
@@ -2724,7 +2724,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 6600,
     "min": 24.7,
     "benefits": [
      {
@@ -2780,7 +2780,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 6600,
     "min": 23.0,
     "benefits": [
      {
@@ -2836,7 +2836,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3600,
     "min": 18.7,
     "benefits": [
      {
@@ -2872,7 +2872,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3000,
     "min": 17.7,
     "benefits": [
      {
@@ -2918,7 +2918,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3000,
     "min": 16.3,
     "benefits": [
      {
@@ -2974,7 +2974,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3800,
     "min": 14.7,
     "benefits": [
      {
@@ -3030,7 +3030,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3900,
     "min": 14.3,
     "benefits": [
      {
