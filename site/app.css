@@ -538,6 +538,7 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 .nr-why{font-size:12.5px;line-height:1.35;color:var(--muted);font-weight:400;white-space:normal;margin-top:3px;max-width:340px}
 .pjc .nr-why{max-width:none;margin-top:6px}
 .st-line{font-size:13px;color:var(--muted);margin:2px 0 0;font-variant-numeric:tabular-nums}
+.st-line span{white-space:nowrap}
 
 .lv-ss{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:6px 0 18px}
 .lv-ss-col h3{font:700 20px/1.1 var(--head);text-transform:uppercase;color:var(--accent);margin:0}

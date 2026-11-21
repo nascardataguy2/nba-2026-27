@@ -616,8 +616,8 @@
     s = String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[ .]+(iii|ii|iv|jr|sr)\.?$/, '');
     return s.replace(/[^a-z]/g, '');
   }
-  // Storylines stat line: salary (tonight's, or his most recent with its date), DK points a game
-  // this season, and DK points a game over his last 3.
+  // Storylines stat line: salary (tonight's, or his most recent with its date), DK points and
+  // minutes a game this season, each with his last-3-game average.
   function stLine(name){
     var k = nkey(name), bits = [], pj = null, i;
     if (PJ) for (i = 0; i < PJ.players.length; i++){ var x = PJ.players[i]; if (nkey(x.player) === k && SLATE[x.team]){ pj = x; break; } }
@@ -628,9 +628,13 @@
     }
     if (SEA) for (i = 0; i < SEA.players.length; i++){
       var r = SEA.players[i];
-      if (nkey(r.player) === k){ bits.push(n1(r.dk) + ' DK a game'); if (r.l3_dk != null) bits.push(n1(r.l3_dk) + ' last 3'); break; }
+      if (nkey(r.player) === k){
+        bits.push(n1(r.dk) + ' DK a game' + (r.l3_dk != null ? ' (' + n1(r.l3_dk) + ' last 3)' : ''));
+        if (r.min != null) bits.push(n1(r.min) + ' min' + (r.l3_min != null ? ' (' + n1(r.l3_min) + ' last 3)' : ''));
+        break;
+      }
     }
-    return bits.length ? '<div class="st-line">' + bits.join(' \u00b7 ') + '</div>' : '';
+    return bits.length ? '<div class="st-line"><span>' + bits.join('</span> \u00b7 <span>') + '</span></div>' : '';
   }
   function glRows(name){
     if (!GLIDX){
