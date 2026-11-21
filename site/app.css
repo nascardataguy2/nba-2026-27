@@ -134,6 +134,10 @@ main.wrap{padding-top:18px;padding-bottom:40px}
 .nb svg{width:14px;height:14px}
 .nb:hover{color:var(--navy);border-color:var(--navy)}
 .nb.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.nb.gold{background:#f2c94c;border-color:#d4a72c;color:#5a4300}
+.nb.gold.on{background:#d4a72c;border-color:#b8901f;color:#fff}
+.nt-why,.pjt .pj-notes .nt-why{margin:0 0 8px;font:400 15px/1.45 var(--body);color:var(--ink);white-space:normal;text-align:left}
+.nt-why b{color:var(--accent)}
 .nb:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
 .pjt tr.nt-open td{background-color:#fffaf0}
 .pjt .pj-notes td{position:static;text-align:left;white-space:normal;background:#fffaf0;border-top:none;padding:0 10px 10px}

@@ -693,10 +693,11 @@
     }
     return '<div class="nt-box' + (right && left ? ' two' : '') + '">' + (left ? '<div class="nt-l">' + left + '</div>' : '') + right + '</div>';
   }
-  function nbtn(name, has){
+  // gold = there is a new "why" note for last night (Last Night tab); click to read it.
+  function nbtn(name, has, gold){
     if (!has) return '';
     var on = !!NOPEN[nkey(name)];
-    return '<button class="nb' + (on ? ' on' : '') + '" type="button" data-n="' + esc(name) + '" aria-expanded="' + on + '" title="Notes" aria-label="Notes for ' + esc(name) + '">' + NICON + '</button>';
+    return '<button class="nb' + (on ? ' on' : '') + (gold ? ' gold' : '') + '" type="button" data-n="' + esc(name) + '" aria-expanded="' + on + '" title="' + (gold ? 'New note: why he hit or missed' : 'Notes') + '" aria-label="Notes for ' + esc(name) + '">' + NICON + '</button>';
   }
   document.addEventListener('click', function(e){
     var t = e.target.closest ? e.target.closest('.nb, .pj-name.has') : null;
@@ -879,30 +880,36 @@
     }).join('');
     var rows = list.map(function(p){
       var has = glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
-      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has);
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has, !!p.why);
+      var why = p.why ? '<p class="nt-why"><b>Why:</b> ' + esc(p.why) + '</p>' : '';
       var tds = NCOLS.map(function(c){
         var key = c[0];
-        if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + (p.why ? '<div class="nr-why">' + esc(p.why) + '</div>' : '') + '</td>';
+        if (key === 'player') return '<td class="c-player"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span>' + tags + '</td>';
         if (key === 'team') return '<td class="c-team">' + tm(p.team, true) + '</td>';
         if (key === 'opp') return '<td class="c-opp">' + (p.opp ? tm(p.opp, true) : '') + '</td>';
         if (key === 'pos') return '<td class="c-pos">' + esc(p.pos) + '</td>';
         var st = nHeat(all, key, p[key]);
         return '<td class="c-' + key + '"' + (st ? ' style="' + st + '"' : '') + '>' + nFmt(p, key) + '</td>';
       }).join('');
-      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + NCOLS.length + '">' + noteHtml(noteBits(p.player), p.player) + '</td></tr>' : '');
+      return '<tr' + (open ? ' class="nt-open"' : '') + '>' + tds + '</tr>' + (open ? '<tr class="pj-notes"><td colspan="' + NCOLS.length + '">' + nWhy(p, why) + '</td></tr>' : '');
     }).join('') || '<tr><td colspan="' + NCOLS.length + '">No players match.</td></tr>';
     var cards = list.map(function(p){
       var has = glRows(p.player).length > 0, open = has && NOPEN[nkey(p.player)];
-      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has);
+      var tags = (p.start ? '<span class="role starter">Starter</span>' : '') + nbtn(p.player, has, !!p.why);
+      var why = p.why ? '<p class="nt-why"><b>Why:</b> ' + esc(p.why) + '</p>' : '';
       var box = function(key, lbl){ var st = nHeat(all, key, p[key]); return '<div class="pjc-n"' + (st ? ' style="' + st + '"' : '') + '><span>' + lbl + '</span>' + nFmt(p, key) + '</div>'; };
       return '<div class="pjc"><div class="pjc-who"><span class="pj-name' + (has ? ' has' : '') + '" data-n="' + esc(p.player) + '">' + esc(p.player) + '</span> <span class="pk-pos">' + esc(p.pos) + '</span>' + (p.tag ? ' ' + nFmt(p, 'tagr') : '') + tags + '</div>' +
         '<div class="pjc-game">' + tm(p.team, true) + ' vs ' + (p.opp ? tm(p.opp, true) : '') + ' \u00b7 Sal ' + nFmt(p, 'sal') + '</div>' +
         '<div class="pjc-nums">' + box('dk', 'DK') + box('proj', 'Proj') + box('diff', '+/\u2212') + '<div class="pjc-n"' + (nHeat(all, 'min', p.min) ? ' style="' + nHeat(all, 'min', p.min) + '"' : '') + '><span>Min</span>' + (p.min == null ? '\u2013' : Math.round(p.min)) + '/' + nFmt(p, 'pmin') + '</div>' + box('val', 'Val') + '</div>' +
         '<div class="pjc-line">' + [['pts','pts'],['reb','reb'],['ast','ast'],['stl','stl'],['blk','blk'],['tpm','3pm'],['to','to']].map(function(x){ return '<b>' + nFmt(p, x[0]) + '</b> ' + x[1]; }).join(' \u00b7 ') + '</div>' +
-        (p.why ? '<div class="nr-why">' + esc(p.why) + '</div>' : '') +
-        (open ? noteHtml(noteBits(p.player), p.player) : '') + '</div>';
+        (open ? nWhy(p, why) : '') + '</div>';
     }).join('') || '<div class="pjc"><p class="pj-note">No players match.</p></div>';
     $('r4p-nlist').innerHTML = '<div class="pjt-wrap"><table class="pjt"><thead><tr>' + th + '</tr></thead><tbody>' + rows + '</tbody></table></div><div class="pjc-list">' + cards + '</div>';
+  }
+  // Notes panel for Last Night: the why line first, unless the same note is already in his notes.
+  function nWhy(p, why){
+    var nh = noteHtml(noteBits(p.player), p.player);
+    return (why && nh.indexOf(esc(p.why.slice(0, 60))) < 0 ? why : '') + nh;
   }
   // Unicorn first: 6x+ value and beat our projection by 30% or more. Star: 6x+ otherwise. Dud: under 4x.
   function nTag(p){
