@@ -1,10 +1,8 @@
 {
  "date": "2026-11-21",
- "updated": "12:55 PM ET",
+ "updated": "1:53 PM ET",
  "games": 4,
- "pending": [
-  "NOP"
- ],
+ "pending": [],
  "first_report": "5:41 AM",
  "cards": [
   {
@@ -12,11 +10,11 @@
    "home": "NYK",
    "time": "2026-11-22T00:30Z",
    "slate": "main",
-   "ou": 216.5,
+   "ou": 215.5,
    "fav": "NYK",
-   "line": 4.5,
+   "line": 3.5,
    "away_pts": 106.0,
-   "home_pts": 110.5,
+   "home_pts": 109.5,
    "tags": [
     "Lowest total"
    ],
@@ -104,11 +102,11 @@
    "home": "MIN",
    "time": "2026-11-22T01:00Z",
    "slate": "main",
-   "ou": 228.5,
+   "ou": 229.5,
    "fav": "MIN",
    "line": 6.5,
-   "away_pts": 111.0,
-   "home_pts": 117.5,
+   "away_pts": 111.5,
+   "home_pts": 118.0,
    "tags": [],
    "teams": {
     "MEM": {
@@ -155,16 +153,33 @@
    "slate": "main",
    "ou": 227.5,
    "fav": "SAS",
-   "line": 17.5,
-   "away_pts": 105.0,
-   "home_pts": 122.5,
+   "line": 18.5,
+   "away_pts": 104.5,
+   "home_pts": 123.0,
    "tags": [
     "Blowout risk",
     "NOP on a back-to-back"
    ],
    "teams": {
     "NOP": {
-     "out": [],
+     "out": [
+      {
+       "player": "Trey Murphy",
+       "min": 31.0
+      },
+      {
+       "player": "Dejounte Murray",
+       "min": 24.7
+      },
+      {
+       "player": "Trendon Watford",
+       "min": 18.7
+      },
+      {
+       "player": "Bryce McGowens",
+       "min": 14.7
+      }
+     ],
      "q": []
     },
     "SAS": {
@@ -177,10 +192,34 @@
      "q": []
     }
    },
-   "key": "Dylan Harper is out, so Stephon Castle and Devin Vassell and Julian Champagnie should play more than usual."
+   "key": "Trey Murphy and Dejounte Murray are out, so Saddiq Bey and Jordan Poole and Jeremiah Fears should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Trey Murphy",
+   "team": "NOP",
+   "status": "Out",
+   "was": "Available",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "status": "Out",
+   "was": "Available",
+   "why": "",
+   "time": "1:54 PM"
+  },
+  {
+   "player": "Isaiah Evans",
+   "team": "MIN",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "1:54 PM"
+  },
   {
    "player": "Karl-Anthony Towns",
    "team": "NYK",
@@ -221,6 +260,38 @@
    "size": 29.9
   },
   {
+   "key": "Trey Murphy",
+   "team": "NOP",
+   "head": "Trey Murphy OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jordan Poole",
+     "salary": 4100,
+     "much": "+8.4 DK without him (6 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 29.7
+  },
+  {
+   "key": "Trey Murphy III",
+   "team": "NOP",
+   "head": "Trey Murphy III OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jordan Poole",
+     "salary": 4100,
+     "much": "+8.4 DK without him (6 games)"
+    }
+   ],
+   "time": "1:54 PM",
+   "size": 29.7
+  },
+  {
    "key": "Karl-Anthony Towns",
    "team": "NYK",
    "head": "Karl-Anthony Towns QUESTIONABLE",
@@ -243,6 +314,68 @@
   }
  ],
  "sits": [
+  {
+   "team": "NOP",
+   "outs": [
+    {
+     "player": "Trey Murphy",
+     "min": 31.0,
+     "note": "Trey Murphy III returned on November 20 and played 29 minutes. The show said he will not play both ends of the Pelicans' back-to-back, so it expects him to sit Saturday, November 21.",
+     "new": true
+    },
+    {
+     "player": "Dejounte Murray",
+     "min": 24.7,
+     "note": "Ruled out tonight (left ankle sprain).",
+     "new": false
+    },
+    {
+     "player": "Trendon Watford",
+     "min": 18.7,
+     "note": "Ruled out tonight (right ankle sprain).",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 74.4,
+   "benefits": [
+    {
+     "player": "Saddiq Bey",
+     "salary": 6600,
+     "why": "started 4 of 4",
+     "much": "+12.0 DK without them (4 games)",
+     "score": 12.0,
+     "min": 39.7,
+     "dk": 36.8,
+     "avg": 29.3
+    },
+    {
+     "player": "Jordan Poole",
+     "salary": 4100,
+     "why": "26 minutes, up from 19",
+     "much": "+11.3 DK without them (4 games)",
+     "score": 11.3,
+     "min": 26.1,
+     "dk": 23.6,
+     "avg": 19.4
+    },
+    {
+     "player": "Jeremiah Fears",
+     "salary": 7000,
+     "why": "started, 38 minutes, 22 points (11/20)",
+     "much": "+7.1 DK without them (4 games)",
+     "score": 7.1,
+     "min": 33.9,
+     "dk": 35.7,
+     "avg": 32.5
+    }
+   ],
+   "split_of": [
+    "Trey Murphy",
+    "Dejounte Murray",
+    "Trendon Watford"
+   ]
+  },
   {
    "team": "MEM",
    "outs": [
@@ -274,8 +407,8 @@
      "why": "same minutes, more production",
      "much": "+8.6 DK without them (7 games)",
      "score": 8.6,
-     "min": 33.0,
-     "dk": 47.7,
+     "min": 32.9,
+     "dk": 47.6,
      "avg": 39.3
     },
     {
@@ -284,7 +417,7 @@
      "why": "14 minutes, up from 8",
      "much": "+5.9 DK without them (6 games)",
      "score": 5.9,
-     "min": 16.6,
+     "min": 16.5,
      "dk": 15.1,
      "avg": 8.7
     }
@@ -528,6 +661,15 @@
    "why": "Prosper played 24 minutes off the bench Thursday with Ty Jerome and Zach Edey out and Jerami Grant leaving early with a calf injury."
   },
   {
+   "player": "Jahmai Mashack",
+   "team": "MEM",
+   "kind": "up",
+   "last": 13.7,
+   "before": 3.3,
+   "n": 3,
+   "why": "Mashack played 26 minutes off the bench Thursday after Jerami Grant left early with a calf injury, with Ty Jerome and Zach Edey also out."
+  },
+  {
    "player": "Caleb Martin",
    "team": "DAL",
    "kind": "up",
@@ -544,68 +686,59 @@
    "before": 28.4,
    "n": 14,
    "why": "Saddiq Bey started and played 33 to 42 minutes in every game while Trey Murphy III was out."
-  },
-  {
-   "player": "Miles McBride",
-   "team": "NYK",
-   "kind": "down",
-   "last": 10.3,
-   "before": 19.2,
-   "n": 12,
-   "why": "The show called Miles McBride one of the most unpredictable minutes players in the league after he played only eight minutes."
   }
  ],
  "chalk": [
   {
-   "player": "Taylor Hendricks",
-   "team": "MEM",
+   "player": "Max Strus",
+   "team": "LAC",
    "own": 38.0,
-   "dk": 23.8,
-   "salary": 4400
+   "dk": 23.6,
+   "salary": 4700
   },
   {
    "player": "Cedric Coward",
    "team": "MEM",
-   "own": 36.4,
-   "dk": 41.3,
+   "own": 37.3,
+   "dk": 41.1,
    "salary": 7000
   },
   {
-   "player": "Stephon Castle",
-   "team": "SAS",
-   "own": 31.8,
-   "dk": 39.2,
-   "salary": 7700
+   "player": "Kyrie Irving",
+   "team": "DAL",
+   "own": 32.1,
+   "dk": 37.6,
+   "salary": 7800
   },
   {
    "player": "Zach Edey",
    "team": "MEM",
-   "own": 31.8,
-   "dk": 27.5,
+   "own": 31.2,
+   "dk": 27.4,
    "salary": 4900
   }
  ],
  "leverage": [
   {
-   "player": "Miles McBride",
-   "team": "NYK",
-   "own": 1.0,
-   "dk": 17.1,
-   "salary": 3300
+   "player": "Terrence Shannon Jr.",
+   "team": "MIN",
+   "own": 9.3,
+   "dk": 25.8,
+   "salary": 4600
   },
   {
-   "player": "Saddiq Bey",
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "own": 1.0,
+   "dk": 35.3,
+   "salary": 6400
+  },
+  {
+   "player": "Derik Queen",
    "team": "NOP",
-   "own": 6.5,
-   "dk": 33.2,
-   "salary": 6600
-  },
-  {
-   "player": "Naji Marshall",
-   "team": "DAL",
-   "own": 1.0,
-   "dk": 25.3,
-   "salary": 5100
+   "own": 7.0,
+   "dk": 27.3,
+   "salary": 5000
   }
  ],
  "last": {
@@ -702,11 +835,9 @@
   ]
  },
  "injuries": {
-  "report": "12:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_45PM.pdf",
-  "pending": [
-   "NOP"
-  ],
+  "report": "01:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_01_45PM.pdf",
+  "pending": [],
   "rows": [
    {
     "last": {
@@ -883,6 +1014,42 @@
    },
    {
     "last": {
+     "date": "2026-11-20",
+     "dk": 31.0,
+     "min": 29,
+     "opp": "OKC",
+     "ha": "@",
+     "res": "L",
+     "score": "126-120"
+    },
+    "game": "NOP at SAS",
+    "time": "2026-11-22T01:00Z",
+    "team": "NOP",
+    "player": "Trey Murphy III",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "salary": 6800,
+    "min": 31.0,
+    "benefits": [
+     {
+      "player": "Jordan Poole",
+      "salary": 4100,
+      "why": "27 minutes, up from 15",
+      "much": "+8.4 DK without him (6 games)",
+      "score": 8.4,
+      "min": 26.1,
+      "dk": 23.6,
+      "avg": 19.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-19",
      "dk": 31.5,
      "min": 27,
@@ -908,20 +1075,20 @@
       "player": "Jaylen Wells",
       "salary": 4200,
       "why": "projected 30 minutes tonight, up from 26",
-      "much": "+4.2 DK projected vs. last 3",
-      "score": 4.25,
-      "min": 30.2,
-      "dk": 26.0,
+      "much": "+4.1 DK projected vs. last 3",
+      "score": 4.050000000000001,
+      "min": 30.0,
+      "dk": 25.8,
       "avg": 20.0
      },
      {
       "player": "Cedric Coward",
       "salary": 7000,
       "why": "projected 31 minutes tonight",
-      "much": "+3.5 DK projected vs. last 3",
-      "score": 3.549999999999997,
-      "min": 31.0,
-      "dk": 41.3,
+      "much": "+3.4 DK projected vs. last 3",
+      "score": 3.3500000000000014,
+      "min": 30.9,
+      "dk": 41.1,
       "avg": 34.8
      },
      {
@@ -929,9 +1096,9 @@
       "salary": 4000,
       "why": "projected 19 minutes tonight, up from 16",
       "much": "more minutes",
-      "score": 0.5833333333333339,
+      "score": 0.4833333333333343,
       "min": 19.3,
-      "dk": 16.0,
+      "dk": 15.9,
       "avg": 9.7
      }
     ],
@@ -966,8 +1133,8 @@
       "why": "same minutes, more production",
       "much": "+8.6 DK without him (7 games)",
       "score": 8.6,
-      "min": 33.0,
-      "dk": 47.7,
+      "min": 32.9,
+      "dk": 47.6,
       "avg": 39.3
      },
      {
@@ -976,7 +1143,7 @@
       "why": "14 minutes, up from 8",
       "much": "+5.9 DK without him (6 games)",
       "score": 5.9,
-      "min": 16.6,
+      "min": 16.5,
       "dk": 15.1,
       "avg": 8.7
      }
@@ -1012,8 +1179,8 @@
       "why": "33 minutes, up from 28",
       "much": "+21.2 DK without him (1 game)",
       "score": 21.2,
-      "min": 31.0,
-      "dk": 41.3,
+      "min": 30.9,
+      "dk": 41.1,
       "avg": 34.8
      },
      {
@@ -1022,8 +1189,8 @@
       "why": "29 minutes, up from 12",
       "much": "+18.9 DK without him (1 game)",
       "score": 18.9,
-      "min": 19.5,
-      "dk": 23.8,
+      "min": 19.4,
+      "dk": 23.7,
       "avg": 16.1
      },
      {
@@ -1033,7 +1200,7 @@
       "much": "+10.3 DK without him (1 game)",
       "score": 10.3,
       "min": 19.3,
-      "dk": 16.0,
+      "dk": 15.9,
       "avg": 9.7
      }
     ],
@@ -1139,6 +1306,31 @@
       "avg": 23.9
      }
     ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-16",
+     "dk": 0,
+     "min": 4,
+     "opp": "POR",
+     "ha": "vs",
+     "res": "W",
+     "score": "106-98"
+    },
+    "game": "MEM at MIN",
+    "time": "2026-11-22T01:00Z",
+    "team": "MIN",
+    "player": "Isaiah Evans",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:54 PM",
+    "salary": 3000,
+    "min": 4.7,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1387,6 +1579,118 @@
    },
    {
     "last": {
+     "date": "2026-11-11",
+     "dk": 15.0,
+     "min": 28,
+     "opp": "BKN",
+     "ha": "vs",
+     "res": "L",
+     "score": "145-111"
+    },
+    "game": "NOP at SAS",
+    "time": "2026-11-22T01:00Z",
+    "team": "NOP",
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "reason": "Left Ankle Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 6700,
+    "min": 24.7,
+    "benefits": [
+     {
+      "player": "Jeremiah Fears",
+      "salary": 7000,
+      "why": "33 minutes, up from 28",
+      "much": "+13.3 DK without him (8 games)",
+      "score": 13.3,
+      "min": 33.9,
+      "dk": 35.7,
+      "avg": 32.5
+     },
+     {
+      "player": "Saddiq Bey",
+      "salary": 6600,
+      "why": "started 5 of 8",
+      "much": "+10.8 DK without him (8 games)",
+      "score": 10.8,
+      "min": 39.7,
+      "dk": 36.8,
+      "avg": 29.3
+     },
+     {
+      "player": "Herbert Jones",
+      "salary": 4000,
+      "why": "started 8 of 8",
+      "much": "+9.8 DK without him (8 games)",
+      "score": 9.8,
+      "min": 29.9,
+      "dk": 18.0,
+      "avg": 15.1
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-08",
+     "dk": 9.2,
+     "min": 17,
+     "opp": "LAC",
+     "ha": "@",
+     "res": "L",
+     "score": "139-123"
+    },
+    "game": "NOP at SAS",
+    "time": "2026-11-22T01:00Z",
+    "team": "NOP",
+    "player": "Trendon Watford",
+    "status": "Out",
+    "reason": "Right Ankle Sprain",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 3500,
+    "min": 18.7,
+    "benefits": [
+     {
+      "player": "Karlo Matkovic",
+      "salary": 3700,
+      "why": "projected 15 minutes tonight",
+      "much": "+8.3 DK projected vs. last 3",
+      "score": 8.3,
+      "min": 15.4,
+      "dk": 12.3,
+      "avg": 14.4
+     },
+     {
+      "player": "Saddiq Bey",
+      "salary": 6600,
+      "why": "projected 40 minutes tonight, up from 38",
+      "much": "more minutes",
+      "score": 0.29999999999999716,
+      "min": 39.7,
+      "dk": 36.8,
+      "avg": 29.3
+     },
+     {
+      "player": "Yves Missi",
+      "salary": 5300,
+      "why": "projected 23 minutes tonight, up from 19",
+      "much": "+3.8 DK projected vs. last 3",
+      "score": 3.75,
+      "min": 23.2,
+      "dk": 23.0,
+      "avg": 23.0
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-10-29",
      "dk": 2.0,
      "min": 14,
@@ -1414,8 +1718,8 @@
       "why": "16 minutes, up from 5",
       "much": "+18.1 DK without him (9 games)",
       "score": 18.1,
-      "min": 19.5,
-      "dk": 23.8,
+      "min": 19.4,
+      "dk": 23.7,
       "avg": 16.1
      },
      {
@@ -1424,9 +1728,101 @@
       "why": "24 minutes, up from 18",
       "much": "+8.2 DK without him (11 games)",
       "score": 8.2,
-      "min": 27.8,
-      "dk": 35.4,
+      "min": 27.7,
+      "dk": 35.3,
       "avg": 25.8
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-11",
+     "dk": 17.8,
+     "min": 13,
+     "opp": "BKN",
+     "ha": "vs",
+     "res": "L",
+     "score": "145-111"
+    },
+    "game": "NOP at SAS",
+    "time": "2026-11-22T01:00Z",
+    "team": "NOP",
+    "player": "Bryce McGowens",
+    "status": "Out",
+    "reason": "Left Elbow Infection",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 3800,
+    "min": 14.7,
+    "benefits": [
+     {
+      "player": "DeAndre Jordan",
+      "salary": 3000,
+      "why": "16 minutes, up from 12",
+      "much": "+10.0 DK without him (3 games)",
+      "score": 10.0,
+      "min": 13.4,
+      "dk": 12.5,
+      "avg": 14.6
+     },
+     {
+      "player": "Jordan Poole",
+      "salary": 4100,
+      "why": "same minutes, more production",
+      "much": "+9.2 DK without him (8 games)",
+      "score": 9.2,
+      "min": 26.1,
+      "dk": 23.6,
+      "avg": 19.4
+     },
+     {
+      "player": "Saddiq Bey",
+      "salary": 6600,
+      "why": "started 5 of 10",
+      "much": "+9.0 DK without him (10 games)",
+      "score": 9.0,
+      "min": 39.7,
+      "dk": 36.8,
+      "avg": 29.3
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-13",
+     "dk": -0.5,
+     "min": 10,
+     "opp": "MEM",
+     "ha": "vs",
+     "res": "L",
+     "score": "142-111"
+    },
+    "game": "NOP at SAS",
+    "time": "2026-11-22T01:00Z",
+    "team": "NOP",
+    "player": "Bennedict Mathurin",
+    "status": "Out",
+    "reason": "Left Plantar Fasciitis",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 3900,
+    "min": 14.3,
+    "benefits": [
+     {
+      "player": "Herbert Jones",
+      "salary": 4000,
+      "why": "28 minutes, up from 24",
+      "much": "+5.7 DK without him (5 games)",
+      "score": 5.7,
+      "min": 29.9,
+      "dk": 18.0,
+      "avg": 15.1
      }
     ],
     "estimate": false
@@ -1532,8 +1928,8 @@
       "why": "same minutes, more production",
       "much": "+5.9 DK without him (3 games)",
       "score": 5.9,
-      "min": 23.5,
-      "dk": 27.5,
+      "min": 23.4,
+      "dk": 27.4,
       "avg": 22.2
      },
      {
@@ -1543,7 +1939,7 @@
       "much": "+5.9 DK without him (4 games)",
       "score": 5.9,
       "min": 19.3,
-      "dk": 16.0,
+      "dk": 15.9,
       "avg": 9.7
      }
     ],
