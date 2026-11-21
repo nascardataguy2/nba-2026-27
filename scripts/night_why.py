@@ -26,7 +26,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from projections import load_json, D, norm  # noqa: E402
 
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/"
-SHOWS = ("LO-", "OMS-", "FA-", "SE-", "DB-", "SP-", "STK-", "RW-", "TL-")
+SHOWS = ("LO-", "OMS-", "FA-", "SE-", "DB-", "SP-", "STK-", "RW-", "TL-", "N2S-")
 RESEARCH = ("ESPN-", "WEB-", "NBA-INJ", "BLOW", "WOWY")
 MIN_DIFF = 10.0
 
