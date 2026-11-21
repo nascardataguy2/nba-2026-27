@@ -329,9 +329,25 @@ def main():
     for o in offp:
         if o["team"] in teams and not o.get("reason", "").startswith("G League"):
             cur[o["player"]] = (o["team"], o["status"], o.get("reason", ""))
+    # One entry per player: the official report and the projection source spell some names
+    # differently (11/21: "Trey Murphy III" and "Trey Murphy" both showed up as changes).
+    sfx = lambda n: re.sub(r" (iii|ii|iv|jr|sr)$", "", norm(n))
+    have = {sfx(n) for n in cur}
     for o in doc.get("out", []):
-        if o["team"] in teams and o["player"] not in cur:
+        if o["team"] in teams and sfx(o["player"]) not in have:
             cur[o["player"]] = (o["team"], "Out", "")
+            have.add(sfx(o["player"]))
+    # Drop duplicate spellings already in today's log and seen list.
+    keep, seenk = [], set()
+    for c in st["log"]:
+        k = (sfx(c["player"]), c["status"], c["time"])
+        if k not in seenk:
+            seenk.add(k); keep.append(c)
+    st["log"] = [c for c in keep if c["player"] in cur or sfx(c["player"]) not in {sfx(n) for n in cur} or
+                 not any(sfx(n) == sfx(c["player"]) and n != c["player"] for n in cur)]
+    for n in list(st["seen"]):
+        if n not in cur and any(sfx(m) == sfx(n) for m in cur):
+            del st["seen"][n]
     # A player first seen after the first run (for example when his team files its first report of
     # the day later on) is compared with his team's previous report, so players who were already out
     # (or already questionable) are not listed as "changes".
