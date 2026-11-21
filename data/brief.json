@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "8:54 AM ET",
+ "updated": "9:53 AM ET",
  "games": 4,
  "pending": [
   "NOP"
@@ -14,9 +14,9 @@
    "slate": "main",
    "ou": 216.5,
    "fav": "NYK",
-   "line": 5.5,
-   "away_pts": 105.5,
-   "home_pts": 111.0,
+   "line": 4.5,
+   "away_pts": 106.0,
+   "home_pts": 110.5,
    "tags": [
     "Lowest total"
    ],
@@ -60,11 +60,11 @@
    "home": "DAL",
    "time": "2026-11-22T01:00Z",
    "slate": "main",
-   "ou": 228.5,
+   "ou": 230.5,
    "fav": "DAL",
    "line": 5.5,
-   "away_pts": 111.5,
-   "home_pts": 117.0,
+   "away_pts": 112.5,
+   "home_pts": 118.0,
    "tags": [
     "Highest total"
    ],
@@ -95,47 +95,15 @@
    "key": "Cooper Flagg has the top projection in this game at 46.8 DK points."
   },
   {
-   "away": "NOP",
-   "home": "SAS",
-   "time": "2026-11-22T01:00Z",
-   "slate": "main",
-   "ou": 228.5,
-   "fav": "SAS",
-   "line": 17.5,
-   "away_pts": 105.5,
-   "home_pts": 123.0,
-   "tags": [
-    "Highest total",
-    "Blowout risk",
-    "NOP on a back-to-back"
-   ],
-   "teams": {
-    "NOP": {
-     "out": [],
-     "q": []
-    },
-    "SAS": {
-     "out": [
-      {
-       "player": "Dylan Harper",
-       "min": 31.3
-      }
-     ],
-     "q": []
-    }
-   },
-   "key": "Dylan Harper is out, so Stephon Castle and Devin Vassell and Julian Champagnie should play more than usual."
-  },
-  {
    "away": "MEM",
    "home": "MIN",
    "time": "2026-11-22T01:00Z",
    "slate": "main",
-   "ou": 227.5,
+   "ou": 228.5,
    "fav": "MIN",
-   "line": 5.5,
+   "line": 6.5,
    "away_pts": 111.0,
-   "home_pts": 116.5,
+   "home_pts": 117.5,
    "tags": [],
    "teams": {
     "MEM": {
@@ -174,6 +142,37 @@
     }
    },
    "key": "Cameron Boozer and Javon Small are out, so Ty Jerome and Quinten Post should play more than usual."
+  },
+  {
+   "away": "NOP",
+   "home": "SAS",
+   "time": "2026-11-22T01:00Z",
+   "slate": "main",
+   "ou": 227.5,
+   "fav": "SAS",
+   "line": 17.5,
+   "away_pts": 105.0,
+   "home_pts": 122.5,
+   "tags": [
+    "Blowout risk",
+    "NOP on a back-to-back"
+   ],
+   "teams": {
+    "NOP": {
+     "out": [],
+     "q": []
+    },
+    "SAS": {
+     "out": [
+      {
+       "player": "Dylan Harper",
+       "min": 31.3
+      }
+     ],
+     "q": []
+    }
+   },
+   "key": "Dylan Harper is out, so Stephon Castle and Devin Vassell and Julian Champagnie should play more than usual."
   }
  ],
  "changed": [],
@@ -197,7 +196,7 @@
     {
      "player": "Jerami Grant",
      "min": 16.0,
-     "note": "Jerami Grant left after only five minutes with an injury. The show said this gives a little extra playing time to Olivier-Maxence Prosper, who played 24 minutes. No timeline for Grant was given.",
+     "note": "Jerami Grant left the Thursday, Nov. 19, win over Golden State after five minutes with a left calf injury. He is ruled out on Saturday, Nov. 21, with a left calf strain.",
      "new": true
     }
    ],
@@ -318,7 +317,7 @@
     {
      "player": "Dylan Harper",
      "min": 31.3,
-     "note": "Dylan Harper suffered a groin strain and needed teammates to help him off the court, and he missed San Antonio's November 19 game. The show said the timeline was not yet known and that he might not return until the new year, depending on the severity. The show called him the Spurs' second-best player behind Victor Wembanyama, so his absence removes a starter who has averaged about 32 minutes and 14 shots per game.",
+     "note": "Dylan Harper has a left hip strain from the Tuesday, Nov. 17, game and is expected to miss one to three weeks. He is ruled out on Saturday, Nov. 21.",
      "new": false
     }
    ],
@@ -456,21 +455,21 @@
   {
    "player": "Cedric Coward",
    "team": "MEM",
-   "own": 36.7,
+   "own": 37.0,
    "dk": 41.3,
    "salary": 7000
   },
   {
    "player": "Zion Williamson",
    "team": "NOP",
-   "own": 35.2,
+   "own": 34.5,
    "dk": 33.4,
    "salary": 7100
   },
   {
    "player": "Rui Hachimura",
    "team": "LAC",
-   "own": 31.7,
+   "own": 32.1,
    "dk": 23.7,
    "salary": 5500
   }
@@ -479,7 +478,7 @@
   {
    "player": "Zach Edey",
    "team": "MEM",
-   "own": 7.9,
+   "own": 8.3,
    "dk": 27.5,
    "salary": 4900
   },
@@ -493,7 +492,7 @@
   {
    "player": "Max Strus",
    "team": "LAC",
-   "own": 3.5,
+   "own": 3.7,
    "dk": 23.6,
    "salary": 4700
   }
@@ -580,6 +579,11 @@
     "text": "Brandon Miller rolled his ankle on 11/20 against Atlanta but came back and finished with 33 minutes. The show said ankle sprains can flare up 24 to 48 hours later, so he should be watched on the next injury report."
    },
    {
+    "player": "Jock Landale",
+    "team": "ATL",
+    "text": "Jock Landale was held out on Friday, Nov. 20, with a back issue, leaving Zuby Ejiofor as the backup center."
+   },
+   {
     "player": "Nolan Traore",
     "team": "BKN",
     "text": "Nolan Traore started but left with a hamstring issue and finished with only 18 minutes. The show said his injury could force Brooklyn to give Mikel Brown Jr. a bigger look."
@@ -587,8 +591,8 @@
   ]
  },
  "injuries": {
-  "report": "08:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_45AM.pdf",
+  "report": "09:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_09_45AM.pdf",
   "pending": [
    "NOP"
   ],
