@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "1:53 PM ET",
+ "updated": "2:38 PM ET",
  "games": 4,
  "pending": [],
  "first_report": "5:41 AM",
@@ -79,23 +79,23 @@
     "DAL": {
      "out": [
       {
+       "player": "PJ Washington",
+       "min": 25.3
+      },
+      {
        "player": "Sergio de Larrea",
        "min": 13.3
       }
      ],
      "q": [
       {
-       "player": "PJ Washington",
-       "min": 23.6
-      },
-      {
        "player": "Walter Clayton Jr.",
-       "min": 17.9
+       "min": 18.9
       }
      ]
     }
    },
-   "key": "Cooper Flagg has the top projection in this game at 47.2 DK points."
+   "key": "Cooper Flagg has the top projection in this game at 49.6 DK points."
   },
   {
    "away": "MEM",
@@ -197,6 +197,22 @@
  ],
  "changed": [
   {
+   "player": "Ty Jerome",
+   "team": "MEM",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "2:39 PM"
+  },
+  {
+   "player": "P.J. Washington",
+   "team": "DAL",
+   "status": "Doubtful",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "2:39 PM"
+  },
+  {
    "player": "Trey Murphy III",
    "team": "NOP",
    "status": "Out",
@@ -266,6 +282,27 @@
    ],
    "time": "1:54 PM",
    "size": 29.7
+  },
+  {
+   "key": "P.J. Washington",
+   "team": "DAL",
+   "head": "P.J. Washington DOUBTFUL",
+   "st": "Doubtful",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Cooper Flagg",
+     "salary": 9700,
+     "much": "+7.1 DK projected vs. last 3"
+    },
+    {
+     "player": "Daniel Gafford",
+     "salary": 4700,
+     "much": "+6.1 DK projected vs. last 3"
+    }
+   ],
+   "time": "2:39 PM",
+   "size": 28.0
   },
   {
    "key": "Karl-Anthony Towns",
@@ -675,21 +712,21 @@
   {
    "player": "Cedric Coward",
    "team": "MEM",
-   "own": 37.3,
+   "own": 37.1,
    "dk": 41.1,
    "salary": 7000
   },
   {
    "player": "Kyrie Irving",
    "team": "DAL",
-   "own": 32.1,
-   "dk": 37.6,
+   "own": 34.8,
+   "dk": 40.7,
    "salary": 7800
   },
   {
    "player": "Zach Edey",
    "team": "MEM",
-   "own": 31.2,
+   "own": 29.6,
    "dk": 27.4,
    "salary": 4900
   }
@@ -698,7 +735,7 @@
   {
    "player": "Terrence Shannon Jr.",
    "team": "MIN",
-   "own": 9.3,
+   "own": 6.5,
    "dk": 25.8,
    "salary": 4600
   },
@@ -710,11 +747,11 @@
    "salary": 6400
   },
   {
-   "player": "Derik Queen",
-   "team": "NOP",
-   "own": 7.0,
-   "dk": 27.3,
-   "salary": 5000
+   "player": "Miles McBride",
+   "team": "NYK",
+   "own": 1.0,
+   "dk": 17.1,
+   "salary": 3300
   }
  ],
  "last": {
@@ -817,8 +854,8 @@
   ]
  },
  "injuries": {
-  "report": "01:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_01_45PM.pdf",
+  "report": "02:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1202,47 +1239,47 @@
     "time": "2026-11-22T01:00Z",
     "team": "DAL",
     "player": "P.J. Washington",
-    "status": "Questionable",
-    "reason": "",
+    "status": "Doubtful",
+    "reason": "Illness",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "2:39 PM",
     "salary": 5900,
     "min": 25.3,
     "benefits": [
      {
       "player": "Cooper Flagg",
       "salary": 9700,
-      "why": "plays his position (F), 32 minutes tonight",
-      "much": "about +8.2 DK",
-      "score": 8.206817661862274,
-      "min": 32.5,
-      "dk": 47.2,
+      "why": "projected 34 minutes tonight",
+      "much": "+7.1 DK projected vs. last 3",
+      "score": 7.100000000000001,
+      "min": 34.2,
+      "dk": 49.6,
       "avg": 47.4
-     },
-     {
-      "player": "Naji Marshall",
-      "salary": 5100,
-      "why": "plays his position (F), 26 minutes tonight",
-      "much": "about +4.4 DK",
-      "score": 4.398993365362617,
-      "min": 25.8,
-      "dk": 25.3,
-      "avg": 23.9
      },
      {
       "player": "Daniel Gafford",
       "salary": 4700,
-      "why": "plays his position (F), 20 minutes tonight",
-      "much": "about +3.7 DK",
-      "score": 3.7035003431708993,
-      "min": 19.6,
-      "dk": 21.3,
+      "why": "projected 21 minutes tonight, up from 19",
+      "much": "+6.1 DK projected vs. last 3",
+      "score": 6.116666666666667,
+      "min": 21.3,
+      "dk": 23.2,
       "avg": 21.8
+     },
+     {
+      "player": "Morez Johnson Jr.",
+      "salary": 3700,
+      "why": "projected 18 minutes tonight",
+      "much": "+4.3 DK projected vs. last 3",
+      "score": 4.35,
+      "min": 17.6,
+      "dk": 15.1,
+      "avg": 14.4
      }
     ],
-    "estimate": true
+    "estimate": false
    },
    {
     "last": {
@@ -1273,8 +1310,8 @@
       "why": "24 minutes, up from 14",
       "much": "+15.0 DK without him (1 game)",
       "score": 15.0,
-      "min": 9.9,
-      "dk": 7.2,
+      "min": 10.0,
+      "dk": 7.3,
       "avg": 9.5
      },
      {
@@ -1283,8 +1320,8 @@
       "why": "29 minutes, up from 25",
       "much": "+6.2 DK without him (1 game)",
       "score": 6.2,
-      "min": 25.8,
-      "dk": 25.3,
+      "min": 26.9,
+      "dk": 26.3,
       "avg": 23.9
      }
     ],
@@ -1329,12 +1366,12 @@
     "time": "2026-11-22T01:00Z",
     "team": "MEM",
     "player": "Ty Jerome",
-    "status": "Probable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "2:39 PM",
     "salary": 8300,
     "min": 31.0,
     "benefits": [],
@@ -1874,8 +1911,8 @@
       "why": "32 minutes, up from 27",
       "much": "+7.2 DK without him (9 games)",
       "score": 7.2,
-      "min": 30.6,
-      "dk": 37.6,
+      "min": 33.1,
+      "dk": 40.7,
       "avg": 37.8
      }
     ],
