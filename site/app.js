@@ -1538,7 +1538,7 @@
     var b = document.createElement('button'); b.className = 'tab'; b.type = 'button'; b.setAttribute('data-v', 'live'); b.textContent = 'Live';
     inj.parentNode.insertBefore(b, inj.nextSibling);
     var sec = document.createElement('section'); sec.className = 'view'; sec.id = 'v-live'; sec.hidden = true;
-    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. On Track For is the DK he is on track to finish with at his current rate over his projected minutes, colored against our projection. \ud83d\udd25 means he is blowing away his projection and \u2744\ufe0f means he is well short of it.</p>' +
+    sec.innerHTML = '<div class="panel"><h2>Live Scoring</h2><p class="hint">DraftKings points as tonight’s games are played, updated every 30 seconds. The DK color shows how each player is doing so far against our projection for the minutes he has played. On Track For is the DK he is on track to finish with, blending his pace so far with our projection (it shows after 5 minutes), colored against our projection. \ud83d\udd25 means he is blowing away his projection and \u2744\ufe0f means he is well short of it.</p>' +
       '<div class="lv-tiles" id="r4p-lvtiles"></div>' +
       '<div class="toolbar lv-tools"><input type="search" id="r4p-lvq" placeholder="Search a player or team" aria-label="Search live players"/>' +
       '<select id="r4p-lvgame" aria-label="Game filter"><option value="">All games</option></select>' +
@@ -1643,7 +1643,12 @@
               else {
                 var w = Math.max(0, Math.min(1, gone / 48)), r1 = Math.max(0, p.min - mins), r2 = (gone > 0 ? Math.min(1, mins / gone) : 0) * left;
                 var more = Math.min(left, (1 - w) * r1 + w * r2);
-                pace = v + v / mins * more;
+                // His rate is a blend of his real pace and our projected pace: our projection carries
+                // the early minutes, his real pace takes over as he plays (half at 15 minutes).
+                // Hidden under 5 minutes, and never more than twice his projection unless he has
+                // already scored that much, so a hot first stint cannot show 140 (11/20 Naz Reid).
+                var wr = mins / (mins + 15), rate = wr * (v / mins) + (1 - wr) * (p.min > 0 ? p.dk / p.min : v / mins);
+                pace = mins < 5 ? null : Math.min(v + rate * more, Math.max(2 * p.dk, v));
               }
             }
             rows.push({fin:state === 'post', gid:e.id, slate:p && p.slate, pos:p && p.pos, name:name, team:team, sal:p && p.salary, game:game, mins:mins, s:s, dk:v, proj:p && p.dk, own:p && p.own, diff:exp == null ? null : v - exp, pace:pace});
