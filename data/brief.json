@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updated": "4:04 PM ET",
+ "updated": "4:40 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:35 AM",
@@ -63,6 +63,10 @@
     "OKC": {
      "out": [
       {
+       "player": "Shai Gilgeous-Alexander",
+       "min": 34.3
+      },
+      {
        "player": "Jalen Williams",
        "min": 31.7
       },
@@ -73,18 +77,9 @@
       {
        "player": "Alex Caruso",
        "min": 18.0
-      },
-      {
-       "player": "Cason Wallace",
-       "min": 16.3
       }
      ],
-     "q": [
-      {
-       "player": "Shai Gilgeous-Alexander",
-       "min": 34.6
-      }
-     ]
+     "q": []
     },
     "MIA": {
      "out": [],
@@ -96,7 +91,7 @@
      ]
     }
    },
-   "key": "Jalen Williams and Chet Holmgren are out, so Bennett Stirtz and Aday Mara and Nique Clifford should play more than usual."
+   "key": "Shai Gilgeous-Alexander and Jalen Williams are out, so Bennett Stirtz and Aday Mara and Nique Clifford should play more than usual."
   },
   {
    "away": "DEN",
@@ -324,6 +319,22 @@
  ],
  "changed": [
   {
+   "player": "Myron Gardner",
+   "team": "MIA",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "4:42 PM"
+  },
+  {
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "4:42 PM"
+  },
+  {
    "player": "Paul George",
    "team": "BOS",
    "status": "Out",
@@ -386,25 +397,25 @@
    "was": "",
    "why": "Illness",
    "time": "1:55 PM"
-  },
-  {
-   "player": "Norman Powell",
-   "team": "CHI",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Right Hamstring Strain",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Kingston Flemings",
-   "team": "ATL",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Lumbar Strain",
-   "time": "1:55 PM"
   }
  ],
  "chg": [
+  {
+   "key": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "head": "Shai Gilgeous-Alexander OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Ajay Mitchell",
+     "salary": 6400,
+     "much": "+10.0 DK projected vs. last 3"
+    }
+   ],
+   "time": "4:42 PM",
+   "size": 47.2
+  },
   {
    "key": "Paul George",
    "team": "BOS",
@@ -616,6 +627,12 @@
    "team": "OKC",
    "outs": [
     {
+     "player": "Shai Gilgeous-Alexander",
+     "min": 34.3,
+     "note": "Shai Gilgeous-Alexander was moved from questionable to out for tonight on the NBA's 04:30 PM injury report. He had averaged 36 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
+    {
      "player": "Jalen Williams",
      "min": 31.7,
      "note": "Williams remained out Wednesday against Atlanta, one of three injured Oklahoma City starters along with Cason Wallace and Chet Holmgren.",
@@ -647,7 +664,7 @@
     }
    ],
    "new": true,
-   "lost": 111.0,
+   "lost": 145.3,
    "benefits": [
     {
      "player": "Bennett Stirtz",
@@ -655,8 +672,8 @@
      "why": "23 minutes, up from 17",
      "much": "+5.7 DK without them (4 games)",
      "score": 5.7,
-     "min": 24.7,
-     "dk": 19.4,
+     "min": 29.0,
+     "dk": 22.8,
      "avg": 13.4
     },
     {
@@ -665,8 +682,8 @@
      "why": "same minutes, more production",
      "much": "+5.6 DK without them (4 games)",
      "score": 5.6,
-     "min": 26.8,
-     "dk": 31.5,
+     "min": 32.0,
+     "dk": 37.5,
      "avg": 24.7
     },
     {
@@ -675,8 +692,8 @@
      "why": "same minutes, more production",
      "much": "+5.2 DK without them (1 game)",
      "score": 5.2,
-     "min": 16.2,
-     "dk": 11.2,
+     "min": 18.3,
+     "dk": 12.7,
      "avg": 6.6
     }
    ],
@@ -1042,6 +1059,13 @@
  ],
  "chalk": [
   {
+   "player": "Kingston Flemings",
+   "team": "ATL",
+   "own": 40.0,
+   "dk": 18.9,
+   "salary": 4700
+  },
+  {
    "player": "Daniss Jenkins",
    "team": "DET",
    "own": 38.0,
@@ -1056,17 +1080,10 @@
    "salary": 4600
   },
   {
-   "player": "Jalen Johnson",
-   "team": "ATL",
-   "own": 35.6,
-   "dk": 47.3,
-   "salary": 9300
-  },
-  {
    "player": "Ajay Mitchell",
    "team": "OKC",
-   "own": 34.6,
-   "dk": 34.0,
+   "own": 37.5,
+   "dk": 36.2,
    "salary": 6400
   }
  ],
@@ -1074,14 +1091,14 @@
   {
    "player": "Jalen Brunson",
    "team": "NYK",
-   "own": 7.5,
+   "own": 7.1,
    "dk": 47.2,
    "salary": 9100
   },
   {
    "player": "Payton Pritchard",
    "team": "BOS",
-   "own": 1.0,
+   "own": 7.5,
    "dk": 32.5,
    "salary": 6300
   },
@@ -1089,7 +1106,7 @@
    "player": "Derrick White",
    "team": "BOS",
    "own": 1.0,
-   "dk": 36.1,
+   "dk": 36.0,
    "salary": 7200
   }
  ],
@@ -1160,17 +1177,17 @@
     "why": "He played 40 minutes, 14 more than we projected."
    },
    {
-    "player": "Jayson Kent",
-    "team": "POR",
-    "min": 3.0,
-    "proj": 16.0
-   },
-   {
     "player": "Miles McBride",
     "team": "NYK",
     "min": 14.0,
     "proj": 27.0,
     "why": "He played 14 minutes, 13 fewer than we projected."
+   },
+   {
+    "player": "Jayson Kent",
+    "team": "POR",
+    "min": 3.0,
+    "proj": 16.0
    }
   ],
   "injuries": [
@@ -1182,8 +1199,8 @@
   ]
  },
  "injuries": {
-  "report": "04:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_04_00PM.pdf",
+  "report": "04:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_04_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1264,6 +1281,42 @@
    {
     "last": {
      "date": "2026-11-20",
+     "dk": 58.2,
+     "min": 37,
+     "opp": "NOP",
+     "ha": "vs",
+     "res": "W",
+     "score": "126-120"
+    },
+    "game": "OKC at MIA",
+    "time": "2026-11-22T23:00Z",
+    "team": "OKC",
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "4:42 PM",
+    "salary": null,
+    "min": 34.3,
+    "benefits": [
+     {
+      "player": "Ajay Mitchell",
+      "salary": 6400,
+      "why": "subs in for him 8 of 40 times",
+      "much": "+10.0 DK projected vs. last 3",
+      "score": 9.950000000000003,
+      "min": 32.5,
+      "dk": 36.2,
+      "avg": 29.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-20",
      "dk": 6.2,
      "min": 9,
      "opp": "NOP",
@@ -1290,8 +1343,8 @@
       "why": "started, 31 minutes (11/13)",
       "much": "+6.5 DK without him (7 games)",
       "score": 6.5,
-      "min": 30.5,
-      "dk": 28.4,
+      "min": 33.0,
+      "dk": 30.8,
       "avg": 23.4
      },
      {
@@ -1300,48 +1353,12 @@
       "why": "21 minutes, up from 16",
       "much": "+6.5 DK without him (7 games)",
       "score": 6.5,
-      "min": 24.7,
-      "dk": 19.4,
+      "min": 29.0,
+      "dk": 22.8,
       "avg": 13.4
      }
     ],
     "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-20",
-     "dk": 58.2,
-     "min": 37,
-     "opp": "NOP",
-     "ha": "vs",
-     "res": "W",
-     "score": "126-120"
-    },
-    "game": "OKC at MIA",
-    "time": "2026-11-22T23:00Z",
-    "team": "OKC",
-    "player": "Shai Gilgeous-Alexander",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": 10000,
-    "min": 34.3,
-    "benefits": [
-     {
-      "player": "Ajay Mitchell",
-      "salary": 6400,
-      "why": "subs in for him 8 of 40 times",
-      "much": "about +7.7 DK",
-      "score": 7.65464480874317,
-      "min": 30.5,
-      "dk": 34.0,
-      "avg": 29.7
-     }
-    ],
-    "estimate": true
    },
    {
     "last": {
@@ -1403,12 +1420,12 @@
     "time": "2026-11-22T23:00Z",
     "team": "MIA",
     "player": "Myron Gardner",
-    "status": "Probable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "4:42 PM",
     "salary": null,
     "min": 23.0,
     "benefits": [],
@@ -2221,8 +2238,8 @@
       "why": "25 minutes, up from 13",
       "much": "+18.1 DK without him (13 games)",
       "score": 18.1,
-      "min": 26.8,
-      "dk": 31.5,
+      "min": 32.0,
+      "dk": 37.5,
       "avg": 24.7
      },
      {
@@ -2231,8 +2248,8 @@
       "why": "22 minutes, up from 5",
       "much": "+14.3 DK without him (13 games)",
       "score": 14.3,
-      "min": 24.7,
-      "dk": 19.4,
+      "min": 29.0,
+      "dk": 22.8,
       "avg": 13.4
      },
      {
@@ -2241,8 +2258,8 @@
       "why": "started 10 of 13",
       "much": "+13.3 DK without him (13 games)",
       "score": 13.3,
-      "min": 24.1,
-      "dk": 20.7,
+      "min": 28.5,
+      "dk": 24.5,
       "avg": 16.5
      }
     ],
@@ -2277,8 +2294,8 @@
       "why": "25 minutes, up from 13",
       "much": "+18.1 DK without him (13 games)",
       "score": 18.1,
-      "min": 26.8,
-      "dk": 31.5,
+      "min": 32.0,
+      "dk": 37.5,
       "avg": 24.7
      },
      {
@@ -2287,8 +2304,8 @@
       "why": "22 minutes, up from 5",
       "much": "+14.3 DK without him (13 games)",
       "score": 14.3,
-      "min": 24.7,
-      "dk": 19.4,
+      "min": 29.0,
+      "dk": 22.8,
       "avg": 13.4
      },
      {
@@ -2297,8 +2314,8 @@
       "why": "started 10 of 13",
       "much": "+13.3 DK without him (13 games)",
       "score": 13.3,
-      "min": 24.1,
-      "dk": 20.7,
+      "min": 28.5,
+      "dk": 24.5,
       "avg": 16.5
      }
     ],
@@ -2333,8 +2350,8 @@
       "why": "23 minutes, up from 17",
       "much": "+5.7 DK without him (4 games)",
       "score": 5.7,
-      "min": 24.7,
-      "dk": 19.4,
+      "min": 29.0,
+      "dk": 22.8,
       "avg": 13.4
      },
      {
@@ -2343,8 +2360,8 @@
       "why": "same minutes, more production",
       "much": "+5.6 DK without him (4 games)",
       "score": 5.6,
-      "min": 26.8,
-      "dk": 31.5,
+      "min": 32.0,
+      "dk": 37.5,
       "avg": 24.7
      },
      {
@@ -2353,8 +2370,8 @@
       "why": "same minutes, more production",
       "much": "+5.2 DK without him (1 game)",
       "score": 5.2,
-      "min": 16.2,
-      "dk": 11.2,
+      "min": 18.3,
+      "dk": 12.7,
       "avg": 6.6
      }
     ],
@@ -2389,8 +2406,8 @@
       "why": "25 minutes, up from 13",
       "much": "+18.1 DK without him (13 games)",
       "score": 18.1,
-      "min": 26.8,
-      "dk": 31.5,
+      "min": 32.0,
+      "dk": 37.5,
       "avg": 24.7
      },
      {
@@ -2399,8 +2416,8 @@
       "why": "22 minutes, up from 5",
       "much": "+14.3 DK without him (13 games)",
       "score": 14.3,
-      "min": 24.7,
-      "dk": 19.4,
+      "min": 29.0,
+      "dk": 22.8,
       "avg": 13.4
      },
      {
@@ -2409,8 +2426,8 @@
       "why": "started 10 of 13",
       "much": "+13.3 DK without him (13 games)",
       "score": 13.3,
-      "min": 24.1,
-      "dk": 20.7,
+      "min": 28.5,
+      "dk": 24.5,
       "avg": 16.5
      }
     ],
