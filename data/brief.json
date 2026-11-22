@@ -1,10 +1,9 @@
 {
  "date": "2026-11-22",
- "updated": "12:53 PM ET",
+ "updated": "1:53 PM ET",
  "games": 7,
  "pending": [
   "DAL",
-  "NYK",
   "BOS"
  ],
  "first_report": "5:35 AM",
@@ -14,10 +13,10 @@
    "home": "ATL",
    "time": "2026-11-22T20:30Z",
    "slate": "late",
-   "ou": 224.5,
+   "ou": 223.5,
    "fav": "DET",
-   "line": 2.5,
-   "away_pts": 113.5,
+   "line": 1.5,
+   "away_pts": 112.5,
    "home_pts": 111.0,
    "tags": [
     "Close game"
@@ -34,12 +33,7 @@
        "min": 19.0
       }
      ],
-     "q": [
-      {
-       "player": "Ron Holland",
-       "min": 14.9
-      }
-     ]
+     "q": []
     },
     "ATL": {
      "out": [
@@ -52,12 +46,7 @@
        "min": 15.3
       }
      ],
-     "q": [
-      {
-       "player": "Kingston Flemings",
-       "min": 22.2
-      }
-     ]
+     "q": []
     }
    },
    "key": "Duncan Robinson and Jalen Duren are out, so Javonte Green and Daniss Jenkins should play more than usual."
@@ -67,11 +56,11 @@
    "home": "MIA",
    "time": "2026-11-22T23:00Z",
    "slate": "late",
-   "ou": 230.5,
+   "ou": 231.5,
    "fav": "MIA",
-   "line": 3.5,
+   "line": 4.5,
    "away_pts": 113.5,
-   "home_pts": 117.0,
+   "home_pts": 118.0,
    "tags": [],
    "teams": {
     "OKC": {
@@ -117,11 +106,11 @@
    "home": "CHI",
    "time": "2026-11-23T00:00Z",
    "slate": "main",
-   "ou": 237.5,
+   "ou": 235.5,
    "fav": "DEN",
    "line": 9.5,
-   "away_pts": 123.5,
-   "home_pts": 114.0,
+   "away_pts": 122.5,
+   "home_pts": 113.0,
    "tags": [
     "Highest total",
     "Blowout risk"
@@ -192,10 +181,10 @@
    "home": "WAS",
    "time": "2026-11-23T00:00Z",
    "slate": "main",
-   "ou": 220.5,
+   "ou": 219.5,
    "fav": "ORL",
-   "line": 5.5,
-   "away_pts": 113.0,
+   "line": 4.5,
+   "away_pts": 112.0,
    "home_pts": 107.5,
    "tags": [],
    "teams": {
@@ -230,11 +219,11 @@
    "home": "NYK",
    "time": "2026-11-23T01:00Z",
    "slate": "main",
-   "ou": 214.5,
+   "ou": 212.5,
    "fav": "NYK",
-   "line": 8.5,
-   "away_pts": 103.0,
-   "home_pts": 111.5,
+   "line": 7.5,
+   "away_pts": 102.5,
+   "home_pts": 110.0,
    "tags": [
     "NYK on a back-to-back"
    ],
@@ -262,11 +251,16 @@
      ]
     },
     "NYK": {
-     "out": [],
+     "out": [
+      {
+       "player": "OG Anunoby",
+       "min": 38.7
+      }
+     ],
      "q": [
       {
-       "player": "Jordan Clarkson",
-       "min": 6.9
+       "player": "Karl-Anthony Towns",
+       "min": 40.1
       }
      ]
     }
@@ -278,11 +272,11 @@
    "home": "GSW",
    "time": "2026-11-23T01:30Z",
    "slate": "main",
-   "ou": 210.5,
+   "ou": 211.5,
    "fav": "BOS",
    "line": 8.5,
-   "away_pts": 109.5,
-   "home_pts": 101.0,
+   "away_pts": 110.0,
+   "home_pts": 101.5,
    "tags": [
     "Lowest total",
     "BOS on a back-to-back"
@@ -320,6 +314,46 @@
  ],
  "changed": [
   {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Illness",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Bub Carrington",
+   "team": "WAS",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Hamstring Strain",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Kingston Flemings",
+   "team": "ATL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Lumbar Strain",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Ronald Holland II",
+   "team": "DET",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "1:55 PM"
+  },
+  {
    "player": "Deandre Ayton",
    "team": "WAS",
    "status": "Questionable",
@@ -354,6 +388,27 @@
  ],
  "chg": [
   {
+   "key": "Norman Powell",
+   "team": "CHI",
+   "head": "Norman Powell OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jordan Hawkins",
+     "salary": 3000,
+     "much": "+14.6 DK without him (2 games)"
+    },
+    {
+     "player": "Noa Essengue",
+     "salary": 3100,
+     "much": "+10.9 DK without him (2 games)"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 31.2
+  },
+  {
    "key": "CHI",
    "team": "CHI",
    "head": "Smith CLEARED",
@@ -375,6 +430,69 @@
    "size": 30.8
   },
   {
+   "key": "Karl-Anthony Towns",
+   "team": "NYK",
+   "head": "Karl-Anthony Towns QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Andre Drummond",
+     "salary": 4500,
+     "much": "+16.6 DK without him (1 game)"
+    },
+    {
+     "player": "Landry Shamet",
+     "salary": 4600,
+     "much": "+11.8 DK without him (1 game)"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 24.2
+  },
+  {
+   "key": "ATL",
+   "team": "ATL",
+   "head": "Flemings CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Corey Kispert",
+     "salary": 3400,
+     "much": "+8.5 DK without Flemings"
+    },
+    {
+     "player": "Nickeil Alexander-Walker",
+     "salary": 7000,
+     "much": "+6.5 DK without Flemings"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 18.3
+  },
+  {
+   "key": "DET",
+   "team": "DET",
+   "head": "II CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Javonte Green",
+     "salary": 4100,
+     "much": "+8.7 DK without II"
+    },
+    {
+     "player": "Daniss Jenkins",
+     "salary": 6200,
+     "much": "+7.3 DK without II"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 15.0
+  },
+  {
    "key": "Nic Claxton",
    "team": "CHI",
    "head": "Nic Claxton QUESTIONABLE",
@@ -389,6 +507,27 @@
    ],
    "time": "12:42 PM",
    "size": 10.0
+  },
+  {
+   "key": "Bub Carrington",
+   "team": "WAS",
+   "head": "Bub Carrington QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "AJ Dybantsa",
+     "salary": 6900,
+     "much": "+12.6 DK without him (1 game)"
+    },
+    {
+     "player": "Anthony Davis",
+     "salary": 9400,
+     "much": "+7.0 DK without him (1 game)"
+    }
+   ],
+   "time": "1:55 PM",
+   "size": 5.5
   }
  ],
  "sits": [
@@ -472,7 +611,7 @@
     {
      "player": "Norman Powell",
      "min": 30.7,
-     "note": "Powell is questionable for Sunday against Denver with a right hamstring strain after playing 33 minutes on Friday.",
+     "note": "Norman Powell was moved from questionable to out for tonight (right hamstring strain) on the NBA's 01:45 PM injury report. He had averaged 31 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     },
     {
@@ -713,6 +852,16 @@
      "min": 33.6,
      "dk": 37.1,
      "avg": 33.8
+    },
+    {
+     "player": "Kingston Flemings",
+     "salary": 4700,
+     "why": "Show: up to about 28 minutes (11/21)",
+     "much": "+5.6 DK projected vs. last 3",
+     "score": 5.566666666666665,
+     "min": 22.2,
+     "dk": 18.9,
+     "avg": 18.3
     }
    ],
    "split_of": [
@@ -814,11 +963,11 @@
  ],
  "chalk": [
   {
-   "player": "Paul Reed",
+   "player": "Daniss Jenkins",
    "team": "DET",
    "own": 38.0,
-   "dk": 26.6,
-   "salary": 5500
+   "dk": 35.1,
+   "salary": 6200
   },
   {
    "player": "Tre Jones",
@@ -828,41 +977,41 @@
    "salary": 4600
   },
   {
-   "player": "Davion Mitchell",
-   "team": "MIA",
-   "own": 36.1,
-   "dk": 32.9,
-   "salary": 7100
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "own": 34.0,
+   "dk": 47.3,
+   "salary": 9300
   },
   {
-   "player": "Onyeka Okongwu",
-   "team": "ATL",
-   "own": 35.2,
-   "dk": 37.7,
-   "salary": 6700
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "own": 34.0,
+   "dk": 34.0,
+   "salary": 6400
   }
  ],
  "leverage": [
   {
-   "player": "Kevin Huerter",
-   "team": "DET",
-   "own": 6.8,
-   "dk": 29.1,
-   "salary": 5400
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "own": 7.6,
+   "dk": 23.8,
+   "salary": 4800
   },
   {
-   "player": "Aday Mara",
-   "team": "OKC",
-   "own": 8.6,
-   "dk": 31.5,
-   "salary": 6000
+   "player": "Carlton Carrington",
+   "team": "WAS",
+   "own": 1.1,
+   "dk": 14.8,
+   "salary": 3000
   },
   {
-   "player": "OG Anunoby",
+   "player": "Landry Shamet",
    "team": "NYK",
-   "own": 5.0,
-   "dk": 33.6,
-   "salary": 6500
+   "own": 1.1,
+   "dk": 22.6,
+   "salary": 4600
   }
  ],
  "last": {
@@ -932,132 +1081,29 @@
     "why": "He played 40 minutes, 14 more than we projected."
    },
    {
-    "player": "Jayson Kent",
-    "team": "POR",
-    "min": 3.0,
-    "proj": 16.0
-   },
-   {
     "player": "Miles McBride",
     "team": "NYK",
     "min": 14.0,
     "proj": 27.0,
     "why": "He played 14 minutes, 13 fewer than we projected."
+   },
+   {
+    "player": "Jayson Kent",
+    "team": "POR",
+    "min": 3.0,
+    "proj": 16.0
    }
   ],
   "injuries": []
  },
  "injuries": {
-  "report": "12:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_12_45PM.pdf",
+  "report": "01:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_01_45PM.pdf",
   "pending": [
    "DAL",
-   "NYK",
    "BOS"
   ],
   "rows": [
-   {
-    "last": {
-     "date": "2026-11-13",
-     "dk": 2.2,
-     "min": 17,
-     "opp": "CHI",
-     "ha": "@",
-     "res": "L",
-     "score": "125-117"
-    },
-    "game": "DET at ATL",
-    "time": "2026-11-22T20:30Z",
-    "team": "ATL",
-    "player": "Kingston Flemings",
-    "status": "Questionable",
-    "reason": "Lumbar Strain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 4700,
-    "min": 22.7,
-    "benefits": [
-     {
-      "player": "Corey Kispert",
-      "salary": 3400,
-      "why": "17 minutes, up from 8",
-      "much": "+8.5 DK without him (4 games)",
-      "score": 8.5,
-      "min": 17.8,
-      "dk": 17.5,
-      "avg": 12.6
-     },
-     {
-      "player": "Nickeil Alexander-Walker",
-      "salary": 7000,
-      "why": "same minutes, more production",
-      "much": "+6.5 DK without him (4 games)",
-      "score": 6.5,
-      "min": 31.4,
-      "dk": 33.2,
-      "avg": 34.2
-     },
-     {
-      "player": "Aaron Wiggins",
-      "salary": 5300,
-      "why": "started, 34 minutes (11/20)",
-      "much": "+4.0 DK projected vs. last 3",
-      "score": 3.9666666666666686,
-      "min": 28.1,
-      "dk": 26.8,
-      "avg": 25.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-14",
-     "dk": 20.8,
-     "min": 22,
-     "opp": "MIA",
-     "ha": "@",
-     "res": "L",
-     "score": "137-117"
-    },
-    "game": "DET at ATL",
-    "time": "2026-11-22T20:30Z",
-    "team": "DET",
-    "player": "Ronald Holland II",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 3400,
-    "min": 17.0,
-    "benefits": [
-     {
-      "player": "Javonte Green",
-      "salary": 4100,
-      "why": "27 minutes, up from 17",
-      "much": "+8.7 DK without him (3 games)",
-      "score": 8.7,
-      "min": 24.8,
-      "dk": 18.7,
-      "avg": 13.8
-     },
-     {
-      "player": "Daniss Jenkins",
-      "salary": 6200,
-      "why": "started 3 of 3",
-      "much": "+7.3 DK without him (3 games)",
-      "score": 7.3,
-      "min": 35.8,
-      "dk": 35.1,
-      "avg": 28.1
-     }
-    ],
-    "estimate": false
-   },
    {
     "last": {
      "date": "2026-11-20",
@@ -1080,6 +1126,56 @@
     "changed_at": "",
     "salary": 9800,
     "min": 36.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-13",
+     "dk": 2.2,
+     "min": 17,
+     "opp": "CHI",
+     "ha": "@",
+     "res": "L",
+     "score": "125-117"
+    },
+    "game": "DET at ATL",
+    "time": "2026-11-22T20:30Z",
+    "team": "ATL",
+    "player": "Kingston Flemings",
+    "status": "Available",
+    "reason": "Lumbar Strain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "salary": 4700,
+    "min": 22.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-14",
+     "dk": 20.8,
+     "min": 22,
+     "opp": "MIA",
+     "ha": "@",
+     "res": "L",
+     "score": "137-117"
+    },
+    "game": "DET at ATL",
+    "time": "2026-11-22T20:30Z",
+    "team": "DET",
+    "player": "Ronald Holland II",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "salary": 3400,
+    "min": 17.0,
     "benefits": [],
     "estimate": false
    },
@@ -1250,12 +1346,12 @@
     "time": "2026-11-23T00:00Z",
     "team": "CHI",
     "player": "Norman Powell",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Right Hamstring Strain",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "1:55 PM",
     "salary": 6800,
     "min": 30.7,
     "benefits": [
@@ -1324,6 +1420,62 @@
       "min": 8.6,
       "dk": 7.8,
       "avg": 12.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-20",
+     "dk": 3.5,
+     "min": 6,
+     "opp": "CHI",
+     "ha": "@",
+     "res": "W",
+     "score": "98-94"
+    },
+    "game": "ORL at WAS",
+    "time": "2026-11-23T00:00Z",
+    "team": "WAS",
+    "player": "Bub Carrington",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "salary": 3000,
+    "min": 10.3,
+    "benefits": [
+     {
+      "player": "AJ Dybantsa",
+      "salary": 6900,
+      "why": "38 minutes, up from 34",
+      "much": "+12.6 DK without him (1 game)",
+      "score": 12.6,
+      "min": 33.2,
+      "dk": 29.8,
+      "avg": 31.8
+     },
+     {
+      "player": "Anthony Davis",
+      "salary": 9400,
+      "why": "same minutes, more production",
+      "much": "+7.0 DK without him (1 game)",
+      "score": 7.0,
+      "min": 32.7,
+      "dk": 42.3,
+      "avg": 46.0
+     },
+     {
+      "player": "Tre Johnson",
+      "salary": 3700,
+      "why": "Show: backup PG minutes, 21 minutes (11/16)",
+      "much": "+4.2 DK projected vs. last 3",
+      "score": 4.233333333333333,
+      "min": 17.4,
+      "dk": 11.4,
+      "avg": 13.8
      }
     ],
     "estimate": false
@@ -1455,6 +1607,62 @@
       "min": 16.5,
       "dk": 14.8,
       "avg": 13.5
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-19",
+     "dk": 49.5,
+     "min": 33,
+     "opp": "MIN",
+     "ha": "@",
+     "res": "W",
+     "score": "102-97"
+    },
+    "game": "IND at NYK",
+    "time": "2026-11-23T01:00Z",
+    "team": "NYK",
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "Out",
+    "known": true,
+    "changed_at": "1:55 PM",
+    "salary": 9600,
+    "min": 37.3,
+    "benefits": [
+     {
+      "player": "Andre Drummond",
+      "salary": 4500,
+      "why": "started that game",
+      "much": "+16.6 DK without him (1 game)",
+      "score": 16.6,
+      "min": 18.2,
+      "dk": 22.3,
+      "avg": 16.7
+     },
+     {
+      "player": "Landry Shamet",
+      "salary": 4600,
+      "why": "started that game",
+      "much": "+11.8 DK without him (1 game)",
+      "score": 11.8,
+      "min": 33.4,
+      "dk": 22.6,
+      "avg": 17.7
+     },
+     {
+      "player": "Jose Alvarado",
+      "salary": 3000,
+      "why": "15 minutes, up from 9",
+      "much": "+9.7 DK without him (1 game)",
+      "score": 9.7,
+      "min": 14.9,
+      "dk": 12.0,
+      "avg": 7.4
      }
     ],
     "estimate": false
@@ -1603,6 +1811,16 @@
       "min": 33.6,
       "dk": 37.1,
       "avg": 33.8
+     },
+     {
+      "player": "Kingston Flemings",
+      "salary": 4700,
+      "why": "Show: up to about 28 minutes (11/21)",
+      "much": "+5.6 DK projected vs. last 3",
+      "score": 5.566666666666665,
+      "min": 22.2,
+      "dk": 18.9,
+      "avg": 18.3
      }
     ],
     "estimate": false
@@ -2255,6 +2473,62 @@
    },
    {
     "last": {
+     "date": "2026-11-19",
+     "dk": 32.8,
+     "min": 36,
+     "opp": "MIN",
+     "ha": "@",
+     "res": "W",
+     "score": "102-97"
+    },
+    "game": "IND at NYK",
+    "time": "2026-11-23T01:00Z",
+    "team": "NYK",
+    "player": "OG Anunoby",
+    "status": "Out",
+    "reason": "Left Calf Tightness",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 6500,
+    "min": 38.7,
+    "benefits": [
+     {
+      "player": "Andre Drummond",
+      "salary": 4500,
+      "why": "started that game",
+      "much": "+16.6 DK without him (1 game)",
+      "score": 16.6,
+      "min": 18.2,
+      "dk": 22.3,
+      "avg": 16.7
+     },
+     {
+      "player": "Landry Shamet",
+      "salary": 4600,
+      "why": "started that game",
+      "much": "+11.8 DK without him (1 game)",
+      "score": 11.8,
+      "min": 33.4,
+      "dk": 22.6,
+      "avg": 17.7
+     },
+     {
+      "player": "Jose Alvarado",
+      "salary": 3000,
+      "why": "15 minutes, up from 9",
+      "much": "+9.7 DK without him (1 game)",
+      "score": 9.7,
+      "min": 14.9,
+      "dk": 12.0,
+      "avg": 7.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-10-26",
      "dk": 48.5,
      "min": 35,
@@ -2527,6 +2801,11 @@
    {
     "player": "Jamir Watkins",
     "team": "WAS",
+    "status": "Out"
+   },
+   {
+    "player": "Jordan Clarkson",
+    "team": "NYK",
     "status": "Out"
    },
    {

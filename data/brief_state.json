@@ -4,11 +4,11 @@
  "seen": {
   "Cade Cunningham": "Probable",
   "Jalen Duren": "Out",
-  "Ronald Holland II": "Questionable",
+  "Ronald Holland II": "Available",
   "Ebuka Okorie": "Out",
   "Taurean Prince": "Out",
   "Duncan Robinson": "Out",
-  "Kingston Flemings": "Questionable",
+  "Kingston Flemings": "Available",
   "Mouhamed Gueye": "Out",
   "Jock Landale": "Out",
   "CJ McCollum": "Out",
@@ -28,7 +28,7 @@
   "Lauri Markkanen": "Out",
   "Jusuf Nurkic": "Out",
   "Julian Strawther": "Out",
-  "Norman Powell": "Questionable",
+  "Norman Powell": "Out",
   "Jalen Smith": "Probable",
   "Patrick Williams": "Probable",
   "Caleb Wilson": "Out",
@@ -53,7 +53,9 @@
   "Bryce Hopkins": "Out",
   "Nic Claxton": "Questionable",
   "Orlando Robinson": "Available",
-  "Deandre Ayton": "Questionable"
+  "Deandre Ayton": "Questionable",
+  "Bub Carrington": "Questionable",
+  "Karl-Anthony Towns": "Questionable"
  },
  "log": [
   {
@@ -87,6 +89,46 @@
    "was": "",
    "why": "Illness",
    "time": "12:42 PM"
+  },
+  {
+   "player": "Ronald Holland II",
+   "team": "DET",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Kingston Flemings",
+   "team": "ATL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Lumbar Strain",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Hamstring Strain",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Bub Carrington",
+   "team": "WAS",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Illness",
+   "time": "1:55 PM"
   }
  ],
  "teams": [
@@ -97,6 +139,7 @@
   "GSW",
   "IND",
   "MIA",
+  "NYK",
   "OKC",
   "ORL",
   "UTA",
