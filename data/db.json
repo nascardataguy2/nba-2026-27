@@ -2,7 +2,7 @@
  "updated": "2026-11-22",
  "brief": {
   "date": "2026-11-22",
-  "updated": "2:58 PM ET",
+  "updated": "3:15 PM ET",
   "games": 7,
   "pending": [
    "BOS"
@@ -130,17 +130,16 @@
        {
         "player": "Caleb Wilson",
         "min": 23.0
-       }
-      ],
-      "q": [
+       },
        {
         "player": "Nicolas Claxton",
-        "min": 20.1
+        "min": 22.7
        }
-      ]
+      ],
+      "q": []
      }
     },
-    "key": "Norman Powell and Caleb Wilson are out, so Jordan Hawkins and Noa Essengue and Jalen Smith should play more than usual."
+    "key": "Norman Powell and Caleb Wilson are out, so Noa Essengue and Jalen Smith and Patrick Williams should play more than usual."
    },
    {
     "away": "DAL",
@@ -329,6 +328,30 @@
   ],
   "changed": [
    {
+    "player": "Nic Claxton",
+    "team": "CHI",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Illness",
+    "time": "3:17 PM"
+   },
+   {
+    "player": "Tobe Awaka",
+    "team": "CHI",
+    "status": "Available",
+    "was": "Out",
+    "why": "-",
+    "time": "3:17 PM"
+   },
+   {
+    "player": "Cade Cunningham",
+    "team": "DET",
+    "status": "Available",
+    "was": "Probable",
+    "why": "Right Knee Soreness",
+    "time": "3:17 PM"
+   },
+   {
     "player": "P.J. Washington",
     "team": "DAL",
     "status": "Doubtful",
@@ -383,30 +406,6 @@
     "was": "Questionable",
     "why": "",
     "time": "1:55 PM"
-   },
-   {
-    "player": "Deandre Ayton",
-    "team": "WAS",
-    "status": "Questionable",
-    "was": "",
-    "why": "Illness",
-    "time": "12:42 PM"
-   },
-   {
-    "player": "Jalen Smith",
-    "team": "CHI",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "Gastrointestinal Illness",
-    "time": "12:42 PM"
-   },
-   {
-    "player": "Orlando Robinson",
-    "team": "CHI",
-    "status": "Available",
-    "was": "Out",
-    "why": "-",
-    "time": "12:42 PM"
    }
   ],
   "chg": [
@@ -418,14 +417,14 @@
     "act": "Play",
     "names": [
      {
-      "player": "Jordan Hawkins",
-      "salary": 3000,
-      "much": "+14.6 DK without him (2 games)"
-     },
-     {
       "player": "Noa Essengue",
       "salary": 3100,
       "much": "+10.9 DK without him (2 games)"
+     },
+     {
+      "player": "Jalen Smith",
+      "salary": 6100,
+      "much": "+7.3 DK without him (2 games)"
      }
     ],
     "time": "1:55 PM",
@@ -449,7 +448,7 @@
       "much": "+10.5 DK without Smith"
      }
     ],
-    "time": "12:42 PM",
+    "time": "3:17 PM",
     "size": 30.8
    },
    {
@@ -495,6 +494,22 @@
     "size": 24.2
    },
    {
+    "key": "Nic Claxton",
+    "team": "CHI",
+    "head": "Nic Claxton OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Leonard Miller",
+      "salary": 3000,
+      "much": "+14.0 DK without him (9 games)"
+     }
+    ],
+    "time": "3:17 PM",
+    "size": 20.0
+   },
+   {
     "key": "ATL",
     "team": "ATL",
     "head": "Flemings CLEARED",
@@ -535,22 +550,6 @@
     ],
     "time": "1:55 PM",
     "size": 15.0
-   },
-   {
-    "key": "Nic Claxton",
-    "team": "CHI",
-    "head": "Nic Claxton QUESTIONABLE",
-    "st": "Questionable",
-    "act": "If he sits, play",
-    "names": [
-     {
-      "player": "Leonard Miller",
-      "salary": 3000,
-      "much": "+14.0 DK without him (9 games)"
-     }
-    ],
-    "time": "12:42 PM",
-    "size": 10.0
    },
    {
     "key": "Walter Clayton Jr.",
@@ -640,7 +639,7 @@
       "much": "+5.7 DK without them (4 games)",
       "score": 5.7,
       "min": 24.7,
-      "dk": 19.3,
+      "dk": 19.4,
       "avg": 13.4
      },
      {
@@ -684,29 +683,25 @@
       "min": 23.0,
       "note": "Caleb Wilson missed his fifth straight game on Friday, Nov. 20, after surgery on his right hand on Nov. 12.",
       "new": false
+     },
+     {
+      "player": "Nicolas Claxton",
+      "min": 22.7,
+      "note": "Nic Claxton was moved from questionable to out for tonight (illness) on the NBA's 03:15 PM injury report. He had averaged 21 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+      "new": true
      }
     ],
     "new": true,
-    "lost": 53.7,
+    "lost": 76.4,
     "benefits": [
-     {
-      "player": "Jordan Hawkins",
-      "salary": 3000,
-      "why": "20 minutes, up from 5",
-      "much": "+14.6 DK without them (2 games)",
-      "score": 14.6,
-      "min": 3.1,
-      "dk": 2.4,
-      "avg": 6.6
-     },
      {
       "player": "Noa Essengue",
       "salary": 3100,
       "why": "same minutes, more production",
       "much": "+10.9 DK without them (2 games)",
       "score": 10.9,
-      "min": 14.2,
-      "dk": 11.7,
+      "min": 15.0,
+      "dk": 12.3,
       "avg": 10.8
      },
      {
@@ -715,9 +710,19 @@
       "why": "30 minutes, up from 24",
       "much": "+7.3 DK without them (2 games)",
       "score": 7.3,
-      "min": 28.8,
-      "dk": 36.1,
+      "min": 32.0,
+      "dk": 40.1,
       "avg": 30.8
+     },
+     {
+      "player": "Patrick Williams",
+      "salary": 3300,
+      "why": "26 minutes, up from 20",
+      "much": "+7.3 DK without them (2 games)",
+      "score": 7.3,
+      "min": 26.5,
+      "dk": 19.8,
+      "avg": 16.0
      }
     ],
     "split_of": [
@@ -750,7 +755,7 @@
       "much": "+9.8 DK without them (5 games)",
       "score": 9.8,
       "min": 20.8,
-      "dk": 20.4,
+      "dk": 20.3,
       "avg": 21.4
      },
      {
@@ -760,7 +765,7 @@
       "much": "+9.4 DK without them (5 games)",
       "score": 9.4,
       "min": 20.5,
-      "dk": 17.9,
+      "dk": 17.6,
       "avg": 16.6
      },
      {
@@ -770,7 +775,7 @@
       "much": "+8.6 DK without them (4 games)",
       "score": 8.6,
       "min": 31.6,
-      "dk": 32.0,
+      "dk": 31.7,
       "avg": 32.3
      }
     ],
@@ -809,7 +814,7 @@
       "much": "+12.2 DK without him (1 game)",
       "score": 12.2,
       "min": 24.7,
-      "dk": 26.6,
+      "dk": 26.5,
       "avg": 22.6
      },
      {
@@ -863,7 +868,7 @@
       "much": "+7.6 DK without them (9 games)",
       "score": 7.6,
       "min": 28.8,
-      "dk": 31.1,
+      "dk": 31.0,
       "avg": 32.2
      },
      {
@@ -918,7 +923,7 @@
       "much": "+7.3 DK without them (3 games)",
       "score": 7.3,
       "min": 35.8,
-      "dk": 35.0,
+      "dk": 35.1,
       "avg": 28.1
      }
     ],
@@ -1024,50 +1029,50 @@
     "player": "Daniss Jenkins",
     "team": "DET",
     "own": 38.0,
-    "dk": 35.0,
+    "dk": 35.1,
     "salary": 6200
    },
    {
     "player": "Tre Jones",
     "team": "CHI",
     "own": 38.0,
-    "dk": 25.8,
+    "dk": 28.3,
     "salary": 4600
    },
    {
-    "player": "Kingston Flemings",
-    "team": "ATL",
-    "own": 35.1,
-    "dk": 18.9,
-    "salary": 4700
+    "player": "Bam Adebayo",
+    "team": "MIA",
+    "own": 35.4,
+    "dk": 34.9,
+    "salary": 7800
    },
    {
-    "player": "Jalen Johnson",
-    "team": "ATL",
-    "own": 34.8,
-    "dk": 47.2,
-    "salary": 9300
+    "player": "Ajay Mitchell",
+    "team": "OKC",
+    "own": 33.9,
+    "dk": 34.0,
+    "salary": 6400
    }
   ],
   "leverage": [
    {
     "player": "Jalen Brunson",
     "team": "NYK",
-    "own": 9.5,
-    "dk": 47.0,
+    "own": 7.8,
+    "dk": 47.2,
     "salary": 9100
    },
    {
     "player": "Carlton Carrington",
     "team": "WAS",
-    "own": 1.1,
-    "dk": 15.1,
+    "own": 1.2,
+    "dk": 14.8,
     "salary": 3000
    },
    {
     "player": "Neemias Queta",
     "team": "BOS",
-    "own": 3.3,
+    "own": 3.8,
     "dk": 25.3,
     "salary": 5200
    }
@@ -1155,8 +1160,8 @@
    "injuries": []
   },
   "injuries": {
-   "report": "02:45 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_45PM.pdf",
+   "report": "03:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_03_15PM.pdf",
    "pending": [
     "BOS"
    ],
@@ -1175,12 +1180,12 @@
      "time": "2026-11-22T20:30Z",
      "team": "DET",
      "player": "Cade Cunningham",
-     "status": "Probable",
+     "status": "Available",
      "reason": "Right Knee Soreness",
      "new": true,
-     "was": "Available",
+     "was": "Probable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "3:17 PM",
      "salary": 9800,
      "min": 36.7,
      "benefits": [],
@@ -1276,7 +1281,7 @@
        "much": "+6.5 DK without him (7 games)",
        "score": 6.5,
        "min": 24.7,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 13.4
       }
      ],
@@ -1345,10 +1350,10 @@
        "player": "Bam Adebayo",
        "salary": 7800,
        "why": "subs in for him 15 of 56 times",
-       "much": "about +9.9 DK",
-       "score": 9.925595238095237,
+       "much": "about +10.0 DK",
+       "score": 9.954117063492061,
        "min": 28.8,
-       "dk": 34.8,
+       "dk": 34.9,
        "avg": 38.6
       },
       {
@@ -1413,23 +1418,13 @@
      "min": 30.7,
      "benefits": [
       {
-       "player": "Jordan Hawkins",
-       "salary": 3000,
-       "why": "20 minutes, up from 5",
-       "much": "+14.6 DK without him (2 games)",
-       "score": 14.6,
-       "min": 3.1,
-       "dk": 2.4,
-       "avg": 6.6
-      },
-      {
        "player": "Noa Essengue",
        "salary": 3100,
        "why": "same minutes, more production",
        "much": "+10.9 DK without him (2 games)",
        "score": 10.9,
-       "min": 14.2,
-       "dk": 11.7,
+       "min": 15.0,
+       "dk": 12.3,
        "avg": 10.8
       },
       {
@@ -1438,9 +1433,55 @@
        "why": "30 minutes, up from 24",
        "much": "+7.3 DK without him (2 games)",
        "score": 7.3,
-       "min": 28.8,
-       "dk": 36.1,
+       "min": 32.0,
+       "dk": 40.1,
        "avg": 30.8
+      },
+      {
+       "player": "Patrick Williams",
+       "salary": 3300,
+       "why": "26 minutes, up from 20",
+       "much": "+7.3 DK without him (2 games)",
+       "score": 7.3,
+       "min": 26.5,
+       "dk": 19.8,
+       "avg": 16.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-20",
+      "dk": 23.8,
+      "min": 29,
+      "opp": "WAS",
+      "ha": "vs",
+      "res": "L",
+      "score": "98-94"
+     },
+     "game": "DEN at CHI",
+     "time": "2026-11-23T00:00Z",
+     "team": "CHI",
+     "player": "Nic Claxton",
+     "status": "Out",
+     "reason": "Illness",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "3:17 PM",
+     "salary": 5300,
+     "min": 22.7,
+     "benefits": [
+      {
+       "player": "Leonard Miller",
+       "salary": 3000,
+       "why": "18 minutes, up from 3",
+       "much": "+14.0 DK without him (9 games)",
+       "score": 14.0,
+       "min": 9.3,
+       "dk": 8.5,
+       "avg": 12.7
       }
      ],
      "estimate": false
@@ -1485,7 +1526,7 @@
        "much": "+12.2 DK without him (1 game)",
        "score": 12.2,
        "min": 24.7,
-       "dk": 26.6,
+       "dk": 26.5,
        "avg": 22.6
       },
       {
@@ -1543,42 +1584,6 @@
        "min": 23.5,
        "dk": 22.6,
        "avg": 22.9
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "last": {
-      "date": "2026-11-20",
-      "dk": 23.8,
-      "min": 29,
-      "opp": "WAS",
-      "ha": "vs",
-      "res": "L",
-      "score": "98-94"
-     },
-     "game": "DEN at CHI",
-     "time": "2026-11-23T00:00Z",
-     "team": "CHI",
-     "player": "Nic Claxton",
-     "status": "Questionable",
-     "reason": "Illness",
-     "new": true,
-     "was": "",
-     "known": true,
-     "changed_at": "12:42 PM",
-     "salary": 5300,
-     "min": 22.7,
-     "benefits": [
-      {
-       "player": "Leonard Miller",
-       "salary": 3000,
-       "why": "18 minutes, up from 3",
-       "much": "+14.0 DK without him (9 games)",
-       "score": 14.0,
-       "min": 8.6,
-       "dk": 7.9,
-       "avg": 12.7
       }
      ],
      "estimate": false
@@ -1744,7 +1749,7 @@
        "much": "+8.9 DK without him (6 games)",
        "score": 8.9,
        "min": 18.7,
-       "dk": 18.5,
+       "dk": 18.4,
        "avg": 19.8
       },
       {
@@ -1754,7 +1759,7 @@
        "much": "+8.6 DK without him (9 games)",
        "score": 8.6,
        "min": 20.5,
-       "dk": 17.9,
+       "dk": 17.6,
        "avg": 16.6
       },
       {
@@ -1764,7 +1769,7 @@
        "much": "+6.7 DK without him (8 games)",
        "score": 6.7,
        "min": 16.5,
-       "dk": 15.0,
+       "dk": 14.9,
        "avg": 13.5
       }
      ],
@@ -1800,7 +1805,7 @@
        "much": "+16.6 DK without him (1 game)",
        "score": 16.6,
        "min": 18.4,
-       "dk": 22.9,
+       "dk": 23.0,
        "avg": 16.7
       },
       {
@@ -1820,7 +1825,7 @@
        "much": "+11.8 DK without him (1 game)",
        "score": 11.8,
        "min": 31.2,
-       "dk": 21.9,
+       "dk": 22.3,
        "avg": 17.7
       }
      ],
@@ -1856,7 +1861,7 @@
        "much": "+26.6 DK without him (1 game)",
        "score": 26.6,
        "min": 15.3,
-       "dk": 13.7,
+       "dk": 13.6,
        "avg": 12.5
       },
       {
@@ -1866,7 +1871,7 @@
        "much": "+25.3 DK without him (1 game)",
        "score": 25.3,
        "min": 16.5,
-       "dk": 15.0,
+       "dk": 14.9,
        "avg": 13.5
       },
       {
@@ -1876,7 +1881,7 @@
        "much": "+23.3 DK without him (1 game)",
        "score": 23.3,
        "min": 20.8,
-       "dk": 20.4,
+       "dk": 20.3,
        "avg": 21.4
       }
      ],
@@ -1922,7 +1927,7 @@
        "much": "+7.3 DK without him (3 games)",
        "score": 7.3,
        "min": 35.8,
-       "dk": 35.0,
+       "dk": 35.1,
        "avg": 28.1
       }
      ],
@@ -1958,7 +1963,7 @@
        "much": "+8.0 DK without him (2 games)",
        "score": 8.0,
        "min": 34.6,
-       "dk": 47.2,
+       "dk": 47.3,
        "avg": 45.0
       },
       {
@@ -2024,7 +2029,7 @@
        "much": "+9.5 DK without him (13 games)",
        "score": 9.5,
        "min": 35.8,
-       "dk": 35.0,
+       "dk": 35.1,
        "avg": 28.1
       },
       {
@@ -2070,7 +2075,7 @@
        "much": "+8.4 DK without him (10 games)",
        "score": 8.4,
        "min": 34.6,
-       "dk": 47.2,
+       "dk": 47.3,
        "avg": 45.0
       },
       {
@@ -2161,7 +2166,7 @@
        "much": "+14.3 DK without him (13 games)",
        "score": 14.3,
        "min": 24.7,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 13.4
       },
       {
@@ -2171,7 +2176,7 @@
        "much": "+13.3 DK without him (13 games)",
        "score": 13.3,
        "min": 24.1,
-       "dk": 20.8,
+       "dk": 20.7,
        "avg": 16.5
       }
      ],
@@ -2217,7 +2222,7 @@
        "much": "+14.3 DK without him (13 games)",
        "score": 14.3,
        "min": 24.7,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 13.4
       },
       {
@@ -2227,7 +2232,7 @@
        "much": "+13.3 DK without him (13 games)",
        "score": 13.3,
        "min": 24.1,
-       "dk": 20.8,
+       "dk": 20.7,
        "avg": 16.5
       }
      ],
@@ -2263,7 +2268,7 @@
        "much": "+5.7 DK without him (4 games)",
        "score": 5.7,
        "min": 24.7,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 13.4
       },
       {
@@ -2329,7 +2334,7 @@
        "much": "+14.3 DK without him (13 games)",
        "score": 14.3,
        "min": 24.7,
-       "dk": 19.3,
+       "dk": 19.4,
        "avg": 13.4
       },
       {
@@ -2339,7 +2344,7 @@
        "much": "+13.3 DK without him (13 games)",
        "score": 13.3,
        "min": 24.1,
-       "dk": 20.8,
+       "dk": 20.7,
        "avg": 16.5
       }
      ],
@@ -2410,7 +2415,7 @@
        "much": "+7.6 DK without him (9 games)",
        "score": 7.6,
        "min": 28.8,
-       "dk": 31.1,
+       "dk": 31.0,
        "avg": 32.2
       },
       {
@@ -2456,7 +2461,7 @@
        "much": "+15.2 DK without him (13 games)",
        "score": 15.2,
        "min": 32.7,
-       "dk": 43.4,
+       "dk": 43.2,
        "avg": 48.7
       },
       {
@@ -2512,7 +2517,7 @@
        "much": "+11.6 DK without him (13 games)",
        "score": 11.6,
        "min": 28.8,
-       "dk": 31.1,
+       "dk": 31.0,
        "avg": 32.2
       },
       {
@@ -2567,9 +2572,19 @@
        "why": "started 5 of 5",
        "much": "+15.6 DK without him (5 games)",
        "score": 15.6,
-       "min": 28.8,
-       "dk": 18.9,
+       "min": 32.1,
+       "dk": 21.1,
        "avg": 15.4
+      },
+      {
+       "player": "Patrick Williams",
+       "salary": 3300,
+       "why": "24-26 minutes off bench (11/14)",
+       "much": "+12.5 DK projected vs. last 3",
+       "score": 12.466666666666669,
+       "min": 26.5,
+       "dk": 19.8,
+       "avg": 16.0
       },
       {
        "player": "Zach Collins",
@@ -2577,19 +2592,9 @@
        "why": "18 minutes, up from 8",
        "much": "+10.4 DK without him (3 games)",
        "score": 10.4,
-       "min": 10.9,
-       "dk": 9.9,
+       "min": 12.7,
+       "dk": 11.5,
        "avg": 9.1
-      },
-      {
-       "player": "Patrick Williams",
-       "salary": 3300,
-       "why": "24-26 minutes off bench (11/14)",
-       "much": "+10.4 DK projected vs. last 3",
-       "score": 10.366666666666667,
-       "min": 23.8,
-       "dk": 17.7,
-       "avg": 16.0
       }
      ],
      "estimate": false
@@ -2706,7 +2711,7 @@
        "much": "+16.6 DK without him (1 game)",
        "score": 16.6,
        "min": 18.4,
-       "dk": 22.9,
+       "dk": 23.0,
        "avg": 16.7
       },
       {
@@ -2726,7 +2731,7 @@
        "much": "+11.8 DK without him (1 game)",
        "score": 11.8,
        "min": 31.2,
-       "dk": 21.9,
+       "dk": 22.3,
        "avg": 17.7
       }
      ],
@@ -2762,7 +2767,7 @@
        "much": "+8.7 DK without him (12 games)",
        "score": 8.7,
        "min": 20.8,
-       "dk": 20.4,
+       "dk": 20.3,
        "avg": 21.4
       },
       {
@@ -2782,7 +2787,7 @@
        "much": "+5.2 DK without him (9 games)",
        "score": 5.2,
        "min": 31.6,
-       "dk": 32.0,
+       "dk": 31.7,
        "avg": 32.3
       }
      ],
@@ -2815,10 +2820,10 @@
        "player": "Jarace Walker",
        "salary": 3500,
        "why": "subs in for him 1 of 3 times",
-       "much": "+6.3 DK projected vs. last 3",
-       "score": 6.316666666666665,
+       "much": "+6.0 DK projected vs. last 3",
+       "score": 6.0166666666666675,
        "min": 20.5,
-       "dk": 17.9,
+       "dk": 17.6,
        "avg": 16.6
       }
      ],
@@ -2938,6 +2943,11 @@
     }
    ],
    "minor": [
+    {
+     "player": "Tobe Awaka",
+     "team": "CHI",
+     "status": "Available"
+    },
     {
      "player": "Orlando Robinson",
      "team": "CHI",
@@ -7931,6 +7941,12 @@
    "Claxton started and played 29 minutes on November 20 because Jalen Smith missed the game with a stomach illness. The show said this proves Claxton has no minutes restriction, so the split when Smith returns will show how coach Tiago Splitter wants to use them."
   ],
   [
+   "Nic Claxton",
+   "2026-11-22",
+   "injury",
+   "Nic Claxton was moved from questionable to out for tonight (illness) on the NBA's 03:15 PM injury report. He had averaged 21 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains."
+  ],
+  [
    "Nickeil Alexander-Walker",
    "2026-11-18",
    "usage",
@@ -9622,7 +9638,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 7 games; before that 11 avg last 5; 10 on Wednesday 11/4",
    "usage": "15% (our estimate, last 5 games)",
-   "status": "Out: Left Great Toe Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Great Toe Surgery (NBA injury report, 03:15 PM)",
    "note": "Asa Newell had surgery Tuesday to repair a plantar plate tear in his left big toe, hurt November 4. He will be re-evaluated in about four months.",
    "source": "WEB-1118"
   },
@@ -9632,7 +9648,7 @@
    "role": "Started 1 of last 5 (G)",
    "minutes": "Missed his team's last 2 games; before that 26 avg last 5; 30 on Sunday 11/15",
    "usage": "24% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 03:15 PM)",
    "note": "The show said McCollum is out about a month. He had been playing a sixth-man scoring and ball-handling role off the bench, and the show said he volunteered for that role so Kingston Flemings could play with the starters. His last game was Nov 15.",
    "source": "OMS-1121c"
   },
@@ -9672,7 +9688,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right ACL Tear (NBA injury report, 02:45 PM)",
+   "status": "Out: Right ACL Tear (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -9692,7 +9708,7 @@
    "role": "Bench (C)",
    "minutes": "Missed his team's last 3 games; before that 13 avg last 5; 18 on Friday 11/13",
    "usage": "23% (our estimate, last 5 games)",
-   "status": "Out: Right Great Toe Sprain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Great Toe Sprain (NBA injury report, 03:15 PM)",
    "note": "Jock Landale was held out on Friday, Nov. 20, with a back issue, leaving Zuby Ejiofor as the backup center.",
    "source": "ESPN-1121"
   },
@@ -9702,7 +9718,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 3 games; before that 23 avg last 5; 17 on Friday 11/13",
    "usage": "15% (our estimate, last 5 games)",
-   "status": "Available: Lumbar Strain (NBA injury report, 02:45 PM)",
+   "status": "Available: Lumbar Strain (NBA injury report, 03:15 PM)",
    "note": "Flemings was listed questionable for Sunday after missing Atlanta's last three games, and he has not played since November 13. The show said RayJ Dennis also being listed questionable on his two-way deal hints that Flemings may play, though it could be obfuscation.",
    "source": "LO-1121b"
   },
@@ -9722,7 +9738,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Foot Fracture (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Foot Fracture (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -9752,7 +9768,7 @@
    "role": "Bench (G)",
    "minutes": "10 avg last 4; 13 on Friday 11/20",
    "usage": "25% (our estimate, last 4 games)",
-   "status": "Available: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Available: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10262,7 +10278,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 5 games; before that 27 avg last 5; 15 on Wednesday 11/11",
    "usage": "27% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Caleb Wilson missed his fifth straight game on Friday, Nov. 20, after surgery on his right hand on Nov. 12.",
    "source": "ESPN-1121"
   },
@@ -10292,7 +10308,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 28 avg last 5; 21 on Wednesday 11/18",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Probable: Gastrointestinal Illness (NBA injury report, 02:45 PM)",
+   "status": "Probable: Gastrointestinal Illness (NBA injury report, 03:15 PM)",
    "note": "Smith missed Chicago's November 20 game with a stomach illness, and Nic Claxton started in his place. The show assumes Smith will be back for the next game, and his minutes against Claxton's will reveal the team's plan.",
    "source": "LO-1121b"
   },
@@ -10302,7 +10318,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 7 avg last 5; 2 on Wednesday 11/11",
    "usage": "28% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10352,9 +10368,9 @@
    "role": "Started 1 of last 5 (C)",
    "minutes": "21 avg last 5; 29 on Friday 11/20",
    "usage": "17% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
-   "note": "Claxton started and played 29 minutes on November 20 because Jalen Smith missed the game with a stomach illness. The show said this proves Claxton has no minutes restriction, so the split when Smith returns will show how coach Tiago Splitter wants to use them.",
-   "source": "LO-1121b"
+   "status": "Out: Illness (NBA injury report, 03:15 PM)",
+   "note": "Nic Claxton was moved from questionable to out for tonight (illness) on the NBA's 03:15 PM injury report. He had averaged 21 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+   "source": "NBA-INJ"
   },
   {
    "player": "Noa Essengue",
@@ -10372,7 +10388,7 @@
    "role": "Starter (G)",
    "minutes": "31 avg last 5; 33 on Friday 11/20",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "Powell (hamstring) and Jalen Smith (illness) are questionable for Chicago against Denver in the slate's highest-total game, with Caleb Wilson already out.",
    "source": "WEB-1122"
   },
@@ -10382,7 +10398,7 @@
    "role": "Bench (F)",
    "minutes": "20 avg last 5; 23 on Friday 11/20",
    "usage": "16% (our estimate, last 5 games)",
-   "status": "Probable: Left Thumb Sprain (NBA injury report, 02:45 PM)",
+   "status": "Probable: Left Thumb Sprain (NBA injury report, 03:15 PM)",
    "note": "Patrick Williams has played 24 to 28 minutes off the bench in his last four games. The show said Caleb Wilson's broken hand opens up more minutes, and that Williams could hold about 25 minutes a night over the next month while Wilson is out.",
    "source": "N2-1114"
   },
@@ -10392,7 +10408,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 8 games; before that 10 avg last 4; 2 on Monday 11/2",
    "usage": "8% (our estimate, last 4 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Available: - (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10572,7 +10588,7 @@
    "role": "Starter (F)",
    "minutes": "26 avg last 5; 20 on Saturday 11/21",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Available: Right Thumb Splint (NBA injury report, 02:45 PM)",
+   "status": "Available: Right Thumb Splint (NBA injury report, 03:15 PM)",
    "note": "Caleb Martin started on Saturday, November 21, because P.J. Washington sat out with an illness, the first game Washington has missed this season. Martin played 20 minutes.",
    "source": "ESPN-1122"
   },
@@ -10602,7 +10618,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Foot Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Foot Surgery (NBA injury report, 03:15 PM)",
    "note": "Dereck Lively II remains out with a broken foot. The show said it had seen nothing suggesting he is close to returning.",
    "source": "OMS-1105"
   },
@@ -10682,7 +10698,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 25 avg last 5; 25 on Wednesday 11/18",
    "usage": "21% (our estimate, last 5 games)",
-   "status": "Doubtful: Illness (NBA injury report, 02:45 PM)",
+   "status": "Doubtful: Illness (NBA injury report, 03:15 PM)",
    "note": "Washington missed his first game of the season Saturday with an illness, so Caleb Martin started and Max Christie played 24 minutes and closed the win. Dallas plays at Utah on the second night of a back-to-back and has not posted today's report.",
    "source": "ESPN-1122"
   },
@@ -10702,7 +10718,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 12 games; before that 12 avg last 4; 6 on Monday 10/26",
    "usage": "20% (our estimate, last 4 games)",
-   "status": "Out: Right Knee Sprain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Knee Sprain (NBA injury report, 03:15 PM)",
    "note": "The show said Sergio de Larrea will miss at least another week with a sprained knee, and he has not played since Oct. 26.",
    "source": "OMS-1101"
   },
@@ -10712,7 +10728,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 6 avg last 5; 9 on Sunday 11/15",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Out: Right Groin Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Groin Strain (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10722,7 +10738,7 @@
    "role": "Bench (G)",
    "minutes": "22 avg last 5; 25 on Saturday 11/21",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Questionable: Left Patellar Tendinitis (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Left Patellar Tendinitis (NBA injury report, 03:15 PM)",
    "note": "Walter Clayton Jr. played 25 minutes off the bench on 11/21 and scored 16 points. His minutes have swung from 13 to 27 over his last four games. The show said it likes him but that the minutes are not there consistently.",
    "source": "OMS-1122"
   },
@@ -10762,7 +10778,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 10 avg last 5; 4 on Monday 11/16",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10802,7 +10818,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 5 games; before that 3 avg last 4; 1 on Monday 11/9",
    "usage": "16% (our estimate, last 4 games)",
-   "status": "Out: G League - On Assignment (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - On Assignment (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10832,7 +10848,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Knee Sprain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Knee Sprain (NBA injury report, 03:15 PM)",
    "note": "Julian Strawther remained out on Wednesday, Oct. 28.",
    "source": "ESPN-1029"
   },
@@ -10922,7 +10938,7 @@
    "role": "Starter (G)",
    "minutes": "37 avg last 5; 36 on Friday 11/20",
    "usage": "32% (our estimate, last 5 games)",
-   "status": "Probable: Right Knee Soreness (NBA injury report, 02:45 PM)",
+   "status": "Available: Right Knee Soreness (NBA injury report, 03:15 PM)",
    "note": "Detroit listed Cunningham as probable for Sunday. The show said it still expects him to play, but the listing is worth watching.",
    "source": "LO-1121b"
   },
@@ -10952,7 +10968,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 3 games; before that 31 avg last 5; 17 on Saturday 11/14",
    "usage": "18% (our estimate, last 5 games)",
-   "status": "Out: Left Quadriceps Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Quadriceps Strain (NBA injury report, 03:15 PM)",
    "note": "Robinson has missed three straight games with a thigh injury and last played on 11/14. The show expects him back this week, and it said his return would most likely make Kevin Huerter unusable in fantasy.",
    "source": "LO-1121"
   },
@@ -10962,7 +10978,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 4 avg last 5; 6 on Monday 11/9",
    "usage": "32% (our estimate, last 5 games)",
-   "status": "Out: Left Oblique Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Oblique Strain (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10982,7 +10998,7 @@
    "role": "Bench (C)",
    "minutes": "Missed his team's last 3 games; before that 3 avg last 5; 2 on Saturday 11/14",
    "usage": "11% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -11002,7 +11018,7 @@
    "role": "Started 2 of last 2 (C)",
    "minutes": "Missed his team's last 13 games; before that 19 avg last 2; 10 on Friday 10/23",
    "usage": "24% (our estimate, last 2 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "Detroit is without Jalen Duren and Duncan Robinson at Atlanta, which keeps Paul Reed as the main center minutes off the bench, and Cade Cunningham is probable with knee soreness.",
    "source": "WEB-1122"
   },
@@ -11052,7 +11068,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 3 games; before that 15 avg last 5; 22 on Saturday 11/14",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Available (NBA injury report, 02:45 PM)",
+   "status": "Available (NBA injury report, 03:15 PM)",
    "note": "Holland was listed questionable for Sunday, and he has not played since November 14. The show said that if Holland sits again, Javonte Green gets a boost in his bench role of roughly 20 minutes.",
    "source": "LO-1121b"
   },
@@ -11062,7 +11078,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 3 games; before that 7 avg last 3; 8 on Saturday 11/14",
    "usage": "14% (our estimate, last 3 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -11102,7 +11118,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 16 avg last 5; 2 on Monday 11/9",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "The Warriors announced that Brandon Williams has returned to on-court activity and will be re-evaluated on Saturday, 11/21, so he is out at least until then. The show said his return would cut into LJ Cryer's role as the backup point guard, and Cryer has started on 11/16 and 11/18 while Williams has been out.",
    "source": "SE-1118b"
   },
@@ -11182,7 +11198,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Jimmy Butler is still out while he recovers from right ACL surgery, and he is ruled out for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -11192,7 +11208,7 @@
    "role": "Starter when healthy",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Not With Team (NBA injury report, 02:45 PM)",
+   "status": "Out: Not With Team (NBA injury report, 03:15 PM)",
    "note": "Kristaps Porzingis stepped away from basketball earlier this month and is listed as not with the team for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -11222,7 +11238,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Moses Moody, Gary Payton II and Brandin Williams did not play for Golden State against Houston. The show said those players will eventually return to help the guard rotation while Stephen Curry is hurt.",
    "source": "LO-1112d"
   },
@@ -11232,7 +11248,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 4 games; before that 25 avg last 5; 6 on Wednesday 11/11",
    "usage": "34% (our estimate, last 5 games)",
-   "status": "Out: Right Oblique Tear (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Oblique Tear (NBA injury report, 03:15 PM)",
    "note": "Curry has missed four straight games with an oblique tear and Draymond Green sat Thursday with a right elbow injury. Golden State finished its road trip 0-5 with a 12th different starting lineup, and Charles Bassey has started the last two games at center.",
    "source": "ESPN-1120"
   },
@@ -11432,7 +11448,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 15 games; before that 12 avg last 1; 12 on Wednesday 10/21",
    "usage": "10% (our estimate, last 1 games)",
-   "status": "Out: Left Meniscus Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Meniscus Surgery (NBA injury report, 03:15 PM)",
    "note": "Ben Sheppard is having surgery Wednesday to repair a torn meniscus in his left knee.",
    "source": "WEB-1028"
   },
@@ -11492,7 +11508,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -11542,7 +11558,7 @@
    "role": "Starter (F)",
    "minutes": "32 avg last 5; 30 on Friday 11/20",
    "usage": "29% (our estimate, last 5 games)",
-   "status": "Questionable (NBA injury report, 02:45 PM)",
+   "status": "Questionable (NBA injury report, 03:15 PM)",
    "note": "Siakam is questionable at New York with hip soreness, and Indiana is already without Tyrese Haliburton and T.J. McConnell, which would push more minutes to Obi Toppin and Jarace Walker if he sits.",
    "source": "WEB-1122"
   },
@@ -11562,7 +11578,7 @@
    "role": "Bench (G)",
    "minutes": "16 avg last 5; 11 on Friday 11/20",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "T.J. McConnell injured his hamstring again on 11/20 and played only 11 minutes. The show said the Pacers may hold him out for a long stretch to get him right because of his recent injury history.",
    "source": "OMS-1121"
   },
@@ -11572,7 +11588,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 12 games; before that 33 avg last 4; 35 on Monday 10/26",
    "usage": "25% (our estimate, last 4 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "The show said Tyrese Haliburton is still at least two weeks away from returning. He has not played since 10/26.",
    "source": "OMS-1121b"
   },
@@ -12192,7 +12208,7 @@
    "role": "Starter (F)",
    "minutes": "31 avg last 5; 32 on Wednesday 11/18",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Questionable: Right Groin tendinitis (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Right Groin tendinitis (NBA injury report, 03:15 PM)",
    "note": "Antetokounmpo is questionable against Oklahoma City with right groin tendinitis after being limited in Saturday's practice.",
    "source": "WEB-1122"
   },
@@ -12202,7 +12218,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last game; before that 2 avg last 2; 3 on Monday 11/16",
    "usage": "0% (our estimate, last 2 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -12222,7 +12238,7 @@
    "role": "Started 3 of last 5 (F)",
    "minutes": "Missed his team's last game; before that 16 avg last 5; 24 on Monday 11/16",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Probable (NBA injury report, 02:45 PM)",
+   "status": "Probable (NBA injury report, 03:15 PM)",
    "note": "Myron Gardner made his third straight start because Pelle Larsson was still out with an illness, and he played 24 minutes. Larsson has not played since 11/10.",
    "source": "OMS-1117b"
   },
@@ -12872,7 +12888,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 2 games; before that 10 avg last 5; 8 on Tuesday 11/17",
    "usage": "16% (our estimate, last 5 games)",
-   "status": "Out: Right Plantar Fasciitis (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Plantar Fasciitis (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -12902,7 +12918,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last game; before that 36 avg last 5; 33 on Thursday 11/19",
    "usage": "26% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "Towns missed Saturday's buzzer-beater win over Portland with an illness, and OG Anunoby (calf) and Jordan Clarkson (foot) are also day-to-day for the second night of the back-to-back against Indiana. New York had not filed today's injury report this morning; Andre Drummond started at center Saturday.",
    "source": "ESPN-1122"
   },
@@ -12952,7 +12968,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 37 avg last 5; 36 on Thursday 11/19",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Tightness (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Calf Tightness (NBA injury report, 03:15 PM)",
    "note": "OG Anunoby is questionable with left calf tightness and Jordan Clarkson is out, which thins New York's rotation and puts more on Karl-Anthony Towns, Jalen Brunson and Landry Shamet.",
    "source": "WEB-1121"
   },
@@ -13002,7 +13018,7 @@
    "role": "Started 1 of last 5 (G)",
    "minutes": "Missed his team's last game; before that 20 avg last 5; 9 on Wednesday 11/18",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Right Hip Soreness (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hip Soreness (NBA injury report, 03:15 PM)",
    "note": "The show listed Caruso as questionable for Sunday without an official update, and he did not play in Oklahoma City's November 20 game. Nikola Topic was also listed questionable.",
    "source": "LO-1121b"
   },
@@ -13032,7 +13048,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 13 games; before that 16 avg last 3; 6 on Sunday 10/25",
    "usage": "20% (our estimate, last 3 games)",
-   "status": "Out: Left Shoulder Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Shoulder Surgery (NBA injury report, 03:15 PM)",
    "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
    "source": "OMS-1104b"
   },
@@ -13042,7 +13058,7 @@
    "role": "Started 3 of last 3 (C)",
    "minutes": "Missed his team's last 13 games; before that 30 avg last 3; 31 on Sunday 10/25",
    "usage": "17% (our estimate, last 3 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Holmgren remained out Wednesday against Atlanta. Isaiah Hartenstein grabbed 17 rebounds in his place.",
    "source": "ESPN-1119"
   },
@@ -13072,7 +13088,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 13 games; before that 32 avg last 3; 32 on Sunday 10/25",
    "usage": "21% (our estimate, last 3 games)",
-   "status": "Out: Left Ankle Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Ankle Surgery (NBA injury report, 03:15 PM)",
    "note": "Williams remained out Wednesday against Atlanta, one of three injured Oklahoma City starters along with Cason Wallace and Chet Holmgren.",
    "source": "ESPN-1119"
   },
@@ -13092,7 +13108,7 @@
    "role": "Started 1 of last 5 (F)",
    "minutes": "18 avg last 5; 9 on Friday 11/20",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Out: Low Back Spasms (NBA injury report, 02:45 PM)",
+   "status": "Out: Low Back Spasms (NBA injury report, 03:15 PM)",
    "note": "He played 16 minutes a game before Sunday, when the wrist injury cut his night short.",
    "source": "WEB-1118"
   },
@@ -13132,7 +13148,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last game; before that 11 avg last 3; 5 on Wednesday 11/18",
    "usage": "19% (our estimate, last 3 games)",
-   "status": "Out: Left Hip Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hip Strain (NBA injury report, 03:15 PM)",
    "note": "Topic left Wednesday's loss to Atlanta with left hip soreness after five minutes and did not return. He made his season debut Nov. 13 after offseason back surgery.",
    "source": "WEB-1119"
   },
@@ -13152,7 +13168,7 @@
    "role": "Starter (G)",
    "minutes": "36 avg last 5; 37 on Friday 11/20",
    "usage": "37% (our estimate, last 5 games)",
-   "status": "Questionable (NBA injury report, 02:45 PM)",
+   "status": "Questionable (NBA injury report, 03:15 PM)",
    "note": "Gilgeous-Alexander is questionable at Miami with a low back contusion and a neck strain after scoring 40 on Friday. Oklahoma City is already without Chet Holmgren, Jalen Williams, Alex Caruso, Cason Wallace and Nikola Topic.",
    "source": "WEB-1122"
   },
@@ -13162,7 +13178,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 03:15 PM)",
    "note": "Thomas Sorber underwent a right knee arthroscopy for patellofemoral joint inflammation that developed during his rehab. The show reported that he will return to on-court activities in six to eight weeks, so he is not a factor for the Thunder in the near term.",
    "source": "SE-1118b"
   },
@@ -13272,7 +13288,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -13292,7 +13308,7 @@
    "role": "Started 2 of last 2 (F)",
    "minutes": "Missed his team's last 13 games; before that 34 avg last 2; 26 on Friday 10/23",
    "usage": "24% (our estimate, last 2 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Paolo Banchero has missed 12 straight games with a right ankle injury, and Orlando is targeting a return within the next couple of weeks.",
    "source": "WEB-1121"
   },
@@ -14342,7 +14358,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 13 games; before that 26 avg last 4; 10 on Monday 10/26",
    "usage": "26% (our estimate, last 4 games)",
-   "status": "Out: Right MCL Tear (NBA injury report, 02:45 PM)",
+   "status": "Out: Right MCL Tear (NBA injury report, 03:15 PM)",
    "note": "The show said Jaren Jackson Jr. is probably out at least another month; he has not played since October 26. The show said he will come back to a crowded Utah offense, with Darryn Peterson playing much better and Keyonte George taking a lot of shots.",
    "source": "RW-1116"
   },
@@ -14382,7 +14398,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Nurkic was ruled out on 11/20. The show said he is coming back soon, and his return would squeeze Utah's center minutes further after Jaxson Hayes' return.",
    "source": "SE-1121"
   },
@@ -14412,7 +14428,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 8 games; before that 28 avg last 5; 34 on Friday 11/6",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out: Right Hand Fracture (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hand Fracture (NBA injury report, 03:15 PM)",
    "note": "Lauri Markkanen (hand) was still out on Friday, Nov. 20, along with Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), which leaves Utah without its starting frontcourt.",
    "source": "ESPN-1121"
   },
@@ -14502,7 +14518,7 @@
    "role": "Bench (G)",
    "minutes": "11 avg last 5; 6 on Friday 11/20",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14512,7 +14528,7 @@
    "role": "Bench (C)",
    "minutes": "9 avg last 5; 11 on Friday 11/20",
    "usage": "7% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14522,7 +14538,7 @@
    "role": "Bench (C)",
    "minutes": "9 avg last 5; 11 on Friday 11/20",
    "usage": "7% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14532,7 +14548,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 6 games; before that 2 avg last 3; 2 on Monday 11/9",
    "usage": "20% (our estimate, last 3 games)",
-   "status": "Questionable: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Questionable: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14542,7 +14558,7 @@
    "role": "Injured (two-way)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14552,7 +14568,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 13 games; before that 18 avg last 4; 4 on Monday 10/26",
    "usage": "12% (our estimate, last 4 games)",
-   "status": "Out: Right Foot Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Foot Surgery (NBA injury report, 03:15 PM)",
    "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
    "source": "OMS-1101"
   },
@@ -14612,7 +14628,7 @@
    "role": "Bench (big)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Hip Impingement (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hip Impingement (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14846,13 +14862,13 @@
   },
   {
    "team": "CHI",
-   "starters": "Matas Buzelis (27), Isaac Okoro (23), Josh Giddey (28), Jalen Smith (25), Nic Claxton (21)",
-   "bench": "Tre Jones (19), Buddy Hield (16), Patrick Williams (22), Noa Essengue (13), Zach Collins (11)",
+   "starters": "Matas Buzelis (27), Isaac Okoro (23), Josh Giddey (28), Jalen Smith (25), Zach Collins (11)",
+   "bench": "Tre Jones (19), Buddy Hield (16), Patrick Williams (22), Noa Essengue (13)",
    "backup_c": "Nic Claxton",
    "coach": "Tiago Splitter (new)",
    "notes": "Coby White and Ayo Dosunmu are gone, and Norman Powell, Nic Claxton, Buddy Hield and rookie Caleb Wilson arrived. Leonard Miller gets about 25 minutes if Buzelis or Wilson is hurt. Fantasy playoff weeks run 3-3-4 (March 28 end) and 3-4-4 (April 4 end). Chicago has 15 back-to-backs, and no one is hurt to start the season.",
    "source": "LO-1018",
-   "out": "Caleb Wilson, Jaylin Sellers, Norman Powell, Tobe Awaka",
+   "out": "Caleb Wilson, Jaylin Sellers, Nic Claxton, Norman Powell",
    "depth_through": "2026-11-20",
    "games": 15
   },
@@ -14996,7 +15012,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 7 games; before that 11 avg last 5; 10 on Wednesday 11/4",
    "usage": "15% (our estimate, last 5 games)",
-   "status": "Out: Left Great Toe Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Great Toe Surgery (NBA injury report, 03:15 PM)",
    "note": "Asa Newell had surgery Tuesday to repair a plantar plate tear in his left big toe, hurt November 4. He will be re-evaluated in about four months.",
    "source": "WEB-1118"
   },
@@ -15006,7 +15022,7 @@
    "role": "Started 1 of last 5 (G)",
    "minutes": "Missed his team's last 2 games; before that 26 avg last 5; 30 on Sunday 11/15",
    "usage": "24% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 03:15 PM)",
    "note": "The show said McCollum is out about a month. He had been playing a sixth-man scoring and ball-handling role off the bench, and the show said he volunteered for that role so Kingston Flemings could play with the starters. His last game was Nov 15.",
    "source": "OMS-1121c"
   },
@@ -15046,7 +15062,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right ACL Tear (NBA injury report, 02:45 PM)",
+   "status": "Out: Right ACL Tear (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -15066,7 +15082,7 @@
    "role": "Bench (C)",
    "minutes": "Missed his team's last 3 games; before that 13 avg last 5; 18 on Friday 11/13",
    "usage": "23% (our estimate, last 5 games)",
-   "status": "Out: Right Great Toe Sprain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Great Toe Sprain (NBA injury report, 03:15 PM)",
    "note": "Jock Landale was held out on Friday, Nov. 20, with a back issue, leaving Zuby Ejiofor as the backup center.",
    "source": "ESPN-1121"
   },
@@ -15076,7 +15092,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 3 games; before that 23 avg last 5; 17 on Friday 11/13",
    "usage": "15% (our estimate, last 5 games)",
-   "status": "Available: Lumbar Strain (NBA injury report, 02:45 PM)",
+   "status": "Available: Lumbar Strain (NBA injury report, 03:15 PM)",
    "note": "Flemings was listed questionable for Sunday after missing Atlanta's last three games, and he has not played since November 13. The show said RayJ Dennis also being listed questionable on his two-way deal hints that Flemings may play, though it could be obfuscation.",
    "source": "LO-1121b"
   },
@@ -15096,7 +15112,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Foot Fracture (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Foot Fracture (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -15126,7 +15142,7 @@
    "role": "Bench (G)",
    "minutes": "10 avg last 4; 13 on Friday 11/20",
    "usage": "25% (our estimate, last 4 games)",
-   "status": "Available: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Available: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -15636,7 +15652,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 5 games; before that 27 avg last 5; 15 on Wednesday 11/11",
    "usage": "27% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Caleb Wilson missed his fifth straight game on Friday, Nov. 20, after surgery on his right hand on Nov. 12.",
    "source": "ESPN-1121"
   },
@@ -15666,7 +15682,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 28 avg last 5; 21 on Wednesday 11/18",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Probable: Gastrointestinal Illness (NBA injury report, 02:45 PM)",
+   "status": "Probable: Gastrointestinal Illness (NBA injury report, 03:15 PM)",
    "note": "Smith missed Chicago's November 20 game with a stomach illness, and Nic Claxton started in his place. The show assumes Smith will be back for the next game, and his minutes against Claxton's will reveal the team's plan.",
    "source": "LO-1121b"
   },
@@ -15676,7 +15692,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 7 avg last 5; 2 on Wednesday 11/11",
    "usage": "28% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -15726,9 +15742,9 @@
    "role": "Started 1 of last 5 (C)",
    "minutes": "21 avg last 5; 29 on Friday 11/20",
    "usage": "17% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
-   "note": "Claxton started and played 29 minutes on November 20 because Jalen Smith missed the game with a stomach illness. The show said this proves Claxton has no minutes restriction, so the split when Smith returns will show how coach Tiago Splitter wants to use them.",
-   "source": "LO-1121b"
+   "status": "Out: Illness (NBA injury report, 03:15 PM)",
+   "note": "Nic Claxton was moved from questionable to out for tonight (illness) on the NBA's 03:15 PM injury report. He had averaged 21 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+   "source": "NBA-INJ"
   },
   {
    "player": "Noa Essengue",
@@ -15746,7 +15762,7 @@
    "role": "Starter (G)",
    "minutes": "31 avg last 5; 33 on Friday 11/20",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "Powell (hamstring) and Jalen Smith (illness) are questionable for Chicago against Denver in the slate's highest-total game, with Caleb Wilson already out.",
    "source": "WEB-1122"
   },
@@ -15756,7 +15772,7 @@
    "role": "Bench (F)",
    "minutes": "20 avg last 5; 23 on Friday 11/20",
    "usage": "16% (our estimate, last 5 games)",
-   "status": "Probable: Left Thumb Sprain (NBA injury report, 02:45 PM)",
+   "status": "Probable: Left Thumb Sprain (NBA injury report, 03:15 PM)",
    "note": "Patrick Williams has played 24 to 28 minutes off the bench in his last four games. The show said Caleb Wilson's broken hand opens up more minutes, and that Williams could hold about 25 minutes a night over the next month while Wilson is out.",
    "source": "N2-1114"
   },
@@ -15766,7 +15782,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 8 games; before that 10 avg last 4; 2 on Monday 11/2",
    "usage": "8% (our estimate, last 4 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Available: - (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -15946,7 +15962,7 @@
    "role": "Starter (F)",
    "minutes": "26 avg last 5; 20 on Saturday 11/21",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Available: Right Thumb Splint (NBA injury report, 02:45 PM)",
+   "status": "Available: Right Thumb Splint (NBA injury report, 03:15 PM)",
    "note": "Caleb Martin started on Saturday, November 21, because P.J. Washington sat out with an illness, the first game Washington has missed this season. Martin played 20 minutes.",
    "source": "ESPN-1122"
   },
@@ -15976,7 +15992,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Foot Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Foot Surgery (NBA injury report, 03:15 PM)",
    "note": "Dereck Lively II remains out with a broken foot. The show said it had seen nothing suggesting he is close to returning.",
    "source": "OMS-1105"
   },
@@ -16056,7 +16072,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 25 avg last 5; 25 on Wednesday 11/18",
    "usage": "21% (our estimate, last 5 games)",
-   "status": "Doubtful: Illness (NBA injury report, 02:45 PM)",
+   "status": "Doubtful: Illness (NBA injury report, 03:15 PM)",
    "note": "Washington missed his first game of the season Saturday with an illness, so Caleb Martin started and Max Christie played 24 minutes and closed the win. Dallas plays at Utah on the second night of a back-to-back and has not posted today's report.",
    "source": "ESPN-1122"
   },
@@ -16076,7 +16092,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 12 games; before that 12 avg last 4; 6 on Monday 10/26",
    "usage": "20% (our estimate, last 4 games)",
-   "status": "Out: Right Knee Sprain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Knee Sprain (NBA injury report, 03:15 PM)",
    "note": "The show said Sergio de Larrea will miss at least another week with a sprained knee, and he has not played since Oct. 26.",
    "source": "OMS-1101"
   },
@@ -16086,7 +16102,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 6 avg last 5; 9 on Sunday 11/15",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Out: Right Groin Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Groin Strain (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16096,7 +16112,7 @@
    "role": "Bench (G)",
    "minutes": "22 avg last 5; 25 on Saturday 11/21",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Questionable: Left Patellar Tendinitis (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Left Patellar Tendinitis (NBA injury report, 03:15 PM)",
    "note": "Walter Clayton Jr. played 25 minutes off the bench on 11/21 and scored 16 points. His minutes have swung from 13 to 27 over his last four games. The show said it likes him but that the minutes are not there consistently.",
    "source": "OMS-1122"
   },
@@ -16136,7 +16152,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 10 avg last 5; 4 on Monday 11/16",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16176,7 +16192,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 5 games; before that 3 avg last 4; 1 on Monday 11/9",
    "usage": "16% (our estimate, last 4 games)",
-   "status": "Out: G League - On Assignment (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - On Assignment (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16206,7 +16222,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Knee Sprain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Knee Sprain (NBA injury report, 03:15 PM)",
    "note": "Julian Strawther remained out on Wednesday, Oct. 28.",
    "source": "ESPN-1029"
   },
@@ -16296,7 +16312,7 @@
    "role": "Starter (G)",
    "minutes": "37 avg last 5; 36 on Friday 11/20",
    "usage": "32% (our estimate, last 5 games)",
-   "status": "Probable: Right Knee Soreness (NBA injury report, 02:45 PM)",
+   "status": "Available: Right Knee Soreness (NBA injury report, 03:15 PM)",
    "note": "Detroit listed Cunningham as probable for Sunday. The show said it still expects him to play, but the listing is worth watching.",
    "source": "LO-1121b"
   },
@@ -16326,7 +16342,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 3 games; before that 31 avg last 5; 17 on Saturday 11/14",
    "usage": "18% (our estimate, last 5 games)",
-   "status": "Out: Left Quadriceps Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Quadriceps Strain (NBA injury report, 03:15 PM)",
    "note": "Robinson has missed three straight games with a thigh injury and last played on 11/14. The show expects him back this week, and it said his return would most likely make Kevin Huerter unusable in fantasy.",
    "source": "LO-1121"
   },
@@ -16336,7 +16352,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 4 avg last 5; 6 on Monday 11/9",
    "usage": "32% (our estimate, last 5 games)",
-   "status": "Out: Left Oblique Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Oblique Strain (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16356,7 +16372,7 @@
    "role": "Bench (C)",
    "minutes": "Missed his team's last 3 games; before that 3 avg last 5; 2 on Saturday 11/14",
    "usage": "11% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16376,7 +16392,7 @@
    "role": "Started 2 of last 2 (C)",
    "minutes": "Missed his team's last 13 games; before that 19 avg last 2; 10 on Friday 10/23",
    "usage": "24% (our estimate, last 2 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "Detroit is without Jalen Duren and Duncan Robinson at Atlanta, which keeps Paul Reed as the main center minutes off the bench, and Cade Cunningham is probable with knee soreness.",
    "source": "WEB-1122"
   },
@@ -16416,7 +16432,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 3 games; before that 15 avg last 5; 22 on Saturday 11/14",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Available (NBA injury report, 02:45 PM)",
+   "status": "Available (NBA injury report, 03:15 PM)",
    "note": "Holland was listed questionable for Sunday, and he has not played since November 14. The show said that if Holland sits again, Javonte Green gets a boost in his bench role of roughly 20 minutes.",
    "source": "LO-1121b"
   },
@@ -16426,7 +16442,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 3 games; before that 7 avg last 3; 8 on Saturday 11/14",
    "usage": "14% (our estimate, last 3 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16466,7 +16482,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 16 avg last 5; 2 on Monday 11/9",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "The Warriors announced that Brandon Williams has returned to on-court activity and will be re-evaluated on Saturday, 11/21, so he is out at least until then. The show said his return would cut into LJ Cryer's role as the backup point guard, and Cryer has started on 11/16 and 11/18 while Williams has been out.",
    "source": "SE-1118b"
   },
@@ -16546,7 +16562,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Jimmy Butler is still out while he recovers from right ACL surgery, and he is ruled out for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -16556,7 +16572,7 @@
    "role": "Starter when healthy",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Not With Team (NBA injury report, 02:45 PM)",
+   "status": "Out: Not With Team (NBA injury report, 03:15 PM)",
    "note": "Kristaps Porzingis stepped away from basketball earlier this month and is listed as not with the team for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -16586,7 +16602,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Moses Moody, Gary Payton II and Brandin Williams did not play for Golden State against Houston. The show said those players will eventually return to help the guard rotation while Stephen Curry is hurt.",
    "source": "LO-1112d"
   },
@@ -16596,7 +16612,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 4 games; before that 25 avg last 5; 6 on Wednesday 11/11",
    "usage": "34% (our estimate, last 5 games)",
-   "status": "Out: Right Oblique Tear (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Oblique Tear (NBA injury report, 03:15 PM)",
    "note": "Curry has missed four straight games with an oblique tear and Draymond Green sat Thursday with a right elbow injury. Golden State finished its road trip 0-5 with a 12th different starting lineup, and Charles Bassey has started the last two games at center.",
    "source": "ESPN-1120"
   },
@@ -16796,7 +16812,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 15 games; before that 12 avg last 1; 12 on Wednesday 10/21",
    "usage": "10% (our estimate, last 1 games)",
-   "status": "Out: Left Meniscus Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Meniscus Surgery (NBA injury report, 03:15 PM)",
    "note": "Ben Sheppard is having surgery Wednesday to repair a torn meniscus in his left knee.",
    "source": "WEB-1028"
   },
@@ -16856,7 +16872,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16906,7 +16922,7 @@
    "role": "Starter (F)",
    "minutes": "32 avg last 5; 30 on Friday 11/20",
    "usage": "29% (our estimate, last 5 games)",
-   "status": "Questionable (NBA injury report, 02:45 PM)",
+   "status": "Questionable (NBA injury report, 03:15 PM)",
    "note": "Siakam is questionable at New York with hip soreness, and Indiana is already without Tyrese Haliburton and T.J. McConnell, which would push more minutes to Obi Toppin and Jarace Walker if he sits.",
    "source": "WEB-1122"
   },
@@ -16926,7 +16942,7 @@
    "role": "Bench (G)",
    "minutes": "16 avg last 5; 11 on Friday 11/20",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "T.J. McConnell injured his hamstring again on 11/20 and played only 11 minutes. The show said the Pacers may hold him out for a long stretch to get him right because of his recent injury history.",
    "source": "OMS-1121"
   },
@@ -16936,7 +16952,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 12 games; before that 33 avg last 4; 35 on Monday 10/26",
    "usage": "25% (our estimate, last 4 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 03:15 PM)",
    "note": "The show said Tyrese Haliburton is still at least two weeks away from returning. He has not played since 10/26.",
    "source": "OMS-1121b"
   },
@@ -17556,7 +17572,7 @@
    "role": "Starter (F)",
    "minutes": "31 avg last 5; 32 on Wednesday 11/18",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Questionable: Right Groin tendinitis (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Right Groin tendinitis (NBA injury report, 03:15 PM)",
    "note": "Antetokounmpo is questionable against Oklahoma City with right groin tendinitis after being limited in Saturday's practice.",
    "source": "WEB-1122"
   },
@@ -17566,7 +17582,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last game; before that 2 avg last 2; 3 on Monday 11/16",
    "usage": "0% (our estimate, last 2 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -17586,7 +17602,7 @@
    "role": "Started 3 of last 5 (F)",
    "minutes": "Missed his team's last game; before that 16 avg last 5; 24 on Monday 11/16",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Probable (NBA injury report, 02:45 PM)",
+   "status": "Probable (NBA injury report, 03:15 PM)",
    "note": "Myron Gardner made his third straight start because Pelle Larsson was still out with an illness, and he played 24 minutes. Larsson has not played since 11/10.",
    "source": "OMS-1117b"
   },
@@ -18236,7 +18252,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 2 games; before that 10 avg last 5; 8 on Tuesday 11/17",
    "usage": "16% (our estimate, last 5 games)",
-   "status": "Out: Right Plantar Fasciitis (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Plantar Fasciitis (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -18266,7 +18282,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last game; before that 36 avg last 5; 33 on Thursday 11/19",
    "usage": "26% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "Towns missed Saturday's buzzer-beater win over Portland with an illness, and OG Anunoby (calf) and Jordan Clarkson (foot) are also day-to-day for the second night of the back-to-back against Indiana. New York had not filed today's injury report this morning; Andre Drummond started at center Saturday.",
    "source": "ESPN-1122"
   },
@@ -18316,7 +18332,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 37 avg last 5; 36 on Thursday 11/19",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Tightness (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Calf Tightness (NBA injury report, 03:15 PM)",
    "note": "OG Anunoby is questionable with left calf tightness and Jordan Clarkson is out, which thins New York's rotation and puts more on Karl-Anthony Towns, Jalen Brunson and Landry Shamet.",
    "source": "WEB-1121"
   },
@@ -18366,7 +18382,7 @@
    "role": "Started 1 of last 5 (G)",
    "minutes": "Missed his team's last game; before that 20 avg last 5; 9 on Wednesday 11/18",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Right Hip Soreness (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hip Soreness (NBA injury report, 03:15 PM)",
    "note": "The show listed Caruso as questionable for Sunday without an official update, and he did not play in Oklahoma City's November 20 game. Nikola Topic was also listed questionable.",
    "source": "LO-1121b"
   },
@@ -18396,7 +18412,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 13 games; before that 16 avg last 3; 6 on Sunday 10/25",
    "usage": "20% (our estimate, last 3 games)",
-   "status": "Out: Left Shoulder Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Shoulder Surgery (NBA injury report, 03:15 PM)",
    "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
    "source": "OMS-1104b"
   },
@@ -18406,7 +18422,7 @@
    "role": "Started 3 of last 3 (C)",
    "minutes": "Missed his team's last 13 games; before that 30 avg last 3; 31 on Sunday 10/25",
    "usage": "17% (our estimate, last 3 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Holmgren remained out Wednesday against Atlanta. Isaiah Hartenstein grabbed 17 rebounds in his place.",
    "source": "ESPN-1119"
   },
@@ -18436,7 +18452,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 13 games; before that 32 avg last 3; 32 on Sunday 10/25",
    "usage": "21% (our estimate, last 3 games)",
-   "status": "Out: Left Ankle Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Ankle Surgery (NBA injury report, 03:15 PM)",
    "note": "Williams remained out Wednesday against Atlanta, one of three injured Oklahoma City starters along with Cason Wallace and Chet Holmgren.",
    "source": "ESPN-1119"
   },
@@ -18456,7 +18472,7 @@
    "role": "Started 1 of last 5 (F)",
    "minutes": "18 avg last 5; 9 on Friday 11/20",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Out: Low Back Spasms (NBA injury report, 02:45 PM)",
+   "status": "Out: Low Back Spasms (NBA injury report, 03:15 PM)",
    "note": "He played 16 minutes a game before Sunday, when the wrist injury cut his night short.",
    "source": "WEB-1118"
   },
@@ -18496,7 +18512,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last game; before that 11 avg last 3; 5 on Wednesday 11/18",
    "usage": "19% (our estimate, last 3 games)",
-   "status": "Out: Left Hip Strain (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hip Strain (NBA injury report, 03:15 PM)",
    "note": "Topic left Wednesday's loss to Atlanta with left hip soreness after five minutes and did not return. He made his season debut Nov. 13 after offseason back surgery.",
    "source": "WEB-1119"
   },
@@ -18516,7 +18532,7 @@
    "role": "Starter (G)",
    "minutes": "36 avg last 5; 37 on Friday 11/20",
    "usage": "37% (our estimate, last 5 games)",
-   "status": "Questionable (NBA injury report, 02:45 PM)",
+   "status": "Questionable (NBA injury report, 03:15 PM)",
    "note": "Gilgeous-Alexander is questionable at Miami with a low back contusion and a neck strain after scoring 40 on Friday. Oklahoma City is already without Chet Holmgren, Jalen Williams, Alex Caruso, Cason Wallace and Nikola Topic.",
    "source": "WEB-1122"
   },
@@ -18526,7 +18542,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 03:15 PM)",
    "note": "Thomas Sorber underwent a right knee arthroscopy for patellofemoral joint inflammation that developed during his rehab. The show reported that he will return to on-court activities in six to eight weeks, so he is not a factor for the Thunder in the near term.",
    "source": "SE-1118b"
   },
@@ -18636,7 +18652,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -18656,7 +18672,7 @@
    "role": "Started 2 of last 2 (F)",
    "minutes": "Missed his team's last 13 games; before that 34 avg last 2; 26 on Friday 10/23",
    "usage": "24% (our estimate, last 2 games)",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Paolo Banchero has missed 12 straight games with a right ankle injury, and Orlando is targeting a return within the next couple of weeks.",
    "source": "WEB-1121"
   },
@@ -19686,7 +19702,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 13 games; before that 26 avg last 4; 10 on Monday 10/26",
    "usage": "26% (our estimate, last 4 games)",
-   "status": "Out: Right MCL Tear (NBA injury report, 02:45 PM)",
+   "status": "Out: Right MCL Tear (NBA injury report, 03:15 PM)",
    "note": "The show said Jaren Jackson Jr. is probably out at least another month; he has not played since October 26. The show said he will come back to a crowded Utah offense, with Darryn Peterson playing much better and Keyonte George taking a lot of shots.",
    "source": "RW-1116"
   },
@@ -19726,7 +19742,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "Nurkic was ruled out on 11/20. The show said he is coming back soon, and his return would squeeze Utah's center minutes further after Jaxson Hayes' return.",
    "source": "SE-1121"
   },
@@ -19756,7 +19772,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 8 games; before that 28 avg last 5; 34 on Friday 11/6",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out: Right Hand Fracture (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Hand Fracture (NBA injury report, 03:15 PM)",
    "note": "Lauri Markkanen (hand) was still out on Friday, Nov. 20, along with Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), which leaves Utah without its starting frontcourt.",
    "source": "ESPN-1121"
   },
@@ -19846,7 +19862,7 @@
    "role": "Bench (G)",
    "minutes": "11 avg last 5; 6 on Friday 11/20",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19856,7 +19872,7 @@
    "role": "Bench (C)",
    "minutes": "9 avg last 5; 11 on Friday 11/20",
    "usage": "7% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19866,7 +19882,7 @@
    "role": "Bench (C)",
    "minutes": "9 avg last 5; 11 on Friday 11/20",
    "usage": "7% (our estimate, last 5 games)",
-   "status": "Questionable: Illness (NBA injury report, 02:45 PM)",
+   "status": "Questionable: Illness (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19876,7 +19892,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 6 games; before that 2 avg last 3; 2 on Monday 11/9",
    "usage": "20% (our estimate, last 3 games)",
-   "status": "Questionable: G League - Two-Way (NBA injury report, 02:45 PM)",
+   "status": "Questionable: G League - Two-Way (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19886,7 +19902,7 @@
    "role": "Injured (two-way)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 02:45 PM)",
+   "status": "Out (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19896,7 +19912,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 13 games; before that 18 avg last 4; 4 on Monday 10/26",
    "usage": "12% (our estimate, last 4 games)",
-   "status": "Out: Right Foot Surgery (NBA injury report, 02:45 PM)",
+   "status": "Out: Right Foot Surgery (NBA injury report, 03:15 PM)",
    "note": "The show said Justin Champagnie has a broken foot and should return around the All-Star break, and he has not played since Oct. 26.",
    "source": "OMS-1101"
   },
@@ -19956,7 +19972,7 @@
    "role": "Bench (big)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Hip Impingement (NBA injury report, 02:45 PM)",
+   "status": "Out: Left Hip Impingement (NBA injury report, 03:15 PM)",
    "note": "",
    "source": ""
   },
@@ -29719,7 +29735,7 @@
   {
    "rank": 334,
    "player": "Jordan Hawkins",
-   "pos": "SG",
+   "pos": "PG,SG",
    "team": "CHI",
    "flag": "",
    "change": "",

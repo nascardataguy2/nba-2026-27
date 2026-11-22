@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updated": "2:58 PM ET",
+ "updated": "3:15 PM ET",
  "games": 7,
  "pending": [
   "BOS"
@@ -128,17 +128,16 @@
       {
        "player": "Caleb Wilson",
        "min": 23.0
-      }
-     ],
-     "q": [
+      },
       {
        "player": "Nicolas Claxton",
-       "min": 20.1
+       "min": 22.7
       }
-     ]
+     ],
+     "q": []
     }
    },
-   "key": "Norman Powell and Caleb Wilson are out, so Jordan Hawkins and Noa Essengue and Jalen Smith should play more than usual."
+   "key": "Norman Powell and Caleb Wilson are out, so Noa Essengue and Jalen Smith and Patrick Williams should play more than usual."
   },
   {
    "away": "DAL",
@@ -327,6 +326,30 @@
  ],
  "changed": [
   {
+   "player": "Nic Claxton",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "3:17 PM"
+  },
+  {
+   "player": "Tobe Awaka",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Out",
+   "why": "-",
+   "time": "3:17 PM"
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Knee Soreness",
+   "time": "3:17 PM"
+  },
+  {
    "player": "P.J. Washington",
    "team": "DAL",
    "status": "Doubtful",
@@ -381,30 +404,6 @@
    "was": "Questionable",
    "why": "",
    "time": "1:55 PM"
-  },
-  {
-   "player": "Deandre Ayton",
-   "team": "WAS",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "12:42 PM"
-  },
-  {
-   "player": "Jalen Smith",
-   "team": "CHI",
-   "status": "Probable",
-   "was": "Questionable",
-   "why": "Gastrointestinal Illness",
-   "time": "12:42 PM"
-  },
-  {
-   "player": "Orlando Robinson",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Out",
-   "why": "-",
-   "time": "12:42 PM"
   }
  ],
  "chg": [
@@ -416,14 +415,14 @@
    "act": "Play",
    "names": [
     {
-     "player": "Jordan Hawkins",
-     "salary": 3000,
-     "much": "+14.6 DK without him (2 games)"
-    },
-    {
      "player": "Noa Essengue",
      "salary": 3100,
      "much": "+10.9 DK without him (2 games)"
+    },
+    {
+     "player": "Jalen Smith",
+     "salary": 6100,
+     "much": "+7.3 DK without him (2 games)"
     }
    ],
    "time": "1:55 PM",
@@ -447,7 +446,7 @@
      "much": "+10.5 DK without Smith"
     }
    ],
-   "time": "12:42 PM",
+   "time": "3:17 PM",
    "size": 30.8
   },
   {
@@ -493,6 +492,22 @@
    "size": 24.2
   },
   {
+   "key": "Nic Claxton",
+   "team": "CHI",
+   "head": "Nic Claxton OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Leonard Miller",
+     "salary": 3000,
+     "much": "+14.0 DK without him (9 games)"
+    }
+   ],
+   "time": "3:17 PM",
+   "size": 20.0
+  },
+  {
    "key": "ATL",
    "team": "ATL",
    "head": "Flemings CLEARED",
@@ -533,22 +548,6 @@
    ],
    "time": "1:55 PM",
    "size": 15.0
-  },
-  {
-   "key": "Nic Claxton",
-   "team": "CHI",
-   "head": "Nic Claxton QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Leonard Miller",
-     "salary": 3000,
-     "much": "+14.0 DK without him (9 games)"
-    }
-   ],
-   "time": "12:42 PM",
-   "size": 10.0
   },
   {
    "key": "Walter Clayton Jr.",
@@ -638,7 +637,7 @@
      "much": "+5.7 DK without them (4 games)",
      "score": 5.7,
      "min": 24.7,
-     "dk": 19.3,
+     "dk": 19.4,
      "avg": 13.4
     },
     {
@@ -682,29 +681,25 @@
      "min": 23.0,
      "note": "Caleb Wilson missed his fifth straight game on Friday, Nov. 20, after surgery on his right hand on Nov. 12.",
      "new": false
+    },
+    {
+     "player": "Nicolas Claxton",
+     "min": 22.7,
+     "note": "Nic Claxton was moved from questionable to out for tonight (illness) on the NBA's 03:15 PM injury report. He had averaged 21 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
     }
    ],
    "new": true,
-   "lost": 53.7,
+   "lost": 76.4,
    "benefits": [
-    {
-     "player": "Jordan Hawkins",
-     "salary": 3000,
-     "why": "20 minutes, up from 5",
-     "much": "+14.6 DK without them (2 games)",
-     "score": 14.6,
-     "min": 3.1,
-     "dk": 2.4,
-     "avg": 6.6
-    },
     {
      "player": "Noa Essengue",
      "salary": 3100,
      "why": "same minutes, more production",
      "much": "+10.9 DK without them (2 games)",
      "score": 10.9,
-     "min": 14.2,
-     "dk": 11.7,
+     "min": 15.0,
+     "dk": 12.3,
      "avg": 10.8
     },
     {
@@ -713,9 +708,19 @@
      "why": "30 minutes, up from 24",
      "much": "+7.3 DK without them (2 games)",
      "score": 7.3,
-     "min": 28.8,
-     "dk": 36.1,
+     "min": 32.0,
+     "dk": 40.1,
      "avg": 30.8
+    },
+    {
+     "player": "Patrick Williams",
+     "salary": 3300,
+     "why": "26 minutes, up from 20",
+     "much": "+7.3 DK without them (2 games)",
+     "score": 7.3,
+     "min": 26.5,
+     "dk": 19.8,
+     "avg": 16.0
     }
    ],
    "split_of": [
@@ -748,7 +753,7 @@
      "much": "+9.8 DK without them (5 games)",
      "score": 9.8,
      "min": 20.8,
-     "dk": 20.4,
+     "dk": 20.3,
      "avg": 21.4
     },
     {
@@ -758,7 +763,7 @@
      "much": "+9.4 DK without them (5 games)",
      "score": 9.4,
      "min": 20.5,
-     "dk": 17.9,
+     "dk": 17.6,
      "avg": 16.6
     },
     {
@@ -768,7 +773,7 @@
      "much": "+8.6 DK without them (4 games)",
      "score": 8.6,
      "min": 31.6,
-     "dk": 32.0,
+     "dk": 31.7,
      "avg": 32.3
     }
    ],
@@ -807,7 +812,7 @@
      "much": "+12.2 DK without him (1 game)",
      "score": 12.2,
      "min": 24.7,
-     "dk": 26.6,
+     "dk": 26.5,
      "avg": 22.6
     },
     {
@@ -861,7 +866,7 @@
      "much": "+7.6 DK without them (9 games)",
      "score": 7.6,
      "min": 28.8,
-     "dk": 31.1,
+     "dk": 31.0,
      "avg": 32.2
     },
     {
@@ -916,7 +921,7 @@
      "much": "+7.3 DK without them (3 games)",
      "score": 7.3,
      "min": 35.8,
-     "dk": 35.0,
+     "dk": 35.1,
      "avg": 28.1
     }
    ],
@@ -1022,50 +1027,50 @@
    "player": "Daniss Jenkins",
    "team": "DET",
    "own": 38.0,
-   "dk": 35.0,
+   "dk": 35.1,
    "salary": 6200
   },
   {
    "player": "Tre Jones",
    "team": "CHI",
    "own": 38.0,
-   "dk": 25.8,
+   "dk": 28.3,
    "salary": 4600
   },
   {
-   "player": "Kingston Flemings",
-   "team": "ATL",
-   "own": 35.1,
-   "dk": 18.9,
-   "salary": 4700
+   "player": "Bam Adebayo",
+   "team": "MIA",
+   "own": 35.4,
+   "dk": 34.9,
+   "salary": 7800
   },
   {
-   "player": "Jalen Johnson",
-   "team": "ATL",
-   "own": 34.8,
-   "dk": 47.2,
-   "salary": 9300
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "own": 33.9,
+   "dk": 34.0,
+   "salary": 6400
   }
  ],
  "leverage": [
   {
    "player": "Jalen Brunson",
    "team": "NYK",
-   "own": 9.5,
-   "dk": 47.0,
+   "own": 7.8,
+   "dk": 47.2,
    "salary": 9100
   },
   {
    "player": "Carlton Carrington",
    "team": "WAS",
-   "own": 1.1,
-   "dk": 15.1,
+   "own": 1.2,
+   "dk": 14.8,
    "salary": 3000
   },
   {
    "player": "Neemias Queta",
    "team": "BOS",
-   "own": 3.3,
+   "own": 3.8,
    "dk": 25.3,
    "salary": 5200
   }
@@ -1153,8 +1158,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "02:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_45PM.pdf",
+  "report": "03:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_03_15PM.pdf",
   "pending": [
    "BOS"
   ],
@@ -1173,12 +1178,12 @@
     "time": "2026-11-22T20:30Z",
     "team": "DET",
     "player": "Cade Cunningham",
-    "status": "Probable",
+    "status": "Available",
     "reason": "Right Knee Soreness",
     "new": true,
-    "was": "Available",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "3:17 PM",
     "salary": 9800,
     "min": 36.7,
     "benefits": [],
@@ -1274,7 +1279,7 @@
       "much": "+6.5 DK without him (7 games)",
       "score": 6.5,
       "min": 24.7,
-      "dk": 19.3,
+      "dk": 19.4,
       "avg": 13.4
      }
     ],
@@ -1343,10 +1348,10 @@
       "player": "Bam Adebayo",
       "salary": 7800,
       "why": "subs in for him 15 of 56 times",
-      "much": "about +9.9 DK",
-      "score": 9.925595238095237,
+      "much": "about +10.0 DK",
+      "score": 9.954117063492061,
       "min": 28.8,
-      "dk": 34.8,
+      "dk": 34.9,
       "avg": 38.6
      },
      {
@@ -1411,23 +1416,13 @@
     "min": 30.7,
     "benefits": [
      {
-      "player": "Jordan Hawkins",
-      "salary": 3000,
-      "why": "20 minutes, up from 5",
-      "much": "+14.6 DK without him (2 games)",
-      "score": 14.6,
-      "min": 3.1,
-      "dk": 2.4,
-      "avg": 6.6
-     },
-     {
       "player": "Noa Essengue",
       "salary": 3100,
       "why": "same minutes, more production",
       "much": "+10.9 DK without him (2 games)",
       "score": 10.9,
-      "min": 14.2,
-      "dk": 11.7,
+      "min": 15.0,
+      "dk": 12.3,
       "avg": 10.8
      },
      {
@@ -1436,9 +1431,55 @@
       "why": "30 minutes, up from 24",
       "much": "+7.3 DK without him (2 games)",
       "score": 7.3,
-      "min": 28.8,
-      "dk": 36.1,
+      "min": 32.0,
+      "dk": 40.1,
       "avg": 30.8
+     },
+     {
+      "player": "Patrick Williams",
+      "salary": 3300,
+      "why": "26 minutes, up from 20",
+      "much": "+7.3 DK without him (2 games)",
+      "score": 7.3,
+      "min": 26.5,
+      "dk": 19.8,
+      "avg": 16.0
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-20",
+     "dk": 23.8,
+     "min": 29,
+     "opp": "WAS",
+     "ha": "vs",
+     "res": "L",
+     "score": "98-94"
+    },
+    "game": "DEN at CHI",
+    "time": "2026-11-23T00:00Z",
+    "team": "CHI",
+    "player": "Nic Claxton",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "3:17 PM",
+    "salary": 5300,
+    "min": 22.7,
+    "benefits": [
+     {
+      "player": "Leonard Miller",
+      "salary": 3000,
+      "why": "18 minutes, up from 3",
+      "much": "+14.0 DK without him (9 games)",
+      "score": 14.0,
+      "min": 9.3,
+      "dk": 8.5,
+      "avg": 12.7
      }
     ],
     "estimate": false
@@ -1483,7 +1524,7 @@
       "much": "+12.2 DK without him (1 game)",
       "score": 12.2,
       "min": 24.7,
-      "dk": 26.6,
+      "dk": 26.5,
       "avg": 22.6
      },
      {
@@ -1541,42 +1582,6 @@
       "min": 23.5,
       "dk": 22.6,
       "avg": 22.9
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-20",
-     "dk": 23.8,
-     "min": 29,
-     "opp": "WAS",
-     "ha": "vs",
-     "res": "L",
-     "score": "98-94"
-    },
-    "game": "DEN at CHI",
-    "time": "2026-11-23T00:00Z",
-    "team": "CHI",
-    "player": "Nic Claxton",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:42 PM",
-    "salary": 5300,
-    "min": 22.7,
-    "benefits": [
-     {
-      "player": "Leonard Miller",
-      "salary": 3000,
-      "why": "18 minutes, up from 3",
-      "much": "+14.0 DK without him (9 games)",
-      "score": 14.0,
-      "min": 8.6,
-      "dk": 7.9,
-      "avg": 12.7
      }
     ],
     "estimate": false
@@ -1742,7 +1747,7 @@
       "much": "+8.9 DK without him (6 games)",
       "score": 8.9,
       "min": 18.7,
-      "dk": 18.5,
+      "dk": 18.4,
       "avg": 19.8
      },
      {
@@ -1752,7 +1757,7 @@
       "much": "+8.6 DK without him (9 games)",
       "score": 8.6,
       "min": 20.5,
-      "dk": 17.9,
+      "dk": 17.6,
       "avg": 16.6
      },
      {
@@ -1762,7 +1767,7 @@
       "much": "+6.7 DK without him (8 games)",
       "score": 6.7,
       "min": 16.5,
-      "dk": 15.0,
+      "dk": 14.9,
       "avg": 13.5
      }
     ],
@@ -1798,7 +1803,7 @@
       "much": "+16.6 DK without him (1 game)",
       "score": 16.6,
       "min": 18.4,
-      "dk": 22.9,
+      "dk": 23.0,
       "avg": 16.7
      },
      {
@@ -1818,7 +1823,7 @@
       "much": "+11.8 DK without him (1 game)",
       "score": 11.8,
       "min": 31.2,
-      "dk": 21.9,
+      "dk": 22.3,
       "avg": 17.7
      }
     ],
@@ -1854,7 +1859,7 @@
       "much": "+26.6 DK without him (1 game)",
       "score": 26.6,
       "min": 15.3,
-      "dk": 13.7,
+      "dk": 13.6,
       "avg": 12.5
      },
      {
@@ -1864,7 +1869,7 @@
       "much": "+25.3 DK without him (1 game)",
       "score": 25.3,
       "min": 16.5,
-      "dk": 15.0,
+      "dk": 14.9,
       "avg": 13.5
      },
      {
@@ -1874,7 +1879,7 @@
       "much": "+23.3 DK without him (1 game)",
       "score": 23.3,
       "min": 20.8,
-      "dk": 20.4,
+      "dk": 20.3,
       "avg": 21.4
      }
     ],
@@ -1920,7 +1925,7 @@
       "much": "+7.3 DK without him (3 games)",
       "score": 7.3,
       "min": 35.8,
-      "dk": 35.0,
+      "dk": 35.1,
       "avg": 28.1
      }
     ],
@@ -1956,7 +1961,7 @@
       "much": "+8.0 DK without him (2 games)",
       "score": 8.0,
       "min": 34.6,
-      "dk": 47.2,
+      "dk": 47.3,
       "avg": 45.0
      },
      {
@@ -2022,7 +2027,7 @@
       "much": "+9.5 DK without him (13 games)",
       "score": 9.5,
       "min": 35.8,
-      "dk": 35.0,
+      "dk": 35.1,
       "avg": 28.1
      },
      {
@@ -2068,7 +2073,7 @@
       "much": "+8.4 DK without him (10 games)",
       "score": 8.4,
       "min": 34.6,
-      "dk": 47.2,
+      "dk": 47.3,
       "avg": 45.0
      },
      {
@@ -2159,7 +2164,7 @@
       "much": "+14.3 DK without him (13 games)",
       "score": 14.3,
       "min": 24.7,
-      "dk": 19.3,
+      "dk": 19.4,
       "avg": 13.4
      },
      {
@@ -2169,7 +2174,7 @@
       "much": "+13.3 DK without him (13 games)",
       "score": 13.3,
       "min": 24.1,
-      "dk": 20.8,
+      "dk": 20.7,
       "avg": 16.5
      }
     ],
@@ -2215,7 +2220,7 @@
       "much": "+14.3 DK without him (13 games)",
       "score": 14.3,
       "min": 24.7,
-      "dk": 19.3,
+      "dk": 19.4,
       "avg": 13.4
      },
      {
@@ -2225,7 +2230,7 @@
       "much": "+13.3 DK without him (13 games)",
       "score": 13.3,
       "min": 24.1,
-      "dk": 20.8,
+      "dk": 20.7,
       "avg": 16.5
      }
     ],
@@ -2261,7 +2266,7 @@
       "much": "+5.7 DK without him (4 games)",
       "score": 5.7,
       "min": 24.7,
-      "dk": 19.3,
+      "dk": 19.4,
       "avg": 13.4
      },
      {
@@ -2327,7 +2332,7 @@
       "much": "+14.3 DK without him (13 games)",
       "score": 14.3,
       "min": 24.7,
-      "dk": 19.3,
+      "dk": 19.4,
       "avg": 13.4
      },
      {
@@ -2337,7 +2342,7 @@
       "much": "+13.3 DK without him (13 games)",
       "score": 13.3,
       "min": 24.1,
-      "dk": 20.8,
+      "dk": 20.7,
       "avg": 16.5
      }
     ],
@@ -2408,7 +2413,7 @@
       "much": "+7.6 DK without him (9 games)",
       "score": 7.6,
       "min": 28.8,
-      "dk": 31.1,
+      "dk": 31.0,
       "avg": 32.2
      },
      {
@@ -2454,7 +2459,7 @@
       "much": "+15.2 DK without him (13 games)",
       "score": 15.2,
       "min": 32.7,
-      "dk": 43.4,
+      "dk": 43.2,
       "avg": 48.7
      },
      {
@@ -2510,7 +2515,7 @@
       "much": "+11.6 DK without him (13 games)",
       "score": 11.6,
       "min": 28.8,
-      "dk": 31.1,
+      "dk": 31.0,
       "avg": 32.2
      },
      {
@@ -2565,9 +2570,19 @@
       "why": "started 5 of 5",
       "much": "+15.6 DK without him (5 games)",
       "score": 15.6,
-      "min": 28.8,
-      "dk": 18.9,
+      "min": 32.1,
+      "dk": 21.1,
       "avg": 15.4
+     },
+     {
+      "player": "Patrick Williams",
+      "salary": 3300,
+      "why": "24-26 minutes off bench (11/14)",
+      "much": "+12.5 DK projected vs. last 3",
+      "score": 12.466666666666669,
+      "min": 26.5,
+      "dk": 19.8,
+      "avg": 16.0
      },
      {
       "player": "Zach Collins",
@@ -2575,19 +2590,9 @@
       "why": "18 minutes, up from 8",
       "much": "+10.4 DK without him (3 games)",
       "score": 10.4,
-      "min": 10.9,
-      "dk": 9.9,
+      "min": 12.7,
+      "dk": 11.5,
       "avg": 9.1
-     },
-     {
-      "player": "Patrick Williams",
-      "salary": 3300,
-      "why": "24-26 minutes off bench (11/14)",
-      "much": "+10.4 DK projected vs. last 3",
-      "score": 10.366666666666667,
-      "min": 23.8,
-      "dk": 17.7,
-      "avg": 16.0
      }
     ],
     "estimate": false
@@ -2704,7 +2709,7 @@
       "much": "+16.6 DK without him (1 game)",
       "score": 16.6,
       "min": 18.4,
-      "dk": 22.9,
+      "dk": 23.0,
       "avg": 16.7
      },
      {
@@ -2724,7 +2729,7 @@
       "much": "+11.8 DK without him (1 game)",
       "score": 11.8,
       "min": 31.2,
-      "dk": 21.9,
+      "dk": 22.3,
       "avg": 17.7
      }
     ],
@@ -2760,7 +2765,7 @@
       "much": "+8.7 DK without him (12 games)",
       "score": 8.7,
       "min": 20.8,
-      "dk": 20.4,
+      "dk": 20.3,
       "avg": 21.4
      },
      {
@@ -2780,7 +2785,7 @@
       "much": "+5.2 DK without him (9 games)",
       "score": 5.2,
       "min": 31.6,
-      "dk": 32.0,
+      "dk": 31.7,
       "avg": 32.3
      }
     ],
@@ -2813,10 +2818,10 @@
       "player": "Jarace Walker",
       "salary": 3500,
       "why": "subs in for him 1 of 3 times",
-      "much": "+6.3 DK projected vs. last 3",
-      "score": 6.316666666666665,
+      "much": "+6.0 DK projected vs. last 3",
+      "score": 6.0166666666666675,
       "min": 20.5,
-      "dk": 17.9,
+      "dk": 17.6,
       "avg": 16.6
      }
     ],
@@ -2936,6 +2941,11 @@
    }
   ],
   "minor": [
+   {
+    "player": "Tobe Awaka",
+    "team": "CHI",
+    "status": "Available"
+   },
    {
     "player": "Orlando Robinson",
     "team": "CHI",
