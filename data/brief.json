@@ -2,7 +2,18 @@
  "date": "2026-11-21",
  "updated": "9:55 PM ET",
  "games": 5,
- "pending": [],
+ "pending": [
+  "BOS",
+  "DAL",
+  "LAC",
+  "MEM",
+  "MIN",
+  "NOP",
+  "NYK",
+  "POR",
+  "SAC",
+  "SAS"
+ ],
  "first_report": "5:41 AM",
  "cards": [
   {
@@ -226,6 +237,14 @@
  ],
  "changed": [
   {
+   "player": "PJ Washington",
+   "team": "DAL",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "2:19 AM"
+  },
+  {
    "player": "Precious Achiuwa",
    "team": "SAC",
    "status": "Available",
@@ -274,14 +293,6 @@
    "time": "7:33 PM"
   },
   {
-   "player": "P.J. Washington",
-   "team": "DAL",
-   "status": "Out",
-   "was": "Doubtful",
-   "why": "Illness",
-   "time": "6:33 PM"
-  },
-  {
    "player": "Walter Clayton Jr.",
    "team": "DAL",
    "status": "Available",
@@ -308,43 +319,6 @@
  ],
  "chg": [
   {
-   "key": "Karl-Anthony Towns",
-   "team": "NYK",
-   "head": "Karl-Anthony Towns OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Andre Drummond",
-     "salary": 3800,
-     "much": "+12.1 DK projected vs. last 3"
-    }
-   ],
-   "time": "5:18 PM",
-   "size": 48.5
-  },
-  {
-   "key": "Jayson Tatum",
-   "team": "BOS",
-   "head": "Jayson Tatum OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Baylor Scheierman",
-     "salary": 3900,
-     "much": "+13.1 DK without him (1 game)"
-    },
-    {
-     "player": "Luka Garza",
-     "salary": 3700,
-     "much": "+10.7 DK without him (1 game)"
-    }
-   ],
-   "time": "7:33 PM",
-   "size": 47.7
-  },
-  {
    "key": "POR",
    "team": "POR",
    "head": "Avdija CLEARED",
@@ -364,101 +338,6 @@
    ],
    "time": "5:33 PM",
    "size": 43.7
-  },
-  {
-   "key": "Zion Williamson",
-   "team": "NOP",
-   "head": "Zion Williamson OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Herbert Jones",
-     "salary": 4000,
-     "much": "+6.2 DK without him (1 game)"
-    }
-   ],
-   "time": "7:33 PM",
-   "size": 36.8
-  },
-  {
-   "key": "OG Anunoby",
-   "team": "NYK",
-   "head": "OG Anunoby OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Josh Hart",
-     "salary": 5200,
-     "much": "+16.0 DK projected vs. last 3"
-    },
-    {
-     "player": "Andre Drummond",
-     "salary": 3800,
-     "much": "+12.1 DK projected vs. last 3"
-    }
-   ],
-   "time": "4:54 PM",
-   "size": 29.9
-  },
-  {
-   "key": "Trey Murphy III",
-   "team": "NOP",
-   "head": "Trey Murphy III OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Jordan Poole",
-     "salary": 4100,
-     "much": "+8.4 DK without him (6 games)"
-    }
-   ],
-   "time": "1:54 PM",
-   "size": 29.7
-  },
-  {
-   "key": "P.J. Washington",
-   "team": "DAL",
-   "head": "P.J. Washington OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Santi Aldama",
-     "salary": 3800,
-     "much": "+5.3 DK projected vs. last 3"
-    },
-    {
-     "player": "Daniel Gafford",
-     "salary": 4700,
-     "much": "+5.2 DK projected vs. last 3"
-    }
-   ],
-   "time": "6:33 PM",
-   "size": 28.0
-  },
-  {
-   "key": "Derrick White",
-   "team": "BOS",
-   "head": "Derrick White OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Payton Pritchard",
-     "salary": 6200,
-     "much": "+13.5 DK projected vs. last 3"
-    },
-    {
-     "player": "Sam Hauser",
-     "salary": 4100,
-     "much": "+12.1 DK projected vs. last 3"
-    }
-   ],
-   "time": "7:33 PM",
-   "size": 27.5
   },
   {
    "key": "SAC",
@@ -501,27 +380,6 @@
    ],
    "time": "6:33 PM",
    "size": 17.4
-  },
-  {
-   "key": "Mitchell Robinson",
-   "team": "BOS",
-   "head": "Mitchell Robinson OUT",
-   "st": "Out",
-   "act": "Play",
-   "names": [
-    {
-     "player": "Luka Garza",
-     "salary": 3700,
-     "much": "+16.3 DK without him (1 game)"
-    },
-    {
-     "player": "Paul George",
-     "salary": 7500,
-     "much": "+6.9 DK without him (1 game)"
-    }
-   ],
-   "time": "7:33 PM",
-   "size": 15.5
   }
  ],
  "sits": [
@@ -537,7 +395,7 @@
     {
      "player": "Trey Murphy III",
      "min": 31.0,
-     "note": "Trey Murphy III returned on November 20 and played 29 minutes. The show said he will not play both ends of the Pelicans' back-to-back, so it expects him to sit Saturday, November 21.",
+     "note": "Ruled out tonight.",
      "new": true
     },
     {
@@ -574,7 +432,7 @@
      "score": 5.050000000000001,
      "min": 30.0,
      "dk": 27.3,
-     "avg": 19.4
+     "avg": 20.4
     }
    ],
    "split_of": [
@@ -588,13 +446,13 @@
     {
      "player": "Jayson Tatum",
      "min": 34.3,
-     "note": "Jayson Tatum was moved from questionable to out for tonight (rest) on the NBA's 03:45 PM injury report. He had averaged 35 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "note": "Ruled out tonight (rest).",
      "new": true
     },
     {
      "player": "Derrick White",
      "min": 30.0,
-     "note": "Derrick White was moved from questionable to out for tonight on the NBA's 03:45 PM injury report. He had averaged 30 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "note": "Ruled out tonight.",
      "new": true
     },
     {
@@ -615,7 +473,7 @@
      "score": 13.1,
      "min": 24.4,
      "dk": 23.2,
-     "avg": 15.0
+     "avg": 14.6
     },
     {
      "player": "Luka Garza",
@@ -625,7 +483,7 @@
      "score": 10.7,
      "min": 16.7,
      "dk": 21.7,
-     "avg": 13.3
+     "avg": 13.2
     },
     {
      "player": "Neemias Queta",
@@ -635,7 +493,7 @@
      "score": 9.1,
      "min": 31.0,
      "dk": 40.7,
-     "avg": 24.1
+     "avg": 24.4
     }
    ],
    "split_of": [
@@ -648,13 +506,13 @@
     {
      "player": "OG Anunoby",
      "min": 38.7,
-     "note": "OG Anunoby was moved from doubtful to out for tonight (left calf tightness) on the NBA's 04:45 PM injury report. He had averaged 37 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "note": "Ruled out tonight (left calf tightness).",
      "new": true
     },
     {
      "player": "Karl-Anthony Towns",
      "min": 37.3,
-     "note": "Karl-Anthony Towns was moved from questionable to out for tonight (illness) on the NBA's 05:15 PM injury report. He had averaged 36 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "note": "Ruled out tonight (illness).",
      "new": true
     }
    ],
@@ -669,7 +527,7 @@
      "score": 15.98333333333333,
      "min": 34.6,
      "dk": 33.4,
-     "avg": 23.3
+     "avg": 23.2
     },
     {
      "player": "Andre Drummond",
@@ -679,7 +537,7 @@
      "score": 12.05,
      "min": 16.0,
      "dk": 21.8,
-     "avg": 15.7
+     "avg": 16.7
     }
    ],
    "split_of": []
@@ -691,22 +549,22 @@
      "player": "Cameron Boozer",
      "min": 28.0,
      "note": "Ruled out tonight (right ankle sprain).",
-     "new": true
+     "new": false
     },
     {
      "player": "Javon Small",
      "min": 25.0,
      "note": "Ruled out tonight (personal reasons).",
-     "new": true
+     "new": false
     },
     {
      "player": "Jerami Grant",
      "min": 16.0,
      "note": "Jerami Grant left the Thursday, Nov. 19, win over Golden State after five minutes with a left calf injury. He is ruled out on Saturday, Nov. 21, with a left calf strain.",
-     "new": true
+     "new": false
     }
    ],
-   "new": true,
+   "new": false,
    "lost": 69.0,
    "benefits": [
     {
@@ -717,7 +575,7 @@
      "score": 8.6,
      "min": 32.9,
      "dk": 47.5,
-     "avg": 39.3
+     "avg": 39.0
     },
     {
      "player": "Quinten Post",
@@ -761,7 +619,7 @@
      "score": 7.2,
      "min": 33.2,
      "dk": 45.1,
-     "avg": 43.7
+     "avg": 43.6
     },
     {
      "player": "Jrue Holiday",
@@ -771,7 +629,7 @@
      "score": 6.9,
      "min": 28.0,
      "dk": 28.3,
-     "avg": 27.8
+     "avg": 28.4
     }
    ],
    "split_of": [
@@ -810,7 +668,7 @@
      "score": 9.9,
      "min": 33.6,
      "dk": 34.8,
-     "avg": 32.1
+     "avg": 31.9
     },
     {
      "player": "LaMelo Ball",
@@ -820,7 +678,7 @@
      "score": 6.8,
      "min": 29.8,
      "dk": 39.8,
-     "avg": 35.1
+     "avg": 34.9
     }
    ],
    "split_of": [
@@ -924,55 +782,55 @@
  ],
  "chalk": [
   {
-   "player": "Derik Queen",
-   "team": "NOP",
+   "player": "Neemias Queta",
+   "team": "BOS",
    "own": 38.0,
-   "dk": 28.7,
-   "salary": 5000
+   "dk": 40.7,
+   "salary": 5100
   },
   {
-   "player": "Josh Hart",
+   "player": "Miles McBride",
    "team": "NYK",
-   "own": 35.0,
-   "dk": 33.4,
-   "salary": 5200
+   "own": 34.8,
+   "dk": 22.9,
+   "salary": 3300
   },
   {
    "player": "Paul George",
    "team": "BOS",
-   "own": 34.0,
+   "own": 34.6,
    "dk": 51.4,
    "salary": 7500
   },
   {
-   "player": "Payton Pritchard",
-   "team": "BOS",
-   "own": 34.0,
-   "dk": 39.5,
-   "salary": 6200
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "own": 33.4,
+   "dk": 35.3,
+   "salary": 6400
   }
  ],
  "leverage": [
   {
-   "player": "Jaylen Wells",
-   "team": "MEM",
-   "own": 3.1,
-   "dk": 25.7,
-   "salary": 4200
+   "player": "Landry Shamet",
+   "team": "NYK",
+   "own": 5.1,
+   "dk": 22.3,
+   "salary": 3900
   },
   {
-   "player": "Terrence Shannon Jr.",
-   "team": "MIN",
-   "own": 1.1,
-   "dk": 25.9,
-   "salary": 4600
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "own": 5.5,
+   "dk": 26.3,
+   "salary": 4800
   },
   {
-   "player": "Cam Spencer",
-   "team": "MEM",
-   "own": 1.1,
-   "dk": 35.3,
-   "salary": 6400
+   "player": "Herbert Jones",
+   "team": "NOP",
+   "own": 1.4,
+   "dk": 20.2,
+   "salary": 4000
   }
  ],
  "last": {
@@ -1075,1330 +933,21 @@
   ]
  },
  "injuries": {
-  "report": "09:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_09_45PM.pdf",
-  "pending": [],
-  "rows": [
-   {
-    "last": {
-     "date": "2026-11-19",
-     "dk": 32.8,
-     "min": 36,
-     "opp": "MIN",
-     "ha": "@",
-     "res": "W",
-     "score": "102-97"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "NYK",
-    "player": "OG Anunoby",
-    "status": "Out",
-    "reason": "Left Calf Tightness",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "4:54 PM",
-    "salary": null,
-    "min": 38.7,
-    "benefits": [
-     {
-      "player": "Josh Hart",
-      "salary": 5200,
-      "why": "subs in for him 12 of 63 times",
-      "much": "+16.0 DK projected vs. last 3",
-      "score": 15.98333333333333,
-      "min": 34.6,
-      "dk": 33.4,
-      "avg": 23.3
-     },
-     {
-      "player": "Andre Drummond",
-      "salary": 3800,
-      "why": "subs in for him 14 of 63 times",
-      "much": "+12.1 DK projected vs. last 3",
-      "score": 12.05,
-      "min": 16.0,
-      "dk": 21.8,
-      "avg": 15.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-19",
-     "dk": 49.5,
-     "min": 33,
-     "opp": "MIN",
-     "ha": "@",
-     "res": "W",
-     "score": "102-97"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "NYK",
-    "player": "Karl-Anthony Towns",
-    "status": "Out",
-    "reason": "Illness",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "5:18 PM",
-    "salary": null,
-    "min": 37.3,
-    "benefits": [
-     {
-      "player": "Andre Drummond",
-      "salary": 3800,
-      "why": "subs in for him 26 of 73 times",
-      "much": "+12.1 DK projected vs. last 3",
-      "score": 12.05,
-      "min": 16.0,
-      "dk": 21.8,
-      "avg": 15.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-17",
-     "dk": 2.5,
-     "min": 8,
-     "opp": "TOR",
-     "ha": "@",
-     "res": "W",
-     "score": "111-102"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "NYK",
-    "player": "Jordan Clarkson",
-    "status": "Out",
-    "reason": "Right Plantar Fasciitis",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 8.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-16",
-     "dk": 46.0,
-     "min": 30,
-     "opp": "MIN",
-     "ha": "@",
-     "res": "L",
-     "score": "106-98"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "POR",
-    "player": "Deni Avdija",
-    "status": "Available",
-    "reason": "Left Foot Contusion",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "5:33 PM",
-    "salary": 9200,
-    "min": 33.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-20",
-     "dk": 43.5,
-     "min": 37,
-     "opp": "OKC",
-     "ha": "@",
-     "res": "L",
-     "score": "126-120"
-    },
-    "game": "NOP at SAS",
-    "time": "2026-11-22T01:00Z",
-    "team": "NOP",
-    "player": "Zion Williamson",
-    "status": "Out",
-    "reason": "Left Thigh Contusion",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "7:33 PM",
-    "salary": null,
-    "min": 31.3,
-    "benefits": [
-     {
-      "player": "Herbert Jones",
-      "salary": 4000,
-      "why": "same minutes, more production",
-      "much": "+6.2 DK without him (1 game)",
-      "score": 6.2,
-      "min": 33.5,
-      "dk": 20.2,
-      "avg": 15.1
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-20",
-     "dk": 31.0,
-     "min": 29,
-     "opp": "OKC",
-     "ha": "@",
-     "res": "L",
-     "score": "126-120"
-    },
-    "game": "NOP at SAS",
-    "time": "2026-11-22T01:00Z",
-    "team": "NOP",
-    "player": "Trey Murphy III",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "1:54 PM",
-    "salary": null,
-    "min": 31.0,
-    "benefits": [
-     {
-      "player": "Jordan Poole",
-      "salary": 4100,
-      "why": "27 minutes, up from 15",
-      "much": "+8.4 DK without him (6 games)",
-      "score": 8.4,
-      "min": 30.0,
-      "dk": 27.3,
-      "avg": 19.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-19",
-     "dk": 31.5,
-     "min": 27,
-     "opp": "GSW",
-     "ha": "vs",
-     "res": "W",
-     "score": "126-98"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MEM",
-    "player": "Cameron Boozer",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 28.0,
-    "benefits": [
-     {
-      "player": "Jaylen Wells",
-      "salary": 4200,
-      "why": "projected 30 minutes tonight, up from 26",
-      "much": "+3.9 DK projected vs. last 3",
-      "score": 3.9499999999999993,
-      "min": 30.0,
-      "dk": 25.7,
-      "avg": 20.0
-     },
-     {
-      "player": "Cedric Coward",
-      "salary": 7000,
-      "why": "projected 31 minutes tonight",
-      "much": "+3.5 DK projected vs. last 3",
-      "score": 3.450000000000003,
-      "min": 30.9,
-      "dk": 41.2,
-      "avg": 34.8
-     },
-     {
-      "player": "Olivier-Maxence Prosper",
-      "salary": 4000,
-      "why": "projected 19 minutes tonight, up from 16",
-      "much": "more minutes",
-      "score": 0.4833333333333343,
-      "min": 19.3,
-      "dk": 15.9,
-      "avg": 9.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 40.8,
-     "min": 25,
-     "opp": "GSW",
-     "ha": "vs",
-     "res": "W",
-     "score": "116-94"
-    },
-    "game": "LAC at DAL",
-    "time": "2026-11-22T01:00Z",
-    "team": "DAL",
-    "player": "P.J. Washington",
-    "status": "Out",
-    "reason": "Illness",
-    "new": true,
-    "was": "Doubtful",
-    "known": true,
-    "changed_at": "6:33 PM",
-    "salary": null,
-    "min": 25.3,
-    "benefits": [
-     {
-      "player": "Santi Aldama",
-      "salary": 3800,
-      "why": "projected 13 minutes tonight",
-      "much": "+5.3 DK projected vs. last 3",
-      "score": 5.283333333333332,
-      "min": 13.3,
-      "dk": 13.2,
-      "avg": 12.6
-     },
-     {
-      "player": "Daniel Gafford",
-      "salary": 4700,
-      "why": "projected 20 minutes tonight",
-      "much": "+5.2 DK projected vs. last 3",
-      "score": 5.216666666666669,
-      "min": 20.2,
-      "dk": 22.3,
-      "avg": 21.8
-     },
-     {
-      "player": "Morez Johnson Jr.",
-      "salary": 3700,
-      "why": "projected 18 minutes tonight",
-      "much": "+4.8 DK projected vs. last 3",
-      "score": 4.85,
-      "min": 17.9,
-      "dk": 15.6,
-      "avg": 14.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-19",
-     "dk": 32.2,
-     "min": 25,
-     "opp": "GSW",
-     "ha": "vs",
-     "res": "W",
-     "score": "126-98"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MEM",
-    "player": "Javon Small",
-    "status": "Out",
-    "reason": "Personal Reasons",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 25.0,
-    "benefits": [
-     {
-      "player": "Ty Jerome",
-      "salary": 8300,
-      "why": "same minutes, more production",
-      "much": "+8.6 DK without him (7 games)",
-      "score": 8.6,
-      "min": 32.9,
-      "dk": 47.5,
-      "avg": 39.3
-     },
-     {
-      "player": "Quinten Post",
-      "salary": 3100,
-      "why": "14 minutes, up from 8",
-      "much": "+5.9 DK without him (6 games)",
-      "score": 5.9,
-      "min": 16.5,
-      "dk": 15.1,
-      "avg": 8.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-19",
-     "dk": 3.0,
-     "min": 5,
-     "opp": "GSW",
-     "ha": "vs",
-     "res": "W",
-     "score": "126-98"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MEM",
-    "player": "Jerami Grant",
-    "status": "Out",
-    "reason": "Left Calf Strain",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 16.0,
-    "benefits": [
-     {
-      "player": "Cedric Coward",
-      "salary": 7000,
-      "why": "33 minutes, up from 28",
-      "much": "+21.2 DK without him (1 game)",
-      "score": 21.2,
-      "min": 30.9,
-      "dk": 41.2,
-      "avg": 34.8
-     },
-     {
-      "player": "Taylor Hendricks",
-      "salary": 4400,
-      "why": "29 minutes, up from 12",
-      "much": "+18.9 DK without him (1 game)",
-      "score": 18.9,
-      "min": 19.4,
-      "dk": 23.7,
-      "avg": 16.1
-     },
-     {
-      "player": "Olivier-Maxence Prosper",
-      "salary": 4000,
-      "why": "20 minutes, up from 9",
-      "much": "+10.3 DK without him (1 game)",
-      "score": 10.3,
-      "min": 19.3,
-      "dk": 15.9,
-      "avg": 9.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-13",
-     "dk": 34.5,
-     "min": 29,
-     "opp": "NOP",
-     "ha": "@",
-     "res": "W",
-     "score": "142-111"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MEM",
-    "player": "Ty Jerome",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Probable",
-    "known": true,
-    "changed_at": "2:39 PM",
-    "salary": 8300,
-    "min": 31.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 20.5,
-     "min": 27,
-     "opp": "GSW",
-     "ha": "vs",
-     "res": "W",
-     "score": "116-94"
-    },
-    "game": "LAC at DAL",
-    "time": "2026-11-22T01:00Z",
-    "team": "DAL",
-    "player": "Walter Clayton Jr.",
-    "status": "Available",
-    "reason": "Left Patellar Tendinitis",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "6:33 PM",
-    "salary": 3900,
-    "min": 21.0,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 39.0,
-     "min": 37,
-     "opp": "DEN",
-     "ha": "@",
-     "res": "L",
-     "score": "105-101"
-    },
-    "game": "BOS at SAC",
-    "time": "2026-11-22T03:00Z",
-    "team": "BOS",
-    "player": "Jayson Tatum",
-    "status": "Out",
-    "reason": "Rest",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "7:33 PM",
-    "salary": null,
-    "min": 34.3,
-    "benefits": [
-     {
-      "player": "Baylor Scheierman",
-      "salary": 3900,
-      "why": "29 minutes, up from 19",
-      "much": "+13.1 DK without him (1 game)",
-      "score": 13.1,
-      "min": 24.4,
-      "dk": 23.2,
-      "avg": 15.0
-     },
-     {
-      "player": "Luka Garza",
-      "salary": 3700,
-      "why": "18 minutes, up from 12",
-      "much": "+10.7 DK without him (1 game)",
-      "score": 10.7,
-      "min": 16.7,
-      "dk": 21.7,
-      "avg": 13.3
-     },
-     {
-      "player": "Neemias Queta",
-      "salary": 5100,
-      "why": "29 minutes, up from 22",
-      "much": "+9.1 DK without him (1 game)",
-      "score": 9.1,
-      "min": 31.0,
-      "dk": 40.7,
-      "avg": 24.1
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 29.8,
-     "min": 35,
-     "opp": "DEN",
-     "ha": "@",
-     "res": "L",
-     "score": "105-101"
-    },
-    "game": "BOS at SAC",
-    "time": "2026-11-22T03:00Z",
-    "team": "BOS",
-    "player": "Derrick White",
-    "status": "Out",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "7:33 PM",
-    "salary": null,
-    "min": 30.0,
-    "benefits": [
-     {
-      "player": "Payton Pritchard",
-      "salary": 6200,
-      "why": "subs in for him 17 of 49 times",
-      "much": "+13.5 DK projected vs. last 3",
-      "score": 13.5,
-      "min": 32.0,
-      "dk": 39.5,
-      "avg": 25.4
-     },
-     {
-      "player": "Sam Hauser",
-      "salary": 4100,
-      "why": "subs in for him 10 of 49 times",
-      "much": "+12.1 DK projected vs. last 3",
-      "score": 12.100000000000001,
-      "min": 30.0,
-      "dk": 29.6,
-      "avg": 16.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 11.5,
-     "min": 16,
-     "opp": "DEN",
-     "ha": "@",
-     "res": "L",
-     "score": "105-101"
-    },
-    "game": "BOS at SAC",
-    "time": "2026-11-22T03:00Z",
-    "team": "BOS",
-    "player": "Mitchell Robinson",
-    "status": "Out",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "7:33 PM",
-    "salary": null,
-    "min": 16.3,
-    "benefits": [
-     {
-      "player": "Luka Garza",
-      "salary": 3700,
-      "why": "21 minutes, up from 12",
-      "much": "+16.3 DK without him (1 game)",
-      "score": 16.3,
-      "min": 16.7,
-      "dk": 21.7,
-      "avg": 13.3
-     },
-     {
-      "player": "Paul George",
-      "salary": 7500,
-      "why": "33 minutes, up from 29",
-      "much": "+6.9 DK without him (1 game)",
-      "score": 6.9,
-      "min": 33.3,
-      "dk": 51.4,
-      "avg": 37.6
-     },
-     {
-      "player": "Hugo Gonzalez",
-      "salary": 3100,
-      "why": "started that game",
-      "much": "+5.2 DK without him (1 game)",
-      "score": 5.2,
-      "min": 16.0,
-      "dk": 14.4,
-      "avg": 9.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": -0.5,
-     "min": 8,
-     "opp": "PHX",
-     "ha": "vs",
-     "res": "L",
-     "score": "128-107"
-    },
-    "game": "BOS at SAC",
-    "time": "2026-11-22T03:00Z",
-    "team": "SAC",
-    "player": "Precious Achiuwa",
-    "status": "Available",
-    "reason": "",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "8:33 PM",
-    "salary": 5300,
-    "min": 19.3,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-10-29",
-     "dk": 21.5,
-     "min": 23,
-     "opp": "MEM",
-     "ha": "vs",
-     "res": "L",
-     "score": "124-103"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "POR",
-    "player": "Ja Morant",
-    "status": "Out",
-    "reason": "Left Hamstring Strain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 27.0,
-    "benefits": [
-     {
-      "player": "Donovan Clingan",
-      "salary": 7200,
-      "why": "same minutes, more production",
-      "much": "+5.5 DK without him (11 games)",
-      "score": 5.5,
-      "min": 26.2,
-      "dk": 33.8,
-      "avg": 32.8
-     },
-     {
-      "player": "Scoot Henderson",
-      "salary": 4700,
-      "why": "24 minutes, up from 19",
-      "much": "+5.3 DK without him (11 games)",
-      "score": 5.3,
-      "min": 25.1,
-      "dk": 18.7,
-      "avg": 15.8
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-10",
-     "dk": 12.2,
-     "min": 14,
-     "opp": "OKC",
-     "ha": "vs",
-     "res": "W",
-     "score": "123-103"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "POR",
-    "player": "Chris Youngblood",
-    "status": "Out",
-    "reason": "Right Heel Contusion /",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 18.3,
-    "benefits": [
-     {
-      "player": "Deni Avdija",
-      "salary": 9200,
-      "why": "same minutes, more production",
-      "much": "+6.3 DK without him (7 games)",
-      "score": 6.3,
-      "min": 33.2,
-      "dk": 45.1,
-      "avg": 43.7
-     },
-     {
-      "player": "Toumani Camara",
-      "salary": 5800,
-      "why": "same minutes, more production",
-      "much": "+5.9 DK without him (9 games)",
-      "score": 5.9,
-      "min": 31.6,
-      "dk": 25.6,
-      "avg": 23.1
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-04",
-     "dk": 12.2,
-     "min": 12,
-     "opp": "PHX",
-     "ha": "@",
-     "res": "W",
-     "score": "132-119"
-    },
-    "game": "POR at NYK",
-    "time": "2026-11-22T00:30Z",
-    "team": "POR",
-    "player": "Vit Krejci",
-    "status": "Out",
-    "reason": "Left Ankle Fracture",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 12.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-10-26",
-     "dk": 66.5,
-     "min": 41,
-     "opp": "CLE",
-     "ha": "@",
-     "res": "W",
-     "score": "125-124"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MIN",
-    "player": "Anthony Edwards",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 34.0,
-    "benefits": [
-     {
-      "player": "Nah'Shon Hyland",
-      "salary": 4400,
-      "why": "16 minutes, up from 8",
-      "much": "+13.3 DK without him (12 games)",
-      "score": 13.3,
-      "min": 14.0,
-      "dk": 17.9,
-      "avg": null
-     },
-     {
-      "player": "Ayo Dosunmu",
-      "salary": 7100,
-      "why": "started 12 of 12",
-      "much": "+9.9 DK without him (12 games)",
-      "score": 9.9,
-      "min": 33.6,
-      "dk": 34.8,
-      "avg": 32.1
-     },
-     {
-      "player": "LaMelo Ball",
-      "salary": 8500,
-      "why": "29 minutes, up from 25",
-      "much": "+6.8 DK without him (12 games)",
-      "score": 6.8,
-      "min": 29.8,
-      "dk": 39.8,
-      "avg": 35.1
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-17",
-     "dk": 27.0,
-     "min": 35,
-     "opp": "DET",
-     "ha": "vs",
-     "res": "L",
-     "score": "105-93"
-    },
-    "game": "NOP at SAS",
-    "time": "2026-11-22T01:00Z",
-    "team": "SAS",
-    "player": "Dylan Harper",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 31.3,
-    "benefits": [
-     {
-      "player": "Stephon Castle",
-      "salary": 7700,
-      "why": "33 minutes, up from 29",
-      "much": "+20.3 DK without him (1 game)",
-      "score": 20.3,
-      "min": 32.5,
-      "dk": 39.4,
-      "avg": 34.0
-     },
-     {
-      "player": "Devin Vassell",
-      "salary": 5600,
-      "why": "same minutes, more production",
-      "much": "+9.7 DK without him (1 game)",
-      "score": 9.7,
-      "min": 31.6,
-      "dk": 28.0,
-      "avg": 25.0
-     },
-     {
-      "player": "Julian Champagnie",
-      "salary": 5300,
-      "why": "started that game",
-      "much": "+6.9 DK without him (1 game)",
-      "score": 6.9,
-      "min": 29.8,
-      "dk": 25.7,
-      "avg": 21.5
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-11",
-     "dk": 15.0,
-     "min": 28,
-     "opp": "BKN",
-     "ha": "vs",
-     "res": "L",
-     "score": "145-111"
-    },
-    "game": "NOP at SAS",
-    "time": "2026-11-22T01:00Z",
-    "team": "NOP",
-    "player": "Dejounte Murray",
-    "status": "Out",
-    "reason": "Left Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 24.7,
-    "benefits": [
-     {
-      "player": "Jeremiah Fears",
-      "salary": 7000,
-      "why": "33 minutes, up from 28",
-      "much": "+13.3 DK without him (8 games)",
-      "score": 13.3,
-      "min": 34.7,
-      "dk": 36.7,
-      "avg": 32.5
-     },
-     {
-      "player": "Saddiq Bey",
-      "salary": 6600,
-      "why": "started 5 of 8",
-      "much": "+10.8 DK without him (8 games)",
-      "score": 10.8,
-      "min": 37.7,
-      "dk": 35.3,
-      "avg": 29.3
-     },
-     {
-      "player": "Herbert Jones",
-      "salary": 4000,
-      "why": "started 8 of 8",
-      "much": "+9.8 DK without him (8 games)",
-      "score": 9.8,
-      "min": 33.5,
-      "dk": 20.2,
-      "avg": 15.1
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-08",
-     "dk": 9.2,
-     "min": 17,
-     "opp": "LAC",
-     "ha": "@",
-     "res": "L",
-     "score": "139-123"
-    },
-    "game": "NOP at SAS",
-    "time": "2026-11-22T01:00Z",
-    "team": "NOP",
-    "player": "Trendon Watford",
-    "status": "Out",
-    "reason": "Right Ankle Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 18.7,
-    "benefits": [
-     {
-      "player": "Karlo Matkovic",
-      "salary": 3700,
-      "why": "projected 19 minutes tonight, up from 14",
-      "much": "+11.4 DK projected vs. last 3",
-      "score": 11.4,
-      "min": 18.9,
-      "dk": 15.4,
-      "avg": 14.4
-     },
-     {
-      "player": "Herbert Jones",
-      "salary": 4000,
-      "why": "projected 34 minutes tonight, up from 30",
-      "much": "more minutes",
-      "score": -1.0500000000000007,
-      "min": 33.5,
-      "dk": 20.2,
-      "avg": 15.1
-     },
-     {
-      "player": "Yves Missi",
-      "salary": 5300,
-      "why": "projected 26 minutes tonight, up from 19",
-      "much": "+6.9 DK projected vs. last 3",
-      "score": 6.949999999999999,
-      "min": 26.4,
-      "dk": 26.2,
-      "avg": 23.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-10-29",
-     "dk": 2.0,
-     "min": 14,
-     "opp": "POR",
-     "ha": "@",
-     "res": "W",
-     "score": "124-103"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MEM",
-    "player": "Scotty Pippen Jr.",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 14.7,
-    "benefits": [
-     {
-      "player": "Taylor Hendricks",
-      "salary": 4400,
-      "why": "16 minutes, up from 5",
-      "much": "+18.1 DK without him (9 games)",
-      "score": 18.1,
-      "min": 19.4,
-      "dk": 23.7,
-      "avg": 16.1
-     },
-     {
-      "player": "Cam Spencer",
-      "salary": 6400,
-      "why": "24 minutes, up from 18",
-      "much": "+8.2 DK without him (11 games)",
-      "score": 8.2,
-      "min": 27.7,
-      "dk": 35.3,
-      "avg": 25.8
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-11",
-     "dk": 17.8,
-     "min": 13,
-     "opp": "BKN",
-     "ha": "vs",
-     "res": "L",
-     "score": "145-111"
-    },
-    "game": "NOP at SAS",
-    "time": "2026-11-22T01:00Z",
-    "team": "NOP",
-    "player": "Bryce McGowens",
-    "status": "Out",
-    "reason": "Left Elbow Infection",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 14.7,
-    "benefits": [
-     {
-      "player": "DeAndre Jordan",
-      "salary": 3000,
-      "why": "16 minutes, up from 12",
-      "much": "+10.0 DK without him (3 games)",
-      "score": 10.0,
-      "min": 14.9,
-      "dk": 14.3,
-      "avg": 14.6
-     },
-     {
-      "player": "Jordan Poole",
-      "salary": 4100,
-      "why": "same minutes, more production",
-      "much": "+9.2 DK without him (8 games)",
-      "score": 9.2,
-      "min": 30.0,
-      "dk": 27.3,
-      "avg": 19.4
-     },
-     {
-      "player": "Saddiq Bey",
-      "salary": 6600,
-      "why": "started 5 of 10",
-      "much": "+9.0 DK without him (10 games)",
-      "score": 9.0,
-      "min": 37.7,
-      "dk": 35.3,
-      "avg": 29.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-13",
-     "dk": -0.5,
-     "min": 10,
-     "opp": "MEM",
-     "ha": "vs",
-     "res": "L",
-     "score": "142-111"
-    },
-    "game": "NOP at SAS",
-    "time": "2026-11-22T01:00Z",
-    "team": "NOP",
-    "player": "Bennedict Mathurin",
-    "status": "Out",
-    "reason": "Left Plantar Fasciitis",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 14.3,
-    "benefits": [
-     {
-      "player": "Herbert Jones",
-      "salary": 4000,
-      "why": "28 minutes, up from 24",
-      "much": "+5.7 DK without him (5 games)",
-      "score": 5.7,
-      "min": 33.5,
-      "dk": 20.2,
-      "avg": 15.1
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-14",
-     "dk": 2.0,
-     "min": 3,
-     "opp": "CHI",
-     "ha": "vs",
-     "res": "L",
-     "score": "117-106"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MIN",
-    "player": "Jaylen Clark",
-    "status": "Out",
-    "reason": "Right Hamstring Strain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 13.7,
-    "benefits": [
-     {
-      "player": "Terrence Shannon Jr.",
-      "salary": 4600,
-      "why": "26 minutes, up from 21",
-      "much": "+10.6 DK without him (4 games)",
-      "score": 10.6,
-      "min": 26.7,
-      "dk": 25.9,
-      "avg": 22.3
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-10-26",
-     "dk": 1.2,
-     "min": 6,
-     "opp": "MIA",
-     "ha": "@",
-     "res": "W",
-     "score": "113-112"
-    },
-    "game": "LAC at DAL",
-    "time": "2026-11-22T01:00Z",
-    "team": "DAL",
-    "player": "Sergio De Larrea",
-    "status": "Out",
-    "reason": "Right Knee Sprain",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 13.3,
-    "benefits": [
-     {
-      "player": "Kyrie Irving",
-      "salary": 7800,
-      "why": "32 minutes, up from 27",
-      "much": "+7.2 DK without him (9 games)",
-      "score": 7.2,
-      "min": 31.3,
-      "dk": 38.6,
-      "avg": 37.8
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-14",
-     "dk": 3.5,
-     "min": 3,
-     "opp": "BKN",
-     "ha": "vs",
-     "res": "W",
-     "score": "129-110"
-    },
-    "game": "MEM at MIN",
-    "time": "2026-11-22T01:00Z",
-    "team": "MEM",
-    "player": "GG Jackson",
-    "status": "Out",
-    "reason": "",
-    "new": false,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": null,
-    "min": 12.7,
-    "benefits": [
-     {
-      "player": "Zach Edey",
-      "salary": 4900,
-      "why": "same minutes, more production",
-      "much": "+5.9 DK without him (3 games)",
-      "score": 5.9,
-      "min": 23.4,
-      "dk": 27.4,
-      "avg": 22.2
-     },
-     {
-      "player": "Olivier-Maxence Prosper",
-      "salary": 4000,
-      "why": "17 minutes, up from 6",
-      "much": "+5.9 DK without him (4 games)",
-      "score": 5.9,
-      "min": 19.3,
-      "dk": 15.9,
-      "avg": 9.7
-     }
-    ],
-    "estimate": false
-   }
+  "report": "02:15 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf",
+  "pending": [
+   "BOS",
+   "DAL",
+   "LAC",
+   "MEM",
+   "MIN",
+   "NOP",
+   "NYK",
+   "POR",
+   "SAC",
+   "SAS"
   ],
-  "minor": [
-   {
-    "player": "Isaiah Evans",
-    "team": "MIN",
-    "status": "Available"
-   },
-   {
-    "player": "Shaedon Sharpe",
-    "team": "POR",
-    "status": "Out"
-   },
-   {
-    "player": "Tobi Lawal",
-    "team": "DAL",
-    "status": "Out"
-   },
-   {
-    "player": "Jordan Miller",
-    "team": "LAC",
-    "status": "Out"
-   },
-   {
-    "player": "Bradley Beal",
-    "team": "LAC",
-    "status": "Out"
-   },
-   {
-    "player": "Brandon Ingram",
-    "team": "LAC",
-    "status": "Out"
-   },
-   {
-    "player": "Tarik Biberovic",
-    "team": "DAL",
-    "status": "Out"
-   },
-   {
-    "player": "Dereck Lively II",
-    "team": "DAL",
-    "status": "Out"
-   },
-   {
-    "player": "Richie Saunders",
-    "team": "MEM",
-    "status": "Out"
-   },
-   {
-    "player": "Donte DiVincenzo",
-    "team": "MIN",
-    "status": "Out"
-   },
-   {
-    "player": "Tobias Harris",
-    "team": "SAS",
-    "status": "Out"
-   },
-   {
-    "player": "Jayden Quaintance",
-    "team": "SAS",
-    "status": "Out"
-   },
-   {
-    "player": "Maxime Raynaud",
-    "team": "SAC",
-    "status": "Out"
-   },
-   {
-    "player": "Ben Simmons",
-    "team": "SAC",
-    "status": "Out"
-   }
-  ]
+  "rows": [],
+  "minor": []
  }
 }
