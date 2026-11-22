@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updated": "10:54 AM ET",
+ "updated": "11:54 AM ET",
  "games": 7,
  "pending": [
   "DAL",
@@ -134,6 +134,10 @@
     "CHI": {
      "out": [
       {
+       "player": "Norman Powell",
+       "min": 30.7
+      },
+      {
        "player": "Caleb Wilson",
        "min": 23.0
       }
@@ -141,16 +145,16 @@
      "q": [
       {
        "player": "Jalen Smith",
-       "min": 24.6
+       "min": 26.6
       },
       {
        "player": "Norman Powell",
-       "min": 27.8
+       "min": 28.6
       }
      ]
     }
    },
-   "key": "Caleb Wilson is out, so Isaac Okoro and Zach Collins and Buddy Hield should play more than usual."
+   "key": "Norman Powell and Caleb Wilson are out, so Noa Essengue and Patrick Williams should play more than usual."
   },
   {
    "away": "DAL",
@@ -259,10 +263,6 @@
     "NYK": {
      "out": [],
      "q": [
-      {
-       "player": "OG Anunoby",
-       "min": 35.4
-      },
       {
        "player": "Jordan Clarkson",
        "min": 6.9
@@ -392,6 +392,50 @@
     "Jalen Williams",
     "Chet Holmgren",
     "Alex Caruso"
+   ]
+  },
+  {
+   "team": "CHI",
+   "outs": [
+    {
+     "player": "Norman Powell",
+     "min": 30.7,
+     "note": "Powell is questionable for Sunday against Denver with a right hamstring strain after playing 33 minutes on Friday.",
+     "new": true
+    },
+    {
+     "player": "Caleb Wilson",
+     "min": 23.0,
+     "note": "Caleb Wilson missed his fifth straight game on Friday, Nov. 20, after surgery on his right hand on Nov. 12.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 53.7,
+   "benefits": [
+    {
+     "player": "Noa Essengue",
+     "salary": 3100,
+     "why": "same minutes, more production",
+     "much": "+10.9 DK without them (2 games)",
+     "score": 10.9,
+     "min": 12.4,
+     "dk": 9.9,
+     "avg": 10.8
+    },
+    {
+     "player": "Patrick Williams",
+     "salary": 3300,
+     "why": "26 minutes, up from 20",
+     "much": "+7.3 DK without them (2 games)",
+     "score": 7.3,
+     "min": 19.2,
+     "dk": 14.0,
+     "avg": 16.0
+    }
+   ],
+   "split_of": [
+    "Norman Powell"
    ]
   },
   {
@@ -593,54 +637,6 @@
     "CJ McCollum",
     "Asa Newell"
    ]
-  },
-  {
-   "team": "ORL",
-   "outs": [
-    {
-     "player": "Paolo Banchero",
-     "min": 33.5,
-     "note": "Paolo Banchero has missed 12 straight games with a right ankle injury, and Orlando is targeting a return within the next couple of weeks.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 33.5,
-   "benefits": [
-    {
-     "player": "Franz Wagner",
-     "salary": 9700,
-     "why": "38 minutes, up from 31",
-     "much": "+15.2 DK without him (13 games)",
-     "score": 15.2,
-     "min": 32.7,
-     "dk": 43.3,
-     "avg": 48.7
-    },
-    {
-     "player": "Desmond Bane",
-     "salary": 6700,
-     "why": "36 minutes, up from 30",
-     "much": "+14.4 DK without him (12 games)",
-     "score": 14.4,
-     "min": 31.4,
-     "dk": 30.9,
-     "avg": 32.5
-    },
-    {
-     "player": "Jamal Cain",
-     "salary": 3000,
-     "why": "18 minutes, up from 12",
-     "much": "+12.7 DK without him (11 games)",
-     "score": 12.7,
-     "min": 12.6,
-     "dk": 8.6,
-     "avg": 10.9
-    }
-   ],
-   "split_of": [
-    "Paolo Banchero"
-   ]
   }
  ],
  "hot": [
@@ -746,7 +742,7 @@
    "player": "Tre Jones",
    "team": "CHI",
    "own": 38.0,
-   "dk": 19.5,
+   "dk": 20.1,
    "salary": 4600
   },
   {
@@ -773,18 +769,18 @@
    "salary": 5400
   },
   {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "own": 1.0,
+   "dk": 33.4,
+   "salary": 6500
+  },
+  {
    "player": "Carlton Carrington",
    "team": "WAS",
    "own": 1.0,
    "dk": 14.9,
    "salary": 3000
-  },
-  {
-   "player": "Daniel Gafford",
-   "team": "DAL",
-   "own": 9.6,
-   "dk": 23.6,
-   "salary": 4800
   }
  ],
  "last": {
@@ -854,24 +850,24 @@
     "why": "He played 40 minutes, 14 more than we projected."
    },
    {
+    "player": "Jayson Kent",
+    "team": "POR",
+    "min": 3.0,
+    "proj": 16.0
+   },
+   {
     "player": "Miles McBride",
     "team": "NYK",
     "min": 14.0,
     "proj": 27.0,
     "why": "He played 14 minutes, 13 fewer than we projected."
-   },
-   {
-    "player": "Jayson Kent",
-    "team": "POR",
-    "min": 3.0,
-    "proj": 16.0
    }
   ],
   "injuries": []
  },
  "injuries": {
-  "report": "10:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_10_45AM.pdf",
+  "report": "11:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_45AM.pdf",
   "pending": [
    "DAL",
    "NYK",
@@ -1187,8 +1183,8 @@
       "why": "same minutes, more production",
       "much": "+10.9 DK without him (2 games)",
       "score": 10.9,
-      "min": 11.4,
-      "dk": 9.1,
+      "min": 12.4,
+      "dk": 9.9,
       "avg": 10.8
      },
      {
@@ -1197,8 +1193,8 @@
       "why": "26 minutes, up from 20",
       "much": "+7.3 DK without him (2 games)",
       "score": 7.3,
-      "min": 16.8,
-      "dk": 12.2,
+      "min": 19.2,
+      "dk": 14.0,
       "avg": 16.0
      }
     ],
@@ -1233,8 +1229,8 @@
       "why": "started 1 of 2",
       "much": "+14.3 DK without him (2 games)",
       "score": 14.3,
-      "min": 15.3,
-      "dk": 13.2,
+      "min": 9.5,
+      "dk": 8.3,
       "avg": 9.1
      },
      {
@@ -1243,8 +1239,8 @@
       "why": "17 minutes, up from 14",
       "much": "+10.5 DK without him (1 game)",
       "score": 10.5,
-      "min": 7.8,
-      "dk": 7.0,
+      "min": 6.3,
+      "dk": 5.6,
       "avg": 12.7
      },
      {
@@ -1253,8 +1249,8 @@
       "why": "22 minutes, up from 15",
       "much": "+10.2 DK without him (2 games)",
       "score": 10.2,
-      "min": 17.7,
-      "dk": 15.9,
+      "min": 15.8,
+      "dk": 14.2,
       "avg": 15.3
      }
     ],
@@ -2072,8 +2068,8 @@
       "why": "started 5 of 5",
       "much": "+15.6 DK without him (5 games)",
       "score": 15.6,
-      "min": 28.0,
-      "dk": 18.0,
+      "min": 26.6,
+      "dk": 17.1,
       "avg": 15.4
      },
      {
@@ -2082,8 +2078,8 @@
       "why": "18 minutes, up from 8",
       "much": "+10.4 DK without him (3 games)",
       "score": 10.4,
-      "min": 15.3,
-      "dk": 13.2,
+      "min": 9.5,
+      "dk": 8.3,
       "avg": 9.1
      },
      {
@@ -2092,8 +2088,8 @@
       "why": "21 minutes, up from 13",
       "much": "+10.0 DK without him (5 games)",
       "score": 10.0,
-      "min": 17.7,
-      "dk": 15.9,
+      "min": 15.8,
+      "dk": 14.2,
       "avg": 15.3
      }
     ],
