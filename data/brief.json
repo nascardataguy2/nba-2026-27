@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updated": "5:57 PM ET",
+ "updated": "6:02 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:35 AM",
@@ -158,12 +158,7 @@
        "min": 13.3
       }
      ],
-     "q": [
-      {
-       "player": "Walter Clayton Jr.",
-       "min": 21.8
-      }
-     ]
+     "q": []
     },
     "UTA": {
      "out": [
@@ -209,12 +204,7 @@
        "min": 17.7
       }
      ],
-     "q": [
-      {
-       "player": "Deandre Ayton",
-       "min": 11.6
-      }
-     ]
+     "q": []
     }
    },
    "key": "Paolo Banchero is out, so Franz Wagner and Desmond Bane and Jamal Cain should play more than usual."
@@ -319,6 +309,38 @@
  ],
  "changed": [
   {
+   "player": "Bub Carrington",
+   "team": "WAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "6:03 PM"
+  },
+  {
+   "player": "Deandre Ayton",
+   "team": "WAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "6:03 PM"
+  },
+  {
+   "player": "P.J. Washington",
+   "team": "DAL",
+   "status": "Out",
+   "was": "Doubtful",
+   "why": "Illness",
+   "time": "6:03 PM"
+  },
+  {
+   "player": "Walter Clayton Jr.",
+   "team": "DAL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Patellar Tendinitis",
+   "time": "6:03 PM"
+  },
+  {
    "player": "Aday Mara",
    "team": "OKC",
    "status": "Out",
@@ -365,38 +387,6 @@
    "was": "Probable",
    "why": "",
    "time": "4:42 PM"
-  },
-  {
-   "player": "Shai Gilgeous-Alexander",
-   "team": "OKC",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "4:42 PM"
-  },
-  {
-   "player": "Paul George",
-   "team": "BOS",
-   "status": "Out",
-   "was": "",
-   "why": "Rest",
-   "time": "4:05 PM"
-  },
-  {
-   "player": "Nic Claxton",
-   "team": "CHI",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "3:17 PM"
-  },
-  {
-   "player": "Tobe Awaka",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Out",
-   "why": "-",
-   "time": "3:17 PM"
   }
  ],
  "chg": [
@@ -503,8 +493,8 @@
   {
    "key": "P.J. Washington",
    "team": "DAL",
-   "head": "P.J. Washington DOUBTFUL",
-   "st": "Doubtful",
+   "head": "P.J. Washington OUT",
+   "st": "Out",
    "act": "Play",
    "names": [
     {
@@ -518,7 +508,7 @@
      "much": "+12.2 DK without him (1 game)"
     }
    ],
-   "time": "2:55 PM",
+   "time": "6:03 PM",
    "size": 28.0
   },
   {
@@ -596,6 +586,27 @@
    "size": 18.3
   },
   {
+   "key": "DAL",
+   "team": "DAL",
+   "head": "Jr. CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Marcus Sasser",
+     "salary": 3200,
+     "much": "+15.0 DK without Jr."
+    },
+    {
+     "player": "Naji Marshall",
+     "salary": 5600,
+     "much": "+7.2 DK without Jr."
+    }
+   ],
+   "time": "6:03 PM",
+   "size": 18.0
+  },
+  {
    "key": "DET",
    "team": "DET",
    "head": "II CLEARED",
@@ -615,48 +626,6 @@
    ],
    "time": "1:55 PM",
    "size": 15.0
-  },
-  {
-   "key": "Walter Clayton Jr.",
-   "team": "DAL",
-   "head": "Walter Clayton Jr. QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Marcus Sasser",
-     "salary": 3200,
-     "much": "+15.0 DK without him (1 game)"
-    },
-    {
-     "player": "Naji Marshall",
-     "salary": 5600,
-     "much": "+7.2 DK without him (1 game)"
-    }
-   ],
-   "time": "2:55 PM",
-   "size": 9.0
-  },
-  {
-   "key": "Bub Carrington",
-   "team": "WAS",
-   "head": "Bub Carrington QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "AJ Dybantsa",
-     "salary": 6900,
-     "much": "+12.6 DK without him (1 game)"
-    },
-    {
-     "player": "Anthony Davis",
-     "salary": 9400,
-     "much": "+7.0 DK without him (1 game)"
-    }
-   ],
-   "time": "1:55 PM",
-   "size": 5.5
   }
  ],
  "sits": [
@@ -937,7 +906,7 @@
     {
      "player": "PJ Washington",
      "min": 25.3,
-     "note": "Washington was ruled out of Saturday's game with an illness. The show put him questionable for Sunday on the back-to-back.",
+     "note": "P.J. Washington was moved from doubtful to out for tonight (illness) on the NBA's 06:00 PM injury report. He had averaged 25 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     }
    ],
@@ -1072,32 +1041,32 @@
  ],
  "chalk": [
   {
-   "player": "Dyson Daniels",
-   "team": "ATL",
-   "own": 40.0,
-   "dk": 37.1,
-   "salary": 6900
-  },
-  {
-   "player": "Nickeil Alexander-Walker",
-   "team": "ATL",
-   "own": 40.0,
-   "dk": 33.1,
-   "salary": 7000
-  },
-  {
-   "player": "Kevin Huerter",
-   "team": "DET",
-   "own": 40.0,
-   "dk": 29.1,
-   "salary": 5400
-  },
-  {
-   "player": "Andrew Wiggins",
+   "player": "Davion Mitchell",
    "team": "MIA",
    "own": 40.0,
-   "dk": 21.0,
-   "salary": 4300
+   "dk": 34.0,
+   "salary": 7100
+  },
+  {
+   "player": "Aaron Wiggins",
+   "team": "ATL",
+   "own": 40.0,
+   "dk": 26.7,
+   "salary": 5300
+  },
+  {
+   "player": "Bobby Portis",
+   "team": "MIA",
+   "own": 40.0,
+   "dk": 24.1,
+   "salary": 4400
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "own": 38.0,
+   "dk": 50.7,
+   "salary": 6500
   }
  ],
  "leverage": [
@@ -1116,11 +1085,11 @@
    "salary": 6300
   },
   {
-   "player": "Carlton Carrington",
-   "team": "WAS",
-   "own": 1.0,
-   "dk": 14.8,
-   "salary": 3000
+   "player": "Nique Clifford",
+   "team": "OKC",
+   "own": 4.6,
+   "dk": 16.2,
+   "salary": 3200
   }
  ],
  "last": {
@@ -1190,17 +1159,17 @@
     "why": "He played 40 minutes, 14 more than we projected."
    },
    {
-    "player": "Jayson Kent",
-    "team": "POR",
-    "min": 3.0,
-    "proj": 16.0
-   },
-   {
     "player": "Miles McBride",
     "team": "NYK",
     "min": 14.0,
     "proj": 27.0,
     "why": "He played 14 minutes, 13 fewer than we projected."
+   },
+   {
+    "player": "Jayson Kent",
+    "team": "POR",
+    "min": 3.0,
+    "proj": 16.0
    }
   ],
   "injuries": [
@@ -1212,8 +1181,8 @@
   ]
  },
  "injuries": {
-  "report": "05:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_05_45PM.pdf",
+  "report": "06:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_06_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1548,42 +1517,6 @@
    },
    {
     "last": {
-     "date": "2026-11-20",
-     "dk": 23.8,
-     "min": 29,
-     "opp": "WAS",
-     "ha": "vs",
-     "res": "L",
-     "score": "98-94"
-    },
-    "game": "DEN at CHI",
-    "time": "2026-11-23T00:00Z",
-    "team": "CHI",
-    "player": "Nic Claxton",
-    "status": "Out",
-    "reason": "Illness",
-    "new": true,
-    "was": "Questionable",
-    "known": true,
-    "changed_at": "3:17 PM",
-    "salary": 5300,
-    "min": 22.7,
-    "benefits": [
-     {
-      "player": "Leonard Miller",
-      "salary": 3000,
-      "why": "18 minutes, up from 3",
-      "much": "+14.0 DK without him (9 games)",
-      "score": 14.0,
-      "min": 8.6,
-      "dk": 8.1,
-      "avg": 12.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-18",
      "dk": 40.8,
      "min": 25,
@@ -1596,12 +1529,12 @@
     "time": "2026-11-23T00:00Z",
     "team": "DAL",
     "player": "P.J. Washington",
-    "status": "Doubtful",
+    "status": "Out",
     "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Doubtful",
     "known": true,
-    "changed_at": "2:55 PM",
+    "changed_at": "6:03 PM",
     "salary": 5800,
     "min": 25.3,
     "benefits": [
@@ -1640,129 +1573,38 @@
    },
    {
     "last": {
-     "date": "2026-11-21",
-     "dk": 26.2,
-     "min": 25,
-     "opp": "LAC",
+     "date": "2026-11-20",
+     "dk": 23.8,
+     "min": 29,
+     "opp": "WAS",
      "ha": "vs",
-     "res": "W",
-     "score": "110-100"
-    },
-    "game": "DAL at UTA",
-    "time": "2026-11-23T00:00Z",
-    "team": "DAL",
-    "player": "Walter Clayton Jr.",
-    "status": "Questionable",
-    "reason": "Left Patellar Tendinitis",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "2:55 PM",
-    "salary": 4400,
-    "min": 25.0,
-    "benefits": [
-     {
-      "player": "Marcus Sasser",
-      "salary": 3200,
-      "why": "24 minutes, up from 14",
-      "much": "+15.0 DK without him (1 game)",
-      "score": 15.0,
-      "min": 12.2,
-      "dk": 8.3,
-      "avg": 9.5
-     },
-     {
-      "player": "Naji Marshall",
-      "salary": 5600,
-      "why": "29 minutes, up from 24",
-      "much": "+7.2 DK without him (1 game)",
-      "score": 7.2,
-      "min": 22.3,
-      "dk": 21.5,
-      "avg": 22.9
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-20",
-     "dk": 3.5,
-     "min": 6,
-     "opp": "CHI",
-     "ha": "@",
-     "res": "W",
+     "res": "L",
      "score": "98-94"
     },
-    "game": "ORL at WAS",
+    "game": "DEN at CHI",
     "time": "2026-11-23T00:00Z",
-    "team": "WAS",
-    "player": "Bub Carrington",
-    "status": "Questionable",
+    "team": "CHI",
+    "player": "Nic Claxton",
+    "status": "Out",
     "reason": "Illness",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "1:55 PM",
-    "salary": 3000,
-    "min": 10.3,
+    "changed_at": "3:17 PM",
+    "salary": 5300,
+    "min": 22.7,
     "benefits": [
      {
-      "player": "AJ Dybantsa",
-      "salary": 6900,
-      "why": "38 minutes, up from 34",
-      "much": "+12.6 DK without him (1 game)",
-      "score": 12.6,
-      "min": 33.2,
-      "dk": 29.8,
-      "avg": 31.8
-     },
-     {
-      "player": "Anthony Davis",
-      "salary": 9400,
-      "why": "same minutes, more production",
-      "much": "+7.0 DK without him (1 game)",
-      "score": 7.0,
-      "min": 32.7,
-      "dk": 42.3,
-      "avg": 46.0
-     },
-     {
-      "player": "Tre Johnson",
-      "salary": 3700,
-      "why": "Show: backup PG minutes, 21 minutes (11/16)",
-      "much": "+4.2 DK projected vs. last 3",
-      "score": 4.233333333333333,
-      "min": 17.4,
-      "dk": 11.4,
-      "avg": 13.8
+      "player": "Leonard Miller",
+      "salary": 3000,
+      "why": "18 minutes, up from 3",
+      "much": "+14.0 DK without him (9 games)",
+      "score": 14.0,
+      "min": 8.6,
+      "dk": 8.1,
+      "avg": 12.7
      }
     ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-20",
-     "dk": 6.5,
-     "min": 11,
-     "opp": "CHI",
-     "ha": "@",
-     "res": "W",
-     "score": "98-94"
-    },
-    "game": "ORL at WAS",
-    "time": "2026-11-23T00:00Z",
-    "team": "WAS",
-    "player": "Deandre Ayton",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "12:42 PM",
-    "salary": 3100,
-    "min": 9.3,
-    "benefits": [],
     "estimate": false
    },
    {
@@ -1792,6 +1634,31 @@
    },
    {
     "last": {
+     "date": "2026-11-21",
+     "dk": 26.2,
+     "min": 25,
+     "opp": "LAC",
+     "ha": "vs",
+     "res": "W",
+     "score": "110-100"
+    },
+    "game": "DAL at UTA",
+    "time": "2026-11-23T00:00Z",
+    "team": "DAL",
+    "player": "Walter Clayton Jr.",
+    "status": "Available",
+    "reason": "Left Patellar Tendinitis",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:03 PM",
+    "salary": 4400,
+    "min": 25.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-20",
      "dk": 14.8,
      "min": 23,
@@ -1812,6 +1679,31 @@
     "changed_at": "5:03 PM",
     "salary": 3300,
     "min": 16.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-20",
+     "dk": 3.5,
+     "min": 6,
+     "opp": "CHI",
+     "ha": "@",
+     "res": "W",
+     "score": "98-94"
+    },
+    "game": "ORL at WAS",
+    "time": "2026-11-23T00:00Z",
+    "team": "WAS",
+    "player": "Bub Carrington",
+    "status": "Available",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:03 PM",
+    "salary": 3000,
+    "min": 10.3,
     "benefits": [],
     "estimate": false
    },
@@ -3121,6 +3013,11 @@
    }
   ],
   "minor": [
+   {
+    "player": "Deandre Ayton",
+    "team": "WAS",
+    "status": "Available"
+   },
    {
     "player": "Tobe Awaka",
     "team": "CHI",
