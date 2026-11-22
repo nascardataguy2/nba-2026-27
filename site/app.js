@@ -503,30 +503,41 @@
     el.innerHTML = bits.join(' \u00b7 ');
     el.hidden = false;
   }
-  var PLATE = false;
+  var PLATE = false, PGSEL = {};
   function pSplit(){ return !!(PJ && PJ.players.some(function(p){ return p.slate && p.slate !== 'main'; })); }
   // Games on no DraftKings classic slate (an afternoon game, say) have no prices, so they stay hidden.
   function pShow(slate){ return !pSplit() || !slate || slate === 'main' || (PLATE && slate === 'late'); }
-  function slateTag(p){ return p.slate === 'late' ? '<span class="role late">Late</span>' : (p.slate === 'off' ? '<span class="role late">No DK slate</span>' : ''); }
+  // The second DraftKings slate is "early" when it locks before the main slate (an afternoon game
+  // on a Sunday) and "late" when it locks after. Data calls it 'late' either way.
+  function otherSlate(){
+    var gs = (PJ && PJ.games) || [];
+    var t = function(sl){ return gs.filter(function(g){ return g.slate === sl; }).map(function(g){ return g.time; }).filter(Boolean).sort()[0]; };
+    var m = t('main'), o = t('late');
+    return m && o && o < m ? 'Early' : 'Late';
+  }
+  function slateTag(p){ return p.slate === 'late' ? '<span class="role ' + otherSlate().toLowerCase() + '">' + otherSlate() + '</span>' : (p.slate === 'off' ? '<span class="role late">No DK slate</span>' : ''); }
   function projGames(){
     var d = PJ;
     $('r4p-games').innerHTML = (d.games || []).filter(function(g){ return pShow(g.slate); }).map(function(g){
       var fav = g.fav ? esc(g.fav) + ' \u2212' + n1(g.line) : 'Even';
-      var lbl = pSplit() && g.slate !== 'main' ? '<span class="gm-sl">' + (g.slate === 'late' ? 'Late slate' : 'No DK slate') + '</span>' : '';
-      return '<div class="gm' + (lbl ? ' gm-late' : '') + '"><div class="gm-t">' + tm(g.away, true) + ' <span class="gm-at">at</span> ' + tm(g.home, true) + '<span class="gm-time">' + esc(gameTime(g.time)) + '</span></div>' + lbl +
+      var os = otherSlate(), key = g.away + '|' + g.home;
+      var lbl = pSplit() && g.slate !== 'main' ? '<span class="gm-sl ' + (g.slate === 'late' ? os.toLowerCase() : '') + '">' + (g.slate === 'late' ? os + ' slate' : 'No DK slate') + '</span>' : '';
+      return '<div class="gm gm-pick' + (lbl ? ' gm-late' : '') + (PGSEL[key] ? ' on' : '') + '" data-pg="' + key + '" role="button" tabindex="0" title="Show only this game (click more to add games)"><div class="gm-t">' + tm(g.away, true) + ' <span class="gm-at">at</span> ' + tm(g.home, true) + '<span class="gm-time">' + esc(gameTime(g.time)) + '</span></div>' + lbl +
         '<div class="gm-l">Total ' + n1(g.ou) + ' \u00b7 ' + fav + '</div>' +
         '<div class="gm-l">' + esc(g.away) + ' ' + n1(g.away_pts) + ' \u00b7 ' + esc(g.home) + ' ' + n1(g.home_pts) + '</div></div>';
     }).join('');
+    var ng = Object.keys(PGSEL).length;
+    $('r4p-pgclr').innerHTML = ng ? 'Showing ' + ng + (ng === 1 ? ' game' : ' games') + ' \u00b7 <a href="#" data-pgclr="1">Show all games</a>' : 'Click a game to show only its players. Click more games to add them.';
     var sel = $('r4p-pgame'), cur = sel.value;
     sel.innerHTML = '<option value="">All games</option>' + (d.games || []).filter(function(g){ return pShow(g.slate); }).map(function(g){
-      return '<option value="' + g.away + '|' + g.home + '">' + g.away + ' at ' + g.home + (pSplit() && g.slate !== 'main' ? ' (' + (g.slate === 'late' ? 'late' : 'no DK slate') + ')' : '') + '</option>';
+      return '<option value="' + g.away + '|' + g.home + '">' + g.away + ' at ' + g.home + (pSplit() && g.slate !== 'main' ? ' (' + (g.slate === 'late' ? otherSlate().toLowerCase() : 'no DK slate') + ')' : '') + '</option>';
     }).join('');
     if (cur && [].some.call(sel.options, function(o){ return o.value === cur; })) sel.value = cur;
     var b = $('r4p-plate');
     if (b){
       var nl = (d.games || []).filter(function(g){ return g.slate === 'late'; }).length;
       b.hidden = !nl;
-      b.textContent = PLATE ? 'Hide late games' : 'Show late games (' + nl + ')';
+      b.textContent = PLATE ? 'Hide ' + otherSlate().toLowerCase() + ' games' : 'Show ' + otherSlate().toLowerCase() + ' games (' + nl + ')';
       b.classList.toggle('on', PLATE);
     }
   }
@@ -761,6 +772,7 @@
     var k = PSORT.key, dir = PSORT.dir;
     var shown = PJ.players.filter(function(p){ return pShow(p.slate); });
     var list = shown.filter(function(p){
+      if (Object.keys(PGSEL).length && !Object.keys(PGSEL).some(function(x){ var gg = x.split('|'); return p.team === gg[0] || p.team === gg[1]; })) return false;
       if (g){ var gg = g.split('|'); if (p.team !== gg[0] && p.team !== gg[1]) return false; }
       if (pos && ('/' + p.pos + '/').indexOf('/' + pos + '/') < 0) return false;
       if (!q) return true;
@@ -871,6 +883,7 @@
     var q = $('r4p-nq').value.trim().toLowerCase(), g = $('r4p-ngame').value, pos = $('r4p-npos').value;
     var k = NSORT.key, dir = NSORT.dir, all = n.players || [];
     var list = all.filter(function(p){
+      if (Object.keys(PGSEL).length && !Object.keys(PGSEL).some(function(x){ var gg = x.split('|'); return p.team === gg[0] || p.team === gg[1]; })) return false;
       if (g){ var gg = g.split('|'); if (p.team !== gg[0] && p.team !== gg[1]) return false; }
       if (pos && ('/' + p.pos + '/').indexOf('/' + pos + '/') < 0) return false;
       if (!q) return true;
@@ -1119,7 +1132,13 @@
   }
   var OSLATE = 'main';
   function oMainOnly(){ return !!(PJ && PJ.players.some(function(p){ return p.dkid; })); }
+  var OGSEL = {};
   function oMain(p){ return !oMainOnly() || (!!p.dkid && (p.slate || 'main') === OSLATE); }
+  // Optimizer game picker: when games are picked, only their players are in the pool.
+  function oPicked(p){
+    var ks = Object.keys(OGSEL);
+    return !ks.length || ks.some(function(x){ var gg = x.split('|'); return p.team === gg[0] || p.team === gg[1]; });
+  }
   function oGames(){
     if (!PJ) return [];
     var t = {};
@@ -1164,7 +1183,7 @@
     if (!PJ) return [];
     return PJ.players.filter(function(p){
       var k = nkey(p.player);
-      if (!p.salary || p.dk == null || OEXCL[k] || !oMain(p)) return false;
+      if (!p.salary || p.dk == null || OEXCL[k] || !oMain(p) || !oPicked(p)) return false;
       if (OLOCK[k]) return true;
       return p.min >= 8;
     });
@@ -1238,19 +1257,27 @@
     if (!oToday()){ $('r4p-osub').textContent = 'Tonight\u2019s projections are not posted yet. Please check back closer to the first game.'; $('r4p-opool').innerHTML = ''; return; }
     var st = oStarted(), q = $('r4p-oq').value.trim().toLowerCase();
     var og = oGames();
+    Object.keys(OGSEL).forEach(function(x){ if (!og.some(function(g){ return g.away + '|' + g.home === x; })) delete OGSEL[x]; });
+    var ogEl = $('r4p-ogames');
+    if (ogEl){
+      var nog = Object.keys(OGSEL).length;
+      ogEl.innerHTML = '<div class="games">' + og.map(function(g){ var key = g.away + '|' + g.home;
+        return '<div class="gm gm-pick' + (OGSEL[key] ? ' on' : '') + '" data-og="' + key + '" role="button" tabindex="0"><div class="gm-t">' + tm(g.away, true) + ' <span class="gm-at">at</span> ' + tm(g.home, true) + '<span class="gm-time">' + esc(gameTime(g.time)) + '</span></div><div class="gm-l">Total ' + n1(g.ou) + '</div></div>'; }).join('') + '</div>' +
+        '<p class="count">' + (nog ? 'Building from ' + nog + (nog === 1 ? ' game' : ' games') + ' \u00b7 <a href="#" data-ogclr="1">Use all games</a>' : 'Click games to build from only those games.') + '</p>';
+    }
     var hasLate = PJ.players.some(function(p){ return p.slate === 'late' && p.dkid; });
     var ss = $('r4p-oslate');
     if (ss){
       ss.hidden = !hasLate;
       if (hasLate){
         var nm = (PJ.games || []).filter(function(g){ return g.slate === 'main'; }).length, nl = (PJ.games || []).filter(function(g){ return g.slate === 'late'; }).length;
-        ss.innerHTML = '<option value="main">Main slate (' + nm + ' games)</option><option value="late">Late slate (' + nl + ' games)</option>';
+        ss.innerHTML = '<option value="main">Main slate (' + nm + ' games)</option><option value="late">' + otherSlate() + ' slate (' + nl + ' games)</option>';
         ss.value = OSLATE;
       } else OSLATE = 'main';
     }
-    $('r4p-osub').textContent = 'We watch ball. We know ball. Build DraftKings ' + (OSLATE === 'late' ? 'late-slate' : 'main-slate') + ' lineups from our projections for ' + og.length + (og.length === 1 ? ' game' : ' games') + ' tonight \u00b7 updated ' + PJ.updated + '.';
+    $('r4p-osub').textContent = 'We watch ball. We know ball. Build DraftKings ' + (OSLATE === 'late' ? otherSlate().toLowerCase() + '-slate' : 'main-slate') + ' lineups from our projections for ' + og.length + (og.length === 1 ? ' game' : ' games') + ' tonight \u00b7 updated ' + PJ.updated + '.';
     var list = PJ.players.filter(function(p){
-      if (!p.salary || !oMain(p)) return false;
+      if (!p.salary || !oMain(p) || !oPicked(p)) return false;
       return !q || (p.player + ' ' + p.team + ' ' + (NAMES[p.team] || '')).toLowerCase().indexOf(q) > -1;
     });
     $('r4p-opool').innerHTML = (
@@ -1749,6 +1776,17 @@
   $('r4p-obuild').addEventListener('click', optBuild);
   $('r4p-oslate').addEventListener('change', function(){ OSLATE = this.value; OLOCK = {}; OEXCL = {}; OLINES = []; optLines(); optPool(); oMsg(''); });
   $('r4p-plate').addEventListener('click', function(){ PLATE = !PLATE; projGames(); proj(); });
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target.closest('[data-pg],[data-pgclr],[data-og],[data-ogclr]') : null;
+    if (!t) return;
+    e.preventDefault();
+    if (t.hasAttribute('data-pgclr')) PGSEL = {};
+    else if (t.hasAttribute('data-pg')){ var k = t.getAttribute('data-pg'); if (PGSEL[k]) delete PGSEL[k]; else PGSEL[k] = 1; }
+    if (t.hasAttribute('data-pg') || t.hasAttribute('data-pgclr')){ projGames(); proj(); return; }
+    if (t.hasAttribute('data-ogclr')) OGSEL = {};
+    else { var o = t.getAttribute('data-og'); if (OGSEL[o]) delete OGSEL[o]; else OGSEL[o] = 1; }
+    OLINES = []; optLines(); optPool();
+  });
   $('r4p-oss').addEventListener('click', optStars);
   $('r4p-oclear').addEventListener('click', function(){ OLOCK = {}; OEXCL = {}; optPool(); oMsg('Cleared all locks and players taken out.'); });
   $('r4p-ocsv').addEventListener('click', optCsv);

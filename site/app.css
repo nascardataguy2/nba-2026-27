@@ -561,3 +561,12 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 }
 
 .tr-why{margin:4px 0 0;color:var(--muted)}
+
+.role.early{background:#e6f0fb;border-color:#b9d3f0;color:#1d4f91}
+.role.late{background:#fdeee6;border-color:#f3c9b3;color:#a8431a}
+.gm-sl.early{background:#e6f0fb;color:#1d4f91}
+.gm-sl.late{background:#fdeee6;color:#a8431a}
+.gm-pick{cursor:pointer;transition:box-shadow .1s}
+.gm-pick:hover{border-color:#b9c2cf}
+.gm-pick.on{border-color:var(--navy);box-shadow:0 0 0 2px var(--navy)}
+#r4p-ogames .games{margin-bottom:4px}
