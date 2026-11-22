@@ -365,10 +365,12 @@ footer .wrap{padding-top:14px;padding-bottom:24px}
 }
 
 /* 90s side art (computers only); tables, header and tabs stay on white. The content column is
-   wide (up to 2000px, leaving at least 80px of art on each side) so tables and notes fit. */
+   wide (up to 1440px, leaving at least 100px of art on each side) so tables and notes fit. */
 @media (min-width:1240px){
-  :root{--W:min(2000px,calc(100vw - 160px))}
+  :root{--W:min(1440px,calc(100vw - 200px))}
   .wrap{max-width:var(--W)}
+  /* the crawlable intro at the top comes from the Blogger theme; match the content width */
+  #seo-static{max-width:var(--W)!important;box-sizing:border-box;background:var(--bg);padding-left:16px!important;padding-right:16px!important}
   body{background:#f6f8f2 url(https://nascardataguy2.github.io/nba-2026-27/site/bg90s-left.jpg) left top/min(54.7vh,calc((100vw - var(--W))/2)) auto repeat-y fixed;}
   body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:url(https://nascardataguy2.github.io/nba-2026-27/site/bg90s-right.jpg) right top/min(54.7vh,calc((100vw - var(--W))/2)) auto repeat-y}
   body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:rgba(255,255,255,.45)}
