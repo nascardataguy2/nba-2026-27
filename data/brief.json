@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updated": "4:51 PM ET",
+ "updated": "5:02 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:35 AM",
@@ -82,13 +82,13 @@
      "q": []
     },
     "MIA": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Giannis Antetokounmpo",
-       "min": 30.6
+       "min": 30.7
       }
-     ]
+     ],
+     "q": []
     }
    },
    "key": "Shai Gilgeous-Alexander and Jalen Williams are out, so Bennett Stirtz and Aday Mara and Nique Clifford should play more than usual."
@@ -319,6 +319,38 @@
  ],
  "changed": [
   {
+   "player": "Patrick Williams",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "-",
+   "time": "5:03 PM"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "-",
+   "time": "5:03 PM"
+  },
+  {
+   "player": "Jaylin Sellers",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Out",
+   "why": "-",
+   "time": "5:03 PM"
+  },
+  {
+   "player": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Groin tendinitis",
+   "time": "5:03 PM"
+  },
+  {
    "player": "Myron Gardner",
    "team": "MIA",
    "status": "Available",
@@ -365,41 +397,25 @@
    "was": "Probable",
    "why": "Right Knee Soreness",
    "time": "3:17 PM"
-  },
-  {
-   "player": "P.J. Washington",
-   "team": "DAL",
-   "status": "Doubtful",
-   "was": "Out",
-   "why": "Illness",
-   "time": "2:55 PM"
-  },
-  {
-   "player": "Walter Clayton Jr.",
-   "team": "DAL",
-   "status": "Questionable",
-   "was": "Available",
-   "why": "Left Patellar Tendinitis",
-   "time": "2:55 PM"
-  },
-  {
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "Illness",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Bub Carrington",
-   "team": "WAS",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "1:55 PM"
   }
  ],
  "chg": [
+  {
+   "key": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "head": "Giannis Antetokounmpo OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Bam Adebayo",
+     "salary": 7800,
+     "much": "+14.0 DK projected vs. last 3"
+    }
+   ],
+   "time": "5:03 PM",
+   "size": 56.5
+  },
   {
    "key": "Shai Gilgeous-Alexander",
    "team": "OKC",
@@ -476,7 +492,7 @@
      "much": "+10.5 DK without Smith"
     }
    ],
-   "time": "3:17 PM",
+   "time": "5:03 PM",
    "size": 30.8
   },
   {
@@ -863,6 +879,32 @@
    ]
   },
   {
+   "team": "MIA",
+   "outs": [
+    {
+     "player": "Giannis Antetokounmpo",
+     "min": 30.7,
+     "note": "Giannis Antetokounmpo was moved from questionable to out for tonight (right groin tendinitis) on the NBA's 05:00 PM injury report. He had averaged 31 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 30.7,
+   "benefits": [
+    {
+     "player": "Bam Adebayo",
+     "salary": 7800,
+     "why": "subs in for him 15 of 56 times",
+     "much": "+14.0 DK projected vs. last 3",
+     "score": 14.033333333333335,
+     "min": 36.9,
+     "dk": 44.7,
+     "avg": 38.6
+    }
+   ],
+   "split_of": []
+  },
+  {
    "team": "DAL",
    "outs": [
     {
@@ -908,61 +950,6 @@
    ],
    "split_of": [
     "PJ Washington"
-   ]
-  },
-  {
-   "team": "UTA",
-   "outs": [
-    {
-     "player": "Lauri Markkanen",
-     "min": 34.7,
-     "note": "Lauri Markkanen (hand) was still out on Friday, Nov. 20, along with Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), which leaves Utah without its starting frontcourt.",
-     "new": false
-    },
-    {
-     "player": "Jaren Jackson Jr.",
-     "min": 25.3,
-     "note": "The show said Jaren Jackson Jr. is probably out at least another month; he has not played since October 26. The show said he will come back to a crowded Utah offense, with Darryn Peterson playing much better and Keyonte George taking a lot of shots.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 60.0,
-   "benefits": [
-    {
-     "player": "Brice Sensabaugh",
-     "salary": 4900,
-     "why": "22 minutes, up from 14",
-     "much": "+11.5 DK without them (9 games)",
-     "score": 11.5,
-     "min": 21.2,
-     "dk": 22.0,
-     "avg": 19.2
-    },
-    {
-     "player": "Darryn Peterson",
-     "salary": 7700,
-     "why": "same minutes, more production",
-     "much": "+7.6 DK without them (9 games)",
-     "score": 7.6,
-     "min": 28.8,
-     "dk": 31.0,
-     "avg": 32.2
-    },
-    {
-     "player": "Josh Green",
-     "salary": 3600,
-     "why": "started 8 of 9",
-     "much": "+5.8 DK without them (9 games)",
-     "score": 5.8,
-     "min": 21.3,
-     "dk": 11.0,
-     "avg": 10.0
-    }
-   ],
-   "split_of": [
-    "Lauri Markkanen",
-    "Jaren Jackson Jr."
    ]
   }
  ],
@@ -1059,39 +1046,39 @@
  ],
  "chalk": [
   {
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "own": 40.0,
+   "dk": 37.1,
+   "salary": 6900
+  },
+  {
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "own": 40.0,
+   "dk": 33.1,
+   "salary": 7000
+  },
+  {
+   "player": "Kenrich Williams",
+   "team": "OKC",
+   "own": 40.0,
+   "dk": 24.5,
+   "salary": 4500
+  },
+  {
    "player": "Kingston Flemings",
    "team": "ATL",
    "own": 40.0,
    "dk": 18.9,
    "salary": 4700
-  },
-  {
-   "player": "Daniss Jenkins",
-   "team": "DET",
-   "own": 38.0,
-   "dk": 35.1,
-   "salary": 6200
-  },
-  {
-   "player": "Tre Jones",
-   "team": "CHI",
-   "own": 38.0,
-   "dk": 28.3,
-   "salary": 4600
-  },
-  {
-   "player": "Ajay Mitchell",
-   "team": "OKC",
-   "own": 37.5,
-   "dk": 36.2,
-   "salary": 6400
   }
  ],
  "leverage": [
   {
    "player": "Jalen Brunson",
    "team": "NYK",
-   "own": 7.1,
+   "own": 7.3,
    "dk": 47.2,
    "salary": 9100
   },
@@ -1199,8 +1186,8 @@
   ]
  },
  "injuries": {
-  "report": "04:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_04_45PM.pdf",
+  "report": "05:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_05_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1316,6 +1303,42 @@
    },
    {
     "last": {
+     "date": "2026-11-18",
+     "dk": 62.5,
+     "min": 32,
+     "opp": "MIL",
+     "ha": "vs",
+     "res": "W",
+     "score": "137-130"
+    },
+    "game": "OKC at MIA",
+    "time": "2026-11-22T23:00Z",
+    "team": "MIA",
+    "player": "Giannis Antetokounmpo",
+    "status": "Out",
+    "reason": "Right Groin tendinitis",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:03 PM",
+    "salary": null,
+    "min": 30.7,
+    "benefits": [
+     {
+      "player": "Bam Adebayo",
+      "salary": 7800,
+      "why": "subs in for him 15 of 56 times",
+      "much": "+14.0 DK projected vs. last 3",
+      "score": 14.033333333333335,
+      "min": 36.9,
+      "dk": 44.7,
+      "avg": 38.6
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-20",
      "dk": 6.2,
      "min": 9,
@@ -1359,52 +1382,6 @@
      }
     ],
     "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-18",
-     "dk": 62.5,
-     "min": 32,
-     "opp": "MIL",
-     "ha": "vs",
-     "res": "W",
-     "score": "137-130"
-    },
-    "game": "OKC at MIA",
-    "time": "2026-11-22T23:00Z",
-    "team": "MIA",
-    "player": "Giannis Antetokounmpo",
-    "status": "Questionable",
-    "reason": "Right Groin tendinitis",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": 11300,
-    "min": 30.7,
-    "benefits": [
-     {
-      "player": "Bam Adebayo",
-      "salary": 7800,
-      "why": "subs in for him 15 of 56 times",
-      "much": "about +10.0 DK",
-      "score": 9.954117063492061,
-      "min": 28.8,
-      "dk": 34.9,
-      "avg": 38.6
-     },
-     {
-      "player": "Bobby Portis",
-      "salary": 4400,
-      "why": "subs in for him 13 of 56 times",
-      "much": "about +7.0 DK",
-      "score": 6.9683799445704215,
-      "min": 18.9,
-      "dk": 18.5,
-      "avg": 19.0
-     }
-    ],
-    "estimate": true
    },
    {
     "last": {
@@ -1720,12 +1697,12 @@
     "time": "2026-11-23T00:00Z",
     "team": "CHI",
     "player": "Jalen Smith",
-    "status": "Probable",
-    "reason": "Gastrointestinal Illness",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "Questionable",
+    "was": "Probable",
     "known": true,
-    "changed_at": "12:42 PM",
+    "changed_at": "5:03 PM",
     "salary": 6100,
     "min": 27.0,
     "benefits": [],
@@ -1745,12 +1722,12 @@
     "time": "2026-11-23T00:00Z",
     "team": "CHI",
     "player": "Patrick Williams",
-    "status": "Probable",
-    "reason": "Left Thumb Sprain",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "5:03 PM",
     "salary": 3300,
     "min": 16.3,
     "benefits": [],
@@ -3074,6 +3051,11 @@
   "minor": [
    {
     "player": "Tobe Awaka",
+    "team": "CHI",
+    "status": "Available"
+   },
+   {
+    "player": "Jaylin Sellers",
     "team": "CHI",
     "status": "Available"
    },
