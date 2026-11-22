@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updated": "8:17 PM ET",
+ "updated": "8:32 PM ET",
  "games": 5,
  "pending": [],
  "first_report": "5:41 AM",
@@ -191,9 +191,9 @@
    "slate": "main",
    "ou": 216.5,
    "fav": "BOS",
-   "line": 12.5,
-   "away_pts": 114.5,
-   "home_pts": 102.0,
+   "line": 11.5,
+   "away_pts": 114.0,
+   "home_pts": 102.5,
    "tags": [
     "Blowout risk",
     "SAC on a back-to-back"
@@ -218,18 +218,21 @@
     },
     "SAC": {
      "out": [],
-     "q": [
-      {
-       "player": "Precious Achiuwa",
-       "min": 21.2
-      }
-     ]
+     "q": []
     }
    },
    "key": "Jayson Tatum and Derrick White are out, so Baylor Scheierman and Luka Garza and Neemias Queta should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "8:33 PM"
+  },
   {
    "player": "Precious Achiuwa",
    "team": "SAC",
@@ -301,14 +304,6 @@
    "was": "Questionable",
    "why": "Left Foot Contusion",
    "time": "5:33 PM"
-  },
-  {
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "5:18 PM"
   }
  ],
  "chg": [
@@ -466,6 +461,27 @@
    "size": 27.5
   },
   {
+   "key": "SAC",
+   "team": "SAC",
+   "head": "Achiuwa CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "De'Andre Hunter",
+     "salary": 5800,
+     "much": "+20.1 DK without Achiuwa"
+    },
+    {
+     "player": "Keegan Murray",
+     "salary": 5500,
+     "much": "+5.8 DK without Achiuwa"
+    }
+   ],
+   "time": "8:33 PM",
+   "size": 22.3
+  },
+  {
    "key": "DAL",
    "team": "DAL",
    "head": "Jr. CLEARED",
@@ -506,27 +522,6 @@
    ],
    "time": "7:33 PM",
    "size": 15.5
-  },
-  {
-   "key": "Precious Achiuwa",
-   "team": "SAC",
-   "head": "Precious Achiuwa QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "De'Andre Hunter",
-     "salary": 5800,
-     "much": "+20.1 DK without him (2 games)"
-    },
-    {
-     "player": "Keegan Murray",
-     "salary": 5500,
-     "much": "+5.8 DK without him (3 games)"
-    }
-   ],
-   "time": "7:33 PM",
-   "size": 11.2
   }
  ],
  "sits": [
@@ -945,14 +940,14 @@
   {
    "player": "Paul George",
    "team": "BOS",
-   "own": 34.1,
+   "own": 34.0,
    "dk": 51.1,
    "salary": 7500
   },
   {
    "player": "Payton Pritchard",
    "team": "BOS",
-   "own": 34.0,
+   "own": 33.9,
    "dk": 39.6,
    "salary": 6200
   }
@@ -1080,8 +1075,8 @@
   ]
  },
  "injuries": {
-  "report": "08:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_15PM.pdf",
+  "report": "08:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_08_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1724,36 +1719,15 @@
     "time": "2026-11-22T03:00Z",
     "team": "SAC",
     "player": "Precious Achiuwa",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "7:33 PM",
+    "changed_at": "8:33 PM",
     "salary": 5300,
     "min": 19.3,
-    "benefits": [
-     {
-      "player": "De'Andre Hunter",
-      "salary": 5800,
-      "why": "40 minutes, up from 32",
-      "much": "+20.1 DK without him (2 games)",
-      "score": 20.1,
-      "min": 34.7,
-      "dk": 26.4,
-      "avg": 24.4
-     },
-     {
-      "player": "Keegan Murray",
-      "salary": 5500,
-      "why": "34 minutes, up from 26",
-      "much": "+5.8 DK without him (3 games)",
-      "score": 5.8,
-      "min": 31.0,
-      "dk": 23.4,
-      "avg": 21.5
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
