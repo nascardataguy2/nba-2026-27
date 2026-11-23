@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updated": "11:24 AM ET",
+ "updated": "11:53 AM ET",
  "games": 10,
  "pending": [
   "OKC",
@@ -41,7 +41,12 @@
     },
     "PHI": {
      "out": [],
-     "q": []
+     "q": [
+      {
+       "player": "Joel Embiid",
+       "min": 26.7
+      }
+     ]
     }
    },
    "key": "Ja Morant and Chris Youngblood are out, so Jrue Holiday and Donovan Clingan and Deni Avdija should play more than usual."
@@ -413,8 +418,39 @@
    "key": "Dylan Harper is out, so Stephon Castle and Carter Bryant should play more than usual."
   }
  ],
- "changed": [],
- "chg": [],
+ "changed": [
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "11:55 AM"
+  }
+ ],
+ "chg": [
+  {
+   "key": "Joel Embiid",
+   "team": "PHI",
+   "head": "Joel Embiid QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Adem Bona",
+     "salary": 3400,
+     "much": "+16.6 DK without him (2 games)"
+    },
+    {
+     "player": "Dean Wade",
+     "salary": 4100,
+     "much": "+13.7 DK without him (3 games)"
+    }
+   ],
+   "time": "11:55 AM",
+   "size": 20.5
+  }
+ ],
  "sits": [
   {
    "team": "BKN",
@@ -982,8 +1018,8 @@
   ]
  },
  "injuries": {
-  "report": "11:15 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_15AM.pdf",
+  "report": "11:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45AM.pdf",
   "pending": [
    "OKC",
    "IND",
@@ -991,6 +1027,62 @@
    "UTA"
   ],
   "rows": [
+   {
+    "last": {
+     "date": "2026-11-21",
+     "dk": 63.8,
+     "min": 34,
+     "opp": "MIL",
+     "ha": "vs",
+     "res": "W",
+     "score": "132-129"
+    },
+    "game": "POR at PHI",
+    "time": "2026-11-24T00:00Z",
+    "team": "PHI",
+    "player": "Joel Embiid",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "11:55 AM",
+    "salary": 8600,
+    "min": 34.0,
+    "benefits": [
+     {
+      "player": "Adem Bona",
+      "salary": 3400,
+      "why": "started 1 of 2",
+      "much": "+16.6 DK without him (2 games)",
+      "score": 16.6,
+      "min": 12.2,
+      "dk": 9.1,
+      "avg": 10.6
+     },
+     {
+      "player": "Dean Wade",
+      "salary": 4100,
+      "why": "started 2 of 3",
+      "much": "+13.7 DK without him (3 games)",
+      "score": 13.7,
+      "min": 22.1,
+      "dk": 13.5,
+      "avg": 17.0
+     },
+     {
+      "player": "Tyrese Maxey",
+      "salary": 8500,
+      "why": "same minutes, more production",
+      "much": "+8.5 DK without him (3 games)",
+      "score": 8.5,
+      "min": 29.0,
+      "dk": 33.4,
+      "avg": 42.5
+     }
+    ],
+    "estimate": false
+   },
    {
     "last": {
      "date": "2026-11-16",
@@ -2053,7 +2145,7 @@
     "team": "MIN",
     "player": "Anthony Edwards",
     "status": "Out",
-    "reason": "Right Knee",
+    "reason": "",
     "new": false,
     "was": "",
     "known": true,
