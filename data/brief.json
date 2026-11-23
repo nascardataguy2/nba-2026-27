@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updated": "6:32 PM ET",
+ "updated": "6:47 PM ET",
  "games": 10,
  "pending": [],
  "first_report": "5:26 AM",
@@ -158,12 +158,7 @@
        "min": 12.0
       }
      ],
-     "q": [
-      {
-       "player": "Pascal Siakam",
-       "min": 31.2
-      }
-     ]
+     "q": []
     }
    },
    "key": "Jalen Williams and Chet Holmgren are out, so Bennett Stirtz and Josh Dix and Micah Peavy should play more than usual."
@@ -276,12 +271,7 @@
        "min": 23.0
       }
      ],
-     "q": [
-      {
-       "player": "Nicolas Claxton",
-       "min": 20.1
-      }
-     ]
+     "q": []
     }
    },
    "key": "Norman Powell and Caleb Wilson are out, so Josh Giddey and Buddy Hield and Jalen Smith should play more than usual."
@@ -437,6 +427,30 @@
  ],
  "changed": [
   {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "-",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Nic Claxton",
+   "team": "CHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "6:49 PM"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:49 PM"
+  },
+  {
    "player": "Dean Wade",
    "team": "PHI",
    "status": "Available",
@@ -491,30 +505,6 @@
    "was": "Questionable",
    "why": "Illness",
    "time": "5:49 PM"
-  },
-  {
-   "player": "Brandon Miller",
-   "team": "CHA",
-   "status": "Available",
-   "was": "Probable",
-   "why": "",
-   "time": "5:19 PM"
-  },
-  {
-   "player": "Jaxson Hayes",
-   "team": "UTA",
-   "status": "Out",
-   "was": "",
-   "why": "Left Knee Strain",
-   "time": "4:41 PM"
-  },
-  {
-   "player": "Ryan Dunn",
-   "team": "PHX",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Right Quad Soreness",
-   "time": "2:55 PM"
   }
  ],
  "chg": [
@@ -538,6 +528,27 @@
    ],
    "time": "5:49 PM",
    "size": 40.9
+  },
+  {
+   "key": "IND",
+   "team": "IND",
+   "head": "Siakam CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Jalen Slawson",
+     "salary": 3400,
+     "much": "+26.0 DK without Siakam"
+    },
+    {
+     "player": "Jay Huff",
+     "salary": 3100,
+     "much": "+26.0 DK without Siakam"
+    }
+   ],
+   "time": "6:49 PM",
+   "size": 38.7
   },
   {
    "key": "Jaxson Hayes",
@@ -582,41 +593,20 @@
    "size": 20.3
   },
   {
-   "key": "Pascal Siakam",
-   "team": "IND",
-   "head": "Pascal Siakam QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Jalen Slawson",
-     "salary": 3400,
-     "much": "+26.0 DK without him (1 game)"
-    },
-    {
-     "player": "Jay Huff",
-     "salary": 3100,
-     "much": "+26.0 DK without him (1 game)"
-    }
-   ],
-   "time": "1:55 PM",
-   "size": 19.3
-  },
-  {
-   "key": "Nic Claxton",
+   "key": "CHI",
    "team": "CHI",
-   "head": "Nic Claxton QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
+   "head": "Claxton CLEARED",
+   "st": "Probable",
+   "act": "Less value",
    "names": [
     {
      "player": "Leonard Miller",
      "salary": 3000,
-     "much": "+14.0 DK without him (9 games)"
+     "much": "+14.0 DK without Claxton"
     }
    ],
-   "time": "1:55 PM",
-   "size": 10.0
+   "time": "6:49 PM",
+   "size": 20.0
   },
   {
    "key": "MIL",
@@ -1245,8 +1235,8 @@
   ]
  },
  "injuries": {
-  "report": "06:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_30PM.pdf",
+  "report": "06:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1531,46 +1521,15 @@
     "time": "2026-11-24T00:30Z",
     "team": "IND",
     "player": "Pascal Siakam",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Available",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "1:55 PM",
+    "changed_at": "6:49 PM",
     "salary": 7900,
     "min": 32.0,
-    "benefits": [
-     {
-      "player": "Jalen Slawson",
-      "salary": 3400,
-      "why": "started that game",
-      "much": "+26.0 DK without him (1 game)",
-      "score": 26.0,
-      "min": 20.3,
-      "dk": 19.4,
-      "avg": 12.9
-     },
-     {
-      "player": "Jay Huff",
-      "salary": 3100,
-      "why": "started that game",
-      "much": "+26.0 DK without him (1 game)",
-      "score": 26.0,
-      "min": 20.8,
-      "dk": 19.3,
-      "avg": 12.8
-     },
-     {
-      "player": "Quenton Jackson",
-      "salary": 4500,
-      "why": "started that game",
-      "much": "+23.8 DK without him (1 game)",
-      "score": 23.8,
-      "min": 22.5,
-      "dk": 22.0,
-      "avg": 20.9
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1626,42 +1585,6 @@
    {
     "last": {
      "date": "2026-11-20",
-     "dk": 23.8,
-     "min": 29,
-     "opp": "WAS",
-     "ha": "vs",
-     "res": "L",
-     "score": "98-94"
-    },
-    "game": "CLE at CHI",
-    "time": "2026-11-24T01:00Z",
-    "team": "CHI",
-    "player": "Nic Claxton",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "1:55 PM",
-    "salary": 5100,
-    "min": 22.7,
-    "benefits": [
-     {
-      "player": "Leonard Miller",
-      "salary": 3000,
-      "why": "18 minutes, up from 3",
-      "much": "+14.0 DK without him (9 games)",
-      "score": 14.0,
-      "min": 11.8,
-      "dk": 11.1,
-      "avg": 12.7
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-20",
      "dk": 43.5,
      "min": 37,
      "opp": "OKC",
@@ -1711,31 +1634,6 @@
    },
    {
     "last": {
-     "date": "2026-11-22",
-     "dk": 43.0,
-     "min": 34,
-     "opp": "DEN",
-     "ha": "vs",
-     "res": "L",
-     "score": "151-145"
-    },
-    "game": "CLE at CHI",
-    "time": "2026-11-24T01:00Z",
-    "team": "CHI",
-    "player": "Jalen Smith",
-    "status": "Probable",
-    "reason": "Gastrointestinal Illness",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "1:55 PM",
-    "salary": 6000,
-    "min": 27.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-20",
      "dk": 31.0,
      "min": 29,
@@ -1756,6 +1654,56 @@
     "changed_at": "1:55 PM",
     "salary": 6800,
     "min": 31.0,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-22",
+     "dk": 43.0,
+     "min": 34,
+     "opp": "DEN",
+     "ha": "vs",
+     "res": "L",
+     "score": "151-145"
+    },
+    "game": "CLE at CHI",
+    "time": "2026-11-24T01:00Z",
+    "team": "CHI",
+    "player": "Jalen Smith",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "6:49 PM",
+    "salary": 6000,
+    "min": 27.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-20",
+     "dk": 23.8,
+     "min": 29,
+     "opp": "WAS",
+     "ha": "vs",
+     "res": "L",
+     "score": "98-94"
+    },
+    "game": "CLE at CHI",
+    "time": "2026-11-24T01:00Z",
+    "team": "CHI",
+    "player": "Nic Claxton",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:49 PM",
+    "salary": 5100,
+    "min": 22.7,
     "benefits": [],
     "estimate": false
    },
