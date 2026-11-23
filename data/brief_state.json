@@ -26,7 +26,7 @@
   "Jaylen Clark": "Out",
   "Donte DiVincenzo": "Out",
   "Anthony Edwards": "Out",
-  "Ousmane Dieng": "Questionable",
+  "Ousmane Dieng": "Available",
   "RJ Barrett": "Out",
   "Kawhi Leonard": "Out",
   "Collin Murray-Boyles": "Probable",
@@ -36,8 +36,8 @@
   "Ryan Dunn": "Questionable",
   "Mark Williams": "Out",
   "Bennedict Mathurin": "Out",
-  "Bryce McGowens": "Probable",
-  "Trey Murphy III": "Probable",
+  "Bryce McGowens": "Available",
+  "Trey Murphy III": "Available",
   "Dejounte Murray": "Out",
   "Trendon Watford": "Out",
   "Zion Williamson": "Probable",
@@ -59,7 +59,11 @@
   "Jalen Williams": "Out",
   "Jaren Jackson Jr.": "Out",
   "Joel Embiid": "Questionable",
-  "Jaden Bradley": "Questionable"
+  "Jaden Bradley": "Questionable",
+  "Aaron Nesmith": "Out",
+  "Pascal Siakam": "Questionable",
+  "Nic Claxton": "Questionable",
+  "Jalen Smith": "Probable"
  },
  "log": [
   {
@@ -85,18 +89,77 @@
    "was": "Out",
    "why": "Right Ankle Sprain",
    "time": "12:55 PM"
+  },
+  {
+   "player": "Ousmane Dieng",
+   "team": "MIL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Aaron Nesmith",
+   "team": "IND",
+   "status": "Out",
+   "was": "",
+   "why": "Right Foot Soreness",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "status": "Questionable",
+   "was": "Available",
+   "why": "",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Nic Claxton",
+   "team": "CHI",
+   "status": "Questionable",
+   "was": "Out",
+   "why": "Illness",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Probable",
+   "was": "Available",
+   "why": "Gastrointestinal Illness",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Bryce McGowens",
+   "team": "NOP",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Left Elbow Infection",
+   "time": "1:55 PM"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "1:55 PM"
   }
  ],
  "teams": [
   "BKN",
   "CHA",
+  "CHI",
   "CLE",
+  "IND",
   "LAC",
   "LAL",
   "MEM",
   "MIL",
   "MIN",
   "NOP",
+  "OKC",
   "PHI",
   "PHX",
   "POR",
