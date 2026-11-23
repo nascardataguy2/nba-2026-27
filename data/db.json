@@ -1,88 +1,202 @@
 {
  "updated": "2026-11-23",
  "brief": {
-  "date": "2026-11-22",
-  "updated": "8:25 PM ET",
-  "games": 7,
+  "date": "2026-11-23",
+  "updated": "5:24 AM ET",
+  "games": 10,
   "pending": [
-   "ATL",
-   "BOS",
-   "CHI",
-   "DAL",
-   "DEN",
-   "DET",
-   "GSW",
-   "IND",
-   "MIA",
-   "NYK",
    "OKC",
-   "ORL",
-   "UTA",
-   "WAS"
+   "IND",
+   "CHI",
+   "UTA"
   ],
-  "first_report": "5:35 AM",
+  "first_report": "5:26 AM",
   "cards": [
    {
-    "away": "DET",
-    "home": "ATL",
-    "time": "2026-11-22T20:30Z",
-    "slate": "late",
-    "ou": 223.5,
-    "fav": "DET",
-    "line": 1.5,
-    "away_pts": 112.5,
-    "home_pts": 111.0,
-    "tags": [
-     "Close game"
-    ],
+    "away": "POR",
+    "home": "PHI",
+    "time": "2026-11-24T00:00Z",
+    "slate": "main",
+    "ou": 231.5,
+    "fav": "PHI",
+    "line": 3.5,
+    "away_pts": 114.0,
+    "home_pts": 117.5,
+    "tags": [],
     "teams": {
-     "DET": {
+     "POR": {
       "out": [
        {
-        "player": "Duncan Robinson",
-        "min": 30.7
+        "player": "Ja Morant",
+        "min": 27.0
        },
        {
-        "player": "Jalen Duren",
-        "min": 19.0
+        "player": "Chris Youngblood",
+        "min": 18.3
+       },
+       {
+        "player": "Vit Krejci",
+        "min": 12.7
        }
       ],
       "q": []
      },
-     "ATL": {
+     "PHI": {
+      "out": [],
+      "q": []
+     }
+    },
+    "key": "Ja Morant and Chris Youngblood are out, so Jrue Holiday and Donovan Clingan and Deni Avdija should play more than usual."
+   },
+   {
+    "away": "MEM",
+    "home": "CHA",
+    "time": "2026-11-24T00:00Z",
+    "slate": "main",
+    "ou": 216.5,
+    "fav": "MEM",
+    "line": 3.5,
+    "away_pts": 110.0,
+    "home_pts": 106.5,
+    "tags": [
+     "Lowest total"
+    ],
+    "teams": {
+     "MEM": {
       "out": [
        {
-        "player": "CJ McCollum",
-        "min": 28.7
+        "player": "Cameron Boozer",
+        "min": 28.0
        },
        {
-        "player": "Asa Newell",
-        "min": 15.3
+        "player": "Jerami Grant",
+        "min": 16.0
+       },
+       {
+        "player": "Scotty Pippen Jr.",
+        "min": 14.7
+       },
+       {
+        "player": "GG Jackson",
+        "min": 12.7
+       }
+      ],
+      "q": []
+     },
+     "CHA": {
+      "out": [
+       {
+        "player": "Grayson Allen",
+        "min": 31.0
+       },
+       {
+        "player": "Dennis Schroder",
+        "min": 26.0
+       },
+       {
+        "player": "Grant Williams",
+        "min": 22.0
        }
       ],
       "q": []
      }
     },
-    "key": "Duncan Robinson and Jalen Duren are out, so Javonte Green and Daniss Jenkins should play more than usual."
+    "key": "Grayson Allen and Dennis Schroder are out, so Moussa Diabate and Coby White and Royce O'Neale should play more than usual."
+   },
+   {
+    "away": "BKN",
+    "home": "MIN",
+    "time": "2026-11-24T00:30Z",
+    "slate": "main",
+    "ou": 223.5,
+    "fav": "MIN",
+    "line": 12.5,
+    "away_pts": 105.5,
+    "home_pts": 118.0,
+    "tags": [
+     "Blowout risk"
+    ],
+    "teams": {
+     "BKN": {
+      "out": [
+       {
+        "player": "Nolan Traore",
+        "min": 23.7
+       }
+      ],
+      "q": []
+     },
+     "MIN": {
+      "out": [
+       {
+        "player": "Anthony Edwards",
+        "min": 34.0
+       },
+       {
+        "player": "Jaylen Clark",
+        "min": 13.7
+       }
+      ],
+      "q": []
+     }
+    },
+    "key": "Anthony Edwards is out, so Nah'Shon Hyland and Ayo Dosunmu and LaMelo Ball should play more than usual."
+   },
+   {
+    "away": "MIL",
+    "home": "TOR",
+    "time": "2026-11-24T00:30Z",
+    "slate": "main",
+    "ou": 223.5,
+    "fav": "TOR",
+    "line": 10.5,
+    "away_pts": 106.5,
+    "home_pts": 117.0,
+    "tags": [
+     "Blowout risk"
+    ],
+    "teams": {
+     "MIL": {
+      "out": [],
+      "q": [
+       {
+        "player": "Ousmane Dieng",
+        "min": 12.1
+       }
+      ]
+     },
+     "TOR": {
+      "out": [
+       {
+        "player": "RJ Barrett",
+        "min": 37.7
+       },
+       {
+        "player": "Kawhi Leonard",
+        "min": 26.0
+       }
+      ],
+      "q": []
+     }
+    },
+    "key": "RJ Barrett and Kawhi Leonard are out, so Allen Graves and Jakob Poeltl and Jamison Battle should play more than usual."
    },
    {
     "away": "OKC",
-    "home": "MIA",
-    "time": "2026-11-22T23:00Z",
-    "slate": "late",
-    "ou": 226.5,
-    "fav": "MIA",
-    "line": 4.5,
-    "away_pts": 111.0,
-    "home_pts": 115.5,
-    "tags": [],
+    "home": "IND",
+    "time": "2026-11-24T00:30Z",
+    "slate": "main",
+    "ou": 221.5,
+    "fav": "OKC",
+    "line": 5.5,
+    "away_pts": 113.5,
+    "home_pts": 108.0,
+    "tags": [
+     "Both teams on a back-to-back"
+    ],
     "teams": {
      "OKC": {
       "out": [
-       {
-        "player": "Shai Gilgeous-Alexander",
-        "min": 34.3
-       },
        {
         "player": "Jalen Williams",
         "min": 31.7
@@ -92,449 +206,340 @@
         "min": 30.0
        },
        {
-        "player": "Aday Mara",
-        "min": 27.3
+        "player": "Cason Wallace",
+        "min": 16.3
        }
       ],
-      "q": []
-     },
-     "MIA": {
-      "out": [
+      "q": [
        {
-        "player": "Giannis Antetokounmpo",
-        "min": 30.7
+        "player": "Shai Gilgeous-Alexander",
+        "min": 33.5
+       },
+       {
+        "player": "Aday Mara",
+        "min": 25.4
+       },
+       {
+        "player": "Jaylin Williams",
+        "min": 19.2
        }
-      ],
-      "q": []
+      ]
+     },
+     "IND": {
+      "out": [],
+      "q": [
+       {
+        "player": "T.J. McConnell",
+        "min": 15.1
+       }
+      ]
      }
     },
-    "key": "Shai Gilgeous-Alexander and Jalen Williams are out, so Bennett Stirtz and Nique Clifford should play more than usual."
+    "key": "Jalen Williams and Chet Holmgren are out, so Bennett Stirtz and Kenrich Williams and Jared McCain should play more than usual."
    },
    {
-    "away": "DEN",
+    "away": "CLE",
     "home": "CHI",
-    "time": "2026-11-23T00:00Z",
+    "time": "2026-11-24T01:00Z",
     "slate": "main",
-    "ou": 236.5,
-    "fav": "DEN",
-    "line": 9.5,
-    "away_pts": 123.0,
-    "home_pts": 113.5,
+    "ou": 239.5,
+    "fav": "CLE",
+    "line": 8.5,
+    "away_pts": 124.0,
+    "home_pts": 115.5,
     "tags": [
      "Highest total",
-     "Blowout risk"
+     "CHI on a back-to-back"
     ],
     "teams": {
-     "DEN": {
-      "out": [],
+     "CLE": {
+      "out": [
+       {
+        "player": "Evan Mobley",
+        "min": 30.0
+       }
+      ],
       "q": []
      },
      "CHI": {
+      "out": [],
+      "q": [
+       {
+        "player": "Nicolas Claxton",
+        "min": 23.4
+       }
+      ]
+     }
+    },
+    "key": "Evan Mobley is out, so Tyrese Proctor and James Harden and Jaylon Tyson should play more than usual."
+   },
+   {
+    "away": "PHX",
+    "home": "NOP",
+    "time": "2026-11-24T01:00Z",
+    "slate": "main",
+    "ou": 233.5,
+    "fav": "PHX",
+    "line": 3.5,
+    "away_pts": 118.5,
+    "home_pts": 115.0,
+    "tags": [],
+    "teams": {
+     "PHX": {
+      "out": [],
+      "q": [
+       {
+        "player": "Ryan Dunn",
+        "min": 12.6
+       }
+      ]
+     },
+     "NOP": {
       "out": [
        {
-        "player": "Norman Powell",
-        "min": 30.7
+        "player": "Dejounte Murray",
+        "min": 24.7
        },
        {
-        "player": "Caleb Wilson",
-        "min": 23.0
+        "player": "Trendon Watford",
+        "min": 18.7
        },
        {
-        "player": "Nic Claxton",
-        "min": 22.7
+        "player": "Bennedict Mathurin",
+        "min": 14.3
        }
       ],
       "q": []
      }
     },
-    "key": "Norman Powell and Caleb Wilson are out, so Jordan Hawkins and Noa Essengue and Jalen Smith should play more than usual."
+    "key": "Dejounte Murray and Trendon Watford are out, so Jeremiah Fears and Saddiq Bey and Jordan Poole should play more than usual."
    },
    {
-    "away": "DAL",
-    "home": "UTA",
-    "time": "2026-11-23T00:00Z",
+    "away": "LAC",
+    "home": "HOU",
+    "time": "2026-11-24T01:30Z",
     "slate": "main",
-    "ou": 226.5,
-    "fav": "DAL",
-    "line": 2.5,
-    "away_pts": 114.5,
-    "home_pts": 112.0,
+    "ou": 224.5,
+    "fav": "HOU",
+    "line": 12.5,
+    "away_pts": 106.0,
+    "home_pts": 118.5,
     "tags": [
-     "Close game",
-     "DAL on a back-to-back"
+     "Blowout risk"
     ],
     "teams": {
-     "DAL": {
-      "out": [
-       {
-        "player": "PJ Washington",
-        "min": 25.3
-       },
-       {
-        "player": "Sergio de Larrea",
-        "min": 13.3
-       }
-      ],
+     "LAC": {
+      "out": [],
       "q": []
      },
+     "HOU": {
+      "out": [],
+      "q": []
+     }
+    },
+    "key": "Alperen Sengun has the top projection in this game at 38.7 DK points."
+   },
+   {
+    "away": "UTA",
+    "home": "LAL",
+    "time": "2026-11-24T03:00Z",
+    "slate": "late",
+    "ou": 228.5,
+    "fav": "LAL",
+    "line": 13.5,
+    "away_pts": 107.5,
+    "home_pts": 121.0,
+    "tags": [
+     "Blowout risk",
+     "UTA on a back-to-back"
+    ],
+    "teams": {
      "UTA": {
       "out": [
-       {
-        "player": "Lauri Markkanen",
-        "min": 34.7
-       },
        {
         "player": "Jaren Jackson Jr.",
         "min": 25.3
        }
       ],
-      "q": []
-     }
-    },
-    "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Brice Sensabaugh and Darryn Peterson and Josh Green should play more than usual."
-   },
-   {
-    "away": "ORL",
-    "home": "WAS",
-    "time": "2026-11-23T00:00Z",
-    "slate": "main",
-    "ou": 219.5,
-    "fav": "ORL",
-    "line": 4.5,
-    "away_pts": 112.0,
-    "home_pts": 107.5,
-    "tags": [],
-    "teams": {
-     "ORL": {
-      "out": [
+      "q": [
        {
-        "player": "Paolo Banchero",
-        "min": 33.5
+        "player": "Jaxson Hayes",
+        "min": 23.2
        }
-      ],
-      "q": []
+      ]
      },
-     "WAS": {
+     "LAL": {
       "out": [
        {
-        "player": "Justin Champagnie",
-        "min": 17.7
+        "player": "Austin Reaves",
+        "min": 33.3
        }
       ],
       "q": []
      }
     },
-    "key": "Paolo Banchero is out, so Franz Wagner and Desmond Bane and Jamal Cain should play more than usual."
+    "key": "Austin Reaves is out, so Quentin Grimes and Kevon Looney should play more than usual."
    },
    {
-    "away": "IND",
-    "home": "NYK",
-    "time": "2026-11-23T01:00Z",
-    "slate": "main",
-    "ou": 212.5,
-    "fav": "NYK",
-    "line": 7.5,
-    "away_pts": 102.5,
-    "home_pts": 110.0,
+    "away": "SAS",
+    "home": "SAC",
+    "time": "2026-11-24T03:00Z",
+    "slate": "late",
+    "ou": 224.5,
+    "fav": "SAS",
+    "line": 10.5,
+    "away_pts": 117.5,
+    "home_pts": 107.0,
     "tags": [
-     "Lowest total",
-     "NYK on a back-to-back"
+     "Blowout risk"
     ],
     "teams": {
-     "IND": {
+     "SAS": {
       "out": [
        {
-        "player": "Tyrese Haliburton",
-        "min": 32.7
-       },
-       {
-        "player": "T.J. McConnell",
-        "min": 16.0
-       },
-       {
-        "player": "Ben Sheppard",
-        "min": 12.0
+        "player": "Dylan Harper",
+        "min": 31.3
        }
       ],
-      "q": []
+      "q": [
+       {
+        "player": "Victor Wembanyama",
+        "min": 32.4
+       },
+       {
+        "player": "De'Aaron Fox",
+        "min": 29.2
+       },
+       {
+        "player": "Jordan McLaughlin",
+        "min": 15.4
+       }
+      ]
      },
-     "NYK": {
-      "out": [
-       {
-        "player": "OG Anunoby",
-        "min": 38.7
-       }
-      ],
+     "SAC": {
+      "out": [],
       "q": []
      }
     },
-    "key": "Tyrese Haliburton and T.J. McConnell are out, so Quenton Jackson and Jarace Walker and Andrew Nembhard should play more than usual."
-   },
-   {
-    "away": "BOS",
-    "home": "GSW",
-    "time": "2026-11-23T01:30Z",
-    "slate": "main",
-    "ou": 212.5,
-    "fav": "BOS",
-    "line": 8.5,
-    "away_pts": 110.5,
-    "home_pts": 102.0,
-    "tags": [
-     "Lowest total",
-     "BOS on a back-to-back"
-    ],
-    "teams": {
-     "BOS": {
-      "out": [
-       {
-        "player": "Paul George",
-        "min": 32.0
-       },
-       {
-        "player": "Mitchell Robinson",
-        "min": 16.3
-       }
-      ],
-      "q": []
-     },
-     "GSW": {
-      "out": [
-       {
-        "player": "Stephen Curry",
-        "min": 21.0
-       },
-       {
-        "player": "Brandon Williams",
-        "min": 13.3
-       }
-      ],
-      "q": []
-     }
-    },
-    "key": "Paul George and Mitchell Robinson are out, so Baylor Scheierman and Neemias Queta should play more than usual."
+    "key": "Dylan Harper is out, so Stephon Castle and Carter Bryant should play more than usual."
    }
   ],
-  "changed": [
-   {
-    "player": "Karl-Anthony Towns",
-    "team": "NYK",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Illness",
-    "time": "7:33 PM"
-   },
-   {
-    "player": "Pascal Siakam",
-    "team": "IND",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "",
-    "time": "7:33 PM"
-   },
-   {
-    "player": "Miles McBride",
-    "team": "NYK",
-    "status": "Out",
-    "was": "",
-    "why": "",
-    "time": "7:04 PM"
-   },
-   {
-    "player": "Bub Carrington",
-    "team": "WAS",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Illness",
-    "time": "6:03 PM"
-   },
-   {
-    "player": "Deandre Ayton",
-    "team": "WAS",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Illness",
-    "time": "6:03 PM"
-   },
-   {
-    "player": "Walter Clayton Jr.",
-    "team": "DAL",
-    "status": "Available",
-    "was": "Questionable",
-    "why": "Left Patellar Tendinitis",
-    "time": "6:03 PM"
-   },
-   {
-    "player": "Aday Mara",
-    "team": "OKC",
-    "status": "Out",
-    "was": "",
-    "why": "Right Shin Contusion",
-    "time": "5:34 PM"
-   },
-   {
-    "player": "Patrick Williams",
-    "team": "CHI",
-    "status": "Available",
-    "was": "Probable",
-    "why": "-",
-    "time": "5:03 PM"
-   },
-   {
-    "player": "Jalen Smith",
-    "team": "CHI",
-    "status": "Available",
-    "was": "Probable",
-    "why": "-",
-    "time": "5:03 PM"
-   },
-   {
-    "player": "Jaylin Sellers",
-    "team": "CHI",
-    "status": "Available",
-    "was": "Out",
-    "why": "-",
-    "time": "5:03 PM"
-   }
-  ],
-  "chg": [
-   {
-    "key": "NYK",
-    "team": "NYK",
-    "head": "Towns CLEARED",
-    "st": "Probable",
-    "act": "Less value",
-    "names": [
-     {
-      "player": "Andre Drummond",
-      "salary": 4500,
-      "much": "+16.6 DK without Towns"
-     },
-     {
-      "player": "James Wiseman",
-      "salary": 3000,
-      "much": "+15.1 DK without Towns"
-     }
-    ],
-    "time": "7:33 PM",
-    "size": 48.5
-   },
-   {
-    "key": "IND",
-    "team": "IND",
-    "head": "Siakam CLEARED",
-    "st": "Probable",
-    "act": "Less value",
-    "names": [
-     {
-      "player": "Jalen Slawson",
-      "salary": 3300,
-      "much": "+26.6 DK without Siakam"
-     },
-     {
-      "player": "Jay Huff",
-      "salary": 3200,
-      "much": "+25.3 DK without Siakam"
-     }
-    ],
-    "time": "7:33 PM",
-    "size": 38.7
-   },
-   {
-    "key": "CHI",
-    "team": "CHI",
-    "head": "Smith CLEARED",
-    "st": "Probable",
-    "act": "Less value",
-    "names": [
-     {
-      "player": "Zach Collins",
-      "salary": 3900,
-      "much": "+14.3 DK without Smith"
-     },
-     {
-      "player": "Leonard Miller",
-      "salary": 3000,
-      "much": "+10.5 DK without Smith"
-     }
-    ],
-    "time": "5:03 PM",
-    "size": 30.8
-   },
-   {
-    "key": "ATL",
-    "team": "ATL",
-    "head": "Flemings CLEARED",
-    "st": "Probable",
-    "act": "Less value",
-    "names": [
-     {
-      "player": "Corey Kispert",
-      "salary": 3400,
-      "much": "+8.5 DK without Flemings"
-     },
-     {
-      "player": "Nickeil Alexander-Walker",
-      "salary": 7000,
-      "much": "+6.5 DK without Flemings"
-     }
-    ],
-    "time": "1:55 PM",
-    "size": 18.3
-   },
-   {
-    "key": "DAL",
-    "team": "DAL",
-    "head": "Jr. CLEARED",
-    "st": "Probable",
-    "act": "Less value",
-    "names": [
-     {
-      "player": "Marcus Sasser",
-      "salary": 3200,
-      "much": "+15.0 DK without Jr."
-     },
-     {
-      "player": "Naji Marshall",
-      "salary": 5600,
-      "much": "+7.2 DK without Jr."
-     }
-    ],
-    "time": "6:03 PM",
-    "size": 18.0
-   },
-   {
-    "key": "DET",
-    "team": "DET",
-    "head": "II CLEARED",
-    "st": "Probable",
-    "act": "Less value",
-    "names": [
-     {
-      "player": "Javonte Green",
-      "salary": 4100,
-      "much": "+8.7 DK without II"
-     },
-     {
-      "player": "Daniss Jenkins",
-      "salary": 6200,
-      "much": "+7.3 DK without II"
-     }
-    ],
-    "time": "1:55 PM",
-    "size": 15.0
-   }
-  ],
+  "changed": [],
+  "chg": [],
   "sits": [
+   {
+    "team": "BKN",
+    "outs": [
+     {
+      "player": "Nolan Traore",
+      "min": 23.7,
+      "note": "The show said Nolan Traore is injured and not expected to be available Monday. He started on 11/20 but played only 18 minutes. His absence leaves an open starting spot in the Nets backcourt.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 23.7,
+    "benefits": [
+     {
+      "player": "Danny Wolf",
+      "salary": 4500,
+      "why": "started that game",
+      "much": "+16.6 DK without him (1 game)",
+      "score": 16.6,
+      "min": 25.9,
+      "dk": 24.4,
+      "avg": 21.8
+     },
+     {
+      "player": "Noah Clowney",
+      "salary": 4000,
+      "why": "same minutes, more production",
+      "much": "+11.5 DK without him (1 game)",
+      "score": 11.5,
+      "min": 19.7,
+      "dk": 14.6,
+      "avg": 15.5
+     },
+     {
+      "player": "Keon Ellis",
+      "salary": 3100,
+      "why": "26 minutes, up from 19",
+      "much": "+11.0 DK without him (1 game)",
+      "score": 11.0,
+      "min": 17.9,
+      "dk": 12.3,
+      "avg": 12.8
+     }
+    ],
+    "split_of": [
+     "Nolan Traore"
+    ]
+   },
+   {
+    "team": "CHA",
+    "outs": [
+     {
+      "player": "Grayson Allen",
+      "min": 31.0,
+      "note": "The show said Grayson Allen is out again Monday. He has not played since 11/15.",
+      "new": false
+     },
+     {
+      "player": "Dennis Schroder",
+      "min": 26.0,
+      "note": "Ruled out tonight (left hamstring strain).",
+      "new": false
+     },
+     {
+      "player": "Grant Williams",
+      "min": 22.0,
+      "note": "The show said Grant Williams is out again for hamstring management. It noted that his two missed games were spaced apart and were not back-to-backs, and it worried that this points to a reinjury. He has not played since 11/17.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 79.0,
+    "benefits": [
+     {
+      "player": "Moussa Diabate",
+      "salary": 6200,
+      "why": "same minutes, more production",
+      "much": "+15.9 DK without them (1 game)",
+      "score": 15.9,
+      "min": 31.4,
+      "dk": 33.8,
+      "avg": 29.6
+     },
+     {
+      "player": "Coby White",
+      "salary": 5700,
+      "why": "26 minutes, up from 19",
+      "much": "+11.6 DK without them (1 game)",
+      "score": 11.6,
+      "min": 26.0,
+      "dk": 30.0,
+      "avg": 21.8
+     },
+     {
+      "player": "Royce O'Neale",
+      "salary": 3900,
+      "why": "34 minutes off the bench (11/17)",
+      "much": "+5.1 DK projected vs. last 3",
+      "score": 5.133333333333335,
+      "min": 24.8,
+      "dk": 18.8,
+      "avg": 12.6
+     }
+    ],
+    "split_of": [
+     "Grayson Allen",
+     "Dennis Schroder",
+     "Grant Williams"
+    ]
+   },
    {
     "team": "OKC",
     "outs": [
-     {
-      "player": "Shai Gilgeous-Alexander",
-      "min": 34.3,
-      "note": "Gilgeous-Alexander did not play on Sunday, November 22, at Miami. The show assumed he will play on the Monday slate but said his status has to be confirmed. The show said that with Oklahoma City missing so many rotation players, he is playing heavy minutes and has one of the most consistent scoring ceilings in the league.",
-      "new": true
-     },
      {
       "player": "Jalen Williams",
       "min": 31.7,
@@ -548,522 +553,435 @@
       "new": false
      },
      {
-      "player": "Aday Mara",
-      "min": 27.3,
-      "note": "Aday Mara missed the November 22 game with a right shin contusion after starting the previous two games and posting 22 points and 16 rebounds in 29 minutes on November 20. The show said it would absolutely play him at $6,200 if he is active, though it noted that Indiana rarely uses two-big lineups.",
-      "new": true
-     },
-     {
-      "player": "Alex Caruso",
-      "min": 18.0,
-      "note": "Alex Caruso did not play on 11/22. The show listed him as questionable for Monday.",
-      "new": false
-     },
-     {
       "player": "Cason Wallace",
       "min": 16.3,
       "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
       "new": false
-     },
-     {
-      "player": "Jaylin Williams",
-      "min": 15.0,
-      "note": "Ruled out tonight (low back spasms).",
-      "new": false
      }
     ],
-    "new": true,
-    "lost": 172.6,
+    "new": false,
+    "lost": 78.0,
     "benefits": [
      {
       "player": "Bennett Stirtz",
-      "salary": 3600,
-      "why": "23 minutes, up from 17",
-      "much": "+5.7 DK without them (4 games)",
-      "score": 5.7,
-      "min": 29.0,
-      "dk": 27.2,
+      "salary": 4400,
+      "why": "22 minutes, up from 5",
+      "much": "+15.7 DK without them (14 games)",
+      "score": 15.7,
+      "min": 23.0,
+      "dk": 17.4,
       "avg": 14.7
      },
      {
-      "player": "Nique Clifford",
-      "salary": 3200,
-      "why": "same minutes, more production",
-      "much": "+5.2 DK without them (1 game)",
-      "score": 5.2,
-      "min": 23.4,
-      "dk": 16.2,
-      "avg": 7.4
+      "player": "Kenrich Williams",
+      "salary": 4900,
+      "why": "started 11 of 14",
+      "much": "+13.5 DK without them (14 games)",
+      "score": 13.5,
+      "min": 24.3,
+      "dk": 19.4,
+      "avg": 16.8
+     },
+     {
+      "player": "Jared McCain",
+      "salary": 6700,
+      "why": "started 11 of 14",
+      "much": "+12.5 DK without them (14 games)",
+      "score": 12.5,
+      "min": 29.4,
+      "dk": 25.0,
+      "avg": 23.7
      }
     ],
     "split_of": [
      "Jalen Williams",
      "Chet Holmgren",
-     "Alex Caruso"
+     "Cason Wallace"
     ]
    },
    {
-    "team": "CHI",
+    "team": "TOR",
     "outs": [
      {
-      "player": "Norman Powell",
-      "min": 30.7,
-      "note": "The show said Norman Powell has a recurrence of his hamstring injury and will be out for at least a week. He missed 11/22 after playing 33 minutes on 11/20.",
-      "new": true
-     },
-     {
-      "player": "Caleb Wilson",
-      "min": 23.0,
-      "note": "Caleb Wilson missed his fifth straight game on Friday, Nov. 20, after surgery on his right hand on Nov. 12.",
+      "player": "RJ Barrett",
+      "min": 37.7,
+      "note": "The show listed RJ Barrett as a known absence for Monday. He has not played since 11/17. Kawhi Leonard is also out for Toronto.",
       "new": false
      },
      {
-      "player": "Nic Claxton",
-      "min": 22.7,
-      "note": "Nic Claxton was ruled out on 11/22. The show said that kept it from seeing how Jalen Smith and Claxton share minutes when both are healthy. It said Claxton may be available Monday.",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 76.4,
-    "benefits": [
-     {
-      "player": "Jordan Hawkins",
-      "salary": 3000,
-      "why": "20 minutes, up from 5",
-      "much": "+14.6 DK without them (2 games)",
-      "score": 14.6,
-      "min": 11.8,
-      "dk": 9.3,
-      "avg": 7.0
-     },
-     {
-      "player": "Noa Essengue",
-      "salary": 3100,
-      "why": "same minutes, more production",
-      "much": "+10.9 DK without them (2 games)",
-      "score": 10.9,
-      "min": 14.2,
-      "dk": 11.9,
-      "avg": 11.0
-     },
-     {
-      "player": "Jalen Smith",
-      "salary": 6100,
-      "why": "30 minutes, up from 24",
-      "much": "+7.3 DK without them (2 games)",
-      "score": 7.3,
-      "min": 31.5,
-      "dk": 40.0,
-      "avg": 31.7
-     }
-    ],
-    "split_of": [
-     "Norman Powell"
-    ]
-   },
-   {
-    "team": "BOS",
-    "outs": [
-     {
-      "player": "Paul George",
-      "min": 32.0,
-      "note": "Ruled out tonight (rest).",
-      "new": true
-     },
-     {
-      "player": "Mitchell Robinson",
-      "min": 16.3,
-      "note": "Robinson was a late scratch for Saturday's game at Sacramento with an illness.",
-      "new": false
-     }
-    ],
-    "new": true,
-    "lost": 48.3,
-    "benefits": [
-     {
-      "player": "Baylor Scheierman",
-      "salary": 4100,
-      "why": "started 2 of 2",
-      "much": "+13.3 DK without them (2 games)",
-      "score": 13.3,
-      "min": 22.2,
-      "dk": 18.1,
-      "avg": 14.4
-     },
-     {
-      "player": "Neemias Queta",
-      "salary": 5200,
-      "why": "28 minutes, up from 22",
-      "much": "+9.0 DK without them (2 games)",
-      "score": 9.0,
-      "min": 29.7,
-      "dk": 34.0,
-      "avg": 24.3
-     }
-    ],
-    "split_of": [
-     "Paul George"
-    ]
-   },
-   {
-    "team": "MIA",
-    "outs": [
-     {
-      "player": "Giannis Antetokounmpo",
-      "min": 30.7,
-      "note": "Giannis Antetokounmpo sat out against Oklahoma City with what the show believed was a groin issue, possibly groin tendinitis. The show said it might be a rest day and that his status should be monitored.",
-      "new": true
-     }
-    ],
-    "new": true,
-    "lost": 30.7,
-    "benefits": [
-     {
-      "player": "Bam Adebayo",
-      "salary": 7800,
-      "why": "subs in for him 15 of 56 times",
-      "much": "+13.2 DK projected vs. last 3",
-      "score": 13.23333333333333,
-      "min": 34.2,
-      "dk": 43.9,
-      "avg": 40.7
-     },
-     {
-      "player": "Bobby Portis",
-      "salary": 4400,
-      "why": "subs in for him 13 of 56 times",
-      "much": "+4.2 DK projected vs. last 3",
-      "score": 4.183333333333334,
-      "min": 23.0,
-      "dk": 24.1,
-      "avg": 19.1
-     }
-    ],
-    "split_of": []
-   },
-   {
-    "team": "UTA",
-    "outs": [
-     {
-      "player": "Lauri Markkanen",
-      "min": 34.7,
-      "note": "Lauri Markkanen (hand) was still out on Friday, Nov. 20, along with Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), which leaves Utah without its starting frontcourt.",
-      "new": false
-     },
-     {
-      "player": "Jaren Jackson Jr.",
-      "min": 25.3,
-      "note": "The show said Jaren Jackson Jr. is probably out at least another month; he has not played since October 26. The show said he will come back to a crowded Utah offense, with Darryn Peterson playing much better and Keyonte George taking a lot of shots.",
+      "player": "Kawhi Leonard",
+      "min": 26.0,
+      "note": "The show said Toronto is without Kawhi Leonard for another week or two. He has not appeared in a box score since 10/23.",
       "new": false
      }
     ],
     "new": false,
-    "lost": 60.0,
+    "lost": 63.7,
     "benefits": [
      {
-      "player": "Brice Sensabaugh",
-      "salary": 4900,
-      "why": "22 minutes, up from 14",
-      "much": "+11.5 DK without them (9 games)",
-      "score": 11.5,
-      "min": 21.2,
-      "dk": 22.3,
-      "avg": 19.1
+      "player": "Allen Graves",
+      "salary": 4500,
+      "why": "started 1 of 2",
+      "much": "+19.6 DK without them (2 games)",
+      "score": 19.6,
+      "min": 26.2,
+      "dk": 22.8,
+      "avg": 13.3
      },
      {
-      "player": "Darryn Peterson",
-      "salary": 7700,
-      "why": "same minutes, more production",
-      "much": "+7.6 DK without them (9 games)",
-      "score": 7.6,
-      "min": 28.8,
-      "dk": 31.0,
-      "avg": 31.2
+      "player": "Jakob Poeltl",
+      "salary": 5700,
+      "why": "30 minutes, up from 23",
+      "much": "+10.5 DK without them (2 games)",
+      "score": 10.5,
+      "min": 27.9,
+      "dk": 29.0,
+      "avg": 22.5
      },
      {
-      "player": "Josh Green",
-      "salary": 3600,
-      "why": "started 8 of 9",
-      "much": "+5.8 DK without them (9 games)",
-      "score": 5.8,
-      "min": 21.3,
-      "dk": 11.0,
-      "avg": 9.6
+      "player": "Jamison Battle",
+      "salary": 4300,
+      "why": "started 1 of 2",
+      "much": "+10.5 DK without them (2 games)",
+      "score": 10.5,
+      "min": 22.4,
+      "dk": 18.0,
+      "avg": 14.1
      }
     ],
     "split_of": [
-     "Lauri Markkanen",
-     "Jaren Jackson Jr."
+     "RJ Barrett",
+     "Kawhi Leonard"
     ]
    },
    {
-    "team": "DET",
+    "team": "POR",
     "outs": [
      {
-      "player": "Duncan Robinson",
-      "min": 30.7,
-      "note": "Robinson has missed three straight games with a thigh injury and last played on 11/14. The show expects him back this week, and it said his return would most likely make Kevin Huerter unusable in fantasy.",
+      "player": "Ja Morant",
+      "min": 27.0,
+      "note": "Ja Morant remains out for Portland with a left hamstring strain that is expected to keep him out at least four weeks. The show confirmed he will not play on the Nov. 17 slate.",
       "new": false
      },
      {
-      "player": "Jalen Duren",
-      "min": 19.0,
-      "note": "Ruled out tonight (right hamstring strain).",
+      "player": "Chris Youngblood",
+      "min": 18.3,
+      "note": "The show thinks Chris Youngblood will be out a while longer. He has a right heel contusion and has not played in Portland's recent games.",
       "new": false
      }
     ],
     "new": false,
-    "lost": 49.7,
+    "lost": 45.3,
     "benefits": [
      {
-      "player": "Javonte Green",
-      "salary": 4100,
-      "why": "27 minutes, up from 17",
-      "much": "+8.7 DK without them (3 games)",
-      "score": 8.7,
-      "min": 24.8,
-      "dk": 18.8,
-      "avg": 13.8
-     },
-     {
-      "player": "Daniss Jenkins",
+      "player": "Jrue Holiday",
       "salary": 6200,
-      "why": "started 3 of 3",
-      "much": "+7.3 DK without them (3 games)",
-      "score": 7.3,
-      "min": 35.8,
-      "dk": 35.1,
-      "avg": 27.9
+      "why": "29 minutes, up from 26",
+      "much": "+7.9 DK without them (6 games)",
+      "score": 7.9,
+      "min": 28.7,
+      "dk": 28.9,
+      "avg": 28.4
+     },
+     {
+      "player": "Donovan Clingan",
+      "salary": 7300,
+      "why": "28 minutes, up from 25",
+      "much": "+6.0 DK without them (6 games)",
+      "score": 6.0,
+      "min": 27.2,
+      "dk": 34.8,
+      "avg": 33.9
+     },
+     {
+      "player": "Deni Avdija",
+      "salary": 9100,
+      "why": "Show: bigger role, 36 minutes (11/21)",
+      "much": "+5.6 DK without them (4 games)",
+      "score": 5.6,
+      "min": 33.5,
+      "dk": 44.7,
+      "avg": 43.6
      }
     ],
     "split_of": [
-     "Duncan Robinson",
-     "Jalen Duren"
+     "Ja Morant",
+     "Chris Youngblood"
+    ]
+   },
+   {
+    "team": "MEM",
+    "outs": [
+     {
+      "player": "Cameron Boozer",
+      "min": 28.0,
+      "note": "The show said Cameron Boozer has been ruled out for Monday after also missing 11/21. It said Taylor Hendricks, Kris Murray, Cam Spencer and Cedric Coward should see more minutes or touches. It added that Zach Edey theoretically gets more touches but that it rarely happens.",
+      "new": false
+     },
+     {
+      "player": "Jerami Grant",
+      "min": 16.0,
+      "note": "The show said Jerami Grant is out for about two weeks with a calf strain. Grant left the November 19 game early and did not play on November 21.",
+      "new": false
+     }
+    ],
+    "new": false,
+    "lost": 44.0,
+    "benefits": [
+     {
+      "player": "Cedric Coward",
+      "salary": 7200,
+      "why": "same minutes, more production",
+      "much": "+7.0 DK without them (1 game)",
+      "score": 7.0,
+      "min": 29.1,
+      "dk": 40.5,
+      "avg": 35.2
+     },
+     {
+      "player": "Olivier-Maxence Prosper",
+      "salary": 3900,
+      "why": "23 minutes, up from 10",
+      "much": "+6.3 DK without them (1 game)",
+      "score": 6.3,
+      "min": 5.4,
+      "dk": 4.1,
+      "avg": 10.3
+     }
+    ],
+    "split_of": [
+     "Cameron Boozer",
+     "Jerami Grant"
     ]
    }
   ],
   "hot": [
    {
-    "player": "Brice Sensabaugh",
-    "team": "UTA",
-    "kind": "hot",
-    "last": 35.2,
-    "before": 15.8,
-    "n": 14,
-    "why": "Brice Sensabaugh played only 17 minutes as Svi Mykhailiuk took over the bench scoring role."
-   },
-   {
     "player": "Svi Mykhailiuk",
     "team": "UTA",
     "kind": "hot",
-    "last": 26.6,
-    "before": 8.5,
-    "n": 14,
+    "last": 35.4,
+    "before": 9.7,
+    "n": 15,
     "why": "Svi Mykhailiuk scored 39 points with ten threes off the bench, his best game of the season in this data."
    },
    {
-    "player": "Simone Fontecchio",
-    "team": "MIA",
-    "kind": "hot",
-    "last": 18.2,
-    "before": 2.2,
-    "n": 6
-   },
-   {
-    "player": "AJ Dybantsa",
-    "team": "WAS",
+    "player": "Quentin Grimes",
+    "team": "LAL",
     "kind": "hot",
     "last": 43.2,
-    "before": 28.4,
-    "n": 10,
-    "why": "AJ Dybantsa posted back-to-back double-doubles on 11/18 and 11/20 while playing 37 or more minutes in both games."
+    "before": 18.5,
+    "n": 12,
+    "why": "Quentin Grimes stays in a big role for at least one more game because Austin Reaves is out again on Monday."
    },
    {
-    "player": "Patrick Williams",
+    "player": "Clint Capela",
+    "team": "HOU",
+    "kind": "hot",
+    "last": 24.6,
+    "before": 4.8,
+    "n": 3,
+    "why": "His last 3 games came with Alperen Sengun and Steven Adams out."
+   },
+   {
+    "player": "Joel Embiid",
+    "team": "PHI",
+    "kind": "hot",
+    "last": 55.5,
+    "before": 37.0,
+    "n": 11,
+    "why": "Joel Embiid has scored 50 or more DraftKings points in three straight games while taking 10 or more free throws in each one, including 26 points, 17 rebounds and nine assists in 34 minutes on November 21."
+   },
+   {
+    "player": "Josh Giddey",
     "team": "CHI",
-    "kind": "cold",
-    "last": 7.3,
-    "before": 21.2,
-    "n": 5
+    "kind": "hot",
+    "last": 49.0,
+    "before": 30.7,
+    "n": 13,
+    "why": "Josh Giddey had 23 points, 14 rebounds and 22 assists in 41 minutes with Norman Powell out."
    }
   ],
   "minutes": [
    {
+    "player": "Jahmai Mashack",
+    "team": "MEM",
+    "kind": "up",
+    "last": 20.3,
+    "before": 3.0,
+    "n": 4,
+    "why": "Jahmai Mashack started and played 22 minutes on 11/21 with Cameron Boozer out with a right ankle sprain."
+   },
+   {
     "player": "Svi Mykhailiuk",
     "team": "UTA",
     "kind": "up",
-    "last": 31.7,
-    "before": 15.7,
-    "n": 14,
+    "last": 31.3,
+    "before": 16.9,
+    "n": 15,
     "why": "Svi Mykhailiuk scored 39 points with ten threes off the bench, his best game of the season in this data."
    },
    {
-    "player": "Ryan Conwell",
-    "team": "MIA",
+    "player": "Clint Capela",
+    "team": "HOU",
+    "kind": "up",
+    "last": 20.7,
+    "before": 7.7,
+    "n": 3,
+    "why": "His last 3 games came with Alperen Sengun and Steven Adams out."
+   },
+   {
+    "player": "Precious Achiuwa",
+    "team": "SAC",
+    "kind": "down",
+    "last": 14.7,
+    "before": 27.6,
+    "n": 10,
+    "why": "Precious Achiuwa returned and played just eight bench minutes."
+   },
+   {
+    "player": "Buddy Hield",
+    "team": "CHI",
     "kind": "up",
     "last": 27.3,
-    "before": 14.5,
-    "n": 10,
-    "why": "Ryan Conwell played 29 minutes off the bench while Giannis Antetokounmpo was out."
-   },
-   {
-    "player": "Tre Johnson",
-    "team": "WAS",
-    "kind": "down",
-    "last": 11.0,
-    "before": 23.6,
-    "n": 12,
-    "why": "Johnson played only eight minutes and did not score on Wednesday, after playing about 30 minutes as recently as Nov. 12."
-   },
-   {
-    "player": "Simone Fontecchio",
-    "team": "MIA",
-    "kind": "up",
-    "last": 17.0,
-    "before": 4.5,
-    "n": 6
-   },
-   {
-    "player": "Jamal Cain",
-    "team": "ORL",
-    "kind": "down",
-    "last": 7.7,
-    "before": 19.5,
-    "n": 10
+    "before": 15.3,
+    "n": 11,
+    "why": "Buddy Hield started on November 22 with Norman Powell out and scored 33 points in 40 minutes in an overtime game."
    }
   ],
   "chalk": [
    {
-    "player": "Davion Mitchell",
-    "team": "MIA",
-    "own": 40.0,
-    "dk": 34.0,
-    "salary": 7100
+    "player": "Luka Doncic",
+    "team": "LAL",
+    "own": 38.0,
+    "dk": 66.5,
+    "salary": 11900
    },
    {
-    "player": "Nickeil Alexander-Walker",
-    "team": "ATL",
-    "own": 40.0,
-    "dk": 33.1,
-    "salary": 7000
+    "player": "Tre Jones",
+    "team": "CHI",
+    "own": 38.0,
+    "dk": 21.5,
+    "salary": 4500
    },
    {
-    "player": "Aaron Wiggins",
-    "team": "ATL",
-    "own": 40.0,
-    "dk": 26.7,
-    "salary": 5300
+    "player": "Jaylon Tyson",
+    "team": "CLE",
+    "own": 37.7,
+    "dk": 21.3,
+    "salary": 4600
    },
    {
-    "player": "Bobby Portis",
-    "team": "MIA",
-    "own": 40.0,
-    "dk": 24.1,
-    "salary": 4400
+    "player": "Malik Monk",
+    "team": "SAC",
+    "own": 37.3,
+    "dk": 14.4,
+    "salary": 4000
    }
   ],
   "leverage": [
    {
-    "player": "Nique Clifford",
-    "team": "OKC",
-    "own": 4.1,
-    "dk": 16.2,
-    "salary": 3200
-   },
-   {
-    "player": "Andrew Wiggins",
-    "team": "MIA",
-    "own": 9.7,
-    "dk": 21.0,
+    "player": "Taylor Hendricks",
+    "team": "MEM",
+    "own": 4.7,
+    "dk": 26.2,
     "salary": 4300
    },
    {
-    "player": "Derrick White",
-    "team": "BOS",
-    "own": 6.2,
-    "dk": 34.7,
+    "player": "Buddy Hield",
+    "team": "CHI",
+    "own": 3.8,
+    "dk": 22.6,
+    "salary": 3800
+   },
+   {
+    "player": "Brandon Miller",
+    "team": "CHA",
+    "own": 9.5,
+    "dk": 41.1,
     "salary": 7200
    }
   ],
   "last": {
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "top": [
     {
-     "player": "Victor Wembanyama",
-     "team": "SAS",
-     "dk": 95.75,
-     "min": 32.0,
-     "pts": 50.0,
-     "reb": 19.0,
-     "ast": 1.0,
-     "why": "Wembanyama played only 32 minutes on Saturday because he came out for good with 6:29 left and San Antonio up 26."
+     "player": "Nikola Jokic",
+     "team": "DEN",
+     "dk": 82.0,
+     "min": 42.0,
+     "pts": 37.0,
+     "reb": 18.0,
+     "ast": 11.0
     },
     {
-     "player": "Tyler Herro",
-     "team": "MIL",
-     "dk": 80.25,
-     "min": 40.0,
-     "pts": 50.0,
-     "reb": 11.0,
+     "player": "Josh Giddey",
+     "team": "CHI",
+     "dk": 77.0,
+     "min": 41.0,
+     "pts": 23.0,
+     "reb": 14.0,
+     "ast": 22.0,
+     "why": "Josh Giddey had 23 points, 14 rebounds and 22 assists in 41 minutes with Norman Powell out."
+    },
+    {
+     "player": "Jamal Murray",
+     "team": "DEN",
+     "dk": 73.75,
+     "min": 45.0,
+     "pts": 45.0,
+     "reb": 5.0,
      "ast": 7.0,
-     "why": "He played 40 minutes, 14 more than we projected."
+     "why": "Jamal Murray scored 45 points with six threes, three steals and two blocks in 45 minutes in an overtime win over Chicago."
     },
     {
-     "player": "Joel Embiid",
-     "team": "PHI",
-     "dk": 63.75,
-     "min": 34.0,
-     "pts": 26.0,
-     "reb": 17.0,
-     "ast": 9.0
+     "player": "Bam Adebayo",
+     "team": "MIA",
+     "dk": 71.75,
+     "min": 37.0,
+     "pts": 24.0,
+     "reb": 15.0,
+     "ast": 12.0,
+     "why": "Bam Adebayo had 24 points, 15 rebounds and 12 assists with Giannis Antetokounmpo out."
     },
     {
-     "player": "Donovan Clingan",
-     "team": "POR",
-     "dk": 50.75,
-     "min": 31.0,
-     "pts": 22.0,
-     "reb": 13.0,
-     "ast": 4.0,
-     "why": "Donovan Clingan had 22 points, 13 rebounds and four assists in 31 minutes on 11/21 on efficient shooting."
-    },
-    {
-     "player": "Jalen Brunson",
+     "player": "Karl-Anthony Towns",
      "team": "NYK",
-     "dk": 47.75,
-     "min": 36.0,
+     "dk": 66.75,
+     "min": 29.0,
      "pts": 30.0,
-     "reb": 7.0,
+     "reb": 13.0,
      "ast": 5.0
     }
    ],
    "surprise": [
     {
-     "player": "Jordan McLaughlin",
-     "team": "SAS",
-     "min": 18.0,
-     "proj": 3.4
-    },
-    {
-     "player": "Tyler Herro",
-     "team": "MIL",
+     "player": "Buddy Hield",
+     "team": "CHI",
      "min": 40.0,
-     "proj": 26.5,
-     "why": "He played 40 minutes, 14 more than we projected."
+     "proj": 19.2,
+     "why": "Buddy Hield started on November 22 with Norman Powell out and scored 33 points in 40 minutes in an overtime game."
     },
     {
-     "player": "Miles McBride",
-     "team": "NYK",
-     "min": 14.0,
-     "proj": 27.0,
-     "why": "He played 14 minutes, 13 fewer than we projected."
+     "player": "Jarace Walker",
+     "team": "IND",
+     "min": 1.0,
+     "proj": 20.5,
+     "why": "Jarace Walker was taken out of Indiana's rotation along with Jay Huff, and both played only one minute in garbage time."
     },
     {
-     "player": "Jayson Kent",
-     "team": "POR",
-     "min": 3.0,
-     "proj": 16.0
+     "player": "Jay Huff",
+     "team": "IND",
+     "min": 1.0,
+     "proj": 16.5,
+     "why": "He played 1 minutes, 16 fewer than we projected."
+    },
+    {
+     "player": "Micah Peavy",
+     "team": "OKC",
+     "min": 31.0,
+     "proj": 17.1,
+     "why": "With Shai Gilgeous-Alexander out, he played 31 minutes (we projected 17)."
     }
    ],
    "injuries": [
@@ -1078,23 +996,1586 @@
    "report": "05:15 AM",
    "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_15AM.pdf",
    "pending": [
-    "ATL",
-    "BOS",
-    "CHI",
-    "DAL",
-    "DEN",
-    "DET",
-    "GSW",
-    "IND",
-    "MIA",
-    "NYK",
     "OKC",
-    "ORL",
-    "UTA",
-    "WAS"
+    "IND",
+    "CHI",
+    "UTA"
    ],
-   "rows": [],
-   "minor": []
+   "rows": [
+    {
+     "last": {
+      "date": "2026-11-16",
+      "dk": 59.8,
+      "min": 33,
+      "opp": "BKN",
+      "ha": "@",
+      "res": "W",
+      "score": "135-123"
+     },
+     "game": "POR at PHI",
+     "time": "2026-11-24T00:00Z",
+     "team": "PHI",
+     "player": "Jaylen Brown",
+     "status": "Probable",
+     "reason": "Left Hamstring Strain",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 8100,
+     "min": 33.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-16",
+      "dk": 29.8,
+      "min": 32,
+      "opp": "BKN",
+      "ha": "@",
+      "res": "W",
+      "score": "135-123"
+     },
+     "game": "POR at PHI",
+     "time": "2026-11-24T00:00Z",
+     "team": "PHI",
+     "player": "Dean Wade",
+     "status": "Probable",
+     "reason": "",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 4100,
+     "min": 33.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-20",
+      "dk": 36.5,
+      "min": 33,
+      "opp": "ATL",
+      "ha": "@",
+      "res": "L",
+      "score": "111-97"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "CHA",
+     "player": "Brandon Miller",
+     "status": "Probable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 7200,
+     "min": 29.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-04",
+      "dk": 11.0,
+      "min": 15,
+      "opp": "DET",
+      "ha": "@",
+      "res": "W",
+      "score": "112-106"
+     },
+     "game": "POR at PHI",
+     "time": "2026-11-24T00:00Z",
+     "team": "PHI",
+     "player": "Adem Bona",
+     "status": "Probable",
+     "reason": "Cervical Spine Sprain",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 3400,
+     "min": 17.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-20",
+      "dk": 7.0,
+      "min": 18,
+      "opp": "ORL",
+      "ha": "vs",
+      "res": "L",
+      "score": "113-111"
+     },
+     "game": "BKN at MIN",
+     "time": "2026-11-24T00:30Z",
+     "team": "BKN",
+     "player": "Nolan Traore",
+     "status": "Out",
+     "reason": "Right Hamstring Strain",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 4700,
+     "min": 23.7,
+     "benefits": [
+      {
+       "player": "Danny Wolf",
+       "salary": 4500,
+       "why": "started that game",
+       "much": "+16.6 DK without him (1 game)",
+       "score": 16.6,
+       "min": 25.9,
+       "dk": 24.4,
+       "avg": 21.8
+      },
+      {
+       "player": "Noah Clowney",
+       "salary": 4000,
+       "why": "same minutes, more production",
+       "much": "+11.5 DK without him (1 game)",
+       "score": 11.5,
+       "min": 19.7,
+       "dk": 14.6,
+       "avg": 15.5
+      },
+      {
+       "player": "Keon Ellis",
+       "salary": 3100,
+       "why": "26 minutes, up from 19",
+       "much": "+11.0 DK without him (1 game)",
+       "score": 11.0,
+       "min": 17.9,
+       "dk": 12.3,
+       "avg": 12.8
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-13",
+      "dk": 0,
+      "min": 5,
+      "opp": "ORL",
+      "ha": "@",
+      "res": "L",
+      "score": "107-99"
+     },
+     "game": "MIL at TOR",
+     "time": "2026-11-24T00:30Z",
+     "team": "MIL",
+     "player": "Ousmane Dieng",
+     "status": "Questionable",
+     "reason": "Left Finger Fracture",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 3000,
+     "min": 15.7,
+     "benefits": [
+      {
+       "player": "Brayden Burries",
+       "salary": 5900,
+       "why": "27 minutes, up from 20",
+       "much": "+14.7 DK without him (7 games)",
+       "score": 14.7,
+       "min": 22.3,
+       "dk": 22.8,
+       "avg": 23.7
+      },
+      {
+       "player": "Kasparas Jakucionis",
+       "salary": 3900,
+       "why": "same minutes, more production",
+       "much": "+9.8 DK without him (7 games)",
+       "score": 9.8,
+       "min": 15.5,
+       "dk": 14.3,
+       "avg": 18.6
+      },
+      {
+       "player": "Gary Trent Jr.",
+       "salary": 3600,
+       "why": "18 minutes, up from 8",
+       "much": "+7.0 DK without him (3 games)",
+       "score": 7.0,
+       "min": 14.8,
+       "dk": 10.0,
+       "avg": 8.1
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-18",
+      "dk": 5.0,
+      "min": 5,
+      "opp": "WAS",
+      "ha": "vs",
+      "res": "L",
+      "score": "103-99"
+     },
+     "game": "MIL at TOR",
+     "time": "2026-11-24T00:30Z",
+     "team": "TOR",
+     "player": "Collin Murray-Boyles",
+     "status": "Probable",
+     "reason": "Concussion Protocol",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 6200,
+     "min": 26.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-20",
+      "dk": 6.2,
+      "min": 9,
+      "opp": "UTA",
+      "ha": "@",
+      "res": "W",
+      "score": "111-101"
+     },
+     "game": "PHX at NOP",
+     "time": "2026-11-24T01:00Z",
+     "team": "PHX",
+     "player": "Ryan Dunn",
+     "status": "Questionable",
+     "reason": "Right Quad Soreness",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3300,
+     "min": 11.3,
+     "benefits": [
+      {
+       "player": "Miles Bridges",
+       "salary": 6800,
+       "why": "plays his position (F), 27 minutes tonight",
+       "much": "about +4.3 DK",
+       "score": 4.272323232323233,
+       "min": 27.4,
+       "dk": 31.1,
+       "avg": 32.8
+      },
+      {
+       "player": "Dillon Brooks",
+       "salary": 5500,
+       "why": "plays his position (F), 28 minutes tonight",
+       "much": "about +3.4 DK",
+       "score": 3.365656565656566,
+       "min": 28.5,
+       "dk": 24.5,
+       "avg": 24.8
+      },
+      {
+       "player": "Oso Ighodaro",
+       "salary": 4500,
+       "why": "plays his position (F), 27 minutes tonight",
+       "much": "about +3.0 DK",
+       "score": 3.04969696969697,
+       "min": 26.6,
+       "dk": 22.2,
+       "avg": 19.1
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "last": {
+      "date": "2026-11-20",
+      "dk": 43.5,
+      "min": 37,
+      "opp": "OKC",
+      "ha": "@",
+      "res": "L",
+      "score": "126-120"
+     },
+     "game": "PHX at NOP",
+     "time": "2026-11-24T01:00Z",
+     "team": "NOP",
+     "player": "Zion Williamson",
+     "status": "Probable",
+     "reason": "Left Thigh Contusion",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 7100,
+     "min": 31.3,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-20",
+      "dk": 31.0,
+      "min": 29,
+      "opp": "OKC",
+      "ha": "@",
+      "res": "L",
+      "score": "126-120"
+     },
+     "game": "PHX at NOP",
+     "time": "2026-11-24T01:00Z",
+     "team": "NOP",
+     "player": "Trey Murphy III",
+     "status": "Probable",
+     "reason": "",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 6800,
+     "min": 31.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-14",
+      "dk": 29.5,
+      "min": 34,
+      "opp": "DAL",
+      "ha": "vs",
+      "res": "W",
+      "score": "125-117"
+     },
+     "game": "CLE at CHI",
+     "time": "2026-11-24T01:00Z",
+     "team": "CLE",
+     "player": "Jaylon Tyson",
+     "status": "Probable",
+     "reason": "",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 4600,
+     "min": 29.0,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-11",
+      "dk": 17.8,
+      "min": 13,
+      "opp": "BKN",
+      "ha": "vs",
+      "res": "L",
+      "score": "145-111"
+     },
+     "game": "PHX at NOP",
+     "time": "2026-11-24T01:00Z",
+     "team": "NOP",
+     "player": "Bryce McGowens",
+     "status": "Probable",
+     "reason": "Left Elbow Infection",
+     "new": true,
+     "was": "Out",
+     "known": true,
+     "changed_at": "",
+     "salary": 3800,
+     "min": 14.7,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-21",
+      "dk": 95.8,
+      "min": 32,
+      "opp": "NOP",
+      "ha": "vs",
+      "res": "W",
+      "score": "114-91"
+     },
+     "game": "SAS at SAC",
+     "time": "2026-11-24T03:00Z",
+     "team": "SAS",
+     "player": "Victor Wembanyama",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 12000,
+     "min": 33.0,
+     "benefits": [
+      {
+       "player": "Luke Kornet",
+       "salary": 3100,
+       "why": "subs in for him 53 of 70 times",
+       "much": "about +20.7 DK",
+       "score": 20.71184210526316,
+       "min": 15.2,
+       "dk": 12.6,
+       "avg": 10.8
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "last": {
+      "date": "2026-11-21",
+      "dk": 21.0,
+      "min": 26,
+      "opp": "NOP",
+      "ha": "vs",
+      "res": "W",
+      "score": "114-91"
+     },
+     "game": "SAS at SAC",
+     "time": "2026-11-24T03:00Z",
+     "team": "SAS",
+     "player": "De'Aaron Fox",
+     "status": "Questionable",
+     "reason": "Right Shin Contusion",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 6700,
+     "min": 30.7,
+     "benefits": [
+      {
+       "player": "Stephon Castle",
+       "salary": 7500,
+       "why": "35 minutes, up from 29",
+       "much": "+12.3 DK without him (1 game)",
+       "score": 12.3,
+       "min": 31.0,
+       "dk": 37.2,
+       "avg": 33.9
+      },
+      {
+       "player": "Keldon Johnson",
+       "salary": 5100,
+       "why": "29 minutes, up from 24",
+       "much": "+12.2 DK without him (1 game)",
+       "score": 12.2,
+       "min": 23.8,
+       "dk": 21.9,
+       "avg": 20.5
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-21",
+      "dk": 10.2,
+      "min": 18,
+      "opp": "NOP",
+      "ha": "vs",
+      "res": "W",
+      "score": "114-91"
+     },
+     "game": "SAS at SAC",
+     "time": "2026-11-24T03:00Z",
+     "team": "SAS",
+     "player": "Jordan McLaughlin",
+     "status": "Questionable",
+     "reason": "",
+     "new": true,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3200,
+     "min": 16.0,
+     "benefits": [
+      {
+       "player": "Julian Champagnie",
+       "salary": 5000,
+       "why": "subs in for him 4 of 15 times",
+       "much": "about +3.7 DK",
+       "score": 3.6888888888888887,
+       "min": 28.8,
+       "dk": 24.9,
+       "avg": 21.4
+      }
+     ],
+     "estimate": true
+    },
+    {
+     "last": {
+      "date": "2026-11-15",
+      "dk": 27.2,
+      "min": 25,
+      "opp": "LAC",
+      "ha": "@",
+      "res": "L",
+      "score": "113-105"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "CHA",
+     "player": "Grayson Allen",
+     "status": "Out",
+     "reason": "Concussion Protocol",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 6400,
+     "min": 31.0,
+     "benefits": [
+      {
+       "player": "Coby White",
+       "salary": 5700,
+       "why": "26 minutes, up from 18",
+       "much": "+14.8 DK without him (2 games)",
+       "score": 14.8,
+       "min": 26.0,
+       "dk": 30.0,
+       "avg": 21.8
+      },
+      {
+       "player": "Naz Reid",
+       "salary": 7700,
+       "why": "40 minutes, up from 30",
+       "much": "+8.4 DK without him (2 games)",
+       "score": 8.4,
+       "min": 36.3,
+       "dk": 43.5,
+       "avg": 34.8
+      },
+      {
+       "player": "Moussa Diabate",
+       "salary": 6200,
+       "why": "34 minutes, up from 29",
+       "much": "+8.3 DK without him (2 games)",
+       "score": 8.3,
+       "min": 31.4,
+       "dk": 33.8,
+       "avg": 29.6
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-19",
+      "dk": 31.5,
+      "min": 27,
+      "opp": "GSW",
+      "ha": "vs",
+      "res": "W",
+      "score": "126-98"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "MEM",
+     "player": "Cameron Boozer",
+     "status": "Out",
+     "reason": "Right Ankle Sprain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 8400,
+     "min": 28.0,
+     "benefits": [
+      {
+       "player": "Cedric Coward",
+       "salary": 7200,
+       "why": "same minutes, more production",
+       "much": "+7.0 DK without him (1 game)",
+       "score": 7.0,
+       "min": 29.1,
+       "dk": 40.5,
+       "avg": 35.2
+      },
+      {
+       "player": "Olivier-Maxence Prosper",
+       "salary": 3900,
+       "why": "23 minutes, up from 10",
+       "much": "+6.3 DK without him (1 game)",
+       "score": 6.3,
+       "min": 5.4,
+       "dk": 4.1,
+       "avg": 10.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-10-29",
+      "dk": 21.5,
+      "min": 23,
+      "opp": "MEM",
+      "ha": "vs",
+      "res": "L",
+      "score": "124-103"
+     },
+     "game": "POR at PHI",
+     "time": "2026-11-24T00:00Z",
+     "team": "POR",
+     "player": "Ja Morant",
+     "status": "Out",
+     "reason": "Left Hamstring Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 6000,
+     "min": 27.0,
+     "benefits": [
+      {
+       "player": "Donovan Clingan",
+       "salary": 7300,
+       "why": "same minutes, more production",
+       "much": "+6.8 DK without him (12 games)",
+       "score": 6.8,
+       "min": 27.2,
+       "dk": 34.8,
+       "avg": 33.9
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-04",
+      "dk": 18.8,
+      "min": 20,
+      "opp": "BKN",
+      "ha": "@",
+      "res": "L",
+      "score": "114-104"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "CHA",
+     "player": "Dennis Schroder",
+     "status": "Out",
+     "reason": "Left Hamstring Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 5100,
+     "min": 26.0,
+     "benefits": [
+      {
+       "player": "Coby White",
+       "salary": 5700,
+       "why": "21 minutes, up from 17",
+       "much": "+12.6 DK without him (6 games)",
+       "score": 12.6,
+       "min": 26.0,
+       "dk": 30.0,
+       "avg": 21.8
+      },
+      {
+       "player": "Christian Anderson",
+       "salary": 3400,
+       "why": "19 minutes, up from 10",
+       "much": "+8.1 DK without him (6 games)",
+       "score": 8.1,
+       "min": 17.6,
+       "dk": 15.5,
+       "avg": 10.8
+      },
+      {
+       "player": "Moussa Diabate",
+       "salary": 6200,
+       "why": "same minutes, more production",
+       "much": "+6.4 DK without him (4 games)",
+       "score": 6.4,
+       "min": 31.4,
+       "dk": 33.8,
+       "avg": 29.6
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-17",
+      "dk": 20.0,
+      "min": 30,
+      "opp": "LAL",
+      "ha": "@",
+      "res": "L",
+      "score": "118-114"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "CHA",
+     "player": "Grant Williams",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3700,
+     "min": 22.0,
+     "benefits": [
+      {
+       "player": "Tidjane Salaun",
+       "salary": 3200,
+       "why": "15 minutes, up from 9",
+       "much": "+9.3 DK without him (11 games)",
+       "score": 9.3,
+       "min": 9.5,
+       "dk": 4.8,
+       "avg": 10.9
+      },
+      {
+       "player": "Brandon Miller",
+       "salary": 7200,
+       "why": "31 minutes, up from 28",
+       "much": "+7.3 DK without him (11 games)",
+       "score": 7.3,
+       "min": 33.2,
+       "dk": 41.1,
+       "avg": 33.2
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-10",
+      "dk": 12.2,
+      "min": 14,
+      "opp": "OKC",
+      "ha": "vs",
+      "res": "W",
+      "score": "123-103"
+     },
+     "game": "POR at PHI",
+     "time": "2026-11-24T00:00Z",
+     "team": "POR",
+     "player": "Chris Youngblood",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3000,
+     "min": 18.3,
+     "benefits": [
+      {
+       "player": "Deni Avdija",
+       "salary": 9100,
+       "why": "same minutes, more production",
+       "much": "+5.8 DK without him (8 games)",
+       "score": 5.8,
+       "min": 33.5,
+       "dk": 44.7,
+       "avg": 43.6
+      },
+      {
+       "player": "Jrue Holiday",
+       "salary": 6200,
+       "why": "same minutes, more production",
+       "much": "+5.5 DK without him (10 games)",
+       "score": 5.5,
+       "min": 28.7,
+       "dk": 28.9,
+       "avg": 28.4
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-19",
+      "dk": 3.0,
+      "min": 5,
+      "opp": "GSW",
+      "ha": "vs",
+      "res": "W",
+      "score": "126-98"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "MEM",
+     "player": "Jerami Grant",
+     "status": "Out",
+     "reason": "Left Calf Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 4000,
+     "min": 16.0,
+     "benefits": [
+      {
+       "player": "Cedric Coward",
+       "salary": 7200,
+       "why": "32 minutes, up from 28",
+       "much": "+14.8 DK without him (2 games)",
+       "score": 14.8,
+       "min": 29.1,
+       "dk": 40.5,
+       "avg": 35.2
+      },
+      {
+       "player": "Javon Small",
+       "salary": 5000,
+       "why": "30 minutes, up from 21",
+       "much": "+10.5 DK without him (1 game)",
+       "score": 10.5,
+       "min": 25.0,
+       "dk": 28.3,
+       "avg": 22.7
+      },
+      {
+       "player": "Taylor Hendricks",
+       "salary": 4300,
+       "why": "28 minutes, up from 12",
+       "much": "+10.4 DK without him (2 games)",
+       "score": 10.4,
+       "min": 22.3,
+       "dk": 26.2,
+       "avg": 16.1
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-10-29",
+      "dk": 2.0,
+      "min": 14,
+      "opp": "POR",
+      "ha": "@",
+      "res": "W",
+      "score": "124-103"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "MEM",
+     "player": "Scotty Pippen Jr.",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 4700,
+     "min": 14.7,
+     "benefits": [
+      {
+       "player": "Taylor Hendricks",
+       "salary": 4300,
+       "why": "17 minutes, up from 5",
+       "much": "+17.8 DK without him (10 games)",
+       "score": 17.8,
+       "min": 22.3,
+       "dk": 26.2,
+       "avg": 16.1
+      },
+      {
+       "player": "Cam Spencer",
+       "salary": 6200,
+       "why": "25 minutes, up from 18",
+       "much": "+8.0 DK without him (12 games)",
+       "score": 8.0,
+       "min": 27.2,
+       "dk": 34.8,
+       "avg": 25.9
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-14",
+      "dk": 3.5,
+      "min": 3,
+      "opp": "BKN",
+      "ha": "vs",
+      "res": "W",
+      "score": "129-110"
+     },
+     "game": "MEM at CHA",
+     "time": "2026-11-24T00:00Z",
+     "team": "MEM",
+     "player": "GG Jackson",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": null,
+     "min": 12.7,
+     "benefits": [
+      {
+       "player": "Olivier-Maxence Prosper",
+       "salary": 3900,
+       "why": "18 minutes, up from 6",
+       "much": "+6.4 DK without him (5 games)",
+       "score": 6.4,
+       "min": 5.4,
+       "dk": 4.1,
+       "avg": 10.3
+      },
+      {
+       "player": "Javon Small",
+       "salary": 5000,
+       "why": "24 minutes, up from 21",
+       "much": "+5.3 DK without him (4 games)",
+       "score": 5.3,
+       "min": 25.0,
+       "dk": 28.3,
+       "avg": 22.7
+      },
+      {
+       "player": "Jahmai Mashack",
+       "salary": 3200,
+       "why": "13 minutes, up from 3",
+       "much": "+5.0 DK without him (5 games)",
+       "score": 5.0,
+       "min": 20.8,
+       "dk": 10.5,
+       "avg": 5.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-04",
+      "dk": 12.2,
+      "min": 12,
+      "opp": "PHX",
+      "ha": "@",
+      "res": "W",
+      "score": "132-119"
+     },
+     "game": "POR at PHI",
+     "time": "2026-11-24T00:00Z",
+     "team": "POR",
+     "player": "Vit Krejci",
+     "status": "Out",
+     "reason": "Left Ankle Fracture",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3000,
+     "min": 12.7,
+     "benefits": [
+      {
+       "player": "Robert Williams",
+       "salary": 4200,
+       "why": "projected 16 minutes tonight",
+       "much": "+3.0 DK projected vs. last 3",
+       "score": 3.0,
+       "min": 16.0,
+       "dk": 19.0,
+       "avg": 19.2
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-17",
+      "dk": 38.8,
+      "min": 39,
+      "opp": "NYK",
+      "ha": "vs",
+      "res": "L",
+      "score": "111-102"
+     },
+     "game": "MIL at TOR",
+     "time": "2026-11-24T00:30Z",
+     "team": "TOR",
+     "player": "RJ Barrett",
+     "status": "Out",
+     "reason": "Right Hamstring Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 8100,
+     "min": 37.7,
+     "benefits": [
+      {
+       "player": "Allen Graves",
+       "salary": 4500,
+       "why": "started 1 of 2",
+       "much": "+19.6 DK without him (2 games)",
+       "score": 19.6,
+       "min": 26.2,
+       "dk": 22.8,
+       "avg": 13.3
+      },
+      {
+       "player": "Jakob Poeltl",
+       "salary": 5700,
+       "why": "30 minutes, up from 23",
+       "much": "+10.5 DK without him (2 games)",
+       "score": 10.5,
+       "min": 27.9,
+       "dk": 29.0,
+       "avg": 22.5
+      },
+      {
+       "player": "Jamison Battle",
+       "salary": 4300,
+       "why": "started 1 of 2",
+       "much": "+10.5 DK without him (2 games)",
+       "score": 10.5,
+       "min": 22.4,
+       "dk": 18.0,
+       "avg": 14.1
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-10-26",
+      "dk": 66.5,
+      "min": 41,
+      "opp": "CLE",
+      "ha": "@",
+      "res": "W",
+      "score": "125-124"
+     },
+     "game": "BKN at MIN",
+     "time": "2026-11-24T00:30Z",
+     "team": "MIN",
+     "player": "Anthony Edwards",
+     "status": "Out",
+     "reason": "Right Knee",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 9400,
+     "min": 34.0,
+     "benefits": [
+      {
+       "player": "Nah'Shon Hyland",
+       "salary": 4200,
+       "why": "16 minutes, up from 8",
+       "much": "+12.7 DK without him (13 games)",
+       "score": 12.7,
+       "min": 14.9,
+       "dk": 17.4,
+       "avg": null
+      },
+      {
+       "player": "Ayo Dosunmu",
+       "salary": 7200,
+       "why": "started 13 of 13",
+       "much": "+9.4 DK without him (13 games)",
+       "score": 9.4,
+       "min": 34.0,
+       "dk": 34.3,
+       "avg": 31.9
+      },
+      {
+       "player": "LaMelo Ball",
+       "salary": 8700,
+       "why": "30 minutes, up from 25",
+       "much": "+6.4 DK without him (13 games)",
+       "score": 6.4,
+       "min": 30.6,
+       "dk": 40.5,
+       "avg": 34.9
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-10-23",
+      "dk": 33.8,
+      "min": 28,
+      "opp": "WAS",
+      "ha": "@",
+      "res": "W",
+      "score": "112-102"
+     },
+     "game": "MIL at TOR",
+     "time": "2026-11-24T00:30Z",
+     "team": "TOR",
+     "player": "Kawhi Leonard",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 7800,
+     "min": 26.0,
+     "benefits": [
+      {
+       "player": "Alijah Martin",
+       "salary": 3600,
+       "why": "14 minutes, up from 3",
+       "much": "+10.1 DK without him (13 games)",
+       "score": 10.1,
+       "min": 2.0,
+       "dk": 0.5,
+       "avg": 9.8
+      },
+      {
+       "player": "Jamal Shead",
+       "salary": 5300,
+       "why": "24 minutes, up from 20",
+       "much": "+9.4 DK without him (14 games)",
+       "score": 9.4,
+       "min": 24.0,
+       "dk": 22.9,
+       "avg": 21.5
+      },
+      {
+       "player": "Trayce Jackson-Davis",
+       "salary": 3700,
+       "why": "10 minutes, up from 6",
+       "much": "+6.7 DK without him (9 games)",
+       "score": 6.7,
+       "min": 15.0,
+       "dk": 18.0,
+       "avg": 10.6
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-14",
+      "dk": 2.0,
+      "min": 3,
+      "opp": "CHI",
+      "ha": "vs",
+      "res": "L",
+      "score": "117-106"
+     },
+     "game": "BKN at MIN",
+     "time": "2026-11-24T00:30Z",
+     "team": "MIN",
+     "player": "Jaylen Clark",
+     "status": "Out",
+     "reason": "Right Hamstring Strain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3500,
+     "min": 13.7,
+     "benefits": [
+      {
+       "player": "Terrence Shannon Jr.",
+       "salary": 4700,
+       "why": "26 minutes, up from 21",
+       "much": "+9.9 DK without him (5 games)",
+       "score": 9.9,
+       "min": 25.7,
+       "dk": 24.7,
+       "avg": 22.6
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-11",
+      "dk": 22.8,
+      "min": 33,
+      "opp": "NYK",
+      "ha": "@",
+      "res": "W",
+      "score": "115-107"
+     },
+     "game": "CLE at CHI",
+     "time": "2026-11-24T01:00Z",
+     "team": "CLE",
+     "player": "Evan Mobley",
+     "status": "Out",
+     "reason": "Left Great Toe Sprain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 7400,
+     "min": 30.0,
+     "benefits": [
+      {
+       "player": "Tyrese Proctor",
+       "salary": 5400,
+       "why": "started 4 of 5",
+       "much": "+13.8 DK without him (5 games)",
+       "score": 13.8,
+       "min": 22.8,
+       "dk": 21.6,
+       "avg": 19.2
+      },
+      {
+       "player": "James Harden",
+       "salary": 7700,
+       "why": "36 minutes, up from 33",
+       "much": "+13.6 DK without him (4 games)",
+       "score": 13.6,
+       "min": 30.6,
+       "dk": 34.9,
+       "avg": 36.7
+      },
+      {
+       "player": "Jaylon Tyson",
+       "salary": 4600,
+       "why": "started 2 of 2",
+       "much": "+11.0 DK without him (2 games)",
+       "score": 11.0,
+       "min": 25.0,
+       "dk": 21.3,
+       "avg": 19.2
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-11",
+      "dk": 15.0,
+      "min": 28,
+      "opp": "BKN",
+      "ha": "vs",
+      "res": "L",
+      "score": "145-111"
+     },
+     "game": "PHX at NOP",
+     "time": "2026-11-24T01:00Z",
+     "team": "NOP",
+     "player": "Dejounte Murray",
+     "status": "Out",
+     "reason": "Left Ankle Sprain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 6500,
+     "min": 24.7,
+     "benefits": [
+      {
+       "player": "Jeremiah Fears",
+       "salary": 7500,
+       "why": "33 minutes, up from 28",
+       "much": "+13.8 DK without him (9 games)",
+       "score": 13.8,
+       "min": 30.9,
+       "dk": 34.1,
+       "avg": 33.1
+      },
+      {
+       "player": "Herbert Jones",
+       "salary": 4200,
+       "why": "started 9 of 9",
+       "much": "+9.2 DK without him (9 games)",
+       "score": 9.2,
+       "min": 26.7,
+       "dk": 16.4,
+       "avg": 15.1
+      },
+      {
+       "player": "Saddiq Bey",
+       "salary": 6300,
+       "why": "started 6 of 9",
+       "much": "+8.2 DK without him (9 games)",
+       "score": 8.2,
+       "min": 34.3,
+       "dk": 31.5,
+       "avg": 28.3
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-08",
+      "dk": 9.2,
+      "min": 17,
+      "opp": "LAC",
+      "ha": "@",
+      "res": "L",
+      "score": "139-123"
+     },
+     "game": "PHX at NOP",
+     "time": "2026-11-24T01:00Z",
+     "team": "NOP",
+     "player": "Trendon Watford",
+     "status": "Out",
+     "reason": "Right Ankle Sprain",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3500,
+     "min": 18.7,
+     "benefits": [
+      {
+       "player": "Karlo Matkovic",
+       "salary": 3500,
+       "why": "projected 12 minutes tonight",
+       "much": "+5.7 DK projected vs. last 3",
+       "score": 5.65,
+       "min": 12.4,
+       "dk": 10.4,
+       "avg": 14.1
+      },
+      {
+       "player": "Saddiq Bey",
+       "salary": 6300,
+       "why": "projected 34 minutes tonight",
+       "much": "+5.1 DK projected vs. last 3",
+       "score": 5.083333333333332,
+       "min": 34.3,
+       "dk": 31.5,
+       "avg": 28.3
+      },
+      {
+       "player": "Yves Missi",
+       "salary": 5600,
+       "why": "projected 22 minutes tonight",
+       "much": "+3.3 DK projected vs. last 3",
+       "score": 3.3000000000000007,
+       "min": 22.5,
+       "dk": 22.8,
+       "avg": 24.4
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-13",
+      "dk": -0.5,
+      "min": 10,
+      "opp": "MEM",
+      "ha": "vs",
+      "res": "L",
+      "score": "142-111"
+     },
+     "game": "PHX at NOP",
+     "time": "2026-11-24T01:00Z",
+     "team": "NOP",
+     "player": "Bennedict Mathurin",
+     "status": "Out",
+     "reason": "Left Plantar Fasciitis",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 3900,
+     "min": 14.3,
+     "benefits": [
+      {
+       "player": "Jordan Poole",
+       "salary": 4800,
+       "why": "25 minutes, up from 20",
+       "much": "+6.0 DK without him (6 games)",
+       "score": 6.0,
+       "min": 22.6,
+       "dk": 20.9,
+       "avg": 20.4
+      },
+      {
+       "player": "Herbert Jones",
+       "salary": 4200,
+       "why": "28 minutes, up from 24",
+       "much": "+5.0 DK without him (6 games)",
+       "score": 5.0,
+       "min": 26.7,
+       "dk": 16.4,
+       "avg": 15.1
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-11",
+      "dk": 35.2,
+      "min": 25,
+      "opp": "MIL",
+      "ha": "@",
+      "res": "W",
+      "score": "123-112"
+     },
+     "game": "UTA at LAL",
+     "time": "2026-11-24T03:00Z",
+     "team": "LAL",
+     "player": "Austin Reaves",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 7700,
+     "min": 33.3,
+     "benefits": [
+      {
+       "player": "Quentin Grimes",
+       "salary": 6200,
+       "why": "started 4 of 4",
+       "much": "+24.5 DK without him (4 games)",
+       "score": 24.5,
+       "min": 36.0,
+       "dk": 31.4,
+       "avg": 23.4
+      },
+      {
+       "player": "Kevon Looney",
+       "salary": 3000,
+       "why": "started that game",
+       "much": "+9.6 DK without him (1 game)",
+       "score": 9.6,
+       "min": 3.2,
+       "dk": 2.0,
+       "avg": 6.0
+      }
+     ],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-17",
+      "dk": 27.0,
+      "min": 35,
+      "opp": "DET",
+      "ha": "vs",
+      "res": "L",
+      "score": "105-93"
+     },
+     "game": "SAS at SAC",
+     "time": "2026-11-24T03:00Z",
+     "team": "SAS",
+     "player": "Dylan Harper",
+     "status": "Out",
+     "reason": "",
+     "new": false,
+     "was": "",
+     "known": true,
+     "changed_at": "",
+     "salary": 7300,
+     "min": 31.3,
+     "benefits": [
+      {
+       "player": "Stephon Castle",
+       "salary": 7500,
+       "why": "same minutes, more production",
+       "much": "+10.4 DK without him (2 games)",
+       "score": 10.4,
+       "min": 31.0,
+       "dk": 37.2,
+       "avg": 33.9
+      },
+      {
+       "player": "Carter Bryant",
+       "salary": 3200,
+       "why": "first off bench, 13 minutes (11/19)",
+       "much": "+3.1 DK projected vs. last 3",
+       "score": 3.1333333333333337,
+       "min": 13.5,
+       "dk": 9.3,
+       "avg": 6.9
+      }
+     ],
+     "estimate": false
+    }
+   ],
+   "minor": [
+    {
+     "player": "Grant Nelson",
+     "team": "BKN",
+     "status": "Probable"
+    },
+    {
+     "player": "Kon Knueppel",
+     "team": "CHA",
+     "status": "Out"
+    },
+    {
+     "player": "Richie Saunders",
+     "team": "MEM",
+     "status": "Out"
+    },
+    {
+     "player": "Shaedon Sharpe",
+     "team": "POR",
+     "status": "Out"
+    },
+    {
+     "player": "Ariel Hukporti",
+     "team": "PHI",
+     "status": "Out"
+    },
+    {
+     "player": "Donte DiVincenzo",
+     "team": "MIN",
+     "status": "Out"
+    },
+    {
+     "player": "Nae'Qwan Tomlin",
+     "team": "CLE",
+     "status": "Out"
+    },
+    {
+     "player": "Mark Williams",
+     "team": "PHX",
+     "status": "Out"
+    },
+    {
+     "player": "Jordan Miller",
+     "team": "LAC",
+     "status": "Out"
+    },
+    {
+     "player": "Bradley Beal",
+     "team": "LAC",
+     "status": "Out"
+    },
+    {
+     "player": "Tobias Harris",
+     "team": "SAS",
+     "status": "Out"
+    },
+    {
+     "player": "Jayden Quaintance",
+     "team": "SAS",
+     "status": "Out"
+    },
+    {
+     "player": "Maxime Raynaud",
+     "team": "SAC",
+     "status": "Out"
+    },
+    {
+     "player": "Ben Simmons",
+     "team": "SAC",
+     "status": "Out"
+    }
+   ]
   }
  },
  "log": [
@@ -6901,6 +8382,12 @@
    "Gilgeous-Alexander did not play on Sunday, November 22, at Miami. The show assumed he will play on the Monday slate but said his status has to be confirmed. The show said that with Oklahoma City missing so many rotation players, he is playing heavy minutes and has one of the most consistent scoring ceilings in the league."
   ],
   [
+   "Shai Gilgeous-Alexander",
+   "2026-11-23",
+   "news",
+   "He is questionable tonight at IND."
+  ],
+  [
    "Sidy Cissoko",
    "2026-11-11",
    "news",
@@ -7412,12 +8899,6 @@
   ],
   [
    "Victor Wembanyama",
-   "2026-11-11",
-   "news",
-   "Victor Wembanyama scored 40 points in 25 minutes Monday. San Antonio is without Tobias Harris, Devin Vassell is questionable, and the Spurs are 15.5-point favorites at Chicago in the slate's highest-total game."
-  ],
-  [
-   "Victor Wembanyama",
    "2026-11-17",
    "news",
    "San Antonio outscored Detroit by six with Victor Wembanyama on the floor Tuesday but lost the minutes he sat by 18, as the Spurs' 12-game winning streak ended."
@@ -7445,6 +8926,12 @@
    "2026-11-23",
    "injury",
    "Victor Wembanyama is questionable for Monday's game at Sacramento with back tightness. The show said it does not expect anything serious and suspects the Spurs may simply rest him for the long run."
+  ],
+  [
+   "Victor Wembanyama",
+   "2026-11-23",
+   "news",
+   "He is questionable tonight at SAC."
   ],
   [
    "Vit Krejci",
@@ -11295,8 +12782,8 @@
    "minutes": "Missed his team's last game; before that 36 avg last 5; 37 on Friday 11/20",
    "usage": "37% (our estimate, last 5 games)",
    "status": "Out (NBA injury report, 10:00 PM)",
-   "note": "Gilgeous-Alexander did not play on Sunday, November 22, at Miami. The show assumed he will play on the Monday slate but said his status has to be confirmed. The show said that with Oklahoma City missing so many rotation players, he is playing heavy minutes and has one of the most consistent scoring ceilings in the league.",
-   "source": "FA-1123"
+   "note": "He is questionable tonight at IND.",
+   "source": "AUTO-1123"
   },
   {
    "player": "Thomas Sorber",
@@ -12265,8 +13752,8 @@
    "minutes": "31 avg last 5; 32 on Saturday 11/21",
    "usage": "37% (our estimate, last 5 games)",
    "status": "Questionable (NBA injury report, 05:15 AM)",
-   "note": "Victor Wembanyama is questionable for Monday's game at Sacramento with back tightness. The show said it does not expect anything serious and suspects the Spurs may simply rest him for the long run.",
-   "source": "LO-1123"
+   "note": "He is questionable tonight at SAC.",
+   "source": "AUTO-1123"
   },
   {
    "player": "Alijah Martin",
@@ -16659,8 +18146,8 @@
    "minutes": "Missed his team's last game; before that 36 avg last 5; 37 on Friday 11/20",
    "usage": "37% (our estimate, last 5 games)",
    "status": "Out (NBA injury report, 10:00 PM)",
-   "note": "Gilgeous-Alexander did not play on Sunday, November 22, at Miami. The show assumed he will play on the Monday slate but said his status has to be confirmed. The show said that with Oklahoma City missing so many rotation players, he is playing heavy minutes and has one of the most consistent scoring ceilings in the league.",
-   "source": "FA-1123"
+   "note": "He is questionable tonight at IND.",
+   "source": "AUTO-1123"
   },
   {
    "player": "Thomas Sorber",
@@ -17609,8 +19096,8 @@
    "minutes": "31 avg last 5; 32 on Saturday 11/21",
    "usage": "37% (our estimate, last 5 games)",
    "status": "Questionable (NBA injury report, 05:15 AM)",
-   "note": "Victor Wembanyama is questionable for Monday's game at Sacramento with back tightness. The show said it does not expect anything serious and suspects the Spurs may simply rest him for the long run.",
-   "source": "LO-1123"
+   "note": "He is questionable tonight at SAC.",
+   "source": "AUTO-1123"
   },
   {
    "player": "Alijah Martin",
@@ -22091,6 +23578,13 @@
    "show": "Dan Besbris",
    "title": "Dan Besbris recap (X post)",
    "url": "https://x.com/DanBesbris/status/2124724464386510995"
+  },
+  {
+   "id": "AUTO-1123",
+   "date": "2026-11-23",
+   "show": "Automatic injury-report summary",
+   "title": "Tonight's ruled-out and questionable players",
+   "url": ""
   }
  ],
  "quickhits": {
@@ -23205,55 +24699,56 @@
    }
   ],
   "storylines": {
-   "date": "2026-11-22",
+   "date": "2026-11-23",
+   "auto": true,
    "items": [
     {
-     "player": "Karl-Anthony Towns",
-     "team": "NYK",
-     "text": "Towns missed Saturday's buzzer-beater win over Portland with an illness, and OG Anunoby (calf) and Jordan Clarkson (foot) are also day-to-day for the second night of the back-to-back against Indiana. New York had not filed today's injury report this morning; Andre Drummond started at center Saturday.",
-     "source": "ESPN-1122"
+     "player": "Victor Wembanyama",
+     "team": "SAS",
+     "text": "He is questionable tonight at SAC.",
+     "source": "AUTO-1123"
     },
     {
-     "player": "Jayson Tatum",
-     "team": "BOS",
-     "text": "Tatum rested Saturday in Boston's one-point loss at Sacramento and was expected back Sunday at Golden State, while Derrick White (shoulder) could also return. Boston has not filed today's report, and Payton Pritchard started Saturday in their place.",
-     "source": "WEB-1122"
+     "player": "Anthony Edwards",
+     "team": "MIN",
+     "text": "He is ruled out tonight (right knee).",
+     "source": "AUTO-1123"
     },
     {
      "player": "Shai Gilgeous-Alexander",
      "team": "OKC",
-     "text": "Gilgeous-Alexander is questionable at Miami with a low back contusion and a neck strain after scoring 40 on Friday. Oklahoma City is already without Chet Holmgren, Jalen Williams, Alex Caruso, Cason Wallace and Nikola Topic.",
-     "source": "WEB-1122"
+     "text": "He is questionable tonight at IND.",
+     "source": "AUTO-1123"
     },
     {
-     "player": "Giannis Antetokounmpo",
-     "team": "MIA",
-     "text": "Antetokounmpo is questionable against Oklahoma City with right groin tendinitis after being limited in Saturday's practice.",
-     "source": "WEB-1122"
+     "player": "Kawhi Leonard",
+     "team": "TOR",
+     "text": "He is ruled out tonight. Walter started and scored 22 in 31 minutes Sunday.",
+     "source": "AUTO-1123"
     },
     {
-     "player": "P.J. Washington",
-     "team": "DAL",
-     "text": "Washington missed his first game of the season Saturday with an illness, so Caleb Martin started and Max Christie played 24 minutes and closed the win. Dallas plays at Utah on the second night of a back-to-back and has not posted today's report.",
-     "source": "ESPN-1122"
+     "player": "Evan Mobley",
+     "team": "CLE",
+     "text": "He is ruled out tonight (left great toe sprain). Bryant takes the center minutes, and he becomes a top 50-60 player if both are out.",
+     "source": "AUTO-1123"
     },
     {
-     "player": "Pascal Siakam",
-     "team": "IND",
-     "text": "Siakam is questionable at New York with hip soreness, and Indiana is already without Tyrese Haliburton and T.J. McConnell, which would push more minutes to Obi Toppin and Jarace Walker if he sits.",
-     "source": "WEB-1122"
+     "player": "Austin Reaves",
+     "team": "LAL",
+     "text": "He is ruled out tonight. Grimes is the main beneficiary and could post top-70 numbers in those games.",
+     "source": "AUTO-1123"
     },
     {
-     "player": "Norman Powell",
-     "team": "CHI",
-     "text": "Powell (hamstring) and Jalen Smith (illness) are questionable for Chicago against Denver in the slate's highest-total game, with Caleb Wilson already out.",
-     "source": "WEB-1122"
+     "player": "Ja Morant",
+     "team": "POR",
+     "text": "He is ruled out tonight (left hamstring strain). Holiday, Henderson and Sharpe only matter for fantasy when a starting guard is out.",
+     "source": "AUTO-1123"
     },
     {
-     "player": "Jalen Duren",
-     "team": "DET",
-     "text": "Detroit is without Jalen Duren and Duncan Robinson at Atlanta, which keeps Paul Reed as the main center minutes off the bench, and Cade Cunningham is probable with knee soreness.",
-     "source": "WEB-1122"
+     "player": "Jalen Williams",
+     "team": "OKC",
+     "text": "Listed out. Not on today's injury report. Mitchell had 18 points, six rebounds, four assists and three steals in 28 minutes when Williams and Cason Wallace got hurt Sunday.",
+     "source": "AUTO-1123"
     }
    ]
   }
@@ -24606,7 +26101,7 @@
   {
    "rank": 97,
    "player": "Daniss Jenkins",
-   "pos": "PG/SG",
+   "pos": "PG,SG",
    "team": "DET",
    "flag": "",
    "change": "",
@@ -24872,7 +26367,7 @@
   {
    "rank": 116,
    "player": "Aaron Wiggins",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "ATL",
    "flag": "",
    "change": "",
@@ -25040,7 +26535,7 @@
   {
    "rank": 128,
    "player": "Ja'Kobe Walter",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "TOR",
    "flag": "",
    "change": "",
@@ -25236,7 +26731,7 @@
   {
    "rank": 142,
    "player": "Javon Small",
-   "pos": "PG,SG",
+   "pos": "PG/SG",
    "team": "MEM",
    "flag": "",
    "change": "",
@@ -25362,7 +26857,7 @@
   {
    "rank": 151,
    "player": "Meleek Thomas",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "CLE",
    "flag": "",
    "change": "",
@@ -25390,7 +26885,7 @@
   {
    "rank": 153,
    "player": "Jordan Goodwin",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "PHX",
    "flag": "",
    "change": "",
@@ -25432,7 +26927,7 @@
   {
    "rank": 156,
    "player": "Danny Wolf",
-   "pos": "SF,PF",
+   "pos": "SF",
    "team": "BKN",
    "flag": "",
    "change": "",
@@ -25460,7 +26955,7 @@
   {
    "rank": 158,
    "player": "Derrick Jones Jr.",
-   "pos": "SF,PF",
+   "pos": "SF",
    "team": "LAC",
    "flag": "",
    "change": "",
@@ -25628,7 +27123,7 @@
   {
    "rank": 170,
    "player": "Zaccharie Risacher",
-   "pos": "SF",
+   "pos": "SF,PF",
    "team": "DAL",
    "flag": "",
    "change": "",
@@ -25642,7 +27137,7 @@
   {
    "rank": 171,
    "player": "Mario Hezonja",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "CLE",
    "flag": "",
    "change": "",
@@ -25768,7 +27263,7 @@
   {
    "rank": 180,
    "player": "Isaiah Jackson",
-   "pos": "SF,PF",
+   "pos": "C",
    "team": "LAC",
    "flag": "",
    "change": "",
@@ -25866,7 +27361,7 @@
   {
    "rank": 187,
    "player": "Tyrese Proctor",
-   "pos": "PG,SG",
+   "pos": "PG",
    "team": "CLE",
    "flag": "",
    "change": "",
@@ -25950,7 +27445,7 @@
   {
    "rank": 193,
    "player": "Matisse Thybulle",
-   "pos": "PG,SG",
+   "pos": "SF",
    "team": "LAL",
    "flag": "",
    "change": "",
@@ -25978,7 +27473,7 @@
   {
    "rank": 195,
    "player": "Kasparas Jakucionis",
-   "pos": "PG,SG",
+   "pos": "PG/SF",
    "team": "MIL",
    "flag": "",
    "change": "",
@@ -26034,7 +27529,7 @@
   {
    "rank": 199,
    "player": "Landry Shamet",
-   "pos": "PF",
+   "pos": "PG,SG",
    "team": "NYK",
    "flag": "",
    "change": "",
@@ -26104,7 +27599,7 @@
   {
    "rank": 204,
    "player": "Ziaire Williams",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "LAL",
    "flag": "",
    "change": "",
@@ -26160,7 +27655,7 @@
   {
    "rank": 208,
    "player": "Walter Clayton Jr.",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "DAL",
    "flag": "",
    "change": "",
@@ -26202,7 +27697,7 @@
   {
    "rank": 211,
    "player": "Sidy Cissoko",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "POR",
    "flag": "",
    "change": "",
@@ -26244,7 +27739,7 @@
   {
    "rank": 214,
    "player": "Sam Merrill",
-   "pos": "PG,SG",
+   "pos": "SG",
    "team": "CLE",
    "flag": "",
    "change": "",
@@ -26258,7 +27753,7 @@
   {
    "rank": 215,
    "player": "Dean Wade",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "PHI",
    "flag": "",
    "change": "",
@@ -26300,7 +27795,7 @@
   {
    "rank": 218,
    "player": "Kobe Sanders",
-   "pos": "PG,SG",
+   "pos": "SF/PF",
    "team": "LAC",
    "flag": "",
    "change": "",
@@ -26314,7 +27809,7 @@
   {
    "rank": 219,
    "player": "Isaiah Joe",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "DET",
    "flag": "",
    "change": "",
@@ -26370,7 +27865,7 @@
   {
    "rank": 223,
    "player": "Caleb Martin",
-   "pos": "SG/SF",
+   "pos": "SF,PF",
    "team": "DAL",
    "flag": "",
    "change": "",
@@ -26384,7 +27879,7 @@
   {
    "rank": 224,
    "player": "Sion James",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "CHA",
    "flag": "",
    "change": "",
@@ -26454,7 +27949,7 @@
   {
    "rank": 229,
    "player": "Gui Santos",
-   "pos": "SF/PF",
+   "pos": "SF,PF",
    "team": "GSW",
    "flag": "",
    "change": "",
@@ -26468,7 +27963,7 @@
   {
    "rank": 230,
    "player": "Taylor Hendricks",
-   "pos": "SF,PF",
+   "pos": "PF/C",
    "team": "MEM",
    "flag": "",
    "change": "",
@@ -26650,7 +28145,7 @@
   {
    "rank": 243,
    "player": "Trevon Brazile",
-   "pos": "PF/C",
+   "pos": "SF,PF",
    "team": "DEN",
    "flag": "",
    "change": "",
@@ -26678,7 +28173,7 @@
   {
    "rank": 245,
    "player": "Dylan Cardwell",
-   "pos": "C",
+   "pos": "PF/C",
    "team": "SAC",
    "flag": "",
    "change": "",
@@ -26692,7 +28187,7 @@
   {
    "rank": 246,
    "player": "Jabari Walker",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "PHI",
    "flag": "",
    "change": "",
@@ -26762,7 +28257,7 @@
   {
    "rank": 251,
    "player": "Corey Kispert",
-   "pos": "SF/PF",
+   "pos": "SF,PF",
    "team": "ATL",
    "flag": "",
    "change": "",
@@ -26776,7 +28271,7 @@
   {
    "rank": 252,
    "player": "Baylor Scheierman",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "BOS",
    "flag": "",
    "change": "",
@@ -26790,7 +28285,7 @@
   {
    "rank": 253,
    "player": "Luke Kennard",
-   "pos": "PG,SG",
+   "pos": "PG/SG",
    "team": "PHX",
    "flag": "",
    "change": "",
@@ -26804,7 +28299,7 @@
   {
    "rank": 254,
    "player": "Trey Lyles",
-   "pos": "SF,PF",
+   "pos": "PF/C",
    "team": "MIN",
    "flag": "",
    "change": "",
@@ -26832,7 +28327,7 @@
   {
    "rank": 256,
    "player": "Jamison Battle",
-   "pos": "SF,PF",
+   "pos": "SF",
    "team": "TOR",
    "flag": "",
    "change": "",
@@ -26860,7 +28355,7 @@
   {
    "rank": 258,
    "player": "Karlo Matkovic",
-   "pos": "SF,PF",
+   "pos": "C",
    "team": "NOP",
    "flag": "",
    "change": "",
@@ -26916,7 +28411,7 @@
   {
    "rank": 262,
    "player": "Ryan Conwell",
-   "pos": "PG/SG",
+   "pos": "PG,SG",
    "team": "MIA",
    "flag": "",
    "change": "",
@@ -26930,7 +28425,7 @@
   {
    "rank": 263,
    "player": "Tyler Kolek",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "NYK",
    "flag": "",
    "change": "",
@@ -26944,7 +28439,7 @@
   {
    "rank": 264,
    "player": "Javonte Green",
-   "pos": "PF",
+   "pos": "PG,SG",
    "team": "DET",
    "flag": "",
    "change": "",
@@ -26958,7 +28453,7 @@
   {
    "rank": 265,
    "player": "Jase Richardson",
-   "pos": "PG/SG",
+   "pos": "PG,SG",
    "team": "ORL",
    "flag": "",
    "change": "",
@@ -26972,7 +28467,7 @@
   {
    "rank": 266,
    "player": "Georges Niang",
-   "pos": "PF",
+   "pos": "SF,PF",
    "team": "GSW",
    "flag": "",
    "change": "",
@@ -26986,7 +28481,7 @@
   {
    "rank": 267,
    "player": "Ryan Dunn",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "PHX",
    "flag": "",
    "change": "",
@@ -27000,7 +28495,7 @@
   {
    "rank": 268,
    "player": "Will Richard",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "GSW",
    "flag": "",
    "change": "",
@@ -27014,7 +28509,7 @@
   {
    "rank": 269,
    "player": "Nate Ament",
-   "pos": "SF,PF",
+   "pos": "PF",
    "team": "MIL",
    "flag": "",
    "change": "",
@@ -27126,7 +28621,7 @@
   {
    "rank": 277,
    "player": "Keon Ellis",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "BKN",
    "flag": "",
    "change": "",
@@ -27168,7 +28663,7 @@
   {
    "rank": 280,
    "player": "Max Christie",
-   "pos": "SG",
+   "pos": "PG,SG",
    "team": "DAL",
    "flag": "",
    "change": "",
@@ -27280,7 +28775,7 @@
   {
    "rank": 288,
    "player": "Zuby Ejiofor",
-   "pos": "C",
+   "pos": "SF,PF",
    "team": "ATL",
    "flag": "",
    "change": "",
@@ -27294,7 +28789,7 @@
   {
    "rank": 289,
    "player": "LJ Cryer",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "GSW",
    "flag": "",
    "change": "",
@@ -27322,7 +28817,7 @@
   {
    "rank": 291,
    "player": "Tidjane Salaun",
-   "pos": "SF,PF",
+   "pos": "PF",
    "team": "CHA",
    "flag": "",
    "change": "",
@@ -27364,7 +28859,7 @@
   {
    "rank": 294,
    "player": "Graham Ike",
-   "pos": "C",
+   "pos": "SF,PF",
    "team": "GSW",
    "flag": "",
    "change": "",
@@ -27434,7 +28929,7 @@
   {
    "rank": 299,
    "player": "AJ Green",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "MIL",
    "flag": "",
    "change": "",
@@ -27448,7 +28943,7 @@
   {
    "rank": 300,
    "player": "Trayce Jackson-Davis",
-   "pos": "SF,PF",
+   "pos": "C",
    "team": "TOR",
    "flag": "",
    "change": "",
@@ -27504,7 +28999,7 @@
   {
    "rank": 304,
    "player": "Micah Peavy",
-   "pos": "SF",
+   "pos": "PG,SG",
    "team": "OKC",
    "flag": "",
    "change": "",
@@ -27518,7 +29013,7 @@
   {
    "rank": 305,
    "player": "Jamal Cain",
-   "pos": "SF/PF",
+   "pos": "SF,PF",
    "team": "ORL",
    "flag": "",
    "change": "",
@@ -27546,7 +29041,7 @@
   {
    "rank": 307,
    "player": "Jarred Vanderbilt",
-   "pos": "SF,PF",
+   "pos": "PF/C",
    "team": "LAL",
    "flag": "",
    "change": "",
@@ -27560,7 +29055,7 @@
   {
    "rank": 308,
    "player": "Olivier-Maxence Prosper",
-   "pos": "SF,PF",
+   "pos": "C",
    "team": "MEM",
    "flag": "",
    "change": "",
@@ -27574,7 +29069,7 @@
   {
    "rank": 309,
    "player": "Jordan Walsh",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "BOS",
    "flag": "",
    "change": "",
@@ -27616,7 +29111,7 @@
   {
    "rank": 312,
    "player": "Jevon Carter",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "ORL",
    "flag": "",
    "change": "",
@@ -27644,7 +29139,7 @@
   {
    "rank": 314,
    "player": "Alijah Martin",
-   "pos": "PG,SG",
+   "pos": "SG",
    "team": "TOR",
    "flag": "",
    "change": "",
@@ -27658,7 +29153,7 @@
   {
    "rank": 315,
    "player": "Hugo Gonzalez",
-   "pos": "SG",
+   "pos": "PG,SG",
    "team": "BOS",
    "flag": "",
    "change": "",
@@ -27700,7 +29195,7 @@
   {
    "rank": 318,
    "player": "Marcus Sasser",
-   "pos": "PG/SG",
+   "pos": "PG,SG",
    "team": "DAL",
    "flag": "",
    "change": "",
@@ -27714,7 +29209,7 @@
   {
    "rank": 319,
    "player": "Emanuel Sharp",
-   "pos": "PG,SG",
+   "pos": "PG/SG",
    "team": "SAC",
    "flag": "",
    "change": "",
@@ -27728,7 +29223,7 @@
   {
    "rank": 320,
    "player": "Jordan McLaughlin",
-   "pos": "PG,SG",
+   "pos": "PG/SG",
    "team": "SAS",
    "flag": "",
    "change": "",
@@ -27742,7 +29237,7 @@
   {
    "rank": 321,
    "player": "Gary Payton II",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "GSW",
    "flag": "",
    "change": "",
@@ -27770,7 +29265,7 @@
   {
    "rank": 323,
    "player": "Bogdan Bogdanovic",
-   "pos": "PG,SG",
+   "pos": "SG/SF",
    "team": "HOU",
    "flag": "",
    "change": "",
@@ -27798,7 +29293,7 @@
   {
    "rank": 325,
    "player": "Craig Porter Jr.",
-   "pos": "PG,SG",
+   "pos": "PG",
    "team": "CLE",
    "flag": "",
    "change": "",
@@ -27812,7 +29307,7 @@
   {
    "rank": 326,
    "player": "Spencer Jones",
-   "pos": "SG/SF",
+   "pos": "SF,PF",
    "team": "DEN",
    "flag": "",
    "change": "",
@@ -27868,7 +29363,7 @@
   {
    "rank": 330,
    "player": "Tim Hardaway Jr.",
-   "pos": "SG",
+   "pos": "PG,SG",
    "team": "MIA",
    "flag": "",
    "change": "",
@@ -27910,7 +29405,7 @@
   {
    "rank": 333,
    "player": "Jose Alvarado",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "NYK",
    "flag": "",
    "change": "",
@@ -27924,7 +29419,7 @@
   {
    "rank": 334,
    "player": "Harrison Barnes",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "SAS",
    "flag": "",
    "change": "",
@@ -27938,7 +29433,7 @@
   {
    "rank": 335,
    "player": "Baba Miller",
-   "pos": "SF,PF",
+   "pos": "C",
    "team": "LAC",
    "flag": "",
    "change": "",
@@ -27980,7 +29475,7 @@
   {
    "rank": 338,
    "player": "Josh Minott",
-   "pos": "SF,PF",
+   "pos": "PF/C",
    "team": "BKN",
    "flag": "",
    "change": "",
@@ -28022,7 +29517,7 @@
   {
    "rank": 341,
    "player": "Simone Fontecchio",
-   "pos": "SF/PF",
+   "pos": "SF,PF",
    "team": "MIA",
    "flag": "",
    "change": "",
@@ -28064,7 +29559,7 @@
   {
    "rank": 344,
    "player": "Gary Trent Jr.",
-   "pos": "PG,SG",
+   "pos": "SG",
    "team": "MIL",
    "flag": "",
    "change": "",
@@ -28120,7 +29615,7 @@
   {
    "rank": 348,
    "player": "Ousmane Dieng",
-   "pos": "SF,PF",
+   "pos": "PF/C",
    "team": "MIL",
    "flag": "",
    "change": "",
@@ -28162,7 +29657,7 @@
   {
    "rank": 351,
    "player": "Jayson Kent",
-   "pos": "PG,SG",
+   "pos": "PF",
    "team": "POR",
    "flag": "",
    "change": "",
@@ -28176,7 +29671,7 @@
   {
    "rank": 352,
    "player": "Jordan Hawkins",
-   "pos": "SG",
+   "pos": "PG,SG",
    "team": "CHI",
    "flag": "",
    "change": "",
@@ -28190,7 +29685,7 @@
   {
    "rank": 353,
    "player": "Carter Bryant",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "SAS",
    "flag": "",
    "change": "",
@@ -28204,7 +29699,7 @@
   {
    "rank": 354,
    "player": "Tyus Jones",
-   "pos": "PG",
+   "pos": "PG,SG",
    "team": "DEN",
    "flag": "",
    "change": "",
@@ -28232,7 +29727,7 @@
   {
    "rank": 356,
    "player": "Chris Cenac Jr.",
-   "pos": "C",
+   "pos": "SF,PF",
    "team": "BOS",
    "flag": "",
    "change": "",
@@ -28344,7 +29839,7 @@
   {
    "rank": 364,
    "player": "Kevon Looney",
-   "pos": "SF,PF",
+   "pos": "C",
    "team": "LAL",
    "flag": "",
    "change": "",
@@ -28358,7 +29853,7 @@
   {
    "rank": 365,
    "player": "Terance Mann",
-   "pos": "PG,SG",
+   "pos": "PG/SF",
    "team": "BKN",
    "flag": "",
    "change": "",
@@ -28372,7 +29867,7 @@
   {
    "rank": 366,
    "player": "Liam McNeeley",
-   "pos": "PG,SG",
+   "pos": "SG",
    "team": "CHA",
    "flag": "",
    "change": "",
@@ -28400,7 +29895,7 @@
   {
    "rank": 368,
    "player": "Dru Smith",
-   "pos": "SG",
+   "pos": "PG,SG",
    "team": "MIA",
    "flag": "",
    "change": "",
@@ -28470,7 +29965,7 @@
   {
    "rank": 373,
    "player": "Jahmai Mashack",
-   "pos": "PG,SG",
+   "pos": "PG/SG",
    "team": "MEM",
    "flag": "",
    "change": "",
@@ -28554,7 +30049,7 @@
   {
    "rank": 379,
    "player": "Ron Harper Jr.",
-   "pos": "SG/SF",
+   "pos": "PG,SG",
    "team": "BOS",
    "flag": "",
    "change": "",
@@ -28694,7 +30189,7 @@
   {
    "rank": 389,
    "player": "Alex Karaban",
-   "pos": "SF,PF",
+   "pos": "SF/PF",
    "team": "SAC",
    "flag": "",
    "change": "",
