@@ -1,10 +1,8 @@
 {
  "date": "2026-11-23",
- "updated": "3:53 PM ET",
+ "updated": "4:40 PM ET",
  "games": 10,
- "pending": [
-  "UTA"
- ],
+ "pending": [],
  "first_report": "5:26 AM",
  "cards": [
   {
@@ -367,16 +365,19 @@
     "UTA": {
      "out": [
       {
+       "player": "Lauri Markkanen",
+       "min": 34.7
+      },
+      {
        "player": "Jaren Jackson Jr.",
        "min": 25.3
-      }
-     ],
-     "q": [
+      },
       {
        "player": "Jaxson Hayes",
-       "min": 23.2
+       "min": 21.7
       }
-     ]
+     ],
+     "q": []
     },
     "LAL": {
      "out": [
@@ -388,7 +389,7 @@
      "q": []
     }
    },
-   "key": "Austin Reaves is out, so Quentin Grimes and Kevon Looney should play more than usual."
+   "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Brice Sensabaugh and Mohamed Bamba and Josh Okogie should play more than usual."
   },
   {
    "away": "SAS",
@@ -435,6 +436,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Jaxson Hayes",
+   "team": "UTA",
+   "status": "Out",
+   "was": "",
+   "why": "Left Knee Strain",
+   "time": "4:41 PM"
+  },
   {
    "player": "Ryan Dunn",
    "team": "PHX",
@@ -506,17 +515,30 @@
    "was": "Out",
    "why": "Right Ankle Sprain",
    "time": "12:55 PM"
-  },
-  {
-   "player": "Grant Nelson",
-   "team": "BKN",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Right Ankle Sprain",
-   "time": "12:55 PM"
   }
  ],
  "chg": [
+  {
+   "key": "Jaxson Hayes",
+   "team": "UTA",
+   "head": "Jaxson Hayes OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Brice Sensabaugh",
+     "salary": 5000,
+     "much": "+20.3 DK without him (3 games)"
+    },
+    {
+     "player": "Mohamed Bamba",
+     "salary": 5300,
+     "much": "+19.5 DK without him (3 games)"
+    }
+   ],
+   "time": "4:41 PM",
+   "size": 23.0
+  },
   {
    "key": "Joel Embiid",
    "team": "PHI",
@@ -619,6 +641,68 @@
   }
  ],
  "sits": [
+  {
+   "team": "UTA",
+   "outs": [
+    {
+     "player": "Lauri Markkanen",
+     "min": 34.7,
+     "note": "Lauri Markkanen (hand) was still out on Friday, Nov. 20, along with Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), which leaves Utah without its starting frontcourt.",
+     "new": false
+    },
+    {
+     "player": "Jaren Jackson Jr.",
+     "min": 25.3,
+     "note": "The show said Jaren Jackson Jr. is probably out at least another month; he has not played since October 26. The show said he will come back to a crowded Utah offense, with Darryn Peterson playing much better and Keyonte George taking a lot of shots.",
+     "new": false
+    },
+    {
+     "player": "Jaxson Hayes",
+     "min": 21.7,
+     "note": "Hayes started at center on Sunday, Nov. 22, but left in the second quarter with a knee injury after 12 minutes. He is questionable for Monday, Nov. 23, at the Lakers.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 81.7,
+   "benefits": [
+    {
+     "player": "Brice Sensabaugh",
+     "salary": 5000,
+     "why": "32 minutes, up from 16",
+     "much": "+31.4 DK without them (2 games)",
+     "score": 31.4,
+     "min": 22.5,
+     "dk": 22.6,
+     "avg": 19.1
+    },
+    {
+     "player": "Mohamed Bamba",
+     "salary": 5300,
+     "why": "started 2 of 2",
+     "much": "+21.5 DK without them (2 games)",
+     "score": 21.5,
+     "min": 28.1,
+     "dk": 27.5,
+     "avg": null
+    },
+    {
+     "player": "Josh Okogie",
+     "salary": 3600,
+     "why": "24 minutes, up from 18",
+     "much": "+10.7 DK without them (2 games)",
+     "score": 10.7,
+     "min": 17.8,
+     "dk": 11.6,
+     "avg": 11.8
+    }
+   ],
+   "split_of": [
+    "Lauri Markkanen",
+    "Jaren Jackson Jr.",
+    "Jaxson Hayes"
+   ]
+  },
   {
    "team": "IND",
    "outs": [
@@ -928,61 +1012,6 @@
     "RJ Barrett",
     "Kawhi Leonard"
    ]
-  },
-  {
-   "team": "CHI",
-   "outs": [
-    {
-     "player": "Norman Powell",
-     "min": 30.7,
-     "note": "Powell missed Sunday, Nov. 22, with a right hamstring strain, and Buddy Hield started in his place.",
-     "new": false
-    },
-    {
-     "player": "Caleb Wilson",
-     "min": 23.0,
-     "note": "Caleb Wilson missed his fifth straight game on Friday, Nov. 20, after surgery on his right hand on Nov. 12.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 53.7,
-   "benefits": [
-    {
-     "player": "Josh Giddey",
-     "salary": 7400,
-     "why": "41 minutes, up from 28",
-     "much": "+45.7 DK without them (1 game)",
-     "score": 45.7,
-     "min": 30.0,
-     "dk": 37.8,
-     "avg": 34.1
-    },
-    {
-     "player": "Buddy Hield",
-     "salary": 3800,
-     "why": "started that game",
-     "much": "+39.4 DK without them (1 game)",
-     "score": 39.4,
-     "min": 24.8,
-     "dk": 24.4,
-     "avg": 18.2
-    },
-    {
-     "player": "Jalen Smith",
-     "salary": 6000,
-     "why": "34 minutes, up from 25",
-     "much": "+12.2 DK without them (1 game)",
-     "score": 12.2,
-     "min": 27.5,
-     "dk": 34.8,
-     "avg": 31.7
-    }
-   ],
-   "split_of": [
-    "Norman Powell",
-    "Caleb Wilson"
-   ]
   }
  ],
  "hot": [
@@ -1095,18 +1124,18 @@
    "salary": 3400
   },
   {
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "own": 40.0,
+   "dk": 30.7,
+   "salary": 6400
+  },
+  {
    "player": "Brice Sensabaugh",
    "team": "UTA",
    "own": 40.0,
-   "dk": 18.9,
+   "dk": 22.6,
    "salary": 5000
-  },
-  {
-   "player": "Ziaire Williams",
-   "team": "LAL",
-   "own": 40.0,
-   "dk": 18.8,
-   "salary": 4200
   }
  ],
  "leverage": [
@@ -1152,7 +1181,7 @@
     "pts": 23.0,
     "reb": 14.0,
     "ast": 22.0,
-    "why": "Giddey played 41 minutes on 11/22 and posted 23 points, 14 rebounds and 22 assists while the Bulls were without Norman Powell and Nicolas Claxton."
+    "why": "Josh Giddey had a 22-assist triple-double in 41 minutes in an overtime game against Denver on 11/22 with Norman Powell and Caleb Wilson both out."
    },
    {
     "player": "Jamal Murray",
@@ -1190,7 +1219,7 @@
     "team": "CHI",
     "min": 40.0,
     "proj": 19.2,
-    "why": "Hield started on Sunday, Nov. 22, with Norman Powell (hamstring) and Caleb Wilson (fractured hand) out, and played 40 minutes in an overtime game after 19 and 23 off the bench before."
+    "why": "Buddy Hield moved into the starting lineup on 11/22 with Norman Powell out and played 40 minutes in an overtime game against Denver, after coming off the bench for 19 to 23 minutes in his prior games."
    },
    {
     "player": "Jarace Walker",
@@ -1223,11 +1252,9 @@
   ]
  },
  "injuries": {
-  "report": "03:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_03_45PM.pdf",
-  "pending": [
-   "UTA"
-  ],
+  "report": "04:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_04_30PM.pdf",
+  "pending": [],
   "rows": [
    {
     "last": {
@@ -1812,6 +1839,62 @@
     "salary": 3300,
     "min": 11.3,
     "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-22",
+     "dk": 12.2,
+     "min": 12,
+     "opp": "DAL",
+     "ha": "vs",
+     "res": "L",
+     "score": "116-114"
+    },
+    "game": "UTA at LAL",
+    "time": "2026-11-24T03:00Z",
+    "team": "UTA",
+    "player": "Jaxson Hayes",
+    "status": "Out",
+    "reason": "Left Knee Strain",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "4:41 PM",
+    "salary": 5200,
+    "min": 21.7,
+    "benefits": [
+     {
+      "player": "Brice Sensabaugh",
+      "salary": 5000,
+      "why": "25 minutes, up from 17",
+      "much": "+20.3 DK without him (3 games)",
+      "score": 20.3,
+      "min": 22.5,
+      "dk": 22.6,
+      "avg": 19.1
+     },
+     {
+      "player": "Mohamed Bamba",
+      "salary": 5300,
+      "why": "started 2 of 3",
+      "much": "+19.5 DK without him (3 games)",
+      "score": 19.5,
+      "min": 28.1,
+      "dk": 27.5,
+      "avg": null
+     },
+     {
+      "player": "Isaiah Collier",
+      "salary": 4100,
+      "why": "21 minutes, up from 15",
+      "much": "+12.9 DK without him (1 game)",
+      "score": 12.9,
+      "min": 20.1,
+      "dk": 21.0,
+      "avg": 16.9
+     }
+    ],
     "estimate": false
    },
    {
@@ -3453,6 +3536,62 @@
    },
    {
     "last": {
+     "date": "2026-11-06",
+     "dk": 38.5,
+     "min": 34,
+     "opp": "DAL",
+     "ha": "@",
+     "res": "L",
+     "score": "112-100"
+    },
+    "game": "UTA at LAL",
+    "time": "2026-11-24T03:00Z",
+    "team": "UTA",
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "reason": "Right Hand Fracture",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 7400,
+    "min": 34.7,
+    "benefits": [
+     {
+      "player": "Brice Sensabaugh",
+      "salary": 5000,
+      "why": "22 minutes, up from 14",
+      "much": "+10.8 DK without him (10 games)",
+      "score": 10.8,
+      "min": 22.5,
+      "dk": 22.6,
+      "avg": 19.1
+     },
+     {
+      "player": "Svi Mykhailiuk",
+      "salary": 3500,
+      "why": "22 minutes, up from 16",
+      "much": "+8.6 DK without him (10 games)",
+      "score": 8.6,
+      "min": 26.8,
+      "dk": 19.4,
+      "avg": 14.0
+     },
+     {
+      "player": "Kyle Filipowski",
+      "salary": 3700,
+      "why": "same minutes, more production",
+      "much": "+5.9 DK without him (5 games)",
+      "score": 5.9,
+      "min": 15.0,
+      "dk": 13.4,
+      "avg": 6.2
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-11",
      "dk": 35.2,
      "min": 25,
@@ -3542,6 +3681,62 @@
      }
     ],
     "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-10-26",
+     "dk": 12.8,
+     "min": 10,
+     "opp": "MEM",
+     "ha": "vs",
+     "res": "L",
+     "score": "110-105"
+    },
+    "game": "UTA at LAL",
+    "time": "2026-11-24T03:00Z",
+    "team": "UTA",
+    "player": "Jaren Jackson Jr.",
+    "status": "Out",
+    "reason": "Right MCL Tear",
+    "new": false,
+    "was": "",
+    "known": true,
+    "changed_at": "",
+    "salary": 6600,
+    "min": 25.3,
+    "benefits": [
+     {
+      "player": "Darryn Peterson",
+      "salary": 7600,
+      "why": "same minutes, more production",
+      "much": "+10.2 DK without him (14 games)",
+      "score": 10.2,
+      "min": 31.6,
+      "dk": 33.1,
+      "avg": 31.2
+     },
+     {
+      "player": "Josh Okogie",
+      "salary": 3600,
+      "why": "20 minutes, up from 13",
+      "much": "+8.8 DK without him (14 games)",
+      "score": 8.8,
+      "min": 17.8,
+      "dk": 11.6,
+      "avg": 11.8
+     },
+     {
+      "player": "Brice Sensabaugh",
+      "salary": 5000,
+      "why": "19 minutes, up from 14",
+      "much": "+7.0 DK without him (14 games)",
+      "score": 7.0,
+      "min": 22.5,
+      "dk": 22.6,
+      "avg": 19.1
+     }
+    ],
+    "estimate": false
    }
   ],
   "minor": [
@@ -3623,6 +3818,11 @@
    {
     "player": "Ben Simmons",
     "team": "SAC",
+    "status": "Out"
+   },
+   {
+    "player": "Jusuf Nurkic",
+    "team": "UTA",
     "status": "Out"
    }
   ]
