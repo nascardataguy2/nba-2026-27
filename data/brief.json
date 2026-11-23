@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updated": "6:03 PM ET",
+ "updated": "6:17 PM ET",
  "games": 10,
  "pending": [],
  "first_report": "5:26 AM",
@@ -437,6 +437,30 @@
  ],
  "changed": [
   {
+   "player": "Jaden Bradley",
+   "team": "TOR",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Ankle Sprain",
+   "time": "6:19 PM"
+  },
+  {
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Left Hamstring Strain",
+   "time": "6:19 PM"
+  },
+  {
+   "player": "Adem Bona",
+   "team": "PHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Cervical Spine Sprain",
+   "time": "6:19 PM"
+  },
+  {
    "player": "Collin Murray-Boyles",
    "team": "TOR",
    "status": "Available",
@@ -490,30 +514,6 @@
    "status": "Available",
    "was": "Probable",
    "why": "",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Bryce McGowens",
-   "team": "NOP",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Left Elbow Infection",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Jalen Smith",
-   "team": "CHI",
-   "status": "Probable",
-   "was": "Available",
-   "why": "Gastrointestinal Illness",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Nic Claxton",
-   "team": "CHI",
-   "status": "Questionable",
-   "was": "Out",
-   "why": "Illness",
    "time": "1:55 PM"
   }
  ],
@@ -673,7 +673,7 @@
      "much": "+31.4 DK without them (2 games)",
      "score": 31.4,
      "min": 22.8,
-     "dk": 22.9,
+     "dk": 23.1,
      "avg": 19.1
     },
     {
@@ -683,7 +683,7 @@
      "much": "+21.5 DK without them (2 games)",
      "score": 21.5,
      "min": 28.2,
-     "dk": 28.5,
+     "dk": 29.3,
      "avg": null
     },
     {
@@ -755,7 +755,7 @@
      "much": "+23.8 DK without them (1 game)",
      "score": 23.8,
      "min": 22.5,
-     "dk": 22.1,
+     "dk": 22.0,
      "avg": 20.9
     }
    ],
@@ -784,8 +784,8 @@
      "why": "started 1 of 2",
      "much": "+16.6 DK without him (2 games)",
      "score": 16.6,
-     "min": 17.3,
-     "dk": 12.8,
+     "min": 18.2,
+     "dk": 14.1,
      "avg": 10.6
     },
     {
@@ -794,8 +794,8 @@
      "why": "started 2 of 3",
      "much": "+13.7 DK without him (3 games)",
      "score": 13.7,
-     "min": 26.2,
-     "dk": 16.1,
+     "min": 26.8,
+     "dk": 16.8,
      "avg": 17.0
     },
     {
@@ -804,8 +804,8 @@
      "why": "same minutes, more production",
      "much": "+8.5 DK without him (3 games)",
      "score": 8.5,
-     "min": 32.1,
-     "dk": 37.1,
+     "min": 31.4,
+     "dk": 37.3,
      "avg": 42.5
     }
    ],
@@ -853,7 +853,7 @@
      "much": "+11.0 DK without him (1 game)",
      "score": 11.0,
      "min": 17.7,
-     "dk": 12.2,
+     "dk": 12.1,
      "avg": 12.8
     }
    ],
@@ -911,7 +911,7 @@
      "much": "+21.3 DK without them (1 game)",
      "score": 21.3,
      "min": 27.3,
-     "dk": 23.7,
+     "dk": 23.8,
      "avg": 14.7
     },
     {
@@ -986,7 +986,7 @@
      "much": "+11.6 DK without them (1 game)",
      "score": 11.6,
      "min": 26.0,
-     "dk": 30.1,
+     "dk": 30.0,
      "avg": 21.8
     },
     {
@@ -1120,24 +1120,31 @@
    "player": "Brice Sensabaugh",
    "team": "UTA",
    "own": 40.0,
-   "dk": 22.9,
+   "dk": 23.1,
    "salary": 5000
   },
   {
-   "player": "Ziaire Williams",
-   "team": "LAL",
+   "player": "Keldon Johnson",
+   "team": "SAS",
    "own": 40.0,
-   "dk": 19.2,
-   "salary": 4200
+   "dk": 21.9,
+   "salary": 5100
   }
  ],
  "leverage": [
   {
    "player": "Isaiah Hartenstein",
    "team": "OKC",
-   "own": 3.0,
+   "own": 2.9,
    "dk": 45.4,
    "salary": 7000
+  },
+  {
+   "player": "Taylor Hendricks",
+   "team": "MEM",
+   "own": 0.7,
+   "dk": 27.1,
+   "salary": 4300
   },
   {
    "player": "Jarace Walker",
@@ -1145,13 +1152,6 @@
    "own": 0.5,
    "dk": 21.7,
    "salary": 3500
-  },
-  {
-   "player": "Taylor Hendricks",
-   "team": "MEM",
-   "own": 1.3,
-   "dk": 26.2,
-   "salary": 4300
   }
  ],
  "last": {
@@ -1245,8 +1245,8 @@
   ]
  },
  "injuries": {
-  "report": "06:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_00PM.pdf",
+  "report": "06:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1278,8 +1278,8 @@
       "why": "started 1 of 2",
       "much": "+16.6 DK without him (2 games)",
       "score": 16.6,
-      "min": 17.3,
-      "dk": 12.8,
+      "min": 18.2,
+      "dk": 14.1,
       "avg": 10.6
      },
      {
@@ -1288,8 +1288,8 @@
       "why": "started 2 of 3",
       "much": "+13.7 DK without him (3 games)",
       "score": 13.7,
-      "min": 26.2,
-      "dk": 16.1,
+      "min": 26.8,
+      "dk": 16.8,
       "avg": 17.0
      },
      {
@@ -1298,36 +1298,11 @@
       "why": "same minutes, more production",
       "much": "+8.5 DK without him (3 games)",
       "score": 8.5,
-      "min": 32.1,
-      "dk": 37.1,
+      "min": 31.4,
+      "dk": 37.3,
       "avg": 42.5
      }
     ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-16",
-     "dk": 59.8,
-     "min": 33,
-     "opp": "BKN",
-     "ha": "@",
-     "res": "W",
-     "score": "135-123"
-    },
-    "game": "POR at PHI",
-    "time": "2026-11-24T00:00Z",
-    "team": "PHI",
-    "player": "Jaylen Brown",
-    "status": "Probable",
-    "reason": "Left Hamstring Strain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 8100,
-    "min": 33.7,
-    "benefits": [],
     "estimate": false
    },
    {
@@ -1357,26 +1332,26 @@
    },
    {
     "last": {
-     "date": "2026-11-04",
-     "dk": 11.0,
-     "min": 15,
-     "opp": "DET",
+     "date": "2026-11-16",
+     "dk": 59.8,
+     "min": 33,
+     "opp": "BKN",
      "ha": "@",
      "res": "W",
-     "score": "112-106"
+     "score": "135-123"
     },
     "game": "POR at PHI",
     "time": "2026-11-24T00:00Z",
     "team": "PHI",
-    "player": "Adem Bona",
-    "status": "Probable",
-    "reason": "Cervical Spine Sprain",
+    "player": "Jaylen Brown",
+    "status": "Available",
+    "reason": "Left Hamstring Strain",
     "new": true,
-    "was": "Out",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
-    "salary": 3400,
-    "min": 17.0,
+    "changed_at": "6:19 PM",
+    "salary": 8100,
+    "min": 33.7,
     "benefits": [],
     "estimate": false
    },
@@ -1402,6 +1377,31 @@
     "changed_at": "5:19 PM",
     "salary": 7200,
     "min": 29.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-04",
+     "dk": 11.0,
+     "min": 15,
+     "opp": "DET",
+     "ha": "@",
+     "res": "W",
+     "score": "112-106"
+    },
+    "game": "POR at PHI",
+    "time": "2026-11-24T00:00Z",
+    "team": "PHI",
+    "player": "Adem Bona",
+    "status": "Available",
+    "reason": "Cervical Spine Sprain",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "6:19 PM",
+    "salary": 3400,
+    "min": 17.0,
     "benefits": [],
     "estimate": false
    },
@@ -1511,7 +1511,7 @@
       "much": "+11.0 DK without him (1 game)",
       "score": 11.0,
       "min": 17.7,
-      "dk": 12.2,
+      "dk": 12.1,
       "avg": 12.8
      }
     ],
@@ -1567,7 +1567,7 @@
       "much": "+23.8 DK without him (1 game)",
       "score": 23.8,
       "min": 22.5,
-      "dk": 22.1,
+      "dk": 22.0,
       "avg": 20.9
      }
     ],
@@ -1839,7 +1839,7 @@
       "much": "+20.3 DK without him (3 games)",
       "score": 20.3,
       "min": 22.8,
-      "dk": 22.9,
+      "dk": 23.1,
       "avg": 19.1
      },
      {
@@ -1849,7 +1849,7 @@
       "much": "+19.5 DK without him (3 games)",
       "score": 19.5,
       "min": 28.2,
-      "dk": 28.5,
+      "dk": 29.3,
       "avg": null
      },
      {
@@ -1859,7 +1859,7 @@
       "much": "+12.9 DK without him (1 game)",
       "score": 12.9,
       "min": 22.8,
-      "dk": 23.9,
+      "dk": 24.0,
       "avg": 16.9
      }
     ],
@@ -1892,10 +1892,10 @@
       "player": "Luke Kornet",
       "salary": 3100,
       "why": "subs in for him 53 of 70 times",
-      "much": "about +20.7 DK",
-      "score": 20.71184210526316,
+      "much": "about +20.9 DK",
+      "score": 20.876221804511275,
       "min": 15.2,
-      "dk": 12.6,
+      "dk": 12.7,
       "avg": 10.8
      }
     ],
@@ -2013,7 +2013,7 @@
       "much": "+14.8 DK without him (2 games)",
       "score": 14.8,
       "min": 26.0,
-      "dk": 30.1,
+      "dk": 30.0,
       "avg": 21.8
      },
      {
@@ -2023,7 +2023,7 @@
       "much": "+8.4 DK without him (2 games)",
       "score": 8.4,
       "min": 36.3,
-      "dk": 43.5,
+      "dk": 43.6,
       "avg": 34.8
      },
      {
@@ -2069,7 +2069,7 @@
       "much": "+7.0 DK without him (1 game)",
       "score": 7.0,
       "min": 29.1,
-      "dk": 40.5,
+      "dk": 39.9,
       "avg": 35.2
      },
      {
@@ -2078,8 +2078,8 @@
       "why": "23 minutes, up from 10",
       "much": "+6.3 DK without him (1 game)",
       "score": 6.3,
-      "min": 5.4,
-      "dk": 4.1,
+      "min": 4.3,
+      "dk": 3.3,
       "avg": 10.3
      }
     ],
@@ -2115,7 +2115,7 @@
       "much": "+6.8 DK without him (12 games)",
       "score": 6.8,
       "min": 27.2,
-      "dk": 34.8,
+      "dk": 35.0,
       "avg": 33.9
      }
     ],
@@ -2151,7 +2151,7 @@
       "much": "+12.6 DK without him (6 games)",
       "score": 12.6,
       "min": 26.0,
-      "dk": 30.1,
+      "dk": 30.0,
       "avg": 21.8
      },
      {
@@ -2217,7 +2217,7 @@
       "much": "+7.3 DK without him (11 games)",
       "score": 7.3,
       "min": 33.2,
-      "dk": 40.9,
+      "dk": 40.8,
       "avg": 33.2
      }
     ],
@@ -2253,7 +2253,7 @@
       "much": "+5.8 DK without him (8 games)",
       "score": 5.8,
       "min": 33.5,
-      "dk": 44.7,
+      "dk": 45.1,
       "avg": 43.6
      },
      {
@@ -2263,7 +2263,7 @@
       "much": "+5.5 DK without him (10 games)",
       "score": 5.5,
       "min": 28.7,
-      "dk": 28.8,
+      "dk": 29.1,
       "avg": 28.4
      }
     ],
@@ -2299,7 +2299,7 @@
       "much": "+14.8 DK without him (2 games)",
       "score": 14.8,
       "min": 29.1,
-      "dk": 40.5,
+      "dk": 39.9,
       "avg": 35.2
      },
      {
@@ -2318,8 +2318,8 @@
       "why": "28 minutes, up from 12",
       "much": "+10.4 DK without him (2 games)",
       "score": 10.4,
-      "min": 22.3,
-      "dk": 26.2,
+      "min": 23.3,
+      "dk": 27.1,
       "avg": 16.1
      }
     ],
@@ -2354,8 +2354,8 @@
       "why": "17 minutes, up from 5",
       "much": "+17.8 DK without him (10 games)",
       "score": 17.8,
-      "min": 22.3,
-      "dk": 26.2,
+      "min": 23.3,
+      "dk": 27.1,
       "avg": 16.1
      },
      {
@@ -2365,7 +2365,7 @@
       "much": "+8.0 DK without him (12 games)",
       "score": 8.0,
       "min": 27.2,
-      "dk": 34.8,
+      "dk": 34.2,
       "avg": 25.9
      }
     ],
@@ -2400,8 +2400,8 @@
       "why": "18 minutes, up from 6",
       "much": "+6.4 DK without him (5 games)",
       "score": 6.4,
-      "min": 5.4,
-      "dk": 4.1,
+      "min": 4.3,
+      "dk": 3.3,
       "avg": 10.3
      },
      {
@@ -2454,10 +2454,10 @@
       "player": "Robert Williams",
       "salary": 4200,
       "why": "projected 16 minutes tonight",
-      "much": "+3.0 DK projected vs. last 3",
-      "score": 3.0,
+      "much": "+3.2 DK projected vs. last 3",
+      "score": 3.1999999999999993,
       "min": 16.0,
-      "dk": 19.0,
+      "dk": 19.2,
       "avg": 19.2
      }
     ],
@@ -2493,7 +2493,7 @@
       "much": "+19.6 DK without him (2 games)",
       "score": 19.6,
       "min": 26.2,
-      "dk": 22.6,
+      "dk": 22.7,
       "avg": 13.3
      },
      {
@@ -2549,7 +2549,7 @@
       "much": "+12.7 DK without him (13 games)",
       "score": 12.7,
       "min": 14.9,
-      "dk": 17.7,
+      "dk": 17.5,
       "avg": null
      },
      {
@@ -2559,7 +2559,7 @@
       "much": "+9.4 DK without him (13 games)",
       "score": 9.4,
       "min": 34.0,
-      "dk": 34.3,
+      "dk": 34.4,
       "avg": 31.9
      },
      {
@@ -2569,7 +2569,7 @@
       "much": "+6.4 DK without him (13 games)",
       "score": 6.4,
       "min": 30.6,
-      "dk": 40.5,
+      "dk": 40.4,
       "avg": 34.9
      }
     ],
@@ -2605,7 +2605,7 @@
       "much": "+7.8 DK without him (13 games)",
       "score": 7.8,
       "min": 22.5,
-      "dk": 22.1,
+      "dk": 22.0,
       "avg": 20.9
      },
      {
@@ -2651,7 +2651,7 @@
       "much": "+15.7 DK without him (14 games)",
       "score": 15.7,
       "min": 27.3,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 14.7
      },
      {
@@ -2661,7 +2661,7 @@
       "much": "+13.5 DK without him (14 games)",
       "score": 13.5,
       "min": 24.8,
-      "dk": 22.7,
+      "dk": 22.5,
       "avg": 16.8
      },
      {
@@ -2707,7 +2707,7 @@
       "much": "+15.7 DK without him (14 games)",
       "score": 15.7,
       "min": 27.3,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 14.7
      },
      {
@@ -2717,7 +2717,7 @@
       "much": "+13.5 DK without him (14 games)",
       "score": 13.5,
       "min": 24.8,
-      "dk": 22.7,
+      "dk": 22.5,
       "avg": 16.8
      },
      {
@@ -2763,7 +2763,7 @@
       "much": "+21.3 DK without him (1 game)",
       "score": 21.3,
       "min": 27.3,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 14.7
      },
      {
@@ -2829,7 +2829,7 @@
       "much": "+9.4 DK without him (14 games)",
       "score": 9.4,
       "min": 24.0,
-      "dk": 22.8,
+      "dk": 22.9,
       "avg": 21.5
      },
      {
@@ -2839,7 +2839,7 @@
       "much": "+6.7 DK without him (9 games)",
       "score": 6.7,
       "min": 15.0,
-      "dk": 18.0,
+      "dk": 18.1,
       "avg": 10.6
      }
     ],
@@ -2875,7 +2875,7 @@
       "much": "+9.1 DK without him (5 games)",
       "score": 9.1,
       "min": 27.3,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 14.7
      },
      {
@@ -2931,7 +2931,7 @@
       "much": "+15.7 DK without him (14 games)",
       "score": 15.7,
       "min": 27.3,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 14.7
      },
      {
@@ -2941,7 +2941,7 @@
       "much": "+13.5 DK without him (14 games)",
       "score": 13.5,
       "min": 24.8,
-      "dk": 22.7,
+      "dk": 22.5,
       "avg": 16.8
      },
      {
@@ -2987,7 +2987,7 @@
       "much": "+7.6 DK without him (7 games)",
       "score": 7.6,
       "min": 19.9,
-      "dk": 20.1,
+      "dk": 20.0,
       "avg": 19.6
      },
      {
@@ -3053,7 +3053,7 @@
       "much": "+8.7 DK without him (8 games)",
       "score": 8.7,
       "min": 27.3,
-      "dk": 23.7,
+      "dk": 23.8,
       "avg": 14.7
      },
      {
@@ -3099,7 +3099,7 @@
       "much": "+9.9 DK without him (5 games)",
       "score": 9.9,
       "min": 25.7,
-      "dk": 24.8,
+      "dk": 24.6,
       "avg": 22.6
      }
     ],
@@ -3142,10 +3142,10 @@
       "player": "Quenton Jackson",
       "salary": 4500,
       "why": "subs in for him 1 of 3 times",
-      "much": "+5.0 DK projected vs. last 3",
-      "score": 5.016666666666669,
+      "much": "+4.9 DK projected vs. last 3",
+      "score": 4.916666666666668,
       "min": 22.5,
-      "dk": 22.1,
+      "dk": 22.0,
       "avg": 20.9
      }
     ],
@@ -3226,7 +3226,7 @@
       "much": "+9.3 DK without him (3 games)",
       "score": 9.3,
       "min": 27.5,
-      "dk": 34.8,
+      "dk": 34.9,
       "avg": 31.7
      }
     ],
@@ -3272,7 +3272,7 @@
       "much": "+13.6 DK without him (4 games)",
       "score": 13.6,
       "min": 30.6,
-      "dk": 35.0,
+      "dk": 34.9,
       "avg": 36.7
      },
      {
@@ -3447,10 +3447,10 @@
       "player": "Yves Missi",
       "salary": 5600,
       "why": "projected 22 minutes tonight",
-      "much": "+3.3 DK projected vs. last 3",
-      "score": 3.3000000000000007,
+      "much": "+3.4 DK projected vs. last 3",
+      "score": 3.3999999999999986,
       "min": 22.4,
-      "dk": 22.8,
+      "dk": 22.9,
       "avg": 24.4
      }
     ],
@@ -3532,7 +3532,7 @@
       "much": "+10.8 DK without him (10 games)",
       "score": 10.8,
       "min": 22.8,
-      "dk": 22.9,
+      "dk": 23.1,
       "avg": 19.1
      },
      {
@@ -3542,7 +3542,7 @@
       "much": "+8.6 DK without him (10 games)",
       "score": 8.6,
       "min": 25.5,
-      "dk": 18.3,
+      "dk": 18.5,
       "avg": 14.0
      },
      {
@@ -3552,7 +3552,7 @@
       "much": "+5.9 DK without him (5 games)",
       "score": 5.9,
       "min": 15.0,
-      "dk": 13.4,
+      "dk": 13.6,
       "avg": 6.2
      }
     ],
@@ -3588,7 +3588,7 @@
       "much": "+24.5 DK without him (4 games)",
       "score": 24.5,
       "min": 36.0,
-      "dk": 31.7,
+      "dk": 31.6,
       "avg": 23.4
      },
      {
@@ -3641,10 +3641,10 @@
       "player": "Carter Bryant",
       "salary": 3200,
       "why": "first off bench, 13 minutes (11/19)",
-      "much": "+3.1 DK projected vs. last 3",
-      "score": 3.1333333333333337,
+      "much": "+3.0 DK projected vs. last 3",
+      "score": 3.0333333333333323,
       "min": 13.5,
-      "dk": 9.3,
+      "dk": 9.2,
       "avg": 6.9
      }
     ],
@@ -3680,7 +3680,7 @@
       "much": "+10.2 DK without him (14 games)",
       "score": 10.2,
       "min": 29.8,
-      "dk": 31.0,
+      "dk": 31.2,
       "avg": 31.2
      },
      {
@@ -3700,7 +3700,7 @@
       "much": "+7.0 DK without him (14 games)",
       "score": 7.0,
       "min": 22.8,
-      "dk": 22.9,
+      "dk": 23.1,
       "avg": 19.1
      }
     ],
@@ -3711,7 +3711,7 @@
    {
     "player": "Jaden Bradley",
     "team": "TOR",
-    "status": "Probable"
+    "status": "Available"
    },
    {
     "player": "Grant Nelson",
