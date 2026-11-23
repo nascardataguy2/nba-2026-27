@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updated": "7:17 PM ET",
+ "updated": "7:32 PM ET",
  "games": 7,
  "pending": [],
  "first_report": "5:35 AM",
@@ -238,12 +238,7 @@
        "min": 12.0
       }
      ],
-     "q": [
-      {
-       "player": "Pascal Siakam",
-       "min": 30.0
-      }
-     ]
+     "q": []
     },
     "NYK": {
      "out": [
@@ -252,12 +247,7 @@
        "min": 38.7
       }
      ],
-     "q": [
-      {
-       "player": "Karl-Anthony Towns",
-       "min": 41.2
-      }
-     ]
+     "q": []
     }
    },
    "key": "Tyrese Haliburton and T.J. McConnell are out, so Quenton Jackson and Jarace Walker and Andrew Nembhard should play more than usual."
@@ -308,6 +298,22 @@
   }
  ],
  "changed": [
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "7:33 PM"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "7:33 PM"
+  },
   {
    "player": "Miles McBride",
    "team": "NYK",
@@ -371,22 +377,6 @@
    "was": "Probable",
    "why": "-",
    "time": "5:03 PM"
-  },
-  {
-   "player": "Jaylin Sellers",
-   "team": "CHI",
-   "status": "Available",
-   "was": "Out",
-   "why": "-",
-   "time": "5:03 PM"
-  },
-  {
-   "player": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Right Groin tendinitis",
-   "time": "5:03 PM"
   }
  ],
  "chg": [
@@ -412,6 +402,27 @@
    "size": 56.5
   },
   {
+   "key": "NYK",
+   "team": "NYK",
+   "head": "Towns CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Andre Drummond",
+     "salary": 4500,
+     "much": "+16.6 DK without Towns"
+    },
+    {
+     "player": "James Wiseman",
+     "salary": 3000,
+     "much": "+15.1 DK without Towns"
+    }
+   ],
+   "time": "7:33 PM",
+   "size": 48.5
+  },
+  {
    "key": "Shai Gilgeous-Alexander",
    "team": "OKC",
    "head": "Shai Gilgeous-Alexander OUT",
@@ -426,6 +437,27 @@
    ],
    "time": "4:42 PM",
    "size": 47.2
+  },
+  {
+   "key": "IND",
+   "team": "IND",
+   "head": "Siakam CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Jalen Slawson",
+     "salary": 3300,
+     "much": "+26.6 DK without Siakam"
+    },
+    {
+     "player": "Jay Huff",
+     "salary": 3200,
+     "much": "+25.3 DK without Siakam"
+    }
+   ],
+   "time": "7:33 PM",
+   "size": 38.7
   },
   {
    "key": "Paul George",
@@ -526,27 +558,6 @@
    ],
    "time": "5:34 PM",
    "size": 24.7
-  },
-  {
-   "key": "Karl-Anthony Towns",
-   "team": "NYK",
-   "head": "Karl-Anthony Towns QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Andre Drummond",
-     "salary": 4500,
-     "much": "+16.6 DK without him (1 game)"
-    },
-    {
-     "player": "James Wiseman",
-     "salary": 3000,
-     "much": "+15.1 DK without him (1 game)"
-    }
-   ],
-   "time": "1:55 PM",
-   "size": 24.2
   },
   {
    "key": "Nic Claxton",
@@ -1073,14 +1084,14 @@
   {
    "player": "Landry Shamet",
    "team": "NYK",
-   "own": 1.0,
+   "own": 1.2,
    "dk": 24.8,
    "salary": 4600
   },
   {
    "player": "Payton Pritchard",
    "team": "BOS",
-   "own": 6.5,
+   "own": 6.7,
    "dk": 32.3,
    "salary": 6300
   },
@@ -1181,8 +1192,8 @@
   ]
  },
  "injuries": {
-  "report": "07:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_07_15PM.pdf",
+  "report": "07:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_07_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1802,46 +1813,15 @@
     "time": "2026-11-23T01:00Z",
     "team": "NYK",
     "player": "Karl-Anthony Towns",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "1:55 PM",
+    "changed_at": "7:33 PM",
     "salary": 9600,
     "min": 37.3,
-    "benefits": [
-     {
-      "player": "Andre Drummond",
-      "salary": 4500,
-      "why": "started that game",
-      "much": "+16.6 DK without him (1 game)",
-      "score": 16.6,
-      "min": 20.0,
-      "dk": 25.1,
-      "avg": 16.7
-     },
-     {
-      "player": "James Wiseman",
-      "salary": 3000,
-      "why": "25 minutes, up from 5",
-      "much": "+15.1 DK without him (1 game)",
-      "score": 15.1,
-      "min": 7.6,
-      "dk": 6.5,
-      "avg": 8.0
-     },
-     {
-      "player": "Landry Shamet",
-      "salary": 4600,
-      "why": "started that game",
-      "much": "+11.8 DK without him (1 game)",
-      "score": 11.8,
-      "min": 34.6,
-      "dk": 24.8,
-      "avg": 17.7
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1858,46 +1838,15 @@
     "time": "2026-11-23T01:00Z",
     "team": "IND",
     "player": "Pascal Siakam",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "7:33 PM",
     "salary": 8200,
     "min": 32.3,
-    "benefits": [
-     {
-      "player": "Jalen Slawson",
-      "salary": 3300,
-      "why": "started that game",
-      "much": "+26.6 DK without him (1 game)",
-      "score": 26.6,
-      "min": 15.3,
-      "dk": 13.6,
-      "avg": 12.5
-     },
-     {
-      "player": "Jay Huff",
-      "salary": 3200,
-      "why": "started that game",
-      "much": "+25.3 DK without him (1 game)",
-      "score": 25.3,
-      "min": 16.5,
-      "dk": 15.0,
-      "avg": 13.5
-     },
-     {
-      "player": "Quenton Jackson",
-      "salary": 5000,
-      "why": "started that game",
-      "much": "+23.3 DK without him (1 game)",
-      "score": 23.3,
-      "min": 20.8,
-      "dk": 20.3,
-      "avg": 21.4
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
