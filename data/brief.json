@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updated": "6:17 PM ET",
+ "updated": "6:32 PM ET",
  "games": 10,
  "pending": [],
  "first_report": "5:26 AM",
@@ -437,6 +437,14 @@
  ],
  "changed": [
   {
+   "player": "Dean Wade",
+   "team": "PHI",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "6:34 PM"
+  },
+  {
    "player": "Jaden Bradley",
    "team": "TOR",
    "status": "Available",
@@ -507,14 +515,6 @@
    "was": "Questionable",
    "why": "Right Quad Soreness",
    "time": "2:55 PM"
-  },
-  {
-   "player": "Trey Murphy III",
-   "team": "NOP",
-   "status": "Available",
-   "was": "Probable",
-   "why": "",
-   "time": "1:55 PM"
   }
  ],
  "chg": [
@@ -1135,14 +1135,14 @@
   {
    "player": "Isaiah Hartenstein",
    "team": "OKC",
-   "own": 2.9,
+   "own": 3.3,
    "dk": 45.4,
    "salary": 7000
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 0.7,
+   "own": 0.5,
    "dk": 27.1,
    "salary": 4300
   },
@@ -1245,8 +1245,8 @@
   ]
  },
  "injuries": {
-  "report": "06:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_15PM.pdf",
+  "report": "06:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1308,31 +1308,6 @@
    {
     "last": {
      "date": "2026-11-16",
-     "dk": 29.8,
-     "min": 32,
-     "opp": "BKN",
-     "ha": "@",
-     "res": "W",
-     "score": "135-123"
-    },
-    "game": "POR at PHI",
-    "time": "2026-11-24T00:00Z",
-    "team": "PHI",
-    "player": "Dean Wade",
-    "status": "Probable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 4100,
-    "min": 33.7,
-    "benefits": [],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-16",
      "dk": 59.8,
      "min": 33,
      "opp": "BKN",
@@ -1351,6 +1326,31 @@
     "known": true,
     "changed_at": "6:19 PM",
     "salary": 8100,
+    "min": 33.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-16",
+     "dk": 29.8,
+     "min": 32,
+     "opp": "BKN",
+     "ha": "@",
+     "res": "W",
+     "score": "135-123"
+    },
+    "game": "POR at PHI",
+    "time": "2026-11-24T00:00Z",
+    "team": "PHI",
+    "player": "Dean Wade",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Probable",
+    "known": true,
+    "changed_at": "6:34 PM",
+    "salary": 4100,
     "min": 33.7,
     "benefits": [],
     "estimate": false
