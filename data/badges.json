@@ -1,59 +1,57 @@
 {
  "season": "2026-27",
- "updated": "2026-11-16",
- "through": "2026-11-15",
- "rule": "Gold = top 10, silver = 11-30, minimum 5 games, games through 2026-11-15",
+ "updated": "2026-11-23",
+ "through": "2026-11-22",
+ "rule": "Gold = top 10, silver = 11-30, minimum 5 games, games through 2026-11-22",
  "players": [
   {
    "player": "Paul George",
    "last_team": "BOS",
    "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 29.6,
-   "usg": 28.7,
-   "threes": 3.5,
-   "reb": 5.4,
-   "ast": 4.0,
-   "stocks": 2.5,
-   "pts": 20.6,
-   "dk": 38.6,
+   "g": 14,
+   "gs": 14,
+   "min": 30.1,
+   "usg": 27.8,
+   "threes": 3.3,
+   "reb": 5.6,
+   "ast": 3.8,
+   "stocks": 2.6,
+   "pts": 19.9,
+   "dk": 38.2,
    "badges": {
-    "usage": "silver",
     "threes": "gold",
-    "stocks": "silver"
+    "stocks": "gold"
    },
    "ranks": {
-    "usage": 27,
     "threes": 10,
-    "stocks": 15
+    "stocks": 10
    }
   },
   {
    "player": "Jayson Tatum",
    "last_team": "BOS",
    "pos": "F",
-   "g": 12,
-   "gs": 12,
-   "min": 33.7,
-   "usg": 33.3,
-   "threes": 2.6,
-   "reb": 6.1,
-   "ast": 7.3,
-   "stocks": 1.3,
-   "pts": 26.8,
-   "dk": 48.1,
+   "g": 15,
+   "gs": 15,
+   "min": 34.3,
+   "usg": 33.5,
+   "threes": 2.7,
+   "reb": 6.9,
+   "ast": 6.7,
+   "stocks": 1.4,
+   "pts": 26.4,
+   "dk": 48.0,
    "badges": {
     "minutes": "silver",
     "usage": "gold",
     "threes": "silver",
-    "assists": "gold"
+    "assists": "silver"
    },
    "ranks": {
-    "minutes": 21,
-    "usage": 8,
-    "threes": 25,
-    "assists": 10
+    "minutes": 13,
+    "usage": 6,
+    "threes": 24,
+    "assists": 14
    }
   },
   {
@@ -81,16 +79,16 @@
    "player": "Cade Cunningham",
    "last_team": "DET",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 34.8,
-   "usg": 30.5,
-   "threes": 2.1,
-   "reb": 5.2,
-   "ast": 7.9,
-   "stocks": 2.4,
-   "pts": 25.7,
-   "dk": 48.5,
+   "g": 15,
+   "gs": 15,
+   "min": 34.9,
+   "usg": 30.4,
+   "threes": 1.9,
+   "reb": 5.1,
+   "ast": 8.3,
+   "stocks": 2.2,
+   "pts": 24.2,
+   "dk": 47.0,
    "badges": {
     "minutes": "gold",
     "usage": "silver",
@@ -98,97 +96,99 @@
     "stocks": "silver"
    },
    "ranks": {
-    "minutes": 10,
+    "minutes": 9,
     "usage": 15,
-    "assists": 6,
-    "stocks": 17
+    "assists": 5,
+    "stocks": 22
    }
   },
   {
    "player": "Ausar Thompson",
    "last_team": "DET",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 27.7,
-   "usg": 18.9,
+   "g": 15,
+   "gs": 15,
+   "min": 29.3,
+   "usg": 18.3,
    "threes": 0.0,
-   "reb": 8.6,
-   "ast": 5.1,
-   "stocks": 2.3,
-   "pts": 10.1,
-   "dk": 32.3,
+   "reb": 8.5,
+   "ast": 5.3,
+   "stocks": 2.5,
+   "pts": 11.1,
+   "dk": 34.1,
    "badges": {
     "rebounds": "silver",
     "stocks": "silver"
    },
    "ranks": {
-    "rebounds": 18,
-    "stocks": 23
+    "rebounds": 20,
+    "stocks": 13
    }
   },
   {
    "player": "Paul Reed",
    "last_team": "DET",
    "pos": "F",
-   "g": 12,
+   "g": 16,
    "gs": 7,
-   "min": 26.8,
-   "usg": 18.4,
-   "threes": 0.4,
-   "reb": 7.8,
-   "ast": 2.1,
-   "stocks": 1.8,
-   "pts": 11.3,
-   "dk": 27.3,
+   "min": 26.2,
+   "usg": 18.8,
+   "threes": 0.3,
+   "reb": 7.4,
+   "ast": 2.2,
+   "stocks": 2.1,
+   "pts": 11.7,
+   "dk": 28.0,
    "badges": {
-    "rebounds": "silver"
+    "rebounds": "silver",
+    "stocks": "silver"
    },
    "ranks": {
-    "rebounds": 24
+    "rebounds": 28,
+    "stocks": 28
    }
   },
   {
    "player": "LeBron James",
    "last_team": "PHI",
    "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 32.5,
-   "usg": 22.9,
+   "g": 13,
+   "gs": 13,
+   "min": 32.6,
+   "usg": 23.1,
    "threes": 0.8,
-   "reb": 7.2,
-   "ast": 6.9,
+   "reb": 6.8,
+   "ast": 6.8,
    "stocks": 1.9,
-   "pts": 15.1,
-   "dk": 37.9,
+   "pts": 16.1,
+   "dk": 38.2,
    "badges": {
     "assists": "silver"
    },
    "ranks": {
-    "assists": 14
+    "assists": 13
    }
   },
   {
    "player": "Joel Embiid",
    "last_team": "PHI",
    "pos": "C",
-   "g": 11,
-   "gs": 11,
-   "min": 31.5,
-   "usg": 28.4,
+   "g": 14,
+   "gs": 14,
+   "min": 32.0,
+   "usg": 29.8,
    "threes": 0.4,
-   "reb": 8.8,
-   "ast": 3.7,
-   "stocks": 1.5,
-   "pts": 17.9,
-   "dk": 37.0,
+   "reb": 8.9,
+   "ast": 4.1,
+   "stocks": 1.8,
+   "pts": 20.4,
+   "dk": 40.9,
    "badges": {
     "usage": "silver",
     "rebounds": "silver"
    },
    "ranks": {
-    "usage": 28,
+    "usage": 17,
     "rebounds": 16
    }
   },
@@ -196,16 +196,16 @@
    "player": "Jaylen Brown",
    "last_team": "PHI",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 34.8,
-   "usg": 26.5,
-   "threes": 1.8,
-   "reb": 6.2,
-   "ast": 3.5,
+   "g": 14,
+   "gs": 14,
+   "min": 34.7,
+   "usg": 26.9,
+   "threes": 1.9,
+   "reb": 6.6,
+   "ast": 3.6,
    "stocks": 1.8,
-   "pts": 21.9,
-   "dk": 38.3,
+   "pts": 22.6,
+   "dk": 39.8,
    "badges": {
     "minutes": "silver"
    },
@@ -217,83 +217,85 @@
    "player": "Tyrese Maxey",
    "last_team": "PHI",
    "pos": "G",
-   "g": 14,
-   "gs": 14,
-   "min": 36.2,
-   "usg": 27.6,
+   "g": 16,
+   "gs": 16,
+   "min": 36.1,
+   "usg": 26.7,
    "threes": 2.6,
-   "reb": 3.4,
-   "ast": 5.6,
-   "stocks": 1.9,
-   "pts": 26.7,
-   "dk": 43.5,
+   "reb": 3.3,
+   "ast": 5.7,
+   "stocks": 1.8,
+   "pts": 25.9,
+   "dk": 42.5,
    "badges": {
     "minutes": "gold",
     "threes": "silver",
     "assists": "silver"
    },
    "ranks": {
-    "minutes": 5,
-    "threes": 26,
-    "assists": 25
+    "minutes": 6,
+    "threes": 27,
+    "assists": 29
    }
   },
   {
    "player": "VJ Edgecombe",
    "last_team": "PHI",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 33.4,
-   "usg": 16.6,
-   "threes": 1.5,
-   "reb": 6.2,
-   "ast": 3.7,
+   "g": 16,
+   "gs": 16,
+   "min": 34.2,
+   "usg": 17.2,
+   "threes": 1.6,
+   "reb": 6.3,
+   "ast": 4.0,
    "stocks": 2.1,
-   "pts": 12.8,
-   "dk": 30.6,
+   "pts": 13.8,
+   "dk": 32.2,
    "badges": {
-    "minutes": "silver"
+    "minutes": "silver",
+    "stocks": "silver"
    },
    "ranks": {
-    "minutes": 27
+    "minutes": 14,
+    "stocks": 29
    }
   },
   {
    "player": "OG Anunoby",
    "last_team": "NYK",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
-   "min": 33.7,
-   "usg": 21.3,
-   "threes": 2.2,
+   "g": 15,
+   "gs": 15,
+   "min": 34.0,
+   "usg": 21.0,
+   "threes": 2.0,
    "reb": 5.4,
-   "ast": 2.2,
-   "stocks": 1.8,
-   "pts": 16.4,
-   "dk": 30.0,
+   "ast": 2.0,
+   "stocks": 1.9,
+   "pts": 16.3,
+   "dk": 29.9,
    "badges": {
     "minutes": "silver"
    },
    "ranks": {
-    "minutes": 22
+    "minutes": 18
    }
   },
   {
    "player": "Karl-Anthony Towns",
    "last_team": "NYK",
    "pos": "C",
-   "g": 13,
-   "gs": 13,
+   "g": 16,
+   "gs": 16,
    "min": 32.5,
-   "usg": 26.7,
+   "usg": 26.6,
    "threes": 2.1,
    "reb": 13.9,
-   "ast": 3.6,
-   "stocks": 1.4,
-   "pts": 21.6,
-   "dk": 48.2,
+   "ast": 4.0,
+   "stocks": 1.7,
+   "pts": 21.8,
+   "dk": 49.6,
    "badges": {
     "rebounds": "gold"
    },
@@ -305,16 +307,16 @@
    "player": "Jalen Brunson",
    "last_team": "NYK",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
+   "g": 17,
+   "gs": 17,
    "min": 34.2,
-   "usg": 32.8,
-   "threes": 2.8,
-   "reb": 2.8,
+   "usg": 33.0,
+   "threes": 3.0,
+   "reb": 3.1,
    "ast": 5.9,
    "stocks": 1.1,
-   "pts": 26.7,
-   "dk": 41.8,
+   "pts": 26.5,
+   "dk": 42.0,
    "badges": {
     "minutes": "silver",
     "usage": "gold",
@@ -323,8 +325,8 @@
    },
    "ranks": {
     "minutes": 15,
-    "usage": 9,
-    "threes": 18,
+    "usage": 8,
+    "threes": 17,
     "assists": 22
    }
   },
@@ -332,62 +334,64 @@
    "player": "Andre Drummond",
    "last_team": "NYK",
    "pos": "C",
-   "g": 13,
-   "gs": 0,
-   "min": 13.0,
-   "usg": 16.2,
-   "threes": 0.0,
-   "reb": 7.5,
-   "ast": 1.2,
-   "stocks": 0.9,
+   "g": 17,
+   "gs": 1,
+   "min": 13.9,
+   "usg": 16.5,
+   "threes": 0.1,
+   "reb": 7.8,
+   "ast": 1.0,
+   "stocks": 1.1,
    "pts": 3.8,
-   "dk": 16.4,
+   "dk": 16.7,
    "badges": {
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 28
+    "rebounds": 26
    }
   },
   {
    "player": "Isaiah Hartenstein",
    "last_team": "OKC",
    "pos": "C",
-   "g": 14,
-   "gs": 14,
-   "min": 24.9,
-   "usg": 15.7,
+   "g": 17,
+   "gs": 17,
+   "min": 25.1,
+   "usg": 14.9,
    "threes": 0.0,
    "reb": 10.6,
-   "ast": 3.7,
+   "ast": 3.9,
    "stocks": 1.4,
-   "pts": 8.6,
-   "dk": 29.8,
+   "pts": 7.8,
+   "dk": 29.3,
    "badges": {
     "rebounds": "gold"
    },
    "ranks": {
-    "rebounds": 7
+    "rebounds": 9
    }
   },
   {
    "player": "Shai Gilgeous-Alexander",
    "last_team": "OKC",
    "pos": "G",
-   "g": 14,
-   "gs": 14,
-   "min": 33.1,
-   "usg": 36.6,
+   "g": 16,
+   "gs": 16,
+   "min": 33.5,
+   "usg": 37.2,
    "threes": 2.4,
    "reb": 4.1,
-   "ast": 4.4,
-   "stocks": 1.7,
-   "pts": 30.9,
-   "dk": 46.1,
+   "ast": 4.5,
+   "stocks": 1.8,
+   "pts": 31.7,
+   "dk": 47.2,
    "badges": {
+    "minutes": "silver",
     "usage": "gold"
    },
    "ranks": {
+    "minutes": 28,
     "usage": 2
    }
   },
@@ -395,16 +399,16 @@
    "player": "Victor Wembanyama",
    "last_team": "SAS",
    "pos": "F",
-   "g": 14,
-   "gs": 14,
-   "min": 29.7,
-   "usg": 35.3,
-   "threes": 1.9,
-   "reb": 11.6,
-   "ast": 3.3,
-   "stocks": 5.4,
-   "pts": 28.6,
-   "dk": 59.9,
+   "g": 17,
+   "gs": 17,
+   "min": 30.3,
+   "usg": 36.2,
+   "threes": 2.1,
+   "reb": 12.4,
+   "ast": 3.2,
+   "stocks": 5.2,
+   "pts": 29.9,
+   "dk": 61.6,
    "badges": {
     "usage": "gold",
     "rebounds": "gold",
@@ -420,16 +424,37 @@
    "player": "De'Aaron Fox",
    "last_team": "SAS",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 28.6,
-   "usg": 19.4,
-   "threes": 1.0,
-   "reb": 4.4,
+   "g": 16,
+   "gs": 16,
+   "min": 29.0,
+   "usg": 18.6,
+   "threes": 0.8,
+   "reb": 3.9,
    "ast": 5.8,
-   "stocks": 1.8,
-   "pts": 13.6,
-   "dk": 30.6,
+   "stocks": 1.6,
+   "pts": 12.4,
+   "dk": 28.3,
+   "badges": {
+    "assists": "silver"
+   },
+   "ranks": {
+    "assists": 26
+   }
+  },
+  {
+   "player": "Stephon Castle",
+   "last_team": "SAS",
+   "pos": "G",
+   "g": 17,
+   "gs": 17,
+   "min": 29.5,
+   "usg": 24.4,
+   "threes": 2.2,
+   "reb": 5.2,
+   "ast": 5.9,
+   "stocks": 1.4,
+   "pts": 15.9,
+   "dk": 33.9,
    "badges": {
     "assists": "silver"
    },
@@ -438,81 +463,60 @@
    }
   },
   {
-   "player": "Stephon Castle",
-   "last_team": "SAS",
-   "pos": "G",
-   "g": 14,
-   "gs": 14,
-   "min": 29.1,
-   "usg": 24.5,
-   "threes": 2.0,
-   "reb": 5.5,
-   "ast": 5.4,
-   "stocks": 1.4,
-   "pts": 15.7,
-   "dk": 33.4,
-   "badges": {
-    "assists": "silver"
-   },
-   "ranks": {
-    "assists": 30
-   }
-  },
-  {
    "player": "Julian Champagnie",
    "last_team": "SAS",
    "pos": "F",
-   "g": 14,
-   "gs": 3,
-   "min": 26.0,
-   "usg": 13.4,
-   "threes": 2.6,
+   "g": 17,
+   "gs": 5,
+   "min": 26.4,
+   "usg": 14.3,
+   "threes": 2.8,
    "reb": 4.1,
    "ast": 1.5,
-   "stocks": 1.4,
-   "pts": 9.6,
-   "dk": 20.7,
+   "stocks": 1.3,
+   "pts": 10.4,
+   "dk": 21.4,
    "badges": {
     "threes": "silver"
    },
    "ranks": {
-    "threes": 27
+    "threes": 22
    }
   },
   {
    "player": "Onyeka Okongwu",
    "last_team": "ATL",
    "pos": "F",
-   "g": 14,
-   "gs": 14,
-   "min": 30.4,
-   "usg": 17.1,
-   "threes": 1.6,
-   "reb": 8.1,
-   "ast": 2.5,
-   "stocks": 1.9,
-   "pts": 14.1,
-   "dk": 32.6,
+   "g": 17,
+   "gs": 17,
+   "min": 30.9,
+   "usg": 17.9,
+   "threes": 1.8,
+   "reb": 8.2,
+   "ast": 2.4,
+   "stocks": 1.8,
+   "pts": 14.5,
+   "dk": 32.5,
    "badges": {
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 23
+    "rebounds": 22
    }
   },
   {
    "player": "Jalen Johnson",
    "last_team": "ATL",
    "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 34.4,
-   "usg": 26.0,
-   "threes": 0.7,
-   "reb": 9.0,
-   "ast": 7.3,
-   "stocks": 1.4,
-   "pts": 19.5,
+   "g": 14,
+   "gs": 14,
+   "min": 34.1,
+   "usg": 25.5,
+   "threes": 0.9,
+   "reb": 9.1,
+   "ast": 6.9,
+   "stocks": 1.6,
+   "pts": 19.1,
    "dk": 43.8,
    "badges": {
     "minutes": "silver",
@@ -520,25 +524,25 @@
     "assists": "silver"
    },
    "ranks": {
-    "minutes": 14,
-    "rebounds": 15,
-    "assists": 11
+    "minutes": 16,
+    "rebounds": 14,
+    "assists": 12
    }
   },
   {
    "player": "Nickeil Alexander-Walker",
    "last_team": "ATL",
    "pos": "G",
-   "g": 14,
-   "gs": 14,
-   "min": 31.8,
-   "usg": 26.4,
+   "g": 17,
+   "gs": 17,
+   "min": 31.6,
+   "usg": 26.7,
    "threes": 3.6,
-   "reb": 3.6,
-   "ast": 2.7,
-   "stocks": 1.9,
-   "pts": 21.4,
-   "dk": 34.5,
+   "reb": 3.5,
+   "ast": 2.9,
+   "stocks": 1.6,
+   "pts": 21.3,
+   "dk": 34.1,
    "badges": {
     "threes": "gold"
    },
@@ -550,39 +554,41 @@
    "player": "Dyson Daniels",
    "last_team": "ATL",
    "pos": "G",
-   "g": 14,
-   "gs": 14,
-   "min": 30.5,
-   "usg": 14.0,
-   "threes": 0.1,
-   "reb": 7.4,
-   "ast": 5.6,
-   "stocks": 3.1,
-   "pts": 9.5,
-   "dk": 33.0,
+   "g": 17,
+   "gs": 17,
+   "min": 31.6,
+   "usg": 13.8,
+   "threes": 0.2,
+   "reb": 8.0,
+   "ast": 5.9,
+   "stocks": 3.4,
+   "pts": 9.4,
+   "dk": 34.6,
    "badges": {
+    "rebounds": "silver",
     "assists": "silver",
     "stocks": "gold"
    },
    "ranks": {
-    "assists": 26,
-    "stocks": 3
+    "rebounds": 24,
+    "assists": 24,
+    "stocks": 2
    }
   },
   {
    "player": "Aaron Wiggins",
    "last_team": "ATL",
    "pos": "G",
-   "g": 14,
-   "gs": 0,
+   "g": 17,
+   "gs": 2,
    "min": 25.9,
-   "usg": 20.9,
-   "threes": 2.7,
+   "usg": 21.1,
+   "threes": 2.8,
    "reb": 3.6,
-   "ast": 2.5,
+   "ast": 2.4,
    "stocks": 1.1,
    "pts": 13.9,
-   "dk": 25.1,
+   "dk": 24.9,
    "badges": {
     "threes": "silver"
    },
@@ -594,68 +600,68 @@
    "player": "Franz Wagner",
    "last_team": "ORL",
    "pos": "F",
-   "g": 12,
-   "gs": 12,
-   "min": 36.8,
-   "usg": 30.6,
-   "threes": 1.4,
-   "reb": 6.8,
+   "g": 16,
+   "gs": 16,
+   "min": 36.4,
+   "usg": 31.3,
+   "threes": 1.2,
+   "reb": 6.9,
    "ast": 8.2,
-   "stocks": 1.4,
-   "pts": 24.4,
-   "dk": 47.4,
+   "stocks": 1.6,
+   "pts": 24.5,
+   "dk": 48.0,
    "badges": {
     "minutes": "gold",
     "usage": "silver",
     "assists": "gold"
    },
    "ranks": {
-    "minutes": 1,
+    "minutes": 4,
     "usage": 14,
-    "assists": 5
+    "assists": 6
    }
   },
   {
    "player": "Wendell Carter Jr.",
    "last_team": "ORL",
    "pos": "C",
-   "g": 12,
-   "gs": 12,
-   "min": 32.7,
-   "usg": 15.2,
+   "g": 16,
+   "gs": 16,
+   "min": 32.1,
+   "usg": 15.1,
    "threes": 1.0,
-   "reb": 9.3,
-   "ast": 1.1,
-   "stocks": 1.8,
-   "pts": 13.5,
-   "dk": 30.3,
+   "reb": 8.6,
+   "ast": 1.4,
+   "stocks": 1.7,
+   "pts": 12.8,
+   "dk": 28.8,
    "badges": {
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 14
+    "rebounds": 18
    }
   },
   {
    "player": "Desmond Bane",
    "last_team": "ORL",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 34.6,
-   "usg": 22.9,
-   "threes": 4.1,
-   "reb": 4.1,
-   "ast": 2.5,
-   "stocks": 1.5,
-   "pts": 18.3,
-   "dk": 30.9,
+   "g": 15,
+   "gs": 15,
+   "min": 34.8,
+   "usg": 22.2,
+   "threes": 4.2,
+   "reb": 3.9,
+   "ast": 2.9,
+   "stocks": 1.7,
+   "pts": 18.5,
+   "dk": 32.2,
    "badges": {
-    "minutes": "silver",
+    "minutes": "gold",
     "threes": "gold"
    },
    "ranks": {
-    "minutes": 12,
+    "minutes": 10,
     "threes": 3
    }
   },
@@ -663,16 +669,16 @@
    "player": "Tristan da Silva",
    "last_team": "ORL",
    "pos": "F",
-   "g": 10,
+   "g": 14,
    "gs": 2,
-   "min": 30.5,
-   "usg": 19.8,
-   "threes": 3.4,
-   "reb": 3.9,
-   "ast": 1.7,
+   "min": 29.6,
+   "usg": 18.5,
+   "threes": 3.2,
+   "reb": 3.6,
+   "ast": 1.6,
    "stocks": 0.6,
-   "pts": 14.8,
-   "dk": 24.6,
+   "pts": 14.1,
+   "dk": 23.4,
    "badges": {
     "threes": "silver"
    },
@@ -684,112 +690,135 @@
    "player": "Myles Turner",
    "last_team": "MIL",
    "pos": "C",
-   "g": 13,
-   "gs": 13,
-   "min": 27.1,
-   "usg": 15.4,
-   "threes": 1.4,
-   "reb": 6.0,
-   "ast": 2.6,
-   "stocks": 2.7,
-   "pts": 7.4,
-   "dk": 24.0,
+   "g": 15,
+   "gs": 15,
+   "min": 26.6,
+   "usg": 15.2,
+   "threes": 1.3,
+   "reb": 5.9,
+   "ast": 2.9,
+   "stocks": 2.9,
+   "pts": 7.0,
+   "dk": 24.2,
    "badges": {
     "stocks": "gold"
    },
    "ranks": {
-    "stocks": 8
+    "stocks": 5
    }
   },
   {
    "player": "Tyler Herro",
    "last_team": "MIL",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 30.5,
-   "usg": 28.2,
-   "threes": 2.7,
-   "reb": 4.2,
-   "ast": 4.2,
-   "stocks": 1.2,
-   "pts": 20.3,
-   "dk": 34.6,
+   "g": 16,
+   "gs": 16,
+   "min": 30.7,
+   "usg": 27.8,
+   "threes": 2.9,
+   "reb": 4.4,
+   "ast": 4.3,
+   "stocks": 1.1,
+   "pts": 21.3,
+   "dk": 36.2,
    "badges": {
     "threes": "silver"
    },
    "ranks": {
-    "threes": 24
+    "threes": 18
    }
   },
   {
    "player": "Anthony Davis",
    "last_team": "WAS",
    "pos": "F",
-   "g": 12,
-   "gs": 12,
+   "g": 16,
+   "gs": 16,
    "min": 34.0,
-   "usg": 29.3,
+   "usg": 29.6,
    "threes": 0.8,
-   "reb": 10.2,
-   "ast": 2.2,
+   "reb": 9.9,
+   "ast": 2.1,
    "stocks": 2.3,
-   "pts": 24.7,
-   "dk": 45.8,
+   "pts": 25.1,
+   "dk": 45.5,
    "badges": {
     "minutes": "silver",
     "usage": "silver",
-    "rebounds": "gold",
+    "rebounds": "silver",
     "stocks": "silver"
    },
    "ranks": {
-    "minutes": 16,
+    "minutes": 19,
     "usage": 19,
-    "rebounds": 10,
-    "stocks": 24
+    "rebounds": 11,
+    "stocks": 21
+   }
+  },
+  {
+   "player": "Kyshawn George",
+   "last_team": "WAS",
+   "pos": "F",
+   "g": 18,
+   "gs": 18,
+   "min": 33.9,
+   "usg": 22.9,
+   "threes": 2.6,
+   "reb": 4.3,
+   "ast": 4.4,
+   "stocks": 1.9,
+   "pts": 17.8,
+   "dk": 33.5,
+   "badges": {
+    "minutes": "silver",
+    "threes": "silver"
+   },
+   "ranks": {
+    "minutes": 22,
+    "threes": 28
    }
   },
   {
    "player": "Alex Sarr",
    "last_team": "WAS",
    "pos": "C",
-   "g": 13,
-   "gs": 13,
-   "min": 27.3,
-   "usg": 17.4,
-   "threes": 1.1,
-   "reb": 7.5,
-   "ast": 1.7,
-   "stocks": 2.1,
-   "pts": 12.2,
-   "dk": 28.3,
+   "g": 17,
+   "gs": 17,
+   "min": 26.7,
+   "usg": 16.7,
+   "threes": 1.2,
+   "reb": 6.8,
+   "ast": 1.6,
+   "stocks": 2.2,
+   "pts": 11.2,
+   "dk": 26.6,
    "badges": {
-    "rebounds": "silver"
+    "stocks": "silver"
    },
    "ranks": {
-    "rebounds": 29
+    "stocks": 23
    }
   },
   {
    "player": "Trae Young",
    "last_team": "WAS",
    "pos": "G",
-   "g": 14,
-   "gs": 14,
-   "min": 35.4,
-   "usg": 24.1,
-   "threes": 2.0,
-   "reb": 2.9,
-   "ast": 8.7,
-   "stocks": 1.3,
-   "pts": 18.3,
-   "dk": 37.6,
+   "g": 18,
+   "gs": 18,
+   "min": 34.6,
+   "usg": 23.4,
+   "threes": 2.1,
+   "reb": 2.8,
+   "ast": 8.8,
+   "stocks": 1.4,
+   "pts": 17.1,
+   "dk": 36.6,
    "badges": {
-    "minutes": "gold",
+    "minutes": "silver",
     "assists": "gold"
    },
    "ranks": {
-    "minutes": 8,
+    "minutes": 12,
     "assists": 3
    }
   },
@@ -797,58 +826,58 @@
    "player": "Bilal Coulibaly",
    "last_team": "WAS",
    "pos": "G",
-   "g": 13,
+   "g": 17,
    "gs": 5,
-   "min": 25.6,
-   "usg": 12.1,
-   "threes": 0.4,
-   "reb": 4.0,
+   "min": 24.9,
+   "usg": 12.4,
+   "threes": 0.6,
+   "reb": 4.3,
    "ast": 0.7,
-   "stocks": 2.3,
+   "stocks": 2.1,
    "pts": 6.9,
    "dk": 17.5,
    "badges": {
     "stocks": "silver"
    },
    "ranks": {
-    "stocks": 25
+    "stocks": 30
    }
   },
   {
    "player": "Jaden McDaniels",
    "last_team": "MIN",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
-   "min": 33.5,
-   "usg": 20.0,
-   "threes": 1.4,
-   "reb": 6.3,
-   "ast": 3.8,
-   "stocks": 1.8,
-   "pts": 17.0,
-   "dk": 33.7,
+   "g": 17,
+   "gs": 17,
+   "min": 34.0,
+   "usg": 20.2,
+   "threes": 1.5,
+   "reb": 6.0,
+   "ast": 3.6,
+   "stocks": 2.1,
+   "pts": 17.5,
+   "dk": 34.3,
    "badges": {
     "minutes": "silver"
    },
    "ranks": {
-    "minutes": 26
+    "minutes": 20
    }
   },
   {
    "player": "Rudy Gobert",
    "last_team": "MIN",
    "pos": "C",
-   "g": 12,
-   "gs": 12,
-   "min": 29.2,
-   "usg": 12.8,
+   "g": 16,
+   "gs": 16,
+   "min": 29.4,
+   "usg": 13.1,
    "threes": 0.0,
-   "reb": 11.4,
+   "reb": 10.9,
    "ast": 1.6,
-   "stocks": 1.4,
-   "pts": 7.3,
-   "dk": 26.5,
+   "stocks": 1.6,
+   "pts": 7.6,
+   "dk": 26.4,
    "badges": {
     "rebounds": "gold"
    },
@@ -860,47 +889,47 @@
    "player": "LaMelo Ball",
    "last_team": "MIN",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 27.8,
-   "usg": 29.5,
-   "threes": 3.6,
-   "reb": 3.6,
-   "ast": 6.2,
-   "stocks": 2.0,
-   "pts": 18.6,
-   "dk": 36.4,
+   "g": 17,
+   "gs": 17,
+   "min": 28.4,
+   "usg": 28.8,
+   "threes": 3.3,
+   "reb": 4.4,
+   "ast": 5.8,
+   "stocks": 1.8,
+   "pts": 17.2,
+   "dk": 34.9,
    "badges": {
     "usage": "silver",
-    "threes": "gold",
+    "threes": "silver",
     "assists": "silver"
    },
    "ranks": {
-    "usage": 16,
-    "threes": 7,
-    "assists": 18
+    "usage": 23,
+    "threes": 11,
+    "assists": 27
    }
   },
   {
    "player": "Giannis Antetokounmpo",
    "last_team": "MIA",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
-   "min": 32.5,
-   "usg": 33.9,
-   "threes": 0.6,
-   "reb": 12.5,
-   "ast": 5.2,
-   "stocks": 2.0,
-   "pts": 28.9,
-   "dk": 56.2,
+   "g": 15,
+   "gs": 15,
+   "min": 32.2,
+   "usg": 32.6,
+   "threes": 0.5,
+   "reb": 12.6,
+   "ast": 5.5,
+   "stocks": 2.1,
+   "pts": 28.2,
+   "dk": 56.5,
    "badges": {
     "usage": "gold",
     "rebounds": "gold"
    },
    "ranks": {
-    "usage": 6,
+    "usage": 9,
     "rebounds": 3
    }
   },
@@ -908,40 +937,38 @@
    "player": "Bam Adebayo",
    "last_team": "MIA",
    "pos": "C",
-   "g": 13,
-   "gs": 13,
-   "min": 33.8,
-   "usg": 21.4,
-   "threes": 0.7,
-   "reb": 8.5,
-   "ast": 3.3,
+   "g": 16,
+   "gs": 16,
+   "min": 32.6,
+   "usg": 21.6,
+   "threes": 0.8,
+   "reb": 8.2,
+   "ast": 3.7,
    "stocks": 2.8,
-   "pts": 19.5,
-   "dk": 40.8,
+   "pts": 19.2,
+   "dk": 40.7,
    "badges": {
-    "minutes": "silver",
     "rebounds": "silver",
     "stocks": "gold"
    },
    "ranks": {
-    "minutes": 20,
-    "rebounds": 19,
-    "stocks": 7
+    "rebounds": 23,
+    "stocks": 6
    }
   },
   {
    "player": "Klay Thompson",
    "last_team": "MIA",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 24.3,
-   "usg": 22.8,
+   "g": 15,
+   "gs": 15,
+   "min": 24.0,
+   "usg": 22.3,
    "threes": 4.0,
-   "reb": 1.5,
+   "reb": 1.7,
    "ast": 2.1,
-   "stocks": 0.9,
-   "pts": 15.3,
+   "stocks": 1.0,
+   "pts": 14.9,
    "dk": 23.7,
    "badges": {
     "threes": "gold"
@@ -954,92 +981,92 @@
    "player": "Davion Mitchell",
    "last_team": "MIA",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 35.7,
-   "usg": 18.7,
+   "g": 16,
+   "gs": 16,
+   "min": 35.4,
+   "usg": 18.8,
    "threes": 2.4,
-   "reb": 2.4,
-   "ast": 9.2,
+   "reb": 2.5,
+   "ast": 8.6,
    "stocks": 1.9,
-   "pts": 16.8,
-   "dk": 38.1,
+   "pts": 17.0,
+   "dk": 37.6,
    "badges": {
     "minutes": "gold",
     "assists": "gold"
    },
    "ranks": {
     "minutes": 7,
-    "assists": 1
+    "assists": 4
    }
   },
   {
    "player": "Moussa Diabate",
    "last_team": "CHA",
    "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 28.8,
-   "usg": 13.4,
+   "g": 13,
+   "gs": 13,
+   "min": 29.6,
+   "usg": 13.6,
    "threes": 0.0,
-   "reb": 9.7,
+   "reb": 10.6,
    "ast": 2.0,
-   "stocks": 2.4,
-   "pts": 9.0,
-   "dk": 28.3,
+   "stocks": 2.2,
+   "pts": 9.6,
+   "dk": 29.6,
    "badges": {
-    "rebounds": "silver",
+    "rebounds": "gold",
     "stocks": "silver"
    },
    "ranks": {
-    "rebounds": 11,
-    "stocks": 18
+    "rebounds": 10,
+    "stocks": 24
    }
   },
   {
    "player": "Brandon Miller",
    "last_team": "CHA",
    "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 30.4,
-   "usg": 32.8,
-   "threes": 2.5,
-   "reb": 4.7,
-   "ast": 2.4,
-   "stocks": 1.7,
-   "pts": 19.2,
-   "dk": 32.4,
+   "g": 13,
+   "gs": 13,
+   "min": 30.7,
+   "usg": 32.5,
+   "threes": 2.9,
+   "reb": 4.8,
+   "ast": 2.5,
+   "stocks": 1.6,
+   "pts": 19.8,
+   "dk": 33.2,
    "badges": {
     "usage": "gold",
     "threes": "silver"
    },
    "ranks": {
     "usage": 10,
-    "threes": 30
+    "threes": 19
    }
   },
   {
    "player": "Naz Reid",
    "last_team": "CHA",
    "pos": "C",
-   "g": 13,
-   "gs": 13,
-   "min": 29.7,
-   "usg": 29.2,
-   "threes": 2.4,
-   "reb": 8.2,
-   "ast": 2.2,
-   "stocks": 1.3,
-   "pts": 17.2,
-   "dk": 33.7,
+   "g": 15,
+   "gs": 15,
+   "min": 31.1,
+   "usg": 28.2,
+   "threes": 2.5,
+   "reb": 8.5,
+   "ast": 2.4,
+   "stocks": 1.4,
+   "pts": 17.3,
+   "dk": 34.8,
    "badges": {
     "usage": "silver",
     "rebounds": "silver"
    },
    "ranks": {
-    "usage": 21,
-    "rebounds": 22
+    "usage": 27,
+    "rebounds": 21
    }
   },
   {
@@ -1057,6 +1084,48 @@
    "pts": 14.9,
    "dk": 26.4,
    "badges": {
+    "threes": "gold"
+   },
+   "ranks": {
+    "threes": 8
+   }
+  },
+  {
+   "player": "Julius Randle",
+   "last_team": "BKN",
+   "pos": "F",
+   "g": 15,
+   "gs": 15,
+   "min": 32.9,
+   "usg": 28.0,
+   "threes": 1.6,
+   "reb": 6.0,
+   "ast": 4.7,
+   "stocks": 1.3,
+   "pts": 21.1,
+   "dk": 37.5,
+   "badges": {
+    "usage": "silver"
+   },
+   "ranks": {
+    "usage": 29
+   }
+  },
+  {
+   "player": "Michael Porter Jr.",
+   "last_team": "BKN",
+   "pos": "F",
+   "g": 14,
+   "gs": 14,
+   "min": 32.8,
+   "usg": 24.7,
+   "threes": 3.2,
+   "reb": 6.9,
+   "ast": 1.6,
+   "stocks": 1.6,
+   "pts": 20.2,
+   "dk": 35.2,
+   "badges": {
     "threes": "silver"
    },
    "ranks": {
@@ -1064,47 +1133,45 @@
    }
   },
   {
-   "player": "Michael Porter Jr.",
+   "player": "Day'Ron Sharpe",
    "last_team": "BKN",
-   "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 32.5,
-   "usg": 26.2,
-   "threes": 3.5,
-   "reb": 7.5,
-   "ast": 1.3,
-   "stocks": 1.6,
-   "pts": 21.5,
-   "dk": 37.2,
+   "pos": "C",
+   "g": 15,
+   "gs": 15,
+   "min": 23.8,
+   "usg": 16.5,
+   "threes": 0.3,
+   "reb": 7.4,
+   "ast": 3.9,
+   "stocks": 2.0,
+   "pts": 9.0,
+   "dk": 27.8,
    "badges": {
-    "threes": "silver",
     "rebounds": "silver"
    },
    "ranks": {
-    "threes": 11,
-    "rebounds": 30
+    "rebounds": 29
    }
   },
   {
    "player": "Jalen Smith",
    "last_team": "CHI",
    "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 24.6,
-   "usg": 18.9,
-   "threes": 1.7,
-   "reb": 7.8,
-   "ast": 2.0,
-   "stocks": 1.5,
-   "pts": 13.0,
-   "dk": 29.7,
+   "g": 14,
+   "gs": 14,
+   "min": 25.3,
+   "usg": 19.1,
+   "threes": 2.1,
+   "reb": 7.6,
+   "ast": 2.1,
+   "stocks": 1.9,
+   "pts": 14.3,
+   "dk": 31.7,
    "badges": {
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 25
+    "rebounds": 27
    }
   },
   {
@@ -1132,127 +1199,106 @@
    "player": "Josh Giddey",
    "last_team": "CHI",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 28.5,
-   "usg": 19.2,
+   "g": 16,
+   "gs": 16,
+   "min": 28.6,
+   "usg": 19.8,
    "threes": 1.2,
-   "reb": 5.3,
-   "ast": 8.5,
-   "stocks": 1.0,
-   "pts": 10.4,
-   "dk": 31.5,
+   "reb": 6.4,
+   "ast": 9.2,
+   "stocks": 0.9,
+   "pts": 10.8,
+   "dk": 34.1,
    "badges": {
     "assists": "gold"
    },
    "ranks": {
-    "assists": 4
+    "assists": 1
    }
   },
   {
    "player": "RJ Barrett",
    "last_team": "TOR",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
-   "min": 33.7,
+   "g": 14,
+   "gs": 14,
+   "min": 34.1,
    "usg": 26.4,
    "threes": 1.5,
-   "reb": 6.5,
-   "ast": 4.2,
+   "reb": 6.4,
+   "ast": 4.3,
    "stocks": 0.9,
-   "pts": 20.8,
-   "dk": 37.1,
+   "pts": 20.9,
+   "dk": 37.2,
    "badges": {
     "minutes": "silver"
    },
    "ranks": {
-    "minutes": 23
+    "minutes": 17
    }
   },
   {
    "player": "Scottie Barnes",
    "last_team": "TOR",
    "pos": "F",
-   "g": 9,
-   "gs": 9,
-   "min": 33.7,
-   "usg": 32.4,
-   "threes": 0.9,
-   "reb": 7.8,
-   "ast": 5.0,
-   "stocks": 2.9,
-   "pts": 24.2,
-   "dk": 46.2,
+   "g": 11,
+   "gs": 11,
+   "min": 34.0,
+   "usg": 32.0,
+   "threes": 0.8,
+   "reb": 7.2,
+   "ast": 4.7,
+   "stocks": 2.6,
+   "pts": 24.3,
+   "dk": 44.7,
    "badges": {
     "minutes": "silver",
     "usage": "silver",
-    "rebounds": "silver",
-    "stocks": "gold"
+    "stocks": "silver"
    },
    "ranks": {
-    "minutes": 24,
-    "usage": 11,
-    "rebounds": 26,
-    "stocks": 6
+    "minutes": 21,
+    "usage": 12,
+    "stocks": 11
    }
   },
   {
    "player": "Immanuel Quickley",
    "last_team": "TOR",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 31.6,
-   "usg": 22.6,
-   "threes": 2.5,
-   "reb": 3.8,
-   "ast": 5.6,
-   "stocks": 1.3,
-   "pts": 17.5,
-   "dk": 34.0,
+   "g": 14,
+   "gs": 14,
+   "min": 32.1,
+   "usg": 23.1,
+   "threes": 2.6,
+   "reb": 3.5,
+   "ast": 6.0,
+   "stocks": 1.1,
+   "pts": 17.8,
+   "dk": 34.1,
    "badges": {
+    "threes": "silver",
     "assists": "silver"
    },
    "ranks": {
-    "assists": 27
-   }
-  },
-  {
-   "player": "Collin Murray-Boyles",
-   "last_team": "TOR",
-   "pos": "F",
-   "g": 12,
-   "gs": 6,
-   "min": 24.3,
-   "usg": 18.6,
-   "threes": 0.6,
-   "reb": 5.2,
-   "ast": 1.8,
-   "stocks": 2.2,
-   "pts": 10.1,
-   "dk": 22.9,
-   "badges": {
-    "stocks": "silver"
-   },
-   "ranks": {
-    "stocks": 27
+    "threes": 29,
+    "assists": 20
    }
   },
   {
    "player": "Jamal Shead",
    "last_team": "TOR",
    "pos": "G",
-   "g": 13,
+   "g": 16,
    "gs": 2,
-   "min": 24.0,
-   "usg": 17.1,
-   "threes": 1.0,
-   "reb": 2.1,
-   "ast": 6.5,
-   "stocks": 1.5,
-   "pts": 7.8,
-   "dk": 22.8,
+   "min": 23.2,
+   "usg": 18.0,
+   "threes": 0.9,
+   "reb": 1.8,
+   "ast": 6.3,
+   "stocks": 1.2,
+   "pts": 7.7,
+   "dk": 21.5,
    "badges": {
     "assists": "silver"
    },
@@ -1278,401 +1324,399 @@
     "threes": "gold"
    },
    "ranks": {
-    "threes": 8
-   }
-  },
-  {
-   "player": "Jaxson Hayes",
-   "last_team": "UTA",
-   "pos": "C",
-   "g": 12,
-   "gs": 10,
-   "min": 24.0,
-   "usg": 13.9,
-   "threes": 0.0,
-   "reb": 6.0,
-   "ast": 1.6,
-   "stocks": 2.2,
-   "pts": 8.8,
-   "dk": 22.5,
-   "badges": {
-    "stocks": "silver"
-   },
-   "ranks": {
-    "stocks": 28
+    "threes": 7
    }
   },
   {
    "player": "Keyonte George",
    "last_team": "UTA",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 32.8,
-   "usg": 29.1,
-   "threes": 1.9,
-   "reb": 4.5,
-   "ast": 6.6,
+   "g": 17,
+   "gs": 17,
+   "min": 33.1,
+   "usg": 28.4,
+   "threes": 2.1,
+   "reb": 4.0,
+   "ast": 7.1,
    "stocks": 1.0,
-   "pts": 20.3,
-   "dk": 37.2,
+   "pts": 20.8,
+   "dk": 38.1,
    "badges": {
     "usage": "silver",
-    "assists": "silver"
+    "assists": "gold"
    },
    "ranks": {
-    "usage": 24,
-    "assists": 16
+    "usage": 25,
+    "assists": 10
    }
   },
   {
    "player": "Cedric Coward",
    "last_team": "MEM",
    "pos": "F",
-   "g": 12,
-   "gs": 12,
+   "g": 16,
+   "gs": 16,
    "min": 28.8,
-   "usg": 19.2,
-   "threes": 2.2,
-   "reb": 8.8,
-   "ast": 3.1,
-   "stocks": 1.8,
-   "pts": 13.8,
-   "dk": 34.0,
+   "usg": 20.7,
+   "threes": 2.6,
+   "reb": 8.0,
+   "ast": 3.4,
+   "stocks": 2.0,
+   "pts": 15.3,
+   "dk": 35.2,
    "badges": {
+    "threes": "silver",
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 17
+    "threes": 30,
+    "rebounds": 25
    }
   },
   {
    "player": "Cameron Boozer",
    "last_team": "MEM",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
-   "min": 31.4,
-   "usg": 24.6,
-   "threes": 1.6,
-   "reb": 9.7,
-   "ast": 5.2,
-   "stocks": 1.4,
-   "pts": 15.5,
-   "dk": 38.2,
+   "g": 16,
+   "gs": 16,
+   "min": 30.8,
+   "usg": 24.8,
+   "threes": 1.8,
+   "reb": 9.2,
+   "ast": 5.3,
+   "stocks": 1.6,
+   "pts": 16.6,
+   "dk": 39.1,
    "badges": {
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 12
-   }
-  },
-  {
-   "player": "Zach Edey",
-   "last_team": "MEM",
-   "pos": "C",
-   "g": 10,
-   "gs": 10,
-   "min": 20.8,
-   "usg": 15.6,
-   "threes": 0.1,
-   "reb": 7.7,
-   "ast": 0.9,
-   "stocks": 1.4,
-   "pts": 7.6,
-   "dk": 20.9,
-   "badges": {
-    "rebounds": "silver"
-   },
-   "ranks": {
-    "rebounds": 27
+    "rebounds": 13
    }
   },
   {
    "player": "Ty Jerome",
    "last_team": "MEM",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 30.6,
-   "usg": 31.9,
-   "threes": 2.5,
+   "g": 12,
+   "gs": 12,
+   "min": 30.3,
+   "usg": 32.2,
+   "threes": 2.6,
    "reb": 3.4,
    "ast": 5.3,
-   "stocks": 0.9,
-   "pts": 25.4,
-   "dk": 39.3,
+   "stocks": 1.0,
+   "pts": 24.8,
+   "dk": 39.0,
    "badges": {
     "usage": "silver"
    },
    "ranks": {
-    "usage": 13
+    "usage": 11
+   }
+  },
+  {
+   "player": "Cam Spencer",
+   "last_team": "MEM",
+   "pos": "G",
+   "g": 17,
+   "gs": 5,
+   "min": 22.9,
+   "usg": 16.9,
+   "threes": 1.9,
+   "reb": 3.1,
+   "ast": 5.8,
+   "stocks": 0.9,
+   "pts": 11.1,
+   "dk": 25.9,
+   "badges": {
+    "assists": "silver"
+   },
+   "ranks": {
+    "assists": 28
    }
   },
   {
    "player": "Pascal Siakam",
    "last_team": "IND",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
-   "min": 32.4,
-   "usg": 28.3,
-   "threes": 1.6,
-   "reb": 6.2,
-   "ast": 4.0,
-   "stocks": 1.0,
+   "g": 16,
+   "gs": 16,
+   "min": 32.3,
+   "usg": 28.6,
+   "threes": 1.8,
+   "reb": 6.1,
+   "ast": 3.6,
+   "stocks": 1.2,
    "pts": 23.1,
-   "dk": 38.9,
+   "dk": 38.7,
    "badges": {
     "usage": "silver"
    },
    "ranks": {
-    "usage": 30
+    "usage": 24
    }
   },
   {
    "player": "Ivica Zubac",
    "last_team": "IND",
    "pos": "C",
-   "g": 9,
-   "gs": 9,
-   "min": 23.3,
-   "usg": 19.1,
+   "g": 12,
+   "gs": 12,
+   "min": 24.3,
+   "usg": 18.6,
    "threes": 0.0,
-   "reb": 8.4,
-   "ast": 1.7,
-   "stocks": 0.7,
-   "pts": 10.4,
-   "dk": 24.7,
+   "reb": 8.6,
+   "ast": 1.8,
+   "stocks": 0.8,
+   "pts": 10.8,
+   "dk": 25.9,
    "badges": {
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 20
+    "rebounds": 19
    }
   },
   {
    "player": "Andrew Nembhard",
    "last_team": "IND",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 33.4,
-   "usg": 21.6,
+   "g": 13,
+   "gs": 13,
+   "min": 32.7,
+   "usg": 22.3,
    "threes": 2.3,
    "reb": 2.3,
-   "ast": 7.6,
+   "ast": 7.7,
    "stocks": 0.6,
-   "pts": 16.6,
-   "dk": 32.5,
+   "pts": 16.2,
+   "dk": 32.0,
    "badges": {
-    "minutes": "silver",
     "assists": "gold"
    },
    "ranks": {
-    "minutes": 28,
-    "assists": 9
+    "assists": 7
    }
   },
   {
    "player": "Zion Williamson",
    "last_team": "NOP",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
-   "min": 32.7,
-   "usg": 23.4,
-   "threes": 0.5,
-   "reb": 5.2,
-   "ast": 2.7,
-   "stocks": 2.6,
-   "pts": 21.9,
-   "dk": 37.1,
+   "g": 16,
+   "gs": 16,
+   "min": 32.4,
+   "usg": 23.9,
+   "threes": 0.4,
+   "reb": 5.4,
+   "ast": 2.8,
+   "stocks": 2.4,
+   "pts": 21.7,
+   "dk": 36.8,
    "badges": {
     "stocks": "silver"
    },
    "ranks": {
-    "stocks": 12
+    "stocks": 18
+   }
+  },
+  {
+   "player": "Yves Missi",
+   "last_team": "NOP",
+   "pos": "C",
+   "g": 7,
+   "gs": 7,
+   "min": 22.7,
+   "usg": 12.4,
+   "threes": 0.0,
+   "reb": 9.0,
+   "ast": 1.4,
+   "stocks": 2.4,
+   "pts": 6.4,
+   "dk": 24.4,
+   "badges": {
+    "rebounds": "silver",
+    "stocks": "silver"
+   },
+   "ranks": {
+    "rebounds": 15,
+    "stocks": 19
    }
   },
   {
    "player": "Daniel Gafford",
    "last_team": "DAL",
    "pos": "F",
-   "g": 14,
-   "gs": 14,
-   "min": 21.1,
-   "usg": 14.8,
+   "g": 17,
+   "gs": 17,
+   "min": 22.2,
+   "usg": 14.2,
    "threes": 0.1,
-   "reb": 5.1,
-   "ast": 1.9,
+   "reb": 5.4,
+   "ast": 2.1,
    "stocks": 2.4,
    "pts": 8.7,
-   "dk": 21.9,
+   "dk": 22.7,
    "badges": {
     "stocks": "silver"
    },
    "ranks": {
-    "stocks": 19
+    "stocks": 20
    }
   },
   {
    "player": "Cooper Flagg",
    "last_team": "DAL",
    "pos": "F",
-   "g": 13,
-   "gs": 13,
+   "g": 16,
+   "gs": 16,
    "min": 33.4,
-   "usg": 29.4,
-   "threes": 1.3,
-   "reb": 6.7,
-   "ast": 6.2,
-   "stocks": 2.7,
-   "pts": 23.5,
-   "dk": 46.4,
+   "usg": 30.0,
+   "threes": 1.6,
+   "reb": 6.3,
+   "ast": 6.4,
+   "stocks": 2.6,
+   "pts": 24.3,
+   "dk": 46.6,
    "badges": {
-    "minutes": "silver",
     "usage": "silver",
     "assists": "silver",
-    "stocks": "gold"
+    "stocks": "silver"
    },
    "ranks": {
-    "minutes": 29,
-    "usage": 17,
-    "assists": 19,
-    "stocks": 10
+    "usage": 16,
+    "assists": 16,
+    "stocks": 12
    }
   },
   {
    "player": "Kyrie Irving",
    "last_team": "DAL",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 30.8,
+   "g": 14,
+   "gs": 14,
+   "min": 30.7,
    "usg": 27.8,
-   "threes": 3.5,
-   "reb": 3.5,
-   "ast": 4.4,
-   "stocks": 1.7,
-   "pts": 22.7,
-   "dk": 38.0,
+   "threes": 3.4,
+   "reb": 3.6,
+   "ast": 4.6,
+   "stocks": 1.6,
+   "pts": 22.0,
+   "dk": 37.6,
    "badges": {
-    "threes": "silver"
+    "threes": "gold"
    },
    "ranks": {
-    "threes": 12
+    "threes": 9
    }
   },
   {
    "player": "Kevin Durant",
    "last_team": "HOU",
    "pos": "F",
-   "g": 14,
-   "gs": 14,
-   "min": 33.9,
-   "usg": 24.9,
-   "threes": 1.4,
-   "reb": 5.7,
-   "ast": 3.9,
-   "stocks": 1.6,
-   "pts": 21.3,
-   "dk": 36.9,
+   "g": 17,
+   "gs": 17,
+   "min": 33.6,
+   "usg": 24.2,
+   "threes": 1.5,
+   "reb": 5.2,
+   "ast": 3.8,
+   "stocks": 1.4,
+   "pts": 21.0,
+   "dk": 35.5,
    "badges": {
     "minutes": "silver"
    },
    "ranks": {
-    "minutes": 18
-   }
-  },
-  {
-   "player": "Jabari Smith Jr.",
-   "last_team": "HOU",
-   "pos": "F",
-   "g": 14,
-   "gs": 14,
-   "min": 33.9,
-   "usg": 17.8,
-   "threes": 2.4,
-   "reb": 6.3,
-   "ast": 2.2,
-   "stocks": 1.9,
-   "pts": 15.4,
-   "dk": 31.3,
-   "badges": {
-    "minutes": "silver"
-   },
-   "ranks": {
-    "minutes": 19
+    "minutes": 26
    }
   },
   {
    "player": "Alperen Sengun",
    "last_team": "HOU",
    "pos": "C",
-   "g": 12,
-   "gs": 12,
-   "min": 34.6,
-   "usg": 26.4,
+   "g": 15,
+   "gs": 15,
+   "min": 33.0,
+   "usg": 26.7,
    "threes": 1.0,
-   "reb": 9.6,
-   "ast": 7.7,
-   "stocks": 2.2,
-   "pts": 22.8,
-   "dk": 50.7,
+   "reb": 9.3,
+   "ast": 7.0,
+   "stocks": 1.9,
+   "pts": 22.1,
+   "dk": 48.3,
    "badges": {
-    "minutes": "silver",
     "rebounds": "silver",
-    "assists": "gold",
-    "stocks": "silver"
+    "assists": "silver"
    },
    "ranks": {
-    "minutes": 13,
-    "rebounds": 13,
-    "assists": 8,
-    "stocks": 29
+    "rebounds": 12,
+    "assists": 11
    }
   },
   {
    "player": "Fred VanVleet",
    "last_team": "HOU",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 30.5,
-   "usg": 17.9,
+   "g": 14,
+   "gs": 14,
+   "min": 30.1,
+   "usg": 19.4,
    "threes": 2.9,
    "reb": 2.9,
-   "ast": 5.4,
-   "stocks": 1.5,
-   "pts": 14.0,
-   "dk": 29.5,
+   "ast": 5.7,
+   "stocks": 1.4,
+   "pts": 14.4,
+   "dk": 30.2,
    "badges": {
-    "threes": "silver"
+    "threes": "silver",
+    "assists": "silver"
    },
    "ranks": {
-    "threes": 17
+    "threes": 20,
+    "assists": 30
    }
   },
   {
    "player": "Draymond Green",
    "last_team": "GSW",
    "pos": "F",
-   "g": 11,
-   "gs": 11,
-   "min": 25.9,
-   "usg": 10.7,
-   "threes": 0.3,
-   "reb": 4.7,
-   "ast": 7.1,
+   "g": 14,
+   "gs": 14,
+   "min": 25.7,
+   "usg": 10.3,
+   "threes": 0.5,
+   "reb": 4.8,
+   "ast": 6.3,
    "stocks": 1.7,
-   "pts": 3.3,
-   "dk": 22.0,
+   "pts": 3.6,
+   "dk": 21.4,
    "badges": {
     "assists": "silver"
    },
    "ranks": {
-    "assists": 12
+    "assists": 18
+   }
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "last_team": "GSW",
+   "pos": "F",
+   "g": 17,
+   "gs": 17,
+   "min": 31.7,
+   "usg": 27.0,
+   "threes": 1.9,
+   "reb": 7.4,
+   "ast": 3.6,
+   "stocks": 1.8,
+   "pts": 19.2,
+   "dk": 37.1,
+   "badges": {
+    "rebounds": "silver"
+   },
+   "ranks": {
+    "rebounds": 30
    }
   },
   {
@@ -1716,46 +1760,46 @@
     "usage": "silver"
    },
    "ranks": {
-    "usage": 25
+    "usage": 21
    }
   },
   {
    "player": "Walker Kessler",
    "last_team": "LAL",
    "pos": "C",
-   "g": 14,
-   "gs": 14,
-   "min": 30.9,
-   "usg": 16.8,
-   "threes": 0.0,
-   "reb": 10.9,
-   "ast": 1.9,
-   "stocks": 3.4,
-   "pts": 14.5,
-   "dk": 37.8,
+   "g": 16,
+   "gs": 16,
+   "min": 30.8,
+   "usg": 17.0,
+   "threes": 0.1,
+   "reb": 10.7,
+   "ast": 1.8,
+   "stocks": 3.2,
+   "pts": 14.2,
+   "dk": 36.9,
    "badges": {
     "rebounds": "gold",
     "stocks": "gold"
    },
    "ranks": {
-    "rebounds": 6,
-    "stocks": 2
+    "rebounds": 8,
+    "stocks": 3
    }
   },
   {
    "player": "Matisse Thybulle",
    "last_team": "LAL",
    "pos": "G",
-   "g": 14,
-   "gs": 14,
-   "min": 24.4,
-   "usg": 12.7,
-   "threes": 1.7,
-   "reb": 2.3,
-   "ast": 1.0,
-   "stocks": 3.1,
-   "pts": 7.4,
-   "dk": 18.3,
+   "g": 17,
+   "gs": 17,
+   "min": 24.8,
+   "usg": 12.5,
+   "threes": 1.8,
+   "reb": 2.4,
+   "ast": 1.1,
+   "stocks": 3.2,
+   "pts": 7.5,
+   "dk": 18.8,
    "badges": {
     "stocks": "gold"
    },
@@ -1767,16 +1811,16 @@
    "player": "Luka Doncic",
    "last_team": "LAL",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 35.8,
-   "usg": 40.5,
-   "threes": 5.4,
-   "reb": 7.2,
-   "ast": 7.8,
-   "stocks": 2.6,
-   "pts": 39.0,
-   "dk": 65.6,
+   "g": 15,
+   "gs": 15,
+   "min": 36.3,
+   "usg": 40.6,
+   "threes": 4.9,
+   "reb": 6.7,
+   "ast": 7.7,
+   "stocks": 2.5,
+   "pts": 37.2,
+   "dk": 62.4,
    "badges": {
     "minutes": "gold",
     "usage": "gold",
@@ -1785,11 +1829,11 @@
     "stocks": "silver"
    },
    "ranks": {
-    "minutes": 6,
+    "minutes": 5,
     "usage": 1,
     "threes": 1,
-    "assists": 7,
-    "stocks": 13
+    "assists": 8,
+    "stocks": 14
    }
   },
   {
@@ -1810,138 +1854,98 @@
     "minutes": "gold"
    },
    "ranks": {
-    "minutes": 9
-   }
-  },
-  {
-   "player": "Jaden Hardy",
-   "last_team": "LAL",
-   "pos": "G",
-   "g": 7,
-   "gs": 0,
-   "min": 3.4,
-   "usg": 29.2,
-   "threes": 0.3,
-   "reb": 0.6,
-   "ast": 0.4,
-   "stocks": 0.3,
-   "pts": 1.6,
-   "dk": 3.6,
-   "badges": {
-    "usage": "silver"
-   },
-   "ranks": {
-    "usage": 22
+    "minutes": 8
    }
   },
   {
    "player": "Devin Booker",
    "last_team": "PHX",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 33.4,
-   "usg": 29.4,
-   "threes": 2.0,
+   "g": 15,
+   "gs": 15,
+   "min": 33.9,
+   "usg": 29.2,
+   "threes": 1.9,
    "reb": 2.7,
-   "ast": 5.2,
-   "stocks": 1.5,
-   "pts": 24.8,
-   "dk": 38.8,
+   "ast": 5.3,
+   "stocks": 1.3,
+   "pts": 24.7,
+   "dk": 38.3,
    "badges": {
     "minutes": "silver",
     "usage": "silver"
    },
    "ranks": {
-    "minutes": 30,
-    "usage": 18
-   }
-  },
-  {
-   "player": "Toumani Camara",
-   "last_team": "POR",
-   "pos": "F",
-   "g": 12,
-   "gs": 12,
-   "min": 29.1,
-   "usg": 15.6,
-   "threes": 2.8,
-   "reb": 3.3,
-   "ast": 1.4,
-   "stocks": 1.2,
-   "pts": 13.2,
-   "dk": 22.8,
-   "badges": {
-    "threes": "silver"
-   },
-   "ranks": {
-    "threes": 19
+    "minutes": 23,
+    "usage": 20
    }
   },
   {
    "player": "Deni Avdija",
    "last_team": "POR",
    "pos": "F",
-   "g": 12,
-   "gs": 12,
+   "g": 14,
+   "gs": 14,
    "min": 32.8,
-   "usg": 29.2,
-   "threes": 2.0,
-   "reb": 6.1,
-   "ast": 6.2,
-   "stocks": 1.4,
+   "usg": 29.1,
+   "threes": 2.1,
+   "reb": 6.4,
+   "ast": 6.0,
+   "stocks": 1.5,
    "pts": 23.9,
-   "dk": 43.5,
+   "dk": 43.6,
    "badges": {
     "usage": "silver",
     "assists": "silver"
    },
    "ranks": {
-    "usage": 23,
-    "assists": 20
+    "usage": 22,
+    "assists": 21
    }
   },
   {
    "player": "Donovan Clingan",
    "last_team": "POR",
    "pos": "C",
-   "g": 12,
-   "gs": 12,
-   "min": 25.5,
-   "usg": 16.5,
-   "threes": 1.1,
-   "reb": 10.5,
-   "ast": 1.6,
-   "stocks": 2.7,
-   "pts": 11.0,
-   "dk": 32.2,
+   "g": 16,
+   "gs": 16,
+   "min": 26.1,
+   "usg": 16.7,
+   "threes": 1.0,
+   "reb": 10.9,
+   "ast": 1.9,
+   "stocks": 2.8,
+   "pts": 11.4,
+   "dk": 33.9,
    "badges": {
     "rebounds": "gold",
-    "stocks": "silver"
+    "stocks": "gold"
    },
    "ranks": {
-    "rebounds": 8,
-    "stocks": 11
+    "rebounds": 6,
+    "stocks": 7
    }
   },
   {
    "player": "Damian Lillard",
    "last_team": "POR",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 29.5,
-   "usg": 27.4,
+   "g": 16,
+   "gs": 16,
+   "min": 29.8,
+   "usg": 28.0,
    "threes": 3.1,
-   "reb": 3.1,
-   "ast": 4.3,
+   "reb": 3.2,
+   "ast": 4.0,
    "stocks": 0.8,
    "pts": 20.6,
-   "dk": 33.0,
+   "dk": 32.6,
    "badges": {
+    "usage": "silver",
     "threes": "silver"
    },
    "ranks": {
+    "usage": 30,
     "threes": 15
    }
   },
@@ -1949,137 +1953,156 @@
    "player": "Domantas Sabonis",
    "last_team": "SAC",
    "pos": "F",
-   "g": 12,
-   "gs": 12,
-   "min": 34.0,
-   "usg": 16.6,
-   "threes": 0.2,
-   "reb": 13.2,
-   "ast": 5.6,
-   "stocks": 0.8,
-   "pts": 14.2,
-   "dk": 40.5,
+   "g": 15,
+   "gs": 15,
+   "min": 33.5,
+   "usg": 17.5,
+   "threes": 0.3,
+   "reb": 13.6,
+   "ast": 5.3,
+   "stocks": 0.7,
+   "pts": 14.1,
+   "dk": 40.4,
    "badges": {
     "minutes": "silver",
-    "rebounds": "gold",
-    "assists": "silver"
+    "rebounds": "gold"
    },
    "ranks": {
-    "minutes": 17,
-    "rebounds": 2,
-    "assists": 28
+    "minutes": 29,
+    "rebounds": 2
+   }
+  },
+  {
+   "player": "De'Andre Hunter",
+   "last_team": "SAC",
+   "pos": "F",
+   "g": 14,
+   "gs": 14,
+   "min": 33.6,
+   "usg": 17.9,
+   "threes": 2.2,
+   "reb": 4.5,
+   "ast": 1.6,
+   "stocks": 0.6,
+   "pts": 15.3,
+   "dk": 25.0,
+   "badges": {
+    "minutes": "silver"
+   },
+   "ranks": {
+    "minutes": 27
    }
   },
   {
    "player": "Zach LaVine",
    "last_team": "SAC",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 33.0,
-   "usg": 25.0,
-   "threes": 2.8,
-   "reb": 3.2,
-   "ast": 2.8,
-   "stocks": 1.4,
-   "pts": 21.4,
-   "dk": 32.5,
+   "g": 15,
+   "gs": 15,
+   "min": 33.1,
+   "usg": 24.1,
+   "threes": 2.7,
+   "reb": 3.6,
+   "ast": 2.7,
+   "stocks": 1.5,
+   "pts": 20.5,
+   "dk": 32.0,
    "badges": {
     "threes": "silver"
    },
    "ranks": {
-    "threes": 20
+    "threes": 25
    }
   },
   {
    "player": "Darius Acuff Jr.",
    "last_team": "SAC",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
+   "g": 16,
+   "gs": 16,
    "min": 36.8,
    "usg": 33.4,
    "threes": 3.1,
-   "reb": 3.5,
-   "ast": 7.1,
+   "reb": 3.6,
+   "ast": 7.4,
    "stocks": 1.1,
-   "pts": 25.5,
-   "dk": 42.5,
+   "pts": 25.4,
+   "dk": 43.0,
    "badges": {
     "minutes": "gold",
     "usage": "gold",
     "threes": "silver",
-    "assists": "silver"
+    "assists": "gold"
    },
    "ranks": {
-    "minutes": 2,
+    "minutes": 3,
     "usage": 7,
     "threes": 16,
-    "assists": 13
+    "assists": 9
    }
   },
   {
-   "player": "Precious Achiuwa",
-   "last_team": "SAC",
+   "player": "Isaiah Jackson",
+   "last_team": "LAC",
    "pos": "F",
-   "g": 11,
-   "gs": 9,
-   "min": 26.4,
-   "usg": 16.9,
-   "threes": 0.4,
-   "reb": 6.4,
-   "ast": 1.1,
-   "stocks": 2.4,
-   "pts": 10.4,
-   "dk": 24.4,
+   "g": 14,
+   "gs": 6,
+   "min": 17.8,
+   "usg": 18.7,
+   "threes": 0.1,
+   "reb": 4.8,
+   "ast": 1.8,
+   "stocks": 2.2,
+   "pts": 7.5,
+   "dk": 19.9,
    "badges": {
     "stocks": "silver"
    },
    "ranks": {
-    "stocks": 20
+    "stocks": 25
    }
   },
   {
    "player": "Kris Dunn",
    "last_team": "LAC",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 27.1,
-   "usg": 12.5,
+   "g": 15,
+   "gs": 13,
+   "min": 26.0,
+   "usg": 12.7,
    "threes": 0.8,
    "reb": 3.8,
-   "ast": 4.2,
-   "stocks": 2.4,
-   "pts": 7.8,
-   "dk": 23.4,
+   "ast": 4.1,
+   "stocks": 2.5,
+   "pts": 7.0,
+   "dk": 22.5,
    "badges": {
     "stocks": "silver"
    },
    "ranks": {
-    "stocks": 21
+    "stocks": 15
    }
   },
   {
    "player": "Darius Garland",
    "last_team": "LAC",
    "pos": "G",
-   "g": 12,
-   "gs": 12,
-   "min": 33.2,
-   "usg": 29.3,
+   "g": 15,
+   "gs": 15,
+   "min": 33.1,
+   "usg": 28.4,
    "threes": 2.5,
-   "reb": 2.3,
-   "ast": 6.9,
-   "stocks": 0.7,
-   "pts": 21.2,
-   "dk": 34.9,
+   "reb": 2.1,
+   "ast": 6.5,
+   "stocks": 1.0,
+   "pts": 20.9,
+   "dk": 34.6,
    "badges": {
     "usage": "silver",
     "assists": "silver"
    },
    "ranks": {
-    "usage": 20,
+    "usage": 26,
     "assists": 15
    }
   },
@@ -2087,85 +2110,85 @@
    "player": "Jarrett Allen",
    "last_team": "CLE",
    "pos": "C",
-   "g": 11,
-   "gs": 11,
-   "min": 25.8,
-   "usg": 16.5,
-   "threes": 0.3,
-   "reb": 8.3,
-   "ast": 1.4,
-   "stocks": 2.0,
-   "pts": 12.5,
-   "dk": 28.9,
+   "g": 14,
+   "gs": 14,
+   "min": 26.8,
+   "usg": 17.2,
+   "threes": 0.2,
+   "reb": 8.7,
+   "ast": 1.9,
+   "stocks": 1.9,
+   "pts": 12.6,
+   "dk": 29.9,
    "badges": {
     "rebounds": "silver"
    },
    "ranks": {
-    "rebounds": 21
+    "rebounds": 17
    }
   },
   {
    "player": "James Harden",
    "last_team": "CLE",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 32.8,
-   "usg": 23.0,
-   "threes": 2.6,
-   "reb": 4.7,
-   "ast": 5.8,
-   "stocks": 1.5,
-   "pts": 16.9,
-   "dk": 34.4,
+   "g": 16,
+   "gs": 16,
+   "min": 33.5,
+   "usg": 22.9,
+   "threes": 2.9,
+   "reb": 4.8,
+   "ast": 6.2,
+   "stocks": 1.4,
+   "pts": 18.4,
+   "dk": 36.7,
    "badges": {
+    "minutes": "silver",
     "threes": "silver",
     "assists": "silver"
    },
    "ranks": {
-    "threes": 28,
-    "assists": 24
+    "minutes": 30,
+    "threes": 21,
+    "assists": 19
    }
   },
   {
    "player": "Donovan Mitchell",
    "last_team": "CLE",
    "pos": "G",
-   "g": 13,
-   "gs": 13,
-   "min": 32.8,
-   "usg": 28.9,
-   "threes": 2.8,
-   "reb": 4.9,
-   "ast": 5.6,
-   "stocks": 1.7,
-   "pts": 23.0,
-   "dk": 41.1,
+   "g": 16,
+   "gs": 16,
+   "min": 32.9,
+   "usg": 29.8,
+   "threes": 2.7,
+   "reb": 4.7,
+   "ast": 5.2,
+   "stocks": 1.6,
+   "pts": 24.5,
+   "dk": 41.4,
    "badges": {
     "usage": "silver",
-    "threes": "silver",
-    "assists": "silver"
+    "threes": "silver"
    },
    "ranks": {
-    "usage": 26,
-    "threes": 21,
-    "assists": 29
+    "usage": 18,
+    "threes": 26
    }
   },
   {
    "player": "Peyton Watson",
    "last_team": "CLE",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 28.0,
-   "usg": 20.5,
-   "threes": 0.9,
+   "g": 13,
+   "gs": 13,
+   "min": 27.6,
+   "usg": 20.7,
+   "threes": 1.2,
    "reb": 4.5,
-   "ast": 2.7,
-   "stocks": 2.3,
-   "pts": 10.4,
-   "dk": 24.3,
+   "ast": 2.5,
+   "stocks": 2.2,
+   "pts": 11.0,
+   "dk": 24.5,
    "badges": {
     "stocks": "silver"
    },
@@ -2177,119 +2200,100 @@
    "player": "Nikola Jokic",
    "last_team": "DEN",
    "pos": "C",
-   "g": 11,
-   "gs": 11,
-   "min": 36.4,
-   "usg": 28.4,
-   "threes": 1.0,
-   "reb": 10.5,
-   "ast": 9.1,
-   "stocks": 3.0,
-   "pts": 23.7,
-   "dk": 57.1,
+   "g": 15,
+   "gs": 15,
+   "min": 37.1,
+   "usg": 28.1,
+   "threes": 1.3,
+   "reb": 10.9,
+   "ast": 9.2,
+   "stocks": 2.5,
+   "pts": 25.1,
+   "dk": 58.2,
    "badges": {
     "minutes": "gold",
     "usage": "silver",
     "rebounds": "gold",
     "assists": "gold",
-    "stocks": "gold"
+    "stocks": "silver"
    },
    "ranks": {
-    "minutes": 4,
-    "usage": 29,
-    "rebounds": 9,
+    "minutes": 1,
+    "usage": 28,
+    "rebounds": 7,
     "assists": 2,
-    "stocks": 5
+    "stocks": 16
    }
   },
   {
    "player": "Jamal Murray",
    "last_team": "DEN",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 36.5,
-   "usg": 26.8,
-   "threes": 3.6,
-   "reb": 5.2,
-   "ast": 6.2,
-   "stocks": 1.8,
-   "pts": 25.9,
-   "dk": 45.9,
+   "g": 15,
+   "gs": 15,
+   "min": 37.0,
+   "usg": 26.4,
+   "threes": 3.3,
+   "reb": 5.0,
+   "ast": 5.9,
+   "stocks": 2.2,
+   "pts": 26.2,
+   "dk": 46.1,
    "badges": {
     "minutes": "gold",
-    "threes": "gold",
-    "assists": "silver"
+    "threes": "silver",
+    "assists": "silver",
+    "stocks": "silver"
    },
    "ranks": {
-    "minutes": 3,
-    "threes": 9,
-    "assists": 21
+    "minutes": 2,
+    "threes": 12,
+    "assists": 25,
+    "stocks": 27
    }
   },
   {
    "player": "Christian Braun",
    "last_team": "DEN",
    "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 33.7,
-   "usg": 16.0,
-   "threes": 1.5,
-   "reb": 4.4,
-   "ast": 2.3,
+   "g": 15,
+   "gs": 15,
+   "min": 33.9,
+   "usg": 16.3,
+   "threes": 1.7,
+   "reb": 4.6,
+   "ast": 2.5,
    "stocks": 2.5,
-   "pts": 12.8,
-   "dk": 26.8,
+   "pts": 13.7,
+   "dk": 28.6,
    "badges": {
     "minutes": "silver",
     "stocks": "silver"
    },
    "ranks": {
-    "minutes": 25,
-    "stocks": 16
-   }
-  },
-  {
-   "player": "Brandin Podziemski",
-   "last_team": "GSW",
-   "pos": "G",
-   "g": 11,
-   "gs": 11,
-   "min": 32.5,
-   "usg": 20.0,
-   "threes": 2.8,
-   "reb": 4.9,
-   "ast": 3.8,
-   "stocks": 1.7,
-   "pts": 16.5,
-   "dk": 32.6,
-   "badges": {
-    "threes": "silver"
-   },
-   "ranks": {
-    "threes": 22
+    "minutes": 24,
+    "stocks": 17
    }
   },
   {
    "player": "Anthony Black",
    "last_team": "ORL",
    "pos": "G",
-   "g": 9,
-   "gs": 8,
-   "min": 32.2,
-   "usg": 22.9,
-   "threes": 2.0,
-   "reb": 5.6,
+   "g": 13,
+   "gs": 12,
+   "min": 33.2,
+   "usg": 23.0,
+   "threes": 2.1,
+   "reb": 5.1,
    "ast": 5.4,
-   "stocks": 2.6,
-   "pts": 16.3,
-   "dk": 36.2,
+   "stocks": 2.8,
+   "pts": 16.1,
+   "dk": 35.7,
    "badges": {
-    "stocks": "silver"
+    "stocks": "gold"
    },
    "ranks": {
-    "stocks": 14
+    "stocks": 8
    }
   },
   {
@@ -2310,86 +2314,44 @@
     "usage": "silver"
    },
    "ranks": {
-    "usage": 12
+    "usage": 13
    }
   },
   {
-   "player": "Meleek Thomas",
-   "last_team": "CLE",
-   "pos": "G",
-   "g": 11,
-   "gs": 3,
-   "min": 23.5,
-   "usg": 22.7,
-   "threes": 2.6,
-   "reb": 2.6,
-   "ast": 1.5,
-   "stocks": 1.4,
-   "pts": 13.6,
-   "dk": 22.6,
-   "badges": {
-    "threes": "silver"
-   },
-   "ranks": {
-    "threes": 29
-   }
-  },
-  {
-   "player": "Mo Bamba",
-   "last_team": "UTA",
-   "pos": "C",
-   "g": 10,
-   "gs": 1,
-   "min": 19.7,
-   "usg": 14.5,
-   "threes": 0.6,
-   "reb": 5.8,
-   "ast": 1.0,
-   "stocks": 2.2,
-   "pts": 9.3,
-   "dk": 22.4,
-   "badges": {
-    "stocks": "silver"
-   },
-   "ranks": {
-    "stocks": 30
-   }
-  },
-  {
-   "player": "Leaky Black",
-   "last_team": "SAC",
+   "player": "AJ Dybantsa",
+   "last_team": "WAS",
    "pos": "F",
-   "g": 8,
-   "gs": 1,
-   "min": 21.8,
-   "usg": 10.2,
-   "threes": 1.8,
-   "reb": 3.8,
-   "ast": 1.6,
-   "stocks": 2.4,
-   "pts": 5.9,
-   "dk": 18.4,
+   "g": 14,
+   "gs": 14,
+   "min": 33.9,
+   "usg": 24.2,
+   "threes": 0.9,
+   "reb": 6.9,
+   "ast": 2.8,
+   "stocks": 1.6,
+   "pts": 16.5,
+   "dk": 32.1,
    "badges": {
-    "stocks": "silver"
+    "minutes": "silver"
    },
    "ranks": {
-    "stocks": 22
+    "minutes": 25
    }
   },
   {
    "player": "Coby White",
    "last_team": "CHA",
    "pos": "G",
-   "g": 6,
-   "gs": 6,
-   "min": 18.3,
-   "usg": 35.0,
+   "g": 8,
+   "gs": 8,
+   "min": 20.2,
+   "usg": 34.4,
    "threes": 1.0,
-   "reb": 1.8,
-   "ast": 3.2,
-   "stocks": 0.2,
-   "pts": 11.7,
-   "dk": 18.1,
+   "reb": 2.2,
+   "ast": 4.0,
+   "stocks": 0.8,
+   "pts": 12.5,
+   "dk": 21.8,
    "badges": {
     "usage": "gold"
    },
