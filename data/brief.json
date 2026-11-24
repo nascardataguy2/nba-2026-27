@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updated": "8:27 PM ET",
+ "updated": "8:32 PM ET",
  "games": 10,
  "pending": [],
  "first_report": "5:26 AM",
@@ -410,16 +410,7 @@
        "min": 30.7
       }
      ],
-     "q": [
-      {
-       "player": "Victor Wembanyama",
-       "min": 31.0
-      },
-      {
-       "player": "De'Aaron Fox",
-       "min": 28.7
-      }
-     ]
+     "q": []
     },
     "SAC": {
      "out": [],
@@ -430,6 +421,30 @@
   }
  ],
  "changed": [
+  {
+   "player": "Victor Wembanyama",
+   "team": "SAS",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "8:34 PM"
+  },
+  {
+   "player": "Jordan McLaughlin",
+   "team": "SAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "8:34 PM"
+  },
+  {
+   "player": "De'Aaron Fox",
+   "team": "SAS",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Shin Contusion",
+   "time": "8:34 PM"
+  },
   {
    "player": "Zion Williamson",
    "team": "NOP",
@@ -485,33 +500,25 @@
    "was": "Probable",
    "why": "Right Ankle Sprain",
    "time": "6:19 PM"
-  },
-  {
-   "player": "Jaylen Brown",
-   "team": "PHI",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Left Hamstring Strain",
-   "time": "6:19 PM"
-  },
-  {
-   "player": "Adem Bona",
-   "team": "PHI",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Cervical Spine Sprain",
-   "time": "6:19 PM"
-  },
-  {
-   "player": "Collin Murray-Boyles",
-   "team": "TOR",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Concussion Protocol",
-   "time": "6:04 PM"
   }
  ],
  "chg": [
+  {
+   "key": "Victor Wembanyama",
+   "team": "SAS",
+   "head": "Victor Wembanyama OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Luke Kornet",
+     "salary": 3100,
+     "much": "+8.0 DK projected vs. last 3"
+    }
+   ],
+   "time": "8:34 PM",
+   "size": 61.6
+  },
   {
    "key": "Joel Embiid",
    "team": "PHI",
@@ -553,6 +560,27 @@
    ],
    "time": "6:49 PM",
    "size": 38.7
+  },
+  {
+   "key": "De'Aaron Fox",
+   "team": "SAS",
+   "head": "De'Aaron Fox OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Stephon Castle",
+     "salary": 7500,
+     "much": "+12.3 DK without him (1 game)"
+    },
+    {
+     "player": "Keldon Johnson",
+     "salary": 5100,
+     "much": "+12.2 DK without him (1 game)"
+    }
+   ],
+   "time": "8:34 PM",
+   "size": 28.3
   },
   {
    "key": "Jaxson Hayes",
@@ -613,6 +641,16 @@
    "size": 20.0
   },
   {
+   "key": "SAS",
+   "team": "SAS",
+   "head": "McLaughlin CLEARED",
+   "st": "Probable",
+   "act": "",
+   "names": [],
+   "time": "8:34 PM",
+   "size": 9.5
+  },
+  {
    "key": "MIL",
    "team": "MIL",
    "head": "Dieng CLEARED",
@@ -641,7 +679,7 @@
     {
      "player": "Victor Wembanyama",
      "min": 33.0,
-     "note": "Victor Wembanyama is questionable for Monday's game at Sacramento with back tightness. The show said it does not expect anything serious and suspects the Spurs may simply rest him for the long run.",
+     "note": "Victor Wembanyama was moved from questionable to out for tonight on the NBA's 08:30 PM injury report. He had averaged 31 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     },
     {
@@ -653,7 +691,7 @@
     {
      "player": "De'Aaron Fox",
      "min": 30.7,
-     "note": "De'Aaron Fox is questionable for Monday's game at Sacramento with a shin contusion. The show said it looks like the Spurs could be managing their stars and letting him reset.",
+     "note": "De'Aaron Fox was moved from questionable to out for tonight (right shin contusion) on the NBA's 08:30 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
      "new": true
     }
    ],
@@ -666,18 +704,18 @@
      "why": "same minutes, more production",
      "much": "+10.4 DK without them (2 games)",
      "score": 10.4,
-     "min": 33.0,
-     "dk": 39.6,
+     "min": 35.0,
+     "dk": 42.0,
      "avg": 33.9
     },
     {
      "player": "Carter Bryant",
      "salary": 3200,
      "why": "first off bench, 13 minutes (11/19)",
-     "much": "+3.2 DK projected vs. last 3",
-     "score": 3.2333333333333334,
-     "min": 13.7,
-     "dk": 9.4,
+     "much": "+5.2 DK projected vs. last 3",
+     "score": 5.233333333333333,
+     "min": 16.6,
+     "dk": 11.4,
      "avg": 6.9
     }
    ],
@@ -717,7 +755,7 @@
      "much": "+31.4 DK without them (2 games)",
      "score": 31.4,
      "min": 22.8,
-     "dk": 23.1,
+     "dk": 23.0,
      "avg": 19.1
     },
     {
@@ -727,7 +765,7 @@
      "much": "+21.5 DK without them (2 games)",
      "score": 21.5,
      "min": 28.2,
-     "dk": 29.0,
+     "dk": 29.3,
      "avg": null
     },
     {
@@ -1085,55 +1123,55 @@
  ],
  "chalk": [
   {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "own": 38.0,
+   "dk": 45.5,
+   "salary": 7000
+  },
+  {
+   "player": "Taylor Hendricks",
+   "team": "MEM",
+   "own": 38.0,
+   "dk": 27.1,
+   "salary": 4300
+  },
+  {
    "player": "Buddy Hield",
    "team": "CHI",
-   "own": 38.0,
+   "own": 33.4,
    "dk": 24.4,
    "salary": 3800
   },
   {
-   "player": "Luke Kornet",
-   "team": "SAS",
-   "own": 38.0,
-   "dk": 15.0,
-   "salary": 3100
-  },
-  {
-   "player": "Josh Giddey",
+   "player": "Jalen Smith",
    "team": "CHI",
-   "own": 32.6,
-   "dk": 37.8,
-   "salary": 7400
-  },
-  {
-   "player": "Mohamed Bamba",
-   "team": "UTA",
-   "own": 32.4,
-   "dk": 29.0,
-   "salary": 5300
+   "own": 32.5,
+   "dk": 34.8,
+   "salary": 6000
   }
  ],
  "leverage": [
   {
    "player": "Isaiah Collier",
    "team": "UTA",
-   "own": 1.1,
+   "own": 1.3,
    "dk": 23.9,
    "salary": 4100
   },
   {
-   "player": "Jarace Walker",
-   "team": "IND",
+   "player": "Scottie Barnes",
+   "team": "TOR",
    "own": 1.1,
-   "dk": 19.9,
-   "salary": 3500
+   "dk": 49.2,
+   "salary": 8900
   },
   {
-   "player": "Javon Small",
+   "player": "Ty Jerome",
    "team": "MEM",
-   "own": 1.1,
-   "dk": 28.3,
-   "salary": 5000
+   "own": 5.0,
+   "dk": 42.5,
+   "salary": 8200
   }
  ],
  "last": {
@@ -1227,8 +1265,8 @@
   ]
  },
  "injuries": {
-  "report": "08:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_08_15PM.pdf",
+  "report": "08:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_08_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1751,6 +1789,98 @@
    },
    {
     "last": {
+     "date": "2026-11-21",
+     "dk": 95.8,
+     "min": 32,
+     "opp": "NOP",
+     "ha": "vs",
+     "res": "W",
+     "score": "114-91"
+    },
+    "game": "SAS at SAC",
+    "time": "2026-11-24T03:00Z",
+    "team": "SAS",
+    "player": "Victor Wembanyama",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:34 PM",
+    "salary": 12000,
+    "min": 33.0,
+    "benefits": [
+     {
+      "player": "Luke Kornet",
+      "salary": 3100,
+      "why": "subs in for him 53 of 70 times",
+      "much": "+8.0 DK projected vs. last 3",
+      "score": 8.0,
+      "min": 18.0,
+      "dk": 15.0,
+      "avg": 10.8
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-21",
+     "dk": 21.0,
+     "min": 26,
+     "opp": "NOP",
+     "ha": "vs",
+     "res": "W",
+     "score": "114-91"
+    },
+    "game": "SAS at SAC",
+    "time": "2026-11-24T03:00Z",
+    "team": "SAS",
+    "player": "De'Aaron Fox",
+    "status": "Out",
+    "reason": "Right Shin Contusion",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:34 PM",
+    "salary": 6700,
+    "min": 30.7,
+    "benefits": [
+     {
+      "player": "Stephon Castle",
+      "salary": 7500,
+      "why": "35 minutes, up from 29",
+      "much": "+12.3 DK without him (1 game)",
+      "score": 12.3,
+      "min": 35.0,
+      "dk": 42.0,
+      "avg": 33.9
+     },
+     {
+      "player": "Keldon Johnson",
+      "salary": 5100,
+      "why": "29 minutes, up from 24",
+      "much": "+12.2 DK without him (1 game)",
+      "score": 12.2,
+      "min": 29.0,
+      "dk": 26.7,
+      "avg": 20.5
+     },
+     {
+      "player": "Jordan McLaughlin",
+      "salary": 3200,
+      "why": "19 minutes, up from 9",
+      "much": "+8.5 DK without him (1 game)",
+      "score": 8.5,
+      "min": 18.2,
+      "dk": 16.0,
+      "avg": 9.5
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-22",
      "dk": 12.2,
      "min": 12,
@@ -1779,7 +1909,7 @@
       "much": "+20.3 DK without him (3 games)",
       "score": 20.3,
       "min": 22.8,
-      "dk": 23.1,
+      "dk": 23.0,
       "avg": 19.1
      },
      {
@@ -1789,7 +1919,7 @@
       "much": "+19.5 DK without him (3 games)",
       "score": 19.5,
       "min": 28.2,
-      "dk": 29.0,
+      "dk": 29.3,
       "avg": null
      },
      {
@@ -1808,88 +1938,6 @@
    {
     "last": {
      "date": "2026-11-21",
-     "dk": 95.8,
-     "min": 32,
-     "opp": "NOP",
-     "ha": "vs",
-     "res": "W",
-     "score": "114-91"
-    },
-    "game": "SAS at SAC",
-    "time": "2026-11-24T03:00Z",
-    "team": "SAS",
-    "player": "Victor Wembanyama",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": 12000,
-    "min": 33.0,
-    "benefits": [
-     {
-      "player": "Luke Kornet",
-      "salary": 3100,
-      "why": "subs in for him 53 of 70 times",
-      "much": "about +20.8 DK",
-      "score": 20.82142857142857,
-      "min": 18.0,
-      "dk": 15.0,
-      "avg": 10.8
-     }
-    ],
-    "estimate": true
-   },
-   {
-    "last": {
-     "date": "2026-11-21",
-     "dk": 21.0,
-     "min": 26,
-     "opp": "NOP",
-     "ha": "vs",
-     "res": "W",
-     "score": "114-91"
-    },
-    "game": "SAS at SAC",
-    "time": "2026-11-24T03:00Z",
-    "team": "SAS",
-    "player": "De'Aaron Fox",
-    "status": "Questionable",
-    "reason": "Right Shin Contusion",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": 6700,
-    "min": 30.7,
-    "benefits": [
-     {
-      "player": "Stephon Castle",
-      "salary": 7500,
-      "why": "35 minutes, up from 29",
-      "much": "+12.3 DK without him (1 game)",
-      "score": 12.3,
-      "min": 33.0,
-      "dk": 39.6,
-      "avg": 33.9
-     },
-     {
-      "player": "Keldon Johnson",
-      "salary": 5100,
-      "why": "29 minutes, up from 24",
-      "much": "+12.2 DK without him (1 game)",
-      "score": 12.2,
-      "min": 25.2,
-      "dk": 23.2,
-      "avg": 20.5
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-21",
      "dk": 10.2,
      "min": 18,
      "opp": "NOP",
@@ -1901,27 +1949,16 @@
     "time": "2026-11-24T03:00Z",
     "team": "SAS",
     "player": "Jordan McLaughlin",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "8:34 PM",
     "salary": 3200,
     "min": 16.0,
-    "benefits": [
-     {
-      "player": "Julian Champagnie",
-      "salary": 5000,
-      "why": "subs in for him 4 of 15 times",
-      "much": "about +3.7 DK",
-      "score": 3.6722394220846235,
-      "min": 32.3,
-      "dk": 27.8,
-      "avg": 21.4
-     }
-    ],
-    "estimate": true
+    "benefits": [],
+    "estimate": false
    },
    {
     "last": {
@@ -3472,7 +3509,7 @@
       "much": "+10.8 DK without him (10 games)",
       "score": 10.8,
       "min": 22.8,
-      "dk": 23.1,
+      "dk": 23.0,
       "avg": 19.1
      },
      {
@@ -3573,18 +3610,18 @@
       "why": "same minutes, more production",
       "much": "+10.4 DK without him (2 games)",
       "score": 10.4,
-      "min": 33.0,
-      "dk": 39.6,
+      "min": 35.0,
+      "dk": 42.0,
       "avg": 33.9
      },
      {
       "player": "Carter Bryant",
       "salary": 3200,
       "why": "first off bench, 13 minutes (11/19)",
-      "much": "+3.2 DK projected vs. last 3",
-      "score": 3.2333333333333334,
-      "min": 13.7,
-      "dk": 9.4,
+      "much": "+5.2 DK projected vs. last 3",
+      "score": 5.233333333333333,
+      "min": 16.6,
+      "dk": 11.4,
       "avg": 6.9
      }
     ],
@@ -3640,7 +3677,7 @@
       "much": "+7.0 DK without him (14 games)",
       "score": 7.0,
       "min": 22.8,
-      "dk": 23.1,
+      "dk": 23.0,
       "avg": 19.1
      }
     ],
