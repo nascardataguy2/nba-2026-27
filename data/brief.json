@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updated": "6:58 PM ET",
+ "updated": "7:02 PM ET",
  "games": 10,
  "pending": [],
  "first_report": "5:26 AM",
@@ -108,7 +108,7 @@
    "away": "OKC",
    "home": "IND",
    "time": "2026-11-24T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 224.5,
    "fav": "OKC",
    "line": 6.5,
@@ -167,7 +167,7 @@
    "away": "BKN",
    "home": "MIN",
    "time": "2026-11-24T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 223.5,
    "fav": "MIN",
    "line": 11.5,
@@ -206,7 +206,7 @@
    "away": "MIL",
    "home": "TOR",
    "time": "2026-11-24T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 222.5,
    "fav": "TOR",
    "line": 10.5,
@@ -341,7 +341,7 @@
    "away": "UTA",
    "home": "LAL",
    "time": "2026-11-24T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 225.5,
    "fav": "LAL",
    "line": 13.5,
@@ -385,7 +385,7 @@
    "away": "SAS",
    "home": "SAC",
    "time": "2026-11-24T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 224.5,
    "fav": "SAS",
    "line": 12.5,
@@ -1100,48 +1100,48 @@
    "salary": 3800
   },
   {
-   "player": "Jalen Slawson",
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "own": 38.0,
+   "dk": 49.2,
+   "salary": 8900
+  },
+  {
+   "player": "Kelly Oubre",
    "team": "IND",
-   "own": 60.0,
-   "dk": 19.4,
-   "salary": 3400
+   "own": 37.2,
+   "dk": 24.2,
+   "salary": 4700
   },
   {
-   "player": "Brice Sensabaugh",
-   "team": "UTA",
-   "own": 40.0,
-   "dk": 23.1,
-   "salary": 5000
-  },
-  {
-   "player": "Keldon Johnson",
-   "team": "SAS",
-   "own": 40.0,
-   "dk": 21.9,
-   "salary": 5100
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "own": 36.9,
+   "dk": 38.3,
+   "salary": 7300
   }
  ],
  "leverage": [
   {
-   "player": "Isaiah Hartenstein",
-   "team": "OKC",
-   "own": 3.4,
-   "dk": 45.4,
-   "salary": 7000
-  },
-  {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 0.5,
+   "own": 3.1,
    "dk": 27.1,
    "salary": 4300
   },
   {
    "player": "Jarace Walker",
    "team": "IND",
-   "own": 0.5,
+   "own": 1.2,
    "dk": 21.7,
    "salary": 3500
+  },
+  {
+   "player": "Isaiah Collier",
+   "team": "UTA",
+   "own": 0.8,
+   "dk": 24.0,
+   "salary": 4100
   }
  ],
  "last": {
@@ -1235,8 +1235,8 @@
   ]
  },
  "injuries": {
-  "report": "06:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_45PM.pdf",
+  "report": "07:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_07_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1259,7 +1259,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "5:49 PM",
-    "salary": 8600,
+    "salary": null,
     "min": 34.0,
     "benefits": [
      {
@@ -1727,7 +1727,7 @@
     "was": "Probable",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 3800,
+    "salary": null,
     "min": 14.7,
     "benefits": [],
     "estimate": false
@@ -1951,7 +1951,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6400,
+    "salary": null,
     "min": 31.0,
     "benefits": [
      {
@@ -2007,7 +2007,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8400,
+    "salary": null,
     "min": 28.0,
     "benefits": [
      {
@@ -2053,7 +2053,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6000,
+    "salary": null,
     "min": 27.0,
     "benefits": [
      {
@@ -2089,7 +2089,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 5100,
+    "salary": null,
     "min": 26.0,
     "benefits": [
      {
@@ -2145,7 +2145,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3700,
+    "salary": null,
     "min": 22.0,
     "benefits": [
      {
@@ -2191,7 +2191,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 18.3,
     "benefits": [
      {
@@ -2237,7 +2237,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4000,
+    "salary": null,
     "min": 16.0,
     "benefits": [
      {
@@ -2293,7 +2293,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4700,
+    "salary": null,
     "min": 14.7,
     "benefits": [
      {
@@ -2395,7 +2395,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 12.7,
     "benefits": [
      {
@@ -3144,7 +3144,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6800,
+    "salary": null,
     "min": 30.7,
     "benefits": [
      {
@@ -3200,7 +3200,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7400,
+    "salary": null,
     "min": 30.0,
     "benefits": [
      {
@@ -3256,7 +3256,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6500,
+    "salary": null,
     "min": 24.7,
     "benefits": [
      {
@@ -3312,7 +3312,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6600,
+    "salary": null,
     "min": 23.0,
     "benefits": [
      {
@@ -3368,7 +3368,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3500,
+    "salary": null,
     "min": 18.7,
     "benefits": [
      {
@@ -3424,7 +3424,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3900,
+    "salary": null,
     "min": 14.3,
     "benefits": [
      {
