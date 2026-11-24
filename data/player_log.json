@@ -112,7 +112,7 @@
   "team": "UTA",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Ace Bailey as a top-100 season-long pickup with Jaren Jackson Jr. out. Bailey played 33 minutes in his last game on 11/22.",
+  "text": "Ace Bailey was listed as a top-100 season-long pickup with Jaren Jackson Jr. out. Bailey played 33 minutes in his last game on 11/22.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -157,7 +157,7 @@
   "team": "OKC",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Aday Mara as a top-100 season-long pickup with Chet Holmgren out. Mara is currently injured himself, so he is a stash for now. Mara played 29 minutes in his last game on 11/20.",
+  "text": "Aday Mara was listed as a top-100 season-long pickup with Chet Holmgren out. Mara is currently injured himself, so he is a stash for now. Mara played 29 minutes in his last game on 11/20.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -247,7 +247,7 @@
   "team": "OKC",
   "date": "2026-11-22",
   "kind": "role",
-  "text": "Shai Gilgeous-Alexander is out Sunday against Miami with back and neck injuries, and Dan Besbris expects Mitchell to be quite fantasy-relevant. Mitchell has started every game this month and played 31 and 34 minutes in his last two.",
+  "text": "Shai Gilgeous-Alexander is out Sunday against Miami with back and neck injuries, which should make Mitchell quite fantasy-relevant. Mitchell has started every game this month and played 31 and 34 minutes in his last two.",
   "expires": "2026-11-29",
   "src": "DB-1122b"
  },
@@ -580,7 +580,7 @@
   "team": "MIA",
   "date": "2026-11-22",
   "kind": "role",
-  "text": "Giannis Antetokounmpo is out Sunday with a groin injury, and Dan Besbris is watching whether Wiggins gets another decent game or Bobby Portis sees more minutes. Wiggins has played between 19 and 34 minutes off the bench this month.",
+  "text": "Giannis Antetokounmpo is out Sunday with a groin injury, which raises the question of whether Wiggins gets another decent game or Bobby Portis sees more minutes. Wiggins has played between 19 and 34 minutes off the bench this month.",
   "expires": "2026-11-29",
   "src": "DB-1122b"
  },
@@ -814,7 +814,7 @@
   "team": "MIN",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Ayo Dosunmu as a top-50 season-long pickup with Anthony Edwards out. Dosunmu played 34 minutes in his last game on 11/21.",
+  "text": "Ayo Dosunmu was listed as a top-50 season-long pickup with Anthony Edwards out. Dosunmu played 34 minutes in his last game on 11/21.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -1074,19 +1074,19 @@
   "player": "Brandon Ingram",
   "team": "LAC",
   "date": "2026-11-23",
-  "kind": "injury",
-  "text": "Brandon Ingram made his season debut on 11/23 and went straight into the starting lineup, playing 27 minutes with 34% usage. The show expects the Clippers to manage him on back-to-backs because of injury concerns rather than hold him to a strict minutes limit.",
+  "kind": "role",
+  "text": "Brandon Ingram made his season debut as a starter and played 27 minutes, which the show said was far more than it expected. Max Strus went from starting to the bench in that game, and the show said Rui Hachimura could eventually lose some of his role as well.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "DB-1124"
  },
  {
   "player": "Brandon Ingram",
   "team": "LAC",
   "date": "2026-11-23",
-  "kind": "role",
-  "text": "Brandon Ingram made his season debut as a starter and played 27 minutes, which the show said was far more than it expected. Max Strus went from starting to the bench in that game, and the show said Rui Hachimura could eventually lose some of his role as well.",
+  "kind": "minutes",
+  "text": "Brandon Ingram made his Clippers debut on Monday, Nov. 23, after sitting out since May following heel surgery and a repair of a partially torn Achilles tendon. He started and played 27 minutes in his first game back.",
   "expires": null,
-  "src": "DB-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Brandon Ingram",
@@ -1426,7 +1426,7 @@
   "team": "MEM",
   "date": "2026-11-20",
   "kind": "role",
-  "text": "Dan Besbris listed Cam Spencer as a top-75 season-long pickup because Ty Jerome is out, which opens up minutes for him. Spencer played 27 minutes in his last game on 11/19.",
+  "text": "Cam Spencer was listed as a top-75 season-long pickup because Ty Jerome is out, which opens up minutes for him. Spencer played 27 minutes in his last game on 11/19.",
   "expires": "2026-11-27",
   "src": "DB-1120"
  },
@@ -1510,6 +1510,15 @@
   "text": "The show said Cameron Boozer is out at least four weeks. He has already missed Memphis's games on 11/21 and 11/23. The show said no one on the roster is likely to become a full-time replacement for his role.",
   "expires": "2026-12-22",
   "src": "LO-1124b"
+ },
+ {
+  "player": "Cameron Boozer",
+  "team": "MEM",
+  "date": "2026-11-24",
+  "kind": "news",
+  "text": "Boozer is expected to miss at least a month with a sprained right ankle. Ty Jerome took 21 shots in 29 minutes in the first game without him.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Cameron Johnson",
@@ -1865,29 +1874,20 @@
  {
   "player": "Collin Gillespie",
   "team": "PHX",
-  "date": "2026-11-16",
-  "kind": "role",
-  "text": "Collin Gillespie played 26 minutes off the bench and has played 26 to 28 minutes in each of his last three games. The show said Phoenix looks bad without a true point guard and Gillespie is the only one on the roster, so it expects his minutes to stay at 25 or more unless the Suns trade for a guard.",
-  "expires": null,
-  "src": "OMS-1117b"
- },
- {
-  "player": "Collin Gillespie",
-  "team": "PHX",
-  "date": "2026-11-18",
-  "kind": "minutes",
-  "text": "Collin Gillespie played only 17 minutes in a blowout of Sacramento after playing 26 to 28 minutes in recent games. The show said his role depends on whether Phoenix needs a point guard in a given game, so he is hard to trust.",
-  "expires": null,
-  "src": "OMS-1119b"
- },
- {
-  "player": "Collin Gillespie",
-  "team": "PHX",
   "date": "2026-11-20",
   "kind": "role",
   "text": "Collin Gillespie played 27 minutes off the bench on November 20. The show believes Phoenix already sees him as its starting point guard of the future and said a Dejounte Murray trade would not help anyone on the Suns.",
   "expires": null,
   "src": "SE-1121b"
+ },
+ {
+  "player": "Collin Gillespie",
+  "team": "PHX",
+  "date": "2026-11-23",
+  "kind": "role",
+  "text": "Collin Gillespie played 30 minutes off the bench on Monday and was on the floor to close the overtime win at New Orleans, scoring five of his points in the extra period.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Collin Gillespie",
@@ -1930,9 +1930,9 @@
   "team": "TOR",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Collin Murray-Boyles came off the bench in 24 minutes while Jakob Poeltl and Allen Graves started. The show said this supports reports that the Poeltl and Murray-Boyles starting spot is matchup-based, so both players' roles can change game to game.",
+  "text": "Collin Murray-Boyles cleared the concussion protocol and returned on Monday after sitting out Friday. He came off the bench for 24 minutes and grabbed 10 rebounds.",
   "expires": null,
-  "src": "DB-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Collin Murray-Boyles",
@@ -2182,7 +2182,7 @@
   "team": "DET",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Daniss Jenkins as a top-75 season-long pickup with Jalen Duren out. Jenkins played 38 minutes in his last game on 11/22.",
+  "text": "Daniss Jenkins was listed as a top-75 season-long pickup with Jalen Duren out. Jenkins played 38 minutes in his last game on 11/22.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -2488,9 +2488,9 @@
   "team": "SAS",
   "date": "2026-11-23",
   "kind": "injury",
-  "text": "De'Aaron Fox was questionable with a right shin contusion for the Nov. 23 game against Sacramento and was ruled out. The show had expected him to be the one Spurs star who played that night, but he sat alongside Victor Wembanyama and Dylan Harper.",
-  "expires": "2026-11-24",
-  "src": "SE-1124"
+  "text": "De'Aaron Fox was ruled out of Monday's game at Sacramento with a shin injury.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "De'Andre Hunter",
@@ -2551,7 +2551,7 @@
   "team": "GSW",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris is still assessing De'Anthony Melton as a possible pickup with Stephen Curry out. Melton played 27 minutes in his last game on 11/22.",
+  "text": "De'Anthony Melton's role is worth watching with Stephen Curry out. Melton played 27 minutes in his last game on 11/22.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -2763,6 +2763,15 @@
   "src": "LO-1124"
  },
  {
+  "player": "Derik Queen",
+  "team": "NOP",
+  "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Derik Queen went back to the bench on Monday with Zion Williamson back from his thigh contusion, and his minutes fell to 21 after he started Saturday. He missed four of five free throws in the fourth quarter.",
+  "expires": null,
+  "src": "ESPN-1124"
+ },
+ {
   "player": "Derrick Jones Jr.",
   "team": "LAC",
   "date": "2026-11-19",
@@ -2920,7 +2929,7 @@
   "team": "SAS",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Devin Vassell as a top-100 season-long pickup with Dylan Harper out. Vassell played 26 minutes in his last game on 11/21.",
+  "text": "Devin Vassell was listed as a top-100 season-long pickup with Dylan Harper out. Vassell played 26 minutes in his last game on 11/21.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -2986,6 +2995,15 @@
   "text": "Domantas Sabonis took 16 shots in the Nov. 13 NBA Cup game, but he dropped back to six and seven attempts in his next two games. The show said Sacramento is deprioritizing him again outside of games it is truly trying to win, with usage rates of 14 and 18 percent, even though he still rebounds and passes.",
   "expires": null,
   "src": "SE-1120"
+ },
+ {
+  "player": "Domantas Sabonis",
+  "team": "SAC",
+  "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Domantas Sabonis fouled out with 3:25 left on Monday, which held him to 30 minutes in a game he had controlled early in the paint.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Dominick Barlow",
@@ -3197,11 +3215,11 @@
  {
   "player": "Dylan Harper",
   "team": "SAS",
-  "date": "2026-11-21",
+  "date": "2026-11-23",
   "kind": "injury",
-  "text": "Harper has missed San Antonio's last two games after last playing on Nov. 17. The show said the best-case timeline has him missing two to three weeks, and it named Devin Vassell as the player who benefits most.",
-  "expires": "2026-12-12",
-  "src": "N2S-1121"
+  "text": "Dylan Harper was ruled out of Monday's game at Sacramento with a hip injury.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Dyson Daniels",
@@ -3487,7 +3505,7 @@
   "team": "CHA",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Grayson Allen as a top-75 season-long pickup with Kon Knueppel out. Allen is currently injured himself, so he is a stash for now. Allen played 25 minutes in his last game on 11/15.",
+  "text": "Grayson Allen was listed as a top-75 season-long pickup with Kon Knueppel out. Allen is currently injured himself, so he is a stash for now. Allen played 25 minutes in his last game on 11/15.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -3802,7 +3820,7 @@
   "team": "TOR",
   "date": "2026-11-19",
   "kind": "role",
-  "text": "With RJ Barrett out at least 2 weeks and Kawhi Leonard also out, Dan Besbris said Walter jumps from a streaming option to a must-start. Walter already played 33 and 38 minutes the last two games and scored 36.3 and 42.3 DK.",
+  "text": "With RJ Barrett out at least 2 weeks and Kawhi Leonard also out, Walter's role grows a lot. Walter already played 33 and 38 minutes the last two games and scored 36.3 and 42.3 DK.",
   "expires": "2026-12-04",
   "src": "DB-1119"
  },
@@ -3856,9 +3874,9 @@
   "team": "TOR",
   "date": "2026-11-23",
   "kind": "minutes",
-  "text": "Ja'Kobe Walter has played 33 to 38 minutes as a starter in Toronto's last four games, and RJ Barrett has missed the last three of them. He scored 25 and 18 points on Nov. 17 and Nov. 18 before an 8-point game on 2-of-11 shooting. The show said he is lined up for a lot of minutes and shots while Barrett is hurt.",
+  "text": "Ja'Kobe Walter started and played 36 minutes on Monday with RJ Barrett out for a third straight game.",
   "expires": null,
-  "src": "SE-1124b"
+  "src": "ESPN-1124"
  },
  {
   "player": "Jabari Walker",
@@ -3895,6 +3913,15 @@
   "text": "Jaden McDaniels scored 25 points on 17 shots in 36 minutes on 11/21 with Anthony Edwards out again. He has played 31 to 39 minutes in each of his last five games. The show said he is doing more with Edwards out but that his shooting is running above his norm and will regress.",
   "expires": "2026-11-25",
   "src": "OMS-1122"
+ },
+ {
+  "player": "Jaden McDaniels",
+  "team": "MIN",
+  "date": "2026-11-23",
+  "kind": "usage",
+  "text": "Jaden McDaniels has a bigger scoring role while Anthony Edwards is out after his knee procedure. On Monday he scored a career-high 34 on 16 shots in 34 minutes, his third 30-point game in the regular season.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Jaden McDaniels",
@@ -3969,6 +3996,15 @@
   "src": "DB-1124"
  },
  {
+  "player": "Jake LaRavia",
+  "team": "LAL",
+  "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Jake LaRavia started and played 37 minutes on Monday while Austin Reaves missed his fifth straight game.",
+  "expires": null,
+  "src": "ESPN-1124"
+ },
+ {
   "player": "Jakob Poeltl",
   "team": "TOR",
   "date": "2026-11-03",
@@ -3998,15 +4034,6 @@
  {
   "player": "Jakob Poeltl",
   "team": "TOR",
-  "date": "2026-11-19",
-  "kind": "role",
-  "text": "With Collin Murray-Boyles in the concussion protocol, Dan Besbris said Poeltl is worth adding again. When Murray-Boyles left after 5 minutes on 11/18, Poeltl started and played 29 minutes for 33.3 DK, after coming off the bench for only 17 and 18 minutes in the two games before.",
-  "expires": "2026-11-27",
-  "src": "DB-1119"
- },
- {
-  "player": "Jakob Poeltl",
-  "team": "TOR",
   "date": "2026-11-20",
   "kind": "role",
   "text": "Jakob Poeltl has moved back into the starting lineup the last two games with Collin Murray-Boyles out, and he had 10 points, nine rebounds and two blocks in 32 minutes on 11/20. The show called him a must-play while Murray-Boyles or Scottie Barnes is out.",
@@ -4018,7 +4045,7 @@
   "team": "TOR",
   "date": "2026-11-22",
   "kind": "role",
-  "text": "Collin Murray-Boyles is out of the concussion protocol, and Dan Besbris is concerned for Poeltl again. Poeltl started and played 29 and 32 minutes while Murray-Boyles was out, but he came off the bench for only 17 and 18 minutes in the two games before that.",
+  "text": "Collin Murray-Boyles is out of the concussion protocol, which threatens Poeltl's minutes again. Poeltl started and played 29 and 32 minutes while Murray-Boyles was out, but he came off the bench for only 17 and 18 minutes in the two games before that.",
   "expires": "2026-11-29",
   "src": "DB-1122"
  },
@@ -4039,15 +4066,6 @@
   "text": "The show said the Knicks offense has consolidated around Brunson and Karl-Anthony Towns, with Brunson at about a 33% usage rate and a 32% assist rate. The show said every other Knicks rotation player is under one DK point per minute, with OG Anunoby at about 0.9, Josh Hart at about 0.8 and Mikal Bridges at about 0.7.",
   "expires": null,
   "src": "SP-1119"
- },
- {
-  "player": "Jalen Duren",
-  "team": "DET",
-  "date": "2026-11-09",
-  "kind": "news",
-  "text": "The show said he is out at least two more weeks with his hamstring strain, so Paul Reed keeps starting at center. Isaiah Joe missed Sunday with a hip bruise, and Daniss Jenkins scored 31 points in 32 minutes off the bench.",
-  "expires": null,
-  "src": "LO-1108"
  },
  {
   "player": "Jalen Duren",
@@ -4084,6 +4102,15 @@
   "text": "The show said Jalen Duren has officially been ruled out for Tuesday against Orlando. Detroit has been without him for an extended stretch, which keeps the frontcourt minutes with Paul Reed and John Collins.",
   "expires": "2026-11-24",
   "src": "LO-1124c"
+ },
+ {
+  "player": "Jalen Duren",
+  "team": "DET",
+  "date": "2026-11-24",
+  "kind": "news",
+  "text": "Duren (hamstring) and Duncan Robinson (quadriceps) are both out again at Orlando, and Cade Cunningham is probable with knee soreness. John Collins starts at center, Paul Reed splits those minutes off the bench, and Isaiah Joe played 26 minutes on Sunday.",
+  "expires": null,
+  "src": "AUTO-1124"
  },
  {
   "player": "Jalen Green",
@@ -4414,7 +4441,7 @@
   "team": "OKC",
   "date": "2026-11-20",
   "kind": "role",
-  "text": "Dan Besbris listed Jared McCain as a streaming option because Cason Wallace and Jalen Williams and Chet Holmgren are out, which opens up minutes for him. McCain played 33 minutes in his last game on 11/18.",
+  "text": "Jared McCain was listed as a streaming option because Cason Wallace and Jalen Williams and Chet Holmgren are out, which opens up minutes for him. McCain played 33 minutes in his last game on 11/18.",
   "expires": "2026-11-27",
   "src": "DB-1120"
  },
@@ -4574,15 +4601,6 @@
  {
   "player": "Jaylen Brown",
   "team": "PHI",
-  "date": "2026-11-15",
-  "kind": "usage",
-  "text": "Jaylen Brown scored 31 points in 32 minutes with Embiid out. The show said his usage has dropped a lot this season as expected in Philadelphia, but his overall production has been fine.",
-  "expires": null,
-  "src": "LO-1116"
- },
- {
-  "player": "Jaylen Brown",
-  "team": "PHI",
   "date": "2026-11-18",
   "kind": "news",
   "text": "Jaylen Brown is out at Orlando with a left hamstring strain he felt late Monday. Tyrese Maxey and Joel Embiid take on more of the offense, and Dean Wade, Anfernee Simons and Kentavious Caldwell-Pope pick up the wing minutes.",
@@ -4602,10 +4620,10 @@
   "player": "Jaylen Brown",
   "team": "PHI",
   "date": "2026-11-23",
-  "kind": "injury",
-  "text": "Jaylen Brown returned from his hamstring injury on 11/23 and went straight back into the starting lineup, which moved Kentavious Caldwell-Pope to the bench. Early foul trouble held him to 29 minutes.",
+  "kind": "role",
+  "text": "Jaylen Brown returned from a two-game absence with a hamstring injury on Monday and went straight back into the starting lineup for 29 minutes. Kentavious Caldwell-Pope, who had started while Brown was out, went back to the bench and played 17 minutes.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Jaylen Brown",
@@ -4782,10 +4800,10 @@
   "player": "Jeremiah Fears",
   "team": "NOP",
   "date": "2026-11-23",
-  "kind": "minutes",
-  "text": "Jeremiah Fears played 40 minutes on 11/23 with Dejounte Murray out. The show said his expected points were 18 even though he scored seven on poor shooting.",
+  "kind": "usage",
+  "text": "Jeremiah Fears played 40 minutes and ran the offense with 11 assists on Monday, but he missed 14 of 17 shots two nights after scoring 29 at San Antonio.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Jericho Sims",
@@ -4890,6 +4908,15 @@
   "player": "Joel Embiid",
   "team": "PHI",
   "date": "2026-11-23",
+  "kind": "injury",
+  "text": "Joel Embiid did not play Monday against Portland because of an illness.",
+  "expires": null,
+  "src": "ESPN-1124"
+ },
+ {
+  "player": "Joel Embiid",
+  "team": "PHI",
+  "date": "2026-11-23",
   "kind": "usage",
   "text": "Joel Embiid has scored 50 or more DraftKings points in three straight games while taking 10 or more free throws in each one, including 26 points, 17 rebounds and nine assists in 34 minutes on November 21. The show said his foot is fine and that his trips to the line give him a high floor against Portland.",
   "expires": null,
@@ -4927,7 +4954,7 @@
   "team": "DET",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed John Collins as a high-end streamer with Jalen Duren out. Collins played 22 minutes in his last game on 11/22.",
+  "text": "John Collins was listed as a high-end streamer with Jalen Duren out. Collins played 22 minutes in his last game on 11/22.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -4970,18 +4997,9 @@
  {
   "player": "Jonathan Kuminga",
   "team": "MIN",
-  "date": "2026-11-20",
-  "kind": "role",
-  "text": "Dan Besbris listed Jonathan Kuminga as a top-100 season-long pickup because Anthony Edwards is out, which opens up minutes for him, but mainly for teams that ignore free-throw percentage. Kuminga played 35 minutes in his last game on 11/19.",
-  "expires": "2026-11-27",
-  "src": "DB-1120"
- },
- {
-  "player": "Jonathan Kuminga",
-  "team": "MIN",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Jonathan Kuminga as a top-100 season-long pickup with Anthony Edwards out but only for teams that punt free-throw percentage. Kuminga played 37 minutes in his last game on 11/21.",
+  "text": "Jonathan Kuminga was listed as a top-100 season-long pickup with Anthony Edwards out but only for teams that punt free-throw percentage. Kuminga played 37 minutes in his last game on 11/21.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -5026,9 +5044,9 @@
   "team": "CHI",
   "date": "2026-11-23",
   "kind": "minutes",
-  "text": "Jordan Hawkins played 18 minutes off the bench on 11/23. Chicago closed the game with a bench group of Jaylin Sellers, Nic Claxton and Hawkins because that group was playing well.",
+  "text": "Jordan Hawkins got 18 minutes off the bench on Monday when Chicago spread out playing time the night after an overtime loss, and the Bulls' bench scored 63 points.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Jordan McLaughlin",
@@ -5092,6 +5110,15 @@
   "text": "Jordan Poole played 27 minutes off the bench on 11/23 because Dejounte Murray and Bennedict Mathurin were out and New Orleans used a tight rotation. The show said his 28 points came from shooting well above his expected points.",
   "expires": null,
   "src": "LO-1124"
+ },
+ {
+  "player": "Jordan Poole",
+  "team": "NOP",
+  "date": "2026-11-23",
+  "kind": "usage",
+  "text": "Jordan Poole came off the bench for 27 minutes on Monday and made his first nine shots, but all of his scoring came in the first three quarters and he was not a factor late or in overtime.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Jordan Walsh",
@@ -5168,11 +5195,11 @@
  {
   "player": "Josh Giddey",
   "team": "CHI",
-  "date": "2026-11-23",
-  "kind": "minutes",
-  "text": "Josh Giddey started but played only 22 minutes on 11/23 because of poor shooting. The show said Chicago's coach is willing to cut his minutes when he struggles.",
+  "date": "2026-11-24",
+  "kind": "news",
+  "text": "Giddey played only 22 minutes on Monday, the night after his 22-assist overtime game against Denver, because the Bulls spread out playing time on the back-to-back. Tre Jones played 27 minutes off the bench.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Josh Green",
@@ -5350,9 +5377,9 @@
   "team": "SAS",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "The show said Julian Champagnie needs three San Antonio starters out to be usable, which was the case on 11/23. It does not see him as a hold going forward.",
+  "text": "Julian Champagnie started and played 30 minutes on Monday with Victor Wembanyama, De'Aaron Fox and Dylan Harper out, and he took over the second quarter with four threes in a personal 14-4 run.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Julian Champagnie",
@@ -5539,9 +5566,9 @@
   "team": "TOR",
   "date": "2026-11-23",
   "kind": "injury",
-  "text": "Leonard has not played since October 23. The show said his timeline keeps getting pushed back with each update and that he is expected to miss a couple more weeks.",
-  "expires": "2026-12-07",
-  "src": "RW-1124"
+  "text": "Kawhi Leonard has been out with a left knee injury since Toronto's first two games of the season, and the Raptors are 4-11 without him.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Keaton Wagler",
@@ -5755,7 +5782,7 @@
   "team": "OKC",
   "date": "2026-11-22",
   "kind": "role",
-  "text": "Aday Mara is out Sunday with a shin injury, and Dan Besbris thinks Williams will have no choice but to play a ton. Williams has played 23 and 28 minutes off the bench in his last two games.",
+  "text": "Aday Mara is out Sunday with a shin injury, which should push Williams into big minutes. Williams has played 23 and 28 minutes off the bench in his last two games.",
   "expires": "2026-11-29",
   "src": "DB-1122b"
  },
@@ -5767,6 +5794,15 @@
   "text": "Kenrich Williams moved back to the bench on 11/23 when Shai Gilgeous-Alexander returned, but he still played 26 minutes. The show called him streamable while Oklahoma City is missing so many players.",
   "expires": null,
   "src": "LO-1124"
+ },
+ {
+  "player": "Kenrich Williams",
+  "team": "OKC",
+  "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Kenrich Williams played 26 minutes off the bench for a short-handed Oklahoma City team at Indiana on Monday and made four threes.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Kentavious Caldwell-Pope",
@@ -5782,9 +5818,9 @@
   "team": "PHI",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Kentavious Caldwell-Pope moved to the bench on 11/23 when Jaylen Brown returned, and his minutes fell to 17 after he had played 31 to 35 minutes in his previous three games.",
+  "text": "Kentavious Caldwell-Pope went back to the bench on Monday when Jaylen Brown returned from his hamstring injury, and his minutes fell to 17.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Keon Ellis",
@@ -5863,7 +5899,7 @@
   "team": "DET",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Kevin Huerter as a top-100 season-long pickup with Duncan Robinson out. Huerter played 30 minutes in his last game on 11/22.",
+  "text": "Kevin Huerter was listed as a top-100 season-long pickup with Duncan Robinson out. Huerter played 30 minutes in his last game on 11/22.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -6645,6 +6681,15 @@
   "player": "Luka Doncic",
   "team": "LAL",
   "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Luka Doncic picked up his fourth foul in the second quarter on Monday and went scoreless in that period, which held him to 33 minutes. Austin Reaves missed his fifth straight game, which leaves more of the scoring to Doncic.",
+  "expires": null,
+  "src": "ESPN-1124"
+ },
+ {
+  "player": "Luka Doncic",
+  "team": "LAL",
+  "date": "2026-11-23",
   "kind": "usage",
   "text": "The show said Luka Doncic is wearing down without Austin Reaves because defenses are loading up on him and his teammates are not making shots. He took 24 shots in 33 minutes against Utah, and the show singled out Sandro Mamukelashvili as playing especially poorly.",
   "expires": null,
@@ -6682,9 +6727,9 @@
   "team": "SAS",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Luke Kornet started at center on Nov. 23 with Victor Wembanyama out, and he played 29 minutes after playing 10 to 15 minutes off the bench in recent games. The show named him the sneaky DFS play if Wembanyama sat, and it said Tarris Reed Jr. was not yet ready for that role.",
+  "text": "Luke Kornet started at center with Victor Wembanyama out on Monday and played 29 minutes, grabbing 11 rebounds in a game where the Spurs had 20 offensive rebounds.",
   "expires": null,
-  "src": "SE-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Malik Monk",
@@ -6820,6 +6865,15 @@
   "text": "The show said Buzelis has put up several 30-plus DraftKings games since Chicago players started going down with injuries. He played 38 minutes on 11/22 and scored 37.25 DraftKings points, and he had 44.75 on 11/18. The show listed him as a GPP pivot at $6,200.",
   "expires": null,
   "src": "STK-1123"
+ },
+ {
+  "player": "Matas Buzelis",
+  "team": "CHI",
+  "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Matas Buzelis started and played 27 minutes on Monday, but all 15 of his points came in the first half as Chicago spread out minutes the night after an overtime game.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Matisse Thybulle",
@@ -7371,6 +7425,15 @@
   "src": "LO-1124"
  },
  {
+  "player": "Myles Turner",
+  "team": "MIL",
+  "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Myles Turner fouled out at Toronto on Monday, which held him to 28 minutes even though he made five threes on six tries.",
+  "expires": null,
+  "src": "ESPN-1124"
+ },
+ {
   "player": "Nae'Qwan Tomlin",
   "team": "CLE",
   "date": "2026-10-22",
@@ -7884,6 +7947,15 @@
   "src": "FA-1124"
  },
  {
+  "player": "P.J. Washington",
+  "team": "DAL",
+  "date": "2026-11-24",
+  "kind": "news",
+  "text": "Washington is questionable at Denver with the illness that kept him out of Dallas's last two games. When he sat, Zaccharie Risacher started and Daniel Gafford played 31 and 28 minutes, and Dereck Lively II remains out after foot surgery.",
+  "expires": null,
+  "src": "AUTO-1124"
+ },
+ {
   "player": "Paolo Banchero",
   "team": "ORL",
   "date": "2026-11-13",
@@ -7906,7 +7978,7 @@
   "team": "ORL",
   "date": "2026-11-23",
   "kind": "injury",
-  "text": "Banchero has not played since October 23, and RotoWire lists November 29 as his earliest possible return. The show said that date will not happen and estimated at least two more weeks, noting he has not yet been reported doing three-on-three or five-on-five work.",
+  "text": "Banchero has not played since October 23, and November 29 is listed as his earliest possible return. The show said that date will not happen and estimated at least two more weeks, noting he has not yet been reported doing three-on-three or five-on-five work.",
   "expires": "2026-12-07",
   "src": "RW-1124"
  },
@@ -7915,7 +7987,7 @@
   "team": "ORL",
   "date": "2026-11-24",
   "kind": "news",
-  "text": "He is ruled out tonight. Da Silva is expected to start, and Black and Richardson pick up more of the ball-handling.",
+  "text": "Banchero is out again and has not played since Oct. 23. Anthony Black has started and played 35 to 37 minutes in Orlando's last three games, while Tristan da Silva has come off the bench since Jalen Suggs returned.",
   "expires": null,
   "src": "AUTO-1124"
  },
@@ -7987,9 +8059,9 @@
   "team": "BOS",
   "date": "2026-11-24",
   "kind": "news",
-  "text": "Paul George sat out Boston's Nov. 22 game on the second night of a back-to-back. The show said he should be back for Tuesday at Washington.",
-  "expires": "2026-11-24",
-  "src": "LO-1124c"
+  "text": "George is off Boston's injury report after sitting the second night of the back-to-back on Sunday, so he should start at Washington. That likely sends Sam Hauser back to the bench, while Mitchell Robinson (illness) is out again and Neemias Queta keeps the center job.",
+  "expires": null,
+  "src": "AUTO-1124"
  },
  {
   "player": "Paul Reed",
@@ -8014,7 +8086,7 @@
   "team": "DET",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Paul Reed as a top-100 season-long pickup with Jalen Duren out. Reed played 26 minutes in his last game on 11/22.",
+  "text": "Paul Reed was listed as a top-100 season-long pickup with Jalen Duren out. Reed played 26 minutes in his last game on 11/22.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -8257,9 +8329,9 @@
   "team": "TOR",
   "date": "2026-11-23",
   "kind": "injury",
-  "text": "RJ Barrett is out with a right hamstring strain and has not played since Nov. 17. The show said he could be out for maybe another week or two. That absence has opened starts for Allen Graves and more minutes for Ja'Kobe Walter.",
-  "expires": "2026-12-07",
-  "src": "SE-1124b"
+  "text": "RJ Barrett missed his third straight game on Monday with a right hamstring injury.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Robert Williams III",
@@ -8491,7 +8563,7 @@
   "team": "NOP",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Dan Besbris listed Saddiq Bey as a top-100 season-long pickup with Dejounte Murray out. Bey played 32 minutes in his last game on 11/21.",
+  "text": "Saddiq Bey was listed as a top-100 season-long pickup with Dejounte Murray out. Bey played 32 minutes in his last game on 11/21.",
   "expires": "2026-11-30",
   "src": "DB-1123b"
  },
@@ -8500,9 +8572,9 @@
   "team": "NOP",
   "date": "2026-11-23",
   "kind": "minutes",
-  "text": "Saddiq Bey moved to the bench on 11/23 when Trey Murphy III returned to the starting lineup, but he still played 40 minutes and took 18 shots. The show said part of that came from Herbert Jones's foul trouble, and it still expects Bey to keep big minutes.",
+  "text": "Saddiq Bey came off the bench on Monday with Trey Murphy III back in the lineup but still played 40 minutes in the overtime loss to Phoenix.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Sam Hauser",
@@ -8715,6 +8787,15 @@
   "player": "Shai Gilgeous-Alexander",
   "team": "OKC",
   "date": "2026-11-23",
+  "kind": "usage",
+  "text": "Shai Gilgeous-Alexander played 38 minutes on Monday and carried a short-handed Thunder team, which kept the game close until the final minute.",
+  "expires": null,
+  "src": "ESPN-1124"
+ },
+ {
+  "player": "Shai Gilgeous-Alexander",
+  "team": "OKC",
+  "date": "2026-11-23",
   "kind": "news",
   "text": "Gilgeous-Alexander missed his first game of the season Sunday at Miami with a neck strain and a lower back contusion, and Oklahoma City played with only nine players. The Thunder had not filed today's report this morning, so his status at Indiana is not posted.",
   "expires": null,
@@ -8878,9 +8959,9 @@
   "team": "SAS",
   "date": "2026-11-23",
   "kind": "usage",
-  "text": "Stephon Castle took on more usage on 11/23 with Victor Wembanyama, De'Aaron Fox and Dylan Harper all out, and he played 37 minutes.",
+  "text": "With Victor Wembanyama, De'Aaron Fox and Dylan Harper all out on Monday, Stephon Castle ran the Spurs offense for 37 minutes and had 11 assists. He scored nine straight points during the third-quarter run that broke the game open.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Steven Adams",
@@ -9229,9 +9310,9 @@
   "team": "CHI",
   "date": "2026-11-23",
   "kind": "minutes",
-  "text": "Tre Jones played 27 minutes off the bench, but his minutes have swung between 12 and 27 over his last five games. The show said his minutes are too inconsistent for him to be more than a streamer.",
+  "text": "Tre Jones played 27 minutes off the bench on Monday as Chicago spread out minutes the night after an overtime game, and he had nine assists while Josh Giddey was held to 22 minutes.",
   "expires": null,
-  "src": "DB-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Trevon Brazile",
@@ -9286,6 +9367,15 @@
   "text": "Trey Murphy III returned Friday after six missed games and played 29 minutes off the bench, and Jordan Poole's minutes fell to 13. New Orleans has not posted its injury report for the back-to-back yet.",
   "expires": null,
   "src": "ESPN-1121"
+ },
+ {
+  "player": "Trey Murphy III",
+  "team": "NOP",
+  "date": "2026-11-23",
+  "kind": "minutes",
+  "text": "Trey Murphy III started and played 35 minutes on Monday as he works back from knee soreness that sidelined him for seven of New Orleans' previous eight games. He looked rusty, shooting 4 of 14.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Trey Murphy III",
@@ -9346,9 +9436,9 @@
   "team": "MEM",
   "date": "2026-11-23",
   "kind": "usage",
-  "text": "Ty Jerome started again on 11/23 and the show credited him with a 39% usage rate while scoring 29 points in 29 minutes. He has started both of Memphis's last two games with Ja Morant out.",
+  "text": "Ty Jerome is Memphis's leading scorer this season, and with Cameron Boozer out he took 21 shots in 29 minutes on Monday.",
   "expires": null,
-  "src": "LO-1124"
+  "src": "ESPN-1124"
  },
  {
   "player": "Tyler Herro",
@@ -9461,11 +9551,11 @@
  {
   "player": "Tyrese Haliburton",
   "team": "IND",
-  "date": "2026-11-21",
+  "date": "2026-11-23",
   "kind": "injury",
-  "text": "The show said Tyrese Haliburton is still at least two weeks away from returning. He has not played since 10/26.",
-  "expires": "2026-12-05",
-  "src": "OMS-1121b"
+  "text": "Tyrese Haliburton missed his 14th straight game on Monday with a strained left hamstring.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Tyrese Maxey",
@@ -9493,15 +9583,6 @@
   "text": "Tyrese Proctor started four straight games from 11/14 to 11/20, but his scoring fell each game, and he went back to the bench on 11/23. The show said his production dropped off soon after he moved into the starting lineup.",
   "expires": null,
   "src": "OMS-1124"
- },
- {
-  "player": "Victor Wembanyama",
-  "team": "SAS",
-  "date": "2026-11-17",
-  "kind": "news",
-  "text": "San Antonio outscored Detroit by six with Victor Wembanyama on the floor Tuesday but lost the minutes he sat by 18, as the Spurs' 12-game winning streak ended.",
-  "expires": null,
-  "src": "WEB-1118"
  },
  {
   "player": "Victor Wembanyama",
@@ -9535,9 +9616,9 @@
   "team": "SAS",
   "date": "2026-11-23",
   "kind": "injury",
-  "text": "Victor Wembanyama was listed questionable with bilateral low back tightness for the Nov. 23 game against Sacramento and was ruled out. The show had guessed the Spurs would use the soft matchup to give him rest, and it noted that he plays about 10 fewer minutes per night than other top stars even when healthy, which matches his 32 minutes in his 50-point game on Nov. 21.",
-  "expires": "2026-11-24",
-  "src": "SE-1124"
+  "text": "Victor Wembanyama sat out Monday's win at Sacramento with back tightness, two days after playing in a 114-91 win over New Orleans.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Victor Wembanyama",
@@ -9547,6 +9628,15 @@
   "text": "Wembanyama and De'Aaron Fox (shin contusion) are both questionable at Sacramento, with Dylan Harper and Tobias Harris already out for San Antonio.",
   "expires": null,
   "src": "WEB-1123"
+ },
+ {
+  "player": "Victor Wembanyama",
+  "team": "SAS",
+  "date": "2026-11-24",
+  "kind": "news",
+  "text": "Wembanyama sat Monday with back tightness, and De'Aaron Fox (shin) and Dylan Harper (hip) were also out. Stephon Castle ran the offense for 37 minutes with 11 assists in the win at Sacramento.",
+  "expires": null,
+  "src": "ESPN-1124"
  },
  {
   "player": "Vit Krejci",
@@ -9949,7 +10039,7 @@
   "team": "MEM",
   "date": "2026-11-23",
   "kind": "role",
-  "text": "Cameron Boozer will miss about four weeks with a right ankle injury. Dan Besbris said Memphis might go small, so the replacement for Boozer's minutes is not obvious, and he is waiting to see before making a move. Edey has played 20 to 23 minutes as the starting center in his last four games.",
+  "text": "Cameron Boozer will miss about four weeks with a right ankle injury. Memphis might go small, so the replacement for Boozer's minutes is not obvious yet. Edey has played 20 to 23 minutes as the starting center in his last four games.",
   "expires": "2026-11-30",
   "src": "DB-1123c"
  },
@@ -10012,9 +10102,9 @@
   "team": "NOP",
   "date": "2026-11-23",
   "kind": "minutes",
-  "text": "Zion Williamson played 37 minutes on November 20 and then sat the next night with a thigh contusion. The show said he is probable for Monday against Phoenix, which it called a good pace-up matchup, and that his falling price makes him easier to play.",
+  "text": "Zion Williamson returned from his thigh contusion on Monday and played 40 minutes in the overtime loss to Phoenix, with no sign of a limit.",
   "expires": null,
-  "src": "FA-1123"
+  "src": "ESPN-1124"
  },
  {
   "player": "Zion Williamson",
