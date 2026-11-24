@@ -2,7 +2,7 @@
  "updated": "2026-11-23",
  "brief": {
   "date": "2026-11-23",
-  "updated": "8:17 PM ET",
+  "updated": "8:27 PM ET",
   "games": 10,
   "pending": [],
   "first_report": "5:26 AM",
@@ -400,22 +400,26 @@
      "SAS": {
       "out": [
        {
+        "player": "Victor Wembanyama",
+        "min": 33.0
+       },
+       {
         "player": "Dylan Harper",
         "min": 31.3
+       },
+       {
+        "player": "De'Aaron Fox",
+        "min": 30.7
        }
       ],
       "q": [
        {
         "player": "Victor Wembanyama",
-        "min": 32.4
+        "min": 31.0
        },
        {
         "player": "De'Aaron Fox",
-        "min": 29.2
-       },
-       {
-        "player": "Jordan McLaughlin",
-        "min": 15.4
+        "min": 28.7
        }
       ]
      },
@@ -424,7 +428,7 @@
       "q": []
      }
     },
-    "key": "Dylan Harper is out, so Stephon Castle and Carter Bryant should play more than usual."
+    "key": "Victor Wembanyama and Dylan Harper are out, so Stephon Castle and Carter Bryant should play more than usual."
    }
   ],
   "changed": [
@@ -633,6 +637,56 @@
    }
   ],
   "sits": [
+   {
+    "team": "SAS",
+    "outs": [
+     {
+      "player": "Victor Wembanyama",
+      "min": 33.0,
+      "note": "Victor Wembanyama is questionable for Monday's game at Sacramento with back tightness. The show said it does not expect anything serious and suspects the Spurs may simply rest him for the long run.",
+      "new": true
+     },
+     {
+      "player": "Dylan Harper",
+      "min": 31.3,
+      "note": "Harper has missed San Antonio's last two games after last playing on Nov. 17. The show said the best-case timeline has him missing two to three weeks, and it named Devin Vassell as the player who benefits most.",
+      "new": false
+     },
+     {
+      "player": "De'Aaron Fox",
+      "min": 30.7,
+      "note": "De'Aaron Fox is questionable for Monday's game at Sacramento with a shin contusion. The show said it looks like the Spurs could be managing their stars and letting him reset.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 95.0,
+    "benefits": [
+     {
+      "player": "Stephon Castle",
+      "salary": 7500,
+      "why": "same minutes, more production",
+      "much": "+10.4 DK without them (2 games)",
+      "score": 10.4,
+      "min": 33.0,
+      "dk": 39.6,
+      "avg": 33.9
+     },
+     {
+      "player": "Carter Bryant",
+      "salary": 3200,
+      "why": "first off bench, 13 minutes (11/19)",
+      "much": "+3.2 DK projected vs. last 3",
+      "score": 3.2333333333333334,
+      "min": 13.7,
+      "dk": 9.4,
+      "avg": 6.9
+     }
+    ],
+    "split_of": [
+     "Dylan Harper"
+    ]
+   },
    {
     "team": "UTA",
     "outs": [
@@ -935,68 +989,6 @@
      "Jaylin Williams",
      "Cason Wallace"
     ]
-   },
-   {
-    "team": "CHA",
-    "outs": [
-     {
-      "player": "Grayson Allen",
-      "min": 31.0,
-      "note": "Ruled out tonight (concussion protocol).",
-      "new": false
-     },
-     {
-      "player": "Dennis Schroder",
-      "min": 26.0,
-      "note": "Ruled out tonight (left hamstring strain).",
-      "new": false
-     },
-     {
-      "player": "Grant Williams",
-      "min": 22.0,
-      "note": "The show said Grant Williams is out again for hamstring management. It noted that his two missed games were spaced apart and were not back-to-backs, and it worried that this points to a reinjury. He has not played since 11/17.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 79.0,
-    "benefits": [
-     {
-      "player": "Moussa Diabate",
-      "salary": 6200,
-      "why": "same minutes, more production",
-      "much": "+15.9 DK without them (1 game)",
-      "score": 15.9,
-      "min": 31.4,
-      "dk": 33.8,
-      "avg": 29.6
-     },
-     {
-      "player": "Coby White",
-      "salary": 5700,
-      "why": "26 minutes, up from 19",
-      "much": "+11.6 DK without them (1 game)",
-      "score": 11.6,
-      "min": 26.0,
-      "dk": 30.0,
-      "avg": 21.8
-     },
-     {
-      "player": "Royce O'Neale",
-      "salary": 3900,
-      "why": "34 minutes off the bench (11/17)",
-      "much": "+5.1 DK projected vs. last 3",
-      "score": 5.133333333333335,
-      "min": 24.8,
-      "dk": 18.8,
-      "avg": 12.6
-     }
-    ],
-    "split_of": [
-     "Grayson Allen",
-     "Dennis Schroder",
-     "Grant Williams"
-    ]
    }
   ],
   "hot": [
@@ -1095,13 +1087,6 @@
   ],
   "chalk": [
    {
-    "player": "Mohamed Bamba",
-    "team": "UTA",
-    "own": 38.0,
-    "dk": 29.0,
-    "salary": 5300
-   },
-   {
     "player": "Buddy Hield",
     "team": "CHI",
     "own": 38.0,
@@ -1109,18 +1094,25 @@
     "salary": 3800
    },
    {
-    "player": "Stephon Castle",
+    "player": "Luke Kornet",
     "team": "SAS",
-    "own": 33.0,
-    "dk": 37.2,
-    "salary": 7500
+    "own": 38.0,
+    "dk": 15.0,
+    "salary": 3100
    },
    {
-    "player": "Svi Mykhailiuk",
+    "player": "Josh Giddey",
+    "team": "CHI",
+    "own": 32.6,
+    "dk": 37.8,
+    "salary": 7400
+   },
+   {
+    "player": "Mohamed Bamba",
     "team": "UTA",
-    "own": 33.0,
-    "dk": 18.5,
-    "salary": 3500
+    "own": 32.4,
+    "dk": 29.0,
+    "salary": 5300
    }
   ],
   "leverage": [
@@ -1842,10 +1834,10 @@
        "player": "Luke Kornet",
        "salary": 3100,
        "why": "subs in for him 53 of 70 times",
-       "much": "about +20.7 DK",
-       "score": 20.71184210526316,
-       "min": 15.2,
-       "dk": 12.6,
+       "much": "about +20.8 DK",
+       "score": 20.82142857142857,
+       "min": 18.0,
+       "dk": 15.0,
        "avg": 10.8
       }
      ],
@@ -1880,8 +1872,8 @@
        "why": "35 minutes, up from 29",
        "much": "+12.3 DK without him (1 game)",
        "score": 12.3,
-       "min": 31.0,
-       "dk": 37.2,
+       "min": 33.0,
+       "dk": 39.6,
        "avg": 33.9
       },
       {
@@ -1890,8 +1882,8 @@
        "why": "29 minutes, up from 24",
        "much": "+12.2 DK without him (1 game)",
        "score": 12.2,
-       "min": 23.8,
-       "dk": 21.9,
+       "min": 25.2,
+       "dk": 23.2,
        "avg": 20.5
       }
      ],
@@ -1925,9 +1917,9 @@
        "salary": 5000,
        "why": "subs in for him 4 of 15 times",
        "much": "about +3.7 DK",
-       "score": 3.659259259259259,
-       "min": 28.8,
-       "dk": 24.7,
+       "score": 3.6722394220846235,
+       "min": 32.3,
+       "dk": 27.8,
        "avg": 21.4
       }
      ],
@@ -3583,18 +3575,18 @@
        "why": "same minutes, more production",
        "much": "+10.4 DK without him (2 games)",
        "score": 10.4,
-       "min": 31.0,
-       "dk": 37.2,
+       "min": 33.0,
+       "dk": 39.6,
        "avg": 33.9
       },
       {
        "player": "Carter Bryant",
        "salary": 3200,
        "why": "first off bench, 13 minutes (11/19)",
-       "much": "+3.0 DK projected vs. last 3",
-       "score": 3.0333333333333323,
-       "min": 13.5,
-       "dk": 9.2,
+       "much": "+3.2 DK projected vs. last 3",
+       "score": 3.2333333333333334,
+       "min": 13.7,
+       "dk": 9.4,
        "avg": 6.9
       }
      ],
@@ -30498,7 +30490,7 @@
   {
    "rank": 320,
    "player": "Jordan McLaughlin",
-   "pos": "PG/SG",
+   "pos": "PG,SG",
    "team": "SAS",
    "flag": "",
    "change": "",
