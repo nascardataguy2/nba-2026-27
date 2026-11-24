@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "updated": "6:17 PM ET",
+ "updated": "6:32 PM ET",
  "games": 3,
  "pending": [],
  "first_report": "5:39 AM",
@@ -23,6 +23,10 @@
     "DET": {
      "out": [
       {
+       "player": "Cade Cunningham",
+       "min": 35.7
+      },
+      {
        "player": "Duncan Robinson",
        "min": 30.7
       },
@@ -43,7 +47,7 @@
      "q": []
     }
    },
-   "key": "Duncan Robinson and Jalen Duren are out, so Isaiah Joe and Javonte Green and Ausar Thompson should play more than usual."
+   "key": "Cade Cunningham and Duncan Robinson are out, so Javonte Green and John Collins and Ausar Thompson should play more than usual."
   },
   {
    "away": "BOS",
@@ -118,6 +122,14 @@
  ],
  "changed": [
   {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "status": "Out",
+   "was": "Probable",
+   "why": "Right Knee Soreness",
+   "time": "6:33 PM"
+  },
+  {
    "player": "Tre Mann",
    "team": "WAS",
    "status": "Questionable",
@@ -126,11 +138,39 @@
    "time": "11:54 AM"
   }
  ],
- "chg": [],
+ "chg": [
+  {
+   "key": "Cade Cunningham",
+   "team": "DET",
+   "head": "Cade Cunningham OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Javonte Green",
+     "salary": 4000,
+     "much": "+21.8 DK without him (1 game)"
+    },
+    {
+     "player": "John Collins",
+     "salary": 4700,
+     "much": "+13.2 DK without him (1 game)"
+    }
+   ],
+   "time": "6:33 PM",
+   "size": 47.0
+  }
+ ],
  "sits": [
   {
    "team": "DET",
    "outs": [
+    {
+     "player": "Cade Cunningham",
+     "min": 35.7,
+     "note": "Cade Cunningham was moved from probable to out for tonight (right knee soreness) on the NBA's 06:30 PM injury report. He had averaged 38 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
     {
      "player": "Duncan Robinson",
      "min": 30.7,
@@ -144,41 +184,42 @@
      "new": false
     }
    ],
-   "new": false,
-   "lost": 49.7,
+   "new": true,
+   "lost": 85.4,
    "benefits": [
-    {
-     "player": "Isaiah Joe",
-     "salary": 3800,
-     "why": "20 minutes, up from 14",
-     "much": "+8.7 DK without them (3 games)",
-     "score": 8.7,
-     "min": 19.6,
-     "dk": 18.4,
-     "avg": 16.8
-    },
     {
      "player": "Javonte Green",
      "salary": 4000,
-     "why": "25 minutes, up from 17",
-     "much": "+6.9 DK without them (4 games)",
-     "score": 6.9,
-     "min": 23.5,
-     "dk": 17.6,
+     "why": "started that game",
+     "much": "+21.8 DK without them (1 game)",
+     "score": 21.8,
+     "min": 28.1,
+     "dk": 21.0,
      "avg": 13.8
+    },
+    {
+     "player": "John Collins",
+     "salary": 4700,
+     "why": "30 minutes, up from 25",
+     "much": "+13.2 DK without them (1 game)",
+     "score": 13.2,
+     "min": 31.1,
+     "dk": 29.4,
+     "avg": 22.4
     },
     {
      "player": "Ausar Thompson",
      "salary": 6800,
-     "why": "34 minutes, up from 28",
-     "much": "+6.5 DK without them (4 games)",
-     "score": 6.5,
-     "min": 32.6,
-     "dk": 37.8,
+     "why": "38 minutes, bigger ceiling (11/22)",
+     "much": "+8.8 DK projected vs. last 3",
+     "score": 8.766666666666666,
+     "min": 36.8,
+     "dk": 42.6,
      "avg": 34.1
     }
    ],
    "split_of": [
+    "Cade Cunningham",
     "Duncan Robinson",
     "Jalen Duren"
    ]
@@ -422,13 +463,6 @@
  ],
  "chalk": [
   {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "own": 51.0,
-   "dk": 48.9,
-   "salary": 9400
-  },
-  {
    "player": "Neemias Queta",
    "team": "BOS",
    "own": 49.0,
@@ -448,29 +482,36 @@
    "own": 39.0,
    "dk": 24.9,
    "salary": 5200
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "own": 37.0,
+   "dk": 37.8,
+   "salary": 6100
   }
  ],
  "leverage": [
   {
+   "player": "Javonte Green",
+   "team": "DET",
+   "own": 1.3,
+   "dk": 21.0,
+   "salary": 4000
+  },
+  {
    "player": "Paul Reed",
    "team": "DET",
-   "own": 0.8,
-   "dk": 27.0,
+   "own": 2.8,
+   "dk": 29.9,
    "salary": 5700
   },
   {
    "player": "Zaccharie Risacher",
    "team": "DAL",
-   "own": 5.6,
+   "own": 8.2,
    "dk": 19.3,
    "salary": 4300
-  },
-  {
-   "player": "Javonte Green",
-   "team": "DET",
-   "own": 0.8,
-   "dk": 17.6,
-   "salary": 4000
   }
  ],
  "last": {
@@ -555,8 +596,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "06:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_06_15PM.pdf",
+  "report": "06:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_06_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -573,15 +614,46 @@
     "time": "2026-11-25T00:00Z",
     "team": "DET",
     "player": "Cade Cunningham",
-    "status": "Probable",
+    "status": "Out",
     "reason": "Right Knee Soreness",
     "new": true,
-    "was": "Available",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "6:33 PM",
     "salary": 9400,
     "min": 35.7,
-    "benefits": [],
+    "benefits": [
+     {
+      "player": "Javonte Green",
+      "salary": 4000,
+      "why": "started that game",
+      "much": "+21.8 DK without him (1 game)",
+      "score": 21.8,
+      "min": 28.1,
+      "dk": 21.0,
+      "avg": 13.8
+     },
+     {
+      "player": "John Collins",
+      "salary": 4700,
+      "why": "30 minutes, up from 25",
+      "much": "+13.2 DK without him (1 game)",
+      "score": 13.2,
+      "min": 31.1,
+      "dk": 29.4,
+      "avg": 22.4
+     },
+     {
+      "player": "Chaz Lanier",
+      "salary": 3000,
+      "why": "16 minutes, up from 8",
+      "much": "+7.9 DK without him (1 game)",
+      "score": 7.9,
+      "min": 1.7,
+      "dk": 0.7,
+      "avg": 5.0
+     }
+    ],
     "estimate": false
    },
    {
@@ -750,8 +822,8 @@
       "why": "20 minutes, up from 14",
       "much": "+8.7 DK without him (3 games)",
       "score": 8.7,
-      "min": 19.6,
-      "dk": 18.4,
+      "min": 21.5,
+      "dk": 20.1,
       "avg": 16.8
      },
      {
@@ -760,8 +832,8 @@
       "why": "25 minutes, up from 17",
       "much": "+6.9 DK without him (4 games)",
       "score": 6.9,
-      "min": 23.5,
-      "dk": 17.6,
+      "min": 28.1,
+      "dk": 21.0,
       "avg": 13.8
      },
      {
@@ -770,8 +842,8 @@
       "why": "34 minutes, up from 28",
       "much": "+6.5 DK without him (4 games)",
       "score": 6.5,
-      "min": 32.6,
-      "dk": 37.8,
+      "min": 36.8,
+      "dk": 42.6,
       "avg": 34.1
      }
     ],
@@ -801,23 +873,13 @@
     "min": 19.0,
     "benefits": [
      {
-      "player": "Cade Cunningham",
-      "salary": 9400,
-      "why": "same minutes, more production",
-      "much": "+9.8 DK without him (13 games)",
-      "score": 9.8,
-      "min": 34.9,
-      "dk": 48.9,
-      "avg": 47.0
-     },
-     {
       "player": "Ausar Thompson",
       "salary": 6800,
       "why": "30 minutes, up from 26",
       "much": "+9.3 DK without him (13 games)",
       "score": 9.3,
-      "min": 32.6,
-      "dk": 37.8,
+      "min": 36.8,
+      "dk": 42.6,
       "avg": 34.1
      },
      {
@@ -826,9 +888,19 @@
       "why": "started 8 of 14",
       "much": "+9.1 DK without him (14 games)",
       "score": 9.1,
-      "min": 36.2,
-      "dk": 34.5,
+      "min": 39.7,
+      "dk": 37.8,
       "avg": 27.9
+     },
+     {
+      "player": "Kevin Huerter",
+      "salary": 5400,
+      "why": "28 minutes, up from 19",
+      "much": "+7.2 DK without him (14 games)",
+      "score": 7.2,
+      "min": 37.6,
+      "dk": 30.4,
+      "avg": 21.0
      }
     ],
     "estimate": false
