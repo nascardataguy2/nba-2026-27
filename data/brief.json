@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "updated": "9:02 PM ET",
+ "updated": "9:17 PM ET",
  "games": 3,
  "pending": [],
  "first_report": "5:39 AM",
@@ -105,12 +105,7 @@
        "min": 13.3
       }
      ],
-     "q": [
-      {
-       "player": "PJ Washington",
-       "min": 22.8
-      }
-     ]
+     "q": []
     },
     "DEN": {
      "out": [],
@@ -121,6 +116,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "P.J. Washington",
+   "team": "DAL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "9:18 PM"
+  },
   {
    "player": "Tre Mann",
    "team": "WAS",
@@ -167,6 +170,27 @@
    ],
    "time": "6:33 PM",
    "size": 47.0
+  },
+  {
+   "key": "DAL",
+   "team": "DAL",
+   "head": "Washington CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Morez Johnson Jr.",
+     "salary": 3900,
+     "much": "+8.5 DK without Washington"
+    },
+    {
+     "player": "Daniel Gafford",
+     "salary": 4600,
+     "much": "+7.7 DK without Washington"
+    }
+   ],
+   "time": "9:18 PM",
+   "size": 28.0
   }
  ],
  "sits": [
@@ -604,8 +628,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "09:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_09_00PM.pdf",
+  "report": "09:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_09_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -678,46 +702,15 @@
     "time": "2026-11-25T03:00Z",
     "team": "DAL",
     "player": "P.J. Washington",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "9:18 PM",
     "salary": 5600,
     "min": 25.3,
-    "benefits": [
-     {
-      "player": "Morez Johnson Jr.",
-      "salary": 3900,
-      "why": "same minutes, more production",
-      "much": "+8.5 DK without him (2 games)",
-      "score": 8.5,
-      "min": 15.0,
-      "dk": 13.3,
-      "avg": 15.5
-     },
-     {
-      "player": "Daniel Gafford",
-      "salary": 4600,
-      "why": "30 minutes, up from 21",
-      "much": "+7.7 DK without him (2 games)",
-      "score": 7.7,
-      "min": 23.9,
-      "dk": 24.6,
-      "avg": 22.7
-     },
-     {
-      "player": "Caleb Martin",
-      "salary": 4400,
-      "why": "24 minutes, up from 22",
-      "much": "+6.6 DK without him (2 games)",
-      "score": 6.6,
-      "min": 20.8,
-      "dk": 15.6,
-      "avg": 16.7
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
