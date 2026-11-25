@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "updated": "5:21 PM ET",
+ "updated": "5:32 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:40 AM",
@@ -299,13 +299,13 @@
    ],
    "teams": {
     "SAC": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Zach LaVine",
-       "min": 31.9
+       "min": 33.0
       }
-     ]
+     ],
+     "q": []
     },
     "GSW": {
      "out": [
@@ -326,10 +326,18 @@
      ]
     }
    },
-   "key": "Stephen Curry is out, so Charles Bassey and Will Richard and De'Anthony Melton should play more than usual."
+   "key": "Zach LaVine is out, so Leaky Black and Malik Monk and Dylan Cardwell should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Knee Soreness",
+   "time": "5:34 PM"
+  },
   {
    "player": "Sion James",
    "team": "CHA",
@@ -401,14 +409,6 @@
    "was": "Doubtful",
    "why": "",
    "time": "12:55 PM"
-  },
-  {
-   "player": "Grayson Allen",
-   "team": "CHA",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Concussion Protocol",
-   "time": "12:55 PM"
   }
  ],
  "chg": [
@@ -432,6 +432,27 @@
    ],
    "time": "4:41 PM",
    "size": 116.2
+  },
+  {
+   "key": "Zach LaVine",
+   "team": "SAC",
+   "head": "Zach LaVine OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Leaky Black",
+     "salary": 3400,
+     "much": "+24.0 DK without him (1 game)"
+    },
+    {
+     "player": "Malik Monk",
+     "salary": 4100,
+     "much": "+18.4 DK without him (1 game)"
+    }
+   ],
+   "time": "5:34 PM",
+   "size": 32.0
   },
   {
    "key": "Jalen Smith",
@@ -474,27 +495,6 @@
    ],
    "time": "12:55 PM",
    "size": 26.4
-  },
-  {
-   "key": "Zach LaVine",
-   "team": "SAC",
-   "head": "Zach LaVine QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Leaky Black",
-     "salary": 3400,
-     "much": "+24.0 DK without him (1 game)"
-    },
-    {
-     "player": "Malik Monk",
-     "salary": 4100,
-     "much": "+18.4 DK without him (1 game)"
-    }
-   ],
-   "time": "3:54 PM",
-   "size": 16.0
   },
   {
    "key": "Ryan Kalkbrenner",
@@ -627,6 +627,54 @@
    "split_of": [
     "Grayson Allen",
     "Dennis Schroder"
+   ]
+  },
+  {
+   "team": "SAC",
+   "outs": [
+    {
+     "player": "Zach LaVine",
+     "min": 33.0,
+     "note": "Zach LaVine was moved from questionable to out for tonight (right knee soreness) on the NBA's 05:30 PM injury report. He had averaged 33 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 33.0,
+   "benefits": [
+    {
+     "player": "Leaky Black",
+     "salary": 3400,
+     "why": "29 minutes, up from 18",
+     "much": "+24.0 DK without him (1 game)",
+     "score": 24.0,
+     "min": 9.6,
+     "dk": 7.1,
+     "avg": 15.2
+    },
+    {
+     "player": "Malik Monk",
+     "salary": 4100,
+     "why": "started that game",
+     "much": "+18.4 DK without him (1 game)",
+     "score": 18.4,
+     "min": 25.2,
+     "dk": 24.7,
+     "avg": 16.0
+    },
+    {
+     "player": "Dylan Cardwell",
+     "salary": 4000,
+     "why": "started that game",
+     "much": "+6.9 DK without him (1 game)",
+     "score": 6.9,
+     "min": 18.5,
+     "dk": 17.6,
+     "avg": 14.3
+    }
+   ],
+   "split_of": [
+    "Zach LaVine"
    ]
   },
   {
@@ -804,54 +852,6 @@
     "Cameron Boozer",
     "Jerami Grant"
    ]
-  },
-  {
-   "team": "NYK",
-   "outs": [
-    {
-     "player": "OG Anunoby",
-     "min": 38.7,
-     "note": "OG Anunoby has missed the Knicks' games on 11/21 and 11/22 with what the team calls calf tightness. The show said it believes this is really a calf strain that could cost him one to two weeks. Landry Shamet has moved into the starting lineup in his place and played 36 and 32 minutes.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 38.7,
-   "benefits": [
-    {
-     "player": "Karl-Anthony Towns",
-     "salary": 9700,
-     "why": "same minutes, more production",
-     "much": "+18.3 DK without him (1 game)",
-     "score": 18.3,
-     "min": 32.4,
-     "dk": 52.2,
-     "avg": 49.6
-    },
-    {
-     "player": "Jose Alvarado",
-     "salary": 3400,
-     "why": "18 minutes, up from 9",
-     "much": "+11.6 DK without him (2 games)",
-     "score": 11.6,
-     "min": 17.9,
-     "dk": 16.7,
-     "avg": 8.6
-    },
-    {
-     "player": "Landry Shamet",
-     "salary": 4800,
-     "why": "started 2 of 2",
-     "much": "+11.2 DK without him (2 games)",
-     "score": 11.2,
-     "min": 33.6,
-     "dk": 25.1,
-     "avg": 18.3
-    }
-   ],
-   "split_of": [
-    "OG Anunoby"
-   ]
   }
  ],
  "hot": [
@@ -964,18 +964,18 @@
    "salary": 7500
   },
   {
+   "player": "Jrue Holiday",
+   "team": "POR",
+   "own": 39.5,
+   "dk": 28.9,
+   "salary": 6100
+  },
+  {
    "player": "Michael Porter Jr.",
    "team": "BKN",
    "own": 39.0,
    "dk": 33.2,
    "salary": 7200
-  },
-  {
-   "player": "Day'Ron Sharpe",
-   "team": "BKN",
-   "own": 39.0,
-   "dk": 28.6,
-   "salary": 5700
   }
  ],
  "leverage": [
@@ -994,11 +994,11 @@
    "salary": 4200
   },
   {
-   "player": "Landry Shamet",
-   "team": "NYK",
-   "own": 2.8,
-   "dk": 25.1,
-   "salary": 4800
+   "player": "Malik Monk",
+   "team": "SAC",
+   "own": 1.9,
+   "dk": 24.7,
+   "salary": 4100
   }
  ],
  "last": {
@@ -1025,15 +1025,6 @@
     "why": "Anthony Davis re-aggravated his previously injured wrist on 11/24 and had it taped, but he did not miss time and later took the tape off. The shows projected him at 9% owned."
    },
    {
-    "player": "Cooper Flagg",
-    "team": "DAL",
-    "dk": 51.0,
-    "min": 31.0,
-    "pts": 24.0,
-    "reb": 6.0,
-    "ast": 12.0
-   },
-   {
     "player": "Paul George",
     "team": "BOS",
     "dk": 51.0,
@@ -1042,6 +1033,15 @@
     "reb": 4.0,
     "ast": 9.0,
     "why": "George played 33 minutes on Tuesday, November 24, but sat the whole fourth quarter after Boston built a 31-point halftime lead. The shows projected him at 10% owned."
+   },
+   {
+    "player": "Cooper Flagg",
+    "team": "DAL",
+    "dk": 51.0,
+    "min": 31.0,
+    "pts": 24.0,
+    "reb": 6.0,
+    "ast": 12.0
    },
    {
     "player": "AJ Dybantsa",
@@ -1066,8 +1066,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "05:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_05_15PM.pdf",
+  "report": "05:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_05_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1357,12 +1357,12 @@
     "time": "2026-11-26T03:00Z",
     "team": "SAC",
     "player": "Zach LaVine",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Right Knee Soreness",
     "new": true,
-    "was": "",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "3:54 PM",
+    "changed_at": "5:34 PM",
     "salary": 6400,
     "min": 33.0,
     "benefits": [
@@ -1372,8 +1372,8 @@
       "why": "29 minutes, up from 18",
       "much": "+24.0 DK without him (1 game)",
       "score": 24.0,
-      "min": 6.4,
-      "dk": 4.7,
+      "min": 9.6,
+      "dk": 7.1,
       "avg": 15.2
      },
      {
@@ -1382,8 +1382,8 @@
       "why": "started that game",
       "much": "+18.4 DK without him (1 game)",
       "score": 18.4,
-      "min": 15.2,
-      "dk": 14.9,
+      "min": 25.2,
+      "dk": 24.7,
       "avg": 16.0
      },
      {
@@ -1392,8 +1392,8 @@
       "why": "started that game",
       "much": "+6.9 DK without him (1 game)",
       "score": 6.9,
-      "min": 11.4,
-      "dk": 10.9,
+      "min": 18.5,
+      "dk": 17.6,
       "avg": 14.3
      }
     ],
