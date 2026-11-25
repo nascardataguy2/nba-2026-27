@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "updated": "4:58 PM ET",
+ "updated": "5:02 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:40 AM",
@@ -24,16 +24,15 @@
        "min": 30.7
       },
       {
+       "player": "Jalen Smith",
+       "min": 26.7
+      },
+      {
        "player": "Caleb Wilson",
        "min": 23.0
       }
      ],
-     "q": [
-      {
-       "player": "Jalen Smith",
-       "min": 27.5
-      }
-     ]
+     "q": []
     },
     "CHA": {
      "out": [
@@ -53,7 +52,7 @@
      "q": []
     }
    },
-   "key": "Grayson Allen and Dennis Schroder are out, so Coby White and Christian Anderson and Moussa Diabate should play more than usual."
+   "key": "Norman Powell and Jalen Smith are out, so Buddy Hield and Josh Giddey and Noa Essengue should play more than usual."
   },
   {
    "away": "MIN",
@@ -337,6 +336,14 @@
  ],
  "changed": [
   {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Gastrointestinal Illness",
+   "time": "5:04 PM"
+  },
+  {
    "player": "Jalen Brunson",
    "team": "NYK",
    "status": "Probable",
@@ -424,6 +431,27 @@
    "size": 116.2
   },
   {
+   "key": "Jalen Smith",
+   "team": "CHI",
+   "head": "Jalen Smith OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Zach Collins",
+     "salary": 4000,
+     "much": "+14.1 DK without him (2 games)"
+    },
+    {
+     "player": "Leonard Miller",
+     "salary": 3000,
+     "much": "+10.5 DK without him (1 game)"
+    }
+   ],
+   "time": "5:04 PM",
+   "size": 31.2
+  },
+  {
    "key": "Grayson Allen",
    "team": "CHA",
    "head": "Grayson Allen OUT",
@@ -483,6 +511,66 @@
   }
  ],
  "sits": [
+  {
+   "team": "CHI",
+   "outs": [
+    {
+     "player": "Norman Powell",
+     "min": 30.7,
+     "note": "The show said Norman Powell is out for the 11/25 game against Charlotte. He has not played since 11/20.",
+     "new": false
+    },
+    {
+     "player": "Jalen Smith",
+     "min": 26.7,
+     "note": "Jalen Smith was moved from questionable to out for tonight (gastrointestinal illness) on the NBA's 05:00 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
+    {
+     "player": "Caleb Wilson",
+     "min": 23.0,
+     "note": "The show said Caleb Wilson is out again on 11/25. He has not played since 11/11, and the show said Isaac Okoro and Patrick Williams pick up some of his role.",
+     "new": false
+    }
+   ],
+   "new": true,
+   "lost": 80.4,
+   "benefits": [
+    {
+     "player": "Buddy Hield",
+     "salary": 5000,
+     "why": "started 2 of 2",
+     "much": "+26.7 DK without them (2 games)",
+     "score": 26.7,
+     "min": 34.6,
+     "dk": 33.4,
+     "avg": 18.9
+    },
+    {
+     "player": "Josh Giddey",
+     "salary": 7800,
+     "why": "30 minutes, up from 28",
+     "much": "+12.7 DK without them (4 games)",
+     "score": 12.7,
+     "min": 32.0,
+     "dk": 39.1,
+     "avg": 33.6
+    },
+    {
+     "player": "Noa Essengue",
+     "salary": 3200,
+     "why": "same minutes, more production",
+     "much": "+6.7 DK without them (4 games)",
+     "score": 6.7,
+     "min": 12.3,
+     "dk": 10.9,
+     "avg": 10.9
+    }
+   ],
+   "split_of": [
+    "Norman Powell"
+   ]
+  },
   {
    "team": "CHA",
    "outs": [
@@ -612,61 +700,6 @@
     "Aday Mara",
     "Jaylin Williams",
     "Cason Wallace"
-   ]
-  },
-  {
-   "team": "CHI",
-   "outs": [
-    {
-     "player": "Norman Powell",
-     "min": 30.7,
-     "note": "The show said Norman Powell is out for the 11/25 game against Charlotte. He has not played since 11/20.",
-     "new": false
-    },
-    {
-     "player": "Caleb Wilson",
-     "min": 23.0,
-     "note": "The show said Caleb Wilson is out again on 11/25. He has not played since 11/11, and the show said Isaac Okoro and Patrick Williams pick up some of his role.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 53.7,
-   "benefits": [
-    {
-     "player": "Buddy Hield",
-     "salary": 5000,
-     "why": "started 2 of 2",
-     "much": "+26.7 DK without them (2 games)",
-     "score": 26.7,
-     "min": 28.8,
-     "dk": 27.7,
-     "avg": 18.9
-    },
-    {
-     "player": "Josh Giddey",
-     "salary": 7800,
-     "why": "32 minutes, up from 28",
-     "much": "+20.0 DK without them (2 games)",
-     "score": 20.0,
-     "min": 28.8,
-     "dk": 35.2,
-     "avg": 33.6
-    },
-    {
-     "player": "Isaac Okoro",
-     "salary": 4400,
-     "why": "started 2 of 2",
-     "much": "+6.4 DK without them (2 games)",
-     "score": 6.4,
-     "min": 31.6,
-     "dk": 20.6,
-     "avg": 16.2
-    }
-   ],
-   "split_of": [
-    "Norman Powell",
-    "Caleb Wilson"
    ]
   },
   {
@@ -946,23 +979,23 @@
   {
    "player": "Grant Williams",
    "team": "CHA",
-   "own": 6.4,
+   "own": 5.3,
    "dk": 23.6,
    "salary": 3700
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 8.1,
+   "own": 8.8,
    "dk": 25.5,
    "salary": 4200
   },
   {
-   "player": "Jalen Smith",
+   "player": "Nicolas Claxton",
    "team": "CHI",
-   "own": 5.5,
-   "dk": 33.5,
-   "salary": 6200
+   "own": 4.8,
+   "dk": 26.7,
+   "salary": 4800
   }
  ],
  "last": {
@@ -1030,8 +1063,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "04:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_04_45PM.pdf",
+  "report": "05:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_05_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1093,6 +1126,62 @@
    {
     "last": {
      "date": "2026-11-23",
+     "dk": 25.0,
+     "min": 25,
+     "opp": "CLE",
+     "ha": "vs",
+     "res": "W",
+     "score": "124-108"
+    },
+    "game": "CHI at CHA",
+    "time": "2026-11-26T00:00Z",
+    "team": "CHI",
+    "player": "Jalen Smith",
+    "status": "Out",
+    "reason": "Gastrointestinal Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "5:04 PM",
+    "salary": 6200,
+    "min": 26.7,
+    "benefits": [
+     {
+      "player": "Zach Collins",
+      "salary": 4000,
+      "why": "started 1 of 2",
+      "much": "+14.1 DK without him (2 games)",
+      "score": 14.1,
+      "min": 14.6,
+      "dk": 12.5,
+      "avg": 8.9
+     },
+     {
+      "player": "Leonard Miller",
+      "salary": 3000,
+      "why": "17 minutes, up from 14",
+      "much": "+10.5 DK without him (1 game)",
+      "score": 10.5,
+      "min": 9.2,
+      "dk": 8.1,
+      "avg": 12.7
+     },
+     {
+      "player": "Patrick Williams",
+      "salary": 3700,
+      "why": "24 minutes, up from 20",
+      "much": "+7.9 DK without him (2 games)",
+      "score": 7.9,
+      "min": 21.8,
+      "dk": 16.0,
+      "avg": 15.2
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-23",
      "dk": 2.5,
      "min": 9,
      "opp": "MEM",
@@ -1122,62 +1211,6 @@
       "min": 37.4,
       "dk": 40.6,
       "avg": 30.0
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-23",
-     "dk": 25.0,
-     "min": 25,
-     "opp": "CLE",
-     "ha": "vs",
-     "res": "W",
-     "score": "124-108"
-    },
-    "game": "CHI at CHA",
-    "time": "2026-11-26T00:00Z",
-    "team": "CHI",
-    "player": "Jalen Smith",
-    "status": "Questionable",
-    "reason": "Gastrointestinal Illness",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "",
-    "salary": 6200,
-    "min": 26.7,
-    "benefits": [
-     {
-      "player": "Zach Collins",
-      "salary": 4000,
-      "why": "started 1 of 2",
-      "much": "+14.1 DK without him (2 games)",
-      "score": 14.1,
-      "min": 13.8,
-      "dk": 11.8,
-      "avg": 8.9
-     },
-     {
-      "player": "Leonard Miller",
-      "salary": 3000,
-      "why": "17 minutes, up from 14",
-      "much": "+10.5 DK without him (1 game)",
-      "score": 10.5,
-      "min": 10.4,
-      "dk": 9.2,
-      "avg": 12.7
-     },
-     {
-      "player": "Patrick Williams",
-      "salary": 3700,
-      "why": "24 minutes, up from 20",
-      "much": "+7.9 DK without him (2 games)",
-      "score": 7.9,
-      "min": 17.2,
-      "dk": 12.7,
-      "avg": 15.2
      }
     ],
     "estimate": false
@@ -1606,8 +1639,8 @@
       "why": "started 2 of 2",
       "much": "+26.7 DK without him (2 games)",
       "score": 26.7,
-      "min": 28.8,
-      "dk": 27.7,
+      "min": 34.6,
+      "dk": 33.4,
       "avg": 18.9
      },
      {
@@ -1616,8 +1649,8 @@
       "why": "30 minutes, up from 28",
       "much": "+12.7 DK without him (4 games)",
       "score": 12.7,
-      "min": 28.8,
-      "dk": 35.2,
+      "min": 32.0,
+      "dk": 39.1,
       "avg": 33.6
      },
      {
@@ -1626,8 +1659,8 @@
       "why": "same minutes, more production",
       "much": "+6.7 DK without him (4 games)",
       "score": 6.7,
-      "min": 9.6,
-      "dk": 8.5,
+      "min": 12.3,
+      "dk": 10.9,
       "avg": 10.9
      }
     ],
@@ -1718,8 +1751,8 @@
       "why": "25 minutes, up from 13",
       "much": "+15.9 DK without him (7 games)",
       "score": 15.9,
-      "min": 28.8,
-      "dk": 27.7,
+      "min": 34.6,
+      "dk": 33.4,
       "avg": 18.9
      },
      {
@@ -1728,8 +1761,8 @@
       "why": "started 7 of 7",
       "much": "+14.4 DK without him (7 games)",
       "score": 14.4,
-      "min": 31.6,
-      "dk": 20.6,
+      "min": 32.5,
+      "dk": 21.1,
       "avg": 16.2
      },
      {
@@ -1738,8 +1771,8 @@
       "why": "same minutes, more production",
       "much": "+10.4 DK without him (7 games)",
       "score": 10.4,
-      "min": 28.8,
-      "dk": 35.2,
+      "min": 32.0,
+      "dk": 39.1,
       "avg": 33.6
      }
     ],
