@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "updated": "7:28 PM ET",
+ "updated": "7:32 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:40 AM",
@@ -142,7 +142,7 @@
    "away": "BKN",
    "home": "MIL",
    "time": "2026-11-26T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 234.5,
    "fav": "MIL",
    "line": 1.5,
@@ -173,7 +173,7 @@
    "away": "LAC",
    "home": "MEM",
    "time": "2026-11-26T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 227.5,
    "fav": "MEM",
    "line": 7.5,
@@ -232,7 +232,7 @@
      "q": []
     }
    },
-   "key": "Devin Booker has the top projection in this game at 40.1 DK points."
+   "key": "Devin Booker has the top projection in this game at 40.4 DK points."
   },
   {
    "away": "SAS",
@@ -659,7 +659,7 @@
      "much": "+18.4 DK without him (1 game)",
      "score": 18.4,
      "min": 24.8,
-     "dk": 24.9,
+     "dk": 24.8,
      "avg": 16.0
     },
     {
@@ -799,7 +799,7 @@
      "much": "+5.5 DK without them (5 games)",
      "score": 5.5,
      "min": 32.9,
-     "dk": 44.2,
+     "dk": 44.1,
      "avg": 43.9
     }
    ],
@@ -841,10 +841,10 @@
      "player": "Isaiah Stewart",
      "salary": 4100,
      "why": "21 minutes, limited gain (11/21)",
-     "much": "+3.5 DK projected vs. last 3",
-     "score": 3.5,
+     "much": "+3.4 DK projected vs. last 3",
+     "score": 3.3999999999999986,
      "min": 19.4,
-     "dk": 20.0,
+     "dk": 19.9,
      "avg": 17.9
     }
    ],
@@ -952,53 +952,53 @@
   {
    "player": "Mikel Brown Jr.",
    "team": "BKN",
-   "own": 52.0,
-   "dk": 25.0,
+   "own": 38.0,
+   "dk": 24.9,
    "salary": 4800
+  },
+  {
+   "player": "Charles Bassey",
+   "team": "GSW",
+   "own": 38.0,
+   "dk": 24.6,
+   "salary": 4700
+  },
+  {
+   "player": "Day'Ron Sharpe",
+   "team": "BKN",
+   "own": 33.4,
+   "dk": 28.5,
+   "salary": 5700
   },
   {
    "player": "Julius Randle",
    "team": "BKN",
-   "own": 41.0,
+   "own": 32.3,
    "dk": 36.2,
    "salary": 7500
-  },
-  {
-   "player": "James Harden",
-   "team": "CLE",
-   "own": 39.0,
-   "dk": 34.5,
-   "salary": 7800
-  },
-  {
-   "player": "Michael Porter Jr.",
-   "team": "BKN",
-   "own": 39.0,
-   "dk": 33.2,
-   "salary": 7200
   }
  ],
  "leverage": [
   {
-   "player": "Grant Williams",
-   "team": "CHA",
-   "own": 4.6,
-   "dk": 23.8,
-   "salary": 3700
-  },
-  {
-   "player": "Taylor Hendricks",
-   "team": "MEM",
-   "own": 5.5,
-   "dk": 25.6,
-   "salary": 4200
-  },
-  {
    "player": "Precious Achiuwa",
    "team": "SAC",
-   "own": 0.8,
-   "dk": 25.0,
+   "own": 1.2,
+   "dk": 25.1,
    "salary": 4600
+  },
+  {
+   "player": "Royce O'Neale",
+   "team": "CHA",
+   "own": 1.2,
+   "dk": 19.1,
+   "salary": 3600
+  },
+  {
+   "player": "Landry Shamet",
+   "team": "NYK",
+   "own": 7.0,
+   "dk": 24.9,
+   "salary": 4800
   }
  ],
  "last": {
@@ -1066,8 +1066,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "07:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_07_15PM.pdf",
+  "report": "07:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_07_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1263,7 +1263,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "12:55 PM",
-    "salary": 3000,
+    "salary": null,
     "min": 10.3,
     "benefits": [],
     "estimate": false
@@ -1383,7 +1383,7 @@
       "much": "+18.4 DK without him (1 game)",
       "score": 18.4,
       "min": 24.8,
-      "dk": 24.9,
+      "dk": 24.8,
       "avg": 16.0
      },
      {
@@ -1493,9 +1493,9 @@
       "salary": 3100,
       "why": "subs in for him 14 of 84 times",
       "much": "about +4.3 DK",
-      "score": 4.289115646258504,
+      "score": 4.252456538170824,
       "min": 14.7,
-      "dk": 11.7,
+      "dk": 11.6,
       "avg": 9.4
      }
     ],
@@ -1541,7 +1541,7 @@
       "much": "+14.3 DK without him (1 game)",
       "score": 14.3,
       "min": 9.6,
-      "dk": 10.6,
+      "dk": 10.5,
       "avg": 7.7
      },
      {
@@ -1587,7 +1587,7 @@
       "much": "+8.2 DK without him (7 games)",
       "score": 8.2,
       "min": 23.1,
-      "dk": 16.7,
+      "dk": 16.8,
       "avg": 13.6
      },
      {
@@ -1597,7 +1597,7 @@
       "much": "+7.9 DK without him (7 games)",
       "score": 7.9,
       "min": 19.5,
-      "dk": 24.7,
+      "dk": 24.6,
       "avg": 19.7
      },
      {
@@ -1607,7 +1607,7 @@
       "much": "+6.2 DK without him (7 games)",
       "score": 6.2,
       "min": 13.6,
-      "dk": 13.3,
+      "dk": 13.1,
       "avg": 11.1
      }
     ],
@@ -1801,7 +1801,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6500,
+    "salary": null,
     "min": 38.7,
     "benefits": [
      {
@@ -1857,7 +1857,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 9400,
+    "salary": null,
     "min": 34.0,
     "benefits": [
      {
@@ -1913,7 +1913,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 31.7,
     "benefits": [
      {
@@ -1969,7 +1969,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7400,
+    "salary": null,
     "min": 30.0,
     "benefits": [
      {
@@ -2025,7 +2025,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6500,
+    "salary": null,
     "min": 30.0,
     "benefits": [
      {
@@ -2081,7 +2081,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6200,
+    "salary": null,
     "min": 27.3,
     "benefits": [
      {
@@ -2137,7 +2137,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 16.3,
     "benefits": [
      {
@@ -2193,7 +2193,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4500,
+    "salary": null,
     "min": 15.0,
     "benefits": [
      {
@@ -2249,7 +2249,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3200,
+    "salary": null,
     "min": 13.7,
     "benefits": [
      {
@@ -2295,7 +2295,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 11.3,
     "benefits": [],
     "estimate": false
@@ -2320,7 +2320,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 8300,
     "min": 28.0,
     "benefits": [
      {
@@ -2337,10 +2337,10 @@
       "player": "Isaiah Stewart",
       "salary": 4100,
       "why": "21 minutes, limited gain (11/21)",
-      "much": "+3.5 DK projected vs. last 3",
-      "score": 3.5,
+      "much": "+3.4 DK projected vs. last 3",
+      "score": 3.3999999999999986,
       "min": 19.4,
-      "dk": 20.0,
+      "dk": 19.9,
       "avg": 17.9
      }
     ],
@@ -2366,7 +2366,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 4700,
     "min": 23.7,
     "benefits": [
      {
@@ -2376,7 +2376,7 @@
       "much": "+14.0 DK without him (1 game)",
       "score": 14.0,
       "min": 26.5,
-      "dk": 25.0,
+      "dk": 24.9,
       "avg": 21.9
      },
      {
@@ -2386,7 +2386,7 @@
       "much": "+11.6 DK without him (2 games)",
       "score": 11.6,
       "min": 25.9,
-      "dk": 25.0,
+      "dk": 25.1,
       "avg": 22.2
      },
      {
@@ -2422,7 +2422,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 4000,
     "min": 16.0,
     "benefits": [
      {
@@ -2442,7 +2442,7 @@
       "much": "+9.5 DK without him (3 games)",
       "score": 9.5,
       "min": 28.9,
-      "dk": 38.5,
+      "dk": 38.7,
       "avg": 35.0
      },
      {
@@ -2478,7 +2478,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 4700,
     "min": 14.7,
     "benefits": [
      {
@@ -2600,7 +2600,7 @@
       "much": "+6.0 DK without him (2 games)",
       "score": 6.0,
       "min": 9.6,
-      "dk": 10.6,
+      "dk": 10.5,
       "avg": 7.7
      }
     ],
@@ -2682,7 +2682,7 @@
       "much": "+8.3 DK without him (7 games)",
       "score": 8.3,
       "min": 19.5,
-      "dk": 24.7,
+      "dk": 24.6,
       "avg": 19.7
      },
      {
@@ -2692,7 +2692,7 @@
       "much": "+7.2 DK without him (7 games)",
       "score": 7.2,
       "min": 23.1,
-      "dk": 16.7,
+      "dk": 16.8,
       "avg": 13.6
      },
      {
@@ -2738,7 +2738,7 @@
       "much": "+5.9 DK without him (9 games)",
       "score": 5.9,
       "min": 32.9,
-      "dk": 44.2,
+      "dk": 44.1,
       "avg": 43.9
      },
      {
