@@ -2,7 +2,7 @@
  "updated": "2026-11-25",
  "brief": {
   "date": "2026-11-25",
-  "updated": "9:02 PM ET",
+  "updated": "9:18 PM ET",
   "games": 8,
   "pending": [],
   "first_report": "5:40 AM",
@@ -251,18 +251,13 @@
        {
         "player": "Dylan Harper",
         "min": 31.3
-       }
-      ],
-      "q": [
-       {
-        "player": "Victor Wembanyama",
-        "min": 32.3
        },
        {
         "player": "De'Aaron Fox",
-        "min": 29.1
+        "min": 30.7
        }
-      ]
+      ],
+      "q": []
      },
      "POR": {
       "out": [
@@ -282,7 +277,7 @@
       "q": []
      }
     },
-    "key": "Ja Morant and Chris Youngblood are out, so Donovan Clingan and Jrue Holiday and Deni Avdija should play more than usual."
+    "key": "Dylan Harper and De'Aaron Fox are out, so Luke Kornet and Stephon Castle and Julian Champagnie should play more than usual."
    },
    {
     "away": "SAC",
@@ -314,18 +309,37 @@
         "min": 21.0
        }
       ],
-      "q": [
-       {
-        "player": "Brandon Williams",
-        "min": 17.5
-       }
-      ]
+      "q": []
      }
     },
     "key": "Zach LaVine is out, so Leaky Black and Malik Monk and Alex Karaban should play more than usual."
    }
   ],
   "changed": [
+   {
+    "player": "Victor Wembanyama",
+    "team": "SAS",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "-",
+    "time": "9:19 PM"
+   },
+   {
+    "player": "De'Aaron Fox",
+    "team": "SAS",
+    "status": "Out",
+    "was": "Questionable",
+    "why": "Right Shin Contusion",
+    "time": "9:19 PM"
+   },
+   {
+    "player": "Brandon Williams",
+    "team": "GSW",
+    "status": "Available",
+    "was": "Questionable",
+    "why": "Left Hamstring Strain",
+    "time": "9:19 PM"
+   },
    {
     "player": "Yaxel Lendeborg",
     "team": "GSW",
@@ -381,30 +395,6 @@
     "was": "Questionable",
     "why": "Gastrointestinal Illness",
     "time": "5:04 PM"
-   },
-   {
-    "player": "Jalen Brunson",
-    "team": "NYK",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "Illness",
-    "time": "4:41 PM"
-   },
-   {
-    "player": "Zach LaVine",
-    "team": "SAC",
-    "status": "Questionable",
-    "was": "",
-    "why": "Right Knee Soreness",
-    "time": "3:54 PM"
-   },
-   {
-    "player": "Karl-Anthony Towns",
-    "team": "NYK",
-    "status": "Probable",
-    "was": "Questionable",
-    "why": "",
-    "time": "12:55 PM"
    }
   ],
   "chg": [
@@ -430,13 +420,34 @@
     "size": 116.2
    },
    {
+    "key": "SAS",
+    "team": "SAS",
+    "head": "Wembanyama CLEARED",
+    "st": "Probable",
+    "act": "Less value",
+    "names": [
+     {
+      "player": "Luke Kornet",
+      "salary": 4200,
+      "much": "+27.0 DK without Wembanyama"
+     },
+     {
+      "player": "Stephon Castle",
+      "salary": 7800,
+      "much": "+23.1 DK without Wembanyama"
+     }
+    ],
+    "time": "9:19 PM",
+    "size": 61.6
+   },
+   {
     "key": "GSW",
     "team": "GSW",
     "head": "Lendeborg CLEARED",
     "st": "Probable",
     "act": "",
     "names": [],
-    "time": "8:33 PM",
+    "time": "9:19 PM",
     "size": 37.1
    },
    {
@@ -480,6 +491,27 @@
     ],
     "time": "5:04 PM",
     "size": 31.2
+   },
+   {
+    "key": "De'Aaron Fox",
+    "team": "SAS",
+    "head": "De'Aaron Fox OUT",
+    "st": "Out",
+    "act": "Play",
+    "names": [
+     {
+      "player": "Stephon Castle",
+      "salary": 7800,
+      "much": "+18.0 DK without him (2 games)"
+     },
+     {
+      "player": "Tarris Reed Jr.",
+      "salary": 3500,
+      "much": "+14.3 DK without him (1 game)"
+     }
+    ],
+    "time": "9:19 PM",
+    "size": 28.3
    },
    {
     "key": "Grayson Allen",
@@ -581,6 +613,61 @@
     ]
    },
    {
+    "team": "SAS",
+    "outs": [
+     {
+      "player": "Dylan Harper",
+      "min": 31.3,
+      "note": "Harper has not played since 11/17. The show said he will be out two to three weeks.",
+      "new": false
+     },
+     {
+      "player": "De'Aaron Fox",
+      "min": 30.7,
+      "note": "De'Aaron Fox was moved from questionable to out for tonight (right shin contusion) on the NBA's 09:15 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+      "new": true
+     }
+    ],
+    "new": true,
+    "lost": 62.0,
+    "benefits": [
+     {
+      "player": "Luke Kornet",
+      "salary": 4200,
+      "why": "started that game",
+      "much": "+27.0 DK without them (1 game)",
+      "score": 27.0,
+      "min": 22.1,
+      "dk": 19.0,
+      "avg": 12.3
+     },
+     {
+      "player": "Stephon Castle",
+      "salary": 7800,
+      "why": "37 minutes, up from 30",
+      "much": "+23.1 DK without them (1 game)",
+      "score": 23.1,
+      "min": 36.3,
+      "dk": 43.1,
+      "avg": 35.2
+     },
+     {
+      "player": "Julian Champagnie",
+      "salary": 5000,
+      "why": "started that game",
+      "much": "+17.8 DK without them (1 game)",
+      "score": 17.8,
+      "min": 32.8,
+      "dk": 28.3,
+      "avg": 22.4
+     }
+    ],
+    "split_of": [
+     "Dylan Harper",
+     "De'Aaron Fox"
+    ]
+   },
+   {
     "team": "CHA",
     "outs": [
      {
@@ -665,7 +752,7 @@
       "much": "+18.4 DK without him (1 game)",
       "score": 18.4,
       "min": 24.8,
-      "dk": 24.8,
+      "dk": 24.9,
       "avg": 16.0
      },
      {
@@ -813,51 +900,6 @@
      "Ja Morant",
      "Chris Youngblood"
     ]
-   },
-   {
-    "team": "MEM",
-    "outs": [
-     {
-      "player": "Cameron Boozer",
-      "min": 28.0,
-      "note": "The show said Cameron Boozer is out at least four weeks. He has already missed Memphis's games on 11/21 and 11/23. The show said no one on the roster is likely to become a full-time replacement for his role.",
-      "new": false
-     },
-     {
-      "player": "Jerami Grant",
-      "min": 16.0,
-      "note": "The show said Jerami Grant is hurt, which takes another forward out of the Memphis rotation while Cameron Boozer is out. Grant did not play on 11/21 or 11/23 after playing only 5 minutes on 11/19.",
-      "new": false
-     }
-    ],
-    "new": false,
-    "lost": 44.0,
-    "benefits": [
-     {
-      "player": "Kris Murray",
-      "salary": 4500,
-      "why": "started 1 of 2",
-      "much": "+10.9 DK without them (2 games)",
-      "score": 10.9,
-      "min": 20.2,
-      "dk": 14.8,
-      "avg": 7.8
-     },
-     {
-      "player": "Isaiah Stewart",
-      "salary": 4100,
-      "why": "21 minutes, limited gain (11/21)",
-      "much": "+3.4 DK projected vs. last 3",
-      "score": 3.3999999999999986,
-      "min": 19.4,
-      "dk": 19.9,
-      "avg": 17.9
-     }
-    ],
-    "split_of": [
-     "Cameron Boozer",
-     "Jerami Grant"
-    ]
    }
   ],
   "hot": [
@@ -988,23 +1030,23 @@
    {
     "player": "Precious Achiuwa",
     "team": "SAC",
-    "own": 1.7,
+    "own": 1.8,
     "dk": 25.0,
     "salary": 4600
    },
    {
     "player": "Jalen Green",
     "team": "PHX",
-    "own": 1.7,
+    "own": 2.7,
     "dk": 27.2,
     "salary": 5300
    },
    {
-    "player": "Bennett Stirtz",
-    "team": "OKC",
-    "own": 5.1,
-    "dk": 21.3,
-    "salary": 4300
+    "player": "Keldon Johnson",
+    "team": "SAS",
+    "own": 2.5,
+    "dk": 24.6,
+    "salary": 4900
    }
   ],
   "last": {
@@ -1031,6 +1073,15 @@
      "why": "Anthony Davis re-aggravated his previously injured wrist on 11/24 and had it taped, but he did not miss time and later took the tape off. The shows projected him at 9% owned."
     },
     {
+     "player": "Cooper Flagg",
+     "team": "DAL",
+     "dk": 51.0,
+     "min": 31.0,
+     "pts": 24.0,
+     "reb": 6.0,
+     "ast": 12.0
+    },
+    {
      "player": "Paul George",
      "team": "BOS",
      "dk": 51.0,
@@ -1039,15 +1090,6 @@
      "reb": 4.0,
      "ast": 9.0,
      "why": "George played 33 minutes on Tuesday, November 24, but sat the whole fourth quarter after Boston built a 31-point halftime lead. The shows projected him at 10% owned."
-    },
-    {
-     "player": "Cooper Flagg",
-     "team": "DAL",
-     "dk": 51.0,
-     "min": 31.0,
-     "pts": 24.0,
-     "reb": 6.0,
-     "ast": 12.0
     },
     {
      "player": "AJ Dybantsa",
@@ -1072,8 +1114,8 @@
    "injuries": []
   },
   "injuries": {
-   "report": "09:00 PM",
-   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_00PM.pdf",
+   "report": "09:15 PM",
+   "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_15PM.pdf",
    "pending": [],
    "rows": [
     {
@@ -1389,7 +1431,7 @@
        "much": "+18.4 DK without him (1 game)",
        "score": 18.4,
        "min": 24.8,
-       "dk": 24.8,
+       "dk": 24.9,
        "avg": 16.0
       },
       {
@@ -1408,62 +1450,6 @@
     {
      "last": {
       "date": "2026-11-21",
-      "dk": 95.8,
-      "min": 32,
-      "opp": "NOP",
-      "ha": "vs",
-      "res": "W",
-      "score": "114-91"
-     },
-     "game": "SAS at POR",
-     "time": "2026-11-26T03:00Z",
-     "team": "SAS",
-     "player": "Victor Wembanyama",
-     "status": "Questionable",
-     "reason": "Low Back Tightness",
-     "new": true,
-     "was": "Out",
-     "known": true,
-     "changed_at": "",
-     "salary": 11800,
-     "min": 33.0,
-     "benefits": [
-      {
-       "player": "Luke Kornet",
-       "salary": 4200,
-       "why": "started that game",
-       "much": "+27.0 DK without him (1 game)",
-       "score": 27.0,
-       "min": 17.8,
-       "dk": 15.3,
-       "avg": 12.3
-      },
-      {
-       "player": "Stephon Castle",
-       "salary": 7800,
-       "why": "37 minutes, up from 30",
-       "much": "+23.1 DK without him (1 game)",
-       "score": 23.1,
-       "min": 32.6,
-       "dk": 38.6,
-       "avg": 35.2
-      },
-      {
-       "player": "Julian Champagnie",
-       "salary": 5000,
-       "why": "started that game",
-       "much": "+17.8 DK without him (1 game)",
-       "score": 17.8,
-       "min": 28.3,
-       "dk": 24.5,
-       "avg": 22.4
-      }
-     ],
-     "estimate": false
-    },
-    {
-     "last": {
-      "date": "2026-11-21",
       "dk": 21.0,
       "min": 26,
       "opp": "NOP",
@@ -1475,12 +1461,12 @@
      "time": "2026-11-26T03:00Z",
      "team": "SAS",
      "player": "De'Aaron Fox",
-     "status": "Questionable",
+     "status": "Out",
      "reason": "Right Shin Contusion",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
+     "changed_at": "9:19 PM",
      "salary": 6500,
      "min": 30.7,
      "benefits": [
@@ -1490,8 +1476,8 @@
        "why": "36 minutes, up from 29",
        "much": "+18.0 DK without him (2 games)",
        "score": 18.0,
-       "min": 32.6,
-       "dk": 38.6,
+       "min": 36.3,
+       "dk": 43.1,
        "avg": 35.2
       },
       {
@@ -1500,8 +1486,8 @@
        "why": "15 minutes, up from 6",
        "much": "+14.3 DK without him (1 game)",
        "score": 14.3,
-       "min": 9.6,
-       "dk": 10.6,
+       "min": 10.7,
+       "dk": 11.9,
        "avg": 7.7
       },
       {
@@ -1510,8 +1496,8 @@
        "why": "started 1 of 2",
        "much": "+9.9 DK without him (2 games)",
        "score": 9.9,
-       "min": 17.8,
-       "dk": 15.3,
+       "min": 22.1,
+       "dk": 19.0,
        "avg": 12.3
       }
      ],
@@ -1519,58 +1505,27 @@
     },
     {
      "last": {
-      "date": "2026-11-09",
-      "dk": 4.0,
-      "min": 2,
+      "date": "2026-11-21",
+      "dk": 95.8,
+      "min": 32,
       "opp": "NOP",
       "ha": "vs",
       "res": "W",
-      "score": "138-87"
+      "score": "114-91"
      },
-     "game": "SAC at GSW",
+     "game": "SAS at POR",
      "time": "2026-11-26T03:00Z",
-     "team": "GSW",
-     "player": "Brandon Williams",
-     "status": "Questionable",
-     "reason": "Left Hamstring Strain",
+     "team": "SAS",
+     "player": "Victor Wembanyama",
+     "status": "Available",
+     "reason": "",
      "new": true,
-     "was": "Out",
+     "was": "Questionable",
      "known": true,
-     "changed_at": "",
-     "salary": 4400,
-     "min": 13.3,
-     "benefits": [
-      {
-       "player": "Will Richard",
-       "salary": 3800,
-       "why": "24 minutes, up from 16",
-       "much": "+8.2 DK without him (7 games)",
-       "score": 8.2,
-       "min": 23.1,
-       "dk": 16.7,
-       "avg": 13.6
-      },
-      {
-       "player": "Charles Bassey",
-       "salary": 4700,
-       "why": "21 minutes, up from 11",
-       "much": "+7.9 DK without him (7 games)",
-       "score": 7.9,
-       "min": 19.5,
-       "dk": 24.6,
-       "avg": 19.7
-      },
-      {
-       "player": "L.J. Cryer",
-       "salary": 3700,
-       "why": "16 minutes, up from 8",
-       "much": "+6.2 DK without him (7 games)",
-       "score": 6.2,
-       "min": 13.6,
-       "dk": 13.1,
-       "avg": 11.1
-      }
-     ],
+     "changed_at": "9:19 PM",
+     "salary": 11800,
+     "min": 33.0,
+     "benefits": [],
      "estimate": false
     },
     {
@@ -1595,6 +1550,31 @@
      "changed_at": "8:33 PM",
      "salary": 8400,
      "min": 32.3,
+     "benefits": [],
+     "estimate": false
+    },
+    {
+     "last": {
+      "date": "2026-11-09",
+      "dk": 4.0,
+      "min": 2,
+      "opp": "NOP",
+      "ha": "vs",
+      "res": "W",
+      "score": "138-87"
+     },
+     "game": "SAC at GSW",
+     "time": "2026-11-26T03:00Z",
+     "team": "GSW",
+     "player": "Brandon Williams",
+     "status": "Available",
+     "reason": "Left Hamstring Strain",
+     "new": true,
+     "was": "Questionable",
+     "known": true,
+     "changed_at": "9:19 PM",
+     "salary": 4400,
+     "min": 13.3,
      "benefits": [],
      "estimate": false
     },
@@ -2559,13 +2539,23 @@
      "min": 31.3,
      "benefits": [
       {
+       "player": "Victor Wembanyama",
+       "salary": 11800,
+       "why": "same minutes, more production",
+       "much": "+15.7 DK without him (2 games)",
+       "score": 15.7,
+       "min": 35.0,
+       "dk": 70.1,
+       "avg": 61.6
+      },
+      {
        "player": "Stephon Castle",
        "salary": 7800,
        "why": "33 minutes, up from 29",
        "much": "+15.0 DK without him (3 games)",
        "score": 15.0,
-       "min": 32.6,
-       "dk": 38.6,
+       "min": 36.3,
+       "dk": 43.1,
        "avg": 35.2
       },
       {
@@ -2574,19 +2564,9 @@
        "why": "started 3 of 3",
        "much": "+8.3 DK without him (3 games)",
        "score": 8.3,
-       "min": 28.3,
-       "dk": 24.5,
+       "min": 32.8,
+       "dk": 28.3,
        "avg": 22.4
-      },
-      {
-       "player": "Tarris Reed Jr.",
-       "salary": 3500,
-       "why": "10 minutes, up from 6",
-       "much": "+6.0 DK without him (2 games)",
-       "score": 6.0,
-       "min": 9.6,
-       "dk": 10.6,
-       "avg": 7.7
       }
      ],
      "estimate": false
@@ -2661,6 +2641,16 @@
      "min": 21.0,
      "benefits": [
       {
+       "player": "Brandon Williams",
+       "salary": 4400,
+       "why": "started 1 of 2",
+       "much": "+16.0 DK without him (2 games)",
+       "score": 16.0,
+       "min": 17.5,
+       "dk": 20.1,
+       "avg": 18.7
+      },
+      {
        "player": "Charles Bassey",
        "salary": 4700,
        "why": "started 4 of 7",
@@ -2677,18 +2667,8 @@
        "much": "+7.2 DK without him (7 games)",
        "score": 7.2,
        "min": 23.1,
-       "dk": 16.7,
+       "dk": 16.8,
        "avg": 13.6
-      },
-      {
-       "player": "De'Anthony Melton",
-       "salary": 5100,
-       "why": "started 4 of 7",
-       "much": "+5.9 DK without him (7 games)",
-       "score": 5.9,
-       "min": 21.8,
-       "dk": 22.7,
-       "avg": 21.3
       }
      ],
      "estimate": false
@@ -4549,9 +4529,9 @@
   ],
   [
    "De'Aaron Fox",
-   "2026-11-23",
+   "2026-11-25",
    "injury",
-   "De'Aaron Fox was ruled out of Monday's game at Sacramento with a shin injury."
+   "De'Aaron Fox was moved from questionable to out for tonight (right shin contusion) on the NBA's 09:15 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains."
   ],
   [
    "De'Andre Hunter",
@@ -9989,7 +9969,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 10 avg last 5; 6 on Wednesday 11/18",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "Chaney Johnson scored 10.0 of his 10.0 DraftKings points in garbage time of a 30-point loss against CHI on Wednesday, when the lead was 20 or more late. His line is bigger than his normal role; expect less in a close game.",
    "source": "PBP-1118"
   },
@@ -10029,7 +10009,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 4 games; before that 7 avg last 5; 2 on Saturday 11/14",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Out: G League - On Assignment (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - On Assignment (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10139,7 +10119,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last game; before that 22 avg last 5; 18 on Friday 11/20",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Nolan Traore is out with a right hamstring strain and has not played since 11/20. The show said he is probably gone for about two months, which keeps Mikel Brown Jr. in the starting lineup.",
    "source": "STK-1125"
   },
@@ -10349,7 +10329,7 @@
    "role": "Started 3 of last 5 (G)",
    "minutes": "Missed his team's last 7 games; before that 28 avg last 5; 20 on Wednesday 11/4",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Dennis Schroder is out for 11/25. He has not played since 11/04.",
    "source": "TL-1125"
   },
@@ -10369,7 +10349,7 @@
    "role": "Started 3 of last 5 (G)",
    "minutes": "Missed his team's last 3 games; before that 28 avg last 5; 25 on Sunday 11/15",
    "usage": "21% (our estimate, last 5 games)",
-   "status": "Out: Concussion Protocol (NBA injury report, 09:00 PM)",
+   "status": "Out: Concussion Protocol (NBA injury report, 09:15 PM)",
    "note": "Grayson Allen was questionable on the morning of 11/25 and was later ruled out under the concussion protocol. The show said his status probably matters a little for Coby White's role.",
    "source": "STK-1125"
   },
@@ -10389,7 +10369,7 @@
    "role": "Started 1 of last 1 (G)",
    "minutes": "Missed his team's last 7 games; before that 6 avg last 1; 6 on Wednesday 11/4",
    "usage": "31% (our estimate, last 1 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Kon Knueppel is out again for 11/25. He has played only one game this season, on 11/04.",
    "source": "TL-1125"
   },
@@ -10449,7 +10429,7 @@
    "role": "Bench (C)",
    "minutes": "15 avg last 5; 9 on Monday 11/23",
    "usage": "9% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Ryan Kalkbrenner is doubtful for 11/25, and he played only nine minutes on 11/23. The show said Hannes Steinbach would likely move up into the backup center minutes if Kalkbrenner sits.",
    "source": "LO-1125b"
   },
@@ -10459,7 +10439,7 @@
    "role": "Starter (G)",
    "minutes": "31 avg last 5; 28 on Monday 11/23",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Available: Left Thigh Soreness (NBA injury report, 09:00 PM)",
+   "status": "Available: Left Thigh Soreness (NBA injury report, 09:15 PM)",
    "note": "Sion James has started Charlotte's last two games while Grant Williams was out, playing 32 and 28 minutes. The show said Grant Williams is now off the injury report, so it is unclear whether Williams goes back into the starting lineup or James keeps the spot.",
    "source": "LO-1125b"
   },
@@ -10489,7 +10469,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 7 games; before that 27 avg last 5; 15 on Wednesday 11/11",
    "usage": "27% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show said Caleb Wilson is out again on 11/25. He has not played since 11/11, and the show said Isaac Okoro and Patrick Williams pick up some of his role.",
    "source": "TL-1125"
   },
@@ -10519,7 +10499,7 @@
    "role": "Starter (F)",
    "minutes": "28 avg last 5; 25 on Monday 11/23",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Gastrointestinal Illness (NBA injury report, 09:00 PM)",
+   "status": "Out: Gastrointestinal Illness (NBA injury report, 09:15 PM)",
    "note": "Jalen Smith was moved from questionable to out for tonight (gastrointestinal illness) on the NBA's 05:00 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
    "source": "NBA-INJ"
   },
@@ -10529,7 +10509,7 @@
    "role": "Bench (G)",
    "minutes": "9 avg last 5; 22 on Monday 11/23",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10599,7 +10579,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 2 games; before that 31 avg last 5; 33 on Friday 11/20",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Norman Powell is out for the 11/25 game against Charlotte. He has not played since 11/20.",
    "source": "TL-1125"
   },
@@ -10619,7 +10599,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 10 games; before that 10 avg last 4; 2 on Monday 11/2",
    "usage": "8% (our estimate, last 4 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -10669,7 +10649,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last 6 games; before that 31 avg last 5; 33 on Wednesday 11/11",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: Left Great Toe Sprain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Great Toe Sprain (NBA injury report, 09:15 PM)",
    "note": "Evan Mobley remains out for Cleveland and has not played in the Cavaliers' recent games.",
    "source": "LO-1125b"
   },
@@ -11329,7 +11309,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 6 games; before that 16 avg last 5; 2 on Monday 11/9",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Questionable: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Available: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Brandon Williams is questionable for 11/25 with a hamstring injury, but the show said he practiced and looks likely to return. The show expects his return to push LJ Cryer out of the rotation, and Cryer has already fallen from starting to 11 or 12 minutes off the bench in his last two games.",
    "source": "LO-1125b"
   },
@@ -11409,7 +11389,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Jimmy Butler is still out while he recovers from right ACL surgery, and he is ruled out for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -11419,7 +11399,7 @@
    "role": "Starter when healthy",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Not With Team (NBA injury report, 09:00 PM)",
+   "status": "Out: Not With Team (NBA injury report, 09:15 PM)",
    "note": "Kristaps Porzingis stepped away from basketball earlier this month and is listed as not with the team for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -11449,7 +11429,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Moses Moody, Gary Payton II and Brandin Williams did not play for Golden State against Houston. The show said those players will eventually return to help the guard rotation while Stephen Curry is hurt.",
    "source": "LO-1112d"
   },
@@ -11459,7 +11439,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 5 games; before that 25 avg last 5; 6 on Wednesday 11/11",
    "usage": "34% (our estimate, last 5 games)",
-   "status": "Out: Right Oblique Tear (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Oblique Tear (NBA injury report, 09:15 PM)",
    "note": "Curry was still out on Sunday, Nov. 22, and Golden State used its seventh starting lineup in seven games and its 13th of the season.",
    "source": "ESPN-1123"
   },
@@ -11479,7 +11459,7 @@
    "role": "Starter (F)",
    "minutes": "31 avg last 5; 34 on Sunday 11/22",
    "usage": "28% (our estimate, last 5 games)",
-   "status": "Available: Illness (NBA injury report, 09:00 PM)",
+   "status": "Available: Illness (NBA injury report, 09:15 PM)",
    "note": "Lendeborg is questionable with an illness while Stephen Curry, Jimmy Butler III, Moses Moody and Kristaps Porzingis are all out. Brandon Williams is questionable to return from a six-game hamstring absence.",
    "source": "WEB-1125"
   },
@@ -11829,7 +11809,7 @@
    "role": "Bench (7th man when healthy)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Bradley Beal (knee) has not played yet this season and is still recovering.",
    "source": "ESPN-1105"
   },
@@ -11909,7 +11889,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 2 games; before that 5 avg last 5; 1 on Thursday 11/19",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -11919,7 +11899,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show said Miller is out for about six months.",
    "source": "LO-1102b"
   },
@@ -11969,7 +11949,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 3 games; before that 5 avg last 5; 4 on Tuesday 11/17",
    "usage": "23% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -12189,7 +12169,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 2 games; before that 28 avg last 5; 27 on Thursday 11/19",
    "usage": "24% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Boozer is expected to miss at least a month with a sprained right ankle. Ty Jerome took 21 shots in 29 minutes in the first game without him.",
    "source": "ESPN-1124"
   },
@@ -12209,7 +12189,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 5 games; before that 12 avg last 5; 3 on Saturday 11/14",
    "usage": "17% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "GG Jackson will be re-evaluated in three months after surgery for a fractured fifth metatarsal in his left foot. The show said Taylor Hendricks and Jerami Grant are the players who could pick up more minutes with Jackson out.",
    "source": "SE-1118b"
   },
@@ -12259,7 +12239,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 19 avg last 5; 5 on Thursday 11/19",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Jerami Grant is hurt, which takes another forward out of the Memphis rotation while Cameron Boozer is out. Grant did not play on 11/21 or 11/23 after playing only 5 minutes on 11/19.",
    "source": "LO-1124b"
   },
@@ -12309,7 +12289,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -12319,7 +12299,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 13 games; before that 16 avg last 5; 14 on Thursday 10/29",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Scotty Pippen Jr. is week-to-week with a lumbar disc herniation and has not played since October 29, with no firm return date. Cam Spencer moved into the starting lineup in his place.",
    "source": "WEB-1117"
   },
@@ -12419,7 +12399,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 31 avg last 5; 32 on Wednesday 11/18",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Available: Right Groin Tendinitis (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Groin Tendinitis (NBA injury report, 09:15 PM)",
    "note": "Giannis is questionable with groin tendinitis but went through most of Tuesday's practice and said he felt great. Joel Embiid is doubtful with an illness for the early game in Philadelphia.",
    "source": "WEB-1125"
   },
@@ -12449,7 +12429,7 @@
    "role": "Started 3 of last 5 (F)",
    "minutes": "18 avg last 5; 11 on Sunday 11/22",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Available: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -12519,7 +12499,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last game; before that 2 avg last 3; 1 on Wednesday 11/18",
    "usage": "66% (our estimate, last 3 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -12709,7 +12689,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 14 games; before that 34 avg last 4; 41 on Monday 10/26",
    "usage": "38% (our estimate, last 4 games)",
-   "status": "Out: Right Knee (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee (NBA injury report, 09:15 PM)",
    "note": "Anthony Edwards is out again for Minnesota, along with Donte DiVincenzo and Jaylen Clark, so the Wolves lean on their bench wings and forwards against a short-handed Memphis team.",
    "source": "WEB-1121"
   },
@@ -12749,7 +12729,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show said a Shams Charania report has Donte DiVincenzo aiming to return from his Achilles injury early in the new year. The show expects a minutes limit and rest on back-to-backs, with him coming off the bench behind LaMelo Ball and Anthony Edwards and competing with Ayo Dosunmu and Terrence Shannon Jr.",
    "source": "LO-1125"
   },
@@ -12779,7 +12759,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 17 avg last 5; 3 on Saturday 11/14",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Clark played only three minutes on 11/14 and has not played since. The show said he will not be back for Thursday's game against the Knicks.",
    "source": "LO-1118b"
   },
@@ -12789,7 +12769,7 @@
    "role": "Bench (F)",
    "minutes": "18 avg last 5; 19 on Monday 11/23",
    "usage": "6% (our estimate, last 5 games)",
-   "status": "Available: Right Face Mask (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Face Mask (NBA injury report, 09:15 PM)",
    "note": "Beringer has played between 13 and 26 minutes off the bench behind Rudy Gobert. The show said his role would grow only if Minnesota cuts Gobert's minutes or Gobert gets hurt.",
    "source": "RW-1124"
   },
@@ -12829,7 +12809,7 @@
    "role": "Bench (C)",
    "minutes": "Missed his team's last 7 games; before that 2 avg last 1; 2 on Sunday 11/8",
    "usage": "21% (our estimate, last 1 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -13089,7 +13069,7 @@
    "role": "Starter (G)",
    "minutes": "36 avg last 5; 32 on Sunday 11/22",
    "usage": "33% (our estimate, last 5 games)",
-   "status": "Available: Illness (NBA injury report, 09:00 PM)",
+   "status": "Available: Illness (NBA injury report, 09:15 PM)",
    "note": "The show said Karl-Anthony Towns is questionable and OG Anunoby is out for the Wednesday slate, which would make Brunson a top play if Towns sits. When Towns sat on Nov. 21, Brunson played 36 minutes and scored 30 points on 23 shots.",
    "source": "FA-1125"
   },
@@ -13109,7 +13089,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 3 games; before that 10 avg last 5; 8 on Tuesday 11/17",
    "usage": "16% (our estimate, last 5 games)",
-   "status": "Out: Right Plantar Fasciitis (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Plantar Fasciitis (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -13129,7 +13109,7 @@
    "role": "Starter (G)",
    "minutes": "32 avg last 5; 39 on Sunday 11/22",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Available: Right Shoulder Sprain (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Shoulder Sprain (NBA injury report, 09:15 PM)",
    "note": "The show said Hart would gain if Jalen Brunson sits and projected him for about 33.6 minutes against Cleveland. Hart has played 35 and 39 minutes in his last two games, but the show pointed out that his shooting has been very poor this season. He is listed as probable with a right shoulder sprain on the official injury report.",
    "source": "SP-1125"
   },
@@ -13139,7 +13119,7 @@
    "role": "Starter (C)",
    "minutes": "35 avg last 5; 29 on Sunday 11/22",
    "usage": "28% (our estimate, last 5 games)",
-   "status": "Available (NBA injury report, 09:00 PM)",
+   "status": "Available (NBA injury report, 09:15 PM)",
    "note": "Towns is questionable with knee inflammation, Josh Hart (shoulder) and Miles McBride (adductor) are also questionable, and OG Anunoby is out again. If Towns sits, Andre Drummond started at center the last time he missed a game.",
    "source": "WEB-1125"
   },
@@ -13169,7 +13149,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last game; before that 13 avg last 5; 14 on Saturday 11/21",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Miles McBride was questionable on the morning of 11/25 and was later ruled out. The show said the Knicks' injury news, including McBride, Hart and Towns, also changes how the Cleveland side of that game looks.",
    "source": "STK-1125"
   },
@@ -13189,7 +13169,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 2 games; before that 37 avg last 5; 36 on Thursday 11/19",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 09:15 PM)",
    "note": "OG Anunoby has missed the Knicks' games on 11/21 and 11/22 with what the team calls calf tightness. The show said it believes this is really a calf strain that could cost him one to two weeks. Landry Shamet has moved into the starting lineup in his place and played 36 and 32 minutes.",
    "source": "LO-1125b"
   },
@@ -13219,7 +13199,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last 2 games; before that 27 avg last 5; 29 on Friday 11/20",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: Right Shin Contusion (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Shin Contusion (NBA injury report, 09:15 PM)",
    "note": "The show said Oklahoma City is still without Aday Mara, Chet Holmgren and Jalen Williams for 11/25. Mara has not played since 11/20, and Holmgren is out 8 to 10 weeks with a small patellar tendon tear.",
    "source": "TL-1125"
   },
@@ -13269,7 +13249,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 15 games; before that 16 avg last 3; 6 on Sunday 10/25",
    "usage": "20% (our estimate, last 3 games)",
-   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:15 PM)",
    "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
    "source": "OMS-1104b"
   },
@@ -13279,7 +13259,7 @@
    "role": "Started 3 of last 3 (C)",
    "minutes": "Missed his team's last 15 games; before that 30 avg last 3; 31 on Sunday 10/25",
    "usage": "17% (our estimate, last 3 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Holmgren remained out Wednesday against Atlanta. Isaiah Hartenstein grabbed 17 rebounds in his place.",
    "source": "ESPN-1119"
   },
@@ -13309,7 +13289,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 15 games; before that 32 avg last 3; 32 on Sunday 10/25",
    "usage": "21% (our estimate, last 3 games)",
-   "status": "Out: Left Ankle Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Ankle Surgery (NBA injury report, 09:15 PM)",
    "note": "Jalen Williams did not play on 11/22. The show listed him as questionable for Monday.",
    "source": "LO-1123b"
   },
@@ -13329,7 +13309,7 @@
    "role": "Started 1 of last 5 (F)",
    "minutes": "Missed his team's last 2 games; before that 18 avg last 5; 9 on Friday 11/20",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Out: Low Back Spasms (NBA injury report, 09:00 PM)",
+   "status": "Out: Low Back Spasms (NBA injury report, 09:15 PM)",
    "note": "He played 16 minutes a game before Sunday, when the wrist injury cut his night short.",
    "source": "WEB-1118"
   },
@@ -13369,7 +13349,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 3 games; before that 11 avg last 3; 5 on Wednesday 11/18",
    "usage": "19% (our estimate, last 3 games)",
-   "status": "Out: Left Hip Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hip Strain (NBA injury report, 09:15 PM)",
    "note": "Topic left Wednesday's loss to Atlanta with left hip soreness after five minutes and did not return. He made his season debut Nov. 13 after offseason back surgery.",
    "source": "WEB-1119"
   },
@@ -13399,7 +13379,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 09:15 PM)",
    "note": "Thomas Sorber underwent a right knee arthroscopy for patellofemoral joint inflammation that developed during his rehab. The show reported that he will return to on-court activities in six to eight weeks, so he is not a factor for the Thunder in the near term.",
    "source": "SE-1118b"
   },
@@ -13579,7 +13559,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -13639,7 +13619,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last game; before that 32 avg last 5; 34 on Saturday 11/21",
    "usage": "33% (our estimate, last 5 games)",
-   "status": "Out: Illness (NBA injury report, 09:00 PM)",
+   "status": "Out: Illness (NBA injury report, 09:15 PM)",
    "note": "Joel Embiid was moved from doubtful to out for tonight (illness) on the NBA's 03:45 PM injury report. He had averaged 32 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
    "source": "NBA-INJ"
   },
@@ -13829,7 +13809,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -13859,7 +13839,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 7 games; before that 4 avg last 4; 6 on Monday 11/9",
    "usage": "25% (our estimate, last 4 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -13899,7 +13879,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 7 games; before that 15 avg last 5; 14 on Tuesday 11/10",
    "usage": "18% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show thinks Chris Youngblood will be out a while longer. He has a right heel contusion and has not played in Portland's recent games.",
    "source": "LO-1120"
   },
@@ -13939,7 +13919,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 13 games; before that 26 avg last 4; 23 on Thursday 10/29",
    "usage": "22% (our estimate, last 4 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Morant has a left hamstring strain and has not played since October 29. RotoWire lists December 1 as his earliest return, and the show estimated at least two more weeks until there are reports of contact work.",
    "source": "RW-1124"
   },
@@ -14009,7 +13989,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14039,7 +14019,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 10 games; before that 11 avg last 5; 12 on Wednesday 11/4",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out: Left Ankle Fracture (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Ankle Fracture (NBA injury report, 09:15 PM)",
    "note": "The show said Krejci broke his leg, which further thins the Blazers' wing depth.",
    "source": "LO-1105"
   },
@@ -14069,7 +14049,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Ben Simmons is out for the season.",
    "source": "x55"
   },
@@ -14149,7 +14129,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 7 games; before that 14 avg last 5; 2 on Sunday 11/8",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14199,7 +14179,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Maxime Raynaud remained out on 11/23. The show said Sacramento has given no clear timeline and guessed he is still about a week away.",
    "source": "LO-1124"
   },
@@ -14219,7 +14199,7 @@
    "role": "Starter (G)",
    "minutes": "33 avg last 5; 30 on Monday 11/23",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Right Knee Soreness (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Soreness (NBA injury report, 09:15 PM)",
    "note": "Zach LaVine was moved from questionable to out for tonight (right knee soreness) on the NBA's 05:30 PM injury report. He had averaged 33 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
    "source": "NBA-INJ"
   },
@@ -14249,9 +14229,9 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last game; before that 28 avg last 5; 26 on Saturday 11/21",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Questionable: Right Shin Contusion (NBA injury report, 09:00 PM)",
-   "note": "De'Aaron Fox was ruled out of Monday's game at Sacramento with a shin injury.",
-   "source": "ESPN-1124"
+   "status": "Out: Right Shin Contusion (NBA injury report, 09:15 PM)",
+   "note": "De'Aaron Fox was moved from questionable to out for tonight (right shin contusion) on the NBA's 09:15 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+   "source": "NBA-INJ"
   },
   {
    "player": "Devin Vassell",
@@ -14269,7 +14249,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 3 games; before that 31 avg last 5; 35 on Tuesday 11/17",
    "usage": "24% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Harper has not played since 11/17. The show said he will be out two to three weeks.",
    "source": "OMS-1125b"
   },
@@ -14299,7 +14279,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -14379,7 +14359,7 @@
    "role": "Starter (PF)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Calf Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 09:15 PM)",
    "note": "Harris is out with a left calf strain. The show said this is the first weekly preview in which it does not expect him to return during the coming week.",
    "source": "LO-1121"
   },
@@ -14389,7 +14369,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 31 avg last 5; 32 on Saturday 11/21",
    "usage": "37% (our estimate, last 5 games)",
-   "status": "Questionable: Low Back Tightness (NBA injury report, 09:00 PM)",
+   "status": "Available: - (NBA injury report, 09:15 PM)",
    "note": "Wembanyama (low back tightness) and De'Aaron Fox (shin) are both questionable at Portland after sitting Monday, and Dylan Harper is out. Stephon Castle ran the offense for 37 minutes with 11 assists in Monday's win.",
    "source": "WEB-1125"
   },
@@ -15239,13 +15219,13 @@
   },
   {
    "team": "SAS",
-   "starters": "Stephon Castle (30), Devin Vassell (30), Julian Champagnie (27), Victor Wembanyama (30), De'Aaron Fox (29)",
-   "bench": "Keldon Johnson (24), Harrison Barnes (15), Luke Kornet (15), Carter Bryant (11), Ja'Kobi Gillespie (6), Jordan McLaughlin (11), Tarris Reed Jr. (7)",
+   "starters": "Stephon Castle (30), Devin Vassell (30), Julian Champagnie (27), Victor Wembanyama (30), Harrison Barnes (15)",
+   "bench": "Keldon Johnson (24), Luke Kornet (15), Carter Bryant (11), Ja'Kobi Gillespie (6), Jordan McLaughlin (11), Tarris Reed Jr. (7)",
    "backup_c": "Luke Kornet",
    "coach": "Mitch Johnson",
    "notes": "Jayden Quaintance is out most of the season after knee surgery.",
    "source": "LO-1019b",
-   "out": "Dylan Harper",
+   "out": "De'Aaron Fox, Dylan Harper",
    "depth_through": "2026-11-23",
    "games": 18
   },
@@ -15443,7 +15423,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 10 avg last 5; 6 on Wednesday 11/18",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "Chaney Johnson scored 10.0 of his 10.0 DraftKings points in garbage time of a 30-point loss against CHI on Wednesday, when the lead was 20 or more late. His line is bigger than his normal role; expect less in a close game.",
    "source": "PBP-1118"
   },
@@ -15483,7 +15463,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 4 games; before that 7 avg last 5; 2 on Saturday 11/14",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Out: G League - On Assignment (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - On Assignment (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -15593,7 +15573,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last game; before that 22 avg last 5; 18 on Friday 11/20",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Nolan Traore is out with a right hamstring strain and has not played since 11/20. The show said he is probably gone for about two months, which keeps Mikel Brown Jr. in the starting lineup.",
    "source": "STK-1125"
   },
@@ -15803,7 +15783,7 @@
    "role": "Started 3 of last 5 (G)",
    "minutes": "Missed his team's last 7 games; before that 28 avg last 5; 20 on Wednesday 11/4",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Dennis Schroder is out for 11/25. He has not played since 11/04.",
    "source": "TL-1125"
   },
@@ -15823,7 +15803,7 @@
    "role": "Started 3 of last 5 (G)",
    "minutes": "Missed his team's last 3 games; before that 28 avg last 5; 25 on Sunday 11/15",
    "usage": "21% (our estimate, last 5 games)",
-   "status": "Out: Concussion Protocol (NBA injury report, 09:00 PM)",
+   "status": "Out: Concussion Protocol (NBA injury report, 09:15 PM)",
    "note": "Grayson Allen was questionable on the morning of 11/25 and was later ruled out under the concussion protocol. The show said his status probably matters a little for Coby White's role.",
    "source": "STK-1125"
   },
@@ -15843,7 +15823,7 @@
    "role": "Started 1 of last 1 (G)",
    "minutes": "Missed his team's last 7 games; before that 6 avg last 1; 6 on Wednesday 11/4",
    "usage": "31% (our estimate, last 1 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Kon Knueppel is out again for 11/25. He has played only one game this season, on 11/04.",
    "source": "TL-1125"
   },
@@ -15903,7 +15883,7 @@
    "role": "Bench (C)",
    "minutes": "15 avg last 5; 9 on Monday 11/23",
    "usage": "9% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Ryan Kalkbrenner is doubtful for 11/25, and he played only nine minutes on 11/23. The show said Hannes Steinbach would likely move up into the backup center minutes if Kalkbrenner sits.",
    "source": "LO-1125b"
   },
@@ -15913,7 +15893,7 @@
    "role": "Starter (G)",
    "minutes": "31 avg last 5; 28 on Monday 11/23",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Available: Left Thigh Soreness (NBA injury report, 09:00 PM)",
+   "status": "Available: Left Thigh Soreness (NBA injury report, 09:15 PM)",
    "note": "Sion James has started Charlotte's last two games while Grant Williams was out, playing 32 and 28 minutes. The show said Grant Williams is now off the injury report, so it is unclear whether Williams goes back into the starting lineup or James keeps the spot.",
    "source": "LO-1125b"
   },
@@ -15943,7 +15923,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 7 games; before that 27 avg last 5; 15 on Wednesday 11/11",
    "usage": "27% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show said Caleb Wilson is out again on 11/25. He has not played since 11/11, and the show said Isaac Okoro and Patrick Williams pick up some of his role.",
    "source": "TL-1125"
   },
@@ -15973,7 +15953,7 @@
    "role": "Starter (F)",
    "minutes": "28 avg last 5; 25 on Monday 11/23",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Gastrointestinal Illness (NBA injury report, 09:00 PM)",
+   "status": "Out: Gastrointestinal Illness (NBA injury report, 09:15 PM)",
    "note": "Jalen Smith was moved from questionable to out for tonight (gastrointestinal illness) on the NBA's 05:00 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
    "source": "NBA-INJ"
   },
@@ -15983,7 +15963,7 @@
    "role": "Bench (G)",
    "minutes": "9 avg last 5; 22 on Monday 11/23",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16053,7 +16033,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 2 games; before that 31 avg last 5; 33 on Friday 11/20",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Norman Powell is out for the 11/25 game against Charlotte. He has not played since 11/20.",
    "source": "TL-1125"
   },
@@ -16073,7 +16053,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 10 games; before that 10 avg last 4; 2 on Monday 11/2",
    "usage": "8% (our estimate, last 4 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -16123,7 +16103,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last 6 games; before that 31 avg last 5; 33 on Wednesday 11/11",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: Left Great Toe Sprain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Great Toe Sprain (NBA injury report, 09:15 PM)",
    "note": "Evan Mobley remains out for Cleveland and has not played in the Cavaliers' recent games.",
    "source": "LO-1125b"
   },
@@ -16773,7 +16753,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 6 games; before that 16 avg last 5; 2 on Monday 11/9",
    "usage": "25% (our estimate, last 5 games)",
-   "status": "Questionable: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Available: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Brandon Williams is questionable for 11/25 with a hamstring injury, but the show said he practiced and looks likely to return. The show expects his return to push LJ Cryer out of the rotation, and Cryer has already fallen from starting to 11 or 12 minutes off the bench in his last two games.",
    "source": "LO-1125b"
   },
@@ -16853,7 +16833,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Jimmy Butler is still out while he recovers from right ACL surgery, and he is ruled out for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -16863,7 +16843,7 @@
    "role": "Starter when healthy",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Not With Team (NBA injury report, 09:00 PM)",
+   "status": "Out: Not With Team (NBA injury report, 09:15 PM)",
    "note": "Kristaps Porzingis stepped away from basketball earlier this month and is listed as not with the team for Monday, November 16.",
    "source": "WEB-1116"
   },
@@ -16893,7 +16873,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Moses Moody, Gary Payton II and Brandin Williams did not play for Golden State against Houston. The show said those players will eventually return to help the guard rotation while Stephen Curry is hurt.",
    "source": "LO-1112d"
   },
@@ -16903,7 +16883,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 5 games; before that 25 avg last 5; 6 on Wednesday 11/11",
    "usage": "34% (our estimate, last 5 games)",
-   "status": "Out: Right Oblique Tear (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Oblique Tear (NBA injury report, 09:15 PM)",
    "note": "Curry was still out on Sunday, Nov. 22, and Golden State used its seventh starting lineup in seven games and its 13th of the season.",
    "source": "ESPN-1123"
   },
@@ -16923,7 +16903,7 @@
    "role": "Starter (F)",
    "minutes": "31 avg last 5; 34 on Sunday 11/22",
    "usage": "28% (our estimate, last 5 games)",
-   "status": "Available: Illness (NBA injury report, 09:00 PM)",
+   "status": "Available: Illness (NBA injury report, 09:15 PM)",
    "note": "Lendeborg is questionable with an illness while Stephen Curry, Jimmy Butler III, Moses Moody and Kristaps Porzingis are all out. Brandon Williams is questionable to return from a six-game hamstring absence.",
    "source": "WEB-1125"
   },
@@ -17273,7 +17253,7 @@
    "role": "Bench (7th man when healthy)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Bradley Beal (knee) has not played yet this season and is still recovering.",
    "source": "ESPN-1105"
   },
@@ -17353,7 +17333,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 2 games; before that 5 avg last 5; 1 on Thursday 11/19",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -17363,7 +17343,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show said Miller is out for about six months.",
    "source": "LO-1102b"
   },
@@ -17413,7 +17393,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 3 games; before that 5 avg last 5; 4 on Tuesday 11/17",
    "usage": "23% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -17633,7 +17613,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 2 games; before that 28 avg last 5; 27 on Thursday 11/19",
    "usage": "24% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Boozer is expected to miss at least a month with a sprained right ankle. Ty Jerome took 21 shots in 29 minutes in the first game without him.",
    "source": "ESPN-1124"
   },
@@ -17653,7 +17633,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 5 games; before that 12 avg last 5; 3 on Saturday 11/14",
    "usage": "17% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "GG Jackson will be re-evaluated in three months after surgery for a fractured fifth metatarsal in his left foot. The show said Taylor Hendricks and Jerami Grant are the players who could pick up more minutes with Jackson out.",
    "source": "SE-1118b"
   },
@@ -17703,7 +17683,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 2 games; before that 19 avg last 5; 5 on Thursday 11/19",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 09:15 PM)",
    "note": "The show said Jerami Grant is hurt, which takes another forward out of the Memphis rotation while Cameron Boozer is out. Grant did not play on 11/21 or 11/23 after playing only 5 minutes on 11/19.",
    "source": "LO-1124b"
   },
@@ -17753,7 +17733,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -17763,7 +17743,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 13 games; before that 16 avg last 5; 14 on Thursday 10/29",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Scotty Pippen Jr. is week-to-week with a lumbar disc herniation and has not played since October 29, with no firm return date. Cam Spencer moved into the starting lineup in his place.",
    "source": "WEB-1117"
   },
@@ -17863,7 +17843,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 31 avg last 5; 32 on Wednesday 11/18",
    "usage": "30% (our estimate, last 5 games)",
-   "status": "Available: Right Groin Tendinitis (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Groin Tendinitis (NBA injury report, 09:15 PM)",
    "note": "Giannis is questionable with groin tendinitis but went through most of Tuesday's practice and said he felt great. Joel Embiid is doubtful with an illness for the early game in Philadelphia.",
    "source": "WEB-1125"
   },
@@ -17893,7 +17873,7 @@
    "role": "Started 3 of last 5 (F)",
    "minutes": "18 avg last 5; 11 on Sunday 11/22",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Available: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -17963,7 +17943,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last game; before that 2 avg last 3; 1 on Wednesday 11/18",
    "usage": "66% (our estimate, last 3 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -18153,7 +18133,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 14 games; before that 34 avg last 4; 41 on Monday 10/26",
    "usage": "38% (our estimate, last 4 games)",
-   "status": "Out: Right Knee (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee (NBA injury report, 09:15 PM)",
    "note": "Anthony Edwards is out again for Minnesota, along with Donte DiVincenzo and Jaylen Clark, so the Wolves lean on their bench wings and forwards against a short-handed Memphis team.",
    "source": "WEB-1121"
   },
@@ -18193,7 +18173,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show said a Shams Charania report has Donte DiVincenzo aiming to return from his Achilles injury early in the new year. The show expects a minutes limit and rest on back-to-backs, with him coming off the bench behind LaMelo Ball and Anthony Edwards and competing with Ayo Dosunmu and Terrence Shannon Jr.",
    "source": "LO-1125"
   },
@@ -18223,7 +18203,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 5 games; before that 17 avg last 5; 3 on Saturday 11/14",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out: Right Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Clark played only three minutes on 11/14 and has not played since. The show said he will not be back for Thursday's game against the Knicks.",
    "source": "LO-1118b"
   },
@@ -18233,7 +18213,7 @@
    "role": "Bench (F)",
    "minutes": "18 avg last 5; 19 on Monday 11/23",
    "usage": "6% (our estimate, last 5 games)",
-   "status": "Available: Right Face Mask (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Face Mask (NBA injury report, 09:15 PM)",
    "note": "Beringer has played between 13 and 26 minutes off the bench behind Rudy Gobert. The show said his role would grow only if Minnesota cuts Gobert's minutes or Gobert gets hurt.",
    "source": "RW-1124"
   },
@@ -18273,7 +18253,7 @@
    "role": "Bench (C)",
    "minutes": "Missed his team's last 7 games; before that 2 avg last 1; 2 on Sunday 11/8",
    "usage": "21% (our estimate, last 1 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -18533,7 +18513,7 @@
    "role": "Starter (G)",
    "minutes": "36 avg last 5; 32 on Sunday 11/22",
    "usage": "33% (our estimate, last 5 games)",
-   "status": "Available: Illness (NBA injury report, 09:00 PM)",
+   "status": "Available: Illness (NBA injury report, 09:15 PM)",
    "note": "The show said Karl-Anthony Towns is questionable and OG Anunoby is out for the Wednesday slate, which would make Brunson a top play if Towns sits. When Towns sat on Nov. 21, Brunson played 36 minutes and scored 30 points on 23 shots.",
    "source": "FA-1125"
   },
@@ -18553,7 +18533,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 3 games; before that 10 avg last 5; 8 on Tuesday 11/17",
    "usage": "16% (our estimate, last 5 games)",
-   "status": "Out: Right Plantar Fasciitis (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Plantar Fasciitis (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -18573,7 +18553,7 @@
    "role": "Starter (G)",
    "minutes": "32 avg last 5; 39 on Sunday 11/22",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Available: Right Shoulder Sprain (NBA injury report, 09:00 PM)",
+   "status": "Available: Right Shoulder Sprain (NBA injury report, 09:15 PM)",
    "note": "The show said Hart would gain if Jalen Brunson sits and projected him for about 33.6 minutes against Cleveland. Hart has played 35 and 39 minutes in his last two games, but the show pointed out that his shooting has been very poor this season. He is listed as probable with a right shoulder sprain on the official injury report.",
    "source": "SP-1125"
   },
@@ -18583,7 +18563,7 @@
    "role": "Starter (C)",
    "minutes": "35 avg last 5; 29 on Sunday 11/22",
    "usage": "28% (our estimate, last 5 games)",
-   "status": "Available (NBA injury report, 09:00 PM)",
+   "status": "Available (NBA injury report, 09:15 PM)",
    "note": "Towns is questionable with knee inflammation, Josh Hart (shoulder) and Miles McBride (adductor) are also questionable, and OG Anunoby is out again. If Towns sits, Andre Drummond started at center the last time he missed a game.",
    "source": "WEB-1125"
   },
@@ -18613,7 +18593,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last game; before that 13 avg last 5; 14 on Saturday 11/21",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Miles McBride was questionable on the morning of 11/25 and was later ruled out. The show said the Knicks' injury news, including McBride, Hart and Towns, also changes how the Cleveland side of that game looks.",
    "source": "STK-1125"
   },
@@ -18633,7 +18613,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last 2 games; before that 37 avg last 5; 36 on Thursday 11/19",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Left Calf Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 09:15 PM)",
    "note": "OG Anunoby has missed the Knicks' games on 11/21 and 11/22 with what the team calls calf tightness. The show said it believes this is really a calf strain that could cost him one to two weeks. Landry Shamet has moved into the starting lineup in his place and played 36 and 32 minutes.",
    "source": "LO-1125b"
   },
@@ -18663,7 +18643,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last 2 games; before that 27 avg last 5; 29 on Friday 11/20",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Out: Right Shin Contusion (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Shin Contusion (NBA injury report, 09:15 PM)",
    "note": "The show said Oklahoma City is still without Aday Mara, Chet Holmgren and Jalen Williams for 11/25. Mara has not played since 11/20, and Holmgren is out 8 to 10 weeks with a small patellar tendon tear.",
    "source": "TL-1125"
   },
@@ -18713,7 +18693,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 15 games; before that 16 avg last 3; 6 on Sunday 10/25",
    "usage": "20% (our estimate, last 3 games)",
-   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:15 PM)",
    "note": "The show said Wallace is presumably out for the season. He has not played since Oct. 25.",
    "source": "OMS-1104b"
   },
@@ -18723,7 +18703,7 @@
    "role": "Started 3 of last 3 (C)",
    "minutes": "Missed his team's last 15 games; before that 30 avg last 3; 31 on Sunday 10/25",
    "usage": "17% (our estimate, last 3 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Holmgren remained out Wednesday against Atlanta. Isaiah Hartenstein grabbed 17 rebounds in his place.",
    "source": "ESPN-1119"
   },
@@ -18753,7 +18733,7 @@
    "role": "Started 3 of last 3 (G)",
    "minutes": "Missed his team's last 15 games; before that 32 avg last 3; 32 on Sunday 10/25",
    "usage": "21% (our estimate, last 3 games)",
-   "status": "Out: Left Ankle Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Ankle Surgery (NBA injury report, 09:15 PM)",
    "note": "Jalen Williams did not play on 11/22. The show listed him as questionable for Monday.",
    "source": "LO-1123b"
   },
@@ -18773,7 +18753,7 @@
    "role": "Started 1 of last 5 (F)",
    "minutes": "Missed his team's last 2 games; before that 18 avg last 5; 9 on Friday 11/20",
    "usage": "13% (our estimate, last 5 games)",
-   "status": "Out: Low Back Spasms (NBA injury report, 09:00 PM)",
+   "status": "Out: Low Back Spasms (NBA injury report, 09:15 PM)",
    "note": "He played 16 minutes a game before Sunday, when the wrist injury cut his night short.",
    "source": "WEB-1118"
   },
@@ -18813,7 +18793,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 3 games; before that 11 avg last 3; 5 on Wednesday 11/18",
    "usage": "19% (our estimate, last 3 games)",
-   "status": "Out: Left Hip Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hip Strain (NBA injury report, 09:15 PM)",
    "note": "Topic left Wednesday's loss to Atlanta with left hip soreness after five minutes and did not return. He made his season debut Nov. 13 after offseason back surgery.",
    "source": "WEB-1119"
   },
@@ -18843,7 +18823,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 09:15 PM)",
    "note": "Thomas Sorber underwent a right knee arthroscopy for patellofemoral joint inflammation that developed during his rehab. The show reported that he will return to on-court activities in six to eight weeks, so he is not a factor for the Thunder in the near term.",
    "source": "SE-1118b"
   },
@@ -19013,7 +18993,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19073,7 +19053,7 @@
    "role": "Starter (C)",
    "minutes": "Missed his team's last game; before that 32 avg last 5; 34 on Saturday 11/21",
    "usage": "33% (our estimate, last 5 games)",
-   "status": "Out: Illness (NBA injury report, 09:00 PM)",
+   "status": "Out: Illness (NBA injury report, 09:15 PM)",
    "note": "Joel Embiid was moved from doubtful to out for tonight (illness) on the NBA's 03:45 PM injury report. He had averaged 32 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
    "source": "NBA-INJ"
   },
@@ -19263,7 +19243,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Shoulder Surgery (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19293,7 +19273,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 7 games; before that 4 avg last 4; 6 on Monday 11/9",
    "usage": "25% (our estimate, last 4 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19333,7 +19313,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 7 games; before that 15 avg last 5; 14 on Tuesday 11/10",
    "usage": "18% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "The show thinks Chris Youngblood will be out a while longer. He has a right heel contusion and has not played in Portland's recent games.",
    "source": "LO-1120"
   },
@@ -19373,7 +19353,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 13 games; before that 26 avg last 4; 23 on Thursday 10/29",
    "usage": "22% (our estimate, last 4 games)",
-   "status": "Out: Left Hamstring Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Hamstring Strain (NBA injury report, 09:15 PM)",
    "note": "Morant has a left hamstring strain and has not played since October 29. RotoWire lists December 1 as his earliest return, and the show estimated at least two more weeks until there are reports of contact work.",
    "source": "RW-1124"
   },
@@ -19443,7 +19423,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19473,7 +19453,7 @@
    "role": "Bench (G)",
    "minutes": "Missed his team's last 10 games; before that 11 avg last 5; 12 on Wednesday 11/4",
    "usage": "14% (our estimate, last 5 games)",
-   "status": "Out: Left Ankle Fracture (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Ankle Fracture (NBA injury report, 09:15 PM)",
    "note": "The show said Krejci broke his leg, which further thins the Blazers' wing depth.",
    "source": "LO-1105"
   },
@@ -19503,7 +19483,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Ben Simmons is out for the season.",
    "source": "x55"
   },
@@ -19583,7 +19563,7 @@
    "role": "Bench (F)",
    "minutes": "Missed his team's last 7 games; before that 14 avg last 5; 2 on Sunday 11/8",
    "usage": "12% (our estimate, last 5 games)",
-   "status": "Out: G League - Two-Way (NBA injury report, 09:00 PM)",
+   "status": "Out: G League - Two-Way (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19633,7 +19613,7 @@
    "role": "Bench",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Maxime Raynaud remained out on 11/23. The show said Sacramento has given no clear timeline and guessed he is still about a week away.",
    "source": "LO-1124"
   },
@@ -19653,7 +19633,7 @@
    "role": "Starter (G)",
    "minutes": "33 avg last 5; 30 on Monday 11/23",
    "usage": "20% (our estimate, last 5 games)",
-   "status": "Out: Right Knee Soreness (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Soreness (NBA injury report, 09:15 PM)",
    "note": "Zach LaVine was moved from questionable to out for tonight (right knee soreness) on the NBA's 05:30 PM injury report. He had averaged 33 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
    "source": "NBA-INJ"
   },
@@ -19683,9 +19663,9 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last game; before that 28 avg last 5; 26 on Saturday 11/21",
    "usage": "19% (our estimate, last 5 games)",
-   "status": "Questionable: Right Shin Contusion (NBA injury report, 09:00 PM)",
-   "note": "De'Aaron Fox was ruled out of Monday's game at Sacramento with a shin injury.",
-   "source": "ESPN-1124"
+   "status": "Out: Right Shin Contusion (NBA injury report, 09:15 PM)",
+   "note": "De'Aaron Fox was moved from questionable to out for tonight (right shin contusion) on the NBA's 09:15 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+   "source": "NBA-INJ"
   },
   {
    "player": "Devin Vassell",
@@ -19703,7 +19683,7 @@
    "role": "Starter (G)",
    "minutes": "Missed his team's last 3 games; before that 31 avg last 5; 35 on Tuesday 11/17",
    "usage": "24% (our estimate, last 5 games)",
-   "status": "Out (NBA injury report, 09:00 PM)",
+   "status": "Out (NBA injury report, 09:15 PM)",
    "note": "Harper has not played since 11/17. The show said he will be out two to three weeks.",
    "source": "OMS-1125b"
   },
@@ -19733,7 +19713,7 @@
    "role": "Injured",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Right Knee Surgery (NBA injury report, 09:00 PM)",
+   "status": "Out: Right Knee Surgery (NBA injury report, 09:15 PM)",
    "note": "",
    "source": ""
   },
@@ -19803,7 +19783,7 @@
    "role": "Starter (PF)",
    "minutes": "No games this season in our box scores",
    "usage": "",
-   "status": "Out: Left Calf Strain (NBA injury report, 09:00 PM)",
+   "status": "Out: Left Calf Strain (NBA injury report, 09:15 PM)",
    "note": "Harris is out with a left calf strain. The show said this is the first weekly preview in which it does not expect him to return during the coming week.",
    "source": "LO-1121"
   },
@@ -19813,7 +19793,7 @@
    "role": "Starter (F)",
    "minutes": "Missed his team's last game; before that 31 avg last 5; 32 on Saturday 11/21",
    "usage": "37% (our estimate, last 5 games)",
-   "status": "Questionable: Low Back Tightness (NBA injury report, 09:00 PM)",
+   "status": "Available: - (NBA injury report, 09:15 PM)",
    "note": "Wembanyama (low back tightness) and De'Aaron Fox (shin) are both questionable at Portland after sitting Monday, and Dylan Harper is out. Stephon Castle ran the offense for 37 minutes with 11 assists in Monday's win.",
    "source": "WEB-1125"
   },
@@ -30217,7 +30197,7 @@
   {
    "rank": 320,
    "player": "Jordan McLaughlin",
-   "pos": "PG,SG",
+   "pos": "PG/SG",
    "team": "SAS",
    "flag": "",
    "change": "",

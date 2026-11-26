@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "updated": "9:02 PM ET",
+ "updated": "9:18 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:40 AM",
@@ -249,18 +249,13 @@
       {
        "player": "Dylan Harper",
        "min": 31.3
-      }
-     ],
-     "q": [
-      {
-       "player": "Victor Wembanyama",
-       "min": 32.3
       },
       {
        "player": "De'Aaron Fox",
-       "min": 29.1
+       "min": 30.7
       }
-     ]
+     ],
+     "q": []
     },
     "POR": {
      "out": [
@@ -280,7 +275,7 @@
      "q": []
     }
    },
-   "key": "Ja Morant and Chris Youngblood are out, so Donovan Clingan and Jrue Holiday and Deni Avdija should play more than usual."
+   "key": "Dylan Harper and De'Aaron Fox are out, so Luke Kornet and Stephon Castle and Julian Champagnie should play more than usual."
   },
   {
    "away": "SAC",
@@ -312,18 +307,37 @@
        "min": 21.0
       }
      ],
-     "q": [
-      {
-       "player": "Brandon Williams",
-       "min": 17.5
-      }
-     ]
+     "q": []
     }
    },
    "key": "Zach LaVine is out, so Leaky Black and Malik Monk and Alex Karaban should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Victor Wembanyama",
+   "team": "SAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "9:19 PM"
+  },
+  {
+   "player": "De'Aaron Fox",
+   "team": "SAS",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Right Shin Contusion",
+   "time": "9:19 PM"
+  },
+  {
+   "player": "Brandon Williams",
+   "team": "GSW",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Hamstring Strain",
+   "time": "9:19 PM"
+  },
   {
    "player": "Yaxel Lendeborg",
    "team": "GSW",
@@ -379,30 +393,6 @@
    "was": "Questionable",
    "why": "Gastrointestinal Illness",
    "time": "5:04 PM"
-  },
-  {
-   "player": "Jalen Brunson",
-   "team": "NYK",
-   "status": "Probable",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "4:41 PM"
-  },
-  {
-   "player": "Zach LaVine",
-   "team": "SAC",
-   "status": "Questionable",
-   "was": "",
-   "why": "Right Knee Soreness",
-   "time": "3:54 PM"
-  },
-  {
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "status": "Probable",
-   "was": "Questionable",
-   "why": "",
-   "time": "12:55 PM"
   }
  ],
  "chg": [
@@ -428,13 +418,34 @@
    "size": 116.2
   },
   {
+   "key": "SAS",
+   "team": "SAS",
+   "head": "Wembanyama CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Luke Kornet",
+     "salary": 4200,
+     "much": "+27.0 DK without Wembanyama"
+    },
+    {
+     "player": "Stephon Castle",
+     "salary": 7800,
+     "much": "+23.1 DK without Wembanyama"
+    }
+   ],
+   "time": "9:19 PM",
+   "size": 61.6
+  },
+  {
    "key": "GSW",
    "team": "GSW",
    "head": "Lendeborg CLEARED",
    "st": "Probable",
    "act": "",
    "names": [],
-   "time": "8:33 PM",
+   "time": "9:19 PM",
    "size": 37.1
   },
   {
@@ -478,6 +489,27 @@
    ],
    "time": "5:04 PM",
    "size": 31.2
+  },
+  {
+   "key": "De'Aaron Fox",
+   "team": "SAS",
+   "head": "De'Aaron Fox OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Stephon Castle",
+     "salary": 7800,
+     "much": "+18.0 DK without him (2 games)"
+    },
+    {
+     "player": "Tarris Reed Jr.",
+     "salary": 3500,
+     "much": "+14.3 DK without him (1 game)"
+    }
+   ],
+   "time": "9:19 PM",
+   "size": 28.3
   },
   {
    "key": "Grayson Allen",
@@ -579,6 +611,61 @@
    ]
   },
   {
+   "team": "SAS",
+   "outs": [
+    {
+     "player": "Dylan Harper",
+     "min": 31.3,
+     "note": "Harper has not played since 11/17. The show said he will be out two to three weeks.",
+     "new": false
+    },
+    {
+     "player": "De'Aaron Fox",
+     "min": 30.7,
+     "note": "De'Aaron Fox was moved from questionable to out for tonight (right shin contusion) on the NBA's 09:15 PM injury report. He had averaged 28 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 62.0,
+   "benefits": [
+    {
+     "player": "Luke Kornet",
+     "salary": 4200,
+     "why": "started that game",
+     "much": "+27.0 DK without them (1 game)",
+     "score": 27.0,
+     "min": 22.1,
+     "dk": 19.0,
+     "avg": 12.3
+    },
+    {
+     "player": "Stephon Castle",
+     "salary": 7800,
+     "why": "37 minutes, up from 30",
+     "much": "+23.1 DK without them (1 game)",
+     "score": 23.1,
+     "min": 36.3,
+     "dk": 43.1,
+     "avg": 35.2
+    },
+    {
+     "player": "Julian Champagnie",
+     "salary": 5000,
+     "why": "started that game",
+     "much": "+17.8 DK without them (1 game)",
+     "score": 17.8,
+     "min": 32.8,
+     "dk": 28.3,
+     "avg": 22.4
+    }
+   ],
+   "split_of": [
+    "Dylan Harper",
+    "De'Aaron Fox"
+   ]
+  },
+  {
    "team": "CHA",
    "outs": [
     {
@@ -663,7 +750,7 @@
      "much": "+18.4 DK without him (1 game)",
      "score": 18.4,
      "min": 24.8,
-     "dk": 24.8,
+     "dk": 24.9,
      "avg": 16.0
     },
     {
@@ -811,51 +898,6 @@
     "Ja Morant",
     "Chris Youngblood"
    ]
-  },
-  {
-   "team": "MEM",
-   "outs": [
-    {
-     "player": "Cameron Boozer",
-     "min": 28.0,
-     "note": "The show said Cameron Boozer is out at least four weeks. He has already missed Memphis's games on 11/21 and 11/23. The show said no one on the roster is likely to become a full-time replacement for his role.",
-     "new": false
-    },
-    {
-     "player": "Jerami Grant",
-     "min": 16.0,
-     "note": "The show said Jerami Grant is hurt, which takes another forward out of the Memphis rotation while Cameron Boozer is out. Grant did not play on 11/21 or 11/23 after playing only 5 minutes on 11/19.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 44.0,
-   "benefits": [
-    {
-     "player": "Kris Murray",
-     "salary": 4500,
-     "why": "started 1 of 2",
-     "much": "+10.9 DK without them (2 games)",
-     "score": 10.9,
-     "min": 20.2,
-     "dk": 14.8,
-     "avg": 7.8
-    },
-    {
-     "player": "Isaiah Stewart",
-     "salary": 4100,
-     "why": "21 minutes, limited gain (11/21)",
-     "much": "+3.4 DK projected vs. last 3",
-     "score": 3.3999999999999986,
-     "min": 19.4,
-     "dk": 19.9,
-     "avg": 17.9
-    }
-   ],
-   "split_of": [
-    "Cameron Boozer",
-    "Jerami Grant"
-   ]
   }
  ],
  "hot": [
@@ -986,23 +1028,23 @@
   {
    "player": "Precious Achiuwa",
    "team": "SAC",
-   "own": 1.7,
+   "own": 1.8,
    "dk": 25.0,
    "salary": 4600
   },
   {
    "player": "Jalen Green",
    "team": "PHX",
-   "own": 1.7,
+   "own": 2.7,
    "dk": 27.2,
    "salary": 5300
   },
   {
-   "player": "Bennett Stirtz",
-   "team": "OKC",
-   "own": 5.1,
-   "dk": 21.3,
-   "salary": 4300
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "own": 2.5,
+   "dk": 24.6,
+   "salary": 4900
   }
  ],
  "last": {
@@ -1029,6 +1071,15 @@
     "why": "Anthony Davis re-aggravated his previously injured wrist on 11/24 and had it taped, but he did not miss time and later took the tape off. The shows projected him at 9% owned."
    },
    {
+    "player": "Cooper Flagg",
+    "team": "DAL",
+    "dk": 51.0,
+    "min": 31.0,
+    "pts": 24.0,
+    "reb": 6.0,
+    "ast": 12.0
+   },
+   {
     "player": "Paul George",
     "team": "BOS",
     "dk": 51.0,
@@ -1037,15 +1088,6 @@
     "reb": 4.0,
     "ast": 9.0,
     "why": "George played 33 minutes on Tuesday, November 24, but sat the whole fourth quarter after Boston built a 31-point halftime lead. The shows projected him at 10% owned."
-   },
-   {
-    "player": "Cooper Flagg",
-    "team": "DAL",
-    "dk": 51.0,
-    "min": 31.0,
-    "pts": 24.0,
-    "reb": 6.0,
-    "ast": 12.0
    },
    {
     "player": "AJ Dybantsa",
@@ -1070,8 +1112,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "09:00 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_00PM.pdf",
+  "report": "09:15 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_15PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1387,7 +1429,7 @@
       "much": "+18.4 DK without him (1 game)",
       "score": 18.4,
       "min": 24.8,
-      "dk": 24.8,
+      "dk": 24.9,
       "avg": 16.0
      },
      {
@@ -1406,62 +1448,6 @@
    {
     "last": {
      "date": "2026-11-21",
-     "dk": 95.8,
-     "min": 32,
-     "opp": "NOP",
-     "ha": "vs",
-     "res": "W",
-     "score": "114-91"
-    },
-    "game": "SAS at POR",
-    "time": "2026-11-26T03:00Z",
-    "team": "SAS",
-    "player": "Victor Wembanyama",
-    "status": "Questionable",
-    "reason": "Low Back Tightness",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 11800,
-    "min": 33.0,
-    "benefits": [
-     {
-      "player": "Luke Kornet",
-      "salary": 4200,
-      "why": "started that game",
-      "much": "+27.0 DK without him (1 game)",
-      "score": 27.0,
-      "min": 17.8,
-      "dk": 15.3,
-      "avg": 12.3
-     },
-     {
-      "player": "Stephon Castle",
-      "salary": 7800,
-      "why": "37 minutes, up from 30",
-      "much": "+23.1 DK without him (1 game)",
-      "score": 23.1,
-      "min": 32.6,
-      "dk": 38.6,
-      "avg": 35.2
-     },
-     {
-      "player": "Julian Champagnie",
-      "salary": 5000,
-      "why": "started that game",
-      "much": "+17.8 DK without him (1 game)",
-      "score": 17.8,
-      "min": 28.3,
-      "dk": 24.5,
-      "avg": 22.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-21",
      "dk": 21.0,
      "min": 26,
      "opp": "NOP",
@@ -1473,12 +1459,12 @@
     "time": "2026-11-26T03:00Z",
     "team": "SAS",
     "player": "De'Aaron Fox",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Right Shin Contusion",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "9:19 PM",
     "salary": 6500,
     "min": 30.7,
     "benefits": [
@@ -1488,8 +1474,8 @@
       "why": "36 minutes, up from 29",
       "much": "+18.0 DK without him (2 games)",
       "score": 18.0,
-      "min": 32.6,
-      "dk": 38.6,
+      "min": 36.3,
+      "dk": 43.1,
       "avg": 35.2
      },
      {
@@ -1498,8 +1484,8 @@
       "why": "15 minutes, up from 6",
       "much": "+14.3 DK without him (1 game)",
       "score": 14.3,
-      "min": 9.6,
-      "dk": 10.6,
+      "min": 10.7,
+      "dk": 11.9,
       "avg": 7.7
      },
      {
@@ -1508,8 +1494,8 @@
       "why": "started 1 of 2",
       "much": "+9.9 DK without him (2 games)",
       "score": 9.9,
-      "min": 17.8,
-      "dk": 15.3,
+      "min": 22.1,
+      "dk": 19.0,
       "avg": 12.3
      }
     ],
@@ -1517,58 +1503,27 @@
    },
    {
     "last": {
-     "date": "2026-11-09",
-     "dk": 4.0,
-     "min": 2,
+     "date": "2026-11-21",
+     "dk": 95.8,
+     "min": 32,
      "opp": "NOP",
      "ha": "vs",
      "res": "W",
-     "score": "138-87"
+     "score": "114-91"
     },
-    "game": "SAC at GSW",
+    "game": "SAS at POR",
     "time": "2026-11-26T03:00Z",
-    "team": "GSW",
-    "player": "Brandon Williams",
-    "status": "Questionable",
-    "reason": "Left Hamstring Strain",
+    "team": "SAS",
+    "player": "Victor Wembanyama",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
-    "salary": 4400,
-    "min": 13.3,
-    "benefits": [
-     {
-      "player": "Will Richard",
-      "salary": 3800,
-      "why": "24 minutes, up from 16",
-      "much": "+8.2 DK without him (7 games)",
-      "score": 8.2,
-      "min": 23.1,
-      "dk": 16.7,
-      "avg": 13.6
-     },
-     {
-      "player": "Charles Bassey",
-      "salary": 4700,
-      "why": "21 minutes, up from 11",
-      "much": "+7.9 DK without him (7 games)",
-      "score": 7.9,
-      "min": 19.5,
-      "dk": 24.6,
-      "avg": 19.7
-     },
-     {
-      "player": "L.J. Cryer",
-      "salary": 3700,
-      "why": "16 minutes, up from 8",
-      "much": "+6.2 DK without him (7 games)",
-      "score": 6.2,
-      "min": 13.6,
-      "dk": 13.1,
-      "avg": 11.1
-     }
-    ],
+    "changed_at": "9:19 PM",
+    "salary": 11800,
+    "min": 33.0,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1593,6 +1548,31 @@
     "changed_at": "8:33 PM",
     "salary": 8400,
     "min": 32.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-09",
+     "dk": 4.0,
+     "min": 2,
+     "opp": "NOP",
+     "ha": "vs",
+     "res": "W",
+     "score": "138-87"
+    },
+    "game": "SAC at GSW",
+    "time": "2026-11-26T03:00Z",
+    "team": "GSW",
+    "player": "Brandon Williams",
+    "status": "Available",
+    "reason": "Left Hamstring Strain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "9:19 PM",
+    "salary": 4400,
+    "min": 13.3,
     "benefits": [],
     "estimate": false
    },
@@ -2557,13 +2537,23 @@
     "min": 31.3,
     "benefits": [
      {
+      "player": "Victor Wembanyama",
+      "salary": 11800,
+      "why": "same minutes, more production",
+      "much": "+15.7 DK without him (2 games)",
+      "score": 15.7,
+      "min": 35.0,
+      "dk": 70.1,
+      "avg": 61.6
+     },
+     {
       "player": "Stephon Castle",
       "salary": 7800,
       "why": "33 minutes, up from 29",
       "much": "+15.0 DK without him (3 games)",
       "score": 15.0,
-      "min": 32.6,
-      "dk": 38.6,
+      "min": 36.3,
+      "dk": 43.1,
       "avg": 35.2
      },
      {
@@ -2572,19 +2562,9 @@
       "why": "started 3 of 3",
       "much": "+8.3 DK without him (3 games)",
       "score": 8.3,
-      "min": 28.3,
-      "dk": 24.5,
+      "min": 32.8,
+      "dk": 28.3,
       "avg": 22.4
-     },
-     {
-      "player": "Tarris Reed Jr.",
-      "salary": 3500,
-      "why": "10 minutes, up from 6",
-      "much": "+6.0 DK without him (2 games)",
-      "score": 6.0,
-      "min": 9.6,
-      "dk": 10.6,
-      "avg": 7.7
      }
     ],
     "estimate": false
@@ -2659,6 +2639,16 @@
     "min": 21.0,
     "benefits": [
      {
+      "player": "Brandon Williams",
+      "salary": 4400,
+      "why": "started 1 of 2",
+      "much": "+16.0 DK without him (2 games)",
+      "score": 16.0,
+      "min": 17.5,
+      "dk": 20.1,
+      "avg": 18.7
+     },
+     {
       "player": "Charles Bassey",
       "salary": 4700,
       "why": "started 4 of 7",
@@ -2675,18 +2665,8 @@
       "much": "+7.2 DK without him (7 games)",
       "score": 7.2,
       "min": 23.1,
-      "dk": 16.7,
+      "dk": 16.8,
       "avg": 13.6
-     },
-     {
-      "player": "De'Anthony Melton",
-      "salary": 5100,
-      "why": "started 4 of 7",
-      "much": "+5.9 DK without him (7 games)",
-      "score": 5.9,
-      "min": 21.8,
-      "dk": 22.7,
-      "avg": 21.3
      }
     ],
     "estimate": false
