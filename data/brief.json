@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "updated": "6:56 PM ET",
+ "updated": "7:02 PM ET",
  "games": 8,
  "pending": [],
  "first_report": "5:40 AM",
@@ -58,7 +58,7 @@
    "away": "MIN",
    "home": "OKC",
    "time": "2026-11-26T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 222.5,
    "fav": "OKC",
    "line": 2.5,
@@ -109,7 +109,7 @@
    "away": "CLE",
    "home": "NYK",
    "time": "2026-11-26T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 218.5,
    "fav": "NYK",
    "line": 4.5,
@@ -238,7 +238,7 @@
    "away": "SAS",
    "home": "POR",
    "time": "2026-11-26T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 225.5,
    "fav": "SAS",
    "line": 3.5,
@@ -288,7 +288,7 @@
    "away": "SAC",
    "home": "GSW",
    "time": "2026-11-26T03:00Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 215.5,
    "fav": "GSW",
    "line": 7.5,
@@ -330,6 +330,30 @@
   }
  ],
  "changed": [
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "7:03 PM"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Right Shoulder Sprain",
+   "time": "7:03 PM"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "status": "Available",
+   "was": "Probable",
+   "why": "Illness",
+   "time": "7:03 PM"
+  },
   {
    "player": "Zach LaVine",
    "team": "SAC",
@@ -383,30 +407,6 @@
    "team": "NYK",
    "status": "Out",
    "was": "Questionable",
-   "why": "",
-   "time": "12:55 PM"
-  },
-  {
-   "player": "Josh Hart",
-   "team": "NYK",
-   "status": "Probable",
-   "was": "Questionable",
-   "why": "Right Shoulder Sprain",
-   "time": "12:55 PM"
-  },
-  {
-   "player": "Jalen Brunson",
-   "team": "NYK",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "12:55 PM"
-  },
-  {
-   "player": "Ryan Kalkbrenner",
-   "team": "CHA",
-   "status": "Out",
-   "was": "Doubtful",
    "why": "",
    "time": "12:55 PM"
   }
@@ -964,39 +964,39 @@
    "salary": 7500
   },
   {
-   "player": "Yaxel Lendeborg",
-   "team": "GSW",
-   "own": 39.9,
-   "dk": 37.2,
-   "salary": 8400
+   "player": "Nah'Shon Hyland",
+   "team": "MIN",
+   "own": 39.3,
+   "dk": 16.2,
+   "salary": 4000
   },
   {
-   "player": "Brandon Williams",
-   "team": "GSW",
-   "own": 39.4,
-   "dk": 20.1,
-   "salary": 4400
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "own": 39.0,
+   "dk": 33.2,
+   "salary": 7200
   }
  ],
  "leverage": [
   {
    "player": "Grant Williams",
    "team": "CHA",
-   "own": 5.2,
+   "own": 5.7,
    "dk": 23.8,
    "salary": 3700
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 6.0,
+   "own": 7.8,
    "dk": 25.6,
    "salary": 4200
   },
   {
    "player": "Malik Monk",
    "team": "SAC",
-   "own": 2.0,
+   "own": 0.9,
    "dk": 24.8,
    "salary": 4100
   }
@@ -1066,8 +1066,8 @@
   "injuries": []
  },
  "injuries": {
-  "report": "06:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_06_45PM.pdf",
+  "report": "07:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_07_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1090,7 +1090,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "12:55 PM",
-    "salary": 6400,
+    "salary": null,
     "min": 31.0,
     "benefits": [
      {
@@ -1146,7 +1146,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "5:04 PM",
-    "salary": 6200,
+    "salary": null,
     "min": 26.7,
     "benefits": [
      {
@@ -1202,7 +1202,7 @@
     "was": "Doubtful",
     "known": true,
     "changed_at": "12:55 PM",
-    "salary": 3700,
+    "salary": null,
     "min": 13.3,
     "benefits": [
      {
@@ -1282,12 +1282,12 @@
     "time": "2026-11-26T00:30Z",
     "team": "NYK",
     "player": "Jalen Brunson",
-    "status": "Probable",
+    "status": "Available",
     "reason": "Illness",
     "new": true,
-    "was": "Questionable",
+    "was": "Probable",
     "known": true,
-    "changed_at": "4:41 PM",
+    "changed_at": "7:03 PM",
     "salary": 9200,
     "min": 34.3,
     "benefits": [],
@@ -1307,12 +1307,12 @@
     "time": "2026-11-26T00:30Z",
     "team": "NYK",
     "player": "Josh Hart",
-    "status": "Probable",
+    "status": "Available",
     "reason": "Right Shoulder Sprain",
     "new": true,
-    "was": "Questionable",
+    "was": "Probable",
     "known": true,
-    "changed_at": "12:55 PM",
+    "changed_at": "7:03 PM",
     "salary": 5700,
     "min": 34.0,
     "benefits": [],
@@ -1332,12 +1332,12 @@
     "time": "2026-11-26T00:30Z",
     "team": "NYK",
     "player": "Karl-Anthony Towns",
-    "status": "Probable",
+    "status": "Available",
     "reason": "",
     "new": true,
-    "was": "Questionable",
+    "was": "Probable",
     "known": true,
-    "changed_at": "12:55 PM",
+    "changed_at": "7:03 PM",
     "salary": 9700,
     "min": 32.7,
     "benefits": [],
@@ -1633,7 +1633,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6800,
+    "salary": null,
     "min": 30.7,
     "benefits": [
      {
@@ -1689,7 +1689,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 5100,
+    "salary": null,
     "min": 26.0,
     "benefits": [
      {
@@ -1745,7 +1745,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6600,
+    "salary": null,
     "min": 23.0,
     "benefits": [
      {
@@ -2320,7 +2320,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8300,
+    "salary": null,
     "min": 28.0,
     "benefits": [
      {
@@ -2366,7 +2366,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4700,
+    "salary": null,
     "min": 23.7,
     "benefits": [
      {
@@ -2422,7 +2422,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4000,
+    "salary": null,
     "min": 16.0,
     "benefits": [
      {
@@ -2478,7 +2478,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4700,
+    "salary": null,
     "min": 14.7,
     "benefits": [
      {
