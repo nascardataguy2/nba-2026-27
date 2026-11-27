@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "1:53 PM ET",
+ "updated": "2:53 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -35,12 +35,12 @@
      "q": [
       {
        "player": "Karl-Anthony Towns",
-       "min": 42.0
+       "min": 38.7
       }
      ]
     }
    },
-   "key": "OG Anunoby and Andre Drummond are out, so Jose Alvarado and Josh Hart and Pacome Dadiet should play more than usual."
+   "key": "OG Anunoby and Andre Drummond are out, so Jose Alvarado and Josh Hart and James Wiseman should play more than usual."
   },
   {
    "away": "PHI",
@@ -304,7 +304,12 @@
        "min": 13.3
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Kyrie Irving",
+       "min": 29.7
+      }
+     ]
     },
     "PHX": {
      "out": [],
@@ -406,12 +411,7 @@
    "teams": {
     "LAL": {
      "out": [],
-     "q": [
-      {
-       "player": "Austin Reaves",
-       "min": 31.1
-      }
-     ]
+     "q": []
     },
     "SAS": {
      "out": [],
@@ -427,7 +427,7 @@
      ]
     }
    },
-   "key": "Victor Wembanyama has the top projection in this game at 56.7 DK points."
+   "key": "Victor Wembanyama has the top projection in this game at 56.8 DK points."
   },
   {
    "away": "GSW",
@@ -478,6 +478,22 @@
   }
  ],
  "changed": [
+  {
+   "player": "Austin Reaves",
+   "team": "LAL",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "2:54 PM"
+  },
+  {
+   "player": "Kyrie Irving",
+   "team": "DAL",
+   "status": "Questionable",
+   "was": "",
+   "why": "",
+   "time": "2:54 PM"
+  },
   {
    "player": "Damian Lillard",
    "team": "POR",
@@ -541,25 +557,30 @@
    "was": "Questionable",
    "why": "Illness",
    "time": "12:55 PM"
-  },
-  {
-   "player": "Kasparas Jakucionis",
-   "team": "MIL",
-   "status": "Out",
-   "was": "",
-   "why": "",
-   "time": "12:55 PM"
-  },
-  {
-   "player": "Mo Bamba",
-   "team": "UTA",
-   "status": "Questionable",
-   "was": "",
-   "why": "Illness",
-   "time": "11:55 AM"
   }
  ],
  "chg": [
+  {
+   "key": "LAL",
+   "team": "LAL",
+   "head": "Reaves CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Quentin Grimes",
+     "salary": 6600,
+     "much": "+21.5 DK without Reaves"
+    },
+    {
+     "player": "Matisse Thybulle",
+     "salary": 4400,
+     "much": "+5.6 DK without Reaves"
+    }
+   ],
+   "time": "2:54 PM",
+   "size": 38.2
+  },
   {
    "key": "LaMelo Ball",
    "team": "MIN",
@@ -570,12 +591,12 @@
     {
      "player": "Ayo Dosunmu",
      "salary": 7000,
-     "much": "+8.7 DK projected vs. last 3"
+     "much": "+12.3 DK projected vs. last 3"
     },
     {
      "player": "Jonathan Kuminga",
      "salary": 6300,
-     "much": "+6.4 DK projected vs. last 3"
+     "much": "+7.4 DK projected vs. last 3"
     }
    ],
    "time": "1:55 PM",
@@ -591,7 +612,7 @@
     {
      "player": "Scoot Henderson",
      "salary": 4400,
-     "much": "+4.7 DK projected vs. last 3"
+     "much": "+4.6 DK projected vs. last 3"
     }
    ],
    "time": "1:55 PM",
@@ -626,18 +647,39 @@
    "act": "If he sits, play",
    "names": [
     {
+     "player": "James Wiseman",
+     "salary": 3000,
+     "much": "+14.0 DK without him (1 game)"
+    },
+    {
      "player": "Landry Shamet",
      "salary": 5200,
      "much": "+11.3 DK without him (1 game)"
-    },
-    {
-     "player": "Jalen Brunson",
-     "salary": 9500,
-     "much": "+6.7 DK without him (1 game)"
     }
    ],
    "time": "11:55 AM",
    "size": 24.6
+  },
+  {
+   "key": "Kyrie Irving",
+   "team": "DAL",
+   "head": "Kyrie Irving QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Walter Clayton Jr.",
+     "salary": 3900,
+     "much": "+6.8 DK without him (3 games)"
+    },
+    {
+     "player": "Daniel Gafford",
+     "salary": 4800,
+     "much": "+5.5 DK without him (3 games)"
+    }
+   ],
+   "time": "2:54 PM",
+   "size": 18.6
   },
   {
    "key": "Andre Drummond",
@@ -647,14 +689,14 @@
    "act": "Play",
    "names": [
     {
-     "player": "Jalen Brunson",
-     "salary": 9500,
-     "much": "+10.1 DK projected vs. last 3"
+     "player": "James Wiseman",
+     "salary": 3000,
+     "much": "+3.5 DK projected vs. last 3"
     },
     {
-     "player": "Mikal Bridges",
-     "salary": 5100,
-     "much": "+4.9 DK projected vs. last 3"
+     "player": "Jalen Brunson",
+     "salary": 9500,
+     "much": "+10.8 DK projected vs. last 3"
     }
    ],
    "time": "10:32 AM",
@@ -691,12 +733,12 @@
     {
      "player": "Keyonte George",
      "salary": 8200,
-     "much": "about +4.6 DK"
+     "much": "about +4.7 DK"
     },
     {
      "player": "Darryn Peterson",
      "salary": 7700,
-     "much": "about +3.9 DK"
+     "much": "about +4.0 DK"
     }
    ],
    "time": "11:55 AM",
@@ -756,8 +798,8 @@
      "why": "same minutes, more production",
      "much": "+8.5 DK without them (6 games)",
      "score": 8.5,
-     "min": 37.4,
-     "dk": 52.3,
+     "min": 36.0,
+     "dk": 54.5,
      "avg": 45.2
     },
     {
@@ -766,8 +808,8 @@
      "why": "29 minutes, up from 26",
      "much": "+7.3 DK without them (8 games)",
      "score": 7.3,
-     "min": 32.0,
-     "dk": 33.1,
+     "min": 31.5,
+     "dk": 35.2,
      "avg": 28.7
     },
     {
@@ -776,8 +818,8 @@
      "why": "same minutes, more production",
      "much": "+5.4 DK without them (8 games)",
      "score": 5.4,
-     "min": 30.2,
-     "dk": 39.8,
+     "min": 27.7,
+     "dk": 38.4,
      "avg": 34.0
     }
    ],
@@ -811,8 +853,8 @@
      "why": "16 minutes, up from 8",
      "much": "+13.1 DK without them (15 games)",
      "score": 13.1,
-     "min": 17.0,
-     "dk": 20.8,
+     "min": 15.0,
+     "dk": 21.7,
      "avg": null
     },
     {
@@ -822,7 +864,7 @@
      "much": "+9.1 DK without them (15 games)",
      "score": 9.1,
      "min": 39.0,
-     "dk": 39.4,
+     "dk": 43.0,
      "avg": 31.9
     },
     {
@@ -831,8 +873,8 @@
      "why": "same minutes, more production",
      "much": "+7.4 DK without them (15 games)",
      "score": 7.4,
-     "min": 37.0,
-     "dk": 38.8,
+     "min": 35.2,
+     "dk": 39.8,
      "avg": 37.1
     }
    ],
@@ -865,8 +907,8 @@
      "why": "19 minutes, up from 9",
      "much": "+16.5 DK without them (3 games)",
      "score": 16.5,
-     "min": 21.4,
-     "dk": 20.7,
+     "min": 18.7,
+     "dk": 20.1,
      "avg": 10.8
     },
     {
@@ -875,19 +917,19 @@
      "why": "37 minutes, up from 30",
      "much": "+14.6 DK without them (3 games)",
      "score": 14.6,
-     "min": 39.0,
-     "dk": 35.9,
+     "min": 36.8,
+     "dk": 37.7,
      "avg": 26.2
     },
     {
-     "player": "Pacome Dadiet",
-     "salary": 3500,
-     "why": "14 minutes, up from 4",
-     "much": "+7.0 DK without them (3 games)",
-     "score": 7.0,
-     "min": 8.5,
-     "dk": 6.8,
-     "avg": 7.1
+     "player": "James Wiseman",
+     "salary": 3000,
+     "why": "16 minutes, up from 5",
+     "much": "+11.5 DK without them (2 games)",
+     "score": 11.5,
+     "min": 14.4,
+     "dk": 16.3,
+     "avg": 8.8
     }
    ],
    "split_of": [
@@ -972,7 +1014,7 @@
      "much": "+9.9 DK without him (3 games)",
      "score": 9.9,
      "min": 30.7,
-     "dk": 37.7,
+     "dk": 37.8,
      "avg": 39.1
     },
     {
@@ -982,7 +1024,7 @@
      "much": "+9.2 DK without him (3 games)",
      "score": 9.2,
      "min": 34.1,
-     "dk": 49.2,
+     "dk": 49.4,
      "avg": 49.2
     }
    ],
@@ -1022,7 +1064,7 @@
      "much": "+13.9 DK without them (2 games)",
      "score": 13.9,
      "min": 25.2,
-     "dk": 21.4,
+     "dk": 21.7,
      "avg": 14.1
     },
     {
@@ -1032,7 +1074,7 @@
      "much": "+9.4 DK without them (2 games)",
      "score": 9.4,
      "min": 35.7,
-     "dk": 40.0,
+     "dk": 40.1,
      "avg": 28.5
     },
     {
@@ -1042,7 +1084,7 @@
      "much": "+8.6 DK without them (2 games)",
      "score": 8.6,
      "min": 23.4,
-     "dk": 25.0,
+     "dk": 25.2,
      "avg": 18.6
     }
    ],
@@ -1150,28 +1192,28 @@
    "player": "Brandon Ingram",
    "team": "LAC",
    "own": 38.0,
-   "dk": 31.2,
+   "dk": 31.3,
    "salary": 5800
   },
   {
    "player": "Isaiah Joe",
    "team": "DET",
    "own": 38.0,
-   "dk": 25.0,
+   "dk": 25.2,
    "salary": 4700
   },
   {
    "player": "Daniss Jenkins",
    "team": "DET",
-   "own": 34.1,
-   "dk": 40.0,
+   "own": 35.1,
+   "dk": 40.1,
    "salary": 6600
   },
   {
    "player": "Charles Bassey",
    "team": "GSW",
-   "own": 33.2,
-   "dk": 26.0,
+   "own": 33.7,
+   "dk": 26.3,
    "salary": 4700
   }
  ],
@@ -1180,21 +1222,21 @@
    "player": "Terrence Shannon Jr.",
    "team": "MIN",
    "own": 0.9,
-   "dk": 28.4,
+   "dk": 29.4,
    "salary": 4800
   },
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 1.7,
-   "dk": 29.2,
+   "own": 0.9,
+   "dk": 29.3,
    "salary": 5100
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
    "own": 0.9,
-   "dk": 24.3,
+   "dk": 24.5,
    "salary": 4300
   }
  ],
@@ -1287,8 +1329,8 @@
   ]
  },
  "injuries": {
-  "report": "01:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_45PM.pdf",
+  "report": "02:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_02_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1320,8 +1362,8 @@
       "why": "19 minutes, up from 9",
       "much": "+16.5 DK without him (3 games)",
       "score": 16.5,
-      "min": 21.4,
-      "dk": 20.7,
+      "min": 18.7,
+      "dk": 20.1,
       "avg": 10.8
      },
      {
@@ -1330,19 +1372,19 @@
       "why": "37 minutes, up from 30",
       "much": "+14.6 DK without him (3 games)",
       "score": 14.6,
-      "min": 39.0,
-      "dk": 35.9,
+      "min": 36.8,
+      "dk": 37.7,
       "avg": 26.2
      },
      {
-      "player": "Pacome Dadiet",
-      "salary": 3500,
-      "why": "14 minutes, up from 4",
-      "much": "+7.0 DK without him (3 games)",
-      "score": 7.0,
-      "min": 8.5,
-      "dk": 6.8,
-      "avg": 7.1
+      "player": "James Wiseman",
+      "salary": 3000,
+      "why": "16 minutes, up from 5",
+      "much": "+11.5 DK without him (2 games)",
+      "score": 11.5,
+      "min": 14.4,
+      "dk": 16.3,
+      "avg": 8.8
      }
     ],
     "estimate": false
@@ -1371,34 +1413,34 @@
     "min": 17.0,
     "benefits": [
      {
+      "player": "James Wiseman",
+      "salary": 3000,
+      "why": "projected 14 minutes tonight, up from 10",
+      "much": "+3.5 DK projected vs. last 3",
+      "score": 3.466666666666667,
+      "min": 14.4,
+      "dk": 16.3,
+      "avg": 8.8
+     },
+     {
       "player": "Jalen Brunson",
       "salary": 9500,
-      "why": "projected 39 minutes tonight, up from 35",
-      "much": "+10.1 DK projected vs. last 3",
-      "score": 10.149999999999999,
-      "min": 39.0,
-      "dk": 48.4,
+      "why": "projected 36 minutes tonight",
+      "much": "+10.8 DK projected vs. last 3",
+      "score": 10.75,
+      "min": 35.5,
+      "dk": 49.0,
       "avg": 41.4
      },
      {
       "player": "Mikal Bridges",
       "salary": 5100,
-      "why": "projected 37 minutes tonight, up from 31",
-      "much": "+4.9 DK projected vs. last 3",
-      "score": 4.949999999999999,
-      "min": 36.6,
-      "dk": 28.2,
+      "why": "projected 32 minutes tonight",
+      "much": "+4.6 DK projected vs. last 3",
+      "score": 4.550000000000001,
+      "min": 32.5,
+      "dk": 27.8,
       "avg": 19.2
-     },
-     {
-      "player": "Tyler Kolek",
-      "salary": 4000,
-      "why": "projected 13 minutes tonight",
-      "much": "+4.3 DK projected vs. last 3",
-      "score": 4.283333333333333,
-      "min": 12.9,
-      "dk": 13.7,
-      "avg": 13.2
      }
     ],
     "estimate": false
@@ -1477,13 +1519,23 @@
     "min": 31.7,
     "benefits": [
      {
+      "player": "James Wiseman",
+      "salary": 3000,
+      "why": "25 minutes, up from 5",
+      "much": "+14.0 DK without him (1 game)",
+      "score": 14.0,
+      "min": 14.4,
+      "dk": 16.3,
+      "avg": 8.8
+     },
+     {
       "player": "Landry Shamet",
       "salary": 5200,
       "why": "started that game",
       "much": "+11.3 DK without him (1 game)",
       "score": 11.3,
-      "min": 36.0,
-      "dk": 25.2,
+      "min": 33.8,
+      "dk": 26.1,
       "avg": 18.1
      },
      {
@@ -1492,19 +1544,9 @@
       "why": "same minutes, more production",
       "much": "+6.7 DK without him (1 game)",
       "score": 6.7,
-      "min": 39.0,
-      "dk": 48.4,
+      "min": 35.5,
+      "dk": 49.0,
       "avg": 41.4
-     },
-     {
-      "player": "Jose Alvarado",
-      "salary": 3800,
-      "why": "15 minutes, up from 11",
-      "much": "+5.7 DK without him (1 game)",
-      "score": 5.7,
-      "min": 21.4,
-      "dk": 20.7,
-      "avg": 10.8
      }
     ],
     "estimate": false
@@ -1652,10 +1694,10 @@
       "player": "Josh Minott",
       "salary": 3000,
       "why": "projected 6 minutes tonight",
-      "much": "+5.4 DK projected vs. last 3",
-      "score": 5.366666666666667,
+      "much": "+5.5 DK projected vs. last 3",
+      "score": 5.466666666666667,
       "min": 6.1,
-      "dk": 5.7,
+      "dk": 5.8,
       "avg": 7.4
      },
      {
@@ -1828,7 +1870,7 @@
       "much": "+17.8 DK without him (2 games)",
       "score": 17.8,
       "min": 18.8,
-      "dk": 17.4,
+      "dk": 17.6,
       "avg": 20.4
      },
      {
@@ -1884,7 +1926,7 @@
       "much": "+8.5 DK without him (8 games)",
       "score": 8.5,
       "min": 19.6,
-      "dk": 18.8,
+      "dk": 19.0,
       "avg": 20.3
      },
      {
@@ -1894,7 +1936,7 @@
       "much": "+6.8 DK without him (11 games)",
       "score": 6.8,
       "min": 13.7,
-      "dk": 12.1,
+      "dk": 12.2,
       "avg": 15.8
      },
      {
@@ -1960,7 +2002,7 @@
       "much": "+5.3 DK without him (1 game)",
       "score": 5.3,
       "min": 32.6,
-      "dk": 36.7,
+      "dk": 36.8,
       "avg": 33.5
      }
     ],
@@ -2006,7 +2048,7 @@
       "much": "+9.9 DK without him (3 games)",
       "score": 9.9,
       "min": 30.7,
-      "dk": 37.7,
+      "dk": 37.8,
       "avg": 39.1
      },
      {
@@ -2016,7 +2058,7 @@
       "much": "+9.2 DK without him (3 games)",
       "score": 9.2,
       "min": 34.1,
-      "dk": 49.2,
+      "dk": 49.4,
       "avg": 49.2
      }
     ],
@@ -2049,20 +2091,20 @@
       "player": "Ayo Dosunmu",
       "salary": 7000,
       "why": "subs in for him 13 of 73 times",
-      "much": "+8.7 DK projected vs. last 3",
-      "score": 8.73333333333333,
+      "much": "+12.3 DK projected vs. last 3",
+      "score": 12.333333333333332,
       "min": 39.0,
-      "dk": 39.4,
+      "dk": 43.0,
       "avg": 31.9
      },
      {
       "player": "Jonathan Kuminga",
       "salary": 6300,
       "why": "Show: mid-30s minutes (11/27)",
-      "much": "+6.4 DK projected vs. last 3",
-      "score": 6.366666666666667,
-      "min": 32.8,
-      "dk": 30.2,
+      "much": "+7.4 DK projected vs. last 3",
+      "score": 7.366666666666667,
+      "min": 31.3,
+      "dk": 31.2,
       "avg": 27.2
      }
     ],
@@ -2098,7 +2140,7 @@
       "much": "+7.1 DK without him (3 games)",
       "score": 7.1,
       "min": 27.5,
-      "dk": 38.7,
+      "dk": 39.2,
       "avg": 39.7
      }
     ],
@@ -2144,7 +2186,7 @@
       "much": "+9.6 DK without him (4 games)",
       "score": 9.6,
       "min": 24.8,
-      "dk": 24.3,
+      "dk": 24.5,
       "avg": 15.1
      },
      {
@@ -2154,8 +2196,50 @@
       "much": "+8.4 DK without him (3 games)",
       "score": 8.4,
       "min": 19.2,
-      "dk": 17.7,
+      "dk": 17.9,
       "avg": 10.7
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-24",
+     "dk": 30.2,
+     "min": 34
+    },
+    "game": "DAL at PHX",
+    "time": "2026-11-28T02:00Z",
+    "team": "DAL",
+    "player": "Kyrie Irving",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "2:54 PM",
+    "salary": 7900,
+    "min": 32.0,
+    "benefits": [
+     {
+      "player": "Walter Clayton Jr.",
+      "salary": 3900,
+      "why": "same minutes, more production",
+      "much": "+6.8 DK without him (3 games)",
+      "score": 6.8,
+      "min": 16.7,
+      "dk": 14.9,
+      "avg": 17.5
+     },
+     {
+      "player": "Daniel Gafford",
+      "salary": 4800,
+      "why": "same minutes, more production",
+      "much": "+5.5 DK without him (3 games)",
+      "score": 5.5,
+      "min": 24.2,
+      "dk": 25.1,
+      "avg": 23.1
      }
     ],
     "estimate": false
@@ -2187,10 +2271,10 @@
       "player": "Scoot Henderson",
       "salary": 4400,
       "why": "subs in for him 14 of 85 times",
-      "much": "+4.7 DK projected vs. last 3",
-      "score": 4.683333333333334,
-      "min": 28.9,
-      "dk": 22.1,
+      "much": "+4.6 DK projected vs. last 3",
+      "score": 4.583333333333332,
+      "min": 26.3,
+      "dk": 22.0,
       "avg": 16.1
      }
     ],
@@ -2236,7 +2320,7 @@
       "much": "+5.6 DK without him (7 games)",
       "score": 5.6,
       "min": 23.2,
-      "dk": 14.6,
+      "dk": 14.5,
       "avg": 15.5
      },
      {
@@ -2248,62 +2332,6 @@
       "min": 29.6,
       "dk": 32.2,
       "avg": 33.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-11",
-     "dk": 35.2,
-     "min": 25,
-     "opp": "MIL",
-     "ha": "@",
-     "res": "W",
-     "score": "123-112"
-    },
-    "game": "LAL at SAS",
-    "time": "2026-11-28T02:30Z",
-    "team": "LAL",
-    "player": "Austin Reaves",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 7800,
-    "min": 33.3,
-    "benefits": [
-     {
-      "player": "Quentin Grimes",
-      "salary": 6600,
-      "why": "started 5 of 5",
-      "much": "+21.5 DK without him (5 games)",
-      "score": 21.5,
-      "min": 29.1,
-      "dk": 23.2,
-      "avg": 23.6
-     },
-     {
-      "player": "Matisse Thybulle",
-      "salary": 4400,
-      "why": "27 minutes (11/23)",
-      "much": "+5.6 DK without him (6 games)",
-      "score": 5.6,
-      "min": 23.0,
-      "dk": 16.8,
-      "avg": 19.3
-     },
-     {
-      "player": "Collin Sexton",
-      "salary": 4500,
-      "why": "23 minutes, up from 17",
-      "much": "+5.1 DK without him (6 games)",
-      "score": 5.1,
-      "min": 18.1,
-      "dk": 16.7,
-      "avg": 18.4
      }
     ],
     "estimate": false
@@ -2338,7 +2366,7 @@
       "much": "+15.9 DK without him (3 games)",
       "score": 15.9,
       "min": 29.9,
-      "dk": 56.7,
+      "dk": 56.8,
       "avg": 62.4
      },
      {
@@ -2358,7 +2386,7 @@
       "much": "+6.3 DK without him (4 games)",
       "score": 6.3,
       "min": 27.0,
-      "dk": 21.9,
+      "dk": 22.0,
       "avg": 22.4
      }
     ],
@@ -2414,7 +2442,7 @@
       "much": "+7.4 DK without him (2 games)",
       "score": 7.4,
       "min": 29.9,
-      "dk": 56.7,
+      "dk": 56.8,
       "avg": 62.4
      }
     ],
@@ -2447,20 +2475,20 @@
       "player": "Keyonte George",
       "salary": 8200,
       "why": "plays his position (C), 33 minutes tonight",
-      "much": "about +4.6 DK",
-      "score": 4.642706131078223,
+      "much": "about +4.7 DK",
+      "score": 4.6553911205073994,
       "min": 32.6,
-      "dk": 36.6,
+      "dk": 36.7,
       "avg": 37.4
      },
      {
       "player": "Darryn Peterson",
       "salary": 7700,
       "why": "plays his position (C), 29 minutes tonight",
-      "much": "about +3.9 DK",
-      "score": 3.9450317124735736,
+      "much": "about +4.0 DK",
+      "score": 3.957716701902749,
       "min": 29.4,
-      "dk": 31.1,
+      "dk": 31.2,
       "avg": 31.1
      },
      {
@@ -2468,9 +2496,9 @@
       "salary": 6700,
       "why": "plays his position (C), 30 minutes tonight",
       "much": "about +3.5 DK",
-      "score": 3.45031712473573,
+      "score": 3.4630021141649054,
       "min": 30.0,
-      "dk": 27.2,
+      "dk": 27.3,
       "avg": 27.9
      }
     ],
@@ -2544,6 +2572,31 @@
     "changed_at": "",
     "salary": 3300,
     "min": 18.7,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-11",
+     "dk": 35.2,
+     "min": 25,
+     "opp": "MIL",
+     "ha": "@",
+     "res": "W",
+     "score": "123-112"
+    },
+    "game": "LAL at SAS",
+    "time": "2026-11-28T02:30Z",
+    "team": "LAL",
+    "player": "Austin Reaves",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "2:54 PM",
+    "salary": 7800,
+    "min": 33.3,
     "benefits": [],
     "estimate": false
    },
@@ -2633,7 +2686,7 @@
       "much": "+13.9 DK without him (2 games)",
       "score": 13.9,
       "min": 25.2,
-      "dk": 21.4,
+      "dk": 21.7,
       "avg": 14.1
      },
      {
@@ -2643,7 +2696,7 @@
       "much": "+9.4 DK without him (2 games)",
       "score": 9.4,
       "min": 35.7,
-      "dk": 40.0,
+      "dk": 40.1,
       "avg": 28.5
      },
      {
@@ -2653,7 +2706,7 @@
       "much": "+8.6 DK without him (2 games)",
       "score": 8.6,
       "min": 23.4,
-      "dk": 25.0,
+      "dk": 25.2,
       "avg": 18.6
      }
     ],
@@ -2689,7 +2742,7 @@
       "much": "+7.2 DK without him (13 games)",
       "score": 7.2,
       "min": 14.2,
-      "dk": 14.4,
+      "dk": 14.5,
       "avg": 14.9
      },
      {
@@ -2699,7 +2752,7 @@
       "much": "+7.1 DK without him (14 games)",
       "score": 7.1,
       "min": 18.8,
-      "dk": 17.4,
+      "dk": 17.6,
       "avg": 20.4
      }
     ],
@@ -2735,7 +2788,7 @@
       "much": "+10.8 DK without him (4 games)",
       "score": 10.8,
       "min": 23.4,
-      "dk": 25.0,
+      "dk": 25.2,
       "avg": 18.6
      },
      {
@@ -2745,7 +2798,7 @@
       "much": "+6.8 DK without him (5 games)",
       "score": 6.8,
       "min": 25.2,
-      "dk": 21.4,
+      "dk": 21.7,
       "avg": 14.1
      },
      {
@@ -2903,7 +2956,7 @@
       "much": "+9.8 DK without him (15 games)",
       "score": 9.8,
       "min": 35.7,
-      "dk": 40.0,
+      "dk": 40.1,
       "avg": 28.5
      },
      {
@@ -2923,7 +2976,7 @@
       "much": "+7.8 DK without him (15 games)",
       "score": 7.8,
       "min": 31.8,
-      "dk": 29.8,
+      "dk": 29.7,
       "avg": 21.5
      }
     ],
@@ -2956,10 +3009,10 @@
       "player": "Quenton Jackson",
       "salary": 4300,
       "why": "subs in for him 1 of 3 times",
-      "much": "+5.2 DK projected vs. last 3",
-      "score": 5.2333333333333325,
+      "much": "+5.4 DK projected vs. last 3",
+      "score": 5.433333333333335,
       "min": 18.8,
-      "dk": 17.4,
+      "dk": 17.6,
       "avg": 20.4
      }
     ],
@@ -2995,7 +3048,7 @@
       "much": "+9.5 DK without him (3 games)",
       "score": 9.5,
       "min": 35.7,
-      "dk": 37.8,
+      "dk": 37.7,
       "avg": 34.6
      },
      {
@@ -3005,7 +3058,7 @@
       "much": "+8.5 DK without him (1 game)",
       "score": 8.5,
       "min": 24.3,
-      "dk": 20.6,
+      "dk": 20.5,
       "avg": 18.9
      },
      {
@@ -3015,7 +3068,7 @@
       "much": "+7.8 DK without him (3 games)",
       "score": 7.8,
       "min": 17.3,
-      "dk": 17.8,
+      "dk": 17.7,
       "avg": 14.5
      }
     ],
@@ -3051,7 +3104,7 @@
       "much": "+8.4 DK without him (5 games)",
       "score": 8.4,
       "min": 17.3,
-      "dk": 17.8,
+      "dk": 17.7,
       "avg": 14.5
      },
      {
@@ -3061,7 +3114,7 @@
       "much": "+6.7 DK without him (12 games)",
       "score": 6.7,
       "min": 35.7,
-      "dk": 37.8,
+      "dk": 37.7,
       "avg": 34.6
      },
      {
@@ -3071,7 +3124,7 @@
       "much": "+6.6 DK without him (11 games)",
       "score": 6.6,
       "min": 33.0,
-      "dk": 42.6,
+      "dk": 42.5,
       "avg": 43.8
      }
     ],
@@ -3131,8 +3184,8 @@
       "why": "16 minutes, up from 8",
       "much": "+13.1 DK without him (15 games)",
       "score": 13.1,
-      "min": 17.0,
-      "dk": 20.8,
+      "min": 15.0,
+      "dk": 21.7,
       "avg": null
      },
      {
@@ -3142,7 +3195,7 @@
       "much": "+9.1 DK without him (15 games)",
       "score": 9.1,
       "min": 39.0,
-      "dk": 39.4,
+      "dk": 43.0,
       "avg": 31.9
      },
      {
@@ -3151,8 +3204,8 @@
       "why": "37 minutes, big role (11/25)",
       "much": "+7.4 DK without him (15 games)",
       "score": 7.4,
-      "min": 37.0,
-      "dk": 38.8,
+      "min": 35.2,
+      "dk": 39.8,
       "avg": 37.1
      }
     ],
@@ -3188,7 +3241,7 @@
       "much": "+10.8 DK without him (3 games)",
       "score": 10.8,
       "min": 24.4,
-      "dk": 16.8,
+      "dk": 17.0,
       "avg": 8.4
      }
     ],
@@ -3224,7 +3277,7 @@
       "much": "+12.3 DK without him (4 games)",
       "score": 12.3,
       "min": 24.4,
-      "dk": 16.8,
+      "dk": 17.0,
       "avg": 8.4
      },
      {
@@ -3234,7 +3287,7 @@
       "much": "+7.2 DK without him (4 games)",
       "score": 7.2,
       "min": 28.6,
-      "dk": 36.8,
+      "dk": 37.0,
       "avg": 34.9
      },
      {
@@ -3244,7 +3297,7 @@
       "much": "+6.5 DK without him (4 games)",
       "score": 6.5,
       "min": 19.2,
-      "dk": 17.7,
+      "dk": 17.9,
       "avg": 10.7
      }
     ],
@@ -3280,7 +3333,7 @@
       "much": "+16.1 DK without him (12 games)",
       "score": 16.1,
       "min": 24.8,
-      "dk": 24.3,
+      "dk": 24.5,
       "avg": 15.1
      },
      {
@@ -3290,7 +3343,7 @@
       "much": "+8.0 DK without him (14 games)",
       "score": 8.0,
       "min": 24.5,
-      "dk": 29.4,
+      "dk": 29.7,
       "avg": 26.1
      }
     ],
@@ -3325,8 +3378,8 @@
       "why": "same minutes, more production",
       "much": "+8.0 DK without him (7 games)",
       "score": 8.0,
-      "min": 37.0,
-      "dk": 38.8,
+      "min": 35.2,
+      "dk": 39.8,
       "avg": 37.1
      },
      {
@@ -3335,8 +3388,8 @@
       "why": "25 minutes, up from 21",
       "much": "+7.4 DK without him (7 games)",
       "score": 7.4,
-      "min": 30.1,
-      "dk": 28.4,
+      "min": 28.6,
+      "dk": 29.4,
       "avg": 22.2
      }
     ],
@@ -3372,7 +3425,7 @@
       "much": "+6.2 DK without him (7 games)",
       "score": 6.2,
       "min": 19.2,
-      "dk": 17.7,
+      "dk": 17.9,
       "avg": 10.7
      }
     ],
@@ -3410,16 +3463,6 @@
       "min": 15.9,
       "dk": 14.2,
       "avg": 16.0
-     },
-     {
-      "player": "Kyrie Irving",
-      "salary": 7900,
-      "why": "32 minutes, up from 27",
-      "much": "+5.9 DK without him (12 games)",
-      "score": 5.9,
-      "min": 29.7,
-      "dk": 34.2,
-      "avg": 37.1
      }
     ],
     "estimate": false
@@ -3471,10 +3514,10 @@
       "player": "Keyonte George",
       "salary": 8200,
       "why": "39 minutes, 30 points, 10 assists (11/18)",
-      "much": "+8.9 DK projected vs. last 3",
-      "score": 8.850000000000001,
+      "much": "+9.0 DK projected vs. last 3",
+      "score": 8.950000000000003,
       "min": 32.6,
-      "dk": 36.6,
+      "dk": 36.7,
       "avg": 37.4
      }
     ],
@@ -3509,8 +3552,8 @@
       "why": "same minutes, more production",
       "much": "+6.8 DK without him (14 games)",
       "score": 6.8,
-      "min": 30.2,
-      "dk": 39.8,
+      "min": 27.7,
+      "dk": 38.4,
       "avg": 34.0
      },
      {
@@ -3519,8 +3562,8 @@
       "why": "24 minutes, up from 19",
       "much": "+5.3 DK without him (14 games)",
       "score": 5.3,
-      "min": 28.9,
-      "dk": 22.1,
+      "min": 26.3,
+      "dk": 22.0,
       "avg": 16.1
      }
     ],
@@ -3556,7 +3599,7 @@
       "much": "+9.9 DK without him (15 games)",
       "score": 9.9,
       "min": 29.4,
-      "dk": 31.1,
+      "dk": 31.2,
       "avg": 31.1
      },
      {
@@ -3576,7 +3619,7 @@
       "much": "+8.0 DK without him (15 games)",
       "score": 8.0,
       "min": 16.4,
-      "dk": 10.1,
+      "dk": 10.2,
       "avg": 11.2
      }
     ],
@@ -3632,7 +3675,7 @@
       "much": "+9.5 DK without him (10 games)",
       "score": 9.5,
       "min": 23.2,
-      "dk": 14.6,
+      "dk": 14.5,
       "avg": 15.5
      }
     ],
@@ -3678,7 +3721,7 @@
       "much": "+8.5 DK without him (8 games)",
       "score": 8.5,
       "min": 24.2,
-      "dk": 24.4,
+      "dk": 24.6,
       "avg": 22.6
      },
      {
@@ -3688,7 +3731,7 @@
       "much": "+8.2 DK without him (8 games)",
       "score": 8.2,
       "min": 21.4,
-      "dk": 26.0,
+      "dk": 26.3,
       "avg": 20.0
      }
     ],
@@ -3723,8 +3766,8 @@
       "why": "same minutes, more production",
       "much": "+7.8 DK without him (10 games)",
       "score": 7.8,
-      "min": 37.4,
-      "dk": 52.3,
+      "min": 36.0,
+      "dk": 54.5,
       "avg": 45.2
      },
      {
@@ -3733,8 +3776,8 @@
       "why": "same minutes, more production",
       "much": "+5.6 DK without him (12 games)",
       "score": 5.6,
-      "min": 32.0,
-      "dk": 33.1,
+      "min": 31.5,
+      "dk": 35.2,
       "avg": 28.7
      }
     ],
@@ -3766,31 +3809,31 @@
      {
       "player": "Scoot Henderson",
       "salary": 4400,
-      "why": "projected 29 minutes tonight, up from 26",
-      "much": "+4.7 DK projected vs. last 3",
-      "score": 4.683333333333334,
-      "min": 28.9,
-      "dk": 22.1,
+      "why": "projected 26 minutes tonight",
+      "much": "+4.6 DK projected vs. last 3",
+      "score": 4.583333333333332,
+      "min": 26.3,
+      "dk": 22.0,
       "avg": 16.1
      },
      {
       "player": "Toumani Camara",
       "salary": 5500,
-      "why": "projected 37 minutes tonight, up from 33",
-      "much": "+12.9 DK projected vs. last 3",
-      "score": 12.933333333333335,
-      "min": 36.9,
-      "dk": 28.6,
+      "why": "projected 34 minutes tonight",
+      "much": "+12.2 DK projected vs. last 3",
+      "score": 12.233333333333333,
+      "min": 33.7,
+      "dk": 27.9,
       "avg": 21.9
      },
      {
       "player": "Robert Williams",
       "salary": 4000,
-      "why": "projected 19 minutes tonight, up from 17",
-      "much": "+8.2 DK projected vs. last 3",
-      "score": 8.233333333333333,
-      "min": 19.1,
-      "dk": 22.4,
+      "why": "projected 19 minutes tonight",
+      "much": "+9.0 DK projected vs. last 3",
+      "score": 9.033333333333333,
+      "min": 18.8,
+      "dk": 23.2,
       "avg": 18.6
      }
     ],
