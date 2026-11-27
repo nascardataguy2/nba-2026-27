@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "9:53 AM ET",
+ "updated": "10:30 AM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -26,25 +26,25 @@
       {
        "player": "OG Anunoby",
        "min": 38.7
+      },
+      {
+       "player": "Andre Drummond",
+       "min": 17.0
       }
      ],
      "q": [
       {
-       "player": "Andre Drummond",
-       "min": 16.8
-      },
-      {
        "player": "Miles McBride",
-       "min": 13.4
+       "min": 15.4
       },
       {
        "player": "Jordan Clarkson",
-       "min": 8.1
+       "min": 8.8
       }
      ]
     }
    },
-   "key": "OG Anunoby is out, so Jose Alvarado and Josh Hart and Karl-Anthony Towns should play more than usual."
+   "key": "OG Anunoby and Andre Drummond are out, so Jose Alvarado and Josh Hart and Karl-Anthony Towns should play more than usual."
   },
   {
    "away": "PHI",
@@ -477,8 +477,34 @@
    "key": "Ja Morant and Chris Youngblood are out, so Deni Avdija and Jrue Holiday and Donovan Clingan should play more than usual."
   }
  ],
- "changed": [],
- "chg": [],
+ "changed": [
+  {
+   "player": "Andre Drummond",
+   "team": "NYK",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Concussion Protocol",
+   "time": "10:32 AM"
+  }
+ ],
+ "chg": [
+  {
+   "key": "Andre Drummond",
+   "team": "NYK",
+   "head": "Andre Drummond OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Karl-Anthony Towns",
+     "salary": 9600,
+     "much": "+7.1 DK projected vs. last 3"
+    }
+   ],
+   "time": "10:32 AM",
+   "size": 16.1
+  }
+ ],
  "sits": [
   {
    "team": "NYK",
@@ -488,39 +514,45 @@
      "min": 38.7,
      "note": "OG Anunoby has moved up to individual on-court work with his left calf strain. He is still doubtful for Friday against Miami.",
      "new": true
+    },
+    {
+     "player": "Andre Drummond",
+     "min": 17.0,
+     "note": "Andre Drummond was moved from questionable to out for tonight (concussion protocol) on the NBA's 10:30 AM injury report. He had averaged 15 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
     }
    ],
    "new": true,
-   "lost": 38.7,
+   "lost": 55.7,
    "benefits": [
     {
      "player": "Jose Alvarado",
      "salary": 3800,
      "why": "19 minutes, up from 9",
-     "much": "+16.5 DK without him (3 games)",
+     "much": "+16.5 DK without them (3 games)",
      "score": 16.5,
-     "min": 18.4,
-     "dk": 17.6,
+     "min": 18.9,
+     "dk": 18.1,
      "avg": 10.8
     },
     {
      "player": "Josh Hart",
      "salary": 6000,
      "why": "37 minutes, up from 30",
-     "much": "+14.6 DK without him (3 games)",
+     "much": "+14.6 DK without them (3 games)",
      "score": 14.6,
-     "min": 37.2,
-     "dk": 33.9,
+     "min": 39.0,
+     "dk": 35.6,
      "avg": 26.2
     },
     {
      "player": "Karl-Anthony Towns",
      "salary": 9600,
      "why": "same minutes, more production",
-     "much": "+6.9 DK without him (2 games)",
+     "much": "+6.9 DK without them (2 games)",
      "score": 6.9,
-     "min": 33.6,
-     "dk": 50.6,
+     "min": 40.1,
+     "dk": 60.5,
      "avg": 49.3
     }
    ],
@@ -898,41 +930,48 @@
  ],
  "chalk": [
   {
-   "player": "Ausar Thompson",
+   "player": "Nikola Jokic",
+   "team": "DEN",
+   "own": 38.0,
+   "dk": 59.3,
+   "salary": 11700
+  },
+  {
+   "player": "Daniss Jenkins",
    "team": "DET",
    "own": 38.0,
+   "dk": 40.1,
+   "salary": 6600
+  },
+  {
+   "player": "Cameron Johnson",
+   "team": "DEN",
+   "own": 36.4,
+   "dk": 26.2,
+   "salary": 4900
+  },
+  {
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "own": 34.3,
    "dk": 42.1,
    "salary": 7100
-  },
-  {
-   "player": "Isaiah Jackson",
-   "team": "LAC",
-   "own": 38.0,
-   "dk": 11.3,
-   "salary": 3400
-  },
-  {
-   "player": "Saddiq Bey",
-   "team": "NOP",
-   "own": 37.2,
-   "dk": 26.3,
-   "salary": 6100
-  },
-  {
-   "player": "Damian Lillard",
-   "team": "POR",
-   "own": 30.9,
-   "dk": 35.8,
-   "salary": 7400
   }
  ],
  "leverage": [
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 5.3,
+   "own": 3.4,
    "dk": 29.3,
    "salary": 5100
+  },
+  {
+   "player": "Taylor Hendricks",
+   "team": "MEM",
+   "own": 7.6,
+   "dk": 24.4,
+   "salary": 4300
   },
   {
    "player": "Tyler Herro",
@@ -940,13 +979,6 @@
    "own": 0.9,
    "dk": 41.9,
    "salary": 7700
-  },
-  {
-   "player": "Jakob Poeltl",
-   "team": "TOR",
-   "own": 0.9,
-   "dk": 30.3,
-   "salary": 5600
   }
  ],
  "last": {
@@ -1031,11 +1063,6 @@
   ],
   "injuries": [
    {
-    "player": "Andre Drummond",
-    "team": "NYK",
-    "text": "Andre Drummond left Wednesday's game against Cleveland after taking a hit to the head and played only 9 minutes. He is questionable for Friday against Miami."
-   },
-   {
     "player": "Jaylen Brown",
     "team": "PHI",
     "text": "Jaylen Brown left Wednesday's game against Miami at halftime with left hamstring tightness and was sent for imaging. He is ruled out for Friday at Indiana."
@@ -1043,10 +1070,46 @@
   ]
  },
  "injuries": {
-  "report": "09:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_09_45AM.pdf",
+  "report": "10:30 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_10_30AM.pdf",
   "pending": [],
   "rows": [
+   {
+    "last": {
+     "date": "2026-11-25",
+     "dk": 6.0,
+     "min": 9,
+     "opp": "CLE",
+     "ha": "vs",
+     "res": "W",
+     "score": "121-102"
+    },
+    "game": "MIA at NYK",
+    "time": "2026-11-28T00:00Z",
+    "team": "NYK",
+    "player": "Andre Drummond",
+    "status": "Out",
+    "reason": "Concussion Protocol",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "10:32 AM",
+    "salary": 4900,
+    "min": 17.0,
+    "benefits": [
+     {
+      "player": "Karl-Anthony Towns",
+      "salary": 9600,
+      "why": "subs in for him 34 of 72 times",
+      "much": "+7.1 DK projected vs. last 3",
+      "score": 7.083333333333336,
+      "min": 40.1,
+      "dk": 60.5,
+      "avg": 49.3
+     }
+    ],
+    "estimate": false
+   },
    {
     "last": {
      "date": "2026-11-19",
@@ -1076,8 +1139,8 @@
       "why": "19 minutes, up from 9",
       "much": "+16.5 DK without him (3 games)",
       "score": 16.5,
-      "min": 18.4,
-      "dk": 17.6,
+      "min": 18.9,
+      "dk": 18.1,
       "avg": 10.8
      },
      {
@@ -1086,8 +1149,8 @@
       "why": "37 minutes, up from 30",
       "much": "+14.6 DK without him (3 games)",
       "score": 14.6,
-      "min": 37.2,
-      "dk": 33.9,
+      "min": 39.0,
+      "dk": 35.6,
       "avg": 26.2
      },
      {
@@ -1096,48 +1159,12 @@
       "why": "same minutes, more production",
       "much": "+6.9 DK without him (2 games)",
       "score": 6.9,
-      "min": 33.6,
-      "dk": 50.6,
+      "min": 40.1,
+      "dk": 60.5,
       "avg": 49.3
      }
     ],
     "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-25",
-     "dk": 6.0,
-     "min": 9,
-     "opp": "CLE",
-     "ha": "vs",
-     "res": "W",
-     "score": "121-102"
-    },
-    "game": "MIA at NYK",
-    "time": "2026-11-28T00:00Z",
-    "team": "NYK",
-    "player": "Andre Drummond",
-    "status": "Questionable",
-    "reason": "Head",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "",
-    "salary": 4900,
-    "min": 17.0,
-    "benefits": [
-     {
-      "player": "Karl-Anthony Towns",
-      "salary": 9600,
-      "why": "subs in for him 34 of 72 times",
-      "much": "about +12.1 DK",
-      "score": 12.089451058201057,
-      "min": 33.6,
-      "dk": 50.6,
-      "avg": 49.3
-     }
-    ],
-    "estimate": true
    },
    {
     "last": {
@@ -1168,8 +1195,8 @@
       "why": "38 minutes, up from 30",
       "much": "+22.3 DK without him (2 games)",
       "score": 22.3,
-      "min": 37.2,
-      "dk": 33.9,
+      "min": 39.0,
+      "dk": 35.6,
       "avg": 26.2
      },
      {
@@ -1178,8 +1205,8 @@
       "why": "20 minutes, up from 10",
       "much": "+18.9 DK without him (2 games)",
       "score": 18.9,
-      "min": 18.4,
-      "dk": 17.6,
+      "min": 18.9,
+      "dk": 18.1,
       "avg": 10.8
      },
      {
@@ -1188,8 +1215,8 @@
       "why": "same minutes, more production",
       "much": "+6.9 DK without him (2 games)",
       "score": 6.9,
-      "min": 33.6,
-      "dk": 50.6,
+      "min": 40.1,
+      "dk": 60.5,
       "avg": 49.3
      }
     ],
