@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "10:53 AM ET",
+ "updated": "11:54 AM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -34,6 +34,10 @@
      ],
      "q": [
       {
+       "player": "Karl-Anthony Towns",
+       "min": 40.1
+      },
+      {
        "player": "Miles McBride",
        "min": 15.4
       },
@@ -44,7 +48,7 @@
      ]
     }
    },
-   "key": "OG Anunoby and Andre Drummond are out, so Jose Alvarado and Josh Hart and Karl-Anthony Towns should play more than usual."
+   "key": "OG Anunoby and Andre Drummond are out, so Jose Alvarado and Josh Hart and Landry Shamet should play more than usual."
   },
   {
    "away": "PHI",
@@ -479,6 +483,30 @@
  ],
  "changed": [
   {
+   "player": "Mo Bamba",
+   "team": "UTA",
+   "status": "Questionable",
+   "was": "",
+   "why": "Illness",
+   "time": "11:55 AM"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Questionable",
+   "was": "Available",
+   "why": "",
+   "time": "11:55 AM"
+  },
+  {
+   "player": "Andrew Wiggins",
+   "team": "MIA",
+   "status": "Available",
+   "was": "Probable",
+   "why": "",
+   "time": "11:55 AM"
+  },
+  {
    "player": "Andre Drummond",
    "team": "NYK",
    "status": "Out",
@@ -489,6 +517,27 @@
  ],
  "chg": [
   {
+   "key": "Karl-Anthony Towns",
+   "team": "NYK",
+   "head": "Karl-Anthony Towns QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Landry Shamet",
+     "salary": 5200,
+     "much": "+11.3 DK without him (1 game)"
+    },
+    {
+     "player": "Jalen Brunson",
+     "salary": 9500,
+     "much": "+6.7 DK without him (1 game)"
+    }
+   ],
+   "time": "11:55 AM",
+   "size": 24.6
+  },
+  {
    "key": "Andre Drummond",
    "team": "NYK",
    "head": "Andre Drummond OUT",
@@ -496,13 +545,34 @@
    "act": "Play",
    "names": [
     {
-     "player": "Karl-Anthony Towns",
-     "salary": 9600,
-     "much": "+7.1 DK projected vs. last 3"
+     "player": "Jalen Brunson",
+     "salary": 9500,
+     "much": "+9.1 DK projected vs. last 3"
+    },
+    {
+     "player": "Mikal Bridges",
+     "salary": 5100,
+     "much": "+2.2 DK projected vs. last 3"
     }
    ],
    "time": "10:32 AM",
    "size": 16.1
+  },
+  {
+   "key": "Mo Bamba",
+   "team": "UTA",
+   "head": "Mo Bamba QUESTIONABLE",
+   "st": "Questionable",
+   "act": "If he sits, play",
+   "names": [
+    {
+     "player": "Mohamed Bamba",
+     "salary": 5600,
+     "much": "about +23.4 DK"
+    }
+   ],
+   "time": "11:55 AM",
+   "size": 11.3
   }
  ],
  "sits": [
@@ -546,14 +616,14 @@
      "avg": 26.2
     },
     {
-     "player": "Karl-Anthony Towns",
-     "salary": 9600,
-     "why": "same minutes, more production",
-     "much": "+6.9 DK without them (2 games)",
-     "score": 6.9,
-     "min": 40.1,
-     "dk": 60.5,
-     "avg": 49.3
+     "player": "Landry Shamet",
+     "salary": 5200,
+     "why": "started 3 of 3",
+     "much": "+6.8 DK without them (3 games)",
+     "score": 6.8,
+     "min": 34.7,
+     "dk": 24.0,
+     "avg": 18.1
     }
    ],
    "split_of": [
@@ -911,21 +981,21 @@
    "n": 11
   },
   {
-   "player": "Jahmai Mashack",
-   "team": "MEM",
-   "kind": "up",
-   "last": 17.3,
-   "before": 5.0,
-   "n": 5,
-   "why": "Jahmai Mashack started for Memphis on 11/21 but did not play at all on 11/23, when Kris Murray took the starting spot."
-  },
-  {
    "player": "Terance Mann",
    "team": "BKN",
    "kind": "down",
    "last": 3.3,
    "before": 15.0,
    "n": 7
+  },
+  {
+   "player": "Jarace Walker",
+   "team": "IND",
+   "kind": "down",
+   "last": 8.7,
+   "before": 20.3,
+   "n": 14,
+   "why": "Jarace Walker was taken out of Indiana's rotation along with Jay Huff, and both played only one minute in garbage time."
   }
  ],
  "chalk": [
@@ -953,7 +1023,7 @@
   {
    "player": "Ausar Thompson",
    "team": "DET",
-   "own": 34.3,
+   "own": 34.4,
    "dk": 42.1,
    "salary": 7100
   }
@@ -962,14 +1032,14 @@
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 3.4,
+   "own": 3.6,
    "dk": 29.3,
    "salary": 5100
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 7.6,
+   "own": 5.9,
    "dk": 24.4,
    "salary": 4300
   },
@@ -1070,8 +1140,8 @@
   ]
  },
  "injuries": {
-  "report": "10:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_10_45AM.pdf",
+  "report": "11:45 AM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_11_45AM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1098,14 +1168,34 @@
     "min": 17.0,
     "benefits": [
      {
-      "player": "Karl-Anthony Towns",
-      "salary": 9600,
-      "why": "subs in for him 34 of 72 times",
-      "much": "+7.1 DK projected vs. last 3",
-      "score": 7.083333333333336,
-      "min": 40.1,
-      "dk": 60.5,
-      "avg": 49.3
+      "player": "Jalen Brunson",
+      "salary": 9500,
+      "why": "projected 38 minutes tonight, up from 35",
+      "much": "+9.1 DK projected vs. last 3",
+      "score": 9.149999999999999,
+      "min": 38.4,
+      "dk": 47.4,
+      "avg": 41.4
+     },
+     {
+      "player": "Mikal Bridges",
+      "salary": 5100,
+      "why": "projected 34 minutes tonight, up from 31",
+      "much": "+2.2 DK projected vs. last 3",
+      "score": 2.25,
+      "min": 33.8,
+      "dk": 25.5,
+      "avg": 19.2
+     },
+     {
+      "player": "Landry Shamet",
+      "salary": 5200,
+      "why": "projected 35 minutes tonight, up from 30",
+      "much": "more minutes",
+      "score": 0.25,
+      "min": 34.7,
+      "dk": 24.0,
+      "avg": 18.1
      }
     ],
     "estimate": false
@@ -1154,14 +1244,70 @@
       "avg": 26.2
      },
      {
-      "player": "Karl-Anthony Towns",
-      "salary": 9600,
+      "player": "Landry Shamet",
+      "salary": 5200,
+      "why": "started 3 of 3",
+      "much": "+6.8 DK without him (3 games)",
+      "score": 6.8,
+      "min": 34.7,
+      "dk": 24.0,
+      "avg": 18.1
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-25",
+     "dk": 44.0,
+     "min": 33,
+     "opp": "CLE",
+     "ha": "vs",
+     "res": "W",
+     "score": "121-102"
+    },
+    "game": "MIA at NYK",
+    "time": "2026-11-28T00:00Z",
+    "team": "NYK",
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "reason": "",
+    "new": true,
+    "was": "Available",
+    "known": true,
+    "changed_at": "11:55 AM",
+    "salary": 9600,
+    "min": 31.7,
+    "benefits": [
+     {
+      "player": "Landry Shamet",
+      "salary": 5200,
+      "why": "started that game",
+      "much": "+11.3 DK without him (1 game)",
+      "score": 11.3,
+      "min": 34.7,
+      "dk": 24.0,
+      "avg": 18.1
+     },
+     {
+      "player": "Jalen Brunson",
+      "salary": 9500,
       "why": "same minutes, more production",
-      "much": "+6.9 DK without him (2 games)",
-      "score": 6.9,
-      "min": 40.1,
-      "dk": 60.5,
-      "avg": 49.3
+      "much": "+6.7 DK without him (1 game)",
+      "score": 6.7,
+      "min": 38.4,
+      "dk": 47.4,
+      "avg": 41.4
+     },
+     {
+      "player": "Jose Alvarado",
+      "salary": 3800,
+      "why": "15 minutes, up from 11",
+      "much": "+5.7 DK without him (1 game)",
+      "score": 5.7,
+      "min": 18.9,
+      "dk": 18.1,
+      "avg": 10.8
      }
     ],
     "estimate": false
@@ -1210,14 +1356,14 @@
       "avg": 10.8
      },
      {
-      "player": "Karl-Anthony Towns",
-      "salary": 9600,
-      "why": "same minutes, more production",
-      "much": "+6.9 DK without him (2 games)",
-      "score": 6.9,
-      "min": 40.1,
-      "dk": 60.5,
-      "avg": 49.3
+      "player": "Mikal Bridges",
+      "salary": 5100,
+      "why": "34 minutes, up from 26",
+      "much": "+6.1 DK without him (2 games)",
+      "score": 6.1,
+      "min": 33.8,
+      "dk": 25.5,
+      "avg": 19.2
      }
     ],
     "estimate": false
@@ -1286,12 +1432,12 @@
     "time": "2026-11-28T00:00Z",
     "team": "MIA",
     "player": "Andrew Wiggins",
-    "status": "Probable",
-    "reason": "Right Ankle Sprain",
+    "status": "Available",
+    "reason": "",
     "new": true,
-    "was": "",
+    "was": "Probable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "11:55 AM",
     "salary": 4200,
     "min": 24.0,
     "benefits": [],
@@ -1825,8 +1971,8 @@
       "why": "same minutes, more production",
       "much": "+10.0 DK without him (3 games)",
       "score": 10.0,
-      "min": 6.9,
-      "dk": 6.8,
+      "min": 19.2,
+      "dk": 19.0,
       "avg": 21.1
      },
      {
@@ -2072,6 +2218,42 @@
       "min": 29.9,
       "dk": 56.8,
       "avg": 62.4
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-23",
+     "dk": 21.8,
+     "min": 29,
+     "opp": "LAL",
+     "ha": "@",
+     "res": "L",
+     "score": "109-94"
+    },
+    "game": "DEN at UTA",
+    "time": "2026-11-28T02:30Z",
+    "team": "UTA",
+    "player": "Mo Bamba",
+    "status": "Questionable",
+    "reason": "Illness",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "11:55 AM",
+    "salary": 5600,
+    "min": 24.0,
+    "benefits": [
+     {
+      "player": "Mohamed Bamba",
+      "salary": 5600,
+      "why": "plays his position (C), 17 minutes tonight",
+      "much": "about +23.4 DK",
+      "score": 23.44508670520231,
+      "min": 17.3,
+      "dk": 16.9,
+      "avg": null
      }
     ],
     "estimate": false
@@ -2783,7 +2965,7 @@
     "team": "MEM",
     "player": "Cameron Boozer",
     "status": "Out",
-    "reason": "",
+    "reason": "Right Medial Ankle",
     "new": false,
     "was": "",
     "known": true,
