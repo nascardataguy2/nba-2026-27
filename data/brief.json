@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "11:54 AM ET",
+ "updated": "12:53 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -35,15 +35,15 @@
      "q": [
       {
        "player": "Karl-Anthony Towns",
-       "min": 40.1
+       "min": 39.3
       },
       {
        "player": "Miles McBride",
-       "min": 15.4
+       "min": 17.3
       },
       {
        "player": "Jordan Clarkson",
-       "min": 8.8
+       "min": 9.5
       }
      ]
     }
@@ -218,13 +218,13 @@
      "q": []
     },
     "BOS": {
-     "out": [],
-     "q": [
+     "out": [
       {
        "player": "Mitchell Robinson",
-       "min": 13.9
+       "min": 16.3
       }
-     ]
+     ],
+     "q": []
     }
    },
    "key": "CJ McCollum and Asa Newell are out, so Dyson Daniels and Kingston Flemings and Corey Kispert should play more than usual."
@@ -320,7 +320,7 @@
      "q": []
     }
    },
-   "key": "Devin Booker has the top projection in this game at 42.6 DK points."
+   "key": "Devin Booker has the top projection in this game at 42.5 DK points."
   },
   {
    "away": "NOP",
@@ -389,16 +389,16 @@
      "q": [
       {
        "player": "Jaxson Hayes",
-       "min": 21.3
+       "min": 22.9
       },
       {
        "player": "Jusuf Nurkic",
-       "min": 14.5
+       "min": 15.6
       }
      ]
     }
    },
-   "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Kyle Filipowski and Brice Sensabaugh and Svi Mykhailiuk should play more than usual."
+   "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Kyle Filipowski and Brice Sensabaugh and Keyonte George should play more than usual."
   },
   {
    "away": "LAL",
@@ -435,7 +435,7 @@
      ]
     }
    },
-   "key": "Victor Wembanyama has the top projection in this game at 56.8 DK points."
+   "key": "Victor Wembanyama has the top projection in this game at 56.7 DK points."
   },
   {
    "away": "GSW",
@@ -482,6 +482,22 @@
   }
  ],
  "changed": [
+  {
+   "player": "Mitchell Robinson",
+   "team": "BOS",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "12:55 PM"
+  },
+  {
+   "player": "Kasparas Jakucionis",
+   "team": "MIL",
+   "status": "Out",
+   "was": "",
+   "why": "",
+   "time": "12:55 PM"
+  },
   {
    "player": "Mo Bamba",
    "team": "UTA",
@@ -547,16 +563,37 @@
     {
      "player": "Jalen Brunson",
      "salary": 9500,
-     "much": "+9.1 DK projected vs. last 3"
+     "much": "+8.5 DK projected vs. last 3"
     },
     {
-     "player": "Mikal Bridges",
-     "salary": 5100,
-     "much": "+2.2 DK projected vs. last 3"
+     "player": "Landry Shamet",
+     "salary": 5200,
+     "much": "more minutes"
     }
    ],
    "time": "10:32 AM",
    "size": 16.1
+  },
+  {
+   "key": "Mitchell Robinson",
+   "team": "BOS",
+   "head": "Mitchell Robinson OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Mike Conley",
+     "salary": 3100,
+     "much": "+19.6 DK without him (2 games)"
+    },
+    {
+     "player": "Paul George",
+     "salary": 7900,
+     "much": "+9.9 DK without him (3 games)"
+    }
+   ],
+   "time": "12:55 PM",
+   "size": 15.5
   },
   {
    "key": "Mo Bamba",
@@ -566,9 +603,14 @@
    "act": "If he sits, play",
    "names": [
     {
-     "player": "Mohamed Bamba",
-     "salary": 5600,
-     "much": "about +23.4 DK"
+     "player": "Keyonte George",
+     "salary": 8200,
+     "much": "about +4.6 DK"
+    },
+    {
+     "player": "Darryn Peterson",
+     "salary": 7700,
+     "much": "about +3.9 DK"
     }
    ],
    "time": "11:55 AM",
@@ -601,8 +643,8 @@
      "why": "19 minutes, up from 9",
      "much": "+16.5 DK without them (3 games)",
      "score": 16.5,
-     "min": 18.9,
-     "dk": 18.1,
+     "min": 19.6,
+     "dk": 19.0,
      "avg": 10.8
     },
     {
@@ -611,8 +653,8 @@
      "why": "37 minutes, up from 30",
      "much": "+14.6 DK without them (3 games)",
      "score": 14.6,
-     "min": 39.0,
-     "dk": 35.6,
+     "min": 38.4,
+     "dk": 35.4,
      "avg": 26.2
     },
     {
@@ -621,8 +663,8 @@
      "why": "started 3 of 3",
      "much": "+6.8 DK without them (3 games)",
      "score": 6.8,
-     "min": 34.7,
-     "dk": 24.0,
+     "min": 34.0,
+     "dk": 23.8,
      "avg": 18.1
     }
    ],
@@ -679,6 +721,54 @@
    ]
   },
   {
+   "team": "BOS",
+   "outs": [
+    {
+     "player": "Mitchell Robinson",
+     "min": 16.3,
+     "note": "Mitchell Robinson was moved from questionable to out for tonight (illness) on the NBA's 12:45 PM injury report. He had averaged 15 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 16.3,
+   "benefits": [
+    {
+     "player": "Mike Conley",
+     "salary": 3100,
+     "why": "17 minutes, up from 8",
+     "much": "+19.6 DK without him (2 games)",
+     "score": 19.6,
+     "min": 15.0,
+     "dk": 15.2,
+     "avg": 13.0
+    },
+    {
+     "player": "Paul George",
+     "salary": 7900,
+     "why": "34 minutes, up from 29",
+     "much": "+9.9 DK without him (3 games)",
+     "score": 9.9,
+     "min": 30.7,
+     "dk": 37.7,
+     "avg": 39.1
+    },
+    {
+     "player": "Jayson Tatum",
+     "salary": 10000,
+     "why": "same minutes, more production",
+     "much": "+9.2 DK without him (3 games)",
+     "score": 9.2,
+     "min": 34.1,
+     "dk": 49.2,
+     "avg": 49.2
+    }
+   ],
+   "split_of": [
+    "Mitchell Robinson"
+   ]
+  },
+  {
    "team": "DET",
    "outs": [
     {
@@ -730,7 +820,7 @@
      "much": "+8.6 DK without them (2 games)",
      "score": 8.6,
      "min": 23.4,
-     "dk": 25.3,
+     "dk": 25.1,
      "avg": 18.6
     }
    ],
@@ -766,7 +856,7 @@
      "much": "+13.6 DK without them (3 games)",
      "score": 13.6,
      "min": 30.0,
-     "dk": 23.9,
+     "dk": 24.0,
      "avg": 13.3
     },
     {
@@ -820,8 +910,8 @@
      "why": "12 minutes, up from 7",
      "much": "+11.9 DK without them (6 games)",
      "score": 11.9,
-     "min": 11.4,
-     "dk": 11.7,
+     "min": 12.3,
+     "dk": 13.0,
      "avg": 9.4
     },
     {
@@ -830,79 +920,24 @@
      "why": "21 minutes, up from 14",
      "much": "+10.2 DK without them (11 games)",
      "score": 10.2,
-     "min": 18.2,
-     "dk": 18.6,
+     "min": 19.8,
+     "dk": 20.3,
      "avg": 19.0
     },
     {
-     "player": "Svi Mykhailiuk",
-     "salary": 3900,
-     "why": "22 minutes, up from 16",
-     "much": "+7.8 DK without them (11 games)",
-     "score": 7.8,
-     "min": 21.9,
-     "dk": 15.6,
-     "avg": 13.8
+     "player": "Keyonte George",
+     "salary": 8200,
+     "why": "39 minutes, 30 points, 10 assists (11/18)",
+     "much": "+8.9 DK projected vs. last 3",
+     "score": 8.850000000000001,
+     "min": 32.6,
+     "dk": 36.6,
+     "avg": 37.4
     }
    ],
    "split_of": [
     "Lauri Markkanen",
     "Jaren Jackson Jr."
-   ]
-  },
-  {
-   "team": "POR",
-   "outs": [
-    {
-     "player": "Ja Morant",
-     "min": 27.0,
-     "note": "Morant has a left hamstring strain and has not played since October 29. RotoWire lists December 1 as his earliest return, and the show estimated at least two more weeks until there are reports of contact work.",
-     "new": false
-    },
-    {
-     "player": "Chris Youngblood",
-     "min": 18.3,
-     "note": "The show thinks Chris Youngblood will be out a while longer. He has a right heel contusion and has not played in Portland's recent games.",
-     "new": false
-    }
-   ],
-   "new": false,
-   "lost": 45.3,
-   "benefits": [
-    {
-     "player": "Deni Avdija",
-     "salary": 9200,
-     "why": "same minutes, more production",
-     "much": "+8.5 DK without them (6 games)",
-     "score": 8.5,
-     "min": 33.5,
-     "dk": 47.0,
-     "avg": 45.2
-    },
-    {
-     "player": "Jrue Holiday",
-     "salary": 6000,
-     "why": "29 minutes, up from 26",
-     "much": "+7.3 DK without them (8 games)",
-     "score": 7.3,
-     "min": 28.7,
-     "dk": 29.7,
-     "avg": 28.7
-    },
-    {
-     "player": "Donovan Clingan",
-     "salary": 7300,
-     "why": "same minutes, more production",
-     "much": "+5.4 DK without them (8 games)",
-     "score": 5.4,
-     "min": 26.4,
-     "dk": 34.6,
-     "avg": 34.0
-    }
-   ],
-   "split_of": [
-    "Ja Morant",
-    "Chris Youngblood"
    ]
   }
  ],
@@ -1000,55 +1035,55 @@
  ],
  "chalk": [
   {
-   "player": "Nikola Jokic",
-   "team": "DEN",
+   "player": "Charles Bassey",
+   "team": "GSW",
    "own": 38.0,
-   "dk": 59.3,
-   "salary": 11700
+   "dk": 26.0,
+   "salary": 4700
+  },
+  {
+   "player": "Isaiah Joe",
+   "team": "DET",
+   "own": 38.0,
+   "dk": 25.1,
+   "salary": 4700
   },
   {
    "player": "Daniss Jenkins",
    "team": "DET",
-   "own": 38.0,
+   "own": 35.2,
    "dk": 40.1,
    "salary": 6600
   },
   {
    "player": "Cameron Johnson",
    "team": "DEN",
-   "own": 36.4,
-   "dk": 26.2,
+   "own": 32.9,
+   "dk": 26.4,
    "salary": 4900
-  },
-  {
-   "player": "Ausar Thompson",
-   "team": "DET",
-   "own": 34.4,
-   "dk": 42.1,
-   "salary": 7100
   }
  ],
  "leverage": [
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 3.6,
+   "own": 1.1,
    "dk": 29.3,
    "salary": 5100
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 5.9,
-   "dk": 24.4,
+   "own": 5.3,
+   "dk": 24.3,
    "salary": 4300
   },
   {
-   "player": "Tyler Herro",
-   "team": "MIL",
-   "own": 0.9,
-   "dk": 41.9,
-   "salary": 7700
+   "player": "Jakob Poeltl",
+   "team": "TOR",
+   "own": 5.5,
+   "dk": 30.3,
+   "salary": 5600
   }
  ],
  "last": {
@@ -1140,8 +1175,8 @@
   ]
  },
  "injuries": {
-  "report": "11:45 AM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_11_45AM.pdf",
+  "report": "12:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_12_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1171,31 +1206,31 @@
       "player": "Jalen Brunson",
       "salary": 9500,
       "why": "projected 38 minutes tonight, up from 35",
-      "much": "+9.1 DK projected vs. last 3",
-      "score": 9.149999999999999,
-      "min": 38.4,
-      "dk": 47.4,
+      "much": "+8.5 DK projected vs. last 3",
+      "score": 8.450000000000003,
+      "min": 37.7,
+      "dk": 46.7,
       "avg": 41.4
-     },
-     {
-      "player": "Mikal Bridges",
-      "salary": 5100,
-      "why": "projected 34 minutes tonight, up from 31",
-      "much": "+2.2 DK projected vs. last 3",
-      "score": 2.25,
-      "min": 33.8,
-      "dk": 25.5,
-      "avg": 19.2
      },
      {
       "player": "Landry Shamet",
       "salary": 5200,
-      "why": "projected 35 minutes tonight, up from 30",
+      "why": "projected 34 minutes tonight, up from 30",
       "much": "more minutes",
-      "score": 0.25,
-      "min": 34.7,
-      "dk": 24.0,
+      "score": 0.05000000000000071,
+      "min": 34.0,
+      "dk": 23.8,
       "avg": 18.1
+     },
+     {
+      "player": "Josh Hart",
+      "salary": 6000,
+      "why": "projected 38 minutes tonight, up from 34",
+      "much": "more minutes",
+      "score": -2.433333333333337,
+      "min": 38.4,
+      "dk": 35.4,
+      "avg": 26.2
      }
     ],
     "estimate": false
@@ -1229,8 +1264,8 @@
       "why": "19 minutes, up from 9",
       "much": "+16.5 DK without him (3 games)",
       "score": 16.5,
-      "min": 18.9,
-      "dk": 18.1,
+      "min": 19.6,
+      "dk": 19.0,
       "avg": 10.8
      },
      {
@@ -1239,8 +1274,8 @@
       "why": "37 minutes, up from 30",
       "much": "+14.6 DK without him (3 games)",
       "score": 14.6,
-      "min": 39.0,
-      "dk": 35.6,
+      "min": 38.4,
+      "dk": 35.4,
       "avg": 26.2
      },
      {
@@ -1249,8 +1284,8 @@
       "why": "started 3 of 3",
       "much": "+6.8 DK without him (3 games)",
       "score": 6.8,
-      "min": 34.7,
-      "dk": 24.0,
+      "min": 34.0,
+      "dk": 23.8,
       "avg": 18.1
      }
     ],
@@ -1285,8 +1320,8 @@
       "why": "started that game",
       "much": "+11.3 DK without him (1 game)",
       "score": 11.3,
-      "min": 34.7,
-      "dk": 24.0,
+      "min": 34.0,
+      "dk": 23.8,
       "avg": 18.1
      },
      {
@@ -1295,8 +1330,8 @@
       "why": "same minutes, more production",
       "much": "+6.7 DK without him (1 game)",
       "score": 6.7,
-      "min": 38.4,
-      "dk": 47.4,
+      "min": 37.7,
+      "dk": 46.7,
       "avg": 41.4
      },
      {
@@ -1305,8 +1340,8 @@
       "why": "15 minutes, up from 11",
       "much": "+5.7 DK without him (1 game)",
       "score": 5.7,
-      "min": 18.9,
-      "dk": 18.1,
+      "min": 19.6,
+      "dk": 19.0,
       "avg": 10.8
      }
     ],
@@ -1341,8 +1376,8 @@
       "why": "38 minutes, up from 30",
       "much": "+22.3 DK without him (2 games)",
       "score": 22.3,
-      "min": 39.0,
-      "dk": 35.6,
+      "min": 38.4,
+      "dk": 35.4,
       "avg": 26.2
      },
      {
@@ -1351,8 +1386,8 @@
       "why": "20 minutes, up from 10",
       "much": "+18.9 DK without him (2 games)",
       "score": 18.9,
-      "min": 18.9,
-      "dk": 18.1,
+      "min": 19.6,
+      "dk": 19.0,
       "avg": 10.8
      },
      {
@@ -1361,7 +1396,7 @@
       "why": "34 minutes, up from 26",
       "much": "+6.1 DK without him (2 games)",
       "score": 6.1,
-      "min": 33.8,
+      "min": 33.1,
       "dk": 25.5,
       "avg": 19.2
      }
@@ -1536,10 +1571,10 @@
       "player": "Josh Minott",
       "salary": 3000,
       "why": "projected 6 minutes tonight",
-      "much": "+5.5 DK projected vs. last 3",
-      "score": 5.466666666666667,
+      "much": "+5.4 DK projected vs. last 3",
+      "score": 5.366666666666667,
       "min": 6.1,
-      "dk": 5.8,
+      "dk": 5.7,
       "avg": 7.4
      },
      {
@@ -1553,6 +1588,31 @@
       "avg": 4.8
      }
     ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-25",
+     "dk": 13.5,
+     "min": 12,
+     "opp": "BKN",
+     "ha": "vs",
+     "res": "L",
+     "score": "104-97"
+    },
+    "game": "MIL at DET",
+    "time": "2026-11-28T00:30Z",
+    "team": "MIL",
+    "player": "Kasparas Jakucionis",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "",
+    "known": true,
+    "changed_at": "12:55 PM",
+    "salary": 3500,
+    "min": 9.7,
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1661,7 +1721,7 @@
       "much": "+9.1 DK without him (1 game)",
       "score": 9.1,
       "min": 27.4,
-      "dk": 20.6,
+      "dk": 20.7,
       "avg": 20.3
      }
     ],
@@ -1707,7 +1767,7 @@
       "much": "+6.8 DK without him (11 games)",
       "score": 6.8,
       "min": 13.7,
-      "dk": 12.0,
+      "dk": 12.1,
       "avg": 15.8
      },
      {
@@ -1753,7 +1813,7 @@
       "much": "+12.2 DK without him (1 game)",
       "score": 12.2,
       "min": 36.5,
-      "dk": 50.2,
+      "dk": 50.1,
       "avg": 46.1
      },
      {
@@ -1773,7 +1833,7 @@
       "much": "+5.3 DK without him (1 game)",
       "score": 5.3,
       "min": 32.6,
-      "dk": 36.9,
+      "dk": 36.7,
       "avg": 33.5
      }
     ],
@@ -1818,12 +1878,12 @@
     "time": "2026-11-28T01:00Z",
     "team": "BOS",
     "player": "Mitchell Robinson",
-    "status": "Questionable",
+    "status": "Out",
     "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "12:55 PM",
     "salary": 3800,
     "min": 16.3,
     "benefits": [
@@ -1833,8 +1893,8 @@
       "why": "17 minutes, up from 8",
       "much": "+19.6 DK without him (2 games)",
       "score": 19.6,
-      "min": 12.9,
-      "dk": 12.9,
+      "min": 15.0,
+      "dk": 15.2,
       "avg": 13.0
      },
      {
@@ -1843,8 +1903,8 @@
       "why": "34 minutes, up from 29",
       "much": "+9.9 DK without him (3 games)",
       "score": 9.9,
-      "min": 28.1,
-      "dk": 34.3,
+      "min": 30.7,
+      "dk": 37.7,
       "avg": 39.1
      },
      {
@@ -1853,8 +1913,8 @@
       "why": "same minutes, more production",
       "much": "+9.2 DK without him (3 games)",
       "score": 9.2,
-      "min": 33.4,
-      "dk": 48.1,
+      "min": 34.1,
+      "dk": 49.2,
       "avg": 49.2
      }
     ],
@@ -1897,10 +1957,10 @@
       "player": "Jonathan Kuminga",
       "salary": 6300,
       "why": "Show: mid-30s minutes (11/27)",
-      "much": "+4.8 DK projected vs. last 3",
-      "score": 4.766666666666669,
+      "much": "+5.0 DK projected vs. last 3",
+      "score": 4.966666666666669,
       "min": 31.2,
-      "dk": 28.6,
+      "dk": 28.8,
       "avg": 27.2
      }
     ],
@@ -1982,7 +2042,7 @@
       "much": "+9.6 DK without him (4 games)",
       "score": 9.6,
       "min": 24.8,
-      "dk": 24.4,
+      "dk": 24.3,
       "avg": 15.1
      },
      {
@@ -2028,7 +2088,7 @@
       "much": "+7.9 DK without him (7 games)",
       "score": 7.9,
       "min": 20.6,
-      "dk": 19.4,
+      "dk": 19.5,
       "avg": 21.7
      },
      {
@@ -2038,7 +2098,7 @@
       "much": "+5.6 DK without him (7 games)",
       "score": 5.6,
       "min": 23.2,
-      "dk": 14.7,
+      "dk": 14.6,
       "avg": 15.5
      },
      {
@@ -2048,7 +2108,7 @@
       "much": "+5.2 DK without him (7 games)",
       "score": 5.2,
       "min": 29.6,
-      "dk": 32.1,
+      "dk": 32.2,
       "avg": 33.4
      }
     ],
@@ -2140,7 +2200,7 @@
       "much": "+15.9 DK without him (3 games)",
       "score": 15.9,
       "min": 29.9,
-      "dk": 56.8,
+      "dk": 56.7,
       "avg": 62.4
      },
      {
@@ -2160,7 +2220,7 @@
       "much": "+6.3 DK without him (4 games)",
       "score": 6.3,
       "min": 27.0,
-      "dk": 21.8,
+      "dk": 21.9,
       "avg": 22.4
      }
     ],
@@ -2216,7 +2276,7 @@
       "much": "+7.4 DK without him (2 games)",
       "score": 7.4,
       "min": 29.9,
-      "dk": 56.8,
+      "dk": 56.7,
       "avg": 62.4
      }
     ],
@@ -2246,14 +2306,34 @@
     "min": 24.0,
     "benefits": [
      {
-      "player": "Mohamed Bamba",
-      "salary": 5600,
-      "why": "plays his position (C), 17 minutes tonight",
-      "much": "about +23.4 DK",
-      "score": 23.44508670520231,
-      "min": 17.3,
-      "dk": 16.9,
-      "avg": null
+      "player": "Keyonte George",
+      "salary": 8200,
+      "why": "plays his position (C), 33 minutes tonight",
+      "much": "about +4.6 DK",
+      "score": 4.642706131078223,
+      "min": 32.6,
+      "dk": 36.6,
+      "avg": 37.4
+     },
+     {
+      "player": "Darryn Peterson",
+      "salary": 7700,
+      "why": "plays his position (C), 29 minutes tonight",
+      "much": "about +3.9 DK",
+      "score": 3.9450317124735736,
+      "min": 29.4,
+      "dk": 31.1,
+      "avg": 31.1
+     },
+     {
+      "player": "Ace Bailey",
+      "salary": 6700,
+      "why": "plays his position (C), 30 minutes tonight",
+      "much": "about +3.5 DK",
+      "score": 3.45031712473573,
+      "min": 30.0,
+      "dk": 27.2,
+      "avg": 27.9
      }
     ],
     "estimate": false
@@ -2287,8 +2367,8 @@
       "why": "16 minutes, up from 8",
       "much": "+15.8 DK without him (2 games)",
       "score": 15.8,
-      "min": 11.4,
-      "dk": 11.7,
+      "min": 12.3,
+      "dk": 13.0,
       "avg": 9.4
      },
      {
@@ -2297,19 +2377,9 @@
       "why": "23 minutes, up from 17",
       "much": "+15.7 DK without him (4 games)",
       "score": 15.7,
-      "min": 18.2,
-      "dk": 18.6,
+      "min": 19.8,
+      "dk": 20.3,
       "avg": 19.0
-     },
-     {
-      "player": "Mohamed Bamba",
-      "salary": 5600,
-      "why": "started 3 of 4",
-      "much": "+15.4 DK without him (4 games)",
-      "score": 15.4,
-      "min": 17.3,
-      "dk": 16.9,
-      "avg": null
      }
     ],
     "estimate": false
@@ -2369,7 +2439,7 @@
       "much": "+13.6 DK without him (3 games)",
       "score": 13.6,
       "min": 30.0,
-      "dk": 23.9,
+      "dk": 24.0,
       "avg": 13.3
      },
      {
@@ -2445,7 +2515,7 @@
       "much": "+8.6 DK without him (2 games)",
       "score": 8.6,
       "min": 23.4,
-      "dk": 25.3,
+      "dk": 25.1,
       "avg": 18.6
      }
     ],
@@ -2481,7 +2551,7 @@
       "much": "+7.2 DK without him (13 games)",
       "score": 7.2,
       "min": 14.2,
-      "dk": 14.5,
+      "dk": 14.4,
       "avg": 14.9
      },
      {
@@ -2527,7 +2597,7 @@
       "much": "+10.8 DK without him (4 games)",
       "score": 10.8,
       "min": 23.4,
-      "dk": 25.3,
+      "dk": 25.1,
       "avg": 18.6
      },
      {
@@ -2583,7 +2653,7 @@
       "much": "+9.6 DK without him (15 games)",
       "score": 9.6,
       "min": 22.6,
-      "dk": 21.4,
+      "dk": 21.3,
       "avg": 21.8
      },
      {
@@ -2787,7 +2857,7 @@
       "much": "+9.5 DK without him (3 games)",
       "score": 9.5,
       "min": 35.7,
-      "dk": 37.2,
+      "dk": 37.8,
       "avg": 34.6
      },
      {
@@ -2797,7 +2867,7 @@
       "much": "+8.5 DK without him (1 game)",
       "score": 8.5,
       "min": 24.3,
-      "dk": 20.5,
+      "dk": 20.6,
       "avg": 18.9
      },
      {
@@ -2807,7 +2877,7 @@
       "much": "+7.8 DK without him (3 games)",
       "score": 7.8,
       "min": 17.3,
-      "dk": 17.6,
+      "dk": 17.8,
       "avg": 14.5
      }
     ],
@@ -2843,7 +2913,7 @@
       "much": "+8.4 DK without him (5 games)",
       "score": 8.4,
       "min": 17.3,
-      "dk": 17.6,
+      "dk": 17.8,
       "avg": 14.5
      },
      {
@@ -2853,7 +2923,7 @@
       "much": "+6.7 DK without him (12 games)",
       "score": 6.7,
       "min": 35.7,
-      "dk": 37.2,
+      "dk": 37.8,
       "avg": 34.6
      },
      {
@@ -2863,7 +2933,7 @@
       "much": "+6.6 DK without him (11 games)",
       "score": 6.6,
       "min": 33.0,
-      "dk": 42.2,
+      "dk": 42.6,
       "avg": 43.8
      }
     ],
@@ -2924,7 +2994,7 @@
       "much": "+13.1 DK without him (15 games)",
       "score": 13.1,
       "min": 15.0,
-      "dk": 18.2,
+      "dk": 18.3,
       "avg": null
      },
      {
@@ -2965,7 +3035,7 @@
     "team": "MEM",
     "player": "Cameron Boozer",
     "status": "Out",
-    "reason": "Right Medial Ankle",
+    "reason": "",
     "new": false,
     "was": "",
     "known": true,
@@ -3072,7 +3142,7 @@
       "much": "+16.1 DK without him (12 games)",
       "score": 16.1,
       "min": 24.8,
-      "dk": 24.4,
+      "dk": 24.3,
       "avg": 15.1
      },
      {
@@ -3082,7 +3152,7 @@
       "much": "+8.0 DK without him (14 games)",
       "score": 8.0,
       "min": 24.5,
-      "dk": 29.5,
+      "dk": 29.4,
       "avg": 26.1
      }
     ],
@@ -3128,7 +3198,7 @@
       "much": "+7.4 DK without him (7 games)",
       "score": 7.4,
       "min": 25.0,
-      "dk": 23.5,
+      "dk": 23.6,
       "avg": 22.2
      }
     ],
@@ -3200,7 +3270,7 @@
       "much": "+6.0 DK without him (13 games)",
       "score": 6.0,
       "min": 15.9,
-      "dk": 14.3,
+      "dk": 14.2,
       "avg": 16.0
      },
      {
@@ -3210,7 +3280,7 @@
       "much": "+5.9 DK without him (12 games)",
       "score": 5.9,
       "min": 29.7,
-      "dk": 34.3,
+      "dk": 34.2,
       "avg": 37.1
      }
     ],
@@ -3245,8 +3315,8 @@
       "why": "12 minutes, up from 7",
       "much": "+11.9 DK without him (6 games)",
       "score": 11.9,
-      "min": 11.4,
-      "dk": 11.7,
+      "min": 12.3,
+      "dk": 13.0,
       "avg": 9.4
      },
      {
@@ -3255,19 +3325,19 @@
       "why": "21 minutes, up from 14",
       "much": "+10.2 DK without him (11 games)",
       "score": 10.2,
-      "min": 18.2,
-      "dk": 18.6,
+      "min": 19.8,
+      "dk": 20.3,
       "avg": 19.0
      },
      {
-      "player": "Svi Mykhailiuk",
-      "salary": 3900,
-      "why": "22 minutes, up from 16",
-      "much": "+7.8 DK without him (11 games)",
-      "score": 7.8,
-      "min": 21.9,
-      "dk": 15.6,
-      "avg": 13.8
+      "player": "Keyonte George",
+      "salary": 8200,
+      "why": "39 minutes, 30 points, 10 assists (11/18)",
+      "much": "+8.9 DK projected vs. last 3",
+      "score": 8.850000000000001,
+      "min": 32.6,
+      "dk": 36.6,
+      "avg": 37.4
      }
     ],
     "estimate": false
@@ -3302,7 +3372,7 @@
       "much": "+6.8 DK without him (14 games)",
       "score": 6.8,
       "min": 26.4,
-      "dk": 34.6,
+      "dk": 34.8,
       "avg": 34.0
      },
      {
@@ -3347,8 +3417,8 @@
       "why": "same minutes, more production",
       "much": "+9.9 DK without him (15 games)",
       "score": 9.9,
-      "min": 27.3,
-      "dk": 28.5,
+      "min": 29.4,
+      "dk": 31.1,
       "avg": 31.1
      },
      {
@@ -3357,8 +3427,8 @@
       "why": "same minutes, more production",
       "much": "+9.5 DK without him (9 games)",
       "score": 9.5,
-      "min": 11.4,
-      "dk": 11.7,
+      "min": 12.3,
+      "dk": 13.0,
       "avg": 9.4
      },
      {
@@ -3367,8 +3437,8 @@
       "why": "19 minutes, up from 13",
       "much": "+8.0 DK without him (15 games)",
       "score": 8.0,
-      "min": 15.1,
-      "dk": 9.5,
+      "min": 16.4,
+      "dk": 10.1,
       "avg": 11.2
      }
     ],
@@ -3404,7 +3474,7 @@
       "much": "+13.7 DK without him (10 games)",
       "score": 13.7,
       "min": 29.6,
-      "dk": 32.1,
+      "dk": 32.2,
       "avg": 33.4
      },
      {
@@ -3414,7 +3484,7 @@
       "much": "+9.8 DK without him (7 games)",
       "score": 9.8,
       "min": 20.6,
-      "dk": 19.4,
+      "dk": 19.5,
       "avg": 21.7
      },
      {
@@ -3424,7 +3494,7 @@
       "much": "+9.5 DK without him (10 games)",
       "score": 9.5,
       "min": 23.2,
-      "dk": 14.7,
+      "dk": 14.6,
       "avg": 15.5
      }
     ],
@@ -3480,7 +3550,7 @@
       "much": "+8.2 DK without him (8 games)",
       "score": 8.2,
       "min": 21.4,
-      "dk": 26.1,
+      "dk": 26.0,
       "avg": 20.0
      }
     ],
