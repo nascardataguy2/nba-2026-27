@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "6:28 PM ET",
+ "updated": "6:32 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -34,12 +34,7 @@
        "min": 17.0
       }
      ],
-     "q": [
-      {
-       "player": "Karl-Anthony Towns",
-       "min": 38.7
-      }
-     ]
+     "q": []
     }
    },
    "key": "OG Anunoby and Andre Drummond are out, so Jose Alvarado and Josh Hart and James Wiseman should play more than usual."
@@ -59,6 +54,10 @@
     "PHI": {
      "out": [
       {
+       "player": "Dean Wade",
+       "min": 28.7
+      },
+      {
        "player": "Jaylen Brown",
        "min": 26.3
       }
@@ -66,11 +65,7 @@
      "q": [
       {
        "player": "Joel Embiid",
-       "min": 30.6
-      },
-      {
-       "player": "Dean Wade",
-       "min": 24.0
+       "min": 33.9
       }
      ]
     },
@@ -92,7 +87,7 @@
      "q": []
     }
    },
-   "key": "Tyrese Haliburton and T.J. McConnell are out, so Jalen Slawson and Andrew Nembhard and Jarace Walker should play more than usual."
+   "key": "Dean Wade and Jaylen Brown are out, so VJ Edgecombe and Anfernee Simons and Kentavious Caldwell-Pope should play more than usual."
   },
   {
    "away": "MIL",
@@ -476,6 +471,22 @@
  ],
  "changed": [
   {
+   "player": "Dean Wade",
+   "team": "PHI",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:34 PM"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "6:34 PM"
+  },
+  {
    "player": "Kelly Oubre Jr.",
    "team": "IND",
    "status": "Available",
@@ -538,25 +549,30 @@
    "was": "",
    "why": "",
    "time": "1:55 PM"
-  },
-  {
-   "player": "LaMelo Ball",
-   "team": "MIN",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Left Ankle Sprain",
-   "time": "1:55 PM"
-  },
-  {
-   "player": "Larry Nance Jr.",
-   "team": "IND",
-   "status": "Probable",
-   "was": "Questionable",
-   "why": "Right Ankle Bruise",
-   "time": "1:55 PM"
   }
  ],
  "chg": [
+  {
+   "key": "NYK",
+   "team": "NYK",
+   "head": "Towns CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "James Wiseman",
+     "salary": 3000,
+     "much": "+14.0 DK without Towns"
+    },
+    {
+     "player": "Landry Shamet",
+     "salary": 5200,
+     "much": "+11.3 DK without Towns"
+    }
+   ],
+   "time": "6:34 PM",
+   "size": 49.3
+  },
   {
    "key": "LAL",
    "team": "LAL",
@@ -637,27 +653,6 @@
    "size": 29.9
   },
   {
-   "key": "Karl-Anthony Towns",
-   "team": "NYK",
-   "head": "Karl-Anthony Towns QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "James Wiseman",
-     "salary": 3000,
-     "much": "+14.0 DK without him (1 game)"
-    },
-    {
-     "player": "Landry Shamet",
-     "salary": 5200,
-     "much": "+11.3 DK without him (1 game)"
-    }
-   ],
-   "time": "11:55 AM",
-   "size": 24.6
-  },
-  {
    "key": "IND",
    "team": "IND",
    "head": "Jr. CLEARED",
@@ -721,6 +716,27 @@
    "size": 17.8
   },
   {
+   "key": "Dean Wade",
+   "team": "PHI",
+   "head": "Dean Wade OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Anfernee Simons",
+     "salary": 4100,
+     "much": "+9.1 DK projected vs. last 3"
+    },
+    {
+     "player": "Tyrese Maxey",
+     "salary": 8700,
+     "much": "+7.9 DK projected vs. last 3"
+    }
+   ],
+   "time": "6:34 PM",
+   "size": 16.2
+  },
+  {
    "key": "Andre Drummond",
    "team": "NYK",
    "head": "Andre Drummond OUT",
@@ -728,14 +744,9 @@
    "act": "Play",
    "names": [
     {
-     "player": "James Wiseman",
-     "salary": 3000,
-     "much": "+3.5 DK projected vs. last 3"
-    },
-    {
-     "player": "Jalen Brunson",
-     "salary": 9500,
-     "much": "+10.9 DK projected vs. last 3"
+     "player": "Karl-Anthony Towns",
+     "salary": 9600,
+     "much": "+12.0 DK projected vs. last 3"
     }
    ],
    "time": "10:32 AM",
@@ -777,27 +788,6 @@
    ],
    "time": "11:55 AM",
    "size": 11.3
-  },
-  {
-   "key": "Dean Wade",
-   "team": "PHI",
-   "head": "Dean Wade QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "LeBron James",
-     "salary": 8100,
-     "much": "about +18.4 DK"
-    },
-    {
-     "player": "Jabari Walker",
-     "salary": 4200,
-     "much": "about +6.4 DK"
-    }
-   ],
-   "time": "1:55 PM",
-   "size": 8.1
   }
  ],
  "sits": [
@@ -971,6 +961,61 @@
    ]
   },
   {
+   "team": "PHI",
+   "outs": [
+    {
+     "player": "Dean Wade",
+     "min": 28.7,
+     "note": "Dean Wade was moved from questionable to out for tonight on the NBA's 06:30 PM injury report. He had averaged 31 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    },
+    {
+     "player": "Jaylen Brown",
+     "min": 26.3,
+     "note": "Jaylen Brown left Wednesday's game against Miami at halftime with left hamstring tightness and was sent for imaging. He is ruled out for Friday at Indiana.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 55.0,
+   "benefits": [
+    {
+     "player": "VJ Edgecombe",
+     "salary": 6400,
+     "why": "40 minutes, up from 34",
+     "much": "+9.6 DK without them (2 games)",
+     "score": 9.6,
+     "min": 38.3,
+     "dk": 35.9,
+     "avg": 32.6
+    },
+    {
+     "player": "Anfernee Simons",
+     "salary": 4100,
+     "why": "started 1 of 2",
+     "much": "+7.7 DK without them (2 games)",
+     "score": 7.7,
+     "min": 26.9,
+     "dk": 21.2,
+     "avg": 16.4
+    },
+    {
+     "player": "Kentavious Caldwell-Pope",
+     "salary": 3900,
+     "why": "started 2 of 2",
+     "much": "+6.8 DK without them (2 games)",
+     "score": 6.8,
+     "min": 28.9,
+     "dk": 18.3,
+     "avg": 14.6
+    }
+   ],
+   "split_of": [
+    "Dean Wade",
+    "Jaylen Brown"
+   ]
+  },
+  {
    "team": "IND",
    "outs": [
     {
@@ -1023,54 +1068,6 @@
    "split_of": [
     "Tyrese Haliburton",
     "T.J. McConnell"
-   ]
-  },
-  {
-   "team": "PHI",
-   "outs": [
-    {
-     "player": "Jaylen Brown",
-     "min": 26.3,
-     "note": "Jaylen Brown left Wednesday's game against Miami at halftime with left hamstring tightness and was sent for imaging. He is ruled out for Friday at Indiana.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 26.3,
-   "benefits": [
-    {
-     "player": "Anfernee Simons",
-     "salary": 4100,
-     "why": "32 minutes, up from 20",
-     "much": "+9.7 DK without him (3 games)",
-     "score": 9.7,
-     "min": 25.0,
-     "dk": 19.7,
-     "avg": 16.4
-    },
-    {
-     "player": "Kentavious Caldwell-Pope",
-     "salary": 3900,
-     "why": "started 2 of 3",
-     "much": "+5.3 DK without him (3 games)",
-     "score": 5.3,
-     "min": 24.8,
-     "dk": 15.7,
-     "avg": 14.6
-    },
-    {
-     "player": "Jabari Walker",
-     "salary": 4200,
-     "why": "same minutes, more production",
-     "much": "+5.1 DK without him (2 games)",
-     "score": 5.1,
-     "min": 12.5,
-     "dk": 12.7,
-     "avg": 15.1
-    }
-   ],
-   "split_of": [
-    "Jaylen Brown"
    ]
   },
   {
@@ -1260,11 +1257,11 @@
    "salary": 4300
   },
   {
-   "player": "Kyle Kuzma",
-   "team": "MIL",
-   "own": 9.8,
-   "dk": 28.2,
-   "salary": 5100
+   "player": "Trey Lyles",
+   "team": "MIN",
+   "own": 6.8,
+   "dk": 19.6,
+   "salary": 3600
   }
  ],
  "last": {
@@ -1356,8 +1353,8 @@
   ]
  },
  "injuries": {
-  "report": "06:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_15PM.pdf",
+  "report": "06:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1440,34 +1437,14 @@
     "min": 17.0,
     "benefits": [
      {
-      "player": "James Wiseman",
-      "salary": 3000,
-      "why": "projected 14 minutes tonight, up from 10",
-      "much": "+3.5 DK projected vs. last 3",
-      "score": 3.466666666666667,
-      "min": 14.4,
-      "dk": 16.3,
-      "avg": 8.8
-     },
-     {
-      "player": "Jalen Brunson",
-      "salary": 9500,
-      "why": "projected 36 minutes tonight",
-      "much": "+10.9 DK projected vs. last 3",
-      "score": 10.850000000000001,
-      "min": 35.5,
-      "dk": 49.1,
-      "avg": 41.4
-     },
-     {
-      "player": "Mikal Bridges",
-      "salary": 5100,
-      "why": "projected 32 minutes tonight",
-      "much": "+4.6 DK projected vs. last 3",
-      "score": 4.550000000000001,
-      "min": 32.5,
-      "dk": 27.8,
-      "avg": 19.2
+      "player": "Karl-Anthony Towns",
+      "salary": 9600,
+      "why": "subs in for him 34 of 72 times",
+      "much": "+12.0 DK projected vs. last 3",
+      "score": 11.983333333333341,
+      "min": 38.7,
+      "dk": 65.4,
+      "avg": 49.3
      }
     ],
     "estimate": false
@@ -1525,62 +1502,6 @@
    {
     "last": {
      "date": "2026-11-25",
-     "dk": 44.0,
-     "min": 33,
-     "opp": "CLE",
-     "ha": "vs",
-     "res": "W",
-     "score": "121-102"
-    },
-    "game": "MIA at NYK",
-    "time": "2026-11-28T00:00Z",
-    "team": "NYK",
-    "player": "Karl-Anthony Towns",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Available",
-    "known": true,
-    "changed_at": "11:55 AM",
-    "salary": 9600,
-    "min": 31.7,
-    "benefits": [
-     {
-      "player": "James Wiseman",
-      "salary": 3000,
-      "why": "25 minutes, up from 5",
-      "much": "+14.0 DK without him (1 game)",
-      "score": 14.0,
-      "min": 14.4,
-      "dk": 16.3,
-      "avg": 8.8
-     },
-     {
-      "player": "Landry Shamet",
-      "salary": 5200,
-      "why": "started that game",
-      "much": "+11.3 DK without him (1 game)",
-      "score": 11.3,
-      "min": 33.8,
-      "dk": 26.1,
-      "avg": 18.1
-     },
-     {
-      "player": "Jalen Brunson",
-      "salary": 9500,
-      "why": "same minutes, more production",
-      "much": "+6.7 DK without him (1 game)",
-      "score": 6.7,
-      "min": 35.5,
-      "dk": 49.1,
-      "avg": 41.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-25",
      "dk": 60.5,
      "min": 36,
      "opp": "PHI",
@@ -1600,6 +1521,31 @@
     "changed_at": "5:34 PM",
     "salary": 11300,
     "min": 32.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-25",
+     "dk": 44.0,
+     "min": 33,
+     "opp": "CLE",
+     "ha": "vs",
+     "res": "W",
+     "score": "121-102"
+    },
+    "game": "MIA at NYK",
+    "time": "2026-11-28T00:00Z",
+    "team": "NYK",
+    "player": "Karl-Anthony Towns",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:34 PM",
+    "salary": 9600,
+    "min": 31.7,
     "benefits": [],
     "estimate": false
    },
@@ -1631,6 +1577,62 @@
    {
     "last": {
      "date": "2026-11-25",
+     "dk": 14.5,
+     "min": 26,
+     "opp": "MIA",
+     "ha": "vs",
+     "res": "W",
+     "score": "111-104"
+    },
+    "game": "PHI at IND",
+    "time": "2026-11-28T00:30Z",
+    "team": "PHI",
+    "player": "Dean Wade",
+    "status": "Out",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "6:34 PM",
+    "salary": 4000,
+    "min": 28.7,
+    "benefits": [
+     {
+      "player": "Anfernee Simons",
+      "salary": 4100,
+      "why": "projected 27 minutes tonight, up from 25",
+      "much": "+9.1 DK projected vs. last 3",
+      "score": 9.116666666666665,
+      "min": 26.9,
+      "dk": 21.2,
+      "avg": 16.4
+     },
+     {
+      "player": "Tyrese Maxey",
+      "salary": 8700,
+      "why": "projected 37 minutes tonight",
+      "much": "+7.9 DK projected vs. last 3",
+      "score": 7.866666666666667,
+      "min": 36.7,
+      "dk": 43.2,
+      "avg": 42.0
+     },
+     {
+      "player": "Kentavious Caldwell-Pope",
+      "salary": 3900,
+      "why": "projected 29 minutes tonight",
+      "much": "+4.7 DK projected vs. last 3",
+      "score": 4.716666666666667,
+      "min": 28.9,
+      "dk": 18.3,
+      "avg": 14.6
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-25",
      "dk": 8.8,
      "min": 17,
      "opp": "MIA",
@@ -1657,8 +1659,8 @@
       "why": "32 minutes, up from 20",
       "much": "+9.7 DK without him (3 games)",
       "score": 9.7,
-      "min": 25.0,
-      "dk": 19.7,
+      "min": 26.9,
+      "dk": 21.2,
       "avg": 16.4
      },
      {
@@ -1667,8 +1669,8 @@
       "why": "started 2 of 3",
       "much": "+5.3 DK without him (3 games)",
       "score": 5.3,
-      "min": 24.8,
-      "dk": 15.7,
+      "min": 28.9,
+      "dk": 18.3,
       "avg": 14.6
      },
      {
@@ -1677,8 +1679,8 @@
       "why": "same minutes, more production",
       "much": "+5.1 DK without him (2 games)",
       "score": 5.1,
-      "min": 12.5,
-      "dk": 12.7,
+      "min": 14.0,
+      "dk": 14.2,
       "avg": 15.1
      }
     ],
@@ -1850,8 +1852,8 @@
       "why": "16 minutes, up from 12",
       "much": "+10.4 DK without him (4 games)",
       "score": 10.4,
-      "min": 11.3,
-      "dk": 9.1,
+      "min": 11.6,
+      "dk": 9.4,
       "avg": 10.7
      },
      {
@@ -1860,65 +1862,9 @@
       "why": "started 3 of 4",
       "much": "+6.2 DK without him (4 games)",
       "score": 6.2,
-      "min": 12.5,
-      "dk": 12.7,
+      "min": 14.0,
+      "dk": 14.2,
       "avg": 15.1
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-25",
-     "dk": 14.5,
-     "min": 26,
-     "opp": "MIA",
-     "ha": "vs",
-     "res": "W",
-     "score": "111-104"
-    },
-    "game": "PHI at IND",
-    "time": "2026-11-28T00:30Z",
-    "team": "PHI",
-    "player": "Dean Wade",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "1:55 PM",
-    "salary": 4000,
-    "min": 28.7,
-    "benefits": [
-     {
-      "player": "LeBron James",
-      "salary": 8100,
-      "why": "plays his position (F), 31 minutes tonight",
-      "much": "about +18.4 DK",
-      "score": 18.403292181069954,
-      "min": 30.6,
-      "dk": 36.4,
-      "avg": 39.6
-     },
-     {
-      "player": "Jabari Walker",
-      "salary": 4200,
-      "why": "plays his position (F), 12 minutes tonight",
-      "much": "about +6.4 DK",
-      "score": 6.42092886537331,
-      "min": 12.5,
-      "dk": 12.7,
-      "avg": 15.1
-     },
-     {
-      "player": "Dom Barlow",
-      "salary": 3700,
-      "why": "plays his position (F), 14 minutes tonight",
-      "much": "about +5.7 DK",
-      "score": 5.662551440329218,
-      "min": 13.6,
-      "dk": 11.2,
-      "avg": null
      }
     ],
     "estimate": false
