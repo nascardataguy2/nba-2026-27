@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "2:53 PM ET",
+ "updated": "3:54 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -471,13 +471,26 @@
        "min": 12.7
       }
      ],
-     "q": []
+     "q": [
+      {
+       "player": "Hansen Yang",
+       "min": 8.3
+      }
+     ]
     }
    },
    "key": "Damian Lillard and Ja Morant are out, so Deni Avdija and Jrue Holiday and Donovan Clingan should play more than usual."
   }
  ],
  "changed": [
+  {
+   "player": "Hansen Yang",
+   "team": "POR",
+   "status": "Questionable",
+   "was": "",
+   "why": "Left Ankle Sprain",
+   "time": "3:55 PM"
+  },
   {
    "player": "Austin Reaves",
    "team": "LAL",
@@ -549,14 +562,6 @@
    "was": "Doubtful",
    "why": "Left Calf Strain",
    "time": "1:55 PM"
-  },
-  {
-   "player": "Mitchell Robinson",
-   "team": "BOS",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "12:55 PM"
   }
  ],
  "chg": [
@@ -612,7 +617,7 @@
     {
      "player": "Scoot Henderson",
      "salary": 4400,
-     "much": "+4.6 DK projected vs. last 3"
+     "much": "+4.3 DK projected vs. last 3"
     }
    ],
    "time": "1:55 PM",
@@ -808,8 +813,8 @@
      "why": "29 minutes, up from 26",
      "much": "+7.3 DK without them (8 games)",
      "score": 7.3,
-     "min": 31.5,
-     "dk": 35.2,
+     "min": 31.0,
+     "dk": 34.6,
      "avg": 28.7
     },
     {
@@ -818,8 +823,8 @@
      "why": "same minutes, more production",
      "much": "+5.4 DK without them (8 games)",
      "score": 5.4,
-     "min": 27.7,
-     "dk": 38.4,
+     "min": 27.3,
+     "dk": 37.8,
      "avg": 34.0
     }
    ],
@@ -1189,6 +1194,13 @@
  ],
  "chalk": [
   {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "own": 38.0,
+   "dk": 40.1,
+   "salary": 6600
+  },
+  {
    "player": "Brandon Ingram",
    "team": "LAC",
    "own": 38.0,
@@ -1198,21 +1210,14 @@
   {
    "player": "Isaiah Joe",
    "team": "DET",
-   "own": 38.0,
+   "own": 32.9,
    "dk": 25.2,
    "salary": 4700
   },
   {
-   "player": "Daniss Jenkins",
-   "team": "DET",
-   "own": 35.1,
-   "dk": 40.1,
-   "salary": 6600
-  },
-  {
    "player": "Charles Bassey",
    "team": "GSW",
-   "own": 33.7,
+   "own": 31.8,
    "dk": 26.3,
    "salary": 4700
   }
@@ -1329,8 +1334,8 @@
   ]
  },
  "injuries": {
-  "report": "02:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_02_45PM.pdf",
+  "report": "03:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_03_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -2271,10 +2276,10 @@
       "player": "Scoot Henderson",
       "salary": 4400,
       "why": "subs in for him 14 of 85 times",
-      "much": "+4.6 DK projected vs. last 3",
-      "score": 4.583333333333332,
-      "min": 26.3,
-      "dk": 22.0,
+      "much": "+4.3 DK projected vs. last 3",
+      "score": 4.283333333333331,
+      "min": 25.9,
+      "dk": 21.7,
       "avg": 16.1
      }
     ],
@@ -3552,8 +3557,8 @@
       "why": "same minutes, more production",
       "much": "+6.8 DK without him (14 games)",
       "score": 6.8,
-      "min": 27.7,
-      "dk": 38.4,
+      "min": 27.3,
+      "dk": 37.8,
       "avg": 34.0
      },
      {
@@ -3562,8 +3567,8 @@
       "why": "24 minutes, up from 19",
       "much": "+5.3 DK without him (14 games)",
       "score": 5.3,
-      "min": 26.3,
-      "dk": 22.0,
+      "min": 25.9,
+      "dk": 21.7,
       "avg": 16.1
      }
     ],
@@ -3776,8 +3781,8 @@
       "why": "same minutes, more production",
       "much": "+5.6 DK without him (12 games)",
       "score": 5.6,
-      "min": 31.5,
-      "dk": 35.2,
+      "min": 31.0,
+      "dk": 34.6,
       "avg": 28.7
      }
     ],
@@ -3810,30 +3815,30 @@
       "player": "Scoot Henderson",
       "salary": 4400,
       "why": "projected 26 minutes tonight",
-      "much": "+4.6 DK projected vs. last 3",
-      "score": 4.583333333333332,
-      "min": 26.3,
-      "dk": 22.0,
+      "much": "+4.3 DK projected vs. last 3",
+      "score": 4.283333333333331,
+      "min": 25.9,
+      "dk": 21.7,
       "avg": 16.1
      },
      {
       "player": "Toumani Camara",
       "salary": 5500,
-      "why": "projected 34 minutes tonight",
-      "much": "+12.2 DK projected vs. last 3",
-      "score": 12.233333333333333,
-      "min": 33.7,
-      "dk": 27.9,
+      "why": "projected 33 minutes tonight",
+      "much": "+11.8 DK projected vs. last 3",
+      "score": 11.833333333333334,
+      "min": 33.2,
+      "dk": 27.5,
       "avg": 21.9
      },
      {
       "player": "Robert Williams",
       "salary": 4000,
-      "why": "projected 19 minutes tonight",
-      "much": "+9.0 DK projected vs. last 3",
-      "score": 9.033333333333333,
-      "min": 18.8,
-      "dk": 23.2,
+      "why": "projected 18 minutes tonight",
+      "much": "+8.7 DK projected vs. last 3",
+      "score": 8.733333333333333,
+      "min": 18.5,
+      "dk": 22.9,
       "avg": 18.6
      }
     ],
@@ -3849,6 +3854,11 @@
    {
     "player": "Jusuf Nurkic",
     "team": "UTA",
+    "status": "Questionable"
+   },
+   {
+    "player": "Hansen Yang",
+    "team": "POR",
     "status": "Questionable"
    },
    {
