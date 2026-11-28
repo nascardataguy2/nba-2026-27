@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "6:58 PM ET",
+ "updated": "7:02 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -43,7 +43,7 @@
    "away": "PHI",
    "home": "IND",
    "time": "2026-11-28T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 228.5,
    "fav": "PHI",
    "line": 3.5,
@@ -62,12 +62,7 @@
        "min": 26.3
       }
      ],
-     "q": [
-      {
-       "player": "Joel Embiid",
-       "min": 33.9
-      }
-     ]
+     "q": []
     },
     "IND": {
      "out": [
@@ -87,13 +82,13 @@
      "q": []
     }
    },
-   "key": "Dean Wade and Jaylen Brown are out, so VJ Edgecombe and Anfernee Simons and Kentavious Caldwell-Pope should play more than usual."
+   "key": "Dean Wade and Jaylen Brown are out, so Joel Embiid and VJ Edgecombe and Anfernee Simons should play more than usual."
   },
   {
    "away": "MIL",
    "home": "DET",
    "time": "2026-11-28T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 219.5,
    "fav": "DET",
    "line": 10.5,
@@ -131,7 +126,7 @@
    "away": "BKN",
    "home": "TOR",
    "time": "2026-11-28T00:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 218.5,
    "fav": "TOR",
    "line": 9.5,
@@ -310,7 +305,7 @@
    "away": "DEN",
    "home": "UTA",
    "time": "2026-11-28T02:30Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 232.5,
    "fav": "DEN",
    "line": 9.5,
@@ -354,7 +349,7 @@
    "away": "NOP",
    "home": "LAC",
    "time": "2026-11-28T02:30Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 230.5,
    "fav": "LAC",
    "line": 2.5,
@@ -388,7 +383,7 @@
    "away": "LAL",
    "home": "SAS",
    "time": "2026-11-28T02:30Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 226.5,
    "fav": "SAS",
    "line": 5.5,
@@ -420,7 +415,7 @@
    "away": "GSW",
    "home": "POR",
    "time": "2026-11-28T02:30Z",
-   "slate": "late",
+   "slate": "main",
    "ou": 217.5,
    "fav": "POR",
    "line": 7.5,
@@ -470,6 +465,14 @@
   }
  ],
  "changed": [
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "7:04 PM"
+  },
   {
    "player": "Larry Nance Jr.",
    "team": "IND",
@@ -541,14 +544,6 @@
    "was": "Questionable",
    "why": "",
    "time": "2:54 PM"
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "status": "Questionable",
-   "was": "",
-   "why": "",
-   "time": "2:54 PM"
   }
  ],
  "chg": [
@@ -572,6 +567,27 @@
    ],
    "time": "6:34 PM",
    "size": 49.3
+  },
+  {
+   "key": "PHI",
+   "team": "PHI",
+   "head": "Embiid CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Adem Bona",
+     "salary": 3500,
+     "much": "+10.4 DK without Embiid"
+    },
+    {
+     "player": "Jabari Walker",
+     "salary": 4200,
+     "much": "+6.2 DK without Embiid"
+    }
+   ],
+   "time": "7:04 PM",
+   "size": 40.9
   },
   {
    "key": "LAL",
@@ -723,14 +739,9 @@
    "act": "Play",
    "names": [
     {
-     "player": "Anfernee Simons",
-     "salary": 4100,
-     "much": "+9.2 DK projected vs. last 3"
-    },
-    {
-     "player": "Tyrese Maxey",
-     "salary": 8700,
-     "much": "+8.0 DK projected vs. last 3"
+     "player": "Joel Embiid",
+     "salary": 8800,
+     "much": "+11.5 DK without him (4 games)"
     }
    ],
    "time": "6:34 PM",
@@ -980,6 +991,16 @@
    "lost": 55.0,
    "benefits": [
     {
+     "player": "Joel Embiid",
+     "salary": 8800,
+     "why": "35 minutes, up from 32",
+     "much": "+20.0 DK without them (2 games)",
+     "score": 20.0,
+     "min": 33.9,
+     "dk": 43.4,
+     "avg": 40.9
+    },
+    {
      "player": "VJ Edgecombe",
      "salary": 6400,
      "why": "40 minutes, up from 34",
@@ -998,16 +1019,6 @@
      "min": 26.9,
      "dk": 21.3,
      "avg": 16.4
-    },
-    {
-     "player": "Kentavious Caldwell-Pope",
-     "salary": 3900,
-     "why": "started 2 of 2",
-     "much": "+6.8 DK without them (2 games)",
-     "score": 6.8,
-     "min": 28.9,
-     "dk": 18.3,
-     "avg": 14.6
     }
    ],
    "split_of": [
@@ -1215,23 +1226,9 @@
   {
    "player": "Daniss Jenkins",
    "team": "DET",
-   "own": 57.0,
+   "own": 38.0,
    "dk": 40.0,
    "salary": 6600
-  },
-  {
-   "player": "Isaiah Joe",
-   "team": "DET",
-   "own": 40.0,
-   "dk": 25.1,
-   "salary": 4700
-  },
-  {
-   "player": "Brandon Ingram",
-   "team": "LAC",
-   "own": 38.0,
-   "dk": 31.3,
-   "salary": 5800
   },
   {
    "player": "Nah'Shon Hyland",
@@ -1239,29 +1236,43 @@
    "own": 38.0,
    "dk": 21.8,
    "salary": 4100
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "own": 36.0,
+   "dk": 37.6,
+   "salary": 6000
+  },
+  {
+   "player": "Isaiah Joe",
+   "team": "DET",
+   "own": 34.8,
+   "dk": 25.1,
+   "salary": 4700
   }
  ],
  "leverage": [
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 0.8,
+   "own": 9.0,
    "dk": 29.3,
    "salary": 5100
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 0.8,
+   "own": 0.9,
    "dk": 24.5,
    "salary": 4300
   },
   {
-   "player": "Trey Lyles",
-   "team": "MIN",
-   "own": 6.0,
-   "dk": 19.6,
-   "salary": 3600
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "own": 5.6,
+   "dk": 26.5,
+   "salary": 5000
   }
  ],
  "last": {
@@ -1358,8 +1369,8 @@
   ]
  },
  "injuries": {
-  "report": "06:45 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_45PM.pdf",
+  "report": "07:00 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_00PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1382,7 +1393,7 @@
     "was": "Doubtful",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 6500,
+    "salary": null,
     "min": 38.7,
     "benefits": [
      {
@@ -1438,7 +1449,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "10:32 AM",
-    "salary": 4900,
+    "salary": null,
     "min": 17.0,
     "benefits": [
      {
@@ -1474,7 +1485,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 3700,
+    "salary": null,
     "min": 10.3,
     "benefits": [],
     "estimate": false
@@ -1499,7 +1510,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 3100,
+    "salary": null,
     "min": 8.0,
     "benefits": [],
     "estimate": false
@@ -1603,34 +1614,14 @@
     "min": 28.7,
     "benefits": [
      {
-      "player": "Anfernee Simons",
-      "salary": 4100,
-      "why": "projected 27 minutes tonight, up from 25",
-      "much": "+9.2 DK projected vs. last 3",
-      "score": 9.216666666666667,
-      "min": 26.9,
-      "dk": 21.3,
-      "avg": 16.4
-     },
-     {
-      "player": "Tyrese Maxey",
-      "salary": 8700,
-      "why": "projected 37 minutes tonight",
-      "much": "+8.0 DK projected vs. last 3",
-      "score": 7.9666666666666615,
-      "min": 36.7,
-      "dk": 43.3,
-      "avg": 42.0
-     },
-     {
-      "player": "Kentavious Caldwell-Pope",
-      "salary": 3900,
-      "why": "projected 29 minutes tonight",
-      "much": "+4.7 DK projected vs. last 3",
-      "score": 4.716666666666667,
-      "min": 28.9,
-      "dk": 18.3,
-      "avg": 14.6
+      "player": "Joel Embiid",
+      "salary": 8800,
+      "why": "34 minutes, up from 31",
+      "much": "+11.5 DK without him (4 games)",
+      "score": 11.5,
+      "min": 33.9,
+      "dk": 43.4,
+      "avg": 40.9
      }
     ],
     "estimate": false
@@ -1659,6 +1650,16 @@
     "min": 26.3,
     "benefits": [
      {
+      "player": "Joel Embiid",
+      "salary": 8800,
+      "why": "same minutes, more production",
+      "much": "+10.5 DK without him (3 games)",
+      "score": 10.5,
+      "min": 33.9,
+      "dk": 43.4,
+      "avg": 40.9
+     },
+     {
       "player": "Anfernee Simons",
       "salary": 4100,
       "why": "32 minutes, up from 20",
@@ -1677,16 +1678,6 @@
       "min": 28.9,
       "dk": 18.3,
       "avg": 14.6
-     },
-     {
-      "player": "Jabari Walker",
-      "salary": 4200,
-      "why": "same minutes, more production",
-      "much": "+5.1 DK without him (2 games)",
-      "score": 5.1,
-      "min": 14.0,
-      "dk": 14.3,
-      "avg": 15.1
      }
     ],
     "estimate": false
@@ -1842,36 +1833,15 @@
     "time": "2026-11-28T00:30Z",
     "team": "PHI",
     "player": "Joel Embiid",
-    "status": "Questionable",
+    "status": "Available",
     "reason": "Illness",
     "new": true,
-    "was": "Out",
+    "was": "Questionable",
     "known": true,
-    "changed_at": "",
+    "changed_at": "7:04 PM",
     "salary": 8800,
     "min": 34.0,
-    "benefits": [
-     {
-      "player": "Adem Bona",
-      "salary": 3500,
-      "why": "16 minutes, up from 12",
-      "much": "+10.4 DK without him (4 games)",
-      "score": 10.4,
-      "min": 11.6,
-      "dk": 9.4,
-      "avg": 10.7
-     },
-     {
-      "player": "Jabari Walker",
-      "salary": 4200,
-      "why": "started 3 of 4",
-      "much": "+6.2 DK without him (4 games)",
-      "score": 6.2,
-      "min": 14.0,
-      "dk": 14.3,
-      "avg": 15.1
-     }
-    ],
+    "benefits": [],
     "estimate": false
    },
    {
@@ -1944,7 +1914,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "12:55 PM",
-    "salary": 3800,
+    "salary": null,
     "min": 16.3,
     "benefits": [
      {
@@ -2000,7 +1970,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": 8300,
+    "salary": null,
     "min": 30.3,
     "benefits": [
      {
@@ -2267,7 +2237,7 @@
     "team": "SAS",
     "player": "Dylan Harper",
     "status": "Questionable",
-    "reason": "",
+    "reason": "Left Hip External",
     "new": true,
     "was": "Out",
     "known": true,
@@ -2964,7 +2934,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 5600,
+    "salary": null,
     "min": 28.7,
     "benefits": [
      {
@@ -3020,7 +2990,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 15.3,
     "benefits": [
      {
@@ -3076,7 +3046,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3900,
+    "salary": null,
     "min": 11.0,
     "benefits": [],
     "estimate": false
@@ -3101,7 +3071,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 9200,
+    "salary": null,
     "min": 34.0,
     "benefits": [
      {
@@ -3157,7 +3127,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8500,
+    "salary": null,
     "min": 28.0,
     "benefits": [
      {
@@ -3193,7 +3163,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4000,
+    "salary": null,
     "min": 16.0,
     "benefits": [
      {
@@ -3249,7 +3219,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4700,
+    "salary": null,
     "min": 14.7,
     "benefits": [
      {
@@ -3295,7 +3265,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3100,
+    "salary": null,
     "min": 13.7,
     "benefits": [
      {
@@ -3377,7 +3347,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4000,
+    "salary": null,
     "min": 13.3,
     "benefits": [
      {

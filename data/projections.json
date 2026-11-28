@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "6:58 PM ET",
+ "updated": "7:02 PM ET",
  "games": [
   {
    "away": "MIA",
@@ -22,7 +22,7 @@
    "time": "2026-11-28T00:30Z",
    "fav": "DET",
    "line": 10.5,
-   "slate": "main"
+   "slate": "late"
   },
   {
    "away": "PHI",
@@ -33,7 +33,7 @@
    "time": "2026-11-28T00:30Z",
    "fav": "PHI",
    "line": 3.5,
-   "slate": "main"
+   "slate": "late"
   },
   {
    "away": "BKN",
@@ -44,7 +44,7 @@
    "time": "2026-11-28T00:30Z",
    "fav": "TOR",
    "line": 9.5,
-   "slate": "main"
+   "slate": "late"
   },
   {
    "away": "ATL",
@@ -88,7 +88,7 @@
    "time": "2026-11-28T02:30Z",
    "fav": "LAC",
    "line": 2.5,
-   "slate": "late"
+   "slate": "main"
   },
   {
    "away": "GSW",
@@ -99,7 +99,7 @@
    "time": "2026-11-28T02:30Z",
    "fav": "POR",
    "line": 7.5,
-   "slate": "late"
+   "slate": "main"
   },
   {
    "away": "LAL",
@@ -110,7 +110,7 @@
    "time": "2026-11-28T02:30Z",
    "fav": "SAS",
    "line": 5.5,
-   "slate": "late"
+   "slate": "main"
   },
   {
    "away": "DEN",
@@ -121,7 +121,7 @@
    "time": "2026-11-28T02:30Z",
    "fav": "DEN",
    "line": 9.5,
-   "slate": "late"
+   "slate": "main"
   }
  ],
  "players": [
@@ -157,7 +157,7 @@
    "pos": "C",
    "salary": 11700,
    "dkid": "45109971",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 37.0,
@@ -173,7 +173,7 @@
    "dk": 59.2,
    "value": 5.06,
    "note": "",
-   "own": 28.7
+   "own": 25.7
   },
   {
    "player": "Victor Wembanyama",
@@ -182,7 +182,7 @@
    "pos": "C",
    "salary": 12000,
    "dkid": "45109969",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 29.9,
@@ -198,7 +198,7 @@
    "dk": 56.8,
    "value": 4.74,
    "note": "",
-   "own": 20.8
+   "own": 10.6
   },
   {
    "player": "Deni Avdija",
@@ -207,7 +207,7 @@
    "pos": "SF/PF",
    "salary": 9200,
    "dkid": "45109973",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 36.0,
@@ -223,7 +223,7 @@
    "dk": 54.5,
    "value": 5.92,
    "note": "More minutes with Damian Lillard out: he played 35.5 minutes a game in the 2 games without him this season.",
-   "own": 30.1
+   "own": 26.3
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -257,7 +257,7 @@
    "pos": "PG",
    "salary": 12200,
    "dkid": "45109966",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 33.6,
@@ -273,7 +273,7 @@
    "dk": 53.8,
    "value": 4.41,
    "note": "Moved toward his recent minutes (35.3 a game).",
-   "own": 7.4
+   "own": 1.0
   },
   {
    "player": "Scottie Barnes",
@@ -281,8 +281,8 @@
    "opp": "BKN",
    "pos": "PG/SF",
    "salary": 9100,
-   "dkid": "45109158",
-   "slate": "main",
+   "dkid": "45113921",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 36.5,
@@ -298,7 +298,7 @@
    "dk": 50.2,
    "value": 5.52,
    "note": "More minutes with RJ Barrett and Kawhi Leonard out: he played 37.5 minutes a game in the 2 games without them this season.",
-   "own": 33.0
+   "own": 30.3
   },
   {
    "player": "Jayson Tatum",
@@ -357,7 +357,7 @@
    "pos": "PG",
    "salary": 8800,
    "dkid": "45109977",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 37.8,
@@ -373,7 +373,7 @@
    "dk": 45.2,
    "value": 5.13,
    "note": "",
-   "own": 25.5
+   "own": 13.9
   },
   {
    "player": "Joel Embiid",
@@ -381,10 +381,10 @@
    "opp": "IND",
    "pos": "C",
    "salary": 8800,
-   "dkid": "45109163",
-   "slate": "main",
+   "dkid": "45113734",
+   "slate": "late",
    "start": true,
-   "q": true,
+   "q": false,
    "min": 33.9,
    "usg": 29.0,
    "ou": 228.5,
@@ -398,7 +398,7 @@
    "dk": 43.4,
    "value": 4.94,
    "note": "",
-   "own": 17.5
+   "own": 27.1
   },
   {
    "player": "Tyrese Maxey",
@@ -406,8 +406,8 @@
    "opp": "IND",
    "pos": "PG",
    "salary": 8700,
-   "dkid": "45109165",
-   "slate": "main",
+   "dkid": "45113876",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 36.7,
@@ -423,7 +423,7 @@
    "dk": 43.3,
    "value": 4.98,
    "note": "",
-   "own": 6.3
+   "own": 24.0
   },
   {
    "player": "Ayo Dosunmu",
@@ -448,7 +448,7 @@
    "dk": 43.0,
    "value": 6.14,
    "note": "More minutes with Anthony Edwards out: he played 33.3 minutes a game in the 15 games without him this season.",
-   "own": 12.4
+   "own": 13.3
   },
   {
    "player": "Jalen Johnson",
@@ -473,7 +473,7 @@
    "dk": 42.5,
    "value": 4.57,
    "note": "",
-   "own": 3.9
+   "own": 3.5
   },
   {
    "player": "Devin Booker",
@@ -496,9 +496,9 @@
    "blk": 0.3,
    "to": 2.8,
    "dk": 42.5,
-   "value": 4.95,
+   "value": 4.94,
    "note": "",
-   "own": 5.6
+   "own": 8.0
   },
   {
    "player": "Cooper Flagg",
@@ -531,8 +531,8 @@
    "opp": "MIL",
    "pos": "PF",
    "salary": 7100,
-   "dkid": "45109237",
-   "slate": "main",
+   "dkid": "45113984",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 32.7,
@@ -548,7 +548,7 @@
    "dk": 42.0,
    "value": 5.92,
    "note": "More minutes with Cade Cunningham and Duncan Robinson out: he played 32.5 minutes a game in the 2 games without them this season.",
-   "own": 26.6
+   "own": 30.5
   },
   {
    "player": "Tyler Herro",
@@ -556,8 +556,8 @@
    "opp": "DET",
    "pos": "PG/SG",
    "salary": 7700,
-   "dkid": "45109213",
-   "slate": "main",
+   "dkid": "45113826",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 35.0,
@@ -573,7 +573,7 @@
    "dk": 41.8,
    "value": 5.42,
    "note": "",
-   "own": 1.3
+   "own": 12.7
   },
   {
    "player": "LeBron James",
@@ -581,8 +581,8 @@
    "opp": "IND",
    "pos": "PF",
    "salary": 8100,
-   "dkid": "45109187",
-   "slate": "main",
+   "dkid": "45113698",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 33.9,
@@ -598,7 +598,7 @@
    "dk": 40.4,
    "value": 4.99,
    "note": "",
-   "own": 13.0
+   "own": 25.3
   },
   {
    "player": "Bam Adebayo",
@@ -623,7 +623,7 @@
    "dk": 40.1,
    "value": 4.83,
    "note": "",
-   "own": 1.8
+   "own": 0.9
   },
   {
    "player": "Daniss Jenkins",
@@ -631,8 +631,8 @@
    "opp": "MIL",
    "pos": "PG/SG",
    "salary": 6600,
-   "dkid": "45109258",
-   "slate": "main",
+   "dkid": "45113872",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 35.7,
@@ -648,7 +648,7 @@
    "dk": 40.0,
    "value": 6.06,
    "note": "More minutes with Cade Cunningham and Duncan Robinson out: he played 35.5 minutes a game in the 2 games without them this season.",
-   "own": 57.0
+   "own": 38.0
   },
   {
    "player": "Jaden McDaniels",
@@ -673,7 +673,7 @@
    "dk": 39.9,
    "value": 5.12,
    "note": "More minutes with Anthony Edwards out: he played 34.8 minutes a game in the 15 games without him this season.",
-   "own": 7.0
+   "own": 7.4
   },
   {
    "player": "Ty Jerome",
@@ -698,7 +698,7 @@
    "dk": 39.2,
    "value": 4.9,
    "note": "Moved toward his recent minutes (27.0 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Donovan Clingan",
@@ -707,7 +707,7 @@
    "pos": "C",
    "salary": 7300,
    "dkid": "45110017",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 27.3,
@@ -723,7 +723,7 @@
    "dk": 37.7,
    "value": 5.16,
    "note": "Moved toward his recent minutes (27.0 a game).",
-   "own": 14.6
+   "own": 4.4
   },
   {
    "player": "Paul George",
@@ -748,7 +748,7 @@
    "dk": 37.7,
    "value": 4.77,
    "note": "",
-   "own": 8.9
+   "own": 8.3
   },
   {
    "player": "Dyson Daniels",
@@ -773,7 +773,7 @@
    "dk": 37.7,
    "value": 5.31,
    "note": "More minutes with CJ McCollum out: he played 37.0 minutes a game in the 3 games without him this season.",
-   "own": 10.9
+   "own": 13.0
   },
   {
    "player": "Yaxel Lendeborg",
@@ -782,7 +782,7 @@
    "pos": "SF/PF",
    "salary": 8500,
    "dkid": "45109980",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 32.2,
@@ -798,7 +798,7 @@
    "dk": 37.6,
    "value": 4.42,
    "note": "Moved toward his recent minutes (32.7 a game).",
-   "own": 1.5
+   "own": 0.9
   },
   {
    "player": "Josh Hart",
@@ -848,7 +848,7 @@
    "dk": 37.0,
    "value": 5.21,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Immanuel Quickley",
@@ -856,8 +856,8 @@
    "opp": "BKN",
    "pos": "PG",
    "salary": 7500,
-   "dkid": "45109223",
-   "slate": "main",
+   "dkid": "45113823",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 32.6,
@@ -873,7 +873,7 @@
    "dk": 36.9,
    "value": 4.92,
    "note": "",
-   "own": 14.0
+   "own": 31.4
   },
   {
    "player": "Julius Randle",
@@ -881,8 +881,8 @@
    "opp": "TOR",
    "pos": "PF",
    "salary": 7500,
-   "dkid": "45109220",
-   "slate": "main",
+   "dkid": "45113731",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 33.8,
@@ -898,7 +898,7 @@
    "dk": 36.9,
    "value": 4.92,
    "note": "",
-   "own": 7.9
+   "own": 26.5
   },
   {
    "player": "Pascal Siakam",
@@ -906,8 +906,8 @@
    "opp": "PHI",
    "pos": "PF",
    "salary": 7700,
-   "dkid": "45109202",
-   "slate": "main",
+   "dkid": "45113747",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 30.7,
@@ -923,7 +923,7 @@
    "dk": 36.6,
    "value": 4.75,
    "note": "Moved toward his recent minutes (32.7 a game).",
-   "own": 11.2
+   "own": 25.4
   },
   {
    "player": "VJ Edgecombe",
@@ -931,8 +931,8 @@
    "opp": "IND",
    "pos": "PG/SG",
    "salary": 6400,
-   "dkid": "45109273",
-   "slate": "main",
+   "dkid": "45114027",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 38.3,
@@ -948,7 +948,7 @@
    "dk": 35.9,
    "value": 5.61,
    "note": "More minutes with Dean Wade and Jaylen Brown out: he played 40.5 minutes a game in the 2 games without them this season.",
-   "own": 22.6
+   "own": 29.1
   },
   {
    "player": "Day'Ron Sharpe",
@@ -956,8 +956,8 @@
    "opp": "TOR",
    "pos": "C",
    "salary": 5800,
-   "dkid": "45109324",
-   "slate": "main",
+   "dkid": "45113919",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 30.4,
@@ -973,7 +973,7 @@
    "dk": 35.9,
    "value": 6.2,
    "note": "More center minutes with Moritz Wagner out: the team has played 41 center minutes a game lately. More minutes with Nolan Traore out: he played 25.3 minutes a game in the 3 games without him this season.",
-   "own": 20.2
+   "own": 28.5
   },
   {
    "player": "Kyrie Irving",
@@ -996,9 +996,9 @@
    "blk": 0.4,
    "to": 1.7,
    "dk": 34.8,
-   "value": 4.4,
+   "value": 4.41,
    "note": "Moved toward his recent minutes (32.0 a game).",
-   "own": 5.8
+   "own": 7.5
   },
   {
    "player": "Jrue Holiday",
@@ -1007,7 +1007,7 @@
    "pos": "PG/SF",
    "salary": 6000,
    "dkid": "45110058",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 31.0,
@@ -1023,7 +1023,7 @@
    "dk": 34.6,
    "value": 5.77,
    "note": "",
-   "own": 32.3
+   "own": 27.4
   },
   {
    "player": "Darius Garland",
@@ -1032,7 +1032,7 @@
    "pos": "PG",
    "salary": 7600,
    "dkid": "45110004",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 30.7,
@@ -1048,7 +1048,7 @@
    "dk": 34.5,
    "value": 4.54,
    "note": "Moved toward his recent minutes (31.7 a game).",
-   "own": 22.1
+   "own": 9.6
   },
   {
    "player": "Onyeka Okongwu",
@@ -1071,9 +1071,9 @@
    "blk": 1.0,
    "to": 1.7,
    "dk": 34.0,
-   "value": 5.01,
+   "value": 5.0,
    "note": "",
-   "own": 6.2
+   "own": 5.8
   },
   {
    "player": "Stephon Castle",
@@ -1082,7 +1082,7 @@
    "pos": "SG",
    "salary": 7900,
    "dkid": "45109990",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 29.9,
@@ -1098,7 +1098,7 @@
    "dk": 33.9,
    "value": 4.29,
    "note": "",
-   "own": 12.5
+   "own": 2.3
   },
   {
    "player": "Keyonte George",
@@ -1107,7 +1107,7 @@
    "pos": "PG",
    "salary": 8200,
    "dkid": "45109984",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 30.3,
@@ -1123,7 +1123,7 @@
    "dk": 33.6,
    "value": 4.09,
    "note": "Moved toward his recent minutes (31.7 a game).",
-   "own": 19.6
+   "own": 6.4
   },
   {
    "player": "Walker Kessler",
@@ -1132,7 +1132,7 @@
    "pos": "C",
    "salary": 7400,
    "dkid": "45110011",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 30.1,
@@ -1148,7 +1148,7 @@
    "dk": 33.4,
    "value": 4.51,
    "note": "",
-   "own": 5.8
+   "own": 0.9
   },
   {
    "player": "Davion Mitchell",
@@ -1173,7 +1173,7 @@
    "dk": 33.2,
    "value": 4.55,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Zion Williamson",
@@ -1182,7 +1182,7 @@
    "pos": "PF",
    "salary": 7200,
    "dkid": "45110023",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 28.7,
@@ -1198,7 +1198,7 @@
    "dk": 32.8,
    "value": 4.56,
    "note": "Moved toward his recent minutes (36.3 a game).",
-   "own": 26.6
+   "own": 19.7
   },
   {
    "player": "Jeremiah Fears",
@@ -1207,7 +1207,7 @@
    "pos": "PG",
    "salary": 7500,
    "dkid": "45110001",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 29.6,
@@ -1223,7 +1223,7 @@
    "dk": 32.2,
    "value": 4.29,
    "note": "Moved toward his recent minutes (37.3 a game).",
-   "own": 21.2
+   "own": 10.0
   },
   {
    "player": "Austin Reaves",
@@ -1232,7 +1232,7 @@
    "pos": "PG/SG",
    "salary": 7800,
    "dkid": "45109997",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 31.1,
@@ -1248,7 +1248,7 @@
    "dk": 31.8,
    "value": 4.07,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Andrew Nembhard",
@@ -1256,8 +1256,8 @@
    "opp": "PHI",
    "pos": "PG/SG",
    "salary": 6700,
-   "dkid": "45109262",
-   "slate": "main",
+   "dkid": "45113819",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 32.5,
@@ -1273,7 +1273,7 @@
    "dk": 31.6,
    "value": 4.72,
    "note": "Moved toward his recent minutes (32.0 a game).",
-   "own": 14.4
+   "own": 26.0
   },
   {
    "player": "Miles Bridges",
@@ -1296,9 +1296,9 @@
    "blk": 0.6,
    "to": 1.1,
    "dk": 31.6,
-   "value": 4.71,
+   "value": 4.72,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Michael Porter Jr.",
@@ -1306,8 +1306,8 @@
    "opp": "TOR",
    "pos": "SG/SF",
    "salary": 7200,
-   "dkid": "45109240",
-   "slate": "main",
+   "dkid": "45113789",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 30.4,
@@ -1323,7 +1323,7 @@
    "dk": 31.6,
    "value": 4.39,
    "note": "Moved toward his recent minutes (33.0 a game).",
-   "own": 0.8
+   "own": 12.5
   },
   {
    "player": "Brandon Ingram",
@@ -1332,7 +1332,7 @@
    "pos": "SG",
    "salary": 5800,
    "dkid": "45110079",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 27.2,
@@ -1348,7 +1348,7 @@
    "dk": 31.3,
    "value": 5.39,
    "note": "Moved toward his recent minutes (26.5 a game).",
-   "own": 38.0
+   "own": 33.0
   },
   {
    "player": "Jonathan Kuminga",
@@ -1371,9 +1371,9 @@
    "blk": 0.7,
    "to": 2.3,
    "dk": 31.2,
-   "value": 4.96,
+   "value": 4.95,
    "note": "More minutes with Anthony Edwards out: he played 31.1 minutes a game in the 14 games without him this season.",
-   "own": 5.8
+   "own": 8.2
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -1398,7 +1398,7 @@
    "dk": 31.1,
    "value": 4.38,
    "note": "",
-   "own": 1.4
+   "own": 0.9
   },
   {
    "player": "Rudy Gobert",
@@ -1421,9 +1421,9 @@
    "blk": 1.1,
    "to": 1.6,
    "dk": 30.8,
-   "value": 5.04,
+   "value": 5.05,
    "note": "",
-   "own": 4.6
+   "own": 4.8
   },
   {
    "player": "Brandin Podziemski",
@@ -1432,7 +1432,7 @@
    "pos": "PG/SG",
    "salary": 6800,
    "dkid": "45110026",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 31.9,
@@ -1448,7 +1448,7 @@
    "dk": 30.6,
    "value": 4.51,
    "note": "",
-   "own": 3.7
+   "own": 0.9
   },
   {
    "player": "Jakob Poeltl",
@@ -1456,8 +1456,8 @@
    "opp": "BKN",
    "pos": "C",
    "salary": 5600,
-   "dkid": "45109326",
-   "slate": "main",
+   "dkid": "45113745",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 29.0,
@@ -1473,7 +1473,7 @@
    "dk": 30.3,
    "value": 5.42,
    "note": "More minutes with RJ Barrett and Kawhi Leonard out: he played 29.7 minutes a game in the 3 games without them this season.",
-   "own": 1.7
+   "own": 16.8
   },
   {
    "player": "Dylan Harper",
@@ -1482,8 +1482,8 @@
    "pos": "PG/SG",
    "salary": 7300,
    "dkid": "45110019",
-   "slate": "late",
-   "start": false,
+   "slate": "main",
+   "start": true,
    "q": true,
    "min": 28.4,
    "usg": 22.1,
@@ -1498,7 +1498,7 @@
    "dk": 30.0,
    "value": 4.12,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Cam Spencer",
@@ -1523,7 +1523,7 @@
    "dk": 29.8,
    "value": 4.97,
    "note": "More minutes with Cameron Boozer and Jerami Grant out: he played 25.0 minutes a game in the 3 games without them this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Kevin Huerter",
@@ -1531,8 +1531,8 @@
    "opp": "MIL",
    "pos": "SG/SF",
    "salary": 5800,
-   "dkid": "45109303",
-   "slate": "main",
+   "dkid": "45113781",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 31.8,
@@ -1548,7 +1548,7 @@
    "dk": 29.8,
    "value": 5.14,
    "note": "More minutes with Cade Cunningham and Duncan Robinson out: he played 34.0 minutes a game in the 2 games without them this season.",
-   "own": 19.4
+   "own": 28.4
   },
   {
    "player": "Jalen Green",
@@ -1573,7 +1573,7 @@
    "dk": 29.7,
    "value": 5.5,
    "note": "",
-   "own": 19.4
+   "own": 26.0
   },
   {
    "player": "Terrence Shannon Jr.",
@@ -1598,7 +1598,7 @@
    "dk": 29.5,
    "value": 6.15,
    "note": "",
-   "own": 24.4
+   "own": 27.1
   },
   {
    "player": "John Collins",
@@ -1606,8 +1606,8 @@
    "opp": "MIL",
    "pos": "PF/C",
    "salary": 5100,
-   "dkid": "45109378",
-   "slate": "main",
+   "dkid": "45113762",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 27.5,
@@ -1623,7 +1623,7 @@
    "dk": 29.3,
    "value": 5.75,
    "note": "",
-   "own": 0.8
+   "own": 9.0
   },
   {
    "player": "Paul Reed",
@@ -1631,8 +1631,8 @@
    "opp": "MIL",
    "pos": "C",
    "salary": 5700,
-   "dkid": "45109322",
-   "slate": "main",
+   "dkid": "45113796",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 23.7,
@@ -1648,7 +1648,7 @@
    "dk": 29.0,
    "value": 5.09,
    "note": "",
-   "own": 23.0
+   "own": 25.3
   },
   {
    "player": "Darryn Peterson",
@@ -1657,7 +1657,7 @@
    "pos": "PG/SG",
    "salary": 7700,
    "dkid": "45109993",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 27.3,
@@ -1673,7 +1673,7 @@
    "dk": 28.4,
    "value": 3.69,
    "note": "Moved toward his recent minutes (28.7 a game).",
-   "own": 4.6
+   "own": 0.9
   },
   {
    "player": "Derrick White",
@@ -1696,9 +1696,9 @@
    "blk": 0.8,
    "to": 1.9,
    "dk": 28.3,
-   "value": 4.36,
+   "value": 4.35,
    "note": "Moved toward his recent minutes (32.3 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Ivica Zubac",
@@ -1706,8 +1706,8 @@
    "opp": "PHI",
    "pos": "C",
    "salary": 6000,
-   "dkid": "45109293",
-   "slate": "main",
+   "dkid": "45113777",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 25.0,
@@ -1723,7 +1723,7 @@
    "dk": 28.2,
    "value": 4.69,
    "note": "Moved toward his recent minutes (28.0 a game).",
-   "own": 9.2
+   "own": 27.9
   },
   {
    "player": "Kyle Kuzma",
@@ -1731,8 +1731,8 @@
    "opp": "DET",
    "pos": "SF/PF",
    "salary": 5100,
-   "dkid": "45109361",
-   "slate": "main",
+   "dkid": "45113741",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 30.8,
@@ -1748,7 +1748,7 @@
    "dk": 28.2,
    "value": 5.53,
    "note": "More minutes with Kasparas Jakucionis out: he played 31.0 minutes a game in the 1 game without him this season.",
-   "own": 10.4
+   "own": 30.3
   },
   {
    "player": "Neemias Queta",
@@ -1781,8 +1781,8 @@
    "opp": "BKN",
    "pos": "SG/SF",
    "salary": 5900,
-   "dkid": "45109308",
-   "slate": "main",
+   "dkid": "45113999",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 35.0,
@@ -1798,7 +1798,7 @@
    "dk": 27.9,
    "value": 4.72,
    "note": "More minutes with RJ Barrett and Kawhi Leonard out: he played 35.7 minutes a game in the 3 games without them this season.",
-   "own": 4.6
+   "own": 21.3
   },
   {
    "player": "Mikal Bridges",
@@ -1823,7 +1823,7 @@
    "dk": 27.8,
    "value": 5.46,
    "note": "More minutes with OG Anunoby out: he played 32.0 minutes a game in the 3 games without him this season.",
-   "own": 10.9
+   "own": 16.9
   },
   {
    "player": "Toumani Camara",
@@ -1832,7 +1832,7 @@
    "pos": "SF",
    "salary": 5500,
    "dkid": "45110086",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 33.2,
@@ -1848,7 +1848,7 @@
    "dk": 27.6,
    "value": 5.02,
    "note": "",
-   "own": 11.6
+   "own": 0.9
   },
   {
    "player": "Christian Braun",
@@ -1857,7 +1857,7 @@
    "pos": "SG/SF",
    "salary": 5800,
    "dkid": "45110074",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 32.8,
@@ -1873,7 +1873,7 @@
    "dk": 27.2,
    "value": 4.69,
    "note": "",
-   "own": 10.4
+   "own": 0.9
   },
   {
    "player": "Jaime Jaquez Jr",
@@ -1881,8 +1881,8 @@
    "opp": "DET",
    "pos": "SG/SF",
    "salary": 5700,
-   "dkid": "45109298",
-   "slate": "main",
+   "dkid": "45113867",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 27.8,
@@ -1898,7 +1898,7 @@
    "dk": 27.0,
    "value": 4.73,
    "note": "",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Rui Hachimura",
@@ -1907,7 +1907,7 @@
    "pos": "PF",
    "salary": 5400,
    "dkid": "45110096",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 29.7,
@@ -1923,7 +1923,7 @@
    "dk": 26.9,
    "value": 4.98,
    "note": "",
-   "own": 27.7
+   "own": 17.8
   },
   {
    "player": "Ryan Rollins",
@@ -1931,8 +1931,8 @@
    "opp": "DET",
    "pos": "PG/SG",
    "salary": 5000,
-   "dkid": "45109382",
-   "slate": "main",
+   "dkid": "45113897",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 25.7,
@@ -1948,7 +1948,7 @@
    "dk": 26.5,
    "value": 5.3,
    "note": "",
-   "own": 0.8
+   "own": 5.6
   },
   {
    "player": "De'Aaron Fox",
@@ -1957,7 +1957,7 @@
    "pos": "PG",
    "salary": 6500,
    "dkid": "45110047",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": true,
    "min": 27.0,
@@ -1973,7 +1973,7 @@
    "dk": 26.4,
    "value": 4.06,
    "note": "",
-   "own": 5.0
+   "own": 0.9
   },
   {
    "player": "Charles Bassey",
@@ -1982,7 +1982,7 @@
    "pos": "C",
    "salary": 4700,
    "dkid": "45110130",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 21.4,
@@ -1998,7 +1998,7 @@
    "dk": 26.4,
    "value": 5.61,
    "note": "More minutes with Stephen Curry out: he played 21.6 minutes a game in the 7 games without him this season.",
-   "own": 30.3
+   "own": 27.0
   },
   {
    "player": "Saddiq Bey",
@@ -2007,7 +2007,7 @@
    "pos": "SG/SF",
    "salary": 6100,
    "dkid": "45110053",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 29.1,
@@ -2023,7 +2023,7 @@
    "dk": 26.3,
    "value": 4.31,
    "note": "More minutes with Dejounte Murray out: he played 34.6 minutes a game in the 10 games without him this season.",
-   "own": 25.4
+   "own": 15.2
   },
   {
    "player": "Dillon Brooks",
@@ -2048,7 +2048,7 @@
    "dk": 26.1,
    "value": 4.75,
    "note": "",
-   "own": 5.9
+   "own": 5.5
   },
   {
    "player": "Cameron Johnson",
@@ -2057,7 +2057,7 @@
    "pos": "SG/SF",
    "salary": 4900,
    "dkid": "45110119",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 31.9,
@@ -2073,7 +2073,7 @@
    "dk": 26.1,
    "value": 5.32,
    "note": "",
-   "own": 26.6
+   "own": 18.1
   },
   {
    "player": "Landry Shamet",
@@ -2098,7 +2098,7 @@
    "dk": 26.1,
    "value": 5.02,
    "note": "More minutes with OG Anunoby out: he played 32.7 minutes a game in the 3 games without him this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Myles Turner",
@@ -2106,8 +2106,8 @@
    "opp": "DET",
    "pos": "C",
    "salary": 5200,
-   "dkid": "45109356",
-   "slate": "main",
+   "dkid": "45113739",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 26.6,
@@ -2123,7 +2123,7 @@
    "dk": 26.0,
    "value": 4.99,
    "note": "",
-   "own": 0.8
+   "own": 5.8
   },
   {
    "player": "Payton Pritchard",
@@ -2146,9 +2146,9 @@
    "blk": 0.2,
    "to": 1.6,
    "dk": 25.9,
-   "value": 4.46,
+   "value": 4.47,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Trey Murphy",
@@ -2157,7 +2157,7 @@
    "pos": "SG/SF",
    "salary": 6700,
    "dkid": "45110038",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 28.1,
@@ -2173,7 +2173,7 @@
    "dk": 25.8,
    "value": 3.85,
    "note": "Moved toward his recent minutes (31.3 a game).",
-   "own": 13.7
+   "own": 2.4
   },
   {
    "player": "Isaiah Joe",
@@ -2181,8 +2181,8 @@
    "opp": "MIL",
    "pos": "SG/SF",
    "salary": 4700,
-   "dkid": "45109432",
-   "slate": "main",
+   "dkid": "45113814",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 23.4,
@@ -2198,7 +2198,7 @@
    "dk": 25.1,
    "value": 5.34,
    "note": "More minutes with Cade Cunningham and Duncan Robinson out: he played 23.0 minutes a game in the 2 games without them this season.",
-   "own": 40.0
+   "own": 34.8
   },
   {
    "player": "Daniel Gafford",
@@ -2221,7 +2221,7 @@
    "blk": 1.6,
    "to": 1.4,
    "dk": 25.1,
-   "value": 5.22,
+   "value": 5.23,
    "note": "Moved toward his recent minutes (28.7 a game).",
    "own": 20.0
   },
@@ -2232,7 +2232,7 @@
    "pos": "PF",
    "salary": 6700,
    "dkid": "45110030",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 27.9,
@@ -2248,7 +2248,7 @@
    "dk": 24.9,
    "value": 3.71,
    "note": "Moved toward his recent minutes (30.0 a game).",
-   "own": 5.2
+   "own": 0.9
   },
   {
    "player": "De'Anthony Melton",
@@ -2257,7 +2257,7 @@
    "pos": "PG/SG",
    "salary": 5400,
    "dkid": "45110092",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 24.2,
@@ -2273,7 +2273,7 @@
    "dk": 24.6,
    "value": 4.55,
    "note": "",
-   "own": 8.7
+   "own": 0.9
   },
   {
    "player": "Taylor Hendricks",
@@ -2298,7 +2298,7 @@
    "dk": 24.5,
    "value": 5.7,
    "note": "More minutes with Cameron Boozer and Jerami Grant out: he played 25.3 minutes a game in the 3 games without them this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Aaron Gordon",
@@ -2307,7 +2307,7 @@
    "pos": "PF/C",
    "salary": 5300,
    "dkid": "45110110",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 28.9,
@@ -2323,7 +2323,7 @@
    "dk": 24.3,
    "value": 4.58,
    "note": "",
-   "own": 25.6
+   "own": 12.9
   },
   {
    "player": "Allen Graves",
@@ -2331,8 +2331,8 @@
    "opp": "BKN",
    "pos": "SF/PF",
    "salary": 4600,
-   "dkid": "45109440",
-   "slate": "main",
+   "dkid": "45114035",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 30.0,
@@ -2348,7 +2348,7 @@
    "dk": 24.0,
    "value": 5.22,
    "note": "More minutes with RJ Barrett and Kawhi Leonard out: he played 31.7 minutes a game in the 3 games without them this season.",
-   "own": 7.2
+   "own": 25.4
   },
   {
    "player": "Aaron Wiggins",
@@ -2373,7 +2373,7 @@
    "dk": 23.9,
    "value": 4.51,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Derik Queen",
@@ -2382,7 +2382,7 @@
    "pos": "PF/C",
    "salary": 5200,
    "dkid": "45110101",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 20.2,
@@ -2398,7 +2398,7 @@
    "dk": 23.4,
    "value": 4.5,
    "note": "Moved toward his recent minutes (24.7 a game).",
-   "own": 15.3
+   "own": 2.4
   },
   {
    "player": "Devin Vassell",
@@ -2407,7 +2407,7 @@
    "pos": "SF",
    "salary": 5700,
    "dkid": "45110071",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 28.5,
@@ -2423,7 +2423,7 @@
    "dk": 23.4,
    "value": 4.11,
    "note": "",
-   "own": 7.1
+   "own": 0.9
   },
   {
    "player": "Brayden Burries",
@@ -2431,8 +2431,8 @@
    "opp": "DET",
    "pos": "PG/SG",
    "salary": 5700,
-   "dkid": "45109318",
-   "slate": "main",
+   "dkid": "45114060",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 21.6,
@@ -2448,7 +2448,7 @@
    "dk": 23.1,
    "value": 4.06,
    "note": "Moved toward his recent minutes (25.7 a game).",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Quentin Grimes",
@@ -2457,7 +2457,7 @@
    "pos": "SG/SF",
    "salary": 6600,
    "dkid": "45110033",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 29.1,
@@ -2473,7 +2473,7 @@
    "dk": 23.1,
    "value": 3.5,
    "note": "Moved toward his recent minutes (33.3 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Collin Gillespie",
@@ -2496,9 +2496,9 @@
    "blk": 0.1,
    "to": 1.4,
    "dk": 23.0,
-   "value": 4.59,
+   "value": 4.6,
    "note": "",
-   "own": 0.8
+   "own": 3.6
   },
   {
    "player": "Robert Williams",
@@ -2507,7 +2507,7 @@
    "pos": "C",
    "salary": 4000,
    "dkid": "45110202",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 18.5,
@@ -2523,7 +2523,7 @@
    "dk": 22.9,
    "value": 5.72,
    "note": "",
-   "own": 28.7
+   "own": 12.2
   },
   {
    "player": "Brook Lopez",
@@ -2532,7 +2532,7 @@
    "pos": "C",
    "salary": 5700,
    "dkid": "45110082",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 21.9,
@@ -2548,7 +2548,7 @@
    "dk": 22.8,
    "value": 4.01,
    "note": "Moved toward his recent minutes (21.3 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Danny Wolf",
@@ -2556,8 +2556,8 @@
    "opp": "TOR",
    "pos": "SF/PF",
    "salary": 4600,
-   "dkid": "45109448",
-   "slate": "main",
+   "dkid": "45113976",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 24.8,
@@ -2573,7 +2573,7 @@
    "dk": 22.7,
    "value": 4.93,
    "note": "",
-   "own": 0.8
+   "own": 4.9
   },
   {
    "player": "PJ Washington",
@@ -2596,9 +2596,9 @@
    "blk": 0.7,
    "to": 1.4,
    "dk": 22.6,
-   "value": 4.18,
+   "value": 4.19,
    "note": "Moved toward his recent minutes (25.0 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Kel'El Ware",
@@ -2606,8 +2606,8 @@
    "opp": "DET",
    "pos": "PF/C",
    "salary": 5000,
-   "dkid": "45109370",
-   "slate": "main",
+   "dkid": "45113964",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 19.1,
@@ -2623,7 +2623,7 @@
    "dk": 22.1,
    "value": 4.41,
    "note": "",
-   "own": 3.6
+   "own": 16.0
   },
   {
    "player": "Kelly Oubre",
@@ -2631,8 +2631,8 @@
    "opp": "PHI",
    "pos": "SG",
    "salary": 4800,
-   "dkid": "45109396",
-   "slate": "main",
+   "dkid": "45113736",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 25.4,
@@ -2648,7 +2648,7 @@
    "dk": 22.0,
    "value": 4.57,
    "note": "Moved toward his recent minutes (26.0 a game).",
-   "own": 3.1
+   "own": 17.2
   },
   {
    "player": "Julian Champagnie",
@@ -2657,7 +2657,7 @@
    "pos": "PF",
    "salary": 5400,
    "dkid": "45110089",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 27.0,
@@ -2673,7 +2673,7 @@
    "dk": 22.0,
    "value": 4.07,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Mikel Brown Jr.",
@@ -2681,8 +2681,8 @@
    "opp": "TOR",
    "pos": "PG/SG",
    "salary": 4800,
-   "dkid": "45109409",
-   "slate": "main",
+   "dkid": "45114056",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 24.9,
@@ -2698,7 +2698,7 @@
    "dk": 21.9,
    "value": 4.56,
    "note": "",
-   "own": 30.0
+   "own": 20.0
   },
   {
    "player": "Nah'Shon Hyland",
@@ -2748,7 +2748,7 @@
    "dk": 21.8,
    "value": 4.27,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Oso Ighodaro",
@@ -2771,9 +2771,9 @@
    "blk": 1.0,
    "to": 1.4,
    "dk": 21.7,
-   "value": 4.61,
+   "value": 4.62,
    "note": "",
-   "own": 0.8
+   "own": 1.8
   },
   {
    "player": "Draymond Green",
@@ -2782,7 +2782,7 @@
    "pos": "PF/C",
    "salary": 4800,
    "dkid": "45110124",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 24.5,
@@ -2798,7 +2798,7 @@
    "dk": 21.6,
    "value": 4.5,
    "note": "Moved toward his recent minutes (25.3 a game).",
-   "own": 14.5
+   "own": 1.3
   },
   {
    "player": "Scoot Henderson",
@@ -2807,7 +2807,7 @@
    "pos": "PG/SG",
    "salary": 4400,
    "dkid": "45110163",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 25.9,
@@ -2823,7 +2823,7 @@
    "dk": 21.5,
    "value": 4.89,
    "note": "",
-   "own": 28.5
+   "own": 21.1
   },
   {
    "player": "Javonte Green",
@@ -2831,8 +2831,8 @@
    "opp": "MIL",
    "pos": "PF",
    "salary": 4200,
-   "dkid": "45109494",
-   "slate": "main",
+   "dkid": "45113716",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 25.2,
@@ -2848,7 +2848,7 @@
    "dk": 21.5,
    "value": 5.12,
    "note": "More minutes with Cade Cunningham and Duncan Robinson out: he played 31.0 minutes a game in the 2 games without them this season.",
-   "own": 3.4
+   "own": 14.9
   },
   {
    "player": "Jamal Shead",
@@ -2856,8 +2856,8 @@
    "opp": "BKN",
    "pos": "PG/SG",
    "salary": 5000,
-   "dkid": "45109374",
-   "slate": "main",
+   "dkid": "45113890",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 22.6,
@@ -2873,7 +2873,7 @@
    "dk": 21.3,
    "value": 4.25,
    "note": "Moved toward his recent minutes (21.7 a game).",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Anfernee Simons",
@@ -2881,8 +2881,8 @@
    "opp": "IND",
    "pos": "PG/SG",
    "salary": 4100,
-   "dkid": "45109513",
-   "slate": "main",
+   "dkid": "45113802",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 26.9,
@@ -2898,7 +2898,7 @@
    "dk": 21.3,
    "value": 5.2,
    "note": "More minutes with Dean Wade and Jaylen Brown out: he played 32.0 minutes a game in the 2 games without them this season.",
-   "own": 0.8
+   "own": 4.5
   },
   {
    "player": "Zach Edey",
@@ -2921,9 +2921,9 @@
    "blk": 1.0,
    "to": 1.6,
    "dk": 20.7,
-   "value": 4.49,
+   "value": 4.5,
    "note": "",
-   "own": 6.6
+   "own": 8.3
   },
   {
    "player": "Kingston Flemings",
@@ -2948,7 +2948,7 @@
    "dk": 20.6,
    "value": 4.38,
    "note": "More minutes with CJ McCollum out: he played 27.0 minutes a game in the 1 game without him this season.",
-   "own": 5.0
+   "own": 7.3
   },
   {
    "player": "Yves Missi",
@@ -2957,7 +2957,7 @@
    "pos": "C",
    "salary": 5400,
    "dkid": "45110099",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 20.9,
@@ -2973,7 +2973,7 @@
    "dk": 20.5,
    "value": 3.79,
    "note": "Moved toward his recent minutes (26.7 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Aaron Nesmith",
@@ -2981,8 +2981,8 @@
    "opp": "PHI",
    "pos": "SF",
    "salary": 5000,
-   "dkid": "45109389",
-   "slate": "main",
+   "dkid": "45113830",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 26.6,
@@ -2998,7 +2998,7 @@
    "dk": 20.4,
    "value": 4.08,
    "note": "",
-   "own": 2.6
+   "own": 15.5
   },
   {
    "player": "Max Strus",
@@ -3007,7 +3007,7 @@
    "pos": "SG/SF",
    "salary": 4700,
    "dkid": "45110132",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 24.1,
@@ -3023,7 +3023,7 @@
    "dk": 20.3,
    "value": 4.32,
    "note": "",
-   "own": 6.6
+   "own": 0.9
   },
   {
    "player": "Jordan Goodwin",
@@ -3048,7 +3048,7 @@
    "dk": 20.3,
    "value": 4.51,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Obi Toppin",
@@ -3056,8 +3056,8 @@
    "opp": "PHI",
    "pos": "PF/C",
    "salary": 4400,
-   "dkid": "45109470",
-   "slate": "main",
+   "dkid": "45113798",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 20.6,
@@ -3073,7 +3073,7 @@
    "dk": 20.2,
    "value": 4.58,
    "note": "",
-   "own": 13.4
+   "own": 22.8
   },
   {
    "player": "Luguentz Dort",
@@ -3098,7 +3098,7 @@
    "dk": 20.2,
    "value": 5.05,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Jaylen Wells",
@@ -3123,7 +3123,7 @@
    "dk": 20.0,
    "value": 4.76,
    "note": "",
-   "own": 0.8
+   "own": 1.8
   },
   {
    "player": "Jose Alvarado",
@@ -3148,7 +3148,7 @@
    "dk": 20.0,
    "value": 5.27,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Egor Demin",
@@ -3156,8 +3156,8 @@
    "opp": "TOR",
    "pos": "PG/SG",
    "salary": 4500,
-   "dkid": "45109466",
-   "slate": "main",
+   "dkid": "45114031",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 23.1,
@@ -3173,7 +3173,7 @@
    "dk": 19.9,
    "value": 4.43,
    "note": "",
-   "own": 0.8
+   "own": 10.9
   },
   {
    "player": "Keldon Johnson",
@@ -3182,7 +3182,7 @@
    "pos": "SG/SF",
    "salary": 5300,
    "dkid": "45110105",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 23.1,
@@ -3198,7 +3198,7 @@
    "dk": 19.7,
    "value": 3.72,
    "note": "Moved toward his recent minutes (27.3 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Trey Lyles",
@@ -3223,7 +3223,7 @@
    "dk": 19.6,
    "value": 5.44,
    "note": "More minutes with Anthony Edwards out: he played 20.4 minutes a game in the 15 games without him this season.",
-   "own": 6.0
+   "own": 10.5
   },
   {
    "player": "Sidy Cissoko",
@@ -3232,7 +3232,7 @@
    "pos": "SG",
    "salary": 4100,
    "dkid": "45110178",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 24.9,
@@ -3248,7 +3248,7 @@
    "dk": 19.6,
    "value": 4.77,
    "note": "Moved toward his recent minutes (25.7 a game).",
-   "own": 28.3
+   "own": 9.5
   },
   {
    "player": "Jordan Poole",
@@ -3257,7 +3257,7 @@
    "pos": "PG/SG",
    "salary": 4600,
    "dkid": "45110144",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 20.6,
@@ -3273,7 +3273,7 @@
    "dk": 19.5,
    "value": 4.25,
    "note": "",
-   "own": 25.5
+   "own": 9.1
   },
   {
    "player": "Zaccharie Risacher",
@@ -3296,9 +3296,9 @@
    "blk": 0.6,
    "to": 1.1,
    "dk": 19.5,
-   "value": 4.63,
+   "value": 4.64,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Pelle Larsson",
@@ -3323,7 +3323,7 @@
    "dk": 19.4,
    "value": 4.05,
    "note": "Moved toward his recent minutes (24.3 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Jaxson Hayes",
@@ -3332,7 +3332,7 @@
    "pos": "C",
    "salary": 5000,
    "dkid": "45110117",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": true,
    "min": 21.3,
@@ -3348,7 +3348,7 @@
    "dk": 19.3,
    "value": 3.86,
    "note": "Moved toward his recent minutes (21.7 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Joan Beringer",
@@ -3371,9 +3371,9 @@
    "blk": 1.5,
    "to": 0.8,
    "dk": 19.0,
-   "value": 4.74,
+   "value": 4.75,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Javon Small",
@@ -3398,7 +3398,7 @@
    "dk": 19.0,
    "value": 3.96,
    "note": "Projected from his last 3 games.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Jake LaRavia",
@@ -3407,7 +3407,7 @@
    "pos": "SF/PF",
    "salary": 4600,
    "dkid": "45110137",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 26.6,
@@ -3423,7 +3423,7 @@
    "dk": 18.7,
    "value": 4.07,
    "note": "Moved toward his recent minutes (30.3 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Brice Sensabaugh",
@@ -3432,7 +3432,7 @@
    "pos": "PF",
    "salary": 5100,
    "dkid": "45110114",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 18.2,
@@ -3448,7 +3448,7 @@
    "dk": 18.6,
    "value": 3.64,
    "note": "More minutes with Lauri Markkanen and Jaren Jackson Jr. out: he played 21.3 minutes a game in the 11 games without them this season.",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Gui Santos",
@@ -3457,7 +3457,7 @@
    "pos": "SF/PF",
    "salary": 4500,
    "dkid": "45110155",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 20.5,
@@ -3473,7 +3473,7 @@
    "dk": 18.4,
    "value": 4.1,
    "note": "More minutes with Stephen Curry out: he played 19.9 minutes a game in the 8 games without him this season.",
-   "own": 7.3
+   "own": 0.9
   },
   {
    "player": "Collin Murray-Boyles",
@@ -3481,8 +3481,8 @@
    "opp": "BKN",
    "pos": "PF/C",
    "salary": 5900,
-   "dkid": "45109289",
-   "slate": "main",
+   "dkid": "45114008",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 19.0,
@@ -3498,7 +3498,7 @@
    "dk": 18.3,
    "value": 3.1,
    "note": "Moved toward his recent minutes (20.7 a game).",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Kentavious Caldwell-Pope",
@@ -3506,8 +3506,8 @@
    "opp": "IND",
    "pos": "SG/SF",
    "salary": 3900,
-   "dkid": "45109538",
-   "slate": "main",
+   "dkid": "45113707",
+   "slate": "late",
    "start": true,
    "q": false,
    "min": 28.9,
@@ -3523,7 +3523,7 @@
    "dk": 18.3,
    "value": 4.68,
    "note": "More minutes with Dean Wade and Jaylen Brown out: he played 33.5 minutes a game in the 2 games without them this season.",
-   "own": 0.8
+   "own": 4.0
   },
   {
    "player": "Derrick Jones Jr.",
@@ -3532,7 +3532,7 @@
    "pos": "SF",
    "salary": 4600,
    "dkid": "45110141",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 23.6,
@@ -3548,7 +3548,7 @@
    "dk": 18.2,
    "value": 3.96,
    "note": "Moved toward his recent minutes (24.0 a game).",
-   "own": 1.3
+   "own": 0.9
   },
   {
    "player": "Quenton Jackson",
@@ -3556,8 +3556,8 @@
    "opp": "PHI",
    "pos": "SG/SF",
    "salary": 4300,
-   "dkid": "45109476",
-   "slate": "main",
+   "dkid": "45113881",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 18.9,
@@ -3573,7 +3573,7 @@
    "dk": 18.2,
    "value": 4.24,
    "note": "More minutes with Tyrese Haliburton and T.J. McConnell out: he played 22.3 minutes a game in the 7 games without them this season.",
-   "own": 0.8
+   "own": 2.5
   },
   {
    "player": "Olivier-Maxence Prosper",
@@ -3596,9 +3596,9 @@
    "blk": 0.1,
    "to": 1.1,
    "dk": 17.9,
-   "value": 4.83,
+   "value": 4.84,
    "note": "More minutes with Cameron Boozer and Jerami Grant out: he played 20.3 minutes a game in the 3 games without them this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Isaiah Stewart",
@@ -3623,7 +3623,7 @@
    "dk": 17.9,
    "value": 4.59,
    "note": "More minutes with Cameron Boozer and Jerami Grant out: he played 18.7 minutes a game in the 3 games without them this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Corey Kispert",
@@ -3648,7 +3648,7 @@
    "dk": 17.8,
    "value": 5.39,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Keaton Wagler",
@@ -3657,7 +3657,7 @@
    "pos": "PG/SG",
    "salary": 4200,
    "dkid": "45110174",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 17.8,
@@ -3673,7 +3673,7 @@
    "dk": 17.6,
    "value": 4.19,
    "note": "",
-   "own": 29.2
+   "own": 10.5
   },
   {
    "player": "Caleb Martin",
@@ -3696,9 +3696,9 @@
    "blk": 0.3,
    "to": 1.0,
    "dk": 17.5,
-   "value": 3.9,
+   "value": 3.89,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Noah Clowney",
@@ -3706,8 +3706,8 @@
    "opp": "TOR",
    "pos": "SF/PF",
    "salary": 3800,
-   "dkid": "45109562",
-   "slate": "main",
+   "dkid": "45113949",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 23.0,
@@ -3723,7 +3723,7 @@
    "dk": 17.5,
    "value": 4.62,
    "note": "More minutes with Nolan Traore out: he played 24.0 minutes a game in the 3 games without him this season.",
-   "own": 1.8
+   "own": 13.2
   },
   {
    "player": "Jamison Battle",
@@ -3731,8 +3731,8 @@
    "opp": "BKN",
    "pos": "SF/PF",
    "salary": 4200,
-   "dkid": "45109497",
-   "slate": "main",
+   "dkid": "45113856",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 21.5,
@@ -3748,7 +3748,7 @@
    "dk": 17.3,
    "value": 4.11,
    "note": "More minutes with RJ Barrett and Kawhi Leonard out: he played 22.0 minutes a game in the 3 games without them this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Jusuf Nurkic",
@@ -3757,7 +3757,7 @@
    "pos": "C",
    "salary": 5900,
    "dkid": "45110069",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": true,
    "min": 14.5,
@@ -3773,7 +3773,7 @@
    "dk": 17.2,
    "value": 2.91,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Kris Murray",
@@ -3796,9 +3796,9 @@
    "blk": 0.4,
    "to": 0.9,
    "dk": 17.1,
-   "value": 4.49,
+   "value": 4.5,
    "note": "More minutes with Cameron Boozer and Jerami Grant out: he played 25.3 minutes a game in the 3 games without them this season.",
-   "own": 0.8
+   "own": 3.2
   },
   {
    "player": "Kris Dunn",
@@ -3807,7 +3807,7 @@
    "pos": "PG/SG",
    "salary": 4400,
    "dkid": "45110167",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 19.6,
@@ -3823,7 +3823,32 @@
    "dk": 17.0,
    "value": 3.87,
    "note": "",
-   "own": 1.2
+   "own": 0.9
+  },
+  {
+   "player": "Mohamed Bamba",
+   "team": "UTA",
+   "opp": "DEN",
+   "pos": "C",
+   "salary": 5600,
+   "dkid": "45110084",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 17.3,
+   "usg": 13.7,
+   "ou": 232.5,
+   "spread": 9.5,
+   "pts": 6.5,
+   "reb": 5.2,
+   "ast": 0.9,
+   "stl": 0.3,
+   "blk": 1.1,
+   "to": 0.5,
+   "dk": 16.9,
+   "value": 3.02,
+   "note": "",
+   "own": 0.9
   },
   {
    "player": "Bobby Portis",
@@ -3848,32 +3873,7 @@
    "dk": 16.9,
    "value": 3.76,
    "note": "",
-   "own": 0.8
-  },
-  {
-   "player": "Mohamed Bamba",
-   "team": "UTA",
-   "opp": "DEN",
-   "pos": "C",
-   "salary": 5600,
-   "dkid": "45110084",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 17.3,
-   "usg": 13.7,
-   "ou": 232.5,
-   "spread": 9.5,
-   "pts": 6.5,
-   "reb": 5.2,
-   "ast": 0.9,
-   "stl": 0.3,
-   "blk": 1.1,
-   "to": 0.5,
-   "dk": 16.9,
-   "value": 3.02,
-   "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Naji Marshall",
@@ -3896,9 +3896,9 @@
    "blk": 0.1,
    "to": 1.3,
    "dk": 16.8,
-   "value": 3.58,
+   "value": 3.57,
    "note": "",
-   "own": 1.4
+   "own": 2.4
   },
   {
    "player": "Ron Holland",
@@ -3906,8 +3906,8 @@
    "opp": "MIL",
    "pos": "SF/PF",
    "salary": 3500,
-   "dkid": "45109623",
-   "slate": "main",
+   "dkid": "45114019",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 16.0,
@@ -3923,7 +3923,7 @@
    "dk": 16.8,
    "value": 4.81,
    "note": "More minutes with Cade Cunningham and Duncan Robinson out: he played 17.0 minutes a game in the 1 game without them this season.",
-   "own": 7.8
+   "own": 26.8
   },
   {
    "player": "Matisse Thybulle",
@@ -3932,7 +3932,7 @@
    "pos": "SF/PF",
    "salary": 4400,
    "dkid": "45110159",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 23.0,
@@ -3948,7 +3948,57 @@
    "dk": 16.8,
    "value": 3.83,
    "note": "",
-   "own": 5.6
+   "own": 0.9
+  },
+  {
+   "player": "Collin Sexton",
+   "team": "LAL",
+   "opp": "SAS",
+   "pos": "PG/SG",
+   "salary": 4500,
+   "dkid": "45110151",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 18.1,
+   "usg": 24.4,
+   "ou": 226.5,
+   "spread": 5.5,
+   "pts": 10.1,
+   "reb": 1.6,
+   "ast": 2.1,
+   "stl": 0.6,
+   "blk": 0.1,
+   "to": 1.2,
+   "dk": 16.7,
+   "value": 3.72,
+   "note": "",
+   "own": 0.9
+  },
+  {
+   "player": "Khaman Maluach",
+   "team": "PHX",
+   "opp": "DAL",
+   "pos": "C",
+   "salary": 3900,
+   "dkid": "45109550",
+   "slate": "main",
+   "start": false,
+   "q": false,
+   "min": 16.7,
+   "usg": 14.9,
+   "ou": 226.5,
+   "spread": -2.5,
+   "pts": 6.6,
+   "reb": 5.5,
+   "ast": 0.7,
+   "stl": 0.3,
+   "blk": 1.0,
+   "to": 1.1,
+   "dk": 16.7,
+   "value": 4.28,
+   "note": "Moved toward his recent minutes (19.7 a game).",
+   "own": 0.9
   },
   {
    "player": "Andrew Wiggins",
@@ -3973,57 +4023,7 @@
    "dk": 16.7,
    "value": 3.98,
    "note": "",
-   "own": 0.8
-  },
-  {
-   "player": "Collin Sexton",
-   "team": "LAL",
-   "opp": "SAS",
-   "pos": "PG/SG",
-   "salary": 4500,
-   "dkid": "45110151",
-   "slate": "late",
-   "start": false,
-   "q": false,
-   "min": 18.1,
-   "usg": 24.4,
-   "ou": 226.5,
-   "spread": 5.5,
-   "pts": 10.1,
-   "reb": 1.6,
-   "ast": 2.1,
-   "stl": 0.6,
-   "blk": 0.1,
-   "to": 1.2,
-   "dk": 16.7,
-   "value": 3.72,
-   "note": "",
-   "own": 1.2
-  },
-  {
-   "player": "Khaman Maluach",
-   "team": "PHX",
-   "opp": "DAL",
-   "pos": "C",
-   "salary": 3900,
-   "dkid": "45109550",
-   "slate": "main",
-   "start": false,
-   "q": false,
-   "min": 16.7,
-   "usg": 14.9,
-   "ou": 226.5,
-   "spread": -2.5,
-   "pts": 6.6,
-   "reb": 5.5,
-   "ast": 0.7,
-   "stl": 0.3,
-   "blk": 1.0,
-   "to": 1.1,
-   "dk": 16.7,
-   "value": 4.27,
-   "note": "Moved toward his recent minutes (19.7 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Sam Hauser",
@@ -4046,9 +4046,9 @@
    "blk": 0.2,
    "to": 0.3,
    "dk": 16.6,
-   "value": 4.25,
+   "value": 4.26,
    "note": "More minutes with Mitchell Robinson out: he played 23.0 minutes a game in the 4 games without him this season.",
-   "own": 0.8
+   "own": 1.1
   },
   {
    "player": "Will Richard",
@@ -4057,7 +4057,7 @@
    "pos": "SG/SF",
    "salary": 3900,
    "dkid": "45110207",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 23.3,
@@ -4073,7 +4073,7 @@
    "dk": 16.3,
    "value": 4.17,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "James Wiseman",
@@ -4098,7 +4098,7 @@
    "dk": 16.3,
    "value": 5.43,
    "note": "Projected from his last 3 games. More minutes with OG Anunoby out: he played 15.5 minutes a game in the 2 games without him this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Jalen Slawson",
@@ -4106,8 +4106,8 @@
    "opp": "PHI",
    "pos": "SF/PF",
    "salary": 3900,
-   "dkid": "45109552",
-   "slate": "main",
+   "dkid": "45113836",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 15.8,
@@ -4123,7 +4123,7 @@
    "dk": 16.2,
    "value": 4.15,
    "note": "More minutes with Tyrese Haliburton and T.J. McConnell out: he played 18.4 minutes a game in the 7 games without them this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Luka Garza",
@@ -4146,9 +4146,9 @@
    "blk": 0.4,
    "to": 0.9,
    "dk": 16.2,
-   "value": 4.62,
+   "value": 4.63,
    "note": "More minutes with Mitchell Robinson out: he played 18.2 minutes a game in the 4 games without him this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Svi Mykhailiuk",
@@ -4157,7 +4157,7 @@
    "pos": "SG",
    "salary": 3900,
    "dkid": "45110204",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 21.9,
@@ -4173,7 +4173,7 @@
    "dk": 15.7,
    "value": 4.02,
    "note": "Moved toward his recent minutes (28.3 a game).",
-   "own": 4.4
+   "own": 0.9
   },
   {
    "player": "DeMar DeRozan",
@@ -4182,7 +4182,7 @@
    "pos": "SG/SF",
    "salary": 4000,
    "dkid": "45110197",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 19.2,
@@ -4198,7 +4198,7 @@
    "dk": 15.4,
    "value": 3.84,
    "note": "",
-   "own": 12.4
+   "own": 1.6
   },
   {
    "player": "Ziaire Williams",
@@ -4207,7 +4207,7 @@
    "pos": "SF/PF",
    "salary": 4100,
    "dkid": "45110181",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 20.3,
@@ -4223,7 +4223,7 @@
    "dk": 15.3,
    "value": 3.74,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Mike Conley",
@@ -4246,9 +4246,9 @@
    "blk": 0.3,
    "to": 0.8,
    "dk": 15.2,
-   "value": 4.91,
+   "value": 4.9,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Jarace Walker",
@@ -4256,8 +4256,8 @@
    "opp": "PHI",
    "pos": "SF",
    "salary": 3600,
-   "dkid": "45109605",
-   "slate": "main",
+   "dkid": "45113953",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 17.4,
@@ -4273,7 +4273,7 @@
    "dk": 15.0,
    "value": 4.17,
    "note": "More minutes with Tyrese Haliburton and T.J. McConnell out: he played 21.0 minutes a game in the 7 games without them this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Sandro Mamukelashvili",
@@ -4282,7 +4282,7 @@
    "pos": "C",
    "salary": 4600,
    "dkid": "45110128",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 17.0,
@@ -4298,7 +4298,7 @@
    "dk": 14.9,
    "value": 3.23,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Walter Clayton Jr.",
@@ -4321,9 +4321,9 @@
    "blk": 0.1,
    "to": 1.5,
    "dk": 14.9,
-   "value": 3.83,
+   "value": 3.82,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Isaiah Collier",
@@ -4332,7 +4332,7 @@
    "pos": "PG",
    "salary": 4000,
    "dkid": "45110194",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 14.7,
@@ -4348,7 +4348,7 @@
    "dk": 14.8,
    "value": 3.69,
    "note": "Moved toward his recent minutes (13.7 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Nate Ament",
@@ -4356,8 +4356,8 @@
    "opp": "DET",
    "pos": "SF/PF",
    "salary": 3600,
-   "dkid": "45109608",
-   "slate": "main",
+   "dkid": "45114049",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 20.1,
@@ -4373,7 +4373,7 @@
    "dk": 14.7,
    "value": 4.07,
    "note": "More minutes with Kasparas Jakucionis out: he played 22.0 minutes a game in the 1 game without him this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Herbert Jones",
@@ -4382,7 +4382,7 @@
    "pos": "SG/SF",
    "salary": 4000,
    "dkid": "45110185",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 23.2,
@@ -4398,7 +4398,7 @@
    "dk": 14.6,
    "value": 3.65,
    "note": "",
-   "own": 11.3
+   "own": 0.9
   },
   {
    "player": "Trayce Jackson-Davis",
@@ -4406,8 +4406,8 @@
    "opp": "BKN",
    "pos": "C",
    "salary": 3500,
-   "dkid": "45109627",
-   "slate": "main",
+   "dkid": "45113879",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 12.4,
@@ -4423,7 +4423,7 @@
    "dk": 14.4,
    "value": 4.12,
    "note": "",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Jabari Walker",
@@ -4431,8 +4431,8 @@
    "opp": "IND",
    "pos": "SF/PF",
    "salary": 4200,
-   "dkid": "45109505",
-   "slate": "main",
+   "dkid": "45113911",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 14.0,
@@ -4448,7 +4448,7 @@
    "dk": 14.3,
    "value": 3.4,
    "note": "More minutes with Dean Wade and Jaylen Brown out: he played 12.0 minutes a game in the 3 games without them this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Morez Johnson Jr.",
@@ -4473,7 +4473,7 @@
    "dk": 14.2,
    "value": 3.84,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Ryan Conwell",
@@ -4498,7 +4498,7 @@
    "dk": 14.1,
    "value": 3.71,
    "note": "Moved toward his recent minutes (24.3 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Al Horford",
@@ -4507,7 +4507,7 @@
    "pos": "C",
    "salary": 3400,
    "dkid": "45110243",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 15.8,
@@ -4523,7 +4523,7 @@
    "dk": 13.4,
    "value": 3.94,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Tyler Kolek",
@@ -4548,7 +4548,7 @@
    "dk": 13.3,
    "value": 3.33,
    "note": "More minutes with OG Anunoby out: he played 10.3 minutes a game in the 3 games without him this season.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "L.J. Cryer",
@@ -4557,7 +4557,7 @@
    "pos": "PG",
    "salary": 3800,
    "dkid": "45110217",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 14.5,
@@ -4573,7 +4573,7 @@
    "dk": 13.2,
    "value": 3.48,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Jay Huff",
@@ -4581,8 +4581,8 @@
    "opp": "PHI",
    "pos": "C",
    "salary": 3000,
-   "dkid": "45109717",
-   "slate": "main",
+   "dkid": "45113779",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 14.5,
@@ -4598,7 +4598,7 @@
    "dk": 13.2,
    "value": 4.4,
    "note": "More minutes with Tyrese Haliburton and T.J. McConnell out: he played 17.8 minutes a game in the 6 games without them this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Luke Kennard",
@@ -4621,9 +4621,9 @@
    "blk": 0.0,
    "to": 0.6,
    "dk": 13.1,
-   "value": 3.87,
+   "value": 3.85,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Luke Kornet",
@@ -4632,7 +4632,7 @@
    "pos": "C",
    "salary": 3800,
    "dkid": "45110212",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 15.5,
@@ -4648,7 +4648,7 @@
    "dk": 12.8,
    "value": 3.36,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Dom Barlow",
@@ -4656,8 +4656,8 @@
    "opp": "IND",
    "pos": "PF/C",
    "salary": 3700,
-   "dkid": "45109597",
-   "slate": "main",
+   "dkid": "45113980",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 15.7,
@@ -4673,7 +4673,7 @@
    "dk": 12.8,
    "value": 3.45,
    "note": "",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Gary Payton",
@@ -4682,7 +4682,7 @@
    "pos": "SG/SF",
    "salary": 3100,
    "dkid": "45110283",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 16.0,
@@ -4698,7 +4698,7 @@
    "dk": 12.7,
    "value": 4.09,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Zuby Ejiofor",
@@ -4723,7 +4723,7 @@
    "dk": 12.7,
    "value": 3.97,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Baylor Scheierman",
@@ -4746,9 +4746,9 @@
    "blk": 0.1,
    "to": 0.6,
    "dk": 12.5,
-   "value": 3.39,
+   "value": 3.38,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Keon Ellis",
@@ -4756,8 +4756,8 @@
    "opp": "TOR",
    "pos": "PG/SG",
    "salary": 3100,
-   "dkid": "45109702",
-   "slate": "main",
+   "dkid": "45113886",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 18.4,
@@ -4773,7 +4773,7 @@
    "dk": 12.5,
    "value": 4.03,
    "note": "More minutes with Nolan Traore out: he played 21.7 minutes a game in the 3 games without him this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Benedict Mathurin",
@@ -4782,7 +4782,7 @@
    "pos": "SF",
    "salary": 3800,
    "dkid": "45110220",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 15.5,
@@ -4798,7 +4798,7 @@
    "dk": 12.3,
    "value": 3.23,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Georges Niang",
@@ -4807,7 +4807,7 @@
    "pos": "PF",
    "salary": 3200,
    "dkid": "45110267",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 15.5,
@@ -4823,7 +4823,7 @@
    "dk": 12.0,
    "value": 3.75,
    "note": "Moved toward his recent minutes (14.0 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Pete Nance",
@@ -4831,8 +4831,8 @@
    "opp": "DET",
    "pos": "C",
    "salary": 3000,
-   "dkid": "45109891",
-   "slate": "main",
+   "dkid": "45113812",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 16.0,
@@ -4848,7 +4848,7 @@
    "dk": 11.8,
    "value": 3.92,
    "note": "Projected from his last 2 games.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Kyle Filipowski",
@@ -4857,7 +4857,7 @@
    "pos": "PF/C",
    "salary": 3400,
    "dkid": "45110245",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 11.4,
@@ -4873,7 +4873,7 @@
    "dk": 11.7,
    "value": 3.45,
    "note": "Moved toward his recent minutes (13.0 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Marvin Bagley III",
@@ -4882,7 +4882,7 @@
    "pos": "C",
    "salary": 3200,
    "dkid": "45110270",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 10.5,
@@ -4898,7 +4898,7 @@
    "dk": 11.4,
    "value": 3.55,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Isaiah Jackson",
@@ -4907,7 +4907,7 @@
    "pos": "C",
    "salary": 3400,
    "dkid": "45110241",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 10.0,
@@ -4923,7 +4923,7 @@
    "dk": 11.3,
    "value": 3.32,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Harrison Barnes",
@@ -4932,7 +4932,7 @@
    "pos": "SF/PF",
    "salary": 4000,
    "dkid": "45110190",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 18.5,
@@ -4948,7 +4948,7 @@
    "dk": 11.2,
    "value": 2.81,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Pacome Dadiet",
@@ -4973,7 +4973,7 @@
    "dk": 11.2,
    "value": 3.21,
    "note": "Projected from his last 3 games.",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Karlo Matkovic",
@@ -4982,7 +4982,7 @@
    "pos": "C",
    "salary": 3400,
    "dkid": "45110236",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 13.2,
@@ -4998,7 +4998,7 @@
    "dk": 10.8,
    "value": 3.18,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Hugo Gonzalez",
@@ -5023,7 +5023,7 @@
    "dk": 10.5,
    "value": 3.09,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "DeAndre Jordan",
@@ -5032,7 +5032,7 @@
    "pos": "C",
    "salary": 3000,
    "dkid": "45110362",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 11.0,
@@ -5048,7 +5048,7 @@
    "dk": 10.4,
    "value": 3.47,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Trevon Brazile",
@@ -5057,7 +5057,7 @@
    "pos": "PF/C",
    "salary": 3300,
    "dkid": "45110256",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 12.6,
@@ -5073,7 +5073,7 @@
    "dk": 10.1,
    "value": 3.06,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Larry Nance",
@@ -5081,8 +5081,8 @@
    "opp": "PHI",
    "pos": "PF/C",
    "salary": 3100,
-   "dkid": "45109695",
-   "slate": "main",
+   "dkid": "45113712",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 12.7,
@@ -5098,7 +5098,7 @@
    "dk": 10.1,
    "value": 3.25,
    "note": "More minutes with Tyrese Haliburton and T.J. McConnell out: he played 16.0 minutes a game in the 6 games without them this season.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Max Christie",
@@ -5121,9 +5121,9 @@
    "blk": 0.2,
    "to": 0.7,
    "dk": 10.0,
-   "value": 3.11,
+   "value": 3.12,
    "note": "Moved toward his recent minutes (14.7 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Ryan Dunn",
@@ -5146,9 +5146,9 @@
    "blk": 0.3,
    "to": 0.3,
    "dk": 9.9,
-   "value": 3.2,
+   "value": 3.19,
    "note": "Moved toward his recent minutes (9.3 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Josh Green",
@@ -5157,7 +5157,7 @@
    "pos": "SF",
    "salary": 3800,
    "dkid": "45110214",
-   "slate": "late",
+   "slate": "main",
    "start": true,
    "q": false,
    "min": 20.0,
@@ -5173,7 +5173,7 @@
    "dk": 9.9,
    "value": 2.61,
    "note": "More minutes with Lauri Markkanen and Jaren Jackson Jr. out: he played 22.6 minutes a game in the 11 games without them this season.",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Spencer Jones",
@@ -5182,7 +5182,7 @@
    "pos": "SF",
    "salary": 3500,
    "dkid": "45110233",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 17.5,
@@ -5198,7 +5198,7 @@
    "dk": 9.8,
    "value": 2.79,
    "note": "Moved toward his recent minutes (20.0 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Yanic Konan Niederhauser",
@@ -5207,7 +5207,7 @@
    "pos": "C",
    "salary": 3200,
    "dkid": "45110281",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 11.7,
@@ -5223,7 +5223,7 @@
    "dk": 9.8,
    "value": 3.06,
    "note": "Moved toward his recent minutes (14.0 a game).",
-   "own": 17.6
+   "own": 3.9
   },
   {
    "player": "Kobe Sanders",
@@ -5232,7 +5232,7 @@
    "pos": "SF/PF",
    "salary": 3300,
    "dkid": "45110252",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 12.5,
@@ -5248,7 +5248,7 @@
    "dk": 9.7,
    "value": 2.94,
    "note": "Moved toward his recent minutes (12.0 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Gradey Dick",
@@ -5257,7 +5257,7 @@
    "pos": "SF/PF",
    "salary": 3000,
    "dkid": "45110291",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 11.4,
@@ -5273,7 +5273,7 @@
    "dk": 9.5,
    "value": 3.18,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Josh Okogie",
@@ -5282,7 +5282,7 @@
    "pos": "SF/PF",
    "salary": 3500,
    "dkid": "45110229",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 15.1,
@@ -5298,7 +5298,7 @@
    "dk": 9.5,
    "value": 2.71,
    "note": "More minutes with Lauri Markkanen and Jaren Jackson Jr. out: he played 18.8 minutes a game in the 11 games without them this season.",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Adem Bona",
@@ -5306,8 +5306,8 @@
    "opp": "IND",
    "pos": "PF/C",
    "salary": 3500,
-   "dkid": "45109638",
-   "slate": "main",
+   "dkid": "45113939",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 11.6,
@@ -5323,7 +5323,7 @@
    "dk": 9.4,
    "value": 2.7,
    "note": "",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Simone Fontecchio",
@@ -5348,7 +5348,7 @@
    "dk": 9.4,
    "value": 2.94,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Chaney Johnson",
@@ -5356,8 +5356,8 @@
    "opp": "TOR",
    "pos": "PF/C",
    "salary": 3000,
-   "dkid": "45109719",
-   "slate": "main",
+   "dkid": "45114012",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 14.1,
@@ -5373,7 +5373,7 @@
    "dk": 9.3,
    "value": 3.09,
    "note": "",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Santi Aldama",
@@ -5398,7 +5398,7 @@
    "dk": 9.0,
    "value": 2.5,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Jarred Vanderbilt",
@@ -5407,7 +5407,7 @@
    "pos": "PF/C",
    "salary": 3200,
    "dkid": "45110272",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 11.3,
@@ -5423,7 +5423,7 @@
    "dk": 8.9,
    "value": 2.79,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Quinten Post",
@@ -5446,9 +5446,9 @@
    "blk": 0.2,
    "to": 0.6,
    "dk": 8.4,
-   "value": 2.78,
+   "value": 2.8,
    "note": "Moved toward his recent minutes (9.0 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Tyus Jones",
@@ -5457,7 +5457,7 @@
    "pos": "PG",
    "salary": 3000,
    "dkid": "45110288",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 11.8,
@@ -5473,7 +5473,7 @@
    "dk": 8.2,
    "value": 2.72,
    "note": "",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Hansen Yang",
@@ -5482,7 +5482,7 @@
    "pos": "C",
    "salary": null,
    "dkid": "",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": true,
    "min": 8.3,
@@ -5506,7 +5506,7 @@
    "pos": "PF",
    "salary": 3400,
    "dkid": "45110238",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 12.4,
@@ -5522,7 +5522,7 @@
    "dk": 8.1,
    "value": 2.37,
    "note": "Moved toward his recent minutes (15.3 a game).",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Tim Hardaway",
@@ -5547,7 +5547,7 @@
    "dk": 6.5,
    "value": 2.17,
    "note": "Moved toward his recent minutes (10.3 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Jayson Kent",
@@ -5556,7 +5556,7 @@
    "pos": "PF",
    "salary": 3400,
    "dkid": "45110249",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 7.6,
@@ -5597,7 +5597,7 @@
    "dk": 6.2,
    "value": 2.07,
    "note": "",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Chaz Lanier",
@@ -5605,8 +5605,8 @@
    "opp": "MIL",
    "pos": "SG/SF",
    "salary": 3000,
-   "dkid": "45109781",
-   "slate": "main",
+   "dkid": "45113904",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 10.5,
@@ -5622,7 +5622,7 @@
    "dk": 5.9,
    "value": 1.95,
    "note": "Projected from his last 3 games.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Jordan Walsh",
@@ -5647,7 +5647,7 @@
    "dk": 5.8,
    "value": 1.81,
    "note": "Moved toward his recent minutes (7.3 a game).",
-   "own": 0.8
+   "own": 0.9
   },
   {
    "player": "Josh Minott",
@@ -5655,8 +5655,8 @@
    "opp": "TOR",
    "pos": "PF/C",
    "salary": 3000,
-   "dkid": "45109746",
-   "slate": "main",
+   "dkid": "45113929",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 6.1,
@@ -5680,8 +5680,8 @@
    "opp": "TOR",
    "pos": "PG/SF",
    "salary": 3000,
-   "dkid": "45109765",
-   "slate": "main",
+   "dkid": "45113757",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 10.9,
@@ -5697,7 +5697,7 @@
    "dk": 5.6,
    "value": 1.87,
    "note": "Moved toward his recent minutes (3.3 a game).",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Yang Hansen",
@@ -5706,7 +5706,7 @@
    "pos": "C",
    "salary": 3000,
    "dkid": "45110305",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 9.7,
@@ -5722,7 +5722,7 @@
    "dk": 5.4,
    "value": 1.81,
    "note": "Projected from his last 3 games. More minutes with Damian Lillard out: he played 12.0 minutes a game in the 1 game without him this season.",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Dru Smith",
@@ -5755,8 +5755,8 @@
    "opp": "DET",
    "pos": "C",
    "salary": 3000,
-   "dkid": "45109744",
-   "slate": "main",
+   "dkid": "45113794",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 7.1,
@@ -5781,7 +5781,7 @@
    "pos": "C",
    "salary": 3000,
    "dkid": "45110299",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 8.6,
@@ -5797,7 +5797,7 @@
    "dk": 3.2,
    "value": 1.07,
    "note": "Projected from his last 3 games.",
-   "own": 1.2
+   "own": 0.9
   },
   {
    "player": "Gary Trent Jr.",
@@ -5805,8 +5805,8 @@
    "opp": "DET",
    "pos": "SF",
    "salary": 3400,
-   "dkid": "45109660",
-   "slate": "main",
+   "dkid": "45113786",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 10.2,
@@ -5822,7 +5822,7 @@
    "dk": 2.7,
    "value": 0.8,
    "note": "Projected from his last 3 games.",
-   "own": 0.8
+   "own": 1.5
   },
   {
    "player": "Cody Williams",
@@ -5895,7 +5895,7 @@
    "blk": 0.1,
    "to": 0.0,
    "dk": 1.1,
-   "value": 0.36,
+   "value": 0.37,
    "note": "Projected from his last 3 games. Moved toward his recent minutes (17.3 a game).",
    "own": 0.0
   },
@@ -5905,8 +5905,8 @@
    "opp": "BKN",
    "pos": "SG",
    "salary": 3400,
-   "dkid": "45109648",
-   "slate": "main",
+   "dkid": "45113901",
+   "slate": "late",
    "start": false,
    "q": false,
    "min": 1.3,
@@ -5931,7 +5931,7 @@
    "pos": "PG",
    "salary": 4400,
    "dkid": "45110171",
-   "slate": "late",
+   "slate": "main",
    "start": false,
    "q": false,
    "min": 0.1,
@@ -6039,7 +6039,7 @@
   {
    "player": "Taurean Prince",
    "team": "DET",
-   "note": "Ruled out tonight (right arthroscopy)."
+   "note": "Ruled out tonight."
   },
   {
    "player": "Jimmy Butler",
@@ -6179,7 +6179,7 @@
   {
    "player": "Ariel Hukporti",
    "team": "PHI",
-   "note": "Ruled out tonight (right achilles tendon)."
+   "note": "Ruled out tonight."
   },
   {
    "player": "Dean Wade",
@@ -6253,250 +6253,6 @@
   }
  ],
  "salaries": {
-  "giannis antetokounmpo|MIA": 11300,
-  "jayson tatum|BOS": 10000,
-  "cooper flagg|DAL": 9700,
-  "karl anthony towns|NYK": 9600,
-  "jalen brunson|NYK": 9500,
-  "cade cunningham|DET": 9400,
-  "jalen johnson|ATL": 9300,
-  "anthony edwards|MIN": 9200,
-  "scottie barnes|TOR": 9100,
-  "joel embiid|PHI": 8800,
-  "tyrese maxey|PHI": 8700,
-  "devin booker|PHX": 8600,
-  "cameron boozer|MEM": 8500,
-  "tyrese haliburton|IND": 8400,
-  "lamelo ball|MIN": 8300,
-  "bam adebayo|MIA": 8300,
-  "rj barrett|TOR": 8200,
-  "lebron james|PHI": 8100,
-  "ty jerome|MEM": 8000,
-  "kyrie irving|DAL": 7900,
-  "paul george|BOS": 7900,
-  "jaylen brown|PHI": 7900,
-  "jaden mcdaniels|MIN": 7800,
-  "pascal siakam|IND": 7700,
-  "tyler herro|MIL": 7700,
-  "kawhi leonard|TOR": 7700,
-  "julius randle|BKN": 7500,
-  "immanuel quickley|TOR": 7500,
-  "davion mitchell|MIA": 7300,
-  "michael porter|BKN": 7200,
-  "dyson daniels|ATL": 7100,
-  "cedric coward|MEM": 7100,
-  "ausar thompson|DET": 7100,
-  "nickeil alexander walker|ATL": 7100,
-  "ayo dosunmu|MIN": 7000,
-  "onyeka okongwu|ATL": 6800,
-  "miles bridges|PHX": 6700,
-  "andrew nembhard|IND": 6700,
-  "daniss jenkins|DET": 6600,
-  "derrick white|BOS": 6500,
-  "og anunoby|NYK": 6500,
-  "vj edgecombe|PHI": 6400,
-  "jonathan kuminga|MIN": 6300,
-  "jalen duren|DET": 6200,
-  "rudy gobert|MIN": 6100,
-  "cam spencer|MEM": 6000,
-  "ivica zubac|IND": 6000,
-  "josh hart|NYK": 6000,
-  "collin murray boyles|TOR": 5900,
-  "jakobe walter|TOR": 5900,
-  "payton pritchard|BOS": 5800,
-  "kevin huerter|DET": 5800,
-  "dayron sharpe|BKN": 5800,
-  "jaime jaquez|MIL": 5700,
-  "brayden burries|MIL": 5700,
-  "paul reed|DET": 5700,
-  "jakob poeltl|TOR": 5600,
-  "cj mccollum|ATL": 5600,
-  "neemias queta|BOS": 5500,
-  "dillon brooks|PHX": 5500,
-  "jalen green|PHX": 5400,
-  "pj washington|DAL": 5400,
-  "aaron wiggins|ATL": 5300,
-  "landry shamet|NYK": 5200,
-  "myles turner|MIL": 5200,
-  "mikal bridges|NYK": 5100,
-  "kyle kuzma|MIL": 5100,
-  "klay thompson|MIA": 5100,
-  "john collins|DET": 5100,
-  "kelel ware|MIL": 5000,
-  "jamal shead|TOR": 5000,
-  "ryan rollins|MIL": 5000,
-  "collin gillespie|PHX": 5000,
-  "aaron nesmith|IND": 5000,
-  "andre drummond|NYK": 4900,
-  "daniel gafford|DAL": 4800,
-  "kelly oubre|IND": 4800,
-  "terrence shannon|MIN": 4800,
-  "pelle larsson|MIA": 4800,
-  "mikel brown|BKN": 4800,
-  "duncan robinson|DET": 4800,
-  "javon small|MEM": 4800,
-  "naji marshall|DAL": 4700,
-  "nolan traore|BKN": 4700,
-  "kingston flemings|ATL": 4700,
-  "isaiah joe|DET": 4700,
-  "scotty pippen|MEM": 4700,
-  "oso ighodaro|PHX": 4700,
-  "allen graves|TOR": 4600,
-  "zach edey|MEM": 4600,
-  "danny wolf|BKN": 4600,
-  "bobby portis|MIA": 4500,
-  "caleb martin|DAL": 4500,
-  "jordan goodwin|PHX": 4500,
-  "egor demin|BKN": 4500,
-  "obi toppin|IND": 4400,
-  "mark williams|PHX": 4400,
-  "quenton jackson|IND": 4300,
-  "taylor hendricks|MEM": 4300,
-  "tj mcconnell|IND": 4300,
-  "zaccharie risacher|DAL": 4200,
-  "jaylen wells|MEM": 4200,
-  "javonte green|DET": 4200,
-  "jamison battle|TOR": 4200,
-  "andrew wiggins|MIA": 4200,
-  "jabari walker|PHI": 4200,
-  "bones hyland|MIN": 4100,
-  "anfernee simons|PHI": 4100,
-  "joan beringer|MIN": 4000,
-  "luguentz dort|ATL": 4000,
-  "moritz wagner|BKN": 4000,
-  "jerami grant|MEM": 4000,
-  "tyler kolek|NYK": 4000,
-  "dean wade|PHI": 4000,
-  "sergio de larrea|DAL": 4000,
-  "kentavious caldwell pope|PHI": 3900,
-  "sam hauser|BOS": 3900,
-  "walter clayton|DAL": 3900,
-  "khaman maluach|PHX": 3900,
-  "jalen slawson|IND": 3900,
-  "isaiah stewart|MEM": 3900,
-  "jock landale|ATL": 3900,
-  "noah clowney|BKN": 3800,
-  "ryan conwell|MIA": 3800,
-  "mitchell robinson|BOS": 3800,
-  "kris murray|MEM": 3800,
-  "jose alvarado|NYK": 3800,
-  "dereck lively|DAL": 3800,
-  "baylor scheierman|BOS": 3700,
-  "morez johnson|DAL": 3700,
-  "miles mcbride|NYK": 3700,
-  "olivier maxence prosper|MEM": 3700,
-  "dominick barlow|PHI": 3700,
-  "trey lyles|MIN": 3600,
-  "jarace walker|IND": 3600,
-  "nate ament|MIL": 3600,
-  "santi aldama|DAL": 3600,
-  "luka garza|BOS": 3500,
-  "kasparas jakucionis|MIL": 3500,
-  "ron holland|DET": 3500,
-  "trayce jackson davis|TOR": 3500,
-  "braden smith|IND": 3500,
-  "myron gardner|MIA": 3500,
-  "adem bona|PHI": 3500,
-  "pacome dadiet|NYK": 3500,
-  "hugo gonzalez|BOS": 3400,
-  "alijah martin|TOR": 3400,
-  "luke kennard|PHX": 3400,
-  "nikola jovic|MIA": 3400,
-  "gary trent|MIL": 3400,
-  "ej harkless|DET": 3400,
-  "aj green|MIL": 3300,
-  "corey kispert|ATL": 3300,
-  "jordan walsh|BOS": 3200,
-  "max christie|DAL": 3200,
-  "zuby ejiofor|ATL": 3200,
-  "simone fontecchio|MIA": 3200,
-  "mohamed diawara|NYK": 3200,
-  "larry nance|IND": 3100,
-  "ryan dunn|PHX": 3100,
-  "keon ellis|BKN": 3100,
-  "jaylen clark|MIN": 3100,
-  "jordan clarkson|NYK": 3100,
-  "mike conley|BOS": 3100,
-  "jay huff|IND": 3000,
-  "chaney johnson|BKN": 3000,
-  "labaron philon|PHI": 3000,
-  "marcus sasser|DAL": 3000,
-  "quinten post|MEM": 3000,
-  "gregory jackson|MEM": 3000,
-  "cody williams|MIN": 3000,
-  "tim hardaway|MIA": 3000,
-  "jericho sims|MIL": 3000,
-  "josh minott|BKN": 3000,
-  "moussa cisse|DAL": 3000,
-  "ousmane dieng|MIL": 3000,
-  "kyle anderson|TOR": 3000,
-  "ron harper|BOS": 3000,
-  "koa peat|PHX": 3000,
-  "terance mann|BKN": 3000,
-  "tolu smith|DET": 3000,
-  "kobe brown|IND": 3000,
-  "jaden bradley|TOR": 3000,
-  "chris cenac|BOS": 3000,
-  "chaz lanier|DET": 3000,
-  "isaiah evans|MIN": 3000,
-  "justin edwards|PHI": 3000,
-  "tobi lawal|DAL": 3000,
-  "jahmai mashack|MEM": 3000,
-  "james wiseman|NYK": 3000,
-  "jamaree bouyea|PHX": 3000,
-  "nick richards|MIA": 3000,
-  "dru smith|MIA": 3000,
-  "jett howard|DAL": 3000,
-  "isaac jones|DET": 3000,
-  "duop reath|PHX": 3000,
-  "karim lopez|MEM": 3000,
-  "ebuka okorie|DET": 3000,
-  "rasheer fleming|PHX": 3000,
-  "tacko fall|PHI": 3000,
-  "drake powell|BKN": 3000,
-  "dorian finney smith|ATL": 3000,
-  "asa newell|ATL": 3000,
-  "caleb love|PHI": 3000,
-  "dalton knecht|NYK": 3000,
-  "malachi smith|TOR": 3000,
-  "pat spencer|PHX": 3000,
-  "zyon pullin|MIN": 3000,
-  "caris levert|MIL": 3000,
-  "bogoljub markovic|MIL": 3000,
-  "rayj dennis|ATL": 3000,
-  "rayan rupert|PHI": 3000,
-  "taurean prince|DET": 3000,
-  "tre donaldson|MIA": 3000,
-  "jaden akins|NYK": 3000,
-  "devin carter|BOS": 3000,
-  "keshad johnson|MIA": 3000,
-  "pete nance|MIL": 3000,
-  "ben sheppard|IND": 3000,
-  "dillon mitchell|BOS": 3000,
-  "johni broome|MIN": 3000,
-  "rocco zikarsky|MIN": 3000,
-  "joshua jefferson|BKN": 3000,
-  "ben saraf|BKN": 3000,
-  "grant nelson|BKN": 3000,
-  "cormac ryan|MIL": 3000,
-  "jalen wilson|ATL": 3000,
-  "kam jones|MIL": 3000,
-  "tyler nickel|NYK": 3000,
-  "ugonna onyenso|DET": 3000,
-  "johnny furphy|IND": 3000,
-  "kevin mccullar|TOR": 3000,
-  "nate bittle|TOR": 3000,
-  "amari williams|BOS": 3000,
-  "drew timme|PHX": 3000,
-  "donte divincenzo|MIN": 3000,
-  "vladislav goldin|MIA": 3000,
-  "ariel hukporti|PHI": 3000,
-  "tyler bilodeau|BKN": 3000,
-  "rafael castro|ATL": 3000,
-  "mouhamed gueye|ATL": 3000,
-  "henri veesaar|ATL": 3000,
-  "tarik biberovic|DAL": 3000,
-  "richie saunders|MEM": 3000,
   "luka doncic|LAL": 12200,
   "victor wembanyama|SAS": 12000,
   "nikola jokic|DEN": 11700,
@@ -6638,7 +6394,112 @@
   "arthur kaluma|LAL": 3000,
   "julian strawther|DEN": 3000,
   "kristaps porzingis|GSW": 3000,
-  "moses moody|GSW": 3000
+  "moses moody|GSW": 3000,
+  "cade cunningham|DET": 9400,
+  "scottie barnes|TOR": 9100,
+  "joel embiid|PHI": 8800,
+  "tyrese maxey|PHI": 8700,
+  "tyrese haliburton|IND": 8400,
+  "rj barrett|TOR": 8200,
+  "lebron james|PHI": 8100,
+  "jaylen brown|PHI": 7900,
+  "kawhi leonard|TOR": 7700,
+  "pascal siakam|IND": 7700,
+  "tyler herro|MIL": 7700,
+  "julius randle|BKN": 7500,
+  "immanuel quickley|TOR": 7500,
+  "michael porter|BKN": 7200,
+  "ausar thompson|DET": 7100,
+  "andrew nembhard|IND": 6700,
+  "daniss jenkins|DET": 6600,
+  "vj edgecombe|PHI": 6400,
+  "jalen duren|DET": 6200,
+  "ivica zubac|IND": 6000,
+  "jakobe walter|TOR": 5900,
+  "collin murray boyles|TOR": 5900,
+  "kevin huerter|DET": 5800,
+  "dayron sharpe|BKN": 5800,
+  "paul reed|DET": 5700,
+  "jaime jaquez|MIL": 5700,
+  "brayden burries|MIL": 5700,
+  "jakob poeltl|TOR": 5600,
+  "myles turner|MIL": 5200,
+  "kyle kuzma|MIL": 5100,
+  "john collins|DET": 5100,
+  "aaron nesmith|IND": 5000,
+  "jamal shead|TOR": 5000,
+  "ryan rollins|MIL": 5000,
+  "kelel ware|MIL": 5000,
+  "kelly oubre|IND": 4800,
+  "duncan robinson|DET": 4800,
+  "mikel brown|BKN": 4800,
+  "isaiah joe|DET": 4700,
+  "nolan traore|BKN": 4700,
+  "danny wolf|BKN": 4600,
+  "allen graves|TOR": 4600,
+  "egor demin|BKN": 4500,
+  "obi toppin|IND": 4400,
+  "tj mcconnell|IND": 4300,
+  "quenton jackson|IND": 4300,
+  "javonte green|DET": 4200,
+  "jamison battle|TOR": 4200,
+  "jabari walker|PHI": 4200,
+  "anfernee simons|PHI": 4100,
+  "dean wade|PHI": 4000,
+  "moritz wagner|BKN": 4000,
+  "kentavious caldwell pope|PHI": 3900,
+  "jalen slawson|IND": 3900,
+  "noah clowney|BKN": 3800,
+  "dominick barlow|PHI": 3700,
+  "jarace walker|IND": 3600,
+  "nate ament|MIL": 3600,
+  "trayce jackson davis|TOR": 3500,
+  "adem bona|PHI": 3500,
+  "braden smith|IND": 3500,
+  "kasparas jakucionis|MIL": 3500,
+  "ron holland|DET": 3500,
+  "gary trent|MIL": 3400,
+  "ej harkless|DET": 3400,
+  "alijah martin|TOR": 3400,
+  "aj green|MIL": 3300,
+  "larry nance|IND": 3100,
+  "keon ellis|BKN": 3100,
+  "taurean prince|DET": 3000,
+  "kyle anderson|TOR": 3000,
+  "caris levert|MIL": 3000,
+  "tacko fall|PHI": 3000,
+  "terance mann|BKN": 3000,
+  "jay huff|IND": 3000,
+  "jericho sims|MIL": 3000,
+  "pete nance|MIL": 3000,
+  "cormac ryan|MIL": 3000,
+  "malachi smith|TOR": 3000,
+  "tolu smith|DET": 3000,
+  "kevin mccullar|TOR": 3000,
+  "ben sheppard|IND": 3000,
+  "kobe brown|IND": 3000,
+  "chaz lanier|DET": 3000,
+  "grant nelson|BKN": 3000,
+  "caleb love|PHI": 3000,
+  "kam jones|MIL": 3000,
+  "josh minott|BKN": 3000,
+  "nate bittle|TOR": 3000,
+  "ariel hukporti|PHI": 3000,
+  "ousmane dieng|MIL": 3000,
+  "jaden bradley|TOR": 3000,
+  "isaac jones|DET": 3000,
+  "tyler bilodeau|BKN": 3000,
+  "joshua jefferson|BKN": 3000,
+  "ugonna onyenso|DET": 3000,
+  "bogoljub markovic|MIL": 3000,
+  "rayan rupert|PHI": 3000,
+  "justin edwards|PHI": 3000,
+  "chaney johnson|BKN": 3000,
+  "johnny furphy|IND": 3000,
+  "labaron philon|PHI": 3000,
+  "drake powell|BKN": 3000,
+  "ben saraf|BKN": 3000,
+  "ebuka okorie|DET": 3000
  },
  "accuracy": {
   "days": 36,
