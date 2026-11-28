@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "8:32 PM ET",
+ "updated": "8:48 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -380,16 +380,7 @@
     },
     "SAS": {
      "out": [],
-     "q": [
-      {
-       "player": "Dylan Harper",
-       "min": 28.4
-      },
-      {
-       "player": "De'Aaron Fox",
-       "min": 27.0
-      }
-     ]
+     "q": []
     }
    },
    "key": "Victor Wembanyama has the top projection in this game at 56.7 DK points."
@@ -443,6 +434,22 @@
   }
  ],
  "changed": [
+  {
+   "player": "Dylan Harper",
+   "team": "SAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "8:49 PM"
+  },
+  {
+   "player": "De'Aaron Fox",
+   "team": "SAS",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "-",
+   "time": "8:49 PM"
+  },
   {
    "player": "Jusuf Nurkic",
    "team": "UTA",
@@ -506,25 +513,30 @@
    "was": "Questionable",
    "why": "Left Ankle Sprain",
    "time": "7:49 PM"
-  },
-  {
-   "player": "Isaiah Stewart",
-   "team": "MEM",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "Right Hip Soreness",
-   "time": "7:49 PM"
-  },
-  {
-   "player": "Joel Embiid",
-   "team": "PHI",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "Illness",
-   "time": "7:04 PM"
   }
  ],
  "chg": [
+  {
+   "key": "SAS",
+   "team": "SAS",
+   "head": "Harper, Fox CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Victor Wembanyama",
+     "salary": 12000,
+     "much": "+15.9 DK without Harper"
+    },
+    {
+     "player": "Stephon Castle",
+     "salary": 7900,
+     "much": "+14.4 DK without Fox"
+    }
+   ],
+   "time": "8:49 PM",
+   "size": 62.4
+  },
   {
    "key": "NYK",
    "team": "NYK",
@@ -1430,8 +1442,8 @@
   ]
  },
  "injuries": {
-  "report": "08:30 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_08_30PM.pdf",
+  "report": "08:45 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_08_45PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -2310,118 +2322,6 @@
    },
    {
     "last": {
-     "date": "2026-11-17",
-     "dk": 27.0,
-     "min": 35,
-     "opp": "DET",
-     "ha": "vs",
-     "res": "L",
-     "score": "105-93"
-    },
-    "game": "LAL at SAS",
-    "time": "2026-11-28T02:30Z",
-    "team": "SAS",
-    "player": "Dylan Harper",
-    "status": "Questionable",
-    "reason": "",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 7300,
-    "min": 31.3,
-    "benefits": [
-     {
-      "player": "Victor Wembanyama",
-      "salary": 12000,
-      "why": "33 minutes, up from 30",
-      "much": "+15.9 DK without him (3 games)",
-      "score": 15.9,
-      "min": 29.9,
-      "dk": 56.7,
-      "avg": 62.4
-     },
-     {
-      "player": "Stephon Castle",
-      "salary": 7900,
-      "why": "33 minutes, up from 29",
-      "much": "+13.2 DK without him (4 games)",
-      "score": 13.2,
-      "min": 29.9,
-      "dk": 33.9,
-      "avg": 35.5
-     },
-     {
-      "player": "Julian Champagnie",
-      "salary": 5400,
-      "why": "started 4 of 4",
-      "much": "+6.3 DK without him (4 games)",
-      "score": 6.3,
-      "min": 27.0,
-      "dk": 21.9,
-      "avg": 22.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-21",
-     "dk": 21.0,
-     "min": 26,
-     "opp": "NOP",
-     "ha": "vs",
-     "res": "W",
-     "score": "114-91"
-    },
-    "game": "LAL at SAS",
-    "time": "2026-11-28T02:30Z",
-    "team": "SAS",
-    "player": "De'Aaron Fox",
-    "status": "Questionable",
-    "reason": "Right Shin Contusion",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 6500,
-    "min": 30.7,
-    "benefits": [
-     {
-      "player": "Stephon Castle",
-      "salary": 7900,
-      "why": "35 minutes, up from 29",
-      "much": "+14.4 DK without him (3 games)",
-      "score": 14.4,
-      "min": 29.9,
-      "dk": 33.9,
-      "avg": 35.5
-     },
-     {
-      "player": "Luke Kornet",
-      "salary": 3800,
-      "why": "18 minutes, up from 15",
-      "much": "+7.8 DK without him (3 games)",
-      "score": 7.8,
-      "min": 15.5,
-      "dk": 12.8,
-      "avg": 12.4
-     },
-     {
-      "player": "Victor Wembanyama",
-      "salary": 12000,
-      "why": "35 minutes, up from 30",
-      "much": "+7.4 DK without him (2 games)",
-      "score": 7.4,
-      "min": 29.9,
-      "dk": 56.7,
-      "avg": 62.4
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-11",
      "dk": 35.2,
      "min": 25,
@@ -2442,6 +2342,56 @@
     "changed_at": "2:54 PM",
     "salary": 7800,
     "min": 33.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-17",
+     "dk": 27.0,
+     "min": 35,
+     "opp": "DET",
+     "ha": "vs",
+     "res": "L",
+     "score": "105-93"
+    },
+    "game": "LAL at SAS",
+    "time": "2026-11-28T02:30Z",
+    "team": "SAS",
+    "player": "Dylan Harper",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:49 PM",
+    "salary": 7300,
+    "min": 31.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-21",
+     "dk": 21.0,
+     "min": 26,
+     "opp": "NOP",
+     "ha": "vs",
+     "res": "W",
+     "score": "114-91"
+    },
+    "game": "LAL at SAS",
+    "time": "2026-11-28T02:30Z",
+    "team": "SAS",
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "reason": "",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:49 PM",
+    "salary": 6500,
+    "min": 30.7,
     "benefits": [],
     "estimate": false
    },
