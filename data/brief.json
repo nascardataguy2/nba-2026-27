@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "7:25 PM ET",
+ "updated": "7:32 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -169,7 +169,7 @@
    "away": "ATL",
    "home": "BOS",
    "time": "2026-11-28T01:00Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 224.5,
    "fav": "BOS",
    "line": 8.5,
@@ -206,7 +206,7 @@
    "away": "MEM",
    "home": "MIN",
    "time": "2026-11-28T01:30Z",
-   "slate": "main",
+   "slate": "late",
    "ou": 220.5,
    "fav": "MIN",
    "line": 2.5,
@@ -1224,11 +1224,11 @@
  ],
  "chalk": [
   {
-   "player": "Daniss Jenkins",
-   "team": "DET",
+   "player": "Brandon Ingram",
+   "team": "LAC",
    "own": 38.0,
-   "dk": 40.0,
-   "salary": 6600
+   "dk": 31.3,
+   "salary": 5800
   },
   {
    "player": "Nah'Shon Hyland",
@@ -1238,41 +1238,41 @@
    "salary": 4100
   },
   {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "own": 37.7,
+   "dk": 40.0,
+   "salary": 6600
+  },
+  {
    "player": "Josh Hart",
    "team": "NYK",
    "own": 36.0,
    "dk": 37.6,
    "salary": 6000
-  },
-  {
-   "player": "Isaiah Joe",
-   "team": "DET",
-   "own": 34.8,
-   "dk": 25.1,
-   "salary": 4700
   }
  ],
  "leverage": [
   {
    "player": "John Collins",
    "team": "DET",
-   "own": 9.0,
+   "own": 3.7,
    "dk": 29.3,
    "salary": 5100
   },
   {
    "player": "Taylor Hendricks",
    "team": "MEM",
-   "own": 0.9,
+   "own": 1.1,
    "dk": 24.5,
    "salary": 4300
   },
   {
-   "player": "Ryan Rollins",
-   "team": "MIL",
-   "own": 5.6,
-   "dk": 26.5,
-   "salary": 5000
+   "player": "Trey Lyles",
+   "team": "MIN",
+   "own": 6.6,
+   "dk": 19.6,
+   "salary": 3600
   }
  ],
  "last": {
@@ -1369,8 +1369,8 @@
   ]
  },
  "injuries": {
-  "report": "07:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_15PM.pdf",
+  "report": "07:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_07_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -1610,7 +1610,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:34 PM",
-    "salary": 4000,
+    "salary": null,
     "min": 28.7,
     "benefits": [
      {
@@ -1646,7 +1646,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7900,
+    "salary": null,
     "min": 26.3,
     "benefits": [
      {
@@ -1702,7 +1702,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "6:04 PM",
-    "salary": 4300,
+    "salary": null,
     "min": 16.0,
     "benefits": [
      {
@@ -1758,7 +1758,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4000,
+    "salary": null,
     "min": 13.3,
     "benefits": [
      {
@@ -1814,7 +1814,7 @@
     "was": "",
     "known": true,
     "changed_at": "12:55 PM",
-    "salary": 3500,
+    "salary": null,
     "min": 9.7,
     "benefits": [],
     "estimate": false
@@ -1914,7 +1914,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "12:55 PM",
-    "salary": null,
+    "salary": 3800,
     "min": 16.3,
     "benefits": [
      {
@@ -1970,7 +1970,7 @@
     "was": "Questionable",
     "known": true,
     "changed_at": "1:55 PM",
-    "salary": null,
+    "salary": 8300,
     "min": 30.3,
     "benefits": [
      {
@@ -2496,7 +2496,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8200,
+    "salary": null,
     "min": 37.7,
     "benefits": [
      {
@@ -2552,7 +2552,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 9400,
+    "salary": null,
     "min": 35.7,
     "benefits": [
      {
@@ -2608,7 +2608,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 8400,
+    "salary": null,
     "min": 32.7,
     "benefits": [
      {
@@ -2664,7 +2664,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4800,
+    "salary": null,
     "min": 30.7,
     "benefits": [
      {
@@ -2720,7 +2720,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 7700,
+    "salary": null,
     "min": 26.0,
     "benefits": [
      {
@@ -2776,7 +2776,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 4700,
+    "salary": null,
     "min": 23.7,
     "benefits": [
      {
@@ -2832,7 +2832,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 6200,
+    "salary": null,
     "min": 19.0,
     "benefits": [
      {
@@ -2888,7 +2888,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": 3000,
+    "salary": null,
     "min": 12.0,
     "benefits": [
      {
@@ -2934,7 +2934,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 5600,
     "min": 28.7,
     "benefits": [
      {
@@ -2990,7 +2990,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3000,
     "min": 15.3,
     "benefits": [
      {
@@ -3046,7 +3046,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3900,
     "min": 11.0,
     "benefits": [],
     "estimate": false
@@ -3071,7 +3071,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 9200,
     "min": 34.0,
     "benefits": [
      {
@@ -3127,7 +3127,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 8500,
     "min": 28.0,
     "benefits": [
      {
@@ -3163,7 +3163,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 4000,
     "min": 16.0,
     "benefits": [
      {
@@ -3219,7 +3219,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 4700,
     "min": 14.7,
     "benefits": [
      {
@@ -3265,7 +3265,7 @@
     "was": "",
     "known": true,
     "changed_at": "",
-    "salary": null,
+    "salary": 3100,
     "min": 13.7,
     "benefits": [
      {
