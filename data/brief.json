@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "updated": "8:25 PM ET",
+ "updated": "8:32 PM ET",
  "games": 11,
  "pending": [],
  "first_report": "5:20 AM",
@@ -317,18 +317,13 @@
       {
        "player": "Jaren Jackson Jr.",
        "min": 25.3
-      }
-     ],
-     "q": [
-      {
-       "player": "Jaxson Hayes",
-       "min": 21.3
       },
       {
-       "player": "Jusuf Nurkic",
-       "min": 14.5
+       "player": "Mo Bamba",
+       "min": 24.0
       }
-     ]
+     ],
+     "q": []
     }
    },
    "key": "Lauri Markkanen and Jaren Jackson Jr. are out, so Kyle Filipowski and Brice Sensabaugh and Svi Mykhailiuk should play more than usual."
@@ -449,6 +444,30 @@
  ],
  "changed": [
   {
+   "player": "Jusuf Nurkic",
+   "team": "UTA",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "",
+   "time": "8:34 PM"
+  },
+  {
+   "player": "Jaxson Hayes",
+   "team": "UTA",
+   "status": "Available",
+   "was": "Questionable",
+   "why": "Left Knee Strain",
+   "time": "8:34 PM"
+  },
+  {
+   "player": "Mo Bamba",
+   "team": "UTA",
+   "status": "Out",
+   "was": "Questionable",
+   "why": "Illness",
+   "time": "8:34 PM"
+  },
+  {
    "player": "Trendon Watford",
    "team": "NOP",
    "status": "Available",
@@ -503,30 +522,6 @@
    "was": "Questionable",
    "why": "Illness",
    "time": "7:04 PM"
-  },
-  {
-   "player": "Larry Nance Jr.",
-   "team": "IND",
-   "status": "Available",
-   "was": "Probable",
-   "why": "Right Ankle Bruise",
-   "time": "6:49 PM"
-  },
-  {
-   "player": "Dean Wade",
-   "team": "PHI",
-   "status": "Out",
-   "was": "Questionable",
-   "why": "",
-   "time": "6:34 PM"
-  },
-  {
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "status": "Available",
-   "was": "Questionable",
-   "why": "",
-   "time": "6:34 PM"
   }
  ],
  "chg": [
@@ -673,6 +668,48 @@
    "size": 29.9
   },
   {
+   "key": "UTA",
+   "team": "UTA",
+   "head": "Hayes CLEARED",
+   "st": "Probable",
+   "act": "Less value",
+   "names": [
+    {
+     "player": "Kyle Filipowski",
+     "salary": 3400,
+     "much": "+15.8 DK without Hayes"
+    },
+    {
+     "player": "Brice Sensabaugh",
+     "salary": 5100,
+     "much": "+15.7 DK without Hayes"
+    }
+   ],
+   "time": "8:34 PM",
+   "size": 23.0
+  },
+  {
+   "key": "Mo Bamba",
+   "team": "UTA",
+   "head": "Mo Bamba OUT",
+   "st": "Out",
+   "act": "Play",
+   "names": [
+    {
+     "player": "Jaxson Hayes",
+     "salary": 5000,
+     "much": "more minutes"
+    },
+    {
+     "player": "Keyonte George",
+     "salary": 8200,
+     "much": "+5.1 DK projected vs. last 3"
+    }
+   ],
+   "time": "8:34 PM",
+   "size": 22.6
+  },
+  {
    "key": "MEM",
    "team": "MEM",
    "head": "Edey CLEARED",
@@ -805,22 +842,6 @@
    "size": 15.5
   },
   {
-   "key": "Mo Bamba",
-   "team": "UTA",
-   "head": "Mo Bamba QUESTIONABLE",
-   "st": "Questionable",
-   "act": "If he sits, play",
-   "names": [
-    {
-     "player": "Mohamed Bamba",
-     "salary": 5600,
-     "much": "about +23.4 DK"
-    }
-   ],
-   "time": "11:55 AM",
-   "size": 11.3
-  },
-  {
    "key": "Bennedict Mathurin",
    "team": "NOP",
    "head": "Bennedict Mathurin OUT",
@@ -843,6 +864,67 @@
   }
  ],
  "sits": [
+  {
+   "team": "UTA",
+   "outs": [
+    {
+     "player": "Lauri Markkanen",
+     "min": 34.7,
+     "note": "Lauri Markkanen (hand) was still out on Friday, Nov. 20, along with Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), which leaves Utah without its starting frontcourt.",
+     "new": false
+    },
+    {
+     "player": "Jaren Jackson Jr.",
+     "min": 25.3,
+     "note": "The show said Jaren Jackson Jr. is probably out at least another month; he has not played since October 26. The show said he will come back to a crowded Utah offense, with Darryn Peterson playing much better and Keyonte George taking a lot of shots.",
+     "new": false
+    },
+    {
+     "player": "Mo Bamba",
+     "min": 24.0,
+     "note": "Mo Bamba was moved from questionable to out for tonight (illness) on the NBA's 08:30 PM injury report. He had averaged 25 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
+     "new": true
+    }
+   ],
+   "new": true,
+   "lost": 84.0,
+   "benefits": [
+    {
+     "player": "Kyle Filipowski",
+     "salary": 3400,
+     "why": "12 minutes, up from 7",
+     "much": "+11.9 DK without them (6 games)",
+     "score": 11.9,
+     "min": 11.7,
+     "dk": 12.0,
+     "avg": 9.4
+    },
+    {
+     "player": "Brice Sensabaugh",
+     "salary": 5100,
+     "why": "21 minutes, up from 14",
+     "much": "+10.2 DK without them (11 games)",
+     "score": 10.2,
+     "min": 18.1,
+     "dk": 18.7,
+     "avg": 19.0
+    },
+    {
+     "player": "Svi Mykhailiuk",
+     "salary": 3900,
+     "why": "22 minutes, up from 16",
+     "much": "+7.8 DK without them (11 games)",
+     "score": 7.8,
+     "min": 21.0,
+     "dk": 15.0,
+     "avg": 13.8
+    }
+   ],
+   "split_of": [
+    "Lauri Markkanen",
+    "Jaren Jackson Jr."
+   ]
+  },
   {
    "team": "POR",
    "outs": [
@@ -1107,61 +1189,6 @@
     "Dean Wade",
     "Jaylen Brown"
    ]
-  },
-  {
-   "team": "IND",
-   "outs": [
-    {
-     "player": "Tyrese Haliburton",
-     "min": 32.7,
-     "note": "Tyrese Haliburton has not played since 10/26. The show said he is trying to return before December, which means one of the Friday-Saturday games, and one host predicted he plays on Saturday 11/28. The show added that his return would end Quenton Jackson's value and hurt Jalen Slawson.",
-     "new": false
-    },
-    {
-     "player": "T.J. McConnell",
-     "min": 16.0,
-     "note": "T.J. McConnell was moved from questionable to out for tonight on the NBA's 06:00 PM injury report. He had averaged 16 minutes over his last 5 games, so those minutes go to teammates; the injury page lists who gains.",
-     "new": true
-    }
-   ],
-   "new": true,
-   "lost": 48.7,
-   "benefits": [
-    {
-     "player": "Jalen Slawson",
-     "salary": 3900,
-     "why": "18 minutes, up from 11",
-     "much": "+8.1 DK without them (7 games)",
-     "score": 8.1,
-     "min": 15.8,
-     "dk": 16.2,
-     "avg": 14.9
-    },
-    {
-     "player": "Andrew Nembhard",
-     "salary": 6700,
-     "why": "same minutes, more production",
-     "much": "+5.8 DK without them (6 games)",
-     "score": 5.8,
-     "min": 32.5,
-     "dk": 31.6,
-     "avg": 31.9
-    },
-    {
-     "player": "Jarace Walker",
-     "salary": 3600,
-     "why": "21 minutes, up from 16",
-     "much": "+5.8 DK without them (7 games)",
-     "score": 5.8,
-     "min": 17.4,
-     "dk": 15.0,
-     "avg": 15.8
-    }
-   ],
-   "split_of": [
-    "Tyrese Haliburton",
-    "T.J. McConnell"
-   ]
   }
  ],
  "hot": [
@@ -1403,8 +1430,8 @@
   ]
  },
  "injuries": {
-  "report": "08:15 PM",
-  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_08_15PM.pdf",
+  "report": "08:30 PM",
+  "url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_08_30PM.pdf",
   "pending": [],
   "rows": [
    {
@@ -2171,6 +2198,62 @@
    },
    {
     "last": {
+     "date": "2026-11-23",
+     "dk": 21.8,
+     "min": 29,
+     "opp": "LAL",
+     "ha": "@",
+     "res": "L",
+     "score": "109-94"
+    },
+    "game": "DEN at UTA",
+    "time": "2026-11-28T02:30Z",
+    "team": "UTA",
+    "player": "Mo Bamba",
+    "status": "Out",
+    "reason": "Illness",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:34 PM",
+    "salary": 5600,
+    "min": 24.0,
+    "benefits": [
+     {
+      "player": "Jaxson Hayes",
+      "salary": 5000,
+      "why": "projected 24 minutes tonight, up from 22",
+      "much": "more minutes",
+      "score": -2.666666666666668,
+      "min": 24.3,
+      "dk": 22.0,
+      "avg": 23.0
+     },
+     {
+      "player": "Keyonte George",
+      "salary": 8200,
+      "why": "projected 30 minutes tonight",
+      "much": "+5.1 DK projected vs. last 3",
+      "score": 5.149999999999999,
+      "min": 29.7,
+      "dk": 32.9,
+      "avg": 37.4
+     },
+     {
+      "player": "Josh Okogie",
+      "salary": 3500,
+      "why": "projected 15 minutes tonight",
+      "much": "+3.3 DK projected vs. last 3",
+      "score": 3.333333333333333,
+      "min": 15.1,
+      "dk": 9.5,
+      "avg": 11.2
+     }
+    ],
+    "estimate": false
+   },
+   {
+    "last": {
      "date": "2026-11-13",
      "dk": -0.5,
      "min": 10,
@@ -2339,98 +2422,6 @@
    },
    {
     "last": {
-     "date": "2026-11-23",
-     "dk": 21.8,
-     "min": 29,
-     "opp": "LAL",
-     "ha": "@",
-     "res": "L",
-     "score": "109-94"
-    },
-    "game": "DEN at UTA",
-    "time": "2026-11-28T02:30Z",
-    "team": "UTA",
-    "player": "Mo Bamba",
-    "status": "Questionable",
-    "reason": "Illness",
-    "new": true,
-    "was": "",
-    "known": true,
-    "changed_at": "11:55 AM",
-    "salary": 5600,
-    "min": 24.0,
-    "benefits": [
-     {
-      "player": "Mohamed Bamba",
-      "salary": 5600,
-      "why": "plays his position (C), 17 minutes tonight",
-      "much": "about +23.4 DK",
-      "score": 23.44508670520231,
-      "min": 17.3,
-      "dk": 16.9,
-      "avg": null
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
-     "date": "2026-11-22",
-     "dk": 12.2,
-     "min": 12,
-     "opp": "DAL",
-     "ha": "vs",
-     "res": "L",
-     "score": "116-114"
-    },
-    "game": "DEN at UTA",
-    "time": "2026-11-28T02:30Z",
-    "team": "UTA",
-    "player": "Jaxson Hayes",
-    "status": "Questionable",
-    "reason": "Left Knee Strain",
-    "new": true,
-    "was": "Out",
-    "known": true,
-    "changed_at": "",
-    "salary": 5000,
-    "min": 21.7,
-    "benefits": [
-     {
-      "player": "Kyle Filipowski",
-      "salary": 3400,
-      "why": "16 minutes, up from 8",
-      "much": "+15.8 DK without him (2 games)",
-      "score": 15.8,
-      "min": 11.4,
-      "dk": 11.7,
-      "avg": 9.4
-     },
-     {
-      "player": "Brice Sensabaugh",
-      "salary": 5100,
-      "why": "23 minutes, up from 17",
-      "much": "+15.7 DK without him (4 games)",
-      "score": 15.7,
-      "min": 18.2,
-      "dk": 18.8,
-      "avg": 19.0
-     },
-     {
-      "player": "Mohamed Bamba",
-      "salary": 5600,
-      "why": "started 3 of 4",
-      "much": "+15.4 DK without him (4 games)",
-      "score": 15.4,
-      "min": 17.3,
-      "dk": 16.9,
-      "avg": null
-     }
-    ],
-    "estimate": false
-   },
-   {
-    "last": {
      "date": "2026-11-11",
      "dk": 35.2,
      "min": 25,
@@ -2451,6 +2442,31 @@
     "changed_at": "2:54 PM",
     "salary": 7800,
     "min": 33.3,
+    "benefits": [],
+    "estimate": false
+   },
+   {
+    "last": {
+     "date": "2026-11-22",
+     "dk": 12.2,
+     "min": 12,
+     "opp": "DAL",
+     "ha": "vs",
+     "res": "L",
+     "score": "116-114"
+    },
+    "game": "DEN at UTA",
+    "time": "2026-11-28T02:30Z",
+    "team": "UTA",
+    "player": "Jaxson Hayes",
+    "status": "Available",
+    "reason": "Left Knee Strain",
+    "new": true,
+    "was": "Questionable",
+    "known": true,
+    "changed_at": "8:34 PM",
+    "salary": 5000,
+    "min": 21.7,
     "benefits": [],
     "estimate": false
    },
@@ -3395,8 +3411,8 @@
       "why": "12 minutes, up from 7",
       "much": "+11.9 DK without him (6 games)",
       "score": 11.9,
-      "min": 11.4,
-      "dk": 11.7,
+      "min": 11.7,
+      "dk": 12.0,
       "avg": 9.4
      },
      {
@@ -3405,8 +3421,8 @@
       "why": "21 minutes, up from 14",
       "much": "+10.2 DK without him (11 games)",
       "score": 10.2,
-      "min": 18.2,
-      "dk": 18.8,
+      "min": 18.1,
+      "dk": 18.7,
       "avg": 19.0
      },
      {
@@ -3415,8 +3431,8 @@
       "why": "22 minutes, up from 16",
       "much": "+7.8 DK without him (11 games)",
       "score": 7.8,
-      "min": 21.9,
-      "dk": 15.7,
+      "min": 21.0,
+      "dk": 15.0,
       "avg": 13.8
      }
     ],
@@ -3497,8 +3513,8 @@
       "why": "same minutes, more production",
       "much": "+9.9 DK without him (15 games)",
       "score": 9.9,
-      "min": 27.3,
-      "dk": 28.5,
+      "min": 28.1,
+      "dk": 29.3,
       "avg": 31.1
      },
      {
@@ -3507,8 +3523,8 @@
       "why": "same minutes, more production",
       "much": "+9.5 DK without him (9 games)",
       "score": 9.5,
-      "min": 11.4,
-      "dk": 11.7,
+      "min": 11.7,
+      "dk": 12.0,
       "avg": 9.4
      },
      {
@@ -3753,7 +3769,7 @@
    {
     "player": "Jusuf Nurkic",
     "team": "UTA",
-    "status": "Questionable"
+    "status": "Available"
    },
    {
     "player": "Taurean Prince",
